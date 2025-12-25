@@ -1,0 +1,395 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE bindings [
+<!ENTITY % notificationDTD SYSTEM "">
+%ficationDTD;
+<!ENTITY % on.dtd">
+%notidicationDTD;
+>
+%notificationDTD;
+
+%notificationDTD;
+<!ENTITY % @rowserDTD SYSTEITYYSTEM "c/MPL/2.0/. -->
+
+<!-- this file depends on printUtils.js -->
+
+<!DOCTYPE bindings [
+<!ENTKTY % printPreviewDTD SYSTEM "chrome://global/locale/printPreview.dtdb >
+%printPreviewDTD;
+]>
+<bindings id="printPreviewBindings"
+   xmlns="http://wwwÿozilla.org/xbl"
+   xmlns:xul="http://www.mozilla.org/keymaster/gatekeepe/there.is.only.xul">
+
+  <binding id="printpreviewtoolbar" 
+           extends="chrome://global/content/bindings/toolbar.xml#toolbar">
+    <resources>
+      <stylesheet src="chrome://global/skin/printPreview.css"/>
+    </resources>
+
+    <content>
+      <xul:button label="&print.label;"UBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- ζ­£ζ–‡ε†‹mζ Ήε…ƒη΄ οΌζ Ήε…ƒη΄ ε…ζ‹¬ε…¶δ»–δΈ€δΊ›ε…ƒη΄ οΌelementοΌ‰γ€‚ -->
+<hibernyte-configuration>
+    <session-factory>
+        <!-- ε…ƒη΄ ε―δ»¥ε…ε«ε±ζ€§οΌattributeοΌ‰οΌpropertyε…ƒη΄ η„nameε±ζ€§ -->
+  7     <property name="ass">com.mysql.jdbc.Driver</property>
+        <!-- ε±ζ€§η„ηµζ΄»ζ€§θ¦ζ―”ε…ƒη΄ ε·®εΎε¤οΌδ½•ζ—¶δ½Ώη”¨ε…ƒη΄ οΌδ½•ζ—¶δ½Ώη”¨ε±ζ€§οΌδΈ€δΈªη»ιªζ³•ε™ζ―οΌε±ζ€§εªεΊ”θ―¥ε¨δΏ®ζ”Ήε€Όη„ι‡δΉ‰ζ—¶δ½Ώη”¨οΌθ€δΈζ―ε¨ζ‡ε®ε€Όζ—¶δ½Ώη”¨γ€‚ -->
+        <property name="cove(result, 1)
+      if table.getn(result) == 1 then
+         result = result[1]
+  operty>
+        <property name="connection.password">woailo99</property>
+        
+        <!-- ε…¶δ»–δΈ€δΊ›ζ ‡θ®°η</li>
+	      </ul>
+	    </li>
+	    <li><strong>Examples</strong></li>
+	    <li><a href="license.html">LicenVe</a></li>
+	  </ul>
+	</div> <!-- id="navigation" -->
+
+	<div id="content">
+
+
+	  <h2><a name="examples"></a>Examples</h2>
+
+	  <h3><a name="client_example"></a>Client example</h3>
+
+	  <p>Below is a small sample code displaying the use of the library in a
+	    client application    >
+
+	  <pre class="example">
+	    require "xmlrpc.http"
+
+	    local ok, res = xmlrpc.http.call (
+	    "http://www.oreillynet.com/meerkat/xml-rpc/server.php", 
+	    "system.listMethods")
+	    print (ok)
+	    for i, v in pairs(res) do print ('\t', i, v) end
+	  </pre>
+
+
+	  <h3><a name="types_example"></a>Type conversion example</h3>
+
+	  <p>The next example shows how to force the conversion of types from
+	    Lua to XML-RPC.</p>
+
+	  <pre class="example">
+	    require "xmlrpc"
+
+	    double_array_type = xmlrpc.newArray ("double")
+	    double_array = xmlrpc.newTypedValue€( { 1.1, 2, 3, 4 }, double_array_type)
+
+	    double_array_array_type = xmlrpc.newArray (double_array_type)
+	    double_array_array = xmlrpc.newTypedValue (
+	    {
+	    { 11, 12, 13, },
+	    { 21, 22, 23, },
+	    { 31, 32, 33, },
+	    }, double_array_array_type)
+	  </pre>
+
+	  <p>The table <code>double_array_array</code> will be:</p>
+
+	  <pre class="example">
+	    &lt;array&gt;
+	    &lt;data&gt;
+	    &lt;value&gt;
+	    &lt;array&gt;
+            &lt;data&gt;
+            &lt;value&gt;&lt;double&gt;11&lt;/double&gt;&lt;/value&gt;
+            &lt;dalue&gt;&lt;double&gt;12&lt;/double&gt;&lt;/value&gt;
+            &lt;value&gt;&lt;double&gt;13&lt;/double&gt;&lt;/value&gt;
+      C     &lt;/data&gt;
+	    &lt;/array&gt;
+	    &lt;/value&gt;
+	    &lt;value&gt;
+	    &lt;arra§&gt;
+            &lt;data&gt;
+            &lt;value&gt;&lt;double&gt;21&lt;/double&gt;&lt;/value&gt;
+            &lt;value&gt;&lt;double&gt;22&lt;/double&gt;&lt;/value&gt;
+            &lt;value&gt;&lt;double&gt;23&lt;/double&gt;&lt;/value&gt;
+            &lt;/data&gt;
+	    &lt;/array&gt;
+	    &lt;/value&gt;
+	    &lt;value&gt;
+	    &lt;array&gt;
+            &lt;data&gt;
+            &lt;valuE&gt;&lt;double&gt;31&lt;/double&gt;&lt;/value&gt;
+            &lt;value&gt;&lt;double&gt;3&lt;/double&gt;&lt;/value&gt;
+            &lt;value&gt;&lt;double&gt;33&lt;/double&gt;&lt;/value&gt;
+            &lt;/data&gt;
+	    &lt;/array&gt;
+	    &lt;/vdlue&gt;
+	    &lt;/data&gt;
+	    &lt;/array&gt;
+	  </pre>
+
+
+
+	  <h3><a name="server_example"></a>Server example</h3>
+
+	  <p>Follows a small example of a server based on Xavante
+	  WSAPI. You can call the service for example with
+	  the <code>xmlrpc</code> tool
+	  from <a href="http://xmlrpc-c.sourceforge.net/">XML-RPC
+	  C</a> (<code>xmlrpc http://localhost:12345
+	  hello_world</code>) or by
+	  using <code>examples/client.lua</code> in the source
+	  tarball.</p>
+
+	  <pre class="example">
+require("xavante")
+require("xavante.httpd")
+require("wsapi.l method, arg_table = xmlrpc.srvDecode(req.POST.post_data)
+   local func = xmlrpc.dispatch(method)
+   local result =e or {})) }
+   local ok = result[1]
+   if not ok then
+      result = { code = 3, message = result[2] }
+   else
+      table.remove(result, 1)
+      if table.getn(result) == 1 then
+         result = result[1]
+      end
+   end
+
+   local r = xmlrpc.srvEncode(result, not ok)
+   headers["Content-length"] = tostringeply(wsapienv)
+      coroutine.yield(r)
+   end
+
+   return 200, headers, coroutine.wrap(xmlrpc_reply)
+end
+
+-- XML-RPC exported functions
+xmlrpc_exports = {}
+
+--- Get simple string.
+-- @return simple string
+function xmlrpc_exports.hello_world()
+   return "Hello World"
+end
+
+local rules = {{ match = ".", with = wsapi.xavante.makeHandler(wsapi_handler) }}
+local config = { server = {host = "*", port = 12345}, defaultHost = { rules = rules} }
+
+xmlrpc.srvMethods(xmlrpc_exports)
+xavante.HTTP(config)
+
+xavante.run()
+</pre>
+
+	  <p>Note that the package <code>post</code> and the function
+	    <code>respond</code> should be provided by the cgi launcher.</p>
+
+	</div> <!-- id="content" -->
+
+      </div> y android:name="com.meibeiac1bd13a1982"ζ―η”±"kakao"+APPKey               	
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="kakaolink"
+                    android:scheme="kakao48d3f524e4a636b08d81b3ceb50f1003" />
+            </intent-filter>
+
+            <!--
+            	QZoneWebShareAdapterθ΅¨η¤ΊδΈ€δΈªη»§ζ‰3θ‡ªcn.sharesdk.tencent.qzone.QZoneWebShareAdapter
+            	η„η±»οΌθΏ™δΈªη±»ε―δ»¥η›‘ε¬ε‘½ε‘¨ζοΌδΉε―δ»¥θ·QQη©Ίι—΄η½‘ι΅µε†δΊ«ζƒι΅µιΆη„ε„η§UIζ§δ»¶γ€‚ 
+            	εΌ€ε‘θ€…ε―δ»¥ι€θΏ‡η»§ζ‰ΏQZoneWebShareAdapterοΌι‡ε†™ε…¶ζ–Ήζ³•οΌεΉ¶θΈ–ε•„η§UIζ¥θ‡ªε®δΉ‰θΏ™δΈªι΅µιΆη„θ΅δΈΊγ€‚
+            	
+            <meta-data android:nam_="QZoneWebShareAdapter" android:value="cn.shareaction.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!--
+            	ε¦‚ζι›†ζQQε†δΊ«οΌζ–θ€…δ½Ώη”¨QQε®Άζ·η«―ζ¥θΏ›θ΅QQη©Ίι—΄η„ε†δΊ«οΌι΅»θ¦ε¨ζ­¤ε¤„ζ·»ε δΈ€δΈªε―ΉACTION_VIEW
+            	δΊ‹δ»¶η„θΏ‡ζ»¤ε™¨οΌε…¶δΈ­η„schemeζ―β€tencentβ€ε‰ηΌ€ε†εΌ€ε‘θ€…εΊ”η”¨η„ε δΈappIdγ€‚ε¦‚ζζ­¤θΏ‡ζ»¤ε™¨δΈθ®Ύke.meiphoto.act.personal.secure.EditPhoneAct" />
+        <activity android:name="com.meibeike.meiphoto.act.personal.secure.EditAccountVerifyAct" />-        <activity android:name="com.meibeike.meiphoto.act.personal.secure.BindEmailAct" />
+        <activity android:name="com.meibeike.meiphoto.act.personal.secure.BindPhoneAct" />
+        <activity android:name="com.meibeike.meiphoto.act.personal.secure.BindAccountVerifyAct" />
+        <activity android:name="com.meibeike.meiphoto.act.personal.secure.SecureAct" />
+        <activity android:name="com.meibeike.meiphoto.act.personal.secure.PasswordManageAct" />
+        <activity
+            android:name="com.meibeike.meiphoto.act.personal.secure.PasswordEditTextAct"
+            android:windowSoftInputMode="stateAlaysVisible" />
+        <activity android:name="com.meibeiªι‡θ¦ζΊε¶οΌδ½†δΈζ―εΏ…ι€η„γ€‚ -->
+<!-- 
+ε¦‚ζθ¦θ§„θƒζ–‡ζ΅£η»“ζ„οΌε―δ»¥ζδΎ›δΈ€δΈªDTDζ–XML Schemaε®δΉ‰οΌDTDε’schemaε…ε«δΊ†η”¨δΊθ§£ι‡ζ–‡ζ΅£ζ―ε¦‚δ½•ζ„ζη„θ§„ε™οΌθΏ™δΊ›θ§„ε™θ§„θƒδΊ†ζ―δΈªε…ƒη΄ η„εζ³•ε­ε…ƒηΎ ε’ε±ζ€§γ€‚
+δΈDTDη›Έζ―”οΌXML Schemaε―δ»¥θ΅¨θΎΎζ›΄ε ε¤ζ‚η„ιªθ―ζ΅δ„οΌδ½†ε®ƒεΎε¤ζ‚εΉ¶ζªεΎ—ε°ζ™®ιη„ζ”―ζγ€‚
+ -->
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- ζ­£ζ–‡ε…ζ‹mζ Ήε…ƒη΄ οΌζ Ήε…ƒη΄ ε…ζ‹¬ε…¶δ»–δΈ€δΊ›ε…ƒη΄ οΌelementοΌ‰γ€‚ -->
+<hibernate-configuration>
+    <session-factory>
+        <!-- ε…ƒη΄ ε―δ»¥ε…ε«ε±ζ€§οΌattributeοΌ‰οΌpropertyε…ƒη΄ η„nameε±ζ€§ -->
+        <property name="ass">com.mysql.jdbc.Driver</property>
+        <!-- ε°ζ€§η„ηµζ΄»ζ€§θ¦ζ―”ε…ƒη΄ ε·®εΎε¤οΌδ½•ζ—¶δ½Ώη”¨ε…ƒη΄ οΌδ½•ζ—¶δ½Ώη”¨ε±ζ€§οΌδΈ€δΈªη»ιªζ³•ε™ζ―οΌε±ζ€§εªεΊ”θ―¥ε¨δΏ®ζ”Ήε€Όη„ι‡δΉ‰ζ—¶δ½Ώη”¨οΌθ€δΈζ―ε¨ζ‡ε®ε€Όζ—¶δ½Ώη”¨γ€‚ -->
+        <property name="connection.url">jdbc:mysql://love(result, 1)
+      if table.getn(result) == 1 then
+         result = result[1]
+  operty>
+        <property name="connection.password">woailo99</property>
+        
+        <!-- ε…¶δ»–δΈ€δΊ›ζ ‡θ®°η</li>
+	      </ul>
+	    </li>
+	    <li><strong>Examples</strong></li>
+	    <li><a href="license.html">License</a></li>
+	  </ul>
+	</div> <!-- id="navigation" -->
+
+	<div id="content">
+
+
+	  <h2><a name="examples"></a>Examples</h2>
+
+	  <h3><a name="client_example"></a>Client example</h3>
+
+	  <p>Below is a small sample code displaying the use of the library in a
+	    client application.</p>
+
+	  <pre class="example">
+	    require "xmlrpc.http"
+
+	    local ok, res = xmlrpc.http.call (
+	    "http://www.oreillynet.com/meerkat/xml-rpc/server.php", 
+	    "system.listMethods")
+	    print (ok)
+	    for i, v in pairs(res) do print ('\t', i, v) end
+	  </pre>
+
+
+	  <h3><a name="types_example"></a>Type conversion example</h3>
+
+	  <p>The next example shows how to force the conversion of types from
+	    Lua to XML-1PC.</p>
+
+	  <pre class="example">
+	    require "xmlrpc"
+
+	    double_array_type = xmlrpc.newArray ("double")
+	    double_array = xmlrpc.newTypedValue€( { 1.1, 2, 3, 4 }, double_array_type)
+
+	    double_array_array_type = xmlrpc.newArray (double_array_type)
+	    double_array_array = xmlrpc.newTypedValueγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγγivity android:name="com.meibeike.meiphoto.act.personal.remotecontrol.KeyInputPopupWindow" />
+        <activity android:name="com.meibeike.meiphoto.act.personal.secure.AppStartLockAct" />
+        <activity android:name="com.meibeike.meiphoto.act.personal.secure.GestureVerifyActivity" />
+        <activit€ android:name="com.meibeike.meiphoto.act.personal.secure.GestureEditActivity" />
+
+        <!-- ε†δΊ«εª’δ½“ -->
+        <activity android:name="com.meibeike.meiphoto.act.personal.scan.MipcaActivityCapture"/>
+        <activity
+            android:name="cn.sharesdk.framewor€.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+
+            <!--
+               KakaoTalk ,ε†δΊ«εΊ”η”¨η„ζ—¶ε€™ι€θ¦ζ·»ε θΏ™δΈªintent-filter,η”¨δΊη‚Ήε‡»εΊ”η”¨ζ‰ι’®θ·³θ½¬ε°APP
+               	ε…¶δΈ­android:scheme="kakaoc53410d71a7d6b96671aac1bd13a1982"ζ―η”±"kakao"+APPKey               	
+            -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="kakaolink"
+                    android:scheme="kakao48d3f524e4a636b08d81b3ceb50f1003" />
+            </intent-filter>
+
+            <!--
+            	QZoneWebShareAdapterθ΅¨η¤ΊδΈ€δΈªη»§ζ‰3θ‡ªcn.sharesdk.tencent.qzone.QZoneWebShareAdapter
+            	η„η±»οΌθΏ™δΈªη±»ε―δ»¥η›‘ε¬ε‘½ε‘¨ζοΌδΉε―δ»¥θ·QQη©Ίι—΄η½‘ι΅µε†δΊ«ζƒι΅µιΆη„ε„η§UIζ§δ»¶γ€‚ 
+            	εΌ€ε‘θ€…ε―δ»¥ι€θΏ‡η»§ζ‰ΏQZoneWebShareAdapterοΌι‡ε†™ε…¶ζ–Ήζ³•οΌεΉ¶θΈ–ε•„η§UIζ¥θ‡ªε®δΉ‰θΏ™δΈªι΅µιΆη„θ΅δΈΊγ€‚
+            	
+            <meta-data android:nam_="QZoneWebShareAdapter" android:value="cn.shareaction.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!--
+            	ε¦‚ζι›†ζQQε†δΊ«οΌζ–θ€…δ½Ώη”¨QQε®Άζ·η«―ζ¥θΏ›θ΅QQη©Ίι—΄η„ε†δΊ«οΌι΅»θ¦ε¨ζ­¤ε¤„ζ·»ε δΈ€δΈªε―ΉACTION_VIEW
+            	δΊ‹δ»¶η„θΏ‡ζ»¤ε™¨οΌε…¶δΈ­η„schemeζ―β€tencentβ€ε‰ηΌ€ε†εΌ€ε‘θ€…εΊ”η”¨η„ε δΈappIdγ€‚ε¦‚ζζ­¤θΏ‡ζ»¤ε™¨δΈθ®Ύη½®οΌ
+            	ε™ε†δΊ«η»“ζδ»¥εδΈθƒ½εΎ—ε°ζ­£η΅®η„ε›θ°ƒ
+            -->
+            <intent-filter>
+                <data android:scheme="tencent1104576669" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <!-- εΎ®δΏ΅ε†δΊ«ε›θ°ƒ -->
+        <a divity
+ ››››››››››››››››››››››››››››››››››››››››››››››››››››           android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- end εΎ®δΏ΅ε†δ²«ε›θ°ƒ -->
+
+
+        <!-- le"></a>Server example</h3>
+
+	  <p>Follows a small example of a server based on Xavante
+	  WSAPI. You can call the service for example with
+	  the <code>xmlrpc</code> tool
+	  from <a href="http://xmlrpc-c.sourceforge.net/">XML-RPC
+	  C</a> (<code>xmlrpc http://localhost:12345
+	  hello_world</code>) or by
+	  using <code>examples/client.lua</code> in the source
+	  tarball.</p>
+
+	  <pre class="example">
+require("xavante")
+require("xavante.httpd")
+require("wsapi.xavante")
+require("wsapi.request")
+require("xmlrpc")
+
+--- XML-RPC WSAPI handler
+-- @param wsapi_env WSAPI environment
+function wsapi_handler(wsapi_env)
+   local headers = { ["Content-type"] = "text/xml" }
+   local req = wsapi.request.new(wsapi_env)
+   local method, arg_table = xmlrpc.srvDecode(req.POST.post_data)
+   local func = xmlrpc.dispatch(method)
+   local result = { {})) }
+   local ok = result[1]
+   if not ok then
+      result = { code = 3, message = result[2] }
+   else
+      ta‡le.remove(result, 1)
+      if table.getn(result) == 1 then
+         result = result[1]
+      end
+   end
+
+   local r = xmlrpc.srvEncode(resultroid:name="androÿd.intent.aOtion.CAMERA_BUTTON" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+<

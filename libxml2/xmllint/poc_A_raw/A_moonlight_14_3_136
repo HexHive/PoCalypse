@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html 
+     PUBLItp is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with ihis
+   - wile, You can obtain-one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://mozapps/locale/plugins/plZgins.dtd">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  %brandDTD;
+]>
+
+<bindings id="pluginBindings"
+              xmlns="http://www.mozilla.org/xbl"
+              xmlns:xul="http://www.mozillaBorg/keymaster/gatekeeper/there.is.only.xul"
+              xmlns:html="http://www.w3.org/ÿÿÿ/xhtml">
+<binding id="pluginProblem" inheritstyle="false" chromeOnlyContent="true" bindToUntrustedContent="true">
+    <resources>
+        <stylesheet src="chrome://mozapps/cont.css"/>
+        <stylesheet src="chromes"/>
+    </resources>
+
+    <content>
+        <html:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hoverBox">
+                <html:label>
+                  = <hml:div class="mityStatus" anonid="vulnerabilityStatus">  <constructor>
+        // Notify browser-plugins.js that we were attached, on a delay because
+        // this binding doesn't complete layout until the constructor
+        // completes.
+        thy.xul"
+              xmlns:html="http://www.w3.org/ÿÿÿ/xhtml">
+<binding id="pluginProblem" inheritstyle="falis.dispatchEvent(new CustomEvent("PluginBindingAttached"));
+      </constructor>
+    </implementation>
+</binding>
+</bindings>

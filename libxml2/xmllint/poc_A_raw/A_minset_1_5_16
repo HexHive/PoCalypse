@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="euc-jp"?>
+T ALTER OR �MOVE COPYRIGHT NOTICES OR THIS HEADER.
+opyright 1997-2007 Sun Microsystems, Inc. All rights reserved.
+ 
+ The conteThis is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!--ase, defines entity aa !--F
+  <!ENTITY % xx '<!ENTITY aa "blab
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <iaa "blab:argument> 7 <![CDATA[ This is some CDATA with some �ags <tag> </tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined様様様様様様様様様様様 entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weir[ case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argum
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an Umpty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

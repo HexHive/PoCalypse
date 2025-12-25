@@ -1,0 +1,380 @@
+<?xml version="1.0"?>
+<!DOCTYPE dia:diagram [
+<!ELEMENT dia:diagram (dia:diagramdata, (dia:layer)*) >
+<!ATTLIST dia:diagram
+          xmlns:dia CDATA #FIXED "http://www.lysator.liu.se/~alla/dia/">
+          
+
+<!ELEMENT dia:diagramdata (dia:attribute)* >
+
+<!ELEMENT dia:layer (dia:object | dia:group)*>
+<!ATTLIST dia:layer
+   dia:name CDATA #REQUIRED
+   dia:visible (true|false) #REQUIRED >
+
+<!ELEMENT dia:object ((dia:attribute)*, dia:connections?)>
+<!ATTLIST dia:object
+   dia:type CDATA #REQUIRED
+   dia:version NMTOKEN #REQUIRED
+   dia:id ID #REQUIRED >
+
+<!ELEMENT dia:connections (dia:connection)*>
+
+<!ELEMENT dia:connection EMPTY>
+<!ATTLIST dia:connection
+   dia:handle NMTOKEN #REQUIRED
+   dia:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST diaomposi:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dZa:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:bomlean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="1.9,6.8;11,8.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="conn_endpoints">
+        <dia:point dia:val="1.95,6.85"/>
+        <dia:point dia:val="10.95,8.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_style">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:attribute dia:name="start_arrow">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:attribute dia:name="end_arrow">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:connections>
+        <dia:connection dia:handle="1" dia:to="O2" dia:connection="3"/>
+      </dia:connections>
+    </dia:object>
+    <dia:object dia:type="Standard - Text" dia:version="0" dia:id="O1">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+      <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia:attribute dia:name="string">
+            <dia:string dia:val="sdfsdfg"/>bility) website: http://www.ntia.doc.gov/broadbandgrants/nofa.html</abstract>
+			<purpose>NTIA will use the data collected by grantees including the District of Columbia, in combination with other data sources, to create and publish online the National Broadband Map. The map will further educate consumers and businesses about broadband Internet availability, enable broadband Internet providers and investors to make better-informed decisions regarding the use of their private capital for future broadband investment, and inform the decisions of Federal, State, and local policymakers as they work to expand the benefits of broadband to all Americans.</purpose>
+			<supplinf>&lt;Any supplemental information that further describes or applies to the dataset.&gt;</supplinf>
+			<langdata Sync="TRUE">en</langdata></descript>
+		<timeperd>
+			<timeinfo>
+				<rngdates><begdate>6/30/2011</begdate><enddate>09/01/2011</enddate></rngdates><sngdate><caldate>REQUIRED: The year (and optionally month, or month and day) for which the data set corresponds to the ground.</caldate></sngdate></timeinfo>
+			<current>ground condition</current>
+		</timeperd>
+		<status>
+			<progress>Complete</progress>
+			<update>Every six months.</update>
+		</status>
+		<spdom>
+			<bounding>
+				<westbc Sync="TRUE">-77.119759</westbc>
+				<eastbc Sync="TRUE">-76.909393</eastbc>
+				<northbc Sync="TRUE">38.995548</northbc>
+				<southbc Sync="TRUE">38.807517</southbc>
+			</bounding>
+			<dsgpoly>
+				<dsgpolyo>
+					<grngpoin>
+					</grngpoin>
+				</dsgpolyo>
+			</dsgpoly>
+			<lboundnd><leftbc Sync="TRUE">-77.119759</leftbc><rightbc Sync="TRUE">-76.909393</rightbc><bottombc Sync="TRUE">38.807517</bottombc><topbc Sync="TRUE">38.995548</topbc></lboundng></spdom>
+		<keywords>
+			<theme>
+				<themekt>none</themekt>
+				<themekey>Broadband</themekey>
+				<themekey>Broadband Availability</themekey>
+				<themekey>Broadband Speed</themekey>
+				<themekey>Broadband Providers</themekey>
+				<themekey>Broadband technology of transmission</themekey>
+				<themekey>Wireline Broadband</themekey>
+				<themekey>NTIA</themekey><themekey>FCC</themekey></theme>
+			<place>
+				<placekey>Washington, D.C.</placekey>
+				<placekey>District of Columbia</placekey>
+				<placekey>DC</placekey>
+				<placekey>DC GIS</placekey>
+				<placekey>DCGIS</placekey>
+			</place>
+			<temporal>
+				<tempkey>October 2011</tempkey>
+				<tempkey>Fall 2011</tempkey></temporal>
+		</keywords>
+		<greementsˇˇˇered into by OCTO and broadband providers.  The data contains COMMERCIAL / PROPRIETARY and CONFIDENCIAL INFORMATION.  The data is compiled solely for use by the NTIA and cooperating federal agencies.  Redistribution of the data in its raw form is prohibited.</accconst>
+		<useconst>There are no restrictions on distribution of the data by users. The user will cite the National Broadband Map as the original source of the data, but will clearly denote cases where the original data have been updated, modified, or in any way altered from the original condition. The boundary information in the data are for statistical data collection and tabulation purposes; their depiction and designation for statistical purposes does not constitute a determination of jurisdiction authority or rights of ownership or entitlement and they are not legal land descriptions. The Federal Communicationy Commission (FCC) and the National Telecommunication Administration (NTIA) make no representations or warranties regarding the accuracy of data or maps. The user will not seek to hold the FCC or the NTIA liable under any circumstances for any damages with respect to any claim by the user or any third party on account of or arising from the use of data or maps. This data may not be suitable for high-precision measurement applications such as engineering problems, property transfers or other uses that might require highly accurate measurements of the earth's surface.</useconst>
+		<ptcontac>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>Office of Chief Technology Officer</cntorg>
+					<cntper>Matthew Crossett</cntper>
+				</cntorgp>
+				<cntpos>Geographic Information System Manager</cntpos>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>441 4th St NW, Suite 930 South</address>
+					<city>Washington</city>
+					<state>DC</state>
+					<postal>20001</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntvoice>202-727-5660</cntvoice>
+				<cntfax>&lt;The facsimile telephone number, including area code, of the Contact Person.&gt;</cntfax>
+				<cntemail>matthew.crossett@dc.gov</cntemail>
+				<hours>8:30 AM to 5:00 PM…………………………………………………………………………………………………………………………………………………………………………………………………………………………………………ographic Information System (DC GIS)
+District of Columbia Office of Chief Technology of Officer (OCTO)
+District of Columbia Public Service Commission
+United States Department of Commerce National Telecommunications and Information Administration (NTIA)</datacred>
+		<secinfo>
+			<secclass>Confidential</secclass>
+			<sechandl>The data is covered by nondisclosure agreemenˇˇntered into by OCTO and broadband providers.  The data contains COMMERCIAL / PROPRIETARY and CONFIDENTIAL INFORMATION.  The data is compiled solely for use by NTIA and cooperating federal agencies.  Redistribution of the data in its raw form is prohibited.</sechandl>
+		</secinfo>
+		<native Sync="TRUE">Microsoft Windows XP Version 5.1 (Build 2600) Service Pack 3; ESRI ArcCatalog 9.3.1.4000</native>
+		<natvform Sync="TRUE">File Geodatabase Feature Class</natvform></idinfo>
+	<dataqual>
+		<attracc>
+			<attraccr>The attributes are believed to be accurate, but are subject to change. The validation steps described under logical consistency also apply here.
+
+The dataset does contain null fields and those should be interpreted as no data was available.</attraccr>
+		</attracc>
+		<logic>The District of Columbia Public Service Commission and the Office of the Chief Technology Officer (OCTO) compiled and verified the data submitted by broadband providers. The broadband providers submitted data in a variety of formats and levels of accuracy. Although attempts have been made to validate and normalize the data, the dataset does have a small margin of error. In an effort ho standardize and make the data as accurate as possible, the District implemented mask templates to remove census blocks that would be considered unserviceable for District-wide service providers. Unserviceable areas included parkland, water bodies, some government institutions and residential zoning (for business service providers only). The following steps were taken to validate wireline data submitted to OCTO from the providers. The District cross-referenced the submitted data with the FCC Form 477 to verify technology and speed of transmissions, and compare the geography to what had been reported to the FCC. OCTO also purchased a database from InfoUSA (a commercial mailing list companymmmmmbroadband subscribers to crosscheck data submitted from providers. Where discrepancies were found, the providers were contacted for more information.</logic>
+		<complete>All identified broadb service providers were contacted and those meeting the NOFA requirements are in the data set. </complete>
+		<posacc>
+			<horizpa>
+				<horizpar>Service territories are mapped to the nearest Census Block.  Horizontal Accuracy is equal to that of the source US Census TIGER Data.</horizpar>
+			</horizpa>
+			<vertacc>
+				<vertaccr>NA</vertaccr>
+			</vertacc>
+		</posacc>
+		<lineage>
+			<srcinfo>
+				<srccite>
+					<citeinfo>
+						<origin>&lt;The name of the organization or individual that developed the source.&gt;</origin>
+						<pubdate>&lt;The publication date of the source.  This is formatted to "dd/mm/yyyy."&gt;</pubdate>
+						<title>&lt;The title or descriptor of the source.&gt;</title>
+						<onlink>&lt;The online web url for the source originator or document.&gt;</onlink>
+					</citeinfo>
+				</srccite>
+				<srcscale>Multiple</srcscale>
+				<typesrc>Multiple</typesrc>
+			</srcinfo>
+			<procstep>
+				<procdesc>1. Check-in: New data has arrived; it is assigned for submission tracking, it is scanned for viruses, and it is given an initial review to ensure that each major component is present. This step is handled by the PSC. 
+
+2. Processing: GIS Analysts process the information into its final form. Processing steps vary based on the type of data submitted and the nature of the data provided [GIS data, Paper/PDF, dFta table, etc. This step is handled by OCTO with assistance from the PSC when providers need to be contacted. 
+
+3. Verification: During this stage, data from providers are compared with data from other sources. Discrepancies are noted and sent to the contributing provider for comment. Validation techniques vary by the type of data submitted. See more on validation in the logical consistency section of this metadata. 
+
+4. Amalgamation/Documentation: Unless a provider's submission is conclusively invalidated and the issue cannot be resolved with the contributing provider, it is included in the amalgamation phase. Until this stage, OCTO handles each submission separately. DuIIIIIIIIIIIIIIIIIIIIIIIIIIring this stage, all successful submissions are appended to the latest version of the NTIA/NSGIC geodatabase, and FCC-requested transmittal forms are prepared.
+
+5. Quality Review: The amalgamated data are given a final quality review by a different GIS Anaayst.
+
+6. Transmittal: Once past the quality review, the data are submitted to NTIA/FCC via secure FTP. FCC data package documents are included.</procdesc>
+				<srcused>C:\OCTOGIS\Data\Metadata\TemplateDCStat</srcused>
+				<procdate>&lt;The date the processes occurred.  This is formatted to "dd/mm/yyyy."&gt;</procdate>
+				<proccont>
+					<cntinfo>
+						<cntorgp>
+							<cntorg>&lt;The name of the organization that performed the processing.  Typically, this is the process contact person's organization.&gt;</cntorg>
+							<cntper>&lt;The person who can receive inquiries and has the best knowledge regarding the content, procedures, and parameters used in the process step. This may not be the same as the data set contact person.&gt;</cntper>
+						</cntorgp>
+						<cntaddr>
+							<addrtype>mailing and physical address</addrtype>
+							<address>&lt;the mailing address of the process Contact Person.  Ensure that the address type is set to the appropriate choice - mailing or physical address, or both.&gt;</address>
+							<city>&lt;The city of the process Contact Person.&gt;</city>
+							<state>&lt;The state or province of the process Contact Person.&gt;</state>
+							<postal>&lt;The ZIP or other postal code of the process Contact Person.&gt;</postal>
+							<country>&lt;The country of the process Contact Person.&gt;</country>
+						</cntaddr>
+						<cntfax>&lt;The facsimile telephone number, including area code, of the Cont˙  ˙Person.&gt;</cntfax>
+						<cntemail>&lt;The Internet mail address of the Contact Person.&gt;</cntemail>
+						<hours>&lt;The hours of service of the process point of contact.&gt;</hours>
+					</cntinfo>
+				</proccont>
+			</procstep>
+			<procstep>
+				<procdesc>Metadata imported.</procdesc>
+				<srcused>E:\DCGISDATA_WORKSPACE\Metadata\TemplateDCGIS.shp.xml</srcused>
+			</procstep>
+			<procstep>
+				<procdesc>Metadata imported.</procdesc>
+				<srcused>C:\temp\BroadbandProject\Metadata_Template_Open_DCGIS.shp.xml</srcused>
+				<procdate>20100506</procdate>
+				<proctime>12134800</proctime>
+			</procstep>
+			<procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">G:\GIS\BroadbandProject\DC_Broadband_SPRING2010_METADATA</srcused><procdate Sync="TRUE">20100510</procdate><proctime Sync="TRUE">16433800</proctime></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">C:\Broadband Project\DC_Broadband_SPRING2010_METADATA</srcused><procdate Sync="TRUE">20100514</procdate><proctime Sync="TRUE">15255300</proctime></procstep><procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">C:\Metadata\DC_Broadband_FALL2010_METADATA.xml</srcused><procdate Sync="TRUE">20101001</procdate><proctime Sync="TRUE">17385600</proctime></procstep><procstep><procdesc Sync="TRUE">Dataset copied.</procdesc><srcused Sync="TRUE">\\OCTO-58N6T61\C$\Phase II\My Dropbox\OCTO Broadband\Fall2010\SBDD_TRANSFER.gdb</srcused><procdate Sync="TRUE">20101124</procdate><proctime Sync="TRUE">13395000</proctime></procstep><procstep><procdesc Sync="TRUE">Metadata imported.</procdesc><srcused Sync="TRUE">C:\Documents and Settings\brian.putz\My Documents\Dropbox\OCTO Broadband\Phase IV\Metadata\BB_Service_CensusBlock.xml</srcused><procdate Sync="TRUE">20110930</procdate><proctime Sync="TRUE">11135600</proctime></procstep></lineage>
+	</dataqual>
+	<spdoinfo>
+		<direct Sync="TRUE">Vector</direct>
+		<ptvctinf><esriterm Name="Block"><efeatyp Sync="TRUE">Simple</efeatyp><efeageom Sync="TRUE">4</efeageom><esritopo Sync="TRUE">FALSE</esritopo><efeacnt Sync="TRUE">0</efeacnt><spindex Sync="TRUE">FALSE</spindex><linrefer Sync="TRUE">FALSE</linrefer></esriterm></ptvctinf></spdoinfo>
+	<spref>
+		<horizsys>
+			<geodetic>
+				<horizdn Sync="TRUE">D_WGS_1984</horizdn>
+				<ellips Sync="TRUE">WGS_1984</ellips>
+				<semiaxis Sync="TRUE">6378137.000000</semiaxis>
+				<denflat Sync="TRUE">298.257224</denflat>
+			</geodetic>
+			<cordsysn><geogcsn Sync="TRUE">GCS_WGS_1984</geogcsn></cordsysn><geograph><geogunit Sync="TRUE">Decimal degrees</geogunit><latres Sync="TRUE">0.000000</latres><longres Sync="TRUE">0.000000</longres></geograph></horizsys>
+		<vertdef>
+			<altsys>
+				<altres Sync="TRUE">0.000100</altres>
+				<altenc Sync="TRUE">Explicit elevation coordinate included with horizontal coordinates</altenc>
+			</altsys>
+		</vertdef>
+	</spref>
+	<eainfo>
+		<detailed Name="Block">
+			<enttyp>
+				<enttypl Sync="TRUE">Block</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt><enttypc Sync="TRUE">0</enttypc></enttyp>
+			<attr>
+				<attrlabl>Shape</attrlabl>
+				<attrdef>Feature geometry</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Coordinates defining the features.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">Shape</attalias><attrtype Sync="TRUE">Geometry</attrtype><attwidth Sync="TRUE">0</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">PROVNAME</attrlabl><attalias Sync="TRUE">PROVNAME</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">200</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">DBANAME</attrlabl><attalias Sync="TRUE">DBANAME</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">200</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr>
+				<attrlabl>FRN</attrlabl>
+				<attrdef>Federal Registration Number</attrdef><attrdefs>United States Department of Commerce National Telecommunications and Informats Sync="TRUE">FRN</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">10</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<attr><attrlabl Sync="TRUE">TRANSTECH</attrlabl><attalias Sync="TRUE">TRANSTECH</attalias><attrtype Sync="TRUE">SmallInteger</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">4</atprecis><attscale Sync="TRUE">0</attscale></attr><attr><attrlabl Sync="TRUE">MAXADDOWN</attrlabl><attalias Sync="TRUE">MAXADDOWN</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</aptscale></attr><attr><attrlabl Sync="TRUE">MAXADUP</attrlabl><attalias Sync="TRUE">MAXADUP</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">cite the Nat</attr><attr><attrlabl Sync="TRUE">TYPICDOWN</attrlabl><attalias Sync="TRUE">TYPICDOWN</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale<</attr><attr><attrlabl Sync="TRUE">TYPICUP</attrlabl><attalias Sync="TRUE">TYPICUP</attalias><attrtype Sync="TRUE">String</attrtype><attwidth Sync="TRUE">2</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><attr>
+				<attrlabl>SHAPE_Area</attrlabl>
+				<attrdef>Area of feature in internal units squared.</attrdef>
+				<attrdefs>ESRI</attrdefs>
+				<attrdomv>
+					<udom>Positive real numbers that are automatically generated.</udom>
+				</attrdomv>
+				<attalias Sync="TRUE">SHAPE_Area</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth rce National Telecommdth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr>
+			<subtype><stname Sync="TRUE">Asymmetric xDSL</stname><stcode Sync="TRUE">10</stcode><stfield><stfldnm Sync="TRUE">DBANAME</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">N/A</stflddv></stfield><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddd><domname Sync="TRUE">AxDSL Down</domname><domdesc Sync="TRUE">Allowable Download Speeds fo AxDSL</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">AxDSL Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for AxDSL</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">AxDSL Down</domname><domdesc Sync="TRUE">Allowable Download Speeds fo AxDSL</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync=  RUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">AxDSL Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for AxDSL</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd><stflddv Sync="TRUE">ZZ</stflddv></stfield></subtype><subtype><stname Sync="TRUE">Symmetric xDSL</stname><stcode Sync="TRUE">20</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><m/domfldtp></stflddd></stfield><stfield>pe><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Synz="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Symetric xDSL Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for xDSL</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Symetric xDSL Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Symetric xDSL</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Symetric xDSL Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for xDSL</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Symetric xDSL Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Symetric xDSL</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Symetric xDSL Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Symetric xDSL</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><subtype><stname Sync="TRUE">Other Copper Wireline</stname><stcode Sync="TRUE">30</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><doOfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Other Copper Wireline Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Copper Wireline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Other Copper Wireline Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Copper  Wireline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Other Copper Wireline Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Copper Wireline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Other Copper Wireline Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Copper  Wireline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Other Copper Wireline Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Copper  Wireline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><attr><attrlabl Sync="TRUE">FID</attrlabl><attalias Sync="TRUE">FID</attalias><attrtype Sync="TRUE">OID</attrtype><attwidth Sync="TRUE">4</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TREE">0</attscale><attrdef Sync="TRUE">Internal feature number.</attrdef><attrdefs Sync="TRUE">ESRI</attrdefs><attrdomv><udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom></attrdomv></attr><subtype><stname Sync="TRUE">Cable Modem - Other</stname><stcode Sync="TRUE">41</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Cable Modem-Other Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Cable Modem - Other</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Cable Modem - Other Up</domname><domdesc Sync="TRUE">Allowable Upload Speed for Cable Modem_Other</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Cable Modem-Other Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Cable Modem - Other</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Cable Modem - Other Up</domname><domdesc Sync="TRUE">Allowable Upload Speed for Cable Modem_Other</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Cable Modem - Other Up</domname><domdesc Sync="TRUE">Allowable Upload Speed for Cable Modem_Other</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><subtype><stname Sync="TRUE">Optical Carrier/Fiber to the End User</stname><stcode Sync="TRUE">50</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠≠stflddv><stflddd><domname Sync="TRUE">Optical Carrier- Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Optical</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Optical Carrier - Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Optical</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Optical Carrier- Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Optical</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Optical Carrier - Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Optical</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Optical Carrier - Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Optical</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><subtype><stname Sync="TRUE">Satellite</stname><stcode Sync="TRUE">60</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><såflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Satellite Down</domname><domdesc Sync="TRUE">Alowable Download Speeds for Satellite</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</svfldnm><stflddd><domname Sync="TRUE">Satellite Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Satellite</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Satellite Down</domname><domdesc Sync="TRUE">Alowable Download Speeds for Satellite</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Satellite Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Satellite</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Satellite Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Satellite</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><subtype><stname Sync="TRUE">All Other</stname><stcode Sync="TRUE">0</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">999D</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddv Sync="TRUE">ZZ</stflddv><stflddd><domname Sync="TRUE">All_Speed_Tiers</domname><domdesc Sync="TRUE">All Allowable Speed Tier Codes</domdesc><domtype Svnc="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddv Sync="TRUE">ZZ</stflddv><stflddd><domname Sync="TRUE">All_Speed_Tiers</domname><domdesc Sync="TRUE">All Allowable Speed Tier Codes</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddv Sync="TRUE">ZZ</stflddv><stflddd><domname Sync="TRUE">All_Speed_Tiers</domname><domdesc Sync="TRUE">All Allowable Speed Tier Codes</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddv Sync="TRUE">ZZ</stflddv><stflddd><domname Sync="TRUE">All_Speed_Tiers</domname><domdesc Sync="TRUE">All Allowable Speed Tier Codes</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">EndUserCat</stfldnm><stflddv Sync="TRUE">5</stflddv></stfield></subtype><subtype><stname Sync="TRUE">Terrestrial Fixed Wireless - Unlicensed</stname><stcode Sync="TRUE">70</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Terrestrial  Fixed Wireless  Unlicensed Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Terrestial Fixed Wireless Unlicensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sinc="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Unlicensed Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Fixed Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Terrestrial  Fixed Wireless  Unlicensed Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Terrestial Fixed Wireless Unlicensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Unlicensed Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Fixed Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Unlicensed Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Fixed Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TgUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><subtype><stname Sync="TRUE">Terrestrial Mobile Wireless</stname><stcode Sync="TRUE">80</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtyp ˇ<mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Terrestrial Mobile Wireless Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Terrestrial Mobile Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Mobile Wireless Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Mobile Wireless</doPdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Mobile Wireless Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Terrestrial Mobile Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Mobile Wireless Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Mobile Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Mobile Wireless Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Mobile Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><subtype><stname Sync="TRUE">Electric Power Line</stname><stcode Sync="TRUE">90</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domnam Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Electric Power Line Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Electric Powerline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Electric Power Line Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Electric Powerline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Electric Power Line Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Electric Powerline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Electric Power Line Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Electric Powerline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Electric Power Line Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Electric Powerline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><subtype><stname Sync="TRUE">Cable Modem - DOCSIS 3.0</stname><stcode Sync="TRUE">40</stcode><stfield><stfldnm Sync="TRUE">FRG</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Cable Modem - DOCSIS 3.0 Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Cable Model - DOCSIS 3.0</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Cable Modem - DOCSIS 3.0 Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Cable Modem - DOCSIS</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Cable Modem - DOCSIS 3.0 Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Cable Model - DOCSIS 3.0</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Cable Modem - DOCSIS 3.0 Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Cable Modem - DOCSIS</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Cable Modem - DOCSIS 3.0 Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Cable Modem - DOCSIS</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><subtype><stname Sync="TRUE">Terrestrial Fixed Wireless - Licensed</stname><stcode Sync="TRUE">71</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Licensed Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Terrestrial Fixed Wireless Licensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Licensed Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Fixed Wireless-Licensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Licensed Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Terrestrial Fixed Wireless Licensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Licensed Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Fixed Wireless-Licensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Licensed Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Fixed Wireless-Licensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><attr><attrlabl Sync="TRUE">SHAPE_Leng</attrlabl><attalias Sync="TRUE">SHAPE_Leng</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><subtype><stname Sync="TRUE">Unknown/Did not Provide</stname><stcode Sync="TRUE">-9999</stcode><stfield><stfldnm Sync="TRUE">DBANAME</stfldnm><stflddv Sync="TRUE">N/A</stflddv></stfield><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfle Sync="TRUE">PrMAXADDOWN</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield></subtype></detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>District of Columbia Office of the Chief Technology Officer</cntorg>
+					<cntper>GIS Data Coordinator</cntper>
+				</cntorgp>
+				<cntaSdr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>441 4th St NW, Suite 930 South</address>
+					<city>Washington</city>
+					<state>
+					<postal>20001</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntemail>dcgis@dc.gov</cntemail>
+				<hours>8:30 AM to 5:00 PM, Monday to Friday</hours>
+				<cntvoice>202-727-5660</cntvoice></cntinfo>
+		</distrib>
+		<resdesc>Transmitted to NTIA via secure FTP.</resdesc>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<transize>0.040</transize>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<computer>
+							<networka>
+							</networka>
+						</computer>
+					</onlinopt>
+				</digtopt>
+			</digform>
+			<ordering>The data is not for distribution.</ordering>
+		</stdorder>
+		<custom>none</custom>
+	</distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20110930</metd>
+		<metrd>09/30/2011</metrd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>District of Columbia Office of the Chief Technology Officer</cntorg>
+					<cntper>GIS Data Coordinator</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>441 4th St NW, Suite 930 South</address>
+					<city>Washington</city>
+					<state>DC</state>
+					<postal>20001</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntemail>dcgis@dc.gov</cntemail>
+				<hours>8:30 AM to 5:00 PM, Monday to Friday</hours>
+				<cntvoice>202-727-5660</cntvoice></cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metac>none</metac>
+		<metuc>none</metuc>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<langmeta Sync="TRUE">en</langmeta></metainfo>
+	<Esri><ModDate>20111128</ModDate><ModTime>15215800</ModTime><CreaDate>20110930</CreaDate><CreaTime>11135600</CreaTime><SyncOnce>FALSE</SyncOnce><MetaID>{602F8813-45D4-40FC-88DA-0E103533D819}</MetaID><SyncDate>20111128</SyncDate><SyncTime>15215800</SyncTime><DataProperties><lineage><Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20111028" Time="133348">CalculateField CensusBlock_TYPICDOWN TYPICDOWN '0' PYTHON #</Process><Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20111028" Time="133351">CalculateField CensusBlock_TYPICUP TYPICUP '0' PYTHON #</Process><Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\DeleteField" Date="20111031" Time="162632">DeleteField C:/Users/NBMSource/Fall2011/DC/DC_SBDD_2011_10_01.gdb/NATL_Broadband_Map/BB_Service_CensusBlock SBDD_ID</Process><Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\AddField4 Date="20111031" Time="162638">AddField C:/Users/NBMSource/Fall2011/DC/DC_SBDD_2011_10_01.gdb/NATL_Broadband_Map/BB_Service_CensusBlock SBDD_ID TEXT # # 20 # NULLABLE NON_REQUIRED #</Process><Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tba\CalculateField" Date="20111031" Time="162645">CalculateField C:/Users/NBMSource/Fall2011/DC/DC_SBDD_2011_10_01.gdb/NATL_Broadband_Map/BB_Service_CensusBlock SBDD_ID '4-1-11-3-!OBJECTID!' PYTHON #</Process><Process ToolSource="C:\Program Files (x86)\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\Dissolve" Date="20111128" Time="152146">Dissolve BB_Service_CensusBlockDC C:/Users/michael.byrne/Processing.gdb\Block FRN;PROVNAME;DBANAME;TRANSTECH;MAXADDOWN;MAXADUP;TYPICDOWN;TYPICUP # MULTI_PART DISSOLVE_LINES</Process><Process ToolSource="C:\Program Files (x86)\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\RepairGeometry" Date="20111128" Time="152157">RepairGeometry C:/Users/michael.byrne/Processing.gdb\Block DELETE_NULL</Process><Process ToolSource="C:\Program Files (x86)\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management T ls.tbx\CopyFeatures" Date="20111128" Time="152159">CopyFeatures C:/Users/michael.byrne/Processing.gdb\Block C:\Users\michael.byrne\Export\Shape\Block\Block.shp # 0 0 0</Process></lineage><itemProps><itemName Sync="TRUE">Block</itemName><imsContentType Sync="TRUE">002</imsContentType><itemLocation><linkage Sync="TRUE">file://\\P028380\C$\Users\michael.byrne\Export\Shape\Block\Block.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></itemLocation><itemSize Sync="TRUE">0.000</itemSize></itemProps><coordRef><type Sync="TRUE">Geographic</type><geogcsn Sync="TRUE">GCS_WGS_1984</geogcsn><peXml Sync="TRUE">&lt;GeographicCoordinateSystem xsi:type='typens:GeographicCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.0'&gt;&lt;WKT&gt;GEOGCS[&amp;quot;GCS_WGS_1984&amp;quot;,DATUM[&amp;quot;D_WGS_1984&amp;quot;,SPHEROID[&amp;quot;WGS_1984&amp;quot;,63781;7.0,298.257223563]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433],AUTHORITY[&amp;quot;EPSG&amp;quot;,4326]]&lt;/WKT&gt;&lt;XOrigin&gt;-399.99999999999989&lt;/XOrigin&gt;&lt;YOrigin&gt;-399.99999999999989&lt;/YOrigin&gt;&lt;XYScale&gt;11258999068426.24&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;8.9831528411952133e-009&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;LeftLongitude&gt;-180&lt;/LeftLongitude&gt;&lt;WKID&gt;4326&lt;/WKID&gt;&lt;/GeographicCoordinateSystem&gt;</peXml></coordRef></DataProperties></Esri><mdDateSt Sync="TRUE">20111128</mdDateSt><distInfo><distributor><distorTran><onLineSrc><linkage Sync="TRUE">file://\\OCTOGIS-24S4XG1\C$\Documents and Settings\brian.putz\My Documents\Dropbox\OCTO Broadband\Phase IV\FinalDeliverable\DC_SBDD_TRANSFER_2011_10_01.gdb</linkage><protocol Sync="TRUE">Local Area Network</protocol><orDesc Sync="TRUE">002</orDesc></onLineSrc></distorTran><distorFormat><formatName Sync="TRUE">File Geodatabase Feature Class</formatName></distorFormat></distributor><distFormat><formatName Sync="TRUE">Shapefile</formatName></distFormat><distTranOps><transSize Sync="TRUE">0.000</transSize></distTranOps></distInfo><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows Server 2008 R2 Version 6.1 (Build 7600) ; ESRI ArcGIS 10.0.0.2414</envirDesc><dataLang><languageCode Sync="TRUE" value="eng" country="USA"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">Block</resTitle><presForm><PresFormCd value="005"></PresFormCd></presForm></idCitation><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">-77.119759</westBL><eastBL Sync="TRUE">-76.909393</eastBL><northBL Sync="TRUE">38.995548</northBL><southBL Sync="TRUE">38.807517</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-77.119759</westBL><eastBL Sync="TRUE">-76.909393</eastBL><northBL Sync="TRUE">38.995548</northBL><southBL Sync="TRUE">38.807517</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox><descKeys><thCsaName uuidref="723f6998-058e-11dc-8314-0800200c9a66"></thesaName><keyword Sync="TRUE">002</keyword></descKeys><spatRpType><SpatRepTypCd value="001"></SpatRepTypCd></spatRpType></dataIdInfo><mdLang><languageCode Sync="TRUE" value="eng"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE" code="4326">GCS_WGS_1984</identCode><idCodeSpace Sync="TRUE">EPSG</idCodeSpace><idVersion Sync="TRUE">7.4.1</idVersion></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="BB_Service_CensusBlock"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="002"></GeoObjTypCd><geoObjCnt Sync="TRUE">0</geoObjCnt></geoObjTyp><geoObjCnt Sync="TRUE">66906</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo></metadata>

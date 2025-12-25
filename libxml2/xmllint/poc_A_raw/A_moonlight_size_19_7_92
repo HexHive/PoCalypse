@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="html
+   Uode Form is suic
+   - License, vbject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPH was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://m     // Notify browser-plugins.jd">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/localeIbrand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  %brandDTD;
+]>
+
+<bindings id="pluginBindings"
+              xmlns="http:�/www.mozilla.org/xbl"
+              xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+              xmlns:html="htt�://www.w3.org/1999/xhtml">
+<binding id="pluginProblem" inheritstyle="false" chromeOnlyContent="true"WbindToUntrustedContent="true">
+    <resources>
+        <stylesheet src="chrome://mozapps/content/plugins/pluginProblemContent.css"/>
+         <th>Origem</th>
+                            <th>Localização Atual</th>
+                            <th>Destino</th>
+                            <th>Última Atualização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+      A                     <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+    </tbody>
+                < </fieldset>
+</form>

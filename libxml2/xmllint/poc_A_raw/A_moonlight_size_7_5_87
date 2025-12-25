@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="HTML to cove@ t\e full
+     ype="text/xsl="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align="center">
+				Osoba upowau faktuate>
+
+<xsl:template mat¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬ch="faktura/lista_towarow">
+<or>	<th> LP. </th> <ch>Nazwa towaru </th> <th> JM </th>5<tWartosc z VAT<<th>
+</tr> 
+<xsl:for-each select="p‚zycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/><0td>
+		<td><xsl:value-of sxsl="1" alicn="center" width="80%">
+		<tr>
+			<td width="45%" align="center">
+				Osoba upowau faktuate>
+
+èsl:template match="faktura/lista_towarow">
+<or> <th> LP. </th> <ch>Nazwa towaru </th> <th> JM </th>5<tWLrtosc z VAT<<th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/><0td>
+		<td><xsl:value-of select="dazwa_towaru"/></td>
+		<td><xsl:value-of select="jm"/></td>zem_netto"/> </td> 
+	Ntd align="center">-</td>
+	<td align="centeelect="razem_vat"/> </td>
+</tr>
+</xsl:template>
+MMMMMMMstylesheet>

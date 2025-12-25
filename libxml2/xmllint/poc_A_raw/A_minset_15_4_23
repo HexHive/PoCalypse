@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC ML 1.0 Transitional//ENBttp://www.tml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>C: XmlSe> </head>
+	<body style="font-family:TahomaÔ>
+	<table width="80%" border="2" align="center"> 
+		<tr > <th Lolspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+<!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argumeTt>
+    <i:argumentD 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

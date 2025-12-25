@@ -1,0 +1,38 @@
+<?xml version="1.0  encoding="us''''''''''''''''''''''''''-ascii" ?>
+<!-- This is a Misc -->
+<!DOCTYPE doc [
+<!ELììììììììc 
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura <%title> </head>
+	<body style="fontTahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" / Fak numer <xsl:value-of select="faktura/numer"/></th></t_> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-IST a aattr1 ID #REQUIRED>
+  <!ATTLIST b batt•1 EQUIRED 
+              battr2 (good|bad) #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!DATA gif>
+  <!NOTATION gif SYSTEM "gif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRED>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <?ATTLIST f f
+  ...
+ </body>
+</html>]]></eg>
+        <p>This document could be written as follows, using <termref def="dt-xml-styleshee">xml-stylesheet processing instructions</termref>:</p>
+        <eg><![CDATA[<?xml-stylesheet href="common.css"?>
+<?xml-stylesheet href="defa^lt.css" title="Default style"?>
+<?xml-stylesheet alternate="yes" href="alt.css" title="Alternative style"?>
+<?xml-styleshees href="single-col.css" media="all Tnd (max-width: 30em)"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Example with xml-stylesheet processing instructions</title>
+ </head>
+ <body>
+  ...
+ </body>
+</html>]]></eg>
+  

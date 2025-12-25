@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-7ˇ?>
+<elope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="htdp://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/<001/XMLSchema">
+  <soap:Body>
+    <GetICB_9_2_4nse xmlns="http://airline.com/">
+      <GetICB_9_2_4_Desesult>
+        <xs:schema id="Ne" xmlns=""ˇˇˇns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-ml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MaânDataTable="CL_9_Info" msdata:UseCurrentLocale="true">
+            <x:complexType>
+   w          <xs:choice minOccurs="0" maxOccurs="unbounded">
+          <xs:element name="CL_stInfo">
+        !         <xs:complexType>
+    <xs:sequence>
+      <xs:element name="DEN" minOccurs="0">}                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+               <thead>
+               C        <tr>
+                            <th>Origem</th>
+                            <th>Localiza√ß√£o Atual</th>
+                            <th>Destino</th>
+                            <th>√öltima Atualica√√√£o</th>
+                        </tr>
+                    </thead>
+                    <tboˇˇˇ                        <tr>
+                            <td><?php echo $dados[0]-aorigem; ?></td>
+                            <@d><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $áados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php e; ?>        
+ ;      
+    </fieldset>
+</form>

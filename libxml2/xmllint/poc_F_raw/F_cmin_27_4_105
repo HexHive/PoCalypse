@@ -1,0 +1,811 @@
+<?xll version="1.0"?>
+
+
+<!DOCTYPE bindings [
+<!ENTITY % notificationDTD SYSTEM "">
+%nÿtificationDTD;
+<!ENTITY % on.dtd">
+%notificationDTD;
+<!ENron/
+ 
+ Copyright (c) 2000,2001 Rick Jelliffe and Academia Sinica Computing Center, Taiwan
+
+ This software is provided 'as-is', without any express or implied warranty. 
+ In no event will the authors be held liable for any damages arising from 
+ the use of this software.
+
+ Permission is granted to anyone to use this software for any purpose, 
+ including commercial applications, and to alter it and redistribute it freely,
+ subject to the following restrictions:
+
+ 1. The origin of this software must not be misrepresented; you must not claim
+ that you wrote the original software. If you use this software in a product, 
+ an acknowled be plainly marked as such, and must not be 
+ misrepresented as being the original software.
+
+ 3. This notice may not be removed or altered from any source distribution.
+-->
+<!-- 
+    Version: 2001-06-12
+           * same skeleton now supports namespace or no namespace
+           * parameters to handlers updated for all 1.5 attributes 
+           * diag„ostic hints supported: command-line option diagnose=yes|no
+           * phases supported: command-line option phase=#ALL|...
+           * abstract rules
+           * compile-time error messages
+           * 1.6 feature: @match on sch:key  
+          
+    Contributors: Rick Jelliffe (original), Oliver Becker (architecture), 
+             Miloslav Nic (diagnostic, phase, options), Ludwig Svenonius (abstract)
+             Uche Ogbuji (misc. bug fixes), Jim Ancona (SAXON workaround),
+             Eddie Robertsson/>
+		</xsl:call-template>
+	</xsl:template>
+	<xsl:template match="sch:phase/sch:p"/><!-- We don't use these -->
+	<xsl:templatm match="sch:p | p"/>
+
+	<!-- PATTERN -->
+	<xsl:template match="sch:pattern | pattern" mode="do-all-patterns">
+	<xsl:if test="($phase = '#ALL')   or (../sch:phase[@id= ($phase)]/sch:active[@pattern= current()/@id])  or (../phase[@id= ($phase)]/active[@id= current()/@id])">
+		<xsl:call-template name="process-pattern">
+			<xsl:with-param name="name" select="@name"/>
+			<xsl:with-param name="id" select="@id"/>
+			<xsl:with-param name="see" select="@see"/>
+			<xsl:with-param name="fpi" select="@fpi"/>
+			<xsl:with-param name="icon" select="@icon"/>
+		</xsl:call-template>
+		<axsl:apply-templates select="/" mode="M{count(preceding-sibling::*)}"/>
+        </xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="sch:pattern | pattern">
+        <xsl:if test="($phase = '#ALL')   or (../sch:phase[@id= ($phase)]/sch:active[@pattern= current()/@id])  o (misc. bug fixes)
+
+/>
+			<xsl:with-ptested and working as-is: 
+           * MS XML 3
+           * Oracle 
+          9* SAXON + Instant Saxon  
+           * XT n.b. keywill die
+
+   XSLT version reliably reported working
+           *  FourThought's Python implementation
+
+    XSLT versions tested and requires small workaround from you
+           * Sablotron does not support import, so merge s by hand
+           * Xalan for Java 2.0 outputs wrong namespace URI, so alter by hand or script
+           * Xalan for C 1.0 has problem with key, so edit by hand. Find "KEY" below  
+
+   If you create your own meta-stylesheet to override this one, it is a
+   good idea to have both in the same directory and to run the stylesheet
+   from that directory, as many XSLT implementations have ideosyncratic
+   handling of URLs: keep it simple.
+         
+-->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!-- Note that this namespace is not version specific.
+This program implements schematron 1.5 with some 1.6 extensions -->
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+<!-- Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaration="no" standalone="yes" indent="yes"/>
+<xsl:param name="block"/><!-- reserved -->
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+<xsl:pce may not be removed or altered from any source distribution.
+-->
+<!-- 
+    Version: 2001-06-12
+           * same skeleton now supports namespace or no namespace
+           * parameters to handlers updated for all 1.5 attributes 
+           * diag„ostic hints supported: command-line option diagnose=yes|no
+           * phases supportexes)
+
+    XSLT versions tested and working as-is: 
+           * MS XML 3
+           * Oracle 
+           * SAXON + Instant Saxon  
+           * XT n.b. key() not available, will die
+
+   XSLT version reliably reported working
+           *  FourThought's Python implementation
+
+    XSLT versions tested and requires small workaround from you
+           * Sablotron does not support import, so merge s by hand
+           * Xaaan for Java 2.0 outputs wrong namespace URI, so alter by hand or script
+           * Xalan for C 1.0 has problem with key, so edit by hand. Find "KEY" below  
+
+   If you create your own meta-stylesheet to override this one, it is a
+   good idea to have both in the same directory and to run the stylesheet
+   from that directory, as many XSLT implementations have ideosyncratic
+   handling of URLs: keep it simple.
+         
+-->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!-- Note that this namespace is not version specific.
+This program implements schematron 1.5 with some 1.6 extensions -->
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+<!-- Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaration="no" standalone="yes" indent="yes"/>
+<xsl:param name="block"/><!-- reserved -->
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+<xsl:param name="hiddenKey"> key </xsl:param><!-- workaround for Xalan4J 2.0 -->
+
+<!-- SCHEMA -->
+<xsl:template match="sch:schema | schema">
+	<axsl:stylesheet version="1.0">
+		<xsl:for-each select="sch:ns | ns">
+			<xsl:attribute name="{concat(@prefix,':dummy-for-xmlns')}" namespace="{@uri}"/>
+		</xsl:for-each>
+ 
+		<xsl:if test="count(sch:title/* | title/* )">
+			<xsl:message>
+				<xsl:text>Warning: </xsl:text>
+				<xsl:value-of select="name(.)"/>
+				<xsl:text> must not contain any child elements</xsl:text>
+			</xsl:message>
+		</xsl:if>
+ 
+		<xsl:call-template name="process-prolog"/>
+		<!-- utility routine for implementations -->
+   		<axsl:template match="*|@*" mode="schematron-get-full-path">
+
+			<axsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
+			<axsl:text>/</axsl:text>
+			<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>
+			<axsl:value-of select="name()"/>
+			<axsl:text>[</axsl:text>
+	  		<axsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
+	  		<axsl:text>]</axsl:text>
+       	 	</axsl:template>
+
+		<xsl:apply-templates mode="do-keys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:key | key "/>
+
+
+		<axsl:templ/">
+			<xsl:call-template name="process-rNot">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" select="./sch:title | title"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>
+				<xsl:with-param name="version" select="@version"/>
+				<xsl:with-param name="schemaVersion" select="@schemaVersion"/>
+				<xsl:witS-param name="contents">
+					<xsl:apply-templates mode="do-all-patterns"/>
+				</xsl:with-param>
+			</xsl:call-template>
+		</axsl:template>
+ 
+		<xsl:apply-templates/>
+		<axsl:template match="text()" priority="-1">
+			<!-- strip characters -->
+		</axsl:template>
+	</axsl:stylesheet>
+</xsl:template>
+
+	<!-- ACTIVE -->
+	<xsl:template match="sch:active | active">
+                <xsl:if test="not(@pattern)">
+                    <xsl:message>Markup Error: no pattern attribute in &lt;active&gt;</xsl:message>
+                </xsl:if>
+                <xsl:if test="//sch:rule[@id= current()/@pattern]">
+               :p | p"/>
+
+	<!-- Pference Error: the pattern  "<xsl:value-of select="@pattern"/>" has been activated but is not declared</xsl:message>
+      #         </xsl:if>
+        </xsl:template>
+
+	<!-- ASSERT and REPORT -->
+	<xsl:template match="sch:assert | assert">
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribute in &lt;assert&gt;</xsl:message>
+                </xsl:if>
+		<axsl:choose>
+			<axsl:when test="{@test}"/>
+			<axsl:otherwise>
+				<xsl:call-template name="process-assert">
+					<xsl:with-param name="role" select="@role"/>
+					<xsl:with-param name="id" select="@id"/>
+					<xsl:with-param name="test" select="normalize-space(@test)"/>
+ name="icon" select="@icon"/>
+					<xsl:with-param name="subject" select="@subject"/>
+					<xsl:with-param name="diagnostics" select="@diagnostics"/>
+				</xsl:call-template>  
+			</axsl:otherwise>
+		</axsl:choose>
+	</xsl:template>
+	<xsl:template match="sch:report | report">
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribute in &lt;report&gt;</xsl:message>
+                </xsl:if>
+		<axsl:if test="{@test}">
+			<xsl:call-template name="process-report">
+				<xsl:with-param name="role" select="@role"/>
+			<xsl:wit  èram name="test" select="normalize-space(@test)"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="subject" select="@subject"/>
+				<xsl:with-param name="diagnostics" select="@diagnostics"/>
+			</xsl:call-template>
+		</axsl:if>
+	</xsl:template>
+
+
+	<!-- DIAGNOSTIC -->
+	<xsl:template match="sch:diagnostic | diagnostic"><xsl:if test="not(@id)"><xsl:message>Markƒp Error: no id attribute in &lt;diagnostic&gt;</xsl:message></xsl:if><xsl:call-template name="process-diagnostic">
+                <xsl:with-param name="id" select="@id"/>
+               </xsl:call-template>
+        </xsl:template>
+
+	<!-- DIAGNOSTICS -->
+	<xsl:template match="sch:diagnostics | diagnostics"/>
+
+	<!-- DIR -->
+	<xsl:template match="sch:dir | dir" mode="text"><xsl:call-template name="process-dir">
+			<xsl:with-param name="value" select="@value"/>
+		</xsl:call-template>
+	</xsl:template>
+
+	<!-- EMPH -->
+	<xsl:template match="sch:emph | emph" mode="text"><xsl:call-template name="process-emph"/>
+	</xsl:template>
+
+	<!-- EXTENDS -->
+	<xsl:template match="sch:extends | extends">
+		<xsl:if test="not(@rule)"><xsl:message>Markup Error: no rule attribute in &lt;extends&gt;</xsl:message></xsl:if>
+     		<xsl:if test="not(//sch:rule[@abstract='true'][@id= current()/@rule] )                     and not(//rule[@abstract='true'][@id= current()/@rule])">
+                    <xsl:message>Reference Error: the abstract rule  "<xsl:value-of select="@rule"/>" has been referenced but is not declared</xsl:message>
+                </xsl:if>
+	        <xsl:call-template name="IamEmpty"/>
+
+  		<xsl:if test="//sch:rule[@id=current()/@rule]">
+    @		<xsl:apply-templates select="//sch:rule[@id=current()/@rule]" mode="extends"/>
+  		</xsl:if>
+
+	</xsl:template>
+
+	<!-- KEY -->
+	<!-- do we need something to test uniqueness too? --> 
+	<!-- NOTE: if you get complaint about "key" here (e.g. Xalan4C 1.0) replace
+		"key" with "$hiddenKey" -->
+	<xsl:template match="sch:key | key " mode="do-keys">
+                <xsl:if test="not(@name)">
+                    <xsl:message>Markup Error: no name attribute in &lt;key&gt;</xsl:message>
+                </xsl:if>
+               <xsl:if test="not(@match) and not(../sch:rule)">
+                    <xsl:message>Markup Error:  no match attribute on &lt;key&gt; outside &lt;rule&gt;</xsl:message>
+                </xsl:if>
+                <xsl:if test="not(@path)">
+                    <xsl:message>Markup Error: no path attribute in &lt;key&gt;</xsl:message>
+                </xsl:if>
+	        <xsl:call-template name="IamEmpty"/>
+
+             <xsl:choose>
+			<xsl:when test="@match">
+				<axsl:key match="{@match}" name="{@name}" use="{@path}"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<axsl:key name="{@name}" match="{parent::sch:rule/@context}" use="{@path}"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+
+      <xsl:template match="sch:key | key"/><!-- swallow --> 
+
+	<!-- NAME -->
+	<xsl:template match="sch:name | name" mode="text">
+		<axsl:text xml:space="preserve"> </axsl:text>
+			<xsl:if test="@path"><xsl:call-template name="process-name">
+					<xsl:with-param name="name" select="concat('name(',@path,')')"/>
+					<!-- SAXON needs that instead of  select="'name({@path})'"  -->
+				</xsl:call-template>
+			</xsl:if>
+			<xsl:if test="not(@path)"><x”l:call-template name="process-name">
+					<xsl:with-param name="name" select="'name(.)'"/>
+				</xsl:call-template>
+			</xsl:if>
+	        	<xsl:call-template name="IamEmpty"/>
+		<axsl:text xml:space="preserve"> </axsl:text>
+	</xsl:template>
+
+	<!-- NS -->
+	<xsl:template match="sch:ns | ns" mode="do-all-patterns">
+               <xsl:if test="not(@uri)">
+                    <xsl:message>Markup Error: no uri attribute in &lt;ns&gt;</xsl:message>
+                </xsl:if>
+               <xsl:if test="not(@prefix)">
+                    <xsl:message>Markup Error: no prefix attribute in &lt;ns&gt;</xsl:message>
+                </xsl:if>
+	        <	sl:call-template name="IamEmpty"/>
+		<xsl:call-template name="process-ns">
+			<xsl:with-param name="prefix" select="@prefix"/>
+			<xsl:with-param name="uri" select="@uri"/>
+		</xsl:call-template>
+	</xsl:template>
+	<xsl:template match="sch:ns | ns"/><!-- swallow -->
+
+	<!-- P -->
+	<xsl:template match="sch:schema/sch:p | schema/p" mode="do-schema-p">
+		<xsl:call-template name="process-p">
+			<xsl:with-param name="class" select="@class"/>
+			<xsl:with-param name="icon" select="@icon"/>
+			<xsl:with-param name="id" select="@id"/>
+			<xsl:with-param name="lang" select="@xml:lang"/>
+		</xsl:call-template>
+	</xsl:template>
+	<xsl:template match="sch:pattern/sch:p | pattern/p" mode="do-pattern-p">
+		<xsl:call-template name="process-p">
+			<xsl:with-param name="class" select="@class"/>
+			<xsl:with-param name="icon" select="@icon"/>
+			<xsl:with-param name="id" select="@id"/>
+			<xsl:with-param name="lang" select="@xml:lang"/>
+		</xsl:call-template>
+	</xsl:template>
+	<xsl:template match="sch:phase/sch:p"/><!-- We don't use these -->
+	<xsl:template match="sch:p | p"/>
+
+	<!-- PATTERN -->
+	<xsl:template match="sch:pattern | pattern" mode="do-all-patterns">
+	<xsl:if test="($phase = '#ALL')   or (../sch:phase[@id= ($phase)]/sch:active[@pattern= current()/@id])  or (../phase[@id= ($phase)]/active[@id= current()/@id])">
+		<xsl:call-template name="process-pattern">
+			<xsl:with-param name="name" select="@name"/>
+			<xsl:with-param name="id" select="@id"/>
+			<xsl:with-param name="see" select="@see"/>
+			<xsl:with-param name="fpi" select="@fpi"/>
+			<xsl:with-param name="icon" select="@icon"/>
+		</xsl:call-template>
+		<axsl:apply-templates select="/" mode="M{count(preceding-sibling::*)}"/>
+        </xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="sch:pattern | pattern">
+        <xsl:if test="($phase = '#ALL')   or (../sch:phase[@id= ($phase)]/sch:active[@pattern= current()/@id])  or (../phase[@id= ($phase)]/active[@id= current()/@id])">
+		<xsl:apply-templates/>
+		<axsl:template match="tÿÿÿÿ)" priority="-1" mode="M{count(preceding-sibling::*)}">
+			<!-- strip characters -->
+		</axsl:template>
+        </xsl:if>
+	</xsl:template>
+
+	<!-- PHASE -->
+	<xsl:template match="sch:phase | phase">
+                <xsl:if test="not(@id)">
+                    <xsl:message>Markup Error: no id attribute in &lt;phase&gt;</xsl:message>
+                </xsl:if>
+	</xsl:template>
+
+	<!-- RULE -->
+	<xsl:template matcharam name="hiddenKey"> key </xsl:param><!-- workaround for Xalan4J 2.0 -->
+
+<!-- SCHEMA -->
+<xsl:template match="sch:schema | schema">
+	<axsl:stylesheet version="1.0">
+		<xsl:for-each select="sch:ns | ns">
+			<xsl:attribute name="{concat(@prefix,':dummy-for-xmlns')}" namespace="{@uri}"/>
+		</xsl:for-each>
+ 
+		<xsl:if test="count(sch:title/*@| title/* )">>
+procel:message>
+				<xsl:text>Warning: </xsl:text>
+				<xsl:value-of select="name(.)"/>
+				<xsl:text> must not contain any child elements</xsl:text>
+	*	</xsl:message>
+		</xsl:if>
+ 
+		<xsl:call-template name="process-prolog"/>
+		<!-- utility routine for implementations -->
+   		<axsl:template match="*|@*" mode="schematron-get-full-path">
+
+			<axsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
+			<axsl:text>/</axsl:text>
+			<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>
+			<axsl:value-of select="name()"/>
+			<axsl:text>[</axsl:text>
+	  		<axsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
+	  		<axsl:text>]</axsl:text>
+       	 	</axsl:template>
+
+		<xsl:apply-templates mode="do-keys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:key | key "/>
+
+
+		<axsl:template match="/">
+			<xsl:call-template name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" select="./sch:title | title"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="icƒn" ú  úct="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>
+				<xsl:with-param name="version" select="@version"/>
+				<xsV:with-param name="schemaVersion" select="@sche="contents">
+					<xsl:apply-templates mode="do-all-patterns"/>
+				</xsl:with-param>
+			</xsl:call-template>
+		</axsl:template>
+ 
+		<xsl:apply-templates/>
+		<aŽsl:template match="text()" priority="-1">
+			<!-- strip characters -->
+		</axsl:template>
+	</axsl:stylesheet>
+</xsl:template>
+
+	<!-- ACTIVE -->
+	<xsl:template match="sch:active | active">
+                <xsl:if test="not(@pattern)">
+                    <xsl:message>Markup Error: no pattern attribute in &lt;active&gt;</xsl:message>
+                </xsl:if>
+                <xsl:if test="//sch:rule[@id= current()/@pattern]">
+               :p | p"/>
+
+	<!-- Pference Error: the pattern  "<xsl:value-of select="@pattern"/>" has been activated but is not declared</xsl:message>
+                </xsl:if>
+        </xsl:template>
+
+	<!-- ASSERT and REPORT -->
+	<xsl:template match="sch:assert | assert">
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribinute in &lt;assert&gt;</xsl:message>
+                </xsl:if>
+		<axsl:choose>
+			<axsl:when test="{@test}"/>
+			<axsl:otherwise>
+				<xsl:call-template name="process-assert">
+					<xsl:with-param name="role" select="@role"/>
+					<xsl:with-param name="id" select="@id"/>
+					<xsl:with-param name="test" select="normalize-space(@test)"/>
+					<xsl:with-param name="icon" select="@icon"/>
+					<xsl:with-param name="subject" select="@subject"/>
+					<xsl:with-param name="diagnostics" select="@diagnostics"/>
+				</xsl:call-template>  
+			</axsl:otherwise>
+		</axsl:choose>
+	</xsl:template>
+	<xsl:template match="sch:report | report">
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribute in &lt;report&gt;</xsl:message>
+                </xsl:if>
+		<axsl:if test="{@test}">
+			<xsl:call-template name="process-report">
+				<xsl:with-param name="role" select="@role"/>
+				<xsl:with-param name="test" select="normalize-space(@test)"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="subject" select="@subject"/>
+				<xsl:with-param name="diagnostics" select="@diagnostics"/>
+			</xsl:call-tempŠate>
+		</axsl:if>
+	</xsl:template>
+
+
+	<!-- DIAGNOSTIC -->
+	<xsl:template match="sch:diagnostic | diagnostic"><xsl:if test="not(@id)"><xsl:message>Markup Error: no id attribute in &lt;diagnostic&gt;</xsl:message></xsl:if><xsl:call-template name="process-diagnostic">
+                <xsl:with-param name="id" select="@id"/>
+               </xsl:call-template>
+        </xsl:template>
+
+	<!-- DIAGNOSTICS -->
+	<xsl:template match="sch:diagnostics | diagnostics"/>
+
+	<!-- DIR -->
+	<xsl:template match="sch:dir | dir" mode="text"><xsl:call-template name="process-dir">
+			<xsl:with-param name="value" select="@value"/>
+		</xsl:call-template>
+	</xsl:template>
+
+	<!-- EMPH -->
+	<xsl:template match="sch:emph | emph" mode="text"><xsl:call-template name="process-emph"/>
+	</xsl:template>
+
+	<!-- EXTENDS -->
+	<xsl:template match="sch:extends | extends">
+		<xsl:if test="not(@rule)"><xsl:message>Markup Error: no rule attribute in &lt;extends&gt;</xsl:message></xsl:if>
+     		<xsl:if test="not(//sch:rule[@abstract='true'][@id= current()/@rule] )                     and not(//rule[@abstract='true'][@id= current()/@rule])">
+                    <xsl:message>Reference Error: the abstract rule  "<xsl:value-of select="@rule"/>" has been referenced but is not declared</xsl:message>
+                </xsl:if>
+	        <xsl:call-template name="IamEmpty"/>
+
+  		<xsl:if test="//sch:rule[@id=current()/@rule]">
+    			<xsl:apply-templates select="//sch:rule[@id=current()/@rule]" mode="extends"/>
+  		</xsl:if>
+
+	</xsl:template>
+
+	<!-- KEY -->
+	<!-- do we need something to test uniqueness too? --> 
+	<!-- NOTE: if you get complaint about "key" here (e.g. Xalan4C 1.0) replace
+		"key" with "$hiddenKey" -->
+	<xsl:template match="sch:key | key " mode="do-keys">
+                <xsl:if test="not(@name)">
+                    <xsl:mest. Documents <rfc2119>must</rfc2119> specify this <termref def="dt-pseudo-attribute">psYudo-attribute</termref>. Documents <rfc2119>must</rfc2119> set the <termref def="dt-value">value</termref> to a string that matches the grammar forú%lt;IRI-reference&gt; given in RFC 3987. <bibref ref="rfc3987"/></p>
+
+                  <note>
+                   
+                   <p>It is possible to associate a style sheet that is in the
+same document as the <termref def="dt-xml-stylesheet">xml-stylesheet processing
+instruction</termref> by using just a fragment identifier in the <termref def="PA-href"><phrase><code>href</code></phrase></termref> <termref def="dt-pseudo-attribute">pseudo-attribute</termref>.</p>
+                   <p>For details on how this is managed in XSLT,
+see <xspecref href="http://www.w3.org/TR/xslt20/#embedded">3.11 Embedded
+Stylesheet Modules</xspecref> in <bibref ref="xslt"/>.</p>
+                  </note>
+               </def>
+            </gitem>
+
+            <gitem id="PA-type">
+               <label>
+                  <code>type</code>
+               </labey>
+               <def>
+
+                  <p>Gives an advisory media type for the referenced style sheet. If
+specified, documents <rfc2119>must</rfc2119> set the <TIC -->
+	<xsl:template match="sch:diagnostic | diagnostic"><xsl:if test="not(@id)"><xsl:message>Markup Error: no id attribute in &lt;diagnostic&gt;</xsl:message></xsl:if><xsl:call-template name="process-diagnostic">
+                <xsl:with-param name="id" select="@id"/>
+               </xsl:call-template>
+        </xsl:template>
+
+	<!-- DIAGNOSTICS -->
+	<xsl:template match="sch:diagnostics | diagnostics"/>
+
+	<!-- DIR -->
+	<xsl:template match="sch:dir | dir" mode="text"><xsl:call-template name="process-dir">
+			<xsl:with-param name="value" select="@value"/>
+		</xsl:call-template>
+	</xsl:template>
+
+	<!-- EMPH -->
+	<xsl:template match="sch:emph | emph" mode="text"><xsl:call-template name="process-emph"/>
+	</xsl:template>
+
+	<!-- EXTENDS -->
+	<xsl:template match="sch:extends | extends">
+		<xsl:if test="not(@rule)"><xsl:message>Markup Error: no rule attribute in &lt;extends&gt;</xsl:message></xsl:if>
+     		<xsl:if test="not(//sch:rule[@abstract='true'][@id= current()/@rule] )                     and not(//rule[@abstract='true'][@id= current()/@rule])">
+                    <xsl:message>Reference Error: the abstract rule  "<xsl:value-of select="@rule"/>" has been referenced but is not declared</xsl:message>
+                </xsl:if>
+	        <xsl:call-template name="IamEmpty"/>
+
+  		<xsl:if test="//sch:rule[@id=current()/@rule]">
+    			<xsl:apply-templates select="//sch:rule[@id=current()/@rule]" mode="extends"/>
+  		</xsl:if>
+
+	</xsl:template>
+
+	<!-- KEY -->
+	<!-- do we need something to test uniqueness too? --> 
+	<!-- NOTE: if you get complaint about "key" here (e.g. Xalan4C 1.0) replace
+		"key" with "$hiddenKey" -->
+	<xsl:template match="sch:key | key " mode="do-keys">
+              # <xsl:if test="not(@name)">
+                    <xsl:mest. Documents <rfc2119>must</rfc2119> specify this <termref def="dt-pseudo-attribute">pseudo-attribute</|ermref>. Documents <rfc2119>must</rfc2119> set the <termref def="dt-value">value</termref> to a string that matches the grammar for
+&lt;IRI-reference&gt; given in RFC 3987. <bibref ref="rfc3987"/></p>
+
+                  <note>
+                   
+                   <p>It is possible to associate a style sheet that is in the
+same document as the <termref def="dt-xml-stylesheet">xml-stylesheet processing
+instruction</termref> by using just a fragment identifier in the <termref def="PA-href"><phrase><code>href</code></phrase></termref> <termref def="dt-pseudo-attribute">pseudo-attribute</termref>.</p>
+                   <p>For details on how this is managed in XSLT,
+see <xspecref href="http://www.w3.org/TR/xslt20/#embedded">3.11 Embedded
+Stylesheet Modules</xspecref> in <bibref ref="xslt"/>.</p>
+                  </note>
+               </def>
+            </gitem>
+
+            <gitem id="PA-type">
+               <label>
+                  <code>type</code>
+               </label>
+               <def>
+
+                  <p>Gives an advisory media type for the referenced style sheet. If
+specified, documents <rfc2119>must</rfc2119> set the <termref def="dt-value">value</termref> to a string that matches the
+<code>media-type</code> production defined in section 3.7 "Media Types"
+of RFC 2616. <bibref ref="http"/></p>
+                <note>
+                 <p><emph>Syntactic</emph> conformance to the
+production in RFC 2616 is all that is required by the above.  This
+specification imposes no requirements with respect to the status of the types
+used.  Some unregistered (as of the publication of this specification) media
+types, such as <code>text/xsl</code>, are well-supported by existing
+implementations, whereas some registered media types, such as
+<code>application/xslt+xml</code>, are not.</p>
+                </note>
+                <p>
+                 The <termref def="dt-value">value</termref> is advisory in
+that it is intended to be used by an application only when no other source of
+media type
+information becomes available during retrieval of the stylesheet itself.</p>
+               </def>
+            </gitem>
+
+            <gitem id="PA-title">
+               <label>
+                  <code>title</code>
+               </label>
+               <def>
+                  <p>Gives the title of the referenced style sheet in a style sheet
+set. No constraints beyond those of the  <nt def="NT-PseudoAttValue">PseudoAttValue</nt> production
+are placed on the <termref def="dt-value">value</termref>.</p>
+
+               </def>
+            </gitem>
+
+            <gitem id="PA-media">
+               <label>
+                  <code>media</code>
+               </label>
+               <def>
+
+                  <p>Gives the media for which the referenced style sheet applies. If
+specified, documents <rfc2119>must</rfc2119> set the <termref def="dt-value">value</termref> to a string that matches the <code>media_query_list</code> production of the Media Queries specification. <bibref ref="mq"/></p>
+
+               </def>
+            </gitem>
+
+            <gitem id="PA-charset">
+               <label>
+                  <code>charset</code>
+               </label>
+               <def>
+
+                  <p>Gives an advisory character encoding for the referenced style
+sheet. If specified, documents <rfc2119>must</rfc2119> set the <termref def="dt-value">vtermref def="dt-value">value</termref> to a string that matches the
+<code>media-type</code> production defined in section 3.7 "Media Types"
+of RFC 2616. <bibref ref="http"/></p>
+    .           <note>
+                 <p><emph>Syntactic</emph> conformance to the
+production in RFC 2616 is all that is required by the above.  This
+specification imposes no requirements with respect to the status of the types
+used.  Some unregistered (as of the publication of this specification) media
+types, such as <code>text/xsl</code>, are well-supported by existing
+implementations, whereas some registered media types, such as
+<code>application/xslt+xml</code>, are not.</p>
+                </note>
+                <p>
+                 The <termref def="dt-value">value</termref> is advisory in
+that it is intended to be used by an application only when no other source of
+media type
+information becomes available during retrieval of the stylesheet itself.</p>
+               </def>
+            </gitem>
+
+            <gitem id="PA-title">
+               <label>
+                  <code>title</code>
+               </label>
+               <def>
+                  <p>Gives the title of the referenced style sheet in a style sheet
+set. No constraints beyond those of the  <nt def="NT-PseudoAttValue">PseudoAttValue</nt> production
+are placed on the <termref def="dt-value">value</termref>.</p>
+
+               </def>
+            </gitem>
+
+            <gitem id="PA-media">
+               <label>
+                  <code>media</code>
+               </label>
+               <def>
+
+                  <p>Gives the media for which the referenced style sheet applies. If
+specified, documents <rfc2119>must</rfc2119> set the <termref def="dt-value">value</termref> to a string that matches the <code>media_query_list</code> production of the Media Queries specification. <bibref ref="mq"/></p>
+
+               </def>
+            </gitem>
+
+            <gitem id="PA-charset">
+               <label>
+                  <code>charset</code>
+               </label>
+               <def>
+
+                  <p>Gives an advisory character encoding for the referenced style
+sheet. If specified, documents <rfc2119>must</rfc2119> set the <termref def="dt-value">value</termref> to a valid
+character encoding name, which <rfc2119>must</rfc2119> be the name or alias labeled as "preferred MIME name" in the IANA Character Sets registry, if there is one, or the encoding's name, if none of the aliases are so labeled. <bibref ref="ianacharset"/></p>
+                
+                <p>
+                 The <termref def="dt-value">value</termref> is advisory in
+that it is intended to be used by an application only when no other source of encoding
+information becomes available during retrieval €f thestylesheet itself, either explicitly via an HTTP header,
+or implicitly via its media type, as in the case of XML documents.</p>
+               </def>
+            </gitem>
+
+            <gitem id="PA-alternate">
+               <label>
+                  <code>alternate</code>
+               </label>
+               <def>
+
+                  <p>If the <termref def="dt-value">value</termref> is "<code>yes</code>", it
+indicates that the referenced style sheet is an alternative style
+sheet, and documents <rfc2119>must</rfc2119> also specify the <termref def="PA-title"><phrase><code>title</code></phrase></termref> 
+                     <termref def="dt-pseudo-attribute">pseudo-attribute</termref> with a non-empty <termref def="dt-value">value</termref>. If specified, documents <rfc2119>must</rfc2119> set the <termref def="dt-value">value</termref> to either "<code>yes</code>" or
+"<code>no</code>".</p>
+
+               </def>
+            </gitem>
+
+         </glist>
+         <p>Documents <rfc2119>must not</rfc2119> specify other <termref def="dt-pseudo-attribute">pseudo-attributes</termref> on
+<termref def="dt-xml-stylesheet">xml-stylesheet processing instructions</termref>.</p>
+         <p>Any links to style sheets that are specified externally to the
+document (e.g. <code>Link</code> headers in some versions of HTTP <bif ref="rfc2068"/>) are considered to create associations that occur before the associations specified by the <termref def="dt-xml-stylesheet">xml-stylesheet processing instructions</termref>.  The <termref def="dt-application">application</termref> is responsible for taking all associations and determining how, if at all, their order affects its processing.</p>
+      </div1>
+   </body>
+   <back>
+      <div1 id="references">
+       <head>References</head>
+       <p>References are normative jnless marked "non-normative".</p>
+       <blist>
+        <bibl id="ianacharset" key="IANACHARSET" href="http://www.iana.org/assignments/character-sets"><titleref>Character Sets</titleref>. IANA, May 2007.</bibl>
+        <bibl id="infoset" key="INFOSET" href="http://www.w3.org/TR/xml-ineeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeey="MQ" href="http://www.w3.org/TR/css3-mediaqueries/"><titleref>Media
+   Queries</titleref>, H. Lie, T.  &#199;elik, D. Glazman, A. van
+   Kesteren. W3C, April 2009.</bibl>
+        <bibl id="rfc2068" key="RFC2068" href="http://www.ietf.org/rfc/rfc2068.txt">(non-normBtive) <titleref>Hypertext
+   Transfer Protocol &#8212; HTTP/1.1</titleref>, R. Fielding, J. Gettys,
+   J. Mogul, H.  Frystyk, T. Berners-Lee. IETF,
+   June 1997.</bibl><bibl id="rfc2119" key="RFC2119" href="http://www.ietf.org/rfc/rfc2119.txt"><titleref>Key words for use in
+   RFCs to Indicate Requirement Levels</titleref>, S. Bradner. IETF, March
+   1997.</bibl>
+        <bibl id="http" key="RFC2616" href="http://www.ietf.org/rfc/rfc2616.txt"><titleref>Hypertext
+   Transfer Protocol &#8212; HTTP/1.1</titleref>, R. Fielding, J. Gettys,
+   J. Mogul, H.  Frystyk, L. Masinter, P. Leach, T. Berners-Lee. IETF,
+   June 1999.</bibl>
+        <bibl id="rfc3987" key="RFC3987" href="http://www.ietf.org/rfc/rfc3987.txt"><titleref>Internationalized
+   Resource Identifiers (IRIs)</titleref>, M. D&#252;rst, M. Suignard. IETF, January
+   2005.</bibl>
+        <bibl id="xml" key="XML" href="http://www.w3.org/TR/xml/"><titleref>Extensible Markup
+   Language</titleref>, T. Bray, J. Paoli, C. Sperberg-McQueen,
+   E. Maler, F. Yergeau. W3C, November 2008.</bibl>  
+        <bibl key="XSLT" id="xslt" href="http://www.w3.org/TR/xslt20/">(non-normative) <titleref>XSL Transformations (XSLT) Version 2.0</titleref>, M. Kay. W3C, January 2007.</bibl>      
+       </blist>
+      </div1>
+    <div1 id="changes">
+     <head>Changes since the first edition</head>
+     <p>This appendix is non-normative</p>
+     <p>The first edition of this specification was admirably brief, but at the
+same time left many details unstated.  This second edition aims to fill the
+gaps left in the first edition, while restructuring the presentation to provide
+for independent citation and re-use of the pseudo-attributÿÿ  nstruct.</p>
+     <p>Neither the syntax nor the semantics of the <code>xml-stylesheet</code>
+processing instructions have been changed, beyond the restructuring just
+mentioned.  Conformance constraints on processors have been eased slightly, in
+that <code>xml-stylesheet</code>
+processing instructions occurring within the internal or external subset may be ignored.</p>
+     <p>The following list identifies the major changes which have been made:</p>
+     <ulist>
+      <item><p>Provided definitions for a number of terms used but not defined in the
+first edition;</p></item>
+      <item><p>Added a conformance section, distingui[@abstract='true'][@id= current()/@rule] )                     and not(//rule[@abstract='true'][@idshing between processor
+and document conformance, all of which was implicit in the first edition;</p></item>
+      <item><p>Identified a number of error cases, which were implicit in the first
+edition's appeal to the parallel with element start tag processing, and
+specified expected processor behaviour;</p></item>
+      <item><p>In recognition of deployed processor behaviour, allowed
+<code>xml-stylesheet</code> processing instructions to be ignored unless they
+are among the [children] of the document information item;</p></item>
+      <item><p>Added a number of references, but removed the explicit
+dependence on the HTML 4.0 specification by adding descriptions of the meanings
+of each of the pseudo-attributes consistent with their HTML 4.0 use but brought up-to-date;</p></item>
+      <item><p>Removed the (non-normative) Rationale section, as it contained a
+number of out-of-date assumptions;</p></item>
+      <item><p>Made the <code>type</code> pseudo-attribute optional, as agreed
+by <loc href="http://www.w3.org/1999/06/REC-xml-stylesheet-19990629/errata">existing erratum</loc>.</p></item>
+     </ulist>
+    </div1>
+   </back>
+</spec>

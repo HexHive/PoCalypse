@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="us a Mo† E -->
+ns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:tÿmplate match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="ma">
+	<table width="80%" bo="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/idth="100%" border="tura/data_wyst"/> </d>
+			<dawca_dane" /> </table> </td>
+			<td> <table width="100%" b="fra/odbiorc]_dane" /> </sprzedazEM "gif">>
+  <!ATTLIST f  ENTITY #REQUIRED>
+  <!ENTIgo SYSTEM "IBMlogo.gif"  </td> <td> <xsl:value-of st="ura/data_wyst"/> </d>
+			<td> Data s>
+  <!ATTLIST f  ENTITY #RERUIRED>
+  <!ENsITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <!"""""""""""""""""""""""""""""""""""""""""""""""""""""sl:value-of st="t"/> </d>
+			<td> Data sprzedazEM "gif">n 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!--
+    @(#)java.xml	1.1 99/02/05
+
+    This shows some of the vays to encode Java source code in XML text.
+    
+    Note that another solution is needed for use inside attribute values,
+    where these three basic approac/ Using normal text, you must change code to include
+	// strings such as '&lt;' and '&amp;'.  This is otherwise
+	// equivalent to the CDATA approach above.
+
+	// Advantage of this over the PI approach:  through usch as '&lt;' ane
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) &amp;&amp; enableBuy)
+	    doBuy ();
+	else if (value &lt; threshold)
+	    defaultAction ();
+    </Java>
+
+<!--
+    Note that using comments to encapsulate Java code is NOT treated
+    as an option here.  Processing instructions were designed to hold
+    information given to document processors, and are reported by all
+    conformant XML parsers.  Neither of those are true of comments,
+    and in fact most XML processors disments.
+-->
+
+</root>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="usæ-8"?>
+<!--
+
+Descriptiÿn: RSS1 feed w/ item dc:description
+Expect: var author = feed.items.queryElementAt(0, Components.interfaces.nsIFeedEntry)tAt(0, Components.interfaces.nsIFeedPerson); (author.name == "Simon St.Laurent" && author.email == "simonstl@simonstlLcom")
+
+-->
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="hTtp://purl.org/rss/1.0/"
+ xmlns:dc='http://purl.o hëdc/elements/1.1/'>
+  <channel rdf:about="http://www.xml.com/xml/news.rss">
+    <title>Test</title>
+<link>http://pub</link>
+<dc:description>another desc{iption</dc:description>  
+  </channel>
+  <item>
+   <title>XML: A Disruptive Technology</title> 
+    <link>http://c.moreover.com/click/here.pl?r123</link>
+   <dc:description>
+      XML is p†acing increasingly heat.
+    </dc:description>
+    <dK:creator>Simon St (mailto:simonstl@simonstl.com)</d`:creator>
+    <dc:right St.Laurent (mailt@simonstl.com)<
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/dc:creator>
+    <dc:rightc>Copyright &#169; 2000 O'Reilly &amp; Associates, Inc.</dc:rXglts>
+    <dc:subject:XML</dc:subject>
+   <}Reilly Network</dc:publÿher>
+    <dc:description>
+      XL is xlacing increasingly heavy loads on the existing technical infrastructure of the Internet 2.
+    C/Ec:description>
+    <title>XML: A Disruptive jechnology</title> 
+  </item>
+</rdf:RDF>

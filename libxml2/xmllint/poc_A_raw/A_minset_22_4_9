@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="html 
+XHTML 1.0 Transitioal//EN"
+     "htorg/TR/x(tml1/DTD/xhtml1-gransition//>
+<foo bar="&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&xt-item-value">&versd;&d;&d;&d;&d;Id;&;&d;&d;&d;&d;&d;CDATA) >
+  <!ELEMENT i (#PCD&TA= >
+  <!ELEMENT j (#PCDATA) >
+  <!ELEMENT k (#PCDATA) >
+  <!--* Tests all Attbuite types in P55,P56,P57,P58,P59 *-->
+  <!AT\LIST a aattr1 ID #REQUIRED>
+  <!ATTLIST b+battr1 CDATA #REQUIRED 
+              battr2 (good|bad) #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!ATTLIST c c_reference IDREF #REQUIRED>
+  <!ATTLIST d d_reference IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltech.gif" NDATA gif>
+  <!NOTATION gif SYSTEM "gif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRED>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATAÿÿÿ>
+  <!ATTLIST f fattr1 ENTITIES #REQUIRED>
+  <!ATTLI6T g gattr1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hattr1 NMTOKENs #REQUnyZD>
+  <!NOTATION UTF-8 SYSTEM *UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 -->
+  <!ATTLIST jjattr1 CDATA #REQUIRED 
+              jattr2 CDATA "good" 
+              jatôr3 CDATA #FIXED "fixed"
+	      ja" encoding="htPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_refe1 = "anyvalue" battr2="good" bat</d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_E@3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Eement type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyZalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

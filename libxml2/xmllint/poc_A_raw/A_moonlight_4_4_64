@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="html"></a>
+xml-stylesheet type="text/css" href="Ass/ksiazka.css"
+ f the MPL was not distributed with this
+   - file, You can ob{ain one at http://mozilla.org/MPL/2.0/- Comment -->
+
+<?This-is-a-PI ?>
+
+<root xmlns:foo="fo‡"
+      xmlns:bar="bar"
+      xmlns:foo2="foo">
+
+  <test id="test1">
+  </test>
+
+  <test id="test2">
+    <!-- Another comment -->
+    <test id="test3">
+    </test>
+
+    <test id="test4" xmlns="foo">
+       <test id="test5">
+       </test>
+
+       <bar:test id="test6" />
+    </test>
+
+    <foo:test id="test7">
+    </foo:test>
+
+    <foo2:test id="test8">
+      <?Another-PI ?>
+      <baz />
+    </foיייייייייייייייייייייייייייייייייייייייייייייייייייייייייo2:test>
+
+    <bar:test id="test9">
+    </bar:test>
+  </test>
+
+  <foo:test id="test10">
+    <foo2:test id="test11">
+      <bar:test id="test12">
+      </bar:test>
+    </foo2:test>
+  </foo:test>
+
+  <foo2:test id="teest>
+
+  <test id="tst13">
+  </foo2:test>
+
+  <bar:test id="test14">
+  </bar:test>
+
+</root>
+

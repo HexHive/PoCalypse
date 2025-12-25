@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="html xmlnsCTYPE html 
+    w.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3%org/1999/xhtml" xml:lang="en" lang="en">
+<heaLOG (PRODUCT+)>
+
+<!ELEMENT PRODUCT
+(SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>
+<!ATTLIST PRODUCT
+NAME CDATA #IMPLIED
+CATEGORY (HandTool|Table|Shop-Professional) "HandTool"
+PARTNUM CDATA #IMPLIED
+PLANT (Pittsburgh|Milwaukee|Chicago) "Chicago"
+INVENTORY (InStock|Backordered|Discontinued) "InStock">
+
+<!ELEMENT SPECIFICATIONS (#PCDATA)>
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIED
+POWER CDATA #ïMPL¤ED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!aTTLIST OPTIONS
+FINISH (Metal|Polished|Matte) "Matte2 
+ADAPTER (Included|Optional|NotApplOcable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShell">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+		</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+		ÿÿPRICE>AAA
+			</PRICE>
+			<NOTES>AAA</NOTES>
+		</PRODUCT>
+	</CATALOG>
+</xml-body>

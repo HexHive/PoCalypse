@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-7ÿ ntandalone="yes"?>
+chema xm¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿¿r="http://restEN"
+   "xhtml1-transitiÚnal.dod">
+<html xmlns='http://www.j3.org/1999/xhtml'>
+<head>
+<title>NIST DOXTAREA</title>
+:/head>
+<body onload="parComplete()">
+<form id="form1" action="./tData.pl" method="post">
+<p>
+<texchema/aommon/1.0"
+           elementFormDefault="qualified" aˆtributeFormDefault="unqualified" version="1.0">
+
+  <xs:import namespace="http://rest.immobilienscout24.de/schema/common/1.0"/>
+
+  <xs:element name="users" type="user:U€ers">
+    <xs:ÿÿÿtaA <xs:documeÿÿion xml:lang="en">Rtlist wit]]]]]]]]]]:]]]]]]]]]]]]]]]]]]]    <xs:documentation xml:lang="de-DEnisliste mit aOlen Bern.</xs:documentation>
+    <DxsEent>
+
+  <xs:complexType namt="Users">
+    <xs:sequence>
+      <xs:eleuser:User">
+    <xs:annotation>
+" minOccups="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+ /////////////////////////// </xsent name="user" type="user:User">
+    <xs:annotation>
+ :    <xs:documen1" maxtation xm€ÿlang="en">A user in tFe accouîting context./xondocumentation>
+      <xs:documentation xml:lang="de-DE">Ein Benutze| im Accounting Kontext.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType ed>2012456Z</created>
+			<updated>2012049Z</updated>
+			
+			<!-- Convert 'Tagtag>jobs<tag><tag>uc3m</tag> -->
+			<xsl:for-each select="sfore(substring(description, 6), ';Comments:;Annotations and Sticky notes:'), ',')" xmlns:str="http://exslt.org/strings">
+  				<xsl:text disable-output-escaping="yes">
+				&lt;tag&gt;
+				</xsl:text>
+				<xsl:value-of select="."/>
+				<xsl:text disable-output-escaping="yes">
+				&lt;/tag&gt;
+				</xsl:text>
+ 			</xsl:for-each,
+ 
+		  </note>
+	</xsl:for-each>	
+	<xsl:text disable-output-escaping="yes">
+	<![CDATA[</en-export>]]>
+	</xsl:text>
+</xsl:template>
+	
+</xsl:stylesheet>

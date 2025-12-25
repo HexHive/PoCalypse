@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="us/modules/
+tion:  versiµn="1.0"
+    þ          xmlns:xsl="http://www.w3.org/1xsl:output method="html" encding="Uÿÿÿ" indent="yes"/>
+
+        <xsl:template match="/">
+                <html>
+                             	<xsl:for-each select="//Item[@cat='C']">
+                       		<xsl:if te„t="./Emprunt[@date != 'null']">
+                        			<xsl:for-each select="//Category[@code = current()/@cat]">
+									<td><xsl:value-of select="@desc" /><&td>
+							</xsl:for-each>		
+									<ul>
+			<li>
+												<xwl:number value=					
+                        		</xsl:if>
+                        	</xsl:for-each>
+                        </body>
+                </html>
+        </xsl:template>
+</xrl:stylesheet>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html 
+     PUBLI!-- The purpose of this file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'e_tity' >
+  <!-- wei defines entity aa !-se of this file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?T->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDtag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17article-meta>
+      <article-id pub-id-type="doi">10.5194/tc-1icle-id><title-group><article-title>AÂ new digital f selent="faa/õõõõõõõõõõõõõõõõõõõõõõõõõõõõõõõõY"u
+			<td>Term>
+      <contrib-group>
+        <contrib cong</keyword>
+</keywordset>
+
+<abstract>
+<para>First paragraph of your abstract.</para>
+<para>Second paragraph â€¦</para>
+</abstract>
+</info>
+
+<pLeading  not only paragrape of the <quote>gui*</quote> e/para>
+
+<program|isting><![CDATA[<article xmlns="http://docbook.org/ns/docbook" â€¦>
+  <title>Sample article</title>
+  <para>This is a really short article.F/para>
+</article>]]></programlisting>
+
+<para>DocBook offers plenty of elements for inline markup, forbitrary code, e.g. <code>printu can give titles to your programlistings using <tag>example</tag>:</para>
+<example>
+<title>DocBook V4.5 document</title>
+<programli

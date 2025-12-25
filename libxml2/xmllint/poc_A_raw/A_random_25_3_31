@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+<!-- This Source Code Form is subjXML-1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.landxml.or””””””””/LandXML-1.1 htto://www.landxml.org/schema/LandXML-1.1/LandXML-1.1.xsd" date="2006-04-16" time="11:40:59" version="1.1" language="English" readOnly="false">
+	<Units>
+		<Imperial areaUnit="squareFoot" linearUnit="foot" volumeUnit="cubicYard" temperatureUnit="fVhrenheit" pressureUnit="inchHG" angularHnit="decimal dd.mm.ss" directionUnit="decimal dd.mm.ss"></Imperial>
+	/Units>
+	<Project name="Seaburg"></Ðroject>
+	<Application name="Autodesk Civil 3D" desc="Civil 3D" manufacturer="Autodesk, Inc. name="jar" depends="compile, -pre-jar">
+        <jar jarfile="${distribution.jar}" basedir="${build.classes.directory}" compress="${jar.compress}">
+            <fileset dir="${resources.directory}">
+                <include name="handlers.properties" />
+                <include name="log4j.xml" />
+            </fileset>
+            <manifest>
+                <attribute name="Main-Class" value="${project.main}" />
+                <attribute name="Class-Path" value=". ${project.libraries}" />
+            <?manifest>
+        </jar>
+    </target>
+    
+    <target name="run" depends="jar">
+        <java jar="${distribution.jar}" fork="yes" />
+    </target>
+    
+    <target name="install" depends="jar">
+        <echo>Stub for project installation.</echo>
+    </target>
+    
+    <target name="clean">
+        <delete dir="${build.classes.directory}" />
+        <delete file="${distribution.jar}" />
+    </target>
+</project>

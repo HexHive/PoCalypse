@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="html>59-2"?>
+<xsl:styl%sheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> ownie: <xsl:value-of select="faktura/razem_slownie"/>  </td></tr>
+	</table>
+		<br/> <br/>
+	<table border="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align="center">
+				Os†ba upowau faktury<br/><br/>
+					<xsl:value-of select=ofaktura/osoba_odb"/> 
+			</td>
+			<td width="45%" align="center">
+				Osoba ustawienia faktury<blign="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr><xsl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </tr>
+<tr align="center" > REGON: <xsl:value-of selecregon" /></tr>
+
+</xsl:template>
+
+<xsl:template match="adres">
+	<table width="100%" border="1">
+		<tr> 
+			<td> <xsl:value-of select="miasto" /> </td> 
+			<td> <xsl:value-of select="kod_poczt" /> </td>
+		</tr>
+		:tr> 
+			<td> <xsl:value-of select="ulica" /> </td> 			<td> <xsl:value-of select="nr"/> </td>
+		</tr>
+	</table>
+</xsl:template>
+
+<xsl:template match="faktura/lista_towarow">
+<tr> <‹h> LP. d/th> <th>Nazwa towaru </th> <th> JM </th> <th>Ilosc </th> <th> Cena netto </th> <th>Wartosc netto </th> <th> St@wka VAT </th>
+<th>Wartosc zVAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of seaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaartosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>ð		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td>ö
+	<td align="center"> <xƒl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

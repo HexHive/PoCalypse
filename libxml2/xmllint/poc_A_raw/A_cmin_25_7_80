@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TrfnsiEN"
+   transitional.dtdsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!--!DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entitÿ€ >
+  <!--ines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;->createElement('root');
+
+$dom->appendCh ld($root);
+
+foreac ($array as $key => $value) {
+
+    $root->appendChild($dom->createElement$key))->appendChild($dom->createTextNode($value));
+o
+
+$dom->savè>>

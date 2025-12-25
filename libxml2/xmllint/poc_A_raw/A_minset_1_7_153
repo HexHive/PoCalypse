@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="euc-jp"?>
+T ALTER OR �MOVE COPYRIGHT NOTICES OR THIS HEADER.
+opyrd.
+ 
+ The conteThis is a programming instruction ?>
+
+<!-- DTD is in]ored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:araument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with sohe tags <tag> </tag> 
+</tag2>]]> and soteqt </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </�:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and soje more 
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&k="82" />
+<hkern u1="&#x2018;" u2="&#xe0;" k="123" />
+<hkern [1="&#x2018;" u2="&#xdd;" k="-20" />
+<hkern u1="&#x2018;" u2= type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-4_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

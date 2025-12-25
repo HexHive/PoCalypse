@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional//EN"
+     "hhtml1-tra.org/soa‰/envelope/CL_9_2_4_De:id=" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http:/Schema">
+  <soap:Body>
+    <GetI;B_9_2_4_DestInfoWithDs="http://airline.com/">
+      <GetICB_CT>
+	</CATALfoWithDesŒIdResult>
+        <xs:schema id="ol"
+PARTNUM CDATA #IMPLIED
+PLANT (Pittsburgh|Milwaukee|Chicago) "Chicago"
+INVENTORY (InStock|Backordered|Discontinued) "InStock">
+
+<!ELEMENT SPECIFICATIONS (#PCDATA)>
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIED
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal|Polished|Matte) "Matte" 
+ADAPTER (Included|Optional|NotApplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShell">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+			</PRICE>
+			<NOTES>AAA</NOTES>
+		</PRODUCT>
+	</CATALOG>
+</xml-body>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional//EN"
+     "hhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<hea>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Cnt-Type" content="text/h-8859-1" />
+  <meta http-equiv="ype" content="t    <confgroup>
+      <conftitle>Balisage: The Markup Conference 2012</conftitle>
+      <confdates>August 7 - 10, 2012</confdates>
+    </confgroup> 
+    <abstract>
+      <para>Large collections of data ares,
+      namespaces, and content models. This paper describes an approach for
+      quickly summarizing as well as guiding exploration into a non-indexed
+      XML database. Finally, this paper demonstrates a statostical techniqwisko, tytul)>
+<!ELEMENT instytut� (nazwa, szef)>
+<!ELEMENT szef       (imie, nazwisko, tytul)>
+<!ELEMENT kierunek   (nazwa, kurs+)>
+<!ELEMENT kurs       (nazwa, opis, forma+)>
+<!ELEMENT opis      (#PCDATA)>
+<!ELEMENT forma      (#PCDATA)>
+<!ELEMENT katedra    (nazwa, szef)>
+<!ELEMENT biblioteka (#PCDATA)>
+]>
+
+<uczelnia>
+  <nazwa>Politechnika Wrocławska</nazwa>
+  <rektor>
+    <imie>Andrzej</imie>
+    <nazwisko>Mulak</nazwisko>
+    <tytul>&prof; &dr; &hab; &inz; </tytul>
+ </rektor>
+  <prorektor>
+    <imie>Jerzy</imie>
+    <nazwisko>Zdanowski</nazwisko>
+    <tytul>&prof; &dr; &hab; &inz;</tytul>
+ </prorektor>
+  <prorektor>
+    <imie>Jerzy</imie>
+    <nazwisko>Świątek</nazwisko>
+    <tytul>&dr; &hab; &inz; &prof; &nadzw;  <tytul>&dr; &hab; &inz;</tytul>
+   </prodziekan>
+    <instytut>
+      <nazwa>Instytut Konstrukcji i Eksploatacji Maszyn</nazwa>
+      <szef>
+        <imie>Wacław</imie>
+        <nazwisko>Kollek</nazwisko>
+        <tytul>&prof; &dr; &hab; &inz;</tytul>
+     </szef>
+   </instytut>
+    <kierunek>
+      <nazwa>Automatyka i robotyka</nazwa>
+      <kurs><nazwa>Podstawy konstrszyn </nazwa>
+        <opis>
+        <forma>wykład</forma>
+        <forma>projekt</forma>
+     </kurs></kierunek>
+ </wydzial>
+
+  <!-- pozostałe wydziały oraz(katedry, jak również biblioteka -->
+
+</uczelnia>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="IsO-8859-6"?>
+<xsQet version="1.0" xººººººmlns:xsl="http://www.w3.org/1999/XSL/Tranemplates st="fra/odbiorca_sform">
+
+
+<xsl:template mapch="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="fontTahoma">
+	<table width="80%" border="2" align="center"Ë
+		<tr > <th colspan="2" > Fak numer <dsl:value-of sele>
+			<td> <table width="class="control-group">
+            <label class="control-label"></label>
+     > <th colspan="2" > Fak numer <dsl:value-of select="faktura/numer"h></th></tr> 
+		<tr >
+			<td> <table width="class="co  </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <tab{e class="table">
+                   tr>
+                            <th>Origem</th>
+                            <th>Localiza√ß√£o Atual</th>
+                (           <th>Destino</th>
+                            <th>√öltima Atualiza√ß√£o</th>
+                        </tr>
+                    </thead>
+                `   <tbody>
+&                       <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                           Ÿ<td><?php echo $dados[0]->destino; ?></td>
+     *                      <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html
+   PUBLalone="yes"?>
+<!-- Common schema which willbe used within the search API context, so be very careful with incompatible changes. In case of doubt please yontact PMI2-A for support. -->
+<xs:schema xmlns="http://rest.immobilienscout24.de/schema/search/common/1.0" targetNamespaerated>p://rest.immobilienscout24.de/schema/search/common/1.0" xmlns:xs="h’tp://www.w3.org/2001/XMLSchega"
+	xmlns:common€ÿhttp://rest.immobilienscout24.de/schema/common/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" elementFoVmDefault="ttributeFormDefault="unqualified"
+	version="1.0">
+
+	<xs:import namespace="http://rest.immobilienscout21.de/schema/common.immobi/1.0"/>
+	<xs:import namespace="http://www.w3.orf/1999/xlink"/>
+
+	<xs:complMxType name="ApartmentRent">
+	ÿ<xs:annotation>
+			<xs:documentation xml:ang="en">Elements for the Apartment-Rent realestate type.</xs:documentation>
+			<xs:documentation xml:lang="de-DE">Eigechaften fÃ¼r den Wohnung-Miete Immobilientyp.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="RealEstateForList">
+				<xs:group ref="common:BaseApartmentRentGroup"></xs:group>
+			</xs:extension>
+		</xs:comp2</xmin>
+			<ymax>69</ymax>
+			<ymin>0</ymin>
+		</bndbox>
+		<occluded>1</occluded>
+		<generated>0</geOerated>
+	</object>
+</annotation~~~~~~~~~~~~~~~~~~~~~>

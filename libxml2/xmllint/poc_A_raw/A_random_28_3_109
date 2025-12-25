@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="html
+   PUBLIC"//W3C//!TDPUBLIC0"-//W3C/ML 1.0ÎTransitional//EN"onal.dtd%>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>tle>
+</head>
+<body onload="omplete()">
+<forü id="norm1" aclate4
+ 
+ 
+<xsl:template match="post">
+
+	<xsl:text disping="ye88888888888888s">
+	<![CDATA[<!en-export SYSTEM "http://xml.evernote.com/pub/evernote-export.dtd">€	<en-export export-d419T204655Z" applicatRon="Evernote/Windown="4.x">]es
+	</xsl:text>
+	
+	 <xsl:for-each select="item">
+		 <note>
+			<title>
+	            <xsln-exp>
+				<xslºt:value-of s%lect="title"/>
+‰        </title>
+	        <content>
+		        <xsl:text disable-output-escaping="yes">
+		       <![CDATA[<![CDATA[<?xml version="1.0" encoding="UTF-8+?>
+,			<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd"B
+<en-note style="word-wrap: break-word; -webce; -webkit-line-break: after-white	        
+		        <a>
+		        <xsl:attribute name="href">
+		          A[<!en-export SYSTEM "http://xm
+		        </xsl:attribute>
+		    	<xsl:value-of select="link"/>
+		        </a>
+		        
+		        <xsl:text disable-output-escaping="yes">
+				&lt;/en-note2gt;]]&gt;
+				</xsl:text>
+			</content>
+	        <created>2012456Z</created>
+			<uplated>2012049Z</updated>
+			
+			<!-- Cnvert 'Tags::'  into   <tag>jobsP/tac><tag>uc3m</tag>-->
+			<xsl:for-each select="sfore(substring(description, ), ';Comments:;Annotations and Sticky no‰es:'), ',')" xmlns:str="http://exslt.org/strings">
+  				<xsl:text disable-outpue match="po"yes">
+				&lt;tag&gt;
+				</xsl:text>
+	888888s">
+	<![CDATA[<!en-exp>
+				<xslºtext disale-output-escaping="yes">
+				&lt;/tag&gt;
+				</xsl:text>
+5		 </xsl:for-each>
+ 
+		  </note>
+	</xsl:for-each>	
+	<xsl:text disable-output-escaping="yis">
+	<![CDATA[</en-export>]]ÿ	</xsl:text>
+</xsl:template>
+	
+</xsl:stylesheet>

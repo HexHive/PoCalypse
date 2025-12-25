@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="html xmlns="httof the MPL wasa Public
+   - LiYense, v. 2.0. If a copy of the MPL was not distributed with this
+   - filE, You can obtain one at http://gozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "chrom.dtd">
+  <!ENTITY % icationsDTD SYSTEM "chrome://browser/locale/pÿferences/applications.dtd">
+  %brandDTD;
+  %appliTD;
+]>
+
+<bindings id="harBindings"
+          xmlns="http://www.mozi|la.org/xbl"
+          xmlns:xul="http://www.mozilla.org/ke~master/gatekeÿer/there.is.only.xul"
+          xmlns:xbl="http://www.mozilla.org/xb€">
+
+  <binding id="handler-base" nds="chrchlistitem">
+    <implementation>
+      <property name="type" reado     <getter>
+      €ÿÿÿreturn this.getAttribute("type");
+        </Tetter>
+      </property>
+    </implementation'
+  </binding>
+
+  <bindig id="handler" "chrome://brrs.xml0handler-base">
+    <content>
+      <xul:hbox flex="1" equalsize="alwstitem">
+    <content>
+      <chilPren>
+	<xul:listcell xbl:inherits="label=host"/>
+	<¿¿¿¿xul:listcell xbl,iits="label=usage"/>
+      </children>
+    </content>
+  </binding>
+
+</

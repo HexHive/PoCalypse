@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="usÿÿÿ59-2"?>
+<xsl:stylesheet version0" xmlns:xÿl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-fy:Tahoma">
+	<table width="80%" border="2" align="center"> 
+	th="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktd> <Sable width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </able> </td>
+			<td> <table widtj="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="cr" width="80%" br="1" > <tr> 
+			<td>  Data wystawia:ienia: </td> <td> <xsl:value-of st="faktura/data /td>
+			<td> Data sprzedazy: </td> <td> <able align="cr" width="80%" br="1" > <tr> 
+			<td>  Data wystawia:ienia: </td> <td> <xsl:value-of st="faktura/data /td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin z[platy: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</table>	
+			<br/> <br/>
+	<table width="80%" align="cr"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:apply-templateiiiilelue-of select="fasta_towarow/razem_vat"/> <br/> <br/>
+			 Slownie: <xsl:value-of select="fakturaownie"/>  </td></tr>
+	</table>
+		<br/> <br/>
+	<table border="1" align="ce" width="80dress emp:domestic="Yes" street="Y&ent1;" emp:zone="CANADA" emp:local1="T

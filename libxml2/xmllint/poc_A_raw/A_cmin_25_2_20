@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiEN"
+   transitional.dtdsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, ex€ept for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is sowith some tags <tag> </tag> 
+</tag2>]]> anme more text </i:argument>
+    <i:argument>and now an entity: &lt; and s text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision atname="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permissionCK" />
+    <id:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--  -->
+    <uses-permission android:name="com.android.xul:hbox> 
+      </xul:vbox>
+    </content>
+  </binding>
+</bindings>

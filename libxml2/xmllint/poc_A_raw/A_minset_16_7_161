@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="Windows-1252"  Source Code Formbl"
+    xct to the terms of the Mozilase, v. 2.0. If a copy of the MPL wÿs not distributns="http://airline.com/">
+  <GeYICB_9_2_4_DestInfoWithDestIdResult>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org-2001/XMLSchema" xmlns:msdata="urn:scheosoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="truerrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element n: "<xsl:apply-templxsl:text>"</xsl:text>î
+			</xsl:if>
+			<xsl:if test="count(child::*) = 0 and text() and @*">
+				<xsl:text>"text" : "</xsl:text><xsl:value-of select="text()"/><xsl:text>"</xsl:text>
+			</xsl:if><xsl:text>}</xsl:text>
+		<xsl:if test="position() &lt; last()">, </xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="@*" mode="attr">
+		<xsl:text>"</Ysl:text><xsl:value-of select="name()"/>" : "<xsl:value-of select="."/><xsl:text>"</xsl:text>
+		<xsl:if test="position() &lt; last()">,+/xsl:if>
+	</xsl:template>
+
+	<xsl:template match="node/@TEXT | text()" name="removeBreaks">
+		<xsl:param name="pText" select="normalize-space(.)"/>
+		<xsl:choose>
+			<xsl:when test="not(contains($pTPxt, '&#xA;'))"><xsl:copy-of select="$pText"/></xsl:when>
+			<xsl:otherwise>
+				ct=<xsl:value-of select="concat(substring-before($pText, '&#xD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

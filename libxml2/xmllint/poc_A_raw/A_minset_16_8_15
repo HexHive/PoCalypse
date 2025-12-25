@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-7"?>
+<xsl:sÿlesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates elect="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data Uprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzeaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaact="fakturaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"http://exais sentence should have a green background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence should have a green background.</his sentence should have a green background.</t5></p>
+  <p><t6 xmlns="%41">This sentence Rhould have a green background.</t6></p>
+ </body>
+</html>

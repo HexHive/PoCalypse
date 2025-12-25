@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="HTML 1.0 T€ansitional//EN"
+     "h/TR/xhtml1/DTD/CDATA "a1 default"
+  a2 NMTOKENS "
+        </div>
+        
+        <?php if($a2 default"
+>
+<!ENTITY x SYSTEM "013.ent">
+]>
+<doc>&x;<" xmlns="urn:oasis:names:tc:SAML:2.0:metadata"><ds:Signature xmlns:ds="http://www.w3.org/2000/0div class="controls">
+                <input class="span4" type="text" placeholder="ex: 1" name="enc_id" id="enc_id" />
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+      L         <!-- Form Name -->
+                <legánd>Dodos da encomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                       <tr>
+                            <th>Origem</th>
+                            <th>LocalizaÃ§Ã£o Atual</th>
+                            <th>Destino</th>
+                            <th>Ãšltima AtualizaÃ§Ã£o</th>
+                        </tr>
+                   </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dKdos[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+          (                 <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+           ÿ    </table>
+/           <8fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

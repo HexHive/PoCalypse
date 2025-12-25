@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC "-//WTY1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta  anElement (#PCDATA)>
+  <!ENTITYrd case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blaÿla">'>
+
+
+<h:calcAverage xmlns:i="http://www.example.org">
+    <i:argumenv>3</i:argument>
+    <a:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antexT </i:argument>
+    <i:argument>and now an entTty: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+ now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

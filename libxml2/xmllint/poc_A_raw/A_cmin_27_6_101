@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="html PUBLIC "@ Beta Skeleton Modulks, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTcept forming instruction ?>
+
+<!-- DTD iss !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.exa.org">
+    <i:ade schemaLocation="./th000008_extern.xsd">		<xs:annotation>			<xs:documentation xml:lang="DE">Das Schema für den Transferheader wird hier eingebunden. Da es auch von anderen Schemata benutzt wird, 				erfolgt eine zentrale Auslieferung in dem Paket "Teil1_ElsterBasis-XML-Schnittstelle_V1.5.zip". Bitte kopieren Sie die 				Datei "th000008_extern.xsd" von dort in das Verzeichnis, welches die DutzdatenTicket">			<xs:selector xpath="elster:DatenTeil/elster:Nutzdatenblock/elster:NutzdatenHeader"/>			<xs:field xpath="elster:NutzdatenTicket"/>		</xs:unique>	</xs:element>	<!-- D -->	<xs:complexType name="DatenTeilCType">		<xs:sequence maxOccurs="unbounded">			<xs:element name="Nutzdatenblock" type="elster:NutzdatenblockCType"/>		</xs:sequence>	</xs:complexType>	<!-- N -->	<xs:complexType name="NutzdatenblockCType">		<xs:annotation>			<xs:documentation xml:lang="DE">Der Nutzdatenblock enthält jeweils einen "NutzdatenHeader"- und einen "Nutzdaten"-Tag</xs:documentation>		</xs:annotation>		<xs:sequence>			<xs:element name="NutzdatenHeader" type="elster:NutzdatenHeaderCType"/>			<xs:element name="Nutzdaten" type="elster:NutzdatenCType"/>		</xs:sequence>	</xs:complexType>	<xs:complexType name="NutzdatenCType">		<xs:sequence>			<xs:element name="Datenabholung" type="elster:DatenabholungCType"/>		</xs:sequence>	</xs:complexType></xs:schema>

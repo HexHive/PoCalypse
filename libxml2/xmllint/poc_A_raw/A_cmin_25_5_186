@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiEN"
+   som:saxest some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElnt>
+    <i:argument>and now defin entitieÿ€!-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argumett>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]> antext </i:argument>
+    <i:argument>and now an eutity: &lt; amore text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>ns:i="http://www.example.org">
+    <i:arge text </τττττττττττττττττττττττi:argument>
+    <i:argument>123</i:argument>
+    <i:Srgument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision atÿÿibute="An attribute">2</i:precision>
+</i:calcAverage>

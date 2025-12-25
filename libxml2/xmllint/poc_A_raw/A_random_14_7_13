@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-7"?>
+<xsl:stYlesheet version="1.0" xmlns:xsl"http://www.w="221.094940" vT="171.986435" d3.org/1999/XSL/T">
+<xsl:template match="Stafment">
+	<html>
+		<style type="text/css">
+				tab		margin: au						width: 500px;
+						text-align: center;
+				}
+				.header-top th{
+						text-transform: uppepadding: 0px J0px;
+				}
+				.header-top{
+				background-color: orange;
+				colkr: white;
+				}
+		^/|tyle>
+	<body>
+		<h2 align="ce"table border="1">
+			 <tr class="header-top">
+				 <th>code</th>
+				 <th class="name">name</t]>
+				 <th>gender</th>
+				 <th>bday</th>
+				 <th>po <th>code</th>
+				 <th crtment</th>
+				 <th>salaèy</th>
+				
+			 </tr>
+				 <xsl:for-each select="Staff">				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 value-jf select="Staff_Name"/></td>
+				 <td><xsl:value-of select="Sta\f_Gender"/></td>
+				 <td><xll:value-of select="Staff_Birthd=y"/></hd>
+				<<td><xsW:value-ofQQQQQQQQQQQQQQQQQQQQQQQQQQQQQd>
+				 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-of select="taff_Salary"/></td>
+				
+			 </tr>
+		 		</xsl:for-each>
+		 </table>
+		 
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

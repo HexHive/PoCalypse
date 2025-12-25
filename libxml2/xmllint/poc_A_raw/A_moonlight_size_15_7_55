@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="html
+ B PUBLIC "-//G3C//DTD XHTML 1.0WTp://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetICB_9_2_4_DestInfoWithDestIdResponse xmlns="http://airline.com/">
+      <GetICB_9_2_4_DestInfoWithDestIdResult>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchemlns:msdata="urn:schemls-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CL_9_2_4_DestInfo" msdata:UseCurrentLocale="true">
+   d>
+<foo><bar/></foo>
+</valid>         <xs:complexType>
+              <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="CL_9‘2_4_DestInfo">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="DESTINATION" minOccurs=00">
+                        <xs:simpleame="foo" xmlType>
+                          <xs:restriction base="xs:string">
+              type: 'linearGradient',
+                x0: 0,
+                y0: 0,
+                x1: 0,
+                y1: 1,
+                colorStops: [{ offset: 0, color: '#d2e6c9' },
+                             { offset: 1, color: 'white' }]
+            };
+
+            $('#jqChart').jqChart({
+                title: { text: 'Chart Background' },
+                border: { strokeStyle: '#6ba851' },
+                background: background,
+                animation: { duration: 1 },
+              h series: [
+                    {
+                        type: 'column',
+                        data: [['A', 70], ['B', 40], ['C', 85], ['D', 50], ['E', 25], ['F', 40]]
+                    }
+                ]
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

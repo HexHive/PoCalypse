@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="html"
+	xm>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>oc>ocYZ0>		zf<<doc>ocYZ0>	<<A0101ÿodoc>of<<doc>ocYd0>	<<A01ÿ1dochZ0>	<<Ado01dodoc>of<<doc>o0>0>	<<Adoc>/><>o>o<<A0101 odoc>of<<doc>ocY0>	<<A01ÿ1dochZ0>	<<AdcYZ0>	<< docc>	ofoXYZ0=ø0>!	<<Ado><>o>oc	<<Adoc9	of<!doc>ocYZ0>	<<A0101dodoc>ofö<<doc>ocY0>	<<A01A1docYZ0>	<<doc>>ocYZ0>0>	<[A/><>o>oc	<<Adoc>	zf<<doc>ocYZ0>	01ÿodoc>of<€doc>ocYd0>	<<A01ÿ     <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+    +               <thead>
+                        <tr>
+                            <th>Origem</th>
+                            <th>LocalizaÃ§Ã£o Atual</th>
+                            <th>Destino</th>
+                           <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

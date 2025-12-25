@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiE["
+   transiti() function
+    feature� -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird casELECT * FROM funcionarios "
+       . "WHERE email = '{$_POST['email']}' " 
+       . "AND senha = '{$_POST['senha']}' ";
+  
+  $resultado = mysql_queryray();
+  while( $dados = mysql_fetch_array( $resultado ) ) {
+    $retorno[] = $dados;
+  }
+  
+
+  /*
+  #�Rolução 1
+  $usuario = mysql_escape_string( $_POST['email'] );
+  $senha   = mysql_escape_string( $_POST['senha'] );
+
+  $sql = "SELECT * FROM usuarios "
+       . "WHERE login = '$usuario' " 
+       . "AND senha = '$senha' ";
+  
+  $resultado = mysql_query( $sql );
+
+  $retorno = array();
+  while( $dados = mysql_fetch_array( $resultado ) ) {
+    $retorno[] = $dados;
+  }
+  */
+
+  /*
+  # solução dois com PDO
+  $pdo = new PDO('mysql:host=localhost;dbname=dexter',
+                 'dexter',
+                 '123456' );
+
+  $sql = 'SELECT * FROM usuarios WHERE login = ? AND senha = ?';
+
+  $stmt = $pdo->prepare( $sql );
+  $stmt->execute( array( $_POST['email'], $_POST['senha'] ) );
+ 
+  $retorno = $stmt->fetchAll();
+  */
+  echo '<pre>';
+  echo "$sql <br><br>";
+  print_r( $retorno );
+}
+?>
+
+<form action="" method="POST">
+  Email: <input type="text" name="email" />
+  Senha: <input type="text" name="senha" />
+  <input type="submit" value="Entrar" />
+</form>

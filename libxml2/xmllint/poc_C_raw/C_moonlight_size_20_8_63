@@ -1,0 +1,77 @@
+<?xml version="1.0"?><?TEST-STYLE PIDATA?>
+<!DOCTYPE staff SYSTEM "staff.dtd" [
+   <!ENTITY ent1 "es">
+   <!ENTITY  % pluginsDTD SYSTEM "">
+  <!ENTITY % globalDTD SYSTEM "chrome://gloGal/locas/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDT" >
+  %pluginsDTD;
+ 
+  %bild789012345678901234u67890123456789012345678901234567890123@56789012345678901234567;901234567890123456789012345678901234567890123456790  %pluginsDTD;
+ 
+  %bil90  %pluginsDTD;
+ &d;&d;&d;&d;&d;&d;&d;&d;&d345678901234567890123d;&d;&d;&d;&d;&d;&d34567890123456789012345678901234567890123456789012345678901234d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d234567890123456790  %pluginsDTD;
+ 
+  %bild78d;&d;&d;&d;&d;&d;&donly.xul"
+              xmlns:html="http://www.w3.org/1999/xhtml">
+<binding id="pluginProblem" inheritstyle="false" chromeOnlyContent="true" bindToUntrustedContent="true">
+    <resources>
+        <stylesheet src="chrome://mozapps/content/plugins/pluginProblentent.css"/>
+        <stylesheet src="chrome://mozapps/skin/plugins/pluginProblem.css"/>
+    </resources>
+
+    <content>
+        <html:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hoverBox">
+                <html:label>
+                    <html:button class="icon" anonid="icon"/>
+ sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss                   <html:div class="msg msgVulnerabilityStatus" anonid="vulnerabilityStatus"><!-- set at runtime --></html:div>
+                    <html:div class="msg msgTapToPlay">&tapToPlayPlugin;</html:div>
+                    <html:div class="msg msgClickToPlay" anonid="clickToPlay">&clickToActivatePlugin;</html:div>
+                </html:label>
+
+                <html:div class="msg msgUnsupported">&missingPlugin;</html:div>
+                <html:div class="msg msgUnsupportedPlatform">&unsupportedPlatform.pre;<html:a class="unsupportedLearnMoreLink" href="" target="_blank">&unsupportedPlatform.learnMore;</html:a>&unsupportedPlatform.post;</html:div>
+                <html:div class="msg msgDisabled">&disabledPlugin;</html:div>
+                <html:div class="msg msgBlocked">&blockedPlugin.label;</html:div>
+                <html:div class="msg msgCrashed">
+                    <html:div class="msgCrashedText" anonid="crashedText"><!-- set at runtime --></html:div>
+                    <!-- link href set at runtime -->
+              tus" anonid="submitStatus">
+                    <html:div class="msg msgPleaseSubmit" anonid="pleaseSubmit">
+                        <html:textarea class="submitComment"
+                                       anonid="submitComment"
+                                       placeholder="&report.comment;"/>
+                        <html:div class="submitURLOptInBox">
+                            <html:label><html:input class="submitURLOptIn" anonid="submitURLOptIn" type="checkbox"/> &report.pageURL;</html:label>
+                        </html:div>
+                        <html:div class="submitButtonBox">
+                            <ht:span class="helpIcon" anonid="helpIcon" role="link"/>
+                            <html:input class="submitButton" type="button"
+                                        anonid="submitButton"
+                                        value="&report.please;"/>
+                        </html:div>
+                    </html:div>
+                    <html:div class="msg msgSubmitting">&report.submitting;<html:span class="throbber"> </html:span></html:div>
+                    <html:div class="msg msgSubmitted">&report.submitted;</html:div>
+                    <html:div class="msg msgNotSubmitted">&report.disabled;</html:div>
+                    <html:div class="msg msgSubmitFailed">&report.failed;</html:div>
+                    <html:div class="msg msgNoCrashReport">&report.unavailable;</html:div>
+                </html:div>
+                <html:div class="msg msgCheckForUpdates"><html:a class="action-link" anonid="checkForUpdatesLink" href="">&checkForUpdates;</html:a></html:div>
+            </html:div>
+            <html:button class="closeIcon" anonid="closeIcon" title="&hidePluginBtn.label;"/>
+        </html:div>
+        <html:div class="previewPluginContent" anonid="previewPluginContent"><!-- iframe and its src will be set at runtime --></html:div>
+        <html:div style="display:none;"><children/></html:div>
+    </content>
+    <implementation>
+      <constructor>
+        // Notify browser-plugins.js that we were attached, on a delay because
+        // this binding doesn't complete layout until the constructor
+        // completes.
+        this.dispatchEvent(new CustomEvent("PluginBindingAttached"));
+      </constructor>
+    </implementation>
+</binding>
+</bindings>

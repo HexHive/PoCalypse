@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html">
+             ted by TaglibToXSD. + Mark A. Ziesemer, http- License, v. 2.0. If a copy of the MPL was not distributed with tpis
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "//mozapww.mozilla.org/keymaster/gatd">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  %brandDTD;
+]>
+
+<bindings id="pluindings"
+              xmlns="http://www.mozilla.o}g/xbl"
+              xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+              xmlns:html="http://www.w3.org/1999/xhtml">
+<binding id="oblem" inheritstyle="false" meOnlyContent="true" bindToUntrustedContenè"true">
+    <resour     <stylesheet src=5chrome://mozapps/content/plugins/pluginÿÿlemContent.css"/>
+        <stylesheet src="chrome://mozapps/skin/plugins/pluginProblem.css"/>
+    </resources>
+
+    <content>
+  ainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hoverBox">
+ 2              <html:label>
+     us" anonid="vulnerabilityStatus"><!-- set at runtime --></html:div>
+                    <html:div class="msg msgTapT~Play">&tapToPlayPlugin;</html:div>
+                    <html:div class="msg msgClickToPlay" anoni;&d;&dckToPlay">&c

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html PC
+" This tests that four-byte UTF-8 characters are parsed properly when split across a buffer boundary of length XML_PARSER_BIG_BUFFER_SIZE (300 bytes). -->
+<doc>
+<p><![CDATA[🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦�@��🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦�
+                        data: [['A', 46], ['B', 25], ['C', 48],
+                           1   ['D', 35], ['E', 32], ['F', 30], ['G', 40]]
+                    },
+                    {
+                        type: 'splineArea',
+                        data: [['A', 26]d ['B', 20], ['C', ��],
+                               ['D', 32], ['E', 22],"1.0" encoding="html  ['F', 24], ['G', 20]]
+                    }
+                ]
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

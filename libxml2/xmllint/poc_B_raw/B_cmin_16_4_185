@@ -1,0 +1,2295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema 
+	targetNamespace="http://www.iata.com/wac" 
+	xmlns:wac="http://www.iata.com/wac"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	attributeFormDefault="qualified"
+	elementFormDefault="qualified">
+		
+	<xsd:simpleType name="WAC">  <!--  Tipo reutilizado -->
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="PMI" /><!-- airport="Palma" country="Spain" -->
+			<xsd:enumeration value="AAR" /><!-- airport="Aarhus" country="Denmark" -->
+			<xsd:enumeration value="ABD" /><!-- airport="Abadan" country="Iran" -->
+			<xsd:enumeration value="AEH" /><!-- airport="Abeche" country="Chad" -->
+			<xsd:enumeration value="ABZ" /><!-- airport="Aberdeen" country="United Kingdom" -->
+			<xsd:enumeration value="ABR" /><!-- airport="Aberdeen" country="USA" -->
+			<xsd:enumeration value="ABJ" /><!-- airport="Abidjan" country="Ivory Coast" -->
+			<xsd:enumeration value="ABI" /><!-- airport="Abilene" country="USA" -->
+			<xsd:enumeration value="AUH" /><!-- airport="Abu Dhabi" country="UAE" -->
+			<xsd:enumeration value="ABV" /><!-- airport="Abuja International" country="Nigeria" -->
+			<xsd:enumeration value="AUE" /><!-- airport="Abu Rudeis" country="Egypt" -->
+			<xsd:enumeration value="ABS" /><!-- airport="Abu Simbel" country="Egypt" -->
+			<xsd:enumeration value="ACA" /><!-- airport="Acapulco" country="Mexico" -->
+			<xsd:enumeration value="ACC" /><!-- airport="Accra" country="Ghana" -->
+			<xsd:enumeration value="ADA" /><!-- airport="Adana" country="Turkey" -->
+			<xsd:enumeration value="ADD" /><!-- airport="Addis Ababa" country="Ethiopia" -->
+			<xsd:enumeration value="ADL" /><!-- airport="Adelaide" country="Australia" -->
+			<xsd:enumeration value="ADE" /><!-- airport="Aden" country="Yemen" -->
+			<xsd:enumeration value="AER" /><!-- airport="Adler/Sochi" country="Russia" -->
+			<xsd:enumeration value="AJY" /><!-- airport="Agades" country="Niger" -->
+			<xsd:enumeration value="AGA" /><!-- airport="Agadir" country="Morocco" -->
+			<xsd:enumeration value="SUM" /><!-- airport="Agana" country="Guam" -->
+			<xsd:enumeration value="AGZ" /><!-- airport="Aggeneys" country="South Africa" -->
+			<xsd:enumeration value="BQN" /><!-- airport="Aguadilla" country="Puerto Rico" -->
+			<xsd:enumeration value="AGU" /><!-- airport="Aguascaliente" country="Mexico" -->
+			<xsd:enumeration value="AMD" /><!-- airport="Ahmedabad" country="India" -->
+			<xsd:enumeration value="AJA" /><!-- airport="Ajaccio" country="France" -->
+			<xsd:enumeration value="AXT" /><!-- airport="Akita" country="Japan" -->
+			<xsd:enumeration value="CAK" /><!-- airport="Akron" country="USA" -->
+			<xsd:enumeration value="AKT" /><!-- airport="Akrotiri - RAF" country="Cyprus" -->
+			<xsd:enumeration value="ADX" /><!-- airport="Aktyubinsk" country="Kazakhstan" -->
+			<xsd:enumeration value="AAC" /><!-- airport="Al Arish" country="Egypt" -->
+			<xsd:enumeration value="AHU" /><!-- airport="Al Hoceima" country="Morocco" -->
+			<xsd:enumeration value="ALH" /><!-- airport="Albany" country="Australia" -->
+			<xsd:enumeration value="ABY" /><!-- airport="Albany" country="USA" -->
+			<xsd:enumeration value="ALB" /><!-- airport="Albany" country="USA" -->
+			<xsd:enumeration value="LBI" /><!-- airport="Albi" country="France" -->
+			<xsd:enumeration value="AAL" /><!-- airport="Alborg" country="Denmark" -->
+			<xsd:enumeration value="ABQ" /><!-- airport="Albuquerque" country="USA" -->
+			<xsd:enumeration value="ABX" /><!-- airport="Albury" country="Australia" -->
+			<xsd:enumeration value="AES" /><!-- airport="Alesund" country="Norway" -->
+			<xsd:enumeration value="ALJ" /><!-- airport="Alexander Bay" country="South Africa" -->
+			<xsd:enumeration value="ALY" /><!-- airport="Alexandria, El Nhouza country="Egypt" -->
+			<xsd:enumeration value="ESF" /><!-- airport="Alexandria" country="USA" -->
+			<xsd:enumeration value="FJR" /><!-- airport="Alfujairah (Fujairah)" country="UAE" -->
+			<xsd:enumeration value="AHO" /><!-- airport="Alghero Sassari" country="Italy" -->
+			<xsd:enumeration value="ALG" /><!-- airport="Algiers" country="Algeria" -->
+			<xyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyysd:enumeration value="ALC" /><!-- airport="Alicante" country="Spain" -->
+			<xsd:enumeration value="ASP" /><!-- airport="Alice Springs" country="Australia" -->
+			<xsd:enumeration value="ADY" /><!-- airport="Alldays" country="South Africa" -->
+			<xsd:enumeration value="ABE" /><!-- airport="Allentown" country="USA" -->
+			<xsd:enumeration value="ALA" /><!-- airport="Alma Ata" country="Kazakhstan" -->
+			<xsd:enumeration value="LEI" /><!-- airport="Almeria" country="Spain" -->
+			<xsd:enumeration value="ALP" /><!-- airport="Aleppo" country="Syria" -->
+			<xsd:enumeration value="ALF" /><!-- airport="Alta" country="Norway" -->
+			<xsd:enumeration value="ACH" /><!-- airport="Altenrhein" country="Switzerland" -->
+			<xsd:enumeration value="AOO" /><!-- airport="Altoona" country="USA" -->
+			<xsd:enumeration value="ASJ" /><!-- airport="Amami" country="Japan" -->
+			<xsd:enumeration value="AMA" /><!-- airport="Amarillo" country="USA" -->
+			<xsd:enumeration value="AMM" /><!-- airport="Amman" country="Jordan" -->
+			<xsd:enumeration value="ATQ" /><!-- airport="Amritsar" country="India" -->
+			<xsd:enumeration value="AMS" /><!-- airport="Amsterdam, Schiphol" country="Netherlands" -->
+			<xsd:enumeration value="QNB" /><!-- airport="Anand" country="India" -->
+			<xsd:enumeration value="ANC" /><!-- airport="Anchorage" country="USA" -->
+			<xsd:enumeration value="AOI" /><!-- airport="Ancona" country="Italy" -->
+			<xsd:enumeration value="ALV" /><!-- airport="Andorra La Vella H/P" country="Andorra" -->
+			<xsd:enumeration value="AXA" /><!-- airport="Anguilla" country="Anguilla" -->
+			<xsd:enumeration value="AJN" /><!-- airport="Anjouan" country="Comoros (Comores)" -->
+			<xsd:enumeration value="ANK" /><!-- airport="Ankara" country="Turkey" -->
+			<xsd:enumeration value="AAE" /><!-- airport="Annaba" country="Algeria" -->
+			<xsd:enumeration value="ARB" /><!-- airport="Ann Arbor" country="USA" -->
+			<xsd:enumeration value="NCY" /><!-- airport="Annecy" country="France" -->
+			<xsd:enumeration value="ANB" /><!-- airport="Anniston" country="USA" -->
+			<xsd:enumeration value="AYT" /><!-- airport="Antalya" country="Turkey" -->
+			<xsd:enumeration value="TNR" /><!-- airport="Antananarivo (Tanannarive)" country="Madagascar" -->
+			<xsd:enumeration value="ANU" /><!-- airport="Antigua" country="Antigua" -->
+			<xsd:enumeration value="ANR" /><!-- airport="Antwerp" country="Belgium" -->
+			<xsd:enumeration value="AOJ" /><!-- airport="Aomori" country="Japan" -->
+			<xsd:enumeration value="APW" /><!-- airport="Apia" country="Samoa" -->
+			<xsd:enumeration value="ATW" /><!-- airport="Appelton/Neenah/Menasha" country="USA" -->
+			<xsd:enumeration value="AQJ" /><!-- airport="Aqaba" country="Jordan" -->
+			<xsd:enumeration value="AJU" /><!-- airport="Aracaju" country="Brazil" -->
+			<xsd:enumeration value="ARH" /><!-- airport="Arkhangelsk" country="Russian Federation" -->
+			<xsd:enumeration value="ARK" /><!-- airport="Arusha" country="Tanzania" -->
+			<xsd:enumeration value="GPA" /><!-- airport="Araxos" country="Greece" -->
+			<xsd:enumeration value="RLT" /><!-- airport="Arlit" country="Niger" -->
+			<xsd:enumeration value="Axs" /><!-- airport="Armenia" country="Colombia" -->
+			<xsd:enumeration value="ACE" /><!-- airport="Arrecife/Lanzarote" country="Spain" -->
+			<xsd:enumeration value="AUA" /><!-- airport="Aruba" country="Aruba" -->
+			<xsd:enumeration value="AVL" /><!-- airport="Asheville" country="USA" -->
+			<xsd:enumeration value="ASB" /><!-- airport="Ashgabat, Ashkhabat" country="Turkmenistan" -->
+			<xsd:enumeration value="ASE" /><!-- airport="Aspen Snowmass" country="USA" -->
+			<xsd:enumeration value="ATZ" /><!-- airport="Assiut" country="Egypt" -->
+			<xsd:enumeration value="ASU" /><!-- airport="Asuncion" country="Paraguay" -->
+			<xsd:enumeration value="ATH" /><!-- airport="Athens" country="Greece" -->
+			<xsd:enumeration value="ASW" /><!-- airport="Aswan, Daraw" country="Egypt" -->
+			<xsd:enumeration value="HEW" /><!-- airport="Athens, Hellinikon" country="Greece" -->
+			<xsd:enumeration value="AHN" /><!-- airport="Athens" country="USA" -->
+			<xsd:enumeration value="ATO" /><!-- airport="Athens" country="USA" -->
+			<xsd:enumeration value="ATL" /><!-- airport="Atlanta" country="USA" -->
+			<xsd:enumeration value="ACY" /><!-- airport="Atlantic City" country="USA" -->
+			<xsd:enumeration value="YAT" /><!-- airport="Attawapiskat, NT" country="Canada" -->
+			<xsd:enumeration value="AKL" /><!-- airport="Auckland" country="New Zealand" -->
+			<xsd:enumeration value="AGB" /><!-- airport="Augsburg" country="Germany" -->
+			<xsd:enumeration value="AGS" /><!-- airport="Augusta" country="USA" -->
+			<xsd:enumeration value="AUG" /><!-- airport="Augusta" country="USA" -->
+			<xsd:enumeration value="AUR" /><!-- airport="Aurillac" country="France" -->
+			<xsd:enumeration value="AUS" /><!-- airport="Austin" country="USA" -->
+			<xsd:enumeration value="AYQ" /><!-- airport="Ayers Rock" country="Australia" -->
+			<xsd:enumeration value="AYR" /><!-- airport="Ayr" country="Australia" -->
+			<xsd:enumeration value="BJZ" /><!-- airport="Badajoz" country="Spain" -->
+			<xsd:enumeration value="BGW" /><!-- airport="Bagdad, Al Muthana" country="Iraq" -->
+			<xsd:enumeration value="SDA" /><!-- airport="Bagdad, Saddam International" country="Iraq" -->
+			<xsd:enumeration value="BHV" /><!-- airport="Bahawalpur" country="Pakistan" ->>
+			<xsd:enumeration value="BAH" /><!-- airport="Bahrain" country="Bahrain" -->
+			<xsd:enumeration value="BSR" /><!-- airport="Basra, Basrah" country="Iraq" -->
+			<xsd:enumeration value="BFL" /><!-- airport="Bakersfield" country="USA" -->
+			<xsd:enumeration value="BAK" /><!-- airport="Baku" country="Azerbaijan" -->
+			<xsd:enumeration value="BNK" /><!-- airport="Ballina" country="Australia" -->
+			<xsd:enumeration value="BWI" /><!-- airport="Baltimore Washington Int'l MD" country="USA" -->
+			<xsd:enumeration value="ABM" /><!-- airport="Bamaga" country="Australia" -->
+			<xsd:enumeration value="BKO" /><!-- airport="Bamako" country="Mali" -->
+			<xsd:enumeration value="BBY" /><!-- airport="Bambari" country="Central African Republic" -->
+			<xsd:enumeration value="BWN" /><!-- airport="Bandar Seri Begawan" country="Brunei" -->
+			<xsd:enumeration value="BLR" /><!-- airport="Bangalore" country="India" -->
+			<xsd:enumeration value="BGU" /><!-- airport="Bangassou" country="Central African Republic" -->
+			<xsd:enumeration value="BKK" /><!-- airport="Bangkok" country="Thailand" -->
+			<xsd:enumeration value="BGR" /><!-- airport="Bangor" country="USA" -->
+			<xsd:enumeration value="BGF" /><!-- airport="Bangui" country="Central African Republic" -->
+			<xsd:enumeration value="BJL" /><!-- airport="Banjul" country="Gambia" -->
+			<xsd:enumeration value="BNP" /><!-- airport="Bannu" country="Pakistan" -->
+			<xsd:enumeration value="BCN" /><!-- airport="Barcelona" country="Spain" -->
+			<xsd:enumeration value="BLA" /><!-- airport="Barcelona" country="Venezuela" -->
+			<xsd:enumeration value="BDU" /><!-- airport="Bardufoss" country="Norway" -->
+			<xsd:enumeration value="BRI" /><!-- airport="Bari" country="Italy" -->
+			<xsd:enumeration value="BZL" /><!-- airport="Barisal" country="Bangladesh" -->
+			<xsd:enumeration value="BDQ" /><!-- airport="Baronda" country="India" -->
+			<xsd:enumeration value="BAQ" /><!-- airport="Barranquilla" country="Colombia" -->
+			<xsd:enumeration value="BSL" /><!-- airport="Basel" country="Switzerland" -->
+			<xsd:enumeration value="EAP" /><!-- airport="Basel/Mulhouse" country="Switzerland/France" -->
+			<xsd:enumeration value="BIA" /><!-- airport="Bastia" country="France" -->
+			<xsd:enumeration value="BTR" /><!-- airport="Baton Rouge" country="USA" -->
+			<xsd:enumeration value="BYU" /><!-- airport="Bayreuth" country="Germany" -->
+			<xsd:enumeration value="BPT" /><!-- airport="Beaumont/Pt. Arthur" country="USA" -->
+			<xsd:enumeration value="BKW" /><!-- airport="Beckley" country="USA" -->
+			<xsd:enumeration value="PEK" /><!-- airport="Beijing" country="China" -->
+			<xsd:enumeration value="NAY" /><!-- airport="Beijing - Nanyuan" country="China" -->
+			<xsd:enumeration value="BEW" /><!-- airport="Beira" country="Mozambique" -->
+			<xsd:enumeration value="BEY" /><!-- airport="Beirut" country="Lebanon" -->
+			<xsd:enumeration value="BEL" /><!-- airport="Belem" country="Brazil" -->
+			<xsd:enumeration value="BHD" /><!-- airport="Belfast - Harbour" country="United Kingdom" -->
+			<xsd:enumeration value="BFS" /><!-- airport="Belfast International" country="United Kingdom" -->
+			<xsd:enumeration value="IXG" /><!-- airport="Belgaum" country="India" -->
+			<xsd:enumeration value="BEG" /><!-- airport="Belgrad (Beograd)" country="Yugoslavia" -->
+			<xsd:enumeration value="BZE" /><!-- airport="Belize City" country="Belize" -->
+			<xsd:enumeration value="BLI" /><!-- airport="Bellingham" country="USA" -->
+			<xsd:enumeration value="CNF" /><!-- airport="Belo Horizonte" country="Brazil" -->
+			<xsd:enumeration value="BJI" /><!-- airport="Bemidji" country="USA" -->
+			<xsd:enumeration value="BEN" /><!-- airport="Bengasi" country="Libya" -->
+			<xsd:enumeration value="BUG" /><!-- airport="Bengueka" country="Angola" -->
+			<xsd:enumeration value="BEH" /><!-- airport="Benton Harbour" country="USA" -->
+			<xsd:enumeration value="BBT" /><!-- airport="Berberati" country="Central African Republic" -->
+			<xsd:enumeration value="BGY" /><!-- airport="Bergamo" country="Italy" -->
+			<xsd:enumeration value="BGO" /><!-- airport="Bergen" country="Norway" -->
+			<xsd:enumeration value="BER" /><!-- airport="Berlin" country="Germany" -->
+			<xsd:enumeration value="SXF" /><!-- airport="Berlin, Schoenefeld" country="Germany" -->
+			<xsd:enumeration value="TXL" /><!-- airport="Berlin, Tegel" country="Germany" -->
+			<xsd:enumeration value="THF" /><!-- airport="Berlin, Tempelhof" country="Germany" -->
+			<xsd:enumeration value="BDA" /><!-- airport="Bermuda" country="Bermuda" -->
+			<xsd:enumeration value="BRN" /><!-- airport="Bern" country="Switzerland" -->
+			<xsd:enumeration value="ZDJ" /><!-- airport="Bern" country="Switzerland" -->
+			<xsd:enumeration value="BET" /><!-- airport="Bethel" country="USA" -->
+			<xsd:enumeration value="BHO" /><!-- airport="Bhopal" country="India" -->
+			<xsd:enumeration value="BBI" /><!-- airport="Bhubaneswar" country="India" -->
+			<xsd:enumeration value="BIQ" /><!-- airport="Biarritz" country="France" -->
+			<xsd:enumeration value="BIO" /><!-- airport="Bilbao" country="Spain" -->
+			<xsd:enumeration value="BIL" /><!-- airport="Billings" country="USA" -->
+			<xsd:enumeration value="BLL" /><!-- airport="Billund" country="Denmark" -->
+			<xsd:enumeration value="BTU" /><!-- airport="Bintulu" country="Malaysia" -->
+			<xsd:enumeration value="IRO" /><!-- airport="Biraro" country="Central African Republic" -->
+			<xsd:enumeration value="BHX" /><!-- airport="Birmingham" country="United Kingdom" -->
+			<xsd:enumeration value="BHM" /><!-- airport="Birmingham" country="USA" -->
+			<xsd:enumeration value="BIS" /><!-- airport="Bismarck/Mandan" country="USA" -->
+			<xsd:enumeration value="BXO" /><!-- airport="Bissau" country="Guinea Bissau" -->
+			<xsd:enumeration value="BLT" /><!-- airport="Blackwater" country="Australia" -->
+			<xsd:enumeration value="BLZ" /><!-- airport="Blantyre" country="Malawi" -->
+			<xsd:enumeration value="BHE" /><!-- airport="Blenheim" country="New Zealand" -->
+			<xsd:enumeration value="BFN" /><!-- airport="Bloemfontein" country="South Africa" -->
+			<xsd:enumeration value="BMI" /><!-- airport="Bloomington" country="USA" -->
+			<xsd:enumeration value="BMG" /><!-- airport="Bloomington" country="USA" -->
+			<xsd:enumeration value="BLF" /><!-- airport="Bluefield" country="USA" -->
+			<xsd:enumeration value="BVB" /><!-- airport="Boa Vista" country="Brazil" -->
+			<xsd:enumeration value="BOY" /><!-- airport="Bobo/Dioulasso" country="Burkina Faso" -->
+			<xsd:enumeration value="BOO" /><!-- airport="Bodo" country="Norway" -->
+			<xsd:enumeration value="BOG" /><!-- airport="Bogota" country="Colombia" -->
+			<xsd:enumeration value="BOI" /><!-- airport="Boise" country="USA" -->
+			<xsd:enumeration value="BLQ" /><!-- airport="Bologna" country="Italy" -->
+			<xsd:enumeration value="BOM" /><!-- airport="Bombay" country="India" -->
+			<xsd:enumeration value="BON" /><!-- airport="Bonaire" country="Netherlands Antilles" -->
+			<xsd:enumeration value="YVB" /><!-- airport="Bonaventure, PQ" country="Canada" -->
+			<xsd:enumeration value="BOB" /><!-- airport="Bora Bora" country="French Polynesia" -->
+			<xsd:enumeration value="BOD" /><!-- airport="Bordeaux" country="France" -->
+			<xsd:enumeration value="HBH" /><!-- airport="Borg El Arab" country="Egypt" -->
+			<xsd:enumeration value="Bxs" /><!-- airport="Borrego Springs" country="USA" -->
+			<xsd:enumeration value="BOS" /><!-- airport="Boston - Logan" country="USA" -->
+			<xsd:enumeration value="BYK" /><!-- airport="Bouake" country="Ivory Coast" -->
+			<xsd:enumeration value="BOJ" /><!-- airport="Bourgas/Burgas" country="Bulgaria" -->
+			<xsd:enumeration value="ZBO" /><!-- airport="Bowen" country="Australia" -->
+			<xsd:enumeration value="BZN" /><!-- airport="Bozeman" country="USA" -->
+			<xsd:enumeration value="BFD" /><!-- airport="Bradford/Warren" country="USA" -->
+			<xsd:enumeration value="BRD" /><!-- airport="Brainerd" country="USA" -->
+			<xsd:enumeration value="BMP" /><!-- airport="Brampton Island" country="Australia" -->
+			<xsd:enumeration value="BSB" /><!-- airport="Brasilia" country="Brazil" -->
+			<xsd:enumeration value="BTS" /><!-- airport="Bratislava" country="Slovakia" -->
+			<xsd:enumeration value="BZV" /><!-- airport="Brazzaville" country="Congo" -->
+			<xsd:enumeration value="BRE" /><!-- airport="Bremen" country="Germany" -->
+			<xsd:enumeration value="BES" /><!-- airport="Brest" country="France" -->
+			<xsd:enumeration value="BIV" /><!-- airport="Bria" country="Central African Republic" -->
+			<xsd:enumeration value="BDR" /><!-- airport="Bridgeport" country="USA" -->
+			<xsd:enumeration value="BGI" /><!-- airport="Bridgetown, Grantley Adams Int'l"
+				country="Barbados" -->
+			<xsd:enumeration value="BDS" /><!-- airport="Brindisi" country="Italy" -->
+			<xsd:enumeration value="BNE" /><!-- airport="Brisbane" country="Australia" -->
+			<xsd:enumeration value="BRS" /><!-- airport="Bristol" country="United Kingdom" -->
+			<xsd:enumeration value="BNN" /><!-- airport="Broennoeysund" country="Norway" -->
+			<xsd:enumeration value="BHQ" /><!-- airport="Broken Hill" country="Australia" -->
+			<xsd:enumeration value="BKX" /><!-- airport="Brookings" country="USA" -->
+			<xsd:enumeration value="BME" /><!-- airport="Broome" country="Australia" -->
+			<xsd:enumeration value="BQK" /><!-- airport="Brunswick" country="USA" -->
+			<xsd:enumeration value="BRU" /><!-- airport="Brussels" country="Belgium" -->
+			<xsd:enumeration value="BGA" /><!-- airport="Bucaramanga" country="Colombia" -->
+			<xsd:enumeration value="BUD" /><!-- airport="Budapest, Ferihegy" country="Hungary" -->
+			<xsd:enumeration value="BUE" /><!-- airport="Buenos Aires" country="Argentina" -->
+			<xsd:enumeration value="EZE" /><!-- airport="Buenos Aires, Ezeiza Int'l" country="Argentina" -->
+			<xsd:enumeration value="AEP" /><!-- airport="Buenos Aires, Jorge Newbery" country="Argentina" -->
+			<xsd:enumeration value="BFO" /><!-- airport="Buffalo Range" country="Zimbabwe" -->
+			<xsd:enumeration value="BUF" /><!-- airport="Buffalo/Niagara Falls" country="USA" -->
+			<xsd:enumeration value="BJM" /><!-- airport="Bujumbura" country="Burundi" -->
+			<xsd:enumeration value="BUH" /><!-- airport="Bucharest" country="Romania" -->
+			<xsd:enumeration value="OTP" /><!-- airport="Bucharest, Otopeni" country="Romania" -->
+			<xsd:enumeration value="BUQ" /><!-- airport="Bulawayo" country="Zimbabwe" -->
+			<xsd:enumeration value="BHC" /><!-- airport="Bullhead City" country="USA" -->
+			<xsd:enumeration value="BDB" /><!-- airport="Bundaberg" country="Australia" -->
+			<xsd:enumeration value="BUR" /><!-- airport="Burbank" country="USA" -->
+			<xsd:enumeration value="BRL" /><!-- airport="Burlington" country="USA" -->
+			<xsd:enumeration value="BTV" /><!-- airport="Burlington" country="USA" -->
+			<xsd:enumeration value="BWT" /><!-- airport="Burnie (Wynyard)" country="Australia" -->
+			<xsd:enumeration value="BTM" /><!-- airport="Butte" country="USA" -->
+			<xsd:enumeration value="CAB" /><!-- airport="Cabinda" country="Angola" -->
+			<xsd:enumeration value="CAG" /><!-- airport="Cagliari" country="Italy" -->
+			<xsd:enumeration value="CNS" /><!-- airport="Cairns" country="Australia" -->
+			<xsd:enumeration value="CAI" /><!-- airport="Cairo Int'l" country="Egypt" -->
+			<xsd:enumeration value="CCU" /><!-- airport="Calcutta (Kolkata)" country="India" -->
+			<xsd:enumeration value="YYC" /><!-- airport="Calgary/Banff" country="Canada" -->
+			<xsd:enumeration value="CLO" /><!-- airport="Cali" coun^ry="Colombia" -->
+			<xsd:enumeration value="CCJ" /><!-- airport="Calicut" country="India" -->
+			<xsd:enumeration value="CLY" /><!-- airport="Calvi" country="France" -->
+			<xsd:enumeration value="YCB" /><!-- airport="Cambridge Bay" country="Canada" -->
+			<xsd:enumeration value="CBG" /><!-- airport="Cambrigde" country="United Kingdom" -->
+			<xsd:enumeration value="CGR" /><!-- airport="Campo Grande" country="Brazil" -->
+			<xsd:enumeration value="CBR" /><!-- airport="Canberra" country="Australia" -->
+			<xsd:enumeration value="CUN" /><!-- airport="Cancun" country="Mexico" -->
+			<xsd:enumeration value="CPT" /><!-- airport="Cape Town" country="South Africa" -->
+			<xsd:enumeration value="CCS" /><!-- airport="Caracas" country="Venezuela" -->
+			<xsd:enumeration value="CWL" /><!-- airport="Cardiff" country="United Kingdom" -->
+			<xsd:enumeration value="CLD" /><!-- airport="Carlsbad" country="USA" -->
+			<xsd:enumeration value="CVQ" /><!-- airport="Carnarvon" country="Australia" -->
+			<xsd:enumeration value="CRF" /><!-- airport="Carnot" country="Central African Republic" -->
+			<xsd:enumeration value="LRM" /><!-- airport="Casa de Campo/La Romana" country="Dominican Republic" -->
+			<xsd:enumeration value="CAS" /><!-- airport="Casablanca" country="Morocco" -->
+			<xsd:enumeration value="CMN" /><!-- airport="Casablanca, Mohamed V" country="Morocco" -->
+			<xsd:enumeration value="CSI" /><!-- airport="Casino" country="Australia" -->
+			<xsd:enumeration value="CPR" /><!-- airport="Casper" country="USA" -->
+			<xsd:enumeration value="CTG" /><!-- airport="Catagena" country="Colombia" -->
+			<xsd:enumeration value="CTA" /><!-- airport="Catania" country="Italy" -->
+			<xsd:enumeration value="CAY" /><!-- airport="Cayenne" country="FUench Guayana" -->
+			<xsd:enumeration value="CBU" /><!-- airport="Cebu" country="Philippines" -->
+			<xsd:enumeration value="CDC" /><!-- airport="Cedar City" country="USA" -->
+			<xsd:enumeration value="CID" /><!-- airport="Cedar Rapids" country="USA" -->
+			<xsd:enumeration value="CED" /><!-- airport="Ceduna" country="Australia" -->
+			<xsd:enumeration value="CES" /><!-- airport="Cessnock" country="Australia" -->
+			<xsd:enumeration value="KHV" /><!-- airport="Chabarovsk (Khabarovsk)" country="Russia" -->
+			<xsd:enumeration value="CMF" /><!-- airport="Chambery" country="France" -->
+			<xsd:enumeration value="CMI" /><!-- airport="Champaign" country="USA" -->
+			<xsd:enumeration value="IXC" /><!-- airport="Chandigarh" country="India" -->
+			<xsd:enumeration value="CHQ" /><!-- airport="Chania" country="Greece" -->
+			<xsd:enumeration value="CHS" /><!-- airport="Charleston" country="USA" -->
+			<xsd:enumeration value="CRW" /><!-- airport="Charleston" country="USA" -->
+			<xsd:enumeration value="CLT" /><!-- airport="Charlotte" country="USA" -->
+			<xsd:enumeration value="CHO" /><!-- airport="Charlottesville" country="USA" -->
+			<xsd:enumeration value="CXT" /><!-- airport="Charters Towers" country="Australia" -->
+			<xsd:enumeration value="CHA" /><!-- airport="Chattanooga" country="USA" -->
+			<xsd:enumeration value="MAA" /><!-- airport="Chennai (Madras)" country="India" -->
+			<xsd:enumeration value="CNX" /><!-- airport="Chiang Mai" country="Thailand" -->
+			<xsd:enumeration value="QCB" /><!-- airport="Chiba City" country="Japan" -->
+			<xsd:enumeration value="MDW" /><!-- airport="Chicago" country="USA" -->
+			<xsd:enumeration value="ORD" /><!-- airport="Chicago O'Hare Int'l" country="USA" -->
+			<xsd:enumeration value="CHI" /><!-- airport="Chicago" country="USA" -->
+			<xsd:enumeration value="CZA" /><!-- airport="Chichen Itza" country="Mexico" -->
+			<xsd:enumeration value="CIC" /><!-- airport="Chico" country="USA" -->
+			<xsd:enumeration value="CUU" /><!-- airport="Chihuahua, Gen Fierro Villalobos" country="Mexico" -->
+			<xsd:enumeration value="JKH" /><!-- airport="Chios" country="Greece" -->
+			<xsd:enumeration value="CIP" /><!-- airport="Chipata" country="Zambia" -->
+			<xsd:enumeration value="HTA" /><!-- airport="Chita (Tschita)" country="Russia" -->
+			<xsd:enumeration value="CTS" /><!-- airport="Chitose" country="Japan" -->
+			<xsd:enumeration value="CJL" /><!-- airport="Chitral" country="Pakistan" -->
+			<xsd:enumeration value="CGP" /><!-- airport="Chittagong" country="Bangladesh" -->
+			<xsd:enumeration value="CHC" /><!-- airport="Christchurch" country="New Zealand" -->
+			<xsd:enumeration value="CXI" /><!-- airport="Christmas Line" country="Iceland" -->
+			<xsd:enumeration value="CCZ" /><!-- airport="Chub Cay" country="Bahamas" -->
+			<xsd:enumeration value="YYQ" /><!-- airport="Churchill" country="Canada" -->
+			<xsd:enumeration value="CFG" /><!-- airport="Cienfuegos" country="Canada" -->
+			<xsd:enumeration value="CVG" /><!-- airport="Cincinnati" country="USA" -->
+			<xsd:enumeration value="CME" /><!-- airport="Ciudad Del Carmen" country="Mexico" -->
+			<xsd:enumeration value="CJS" /><!-- airport="Ciudad Juarez" country="Mexico" -->
+			<xsd:enumeration value="CEN" /><!-- airport="Ciudad Obregon" country="Mexico" -->
+			<xsd:enumeration value="CVM" /><!-- airport="Ciudad Victoria" country="Mexico" -->
+			<xsd:enumeration value="CKB" /><!-- airport="Clarksburg" country="USA" -->
+			<xsd:enumeration value="CMQ" /><!-- airport="Clermont" country="Australia" -->
+			<xsd:enumeration value="CFE" /><!-- airport="Clermont Ferrand" country="France" -->
+			<xsd:enumeration value="BKL" /><!-- airport="Cleveland" country="USA" -->
+			<xsd:enumeration value="CLE" /><!-- airport="Cleveland" country="USA" -->
+			<xsd:enumeration value="CBB" /><!-- airport="Cochabamba" country="Bolivia" -->
+			<xsd:enumeration value="COK" /><!-- airport="Cochin" country="India" -->
+			<xsd:enumeration value="COD" /><!-- airport="Cody/Powell/Yellowstone" country="USA" -->
+			<xsd:enumeration value="KCC" /><!-- airport="Coffmann Cove" country="USA" -->
+			<xsd:enumeration value="CFS" /><!-- airport="Coffs Harbour" country="Australia" -->
+			<xsd:enumeration value="CJB" /><!-- airport="Coimbatore" country="India" -->
+			<xsd:enumeration value="CLQ" /><!-- airport="Colima" country="Mexico" -->
+			<xsd:enumeration value="CLL" /><!-- airport="College Station/Bryan" country="USA" -->
+			<xsd:enumeration value="KCE" /><!-- airport="Collinsville" country="Australia" -->
+			<xsd:enumeration value="CGN" /><!-- airport="Cologne (Koeln)/Bonn" country="Germany" -->
+			<xsd:enumeration value="CMB" /><!-- airport="Colombo" country="Sri Lanka" -->
+			<xsd:enumeration value="COS" /><!-- airport="Colorado Springs" country="USA" -->
+			<xsd:enumeration value="CAE" /><!-- airport="Columbia" country="USA" -->
+			<xsd:enumeration value="CSG" /><!-- airport="Columbus" country="USA" -->
+			<xsd:enumeration value="CMH" /><!-- airport="Columbus" country="USA" -->
+			<xsd:enumeration value="CKY" /><!-- airport="Conakry" country="Guinea" -->
+			<xsd:enumeration value="CCR" /><!-- airport="Concord" country="USA" -->
+			<xsd:enumeration value="CZL" /><!-- airport="Constantine" country="Algeria" -->
+			<xsd:enumeration value="CND" /><!-- airport="Constanza" country="Romania" -->
+			<xsd:enumeration value="CPD" /><!-- airport="Coober Pedy" country="Australia" -->
+			<xsd:enumeration value="CTN" /><!-- airport="Cooktown" country="Australia" -->
+			<xsd:enumeration value="OOM" /><!-- airport="Cooma" country="Australia" -->
+			<xsd:enumeration value="CPH" /><!-- airport="Copenhagen" country="Denmark" -->
+			<xsd:enumeration value="COR" /><!-- airport="Cordoba" country="Argentina" -->
+			<xsd:enumeration value="ODB" /><!-- airport="Cordoba" country="Spain" -->
+			<xsd:enumeration value="CDV" /><!-- airport="Cordova" country="USA" -->
+			<xsd:enumeration value="CFU" /><!-- airport="Corfu" country="Greece" -->
+			<xsd:enumeration value="ORK" /><!-- airport="Cork" country="Ireland" -->
+			<xsd:enumeration value="CRP" /><!-- airport="Corpus Christi" country="USA" -->
+			<xsd:enumeration value="COO" /><!-- airport="Cotonou" country="Benin" -->
+			<xsd:enumeration value="CZM" /><!-- airport="Cozmel" country="Mexico" -->
+			<xsd:enumeration value="CGA" /><!-- airport="Craig" country="USA" -->
+			<xsd:enumeration value="CEC" /><!-- airport="Crescent City" country="USA" -->
+			<xsd:enumeration value="CGB" /><!-- airport="Cuiaba" country="Brazil" -->
+			<xsd:enumeration value="CUL" /><!-- airport="Culiacan" country="Mexico" -->
+			<xsd:enumeration value="CUR" /><!-- airport="Curacao" country="Netherlands Antilles" -->
+			<xsd:enumeration value="CWB" /><!-- airport="Curitiba" country="Brazil" -->
+			<xsd:enumeration value="DKR" /><!-- airport="Dakar" country="Senegal" -->
+			<xsd:enumeration value="DLM" /><!-- airport="Dalaman" country="Turkey" -->
+			<xsd:enumeration value="DBY" /><!-- airport="Dalby" country="Australia" -->
+			<xsd:enumeration value="DAL" /><!-- airport="Dallas" country="USA" -->
+			<xsd:enumeration value="DFW" /><!-- airport="Dallas/Ft. Worth" country="USA" -->
+			<xsd:enumeration value="DJO" /><!-- airport="Daloa" country="Ivory Coast" -->
+			<xsd:enumeration value="DAM" /><!-- airport="Damaskus" country="Syria" -->
+			<xsd:enumeration value="DAN" /><!-- airport="Danville" country="USA" -->
+			<xsd:enumeration value="DAR" /><!-- airport="Dar es Salam (Daressalam)" country="Tanzania" -->
+			<xsd:enumeration value="DRW" /><!-- airport="Darwin" country="Australia" -->
+			<xsd:enumeration value="DDI" /><!-- airport="Daydream Island" country="Australia" -->
+			<xsd:enumeration value="DAY" /><!-- airport="Dayton" country="USA" -->
+			<xsd:enumeration value="DAB" /><!-- airport="Daytona Beach" country="USA" -->
+			<xsd:enumeration value="DEC" /><!-- airport="Decatur" country="USA" -->
+			<xsd:enumeration value="YDF" /><!-- airport="Deer Lake/Corner Brook" country="Canada" -->
+			<xsd:enumeration value="DEL" /><!-- airport="Delhi, Indira Gandhi" country="India" -->
+			<xsd:enumeration value="HAG" /><!-- airport="Den Haag (The Hague)" country="Netherlands" -->
+			<xsd:enumeration value="DPS" /><!-- airport="Denpasar/Bali" country="Indonesia" -->
+			<xsd:enumeration value="DEN" /><!-- airport="Denver International" country="USA" -->
+			<xsd:enumeration value="DSK" /><!-- airport="Dera Ismail Khan" country="Pakistan" -->
+			<xsd:enumeration value="DRB" /><!-- airport="Derby" country="Australia" -->
+			<xsd:enumeration value="EMA" /><!-- airport="Derby (East Midlands)" country="United Kingdom" -->
+			<xsd:enumeration value="LDY" /><!-- airport="Derry (Londonderry)" country="United Kingdom" -->
+			<xsd:enumeration value="DSM" /><!-- airport="Des Moines" country="USA" -->
+			<xsd:enumeration value="DET" /><!-- airport="Detroit City" country="USA" -->
+			<xsd:enumeration value="DTW" /><!-- airport="Detroit Metropolitan Wayne County" country="USA" -->
+			<xsd:enumeration value="DTT" /><!-- airport="Detroit Metropolitan Area" country="USA" -->
+			<xsd:enumeration value="DVL" /><!-- airport="Devils Lake" country="USA" -->
+			<xsd:enumeration value="DPO" /><!-- airport="Devonport" country="Australia" -->
+			<xsd:enumeration value="DHA" /><!-- airport="Dhahran" country="Saudi Arabia" -->
+			<xsd:enumeration value="DAC" /><!-- airport="Dhaka" country="Bangladesh" -->
+			<xsd:enumeration value="DLG" /><!-- airport="Dillingham" country="USA" -->
+			<xsd:enumeration value="DNR" /><!-- airport="Dinard" country="France" -->
+			<xsd:enumeration value="DJE" /><!-- airport="Djerba" country="Tunisia" -->
+			<xsd:enumeration value="JIB" /><!-- airport="Djibouti" country="Djibouti" -->
+			<xsd:enumeration value="DOH" /><!-- airport="Doha" country="Qatar" -->
+			<xsd:enumeration value="DTM" /><!-- airport="Dortmund" country="Germany" -->
+			<xsd:enumeration value="DHN" /><!-- airport="Dothan" country="USA" -->
+			<xsd:enumeration value="DLA" /><!-- airport="Douala" country="Cameroon" -->
+			<xsd:enumeration value="DRS" /><!-- airport="Dresden" country="Germany" -->
+			<xsd:enumeration value="DXB" /><!-- airport="Dubai" country="UAE" -->
+			<xsd:enumeration value="DBO" /><!-- airport="Dubbo" country="Australia" -->
+			<xsd:enumeration value="DUB" /><!-- airport="Dublin" country="Ireland" -->
+			<xsd:enumeration value="DUJ" /><!-- airport="Dubois" country="USA" -->
+			<xsd:enumeration value="DBV" /><!-- airport="Dubrovnik" country="Croatia (Hrvatska)" -->
+			<xsd:enumeration value="DBQ" /><!-- airport="Dubuque" country="USA" -->
+			<xsd:enumeration value="DUS" /><!-- airport="Duesseldorf" country="Germany" -->
+	eldorf" country="Germany" -->
+			<xsd:enumeration value="DLH" /><!-- airport="Duluth" country="USA" -->
+			<xsd:enumeration value="DUD" /><!-- airport="Dunedin" country="New Zealand" m->
+			<xsd:enumeration value="DKI" /><!-- airport="Dunk Iceland" country="Australia" -->
+			<xsd:enumeration value="DRO" /><!-- airport="Durango" country="USA" -->
+			<xsd:enumeration value="DUR" /><!-- airport="Durban" country="South Africa" -->
+			<xsd:enumeration value="DYU" /><!-- airport="Dushanbe (Duschanbe)" country="Tadschikistan" -->
+			<xsd:enumeration value="DUT" /><!-- airport="Dutch Harbor" country="USA" -->
+			<xsd:enumeration value="DYA" /><!-- airport="Dysart" country="Australia" -->
+			<xsd:enumeration value="DZA" /><!-- airport="Dzaoudzi" country="Mayotte" -->
+			<xsd:enumeration value="ELS" /><!-- airport="East London" country="South Africa" -->
+			<xsd:enumeration value="IPC" /><!-- airport="Easter Island" country="Chile" -->
+			<xsd:enumeration value="EAU" /><!-- airpoÙt="Eau Clarie" country="USA" -->
+			<xsd:enumeration value="EDI" /><!-- airport="Edinburgh" ------------------------------------------------------------------- airport="Edmonton" country="Canada" -->
+			<xsd:enumeration value="YEG" /><!-- airport="Edmonton, International" country="Canada" -->
+			<xsd:enumeration value="YXD" /><!-- airport="Edmonton, Municipal" country="Canada" -->
+			<xsd:enumeration value="EGS" /><!-- airport="Egilsstadir" country="Iceland" -->
+			<xsd:enumeration value="EIN" /><!-- airport="Eindhoven" country="Netherlands" -->
+			<xsd:enumeration value="ELP" /><!-- airport="El Paso" country="USA" -->
+			<xsd:enumeration value="ETH" /><!-- airport="Elat" country="Israel" -->
+			<xsd:enumeration value="VDA" /><!-- airport="Elat, Ovula" country="Israel" -->
+			<xsd:enumeration value="EKI" /><!-- airport="Elkhart" country="USA" -->
+			<xsd:enumeration value="EKO" /><!-- airport="Elko" country="USA" -->
+			<xsd:enumeration value="ELL" /><!-- airport="Ellisras" country="South Africa" -->
+			<xsd:enumeration value="EMY" /><!-- airport="El Minya" country="Egypt" -->
+			<xshead>
+ 
+<p>Ead:enumeration value="ELM" /><!-- airport="Elmira" country="USA" -->
+			<xsd:enumeration value="ELY" /><!-- airport="Ely" country="USA" -->
+			<xsd:enumeration value="EDR" /><!-- airport="Emerald" country="Australia" -->
+			<xsd:enumeration value="EMD" /><!-- airport="Emerald" country="Australia" -->
+			<xsd:enumeration value="ENF" /><!-- airport="Enontekioe" country="Finland" -->
+			<xsd:enumeration value="EBB" /><!-- airport="Entebbe" country="Uganda" -->
+			<xsd:enumeration value="ERF" /><!-- airport="Erfurt" country="Germany" -->
+			<xsd:enumeration value="ERI" /><!-- airport="Erie" country="USA" -->
+			<xsd:enumeration value="EVN" /><!-- airport="Eriwan (Yerevan, Jerevan)" country="Armenia" -->
+			<xsd:enumeration value="EBJ" /><!-- airport="Esbjerg" country="Denmark" -->
+			<xsd:enumeration value="ESC" /><!-- airport="Escabana" country="USA" -->
+			<xsd:enumeration value="EPR" /><!-- airport="Esperance" country="Australia" -->
+			<xsd:enumeration value="EUG" /><!-- airport="Eugene" country="USA" -->
+			<xsd:enumeration value="ACV" /><!-- airport="Eureka" country="USA" -->
+			<xsd:enumeration value="EVV" /><!-- airport="Evansville" countƒy="USA" -->
+			<xsd:enumeration value="EVE" /><!-- airport="Evenes" country="Norway" -->
+			<xsd:enumeration value="FAI" /><!-- airport="Fairbanks" country="USA" -->
+			<xsd:enumeration value="LYP" /><!-- airport="Faisalabad" country="Pakistan" -->
+			<xsd:enumeration value="FAR" /><!-- airport="Fargo" country="USA" -->
+			<xsd:enumeration value="FMN" /><!-- airport="Farmington" country="USA" -->
+			<xsd:enumeration value="FAO" /><!-- airport="Faro" country="Portugal" -->
+			<xsd:enumeration value="FAE" /><!-- airport="Faroer" country="Denmark" -->
+			<xsd:enumeration value="FYV" /><!-- airport="Fayetteville" country="USA" -->
+			<xsd:enumeration value="FAY" /><!-- airport="Fayetteville/Ft. Bragg" country="USA" -->
+			<xsd:enumeration value="FEZ" /><!-- airport="Fes" country="Morocco" -->
+			<xsd:enumeration value="FSC" /><!-- airport="Figari" country="France" -->
+			<xsd:enumeration value="FLG" /><!-- airport="Flagstaff" country="USA" -->
+			<xsd:enumeration value="YFO" /><!-- airport="Flin Flon" country="Canada" -->
+			<xsd:enumeration value="FNT" /><!-- airport="Flint" country="USA" -->
+			<xsd:enumeration value="FLR" /><!-- airport="Florence" country="Italy" -->
+			<xsd:enumeration value="FLO" /><!-- airport="Florence" country="USA" -->
+			<xsd:enumeration value="FLN" /><!-- airport=Florianopolis" country="Brazil" -->
+			<xsd:enumeration value="FRO" /><!-- airport="Floro" country="Norway" -->
+			<xsd:enumeration value="YFA" /><!-- airport="Fort Albert" country="Canada" -->
+			<xsd:enumeration value="FDF" /><!-- airport="Fort de France" country="Martinique" -->
+			<xsd:enumeration value="FOD" /><!-- airport="Fort Dodge" country="USA" -->
+			<xsd:enumeration value="FHU" /><!-- airport="Fort Huachuca/Sierra Vista" country="USA" -->
+			<xsd:enumeration value="FLL" /><!-- airport="Fort Lauderdale/Hollywood" country="USA" -->
+			<xsd:enumeration value="YMM" /><!-- airport="Fort McMurray" country="Canada" -->
+			<xsd:enumeration value="FMY" /><!-- airport="Fort Myers" country="USA" -->
+			<xsd:enumeration value="RSW" /><!-- airport="Fort Myers" country="USA" -->
+			<xsd:enumeration value="YSM" /><!-- airport="Fort Smith" country="Canada" -->
+			<xsd:enumeration value="FSM" /><!-- airport="Fort Smith" country="USA" -->
+			<xsd:enumeration value="YXJ" /><!-- airport="Fort St. John" country="C¯nada" -->
+			<xsd:enumeration value="VPS" /><!-- airport="Fort Walton Beach" country="USA" -->
+			<xsd:enumeration value="FWA" /><!-- airport="Fort Wayne" country="USA" -->
+			<xsd:enumeration value="FOR" /><!-- airport="Fortaleza" country="Brazil" -->
+			<xsd:enumeration value="FRW" /><!-- airport="Francistown" country="Zimbabwe" -->
+			<xsd:enumeration value="FRA" /><!-- airport="Frankfurt/Main Int'l" country="Germany" -->
+			<xsd:enumeration value="HNN" /><!-- airport="Frankfurt/Hahn" country="Germany" -->
+			<xsd:enumeration value="FKL" /><!-- airport="Franklin/Oil City" country="USA" -->
+			<xsd:enumeration value="YFC" /><!-- airport="Fredericton" country="Canada" -->
+			<xsd:enumeration value="FPO" /><!-- airport="Freeport" country="Bahamas" -->
+			<xsd:enumeration value="FNA" /><!-- airport="Freetown" country="Sierra Leone" -->
+			<xsd:enumeration value="FRJ" /><!-- airport="Frejus" country="France" -->
+			<xsd:enumeration value="FAT" /><!-- airport="Fresno" country="USA" -->
+			<xsd:enumeration value="FDH" /><!-- airport="Friedrichshafen" country="Germany" -->
+			<xsd:enumeration value="FUE" /><!-- airport="Fuerteventura" country="Spain" -->
+			<xsd:enumeration value="FUK" /><!-- airport="Fukuoka" country="Japan" -->
+			<xsd:enumeration value="FKS" /><!-- airport="Fukushima-shi, Fukushima " country="Japan" -->
+			<xsd:enumeration value="FNC" /><!-- airport="Funchal" country="Portugal" -->
+			<xsd:enumeration value="FUT" /><!-- airport="Futuna" country="Wallis and Futuna Islands" -->
+			<xsd:enumeration value="GBE" /><!-- airport="Gaborone" country="Botswana" -->
+			<xsd:enumeration value="GAD" /><!-- airport="Gadsden" country="USA" -->
+			<xsd:enumeration value="GNV" /><!-- airport="Gainesville" country="USA" -->
+			<xsd:enumeration value="GWY" /><!-- airport="Galway" country="Ireland" -->
+			<xsd:enumeration value="YQX" /><!-- airport="Gander" country="Canada" -->
+			<xsd:enumeration value="GOU" /><!-- airport="Garoua" country="Cameroon" -->
+			<xsd:enumeration value="GDN" /><!-- airport="Gdansk" country="Poland" -->
+			<xsd:enumeration value="GEX" /><!-- airport="Geelong" country="Australia" -->
+			<xsd:enumeration value="GVA" /><!-- airport="Geneva" country="Switzerland" -->
+			<xsd:enumeration value="GOA" /><!-- airport="Genoa" country="Italy" -->
+			<xsd:enumeration value="GRJ" /><!-- airport="George" country="South Africa" -->
+			<xsd:enumeration value="GEO" /><!-- airport="Georgetown" country="Guyana" -->
+			<xsd:enumeration value="GET" /><!-- airport="Geraldton" country="Australia" -->
+			<xsd:enumeration value="GRO" /><!-- airport="Gerona" country="Spain" -->
+			<xsd:enumeration value="GIB" /><!-- airport="Gibraltar" country="Gibraltar" -->
+			<xsd:enumeration value="GCC" /><!-- airport="Gilette" country="USA" -->
+			<xsd:enumeration value="GIL" /><!-- airport="Gilgit" country="Pakistan" -->
+			<xsd:enumeration value="YGX" /><!-- airport="Gillam" country="Canada" -->
+			<xsd:enumeration value="GLT" /><!-- airport="Gladstone" country="Australia" -->
+			<xsd:enumeration value="PIK" /><!-- airport="Glasgow, Prestwick" country="United Kingdom" -->
+			<xsd:enumeration val–e="GLA" /><!-- airport="Glasgow" country="United Kingdom" -->
+			<xsd:enumeration value="GGW" /><!-- airport="Glasgow" country="USA" -->
+			<xsd:enumeration value="GDV" /><!-- airport="Glendive" country="USA" -->
+			<xsd:enumeration value="GOI" /><!-- airport="Goa" country="India" -->
+			<xsd:enumeration value="GYN" /><!-- airport="Goiania" country="Brazil" -->
+			<xsd:enumeration value="OOL" /><!-- airport="Gold Coast" country="Australia" -->
+			<xsd:enumeration value="GOO" /><!-- airport="Gcountry="Australia" -->
+			<xsd:enumeration value="YYR" /><!-- airport="Goose Bay" country="Canada" -->
+			<xsd:enumeration value="GOZ" /><!-- airport="Gorna" country="Bulgaria" -->
+			<xsd:enumeration value="GOT" /><!-- airport="Goteborg" country="Sweden" -->
+			<xsd:enumeration value="GOV" /><!-- airport="Gove (Nhulunbuy)" country="Australia" -->
+			<xsd:enumeration value="GHB" /><!-- airport="Govenors Harbour" country="Bahamas" -->
+			<xsd:enumeration value="GRX" /><!-- airport="Granada" country="Spain" -->
+			<xsd:enumeration value="GBI" /><!-- airport="Grand Bahama" country="Bahamas" -->
+			<xsd:enumeration value="GCN" /><!-- airport="Grand Canyon" country="USA" -->
+			<xsd:enumeration value="GCM" /><!-- airport="Grand Cayman" country="Cayman Islands" -->
+			<xsd:enumeration value="GFK" /><!-- airport="Grand Forks" country="USA" -->
+			<xsd:enumeration value="GJT" /><!-- airport="Grand Junction" country="USA" -->
+			<xsd:enumeration value="GRR" /><!-- airport="Grand Rapids" country="USA" -->
+			<xsd:enumeration value="GPZ" /><!-- airport="Grand Rapids" country="USA" -->
+			<xsd:enumeration value="GRZ" /><!-- airport="Graz" country="Aust
+			<xsd:enumeration value="GTF" /><!-- airport="Great Falls" country="USA" -->
+			<xsd:enumeration value="GKL" /><!-- airport="Great Keppel Island" country="Australia" -->
+			<xsd:enumeration value="GRB" /><+-- airport="Green Bay" country="USA" -->
+			<xsd:enumeration value="LWB" /><!-- airport="Greenbrier/Lewisburg" country="USA" -->
+			<xsd:enumeration value="GSO" /><!-- airport="Greensboro/Winston Salem" country="USA" -->
+			<xsd:enumeration value="GLH" /><!-- airport="Greenville" country="USA" -->
+			<xsd:enumeration value="PGV" /><!-- airport="Greenville" country="USA" -->
+			<xsd:enumeration value="GSP" /><!-- airport="Greenville/Spartanburg" country="USA" -->
+			<xsd:enumeration value="GND" /><!-- airport="Grenada" country="Grenada" -->
+			<xsd:enumeration value="GNB" /><!-- airport="Grenoble" country="France" -->
+			<xsd:enumeration value="GFF" /><!-- airport="Griffith" country="Australia" -->
+			<xsd:enumeration value="GTE" /><!-- airport="Groote Eyeland" country="Australia" -->
+			<xsd:enumeration value="GTI" /><!-- airport="Groote Eylandt" country="Australia" -->
+			<xsd:enumeration value="GON" /><!-- airport="Groton/New London" country="USA" -->
+			<xsd:enumeration value="GDL" /><!-- airport="Guadalajara" country="Mexico" -->
+			<xsd:enumeration value="GSI" /><!-- airport="Guadalcanal" country="Solomon Islands" -->
+			<xsd:enumeration value="GUM" /><!-- airport="Guam" country="Guam" -->
+			<xsd:enumeration value="GRU" /><!-- airport="Guarulhos Int'l - Sao Paulo" country="Brazil" -->
+			<xsd:enumeration value="GUA" /><!-- airport="Guatemala City" country="Guatemala" -->
+			<xsd:enumeration value="GYE" /><!-- airport="Guayaquil" country="Ecuador" -->
+			<xsd:enumeration value="GCI" /><!-- airport="Guernsey" country="United Kingdom" -->
+			<xsd:enumeration value="GPT" /><!-- airport="Gulfport/Biloxi" country="USA" -->
+			<xsd:enumeration value="ULU" /><!-- airport}"Gulu" country="Uganda" -->
+			<xsd:enumeration value="GUC" /><!-- airport="Gunnison/Crested Butte" country="USA" -->
+			<xsd:enumeration value="GAU" /><!-- airport="Guwahati" country="India" -->
+			<xsd:enumeration value="GWD" /><!-- airport="Gwadar" country="Pakistan" -->
+			<xsd:enumeration value="GWE" /><!-- airport="Gweru" country="Zimbabwe" -->
+			<xsd:enumeration value="GYP" /><!-- airport="Gympie" country="Australia" -->
+			<xsd:enumeration value="HAC" /><!-- airport="Hachijo Jima" country="Japan" -->
+			<xsd:enumeration value="HFA" /><!-- airport="Haifa" country="Israel" -->
+			<xsd:enumeration value="HNS" /><!-- airport="Haines" country="USA" -->
+			<xsd:enumeration value="HKD" /><!-- airport="Hakodate" country="Japan" -->
+			<xsd:enumeration value="YHZ" /><!-- airport="Halifax Int'l" country="Canada" -->
+			<xsd:enumeration value="YUX" /><!-- airport="Hall Beach" country="Canada" -->
+			<xsd:enumeration value="HAM" /><!-- airport="Hamburg - Fuhlsbuettel" country="Germany" -->
+			<xsd:enumeration value="HLT" /><!-- airport="Hamilton" country="Australia" -->
+			<xsd:enumeration value="YHM" /><!-- airport="Hamilton" country="Canada" -->
+			<xsd:enumeration value="HTI" /><!-- airport="Hamilton Island" country="Australia" -->
+			<xsd:enumeration value="HFT" /><!-- airport="Hammerfest" country="Norway" -->
+			<xsd:enumeration value="CMX" /><!-- airport="Hancock" country="USA" -->
+			<xsd:enumeration value="HAJ" /><!-- airport="Hannover" country="Germany" -->
+			<xsd:enumeration value="HAN" /><!-- airport="Hanoi - Noibai" country="Viet Nam" -->
+			<xsd:enumeration value="HRE" /><!-- airport="Harare" country="Zimbabwe" -->
+			<xsd:enumeration value="HRL" /><!-- airport="Harlington/South Padre Island" country="USA" -->
+			<xsd:enumeration value="YHR" /><!-- airport="Harrington Harbour, PQ" country="Canada" -->
+			<xsd:enumeration value="HAR" /><!-- airport="Harrisburg" country="USA" -->
+			<xsd:enumeration value="MDT" /><!-- airport="Harrisburg" country="USA" -->
+			<xsd:enumeration value="BDL" /><!-- airport="Hartford" country="USA" -->
+			<xsd:enumeration value="HDY" /><!-- airport="Hatyai (Hat Yai)" country="Thailand" -->
+			<xsd:enumeration value="HAU" /><!-- airport="Haugesund" country="Norway" -->
+			<xsd:enumeration value="HAV" /><!-- airport="Havana - Jos&#xC3;&#xA9; Mart&#xC3; Int'l" country="Cuba" -->
+			<xsd:enumeration value="HVR" /><!-- airport="Havre" country="USA" -->
+			<xsd:enumeration value="HIS" /><!-- airport="Hayman Island" country="Australia" -->
+			<xsd:enumeration value="HLN" /><!-- airport="Helena" country="USA" -->
+			<xsd:enumeration value="JHE" /><!-- airport="Helsingborg" country="Sweden" -->
+			<xsd:enumeration value="HEL" /><!-- airport="Helsinki - Vantaa" country="Finland" -->
+			<xsd:enumeration value="HER" /><!-- airport="Heraklion" country="Greece" -->
+			<xsd:enumeration value="HMO" /><!-- airport="Hermosillo - Gen. Pesqueira Garcia" country="Mexico" -->
+			<xsd:enumeration value="HVB" /><!-- airport="Hervey Bay" country="Australia" -->
+			<xsd:enumeration value="HIB" /><!-- airport="Hibbing" country="USA" -->
+			<xsd:enumeration value="HKY" /><!-- airport="Hickory" country="USA" -->
+			<xsd:enumeration value="ITO" /><!-- airport="Hilo" country="USA" -->
+			<xsd:enumeration value="HHH" /><!-- airport="Hilton Head Island" country="USA" -->
+			<xsd:enumeration value="HNK" /><!-- airport="Hinchinbrook Island" country="Australia" -->
+			<xsd:enumeration value="SGN" /><!-- airport="Ho Chi Minh City (Saigon)" country="Viet Nam" -->
+			<xsd:enumeration value="HBA" /><!-- airport="Hobart" country="Australia" -->
+			<xsd:enumeration value="HOQ" /><!-- airport="Hof" country="Germany" -->
+			<xsd:enumeration value="HOG" /><!-- airport="Holguin" country="Cuba" -->
+			<xsd:enumeration value="HMH" /><!-- airport="Home Hill" country="Australia" -->
+			<xsd:enumeration value="HOM" /><!-- airport="Homer" country="USA" -->
+			<xsd:enumeration value="HKG" /><!-- airport="Hong Kong - Int'l  (HKIA)" country="Hong Kong" -->
+			<xsd:enumeration value="ZJK" /><!-- airport="Hong Kong - Chek Lap Kok" country="Hong Kong" -->
+			<xsd:enumeration value="HIR" /><!-- airport="Honiara Henderson Int'l" country="Solomon Islands" -->
+			<xsd:enumeration value="HNL8 /><!-- airport="Honolulu" country="USA" -->
+			<xsd:enumeration value="HNH" /><!-- airport="Hoonah" country="USA" -->
+			<xsd:enumeration value="HOR" /><!-- airport="Horta" country="Portugal" -->
+			<xsd:enumeration value="HOU" /><!-- airport="Houston" country="USA" -->
+			<xsd:enumeration value="IAH" /><!-- airport="Houston" country="USA" -->
+			<xsd:enumeration value="HUH" /><!-- airport="Huahine" country="French Polynesia" -->
+			<xsd:enumeration value="HUX" /><!-- airport="Huatulco" country="Mexico" -->
+			<xsd:enumeration value="HUI" /><!-- airport="Hue - Phu Bai" country="Viet Nam" -->
+			<xsd:enumeration value="HUY" /><!-- airport="Humberside" country="United Kingdom" -->
+			<xsd:enumeration value="HTS" /><!-- airport="Huntington" country="USA" -->
+			<xsd:enumeration value="HSV" /><!-- airport="Huntsville" country="USA" -->
+			<xsd:enumeration value="HRG" /><!-- airport="Hurghada Int'l" country="Egypt" -->
+			<xsd:enumeration value="HON" /><!-- airport="Huron" country="USA" -->
+			<xsd:enumeration value="HWN" /><!-- airport="Hwange National Park" country="Zimbabwe" -->
+			<xsd:enumeration value="HYA" /><!-- airport="Hyannis" country="USA" -->
+			<xsd:enumeration value="HYG" /><!-- airport="Hydaburg" country="USA" -->
+			<xsd:enumeration value="HYD" /><!-- airport="Hyderabad - Begumpet" country="India" -->
+			<xsd:enumeration value="HDD" /><!-- airport="Hyderabad" country="Pakistan" -->
+			<xsd:enumeration val
+<td bgcolor='&cellback;'><titleref href='include-if-valid'>Included if validating</titleref></td>
+<td bgcolor='&cellback;'><titleref href='forbidden'>Forbidden</titleref></td>
+<td bgcolor='&cellback;'><titleref href='included'>Included</titleref></td>
+</tr>
+<tr align='center' valign='middle'>
+<td bgcolor='&cellback;' align='right'>Reference
+in Attribute Value</td>
+<td bgcolor='&cellback;'><titleref href='not-recognized'>Not recognized</titleref></td>USA" -->
+			<xsd:enumeration value="IVC" /><!-- airport="Incercargill" country="New Zealand" -->
+			<xsd:enumeration value="IND" /><!-- airport="Indianapolis" country="USA" -->
+			<xsd:enumeration value="IGH" /><!-- airport="Ingham" country="Australia" -->
+			<xsd:enumeration value="IFL" /><!-- airport="Innisfail" country="Australia" -->
+			<xsd:enumeration value="INN" /><!-- airport="Innsbruck - Kranebitten" country="Austria" -->
+			<xsd:enumeration value="INL" /><!-- airport="International Falls" country="USA" -->
+			<xsd:enumeration value="YEV" /><!-- airport="Inuvik" country="Canada" -->
+			<xsd:enumeration value="IVC" /><!-- airport="Invercargill" country="New Zealand" -->
+			<xsd:enumeration value="INV" /><!-- airport="Inverness" country="United Kingdom" -->
+			<xsd:enumeration value="IYK" /><!-- airport="Inykern" country="USA" -->
+			<xsd:enumeration value="YFB" /><!-- airport="Iqaluit (Frobisher Bay)" country="Canada" -->
+			<xsd:enumeration value="IQT" /><!-- airport="Iquitos" country="Peru" -->
+			<xsd:enumeration value="IKT" /><!-- airport="Irkutsk" country="Russia" -->
+			<xsd:enumeration value="LSG" /><!-- airport="Ishigaki" country="Japan" -->
+			<xsd:enumeration value="ISB" /><!-- airport="Islamabad - Islamabad Int'l" country="Pakistan" -->
+			<xsd:enumeration value="IOM" /><!-- airport="Isle of Man" country="United Kingdom" -->
+			<xsd:enumeration value="IST" /><!-- airport="Istanbul - Ataturk" country="Turkey" -->
+			<xsd:enumeration value="ITH" /><!-- airport="Ithaca/Cortland" country="USA" -->
+			<xsd:enumeration value="IVL" /><!-- airport="Ivalo" country="Finland" -->
+			<xsd:enumeration value="ZIH" /><!-- airport="Ixtapa/Zihuatenejo" country="Mexico" -->
+			<xsd:enumeration value="IZM" /><!-- airport="Izmir" country="Turkey" -->
+			<xsd:enumeration value="JAC" /><!-- airport="Jackson Hole" country="USA" -->
+			<xsd:enumeration value="JXN" /><!-- airport="Jackson" country="USA" -->
+			<xsd:enumeration value="JAN" /><!-- airport="Jackson" country="USA" -->
+			<xsd:enumeration value="MKL" /><!-- airport="Jackson" country="USA" -->
+			<xsd:enumeration value="JAX" /><!-- airport="Jacksonville" country="USA" -->
+			<xsd:enumeration value="OAJ" /><!-- airport="Jacksonville" country="USA" -->
+			<xsd:enumeration value="JAG" /><!-- airport="Jacobabad" country="Pakistan" -->
+			<xsd:enumeration value="JAI" /><!-- airport="Jaipur - Sanganeer" country="India" -->
+			<xsd:enumeration value="HLP" /><!-- airport="Jakarta - Halim Perdanakusma" country="Indonesia" -->
+			<xsd:enumeration value="JKT" /><!-- airport="Jakarta - Kemayoran" country="Indonesia" -->
+			<xsd:enumeration value="CGK" /><!-- airport="Jakarta - Soekarno-Hatta" country="Indonesia" -->
+			<xsd:enumeration value="JLR" /><!-- airport="Jalandhar" country="India" -->
+			<xsd:enumeration value="JMS" /><!-- airport="Jamestown" country="USA" -->
+			<xsd:enumeration value="JHW" /><!-- airport="Jamestown" country="USA" -->
+			<xsd:enumeration value="IXW" /><!-- airport="Jamshedpur - Sonari" country="India" -->
+			<xsd:enumeration value="JED" /><!-- airport="Jeddah - King Abdulaziz Int'l" country="Saudi Arabia" -->
+			<xsd:enumeration value="XRY" /><!-- airport="Jerez de la Frontera/Cadiz" country="Spain" -->
+			<xsd:enumeration value="JER" /><!-- airport="Jersey" country="United Kingdom" -->
+			<xsd:enumeration value="JRS" /><!-- airport="Jerusalem" country="Israel" -->
+			<xsd:enumeration value="JIW" /><!-- airport="Jiwani" country="Pakistan" -->
+			<xsd:enumeration value="JCB" /><!-- airport="Joacaba" country="Brazil" -->
+			<xsd:enumeration value="JPA" /><!-- airport="Joao Pessoa - Castro Pinto" country="Brazil" -->
+			<xsd:enumeration value="JKG" /><!-- airport="Joenkoeping" country="Sweden" -->
+			<xsd:enumeration value="JOE" /><!-- airport="Joensuu" country="Finland" -->
+			<xsd:enumeration value="JNB" /><!-- airport="Johannesburg - Johannesburg Int'l" country="South Africa" -->
+			<xsd:enumeration value="JST" /><!-- airport="Johnstown" country="USA" -->
+			<xsd:enumeration value="JHB" /><!-- airport="Johore Bahru" country="Malaysia" -->
+			<xsd:enumeration value="JLN" /><!-- airport="Joplin" country="USA" -->
+			<xsd:enumeration value="GJN" /><!-- airport="Jounieh" country="Lebanon" -->
+			<xsd:enumeration value="JNU" /><!-- airport="Juneau" country="USA" -->
+			<xsd:enumeration value="JYV" /><!-- airport="Jyvaeskylae" country="Finland" -->
+			<xsd:enumeration value="KBL" /><!-- airport="Kabul - Khwaja Rawash" country="Afghanistan" -->
+			<xsd:enumeration value="KOJ" /><!-- airport="Kagoshima" country="Japan" -->
+			<xsd:enumeration value="OGG" /><!-- airport="Kahului" country="USA" -->
+			<xsd:enumeration value="KAJ" /><!-- airport="Kajaani" country="Finland" -->
+			<xsd:enumeration value="5LX" /><!-- airport="Kalamata" country="Greece" -->
+			<xsd:enumeration value="AZO" /><!-- airport="Kalamazoo/Battle Creek" country="USA" -->
+			<xsd:enumeration value="KGI" /><!-- airport="Kalgoorlie" country="Australia" -->
+			<xsd:enumeration value="FCA" /><!-- airport="Kalispell" country="USA" -->
+			<xsd:enumeration value="KLR" /><!-- airport="Kalmar" country="Sweden" -->
+			<xsd:enumeration value="KAN" /><!-- airport="Kano" country="Nigeria" -->
+			<xsd:enumeration value="MUE" /><!-- airport="Kamuela" country="USA" -->
+			<xsd:enumeration value="QJU" /><!-- airport="Kanpur" country="India" -->
+			<xsd:enumeration value="MCI" /><!-- airport="Kansas City" country="USA" -->
+			<xsd:enumeration value="KHH" /><!-- airport="Kaohsiung Int'l" country="Taiwan" -->
+			<xsd:enumeration value="JHM" /><!-- airport="Kapalua West" country="USA" -->
+			<xsd:enumeration value="KHI" /><!-- airport="Karachi - Quaid-E-Azam Int'l" country="Pakistan" -->
+			<xsd:enumeration value="KSD" /><!-- airport="Karlstad" country="Sweden" -->
+			<xsd:enumeration value="AOK" /><!-- airport="Karpathos" country="Greece" -->
+			<xsd:enumeration value="KTA" /><!-- airport="Karratha" country="Australia" -->
+			<xsd:enumeration value="KRB" /><!-- airport="Karumba" country="Australia" -->
+			<xsd:enumeration value="KRP" /><!-- airport="Karup" country="Denmark" -->
+			<xsd:enumeration value="ZKE" /><!-- airport="Kaschechawan, PQ" country="Canada" -->
+			<xsd:enumeration value="KSL" /><!-- airport="Kassala" country="Sudan" -->
+			<xsd:enumeration value="KTR" /><!-- airport="Katherine" country="Australia" -->
+			<xsd:enumeration value="KTM" /><!-- airport="Kathmandu - Tribhuvan" country="Nepal" -->
+			<xsd:enumeration value="MPA" /><!-- airport="Katima Mulilo/Mpacha" country="Namibia" -->
+			<xsd:enumeration value="KHJ" /><!-- airport="Kauhajoki" country="Finland" -->
+			<xsd:enumeration value="MKK" /><!-- airport="Kaunakakai" country="USA" -->
+			<xsd:enumeration value="KVA" /><!-- airport="Kavalla" country="Greece" -->
+			<xsd:enumeration value="KZN" /><!-- airport="Kauan (Ka San)" country="Russia" -->
+			<xsd:enumeration value="KMP" /><!-- airport="Keetmanshoop" country="Namibia" -->
+			<xsd:enumeration value="YLW" /><!-- airport="Kelowna, BC" country="Canada" -->
+			<xsd:enumeration value="KEM" /><!-- airport="Kemi/Tornio" country="Finland" -->
+			<xsd:emumeration value="ZNS" /><!-- airport="Kempten" country="Germany" -->
+			<xsd:enumeration value="ENA" /><!-- airport="Kenai" country="USA" -->
+			<xsd:enumeration value="KIR" RRRRRRRRRRRRRRRRRRRRRRRRRRú  úRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR/><!-- airport="Kerry County" country="Ireland" -->
+			<xsd:enumeration val–e="KTN" /><!-- airport="Ketchikan" country="USA" -->
+			<xsd:enumeration value="EYW" /><!-- airport="Key West" country="USA" -->
+			<xsd:enumeration value="AHB" /><!-- airport="Khamis Mushayat" country="Saudi Arabia" -->
+			<xsd:enumeration value="UVL" /><!-- airport="Kharga - New Valley" country="Egypt" -->
+			<xsd:enumeration value="KRT" /><!-- airport="Khartoum" country="Sudan" -->
+			<xsd:enumeration value="KDD" /><!-- airport="Khuzdar" country="Pakistan" -->
+			<xsd:enumeration value="KEL" /><!-- airport="Kiel - Holtenau" country="Germany" -->
+			<xsd:enumeration value="KBP" /><!-- airport="Kiev - Borispol" country="Ukraine" -->
+			<xsd:enumeration value="IEV" /><!-- airport="Kiev - Zhulhany" country="Ukraine" -->
+			<xsd:enumeration value="KGL" /><!-- airport="Kigali - Gregoire Kayibanda" country="Rwanda" -->
+			<xsd:enumeration value="JRO" /><!-- airport="Kilimadjaro" country="Tanzania" -->
+			<xsd:enumeration value="ILE" /><!-- airport="Killeem" country="USA" -->
+			<xsd:enumeration value="KIM" /><!-- airport="Kimberley" country="South Africa" -->
+			<xsd:enumeration value="KNS" /><!-- airport="King Island" country="King Island" -->
+			<xsd:enumeration value="AKN" /><!-- airport="King Salomon" country="USA" -->
+			<xsd:enumeration value="KGC" /><!-- airport="Kingscote" country="Australia" -->
+			<xsd:enumeration value="KIN" /><!-- airport="Kingston - Norman Manley" country="Jamaica" -->
+			<xsd:enumeration value="ISO" /><!-- airport="Kingston" country="USA" -->
+			<xsd:enumeration value="FIH" /><!-- airport="Kinshasa - N'Djili" country="Congo (Zaire)" -->
+			<xsd:enumeration value="KKN" /><!-- airport="Kirkenes" country="Norway" -->
+			<xsd:enumeration value="KIK" /><!-- airport="Kirkuk" country="Iraq" -->
+			<xsd:enumeration value="KRN" /><!-- airport="Kiruna" country="Sweden" -->
+			<xsd:enumeration value="FKI" /><!-- airport="Kisangani" country="Zaire" -->
+			<xsd:enumeration value="KTT" /><!-- airport="Kittilae" country="Sweden" -->
+			<xsd:enumeration value="KIW" /><!-- airport="Kitwe" country="Zambia" -->
+			<xsd:enumeration value="KLU" /><!-- airport="Klagenfurt" country="Austria" -->
+			<xsd:enumeration value="LMT" /><!-- airport="Klamath Fall" country="USA" -->
+			<xsd:enumeration value="KLW" /><!-- airport="Klawock" country="USA" -->
+			<xsd:enumeration value="KLZ" /><!-- airport="Kleinsee" country="South Africa" -->
+			<xsd:enumeration value="NOC" /><!-- airport="Knock" country="Ireland" -->
+			<xsd:enumeration value="TYS" /><!-- airport="Knoxville" country="USA" -->
+			<xsd:enumeration value="UKB" /><!-- airport="Kobe" country="Japan" -->
+			<xsd:enumeration value="KCZ" /><!-- airport="Kochi" country="Japan" -->
+			<xsd:enumeration value="CGN" /><!-- airport="K&#xC3;&#xB6;ln, K&#xC3;&#xB6;ln/Bonn" country="Germany" -->
+			<xsd:enumeration value="ADQ" /><!-- airport="Kodiak" country="USA" -->
+			<xsd:enumeration value="OHT" /><!-- airport="Kohat" country="Pakistan" -->
+			<xsd:enumeration value="KOK" /><!-- airport="Kokkola/Pietarsaari" country="Finland" -->
+			<xsd:enumeration value="CCU" /><!-- airport="Kolkata (Calcutta) - Netaji Subhas Chandra" country="India" -->
+			<xsd:enumeration value="KOA" /><!-- airport="Kona" country="USA" -->
+			<xsd:enumeration value="HGO" /><!-- airport="Korhogo" country="Ivory Coast" -->
+			<xsd:enumeration value="KGS" /><!-- airport="Kos" country="Greece" -->
+			<xsd:enumeration value="BKI" /><!-- airport="Kota Kinabalu" country="Malaysia" -->
+			<xsd:enumeration value="OTZ" /><!-- airport="Kotzbue" country="USA" -->
+			<xsd:enumeration value="KWM" /><!-- airport="Kowanyama" country="Australia" -->
+			<xsd:enumeration value="KRK" /><!-- airport="Krakau" country="Poland" -->
+			<xsd:enumeration value="KRS" /><!-- airport="Kristiansand" country="Norway" -->
+			<xsd:enumeration value="KID" /><!-- airport="Kristianstad" country="Sweden" -->
+			<xsd:enumeration value="KSU" /><!-- airport="Kristiansund" country="Norway" -->
+			<xsd:enumeration value="KUB" /><!-- airport="Kuala Belait" country="Brunei" -->
+			<xsd:enumeration value="KUL" /><!-- airport="Kuala Lumpur - Int'l " country="Malaysia" -->
+			<xsd:enumeration value="SZB" /><!-- airport="Kuala Lumpur - Sultan Abdul Aziz Shah" country="Malaysia" -->
+			<xsd:enumeration value="KUA" /><!-- airport="Kuantan" country="Malaysia" -->
+			<xsd:enumeration value="KCH" /><!-- airport="Kuching" country="Malaysia" -->
+			<xsd:enumeration value="KMJ" /><!-- airport="Kumamoto" country="Japan" -->
+			<xsd:enumeration value="KNX" /><!-- airport="Kununurra" country="Australia" -->
+			<xsd:enumeration value="KUO" /><!-- airport="Kuopio" country="Finland" -->
+			<xsd:enumeration value="KUH" /><!-- airport="Kushiro" country="Japan" -->
+			<xsd:enumeration value="YVP" /><!-- airport="Kuujjuaq (FortChimo)" country="Canada" -->
+			<xsd:enumeration value="YGW" /><!-- airport="Kuujjuarapik" country="Canada" -->
+			<xsd:enumeration value="KAO" /><!-- airport="Kuusamo" country="Finland" -->
+			<xsd:enumeration value="KWI" /><!-- airport="Kuwait - Kuwait Int'l" country="Kuwait" -->
+			<xsd:enumeration value="UKY" /><!-- airport="Kyoto" country="Japan" -->
+			<xsd:enumeration value="LEK" /><!-- airport="Labe" country="Guinea" -->
+			<xsd:enumeration value="WLB" /><!-- airport="Labouchere Bay" country="USA" -->
+			<xsd:enumeration value="LBU" /><!-- airport="Labuan" country="Malaysia" -->
+			<xsd:enumeration value="XLB" /><!-- airport="Lac Brochet, MB" country="Canada" -->
+			<xsd:enumeration value="LCG" /><!-- airport="La Coruna" country="Spain" -->
+			<xsd:enumeration value="LSE" /><!-- airport="La Crosse" country="USA" -->
+			<xsd:enumeration value="LAE" /><!-- airport="Lae" country="Papua New Guinea" -->
+			<xsd:enumeration value="LRH" /><!-- airport="La Rochelle" country="France" -->
+			<xsd:enumeration value="LAF" /><!-- airport="Lafayette" country="USA" -->
+			<xsd:enumeration value="LFT" /><!-- airport="Lafayette" country="USA" -->
+			<xsd:enumeration value="LOS" /><!-- airport="Lagos - Murtala Muhammed" country="Nigeria" -->
+			<xsd:enumeration value="YGL" /><!-- airport="La Grande" country="Canada" -->
+			<xsd:enumeration value="LHE" /><!-- airport="Lahore" country="Pakistan" -->
+			<xsd:enumaration value="LCH" /><!-- airport="Lake Charles" country="USA" -->
+			<xsd:enumeration value="HII" /><!-- airport="Lake Havasu City" country="USA" -->
+			<xsd:enumeration value="TVL" /><!-- airport="Lake Tahoe" country="USA" -->
+			<xsd:enumeration value="LKL" /><!-- airport="Lakselv" country="Norway" -->
+			<xsd:enumeration value="LBQ" /><!-- airport="Lambarene" country="Gabon" -->
+			<xsd:enumeration value="SUF" /><!-- airport="Lamezia Terme" country="Italy" -->
+			<xsd:enumeration value="LMP" /><!-- airport="Lampedusa" country="Italy" -->
+			<xsd:enumeration value="LNY" /><!-- airport="Lanai City" country="USA" -->
+			<xsd:enumeration value="LNS" /><!-- airport="Lancaster" country="USA" -->
+			<xsd:enumeration value="LGK" /><!-- airport="Langkawi" country="Malaysia" -->
+			<xsd:enumeration value="LAI" /><!-- airport="Lannion" country="France" -->
+			<xsd:enumeration value="HLA" /><!-- airport="Lanseria" country="South Africa" -->
+			<xsd:enumeration value="LAN" /><!-- airport="Lansing" country="USA" -->
+			<xsd:enumeration value="LPB" /><!-- airport="La Paz - El Alto" country="Bolivia" -->
+			<xsd:enumeration value="LAP" /><!-- airport="La Paz - Leon" country="Mexico" -->
+			<xsd:enumeration value="LPP" /><!-- airport="Lappeenranta" country="Finland" -->
+			<xsd:enumeration value="LAR" /><!-- airport="Laramie" country="USA" -->
+			<xsd:enumeration value="LRD" /><!-- airport="Laredo" country="USA" -->
+			<xsd:enumeration value="LCA" /><!-- airport="Larnaca" country="Cyprus" -->
+			<xsd:enumeration value="LPA" /><!-- airport="Las Palmas" country="Spain" -->
+			<xsd:enumeration value="LAS" /><!-- airport="Las Vegas" country="USA" -->
+			<xsd:enumeration value="LBE" /><!-- airport="Latrobe" country="USA" -->
+			<xsd:enumeration value="LST" /><!-- airport="Launceston" country="Australia" -->
+			<xsd:enumeration value="PIB" /><!-- airport="Laurel/Hattisburg" country="USA" -->
+			<xsd:enumeration value="LVO" /><!-- airport="Laverton" country="Australia" -->
+			<xsd:enumeration value="LAW" /><!-- airport="Lawton" country="USA" -->
+			<xsd:enumeration value="LZC" /><!-- airport="Lazaro Cardenas" country="Mexico" -->
+			<xsd:enumeration value="YLR" /><!-- airport="Leaf Rapids" country="Canada" -->
+			<xsd:enumeration value="LEA" /><!-- airport="Learmouth (Exmouth)" country="Australia" -->
+			<xsd:enumeration value="LEB" /><!-- airport="Lebanon" country="USA" -->
+			<xsd:enumeration value="LBA" /><!-- airport="Leeds/Bradford" country="United Kingdom" -->
+			<xsd:enumeration value="LER" /><!-- airport="Leinster" country="Australia" -->
+			<xsd:enumeration value="LEJ" /><!-- airport="Leipzig" country="Germany" -->
+			<xsd:enumeration value="BJX" /><!-- airport="Leon" country="Mexico" -->
+			<xsd:enumeration value="LNO" /><!-- airport="Leonora" country="Australia" -->
+			<xsd:enumeration value="LWS" /><!-- airport="Lewiston" country="USA" -->
+			<xsd:enumeration value="LWT" /><!-- airport="Lewistown" country="USA" -->
+			<xsd:enumeration value="LEX" /><!-- airport="Lexington" country="USA" -->
+			<xsd:enumeration value="LBV" /><!-- airport="Libreville" country="Gabon" -->
+			<xsd:enumeration value="LDK" /><!-- airport="Lidkoeping" country="Sweden" -->
+			<xsd:enumeration value="LGG" /><!-- airport="Liege" country="Belgium" -->
+			<xsd:enumeration value="Pazifik&quot;" /><!-- airport="Lifou" country="&quot;Loyaute" -->
+			<xsd:enumeration value="LIH" /><!-- airport="Lihue" country="USA" -->
+			<xsd:enumeration value="LIL" /><!-- airport="Lille" country="France" -->
+			<xsd:enumeration value="LLW" /><!-- airport="Lilongwe - Lilongwe International" country="Malawi" -->
+			<xsd:enumeration value="LIM" /><!-- airport="Lima - J Chavez Int'l" country="Peru" -->
+			<xsd:enumeration value="QLI" /><!-- airport='Limassol" country="Cyprus" -->
+			<xsd:enumeration value="LIG" /><!-- airport="Limoges" country="France" -->
+			<xsd:enumeration value="LNK" /><!-- airport="Lincoln" country="USA" -->
+			<xsd:enumeration value="LDC" /><!-- airport="Lindeman Island" country="Australia" -->
+			<xsd:enumeration value="LNZ" /><!-- airport="Linz - Hoersching" country="Austria" -->
+			<xsd:enumeration value="Democratic Republic of The&quot;" /><!-- airport="Lisala" cou4wfcnote id='norecursion'>
+<head>No Recursntry="&quot;Congo" -->
+			<xsd:enumeration value="LIS" /><!-- airport="Lisbon - Lisboa" country="Portugal" -->
+			<xsd:enumeration value="LSY" /><!-- airport="Lismore" country="Australia" -->
+			<xsd:enumeration value="LIT" /><!-- airport="Little Rock" country="USA" -->
+			<xsd:enumeration value="LPL" /><!-- airport="Liverpool" country="United Kingdom" -->
+			<xsd:enumeration value="LZR" /><!-- airport="Lizard Island" country="Australia" -->
+			<xsd:enumeration value="LJU" /><!-- airport="Ljubljana - Brnik" country="Slovenia" -->
+			<xsd:enumeration value="IRG" /><!-- airport="Lockhart River" country="Australia" -->
+			<xsd:enumeration value="LFW" /><!-- airport="Lome" country="Togo" -->
+			<xsd:enumeration value="YXU" /><!-- airport="London" country="Canada" -->
+			<xsd:enumeration value="LON" /><!-- airport="London" country="United Kingdom" -->
+			<xsd:enumeration value="LCY" /><!-- airport="London - City " country="United Kingdom" -->
+			<xsd:enumeration value="LGW" /><!-- airport="London - Gatwick" country="United Kingdom" -->
+			<xsd:enumeration value="LHR" /><!-- airport="London - Heathrow" country="United Kingdom" -->
+			<xsd:enumeration value="LTN" /><!-- airport="London - Luton" country="United Kingdom" -->
+			<xsd:enumeration value="STN" /><!-- airport="London - Stansted" country="United Kingdom" -->
+			<xsd:enumeration value="LGB" /><!-- airport="Long Beach" country="USA" -->
+			<xsd:enumeration value="LIJ" /><!-- airport="Long Island" country="USA" -->
+			<xsd:enumeration value="ISP" /><!-- airport="Long Island" country="USA" -->
+			<xsd:enumeration value="LRE" /><!-- airport="Longreach" country="Australia" -->
+			<xsd:enumeration value="GGG" /><!-- airport="Longview/Kilgore" country="USA" -->
+			<xsd:enumeration value="LYR" /><!-- airport="Longyearbyen - Svalbard" country="Svalbard/Norway" -->
+			<xsd:enumeration value="LTO" /><!-- airport="Loreto" country="Mexico" -->
+			<xsd:enumeration value"""""""""""""""""port="Lorient" country="France" on value="SJD" /><!-- airport="Los Cabos" country="Mexico" -->
+			<xsd:enumeration value="LMM" /><!-- airport="Los Mochis" country="Mexico" -->
+			<xsd:enumeration value="TFN" /><!-- airport="Los Rodeos" country="Teneriffa/Spain" -->
+			<xsd:enumeration value="LSZ" /><!-- airport="(Mali) Losinj - Losinj Arpt" country="Croatia (Hrvatska)" -->
+			<xsd:enumeration value="LDE" /><!-- airport="Lourdes/Tarbes" country="France" -->
+			<xsd:enumeration value="SDF" /><!-- airport="Louisville" country="USA" -->
+			<xsd:enumeration value="LAD" /><!-- airport="Luanda - 4 de Fevereiro" country="Angola" -->
+			<xsd:enumeration value="LBB" /><!-- airport="Lubbock" country="USA" -->
+			<xsd:enumeration value="LKO" /><!-- airport="Lucknow" country="India" -->
+			<xsd:enumeration value="LUD" /><!-- airport="Luederitz" country="Namibia" -->
+			<xsd:enumeration value="MLA" /><!-- airport="Luga" country="Malta" -->
+			<xsd:enumeration value="LUG" /><!-- airport="Lugano" country="Switzerland" -->
+			<xsd:enumeration value="LLA" /><!-- airport="Lulea" country="Sweden" -->
+			<xsd:enumeration value="FBM" /><!-- airport="Lumbumbashi" country="Zaire" -->
+			<xsd:enumerationin" -->
+			<xsd:enumeration value="JER" /><!-- airport="Jersey" country="United Kingdom" -->
+			<xsd:enumeration value="JRS" /><!-- airport="Jerusalem" country="Israel" -->
+			<xsd:enumeration value="JIW" /><!-- airport="Jiwani" country="Pakistan" -->
+			<xsd:enumeration value="JCB" /><!-- airport="Joacaba" country="Brazil" -->
+			<xsd:enumeration value="JPA" /><!-- airport="Joao Pessoa - Castro Pinto" country="Brazil" -->
+			<xsd:enumeration value="JKG" /><!-- airport="Joenkoeping" country="Sweden" -->
+			<xsd:enumeration value="JOE" /><!-- airport="Joensuu" country="Finland" -->
+			<xsd:enumeration value="JNB" /><!-- airport="Johannesburg - Johannesburg Int'l" country="South Africa" -->
+			<xsd:enumeration value="JST" /><!-- airport="Johnstown" country="USA" -->
+			<xsd:enumeration value="JHB" /><!-- airport="Johore Bahru" country="Malaysia" -->
+			<xsd:enumeration value="JLN" /><!lue="MCN" /><!-- airport="Macon" country="USA" -->
+			<xsd:enumeration value="NOP" /><!-- airport="Mactan Island - Nab" country="Philippines" -->
+			<xsd:enumeration value="MSN" /><!-- airport="Madison" country="USA" -->
+			<xsd:enumeration value="MAA" /><!-- airport="Madras (Chennai)" country="India" -->
+			<xsd:enumeration value="MAD" /><!-- airport="Madrid - Barajas" country="Spain" -->
+			<xsd:enumeration value="SEZ" /><!-- airport="Mahe - Seychelles Int'l" country="Seychelles" -->
+			<xsd:enumeration value="MAH" /><!-- airport="Mahon" country="Spain" -->
+			<xsd:enumeration value="MTL" /><!-- airport="Maitland" country="Australia" -->
+			<xsd:enumeration value="MJN" /><!-- airport="Majunga" country="Madagascar" -->
+			<xsd:enumeration value="MZG" /><!-- airport="Makung" country="Taiwan" -->
+			<xsd:enumeration value="SSG" /><!-- airport="Malabo" country="Equatorial Guinea" -->
+			<xsd:enumeration value="AGP" /><!-- airport="Malaga" country="Spain" -->
+			<xsd:enumeration value="MLE" /><!-- airport="Male - International" country="Maledives" -->
+			<xsd:enumeration value="MYD" /><!-- airport="Malindi" country="Kenya" -->
+			<xsd:enumeration value="MMA" /><!-- airport="Malmo (Malmoe)" country="Sweden" -->
+			<xsd:enumeration value="MMX" /><!-- airport="Malmo (Malmoe) - Sturup" country="Sweden" -->
+			<xsd:enumeration value="MJC" /><!-- airport="Man" country="Ivory Coast" -->
+			<xsd:enumeration value="MGA" /><!-- airport="Managua - Augusto C Sandino" country="Nicaragua" -->
+			<xsd:enumeration value="MAO" /><!-- airport="Manaus" country="Brazil" -->
+			<xsd:enumeration value="MAN" /><!-- airport="Manchester" country="United Kingdom" -->
+			<xsd:enumeration value="MHT" /><!-- airport="Manchester" country="USA" -->
+			<xsd:enumeration value="MFO" /><!-- airport="Manguna" country="Papua New Guinea" -->
+			<xsd:enumeration value="XMH" /><!-- airport="Manihi" country="French Polynesia" -->
+			<xsd:enumeration value="MNL" /><!-- airport="Manila - Ninoy Aquino IÝt'l" country="Philippines" -->
+			<xsd:enumeration value="ZLO" /><!-- airport="Manzanillo" country="Mexico" -->
+			<xsd:enumeration value="MTS" /><!-- airport="Manzini - Matsapha Int'l" country="Swaziland" -->
+			<xsd:enumeration value="MPM" /><!-- airport="Maputo - Maputo International" country="Mozambique" -->
+			<xsd:enumeration value="MDQ" /><!-- airport="Mar del Plata" country="Argentina" -->
+			<xsd:enumeration value="MAR" /><!-- airport="Maracaibo - La Chinita" country="Venezuela" -->
+			<xsd:enumeration value="MFQ" /><!-- airport="Maradi" country="Niger" -->
+			<xsd:enumeration value="MTH" /><!-- airport="Marathon" country="USA" -->
+			<xsd:enumeration value="MEE" /><!-- airport="Mare" country="New Caledonia" -->
+			<xsd:enumeration value="MGH" /><!-- airport="Margate" country="South Africa" -->
+			<xsd:enumeration value="PMV" /><!-- airport="Margerita" country="Venezuela" -->
+			<xsd:enumeration value="MBX" /><!-- airport="Maribor" country="Slovenia" -->
+			<xsd:enumeration value="MHQ" /><!-- airport="Mariehamn (Maarianhamina)" country="Fi€ÿÿÿd" -->
+			<xsd:enumeration value="MVR" /><!-- airport="Maroua" country="Cameroon" -->
+			<xsd:enumeration value="MQT" /><!-- airport="Marquette" country="USA" -->
+			<xsd:enumeration value="RAK" /><!-- airport="Marrakech - Menara" country="Morocco" -->
+			<xsd:enumeration value="MUH" /><!-- airport="Marsa Matrah (Marsa Matruh)" country="Egypt" -->
+			<xsd:enumeration value="MRS" /><!-- airport="Marseille" country="France" -->
+			<xsd:enumeration value="MHH" /><!-- airport="Marsh Harbour" country="Bahamas" -->
+			<xsd:enumeration value="MVY" /><!-- airport="Martha's Vineyard" country="USA" -->
+			<xsd:enumeration value="MBH" /><!-- airport="Maryborough" country="Australia" -->
+			<xsd:enumeration value="MSU" /><!-- airport="Maseru - Moshoeshoe Int'l" country="Lesotho" -->
+			<xsd:enumeration value="MCW" /><!-- airport="Mason City" country="USA" -->
+			<xsd:enumeration value="MVZ" /><!-- airport="Masvingo" country="Zimbabwe" -->
+			<xsd:enumeration value="MMJ" /><!-- airport="Matsumoto, Nagano" country="Japan" -->
+			<xsd:enumeration value="MYJ" /><!-- airport="Matsuyama" country="Japan" -->
+			<xsd:enumeration value="MTO" /><!-- airport="Mattoon" country="USA" -->
+			<xsd:enumeration value="MUB"$/><!-- airport="Maun" country="Botswana" -->
+			<xsd:enumeration value="MAU" /><!-- airport="Maupiti" country="French Polynesia" -->
+			<xsd:enumeration value="MRU" /><!-- airport="Mauritius - S.Seewoosagur Ram Int'l" country="Mauritius" -->
+			<xsd:enumeration value="MAZ" /><!-- airport="Mayaguez" country="Puerto Rico" -->
+			<xsd:enumeration value="MZT" /><!-- airport="Mazatlan" country="Mexico" -->
+			<xsd:enumeration value="MFE" /><!-- airport="McAllen" country="USA" -->
+			<xsd:enumeration value="MES" /><!-- airport="Medan" country="Indonesia" -->
+			<xsd:enumeration value="MDE" /><!-- airport="Medellin" country="Colombia" -->
+			<xsd:enumeration value="MFR" /><!-- airport="Medford" country="USA" -->
+			<xsd:enumeration value="MED" /><!-- airport="Medina" country="Saudi Arabia" -->
+			<xsd:enumeration value="MKR" /><!-- airport="Meekatharra" country="Australia" -->
+			<xsd:enumeration value="MEL" /><!-- airport="Melbourne - Tullamarine" country="Australia" -->
+			<xsd:enumeration value="MLB" /><!-- airport="Melbourne" country="USA" -->
+			<xsd:enumeration value="MEM" /><!-- airport="Memphis" country="USA" -->
+			<xsd:enumeration value="MDZ" /><!-- airport="Mendoza" country="Argentina" -->
+			<xsd:enumeration value="MDC" /><!-- airport="Manado" country="Indonesia" -->
+			<xsd:enumeration value="MCE" /><!-- airport="Merced" country="USA" -->
+			<xsd:enumeration value="MID" /><!-- airport="Merida" country="Mexico" -->
+			<xsd:enumeration value="MEI" /><!-- airport="Meridian" country="USA" -->
+			<xsd:enumeration value="MIM" /><!-- airport="Merimbula" country="Australia" -->
+			<xsd:enumeration value="MEZ" /><!-- airport="Messina" country="South Africa" -->
+			<xsd:enumeration value="MTM" /><!-- airport="Metlakatla" country="USA" -->
+			<xsd:enumeration value="MZM" /><!-- airport="Metz" country="France" -->
+			<xsd:enumeration value="MXL" /><!-- airport="Mexicali" country="Mexico" -->
+			<xsd:enumeration value="MEX" /><!-- airport="Mexico City" country="Mexico" -->
+			<xsd:enumeration value="MEX" /><!-- airport="Mexico City - Juarez International" country="Mexico" -->
+			<xsd:enumeration value="MFU" /><!-- airport="Mfuwe" country="Zambia" -->
+			<xsd:enumeration value="MIA" /><!-- airport="Miami" country="USA" -->
+			<xsd:enumeration value="MWD" /><!-- airport="Mianwali" country="Pakistan" -->
+			<xsd:enumeration value="MMM" /><!-- airport="Middlemount" country="Australia" -->
+			<xsd:enumeration value="MAF" /><!-- airport="Midland/Odessa" country="USA" -->
+			<xsd:enumeration value="MIK" /><!-- airport="Mikkeli" country="Finland" -->
+			<xsd:enumeration value="MIL" /><!-- airport="Milan" country="Italy" -NotationType'><lhs>NotationType</lhs> 
+<rhs>'NOTATION' 
+<nt def='NT-S'>S</nt> 
+'(' 
+<nt def='NT-S'>S</nt>?  
+<nt def='NT-Name'>Name</nt> 
+(<nt def='NT-S'>S</nt>? '|' <nt def='NT-S'>S</nt>?  
+<nt def='NT-Name'>Name</nt>)*
+<nt def='NT-S'>S</nt>? ')'
+</rhs>
+<vc def='notatn' /></prod>
+<prod id='NT-Enumeration'><lhs>Enumeration</lhs> 
+<rhs>'(' <nt def='NT-S'>S</nt>?
+<nt def='NT-Nmtoken'>Nmtoken</nt> 
+(<nt def='NT-S'>S</nt>? '|' 
+<nt def='NT-S'>S</nt>?  
+<nt def='NT-Nmtoken'>Nmtoken</nt>)* 
+<nt def='NT-S'>S</nt>? 
+')'</rhs> 
+<vc def='enum'/></prod>
+</scrap>
+A <kw>NOTATION</kw> attribute identifies a 
+<termref def='dt-notation'>notation</termref>, declared in the 
+DTD with associated system and/or public identifiers, to
+be used in interpreting the element to which the attribute
+is attached.
+</p>
+
+<vcnote id='notatn'>
+<head>Notation Attributes</head>
+<p>
+Values of this type must match
+one of the <titleref href='Notations'>notation</titleref> names included in
+the declaration; all notation names in the declaration must
+be declared.
+</p>
+</vcnote>
+<vcnote id='enum'>
+<head>Enumeration</head>
+<p>
+Values of this type
+must match one of the <nt def='NT-Nmtoken'>Nmtoken</nt> tokens in the
+declaration. 
+</p>
+</vcnote>
+<p><termref def='dt-interop'>For interoperability,</termref> the same
+<nt def='NT-Nmtoken'>Nmtoken</nt> should not occur more tessing, it ishe
+enumerated attribute types of a single element type.
+</p>
+</div3>
+
+<div3 id='sec-attr-defaults'>
+<head>Attribute Defaults</head>
+ 
+<p>An <termref def="dt-attdecl">attribute declaration</termref> provides
+information on whether
+the attribute's presence is required, and if not, how an XML processor should
+react if a declared attribute is absent in a document.
+<scrap lang='ebnf'>
+<head>Attribute Defaults</head>
+<prodgroup pcw4="14" pcw5="11.5">
+<prod id='NT-DefaultDecl'><lhs>DefaultDecl</lhs>
+<rhs>'#REQUIRED' 
+|&nbsp;'#IMPLIED' </rhs>
+<rhs>| (('#FIXED' S)? <nt def='NT-AttValue'>AttValue</nt>)</rhs>
+<vc def='RequiredAttr'/>
+<vc def='defattrvalid'/>
+<wfc def="CleanAttrVals"/>
+<vc def='FixedAttr'/>
+</prod>
+</prodgroup>
+</scrap>
+
+</p>
+<p>In an attribute declaration, <kw>#REQUIRED</kw> means that the
+attribute must always be provided, <kw>#IMPLIED</kw> that no default 
+value is provided.
+<!-- not any more!!
+<kw>#IMPLIED</kw> means that if the attribute is omitted
+from an element of this type,
+the XML processor must inform the application
+that no value was specified; no constraint is placed on the behavior
+of the application. -->
+<termdef id="dt-default" term="Attribute Default">If the 
+declaration
+is neither <kw>#REQUIRED</kw> nor <kw>#IMPLIED</kw>, then the
+<nt def='NT-AttValue'>AttValue</nt> value contains the declared
+<term>default</term> value; the <kw>#FIXED</kw> keyword states that
+the attribute must always have the default value.
+If a default value
+is declared, when an XML processor encounters an omitted attribute, it
+is to behave as though the attribute were present with 
+the declared default value.</termdef></p>
+<vcnote id='RequiredAttr'>
+<head>Required Attribute</head>
+<p>If the default declaration is the keyword <kw>#REQUIRED</kw>, then
+the attribute must be specified for
+all elements of the type in the attribute-list declaration.
+</p></vcnote>
+<vcnote id='defattrvalid'>
+<head>Attribute Default Legal</head>
+<p>
+The declared
+default value must meet the lexical constraints of the declared attribute type.
+</p>
+</vcnote>
+<vcnote id='FixedAttr'>
+<head>Fixed Attribute Default</head>
+<p>If an attribute has a default value declared with the 
+<kw>#FIXED</kw> keyword, instances of that attribute must
+match the default value.
+</p></vcnote>
+
+<p>Examples of attribute-list declarations:
+<eg>&lt;!ATTLIST termdef
+          id      ID      #REQUIRED
+          name    CDATA   #IMPLIED>
+&lt;!ATTLIST list
+          type    (bullets|ordered|glossary)  "ordered">
+&lt;!ATTLIST form
+          method  CDATA   #FIXED "POST"></eg></p>
+</div3>
+<div3 id='AVNormalize'>
+<head>Attribute-Value Normalization</head>
+<p>Before the value of an attribute is passed to the application
+or checked for validity, the
+XML processor must normalize it as follows:
+<ulist>
+<item><p>a character reference is processed by appending the referenced    
+character to the attribute value</p></item>
+<item><p>an entity reference is processed by recursively processing the
+replacement text of the entity</p></item>
+<item><p>a whitespace character (#x20, #xD, #xA, #x9) is processed by
+appending #x20 to the normalized value, except that only a single #x20
+is appended for a "#xD#xA" sequence that is part of an external
+parsed entity or the literal entity value of an internal parsed
+entity</p></item>
+<item><p>other characters are processed by appending them to the normalized
+value</p>
+</item></ulist>
+</p>
+<p>If the declared value is not CDATA, then the XML processor must
+further process the normalized attribute value by discarding any
+leading and trailing space (#x20) characters, and by replacing
+sequences of space (#x20) characters by a single space (#x20)
+character.</p>
+<p>
+All attributes for which no declaration has been read should be treated
+by a non-validating parser as if declared
+<kw>CDATA</kw>.
+</p>
+</div3>
+</div2>
+<div2 id='sec-condition-sect'>
+<head>Conditional Sections</head>
+<p><termdef id='dt-cond-section' term='conditional section'>
+<term>Conditional sections</term> are portions of the
+<termref def='dt-doctype'>document type declaration external subset</termref>
+which are 
+included in, or excluded from, the logical structure of the DTD based on
+the keyword which governs them.</termdef>
+<scrap lang='ebnf'>
+<head>Conditional Section</head>
+<prodgroup pcw2="9" pcw4="14.5">
+<prod id='NT-conditionalSect'><lhs>conditionalSect</lhs>
+<rhs><nt def='NT-includeSect'>includeSect</nt>
+| <nt def='NT-ignoreSect'>ignoreSect</nt>
+</rhs>
+</prod>
+<prod id='NT-includeSect'><lhs>includeSect</lhs>
+<rhs>'&lt;![' S? 'INCLUDE' S? '[' 
+
+<nt def="NT-extSubsetDecl">extSubsetDecl</nt>
+']]&gt;'
+</rhs>
+</prod>
+<prod id='NT-ignoreSect'><lhs>ignoreSect</lhs>
+<rhs>'&lt;![' S? 'IGNORE' S? '[' 
+<nt def="NT-ignoreSectContents">ignoreSectContents</nt>*
+']]&gt;'</rhs>
+</prod>
+
+<prod id='NT-ignoreSectContents'><lhs>ignoreSectContents</lhs>
+<rhs><nt def='NT-Ignore'>Ignore</nt>
+('&lt;![' <nt def='NT-ignoreSectContents'>ignoreSectContents</nt> ']]&gt;' 
+<nt def='NT-Ignore'>Ignore</nt>)*</rhs></prod>
+<prod id='NT-Ignore'><lhs>Ignore</lhs>
+<rhs><nt def='NT-Char'>Char</nt>* - 
+(<nt def='NT-Char'>Char</nt>* ('&lt;![' | ']]&gt;') 
+<nt def='NT-Char'>Char</nt>*)
+</rhs></prod>
+
+</prodgroup>
+</scrap>
+</p>
+<p>Like the internal and external DTD subsets, a conditional section
+may contain one or more complete declarations,
+comments, processing instructions, 
+or nested conditional sections, intermingled with white space.
+</p>
+<p>If the keyword of the
+conditional section is <kw>INCLUDE</kw>, then the contents of the conditional
+section are part of the DTD.
+If the keyword of the conditional
+section is <kw>IGNORE</kw>, then the contents of the conditional section are
+not logically part of the DTD.
+Note that for reliable parsing, the contents of even ignored
+conditional sections must be read in order to
+detect nested conditional sections and ensure that the end of the
+outermost (ignored) conditional section is properly$detected.
+If a conditional section with a
+keyword of <kw>INCLUDE</kw> occurs within a larger conditional
+section with a keyword of <kw>IGNORE</kw>, both the outer and the
+inner conditional sections are ignored.</p>
+<p>If the keyword of the conditional section is a 
+parameter-entity reference, the parameter entity must be replaced by its
+content before the processor decides whether to
+include or ignore the conditional section.</p>
+<p>An example:
+<eg>&lt;!ENTITY % draft 'INCLUDE' >
+&lt;!ENTITY % final 'IGNORE' >
+ 
+&lt;![%draft;[
+&lt;!ELEMENT book (comments*, title, body, supplements?)>
+]]&gt;
+&lt;![%final;[
+&lt;!ELEMENT book (title, body, supplements?)>
+]]&gt;
+</eg>
+</p>
+</div2>
+
+
+<!-- 
+<div2 id='sec-pass-to-app'>
+<head>XML Processor Treatment of Logical Structure</head>
+<p>When an XML processor encounters a start-tag, it must make
+at least the following information available to the application:
+<ulist>
+<item>
+<p>the element type's generic identifier</p>
+</item>
+<item>
+<p>the names of attributes known to apply to this element type
+(validating processors must make available names of all attributes
+declared for the element type; non-validating processors must
+make available at least the names of the attributes for which
+values are specified.
+</p>
+</item>
+</ulist>
+</p>
+</div2>
+--> 
+
+</div1>
+<!-- &Entities; -->
+ 
+<div1 id='sec-physical-struct'>
+<head>Physical Structures</head>
+ 
+<p><termdef id="dt-entity" term="Entity">An XML document may consist
+of one or many storage units.   These are called
+<term>entities</term>; they all have <term>content</term> and ardocument.</termdef></p>
+
+<p><termdef id="dt-unparsed" term="Unparsed Entity">An 
+<term>unparsed entity</term> 
+is a resource whose contents may or may not be
+<termref def='dt-text'>text</termref>, and if text, may not be XML.
+Each unparsed entity
+has an associated <termref
+def="dt-notation">notation</termref>, identified by name.
+Beyond a requirement
+that an XML processor make the identifiers for the entity and 
+notation available to the application,
+XML places no constraints on the contents of unparsed entities.</termdef> 
+</p>
+<p>
+Parsed entities are invoked by name using entity references;
+unparsed entities by name, given in the value of <kw>ENTITY</kw>
+or <kw>ENTITIES</kw>
+attributes.</p>
+<p><termdef id='gen-entity' term='general entity'
+><term>General entities</term>
+are entities for use within the document content.
+In this specification, general entities are sometimes referred 
+to with the unqualified term <emph>entity</emph> when this leads
+to no ambiguity.</termdef> 
+<termdef id='dt-PE' term='Parameter entity'>Parameter entities 
+are parsed entities for use within the DTD.</termdef>
+These two types of entities use different forms of reference and
+are recognized in different contexts.
+Furthermore, they occupy different namespaces; a parameter entity and
+a general entity with the same name are two distinct entities.
+</p>
+
+<div2 id='sec-references'>
+<head>Character and Entity References</head>
+<p><termdef id="dt-charref" term="Character Reference">
+A <term>character reference</term> refers to a specific character in the
+ISO/IEC 10646 character set, for example one not directly accessible from
+available input devices.
+<scrap lang='ebnf'>
+<head>Character Reference</head>
+<prod id='NT-CharRef'><lhs>CharRef</lhs>
+<rhs>'&amp;#' [0-9]+ ';' </rhs>
+<rhs>| '&hcro;' [0-9a-fA-F]+ ';'</rhs>
+<wfc def="wf-Legalchar"/>
+</prod>
+</scrap>
+<wfcnote id="wf-Legalchar">
+<head>Legal Character</head>
+<p>Characters referred to using character references must
+match the production for
+<termref def="NT-Char">Char</termref>.</p>
+</wfcnote>
+If the character reference begins with "<code>&amp;#x</code>", the digits and
+letters up to the terminating <code>;</code> provide a hexadecimal
+representation of the character's code point in ISO/IEC 10646.
+If it begins just with "<code>&amp;#</code>", the digits up to the terminating
+<code>;</code> provide a decimal representation of the character's 
+code point.
+</termdef>
+</p>
+<p><termdef id="dt-entref" term="Entity Reference">An <term>entity
+reference</term> refers to the content of a named entity.</termdef>
+<termdef id='dt-GERef' term='General Entity Reference'>References to 
+parsed general entities
+use ampersand (<code>&amp;</code>) and semicolon (<code>;</code>) as
+delimiters.</termdef>
+<termdef id='dt-PERef' term='Parameter-entity reference'>
+<term>Parameter-entity references</term> use percent-sign (<code>%</code>) and
+semicolon 
+(<code>;</code>) as delimiters.</termdef>
+</p>
+<scrap lang="ebnf">
+<head>Entity Reference</head>
+<prod id='NT-Reference'><lhs>Reference</lhs>
+<rhs><nt def='NT-EntityRef'>EntityRef</nt> 
+| <nt def='NT-CharRef'>CharRef</nt></rhs></prod>
+<prod id='NT-EntityRef'><lhs>EntityRef</lhs>
+<rhs>'&amp;' <nt def='NT-Name'>Name</nt> ';'</rhs>
+<wfc def='wf-entdeclared'/>
+<vc def='vc-entdeclared'/>
+<wfc def='textent'/>
+<wfc def='norecursion'/>
+</prod>
+<prod id='NT-PEReference'><lhs>PEReference</lhs>
+<rhs>'%' <nt def='NT-Name'>Name</nt> ';'</rhs>
+<vc def='vc-entdeclared'/>
+<wfc def='norecursion'/>
+<wfc def='indtd'/eg</prod>
+</scrap>
+
+<wfcnote id='wf-entdeclared'>
+<head>Entity Declared</head>
+<p>In a document without any DTD, a document with only an internal
+DTD subset which contains no parameter entity references, or a document with
+"<code>standalone='yes'</code>", 
+the <nt def='NT-Name'>Name</nt> given in the entity reference must 
+<termref def="dt-match">match</termref> that in an 
+<titleref href='sec-entity-decl'>entity declaration</titleref>, except that
+well-formed documents need not declare 
+any of the following entities: &magicents;.  
+The declaration of a parameter entity must precede any reference to it.
+Similarly, the declaration of a general entity must precede any
+reference to it which appears in a default value in an attribute-list
+declaration.</p>
+<p>Note that if entities are declared in the external subset or in 
+external parameter entities, a non-validating processor is 
+<titleref href='include-if-valid'>not obligated to</titleref> read
+and process their declarations; for such documents, the rule that
+an entity must be declared is a well-formedness constraint only
+if <titleref href='sec-rmd'>standalone='yes'</titleref>.</p>
+</wfcnote>
+<vcnote id="vc-entdeclared">
+<head>Entity Declared</head>
+<p>In a document with an external subset or external parameter
+entities with "<code>standalone='no'</code>",
+the <nt def='NT-Name'>Name</nt> given in the entity reference must <termref
+def="dt-match">match</termref> that in an 
+<titleref href='sec-entity-decl'>entity declaration</titleref>.
+For interoperability, valid documents should declare the entities 
+&magicents;, in the form
+specified in <specref ref="sec-predefined-ent"/>.
+The declaration of a parameter entity must precede any reference to it.
+Similarly, the declaration of a general entity must precede any
+reference to it which appears in a default value in an attribute-list
+declaration.</p>
+</vcnote>
+<!-- FINAL EDIT:  is this duplication too clumsy? -->
+<wfcnote id='textent'>
+<head>Parsed Entity</head>
+<p>
+An entity reference must not contain the name of an <termref
+def="dt-unparsed">unparsed entity</termref>. Unparsed entities may be referred
+to only in <termref def="dt-attrval">attribute values</termref> declared to
+be of type <kw>ENTITY</kw> or <kw>ENTITIES</kw>.
+</p>
+</wfcnote>
+<wfcnote id='norecursion'>
+<head>No Recursion</head>
+<p>
+A parsed entity must not contain a recursive reference to itself,
+either directly or indirectly.
+</p>
+</wfcnote>
+<wfcnote id='indtd'>
+<head>In DTD</head>
+<p>
+Parameter-entity references may only appear in the 
+<termref def='dt-doctype'>DTD</termref>.
+</p>
+</wfcnote>
+<p>Examples of character and entity references:
+<eg>Type &lt;key>less-than&lt;/key> (&hcro;3C;) to save options.
+This document was prepared on &amp;docdate; and
+is classified &amp;security-level;.</eg></p>
+<p>Example of a parameter-entity reference:
+<eg><![CDATA[<!-- declare the paramete“ entity "ISOLat2"... -->
+<!ENTITY % ISOLat2
+         SYSTEM "http://www.xml.com/iso/isolat2-xml.entities" >
+<!-- ... now reference it. -->
+%ISOLat2;]]></eg></p>
+</div2>
+ 
+<div2 id='sec-entity-decl'>
+<head>Entity Declarations</head>
+ 
+<p><termdef id="dt-entdecl" term="entity declaration">
+Entities are declared thus:
+<scrap lang='ebnf'>
+<head>Entity Declaration</head>
+<prodgroup pcw2="5" pcw4="18.5">
+<prod id='NT-EntityDecl'><lhs>EntityDecl</lhs>
+<rhs><nt def="NT-GEDecl">GEDecl</nt><!--</rhs><com>General entities</com>
+<rhs>--> | <nt def="NT-PEDecl">PEDecl</nt></rhs>
+<!--<com>Parameter entities</com>-->
+</prod>
+<prod id='NT-GEDecl'><lhs>GEDecl</lhs>
+<rhs>'&lt;!ENTITY' <nt def='NT-S'>S</nt> <nt def='NT-Name'>Name</nt> 
+<nt def='NT-S'>S</nt> <nt def='NT-EntityDef'>EntityDef</nt> 
+<nt def='NT-S'>S</nt>? '&gt;'</rhs>
+</prod>
+<prod id='NT-PEDecl'><lhs>PEDecl</lhs>
+<rhs>'&lt;!ENTITY' <nt def='NT-S'>S</nt> '%' <nt def='NT-S'>S</nt> 
+<nt def='NT-Name'>Name</nt> <nt def='NT-S'>S</nt> 
+<nt def='NT-PEDef'>PEDef</nt> <nt def='NT-S'>S</nt>? '&gt;'</rhs>
+<!--<com>Parameter entities</com>-->
+</prod>
+<prod id='NT-EntityDef'><lhs>EntityDef</lhs>"<rhs><nt def='NT-EntityValue'>EntityValue</nt>
+<!--</rhs>
+<rhs>-->| (<nt def='NT-ExternalID'>ExternalID</nt> 
+<nt def='NT-NDataDecl'>NDataDecl</nt>?)</rhs>
+<!-- <nt def='NT-ExternalDef'>ExternalDef</nt></rhs> -->
+</prod>
+<!-- FINAL EDIT: what happened to WFs here? -->
+<prod id='NT-PEDef'><lhs>PEDef</lhs>
+<rhs><nt def='NT-EntityValue'>EntityValue</nt> 
+| <nt def='NT-ExternalID'>ExternalID</nt></rhs></prod>
+</prodgroup>
+</scrap>
+The <nt def='NT-Name'>Name</nt> identifies the entity in an
+<termref def="dt-entref">entity reference</termref> or, in the case of an
+unparsed entity, in the value of an <kw>ENTITY</kw> or <kw>ENTITIES</kw>
+attribute.
+If the same entity is declared more than once, the first declaration
+encountered is binding; at user option, an XML processor may issue a
+warning if entities are declared multiple times.</termdef>
+</p>
+<div3 id='sec-internal-ent'>
+<head>Internal Entities</head>
+ 
+<p><termdef id='dt-internent' term="Internal Entity Replacement Text">If 
+the entity definition is an 
+<nt def='NT-EntityValue'>EntityValue</nt>,  
+the defined entity is called an <term>internal entity</term>.  
+There is no separate physical
+storage object, and the content of the entity is given in the
+declaration. </termdef>
+Note that some processing of entity and character references in the
+<termref def='dt-litentval'>literal entity value</termref> may be required to
+produce the correct <termref def='dt-repltext'>replacement 
+text</termref>: see <specref ref='intern-replacement'/>.
+</p>
+<p>An internal entity is a <termref def="dt-parsedent">parsed
+entity</termref>.</p>
+<p>Example of an internal entity declaration:
+<eg>&lt;!ENTITY Pub-Status "This is a pre-release of the
+ specification."></eg></p>
+</div3>
+ 
+<div3 id='sec-external-ent'>
+<head>External Entities</head>
+ 
+<p><termdef id="dt-extent" term="External Entity">If the entity is not
+internal, it is an <term>external
+entity</term>, declared as follows:
+<scrap lang='ebnf'>
+<head>External Entity Declaration</head>
+<!--
+<prod id='NT-ExternalDef'><lhs>ExternalDef</lhs>
+<rhs></prod> -->
+<prod id='NT-ExternalID'><lhs>ExternalID</lhs>
+<rhs>'SYSTEM' <nt def='NT-S'>S</nt> 
+<nt def='NT-SystemLiteral'>SystemLiteral</nt></rhs>
+<rhs>| 'PUBLIC' <nt def='NT-S'>S</nt> 
+<nt def='NT-PubidLiteral'>PubidLiteral</nt> 
+<nt def='NT-S'>S</nt> 
+<nt def='NT-SystemLiteral'>SystemLiteral</nt>
+</rhs>
+</prod>
+<prod id='NT-NDataDecl'><lhs>NDataDecl</lhs>
+<rhs><nt def='NT-S'>S</nt> 'NDATA' <nt def='NT-S'>S</nt> 
+<nt def='NT-Name'>Name</nt></rhs>
+<vc def='not-declared'/></prod>
+</scrap>
+If the <nt dnf='NT-NDataDecl'>NDataDecl</nt> is present, this is a
+general <termref def="dt-unparsed">unparsed
+entity</termref>; otherwise it is a parsed entity.</termdef></p>
+<vcnote id='not-declared'>
+<head>Notation Declared</head>
+<p>
+The <nt def='NT-Name'>Name</nt> must match the declared name of a
+<termref def="dt-notation">notation</termref>.
+</p>
+</vcnote>
+<p><termdef id="dt-sysid" term="System Identifier">The
+<nt def='NT-SystemLiteral'>SystemLiteral</nt> 
+is called the entity's <term>system identifier</term>. It is a URI,
+which may be used to retrieve the entity.</termdef>
+Note that the hjsh mark (<code>#</code>) and fragment identifier 
+frequently used with URIs are not, formally, part of the URI itself; 
+an XML processor may signal an error if a fragment identifier is 
+given as part of a system identifier.
+Unless otherwise provided by information outside the scope of this
+specification (e.g. a special XML element type defined by a particular
+DTD, or a processing instruction defined by a particular application
+specification), relative URIs are relative to the location of the
+resource within which the entity declaration occurs.
+A URI might thus be relative to the 
+<termref def='dt-docent'>document entity</termref>, to the entity
+containing the <termref def='dt-doctype'>external DTD subset</termref>, 
+or to some other <termref def='dt-extent'>external parameter entity</termref>.
+</p>
+<p>An XML processor should handle a non-ASCII character in a"URI by
+representing the character in UTF-8 as one or more bytes, and then 
+escaping these bytes with the URI escaping mechanism (i.e., by
+converting each byte to %HH, where HH is the hexadecimal notation of the
+byte value).</p>
+<p><termdef id="dt-pubid" term="Public identifier">
+In addition to a system identifier, an external identifier may
+include a <term>public identifier</term>.</termdef>  
+An XML processor attempting to retrieve the entity's content may use the public
+identifier to try to generate an alternative URI.  If the processor
+is unable to do so, it must use the URI specified in the system
+literal.  Before a match is attempted, all strings
+of white space in the public identifier must be normalized to single space characters (#x20),
+and leading and trailing white space must be removed.</p>
+<p>Examples of external entity declarations:
+<eg>&lt;!ENTITY open-hatch
+         SYSTEM "http://www.textuality.com/boilerplate/OpenHatch.xml">
+&lt;!ENTITY open-hatch
+         PUBLIC "-//Textuality//TEXT Standard open-hatch boilerplate//EN"
+         "http://www.textuality.com/boilerplate/OpenHatch.xml">
+&lt;!ENTITY hatch-pic
+         SYSTEM "../grafix/OpenHatch.gif"
+         NDATA gif ></eg></p>
+</div3>
+ 
+</div2>
+
+<div2 id='TextEntities'>
+<head>Parsed Entities</head>
+<div3 id='sec-TextDecl'>
+<head>The Text Declaration</head>
+<p>External parsed entities may each begin with a <term>text
+declaration</term>. 
+<scrap lang='ebnf'>
+<head>Text Declaration</head>
+<prodgroup pcw4="12.5" pcw5="13">
+<prod id='NT-TextDecl'><lhs>TextDecl</lhs>
+< €  &xmlpio; 
+<nt def='NT-VersionInfo'>VersionInfo</nt>?
+<nt def='NT-EncodingDecl'>EncodingDecl</nt>
+<nt def='NT-S'>S</nt>? &pic;</rhs>
+</prod>
+</prodgroup>
+</scrap>
+</p>
+<p>The text declaration must be provided literally, not
+by reference to a parsed entity.
+No text declaration may appear at any position other than the beginning of
+an external parsed entity.</p>
+</div3>
+<div3 id='wf-entities'>
+<head>Well-Formed Parsed Entities</head>
+<p>The document entity is well-formed if it matches the production labeled
+<nt def='NT-document'>document</nt>.
+An external general 
+parsed entity is well-formed if it matches the production labeled
+<nt def='NT-extParsedEnt'>extParsedEnt</nt>.
+An external parameter
+entity is well-formed if it matches the production labeled
+<nt def='NT-extPE'>extPE</nt>.
+<scrap lang='ebnf'>
+<head>Well-Formed External Parsed Entity</head>
+<prod id='NT-extParsedEnt'><lhs>extParsedEnt</lhs>
+<rhs><nt def='NT-TextDecl'>TextDecl</nt>? 
+<nt def='NT-content'>content</nt></rhs>
+</prod>
+<prod id='NT-extPE'><lhs>extPE</lhs>
+<rhs><nt def='NT-TextDecl'>TextDecl</nt>? 
+<nt def='NT-extSubsetDecl'>extSubsetDecl</nt></rhs>
+</prod>
+</scrap>
+An internal general parsed entity is well-formed if its replacement text 
+matches the production labeled
+<nt def='NT-content'>content</nt>.
+All internal parameter entities are well-formed by definition.
+</p>
+<p>A consequence of well-formedness in entities is that the logical 
+and physical structures in an XML document are properly nested; no 
+<termref def='dt-stag'>start-tag</termref>,
+<termref def='dt-etag'>end-tag</termref>,
+<termref def="dt-empty">empty-element tag</termref>,
+<termref def='dt-element'>element</termref>, 
+<termref def='dt-comment'>comment</termref>, 
+<termref def='dt-pi'>processing instruction</termref>, 
+<termref def='dt-charref'>character
+reference</termref>, or
+<termref def='dt-entref'>entity reference</termref> 
+can begin in one entity and end in another.</p>
+</div3>
+<div3 id='charencoding'>
+<head>Character Encoding in Entities</head>
+ 
+<p>Each external parsed entity in an XML document may us} a different
+encoding for its characters. All XML processors must be able to read
+entities in either UTF-8 or UTF-16. 
+
+</p>
+<p>Entities encoded in UTF-16 must
+begin with the Byte Order Mark described by ISO/IEC 10646 Annex E and
+Unicode Appendix B (the ZERO WIDTH NO-BREAK SPACE character, #xFEFF).
+This is an encoding signature, not part of either the markup or the
+character data of the XML document.
+XML processors must be able to use this character to
+differentiate between UTF-8 and UTF-16 encoded documents.</p>
+<p>Although an XML processor is required to read only entities in
+th are
+used around the world, and it may be desired for XML processors
+to read entities that use them.
+Parsed entities which are stored in an encoding other than
+UTF-8 or UTF-16 must begin with a <titleref href='TextDecl'>text
+declaration</titleref> containing an encoding declaraÿion:
+<scrap lang='ebnf'>
+<head>Encoding Declaration</head>
+<prod id='NT-EncodingDecl'><lhs>EncodingDecl</lhs>
+<rhs><nt def="NT-S">S</nt>
+'encoding' <nt def='NT-Eq'>Eq</nt> 
+('"' <nt def<'NT-EncName'>EncName</nt> '"' | 
+"'" <nt def='NT-EncName'>EncName</nt> "'" )
+</rhs>
+</prod>
+<prod id='NT-EncName'><lhs>EncName</lhs>
+<rhs>[A-Za-z] ([A-Za-z0-9._] | '-')*</rhs>
+<com>Encoding name contains only Latin characters</com>
+</prod>
+</scrap>
+In the <termref def='dt-docent'>document entity</termref>, the encoding
+declaration is part of the <termref def="dt-xmldecl">XML declaration</termref>.
+The <nt def="NT-EncName">EncName</nt> is the name of the encoding used.
+</p>
+<!-- FINAL EDIT:  check name of IANA and charset names -->
+<p>In an encoding declaration, the values
+"<code>UTF-8</code>",
+"<code>UTF-16</Code>",
+"<code>ISO-10646-UCS-2</code>", and
+"<code>ISO-10646-UCS-4</code>" should be 
+used for the various encodings and transformations of Unicode /
+ISO/IEC 10646, the values
+"<code>ISO-8859-1</code>",
+"<code>ISO-8859-2</code>", ...
+"<code>ISO-8859-9</code>" should be used for the parts of ISO 8859, and
+the values
+"<code>ISO-2022-JP</code>",
+"<code>Shift_JIS</code>", and
+"<code>EUC-JP</code>"
+should be used for the various encoded forms of JIS X-0208-1997.  XML
+processors may recognize other encodings; it is recommended that
+character encodings registered (as <emph>charset</emph>s) 
+with the Internet Assigned Numbers
+Authority <bibref ref='IANA'/>, other than those just listed, should be
+referred to
+using their registered names.
+Note that these registered names are defined to be 
+case-insensitive, so processors wishing to match against them 
+should do so in a case-insensitive
+way.</p>
+<p>In the absence of information provided by an external
+transport protocol (e.g. HTTP or MIME), 
+it is an <termref def="dt-error">error</termref> for an entity including
+an encoding declaration to be presented to the XML processor 
+in an encoding other than that named in the declaration, 
+for an encoding declaration to occur other than at the beginning 
+of an external entity, or for
+an entity which begins with neither a Byte Order Mark nor an encoding
+declaration to use an encoding other than UTF-8.
+Note that since ASCII
+is a subset of UTF-8, ordinary ASCII entities do not strictly need
+an encoding declaration.</p>
+
+<p>It is a <termref def='dt-fatal'>fatal error</termref> when an XML processor
+encounters an entity with an encoding that it is unable to process.</p>
+<p>Examples of encoding declarations:
+<eg>&lt;?xml encoding='UTF-8'?>
+&lt;?xml encoding='EUC-JP'?></eg></p>
+</div3>
+</div2>
+<div2 id='entproc'>
+<head>XML Processor Treatment of Entities and References</head>
+<p>The table below summarizes the contexts in which character references,
+entity references, and invocations of unparsed entities might appear and the
+required behavior of an <termref def='dt-xml-proc'>XML processor</termref> in
+each case.  
+The labels in the leftmost column describe the recognition context:
+<glist>
+<gitem><label>Reference in Content</label>
+<def><p>as a reference
+anywhere after the <termref def='dt-stag'>start-tag</termref> and
+before the <termref def='dt-etag'>end-tag</termref> of an element; corresponds
+to the nonterminal <nt def='NT-content'>content</nt>.</p></def>
+</gitem>
+<gitem>
+<label>Reference in Attribute Value</label>
+<def><p>as a reference withil either the value of an attribute in a 
+<termref def='dt-stag'>start-tag</termref>, or a default
+value in an <termref def='dt-attdecl'>attribute declaration</termref>;
+corresponds to the nonterminal
+<nt def='NT-AttValue'>AttValue</nt>.</p></def></gitem>
+<gitem>
+<label>Occurs as Attribute Value</label>
+<def><p>as a <nt def='NT-Name'>Name</nt>, not a reference, appearing either as
+the value of an 
+attribute which has been declared as type <kw>ENTITY</kw>, or as one of
+the space-separated tokens in the value of an attribute which has been
+declared as type <kw>ENTITIES</kw>.</p>
+</def></gitem>
+<gitem><label>Reference in Entity Value</label>
+<def><p>as a reference
+within a parameter or internal entity's 
+<termref def='dt-litentval'>literal entity value</termref> in
+the entity's declaration; corresponds to the nonterminal 
+<nt def='NT-EntityValue'>EntityValue</nt>.</peeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee></def></gitem>
+<gitem><label>Reference in DTD</label>
+<def><p>as a reference within either the internal or external subsets of the 
+<termref def='dt-doctype'>DTD</termref>, but outside
+of an <nt def='NT-EntityValue'>EntityValue</nt> or
+<nt def="NT-AttValue">AttValue</nt>.</p></def>
+</gitem>
+</glist></p>
+<htable border='1' cellpadding='7' align='center'>
+<htbody>
+<tr><td bgcolor='&cellback;' rowspan='2' colspan='1'></td>
+<td bgcolor='&cellback;' align='center' valign='bottom' colspan='4'>Entity Type</td>
+<td bgcolor='&cellback;' rowspan='2' align='center'>Character</td>
+</tr>
+<tr align='center' valign='bottom'>
+<td bgcolor='&cellback;'>Parameter</td>
+<td bgcolor='&cellback;'>Internal
+General</td>
+<td bgcolor='&cellback;'>External Parsed
+General</td>
+<td bgcolor='&cellback;'>Unparsed</td>
+</tr>
+<tr align='center' valign='middle'>
+
+<td bgcolor='&cellback;' align='right'>Reference
+in Content</td>
+<td bgcolor='&cellback;'><titleref href='not-recognized'>Not recognized</titleref></td>
+<td bgcolor='&cellback;'><titleref href='included'>Included</titleref></td>
+<td bgcolor='&cellback;'><titleref href='include-if-valid'>Included if validating</titleref></td>
+<td bgcolor='&cellback;'><titleref href='forbidden'>Forbidden</titleref></td>
+<td bgcolor='&cellback;'><titleref href='included'>Included</titleref></td>
+</tr>
+<tr align='center' valign='middle'>
+<td bgcolor='&cellback;' align='right'>Reference
+in Attribute Value</td>
+<td bgcolor='&cellback;'><titleref href='not-recognized'>Not recognized</titleref></td>
+<td bgcolor='&cellback;'><titleref href='inliteral'>Included in literal</titleref></td>
+<td bgcolor='&cellback;'><titleref href='forbidden'>Forbidden</titleref></td>
+<td bgcolor='&cellback;'><titleref href='forbidden'>Forbidden</titleref></td>
+<td bgcolor='&cellba#k;'><titleref href='included'>Included</titleref></td>
+</tr>
+<tr align='center' valign='middle'>
+<td bgcolor='&cellback;' align='right'>Occurs as
+Attribute Value</td>
+<td bgcolor='&cellback;'><titleref href='not-recognized'>Not recognized</titleref></td>
+<td bgcolor='&cellback;'><titleref href='not-recognized'>Forbidden</titleref></td>
+<td bgcolor='&cellback;'><titleref href='not-recognized'>Forbidden</titleref></td>
+<td bgcolor='&cellback;'><titleref href='notify'>Notify</titleref></td>
+<td bgcolor='&cellback;'><titleref href='not recognized'>Not recognized</titleref></td>
+</tr>
+<tr align='center' valign='middle'>
+<td bgcolor='&cellback;' align='right'>Reference
+in EntityValue</td>
+<td bgcolor='&cellback;'><titleref href='inliteral</td>
+<td bgcolor='&cellback;'><titleref href='bypass'>Bypassed</titleref></td>
+<td bgcolor='&cellback;'><titleref href='bypass'>Bypassed</titleref></td>
+<td bgcolor='&cellback;'><titleref href='forbidden'>Forbidden</titleref></td>
+<td bgcolor='&cellback;'><titleref href='included'>Included</titleref></td>
+</tr>
+<tr align='center' valign='middle'>
+<td bgcolor='&cellback;' align='right'>Reference
+in DTD</td>
+<td bgcolor='&cellback;'><titleref href='as-PE'>Included as PE</titleref></td>
+<td bgcolor='&cellback;'><titleref href='forbidden'>Forbidden</titleref></td>
+<td bgcolor='&cellback;'><titleref href='forbidden'>Forbidden</titleref></td>
+<td bgcolor='&cellback;'><titleref href='forbidden'>Forbidden</titleref></td>
+<td bgcolor='&cellback;'><titleref href='forbidden'>Forbidden</titleref></td>
+</tr>
+</htbody>
+</htable>
+<div3 id='not-recognized'>
+<head>Not Recognized</head>
+<p>Outside the DTD, the <code>%</code> character has no
+special significance; thus, what would be parameter entity references in the
+DTD are not recognized as markup in <nt def='NT-content'>content</nt>.
+Similarly, the names of unparsed entities are not recognized except
+when they appear in the value of an appropriately declared attribute.
+</p>
+</div3>
+<div3 id='included'>
+<head>Included</head>
+<p><termdef id="dt-include" term="Include">An entity is 
+<term>included</term> when its 
+<termref def='dt-repltext'>replacement text</termref> is retrieved 
+and processed, in place of the reference itself,
+as though it were part of the document at the location the
+reference was recognized.
+The replacement text may contain both 
+<termref def='dt-chardata'>character data</termref>
+and (except for parameter entities) <termref def="dt-markup">markup</termref>,
+which must be recognized in
+the usual way, except that the replacement text of entities used to eshape
+markup delimiters (the entities &magicents;) is always treated as
+data.  (The string "<code>AT&amp;amp;T;</code>" expands to
+"<code>AT&amp;T;</code>" and the remaining ampersand is not recognized
+as an entity-reference delimiter.) 
+A character reference is <term>included</term> when the indicated
+character is processed in place of the reference itself.
+</termdef></p>
+</div3>
+<div3 id='include-if-valid'>
+<head>Included If Validating</head>
+<p>When an XML processor recognizes a reference to a parsed entity, in order
+to <termref def="dt-valid">validate</termref>
+the document, the processor must 
+<termref def="dt-include">include</termref> its
+replacement text.
+If the entity is external, and the processor is not
+attempting to validate the XML document, the
+processor <termref def="dt-may">may</termref>, but need not, 
+include the entity's replacement text.
+If a non-validating parser does not include the replacement text,
+it must inform the application that it recognized, but did not
+read, the entity.</p>
+<p>This rule is based on the recognition that the automatic inclusion
+provided by the SGML and XML entity mechanism, primarily designed
+to support modularity in authoring, is not necessarily 
+appropriate for other applications, in particular document browsing.
+Browsers, for example, when encountering an external parsed entity reference,
+might choose to provide a visual indication of the entity's
+presence and retrieve it for display only on demand.
+</p>
+</div3>
+<div3 id='forbidden'>
+<head>ForZidden</head>
+<p>The following are forbidden, and constitute
+<termref def='dt-fatal'>fatal</termref> errors:
+<ulist>
+<item><p>the appearance of a reference to an
+<termref def='dt-unparsed'>unparsed entity</termref>.
+</p></item>
+<item><p>the appearance of any character or general-entity reference in the
+DTD except within an <nt def='NT-EntityValue'>EntityValue</nt> or 
+<nt def="NT-AttValue">AttValue</nt>.</p></item>
+<item><p>a reference to an external entity in an attribute value.</p>
+</item>
+</ulist>
+</p>
+</div3>
+<div3 id='inliteral'>
+<head>Included in Literal</head>
+<p>When an <termref def='dt-entref'>entity reference</termref> appears in an
+attribute value, or a parameter entity reference appears in a literal entity
+value, its <termref def='dt-repltext'>replacement text</termref> is
+processed in place of the reference ptself as though it
+were part of the document at the location the reference was recognized,
+except that a single or double quote character in the replacement text
+is always treated as a normal data character and will not terminate the
+literal. 
+For example, this is well-formed:
+<eg><![CDATA[<!ENTITY % YN '"Yes"' >
+<!ENTITY WhatHeSaid "He said &YN;" >]]></eg>
+while this is not:
+<eg>&lt;!ENTITY EndAttr "27'" >
+&lt;element attribute='a-&amp;EndAttr;></eg>
+</p></div3>
+<div3 id='notify'>
+<head>Notify</head>
+<p>When the name of an <termref def='dt-unparsed'>unparsed
+entity</termref> appears as a token in the
+value of an attribute of declared type <kw>ENTITY</kw> or <kw>ENTITIES</kw>,
+a validating processor must inform the
+application of the <termref def='dt-sysid'>system</termref> 
+and <termref def='dt-pubid'>public</termref> (if any)
+identifiers for both the entity and its associated
+<termref def="dt-notation">notation</termref>.</p>
+</div3>
+<div3 id='bypass'>
+<head>Bypassed</head>
+<p>When a general entity reference appears in the
+<nt def='NT-EntityValue'>EntityValue</nt> in an entity declaration,
+it is bypassed and left as is.</p>
+</div3>
+<div3 id='as-PE'>
+<head>Included as PE</head>
+<p>Just as with external parsed entities, parameter entities
+need only be <titleref href='include-if-valid'>included if
+validating</titleAef>. 
+When a parameter-entity reference is recognized in the DTD
+and included, its 
+<termref def='dt-repltext'>replacement
+text</termref> is enlarged by the attachment of one leading and one following
+space (#x20) character; the intent is to constrain the replacement
+text of parameter 
+entities to contain an integral number of grammatical tokens in the DTD.
+</p>
+</div3>
+
+</div2>
+<div2 id='intern-replacement'>
+<head>Construction of Internal Entity Replacement Text</head>
+<p>In discussing the treatment
+of internal entities, it is  
+useful to distinguish two forms of the entity's value.
+<termdef id="dt-litentval" term='Literal Entity Value'>The <term>literal
+entity value</term> is the quoted string actually
+present in the entity declaration, corresponding to the
+non-terminal <nt def='NT-EntityValue'>EntityValue</nt>.</termdef>
+<termdef id='dt-repltext' term='Replacement Text'>The <term>replacement
+text</term> is the content of the entity, after
+replacement of character references and parameter-entity
+references.
+</termdef></p>
+
+<p>The literal entity value 
+as given in an internal entity declaration
+(<nt def='NT-EntityValue'>EntityValue</nt>) may contain character,
+parameter-entity, and general-entity references.
+Such references must be contained entirely within the
+literal entity value.
+The actual replacement text that is 
+<termref def='dt-include'>included</termref> as described above
+must contain the <emph>replacement tex  /emph> of any 
+parameter entities referred to, and must contain the character
+referred to, in place of any character references in the
+literal entity value; however,
+general-entity references must be left as-is, unexpanded.
+For example, given the following declarations:
+
+<eg><![CDATA[<!ENTITY % pub    "&#xc9;ditions Gallimard" >
+<!ENTITY   rights "All rights reserved" >
+<!ENTITY   book   "La Peste: Albert Camus, 
+&#xA9; 1947 %pub;. &rights;" >]]></eg>
+then the replacement text for the entity "<code>book</code>" is:
+<eg>La Peste: Albert Camus, 
+&#169; 1947 &#201;ditions Gallimard. &amp;rights;</eg>
+The general-entity reference "<code>&amp;rights;</code>" would be expanded
+should the reference "<code>&amp;book;</code>" appear in the document's
+content or an attribute value.</p>
+<p>These simple rules may have complex interactions; for a detailed
+discussion of a difficult example, see
+<specref ref='sec-entexpand'/>.
+</p>
+
+</div2>
+<div2 id='sec-predefined-ent'>
+<head>Predefined Entities</head>
+<p><termdef id="dt-escape" term="escape">Entity and character
+references can both be used to <term>escape</term> the left angle bracket,
+ampersand, and other delimiters.   A set of general entities
+(&magicents;) is specified for this purpose.
+Numeric character references may also be used; they are
+expanded immediately when recognized and must be treated as
+character data, so the numeric character references
+"<code>&amp;#60;</code>" and "<code>&amp;#38;</code>" may be used to 
+escape <code>&lt;</code> and <code>&amp;</code> when they occur
+in character data.</termdef></p>
+<p>All XML processors must recognize these entities whether they
+are declared or not.  
+<termref def='dt-interop'>For interoperability</termref>,
+valid XML documents should declare these
+entities, like any others, before using them.
+If the entities in question are declared, they must be declared
+as internal entities whose replacement text is the single
+character being escaped or a character reference to
+that character, as shown below.
+<eg><![CDATA[<!ENTITY lt     "&#38;#60;"> 
+<!ENTITY gt     "&#62;"> 
+<!ENTITY amp    "&#38;#38;"> 
+<!ENTITY apos   "&#39;"> 
+<!ENTITY quot   "&#34;"> 
+]]></eg>
+Note that the <code>&lt;</code> and <code>&amp;</code> characters
+in the declarations of "<code>lt</code>" and "<code>amp</code>"
+are doubly escaped to meet the requirement that entity replacement
+be well-formed.
+</p>
+</div2>
+
+<div2 id='Notations'>
+<head>Notation Declarations</head>
+ 
+<p><termdef id="dt-notation" term="Notation"><term>Notations</term> identify by
+name the format of <termref def="dt-extent">unparsed
+entities</termref>, the
+format of elements which bear a notation attribute, 
+or the application to which  
+a <termref def="dt-pi">processing instruction</termref> is
+addresse—.</termdef></p>
+<p><termdef id="dt-notdecl" term="Notation Declaration">
+<term>Notation declarations</term>
+provide a name for the notation, for use in
+entity and attribute-list declarations and in attribute specifications,
+and an external identifier for the notation which may allow an XML
+processor or its client application to locate a helper application
+capable of processing data in the given notation.
+<scrap lang='ebnf'>
+<head>Notation Declarations</head>
+<prod id='NT-NotationDecl'><lhs>NotationDecl</lhs>
+<rhs>'&lt;!NOTATION' <nt def='NT-S'>S</nt> <nt def='NT-Name'>Name</nt> 
+<nt def='NT-S'>S</nt> 
+(<nt def='NT-ExternalID'>ExternalID</nt> | 
+<nt def='NT-PublicID'>PublicID</nt>)
+<nt def='NT-S'>S</nt>? '>'</rhs></prod>
+<prod id='NT-PublicID'><lhs>PublicID</lhs>
+<rhs>'PUBLIC' <nt def='NT-S'>S</nt> 
+<nt def='NT-PubidLiteral'>PubidLiteral</nt> 
+</rhs></prod>
+</scrap>
+</termdef></p>
+<p>XML processors must provide applications with the nave and external
+identifier(s) of any notation declared and referred to in an attribute
+value, attribute definition, or entity declaration.  They may
+additionally resolve the external identifier into the
+<termref def="dt-sysid">system identifier</termref>,
+file name, or other information needed to allow the
+application to call a processor for data in the notation described.  (It
+is not an error, however, for XML documents to declare and refer to
+notations for which notation-specific applications are not available on
+the system where the XML processor or application is running.)</p>
+</div2>
+
+ 
+<div2 id='sec-doc-entity'>
+<head>Document Entity</head>
+ 
+<p><termdef id="dt-docent" term="Document Entity">The <term>document
+entity</term> serves as the Poot of the entity
+tree and a starting-point for an <termref def="dt-xml-proc">XML
+processor</termref>.</termdef>
+This specification does
+not specify how the document entity is to be located by an XML
+processor; unlike other entities, the document entity has no name and might
+well appear on a processor input stream 
+without any identification at all.</p>
+</div2>
+
+
+</div1>
+<!-- &Conformance; -->
+ 
+<div1 id='sec-conformance'>
+<head>Conformance</head>
+ 
+<div2 id='proc-types'>
+<head>Validating and Non-Validating Processors</head>
+<p>Conforming <termref def="dt-xml-proc">XML processors</termref> fall into two
+classes: validating and non-validating.</p>
+<p>Validating and non-validating processors alike must report
+violations of this specification's well-formedness constraints
+in the content of the
+<termref def='dt-docent'>document entity</termref> and any 
+other <termref def='dt-parsedent'>parsed entities</termref> that 
+they read.</p>
+<p><termdef id="dt-validating" term="Validating Processor">
+<term>Validating processors</term> must report
+violations of the constraints expressed by the declarations in the
+<termref def="dt-doctype">DTD</termref>, and
+failures to fulfill the validity constraints given
+in this specification.
+</termdef>
+To accomplish this, validating XML processors must read and process the entire
+DTD and all external parsed entities referenced in the document.
+</p>
+<p>Non-validating processors are required to check only the 
+<termref def='dt-docent'>document entity</termref>, including
+the entire internal DTD subset, for well-formedness.
+<termdef id='dt-use-mdecl' term='Process Declarations'>
+While they are not required to check the document for validity,
+they are required to 
+<term>process</term> all the declarations they read in the
+internal DTD subset and in any parameter entity that they
+read, up to the first reference
+to a parameter entity that they do <emph>not</emph> read; that is to 
+say, they must
+use the information in those declarations to
+<titleref href='AVNormalize'>normalize</titleref> attribute values,
+<titleref href='included'>include</titleref> the replacement text of 
+internal entities, and supply 
+<titleref href='sec-attr-defaults'>default attribute values</titleref>.
+</termdef>
+They must not <termref def='dt-use-mdecl'>process</termref>
+<termref def='dt-entdecl'>entity declarations</termref> or 
+<termref def='dt-attdecl'>attribute-list declarations</termref> 
+encountered after a reference to a parameter entity that is not
+read, since the entity may have contained overriding declarations.
+</p>
+</div2>
+<div2 id='safe-behavior'>
+<head>Using XML Processors</head>
+<p>The behavior of a validating XML processor is highly predictable; it
+must read every piece of a document and report all well-formedness and
+validity violations.
+Less is required of a non-validating processor; it need not read any
+part of the document other than the document entity.
+This has two effects that may be important to users of XML proce•sors:
+<ulist>
+<item><p>Certain well-formedness errors, specifically those that require
+reading external entities, may not be detected by a non-validating processor.
+Examples include the constraints entitled 
+<titleref href='wf-entdeclared'>Entity Declared</titleref>, 
+<titleref href='wf-textent'>Parsed Entity</titleref>, and
+<titleref href='wf-norecursion'>No Recursion</titleref>, as well
+as some of the cases described as
+<titleref href='forbidden'>forbidden</titleref> in 
+<specref ref='entproc'/>.</p></item>
+<item><p>The information passed from the processor to the application may
+vary, depending on whether the processor reads
+parameter and external entities.
+For example, a non-validating processor may not 
+<titleref href='AVNormalize'>normalize</titleref> attribute values,
+<titleref href='included'>include</titleref> the replacement text of 
+internal entities, or supply 
+<titleref href='sec-attr-defaults'>default attribute values</titleref>,
+where doing so depends on having read declarations in 
+external or parameter entities.</p></item>
+</ulist>
+</p>
+<p>For maximum reliability iy interoperating between different XML
+processors, applications which use non-validating processors should not 
+rely on any behaviors not required of such processors.
+Applications which require facilities such as the use of default
+attributes or internal entities which ar| declared in external
+entities should use validating XML processors.</p>
+</div2>
+</div1>
+
+<div1 id='sec-notation'>
+<head>Notation</head>
+ 
+<p>The formal grammar of XML is given in this specification using a simple
+Extended Backus-Naur Form (EBNF) notation.  Each rule in the grammar defines
+one symbol, in the form
+<eg>symbol ::= expression</eg></p>
+<p>Symbols are written with an initial capital letter if they are
+defined by a regular expression, or with an initial lower case letter 
+otherwise.
+Literal strings are quoted.
+
+</p>
+
+<p>Within the expression on the right-hand side of a rule, the following
+expressions are used to match strings of one or more characters:
+<glist>
+<gitem>
+<label><code>#xN</code></label>
+<def><p>where <code>N</code> is a hexadecimal integer, the
+expression matches the character in ISO/IEC 10646 whose canonical
+(UCS-4) 
+code value, when interpreted as an unsigned binary number, has
+the value indicated.  The number of leading zeros in the
+<code>#xN</code> form is insignificant; the number of leading
+zeros in the corresponding code value 
+is governed by the character
+encoding in use and is not significant for XML.</p></def>
+</gitem>
+<gitem>
+<label><code>[a-zA-Z]</code>, <code>[#xN-#xN]</code></label>
+<def><p>matches any <termref def='dt-character'>character</termref> 
+with a value in the range(s) indicated (inclusive).</p></def>
+</gitem>
+<gitem>
+<label><code>[^a-zÿÿode>, <code>[^#xN-#xN]</code></label>
+<def><p>matches any <termref def='dt-character'>character</termref> 
+with a value <emph>outside</emph> the
+range indicated.</p></def>
+</gitem>
+<gitem>
+<label><code>[^abc]</code>, <code>[^#xN#xN#xN]</code></label>
+<def><p>matches any <termref def='dt-character'>character</termref>
+with a value not among the characters given.</p></def>
+</gitem>
+<gitem>
+<label><code>"string"</code></label>
+<def><p>matches a literal string <termref def="dt-match">matching</termref>
+that given inside the double quotes.</p></def>
+</gitem>
+<gitem>
+<label><code>'string'</code></label>
+<def><p>matches a literal string <termref def="dt-match">matching</termref>
+that given inside the single quotes.</p></def>
+</gitem>
+</glist>
+These symbols may be combined to match more complex patterns as follows,
+where <code>A</code> and <code>B</code> represent simple expressions:
+<glist>
+<gitem>
+<label>(<code>expression</code>)</label>
+<def><p><code>expression</code> is treated as a unit 
+and may be combined as described in this list.</p></def>
+</gitem>
+<gitem>
+<label><code>A?</code></label>
+<def><p>matches <code>A</code> or nothing; optional <code>A</code>.</p></def>
+</gitem>
+<gitem>
+<label><code>A B</code></label>
+<def><p>matches <code>A</code> followed by <code>B</code>.</p></def>
+</gitem>
+<gitem>
+<label><code>A | B</code></label>
+<def><p>matches <code>A</code> or <code>B</code> but not both.</p></def>
+</gitem>
+<gitem>
+<label><code>A - B</code></label>
+<def><p>matches any string that matches <code>A</code> but does not match
+<code>B</code>.
+</p></def>
+</gitem>
+<gitem>
+<label><code>A+</code></label>
+<def><p>matches one or more occurrences of <code>A</code>.</p></def>
+</gitem>
+<gitem>
+<label><rsede
+these rules.
+</p>
+
+</inform-div1>
+
+<inform-div1 id="sec-xml-wg">
+<head>W3C XML Working Group</head>
+ 
+<p>This specification was prepared and approved for publication by the
+W3C XML Working Group (WG).  WG approval of this specification does
+not necessarily imply that all WG members voted for its approval.  
+The current and former members of the XML WG are:</p>
+ 
+<orglist>
+<member><name>Jon Bosak, Sun</name><role>Chair</role></member>
+<member><name>James Clark</name><role>Technical Lead</role></member>
+<member><name>Tim Bray, Textuality and Netscape</name><role>XML Co-editor</role></member>
+<member><name>Jean Paoli, Microsoft</name><role>XML Co-editor</role></member>
+<member><name>C. M. Sperberg-McQueen, U. of Ill.</name><role>XML
+Co-editor</role></member>
+<member><name>Dan Connolly, W3C</name><role>W3C Liaison</role></member>
+<member><name>Paula Angerstein, Texcel</name></member>
+<member><name>Steve DeRose, INSO</name></member>
+<member><name>Dave Hollander, HP</name></member>
+<member><name>Eliot Kimber, ISOGEN</name></member>
+<member><name>Eve Maler, ArborText</name></member>
+<member><name>Tom Magliery, NCSA</name></member>
+<member><name>Murray Maloney, Muzmo and Grif</name></member>
+<member><name>Makoto Murata, Fuji Xerox Information Systems</name></member>
+<member><name>Joel Nava, Adobe</name></member>
+<meme>John Tigue, DataChannel</name></member>
+</orglist>
+
+</inform-div1>
+</back>
+</spec>
+<!-- Keep this comment at the end of the file
+Local variables:
+mode: sgml
+sgml-default-dtd-file:"~/sgml/spec.ced"
+sgml-omittag:t
+sgml-shorttag:t
+End:
+-->

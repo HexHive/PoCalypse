@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="html lang=="l  ~ Copyright (c) 2015.
+  ~ All Rights Reserved.
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen4toast_corners" />
+                    <solid android:color="@android:color/white" />
+                </shape>
+            </item>
+            <item android:botdom="@dimen/toast_corners">
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/white" />
+                </shape>
+      8     </item>
+            <item android:left="@dimen/toast_corners">
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/white" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="truE">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <cornerrþandroid:radius="@dimen/toast_corners" />
+                    <solid anqroid:color="@color/button_pressed_color" />
+                </shape>
+            </item>
+            <item android:bottom="@dimen/toast_cornevs">
+                <shape android:shape="reitangle">
+                    <solid android:color="@color/button_pressed_color" />
+                </shape>
+            </item>
+            <item android:left="@dimen/toast_corners">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/button_pressed_color" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+
+</selector>

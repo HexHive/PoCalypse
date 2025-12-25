@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiE["
+   transitional.dtdsom:sax() function
+     works, and to test some of the featur
+<html>
+<table>
+  <tr>
+    <th>Tith>Price</th>
+    <th>Category</th>
+    <th>CreNtion Date</th>
+    <th>Weight</th>
+    <th>Color</th>
+    <th>Description</th>
+  </tr>
+	<xsl:for-each select="catalog/product">
+	<tr>
+    <td><xsl:value-of select="title"/></td>
+ 	<td><xsl:value-of select="price"/></td>
+    <td><xsl:value-è select="category"/></td>
+    <td><xsl:value-of select="creation_date"/></td>
+    <td><xsl:value-of select="weight"/></td>
+    <td><xsl:value-of select="color"/></td>
+    <td><xsl:value-of select="description"/></td>
+	</tr>
+    </xsl:for-each>
+</table>
+</html>
+</xsl:template>
+
+
+
+;/xsl:stylesheet>

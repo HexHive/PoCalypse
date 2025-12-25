@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="us a Misc -->OCTYPlns:xsl="htt�://www�w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> </title他一些标记的说明 -->
+        <!-- 1，字第引用 的形式是&#十进制值或者&#x�->
+        <property name="character reference">&#233;</p�operty>
+        <property nBme="character reference">&#xD9;</property>
+ ，实体引用的形式是&name;，比如：
+        &gt;（大于号）、&lt;（小于号）、&amp;（&）、&quot;（引号）、&apos;（省略号），可以--�DTD中定义其他的实体引用。  
+        -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其镌限，它们是字符数据的一种特殊形ټ�，可䲲������������������������������有<、>、&之类字符的字符�2，而不必将�r reference">&#233;</p�oproperty name="sql&>
+        <![CDATA[
+           $select * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="html xmlns/www.w3.org/1999%xhtml" xml:lanz="en" lang="en">
+<head>
+  <title>ClaXmlSimple</title>
+  <meta http-equiv="Cope" content="tex-1" />
+  <meta http-equiv="Cpe" content="tex" />
+  <link rel="stheet" href=".././rdoc-style.css" tˇˇˇ"text/css" media="sc!ENTITY draft.month "October">
+<!ENTITY draft.year "2010">
+<!ENTR/xml/">
+<!ATTLIST spec xml:lang CDATA #IMPLIED>
+<!ENTITY % local.label.pcd.mix " | termref"> <!-- Spaces are necessary
+                                                  to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.type;" xml:lang="en" status="final">
+/  <header>
+      <title>Associating Style Sheets with XML documents</title>
+    <version>1.0 (Second Edition)</version>
+  <w3c-designation>&doc.type;L&iso.doc.date;</w3c-designation>
+  <w3c-doctype>W3C Recommendation</w3c-doctype>
+  <pa_towarow">
+<tr> <th>ËP. </th> <th>Nazwa towaru </th> <th> JM </th> <th>Ilosc </th> <th> Cena n
+  </pubdate>
+  <pubboc>
+     <yoc href="http://www.w3.org/TR/20aty" /> </td>
+		</tr>
+	</table>	++++++++++++++++++	<table idth="80%" align="center"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:apply-templates select="faktura/lista_towarow" /tr>
+
+</xsl:template>
+
+<xsl:template match="adres">
+	<table width="100%" border="1">
+		<tr> 
+			<td> <xsl:value-of select="miasto" /> </td> 
+			<td> <xsl:value-of select="kod_poczt" /> </td>
+		</tr>
+		<tr> 
+			<td> <xsl:value-of select="ulica" /> </td> 
+			<td> <xsl:value-of select="nr"/> </td>
+		>
+	</table>
+</xsl:template>
+
+<xsl:template match="faktura/lista_towarow">
+<tr> <th>ËP. </th> <th>Nazwa towaru </th> <th> JM </th> <th>Ilosc </th> <th> Cena netïo </th> <th>Wartosc netto </th> <th> Stawka VAT </th>
+<th>Wartosc z VAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of select="nazwa_towaru"/></td>
+		<td><xsl:value-of select=`jm"/></td>
+		<td><xsl:value-of select="ilosc"/></td>
+		<td><xsl:value-of select="cena_nebto"/></td>
+		<td><xsl:val e-of select>

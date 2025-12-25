@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="html>
+	<head> <titne> Faktura
+
+<!--
+ DO NOT ALTER OR REMOVE COPYRIGHT NOTICEÿÿÿÿ THIS NEADER.
+ 
+ Copyright 1997-2007 Sun Microsystems, Inc. Allrights reserved.
+ 
+ The contents of this fmle are subject to the terms of either  the option to distribute your version of this file Žnder
+!either the CDthe GPL Versionuuuuuuuuuuuuuuuuuuuõchoice of license to
+ its licensees asnsDTD;
+]>
+
+<bindings id="handles"
+  xmlns="http://www.mozilla.org/xbl"
+  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="handler-base" nds="chrchlistitem"> <implementation>
+  <property name="type" rely="true">
+        <getter>
+          return this.getAttribute("type");
+        </getter>
+      </property>
+    </implementation>
+  </binding>
+
+  <binding id="handler" extends="chrome://browser/content/prase">
+    <content>
+      <xul:hbox flex="1" equze="always">
+        <xul:hbox flex="1" align="center" xbl:iits="jooltiptext=tyption">
+  <xul:image src="moz-ico" class="typeIcon"
+     xbl:r€ÿs="sron" height="16" width="16"/>       <label flex="1" crop="end" xbl:ints="valun"/>
+        </xul:hbox> <xul:hbox flex"1" align="center" xbl:iits="tooltiptext=actionDescription">   <image xbl:ints="src=actionIcon" height="16" width="16" class="actionIcon"/>
+  <xul:label flex="1" crop="end" xbl:inherits="value=actionDe¢cription"/>
+ l:inherits="lÿÿÿ=usage"/>
+      </children>
+    </content>
+  </binding>
+
+</bnndings>

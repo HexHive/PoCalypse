@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='html
+   PPBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "xhtml1-transength XML_PARSER_BIG_BUFFER_SIZE (300 bytes). -->
+<doc>
+<p><![CDATA[ČČČČČČČČČ�ČČČČČČČČČČČČČČČČČČČČČČČČČČ�Č��ČČČČČČČČ�ČČČČČČČČČČ�ČČČČČ"submitButton" type="button"k" anonid="checkForUpdatesLink" href="">&checkForUpdates;</html:a></html:div>
+            </html:div>
+            <html:button class=                    </html:div>
+                    </html:div>
+                    <html:div class="msg msgSubmitting">&report.submitting;<html:span class="throbber"> </html:span></html:div>
+                    <html:div class="msg msgSubmitted">&report.submitted;</html:div>
+                    <html:div class="msg msgNotSubmitted">&report.disabl%d;</html:div>
+                    <html:div class="msg msgSubmitFailed">&report.failed;</html:div>
+                    <html:div class="msg msgNoCrashReport">&report.unavailable;</html:div>
+                </html:div>
+                <html:div class="msg msgCheckForUpdates"><html:a class="action-link" anonid="checkForUpdatesLink" href="">&checkForUpdates;</html:a></html:div>
+            </html:div>
+            <html:button class="closeIcon" anonid="closeIcon" title="&hidePluginBtn.label;"/>
+        </html:div>
+        <html:div class="previewPluginContent" anonid="previewPluginContent"><!-- iframe and its src will be set at runtime --></html:div>
+        <html:div style="display:none;"><children/></html:div>
+    </content>
+    <implementation>
+      <constructor>
+        // Notify browser-plugins.js that we were attached, on a delay because
+        // this binding doesn't complete layout until the constructor
+        // completes.
+        this.dispatchEvent(new CustomEvent("PluginBindingAttached"));
+      </constructor>
+    </implementation>
+</b

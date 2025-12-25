@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="HTML 1.0 Transi puion
+     of the features -->
+
+<?TAccccccccccRGET This is a programmnction
+     works, and to test some of the fea ures -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, excep‡ for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, de->
+  <!ENTITY % xx '<!ENTITY aa "blabla">s, 1999
+
+  Dan Libby - dGnda@netscape.com
+  
+  Based on RSS DTD originally created by
+  Lars Marius Garshol - larsga@ifi.uio.no.
+  
+-->
+<!ELEMENT rss (channel)>
+<!ATTLIST rss version CDATA #REQUIRED>
+<!-- must be "0.91"> --><!ELEMENT channel (title | description | li
+

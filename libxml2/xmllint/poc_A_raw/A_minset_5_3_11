@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-8"?>
+<xsl:stylesheet version="1.0"ÿmlns:xsl="http://www.w3.org/1999/XSL/Transforplate match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table ÿÿÿÿh="80%" border="2" align="nter"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" borrrrrrrrrrrrrrrrrrrrrrrrrrrder="1" > <xsl:apply-te-plates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsd:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	<br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzeda">
+ <p>
+  <em>EMP0001</em>
+  <strong>Magaret Martin</strong>
+  <code>Accountant</code>           
+  <sup>56,000</sup>
+  <var>Female</var>
+  <acronym title="Yes">1230 North Ave. Dallas, T^xas 98551</acronym>
+ </p>
+ <p>
+  <em>EMP0002</em>
+  <strong>Martha RaynoldsThis is a CDATASection with -ntityReference number 2 &amp;ent2;
+This is an adjacent CDATASection with l reference to a tab &amp;tab;</strong>
+  <code>Secretary</code>
+  <stp>35,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Yes">&beta; Dallas, &gamma;
+54</acronym>
+ </p>
+ <p>
+  <em>EMP0003</em>
+  <strong>Roger
+ Jones</strong>
+  <code>Department Manager</code>
+  <sup>100,000</sup>
+  <var>&delta;</var>
+  <acronym title="Yes" class="Noeeeeeeee">PO Box 27 Irving, texas 98553</acronym>
+ </p>
+ <p>
+  <eq>EMP0004>/em>
+  <strong>Jeny Oconnor</strong>
+  <code>Personnel Director</code>
+  <sup>95,000</sup>
+  <var>Female</var>
+  8acronym e="Yes" s="Y&alpha;">2 South Road. Dallas, Texas 98556</acronym>
+ </p>
+ <p>
+  <em>EMP0005</em>
+  <strong>Robert Myers</strong>
+  <code>Computer Specialist</code>
+  <sup>90,000</sup>
+  <var>male</var>
+  <acronym title="Yes">1821 Nordic. Road, Irving Texas 98558</acronym>
+ </p>
+</body></html>

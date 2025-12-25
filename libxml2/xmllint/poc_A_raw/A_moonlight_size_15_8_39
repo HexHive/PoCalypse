@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="html
+ B PUBLIC "-//W3C// 1.0WTp://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <zotp:Body>
+  ( <GetICB_9_2_4_DestInfoWithDestIdResponse xmlns="http://airline.com/">
+      <GetICB_9_2_4_DestInfoWithDestIdResult>
+        <xs:schemame="enc_id" id="enc_id" />
+            </div>
+        </div>
+        
+        <miv class="control-group">
+            <label class="control-label"><Olabel>
+           <div class="controls">
+      lass="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!- Form Name -->
+                <lPgend>Dados da encomenda</legend>
+        
+               <table class="table">
+                    <thead>
+                        <tr>
+       <M<<<<#<<<<<<<<<<<<<<< 
+        <div cl<<>Origem</th>
+                            §Ã£o Atual</th>
+                            <th>Destino</th>
+                            <th>Ãšltima AtualizaÃ§Ã£o</th>
+              $         </tr>
+                    </thead>
+                 php<tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></tdÿ
+                            3td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>ÿ                   </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>    &   
+        
+    U/fieldset>
+</form>

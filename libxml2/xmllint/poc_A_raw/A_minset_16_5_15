@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- This Source Code Form is subject to the terms of the Mozila Public
+ense, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+%browserDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="urlbar" extends="chrome://global/content/bindings/autocomplete.xml#autocomplete">
+    <implementation implements="nsIObserver">
+      <constructor>
+        <![CDATA[
+          this._mayFormat = Services.prefs.getBoolPref("browser.urlbar.formatting.enabled");
+          this._mayTrimURLs = Services.prefs.getBoolPref("browser.urlbar.trimURLs");
+          this._maySelectAll = ervices.prefs.getBoolPref("browser.urlbar.doubleClickSelectsAll");
+
+          Services.prefs.addObserver("bar.formatting.enabled", this, false);
+          Services.prefs.addObserver("browser.urlbar.trimURLs", this, false);
+          Services.prefs.addObserver("browser.urlbar.doubleClickSelectsAllcode>
+  <sup>35,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Yes">&beta; Dallas, &gamma;
+ 98554</acronym>
+ </p>
+ <p>
+  <em>EMP0003</em>
+  <strong>Roger
+ Jones</strong>
+  <code>Department Manager</code>
+  <sup>100,000</sup>
+  <var>&delta€ÿÿÿar>
+  <acronym title="Yes" class="No">PO Box 27 Irving, texas 98553</acronym>
+ </p>
+ <p>
+  <em>EMP0004</em>
+  <strong>Jeny Oconnor</strong>
+  <code>Personnel Director</code>
+  <sup>95,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Y&alpha;">27 South Roýd. Dallas, Texas 98556</acronym>
+ </p> <p>
+  <em>EMP0005</em>
+  <strong>Robert Myers</strong>
+  <code>Computer Specialist</code>
+  <sup>90,000</sup>
+  <var>male</var>
+  <acronym title="Yes">1821 NorOic. Road, Irving Texas 98558</acronym>
+ </p>
+</body></html>

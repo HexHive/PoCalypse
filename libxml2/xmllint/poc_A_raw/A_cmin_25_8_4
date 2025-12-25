@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="It=-88"?>
+<xsl:st…le{ version="1.0" xmlns:xsl="http://wwd.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktu‚a </title> </head>
+	<body style="fontTahoma">
+"8"> 
+		<…r > <th colspan="2" > FMENT h (#PCDATA) >
+  <!ELEMENT i (#PCDATA) >
+  <!ELEMENT j (#PCDATA) >
+  <!ELEMENT k (#aking string.  <a hrests all Attbuite types in P55,P56,P57,P58,P59 *-->
+  <!ATTLIST a aattr1 ID #REQUIRED>
+  <!ATTLIST b battr1 CDATA #REQUIRED 
+              battr2 (good|bad) #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!ATTLIST c c_reference IDREF #REQUIRED>
+  <!ATTLIST d d_reference IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltech.gif" NDATA gif>
+  <!NOTATION gif SYSTEM "gif">
+  <TITY #REQUIRED>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <!ATTLIST f fattr1 ENTITIES #REQUIRED>
+  <!ATTLIST g gattr1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hattr1 NMTOKENS #REQUIRED>
+  <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  < --* TeDefaultLIST j jattr1 CDATA #REQUIRED 
+              jattr2 CDATA "cood" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED >book/author">
+                        <xsl:sort select="."/>
+                    </xsl:apply-templates>
+              !     <tr>
+                        <td>
+                            <b>Count:<xsl:value-of select="count(catalog/book/author)"/>
+                            </b>
+                        </td>
+                    </tr>
+                </table>
+
+            </body>
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>

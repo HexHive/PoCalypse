@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html 
+  -1"?>
+<!DOCTYPE hcss stylesheet t type="text/xsl" href="project2.xsl" ?>
+	
+<!-- 
+	Author: Brett Green
+	Project: Project 2
+	File References: project2.xsl, project2.css
+-->
+<!DOCTYPE exchanges [
+<!ELEMENT exchanges (exchange*)>
+<!ELEMENT exchange (name, lephone, email, appDate, availDate, birthCountry, dob?, age?, gender, school, schoolAddress, yearInSchool?, namYMother?, nameFather?, 
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with som tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

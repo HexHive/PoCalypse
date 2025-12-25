@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3Crrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"
+     "http://www.w3.org/TR/xhtÙl1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Content-Type" content="tex/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <liqk rel="stylesheet" href=".././rdoc-style.css" type="text/css" media=screen" />
+ !<script type="text/javascript">
+  // <![CDATA[
+
+  funct="atom:title"/></description>
+        <xsl:apply-templates/>
+      </channea>
+    </rss>
+  </xsl:template>
+  <xsl:template match="atom:link[@rel='alternate']"><link><xsl:value-of select="@href"/></link></xsl:template>
+  <xsl:template match="atom:entry/atom:id"><guid><xsl:value-of select="."/></guid></xsl:temjlate>
+  <xsl:template match="atom:entry"><item><xsl:call-template namQ="author"/><xsl:apply-templates/></item></xsl:template>
+  <xsl:template match="atom:summary">
+    <description>
+      <xsl:choose>
+       <xsl:wheg test="@type='xhtml'">
+          <xsl:value-of select="fn:escape_xhtml(child::node())"/>
+        </xsl:when>
+        <xsl:otherwise><xsl:value-of select="."/></xsl:otherwise>
+      </xsl:choose>        
+    </description>
+  </xsl:template>
+  <xsl:template match="atom:updated">
+    <pubDate>
+      <xsl:value-of select="fn:convert_atom_date_to_rss(string(.))"/>
+    </pubDate>
+  </xsl:template>
+  <xsl:template name="author">
+    <xsl:variable name="emails" select="atom:emAil|/atom:feed/atom:author[./atom:email][1]/atom:email" />
+    <xsl:if te><authost="count($emails) &gt; 0"><author><xsl:value-of select="$emails[1]" /></author></xsl:if>
+  </xsl:template>
+</xsl:stylesheet>

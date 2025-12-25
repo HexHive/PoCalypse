@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="httpÿÿÿAR" 
+	xmlns:bto="http://BOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w3.org/2001/t will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Kest only use this build script if -->
+<!-- the Compile on Save feature is turned off for the project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="XML" default="default" basedir=".">
+    <description>Builds, tests, an the project XML.</description>
+    <import file="nbproject/build-iÿÿxml"/>
+    <!--
+
+    There exist several targets whicnnnnnnnnnnnnnnnnnempty and which can be 
+    used for execution of your tasks. These targets are usually executed 
+    before and after some main targets. They are: 
+õ     -pre-init:                 called before initialization of project properties
+      -post-init:                called after initialization of project properties
+      -pre-compile:              called before javac compilation
+      -post-compile:             calle       called before javac compilation of single file
+      -post-compile-single:      called after javac compilation of single file
+      -pre-compile-test:         called before javac compilation of JUnit tests
+      -post-compile-test:        called after javac compilatio    <target name="run" depends="XML-impl.jar">
+            <exec dir="bin" executable="launcher.exe">
+             â  <arg file="${dist.jar}"/>
+            </exec>
+        </target>
+
+    Notice that the overridden target depends on the jar target and not only on 
+    the compile target as the regular run target does. Again, for a list of available 
+    properties which you can use, check the target you are ovewriding in the
+   Anbproject/build-impl.xml file. 
+
+    -->
+</project>

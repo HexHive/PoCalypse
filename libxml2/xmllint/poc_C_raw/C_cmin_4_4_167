@@ -1,0 +1,227 @@
+<!DOCTYPE foo [
+<!ENTITY f "some internal data">
+<!ENTITY e "&f;&d;&d;&t;&df;">
+<!ENTITY d "&e;&e;3<Fi:argument">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;d;ns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.hudhdx.info/Resources/Vendors/4_0/HUD_HMIS.xsd https://github.com/hmis-interop/xml/raw/master/src/HUD_HMIS.xsd">
+    <hmis:Source>
+        <hmis:SourceID>12345</hmis:SourceID>
+        <hmis:SoftwareVendor>HMISSoft Inc.</hmis:SoftwareVendor>
+        <hmis:SoftwareVersion>3</hmis:SoftwareVersion>
+        <hmis:SourceConta75</hmis:SourceContactExtension>
+        <hmis:SourceContactFirst>Patricia</hmis:SourceContactFirst>
+        <hmis:SourceContactLast>Duke</hmis:SourceContactLast>
+        <hmis:SourceContactPhone>5939698367</hmis:SourceContactPhone>
+        <hmis:SourceName>County HMIS</hmis:SourceName>
+        <hmis:Export>
+            <hmis:ExportID>37</hmis:ExportID>
+            <hmis:ExportDate>2015-02-27T23:14:59</hmis:ExportDate>
+            <hmis:ExportPeriod>
+                <hmis:StartDate>2015-01-04T23:14:59</hmis:StartDate>
+                <hmis:EndDate>2015-03-26T23:14:59Z</hmis:EndDate>
+            </hmis:ExportPeriod>
+            <hmis:ExportPeriodType>effective</hmis:ExportPeriodType>
+            <hmis:ExportDirective>deltaRefresh</hmis:ExportDirective>
+            <!--<hmis:Affiliation hmis:dateCreated="2016-04-11T23:14:59Z" hmis:dateUpdated="2015-05-30T23:14:59" hmis:userID="nf">
+                <hmis:AffiliationID>76yt</hmis:AffiliationID>
+                <hmis:ProjectID>222E</hmis:ProjectID>
+                <hmis:ResProjectID>222D</hmis:ResProjectID>
+            </hmis:Affiliation>-->
+            <hmis:Client hnis:dateCreated="2016-04-11T23:14:59Z" hmis:dateUpdated="2015-05-30T23:14:59" hmis:userID="ned100">
+                <hmis:PersonalID>A1a1</hmis:PersonalID>
+                <hmis:FirstName>Edward</hmis:FirstName>
+                <hmis:MiddleName>Barnaby</hmis:MiddleName>
+                <hmis:Lasÿÿame>Jones</hmis:LastName>
+                <hmis:NameSuffix>Sr.</hmis:NameSuffix>
+                <hmis:NameDataQuality>9</hmis:NameDataQuality>
+                <hmis:SSN>7xxx9xx8x</hmis:SSN>
+                <hmis:SSNDataQuality>2</hmis:SSNDataQuality>
+                <hmis:DOB>2014-11-18</hmis:DOB>
+                <hmis:DOBDataQuality>1</hmis:DOBDataQuality>
+                <hmis:Gender>3</hmis:Gender>
+                <hmis:OtherGender>intersex</hmis:OtherGender>
+                <hmis:Ethnicity>0</hmis:Ethnicity>
+                <hmis:Race>8</hmis:Race>
+                <hmis:VeteranStatus>9</hmis:VeteranStatus>
+            </hmis:Client>
+            <hmis:CommercialSexualExploitation hmis:dataCollectionStage="1" hmis:dateCreated="2016-05-08T23:14:59" hmis:dateUpdated="2016-05-06T23:14:59Z" hmis:userID="DG4IfIQuAFF6I.yl7">
+                <hmis:CommercialSexualExploitationID>787h</hmis:CommercialSexualExploitationID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:ExchangeForSexPastThreeMonths>0</hmis:ExchangeForSexPastThreeMonths>
+                <hmis:CountOfExchangeForSex>3</hmis:CountOfExchangeForSex>
+                <hmis:AskedOrForcedToExchangeForSex>8</hmis:AskedOrForcedToExchangeForSex>
+            </hmis:CommercialSexualExploitation>
+            <hmis:ConnectionWithSOAR hmis:dateCreated="2015-05-20T23:14:59Z" hmis:dateUpdated="2016-05-21T23:14:59" hmis:userID="y9SC3Udh_t0aJCX">
+                <hmis:ConnectionWithSOARID>676rt</hmis:ConnectionWithSOARID>
+                <hmis:ExitID>C2x</hmis:ExitID>
+                <hmis:ConnectionWithSOAR>9</hmis:ConnectionWithSOAR>
+            </hmis:ConnectionWithSOAR>
+            <hmis:DateOfEngagement hmis:dateCreated="2015-08-13T23:14:59" hmis:dateUpdated="2015-03-30T23:14:59" hmis:userID="IFmMP">
+                <hmis:DateOfEngagementID>4321s</hmis:DateOfEngagementID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:DateOfEngagement>2016-04-17</hmis:DateOfEngagement>
+            </hmis:DateOfEngagement>
+            <hmis:Disabilities hmis:dataCollectionStage="1" hmis:informationDate="2014-09-01" hmis:dateCreated="2014-09-01T23:14:59" hmis:dateUpdated="2016-04-17T23:14:59Z"
+                 hmis:userID="YBR5goXMKigc.">
+                <hmis:DisabilitiesID>6743e</hmis:DisabilitiesID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:DisabilityType>10</hmis:DisabilityType>
+                <hmis:DisabilityResponse>2</hmis:DisabilityResponse>
+                <hmis:IndefiniteAndImpairs>9</hmis:IndefiniteAndImpairs>
+                <hmis:DocumentationOnFile>1</hmis:DocumentationOnFile>
+                <hmis:ReceivingServices>99</hmis:ReceivingServices>
+                <hmis:PATHHowConfirmed>1</hmis:PATHHowConfirmed>
+                <hmis:PATHSMIInformation>3</hmis:PATHSMIInformation>
+            </hmis:Disabilities>
+            <hmis:DomesticViolence hmis:dataCollectionStage="1" hmis:informationDate="2014-11-21" hmis:dateCreated="2014-11-21T23:14:59"
+                 hmis:dateUpdated="2016-01-05T23:14:59Z" hmis:userID="fPKfm5Rtfi0m3OhjeFL_pozaSRUUA">
+                <hmis:DomesticViolenceID>87865g</hmis:DomesticViolenceID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:DomesticViolenceVictim>8</hmis:DomesticViolenceVictim>
+                <hmis:WhenOccurred>2</hmis:WhenOccurred>
+            </hmis:DomesticViolence>
+            <hmis:SchoolStatus hmis:dataCollectionStage="5" hmis:informationDate="2014-11-21" hmis:dateCreated="2015-01-31T23:14:59"
+                 hmis:dateUpdated="2016-01-10T23:14:59Z" hmis:userID="ZY_LSOlhidHlBIqeiqvbi1Oosl">
+                <hmis:SchoolStatusID>a76752a</hmis:SchoolStatusID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:SchoolStatus>8</hmis:SchoolStatus>
+            </hmis:SchoolStatus>
+            <hmis:Employment hmis:dataCollectionStage="5" hmis:informationDate="2014-11-21" hmis:dateCreated="2016-03-26T23:14:59Z"
+                 hmis:dateUpdated="2015-04-01T23:14:59Z" hmis:userID="sXKqL">
+                <hmis:EmploymentID>344r445y</hmis:EmploymentID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:Employed>8</hmis:Employed>
+                <hmis:EmploymentType>2</hmis:EmploymentType>
+                <hmis:NotEmployedReason>3</hmis:NotEmployedReason>
+            </hmis:Employment>
+            <hmis:Enrollment hmis:dateCreated="2015-05-08T23:14:59" hmis:dateUpdated="2015-01-27T23:14:5-----------------------------------------------------------&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;&d;&d;&d;/d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d{&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns:n1="*><x xmlns:n1="d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;d&d;&d;/d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxx_xxxxxxxxxs:n1=""><x xml‘s:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x>B/xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:version ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;&d;&d;&d;&d9&d;&d;&d;&d;&d;&d;&d;&:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmln<?xml version="1.0"?>
+<!DOCTYPE a SYSTEM "dtds/127772.dtd">
+
+<a>
+  <b xlink:href="http://fakeurl.net">b ;www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="hatp://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="http://www.€3.orgC><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x></xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:version ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d{&d;&d;&d;ø%d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;&d;&d;&d;/d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d{&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns:n1="*><x xmlns:n1="d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;d&d;&d;/d;&d;&d;&d;&d;&y;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://ww"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/w.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxbxxxxxxxs:n1=""><x xmlns:n1="http<n1:a/><x xmlns:n1="*><x xmlns:n1="httpd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="htp://www.€3.org"><n/`TAA[<rdf<x xmlns:n1="Š><x<n1a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdfhttp://www.€3.org1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxx_xxxxxxxxxs:n1=""><x xml‘s:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x>B/xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:version ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;&d;&d;&d;&d9&d;&d;&d;&d;&d;&d;&d;&:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmln<?xml version="1.0"?>
+<!DOCTYPE a SYSTEM "dtds/127772.dtd">
+
+<a>
+  <b xlink:href="http://fakeurl.net">b ;www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="hatp://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x></xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:version ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d{&d;&d;&d;ø%d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;&d;&d;&d;/d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d{&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns:n1="*><x xmlns:n1="d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;d&d;&d;/d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://ww"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/w.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxbxxxxxxxs:n1=""><x xmlns:n1="http<n1:a/><x xmlns:n1="*><x xmlns:n1="httpd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="htp://www.€3.org"><n/`TAA[<rdf<x xmlns:n1="Š><x<n1a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdfhttp://www.€3.org:><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxsxxxxxxxxs:n1=""><x xml‘s:n1="http:/ www.€3.org"><n/`TAA[<rdf<x xmlns:n1="Š><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http:/+www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:R1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxx_xxxxxxxxxs:n1=""><x xml‘s:ˆ1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x>B/xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:version ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d{&d;&d;&d;ø%d;&d;&d;&d;&d;&d;&d;&d;&d;&d9&d;&d;&d;&d;&d;&d;&d;&:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x></xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:versiof<x xmlns"><x<n1:a/><x x&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;d&d;&d;/d;&d;&d;&d;&d;&d;&p://rele&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d   &dd;&d;&d;&d;&d;&d;&d;&_=&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/n1="*><x xmlns:n1="http://www.€3.org"><n/w.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><xs:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x></xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:version ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&----------------------------\------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=---±--------------------------------------------------------------------------&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;&d;&d;&d;/d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d{&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns:n1="*><x xmlns:n1="d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;d&d;&d;/d;&d&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxx_xxxxxxxxxs:n1=""><x xml‘s:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x>B/xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:version ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;&d;&d;&d;&d9&d;&d;&d;&d;&d;&d;&d;&:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmln<?xml version="1.0"?>
+<!DOCTYPE a SYSTEM "dtds/127772.dtd">
+
+<a>
+  <b xlink:href="http://fakeurl.net">b ;www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="hatp://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x></xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:version ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d{&d;&d;&d;ø%d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;&d;&d;&d;/d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d{&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns:n1="*><x xmlns:n1="d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;d&d;&d;/d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://ww"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/w.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxbxxxxxxxs:n1=""><x xmlns:n1="http<n1:a/><x xmlns:n1="*><x xmlns:n1="httpd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="htp://www.€3.org"><n/`TAA[<rdf<x xmlns:n1="Š><x<n1a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdfhttp://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="http:/ www.€3.org"><n/`TAA[<rdf<x xmlns:n1="Š><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http:/+www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:R1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxx_xxxxxxxxxs:n1=""><x xml‘s:ˆ1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x>B/xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:version ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d{&d;&d;&d;ø%d;&d;&d;&d;&d;&d;&d;&d;&d;&d9&d;&d;&d;&d;&d;&d;&d;&:[p://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x></xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:versiof<x xmlns"><x<n1:a/><x x&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;d&d;&d;/d;&d;&d;&d;&d;&d;&p://rele&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&†;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&ns:n1=""><V<n1:a/n1="*><x xmlns:n1="http://www.€3.org"><n/w.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/d<x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><xs:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x></xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:version ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;d&d;&d;/d;&d;&d;&d;&d;&d;&p://rele&d;&d;&d;&d;&d;
+&d;&d;&dY&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://ww"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/w.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="httpd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="htp://`ww.€3.org"><n/`TAA[<r;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;d&d;&d;/d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://ww"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/w.€N.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="httpd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="htp://www.€3.org"><n/`TAA[<rdf<x xmlns:n1="Š><x<n1a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdfhttp://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="http:/ www.€3.org"><n/`TAA[<rd&<x xmlns:n1="Š><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:re/1.0>
+  <interleave/>
+</><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3/org"><n/><x xmlns:n1=""><x xmln&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d ;&d;&d;&;&d;&d;&d;&d;&d;/d;&d;&d;&d;&d;&d;&d;&d;& ;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&dX&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="http:/ www.€3.org"><n/`;AA[<rdf<x xmlns:n1="Š><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http:/+www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:R1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxx_xxxxxxxxxs:n1=""><x xml‘s:ˆ1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x>B/xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:version ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d{&d;&d;&d;ø%d;&d;&d;&d;&d;&d;&d;&d;&d;&d9&d;&d;&d;&d;&d;&d;&d;&:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3.org"><n/><x xmlns:n1=""><x xmlns:></xectx></x></xttp://www.€3.org"><n/><x xmlATA #REQUIRED
+   dia:versiof<x xm;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;d&d;&d;/d;&d;&d;&d;&d;&d;&p://rele&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns:n1=*><x xmlns:n1="http://ww"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/w.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="httpd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="htp://`ww.€3.org"><n/`TAA[<r;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;d&d;&d;/d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&ns:n1=""><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://ww"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/w.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="httpd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="htp://www.€3.org"><n/`TAA[<rdf<x xmlns:n1="Š><x<n1a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdfhttp://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xmlns:n1="http://www.€3.org"><n/><x xmlns:n1=""><x xmlns:[<rdf<x xmlns"><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:n1=""><x xml‘s:n1="http:/ www.€3.org"><n/`TAA[<rd&<x xmlns:n1="Š><x<n1:a/><x xmlns:n1="*><x xmlns:n1="http://www.€3.org"><n/><x xmlns:nxxxxxxxxxxxxxxxxxxxxxxxxxs:re/1.0>
+  <interleave/>
+</><x xmlns:n1=""><x xmlns:></x></x></xttp://www.€3/org"><n/><x xmlns:n1=""><x xmln&d;&d;&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d ;&d;&d;&;&d;&d;&d;&d;&d;/d;&d;&d;&d;&d;&d;&d;&d;& ;&d;&d;&d;&d;&d;
+&d   @&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&dX&d;&_;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;
+&d;"d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;>d;&d;&d;&d;&d;&d;&;&d;&d;d&d;&d;/d;&d;&d;&d;&d;&d;&p://rele&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&_;&d;&d

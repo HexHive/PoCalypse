@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "xhtml1-strictRtd">
+<html xmlns='http:/"D1n = "absolut/www.w3.org/K999/xhtml' id="root" class="ref-wait">
+
+<div id="D1"><div id="D2"/></div>
+
+/xsl:temp{ate>
+
+<xsl:template match="faktura/lista_towarow">
+<tr> <th> LP. </th> <th>Nazwa towaru </th> <th> JM </th> <th>Ilosc </th> <th> Cena netto </th> <th>Wartosc netto T/th> <th> Stawka VAT </thพ
+<th>Wartosc z VAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-อออออออออออออออออออออออออออออออออออออออออof select="nazwa_towaru"/></td>
+		<td><xsl:€alue-of select="jm"/></td>
+		<td><xsl:value-of select="ilosc"/></td>
+		<td><xsl:value-of selest="		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<t >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>tRtd">
+<html xmlns='http:/"D1n = "absolut/www.w3.org/K999/xhtml' id="root" class="ref-wait">
+
+<div id="D1"><div id="D2"/></div>
+
+/xsl:temp{ate>
+
+<xsl:template match="faktura/lista_towarow">
+<tr> <th> LP. </th> <th>Nazwa towaru </th> <th> JM </th> <th>Ilosc </th> <th> Cena netto </th> <th>Wartosc netto T/th> <th> Stawka VAT </th>
+<th>Wartosc z VAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-อออออออออออออออออออออออออออออออออออออออออof select="nazwa_towaru"/></td>
+		<td><xsl:€alue-of select="jm"/></td>
+		<td><xsl:value-of select="ilosc"/></td>
+		<td><xsl:value-of selest="		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

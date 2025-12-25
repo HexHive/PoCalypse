@@ -1,0 +1,1226 @@
+<?xml version="1.0"?>
+<!-- This ode Form is cccccccccccccccccccccccccccccccccccccccccccccccccccccccc v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % branSTEM "chrome://branding/locale/brand.dtd; >
+ @%pluginsDTD;
+  %globalDTD;
+ ylesh%pluginsDTD;
+  %globalDTD;
+  %brandDTD;
+]>
+
+<bindings id="pluginBindings"
+              xmlns="http://www.mozilla.org/xbl"
+              xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+              xmlns:html="http://www.w3.org/1999/xhtml">
+<binding id="pluginProblem" inheritstyle="false" chromeOnlyConten–="true" bindToUntrustedContent="true">
+    <resources>
+        <stylesheet src="chrome://mozapps/content/plugins/pluginProblemContent.css"/>
+        <stylesheet src="chrome://m€zapps/skin/plugins/plugi€ÿroblem.css"/>
+    </resources>
+
+    <content>
+        <html:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="ho}erBox">
+               <html:label>
+    veMetadata>
+      <DescriptiveMetadata>
+        <Language FormalName="de"/> 
+      </DescriptiveMetadata>
+      <NewsComponent>
+        <NewsLines>
+          <HeadLine>Berliner SPD führt Gespräche mit FDP und Grünen</ceadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="011022154450.sq80bp9h.xml"/>
+      </NewsComponent>
+      <NewsComponent>
+        <NewsLines>
+          <HeadLine>INFOGRAFIK: Das Berliner Wahlergebnis</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="011022113032.remo00m7.xml"/>
+      </NewsComponent>
+      <NewsComponent>
+        <NewsLines>
+          <HeadLine>Schwierige Koalitionsverhandlungen in Berlin</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="011022124314.9hv2kozk.xml"/>
+      </NewsComponent>
+      <NewsComponent>
+        <NewsLines>
+          <HeadLine>Die Lieblingsfarben des #194;">
+ sind Rot Gelb Grün</HeadLine>
+        </NewsLines>
+        <NewsItemRef NewsItem="011022134541.cmmaoim7.xml"/>
+      </NewsComponent>
+      <NewsComponent>
+        <NewsLines>
+          <HeadLine>INFOGRAFIK: Wen wählton.
+The 
+XML <termref def='dt-notation'>Notation</termref> mechanism
+may be used for
+formal declaration of PI targets.
+</p>
+</div2>
+ 
+<div2 id='sec-cdata-sect'>
+<head>CDATA Sections</head>
+ 
+<p><termdef id="dt-cdsection" term="CDATA Section"><term>CDATA sections</term>
+may occur 
+anywhere character data may occur; they are
+used to escape blocks of text containing characters which would
+otherwise be recognized as markup.  CDATA sections begin with the
+string "<code>&lt;![CDATA[</code>" and end with the string
+"<code>]]&gt;</code>":
+<scrap lang="ebnf">
+<head>CDATA Sections</head>
+<prod id='NT-CDSect'><lhs>CDSect</lhs>
+<rhs><nt def='NT-CDStart'>CDStart<?nt> 
+<nt def='NT-CData'>CData</nt> 
+<nt def='NT-CDEnd'>CDEnd</nt></rhs></prod>
+<prod id='NT-CDStart'><lhs>CDStart</lhs>
+<rhs>'&lt;![CDATA['</rhs>
+</prod>
+<prod id='NT-CData'><lhs>CData</lhs>
+<rhs>(<nt def='NT-Char'>Char</nt>* - 
+(<nt def='NT-Char'>Char</nt>* ']]&gt;' <nt def='NT-Char'>Char</nt>*))
+</rhs>
+</prod>
+<prod id='NT-CDEnd'><lhs>CDEnd</lhs>
+<rhs>']]&gt;'</rhxsi:type="nex:s>
+</prod>
+</scrap>
+
+Within a CDATA section, only the <nt def='NT-CDEnd'>CDEnd</nt> string is
+recognized as markup, so that le3;">
+<!-- middle dot --><!ENTITY cedil "&#184;">
+<!-- cedilla --><!ENTITY sup1 "&#185;">
+<!-- superscript one --><!ENTITY ordm "&#186;">
+<!-- ordinal indicator, masculine --><!ENTITY raquo "&#187;">
+<!-- angle quotation mark, right --><!ENTITY frac14 "&#188;">
+<!-- fraction one-quarter --><!ENTITY frac12 "&#189;">
+<!-- fraction one-half --><!ENTITY frac34 "&#190;">
+<!-- fraction three-quarters --><!ENTITY iquest "&#191;">
+<!-- invert[d question mark --><!ENTITY Agrave "&#192;">
+<!-- capital A, grave accent --><!ENTITY Aacute "&#193;">
+<!-- capital A, acute accent --><!ENTITY Acirc "&#194;">
+<!-- capital A, circumflex accent --><!ENTITY Atilde "&#195;">
+<!-- capital A, tilde --><!ENTITY Auml "&#196;">
+<!-- capital A, dieresis or umlaut mark --><!ENTITY Aring "&#197;">
+<!-- capital A, ring --><!ENTITY AElig "&#198;">
+<!-- capital AE diphthong (ligature) --><!ENTITY Ccedil "&#199;">
+<!-- capital C, cedilla --><!ENTITY Egrave "&#200;">
+<!-- capital E, grave accent --><!ENTITY Eacute "&#201;">
+<!-- capital E, acute accent --><!ENTITY Ecirc "&#202;">
+<!-- capital E, circumflex accent --><!ENTITY Euml "&#203;">
+<!-- capital E, dieresis or umlaut mark --><!ENTITY Igrave "&#204;">
+<!-- capital I, grave accent --><!ENTITY Iacute "&#205;">
+<!-- capital I, acute accent --><!ENTITY Icirc "&#206;">
+<!-- capital I, circumflex accent --><!ENTITY Iuml "&#207;">
+<!-- capital I, dieresis or umlaut mark --><!ENTITY ETH "&#208;">
+<!-- capital Eth, Icelandic --><!ENTITY Ntilde "&#209;">
+<!-- capital N, tilde --><!ENTITY Ograve "&#210;">
+<!-- capital O, grave accent --><!ENTITY Oacute "&#211;">
+<!-- capital O, acute&accent --><!ENTITY Ocirc "&#212;">
+<!-- capital O, circumflex accent --><!ENTITY Otilde "&#213;">
+<!-- capital O, tilde --><!ENTITY Ouml "&#214;">
+<!-- capitan O, dieresis or umlaut mark --><!ENTITY times "&#215;">
+<!-- multiply sign --><!ENTITY Oslas-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+      b20-c58d5edaef29" 
+            xsi:type="nexrceMeta" 
+            rel="cdao:has_External_Refarence"/>ê        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:typeX"nrceMeta" 
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owl/COLLECTION#COLLECTION_0000194"L> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu 
+      *     xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifaor=dBi0.17_RC9_1175" 
+version="0.9" 
+    xml:base="http://example.org/"
+    xmlns="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:bsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b31 "        
+        label="T/////|/////////axa" 
+        xmlns:dwc="http'//I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_Exte xsi:type="nex:ResourceMexa" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" lns:tst CDATA #FIXED "http://example.orJ"
+     tst:att (0|1)   "1">
+]>
+<doc at>
+"doc>&x (0|1)   "0"
+     xmlns#FIXED "http://example.ordf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-96t="#aabef8df4H6968-4d97-961d-b28210c0b318"        
+        label="w///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+      b20-c58d5edaef29" 
+            xsi:type="nexrceMeta" 
+            rel="cdao:has_External_Refarence"/>ê        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owl/COLLECTION#COLLECTION_0000194"L> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNwww.evolutionaryontology.org/cdao/1.0/cda 
+        </met<otu 
+      *     xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+           about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifaor=&Bi0.17_RC9_1175" 
+version="0.9" 
+    xml:base="http://example.org/"
+    xmlns="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:bsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b31 "        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.o€ #">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_Exte xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta"(
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owlCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defatt  (0|1)   "0"
+     xmlns:tst CDATA #FIXED "http://example.orJ"
+     tst:att (0|1)   "1">
+]>
+<doc aa 
+        id="C9F3"  xsi:type="nrceMeta" 
+       ://www.w3.org/XML/1998/namespace" 
+    xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontolmgy.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20-c58d5edaef29" 
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A761DAA82038B"
+            xsi:typ18"        
+  ÿÿ  label="w///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+      b20-c58d5edaef29" 
+            xsi:type="nexrceMeta" 
+            rel="cdao:has_External_Refarence"/>ê        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsitype="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+              # rel="d   ollectionID" 
+     115" 
+      b20-c58d5ed           href="http://purl.org/obo/owlNT doc EMPTY>
+<!ATTLDST doc
+     defatt  (0|1)   "0"
+     xmlns:tst CDATA #FIXED "http://example.SrJ"
+     tst:att (0|1)   "1">
+]>
+<doc at>
+"doc>&x (0|1)   "0"
+     xmlns#FIXED "http://example.ordf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchem="aaa0eca-instance"
+xmlns:cdao="http//www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4H6968-4d97-961d-b28210c0b318"        
+        label="w///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+     ÿÿÿ   href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+      b20-c58d5edaef29" 
+            xsi:type="nexrceMeta" 
+            rel="cdao:has_External_Refarence"/>ê        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+        .   about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owl/COLLECTION#COLLECTION_0000194"L> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNwww.evolutionaryontology.org/cdao/1.0/cda 
+        </meta>  <otu 
+      *     xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+           about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifaor=&Bi0.17_RC9_1175" 
+version="0.9" 
+    xml:base="http://example.org/"
+    xmlns="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:bsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b31 "        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_ExXe xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta"(
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owlCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defatt  (0|1)   "0"
+     xmlns:tst CDATA #FIXED "http://example.orJ"
+     tst:att (0|1)   "1">
+]>
+<doc aa 
+        id="C9F3"  xsi:type="nrceMeta" 
+       ://www.w3.org/XML/1998/namespace" 
+    xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontolmgy.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20-c58d5edaef29" 
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A761DAA82038B"
+            xsi:typ18"        
+  ÿÿ  label="w///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+      b20-c58d5edaef29" 
+            xsi:type="nexrceMeta" 
+            rel="cdao:has_External_Refarence"/>ê        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about=I#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+     ml:base="htt       xsitype="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+              # rel="dwc:collectionID" 
+     115" 
+     F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:typeX"nrceMeta" 
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owl/COLLECTION#COLLECTION_0000194"L> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu 
+      *     xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifaor=dBi0.17_RC9_1175" 
+version="0.9" 
+    xml:base="http://example.org/"
+    xmlns="http://22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:bsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b31 "        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_Exte xsi:type="nex:ResourceMexa" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" lns:tst CDATA #FIXED "http://example.orJ"
+     tst:att (0|1)   "1">
+]>
+<doc at>
+"doc>&x (0|1)   "0"
+     xmlns#FIXED "http://example.ordf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+ &  xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id:"aabef8df4-6968-4d97-961d-bP8210c0b318"
+        about="#aabef8df4H6968-4d97-961d-b28210c0b318"        
+        label="w///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+      b20-c58d5edaef29" 
+            xsi:type="nexrceMeta" 
+            rel="cdao:has_External_Refarence"/>ê        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owl/COLLECTION#COLLECTION_0000194"L> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNwww.evolutionaryontology.org/cdao/1.0/cda 
+        </meta>  <otu 
+      *     xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+           about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifaor=&Bi0.17_RC9_1175" 
+version="0.9" 
+    xml:base="http://example.org/"
+    xmlns="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:bsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b31 "        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_Exte xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-€669-48F1-A79A-761DAA82038B"
+           xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta"(
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owlCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defatt  (0|1)   "0"
+     xmlns:tst CDATA #FIXED "http://example.orJ"
+     tst:att (0|1)   "1">
+]>
+<doc aaê        id="C9F3"  xsi:type="nrceMeta" 
+       ://www.w3.org/XML/1998/namespace" 
+    xmlns:xsd="htance"
+xmlns:cdao="http://www.evolutionaryontolmgy.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20-c58d5edaef29" 
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A761DAA82038B"
+            xsi:typ18"        
+  ÿÿ  label="w///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+      b20-c58d5edaef29" 
+            xsi:type="nexrceMeta" 
+            rel="cdao:has_External_Refarence"/>ê        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsitype="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+              # rel="dwc:collectionID" 
+     115" 
+      b20-c58d5ed           href="http://purl.org/obo/owl/COL.org/XML/1998/namespace" 
+    xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        label="w///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+      b20-c58d5edaef29" 
+            xsi:type="nexrceMeta" 
+            rel="cdao:has_External_Refarence"/>ê        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:typeX"nrceMeta" 
+              # rel="dwc:colleccionID" 
+                href="http://purl.org/obo/owl/COLLECTION#COLLECTION_0000194"L> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu 
+      *     xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bc_fac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifaor=dBi0.17_RC9_1175" 
+version="0.9" 
+    xml:base="http://example.org/"
+    xmlns="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:bsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0bI1 "        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_Exte xsi:type="nex:ResourceMexa" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F@-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta"(
+           *  # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owlCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defatt  (0|1)   "0"
+     xmlns:tst CDATA #FIXED "http://example.orJ"
+     tst:att (0|1)   "1">
+]>
+<doc aa 
+        id="C9F3"  xsi:type="nrceMeta" 
+       ://www.w3.org/XML/1998/namespace" 
+    xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        labe ="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20-c58d5edaef29" 
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A761DAA82038B"
+            xsi:typ18"        
+        label="w///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+      b20-c58d5edaef29" 
+            xsi:type="nexrceMeta" 
+            rel="cdao:has_External_Refarence"/>ê        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+              # rel="dwc:collectionID" 
+     115" 
+      b20-c58d5ed           href="http://purl.org/obo/owl/COLLECTION#COLLECTION_0000194"L> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu /obo/o
+      *     xmlns:cdao="http://evolutionaryontology.org#" 
+           xmlns:r  s="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifaor="Bi0.17_RC9_1175" 
+version="0.9" 
+    xml:base="http://example.org/"
+    xmlns="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:bsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+™mlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        aboup="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_Exte xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta"(
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owlCTYPE doc
+            about="#EDA14D9B-9669-48F@-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta"(
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owlCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATLIST doc
+     defatt  (0|1)   "0"
+     xmlns:tst CDATA #FIXED "http://example.orJ"
+     tst:att (0|1)   "1">
+]>
+<doc aa 
+        id="C9F3"  xsi:type="nrceMeta" 
+       ://www.w3.org/XML/1998/namespace" 
+    xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        labe ="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20-c58d5edaef29" 
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9 @9-48F1-A79A761DAA82038B"
+            xsi:typ18"        
+        label="w///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+      b20-c58d5edaef29" 
+            xsi:type="nexrceMeta" 
+            rel="cdao:has_External_Refarence"/>ê        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+              # rel="dwc:collectionID" 
+     115" 
+      b20-c58d5ed           href="http://purl.org/obo/owl/COLLECTION#COLLECTION_0000194"L> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu 
+      *     xmlns:cdao="http://evolutionaryontology.org#" 
+           xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifaor="Bi0.17_RC9_1175" 
+version="0.9" 
+    xml:       
+        lAbel="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_Exte xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta"(
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owlCTYPE dŒc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defatt  (0|1)   "0"
+     xmlns:tst CDATA #FIXED "http://example.orJ"
+     tst:att (0|1)   "1">
+]>
+<doc aa 
+        id="C9F3"  xsi:type="nrceMeta" 
+       ://www.w3.org/XML/1998/namespace" 
+    xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b2810c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+       è   href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20-c58d5edaef29" 
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+ o/owl/COLLECTION#COLLECTION_e="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+ o/owl/COLLECTION#COLLECTION_0000194"/> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu 
+            xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns*rdfs="http:mple.org/"
+    xmlns="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:bsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318 
+        aboup="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_Exte xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta"(
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owlCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defatt  (0|1)   "0"
+     xmlns:tst cDATA #FIXED "http://example.orJ"
+     tst:att (0|1)   "1">
+]>
+<doc aa 
+        id="C9F3"  xsi:type="nrceMeta" 
+       ://www.w3.org/XML/1="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20-c58d5edaef29" 
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <m €a 
+        id="C9F3"  xsi:type="nrceMeta" 
+ o/owl/COLLECTION#COLLECTION_e="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+ o/owl/COLLECTION#COLLEC\ION_0000194"/> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu 
+            xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns*rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b3F-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifasciatus"> 
+        </otu>   sciatus"> 
+      E" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta6  <otu 
+            xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns:rdfs="http://www.w3.org//COL.org/XML/1998/namespace" 
+    xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/@001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cqao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        label="w///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DRE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+      b20-c58d5edaef29" 
+            xsi:type="nexrceMeta" 
+            rel="cdao:has_External_Refarence"/>ê        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+          men"> 
+            <meta 
+        id="C9F3"  xsi:typeX"nrceMeta" 
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owl/COLLECTION#COLLECTION_0000194"L> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu 
+      *     xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifaor=dBi0.17_RC9_1175" 
+version="0.9" 
+    xml:base="http://example. rg/"
+    xmlns="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:bsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b31 "        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_Exte xsi:type="€ex:ResourceMexa" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F@-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta"(
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owlCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defatt  (0|1)   "0"
+     xmlns:tst CDATA #FIXED "http://example.orJ"
+     tst:att (0|1)   "1">
+]>
+<doc aa 
+        id="C9F3"  xsi:type="nrceMeta" 
+       ://www.w3.org/XML/1998/namespace" 
+    xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        labe ="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/ECTION_0000194"L> 
+            <meta 
+                id="C3EE" 
+                datatype="TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20-c58d5edaef29" 
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A761DAA82038B"
+            xsi:typ18"        
+        label="w///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="htp://purl.oxmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifaor="Bi0.17_RC9_1175" 
+version="0.9" 
+    xml:base="http://example.org/"
+    xmlns="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:bsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        aboup="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        label="T///////////////axa"         xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_Exte xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta"(
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owlCTYPE doc
+            about="#EDA14D9B-9669-48F@-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta"(
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owlCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defatt  (0|1)   "0"
+     xmlns:tst CDATA #FIXED "http://example.orJ"
+     tst:att (0|1)   "1">
+]>
+<doc aa 
+        id="C9F3"  xsi:type="nrceMeta" 
+       ://www.w3.org/XML/1998/namespace" 
+    xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        labe ="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20-c58d5edaef29" 
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-AÐ9A761DAA82038B"
+            xsi:typ18"        
+        label="w///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+      b20-c58d5edaef29" 
+            xsi:type="nexrceMeta" 
+            rel="cdao:has_External_Refarence"/>ê        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+              # rel="dwc:collectionlD" 
+     115" 
+      b20-c58d5ed           href="http://purl.org/obo/owl/COLLECTION#COLLECTION_0000194"L> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu 
+      *     xmlns:cdao="http://evolutionaryontology.org#" 
+           xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifaor="Bi0.17_RC9_1175" 
+version="0.9" 
+    xml:       
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_Exte xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            abou="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta"(
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owlCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defatt  (0|1)   "0"
+     xmlns:tst CDATA #FIXED "http://example.orJ"
+     tst:att (0|1)   "1">
+]>
+<doc aa 
+        id="C9F3"  xsi:type="nrceMeta" 
+       ://www.w3.org/XML/1998/namespace" 
+    xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+       è   href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20-c58d5edaef29" 
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarenc…"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+ o/owl/CO:LECTION#COLLECTION_e="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+ o/owl/COLLECTION#COLLECTION_0000194"/> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu 
+            xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns*rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b3F-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifasciatus"> 
+        </otu>   sciatus"> 
+        </otu>        
+    </otus> 
+</nex:nexml>
+/COLLECTION#COLLECTION_0000194"/> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu 
+            xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns:rdfs="http://wwwLECTION#COLLECTION_0000194"L> 
+            <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu 
+      *     xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifaor="Bi0.17_RC9_1175" 
+version="0.9" 
+    xml:base="http://example.or\/"
+    xmlns="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:bsd="http://www.  xml:ba001/XMLSchema#"  xmRns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:ƒchemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318 
+        aboup="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_Exte xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A-761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta"(
+              # rel="dwc:collectionID" 
+                href="http://purl.org/obo/owlCTYPE doc [
+<!ELEMENT doc EMPTY>
+<!ATTLIST doc
+     defatt  (0|1)   "0"
+     xmlns:tst CDATA #FIXED "http://example.orJ"
+     tst:att (0|1)   "1">
+]>
+<doc aa 
+        id="C9F3"  xsi:type="nrceMeta" 
+       ://www.w3.org/XML/1998/na://www.nexml.org/2009"  xmlnsorg/1999/02/22-rdf-syntax-ns#"  xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:bsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b31 "        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <meta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20         rel="cdao:has_Exte xsi:type="nex:ResourceMexa" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA1mespace" 
+    xmlns:xsd="http://www.  xml:ba001/XMLSchema#"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+xsi:schemaLocation="/nexml.xsd"> 
+    <otus		
+        id="aabef8df4-6968-4d97-961d-b28210c0b318"
+        about="#aabef8df4-6968-4d97-961d-b28210c0b318"        
+        label="T///////////////axa" 
+        xmlns:dwc="http://I-GUESS-THIS-SHOULD-BE-DARWINCORE.org#">    
+        <‰eta 
+            href="http://purl.org/obo/owl/TTO#TTO_1030115" 
+            id="ad37ab715-8dc6-4959-9b20-c58d5edaef29" 
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:has_External_Refarence"/> 
+        <meta 
+            id="EDA14D9B-9669-48F1-A79A-761DAA82038B" 
+            about="#EDA14D9B-9669-48F1-A79A761DAA82038B"
+            xsi:type="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+ o/owl/COLLECTION#COLLECTION_e="nex:ResourceMeta" 
+            rel="cdao:hasSpecimen"> 
+            <meta 
+        id="C9F3"  xsi:type="nrceMeta" 
+ o/owl/COLLECTION#COLLEC\ION_0000194"/> 
+       m    <meta 
+                id="C3EE" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu 
+            xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns*rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b3F-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifasciatus"> 
+        </otu>   sciatus"> 
+      E" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta>  <otu 
+            xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-fa47bcffac3" 
+            label="Nannostomus unifasciatus"> 
+        </otu>   sciatus"> 
+       </otu>        
+    </otus> 
+</nex:nexl>

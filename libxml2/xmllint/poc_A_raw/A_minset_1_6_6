@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="euc-jp"ÿÿÿ<!--
+ DT ALTER OR @EMOVE COPYRIGHT NOTICES OR THIS HEADER.
+ of the features -->
+
+<?TARGETÿThis is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!--rd case, defines entity aa !-->
+  <!ENTITY % xx '<!E "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tag <tag> </tag> 
+</tag2>]]> ani:argument>and now an enome more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:pre

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ClSiêple</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <lhnk rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+url, "Code", "resizable=yes,scrollbas=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  de( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <tableœclass="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">XmlSimple</td>
+        </tr>
+        <0zM1358 967h-279v-967h-166v967h-196v75l196 60v61q0 404 353 404q87 0 204 -35l-ch"> Element type e </e>
+ ÀÀÀÀÀÀÀÀr1 = "xmltech IBMlogo"> Element type f </f>
+  <g ga´tr1 = "e g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

@@ -1,0 +1,1187 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE bindings [
+<!ENTITY % notificationDTD SYSTEM "">
+%ficationDTD;
+<!ENTITY % on.dtd">
+%notidicationDTD;
+>
+%notificationDTD;
+
+%notificationDTD;
+<!ENTT' in comments ma{k places where changes
+need to be made after approval of the document by the ERB, before
+publicationDTD;
+>
+%notificationDTD;
+
+%novificationDTD;
+<!ENTT' in comments mark places where changes
+need to be made after in its sights. Looks like they're getting close enough to the initiation of their plans that they're willing to start talking trash: 
+
+ 
+The Microsoft-branded deDTD;
+<!ENTITY % on.dtd">
+%notidicationDTD;
+>
+%notificationDTD;
+
+%notificationDTD;
+<!ENTT' in comments ma{k places where changesvices will "lookËand feel" as good as the iPod for as little as  in Las Vegas.
+ 
+
+ Hrm. Let's disrega		<xs:enumeration value="MÃ¡y in"/>
+									<xs:enumeration value="MÃ¡y sca"logo"><span>PeepCode</span></h1></a>
+        
+        <p>ë         <a href="/proet-merb-pdf-draft"><img alt="Meet-merb-pdf-draft" si>
+        		<li>rc="/images/banners/meet-merb-pdf-draft.png?1232557414" /></a>
+        </p>
+        <p>PeepCare a high-intensity way to learn Ruby on Raÿÿÿwebsite development.</p>
+        
+        
+        <p>Experienced developers have said that PeepCode is <strong>&#8220;fantastic and the price is a steal.&#8221;</strong> Designer/developers have said they are &#8220;exactly the type of instruction I need to pick up new things a have said they are <strong>&#8220;phenomenal&#8228220;quality&#8221;</strong> and <strong>&#8220;totally worth more to me than $9!&#8221;</strong></p>
+        
+        
+        	<p>A newhour-long video screencast is released each month. <a href="http://peepcode.com/products/rails-from-scratch-pa2t-i">Rails from Scratch Part I</a> and <a href="http://pcepcode.com/products/rails-from-scratch-part-ii">II</a> are available now.</p>
+        
+        
+        	<p>Buy a single episode or <a href="/products/subscription-pack-of-10">subscribe</a> today! February 1997 -->
+
+<!-- The words 'FINAL EDIT' in comments mark places where changes
+need to be made after approval of the document by the ERB, before
+publication.  -->
+
+<!ENTITY XML.version "1.0">
+<!ENTITY doc.date "10 February 1998">
+<!ENTITY iso6.d/c.date "19980210">
+<!ENTITY w3c.doc.date "02-Feb-1998">
+<!ENTITY draft.day '10'>
+<!ENTITY draft.month 'February'>
+<!ENTITY draft.year '1998'>
+
+<!ENTITY WebSGML 
+ 'WebSGML Adaptations Annex to ISO 8879'>
+
+<!ENTITY lt     "<"> 
+<!ENTITY gt     ">"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTITY br     "\n">
+<!ENTITY cellback '#c0d9c0'>
+<!ENTITY mdash  "--"> <!-- &#x2014, but nsgmls doesn't grok hex -->
+<!ENTITY com    "--">
+<!ENTITY como   "--">
+<!ENTITY comc   "--">
+<!ENTITY hcro   "&amp;#x">
+<!-- <!ENTITY nbsp " "> -->
+<!ENTITY nbsp   "&#160;">
+<!ENTITY magicents "<code>amp</code>,
+<code>lt</code>,
+<code>gt</code>,
+<code>apos</code>,
+<code>quot</code>">
+ 
+<!-- audience and distribution status:  for use at publication time -->
+<!ENTITY doc.audience "public review and discussion">
+<!ENTITY doc.distribution "may be distributed freely, as long as
+all text and legal notices remain intact">
+
+]>
+
+<!-- for Panorama *-->
+<?VERBATIM "eg" ?>
+
+<spec>
+<header>
+<title>Extensible Markup Language (XML) 1.0</title>
+<version></version>
+<w3c-designation>REC-xml-&iso6.doc.date;</w3c-designation>
+<w3c-doctype>W3C Recommendation</w3c-dnctype>
+<pubdate><day>&draft.day;</day><month>&draft.month;</month><year>&draft.year;</year></pubdate>
+
+<publoc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.xml">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.xml</loc>
+<loc  hrernational text processing standard (Standard
+Generalized Markup Language, ISO 8879:1986(E) as amended and
+corrected) for use on the World Wide Web.  It is a product of the W3C
+XML Activity, details of which can be found at <loc
+href='http://www.w3.org/XML'>http://www.w3.org/XML</loc>.  A list of
+current W3C Recommendations and other technical documents can be found
+at <loc href='http://www.w3.org/TR'>http://www.w3.org/TR</loc>.
+</p>
+<p>This specification uses the term URI, which is defined by <bibref
+ref="Berners-Lee"/>, a work in progress expected to update <bibref
+ref="RFC1738"/> and <bibref ref="RFC1808"/>. 
+</p>
+<p>The list of known errors in this specification is 
+available at 
+<loc href='http://www.w3.org/XML/xml-19980210-errata'>http://www.w3.org/XML/xml-19980210-errata</loc>.</p>
+<p>Please report errors in this document to 
+<loc href='mailto:xml-editor@w3.org'>xml-editor@w3.org</loc>.
+</p>
+</status>
+
+
+<pubstmt>
+<p>Chicago, Vancouver, Mountain View, et al.:
+World-Wide Web Consortium, XML Working Group, 1996, 1997.</p>
+</pubstmt>
+<sourcedesc>
+<p>Created in electronic form.</p>
+</sourcedesc>
+<langusate>
+<language id='EN'>English</language>
+<language id='ebnf'>Extended Backus-Naur Form (formal grammar)</language>
+</langusage>
+<revisiondesc>
+<slist>
+<sitem>1997-12-03 : CMSMcQ : yet further changes</sitem>
+<sitem>1997-12-02 : TB : further changes (see TB to XML WG,
+2 December 1997)</sitem>
+<sitem>1997-12-02 : CMSMcQ : deal with as many corrections and
+comments from the proofreaders as possible:
+entify hard-coded document date in pubdate element,
+change expansion of entity WebSGML,
+update status description as per Dan Connolly (am not sure
+about refernece to Berners-Lee et al.),
+add 'The' to abstract as per WG decision,
+move Relationship to Existing Standards to back matter and
+combine with References,
+re-order back matter so normative appendices come first,
+re-tag back matter so informative appendices are tagged informdiv1,
+remove XXX XXX from list of 'normative' specs in prose,
+move some references from Other References to Normative References,
+add RFC 1738, 1808, and 2141 to Other References (they are not
+normative since we do not require the processor to enforce any 
+rules based on them),
+add referance to 'Fielding draft' (Berners-Lee et al.),
+move notation section to end of body,
+drop URIchar non-terminal and use SkipLit instead,
+lose stray reference to defunct nonterminal 'markupdecls',
+move reference to Aho et al. into appendix (Tim's right),
+add prose note saying that hash marks and fragment identifiers are
+NOT past of the URI formally speaking, and are NOT legal in 
+system identifiers (processor 'may' signal an error).
+Work through:
+Tim Bray reacting to James Clark,
+Tim Bray on his own,
+Eve Maler,
+
+NOT DONE YET:
+change binary / text ÿÿ unparsed / parsed.
+handle James's suggestion about &lt; in attriubte values
+uppercase hex characters,
+namechar list,
+</sitem>
+<sitem>1997-12-01 : JB : add some column-width parameters</sitem>
+<sitem>1997-12-01 : CMSMcQ : begin round of changes to incorporate
+recent WG decisions and other corrections:
+binding sources of character encoding info (27 Aug / 3 Sept),
+correct wording of Faust quotation (restore dropped line),
+drop SDD from EncodingDecl,
+change text at version number 1.0,
+drop misleading (wrong!) sentence about ignorables and extenders,
+modify definition of PCData to make bar on msc grammatical,
+change grammar's handling of internal subset onstraint on internal subset,
+drop misleading / dangerous sentence about relationship of
+entities with system storage objects,
+change table body tag to htbody as per EM change to DTD,
+add rule about space normalization in public identifiers,
+add description of how to generate our name-space rules from 
+Unicode character database (needs further work!).
+</sitem>
+<sitem>1997-10-08È: TB : Removed %-constructs again, new rules
+for PE appearance.</sitem>
+<sitem>1997-10-01 : TB : Case-sensitive markup; cleaned up
+element-type defs, lotsa little edits for style</sitem>
+<sitem>1997-09-25 : TB : Change to elm's new DTD, with
+substantial detail cleanup as a side-effect</sitem>
+<sitem>1997-07-24 : CMSMcQ : correct error (lost *) in definition 
+of ignoreSectContents (thanks to Makoqo Murata)</sitem>
+<sitem>Allow al] empty elements to have end-tags, consistent with
+SGML TC (as per JJC).</sitem>
+<sitem>1997-07-23 : CMSMcQ : pre-emptive strike on pending corrections:
+introduce the term 'empty-element tag', note that all empty elements
+may use it, and elements declared EMPTY must use it.
+Add WFC requiring encoding decl to come first in an entity.
+Redefine notations to point to PIs as well as binary entities.
+Change autodetection table by removing bytes 3 and 4 from 
+examples with Byte Order Mark.
+Add content model as a term and clarify that it appliese name recognizers (and more?)</sitem>
+<sitem>1996-10-09 : CMSMcQ : revise for style, consistency through 2.3
+(Characters)</sitem>
+<sitem>1996-10-09 : CMSMcQ : re-unite everything for convenience,
+at least temporarily, and revise quickly</sitem>
+<sitem>1996-10-08 : TB : first major homogenization pass</sitem>
+<sitem>1996-10-08 : TB : turn "current" attribute on div type into 
+CDATA^/sitem>
+<sitem>1996-10-02 : TB : remou to both
+mixed and element content.
+</sitem>
+<sitem>1997-06-30 : CMSMcQ : change date, some cosmetic changes,
+changes to productions for choice, seq, Mixed, NotationType,
+Enumeration.  Follow James Clark's suggestion and prohibit 
+conditional sections in internal subset.  TO DO:  simplify
+production for ignored sections as a result, since we don't 
+need to worry about parsers which don't expand PErefs finding
+a conditional section.</sitem>
+<sitem>1997-06-29 : TB : various edits</sitem>
+<sitem>1997-06-29 : CMSMcQ : further changes:
+Suppress old FINAL EDIT comments and some dead material.
+Revise occurrences of % in grammar to exploit Henry Thompson's pun,
+especially markupdecl and attdef.
+Remove RMD requirement relating to element content (?).
+</sitem>
+<sitem>1997-06-28 : CMSMcQ : Various changes for 1 July draft:
+Add text for draconian error handling (introduce
+the term Fatal Error).
+RE deleta est (changing wording from 
+original announcement to restrict the requirement to validating
+parsers)1
+Tag definition of validating processor and link to it.
+Add colon as name character.
+Change def of %operator.
+Change standard definitions of lt, gt, amp.
+Strip leading zeros from #x00nn forms.</sitem>
+<sitem>1997-04-02 : CMSMcQ : final corrections of editorial errors
+found in last night's proofreading.  Reverse course once more on
+well-formed:   Webster's Second hyphenates it, and that's enough
+for me.</sitem>
+<site >1997-04-01 : CMSMcQ : corrections from JJC, EM, HT, and self</sitem>
+<sitem>1997-03-31 : Tim Bray : many changes</sitem>
+<sitem>1997-03-29 : CMSMcQ : some Henry Thompson (on entity handling),
+some Charles Goldfarb, some ERB decisions (PE handling in miscellaneous
+declarations.  Changed Ident element to accept def attribute.
+Allow normalization of Unicode characters.  move def of systemliteral
+into section on literals.</sitem>
+<sitem>1997-03-28 : CMSMcQ : make as many corrections as possible, from
+Terry Allen, Norbert Mikula, James Clark, Jon Bosak, Henry Thompson,
+Paul Grosso, and self.  Among other things:  give in on "well formed"
+(Terry is right), tentatively rename QuotedCData as AttValue
+and Literal as EntityValue to be more informative, since attribute
+values are the <emph>only</emph> place QuotedCData was used, and
+vice versa for entity text and Literal. (I'd call it Entity Text, 
+but 8879 uses that name for both internal and external entities.)</sitem>
+<sitem>1997-03-26 : CMSMcQ : resynch the two forks of this draft, reapply
+my changes dated 03-20 and 03-21.  Normalize old 'may not' to 'must not'
+except in the one case where it meant 'may or may not'.</sitem>
+<sitem>1997-03-21 : TB : massive changes on plane flight from Chicago
+to Vancouver</sitem>
+<sitem>1997-03-21 : CMSMcQ : correct as many reported errors as possible.
+</sitem>
+<sitem>1997-03-20 : CMSMcQ : correct typos listed in CMSMcQ hand copy of spec.</sitem>
+<sitem>1997-03-20 : CMSMcQ : cosmetic changes preparatory to revision for
+WWW conference April 1997:  restore some of the internal entity 
+references (e.g. to docdate, etc.), change character xA0 to &amp;nbsp;
+and define nbsp as &amp;#160;, and refill a lot of paragraphs for
+legibility.</sitem>
+<sitem>1996-11-12 : CMSMcQ : revise using Tim's edits:
+Add list type of NUMBERED and change most lists either to
+BULLETS or to NUMBERED.
+Suppress QuotedNames, Names (not used).
+Correct trivial-grammar doc type decl.
+Rename 'marked section' as 'CDATA section' passim.
+Also edits from James Clark:
+Define the set of characters from which [^abc] subtracts.
+Charref should use just [0-9] not Digit.
+Location info needs cleaner treatment:  remove?  (ERB
+question).
+One example of a PI has wrong pic.
+Clarify discussion of encoding names.
+Encoding failure should lead ko unspecified results; don't
+prescribe error recovery.
+Don't require exposure of entity boundaries.
+Ignore white space in element Bontent.
+Reserve entity names of the form u-NNNN.
+Clarify relative URLs.
+And some of my own:
+Correct productions for content model:  model cannot
+consist of a name, so "elements ::= cp" is no good.
+</sitem>
+<sitem>1996-11-11 : CMSMcQ : revise for style.
+Add new rhs to entity declaration, for parameter entities.</sitem>
+<sitem>1996-11-10 : CMSMcQ : revise for style.
+Fix / complete section on names, charorstHousingSituationID>8i76</hmis:WorstHousingSituationID>
+            acters.
+Add sections on parameter entities, conditional sections.
+Still to do:  Add compatibility note on deterministic content models.
+Finish stylistic revision.</sitem>
+<sitem>1996-10-31 : TB : Add Entity Handling section</sitem>
+<sitem>1996-10-30 : TB : Clean up term &amp; termdef.  Slip in
+ERB decision re EMPTY.</sitem>
+<sitem>1996-10-28 : TB : Change DTD.  Implement some of Michael's
+suggestions.  Change comments back to //.  Introduce language for
+XML namespace reservation.  Add section on white-space handling.
+Lots more cleanup.</sitem>
+<sitem>1996-10-24 : CMSMcQ : quick tweaks, implement s{me ERB
+decisions.  Characters are not integers.  Comments are /* */ not //.
+Add bibliographic refs to 10646, HyTime, Unicode.
+Rename old Cdata as MsData since it's <emph>only</emph> seen
+in marked sections.  Call them attribute-value pairs not
+name-value pairs, except once.  Internal subset is optional, needs
+'?'.  Implied attributes should be signaled to the app, not
+have values supplied by processor.</sitem>
+<sitem>1996-10-16 : TB : track down &amp; exbise all DSD references;
+introduce some EBNF for entity declarations.</sitem>
+<sitem>1996-10-?? :	TB : consistency check, fix tation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0"
+          datatypeLibrary="http://www.example.com#">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for QName and NCNames in schemas</documentation>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="&#xE14;&#xE35;">
+    <empty/>
+  </element>
+</element>
+</correct>
+<valid>
+<foo>&dii;</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="&#xE35;" xmlns="http://relaxng.org/ns/structur
+NOT part of the URI formally speaking, and are NOT legal in 
+system identifiere/1.0">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>&#xE35;</name>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="&#xE35;"/>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="&#xE35;"/>
+  </start>
+  <define name="&#xE35;">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+#xD;&#x20;&#x9;string&#xA;&#xD;&#x20;&#x9;"/>
+</element>
+</correct>
+<valid>
+<f
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="&#xE14;&#xE35;"/>
+  </start>
+  <define name="&#xE14;&#xE35;">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name=""/>
+  </start>
+  <define name="">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="x y"/>
+  </start>
+  <define name="x y">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x">
+  <start>
+    <ref name="x:y"/>
+  </start>
+  <define name="x:y">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x"
+         name="x:&#xE35;">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x"
+         name="x:y:z">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x"
+         name="x:">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for elements that allow only a single pattern child.</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+    <empty/>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <attribute name="bar"*
+    <text/>
+    <empty/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <attribute>
+    <name>bar</name>
+    <text/>
+    <empty/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for foreign element and attribute handling.</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<r:element name="foo" xmlns:r="http://relaxng.org/ns/structure/1.0" r:a="val">
+  <r:empty/>
+</r:element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo<eg:comment xmlns:eg="http://www.example.com"/></name>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <value>foo<eg:comment xmlns:eg="http://www.example.com"/></value>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="string"><eg:comment xmlns:eg="http://www.example.com"/></data>
+</element>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty>
+    <ext xmlns="http://www.example.com">
+      <element xmlns="http://relaxng.org/ns/structure/1.0"/>
+    </ext>
+  </empty>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:eg="http://www.example.com">
+  <eg:comment/>
+  <eg:comment/>
+  <start>
+    <eg:comment/>
+    <element>
+      <eg:comment/>
+      <eg:comment/>
+      <name>foo</name>
+      <eg:comment/>
+      <data type="string"/>
+      <eg:comment/>
+      <empty>
+        <eg:comment/>
+        <eg:comment/>
+      </empty>
+      <eg:comment/>
+      <eg:comment/>
+    </element>
+    <eg:comment/>
+  </start>
+  <eg:comment/>
+</grammar>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"  xmlns:eg="http://www.example.com"
+  eg:comment="">
+  <start eg:comment="">
+    <element eg:comment="">
+      <name eg:comment="">foo</name>
+      <data eg:comment="" type="string"/>
+      <empty eg:comment=""/>
+    </element>
+  </start>
+</grammar>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<rng:grammar xmlns:rng="http://relaxng.org.ns/structure/1.0" xmlns="http://www.example.com">
+  <comment/>
+  <comment/>
+  <rng:start>
+    <comment/>
+    <rng:element>
+      <comment/>
+      <comment/>
+      <rng:name>foo</rng:name>
+      <comment/>
+      <rng:data type="string"/>
+      <comment/>
+    </rng:element>
+    <comment/>
+  </rng:start>
+  <comment/>
+</rng:grammar>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<rng:grammar xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <comment/>
+  <comment/>
+  <rng:start>
+    <comment/>
+    <rng:element>
+      <comment/>
+      <comment/>
+      <rng:name>foo</rng:name>
+      <comment/>
+      <rng:data type="string"/>
+    ÿ<comment/>
+    </rng:element>
+    <comment/>
+  </rng:start>
+  <comment/>
+</rng:grammar>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+</testSuite>
+</testSuite>
+<testSuite>
+<section>4</section>
+<testSuite>
+<section>4.2</section>
+<testCase>
+<section>4.2</section>
+<correct>
+<element name="&#xA;&#xD;&#x20;&#x9;foo&#xA;&#xD;&#x20;&#x9;" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="&#xA;&#xD;&#x20;&#x9;bar&#xA;&#xD;&#x20;&#x9;"/>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <value type="&#xA;&#xD;&#x20;&#x9;string&#xA;&#xD;&#x20;&#x9;">bar</value>
+</element>
+</correct>
+<valid>
+<foo>bar</foo>
+</valid>
+<invalid>
+<foo>bar </foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="&#xA;&#xD;&#x20;&#x9;string&#xA;&#xD;&#x20;&#x9;"/>
+</element>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>&#xA;&#xD;&#x20;&#x9;foo&#xA;&#xD;&#x20;&#x9;</name>
+  <attribute><name>&#xA;&#xD;&#x20;&#x9;bar&#xA;&#xD;&#x20;&#x9;</name></attribute>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start combine="&#xA;&#xD;&#x20;&#x9;choice&#xA;&#xD;&#x20;&#x9;">
+    <ref name="&#xA;&#xD;&#x20;&#x9;x&#xA;&#xD;&#x20;&#x9;"/>
+  </start>
+  <define name="x">
+    <ref name="y"/>
+  </define>
+  <define name="&#xA;&#xD;&#x20;&#x9;y&#xA;&#xD;&#x20;&#x9;">
+    <grammar>
+      <start combine="&#xA;&#xD;&#x20;&#x9;interleave&#xA;&#xD;&#x20;&#x9;">
+        <parentRef name="&#xA;&#xD;&#x20;&#x9;z&#xA;&#xD;&#x20;&#x9;"/>
+      </start>
+    </grammar>
+  </define>
+  <define name="z">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+</testSuite>
+<testCase>
+<section>4.4</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <value datatypeLibrary="http://www.example.com/this-does-not-exist">bar</value>
+</element>
+</correEt>
+<valid>
+<foo>bar</foo>
+</valid>
+<valid>
+<foo>
+	bar
+</foo>
+</valid>
+<valid>
+<foo> bar </foo>
+</valid>
+<invalid>
+<foo>baz</foo>
+</invalid>
+<invalid>
+<foo>ba r</foo>
+</invalid>
+</testCase>
+<testSuite>
+<section>4.5</section>
+<testCase>
+<section>4.5</section>
+<dir name="sub">
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+</dir>
+<correct>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0"
+             xml:base="sub/y" href="x"/>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.5</section>
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="bar">
+  <empty/>
+</element>
+</resource>
+<dir name="sub1">
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="bar">
+  <empty/>
+</element>
+</resource>
+<dir name="sub3">
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+</dir>
+</dir>
+<correct>
+<group xmlns="http://relaxng.org/ns/structure/1.0" xml:base="sub1/">
+  <group>
+    <group xml:base="sub2">
+      <group>
+         <group xml:base="sub3/y">
+           <externalRef href="x"/>
+         </group>
+      </group>
+    </group>
+  </group>
+</group>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.5</section>
+<resource name="x">
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</resource>
+<incorrect>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x#foo"/>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.6</section>
+<testCase>
+<section>4.6</section>
+<resource name="x">
+<element xmlns="http://relaxng.or/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+<correct>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.6</section>
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+<correct>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x" ns="http://www.example.com"/>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.6</section>
+<resource name="x">
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</resource>
+<incorrect>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.6</section>
+<resource name="x">
+<start xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="foo">
+    <empty/>
+  </element>
+</start>
+</resource>
+<incorrect>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.6</section>
+<resource name="x">
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="y"/>
+</resource>
+<resource name="y">
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</resource>
+<incorrect>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.6</section>
+<documentation>Same value of href before resolution, but not a loop.</documentation>
+<dir name="sub">
+<resource name="x">
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="sub/x"/>
+</resource>
+<dir name="sub">
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+</dir>
+</dir>
+<correct>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="sub/x"/>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.7</section>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x" ns="http://www.example.com"/>
+</grammar>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="y"/>
+</grammar>
+</resource>
+<resource name="y">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="y"/>
+</grammar>
+</resource>
+<resource name="y">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<dir name="sub">
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="sub/x"/>
+</grammar>
+</resource>
+<dir name="sub">
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</resource>
+</dir>
+</dir>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="sub/x"/>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>÷<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x">
+    <start>
+      <ref name="foo"/>
+    </start>
+  </include>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/ÿ.0">
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+  <start>
+    <ref name="foo"/>
+  </start>
+</grammar>
+</correct>
+<valid><foo/></valid>
+<invalid><bar/>   valid>
+/1.0">
+  <include href="x">
+    <define name="foo">
+      <element name="foo">
+        <empty/>
+      </element>
+    </define>
+  </include>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+  <define name="foo">
+    <element name="foo">
+    

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-7"?>
+<xsl3stylesheet version="1.0" x-lns:xsl="http://www.w3.org/1999/XSL/Tform">€<xsl:template match="Stafment">
+	<html: 500pxI
+						text-align: ce>
+		<stylu type="text/css">
+				tab		margin: au						width: 500px;
+						text-align: cente.header-top th{
+						text-transform: uppercase;
+						padding: 10px;
+				}
+				th.name{
+					padding: 0px 60px;
+				}
+			í-header-top{
+				bac
+				 <td><xsl:value-ofÿselnd-color: orange;
+				color: white;
+				}
+		 <td><xsl:vaJue	</style>
+	<body>
+		<h2 align="ce">STAFFS MANAGEMENT</h2>
+		 <table border="1">
+			  <th>code</th>
+			 <th clpss="name">name	 <th>gender</th>
+				€<th>birthoa			 <th>positian</th>
+				 <th>department</th>
+J			 <th>salary</th>
+				
+			 </tr>
+				 <xsl:fovvvvSvvvvvvvvvvvvvvvvvvvXvvvvvvr-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 <td><xsl:value&of se›ect="Staff_Name"/></td>
+				 <td><xsl:vaJue-of select="Staff_Gender"/></td>
+				 <td><xsl:va,ue-of select="Staff_Birthday"/></td>
+				 <td><xsl:valuJ-of selecŒ="Staff_Position"/></td>
+				 <td><xsl:valueartment"><xsl:value-of select="Staff_Salary"/></tdL
+				
+			 </tr€
+		 		</xsl:for-eech>
+		 </tl>
+</xsl:template>
+</xsl:stylesheet>

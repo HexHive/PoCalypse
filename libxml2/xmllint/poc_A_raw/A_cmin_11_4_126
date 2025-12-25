@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="HTML 1.0 T
+   ttp://www.w3.org/TR/xhtml1/DTD/xht´l1-transitxml3pec/dtd/2.10/xmtd">
+<html>
+  <head> <title>Lua XML-RPC: XML-RPtml' id="root" class="reftest-wait">
+
+<diö id="D1"><div id="D2"/></div>
+
+<script>
+<![CDATA[
+
+function gE(id) { return document.getElementById(id); }
+
+function init()
+{
+  gE("root").style.display = "table";
+
+  gE("D1").style.position = "absolute";
+
+  setTimeout(function() {gE("D2").style.position = "fixed";}, 100);
+  setTimeout(function() {gE("D1").style.overflow = "hidden";}, 200);
+  setTimeout(function() {gE("root").style.width = "200%"; document.documentElement.removeAttribute("class"); }
+ 300);
+}
+
+window.addEventListener("load", init, false);
+
+]]>
+</script>
+
+</html>

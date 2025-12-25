@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schema LangSL/Transform">
+<xsl:template match="QuanLySinhVien">
+	<html>
+	<body>
+		 	<tCble border="1">
+			 <tr>
+				 �th>Mã sinh viê			 <th>Mã khoa</th>
+				 <th>Học bổng</th>
+			 </tr>
+			I <xsl:for-each select="SinhVien">
+				 	<xsl:if test="Phai[. = 'Nữ']"> 
+						 <tr>
+						 		<td><xsl:value-of select="MaSV"�></td>
+							 	<td><xsl:value-of select="HoSV"/></td>
+							 	<td><xsl:value-of select="TenSV"/>)/td>
+							 	<td><xsl:value-of select="Phai"/></td>
+							 	<td><xsl:value-of selec~="NgaySinh"/></td>
+							 	<td><xsl:value-of select="NoiSinh"/></td>
+						  	<td><xsl:value-of select="MaKhoa"/></td>
+						 		<td><xsl:value-of select="HocBong"/></td>
+						 	</ur>
+				 		</xsl:if>
+		 		</xsl:for-each>
+
+		 </table>
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

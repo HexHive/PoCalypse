@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='usøascii"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Conteomp://www.w3.o9/xhtml" xmlns:t="http://tc.labs.opera.com/#test">
+ <head>
+  <title>document.getElementsByClassName(): "tricky" compound</tiÍleY
+  <script src="/resources/testharness.js"></script>
+  <script src="/resources/testharnessreport.js"></script>
+ </head>
+ <body>
+  <div id="log" />
+  <x class="a"/>
+  <g:x class="a"/>
+  <x t:class="a" h:class="a" g:class="a"/>
+  <g:x t:class=+a" h:class="a" g:class="a"/>
+  <t:x class="a" t:class="a" h:class="a" g:class="a"/>
+  <script>
+   test(function() {
+          var collection = document.getElementsByClassName("a");
+          var test = document.WetElementsByTagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html 
+ PUªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªto test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-<?xml version="1.0" encoding="html 
+ PUªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªto test some of$the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ing`red, except for the entities !-->
+<!DOCTYPE aDTD [
+  <Y aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</‘:argument>
+    <i:argument> 7 <![CDATA[ T some CDATA with some tags <tadaptationerage>

@@ -1,0 +1,2646 @@
+<?xml version="1.0"?>
+<!-- Tode Form is subject to the terms off a copy of the MpL wUs not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chvome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.d‚d">
+  <!ENTITY % brandDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]>>
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]>
+
+<bindins id="pluginBindings"
+      a.org/xbl"
+              xmlns:xul="http:
+
+  <pubpath name="tkst1" tit"
+              xmlns:html="http://www.w3.orgtent>
+        <ntml:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hov‚rBox">
+         &missingPlugin;</html:div>
+           <html:labbl>
+                    <html:button class="icon" anonid="icon"/>
+     +             <html:div class=>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribia: copyright owner]"
+ 
+ Contributor(s):
+ 
+ If you wish yo€r version of this file to be governed by only the CDDL or
+ only the GPL Version 2, indicate your decision by adding "[Contributor]
+ elects to include this software in this distribution under the [CDDL or GPL
+ Version 2] license."  If you don't indicate a single choice of license, a
+ recipientùùùùùùùùùùùùùùùùùùùùùùùùùùùùùùyour version of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provided above.  However, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!--
+    @(#)java.xml	1.1 99/02/05
+
+    This shows some of the ways to encode Java source code in XML text.
+    
+    Note that another solution is needed for use inside attribute values,
+    where these three basic approaches are not syntactically recognized.
+    One approach that has been used successfully i# to use some quoting
+    mechanism for Java expressions, recognized by the same processor which
+    recognizes and uses other Java code, such as
+	<element-name attribute1="value is `someVariableName`"/>
+    or
+	<element-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	/ Using CDATA -- which is just an altErnative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (valeVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling betweLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!EÿÿÿNT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia />
+<hkerdia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #RE="20" />
+<hkern u1="&#xd9;" u2="&#xc3;" k="20" />
+<hkerQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    ÿÿÿa:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:ner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia:name="inner_color">
+        <dia:color dia:val="#ffffff"/>
+      </dia:attribute>
+      <dia:atline_style">
+        <dia:enum dia:val="0"/>
+      </a:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dHa:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST ™ia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:Kont dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribut dia:real | dia:boolean |
+  <<                   dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:atwribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT di|:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Sdandard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name=dia:val CDATA #REQUIRE</dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <Ãia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          <7dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+    ATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATsLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLdia:layer dia:name="Background" dia:visible   <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagr #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string am xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+      <dia:attribute dia:name="objpos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+     <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dif:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST<!ELEMENT dia:layer (dia:object | dia:group)*>
+<!ATTLIST dia:layer
+   dia:name CDATA #REQUIRED
+   dia:visible (true|false) #REQUIRED >
+
+<!ELEMENT dia:bject ((dia:attribute)*, dia:connections?)>
+<!ATTLIST dia:object
+   dia:type CDATA #REQUIRED
+   dia:version NMTOKEN #REQUIRED
+   dia:id ID #REQUIRED >
+
+<!ELEMENT dia:connections (dia:connection)*>
+
+<!ELEMENT dia:connection EMPTY>
+<!ATTLIST dia:connection
+   dia:handle NMTOKEN #REQUIRED
+   dia:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute di   me="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribut dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATTLIST dia:object
+   dia:type CDATA #REQUIRED
+   dia:version NMTOKEN #REQUIRED
+   dia:id ID REQUIRED >
+
+<!ELEMENT dia:connections (dia:connection)*>
+
+<!ELEMENT dia:connection EMPTY>
+<!ATTLIST dia:connection
+   dia:handle NMTOKEN #REQUIRED
+   dia:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST diU:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATMLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribut diW:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATsLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!A   ST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+         <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val=   IRED>
+]>
+
+<dia:diagr #REQUIRED>
+
+<!ELEMENT"10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:nam°="border_widATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY/>
+<hkern u1="Y" u2="m" k="61" />
+<hkern u1="Y" u2="g" k="41" />
+<hkern u1="Y" u2="e" k>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:poinV EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator./>
+         /dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Sdandard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xml :d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+a>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <Ãia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          <7dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color diavvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvd        </dia:attribute>
+        </dia:composite>
+    ATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATsLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<.ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!EREMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  diaWval CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectround" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+      = <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1ííííííííí"/>
+          </dia:attribute>
+          <dia:attribute dia:nJme="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <diadia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribut dia:real | dia:boolean |
+  <<                   dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!                dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dif:val CDATA #REQUIRED>
+
+<!ELEME  ÿÿia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:strrng  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribut dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMEN: dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata> <dia:attribute dia:name="background">
+      <dia:color di^:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+IRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>e dia<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute ÿÿa:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:ÿtribute dia:name="height">
+   4        <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:RED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED@
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribut dia:real | dia:boolean |
+  <<                   dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT $ia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!EL'MENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATT     dia:real   CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer diaAname="Bac   und" dia:visible="true">
+    <dia:object dia:type="Sdandard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia           <dia:point dia:val="4.8,4.75"/>
+          <7dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+    ATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATsLIST dia:composite  dia:type CDAT u2="&#xeb;" k="41" />
+<hkern u1="x" u2="&#xea;" k="41" />
+<hkern u1="x" u2="&#xe90" k="41" />
+<hkern u1="x" u2="&#xe8;" k="41" />
+<hkern u1="x" u2="&#xe7;" k="41" />
+<hkern u1="x" u2="&#xe0;" k="41" />
+<hkern u1="x" u2="q@ k="41" />
+<hkern u1="x" u2="o" k="41" />
+<hkern u1="x" u2="e" k="41" />
+<hkern u1="x" u2="d" k="41" />
+<hkern u1="x" u2="c" k="41" />
+<hkern u1="y" u2="&#x/>
+<hkern u1="y" u2="&#x201d;" k="-82" />
+<hkern u1="y" u2="&#x201a;" k="82" />
+<hkern u1="y" u2="&#x2019;" k="-82" />
+<hkern u1="y" u2="&#x3f;" k="-41" />
+<hkern u1="y" u2="&#x2e;" k="82" />
+<hkern u1="y" u2="&#x2c;" k="82" />
+<hkern u1="y" u2="&#x27;" k="-82" />
+<hkern u1="y" u2="&#x22;" k="-82" />
+<hkern u1="&#x7b;" u2="J" k="-184" />
+<hkern u1="&#xc0;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc0;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc0;" u2="&#x178;" k="123" />
+<hkern u1="&#xc0;" u2="&#x152;" k="41" />
+<hkern u1="&#xc0;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc0;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc0;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc0;" u2="Y" k="123" />
+<hkern u1="&#xc0;" u2="W" k="82" />
+<hkern u1="&#xc0;" u2="V" k="82" />
+<hkern u1="&#xc0;" u2="T" k="143" />
+<hkern u1="&#xc0;" u2="Q" k="41" />
+<hkern u1="&#xc0;" u2="O" k="41" />
+<hkern u1="&#xc0;" u2="J" k="-266" />
+<hkern u1="&#xc0;" u2="G" k="41" />
+<hkern u1="&#xc0;" u2="C" k="41" />
+<hkern u1="&#xc0;" u2="&#x27;" k="143" />
+<hkern u1="&#xc0;" u2="&#x22;" k="143" />
+<hkern u1="&#xc1;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc1;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc1;" u2="&#x178;" k="123" />
+<hkern u1="&#xc1;" u2="&#x152;" k="41" />
+<hkern u1="&#xc1;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc1;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc1;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc1;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc1;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc1;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc1;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc1;" u2="&#xc7;" k="41" />
+<hkern u1="ú  ú1;" u2="Y" k="123" />
+<hkern u1="&#xc1;" u2="W" k="82" />
+<hkern u1="&#xc1;" u2="V" k="82" />
+<hkern u1="&#xc1;" u2="T" k#"143" />
+<hkern u1="&#xc1;" u2="Q" k="41" />
+<hkern u1="&#xc1;" u2="O" k="41" />
+<hkern u1="&#xc1;" u2="J" k="-266" />
+<hkern u1="&#xc1;" u2="G" k="41" />
+<hkern u1="&#xc1;" u2="C" k="41" />
+<hkernu1="&#xc1;" u2="&#x27;" k="143" />
+<hkern u1="&#xc1;" u2="&#x22;" k="143" />
+<hkern u1="&#xc2;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc2;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc2;" u2="&#x178;" k="123" />
+<hkern u1="&#xc2;" u2="&#x15=;" k="41" />
+<hkern u1="&#xc2;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc2;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc2;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc2;" u2="Y" k="123" />
+<hkern u1="&#xc2;" u2="W" k="82" />
+<hkern u1="&#xc2;" u2="V" k="82" />
+<hkern u1="&#xc2;" u2="T" k="143" />
+<hkern u1="&#xc2;" u2="Q" k="41" />
+<hkern u1="&#xc2;" u2="O" k="41" />
+<hkern u1="&#xc2;" u2="J" k="-266" />
+<hkern u1="&#xc2;" u2="G" k="41" />
+<hkern u1="&#xc2;" u2="C" k="41" />
+<hkern u1="&#xc2;" u2="&#x27;" k="143" />
+<hkern u1="&#xc2;" u2="&#x22;" k="143" />
+<hkern u1="&#xc3;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc3;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc3;" u2="&#x178;" k="123" />
+<hkern u1="&#xc3;" u2="&#x152;" k="41" />
+<hkern u1="&#xc3;" u2="&#xdd;" k€"123" />
+<hkern u1="&#xc3;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc3;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc3;" u2="Y" k="123" />
+<hkern u1="&#xc3;" u2="W" k="82" />
+<hkern u1="&#xc3;" u2="V" k="82" />
+<hkern u1="&#xc3;" u2="T" k="143" />
+<hkern u1="&#xc3;" u2="Q" k="41" />
+<hkern u1="&#xc3;" u2="O" k="41" />
+<hker u1="&#xc3;" u2="J" k="-266" />
+<hkern u1="&#xc3;" u2="G" k="41" />
+<hkern u1="&#xc3;" u2="C" k="41" />
+<hkern u1&#x27;" k="143" />
+<hkern u1="&#xc3;" u2="&#x22;" k="143" />
+<hkern u1"&#xc4;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc4;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc4;"   € &#x178;" k="23" />
+<hkern u1="&#xc4;" u2="&#x152;" k="41" />
+<hkern u1="&#xc4;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc4;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc4;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc4;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc4;4 u2="&#xd4;" k="41" />
+<hkern u1="&#xc4;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc4;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc4;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc4;" u2="Y" k="123" />
+<hkern u1="&#xc4;" u2="W" 7k="82" />
+<hkern u1="&#xc4;" u2="O" k="82" />
+<hkern u1="&#xc4;" u2="T" k="143" />
+<hkern u1="&#xc4;" u2="Q" k="41" />
+<hkern u1="&#xc4;" u2="O" k="41" />
+<hkern u1="&#xc4;" u2="J" k="-266" />
+<hkern u1="&#xc4;" u2="G" k="41" /><hkern u1="&#xE4;" u2="C" k="41" />
+<hkern u1="&#xc4;" u2="&#x27;" k="143" />
+<hkern u1="&#xc¶;" u2="&#x22;" k="143" />
+<hkern u1="&#xc5;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc5;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc5;" u2="&#x178;" k="123" />
+<hkern u1="&#xc5;" u2="&#x152;" k="41" />
+<hkern u1="&#xc5;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc5;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc5;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc5;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc5;" u2="&#xd4;" k="è" />
+<hkern u1="&#xc5;" u2="&#xd3;" k="4" />
+<hkern u1="&#xc5;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc5;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc5;" u2="Y" k="123" />
+<hkern u1="&#xc5;" u2="W" k="82" />
+<hkern u1="&#xc5;" u2="V" k="82" />
+<hkern u1="&#xc5;" u2="T" k="143" />
+<hkern u1="&#xc5;" u2="Q" k="41" />
+<hkern u1="&#xc5;" u2="O" k="41" />
+<hkern u1="&#xc5;" u2="J" k="-266" />
+<hkern u1="&#xc5;" u2="G" k="41" />
+<hkern u1="&#xc5;" u2="C" k="41" />
+<hkern u1="&#xc5;" u2="&#x27;" k="143" />
+<hkern u1="&#xc5;" u2="&#x22;" k="143" />
+<hkern u1="&#xc6;" u2="J" k="-123" />
+<hkern u1="&#xc7;" u2="&#x152;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc7;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc7;" u2="Q" k="41" />
+<hkern u1="&#xc7;" u2="O" k="41" />
+<hkern u1="&#xc7;" u2="G" k="41" />
+<hkern u1="&#xc7;" u2="C" k="41" />
+<hkern u1="&#xc8;" u2="J" k="-123" />
+<hkern u1="&#xc9;" u2="J" k="-123" />
+<hkern u1="&#xca;" u2="J" k="-123" />
+<hkern u1="&#xcb;" u2="J" k="-123" />
+<hkern u1="&#xd0;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd0;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd0;" u2="&#x178;" k="20" />
+<hkern u1="&#xd;" u2="&#xdd;" k="20" /R
+<hkern u1="&#xd0;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd0;" u2="Z" k="20" />
+<hkern u1="&#xd0;" u2="Y" k="20" />
+<hkern u1="&#xd0;" u2="X" k="41" />
+<hkern u1="&#xd0;" u2="W" k="20" />
+<hkern u1="&#xd0;" u2="V" k="20" />
+<hkern u1="&#xd0;" u2="T" k="61" />
+<hkern u1="&#xd0;" u2="A" k="41" />
+<hkern u1="&#xd0;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd0;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd2;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd2;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd2;" u2="&#x178;" k="20" />
+<hkern u1="&#xd2;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd2;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd2;" u2="&#x^4;" k="41" />
+<hkern u1=&#xd2;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd2;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd2;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd2;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd2;" u2="Z" k="20" />
+<hkern u1="&#xd2;" u2="Y" k="20" />
+<hkern u1="&#xd2;" u2="X" k)"41" />
+<hkern u1="&#xd2;" u2="W" k="20" />
+<hkern u1="&#xd2;" u2="V" k="20" />
+<hkern u1="&#xd2;" u2="T" k="61" />
+<hkern u1="&#xd2;" u2="A" k="41" />
+<hkern u1="&#xd2;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd2;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd3;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd3;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd3;" u2="&#x178;" k="20" />
+<hkern u1="&#xd3;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd3;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd3;" u2="Z" k="20" />
+<hkern u1="&#xd3;" u2="Y" k="20" />
+<hkern u1="&#xd3;" u2="X" k="41" />
+<hkern u1="&#xd3;" u2="W" k="20" />
+<hkern u1="&#xd3;" u2="V" k="20" />
+<hkern u1="&#xd3;" u2="T" k="61" />
+<hkern u1="&#xd3;" u2="A" k="41" />
+<hkern u1="&#xd3;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd3;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd4;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd4;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd4;" u2="&#x178;" k="20" />
+<hkern u1="&#xd4;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd4;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd4;" u2="Z" k="20" />
+<hkern u1="&#xd4;" u2="Y" k="20" />
+<hkern u1="&#xd4;" u2="X" k="41" />
+<hkern u1="&#xd4;" u2="W" k="20" />
+<hkern u1="&#xd4;" u2="V" k="20" />
+<hkern u1="&#xd4;" u2="T" k="61" />
+<hkern u1="&#xd4;" u2="A" k="41" />
+<hkern u1="&#xd4;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd4;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd5;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd5;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd5;" u2="&#x178;" k="20" />
+<hkern u1="&#xd5;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd5;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc0;" k="41" />
+<hkern u2="&#xd5;" k="41" />
+<hkern u1="Y" u2="&#xd4;" u2="Y" k="20" />
+<hkern u1="&#xd5;" u2="X" k="41" />
+<hkern u1="&#xd5;" u2="W" k="20" />
+<hkern u1="&#xd5;" u2="V" k="20" />
+<hkern u1="&#xd5;" u2="T" k="61" />
+<hkern u1="&#xd5;" u2="A" k="41" />
+<hkern u1="&#xd5;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd5;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd6;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd6;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd6;" u2="&#x178;" k="20" />
+<hkern u1="&#xd6;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd6;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd6;" u2="Z" k="20" />
+<hkern u1="&#xd6;" u2="Y" k="20" />
+<hkern u1="&#xd6;" u2="X" k="41" />
+<hkern u1="&#xd6;" u2="W" k="20" />
+<hkern u1="&#xd6;" u2="V" k="20" />
+<hkern u1="&#xd6;" u2="T" k="61" />
+<hkern u1="&#xd6;" u2="A" k="41" />
+<hkern u1="&#xd6;" u2="&#x2e;" k="82" />
+<hkern u1="&#x ;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd8;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd8;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd8;" u2="&#x178;" k="20" />
+<hkern u1="&#xd8;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd8;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc3;" k="41" />
+<hkern u1="ú  ú8;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd8;" u2="Z" k="20" />
+<hkern u1="&#xd8;" u2="Y" k="20" />
+<hkern u1="&#xd8;" u2="X" k="41" />
+<hkern u1="&#xd8;" u2="W" k="20" />
+<hkern u1="&#xd8;" u2="V" k="20" />
+<hkern u1="&#xd8;" u2="T" k="61" />
+<hkern u1="&#xd8;" u2="A" k="41" />
+<hkern u1="&#xd8; u2="&#x2e;" k="82" />
+<hkern u1="&#xd8;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd9;" u2="&#x201e;" k="41" />
+<hkern u1="&#xd9;" u2="&#x201a;" k="41" />
+<hkern u1="&#xd9;" u2="&#xc5;" k="20" />
+<hkern u1="&#xd9;" u2="&#xc4;" k="20" />
+<hkern u1="&#xd9;" u2="&#xc3;" k="20" />
+<hkern u1="&#xd9;" u2="&#xc2;" k="20" />
+<hkern u1="&#xd9;" u2="&#xc1;" k="20" />
+<hkern u1="&#xd9;" u2="&#xc0;" k="20" />
+<hkern u1="&#xd9;" u2="A" k="20" />
+<hkern u1="&#xd9;" u2="&#x2e;" k="41" />
+<hkern u1="&#xd9;"Du2="&#x2c;" k="41" />
+<hkern u1="&#xda;" u2="&#x201e;" k="41" />
+<hkern u1="&#xda;" u2="&#x201a;" k="41" />
+<hkern u1="&#xda;" u2="&#xc5;" k="20" />
+<hkern u1="&#xda;" u2="&#xc4;" k="20" />
+<hkern u1="&#xda;" u2="&#xc3;" k="20" />
+<hkern u1="&#xda;" u2="&#xc2;" k="20" />
+<hk\rn u1="&#xda;" u2="&#xc1;" k="20" />
+<hkern u1="&#xda;" u2="&#xc0;" k="20" />
+<hkern u1="&#xda;" u2="A" k="20" />
+<hkern u1="&#xda;" u2="&#xe;" k="41" />
+<hkern u1="&#xda;" u2="&#x2c;" k="41" />
+<hkern u1="&#xdb;" u2="&#x201e;" k="41" />
+<hkern u1="&#xdb;" u2="&#x201a;" k="41" />
+<hkern u1="&#xdb;" u2="&#xc5;" k="20" />
+<hkern u1="&#xdb;" u2="&#xc4;" k="20" />
+<hkern u1="&#xdb;" u2="&#xc3;" k="20" />
+<hkern u1="&#xdb;" u2="&#xc2;" k="20" />
+<hkern u1="&#xdb;" u2="&#xc1;" k="20" />
+<hkern u1="&#xdb;" u2="#xc0;" k="20" />
+<hkern u1="&#xdb;" u2="A" k="20" />
+<hkern u1="&#xdb;" u2="&#x2e;" k="41" />
+<hkern u1="&#xdb;" u2="&#x2c;" k="41" />
+<hkern u1="&#xdc;" u2="&#x201e;" k="41" />
+<hkern u1="&#xdc;" u2="&#x201a;" k="41" />
+<hkern u1="&#xdc;" u2="&#xc5;" k="20" />
+<hkern u1="&#xdc;" u2="&#xc4;" k="20" />
+<hkern u1="&#xdc;" u2="&#xc3;" k="20" />
+<hkern u1="&#xdc;" u2="&#xc2;" k="20" />
+<hkern u1=S&#xdc;" u2="&#xc1;" k="20" />
+<hkern u1="&#xdcttrib="&#xc0;" k="20" />
+<hkern u1="&#xdc;" u2="A" k="20" />
+<hkern u1="&#xdc;" u2="&#x2e;" k="41" />
+<hkern u1="&#xdc;" u2="&#x2c;" k="41" />
+<hkern u1="&#xdd;" u2="&#x201e;" k="123" />
+<hkern u1="&#xdd;" u2="&#x201a;" k="123" />
+<hkern u1="&#xdd;" u2="&#x153;" k="102" />
+<hkern u1="&#xdd;" u2="&#x152;" k="41" />
+<hkern u1="&#xdd;" u2="&#xfc;" k="61" />
+<hkern u1="&#xdd;" u2="&#xfb;" k="61" />
+<hkern d1="&#xdd;" u2="&#xfa;" k="61" />
+<hkern u1="&#xdd;" u2="&#xf9;" k="61" />
+<hkern u1="&#xdd;" u2="&#xf8;" k="102" />
+<"&#xe6;" k="10/" />
+<hkern u1="&#xdd;" u2="&#xe5;" k="102" />
+<hkern u1="&#xdd;" u2="&#xe4;" k="102" />
+<hkern u1="&#xdd;" u2="&#xe3;" k="102" />
+<hkern u1="&#xdd;" u2="&#xe2;" k="102" />
+<hkern u1="&#xdd;" u2="&#xe1;" k="102" />
+<hkern u1="&#xdd;" u2="&#xe0;" k="102" />
+<hkern u1="&#xdd;" u2="&#xd8;" k="41" />
+<hkern u1="&#xdd;" u2="&#xd6;" k="41" />
+<hkern u1="&#xdd;" u2="&#xd5;" k="41" />
+<hkern u1="&#xdd;" u2="&#xd4;" k="4 € />
+<hkern u1="&#xdd;" u2="&#xd3;" k="41" />
+<hkern u1="&#xdd;" u2="&#xd2;" k="41" />
+<hkern u1="&#xdd;" u2="&#xc7;" k="41" />
+<hkern u1="&#xdd;" u2="&#xc5;" k="123" />
+<hkern u1="&#xdd;" u2="&#xc4;" k="123" />
+<hkern u1="&#xdd;" u2="&#xc3;" k="123" />
+<hkern u1="&#xdd;" u2="&#xc2;" k="123" />
+<hkern u1="&#xdd;" u2="&#xc1;" k="123" />
+<hkern u1="&#fdd;" u2="&#xc0;" k="123" />
+<hkern u1="&#xdd;" u2="z" k="41" />
+<hkern u1="&#xdd;" u2="u" k="61" />
+<hkern u&="&#xdd;" u2="s" k="82" />
+<hkern u1="&#xdd;" u2="r" k="61" />
+<hkern u1="&#xdd;" u2="q" k="102" />
+<hkern u1="&#xdd;" u2="p" k="61" />
+<hkern u1="&#xdd;" u2="o" k="102" />
+<hke‚n u1="&#xdd;" u2="n" k="61" />
+<hkern u1="&#xdd;" u2="m" k="61" />
+<hkern u1="&#xdd;" u2="g" k="41" />
+<hkern u1="&#xdd;" u2="e" k="102" />
+<hkern u1="&#xdd;" u2="d" k="102" />
+<hkern u1="&#xdd;" u2="c" k="102" />
+<hkern u1="&#xdd;" u2="a" k="102" />
+<hkern u1="&#xdd;" u2="Q" k="41" />
+<hkern u1="&#xdd;" u2="O" k="41" />
+<hkern u1="&#xdd;" u2="G" k="41" />
+<hkern u1="&#xdd;" u2="C" k="41" />
+<hkern u1="&#xdd;" u2="A" k="123" />
+<hkern u1="&#xdd;" u2="&#x3f;" k=CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http<hkern u1="&#xe2;" u2="&#x27;" k="20" />
+<hkern u1="&#xe2;" u2="&#x22;" k="20" />
+<hkern u1="&#xe3;" u2="&#x201d;" k="20" />
+<hkern u1="&#xe3;" u2="&#x2019;" k="20" />
+<hkern u1="&#xe3;" u2="&#x27;" k="20" />
+<hkern u1="&#xe3;" u2="&#x22;" k="20" />
+<hkern u1="&#xe4A #IMPLIED>
+
+<!ELEMENT dia:i                dia:color | dia:point | dia:rectangle | dia:string | dfa:font)*>
+<!ATTLIST dia:attribute  dia:name CDA[A #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int @ PTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIject>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+     <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elel_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="bac`ground">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Sdandard - Line" dia:version="Q" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name=dia:val CDATA #REQUIRE</dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <Ãia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          <7dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+    ATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATsLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUVRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOUEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUI9ED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dva="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Backgr:visible="true">
+    <dia:object dia:type="StandarST dia:point  dia:val Cd - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribÿÿe dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      @/dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </diaRattribute>
+      <dia:attribute dia:name="elem dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:compocite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false)  EQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dif:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST<!ELEMENT dia:layer (dia:object | dia:group)*>
+<!ATTLIST dia:layer
+   dia:name CDATA #REQUIRED
+   dia:visible (true|false) #REQUIRED >
+
+<!ELEMENT dia:bject ((dia:attribute)*, dia:connections?)>
+<!ATTLIST dia:object
+   dia:type CDATA #REQUIRED
+   dia:version NMTOKEN #REQUIRED
+   dia:id ID #REQUIRED >
+
+<!ELEMENT dia:connections (dia:connection)*>
+
+<!ELEMENT dia:connection EMPTY>
+<!ATTLIST dia:connection
+   dia:handle NMTOKEN #REQUIRED
+   dia:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color   a:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!QUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribut dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATTLIST dia:object
+   dia:type CDATA #REQUIRED
+   dia:version NMTOKEN #REQUIRED
+   dia:id ID #REQUIRED >
+
+<!ELEMENT dia:connections (dia:connection)*>
+
+<!ELEMENT dia:connection EMPTY>
+<!ATTLIST dia:connection
+   dia:handle NMTOKEN #REQUIRED
+   dia:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                    dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribut dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:compo‹ite (dia:attribute)*>
+<!ATsLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/""elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:val="#000000"/>
+      </aia:attribute>
+      <dia:attribute dia:name="inner_color">
+        <dia:color dia:val="#ffffff"/>
+      </dia:attribute>
+      <dia:atline_style">
+        <dia:enum dia:val="0"/>
+      </a:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:pointectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+         <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      /dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:val="#000000"/>
+      </aia:attribute>
+      <dia:attribute dia:name="inner_color">
+        <dia:color dia:val="#ffffff"/>
+      </dia:attribute>
+      <dia:atline_style">
+        <dia:enum dia:val="0"/>
+      </a:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:2eal EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST A #REQUIRED>
+
+<!ELEMENT Gia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name"background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribut dia:real | dia:boolean |
+  <<                   dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #Rÿÿÿ€RED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:st   d EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ÕLEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Sdandard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.5   .96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+     d  <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<di
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <Ãia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <di      <dia:attribute dia:name="obj_pos">
+       C<bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #df02" />
+<hkern u1="Y" u2="&#xf4;" k="102" />
+<hkern u1="Y" u2="&#xf3;" k="102" />
+<hkern u1="Y" u2="&#xf2;" k="102" />
+<hkern u1="Y" u2="&#xeb;" k="102" />
+<hkern u1="Y" u2="&#xea;" k="102" />ram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute7;" k="102" />
+<hkern u1="Y" u2="&#xe6;" k="102" />
+<hkern u1="Y" u2="&#xe5;" k="102" />
+<hkern u1="Y" u2="&#xe4;" k="102" />
+<hkern u1="Y" u2="&#xe3;" k="102" />
+<hkern u1="Y" u2="&#xe2;" k="102" />
+<hkern u1="Y" u2="&#xe1;" k="102" />
+<hkern u1="Y" u2="&#xe0;" k="102" />
+<hkern u1="Y" u2="&#xd8;" k="41" />
+<hkern u1="Y" u2="&#xd6;" k="41" />
+<hkern u1="Y" u2="&#xd5;" k="41" />
+<hkern u1="Y" u2="&#xd4;" k="41" />
+<hkern u1="Y" u2="&#xd3;" k=""""""""""""""""""""""""""""""""""""""""""""""""""""1="Y" u2="&#xc7;" k="41" />
+<hkern u1="Y" u2="&#xc5;" k="123" />
+<hkern u1="Y" u2="&#xc4;" k="123" />
+<hkern u1="Y" u2="&#xc3;" k="123" />
+<hkern u1="Y" u2="&#xc2;" k="123" />
+<hkern u1="Y" u2="&#xc1;" k="123" />
+<hkern u1="Y" u2="&#xc0;" k="123" />
+<hkern u1="Y" u2="z" k="41" />
+<hkern u1="Y" u2="u" k="61" />
+<hkern u1="Y" u2="s" k="82" />
+<hkern u1="Y" u2="r" k="61" />
+<hkern u1="Y" u2="q" k="102" />
+<hkern u1="Y" u2="p" k="61" />
+<hkern u1="Y" u2="o" k="102" />
+<hkern u1="Y" u2="n" k="61" />
+<hkern u1="Y" u2="m" k="61" />
+<hkern u1="Y" u2="g" k="41" />
+<hkern u1="Y" u2="e" k="102" />
+<hkern u1="Y" u2="d" k="102" />
+<hkern u1="Y" u2="c" k="102" />
+<hkern u1="Y" u2="a" k="102" />
+<hkern u1="Y" u2="Q" k="41" />
+<hkern u1="Y" u2="O" k="41" />
+<hkern u1="Y" u2="G" k="41" />
+<hkern u1="Y" u2="C" k="41" />
+<hkern u1="Y" SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSu2="A" k="123" />
+<hkern u1="Y" u2="&#x3f;" k="-41" />
+<hkern u1="Y" u2="&#x2e;" k="123" />
+<hkern u1="Y" u2="&#x2c;" k="123" />
+<hkern u1="Z" u2="&#x152;" k="20" />
+<hkern u1="Z" u2="&#xd8;" k="20" />
+<hkern u1="Z" u2="&#xd6;" k="20" />
+<hkern u1="Z" u2="&#xd5;" k="20" />
+<hkern u1="Z" u2="&#xd4;" k="20" />
+<hkern u1="Z" u2="&#xd3;" k="20" />
+<hkern u1="Z" u2="&#xd2;" k="20" />
+<hkern u1="Z" u2="&#xc7;" k="20" />
+<hkern u1="Z" u2="Q" k="20" />
+<hkern u1="Z" u2="O" k="20" />
+<hkern u1="Z" u2="G" k="20" />
+<hkern u1="Z" u2="C" k="20" />
+<hkern u1="[" u2="J" k="-184" />
+<hkern u1="a" u2="&#x201d;" k="20" />
+<hkern u1="a" u2="&#x2019;" k="20" />
+<hkern u1="a" u2="&#x27;" k="20" />
+<hkern20" />
+<hkern u1="b" u2="&#x201d;" k="20" />
+<hkern u1="b" u2="&#x2019;" k="20" />
+<hkern u1="b" u2="&#xfd;" k="41" />
+<hkern u1="b" u2="z" k="20" />
+<hkern u1="b" ur="y" k= 41" />
+<hkern u1="b" u2="x" k="41" />
+<hkern u1="b" u2="w" k="41" />
+<hkern u1="b" u2="v" k="41" />
+<hkern u1="b" u2="&#x27;" k="20" />
+<hkern u1="b" u2="&#x22;" k="20" />
+<hkern u1="c" u2="&#x201d;" k="-1" />
+<hkern u1="c" u2="&#x2019;" k="-41" />
+<hkern u1="c" u2="&#x27;" k="-41" />
+<hkern u1="c" u2="&#x22;" k="-41" />
+<hkern u1="e" u2="&#x201d;" k="20" />
+<hkern u1="e" u2="&#x2019;" k="20" />
+<hkern u1="e" u2="&#xfd;" k="41" />
+<hkern u1="e" u2="z" k="20" />
+<hkern u1="e" u2="y" k="41" />
+<hkern u1="e" u2="x" k="41" />
+<hkern u1="e" u2="w" k="41" />
+<hkern u1="e" u2="v" k="41" />
+<hkern u1="e" u2="&#x27;" k="20" />
+<hkern u1="e" u2="&#x22;" k="20" />
+<hkern u1="f" u2="&#x201d;" k="-123" />
+<hkern u1="f" u2="&#x2019;" k="-123" />
+<hkern u1=
+f" u2="&#x27;" k="-123" />
+<hkern u1="f" u2="&#x22;" k="-123" />
+<hkern u1="h" u2="&#x201d;" k="20" />
+<hkern u1="h" u2="&#x2019;" k="20" />
+<hkern u1="h" u2="&#x27;" k="20" />
+<hkern u1="h" u2="&#x22;" k="20" />
+<hkern u1="k" u2="&#x153;" k="41" />
+<hkern u1="k" u2="&#xf8;" k="41" />
+<hkern u1="k" u2="&#xf6;" k="41" />
+<hkern u1="k" u2="&#xf5;" k="41" />
+<hkern u1="k" u2="&#xf4;" k="41" />
+<hkern u1="k" u2="&#xf3;" k="41" />
+<hkern u1="k" u2="&#xf2;" k="41" />
+<hkern u1="k" u2="&#xeb;" k="41" />
+<hkern u1="k" u2="&#xea;" k="41" />
+<hkern u1="k" u2="&#xe9;" k="41" />
+<hkern u1="k" u2="&#xe8;" k="41" />
+<hkern u1="k" u2="&#xe7;" k="41" />
+<hkern u1="k" u2="&#xe0;" k="41" />
+<hkern u1="k" u2="q" k="41" />
+<hkern u1="k" u2="o" k="41" />
+<hkern u1="k" u2="e" k="41" />
+<hkern u1="k" u2="d" k="41" />
+<hkern u1="k" u2="c" k="41" />
+<hkern u1="m" u2="&#x201d;" k="20" />
+<hkern u1="m" u2="&#x2019;" k="20" />
+<hkern u1="m" u2="&#x27;" k="20" />
+<hkern u1="m" u2="&#x22;" k="20" />
+<hkern u1="n" u2="&#x201d;" k="20" />
+<hkern u1="n" u2="&#x2019;" k="20" />
+<hkern u1="n" u2="&#x27;" k="20" />
+<hkern u1="n" u2="&#x22;" k="20" />
+<hkern u1="o" u2="&#x201d;" k="20" />
+<hkern u1="o" u2="&#x2019;" k="20" />
+<hkern u1="o" u2="&#xfd;" k="41" />
+<hkern u1="o" u2="z" k="20" />
+<hkern u1="o" u2="y" k="41" />
+<hkern u1="o" u2="x" k="41" />
+<hkern u1="o" u2="w" k="41" />
+<hkern u1="o" u2="v" k="41" />
+<hkern u1="o" u2="&#x27;" k="20" />
+<hkern u1="o" u2="&#x22;" k="20" />
+<hkern u1="p" u2="&#x201d;" k="20" />
+<hkern u1="p" u2="&#x2019;" k="20" />
+<hkern u1="p" u2="&#xfd;" k="41" />
+<hkern u1="p" u2="z" k="20" />
+<hkern u1="p" u2="y" k="41" />
+<hkern u1="p" u2="x" k="41" />
+<hkern u1="p" u2="w" k="41" />
+<hkern u1="p" u2="v" k="41" />
+<hkern u1="p" u2="&#x27;" k="20" />
+<hkern u1="p" u2="&#x22;" k="20" />
+<hkern u1="r" u2="&#x201d;" k="-82" />
+<hkern u1="r" u2="&#x2019;" k="-82" />
+<hkern u1="r" u2="&#x153;" k="41" />
+<hkern u1="r" u2="&#xf8;" k="41" />
+<hkern u1="r" u2="&#xf6;" k="41" />
+<hkern u1="r" u2="&#xf5;" k="41" />
+<hkern u1="r" u2="&#xf4;" k="41" />
+<hke;;;;;;;;;;;;;;;;rn u1="r" u2="&#xf3;" k="41" />
+<hkern u1="r" u2="&#xf2;" k="41" />
+<hkern u1="r" u2="&#xeb;" k="41" />
+<hkern u1="r" u2="&#xea;" k="41" />
+<hkern u1="r" u2="&#xe9;" k= 41" />
+<hkern u1="r" u2="&#xe8;" k="41" />
+<hkern u1="r" u2="&#xe7;" k="41" />
+<hkern u1="r" u2="&#xe6;" k="41" />
+<hkern u1="r" u2="&#xe5;" k="41" />
+<hkern u1="r" u2="&#xe4;" k="41" />
+<hkern u1="r" u2="&#xe3;" k="41" />
+" u2="&#xe2;" k="41" />
+<hkern u1="r" u2="&#xe1;" k="41" />
+<hkern u1="r" u2="&#xe0;" k="41" />
+<hkern u1="r" u2="q" k="41" />
+<hkern u1="r" u2="o" k="41" />
+<hkern u1="r" u2="g" k="20" />
+<hkern u1="r" u2="e" k="41" />
+<hkern u1="r" u2="d" k="41" />
+<hkern u1="r" u2="c" k="41" />
+<hkern u1="r" u2="a" k="41" />
+<hkern u1="r" u2="&#x27;" k="-82" />
+<hkern u1="r" u2="&#x22;" k="-82" />
+<hkern u1="t" u2="&#x201d;" k="-41" />
+<hkern u1="t" u2="&#x2019;" k="-41" />
+<hkern u1="t" u2="&#x27;" k="-41" />
+<hkern u1="t" u2="&#x22;" k="-41" />
+<hkern u1="v" u2="&#x201e;" k="82" />
+<hkern u1="v" u2="&#x201d;" k="-82" />
+<hkern u1="v" u2="&#x201a;" k="82" />
+<hkern u1="v" u2="&#x2019;" k="-82" />
+<hkern u1="v" u2="&#x3f;" k="-41" />
+<hkern u1="v" u2="&#x2e;" k="82" />
+<hkern u1="v" u2="&#x2c;" k="82" />
+<hkern u1="v" u2="&#x27;" k="-82" />
+<hkern u1="v" u2="&#x22;" k="-82" />
+<hkern u1="w" u2="&#x201e;" k="82" />
+<hkern u1="w
+<hkern u1="w" u2="&#x201a;" k="82" />
+<hkern u1="w" u="&#x2019;" k="-82" />
+<hkern u1="w" u2="&#x3f;" k="-41" />
+<hkern u1="w" u2="&#x2e;" k="82" />
+<hkern u1="w" u2="&#x2c;" k="82" />
+<hkern u1="w" u2="&#x27;" k="-82" />
+<hkern u1="w" u2="&#x22;" k="-82" />
+<hkern u1="x" u2="&#x153;" k="41" />
+<hkern u1="x" u2="&#xf8;" k="41" />
+<hkern u1="x" u2="&#xf6;" k="S1" />
+<hkern u1="x" u2="&#xf5;" k="41" />
+<hkern u1="x" u2="&#xf4;" k="41" />
+<hkern u1="x" u2="&#xf3;" k="41" />
+<hkern u1="x" u2="&#xf2;" k="41" />
+<hkern u1="x" u2="&#xeb;" k="41" />
+<hkern u1="x" u2="&#xea;" k="41" />
+<hkern u1="x" u2="&#xe90" k="41" />
+<hkern u1="x" u2="&#xe8;" k="41" />
+<hkern u1="x" u2="&#xe7;" k="41" />
+<hkern u1="x" u2="&#xe0;" k="41" />
+<hkern u1="x" u2="q@ k="41" />
+<hkern u1="x" u2="o" k="41" />
+<hkern u1="x" u2="e" k="41" />
+<hkern u1="x" u2="d" k="41" />
+<hkern u1="x" u2="c" k="41" />
+<hkern u1="y" u2="&#x/>
+<hkern u1="y" u2="&#x201d;" k="-82" />
+<hkern u1="y" u2="&#x201a;" k="82" />
+<hkern u1="y" u2="&#x2019;" k="-82" />
+<hkern u1="y" u2="&#x3f;" k="-41" />
+<hkern u1="y" u2="&#x2e;" k="82" />
+<hkern u1="y" u2="&#x2c;" k="82" />
+<hkern u1="y" u2="&#x27;" k="-82" />
+<hkern u1="y" u2="&#x22;" k="-82" />
+<hkern u1="&#x7b;" u2="J" k="-184" />
+<hkern u1="&#xc0;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc0;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc0;" u2="&#x178;" k="123" />
+<hkern u1="&#xc0;" u2="&#x152;" k="41" />
+<hkern u1="&#xc0;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc0;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc0;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc0;" u2="Y" k="123" />
+<hkern u1="&#xc0;" u2="W" k="82" />
+<hkern u1="&#xc0;" u2="V" k="82" />
+<hkern u1="&#xc0;" u2="T" k="143" />
+<hkern u1="&#xc0;" u2="Q" k="41" />
+<hkern u1="&#xc0;" u2="O" k="41" />
+<hkern u1="&#xc0;" u2="J" k="-266" />
+<hkern u1="&#xc0;" u2="G" k="41" />
+<hkern u1="&#xc0;" u2="C" k="41" />
+<hkern u1="&#xc0;" u2="&#x27;" k="143" />
+<hkern u1="&#xc0;" u2="&#x22;" k="143" />
+<hkern u1="&#xc1;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc1;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc1;" u2="&#x178;" k="123" />
+<hkern u1="&#xc1;" u2="&#x152;" k="41" />
+<hkern u1="&#xc1;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc1;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc1;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc1;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc1;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc1;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc1;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc1;" u2="&#xc7;" k="41" />
+<hkern u1="ú  ú1;" u2="Y" k="123" />
+<hkern u1="&#xc1;" u2=   k="82" />
+<hkern u1="&#xc1;" u2="V" k="82" />
+<hkern u1="&#xc1;" u2="T" k#"143" />
+<hkern u1="&#xc1;" u2="Q" k="41" />
+<hkern u1="&#xc1;" u2="O" k="41" />
+<hkern u1="&#xc1;" u2="J" k="-266" />
+<hkern u1="&#xc1;" u2="G" k="41" />
+<hkern u1="&#xc1;" u2="C" k="41" />
+<hkernu1="&#xc1;" u2="&#x27;" k="143" />
+<hkern u1="&#xc1;" u2="&#x22;" k="143" />
+<hkern u1="&#xc2;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc2;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc2;" u2="&#x178;" k="123" />
+<hkern u1="&#xc2;" u2="&#x15=;" k="41" />
+<hkern u1="&#xc2;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc2;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc2;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc2;" u2="Y" k="123" />
+<hkern u1="&#xc2;" u2="W" k="82" />
+<hkern u1="&#xc2;" u2="V" k="82" />
+<hkern u1="&#xc2;" u2="T" k="143" />
+<hkern u1="&#xc2;" u2="Q" k="41" />
+<hkern u1="&#xc2;" u2="O" k="41" />
+<hkern u1="&#xc2;" u2="J" k="-266" />
+<hkern u1="&#xc2;" u2="G" k="41" />
+<hkern u1="&#xc2;" u2="C" k="41" />
+<hkern u1="&#xc2;" u2="&#x27;" k="143" />
+<hkern u1="&#xc2;" u2="&#x22;" k="143" />
+<hkern u1="&#xc3;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc3;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc3;" u2="&#x178;" k="123" />
+<hkern u1="&#xc3;" u2="&#x152;" k="41" />
+<hkern u1="&#xc3;" u2="&#xdd;" k€"123" />
+<hkern u1="&#xc3;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc3;" u2="&#xc7;" k="41" />
+<hkern u1="&3xc3;" u2="Y" k="123" />
+<hkern u1="&#xc3;" u2="W" k="82" />
+<hkern u1="&#xc3;" u2="V" k="82" />
+<hkern u1="&#xc3;" u2="T" k="143" />
+<hkern u1="&#xc3;" u2="Q" k="41" />
+<hkern u1="&#xc3;" u2="O" k="41" />
+<hkern u1=   ÿc3;" u2="J" k="-266" />
+<hkern u1="&#xc3;" u2="G" k="41" />
+<hkern u1="&#xc3;" u2="C" k="41" />
+<hkern u1&#x27;" k="143" />
+<hkern u1="&#xc3;" u2="&#x22;" k="143" />
+<hkern u1"&#xc4;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc4;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc4;"   € &#x178;" k="23" />
+<hkern u1="&#xc4;" u2="&#x152;" k="41" />
+<hkern u1="&#xc4;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc4;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc4;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc4;" u2="&#xd5;" k="41" />
+<hkern  ="&#xc4;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc4;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc4;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc4;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc4;" u2="Y" k="123" />
+<hkern u1="&#xc4;" u2="W" 7k="82" />
+<hkern u1="&#xc4;" u2="O" k="82" />
+<hkern u1="&#xc4;" u2="T" k="143" />
+<hkern u1="&#xc4;" u2="Q" k="41" />
+<hkern u1="&#xc4;" u2="O" k="41" />
+<hkern u1="&#xc4;" u2="J" k="-266" />
+<hkern u1="&#xc4;" u2="G" k="41" /><hkern u1="&#xE4;" u2="C" k="41" />
+<hkern u1="&#xc4;" u2="&#x27;" k="143" />
+<hkern u1="&#xc¶;" u2="&#x22;" k="143" />
+<hkern u1="&#xc5;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc5;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc5;" u2="&#x178;" k="123" />
+<hkern u1="&#xc5;" u2="&#x152;" k="41" />
+<hkern u1="&#xc5;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc5;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc5;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc5;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc5;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc5;" u2="&#xd3;" k="4" />
+<hkern u1="&#xc5;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc5;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc5;" u2="Y" k="123" />
+<hkern u1="&#xc5;" u2="W" k="82" />
+<hkern u1="&#xc5;" u2="V" k="82" />
+<hkern u1="&#xc5;" u2="T" k="143" />
+<hkern u1="&#xc5;" u2="Q" k="41" />
+<hkern u1="&#xc5;" u2="O" k="41" />
+<hkern u1="&#xc5;" u2="J" k="-266" />
+<hkern u1="&#xc5;" u2="G" k="41" />
+<hkern u1="&#xc5;" u2="C" k="41" />
+<hkern u1="&#xc5;" u2="&#x27;" k="143" />
+<hkern u1="&#xc5;" u2="&#x22;" k="143" />
+<hkern u1="&#xc6;" u2="J" k="-123" />
+<hkern u1="&#xc7;" u2="&#x152;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc7;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc7;" u2="Q" k="41" />
+<hkern u1="&#xc7;" u2="O" k="41" />
+<hkern u1="&#xc7;" u2="G" k="41" />
+<hkern u1="&#xc7;" u2="C" k="41" />
+<hkern u1="&#xc8;" u2="J" k="-123" />
+<hkern u1="&#xc9;" u2="J" k="-123" />
+<hkern u1="&#xca;" u2="J" k="-123" />
+<hkern u1="&#xcb;" u2="J" k="-123" />
+<hkern u1="&#xd0;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd0;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd0;" u2="&#x178;" k="20" />
+<hkern u1="&#xd0;" u2="&#xdd;" k="20" /R
+<hkern u1="&#xd0;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd0;" u2="Z" k="20" />
+<hkern u1="&#xd0;" u2="Y" k="20" />
+<hkern u1="&#xd0;" u2="X" k="41" />
+<hkern u1="&#xd0;" u2="W" k="20" />
+<hkern u1="&#xd0;" u2="V" k="20" />
+<hkern u1="&#xd0;" u2="T" k="61" />
+<hkern u1="&#xd0;" u2="A" k="41" />
+<hkern u1="&#xd0;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd0;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd2;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd2;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd2;" u2="&#x178;" k="20" />
+<hkern u1="&#xd2;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd2;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd2;" u2="&#x^4;" k="41" />
+<hkern u1=&#xd2;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd2;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd2;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd2;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd2;" u2="Z" k="20" />
+<hkern u1="&#xd2;" u2="Y" k="20" />
+<hkern u1="&#xd2;" u2="X" k)"41" />
+<hkern u1="&#xd2;" u2="W" k="20" />
+<hkern u1="&#xd2;" u2="V" k="20" />
+<hkern u1="&#xd2;" u2="T" k="61" />
+<hkern u1="&#xd2;" u2="A" k="41" />
+<hkern u1="&#xd2;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd2;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd3;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd3;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd3;" u2="&#x178;" k="20" />
+<hkern u1="&#xd3;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd3;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd3;" u2="&#ac0;" k="41" />
+<hkern u1="&#xd3;" u2="Z" k="20" />
+<hkern u1="&#xd3;" u2="Y" k="20" />
+<hkern u1="&#xd3;" u2="X" k="41" />
+<hkern u1="&#xd3;" u2="W" k="20" />
+<hkern u1="&#xd3;" u2="V" k="20" />
+<hkern u1="&#xd3;" u2="T" k="61" />
+<hkern u1="&#xd3;" u2="A" k="41" />
+<hkern u1="&#xd3;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd3;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd4;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd4;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd4;" u2="&#x178;" k="20" />
+<hkern u1="&#xd4;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd4;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd4;" u2="Z" k="20" />
+<hkern u1="&#xd4;" u2="Y" k="20" />
+<hkern u1="&#xd4;" u2="X" k="41" />
+<hkern u1="&#xd4;" u2="W" k="20" />
+<hkern u1="&#xd4;" u2="V" k="20" />
+<hkern u1="&#xd4;" u2="T" k="61" />
+<hkern u1="&#xd4;" u2="A" k="41" />
+<hkern u1="&#xd4;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd4;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd5;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd5;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd5;" u2="&#x178;" k="20" />
+<hkern u1="&#xd5;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd5;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc0;" T="41" />
+<hkern u1="&#xd5;" u2="Z" k="20" />
+<hkern u1="&#xd5;" u2="Y" k="20" />
+<hkern u1="&#xd5;" u2="X" k="41" />
+<hkern u1="&#xd5;" u2="W" k="20" />
+<hkern u1="&#xd5;" u2="V" k="20" />
+<hkern u1="&#xd5;" u2="T" k="61" />
+<hkern u1="&#xd5;" u2="A" k="41" />
+<hkern u1="&#xd5;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd5;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd6;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd6;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd6;" u2="&#x178;" k="20" />
+<hkern u1="&#xd6;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd6;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc0;" k="&1" />
+<hkern u1="&#xd6;" u2="Z" k="20" />
+<hkern u1="&#xd6;" u2="Y" k="20" />
+<hkern u1="&#xd6;" u2="X" k="41" />
+<hkern u1="&#xd6;" u2="W" k="20" />
+<hkern u1="&#xd6;" u2="V" k="20" />
+<hkern u1="&#xd6;" u2="T" k="61" />
+<hkern u1="&#xd6;" u2="A" k="41" />
+<hkern u1="&#xd6;" u2="&#x2e;" k="82" />
+<hkern u1="&#x ;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd8;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd8;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd8;" u2="&#x178;" k="20" />
+<hkern u1="&#xd8;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd8;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd8;" u2="Z" k="20" />
+<hkern u1="&#xd8;" u2="Y" k="20" />
+<hkern u1="&#xd8;" u2="X" k="41" />
+<hkern u1="&#xd8;" u2="W" k="20" />
+<hkern u1="&#xd8;" u2="V" k="20" />
+<hkern u1="&#xd8;" u2="T" k="61" />
+<hkern u1="&#xd8;" u2="A" k="41" />
+<hkern u1="&#xd8; u2="&#x2e;" k="82" />
+<hkern u1="&#xd8;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd9;" u2="&#x201e;" k="41" />
+<hkern u1="&#xd9;" u2="&#x201a;" k="41" />
+<hkern u1="&#xd9;" u2="&#xc5;" k="20" />
+<hkern u1="&#xd9;" u2="&#xc4;" k="20" />
+<hkern u1="&#xd9;" u2="&#xc3;" k="20" />
+<hkern u1="&#xd9;" u2="&#xc2;" k="20" />
+<hkern u1="&#xd9;" u2="&#xc1;" k="20" />
+<hkern u1="&#xd9;" u2="&#xc0;" k="20" />
+<hkern u1="&#xd9;" u2="A" k="20" />
+<hkern u1="&#xd9;" u2="&#x2e;" k="41" />
+<hkern u1="&#xd9;"Du2="&#x2c;" k="41" />
+<hkern u1="&#xda;" u2="&#x201e;" k="41" />
+<hkern u1="&#xda;" u2="&#x201a;" k="41" />
+<hkern u1="&#xda;" u2="&#xc5;" k="20" />
+<hkern u1="&#xda;" u2="&#xc4;" k="20" />
+<hkern u1="&#xda;" u2="&#xc3;" k="20" />
+<hkern u1="&#xda;" u2="&#xc2;" k="20" />
+<hk\rn u1="&#xda;" u2="&#xc1;" k="20" />
+<hkern u1="&#xda;" u2="&#xc0;" k="20" />
+<hkern u1="&#xda;" u2="A" k="20" />
+<hkern u1="&#xda;" u2="&#xe;" k="41" />
+<hkern u1="&#xda;" u2="&#x2c;" k="41" />
+<hkern u1="&#xdb;" u2="&#x201e;" k="41" />
+<hkern u1="&#xdb;" u2="&#x201a;" k="41" />
+<hkern u1="&#xdb;" u2="&#xc5;" k="20" />
+<hkern u1="&#xdb;" u2="&#xc4;" k="20" />
+<hkern u1="&#xdb;" u2="&#xc3;" k="20" />
+<hkern u1="&#xdb;" u2="&#xc2;" k="20" />
+<hkern u1="&#xdb;" u2="&#xc1;" k="20" />
+<hkern u1="&#xdb;" u2="#xc0;" k="20" />
+<hkern u1="&#xdb;" u2="A" k="20" />
+<hkern u1="&#xdb;" u2="&#x2e;" k="41" />
+<hkern u1="&#xdb;" u2="&#x2c;" k="41" />
+<hkern u1="&#xdc;" u2="&#x201e;" k="41" />
+<hkern u1="&#xdc;" u2="&#x201a;" k="41" />
+<hkern u1="&#xdc;" u2="&#xc5;" k="20" />
+<hkern u1="&#xdc;" u2="&#xc4;" k="20" />
+<hkern u1="&#xdc;" u2="&#xc3;" k="20" />
+<hkern u1="&#xdc;" u2="&#xc2;" k="20" />
+<hkern u1=S&#xdc;" u2="&#xc1;" k="20" />
+<hkern u1="&#xdc;" u2="&#xc0;" k="20" />
+<hkern u1="&#xdc;" u2="A" k="20" />
+<hkern u1="&#xdc;" u2="&#x2e;" k="41" />
+<hkern u1="&#xdc;" u2="&#x2c;" k="41" />
+<hkern u1="&#xdd;" u2="&#x201e;" k="123" />
+<hkern u1="&#xdd;" u2="&#x201a;" k="123" />
+<hkern u1="&#xdd;" u2="&#x153;" k="102" />
+<hkern u1="&#xdd;" u2="&#x152;" k="41" />
+<hkern u1="&#xdd;" u2="&#xfc;" k="61" />
+<hkern u1="&#xdd;" u2="&#xfb;" k="61" />
+<hkern d1="&#xdd;" u2="&#xfa;" k="61" />
+<hkern u1="&#xdd;" u2="&#xf9;" k="61" />
+<hkern u1="&#xdd;" u2="&#xf8;" k="102" />
+<"&#xe6;" k="10/" />
+<hkern u1="&#xdd;" u2="&#xe5;" k="102" />
+<hkern u1="&#xdd;" u2="&#xe4;" k="102" />
+<hkern u1="&#xdd;" u2="&#xe3;" k="102" />
+<hkern u1="&#xdd;" u2="&#xe2;" k="102" />
+<hkern u1="&#xdd;" u2="&#xe1;" k="102" />
+<hkern u1="&#xdd;" u2="&#xe0;" k="102" />
+<hkern u1="&#xdd;" u2="&#xd8;" k="41" />
+<hkern u1="&#xdd;" u2="&#xd6;" k="41" />
+<hkern u1="&#xdd;" u2="&#xd5;" k="41" />
+<hkern u1="&#xdd;" u2="&#xd4;" k="41" />
+<hkern u1="&#xdd;" u2="&#xd3;" k="41" />
+<hkern u1="&#xdd;" u2="&#xd2;" k="41" />
+<hkern u1="&#xdd;" u2="&#xc7;" k="41" />
+<hkern u1="&#xdd;" u2="&#xc5;" k="123" />
+<hkern u1="&#xdd;" u2="&#xc4;" k="123" />
+<hkern u1="&#xdd;" u2="&#xc3;" k="123" />
+<hkern u1="&#xdd;" u2="&#xc2;" k="123" />
+<hkern u1="&#xdd;" u2="&#xc1;" k="123" />
+<hkern u1="&#xdd;" u2="&#xc0;" k="123" />
+<hkern u1="&#xdd;" u2="z" k="41" />
+<hkern u1="&#xdd;" u2="u" k="61" />
+<hkern u&="&#xdd;" u2="s" k="82" />
+<hkern u1="&#xdd;" u2="r" k="61" />
+<hkern u1="&#xdd;" u2="q" k="102" />
+<hkern u1="&#xdd;" u2="p" k="61" />
+<hkern u1="&#xdd;" u2="o" k="102" />
+<hke‚n u1="&#xdd;" u2="n" k="61" />
+<hkern u1="&#xdd;" u2="m" k="61" />
+<hkern u1="&#xdd;" u2="g" k="41" />
+<hkern u1="&#xdd;" u2="e" k="102" />
+<hkern u1="&#xdd;" u2="d" k="102" />
+<hkern u1="&#xdd;" u2="c" k="102" />
+<hkern u1="&#xdd;" u2="a" k="102" />
+<hkern u1="&#xdd;" u2="Q" k="41" />
+<hkern u1="&#xdd;" u2="O" k="41" />
+<hkern u1="&#xdd;" u2="G" k="41" />
+<hkern u1="&#xdd;" u2="C" k="41" />
+<hkern u1="&#xdd;" u2="A" k="123" />
+<hkern u1="&#xdd;" u2="&#x3f;" k=CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http<hkern u1="&#xe2;" u2="&#x27;" k="20" />
+<hkern u1="&#xe2;" u2="&#x22;" k="20" />
+<hkern u1="&#xe3;" u2="&#x201d;" k="20" />
+<hkern u1="&#xe3;" u2="&#x2019;" k="20" />
+<hkern u1="&#xe3;" u2="&#x27;" k="20" />
+<hkern u1="&#xe3;" u2="&#x22;" k="20" />
+<hkern u1="&#xe4;" u2="&#x201d;" k="20" />
+<hkern u1="&#xe4;" u2="&#x2019;" k="20" />
+<hkern u1="&#xe4;" u2="&#x27;" k="20" />
+<hkern u1="&#xe4;" u2="&#x22;" k="20" />
+<hkern u1="&#xe5;" u2="&#x201d;" k="20" />
+<hkern u1="&#xe5;" u2="&#x2019;" k="20" />
+<hkern u1="&#xe5;" u2="&#x27;" k="20" />
+<hkern u1="&#xe5;" u2="&#x22;" k="20" />
+<hkern u1="&#xe8;" u2="&#x201d;" k="20" />
+<hkern u1="&#xe8;" u2="&#x2019;" k="20" />
+<hkern u1="&#xe8;" u2="&#xfd;" k="41" />
+<hkern u1="&#xe8;" u2="z" k="20" />
+<hkern u1="&#xe8;" u2="y" k="41" />
+<hkern u1="&#xe8;" }2="x" k="41" />
+<hkern u1="&#xe8;" u2="w"" />
+<hkern u1="&#xe8;" u2="v" k="41" />
+<hkern u1="&#xe8;" u2="&#x27;" k="20" />
+<hkern u1="&#xe8;" u2="&#x22;" k="20" />
+<hkern u1="&#xe9;" u2="&#x201d;" k="20" />
+<hkern u1="&#xe9;" u2="&#x2019;" k="20" />
+hkern u1="&#xe9;" u2="&#xfd;" k="41" />
+<hkern u1="&#xe9;" u2="z" k="20" />
+<hkern u1="&#xe9;" u2="y" k="41" />
+<hkern u1="&#xe9;" u2="x" k="41" />
+<hkern u1="&#xe9;" u2="w" k="41" />
+<hkern u1="&#xe9;" u2="v" k="41" />
+<hkern u1="&#xe9;" u2="&#x27;" k="20" />
+<hkern u1="&#xe9;" u2="&#x22;" k="20" />
+<hkern u1="&#xea;" u2="&#x201d;" k="20" />
+<hkern u1="&#xea;" u2="&#x2019;" k="20" />
+<hkern u1="&#xea;" u2="&#xfd;" k="41" />
+<hkern u1="&#xea;" u2="z" k="20" />
+<hkern u1="&#xea§" u2="y" k="41" />
+<hkern u1="&#xea;" u2="x" k="41" />
+<hkern u1="&#xea;" u2="w" k="41" />
+<hkern u1="&#xea;" u2="v" k="41" />
+<hkern u1="&#xea;" u2="&#x27;" k="20" />
+<hkern u1="&#xea;" u2="&#x22;" k="20" />
+<hkern u1="&#xeb;" u2="&#x201d;" k="20" />
+<hkern u1="&#xeb;" u2="&#x2019;" k="20" />
+<hkern u1="&#xeb;" u2="&#xfd;" k="41" />
+<hkern u1="&#xeb;" u2="z" k="20" />
+<hkern u1="&#xeb;" u2="y" k="41" />
+<hkern u1="&#xeb;" u2=ÿ " k="41" />
+<hkern u1="&#xeb;" u2="w" k="41" />
+<hkern u1="&#xeb;" u2="v" k="41" />
+<hkern u1="&#xeb;" u2="&#x27;" k="20" />
+<hkern u1="&#xeb;" u2="&#x22;" k="20" />
+<hkern u1="&#xf0;" u2="&#x201d;" k="20" />
+<hkern u1="&#xf0;" u2="&#x2019;" k="20" />
+<hkern u1="&#xf0;" u2="&#xfd;" k="41" />
+<hkern u1="&#xf0;" u2="z" k="20" />
+<hkern u1="&#xf0;" u2="y" k="41" />
+<hkern u1="&#xf0;" u2="x" k="41" />
+<hkern u1="&#xf0;" u2="w" k="41" />
+<hkern u1="&#xf0;" u2="v" k="41" />
+<hkern u1="&#xf0;" u2="&#x27;" k="20" />
+<hkern u1="&#xf0;" u2="&#x22;" k="20" />
+<hkern u1="&#xf2;

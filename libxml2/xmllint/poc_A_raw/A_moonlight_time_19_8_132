@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html 
+    "-//W3C/lesheet type="text/css" href="css/ksiazka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  "doktor">
+<!ELEMENT kontaktead>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Faktura VAT numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="fakturawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:apply-templatos select="fakturca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" border="" > 
+		<tr> 
+			<td>  Data wystawienia9ý</td> <td> <xsl:value-of select="faktura/data_wyst"/> </td>
+			<td> Data y: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>
+	ç</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>	<td> Sp: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /osc </th> <th> Cena netto </th> <th>Wartosc net|o </th> <th> Stawka VAT </th>
+<th>Wartosc z VAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of select="nazwa_towaru"/></td>
+		<td><xsl:value-of select="jm"/></td>
+		<td><xsl:value-of select="ilosc"/></td>
+		<t

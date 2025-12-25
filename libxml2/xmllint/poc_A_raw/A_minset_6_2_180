@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html 
+ PUªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªto test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD+[
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.or">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tadaptations Annex to ISO 8879'>
+
+<!ENTITY lt     "<"> 
+<!ENTITY gt     ">"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTITY br     "\n">
+<!ENTITY cellback '#c0d9c0'>
+<!ENTITY mdash  "--"> <!-- &#x2014, but               d                                                              1                                                                                                                                                                                                                                                              ist">
+]>
+<roo>PO Box 27 Irving, texas 98553</acronym>
+ </p>
+ <p>
+  <em>EMP0004</em>
+  <strong>Jeny Oconnor/strong>
+  <code>Personnel Director</code>
+  <sup>95,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Y&alpha;">27 South Road. Dallas, T„xas 98556</acronym>
+xas 9 Irving Texas 985C8</acronyj>
+ </p>
+</body></html>

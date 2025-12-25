@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="html 
+    PUBLIC "-//W3C//ww.w3.org/Trg/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head										<dlate match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:TaWoma">
+	<tabl‡ width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Faktura VAT numer <xsl:valud-of select=#faktuga/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/odbiorxa_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" border="1" > 
+		<tr> 
+			<fd>  Data wystawienia: </td> <td> <xsl:value-of select="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value€of 

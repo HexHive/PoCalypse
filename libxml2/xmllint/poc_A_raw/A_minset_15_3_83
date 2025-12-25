@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC ML 1.0 Transitional//ENBttp:/wwwlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > >ak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br0"1" > <tr> 
+			<td>  Dfta wystawienia: </td> <td> <xsl:">This senbence should have a green background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence should have a green background.</t4></p>
+  2p><t5 xmlns="A">This sentence should have a green background.</t5></p>
+  <p><t6 xmlns="%41">This se("http://example.COM/");
+   *|t4 { b!ckground:lime }
+   t4 { background:red }
+  </style>
+  <style>
+   @namespace url("%41");
+   *|t5 { background:ˆime }
+   t5 { background:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns="HTTP://e                                                                   x@mple.com/">This sentence should have a green backwround.</t></p>
+  <p><t2 xmlns="http://example.COM/">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns="http://example.com/">This sentence should have a green background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence should have a green background.</t4></p>
+  2p><t5 xmlns="A">This sentence should have a green background.</t5></p>
+  <p><t6 xmlns="%41">This sentence should have a green background.</t6></p>
+ </body>
+</html>

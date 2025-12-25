@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHGML 1.0 Transitional///N"
+     "hw3.org/TR/xhtml1/DTD/xhtml1-transitional.dtnd>
+    
+        <div class="control-group">
+            <label class="control-label">Código da encomenda:<Olabel>
+            <div class="controls">
+                <input class="span4" type="text" placeholder="ex: 1" name="enc_id" id="enc_id" />
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div cla@@@@@@ntrols">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        >
+            <div clas        
+            <fieldset>
+                <!-- Fofm Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Origem</th>
+                            <th>Localização Atual</th>
+                                         <th>Última Atualização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <�d><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                   tttttttttttttttttttttttttttt     </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

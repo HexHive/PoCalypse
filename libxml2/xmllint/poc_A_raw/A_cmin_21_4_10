@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html"><div class="pod">
+<p>I recule for the lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll>
+<html>
+<table>
+  <ttttttttttttttttr>
+    <th>Title</th>
+ ÿÿÿÿth>Price</th>
+    <th>Category</th>
+    <th>Creation Date</th>
+    <th>Weight</th>
+    <th>Color</th>
+    <th>Description</th>
+  </tr>
+	<xsl:for-eaÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂch select="catalog/product">
+	<tr>
+    <td><xsl:value-of select="title"/><Btd>
+ 	<td><xsl:value-of select="price"/></td>
+    <td><xsl:value-of select="category"/></td>
+    <td><xsl:value-of –elect="creation_date"/></tE>
+    <td><xsl:value-of select="weight"/></td>
+    <td><xsl:value-of select="color"/></td>
+    <td><xsl:value-of select="description"/></td>
+	</tr>
+    </xsl:for-each>
+</tablettttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttvttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt>
+</html>
+</xsl:template>
+
+
+
+</xsl:stylesheet>

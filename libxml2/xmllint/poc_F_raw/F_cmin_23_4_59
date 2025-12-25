@@ -1,0 +1,3416 @@
+<?xml version="1.0"?>
+
+<!-- s not did wiis
+   - , You can obtain one at http://m.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "">
+  <!ENTITY % apns.dtd">
+  %brandDTD;
+  %a€plicatlicÿoVstructor>ding/locale/brand.dtd">
+  <!ENTITY % apns.dtd">
+  %brand:TD;
+  %a€plicationsDTD;
+        MApplicÿoVstructor>ding/locale/brand.dt/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../.ntInternet Explorer 11 (Windows V)" useragent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; 2.0" platform="Windows Phone 10" vendor="Microsoft" vendorsub=""/>
+
+    <!-- Tablets world -->
+    <folder description="tablets">
+        <useragent description="Firefox OS (T blet 37)" useragent="Mozilla/5.0 (Tablet; rv:37.0) Gecko/37.0 Firefox/37.0" appcodename="Mozilla" app/rdoc-style.css" type="text/css" media="_creen" />
+  <script type="text/javambedded links
+	    	
+		 
+		This should be the first in any chain of processing. It only requires
+		XSLT 1. Each kind of inclusion can be turned off (or on) on the command line.
+		
+		Ids in fragment identifiers or xpointers will be sought in the following
+		order:
+		    * @xml:id
+		    * id() for typed schemas (e.g. from DTD) [NOTE: XIncluwe does not support this]
+		    * untyped @id 
+		    
+	The proposed behaviour for the update to ISO Schematron has been implemented. If an
+	include points to an element with the same name as thetttttttttttttttlttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-of select="@href" />
+							</xsl:message>
+						</xsl:if>
+						<!-- use a for-each so that the id() function works correctly on the external document -->
+						<xsl:for-each select="$theDocument_1">
+							<xsl:variable name="theFragment_1"
+								select="$theDocument_1//*[@xml:id= $fragment-id ]        
+                  |  id( $fragment-id)      " />
+						<xsl:variable name="theFragment_2"
+							select="$theDocument_2/*" />
+						<xsl:if test="not($theDocument_2)">
+							<xsl:message terminate="no">
+								<xsl:text>eferenced included file: </xsl:text>
+								<xsl:value-of select="@href" />
+							</xsl:message>
+						</xsl:if>
+
+						<xsl:if test="not($theFragment_2)">
+							<xsl:message terminate="no">
+								<xsl:text>Unable to locate id attribute: </xsl:text>
+								<xsl:value-of select="@href" />
+							</xsl:message>
+						</xsl:if>
+						<xsl:apply-templates select="$theFragment_2 "
+							mode="dsdl:go" />
+					</xsl:otherwise>
+				</xsl:choose>
+
+			</xsl:otherwise>
+		</xsl:choose>
+
+		<xsl:processing-instruction name="DSDL_INCLUDE_END">
+			<xsl:value-of select="@href" />
+		</xsl:processing-instruction>
+	</xslt:template>
+
+
+
+	<!-- ============================= ISO/IEC 19757 - DSDL Document Schema Definition Languages   -->
+	<!-- Part 3 - Rule-based validation - Schematron                 -->	<!-- =========================================================== -->
+
+
+	<!-- Extend the URI syntax So allow # references -->
+	<!-- Add experimental support for simple containers like  /xxx:xxx/iso:pattern to allow better includes -->
+	<xsl:template match="iso:include" mode="dsdl:go">
+
+		<xsl:variable name="document-uri"
+			select="substring-before(concat(@href,'#'), '#')" />
+		<xsl:variable name="fragment-id"
+			select="substring-after(@href, '#')" />
+
+
+		<xsl:pome/18.0.1025.133 Safari/535.19" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+        <useragent description="opera11-android-presto-tablet" useragent="Opera/9.80 (Andenid 3.2.1; Linux; Opera Tablet/ADR-1109081720; U; ja) P10" appcodename=        <user Gec|o) Chrome/35.0.1916.141 Safari/57.36" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+        <useragent description="chrome-galaxyta="" vendorsub=""/>
+
+    <!-- Internet explorer -->
+    <separator/>
+    <useragent description="Internet Explorer 11 (Windows 7)" useragent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" appcodename="Mozieeeeeeee appcodename="Mozilllla" appname="Netscape" appversion="5.0 (Windows NT 6.1; Trident/7.0; rv:11.0)" platform="Windows 7er, Inc." vendorsub=""/>
+    <useragent description="Safari (iOS7)" useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/546.10 (KHTML, like Gecko) Version/6.0 Mobile/7E18WD Safari/8536.25" appcodename="Mozilla" appname="Netscape" appversion="5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/546.10 (KHTML, like Gecko) Version/6.0 Mobile/7E18WD Safari/8536.25" platform="iPhone" vendor="Apple Computer, Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platform="&#x1F354;" vendor="" vendororer -->
+    <separator/>
+   <useragent description="Internet Explorer 11 (Windows 7)" useragent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee appcodename="Mozilla" appname="Netscape" appversion="5.0 (Windows NT 6.1; Trident/7.0; rv:11.0)" platform="Windows 7" vendor="Microsoft" vendorsub=""/>
+    <useragent description="Internet Explorer 11 (Windows 8.1 64 bit)" useragent="Mozilla/5.0 (Windows NT 6.3; WiG64, x64; Trident/7.0; Toucor="Apple Computer, Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platform="&#x1F354;" vendor="" vendorsub=""/>
+
+    <!-- Internet explorer -->
+    <separato="" vendorsub=""/>
+
+    <!-- IntInternet Explorer 11 (Windows V)" useragent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; 2.0" platform="Windows Phone 10" vendor="Microsoft" vendorsub=""/>
+
+    <!-- Tablets world -->
+    <folder description="tablets">
+        <useragent description="Firefox OS (T blet 37)" useragent="Mozilla/5.0 (Tablet; rv:37.0) Gecko/37.0 Firefox/37.0" appcodename="Mozilla" appname="Netscape" appversion="5.0 ()" platform="" vendor="" vendorsub="ndroid; Tablet; rv:37.0) Gycko/37.0 Firefox/37.0" appcodename="Mozilla" appname="Ne–scape" appversion="5.0 ()18-android-tablelike Gecko) Chrome/31.0.1650.57 OPR/18.0.1290.67495" appcodename="Mozilla" appname="Netscape" appversion="5.0 (Linux; Android 4.3; HTCONE Build/JSS15J) AppeWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.166 OPR/20.0.1396.73172" platform="Linux arTv7l" vendor="Opera Software ASA"/>
+    <useragent description="Opera Mini" useragent="Opeka/9.80 (Android; Opera Mini/7.5.33361/34.818; U; en) Presto/2.8.119 Version/11.1010" appco Build/JSS15J) AppleWebKit/537.36 (EHTML, like Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36" platform="Linux armv7l" vendor="ozilla/5.0 (Linux; Android 4.3; HTCONE Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30" appcodename="Mozilla" app||||||||||||||||||||||name="Netscape" appversion="5.0 (Linux; Android 4.3; HTCONE Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30" platform="Linux armv7l" veòdor="Google Inc."/>
+
+    <!-- iPhone and Cheeseburger -->
+7   <separator/>
+    <useragent description="Safari (iOS6)" useragent="Mozilla/5iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, likescription="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname=pname="Netscape" appversion="5.1 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWersion="" platform="" vendÿ="" vendorsub=""/>
+        <useragent description="chrome-galaxytab-android" useragent="Mozilla/5.0 (Linux; Android 4.0.4; GT-P7510 Build/IMM76D) AppleWebKit/5bKit/d36.26 (KHIML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25" platform="iPhone" vendor="Apple Computer, Inc." vendorsub=""/>
+    <useragent description="Safari (iOS7)" useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/546.10 (KHTML, like Gecko) Version/6...........0 Mobile/7E18WD Safari/8536.25" appcodename="Mozilla" appname="Netscape" appversion="5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/546.10 (KHTML, like Gecko) Version/6.0 Mobile/7E18WD Safabir="Apple Computer, Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platform="&#x1F354;" vendor="" vendorsub=""/>
+
+    <!-- Internet explorer -->
+    <separator/>
+    <useragent description="Internet Explorer 11 (Windows 7)" useragent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" appcodename="Mozieeeeeeee appcodename="Mozilllla" appname="Netscape" appversion="5.0 (Windows NT 6.1; Trident/7.0; rv:11.0)" platform="Windows 7er, Inc." vendorsub=""/>
+    <useragent description="Safari (iOS7)" useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/546.10 (KHTML, like Gecko) Version/6.0 Mobile/7E18WD Safari/8536.25" appcodename="Mozilla" appname="Netscape" appversion="5.0 (iPhone; CPU iPhone OS 7_0 like Mac t" vendorsub=""/>
+    <useragent description="Internet Explorer 11 (Windows 8.1 64 bit)" useragent="Mozilla/5.0 (Windows NT 6.3; WiG64, x64; Trident/7.0; Toucor="Apple Computer, Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platform="&#x1F354;" vendor="" vendorsub=""/>
+
+    <!-- Internet explorer -->
+    <separato="" vendorsub=""/>
+
+    <!-- IntInternet ExplbKit/534.30 (KHTML, like Gecko) Version/4.0 MWindows NT 6.1; Trident/7.0; 2.0" platform="Windows Phone 10" vendor="Microsoft" vendorsub=""/>
+
+    <!-- Tablets world -->
+    <folder description="tablets">
+        <useragent description="Firefox OS (T blet 37)" useragent="Mozilla/5.0 (Tablet; rv:37.0) Gecko/37.0 Firefox/37.0" appcodename="Mozilla" appname="Netscape" appversion="5.0 ()" platform="" vendor="" venda/5.0 (Windows NT 6.3; WiG64, x64; Trident/7.0; Toucor="Apple Computer, Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platform="&#x1F354;" vendor="" vendorsub=""/>
+
+    <!-- Internet explorer -->
+    <separato="" vendorsub=""/>
+
+    <!-- IntInternet Explorer 11 (Windows V)" useragent="Mozilla/5.0 (Windows NT 6.1;0Trident/7.0; 2.0" platform="Windows Phone 10" vendor="Microsoft" vendorsub=""/>
+
+    <!-- Tablets world -->
+    <folder description="tablets">
+        <useragent description="Firefox OS (T blet 37)" useragent="Mozilla/5.0 (Tablet; rv:37.0) Gecko/37.0 Firefox/37.0" appcodename="Mozilla" appname="Netscape" appversion="5.0 ()" platform="" vendor="" vendorsub="ndroid; Tablet; rv:37.0) Gycko/37.0 Firefox/37.0" appcodename="Mozilla" appname="Ne–scape" appversion="5.0 ()" platform="Linux armv7l" vendUr="" vendorsub=""/>
+        <useragent description="chrome18-android-tablet" useragent="Mozilla/5.0 (Li9 (KHTML, like Gecko) Chrome/18.0.1025.133 Safari/535.19" appcodename="" appname="" appversion="" platform="" venpor="" vendorsub=""/>
+        <useragent description="opera11-android-presto-tablet" useragent="Opera/9.80 (Android 3.2.1; Linux; Opera Tablet/ADR-1109081720; U; ja) P10" a (KHTML, like Gecko) Version/6.0 Mobile/7E18WD Safari/8536.25" platform="iPhone" vendor="Apple Computer, Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platform="&#x1F354;" vendor="" vendororer -->
+    <separator/>
+   <useragent description="Internet Explorer 11 (Windo_s 7)" useragent="Meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee appcodename="Mozilla" appname="Netscape" appversion="5.0 (Windows NT 6.1; Trident/7.0; rv:11.0)" platform="Windows 7" vendor="Microsoft" vendorsub=""/>
+    <useragent description="Internet Explorer 11 (Windows 8.1 64 bit)" useragent="Mozilla/5.0 (Windows NT 6.3; WiG64, x64; Trident/7.0; Toucor="Apple Computer2 Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platform="&#x1F354;" vendor="" vendorsub=""/>
+
+    <!-- Internet explorer -->
+    <separato="" vendorsub=""/>
+
+    <!-- IntInternet Explorer 11 (Windows V)" useragent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; 2.0" platform="Windows Phone 10" vendor="Microsoft" vendorsub=             <Game name="Daily 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 01:59:00 GMT</NextDraw>
+                    <NumberString>1, 8, 3, 1</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>8</Number>
+                        <Number>3</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 01:59:00 GMT</NextDraw>
+                    <NumberString>5, 5, 4</NumberString>
+                    <NumberList>
+                        <Number>5</Number>
+                        <Number>5</Number>
+                        <Number>4</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Colorado">
+                <Game name="Cash 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 01:35:00 GMT</NextDraw>
+                    <NumberString>8, 22, 23, 29, 30</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>22</Number>
+                        <Number>23</Number>
+                        <Number>29</Number>
+                        <Number>30</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>125000</CurrentJackpot>
+                        <PreviousJackpot>20000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Connecticut">
+                <Game name="Play 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:29:00 GMT</NextDraw>
+                    <NumberString>4, 9, 8, 7</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>9</Number>
+                        <Number>8</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Play 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:29:00 GMT</NextDraw>
+                    <NumberString>2, 0, 6</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>0</Number>
+                        <Number>6</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:57:00 GMT</NextDraw>
+                    <NumberString>1, 2, 6, 1</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>2</Number>
+                        <Number>6</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:57:00 GMT</NextDraw>
+                    <NumberString>8, 9, 9</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>9</Number>
+                        <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Classic Lotto">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>TUE</Day>
+                        <Day>FRI</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-09-01 02:38:00 GMT</NextDraw>
+                    <NumberString>2, 3, 9, 11, 13, 42</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>3</Number>
+                        <Number>9</NYmber>
+                        <Number>11</Number>
+                        <Number>13</Number>
+                        <Number>42</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>2700000</CurrentJackpot>
+                        <PreviousJackpot>2600000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:29:00 GMT</NextDraw>
+                    <NumberString>3, 5, 6, 14, 30</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>5</Number>
+                        <Number>6</Number>
+                        <Number>14</Number>
+                        <Number>30</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>125000</CurrentJackpot>
+                        <PreviousJackpot>100000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Delaware">
+                <Game name="Play 4 Midday">
+                    <CurrencySymbol>$</CurpencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU<ÐDay>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:58:00 GMT</NextDraw>
+                    <NumberString>0, 7, 0, 8</NumberString>
+                    <NumberList>
+                        <Number>0</Number>
+                        <Number>7</Number>
+                        <Number>0</Number>
+                        <Number>8</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Play 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:57:00 GMT</NextDraw>
+                    <NumberString>8, 5, 5, 7</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>5</Number>
+                        <Number>5</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Play 3 Midday">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:58:00 GMT</NextDraw>
+                    <NumberString>1, 4, 3</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>4</Number>
+                        <Number>3</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Play 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:57:00 GMT</NextDraw>
+                    <NumberString>7, 9, 2</NumberString>
+                    <NumberList>
+                        <Number>7</Number>
+                        <Number>9</Number>
+                        <Number>2</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>TUE</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-09-01 23:57:00 GMT</NextDraw>
+                    <NumberString>2, 5, 11, 20, 22, Doubler: 6</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>5</Number>
+                        <Number>11</Number>
+                        <Number>20</Number>
+                        <Number>22</Number>
+                        <Number>Doubler: 6</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>125000</CurrentJackpot>
+                        <PreviousJackpot>28000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="District of Columbia">
+                <Game name="Midday DC5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 18:14:00 GMT</NextDraw>
+                    <NumberString>0, 0, 0, 6, 0</NumberString>
+                    <Num`erList>
+                        <Number>0</Number>
+                        <Number>0</Number>
+                        <Number>0</Number>
+                        <Number>6</Number>
+                        <Number>0</Number>
+                    </NumberList>
+                </Game>
+                <Game name="DC Lucky Numbers">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 00:15:00 GMT</NextDraw>
+                    <NumberString>9, 0, 9</NumberString>
+                    <NumberList>
+                        <Number>9</Number>
+                        <Number>0</Number>
+                        <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="DC Lucky Midday">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 18:14:00 GMT</NextDraw>
+                    <NumberString>6, 7, 6</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>7</Number>
+                        <Number>6</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="DC 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 00:15:00 GMT</NextDraw>
+                    <NumberString>1, 7, 7, 2, 7</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>7</Number>
+                        <Number>7</Number>
+                        <Number>2</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                </Game>
+                <Game name="DC 4 Midday">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 18:14:00 GMT</NextDraw>
+                    <NumberString>4, 3, 3, 6</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>3</Number>
+                        <Number>3</Number>
+                        <Number>6</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="DC d">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 00:15:00 GMT</NextDraw>
+                    <NumberString>2, 5, 8, 9</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>5</Number>
+                        <Number>8</Number>
+                        <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Florida">
+                <Game name="Play 4 Midday">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:20:00 GMT</NextDraw>
+                    <NumberString>3, 2, 9, 2</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>2</Number>
+                        <Number>9</Number>
+                        <Number>2</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Play 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDrawo2012-08-29 23:57:00 GMT</NextDraw>
+                    <NumberString>8, 5, 8, 0</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>5</Number>
+                        <Number>8</Number>
+                        <Number>0</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Cash 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:20:00 GMT</NextDraw>
+                    <NumberString>4, 1, 5</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>1</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Mega Money">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>TUE</Day>
+                        <Day>FRI</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-09-01 03:00:00 GMT</NextDraw>
+                    <NumberString>17, 28, 33, 41, Bonus 17</NumberString>
+                    <NumberList>
+                        <Number>17</Number>
+                        <Number>28</Number>
+                        <Number>33</Number>
+                        <Number>41</Number>
+                        <Number>Bonus 17</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>700000</CurrentJackpot>
+                        <PreviousJackpot>550000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Fantasy 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:15:00 GMT</NextDraw>
+                    <NumberString>1, 3, 5, 7, 9</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>3</Number>
+                        <Number>5</Number>
+                        <Number>7</Number>
+                        <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>59000</CurrentJackpot>
+                        <PreviousJackpot>110000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:57:00 GMT</NextDraw>
+                    <NumberString>7, 5, 2</NumberString>
+                    <NumberList>
+                        <Number>7</Number>
+                        <Number>5</Number>
+                        <Number>2</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Georgia">
+                <Game name="Midday Georgia FIVE">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:29:00 GMT</NextDraw>
+                    <NumberString>5, 1, 1, 1, 0</NumberString>
+                    <NumberList>
+                        <Number>5</Number>
+                        <Number>1</Number>
+                        <Number>1</Number>
+                        <Number>1</Number>
+                        <Number>0</Number>
+                    </NumberList>
+                </Game>
+                <Game name="Midday 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:29:00 GMT</NextDraw>
+                    <NumberString>2, 0, 6, 7</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>0</Number>
+                        <Number>6</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:29:00 GMT</NextDraw>
+                    <NumberString>9, 9, 1</NumberString>
+                    <NumberList>
+                        <Number>9</Number>
+                        <Number>9</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Georgia FIVE">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 22:59:00 GMT</NextDraw>
+                    <NumberString>8, 7, 0, 8, 5</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>7</Number>
+                        <Number>0</Number>
+                        <Number>8</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                </Game>
+                <Game name="Fantasy 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:34:00 GMT</NextDraw>
+                    <NumberString>1, 7, 11, 15, 35</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>7</Number>
+                        <Number>11</Number>
+                        <Number>15</Number>
+                        <Number>35</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>59000</CurrentJackpot>
+                        <PreviousJackpot>174000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:34:00 GMT</NextDraw>
+                    <NumberString>4, 2, 2, 5</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>2</Number>
+                        <Number>2</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 22:59:00 GMT</NextDraw>
+                    <NumberString>5, 4, 8</NumberString>
+                    <NumberList>
+                        <Number>5</Number>
+                        <Number>4</Number>
+                        <Number>8</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Idaho">
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 01:59:00 GMT</NextDraw>
+                    <NumberString>4, 6, 7</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>6</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 19:59:00 GMT</NextDraw>
+                    <NumberString>1, 4, 1</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>4</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</-ackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Illinois">
+                <Game name="Midday 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:40:00 GMT</NextDraw>
+                    <NumberString>3, 2, 8, 2</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>2</Number>
+                        <Number>8</Number>
+                        <Number>2</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:40:00 GMT</NextDraw>
+                    <NumberString>9, 5, 6</NumberString>
+                    <NumberList>
+                        <Number>9</Number>
+                        <Number>5</Number>
+                        <Number>6</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Little Lotto">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:22:00 GMT</NextDraw>
+                    <NumberString>4, 26, 29, 30, 37</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>26</Number>
+                        <Number>29</Number>
+                        <Number>30</Number>
+                        <Number>37</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>250000</CurrentJackpot>
+                        <PreviousJackpot>175000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily 4">
+                    <CncySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:22:00 GMT</NextDraw>
+                    <NumberString>3, 7, 0, 3</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>7</Number>
+                        <Number>0</Number>
+                        <Number>3</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:22:00 GMT</NextDraw>
+                    <NumberString>1, 5, 4</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>5</Number>
+                        <Number>4</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Indiana">
+                <Game name="Quick Draw">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:00:00 GMT</NextDraw>
+                    <NumberString>4, 6, 10, 17, 18, 20, 21, 22, 30, 34, 38, 39, 43, 47, 49, 50, 54, 65, 78, 80</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>6</Number>
+                        <Number>10</Number>
+                        <Number>17</Number>
+                        <Number>18</Number>
+                        <Number>20</Number>
+                        <Number>21</Number>
+                        <Number>22</Number>
+                        <Number>30</Number>
+                        <Number>34</Number>
+                        <Number>38</Number>
+                        <Number>39</Number>
+                        <Number>43</Number>
+                        <Number>47</Number>
+                        <Number>49</Number>
+                        <Number>50</Number>
+                        <Number>54</Number>
+                        <Number>65</Number>
+                        <Number>78</Number>
+                        <Number>80</Number>
+                    </NumberList>
+                </Game>
+                <Game name="Mix and Match">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>TUE</Day>
+                        <Day>FRI</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-09-01 02:50:00 GMT</NextDraw>
+                    <NumberString>4, 5, 14, 19, 23</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>5</Number>
+                        <Number>14</Number>
+                        <Number>19</Number>
+                        <Number>23</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>200000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                       </DaysPlayed>
+                    <NextDraw>2012-08-29 17:20:00 GMT</NextDraw>
+                    <NumberString>2, 0, 1</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>0</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Lucky 5  Midday">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:20:00 GMT</NextDraw>
+                    <NumberString>6, 7, 11, 21, 28</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>7</Number>
+                        <Number>11</Number>
+                        <Number>21</Number>
+                        <Number>28</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>50000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Lucky 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:50:00 GMT</NextDraw>
+                    <NumberString>12, 15, 17, 31, 33</NumberString>
+                    <NumberList>
+                        <Number>12</Number>
+                        <Number>15</Number>
+                        <Number>17</Number>
+                        <Number>31</Number>
+                        <Number>33</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>50000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:50:00 GMT</NextDraw>
+                    <NumberString>3, 8, 1, 4</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>8</Number>
+                        <Number>1</Number>
+                        <Number>4</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:50:00 GMT</NextDraw>
+                    <NumberString>1, 1, 8</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>1</Number>
+                        <Number>8</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Iowa">
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:22:00 GMT</NextDraw>
+                    <NumberString>3, 7, 0, 3</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>7</Number>
+                        <Number>0</Number>
+                        <Number>3</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>6000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:22:00 GMT</NextDraw>
+                    <NumberString>1, 5, 4</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>5</Number>
+                        <Number>4</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>600</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:40:00 GMT</NextDraw>
+       (            <NumberString>3, 2, 8, 2</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>2</Number>
+                        <Number>8</Number>
+                        <Number>2</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>6000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:40:00 GMT</NextDraw>
+                    <NumberString>9, 5, 6</NumberString>
+                    <NumberList>
+                        <Number>9</Number>
+                        <Number>5</Number>
+                        <Number>6</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>600</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash Game">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</D­­­­­­­­­­­­­­­­­­­­­­­­­­  <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:28:00 GMT</NextDraw>
+                    <NumberString>2, 5, 21, 30, 33</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>5</Number>
+                        <Number>21</Number>
+                        <Number>30</Number>
+                        <Number>33</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>100000</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Kansas">
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:10:00 GMT</NextDraw>
+                    <NumberString>5, 6, 8</NumberString>
+                    <NumberList>
+                        <Number>5</Number>
+                        <Number>6</Number>
+                        <Number>8</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Kentucky">
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:00:00 GMT</NextDraw>
+     è             <NumberString>7, 8, 4, 0</NumberString>
+                    <NumberList>
+                        <Number>7</Number>
+                        <Number>8</Number>
+                        <Number>4</Number>
+                        <Number>0</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:00:00 GMT</NextDraw>
+                    <NumberString>8, 5, 2</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>5</Number>
+                        <Number>2</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>600</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <Day   @yed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:25:00 GMT</NextDraw>
+                    <NumberString>8, 5, 9, 9</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>5</Number>
+                        <Number>9</Number>
+                        <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:25:00 GMT</NextDraw>
+                    <NumberString>6, 9, 6</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>9</Number>
+                        <Number>6</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>600</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cashball">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+              <NumberList>
+                       <NextDraw>2012-08-30 03:00:00 GMT</NextDraw>                    <NumberString>11, 13, 29, 33, Cashball: 17, K: 40604</NumberString>
+                    <NumberList>
+                        <Number>11</Number>
+                        <Number>13</Number>
+                        <Number>29</Number>
+                        <Number>33</Number>
+                        <Number>Cashball: 17</Number>
+                        <Number>K: 40604</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>200000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="5 Card Cash">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:00:00 GMT</NextDraw>
+                    <NumberString>6c, 6s, Ad, 3s, 7s</NumberString>
+                    <NumberList>
+                        <Number>6c</Number>
+                        <Number>6s</Number>
+                        <Number>Ad</Number>
+                        <Number>3s</Number>
+                        <Number>7s</Number>
+                    </NumberList>
+                </Game>
+            </State>
+            <State name="Louisiana">
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:30:00 GMT</NextDraw>
+                    <NumberString>2, 1, 0, 8</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>1</Number>
+                        <Number>0</Number>
+                        <Number>8</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:30:00 GMT</NextDraw>
+                    <NumberString>6, 2, 8</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>2</Number>
+                        <Number>8</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Maine">
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 22:50:00 GMT</NextDraw>
+                    <NumberString>0, 3, 8, 3</NumberString>
+                    <NumberList>
+                        <Number>0</Number>
+                        <Number>3</Number>
+                        <Number>8</Number>
+                        <Number>3</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 22:50:00 GMT</NextDraw>
+                    <NumberString>6, 7, 0</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>7</Number>
+                        <Number>0</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:00:00 GMT</NextDraw>
+                    <NumberString>5, 7, 0, 9</NumberString>
+                    <NumberList>
+                        <Number>5</Number>
+                        <Number>7</Number>
+                        <Number>0</Number>
+                        <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Gamè>
+                <Game name="Midday 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:00:00 GMT</NextDraw>
+                    <NumberString>0, 8, 1</NumberString>
+                    <NumberList>
+                        <Number>0</Number>
+                        <Number>8</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Maryland">
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:56:00 GMT</NextDraw>
+                    <NumberString>1, 9, 4, 9</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>9</Number>
+                        <Number>4</Number>
+                        <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:56:00 GMT</NextDraw>
+                    <NumberString>3, 0, 8</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>0</Number>
+                        <Number>8</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:27:00 GMT</NextDraw>
+                    <NumberString>9, 9, 5, 8</NumberString>
+                    <NumberList>
+                        <Number>9</Number>
+                        <Number>9</Number>
+                        <Number>5</Number>
+                        <Number>8</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:27:00 GMT</NextDraw>
+                    <NumberString>4, 5, 4</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>5</Number>
+                        <Number>4</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Bonus Match 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:56:00 GMT</NextDraw>
+                    <NumberString>1, 10, 14, 25, 29, Bonus 11</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>10</Number>
+                        <Number>14</Number>
+                        <Number>25</Number>
+                        <Number>29</Number>
+                        <Number>Bonus 11</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>50000</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Massachusetts">
+                <Game name="Numbers">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:57:00 GMT</NextDraw>
+                    <NumberString>1, 8, 2, 5</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>8</Number>
+                        <Number>2</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Numbers">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:00:00 GMT</NextDraw>
+                    <NumberString>5, 9, 0, 7</NumberString>
+                    <NumberList>
+                        <Number>5</Number>
+                        <Number>9</Number>
+                        <Number>0</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Mass Cash">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:20:00 GMT</NextDra €
+                    <NumberString>8, 19, 24, 26, 27</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>19</Number>
+                        <Number>24</Number>
+                        <Number>26</Number>
+                        <Number>27</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>100000</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Mega Millions">
+                <Game name="Mega Millions">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>TUE</Day>
+                        <Day>FRI</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-09-01 03:00:00 GMT</NextDraw>
+                    <NumberString>4, 9, 40, 45, 50, Mega 39, Megaplier 4</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>9</Number>
+                        <Number>40</Number>
+                        <Number>45</Number>
+                        <Number>50</Number>
+                        <Number>Mega 39</Number>
+                        <Number>Megaplier 4</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>83000000</CurrentJackpot>
+                        <PreviousJackpot>73000000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Michigan">
+                <Game name="Midday 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:59:00 GMT</NextDraw>
+                    <NumberString>4, 0, 0, 7</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>0</Number>
+                        <Number>0</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:59:00 GMT</NextDraw>
+                    <NumberString>3, 5, 3</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>5</Number>
+                        <Number>3</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Keno">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:29:00 GMT</NextDraw>
+                    <NumberString>1, 3, 7, 9, 10, 14, 15, 21, 22, 26, 27, 29, 30, 34, 43, 46, 54, 59, 65, 67, 69, 78</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>3</Number>
+                        <Number>7</Number>
+                        <Number>9</Number>
+                        <Number>10</Number>
+                        <Number>14</Number>
+                        <Number>15</Number>
+                        <Number>21</Number>
+                        <Number>22</Number>
+                        <Number>26</Number>
+                        <Number>27</Number>
+                        <Number>29</Number>
+                        <Number>30</Number>
+                        <Number>34</Number>
+                        <Number>43</Number>
+                        <Number>46</Number>
+                        <Number>54</Number>
+                        <Number>59</Number>
+                        <Number>65</Number>
+                        <Number>67</Number>
+                        <Number>69</Number>
+                        <Number>78</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>250000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Fantasy 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:29:00 GMT</NextDraw>
+                    <NumberString>10, 32, 34, 35, 39</NumberString>
+                    <NumberList>
+                        <Number>10</Number>
+                        <Number>32</Number>
+                        <Number>34</Number>
+                        <Number>35</Number>
+                        <Number>39</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>59000</CurrentJackpot>
+                        <PreviousJackpot>116000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:29:00 GMT</NextDraw>
+                    <NumberString>6, 7, 6, 7</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>7</Number>
+                        <Number>6</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:29:00 GMT</NextDraw>
+                    <NumberString>4, 5, 1</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>5</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Minnesota">
+                <Game name="Northstar Cash">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:25:00 GMT</NextDraw>
+                    <NumberString>3, 4, 15, 16, 25</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>4</Number>
+                        <Number>15</Number>
+                        <Number>16</Number>
+                        <Number>25</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>44000</CurrentJackpot>
+                        <PreviousJackpot>37000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:25:00 GMT</NextDraw>
+                    <NumberString>7, 1, 8</NumberString>
+                    <NumberList>
+                        <Number>7</Number>
+                        <Number>1</Number>
+                        <Number>8</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Missouri">
+                <Game name="Show Me Cash">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:45:00 GMT</NextDraw>
+                    <NumberString>15, 18, 30, 33, 36</NumberString>
+                    <NumberList>
+                        <Number>15</Number>
+                        <Number>18</Number>
+                        <Number>30</Number>
+                        <Number>33</Number>
+                        <Number>36</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>387000</CurrentJackpot>
+                        <PreviousJackpot>350000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:45:00 GMT</NextDraw>
+                    <NumberString>2, 8, 3, 5</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>8</Number>
+                        <Number>3</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>3000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:45:00 GMT</NextDraw>
+                    <NumberString>4, 4, 0</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>4</Number>
+                        <Number>0</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>300</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:45:00 GMT</NextDraw>
+                    <NumberString>5, 9, 8, 5</NumberString>
+                    <Game n   <NumberList>
+                        <Number>5</Number>
+                        <Number>9</Number>
+                        <Number>8</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>3000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:45:00 GMT</NextDraw>
+                    <NumberString>5, 3, 2</NumberString>
+                    <NumberList>
+                        <Number>5</Number>
+                        <Number>3</Number>
+                        <Number>2</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>300</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Montana">
+                <Game name="Midday 10 Spot">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 18:30:00 GMT</NextDraw>
+                    <NumberString>1, 2, 3, 4, 10, 24, 33, 36, 38, 48, 50, 54, 57, 60, 63, 71, 74, 75, 77, 80</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>2</Number>
+                        <Number>3</Number>
+                        <Number>4</Number>
+                        <Number>10</Number>
+                        <Number>24</Number>
+                        <Number>33</Number>
+                        <Number>36</Number>
+                        <Number>38</Number>
+                        <Number>48</Number>
+                        <Number>50</Number>
+                        <Number>54</Number>
+                        <Number>57</Number>
+                        <Number>60</Number>
+                        <Number>63</Number>
+                        <Number>71</Number>
+                        <Number>74</Number>
+                        <Number>75</Number>
+                        <Number>77</Number>
+                        <Number>80</Number>
+                    </NumberList>
+                </Game>
+                <Game name="10 Spot">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 01:30:00 GMT</NextDraw>
+                    <NumberString>1, 4, 5, 11, 12, 18, 19, 45, 46, 48, 51, 54, 58, 61, 62, 65, 73, 75, 78, 80</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>4</Number>
+                        <Number>5</Number>
+                        <Number>11</Number>
+                        <Number>12</Number>
+                        <Number>18</Number>
+                        <Number>19</Number>
+                        <Number>45</Number>
+                        <Number>46</Number>
+                        <Number>48</Number>
+                        <Number>51</Number>
+                        <Number>54</Number>
+                        <Number>58</Number>
+                        <Number>61</Number>
+                        <Number>62</Number>
+                        <Number>65</Number>
+                        <Number>73</Number>
+                        <Number>75</Number>
+     8                  <Number>78</Number>
+                        <Number>80</Number>
+                    </NumberList>
+                </Game>
+            </State>
+            <State name="Nebraska">
+                <Game name="Pick 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:30:00 GMT</NextDraw>
+                    <NumberString>4, 18, 21, 32, 37</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>18</Number>
+                        <Number>21</Number>
+                        <Number>32</Number>
+                        <Number>37</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>78000</CurrentJackpot>
+                        <PreviousJackpot>74000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:30:00 GMT</NextDraw>
+                    <NumberString>8, 1, 7</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>1</Number>
+                       <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>600</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="MyDay">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:00:00 GMT</NextDraw>
+                    <NumberString>02, 23, 93</NumberString>
+                    <NumberList>
+                        <Number>02</Number>
+                        <Number>23</Number>
+                        <Number>93</Number>
+                    </NumberList>
+                </Game>
+            </State>
+            <State name="New Hampshire">
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 22:50:00 GMT</NextDraw>
+                    <NumberString>0, 3, 8, 3</NumberString>
+                    <NumberList>
+                        <Number>0</Number>
+                        <Number>3</Number>
+                        <Number>8</Number>
+                        <Number>3</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                         <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    <DaysPlayed>
+                    <NextDraw>2012-08-29 17:00:00 GMT</NextDraw>
+                    <NumberString>0, 8, 1</NumberString>
+                    <NumberList>
+                        <Number>0</Number>
+                        <Number>8</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="New Jersey">
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:57:00 GMT</NextDraw>
+                    <NumberString>3, 8, 6, 6</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>8</Number>
+                        <Number>6</Number>
+                        <Number>6</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:57:00 GMT</NextDraw>
+                    <NumberString>3, 0, 2</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>0</Number>
+                        <Number>2</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:57:00 GMT</NextDraw>
+                    <NumberString>8, 9, 5, 9</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>9</Number>
+                        <Number>5</Number>
+                        <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:57:00 GMT</NextDraw>
+                    <NumberString>6, 2, 1</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>2</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+          A     <Game name="Cash 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:57:00 GMT</NextDraw>
+                    <NumberString>9, 12, 21, 24, 35</NumberString>
+                    <NumberList>
+                        <Number>9</Number>
+                        <Number>12</Number>
+                        <Number>21</Number>
+                        <Number>24</Number>
+                        <Number>35</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>125000</CurrentJackpot>
+                        <PreviousJackpot>50000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="New Mexico">
+                <Game name="Road Runner Cash">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 04:20:00 GMT</NextDraw>
+                    <NumberString>10, 21, 23, 26, 34</NumberString>
+                    <NumberList>
+                        <Number>10</Number>
+                        <Number>21</Number>
+                        <Number>23</Number>
+                        <Number>26</Number>
+                        <Number>34</Number>
+                    </NumberList>
+                    <JaãkpotList rollover="yes">
+                        <CurrentJackpot>90000</CurrentJackpot>
+                        <PreviousJackpot>80000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 04:20:00 GMT</NextDraw>
+                    <NumberString>9, 5, 1</NumberString>
+                    <NumberList>
+                        <Number>9</Number>
+                        <Number>5</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="New York">
+                <Game name="Win 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:45:00 GMT</NextDraw>
+                    <NumberString>6, 5, 7, 4</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>5</Number>
+                        <Number>7</Number>
+                        <Number>4</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Take 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:21:00 GMT</NextDraw>
+                    <NumberString>1, 4, 6, 19, 34</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>4</Number>
+                        <Number>6</Number>
+                        <Number>19</Number>
+                        <Number>34</Number>
+                    </NumberList>
+                </Game>
+                <Game name="Pick 10">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 01:00:00 GMT</NextDraw>
+                    <NumberString>5, 12, 14, 15, 16, 23, 30, 32, 39, 41, 43, 45, 53, 55, 56, 63, 65, 69, 75, 77</NumberString>
+                    <NumberList>
+                        <Number>5</Number>
+                        <Number>12</Number>
+                        <Number>14</Number>
+                        <Number>15</Number>
+                        <Number>16</Number>
+                        <Number>23</Number>
+                        <Number>30</Number>
+                        <Number>32</Number>
+                        <Number>39</Number>
+                        <Number>41</Number>
+                        <Number>43</Number>
+                        <Number>45</Number>
+                        <Number>53</Number>
+                        <Number>55</Number>
+                        <Number>56</Number>
+                        <Number>63</Number>
+                        <Number>65</Number>
+                        <Number>69</Number>
+                        <Number>75</Number>
+                        <Number>77</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Numbers">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:45:00 GMT</NextDraw>
+                    <NumberString>4, 3, 7</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>3</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Win 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:30:00 GMT</NextDraw>
+                    <NumberString>1, 7, 5, 7</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>7</Number>
+                        <Number>5</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Numbers">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:30:00 GMT</NextDraw>
+                    <NumberString>2, 9, 3</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>9</Number>
+                        <Number>3</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="North Carolina">
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:22:00 GMT</NextDraw>
+                    <NumberString>2, 5, 8, 5</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>5</Number>
+                        <Number>8</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:22:00 GMT</NextDraw>
+                    <NumberString>7, 2, 6</NumberString>
+                    <NumberList>
+                        <Number>7</Number>
+                        <Number>2</Number>
+                        <Number>6</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 19:00:00 GMT</NextDraw>
+                    <NumberString>9, 3, 9, 5</NumberString>
+                    <NumberList>
+                        <Number>9</Number>
+                        <Number>3</Number>
+                        <Number>9</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</aackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 19:00:00 GMT</NextDraw>
+                    <NumberString>2, 5, 8</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>5</Number>
+                        <Number>8</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:22:00 GMT</NextDraw>
+                    <NumberString>10, 14, 17, 21, 27</NumberString>
+                    <NumberList>
+                        <Number>10</Number>
+                        <Number>14</Number>
+                        <Number>17</Number>
+                        <Number>21</Number>
+                        <Number>27</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>125000</CurrentJackpot>
+                        <PreviousJackpot>221000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+            </ €ate>
+            <State name="Ohio">
+                <Game name="Rolling Cash 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:29:00 GMT</NextDraw>
+                    <NumberString>5, 9, 21, 31, 38</NumberString>
+                    <NumberList>
+                        <Number>5</Number>
+                        <Number>9</Number>
+                        <Number>21</Number>
+                        <Number>31</Number>
+                        <Number>38</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>120000</CurrentJackpot>
+                        <PreviousJackpot>110000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:29:00 GMT</NextDraw>
+                    <NumberString>6, 3, 0, 9, 4</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>3</Number>
+                        <Number>0</Number>
+                        <Number>9</Number>
+                        <Number>4</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>78000</CurrentJackpot>
+                        <PreviousJackpot>74000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:29:00 GMT</NextDraw>
+                    <NumberString>7, 6, 2, 1</NumberString>
+                    <NumberList>
+                        <Number>7</Number>
+                        <Number>6</Number>
+                        <Number>2</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:29:00 GMT</NextDraw>
+                    <NumberString>6, 5, 0</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>5</Number>
+                        <Number>0</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="midday Pick 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:29:00 GMT</NextDraw>
+                    <NumberString>8, 0, 2, 2, 2</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>0</Number>
+                        <Number>2</Number>
+                        <Number>2</Number>
+                        <Number>2</Number>
+                    </NumberList>
+                </Game>
+                <Game name="Midday Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:29:00 GMT</NextDraw>
+                    <NumberString>1, 8, 0, 3</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>8</Number>
+                        <Number>0</Number>
+                        <Number>3</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:29:00 GMT</NextDraw>
+                    <NumberString>5, 8, 1</NumberString>
+                    <NumberList>
+                        <Number>5</Number>
+                        <Number>8</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Oklahoma">
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:00:00 GMT</NextDraw>
+                    <NumberString>0, 4, 5, 0</NumberString>
+                    <NumberList>
+                        <Number>0</Number>
+                        <Number>4</Number>
+                        <Number>5</Number>
+                        <Number>0</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:58:00 GMT</NextDraw>
+                    <NumberString>8, 7, 6</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>7</Number>
+                        <Number>6</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:58:00 GMT</NextDraw>
+                    <NumberString>12, 16, 21, 32, 34</NumberString>
+                    <NumberList>
+                        <Number>12</Number>
+                        <Number>16</Number>
+                        <Number>21</Number>
+                        <Number>32</Number>
+                        <Number>34</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>125000</CurrentJackpot>
+                        <PreviousJackpot>25000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Oregon">
+                <Game name="Pick 4 7pm">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:00:00 GMT</NextDraw>
+                    <NumberString>4, 1, 9, 5</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>1</Number>
+                        <Number>9</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 4 4pm">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:00:00 GMT</NextDraw>
+                    <NumberString>1, 6, 0, 5</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>6</Number>
+                        <Number>0</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 4 1pm">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 20:00:00 GMT</NextDraw>
+                    <NumberString>1, 0, 3, 4</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>0</Number>
+                        <Number>3</Number>
+                        <Number>4</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 4 10pm">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 05:00:00 GMT</NextDraw>
+                    <NumberString>3, 1, 1, 3</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>1</Number>
+                        <Number>1</Number>
+                        <Number>3</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Lucky Lines">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:00:00 GMT</NextDraw>
+                    <NumberString>3, 7, 10, 15, 17, 24, 26, 31</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>7</Number>
+                        <Number>10</Number>
+                        <Number>15</Number>
+                        <Number>17</Number>
+                        <Number>24</Number>
+                        <Number>26</Number>
+                        <Number>31</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>14000</CurrentJackpot>
+                        <PreviousJackpot>13000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Pennsylvania">
+                <Game name="Treasure Hunt">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:35:00 GMT</NextDraw>
+                    <NumberString>4, 5, 12, 24, 28</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>5</Number>
+                        <Number>12</Number>
+                        <Number>24</Number>
+                        <Number>28</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>50000</CurrentJackpot>
+                        <PreiousJackpot>30000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Quinto">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:00:00 GMT</NextDraw>
+                    <NumberString>8, 0, 3, 1, 8</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>0</Number>
+                        <Number>3</Number>
+                        <Number>1</Number>
+                        <Number>8</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>500000</CurrentJackpot>
+                        <PreviousJackpot>440000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Quinto">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:30:00 GMT</NextDraw>
+                    <NumberString>1, 8, 3, 0, 6</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>8</Number>
+                        <Number>3</Number>
+                        <Number>0</Number>
+                        <Number>6</Number>
+                    </NumberList>
+                </Game>
+                <Game name="Midday Daily Number">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:35:00 GMT</NextDraw>
+                    <NumberString>2, 3, 4</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>3</Number>
+                        <Number>4</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>250</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Big 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:35:00 GMT</NextDraw>
+                    <NumberString>6, 1, 9, 0</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>1</Number>
+                        <Number>9</Number>
+                        <Number>0</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>2500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily Number">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:00:00 GMT</NextDraw>
+                    <NumberString>7, 3, 9</NumberString>
+                    <NumberList>
+                        <Number>7</Number>
+                        <Number>3</Number>
+                        <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>250</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:00:00 GMT</NextDraw>
+                    <NumberString>11, 14, 19, 37, 41</NumberString>
+                    <NumberList>
+                        <Number>11</Number>
+                        <Number>14</Number>
+                        <Number>19</Number>
+                        <Number>37</Number>
+                        <Number>41</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>125000</CurrentJackpot>
+                        <PreviousJackpot>1100000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Big 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:00:00 GMT</NextDraw>
+                    <NumberString>6, 5, 8, 7</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>5</Number>
+                        <Number>8</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>2500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Puerto Rico">
+                <Game name="Pega 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:00:00 GMT</NextDraw>
+                    <NumberString>5, 1, 0, 6</NumberString>
+                    <NumberList>
+                        <Number>5</Number>
+                        <Number>1</Number>
+                        <Number>0</Number>
+                        <Number>6</Number>
+                    </NumberList>
+                </Game>
+                <Game name="Pega 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:00:00 GMT</NextDraw>
+                    <NumberString>2, 9, 1</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>9</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                </Game>
+                <Game name="Pega 2">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:00:00 GMT</NextDraw>
+                    <NumberString>0, 4</NumberString>
+                    <NumberList>
+                        <Number>0</Number>
+                        <Number>4</Number>
+                    </NumberList>
+                </Game>
+            </State>
+            <State name="Rhode Island">
+                <Game name="Wild Money">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>TUE</Day>
+                        <Day>THU</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 23:29:00 GMT</NextDraw>
+                    <NumberString>2, 3, 6, 13, 33, Bonus 10</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>3</Number>
+                        <Number>6</Number>
+                        <Number>13</Number>
+                        <Number>33</Number>
+                        <Number>Bonus 10</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>126000</CurrentJackpot>
+                        <PreviousJackpot>120618</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Numbers">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 22:59:00 GMT</NextDraw>
+                    <NumberString>3, 2, 1, 0</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>2</Number>
+                        <Number>1</Number>
+                        <Number>0</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="South Carolina">
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 22:59:00 GMT</NextDraw>
+                    <NumberString>6, 9, 6, 5</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>9</Number>
+                        <Number>6</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 22:59:00 GMT</NextDraw>
+                    <NumberString>5, 7, 9</NumberString>
+                    <NumberList>
+                        <Number>5</Number>
+                        <Number>7</Number>
+                        <Number>9</Number>
+                    </NumberList>
+    (               <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Palmetto Cash 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 22:59:00 GMT</NextDraw>
+                    <NumberString>17, 22, 26, 32, 37, Power Up: 3</NumberString>
+                    <NumberList>
+                        <Number>17</Number>
+                        <Number>22</Number>
+                        <Number>26</Number>
+                        <Number>32</Number>
+                        <Number>37</Number>
+                        <Number>Power Up: 3</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>100000</Jackpot>
+             #      </JackpotList>
+                </Game>
+                <Game name="Midday Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:59:00 GMT</NextDraw>
+                    <NumberString>9, 9, 4, 7</NumberString>
+                    <NumberList>
+                        <Number>9</Number>
+                        <Number>9</Number>
+                        <Number>4</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 16:59:00 GMT</NextDraw>
+                    <NumberString>7, 6, 5</NumberString>
+                    <NumberList>
+                        <Number>7</Number>
+                        <Number>6</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Tennessee">
+                <Game name="Midday Cash 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 18:28:00 GMT</NextDraw>
+                    <NumberString>7, 5, 9, 4</NumberString>
+                    <NumberList>
+                        <Number>7</Number>
+                       ,<Number>5</Number>
+                        <Number>9</Number>
+                        <Number>4</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Cash 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 18:28:00 GMT</NextDraw>
+                    <NumberString>9, 6, 7</NumberString>
+                    <NumberList>
+                        <Number>9</Number>
+                        <Number>6</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 00:28:00 GMT</NextDraw>
+                    <NumberString>0, 9, 0, 1</NumberString>
+                    <NumberList>
+                        <Number>0</Number>
+  6                     <Number>9</Number>
+                        <Number>0</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 00:28:00 GMT</NextDraw>
+                    <NumberString>4, 0, 9</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>0</Number>
+                        <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Texas">
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:12:00 GMT</NextDraw>
+                    <NumberString>6, 8, 2</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>8</Number>
+                        <Number>2</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:27:00 GMT</NextDraw>
+                    <NumberString>6, 5, 9</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>5</Number>
+                        <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:27:00 GMT</NextDraw>
+                    <NumberString>8, 6, 5, 4</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>6</Number>
+                        <Number>5</Number>
+                        <Number>4</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:12:00 GMT</NextDraw>
+                    <NumberString>7, 2, 2, 5</NumberString>
+                    <NumberList>
+                        <Number>7</Number>
+                        <Number>2</Number>
+                        <Number>2</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:12:00 GMT</NextDraw>
+                    <NumberString>14, 19, 22, 26, 29</NumberString>
+                    <NumberList>
+                        <Number>14</Number>
+                        <Number>19</Number>
+                        <Number>22</Number>
+                        <Number>26</Number>
+                        <Number>29</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>125000</CurrentJackpot>
+                        <PreviousJackpot>1100000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Vermont">
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 22:50:00 GMT</NextDraw>
+                    <NumberString>0, 3, 8, 3</NumberString>
+                    <NumberList>
+                        <Number>0</Number>
+                        <Number>3</Number>
+                        <Number>8</Number>
+                        <Number>3</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 22:50:00 GMT</NextDraw>
+                    <NumberString>6, 7, 0</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>7</Number>
+                        <Number>0</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:00:00 GMT</NextDraw>
+                    <NumberString>5, 7, 0, 9</NumberString>
+                    <NumberList>
+                        <Number>5</Number>
+                        <Number>7</Number>
+                        <Number>0</Number>
+                        <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                  €     <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 17:00:00 GMT</NextDraw>
+                    <NumberString>0, 8, 1</NumberString>
+                    <NumberList>
+                        <Number>0</Number>
+                        <Number>8</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Virginia">
+                <Game name="Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:00:00 GMT</NextDraw>
+                    <NumberString>4, 2, 0, 9</NumberString>
+                    <NumberList>
+                        <Number>4</Number>
+                        <Number>2</Number>
+                        <Number>0</Number>
+                       <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:00:00 GMT</NextDraw>
+                    <NumberString>0, 0, 9</NumberString>
+                    <NumberList>
+                        <Number>0</Number>
+                        <Number>0</Number>
+                        <Number>9</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday Cash 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 18:00:00 GMT</NextDraw>
+                    <NumberString>12, 21, 25, 26, 28</NumberString>
+                    <NumberList>
+                        <Number>12</Number>
+                        <Number>21</Number>
+                        <Number>25</Number>
+                        <Number>26</Number>
+                        <Number>28</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>100000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 18:00:00 GMT</NextDraw>
+                    <NumberString>1, 6, 6, 1</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>6</Number>
+                        <Number>6</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Midday 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 18:00:00 GMT</NextDraw>
+                    <NumberString>2, 4, 4</NumberString>
+                    <NumberList>
+                        <Number>2</Number>
+                        <Number>4</Number>
+                        <Number>4</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:00:00 GMT</NextDraw>
+                    <NumberString>10, 11, 23, 31, 32</NumberString>
+                    <NumberList>
+                        <Number>10</Number>
+                        <Number>11</Number>
+                        <Number>23</Number>
+                        <Number>31</Number>
+                        <Number>32</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>125000</CurrentJackpot>
+                        <PreviousJackpot>100000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Washington">
+                <Game name="Match 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:00:00 GMT</NextDraw>
+                    <NumberString>3, 6, 11, 22</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>6</Number>
+                        <Number>11</Number>
+                        <Number>22</Number>
+                    </NumberList>
+                </Game>
+                <Game name="Keno">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:00:00 GMT</NextDraw>
+                    <NumberString>3, 4, 5, 7, 8, 20, 24, 33, 40, 41, 49, 50, 52, 54, 60, 63, 68, 71, 73, 77</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>4</Number>
+                        <Number>5</Number>
+                        <Number>7</Number>
+                        <Number>8</Number>
+                        <Number>20</Number>
+                        <Number>24</Number>
+                        <Number>33</Number>
+                        <Number>40</Number>
+                        <Number>41</Number>
+                        <Number>49</Number>
+                        <Number>50</Number>
+                        <Number>52</Number>
+                        <Number>54</Number>
+                        <Number>60</Number>
+                        <Number>63</Number>
+                        <Number>68</Number>
+                        <Number>71</Number>
+                        <Number>73</Number>
+                        <Number>77</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>100000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:00:00 GMT</NextDraw>
+                    <NumberString>8, 0, 7</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>0</Number>
+                        <Number>7</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="West Virginia">
+                <Game name="Daily 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:20:00 GMT</NextDraw>
+                    <NumberString>9, 5, 3, 3</NumberString>
+                    <NumberList>
+                        <Number>9</Number>
+                        <Number>5</Number>
+                        <Number>3</Number>
+                        <Number>3</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:20:00 GMT</NextDraw>
+                    <NumberString>3, 8, 5</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>8</Number>
+                        <Number>5</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Cash 25">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 23:20:00 GMT</NextDraw>
+                    <NumberString>6, 11, 15, 20, 21, 25</NumberString>
+                    <NumberList>
+                        <Number>6</Number>
+                        <Number>11</Number>
+                        <Number>15</Number>
+                        <Number>20</Number>
+                        <Number>21</Number>
+                        <Number>25</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>25000</Jackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+            <State name="Wisconsin">
+                <Game name="Super Cash">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 02:30:00 GMT</NextDraw>
+                    <NumberString>9, 14, 15, 21, 27, 30</NumberString>
+                    <NumberList>
+                        <Number>9</Number>
+                        <Number>14</Number>
+                        <Number>15</Number>
+                        <Number>21</Number>
+                        <Number>27</Number>
+                        <Number>30</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>350000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily Pick 4">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:30:00 GMT</NextDraw>
+                    <NumberString>8, 2, 9, 3</NumberString>
+                    <NumberList>
+                        <Number>8</Number>
+                        <Number>2</Number>
+                        <Number>9</Number>
+                        <Number>3</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+,                       <Jackpot>5000</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Daily Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-29 23:30:00 GMT</NextDraw>
+                    <NumberString>3, 2, 1</NumberString>
+                    <NumberList>
+                        <Number>3</Number>
+                        <Number>2</Number>
+                        <Number>1</Number>
+                    </NumberList>
+                    <JackpotList rollover="no">
+                        <Jackpot>500</Jackpot>
+                    </JackpotList>
+                </Game>
+                <Game name="Badger 5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlhyed>
+                    <NextDraw>2012-08-30 02:30:00 GMT</NextDraw>
+                    <NumberString>1, 8, 10, 17, 23</NumberString>
+                    <NumberList>
+                        <Number>1</Number>
+                        <Number>8</Number>
+                        <Number>10</Number>
+                        <Number>17</Number>
+                        <Number>23</Number>
+                    </NumberList>
+                    <JackpotList rollover="yes">
+                        <CurrentJackpot>34000</CurrentJackpot>
+                        <PreviousJackpot>18000</PreviousJackpot>
+                    </JackpotList>
+                </Game>
+            </State>
+        </Country>
+    </DrawDate>
+</LotteryDataResultsFeed>

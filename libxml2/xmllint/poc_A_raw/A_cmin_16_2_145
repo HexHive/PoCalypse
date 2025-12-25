@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html 
+  -1"?>
+<!DOCTYPE hcss stylesheet first -->
+<?xml-stylesheet href="book.css" type="text/css"?>
+<?xml-stylesheet href="toc.css" type="text/css"?>
+<!DOCTYPE book [
+<!ATTLIST book    id ID #IMPLIED>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ATTLIST section id ID #IMPLIED>
+]>
+<book id="book" xmlns:html="http://www.w3.org/1999/xhtml"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+ <html:a name="bots.interfaces.nsIDOMParser); var doc = parser.parseFromString("<div/>", "text/xml"); frag = content.createDocumentFragment(doc.documentElement); notEqual(frag, null, "frag is not null"); true;
+
+-->
+<feed xmlns="http://www.w3.org/2005/Atom"
+  xmlns:foo="http://www.example.org"
+      foo:quux="quuux">
+
+  <title>hmm</title>
+
+  <author>
+    <email>hmm@ÿÿample.com</email>
+    <name>foo</name>
+  </author>
+  <generator version="1.1" uri="http://example.org">Hmm</generator>
+  <author>
+    <email>bar@exampl.com</email>
+    <name>foo</name>
+  </author>
+  <rights type="xhtml">
+    <div xmlns="http://www.w3.org/1999/xhtml"><i>test</i> rights</div>
+  </rights>
+
+  <entry foo:bar="baz">
+    <title>test</title>
+    <content type="xhtml">
+      <div xmlns="http://www.w3.org/1999/xhtml">
+	<b>test</b> content
+      </div>
+    </content>
+  </entry>
+
+</feed>

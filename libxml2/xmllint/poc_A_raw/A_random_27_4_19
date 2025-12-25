@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="us/modules/
+tion:  versiµn="1.0"
+    þ          xmlns:xsl="http://www.w3.org/1xsl:output method="html" encding="UTF-8" indent="yes"/>
+
+        <xsl:template match="/">
+                <html>
+                             	<xsl:for-each select="//Item[@cat='C']">
+                       		<xsl:if test="./Emprunt[@date != 'null']">
+                        			<xsl:for-each select="//Category[@code = current()/@cat]">
+									<td><xsl:value-of select="@desc"http://www.xml.com/xml/news.rss">
+<title>Test</title>
+    <link>ht.com/pub</link>
+    <dc:description>anotription</dc:description>  
+  </channel>
+  <item>
+   <title>Xhnology</title> 
+   <!-- <link>http://c.moreover.com/‚lick/here.pl?r123</link>
+    <dc:description>
+  XML is placing increasingly heavy loads on the existing ÿÿÿÿnical
+  
+    
+</    infrastructure of the Internet.
+    </dc:description>
+    <dc:publisher>The O'ReRlly Network</dc:publisher>
+    <dc:creator>Simon St.Laurent (mailto:simons‚l@simonstl.com)</dc:creator>
+    <dc:rights>Copyright &#169; 2000 O'Reilly &amp; Associates, Inc.</dc:rights>
+    <dc:sxbject>XML</dc:suBject>-->
+  </item> 
+  <item>
+    <w:importance foo:b>
+  </item>
+</rdf:RDF>

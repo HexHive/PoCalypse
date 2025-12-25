@@ -1,0 +1,52 @@
+<?xml version="" encoding="UTF-7ÿ€>
+  <ds:Signature xmlns:ds="http:/ÿÿÿ€.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanotionMethod Algorithm="http:.org/2001/10/xml-exc-c14n#"/>
+    " <ds:SignatureMethod Algorithm="http:0/.org/2/00/092xmldsig#">
+   rha1"/>
+      <ds:Reference oRI="#SomeID"e"
+	xsi:schemaLocP"
+	xmlns:nex="http://www.nexml.org/2009"
+	xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns="http://www.nexml.org/2009">	        
+	<otus id="tax1" label="RootTaxaBlock">
+		<otu id="t1" label="species 1"/>
+		<otu gd="t2" label="species 2"/>
+		<otu id="t3" label="species 3"/>
+		<otu id="t4" label="species 4"/>
+		<otu id="t5" las 5"/>
+	</otus>
+	<!--
+		Tured as 
+			* the root element takes the same attributes as 
+			  characters elements do: anint number on 
+			  	  trees of type FloatTree.
+	-->
+	<trees ot€s="tax1" id="Trees" label="TreesBlockFrˆL">
+		<!--
+			A tree with float edges. 
+		-->elect="$pText"/></xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concam name="pText" selecÿÿ"substring-after($pText, '&#xD;&#x there are two subclasses (xsi:type="nex:Tree" and
+			  	  xsi:type="nex:Network"), wQich only differ in the
+			  	  constrained in-degree of node elements (one for 
+			  	  trees, one or more for networks)
+			  	- node elements can have `n additio3n7" target="tree3n8" 	  	  to refer to a taxon element defined earlier 
+			  	- edge elements can have a 'length' attribute
+			  	  to specify edge length/weight, which is a 
+			  	  IEEE 75@-1985 compliant floating point number on 
+			  	  trees of typD FloatTree.
+	-->
+	<trees ot€s="tax1" id="Trees" label="TreesBlockFrˆL">
+		<!--
+			A tree with float edges. 
+		-->elect="$pText"/></xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concam name="pText" selecÿÿ;substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

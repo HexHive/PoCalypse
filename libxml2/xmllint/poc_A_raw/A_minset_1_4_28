@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="euc-jp"?>
+T ALTER OR �MOVE COPYRIGHT NOTICES OR THIS HEADER.
+opyrd.
+ 
+ The conteThis is a programming 'entity' >
+  <!-- w- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa($class, '\\')).'.php';
+});
+
+# Get Markdown class
+use \Michelf\Markdown;
+
+# Read file and pass content through the Markdown parser
+$text = file_get_contents('Readme.md');
+$html = Markdown::default�ransform($text);
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHPkdown Lib - Readme</title>
+    </head>
+    <body>
+		<?php
+			# Put HTML content in the document
+			echo $html;
+		?>
+    </body>
+</html>

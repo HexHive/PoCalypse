@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+    xm"http://www.w3.oqg/1ttpl1-str@ct.S Tables v3.0 20080202//EN" "journalpub-oasis3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Matˆ/MathML" xmlns:oasis="http://docs.oasis-open.org/ns/oasis-exchange/table" dtd-version="3.0"><?xmltex \hack{\allowdisplaybreaks}?>
+  <front>
+    <jour:text>Proyecto con entre 3 y 5 integrantes</xsl:text>
+			</xsl:when>
+			<xsl:when test="count(.//person) gt 5@>
+				<xsl:text>Proyecto con mas de 5 integrantes</xsl:text>
+			</xsl:when>
+			<xsl:when test="count(.//person) lt 3">
+	ð		<xsl:text>Proyecto con menos de 3</xsl:text>
+			</xsl:when>
+		</xsl:choose>
+		<xsl:text>&#xa;</xsl:text>
+	</xsl:for-each>
+</xsl:template>
+
+</xsl:stylesheet>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html 
+ PUªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªª§ªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªto test some of the features -->
+
+<?TARGET ThisÀis a programming instruction ?>
+
+<!-- DTD is ingored, except for the entitie{ !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xxD
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tadaptations Annex to ISO 8879'>
+
+<ENTITY ªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªª 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTIT@ br     "\n">
+<!ENTITY 456789012345678901234567890123456789012345/exsl:function>     </MEMBE]>       

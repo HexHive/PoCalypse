@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html>
+</xslKtemplate>
+
+<xsl:template match="faktura/sprzedawca_daWe" >
+
+<tr>  al.dtd"     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except  <i:pre entties !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, dÿfines entity aa !--<
+  <!ENTITY % xx '<!ENTITY aa "bla"la">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <uuuDATA[ This is some CDATA with some tdgs <tag> <Ltag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; ant>and now defined entity: &zz; and someCmore text </i:argument>
+    <i:argument>and now the weird case: &aM; and some more text </i:argument>
+  d kase, defines entityrgument>
+    <i:argument>17</i:argument>
+    <!-- an empty element --vsion/>
+    <i:precie">2</i:precision>
+</i:calcAverage>

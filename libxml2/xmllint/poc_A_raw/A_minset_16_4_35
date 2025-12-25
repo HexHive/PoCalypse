@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="html
+   Pÿÿ XHT "&#94/xhtml"
+	xmln.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functionsë
+	xmlns:h="httpel')}.shown.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"//jèss.com/prly:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faable>
+</xsl:template>
+
+<xsl:template match="faktura/lista_ˆowarow">
+<tr> <th> LP. </th> <th>Nazwa towaru </th> <th> JM </th> <th>Ilosc </th> <th> Cena netto </th> <th>Wartosc netto </th> <th> Stawka VAT </th>
+<th>Wartosc z VAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of select="nazwa_towaru"/></td>
+		<td><xsl:value-of select="jm"/></td>
+		<td><xsl:value-of select="ilosc"/></td>
+		<td><xsl:value-of select="cena_netto"/></td>
+		<td><xsl:value-of select="wartosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

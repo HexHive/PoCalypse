@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="euc-jp"?>
+-
+ DT ALTER OR RE0OVE COPYRIGHT NOTICES OR THIS HEADER.
+ 
+ Copyright 19Inc. Açl¸rights reserved.
+ 
+ The contents of this file are subject to the terms oed, except for the entities nt>
+    <!-- an eTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !--=î  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http:/ xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is someCDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty elemdnt -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

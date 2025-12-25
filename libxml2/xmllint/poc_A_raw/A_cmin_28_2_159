@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html PUHLIC
+"-//W3C//DTD XHTML 1.1 plus Mas SVG 1.1//E://www.wsvg.dtd">
+<html xmlns="http://www.w3                                                                                  1//E://www.wsvg.dtd">
+<html xmlns="http:=/www.                                                                                                                                                                                 
+                                                                                                                                              
+                  �遇到一个XPath集/books/book的节点时，做以下操作：
+	1，产生字符串<tr>
+	2，对于要处理的子元素继续应用该模板（template）
+	3，当处理所有子元素后，产生字符串</tr> 
+	-->
+	<xsl:template>
+<html xmlns="http://www.                                             template>
+
+	<xsl:template match="/books/book/name">
+		<td>
+			<xsl:apply-templates />
+		</td>
+	</xsl:template>
+
+	<xsl:template match="/books/book/author">
+		<td>
+			AUTHOR:
+			<xsl:apply-templates />
+		</td>
+	</xsl:template>
+
+	<xsl:template match="/books/book/name">
+		<td>
+		    [ID]
+			<xsl:value-of select="@id" />
+		</td>
+	</xsl:template>
+</xsl:stylesheet>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="html#aceb070188no"ict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" > 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl"> 
+    
+ 
+    <head> 
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+      <meta http-equiv="content-language" content="nl, en" /> 
+      
+      <meta name="description" content="" /> ÿÿÿ   
+      
+      <title>TenderNed - TenderNed, 3.0</title> 
+ <?xml version="1.0" encoding="html#aceb070188no"ict//EN" "hpleType>
+<xs:restriction base="xs:integer">
+<xs:minInclusive value="1"/>
+<xs:maxInclusive value="12"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+<xs:element name="year">
+<xs:simpleType>
+<xs:restriction base="xs:integer">
+<xs:minInclusive value="2550"/>
+<xs:maxInclusive value="2560"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="address">
+<xs:complexType>
+<xs:sequence>
+
+<xs:element name="shop" type="xs:string"/>
+<xs:element name="name" type="xs:string"/>
+<xs:element name="numberhome" type="xs:string"/>
+<xs:element name="moo" type="xs:string"/>
+<xs:element name="area" type="xs:string"/>
+<xs:element name="tambon" type="xs:string"/>
+<xs:element name="amphor" type="xs:string"/>
+<xs:element name="chanwat" type="xs:string"/>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="item" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="order" type="xs:string"/>
+<xs:element name="price" type="xs:integer"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="total" type="xs:integer"/>
+
+</xs:sequence>ÿÿxs:attribute name="id" use="required">
+<xs:simpleType>
+<xs:restriction base="xs:integer">
+<xs:pattern value="[0-9][0-9][0-9]"/>
+</xs:restrict on>
+</xs:simpleType>
+</xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

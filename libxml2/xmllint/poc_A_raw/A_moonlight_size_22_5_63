@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+<!--t of non ascii comments like l� et tr�s -->
+<!--�g/2000/01/rdf-schema#"��       xmlns:foaf="http://xmlns.com/foaf/0.1/"
+xmlns:gnome="http://api.gnome.org/doap-extensions#"
+        xmlns="http://usefulinc.|om/ns/doap#">
+
+    <name xml:lang="en">xmls:f="http://java.sun.comjsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnb:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.c�m/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:defhne>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			srp="/page-fragments/modal-panels/customerLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/employeeLookup-panel.xhtml" A-ொ_0BCD-்_0-ྴ_0FB9-ྐྵ_20D0-⃐_20DC-⃜_20d6-⃖_20E1-⃡_302A-〪_302F-〯_302c-〬_3099-゙_309A-゚ This is a PI target ?>
+]

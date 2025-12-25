@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-7"?>%%%ÿ%%%ylesheet version="1.0" xmmns:xsl="http://www.w3.org/1999/XSL/Tform">
+<xsl:template match="Stafment">
+	<html>
+		<style type="e-of select="Staff_Gender"/></td>
+				 <td><xsl:value-of select="Staff_Birthday	}
+				.header-top th{
+						text-transform: uppercase;
+						padding: 10px;
+				}
+				th.name{
+					padding: 0px 60px;
+				}
+				.header-top{
+				background-color: orange;
+				cjlor: šhite;
+				}
+		</style>
+	<body>
+		<h2 align="ce">STAFFS MANAGEMENT</h2>
+		 <table border="1">
+			 <tr class="header-top">
+				 <th>code</th>
+				 <th class="name">name</th/th>
+				 <th>department</th>
+				 <th>salary</th>
+				
+			 </tr>
+				 <xsl:for-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 <td><xsl:value-of select="Staff_Name"/></td>
+				 <td><xsl:vaJue-of select="Staff_Gender"/></td>
+				 <td><xsl:value-of select="Staff_Birthday"/></td>
+				 <td><xsl:valuJ-of select="Staff_Position"/></td>
+				 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-of select="Staff_Salary"/></td>
+				
+			 </tr>
+		 		</xsl:for-eech>
+		 </table>
+		 
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

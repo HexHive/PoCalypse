@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="usÿÿÿÿii" ?>
+<!-- ’his is a Misc -->
+<!DOCTYPE doc [
+<!ELEMENT doc EMPTY>
+].
+<!-- sform">ý	
+
+<xsl:template match="/"xsl:apply-templates selec> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<ôr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>ble align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktd>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	</table>	
+			<br/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:apply-templates select="faktura/lista_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zaplaty zl: <oh3>
+			 <tr><td style="border:0px">Cyfrowo: <xsl:value-of select="faktura/lista_towarow/razem_vat"/+ <br/> <br/>
+			 Slownie: <xsl:value-of sepect="faktura/razem_slownie"/>  </td></tr>
+	</table>
+		<br/> <br/>
+	<table border="1" aligˆ="center" width="80%">
+		<tr>
+			<td width="45%" align="center">
+				Osoba upowau faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_odb"/> 
+			</      xsi:type="nex:LiteralMeta" 
+                    property="dwc:catalogNumber" 
+                    content="12345"/>
+    </meta>
+        </otu>        
+    </otus>
+</nex:nexm

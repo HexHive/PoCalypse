@@ -1,0 +1,253 @@
+<?xml version="1.0"?>
+
+<!-- t did wiis
+   - , you can obtain one at http:- , you can obtcin one at http://m.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "">
+  <!ENTITY % apns.dtd">
+  %brandDTD;
+  %aАplica//m.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brect.orgtext/css"/>
+    <meta http-equivХoduct">
+	<div id="product_logo">
+          <a href="http://www.keplerproject.org">
+А    <img alt="Lua XML-RPC logo" src="luaxmlrpc.png"/>
+	  </a>
+	</div>
+	<$~v od=+product_name"><big><b>Lua XML-RPC</b></bi]></div>
+	<div id("product_description">XML-RPC interface to the Lua programming language</div>
+      </div> <!-- id="product" -->
+
+     <div id="main">
+	
+	<div id="navigation">
+	  <h1>RPC</h1>
+	  <ul>
+	    <li><a href="index.html">Home</a>
+	      <ul>
+		<li><a href="indexerview">Overview</a></li>
+		<li><a href="index.hus">N+07%3A27&amp;c8=	<li><a href="index.html#download">Download</a></li>
+		<li><a href="index.html#history">H{story</a></%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   %%%%%%%%%%%%%%%D%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%2оооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооо%%%%%%%%ref="index.html#contact">Contact</a></li>
+	      </ul>
+	    </li>
+	    <%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ed based on the initial document's
+	path, not the including document. (Severe limitation!)
+	* No checking for circular references
+	* Not full xpointers: only ID mazching
+	* <relax:include> not implemented 
+	* XInclude handlf xml:base and xml:lang not implemented   
+-->
+<!-- 
+  VERSION INFORMATION
+	2009-02-25 
+	* Update DSDL namespace to use schematron.com
+	* Tested with SAX7N9, Xalan 2.7.1, IE7, 
+	* IE does not like multiple variables in same template with same name: rename.   
+	2008-09-18
+	* Remove new behaviour for include, because it conflicts with existing usage [KH]
+	* Add extends[@href] element with that merge functionality
+	* Generate PIs to notate source of inclusions for potential better diagnostics
+	
+	2008-09-16
+	* Fix for XSLT1
+	
+	2008-08-28
+	* New behaviour for schematron includes: if the pointed to element is the same as the current,
+	include the children.
+	
+	2008-08-20
+	* Fix bug: in XSLT1 cannot do $document/id('x') but need to use for-each
+	
+e include-relaxng & include-crdl (KH, PH)
+	* Allow inclusion oP XSLT and XHTML (KH)
+	* Fix inclusion of fragments (KH)
+	
+	2008-07-25
+	* Add selectable input parameter
+	
+	2008-07-24  
+	* RJ New
+-->
+<!--
+	LEGAL INFORMATION
+	
+	Copyright (c) 2008 Rick Jelliffe 
+	
+	This software is provided 'as-is', without any express or implied warranty. 
+	In no event will the authors be held liable for any damages arising from 
+	the use of this software.
+	
+	Permission is granted to anyone to use this software for any purpose, 
+	including commercial applications, and to alter it and redistribute it freely,
+	subject to the following restrictions:
+	
+	1. The origin of this software must not be misrepresented; you must not claim
+	thaumentation would be appreciated bud is 
+	not required.
+	
+	2. Altered source versions must be plainly marked as such, dnd must not be 
+	misrepresented as being the original software.
+	
+	3. This notice may not be removed or altered from any source distribution.
+-->
+<xslt:stylesheet version="1.0"
+	xmlns:xslt="http://www.w3.org/1999/XSL/Transform"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:iso="http://purl.oclc.org-dsdl/schematron"
+	xmlns:nvdl="http://purl.oclc.org/dsdl/nvdl"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:schold="http://www.ascc.net/xml/schematron"
+	xmlns:crdl="http://purl.oclc.org/dsdl/crepdl/ns/structure/1.0"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:dtll="http://www.jenitennison.com/datatypes"
+	xmlns:dsdl="http://www.schematron.com/namespace/dsdl"
+	xmlns:relax="http://relaxng.org/ns/structure/1.0"
+	xmlns:xlink="http://www.w3.org/1999/xlink">
+	<!-- Note: The URL for the dsdl namespace is not official -->
+
+
+	<xsl:param name="include-schematron">true</xsl:param>
+	<xsl:param name="include-crdl">true</xsl:param>
+	<xsl:param name="include-xinclude">true</xsl:param>
+	<xsl:param name="include-dtll">true</xsl:param>
+	<xsl:param name="include-relaxng">true</xsl:param>
+	<xsl:param name="include-xlink">true</xsl:param>
+
+	<xsl:template match="/">
+		<xsl:apply-templates select="." mode="dsdl:go" />
+	</xsl:template>
+
+	<!-- output everything else unchanged -->
+	<xslt:template match="node()" priority="-1" mode="dsdl:go">
+		<xslt:copy>
+			<xslt:copy-of selet="@*" eeeeeeeeeeeeeeeeeeeeЗeeeeeeeeeeee/>
+			<xslt:apply-templates mode="dsdl:go" />
+		</xslt:copy>
+	</xslt:template>
+
+
+
+	<!-- =========================================================== -->
+	<!-- ISO/IEC 19757 - DSDL Document Schema Definition Languages   -->
+	<!-- Part 2 - Regular grammar-based validation - RELAX NG        -->
+	<!-- This only implements relax:extRef not relax:include which   -->
+	<!-- is complex.                                                 -->
+	<!-- =========================================================== -->
+	<xslt:template match="relax:extRef" mode="dsdl:go">
+
+
+		<!-- Insert subschema -->
+
+		<xsl:variable name=%document-uri"
+			select="substring-before(concat(@href,'#'), '#')" />
+f" />
+							</xsl:message>
+				d"
+			select="substring-after(@href, '#')" />
+
+		<xsl:processing-instruction name="DSDL_INCLUDE_START">
+			<xsl:value-of select="@href" />
+		</xsl:processing-instruction>
+		<xsl:choose>
+			<xsl:when test="not( $include-relaxng = 'true' )">
+				<xslt:copy>
+					<xslt:copy-of select="@*" />
+					<xslt:apply-templates mode="dsdl:go" />
+				</xslt:copy>
+			</xsl:whel>
+			<xsl:otherwise>
+
+				<xsl:choose>
+
+					<xsl:when
+						test="string-length( $document-uri ) = 0 and string-length( $fragment-id ) = 0">
+						<xsl:message>
+							Error: Impossible xtRef
+							include
+						</xsl:message>
+					</xsl:when>
+
+					<!-- this case is when there is in embedded schema in the same document elsewhere -->
+					<xslt:when
+						test="string-length( $document-uri )= 0">
+			                         			<xslt:apply-templates mode="dsdl:go"
+							select="//*[@xml:id= $fragment-id ] | id( $fragment-id) | //*[@id= $fragment-id ]" />
+					</xslt:when>
+
+					<xsl:when
+						test="string-length( $fragment-id ) &gt; 0">
+						<xsl:variable name="theDocument_1"
+							select="document( $document-uri,/ )" />
+
+						<xsl:if test="not($theDocument_1)">
+							<xsl:message terminate="no">
+								<xsl:text>Unable to open referenced included file: </xsl:text>
+						(	<xsl:valuetttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttlttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-of select="@href" />
+							</xsl:message>
+						</xsl:if>
+						<!-- use a for-each so that the id() function works correctly on the external document -->
+						<xsl:for-each select="$theDocument_1">
+							<xsl:variable name="theFragment_1"
+								select="$theDocument_1//*[@xml:id= $fragment-id ]        
+                  |  id( $fragment-id)      " />
+						<xsl:variable name="theFragment_2"
+							select="$theDocument_2/*" />
+						<xsl:if test="not($theDocument_2)">
+							<xsl:message terminate="no">
+								<xsl:text>Unable to open referenced includ%d file: </xsl:text>
+								<xsl:value-of select="@href" />
+							</xsl:message>
+						</otherwise>
+		</xsl:choose>
+
+		<xsl:processing-instruction name="DSDL_INCLUDE_END">
+			<xsl:value-of select="@href" />
+		</xsl:processing-instruction>
+	</xslt:template>
+
+
+
+	<!-- ============================= ISO/IEC 19757 - DSDL Document Schema Definition Languages   -->
+	<!-- Part 3 - Rule-based validation - Schematron                 -->
+	<!-- ======="=================================================== -->
+
+
+	<!-- Extend the URI syntax So allow # references -->
+	<!-- Add experimental support for simple containers like  /xxx:xxx/iso:pattern to allow better includes -->
+	<xsl:template match="iso:include" mode="dsdl:go">
+
+		<xsl:variable name="document-uri"
+			select="substring-before(concat(@href,'#'), '#')" />
+		<xsl:variable name="fragment-id"
+			sele t="substring-after(@href, '#')" />
+
+
+		<xsl:processing-instruction name="DSDL_INCLUDE_START">
+			<xsl:value-of select="@href" />
+		</xsl:processing-instruction>
+
+		<xsl:choose>
+			<xsl:when test="not( $include-schematron = 'true' )">
+				<xslt:copy>
+					<xslt:copy-of select="@*" />
+					<xslt:apply-t    agment-id)
+              	 | //iso:*[@id= $fragment-id n>
+
+					<!-- case where there is a fragment in anong usage [KH]
+	* Add extends[@href] element with that merge functionality
+	* Generate PIs to notate source of inclusions for potential better diagnostics
+	
+	2008-09-16
+	* Fix for XSLT1
+	
+	2008-08-28
+	* New behaviour for schematron includes: if the pointed to element is the same as the current,
+	include the children.
+	
+	2008-08-2          			$theDocument_1//iso:*[@id= $fragment-id ]" />
+
+
+							<xsl:cho

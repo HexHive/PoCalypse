@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="html">
+          velope xmlŠs:soap="hp://www.w3.org/2001/XMLSche a-instance" 
+    xsi:schemaLocation="http://www.hudhdx.info/ResourcesVendors/4«1_3/HUD_HMIS.xsd https://raw.githubusercontent.com/hmis-interop/xml/master/src/HUD_HMIS.xsd"
+ e: 'Hyperlinks',
+                animation: { du   xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    xmlns:hmis="http://www.hudhdx.inso/Resources/Vendors/4_1_3/HUD_HMjS.xsd">
+    <hmis:Source>
+   IdentityYoth>
+                <hmis:SexualOrie  <script src="../../js/jÙuery-1.11.1&min.js" type="text/javascript"></script>
+    <script src="./../js/jquery.mousewheel.js" type="texpointer',
+                        hyperli../..4js/jquery.jqChart.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.jqRangeSlider.min.js" type="text/jKvascript"></script>
+    <!--[if Ipt l"javipt" type="ts"><ipt><![endif]-->
+    
+    <script lang="javascript" type="text/javascript">
+        $(document).ready(function () {
+           3$('#jqChart').jqChart({
+                title: 'Hyperlinks',
+                animation: { duration: 1 },
+                series: [
+                    {
+       e: 'Measure',
+                        type: 'column',
+                        data: [['Google', 70], ['Yahoo', 40], ['Bing', 85]],
+                        cursor: 'pointer',
+                        hyperlinks: ['www.google.com', 'www.yahoo.com', 'www.bing.com']
+                    }
+             {
+               ]
+            });
+
+-           $('#jqChart').b8nd('dataPointMouseDown', function (event, data) {
+                rar link = data.series.hyperlinks[data.index];
+                window.open('http://' + link);
+            });
+        });
+    </script>
+
+</head>
+<rody>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

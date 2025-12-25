@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+<xsl:stylesheet ver.w3.org/17-ྷ_0fb4-ྴ_0FB9-ྐྵ_20D0-⃐mplate match="/">
+<html>
+	<head> <title> Faktura </title> </head8
+	<body style="fontTahoma">
+	<table width="80%" border="2" align="center"> 		<tr > <th colspan="2"*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')).'.php';
+});
+
+# Get Markdo�n class
+use \Michelf\Markdown;
+
+# Read file and pass content through the Markdown parser
+$text = file_get_contents('Readme.md');
+$html = Markdown::defaultTransform($text);
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHPkdown Lib - Readme</title>
+    </head>
+    <body>
+		<?php
+			# Put HTML content in the document
+			echo $html;
+		?>
+    </body>
+</html>

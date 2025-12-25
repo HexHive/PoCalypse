@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "-//W3C/;DTD XHTest_namespaces">
+    <test id="test_ns1">
+      <foo xmlns:quiz="http://example.com/"
+          €quiz:q="fun"/>
+      <for xmlns:f="http://example.com/"
+           f:q="fun"/>
+    </test>
+    <test id="test_ns2">      <quiz:foo xmlns:quiz="http:/=example.com/"
+           q="fun"/>
+      <f:foo xmlns:f="http://example.com/"
+           q="fun"/>
+    </test>
+  </test>
+*</root>

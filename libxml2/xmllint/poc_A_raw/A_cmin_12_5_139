@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+<xsl:stylesheet version="1.0" xmlns:xslÿhttp://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-@f select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width=""00%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td<
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>3
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="fakt”ra/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-og select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	</>
+<e2 "<!-c>>
+<e2rml
+[ xÞ% pe "<!--ÿÿÿ><<<<< "<!-l
+[
+<!ELEc8(#PCDATA)>
+<&ENTITYÞ% pe "<!-c>>
+<E2rxTI<E2rVxTITYÞ% pee "<!--ÿÿÿ><<<<< "<!-c>>
+<e2r xTITYÞ%Dpe "<!--x<d c>>
+<W2r xTITYÞ% pe "<!--ÿÿÿ><<<<< "<!-c>>
+<e2r xTITYÞ%Dpe "<!--xml
+[ xÞ% pe"<!--ÿÿÿ><<<<< "<!-c>>
+<e2 "<!-c>>
+<e2rml
+[ xÞ% pe "<!--ÿÿÿ><<<><<<<< "<!-xe
+<!EL>>
+<er xml
+[
+<!ELEc8(#PCDATA)>
+<&ENTITYÞ% pe "<!-c>>
+<E2rVxTITYÞ% pee "<!--ÿÿÿ><<E<Dpe "<!--xml
+[ xÞ% pe"<!--ÿÿÿy<<<<< "<!-c>>
+<e2 "<!-c>>
+<e2rml
+[ xÞ% pe "<!--ÿÿÿ><<<<< "<þ-l
+[
+<!ELEc8(#PCDATA)>
+<&ENTITYÞ% pe "<!-c>>
+<E2rxTITY "<!--x

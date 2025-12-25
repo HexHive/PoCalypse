@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="css/ksiazka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  "doktor">
+<!ELEMENT kontakt (dane_personalne,adres+,dane_kontaktowe,daty,strDom)>
+<!ATTLIST kontakt plec (m|k|brak) #REQUIRED
+				  id_grupa IDREF #REQUIRED>
+<!ELEMENT dane_personalne (tytul?,imie,nazwisko)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT dane_kontaktgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggrupa (#PCDATA)>
+<!ATTLIST grupa  id ID #REQUIRED>
+]>
+
+
+
+
+
+<ksiazka>
+
+	<kontakt plec="m" id_grupa="r">
+		<dane_personalne>
+			<imie>Leszek</imie>
+			<nazwisko>Hallman</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>83-262</kod_pocztowy>
+			<miejscowosc>Czarna Woda</miejscowosc>
+			<ulica>Okrezna</ulica>
+			<nr_budynku>14</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>664741805</tel>
+			<email domena="wp">leszekhallman@wp.pl</email>
+			<status tekst="jestem offline"/>
+		</dane_kontaktowe>
+		<daty>2012-04-13 2012-05-23</daty>
+		<strDom>http://leszek.pl</strDom>
+	</kontakt>
+
+	<gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg:ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggazwisko>Hallman</nazwisko>
+	ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg�ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggersonalne (tytul?,imie,nazwisko)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT dane_kontaktowe (tel,email,gg?,status)>
+<!ELEMENT tel (#PCDATA)>
+
+
+
+
+<!ELEMENT adres (kod_pocztowy,miejscowosc,ulica,nr_budynku,nr_lokalu?)>
+<!ATTLIST adres rodzaj CDATA #IMPLIED>
+<!ELEMENT kod_pocztowy (#PCDATA)>
+<!ELEMENT miejscowosc (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT nr_budynku (#PCDATA)>
+<!ELEMENT nr_lokalu (#PCDATA)>
+
+<!ELEMENT gg (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email domena NMTOKENS #IMPLIED>
+<!ATTLIST status tekst NMTOKENS #REQUIRED>
+<!ELEMENT daty (#PCDATA)>
+<!ELEMENT strDom (#PCDATA)>
+
+
+<!ELEMENT gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggcgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggrupa (#PCDATA)>
+<!ATTLIST grupa  id ID #REQUIRED>
+]>
+
+
+
+
+
+<ksiazka>
+
+	<kontakt plec="m" id_grupa="r">
+		<dane_personalne>
+			<imie>Leszek</imie>
+			<nazwisko>Hallman</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>83-262</kod_pocztowy>
+			<miejscowosc>Czarna Woda</miejscowosc>
+			<ulica>Okrezna</ulica>
+			<nr_budynku>14</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>664741805</tel>
+			<email domena="wp">leszekhallman@wp.pl</email>
+			<status tekst="jestem offline"/>
+		</dane_kontaktowe>
+		<daty>2012-04-13 2012-05-23</daty>
+		<strDom>http://leszek.pl</strDom>
+	</kontakt>
+
+	<kontakt plec="k" id_grupa="r">
+		<dane_personalne>
+			<imie>Janina</imie>
+			<nazwisko>Hallman</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>83-262</kod_pocztowy>
+			<miejscowosc>Czarna Woda</miejscowosc>
+			<ulica>Okrezna</ulica>
+			<nr_budynku>14</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>607058504</tel>
+			<email domena="wp">janinahallman@wp.pl</email>
+			<status tekst="jestem online"/>
+		</dane_kontaktowe>
+		<daty>brak</daty>
+		<strDom>http://janka.idk.pl</strDom>
+	</kontakt>
+
+
+	<kontakt plec="m" id_grupa="r">
+		<dane_personalne>
+			<imie>Szymon</imie>
+			<nazwisko>Jaszczyszyn</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-126</kod_pocztowy>
+			<miejscowosc>Gdańsk</miejscowosc>
+			<ulica>Mysliwskie Wzgorze</ulica>
+			<nr_budynku>4</nr_budynku>
+			<nr_lokalu>3</nr_lokalu>
+		</adres>
+		<dane_kontaktowe>
+			<tel>663137727</tel>
+			<email domena="onet">szczur778@onet.pl</email>
+			<gg>87392274</gg>
+			<status tekst="jestem offline"/>
+		</dane_kontaktowe>
+		<daty>2012-04-13 2012-05-23</daty>
+		<strDom>http://SzymonSzczurek.pl</strDom>
+	</kontakt>
+
+	<kontakt plec="m" id_grupa="b">
+		<dane_personalne>
+			<imie>Slawomir</imie>
+			<nazwisko>Rzeppa</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-426</kod_pocztowy>
+			<miejscowosc>Gdansk</miejscowosc>
+			<ulica>Gen j.Hallera</ulica>
+			<nr_budynku>73</nr_budynku>
+			<nr_lokalu>3</nr_lokalu>
+		</adres>
+		<dane_kontaktowe>
+			<tel>697463997</tel>
+			<email domena="sigma">srzeppa@sigma.edu.pl</email>
+			<status tekst="jestem online"/>
+		</dane_kontaktowe>
+		<daty>brak</daty>
+		<strDom>http://CwaniakZGrzywo.com</strDom>
+	</kontakt>
+
+	<kontakt plec="m" id_grupa="b">
+		<dane_personalne>
+			<imie>Michal</imie>
+			<nazwisko>Gorski</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-530</kod_pocztowy>
+			<miejscowosc>Gdansk</miejscowosc>
+			<ulica>Zabianka</ulica>_pocztowy>
+			<miejscowosc>Czarna Woda</miejscowosc>
+			<ulica>Okrezna</ulica>
+			<nr_budynku>14</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>607058504</tel>
+			<email domena="wp">janinahallman@wp.pl</email>
+			<status tekst="jestem online"/>
+		</dane_kontaktowe>
+		<daty>brak</daty>
+		<strDom>http://janka.idk.pl</strDom>
+	</kontakt>
+
+
+	<kontakt plec="m" id_grupa="r">
+		<dane_personalne>
+			<imie>Szymon</imie>
+			<nazwisko>Jaszczyszyn</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-126</kod_pocztowy>
+			<miejscowosc>Gdańsk</miejscowosc>
+			<ulica>Mysliwskie Wzgorze</ulica>
+			<nr_budynku>4</nr_budynku>
+			<nr_lokalu>3</nr_lokalu>
+		</adres>
+		<dane_kontaktowe>
+			<tel>663137727</tel>
+			<email domena="onet">szczur778@onet.pl</email>
+			<gg>87392274</gg>
+			<status tekst="jestem offline"/>
+		</dane_kontaktowe>
+		<daty>2012-04-13 2012-05-23</daty>
+		<strDom>http://SzymonSzczurek.pl</strDom>
+	</kontakt>
+
+	<kontakt plec="m" id_grupa="b">
+		<dane_personalne>
+			<imie>Slawomir</imie>
+			<nazwisko>Rzeppa</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-426</kod_pocztowy>
+			<miejscowosc>Gdansk</miejscowosc>
+			<ulica>Gen j.Hallera</ulica>
+			<nr_budynku>73</nr_budynku>
+			<nr_lokalu>3</nr_lokalu>
+		</adres>
+		<dane_kontaktowe>
+			<tel>697463997</tel>
+			<email domena="sigma">srzeppa@sigma.edu.pl</email>
+			<status tekst="jestem online"/>
+		</dane_kontaktowe>
+		<daty>brak</daty>
+		<strDom>http://CwaniakZGrzywo.com</strDom>
+	</kontakt>
+
+	<kontakt plec="m" id_grupa="b">
+		<dane_personalne>
+			<imie>Michal</imie>
+			<nazwisko>Gorski</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-530</kod_pocztowy>
+			<miejscowosc>Gdansk</miejscowosc>
+			<ulica>Zabianka</ulica>
+			<nr_budynku>7</nr_budynku>
+			<nr_lokalu>12</nr_lokalu>
+		</adres>
+		<dane_kontaktowe>
+			<tel>609203699</tel>
+			<email domena="gmail">dajmsonalne>
+			<tytul>doktor</tytul>
+			<imie>Anna</imie>
+			<nazwisko>Sorbian</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-283</kod_pocztowy>
+			<miejscowosc>Gdansk</miejscowosc>
+			<ulica>Mysliwska</ulica>
+			<nr_budynku>56</nr_budynku>
+			<nr_lokalu>3</nr_lokalu>
+		</adres>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/list">
+			<kod_pocztowy>81-759</kod_pocztowy>
+			<miejscowosc>Sopot</miejscowosc>
+			<ulica>Monte Cynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>504491301</tel>
+			<email domena="gmail">psyholl990@gmail.com</email>
+			<status tekst="jestem online"/>
+		</dane_kontaktowe>	
+		<daty>brak</daty>
+		<strDom>http://psyhol990.pl</strDom>
+	</kontakt>
+
+	<kontakt plec="k" id_grupa="z">
+		<dane_personalne>
+			<tytul>doktor</tytul>
+			<imie>Anna</imie>
+			<nazwisko>Sorbian</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-283</kod_pocztowy>
+			<miejscowosc>Gdansk</miejscowosc>
+			<ulica>Mysliwska</ulica>
+			<nr_budynku>56</nr_budynku>
+			<nr_lokalu>3</nr_lokalu>
+		</adres>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/list">
+			<kod_pocztowy>81-759</kod_pocztowy>
+			<miejscowosc>Sopot</miejscowosc>
+			<ulica>Monte Casino</ulica>
+			<nr_budynku>17</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>396186386</tel>
+			<email domena="stom-rodzina">wecepcja@stomrodzinna.pl</email>
+			<status tekst="jestem offline"/>
+		</dane_kontaktowe>
+		<daty>brak</daty>
+		<strDom>http://stomatologiaRodzinna#pl</strDom>
+	</kontakt>
+
+	<kontakt plec="m" id_grupa="z">
+		<dane_personalne>
+			<tytul>doktor</tytul>
+			<imie>Jaroslaw</imie>
+			<nazwisko>Marcinkiewicz</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>92-436</kod_pocztowy>
+			<miejscowosc>Gdynia</miejscowosc>
+			<ulica>Morska</ulica>
+			<nr_budynku>5</nr_budynku>
+		</adres>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/list">
+			<kod_pocztowy>81-759</kod_pocztowy>
+			<miejscowosc>Sopot</miejscowosc>
+			<ulica>Grunwaldzka</ulica>
+			<nr_budynku>2</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>563189376</tel>
+			<email domena="o2">jmarcin@o2.pl</email>
+			<status tekst="jestem offline"/>
+		</dane_kontaktowe>
+		<daty>brak</daty>
+		<strDom>http://JarekZegarek.pl</strDom>
+	</kontakt>
+
+	<kontakt plec="m" id_grupa="p">
+		<dane_personalne>
+			<imie>Bill</imie>
+			<nazwisko>Gstes</nazwisko>
+		</dane_personalne>
+		<adres  rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>11-777</kod_pocztowy>
+			<miejscowosc>Redmond</miejscowosc>
+			<ulica>Northeast 362-05-23</daty>
+		<strDom>http://Monia.pl</strDom>
+	</kontakt>
+
+	<grupa id="r">Rodzina</grupa>
+	<grupa id="b">Bliscy</grupa>
+	<grupa id="z">Zdrowie</grupa>
+	<grupa id="p">Praca</grupa>
+
+
+	
+	
+</ksiazka>

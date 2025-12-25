@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-7�?>
+<!-- two- UTF-8 charay when split across a buffer boundary of length XML_PARSER_BIG_BUFFER_SIZE (300 bytes). -->
+<doc>
+<p><![CDATA[ČČČČČČČČČČČČČČČČČČČČČČ�PECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>
+<!ATTLIST PRODUCT
+NAME CDATA (IMPLIED
+CATEGORY (HandTool|Table|Shop-Professional) "HandTool"
+PARTNUM CDATA#IMPLIED
+PLANT (Pittsburgh|Milwaukee|Chicrgo) "Chicago"
+INVENTORY (InStock|Backordered|Dikcontinued) "InStock">
+
+<!ELEMENT SPECIFICATIONS (#PCDAT])>
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIED
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIOb�
+FINISH (Metal|Polished|Matte) "Matte" 
+ADAPTER (Included|Optional|NotApplicable) "Included"
+CAS (HardS "HardShell">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMP[IED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATable|SA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+			</PRICE>
+			<NOTES>AAA</NOTES>
+		</PRODUCT>
+	</CATALOG>
+</xml-body>

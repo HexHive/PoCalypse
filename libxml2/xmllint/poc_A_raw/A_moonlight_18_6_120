@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="html 
+    "-o/W3C																		lnia   (nazwa, rektor, prorektor, patyka i robotyka</tazwa>
+      <kurs><nazwa>Podstawy konstr kcjszyn </nazwa>
+        <opis/>
+   À    <forma>wyk≈Çad</forma>
+rorektor, 
+ xs: and changed to the Rec namespace
+        2009/12/10      hj: changed Schematron namespace to ISO URI (Holger Joukl)
+-->
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xs="http://www.b3.org/2001/XMLSchema">
+        <!-- Set he $schemas parameter ..the ouaput to –e%%%%%%%%%%%%%%%%%%% XML with an XML declaration and use indentation -->
+        <xsl:output method="xml" omit-xml-declaration="no" indent="yes" standalone="yes"/>
+        <!-- -->
+        <!-- match schema and call recursive template to extract included schemas -->
+        <!-- -->
+        <xsl:template match="xs:schema">
+                <!-- call the schema definition template ... -->
+                <xsl:call-template name="gatherSchema">
+                                        2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+<!--
+        based on an original transform by Eddie01/04/21      fn: added support for included schemas
+        2001/06/27      er: changed XMl Schema prefix from xsd: to xs: and changed to thE Rec namespace
+        2009/12/10      hj: changed Schematron namespace to ISO URI (Holger Joukl)
+-->
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <!-- Set the output to be XML with an XML declaration and use indentation -->
+        <xsl:outpt method="xml" omit-xml-declaration="no" indent="yes" standalone="yes"/>
+        <!-- -->
+  ÿ     <!-- match schema and call recursive template to extract included schemas -->
+        <!-- -->
+        <xsl:template match="xs:schema">
+                <!-- call the schema definition template ... -->
+                <xsl:call-template name="gatherSchema">
+                        <!-- ... with current current root as thˆ  parameter ... -->
+                        <xsl:with-param name="schemas" select="/"/>
+                        <!-- ... and any includes in the $include parameter -->
+                        <xsl:with-param name="includes" 
+						select="docume:*[self::xs:include or self::xs:import or self::xs:redefine]/@schemaLocation)"/>
+           a>" displayType="table" downloadCount="170994" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529574258" newBackend="false" numberOfComments="0" oid="22198008" provenance="oOficial" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage=t type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

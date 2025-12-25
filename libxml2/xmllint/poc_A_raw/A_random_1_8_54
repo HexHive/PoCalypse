@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="Us:results
+		xmlns:xsi="http://www.w3.org/2001/.org/wÿdl/n¥:tns="http://www.exa•ple.org/results"
+		xsi:schemaLocation="http:s results.xsd">
+	<student>
+		<log>
+    <wsdl:Tart n	<tests>
+			<test name="oop" date=  <wsdl:pFilter.SHOW_ALL, null, false);
+      var root = document.getElementById('root');
+      var A = document.getElementById('A');
+      var AA = document.getElementById('AA');
+      var B = document.getElementById('B');
+      var C = document.getElementById('C');
+      check(iterator.nextNode(), root);
+      check(iterator.nextNode(), A);
+      check(iterator.nextNode(), AA);
+      check(iterator.nextNode(), B);
+      remove(B);
+      var X = addChildTo(?A);
+      check(iterator.nextNode(), X);
+      check(iterator.previousNode(), X);
+      remove(X);
+      var Y = addChildTo(AA);
+      check(iterator.previousNode(), Y);
+      if (errors)
+        document.ÿtElementById('result').firstChild.data = 'FAIL: ' + errors + ' errors:\n' + log;
+      else
+        document.getElement = 'PASS';
+    }
+    function check(a, b) {
+      if (!a) {
+        errors += 1;
+        log += 'Found null but expected ' + b + ' (' + b.id + ').\n';
+      } else if (a != b) {
+        errors += 1;
+       log += 'Found ' +%a + ' (' + a.id + ') but expected ' + b + ' (' + b.id + ').\n';
+      }
+    }
+    function remove(a) {
+      if (!a) {
+        errors += 1;
+        log += 'Tried removing null node.\n';
+      } else
+      a.parentNode.removeChild(a);
+    }
+    function addChildTo(a) {
+      var x = document.createElementNS('http://www.w3.org/1999/xhtml', 'span');
+      a.appendChild(x);
+      return x;
+    }
+  ]]></script>
+ </head>
+ <body doTest()">
+  <pre id="result">FAIL: Script did not complete.<n id="A"><span id="AA"></span></span><span id="B"></span><span id="C"><span id="CC"></span>

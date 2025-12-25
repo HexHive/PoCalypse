@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+    xm"http://www.w3.og/1ttpl1-str@ct.dtd"
+ function
+     works, and to test some of the features -->
+
+<?TARGET This is a  <ds:DigestMethod Algrithm="http://www.w3gored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY fz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:azationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+          <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+          <ds:Reference>
+            <ds:Transforms>
+              <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+              <ds:d Algorithm="http://www.w://www.w3.org/2001/10/xml-exc-c14n#">
+                <ec:InclusiveNamespaces PrefixList="ds saml samlp xs"/>
+              </ds:Transform>
+            </ds:Transforms>
+            <ds:DigestMethod Algrithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <ds:DigestValue></ds:DigestValue>
+          </ds:Reference>
+        </ds:SiénedInfo>
+      <ds:SignatureValue></ds:SignatureValue>
+      </ds:Signature>
+      <samlp:Status>
+        <samlp:StatusCode/>
+      </samlp:Status>
+      <samlp:Response ID="_5a88b4aeb1d290c86073874278e5ef302da66739" Version="2.0" IssueInstant="2013-01-17T09:02:44Z">
+        <samlp:Status>
+          <samlp:StatusCode/>
+        </samlp:Status>
+      </samlp:Response>
+    </samlp:ArtifactResponse>
+  </soapenv:Body>
+</soapenv:Envelope>

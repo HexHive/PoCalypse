@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html!-- Th this file is to show how the erlsoi:saxunction
+the features -->
+
+<?TARGET This is a programming intest some of the features -->
+
+<?TARGET This is a programming instruct€on ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird c entity aa !-->
+  <!ENTITY % xx '<!ENTITY%aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ Tis some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext/i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:preci//www.example.org">
+    <i:argum/i:precision>
+<1i:calcAverage>

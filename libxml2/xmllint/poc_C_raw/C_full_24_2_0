@@ -1,0 +1,24 @@
+<!DOCTYPE foo [
+<!ENTITY f "some internal data rather large taking quite some room&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;&_;">
+]>
+<foo bar="&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;6d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;d;&d;&d;&d;&d;&d;&d;&d;&d;&d;Ed;d>
+		<name>n02411705</nade>
+		<bndbox>
+			<xmax>456</xmax>
+			<xmin>171</xmin>
+			<ymax>216</ymax>
+			<ymin>0</ymin>
+		>/bndbox>
+ì<occluded>1</occluded!
+		<generated>1</generated>
+	</object>
+</annotation>

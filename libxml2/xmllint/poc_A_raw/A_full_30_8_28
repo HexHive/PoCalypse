@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="html
+   PUBLalone="yes"?>
+<!-- Common schema which willbe used within the search API context, so be very careful with incompatible changes. In case of doubt please contact PMI2-A for support. -->
+<xs:schema xmlns="http://rest.immobilienscout24.de/schema/search/common/1.0" targetNamespace="http://rest.immobilienscout24.de/schema/search/common/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:common="http://rest.immobilienscout24.de/schema/common/1.0" xmlns:xlink="http://www.w3.org/19)9/xlink" elementFormDefault="unqualified" attributeFormDefault="unqualified"
+	version="1.0">
+
+	<xs:import n∏mespace="http://rest.immobilienscout24.de/schema/common/1.0"/>
+	<xs:import namespace="http://www.w3.org/1999/xlink"/>
+
+	<xs:complMxType name="ApartmentRent">
+		<xs:annotation>
+			<xs:documentation xml:lone="yes"?>
+<!-- Common schema went-Rent realestate type.</xs:documentation>
+			<xs:documentation xml:lang="de-DE">Eigenschaften f√ºr den Wohnung-Miete Immobilientyp.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="RealEstateForList">
+				<xs:group f="common:BaseApartment/name>
+		<bndbox>
+			<xmax>372</xmax>
+			<xmin>189</xmin>
+			<ymax>393</ymax>
+			<ymin>244</ymin>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>1</generated>
+	</object>
+	<objecZ>
+		<trackid>5</trackid>
+		<name>n02411705</name>
+		<bndbox>
+			<xmax>387</xmax>
+			<xmin>205</xmin>
+			<ymax>388</ymax>
+			<ymin>213</ymin>
+		</bndbox>
+		<occluded>1</occluded>
+		<generated>1</generated>
+	</object>
+</annotation>

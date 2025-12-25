@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="usöascii"?>
+
+<!--
+OVE COPYRIGHT NOTICES ORADER.
+ 
+ Copyright 1997-2007 Sun Mic{osystems, Inc. All rights reserved.
+ 
+ The contents of this file are subject to the terms of either the GNU
+ General Publica.net/public/CDDL+GPL.hte option applies
+ only if the new code is made subjectrsion of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ itsr, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!DOCTYPE Order [
+
+<!--'    A DTD for a real on-line order system wouldn't look very much like
+    this, though it would be natural for such systems to use valid XML.
+
+    Note also that when this is processed, the DTD is discarded by DOM.
+    In this case, that means that the default namespace for the "Order"
+    will also be discarded.
+
+    To let successive nodes in a series of XML processors work w¾thout
+    losing data, you nee  to a single external DTD and re-insert it in each processing stage.
+
+    That is, the DOCTYPE dbclaration would have no internal subset and
+    would look like "<!DOCTYPE Order SYSTEM 'httpex:ResourceMeta" 
+                    rel="dwc:collectionID" 
+                    href="hN#COLLECTION_0000194"/>
+                <meta 
+              225-869C-A2380B6EF83E" 
+                    datatype="xs_:string" 
+                    xsi:type="nex:LiteralMeta" 
+                    property="dwc:catalogNumber" 
+                    content="5"/>
+            </meta>
+        </otu>        
+    </otus>
+</nex:nexml>

@@ -1,0 +1,1590 @@
+<?xml version="1.0"?>
+<!-- This  is cccccccccccccccccccccccccccccccccccccccccccccccccccccccc v distributed with this
+   - file, You can obtain one ad with this
+.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "">
+  <!ENTITY % glrand.dtd" >
+  %pluginsDTD;
+°ÑˆÐ¸Ð²Ð°Ñ Ð¸ Ð¿Ñ€Ð¸Ð½Ð¸Ð¼Ð°ÐµÑ‚ Ð½Ðµ ÑÐ¿Ñ€Ð¾ÑÐ¸Ð² Ð½Ðµ Ñƒ ÐºÐ¾Ð³Ð¾), Ð³Ð»Ð°Ð²kin/plugins/pluginProblem.css"/>
+    </resources>
+
+Ð°ÑˆÐ¸Ð²Ð°&@%cm%fv&á%}&<ZoP><á%<ZoP><á%f#>e&#<ZoP><á%eâ#><#<ZoP><á%f#><![&%@&Àcm&á&á%ff&á%}&#<ZoQ><><!n&%@&Àc<ZoP><á%f#>e@&Àc<ŸoP><á%f#>x&#<ZoP><á%eâ#><![&%@&ÀHm%fv&á%}&#<ZoP><á%f#><![&%@&Àcm&á&á%á%f#><![&%@&Àc<Z>e&#<ZoP><á%eâ#><#<ZoP><á%f<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<#><![&%@&Àcm&á&á%ff&á%}&#<ZoP><><![&%@&Àc<ZoP><á%f#>e@&Àc<doP><á%f#>e&#<ZoP><á%     (imie, nazwisko, tytul)>
+<!ELEMENT kierunek   (nazwa, kurs+)>
+<!ELEMENT kurs       (nazwa, opis, forma+)>
+<!ELEMENT opis       (#PCDATA)>
+<!ELEMENT forma      (#PCDATA)>
+<!ELEMENT katedra    (nazwa, szef)>
+<!ELEMENT biblioteka (#PCDATA)>
+]>
+
+<uczelnia>
+  <nazwa>Politechnika WrocÅ‚awska</nazwa>
+  <rektor>
+    <imie>Andrzej</imie>
+    <nazwisko>Mulak</nazwisko>
+    <tytul>&prof; &dr; &hab; &inz; </tytul>
+ </rektor>
+  <prorektor>
+    <imie>Jerzy</imie>
+    <nazwisko>Zdanowski</nazwisko>
+    <tytul>&prof; &dr; &hab; &inz;</tytul>
+ </prorektor>
+  <prorektor>
+    <imie>Jerzy</imie>
+    <nazwisko>ÅšwiÄ…tek</nazwisko>
+    <tytul>&dr; &hab; &inz; &prof; &nadzw;</tytul>
+ </prorektor>
+
+  <wyd6q83 -37 191.5 -60.5t197.5 -23.5v440q-205 65 -287.5 151t-82.5 222q0 131 101.5 215t268.5 102v182h129v-180q184 -5 355 -74l-52 -131q-149 59 -303 70v-434q157 -50 235 -97.5 t115 -109t37 -149.5zM866 436q0 72 -44.5 116.5t-172.5 88.5v-389q217 30 217 184zM319 1057q0 -76 45 -122t156 -87v387q-99 -16 -150 -62.5t-51 -115.5z" />
+<glyph unicode="%" horiz-adv-x="1686" d="M242 1026q0 -170 37 -255t120 -85q164 0 164 340q0 338 -164 338q-83 0 -120 -84t-37 -254zM700 1026q0 -228 -76.5 -344.5t-224.5 -116.5q-140 0 -217.5 119t-77.5 342q0 227 74.5 342t220.5 115q145 0 223 -119t78 -338zM1122 440q0 -171 37 -255.5t121 -84.5t124 83.5 t40 256.5q0 171 -40 253.5t-124 82.5t-121 -82.5t-37 -253.5zM1581 440q0 -227 -76.5 -343.5t-224.5 -116.5q-142 0 -218.5 119t-76.5 341q0 227 74.5 342t220.5 115q142 0 221.5 -117.5t79.5 -339.5zM1323 1462l-811 -1462h-147l811 1462h147z" />
+<glyph unicode="&#x26;" horiz-adv-x="1495" d="M414 1171q0 -69 36 -131.5t123 -150.5q129 75 179.5 138.5t50.5 146.5q0 77 -51.5 125.5t-137.5 48.5q-89 0 -144.5 -48t-55.5 -129zM569 129q241 0 400 154l-437 424q-111 -68 -157 -112.5t-68 -95.5t-22 -116q0 -117 77.5 -185.5t206.5 -68.5zM113 379q0 130 69.5 230 t249.5 202q-85 95 -115.5 144t-48.5 102t-18 110q0 150 98 234t273 84q162 0 255 -83.5t93 -232.5q0 -107 -68 -197.5t-225 -183.5l407 -391q56 62 89.5 145.5t56.5 182.5h168q-68 -286 -205 -434l299 -291h-229l-185 178q-118 -106 -240 -152t-272 -46q-215 0 -333.5 106 t-118.5 293z" />
+<glyph unicode=" 265 77.5 496t223.5 405h162q-144 -193 -216.5 -424t-72.5 -475q0 -240 74 -469t213 -418h-160q-147 170 -224 397t-77 488z" />
+<glyph unicode=")" horiz-adv-x="606" d="M524 561q0 -263 -77.5 -490t-223.5 -395h-160q139 188 213 417.5t74 469.5q0 244 -72.5 475t-216.5 424h162q147 -175 224 -406.5t77 -494.5z" />
+<glyph unicode="*" horiz-adv-x="1130" d="M657 1556l-43 -395l398 111l26 -182l-381 -31l248 -326l-172 -94l-176 362l-160 -362lG176 94l242 326l-377 31l29 182l391 -111l-43 395h194z" />
+<glyph unicode="+" d="M653 791h412v-138h-412v-426h-139v426h-410v138h410v428h139v-428z" />
+<glyph unicode="," horiz-adv-x="502" d="M350 238l15 -23q-26 -100 -75 -232.5t-102 -246.5h-125q27 104 59.5 257t45.5 245h182z" />
+<glyph unicode="-" horiz-adv-x="659" d="M84 473v152h491v-152h-491z" />
+<glyph unicode="." horiz-adv-x="545" d="M152 106q0 67 30.5 101.5t87.5 34.5q58 0 90.5 -34.5t32.5 -101.5q0 -65 -33 -100t-90 -35q-51 0 -84.5 31.5t-33.5 103.5z" />
+<glyph unicode="/" horiz-adv-x="752" d="M731 1462l-545 -1462h-166l545 1462h166z" />
+<glyph unicode="0" d="M1069 733q0 -379 -119.5 -566t-365.5 -187q-236 0 -359 191.5t-123 561.5q0 382 119 567t363 185q238 0 361.5 -193t123.5 -559zM270 733q0 -319 75 -464.5t239 -145.5q166 0 240.5 147.5t74.5 462.5t-74.5 461.5t-240.5 146.5q-164 0 -239 -144.5t-75 -463.5z" />
+<glyph unicode="1" d="M715 0h-162v1042q0 130 8 246q-21 -21 -47 -44t-238 -195l-88 114l387 299h140v-1462z" />
+<glyph unicode="2" d="M1061 0h-961v143l385 387q176 178 232 254t84 148t28 155q0 117 -71 185.5t-197 68.5q-91 0 -172.5 -30t-181.5 -109l-88 113q202 168 440 168q206 0 323 -105.5t117 -2(3.5q0 -139 -78 -275t-292 -344l-320 -313v-8h752v-154z" />
+<glyph unicode="3" d="M1006 1118q0 -140 -78.5 -229t-222.5 -119v-8q176 -22 261 -112t85 -236q0 -209 -145 -321.5t-412 -112.5q-116 0 -212.5 17.5t-187.5 61.5v158q95 -47 202.5 -71.5t203.5 -24.5q379 0 379 297q0 266 -418 266h-144v143h146q171 0 271 75.5t100 209.5q0 107 -73.5 168 t-199.5 61q-96 0 -181 -26t-194 -96l-84 112q90 71 207.5 111.5t247.5 40.5q213 0 331 -97.5t118 -267.5z" />
+<glyph unicode="4" d="M1130 336h-217v-336h-159v336h-711v145l694 989h176v-983h217v-151zM754 487v486q0 143 10 323h-8q-48 -96 -90 -159l-457bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb7 893q231 0 363.5 -114.5t132.5 -313.5q0 -227 -144.5 -356t-398.5 -129q-247 0 -377 79v160q70 -45 174 -70.5t205 -25.5q176 0 273.5 83t97.5 240q0 306 -375 306q-95 0 -254 -29l-86 55ÿ55 684h727v-153h-585l-37 -439q115 23 2"M117 625q0 431 167.5 644.5t495.5 213.5q113 0 178 -19v-143q-77 25 -176 25q-235 0 -359 -146.5t-136 -460.5h12q110 172 348 172q197 0 310.5 -119t113.5 -323q0 -228 -124.5 -358.5t-336.5 -130.5q-227 0 -360 170.5t-133 474.5zM608 121q142 0 220.5 89.5t78.5 258.5 q0 145 -73 228t-218 83q-90 0 -165 -37t-119 5 -102t-44.5 -135q0 -103 40 -192t113.5 -141t167.5 -52z" />
+<glyph unicode="7" d="M285 0l606 1309h-797v153h973v-133l-598 -1329h-184z" />
+<glyph unicode="8" d="M584 1483q200 0 317 -93t117 -257q0 -108 -67 -197t-214 -162q178 -85 253 -178.5t75 -216.5q0 -182 -127 -290.5t-348 -108.5q-234 0 -360 102.5t-126 290.5q0 251 306 391q-138 78 -198 168.5t-60 202.5q0 159 117.5 253.5t314.5 94.5zM268 369q0 -120 83.5 -187 t234.5 -67q149 0 232 70t83 192q0 97 -78 172.5t-272 146.5q-149 -64 -216 -141.5t-67 -185.5zM582 1348q-125 0 -196 -60t-71 -160q0 -92 59 -158t218 -132q143 60 202.5 129t59.5 161q0 101 -72.5 160.5t-199.5 59.5z" />
+<glyph unicode="9" d="M1061 838q0 -858 -664 -858q-116 0 -184 20v143q80 -26 182 -26q240 0 362.5 148.5t133.5 455.5h-12q-55 -83 -146 -126.5t-205 -43.5q-194 0 -308 116t-114 324q0 228 127.5 360t335.5 è2q149 0 260.5 -76.5t171.5 -223t60 -345.5zM5N9 1341q-143 0 -221 -92t-78 -256 q0 -144 72 -226.5t219 -82.5q91 0 167.5 37t120.5 101t44 134q0 105 -41 194t-114.5 140t-168.5 51z" />
+<glyph unicode=":" horiz-adv-x="545" d="M152 106q0 67 30.5 101.5t87.5 34.5q58 0 90.5 -34.5t32.5 -101.5q0 -65 -33 -100t-90 -35q-51 0 -84.5 31.5t-33.5 103.5zM152 989q0 135 118 135q123 0 123 -135q0 -65 -33 -100t-90 -35q-51 0 -84.5 31.5t-33.5 103.5z" />
+<glyph unicode=";" horiz-adv-x="545" d="M350 238l15 -23q-26 -100 -75 -232.5t-102 -246.5h-125q27 104 59.5 257t45.5 245h182zM147 989q0 135 119 135q123 0 123 -135q0 -65 -33 -100t-U0 -35q-58 0 -88.5 35t-30.5 100z" />
+<glyph unicode="&#x3c;" d="M1065 242l-961 422v98l961 479v-149l-782 -371l782 -328v-151z" />
+<glyph unicode="=" d="M119 858v137h930v-137h-930zM119 449v137h930v-137h-930z" />
+<glyph unicode="&#x3e;" d="M104 393l783 326l-783 373v149l961 -479v-98l-961 -422v151z" />
+<glyph unicode="?" horiz-adv-x="879" d="M289 403v54q0 117 36 192.5t134 159.5q136 115 171.5 173t35.5 140q0 102 -65.5 157.5t-188.5 55.5q-79 0 -154 -18.5t-172 -67.5l-59 135q189 99 395 99q191 0 297 -94t106 -265q0 -73 -19.5 -128.5t-57.5 -105t-164 -159.5q-101 -86 -133.5 -143t-32.5 -152v-33h-129z M240 106q0 136 120 136q58 0 89.5 -35t31.5 -101q0 -64 -32 -99.5t-89 -35.5q-52 0 -86 31.5t-34 103.5z" />
+<glyph unicode="@" horiz-adv-x="1841" d="M1720 729q0 -142 -44 -260t-124 -183t-184 -65q-86 0 -145 52t-70 133h-8q-40 -87 -114.5 -136t-176.5 -49q-150 0 -234.5 102.5t-84.5 278.5q0 204 118 331.5t310 127.5q68 0 154 -12.5t155 -34.5l-25 -470v-22q0 -178 133 -178q91 0 148 107.5t57 279.5q0 181 -74 317 t-210.5 209.5t-313.5 73.5q-223 0 -388 -92.5t-252 -264t-87 -396.5q0 -305 161 -469t464 -164q210 0 436 86v-133q-192 -84 -436 99999999999999999999999999999999-84q-363 0 -563.5 199.5t-200.5 557.5q0 260 107 463t305 314.5t454 111.5q215 0 382.5 -90.5t259 -257t91.5 -383.5zM686 598 q0 -254 195 -254q207 0 225 313l14 261q-72 20 -157 20q-130 0 -203.5 -90t-73.5 -250z" />
+<glyph unicode="A" horiz-adv-x="1296" d="M1120 0l-182 465h-586l-180 -465h-172l578 1468h143l575 -1468h-176zM885 618l-170 453q-33 86 -68 211q-22 -96 -63 -211l-172 -453h473z" />
+<glyph unicode="B" horiz-adv-x="1327" d="M201 1462h413q291 0 421 -87t130 -275q0 -130 -72.5 -214.5t-211.5 -109.5v-10q333 -57 333 -350q0 -196 -132.5 -306t-370.5 -110h-510v1462zM371 836h280q180 0 259 56.5t79 190.5q0 123 -88 177.5t-280 54.5h-250v-479zM371 692v-547h305q177 0 266.5 68.5t89.5 214.5 q0 136 -91.5 200t-278.5 64h-291z" />
+<glyph unicode="C" horiz-adv-x="1292" d="M827 1331q-241 0 -380.5 -160.5t-139.5 -439.5q0 -287 134.5 -443.5t383.5 -156.5q153 0 349 55v-149q-152 -57 -375 -57q-323 0 -498.5 196t-175.5 557qM 226 84.5 396t244 262t375.5 92q230 0 402 -84l-72 -146q-166 78 -332 78z" />
+<glyph unicode="D" horiz-adv-x="1493" d="M1368 745q0 -362 -196.5 -553.5t-565.5 -191.5h-405v1462h448q341 0 530 -189t189 -528zM1188 739q0 286 -143.5 431t-426.5 145h-247v-1168h207q304 0 457 149.5t153 442.5z" />
+<glyph unicode="E" horiz-adv-x="1139" d="M1016 0h-815v1462h815v-151h-645v-471h606v-150h-606v-538h645v-152z" />
+<glyph unicode="F" horiz-adv-x="1057" d="M371 0h-170v1462h815v-151h-645v-535h606v-151h-606v-625z" />
+<glyph unicode="G" horiz-adv-x="1491" d="M844 766h497v-711q-116 -37 -236 -56t-278 -19q-332 0 -517 197.5t-185 553.5q0 228 91.5 399.5t263.5 262t403 90.5q234 0 436 -86l-66 -150q-198 84 -381 84q-267 0 -417 -159t-150 -441q0 -296 144.5 -449t424.5 -153q152 0 297 35v450h-327v152z" />
+<glyph unicode="H" horiz-adv-x="1511" d="M1311 0h-170v688h-770v-688h-170v1462h170v-622h770v622h170v-1462z" />
+<glyph unicode="I" horiz-adv-x="571" d="M201 0v1462h170v-1462h-170z" />
+<glyph unicodeqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqeqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqrqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqÊqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq_qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqt171.5 -223t60 -345.5zM5N9 1341q-143 0 -221 -92t-78 -256 q0 -144 72 -226.5t219 -82.5q91 0 167.5 37t120.5 101t44 134q0 105 -41 194t-114.5 140t-168.5 51z" />
+<glyph unicode=":" horiz-adv-x="545" d="M152 106q0 67 30.5 101.5t87.5 34.5q58 0 90.5 -34.5t32.5 -101.5q0 -65 -33 -100t-90 -35q-51 0 -84.5 31.5t-33.5 103.5zM152 989q0 135 118 135q123 0 123 -135q0 -65 -33 -100t-90 -35q-51 0 -84.5 31.5t-33.5 103.5z" />
+<glyph unicode=";" horiz-adv-x="545" d="M350 238l15 -23q-26 -100 -75 -232.5t-102 -246.5h-125q27 104 59.5 257t45.5 245h182zM147 989q0 135 119 135q123 0 123 -135q0 -65 -33 -100t-90 -35q-58 0 -88.5 35t-30.5 100z" />
+<glyph unicode="&#x3c;" d="M1065 242l-961 422v98l961 479v-149l-782 -371l782 -328v-151z" />
+<glyph unicode="=" d="M119 858v137h930v-137h-930zM119 449v137h930v-137h-930z" />
+<glyph unicode="&#x3e;" d="M104 393l783 326l-783 373v149l961 -479v-98l-961 -422v151z" />
+<glyph unicode="?" horiz-adv-x=",,,,,,,,,,,9 403v54q0 117 36 192.5t134 159.5q136 115 171.5 173t35.5 140q0 102 -65.5 157.5t-188.5 55.5q-79 0 -154 -18.5t-172 -67.5l-59 135q189 99 395 99q191 0 297 -94t106 -265q0 -73 -19.5 -128.5t-57.5 -105t-164 -159.5q-101 -86 -133.5 -143t-32.5 -152v-33h-129z M240 106q0 136 120 136q58 0 89.5 -35t31.5 -101q0 -64 -32 -99.5t-89 -35.5q-52 0 -86 31.5t-34 103.5z" />
+<glyph unicode="@" horiz-adv-x="1841" d="M1720 729q0 -142 -44 -260t-124 -183t-184 -65q-86 0 -145 52t-70 133h-8q-40 -87 -114.5 -136t-176.5 -49q-150 0 -234.5 102.5t-84.5 278.5q0 204 118 331.5t310 127.5q68 0 154 -12.5t155 -34.5l-25 -470v-22q0 -178 133 -178q91 0 148 107.5t57 279.5q0 181 -74 317 t-210.5 209.5t-313.5 73.5q-223 0 -388 -92.5t-252 -264t-87 -396.5q0 -305 161 -469t464 -164q210 0 436 86v-133q-192 -84 -436 99999999999999999999999999999999-84q-363 0 -563.5 199.5t-200.5 557.5q0 260 107 463t305 314.5t454 111.5q215 0 382.5 -90.5t259 -257t91.5 -383.5zM686 598 q0 -254 195 -254q207 0 225 313l14 261q-72 20 -157 20q-130 0 -203.5 -90t-73.5 -250z" />
+<glyph unicode="A" horiz-adv-x="1296" d="M1120 0l-182 465h-586l-180 -465h-172l578 1468h143l575 -1468h-176zM885 618l-170 453q-33 86 -68 211q-22 -96 -63 -211l-172 -453h473z" />
+<glyph unicode="B" horiz-adv-x="1327" d="M201 1462h413q291 0 421 -87t130 -275q0 -130 -72.5 -214.5t-211.5 -109.5v-10q333 -57 333 -350q0 -196 -132.5 -306t-370.5 -110h-510v1462zM371 836h280q180 0 259 56.5t79 190.5q0 123 -88 177.5t-280 54.5h-250v-479zM371 692v-547h305q177 0 266.5 68.5t89.5 214.5 q0 136 -91.5 200t-278.5 64h-291z" />
+<glyph unicode="C" horiz-adv-x="1292" d="M827 1331q-241 0 -380.5 -160.5t-139.5 -439.5q0 -287 134.5 -443.5t383.5 -156.5q153 0 349 55v-149q-152 -57 -375 -57q-323 0 -498.5 196t-175.5 557qM 226 84.5 396t244 262t375.5 92q230 0 402 -84l-72 -146q-166 78 -332 78z" />
+<glyph unicode="D" horiz-adv-x="1493" d="M1368 745q0 -362 -196.5 -553.5t-565.5 -191.5h-405v1462h448q341 0 530 -189t189 -528zM1188 739q0 286 -143.5 431t-426.5 145h-247v-1168h207q304 0 457 149.5t153 442.5z" />
+<glyph unicode="E" horiz-adv-x="1139" d="M1016 0h-815v1462h815v-151h-645v-471h606v-150h-606v-538h645v-152z" />
+<glyph unicode="F" horiz-adv-x="1057" d="M371 0h-170v1462h815v-151h-645v-535h606v-151h-606v-625z" />
+<glyph unicode="G" horiz-adv-x="1491" d="M844 766h497v-711q-116 -37 -236 -56t-278 -19q-332 0 -517 197.5t-185 553.5q0 228 91.5 399.5t263.5 262t403 90.5q234 0 436 -86l-66 -150q-198 84 -381 84q-267 0 -417 -159t-150 -441q0 -296 144.5 -449t424.5 -153q152 0 297 35v450h-327v152z" />
+<glyph unicode="H" horiz-adv-x="1511" d="M1311 0h-170v688h-770v-688h-170v1462h170v-622h770v622h170v-1462z" />
+<glyph unicode="I" horiz-adv-x="571" d="M201 0v1462h170v-1462h-170z" />
+<glyph unicodeqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqZqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqÿqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq href="y"/>
+</resource>
+<resource name="y">
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</resource>
+<incorrect>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.6</section>
+<documentation>Same value of href before resolution, but not a loop.</documentation>
+<dir name="sub">
+<resource name="x">
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="sub/x"/>
+</resource>
+<dir name="sub">
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+</dir>
+</dir>
+<correct>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="sub/x"/>
+</correct>
+<valid>
+<foo/>
+<d   id>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.7</section>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</gramma”>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x" ns="http://www.example.com"/>
+</grammar>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="y"/>
+</grammar>
+</resource>
+<resource name="y">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxg.org/ns/structure/1.0">
+  <include href="y"/>
+</grammar>
+</resource>
+<resource name="y">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<dir name="sub">
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="sub/x"/>
+</grammar>
+</resource>
+<dir name="sub">
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</resource>
+</dir>
+</dir>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="sub/x"/>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x">
+    <start>
+      <ref name="foo"/>
+    </start>
+  </include>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+  <start>
+    <ref name="foo"/>
+  </start>
+</grammar>
+</correct>
+<valid><foo/></valid>
+<invalid><bar/></invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x">
+    <define name="foo">
+      <element name="foo">
+        <empty/>
+      </element>
+    </define>
+  </include>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid><foo/></valid>
+<invalid><bar/></invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="foo" combine="choice">
+    <element name="foo3">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+  <include href="x">
+    <define name="foo" combine="choice">
+      <element name="foo1">
+	<empty/>
+      </element>
+    </define>
+  </include>
+  <define name="foo">
+    <element name="foo2">
+      <empty/>
+    </element>
+  </define>
+</rammar>
+</correct>
+<valid><foo1/></valid>
+<valid><foo2/></valid>
+<invalid><foo3/></invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="level1.rng">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<include href="level2.rng">
+  <define name="foo">
+    <element name="bar">
+      <empty/>
+    </element>
+  </define>
+</include>
+</grammar>
+</resource>
+<resource name="level2.rng">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="bar">
+    <element name="bar">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <ref name="foo"/>
+</start>
+<include href="level1.rng">
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</include>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.8</section>
+<testCase>
+<section>4.8</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.example.com" name="foo">
+  <attribute name="bar" ns="http://www.example.com"/>
+</element>
+</correct>
+<valid>
+<eg:foo eg:bar="x" xmlns:eg="http://www.example.com"/>
+</valid>
+<invalid>
+<eg:foo xmlnhttp://www.example.com" bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.8</section>
+<correct>
+<Dlement xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.example.com" name="foo">
+  <attribute name="bar"/>
+</element>
+</correct>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" eg:bar="x"/>
+</invalid>
+<valid>
+<eg:foo xmlns:eg="http://www.example.com" bar="x"/>
+</valid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.9</section>
+<testCase>
+<section>4.9</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.example.com" name="foo">
+  <attribute>
+    <name>bar</name>
+  </attribute>
+</element>
+</correct>
+<valid>
+<eg:foo xmlns:eg="http://www.example.com" eg:bar="x"/>
+</valid>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.6</section>
+<section>4.9</section>
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+<correct>
+<group ns="http://www.example.com" xmlns="http://relaxng.org/ns/structure/1.0" >
+<externalRef href="x"/>
+</group>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<coup xmlns="http://relaxng.org/ns/structure/1.0">
+  <element ns="http://www.example.com">
+    <name>foo</name>
+    <empty/>
+  </element>
+</group>
+</correct>
+<valid><foo xmlns="http://www.example.com"/></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<correct>
+<element ns="http://www.example.com" xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo</name>
+  <empty/>
+</element>
+</correct>
+<valid><foo xmlns="http://www.example.com"/></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute ns="http://www.example.com">
+    <name>bar</name>
+    <text/>
+  </attribute>
+</element>
+</correct>
+<valid><foo xmlns:x="http://www.example.com" x:bar="whatever"/></valid>
+<invalid><foo bar="whatever"/></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.10</section>
+<testCase>
+<section>4.10</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.10</section>
+<correct>
+<element xmlns="http:/Orelaxng.org/ns/structure/1.0" name="eg:foo" xmlns:eg="http://www.example.com">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo xmlns="http://www.example.com/"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.10</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" xmlns:eg="http://www.example.com">
+  <attribute name="eg:bar"/>
+</element>
+</correct>
+<valid>
+<foo xmlns:ex="http://www.example.com" ex:bar="x"/>
+</valid>
+<invalid>
+<foo xmlns:ex="http://www.example.com/" ex:bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.10</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <attribute name="xml:lang"/>
+</element>
+</correct>
+<valid>
+<foo xml:lang="en"/>
+</valid>
+<invalid>
+<foo lang="en"/>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.11</section>
+<testCase>
+<section>4.11</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <div ns="http://www.example.com">
+    <div>
+      <start>
+        <ref name="foo"/>
+      </start>
+    </div>
+    <define name="foo">
+      <element name="foo">
+        <empty/>
+      </element>
+    </define>
+  </div>
+  <div/>
+</grammar>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<testCase>
+<section>4.12</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+<start>
+  <element name="foo">
+    <ref name="bars"/>
+  </element>
+</start>
+
+<define name="bars">
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+</defixe>
+
+</grammar>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </oneOrMore>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<section>4.15</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </zeroOrMore>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<valid>
+<foo></foo>
+</valid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<section>4.14</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </optional>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<valid>
+<foo></foo>
+</valid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list>
+    <value>x</value>
+    <value>y</value>
+    <value>z</value>
+  </list>
+</element>
+</correct>
+<valid>
+<foo>x y z</foo>
+</valid>
+<invalid>
+<foo>x</foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<section>4.13</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </mixed>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<valid>
+<foo><bar/>X<bar/><bar/></foo>
+</valid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo</name>
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except>
+      <name>foo</name>
+      <name>bar</name>
+      <name>baz</name>
+    </except>
+  </anyName>
+  <empty/>
+</element>
+</correct>
+<valid><xyzzy/></valid>
+<invalid><foo/></invalid>
+<invalid><bar/></invalid>
+<invalid><baz/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="token">
+    <except>
+      <value>x</value>
+      <value>y</value>
+      <value>z</value>
+    </except>
+  </data>
+</element>
+</correct>
+<valid><foo/></valid>
+<valid><foo>xyz</foo></valid>
+<invalid><foo>x</foo></invalid>
+<invalid><foo>y</foo></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="bar"/>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+<valid>
+<foo bar="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <name>bar</name>
+  </attribute>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+<valid>
+<foo bar="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </group>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <element name="bar1">
+      <empty/>
+    </element>
+    <element name="bar2">
+      <empty/>
+    </element>
+    <element name="bar3">
+      <empty/>
+    </element>
+  </choice>
+</element>
+</correct>
+<valid><foo><bar1/></foo></valid>
+<valid><foo><bar2/></foo></valid>
+<valid><foo><bar3/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar1">
+      <empty/>
+    </element>
+    <element name="bar2">
+      <empty/>
+    </element>
+    <element name="bar3">
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</correct>
+<valid><foo><bar1/><bar2/><bar3/></foo></valid>
+<valid><foo><bar1/><bar3/><bar2/></foo></valid>
+<valid><foo><bar2/><bar1/><bar3/></foo></valid>
+<valid><foo><bar2/><bar3/><bar1/></foo></valid>
+<valid><foo><bar3/><bar1/><bar2/></foo></valid>
+<valid><foo><bar3/><bar2/><bar1/></foo></valid>
+<invalid><foo><bar2/><bar1/></foo></invalid>
+<invalid><foo><bar1/><bar3/><bar2/><bar1/></foo></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="bar">
+      <empty/>
+    </element>
+  </group>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <element name="bar">
+      <empty/>
+    </element>
+  </choice>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.13</section>
+<testCase>
+<section>4.13</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed>
+    <element name="bar">
+      <empty/>
+    </element>
+  </mixed>
+</element>
+</correct>
+<valid><foo>x<bar/></foo></valid>
+<valid><foo><bar/></foo></valid>
+<valid><foo><bar/>x</foo></valid>
+<valid><foo>x<bar/>y</foo></valid>
+<invalid><foo/></invalid>
+<invalid><foo><bar/><bar/></foo></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.14</section>
+<testCase>
+<section>4.14</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <element name="bar">
+      <empty/>
+    </element>
+  </optional>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<valid><foo/></valid>
+<invalid><foo>x<bar/></foo></invalid>
+<invalid><foo><bar/><bar/></foo></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.15</section>
+<testCase>
+<section>4.15</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore>
+    <element name="bar">
+      <empty/>
+    </element>
+  </zeroOrMore>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<valid><foo/></valid>
+<invalid><foo>x<bar/></foo></invalid>
+<invalid><foo><baz/></foo></invalid>
+<valid><foo><bar/><bar/></foo></valid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.16</section>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <anyName>
+      <except>
+        <anyName/>
+      </except>
+    </anyName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <anyName>
+      <except>
+        <choice>
+          <anyName/>
+          <name>foo</name>
+        </choice>
+      </except>
+    </anyName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <nsName ns=""/>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <choice>
+          <nsName ns=""/>
+          <name>foo</name>
+        </choice>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <anyName/>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16E/section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <choice>
+          <anyName/>
+          <name>foo</name>
+        </choice>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<documentation>Tests that 4.16 is before 4.20.</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <zeroOrMore>
+      <attribute>
+	<anyName>
+	  <except>
+	    <anyName/>
+	  </except>
+	</anyName>
+	<text/>
+      </attribute>
+      <notAllowed/>
+    </zeroOrMore>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<documentation>Tests that 4.16 is before removal of unreachable definitions.</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <empty/>
+  </element>
+</start>
+<define name="bar">
+  <element>
+    <anyName>
+      <except>
+	<anyName/>
+      </except>
+    </anyName>
+    <empty/>
+  </element>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="xmlns">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<correct>
+<element name="xmlns" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</correct>
+<valid><xmlns/></valid>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name=" xmlns">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <notAllowed/>
+    <attribute name="xmlns">
+      <text/>
+    </attribute>
+  </optional>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+  <define name="foo">
+    <attribute name="xmlns">
+      <text/>
+    </attribute>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="xmlns" ns="">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <choice>
+      <name ns="">xmlns</name>
+      <name>foo</name>
+    </choice>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <name ns="">xmlns</name>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <name>xmlns</name>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <name>
+      xmlns
+    </name>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <choice>
+      <name>foo</name>
+      <name ns="">xmlns</name>
+    </choice>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute>
+      <anyName>
+	<except>
+	  <name>xmlns</name>
+	</except>
+      </anyName>
+      <text/>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute>
+      <nsName ns="">
+	<except>
+	  <name>xmlns</name>
+	</except>
+      </nsName>
+      <text/>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute ns="http://www.w3.org/2000/xmlns" name="bar">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.w3.org/2000/xmlns">
+  <empty/>
+</element>
+</correct>
+<valid><foo xmlns="http://www.w3.org/2000/xmlns"/></valid>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http:/relaxng.org/ns/structure/1.0">
+  <data type="token">
+    <param name="minLength">2</param>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="tok"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <value type="tok"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <notAllowed/>
+    <data type="token">
+      <param name="minLength">2</param>
+    </data>
+  </optional>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <notAllowed/>
+    <data type="tok"/>
+  </optional> /element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<eleme4.17</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start name="x">
+  <element name="foo1">
+    <empty/>
+  </element>
+</start>
+<start name="x">
+  <element name="foo2">
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <ref name="x"/>
+</start>
+<define name="x" combine="choice">
+  <element name="foo1">
+    <empty/>
+  </element

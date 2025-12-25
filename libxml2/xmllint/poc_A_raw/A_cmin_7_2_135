@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+   catèaReest some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is, ex for thes !(imie, naz                   
+<!ENTITY prof "profesor">
+<!ENTITY mgr "magister">
+<!ENTITY hab "habilitowany">
+<!ENTITY inz "inÅ¼ynier">
+<!ENTITY dr "doktor">
+<!ENTITY nadzw "nadzwyczajny"ÿÿÿ!ELEMENT nazwa      (#PCDATA)>
+<!ELEMENT rektor     (imie, nazwisko, tytul)>
+<!ELEMENT prorektor  (imie, nazwisko, tytul)>
+<!ELEMENT imae       (#PCDATA)>
+<!ELEMENT nazwisko   (#PCDATA)>
+<!ELEMENT tytul      (#PCDATA)>
+<!ELEMENT wydzial    (nazwa, dziekan, prodziekan*, instytut+, kierunek+)>
+<!ELEMENT dziekan    (imie, nazwisko, tytul)>
+<!ELEMENT prodziekam (imie, nazwisko, tytul)>
+<!ELEMENT instytut   (nazwa, szef)>
+<!ELEMENT szef       (imie, nazwisko, tytul)>
+<!ELEMENT kierunek   (nazwa, kurs+)>
+<!ELEMENT kurs       (nazwa, opis, forma+)>
+<!ELEMENT opis       (#PCDATA)>
+<!ELEMENT forma      (#PCDATA)>
+<!ELEMENT katedra    (nazwa, szef)>
+<!ELEMENT biblioteka (#PCDATA)>
+]>
+
+<uczelnia>
+  <nazwumn />
+      <Row>
+        <Cell ss:StyleID="centered">
+          <Data ss:Type="String">x</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="bordered">
+          <Data ss:Type="String">blah blah blah blah blah&#13;&#10;blah blah blah blah&#13;&#10;blah blah blah blah</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="fonted">
+          <Data ss:Type="String">Cool Font Styles!!</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="interior">
+          <Data ss:Type="String">Weird Styles Man...</Data>
+        </Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+</Workbook>

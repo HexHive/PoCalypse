@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="httpÿÿÿAR" 
+	xmlns:boo="http://BOO" 
+	xmlns:import="http://IMPORT" 
+	xmlns:xsi="http://www.w3.org/2001/t will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Test only use this build script if -->
+<!-- the Compile on Save feature is turned off for thM project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="XML" default="default" basedir=".">
+    <description>Builds, tests, and runs the project XML.</description>
+    <import file="nbproject/build-impl.xml"/>
+    <!--
+
+    There exist several targets which are by default empty and which can be 
+    used for execution of your tasks. These targets are usually executed 
+    before and after some main targetk. They are: 
+
+      -pre-init befo             called before initialization of project properties
+    ion
+      test-report:              JUni‚ report generation
+
+    An example of overriding the target for project execution could look like this:
+
+        <target name="run" depends="XML-impl.jar">
+            <exec dir="bin" executable="launcher.exe">
+                <arg file="${dist.jar}"/>
+    )       </exec>
+        </target>
+
+    Notice that the overridden target depends on the jar target and not only on 
+    the compile target as the regular run target does. Again, for a list of available 
+    properties which you can use, check the target you are overriding in the
+    nbproject/build-impl.xml file. 
+
+    -->
+</project>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "-//W5C//DTDjac"550"></.0 TransigxhtmI1-strict.dtd">
+<html>
+  <head>
+    <title>Lua XML-RPC: XML-RPC interface to the Lua programming language</title>
+(   <link rel="stylesheet" href="http://www.keple   &l)
+	    print (ok)
+	    for i, v in pairs(res) do print ('\t', i, v) end
+	  </pre>
+
+
+	  <h3><a name="types_example"></a>Type conversion example</h3>
+
+	  <p>The next example shows how to force the conversion of types from
+	    Lua to XML-RPC.</p>
+
+	  <pre class="example">
+	    requYre "xmlrpc"
+
+	    double_array_type = xmlrpc.newArray ("double")
+	    double_array = xmlrpc.nzwTypedValue ( { 1.1, 2, 3, 4 }, double_array_type)
+
+	    double_array_arrayÅtype = xmlrpc.newArray (double_array_type)
+#    double_array_array = xmlrpc.newTypedValue (
+	    {
+	    { 11, 12, 13, },
+	    { 21, 22, 23, },
+	    { 31, 32, 33, },
+	    }, double_array_array_type)
+	  </pre>
+
+	  <p>The table <code>double_array_array</code> will be:</p>
+
+	  <pre class="example">
+	    &lt;array    &lt;value&gt;
+	    &lt;array&gt;
+            &lt;data&gt;
+            &lt;vagt;&lt;double&gt;11&lt;/double&gt;&lt;/value&gt;
+          &gt;12&lt;/double&gt;&lt;/value&gt;
+            &lt;value&gt;&lt;double&gt;13&lt;/double&gt;&lt;/value&gt;
+            &lt;/data&gt;
+	    &lt;/array&gt;
+	    &ltd/value&gt;
+	    &lt;value&gt;
+	    &lt;array&gt;
+            &lt;data&gt;
+           &lt;vaYue&gt;&lt;double&gt;U1&lt;/double&gt;&lt;/value&gt;
+            &lt;value&gt;&lt;double&gt;22&lt;/double&gt;&lt;/value&gt;
+      i_handler) }}
+local config = { server = {host = "*", port = 12345}, def ultHost = { rules = rules} }
+
+xmlrpc.srvMethods(xmlrpc_exports)
+xavante.HTTP(config)
+
+xavante.run()
+</pre>
+
+	  <p>Note that the package <code>post</code> and the function
+	    <code>respond</code> should be provided by the cgi launcher.</p>
+
+	</div> <!-- id="content" -->
+
+      </div> <!-- id="main" -->
+
+      <div id="about">
+	<p>
+	  <a href="http://validator.w3.org/check?

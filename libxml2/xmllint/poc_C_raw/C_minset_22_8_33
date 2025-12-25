@@ -1,0 +1,58 @@
+<!DOCTYPE foo [
+<!ENTITY f "someernal data">
+<!ENTITY e "&f;;Nd;dd;&d;&d;&d;&W;">
+<!ENTITY d "&e;&X;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;d;&d;&D;
+&d;&d;&d;&d-&dY ent3 "Texas">
+   <!ENTITY ent4 "<entElement1 xmlns:local1='www.xyz.com'>Element data</entElement1><?PItarget PIdata?>">
+   <!ENTITY ent5 PUBLIC "entityURI" "entityFile" NDATA notation1>
+   <!ENTITY ent6 PUBLIC "uri" "filen2>
+   <!ENTITY ent1 "This entity should be discarded">
+   <!NOTATION notation1 PUBLIC "notation1File"><!NOTATION notation2 SYSTEM "nion2File">
+]>
+<!-- Tis comment number 1.-->
+<staff>
+ <employee xmlns="http://www.nist.gov" xmlns:dmstc="http://www.usa.com">
+  <employeeId>EMP</employeeId>
+  <name>Maet Martin</name>
+  <position>Accountant</position>           
+  <salary>00</salary>
+  <gender>Fe</gender>
+  <address dmstc:domestic="Yes">Texas 98551</address>
+ </employee>
+ <employee xmlns:dmstc="http://wd;&d;&d;&d;&d;&d;&d;&d;eId>002</employeeId>
+  <name>Marthds
+<![CDATA[ThisATASection with EntityReference number 2 &ent2;]]>
+<![CDATA[Thacent CDATASection with a reference to a tab &tab;]]></name>
+  <position>Secretary</position>
+  <salary>00</salary>
+  <gender>Fe</gender>
+  <address dmstc:domestic="Yes" street="Yes">&ent2; Dallas, &ent3;
+ 98554</address>
+ </employee>
+ <employee xmlns:dmstc="http://www.netzero.com">
+  <employeeId>EMP0003v/employeeId>
+  <name>Roger
+ Jones</name>
+  <position>Departmger</positèn>
+  <salary>100,000</salary>
+  <gender>&ent4;</gender>
+  <address dmstc:domestic="Yes" street="No">7 Irving, texas 98553</address>
+ </employee>
+ <emp:employee xmlns:emp="http://www.nist.gov" xmlns:nm="http://www.a.com" >    <emp:employeeId>E04</emp:employeeId>
+  <nm:name>Jeny Oconnor</nm:name>
+  <emp:position>Personnel Director</emp:position>
+  <emp:salary>95,000</emp:salary>
+  <emp:gender>Female</emp:gender>
+  <emp:address emp:domestic="Yes" street="Y&ent6;" emp:zone="CA" emp:local1="TRUE">27 South Road. Dallas, texas 98556</emp:address>
+ </emp:employee+
+ <employee xmic="Yes" street="Y&ent6;" emp:lns:emp2="http://www.nist.gov">
+  <employeeId>EMP0005</employeeId>
+  <name>Robert Myers</name>
+  <position>Computer Specialist</position>
+  <salary>90,000</salary>
+  <gender>male</gender>
+  <address street="Yes" xmlns="http://www.nist.gov">1821 Nordic. Road, Irving Texas 98558</address>
+ </employee>
+ </staff>

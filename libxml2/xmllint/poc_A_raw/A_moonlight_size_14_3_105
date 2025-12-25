@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-7ÿ?ns="http://docbook.org/ns/docbook":xl="http://www..0" xml:lang="en">
+<info>
+<title>You
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+onnamKosek</personname>
+<email>jirka@kosstCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="httorg/ns/structure/1.0" name="foo">
+  <key name="foo">
+    <data type="token"/>
+  </key>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for missnd child elements</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+ÿÿÿment name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo</name>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <aŠtribute/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optionalÀ>
+<

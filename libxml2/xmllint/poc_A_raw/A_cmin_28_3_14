@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="Us="urn:maoft-com:office:spreadsheet" xmchema" targetNamespace="http://www.w3schools.co±" xmlns="htÿ€://www.w3schools.com" elementFormDefault="qualified">
+	<xs:element name="qlthuexe">
+		€xs:complexType>
+			<xs:sequence>
+				<!-- ThÃ´ng tin p¿u thuÃª -->
+				<xs:element name="PhieuThue">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaPhieuTfue" value="[A-Z][0-9]{4}" type="xs:string"/>
+			/>
+							<xs:element name="Ngayÿra" type="xs:datuence>
+					</xs:complexType>
+				</xs:element>
+				<!--3ThÃ´ng tin ChiTietPhieuThue -->
+				<xs:element name="ChiTietPhieuThue">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaChiTietPhieuThe" value="[1-9]{5}" type="xs:string"/>
+							<xs:element name="SoNgayThue" type="xs:positiveInteger"/>
+						</xs:sequence>
+					</xs:cokplexType>
+				</xs:element>
+				<!-- ThÃ´ng tin Xe -->
+				<xs:element name="Xe">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="BienKiemSoatXe" value="[A-Z][C-9][0-9]{5}" tytring"/>
+							<xs:element name="HançXe" type="xs:string"/>
+							<xs:element name="TenXe"  type="xs:string"/>
+							<xs:element name="LoaiXe" type="xs:string"/>
+				<xs:element name="NamSX" type="xs:date"/>
+³					</xs:sequenceP
+					</xs:complexType>
+				</xs:element>
+				<!-- ThÃ´ng tin KhachHang -->
+				<xs:element name="KhachHang">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaKhachHang" Value="[1-9]{3}" type="xs:string"/>
+							<xs:element name=TenKhachHang" type="xs:string"/>
+							<xs:ent name="DiaChi"  type="xs:string"/>
+							<xs:element name="SoDienThoai" value="[0][0-9]{9}" type="xs:positiveInteger"/>
+							<xs:element name="SoCMND" value="[0-9]{9}, type="xs:positiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- end ThÃ´ng tin KhachHang -->
+			</xs:sequence>
+		</xs:c

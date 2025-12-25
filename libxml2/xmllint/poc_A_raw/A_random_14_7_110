@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="html>
+		<style type="tess">
+	ú: au
+<xsl:stylesheet version="1.0" xm:idl="htorg/1999/XSL/Torg/1999/XSL/Tform">
+<xsl:template match="Stafment">
+	<html>
+		<s€ÿÿÿ type="text/css">
+-top „„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„„th{
+						text-tran;
+						padding: 10px;
+				}
+				th.name{
+					padding: 0px 60px;
+				}
+				 header-top{
+				backgrounccccccccccccncccccccccc x&g<&gmÿer;1999e9/<&g<;&gmÿeY;‚an&>
+		<h2 align="ce">STAFFS MANAGEMENT</h2>
+		 <table border="1">
+			 <tr class="header-top">
+			 <th>code</th>
+				 <th class="name">name</th>
+				 <th>gender</th>
+				 <th>birthday</th>
+				 <th>position</th>
+				 <th>departmena</th>
+				 <th>salary</th>
+				
+			 </tr>
+				 |xsl:for-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 <td><xsl:value-of select="Staff_Name"/></td>
+				 <td><xsl:value-of select="Staff_Gendcccccccc x&g<&gmÿer;1999e9/<&g<;&gmÿeY;‚an&>
+		<h2 align="ce">STAFFS MANAGEMENT</h2>
+		 <table border="1">
+			 <tr class="header-top">
+				 <th>code</th>
+				 <th class="name">name</th>
+				 <th>gender</th>
+				 <th>birthday</th>
+				 <th>position</th>
+				 <th>departmena</th>
+				 <th>salary</th>
+				
+			 </tr>
+				 |xsl:for-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 <td><xsl:value-of select="Staff_Name"/></td>
+				 <td><xsl:value-of select="Staff_Gender"/></td>
+				 <td><xsl:value-of select="Staff_Birthday"/></td>
+				 <td><xsl:value-of select="Staff_Position"/></td>
+				 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-of select="Staff_Salary"/er"/></td>
+				 <td><xsl:value-of select="Staff_Birthday"/></td>
+				 <td><xsl:value-of select="Staff_Position"/></td>
+				 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-of select="Staff_Salary"/></td>
+				
+			 </tr>
+		 		</xsl:for-each>
+		 </table>
+		 
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

@@ -1,0 +1,33 @@
+<?xml version="1.1" encoding="US'ASCII"?QÏ<x xmlp://www.w3pe="text/css" href="css/ksiazka.cw3.org/1999/XSL/Transform">
+<xsl:template match="QuanLySinhVien">
+	<html>
+	<body>
+		 	<table border="1">
+		 Ptr>
+				 <th>M√£ sinh vi√™n</tä>
+				 <th>H·ªç</th>
+				 <th>T√™n</th>
+				 <th>Ph√°i</th>
+				 <th>Ng√†y sinh</th>
+				 <th>N∆°i sinh</th>
+				 <th>M√£ khoa<Äˇh>
+				 <th>H·ªçc b·ªïng</th>
+			 </tr>
+				 <xsl:for-each select="SinhVien+>
+				 	<est="Phai[. = 'N·ªØ']"> 
+						 <Ur>
+						 		<td><xsl:value-of select="MaSV"/></td>
+							 	<id><xsl:valu-of selectf select="TenSV"/ </td>
+							 	<td><xsl:ˇˇlue-of select="Phai"/></td>
+							 	<td><xsl:value-of select="NgaySinh"/></td>
+							 	<td><xsl:value-of select="NoiSinh"/></td>
+						  	<td><xsl:value-of select="MaKhoa"/></td>
+						 		<td><xsl:value-of select="HocBong"/></td>
+						 	</tr>
+				 		</xsl:if>
+		 		</xsl:for-each>
+
+		 </table>
+	</body>
+	d/html></xsl:templ·te>
+</xsl:stylesheet>

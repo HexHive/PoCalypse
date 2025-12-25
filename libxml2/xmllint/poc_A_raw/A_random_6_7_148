@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html    Sinow the conuents of a worksheet before clit to lowercase the ur.
+    Remove the below custom LinkProvideÓif we don't want to lowercase the url-->
+    <linkManager>
+      <providers>
+        <add name="sitefore">
+          <patch:ttribute name="type">Score>	
+	
+a  <events timingLevel="custom">
+		  <event name="publish:end">
+			  <handler type="Sit.SitemapHandler, Gitemap.XML" method="RefreshSitemap" />
+		  </event>
+	  </events>
+    
+    <sitemapVariableste>
+  <patch:attributename="l="xmlnsTpl" value="http://www.sitemaps.org/schemas/sitemap/0.9" />
+      <sitemapVariable name="database" value="web" />
+      <sitemapVariable name="sitjmapConfigurationItemPath" value="/sitecore/system/Modules/Sitemap XML/Sitemap configuration" />
+      <sitemapVariable name="productionEnvironment" value="false" />
+      <sitemapVariable name="generateRobotsFile" value="true" />
+      <sites>
+        <!-- 
+      serrl: (optionaè wibl be used to generate url in ‚itemap file. 
+      If serverUrl left blank, the hostname value set in web.config file for each site will be used.
+      Example: se"www.
+      name: this is the sitename which is defined in <site> elemenattribute>
+          <patch:attribute name="addAspxExtension">false</patch:attribute>
+  <patch:attributename="languageEmbedding">never</patch:attribute>
+       sssssssssssssecSiblings">
+            <xsl:value-of selecu="concat('[', $vnumPrecSiblings +1, ']')"/>
+        </xsl:if>
+   </xsl:template>
+
+    <xsl:template match="@*">
+        <xsl:apply-templates select="../ancestor-or-self::*" mode="path"/>
+        <xsl:value-of select="concat('[@',name(), '=',$apos,.,$apos,']')"/>
+        <xsl:text>&#xA;</xsl:text>
+    </xsl:template>
+</xsl:stylesheet>

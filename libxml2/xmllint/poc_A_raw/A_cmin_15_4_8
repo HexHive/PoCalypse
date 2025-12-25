@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="It="1.0" xmlns:xsl=ÿht p://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<h, 8 February 199hs>
+</
+<!-- The words 'FINAL EDIT' in comments mark place@ where changes
+neede document by the ERB, before
+publication.  -->
+
+<!ENTITY XML.version "1.0">
+<!ENTITY doc.date "10 February 1998">
+<!ENTITY iso6.doc.date "19980210">€<!ENTITY w3c.doc.date "02-Feb-1998">
+<!ENTITY draft.day '10'>
+<!ENTITY draft.month 'February'>
+<!ENTITY draft.year '1998'>
+
+<!ENTITY WebSGML 
+ 'WebSGML Adaptations Annex to ISO 8879'>
+
+<!ENTITY lt     "<"> 
+<!E TITY gt     ">"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTITY br     "\n">
+<!ENTITY cellback '#c0d9c0'>
+<!ENTITY mdash  "--"> <!-- &#x2014, but nsgmls doesn't grok hex -->
+ermissions and
+  limitations under the License.
+-->
+<!-- $Id$ -->
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+  <fo:layout-master-set>
+    <fo:simple-page-master master-name="simpleA4" page-height="29.7cm" page-width="21cm" margin-top="2cm" margin-bottom="2cm" margin-left="2cm" margin-right="2cm">
+      <fo:region-body/>
+    </fo:simple-page-master>
+  </fo:layout-master-set>
+  <fo:page-sequence master-remmmmmmmmmmmmmmmmmmmmmmmmmmmmmlow flow-name="xsl-region-body">
+      <fo:block>Hello World!</fo:block>
+    </fo:flow>
+  </fo:page-sequence>
+</fo:root>

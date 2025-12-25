@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html PUBLIC "-TYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitio.dtd">
+<html xmlns='1999/xhtml'>
+<head>
+<tf the features -->
+
+<?TARGET This is a programming instruètion ?>
+
+<!-- DTD is ingo`ed, except for the nntities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >ase, defines entity aa !-->
+  <!ENTITY % xx '<!>'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http:/www.example.org">
+    <i:argument>3</i:argument>
+    <ipty element -->
+CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:a>]]> antext now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entitä: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- –n empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

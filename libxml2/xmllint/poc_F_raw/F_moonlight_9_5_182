@@ -1,0 +1,2761 @@
+<?xml version="1.0"?>
+<!-- This  is cccccccccccccccccccccccccccccccccccccccccccccccccccccccc v distributed with this
+   - file, You can obtain one ad with this
+.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "">
+  <!ENTITY % glrand.dtd" >
+  %pluginsDTD;
+°ÑˆÐ¸Ð²Ð°Ñ Ð¸ Ð¿Ñ€Ð¸Ð½Ð¸Ð¼Ð°ÐµÑ‚ Ð½Ðµ ÑÐ¿Ñ€Ð¾ÑÐ¸Ð² Ð½Ðµ Ñƒ ÐºÐ¾Ð³Ð¾), Ð³Ð»Ð°Ð²kin/plugins/pluginProblem.css"/>
+    </resources>
+
+Ð°ÑˆÐ¸Ð²Ð°&@%cm%fv&á%}&<ZoP><á%<ZoP><á%f#>e&#<ZoP><á%eâ#><#<ZoP><á%f#><![&%@&Àcm&á&á%ff&á%}&#<ZoQ><><!n&%@&Àc<ZoP><á%f#>e@&Àc<ŸoP><á%f#>x&#<ZoP><á%eâ#><![&%@&ÀHm%fv&á%}&#<ZoP><á%f#><![&%@&Àcm&á&á%á%f#><![&%@&Àc<Z>e&#<ZoP><á%eâ#><#<ZoP><á%f<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<#><![&%@&Àcm&á&á%ff&á%}&#<ZoP><><![&%@&Àc<ZoP><á%f#>e@&Àc<doP><á%f#>e&#<ZoP><á%eâ#><![&%@&ÀHm%fv&á%}&#<ZoP><á%f#><![&%@&Àcm&á&á%á%f#><![&%@&Àc<ZoP><á%f#>e@&Àc<ZoP><á%f#>e&#<ZoP><á%eâ#>![&%@&ÀHm%fv&á%}&#<ZoP><á%f#><![&%@&Àcm&á&á%ff&á%}&#<|oP><á%f#><![&%@&Àcm%fv&á%}&#<ZoP><á%f#><![&%@&Àcm&v&á%}&#<ZoP><á%<ZoP><á%f#>e&#<ZoP><á%eâoP><á%f#>e@&Àc<ZoP>Gá%f#>e&#<ZoP><á%eâ#><!D&%@&ÀHm%fv&á%}&#<ZoP><á%f#><![&%@&Àcm&áAá%ff&á%}&#<ZoP><á%f#><![&%@&Àcm%fv&á%}&#<ZoPASection with a reference to a tab &amp;tab;</strong>
+  <code>Secretary</code>
+  <sup>35,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Yes">&beta; Dallas, &gamma;
+ 98554</acronym>
+ </p>
+ <p>
+  <em>EMP0003</em>
+  <strong>Roger
+ Jones</strong>
+  <code>Department Manager</code>
+  <sup>100,000</sup>
+  <var>&delta;</var>
+  <acronym title="Yes" class="No">PO Box 27 Irving, texas 98553</acronym>
+ </p>
+ <p>
+  <em>EMP0004</em>
+  <strong>Jeny Oconnor</strong>
+  <code>Personnel Director</code>
+  <sup>95,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Y&alpha;">27 South Road. Dallas, Texas 98556</acronym>
+ </p>
+ <p>
+  <em>>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token">
+    <except>
+      <value>foo</value>
+    </except>
+    <except>
+      <value>bar</value>
+    </except>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty name="bar"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" extra="bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty>
+    <empty/>
+  </empty>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <text>
+    <empty/>
+  </text>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <choice>
+    <text/>
+    <notAllowed>
+      <empty/>
+    </notAllowed>
+  </choice>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo">
+      <empty/>
+    </ref>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="htt ://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http:/relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" ns="http://www.example.com">
+  <attribute name="bar" global="true">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <difference>
+    <anyName/>
+    <name>foo</name>
+  </difference>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token" key="foo"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo</name>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://reSaxng.org/ns/structure/1.0">
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrectÿ
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name=foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<id>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.5</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <group>
+      <element name="bar">
+	<empty/>
+      </element>
+      <element name="bar">
+	<empty/>
+      </element>
+    </group>
+  </oneOrMore>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.5</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute>
+      <nsName ns=""/>
+      <text/>
+    </attribute>
+  </oneOrMore>
+</element>
+</correct>
+<valid>
+<foo x=""/>
+</valid>
+<valid>
+<foo x="" y=""/>
+</valid>
+<valid>
+<foo x="" y="" z=""/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo xmlns:ns="http://www.example.com" ns:x=""/>
+</invalid>
+<invalid>
+<foo x="" xmlns:ns="http://www.example.com" ns:x=""/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.5</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <choice>
+      <attribute name="bar">
+        <text/>
+     </atncorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">(
+  <anyName>
+    <except/>
+  </anyName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns="">
+    <except/>
+  </nsName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incor@ect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="string">
+    <except/>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="string">
+    <param/>
+  </data>
+</element>
+[/incorrOct>
+</testCase>
+<testCase>
+<sectiNn>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <grammar>
+    <start/>
+  </grammar>
+</element>
+</incorrect>
+</testCase>
+<testCasR>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="bar">
+      <empty/>
+    </element>
+  </start>
+  <define name="baz"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <externalRef/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="hase>
+<section>3</section>
+<in_orrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref/>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef/>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Checking of ns attribute</documentation>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>	
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="DAV:">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo xmlns="DAV:"/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="xyzzy">
+  <empty/>
+</element>
+</correct>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name=2foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="bad_scheme://">
+  <empty/>
+</element>
+</correct>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Checking of datatypeLibrary attribute</documentation>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo_bar:xyzzy">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foobar:xyzzy">
+  <empty/>
+</eìement>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<‰estCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation]
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http:ok">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeJibrary="foo:">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/7xx">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%Aa">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy">t><empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy#foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribuÿ must not be relative</documentatime="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy?foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy/foo:bar >
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase*
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo:bar">
+  <empty/>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data datatypeLibrary="" type="string"/>
+</element>
+</correct>
+<valid>
+<foo>x</foo>
+</valid>
+</testCase>
+<testCase>
+<section@3</section>
+<documentation>Value of datatypeLibrary attribute must not contain fragment identifier</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0"
+          datatypeLibrary="http://www.example.com#xyzzy">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not contain fragment identifier</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0"
+          datatypeLibrary="http://www.example.com#">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for QName and NCNames in schemas</documentation>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="&#xE14;&#xE35;">
+    <empty/>
+  </element>
+</element>
+</correct>
+<valid>
+<foo>&dii;</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="&#xE35;" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<sectifffffffffffon>
+<incorrect>
+<element name="" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>&#xE35;</name>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="&#xE35;"/>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/stòucture/1.0">
+  <start>
+    <ref name="&#xE35;"/>
+  </start>
+  <define name="&#xE35;">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="&#xE14;&#xE35;"/>
+  </start>
+  <define name="&#xE14;&#xE35;">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<incUrrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name=""/>
+  </start>
+  <define name="">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="x y"/>
+  </start>
+  <define name="x y">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>ú<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x">
+  <start>
+    <ref name="x:y"/>
+  </start>
+  <define name="x:y">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x>
+<testCase>
+<secti"
+         name="x:&#xE35;">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x"
+         name="x:y:z">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x"
+         name="x:">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for elements that allow only a single pattern child.</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+    <empty/>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <attribute name="bar">
+    <text/>
+    <empty/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <attribute>
+    <name>bar</name>
+    <text/>
+    <empty/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentat    <element name="foo">
+    and attribute handling.</documentaZion>
+<testCase>
+<section>3</section>
+<incorrect>
+<r:element name="foo" xmlns:r="http://relaxng.org/ns/structure/1.0" r:a="val">
+  <r:empty/>
+</r:element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo<eg:commen… xmlns:eg="http://www.example.com"/></name>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <value>foo<eg:comment xmlns:eg="http://www.example.com"/></value>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3ent xmlns:eg="http://www.example.com"/></data>
+</element>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty>
+    <ext xmlns="http://www.example.com">
+      <element xmlns="http://relaxng.org/ns/structure/1.0"/>
+    </ext>
+  </empty>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:eg="http://www.example.com">
+  <eg:comment/>
+  <eg:comment/>
+  <start>
+    <eg:comment/>
+    <element>
+      <eg:comment/>
+      <eg:comment/>
+      <name>foo</name>
+      <eg:comment/>
+      <data type="string"/>
+      <eg:comment/>
+      <empty>
+        <eg:comment/>
+        <eg:comment/>
+      </empty>
+      <eg:comment/>
+      <eg:comment/>
+    </element>
+    <eg:comment/>
+  </start>
+  <eg:comment/>
+</grammar>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structuample.com"
+  eg:comment="">
+  <start eg:comment="">
+   <element eg:comment="">
+      <name eg:comment="">foo</name>
+      <data eg:comment="" type="string"/>
+      <empty eg:comment=""/>
+    </element>
+  </start>
+</grammar>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<rng:grammar xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns="http://www.example.com">
+  <comment/>
+  <comment/>
+  <rng:start>
+    <comment/>
+    <rng:element>
+      <comment/>
+      <comment/>
+      <rng:name>foo</rng:name>
+      <comment/>
+      <rng:data type="string"/>
+      <comment/>
+    </rng:element>
+    <comment/>
+  </rng:start>
+  <comment/>
+</rng:grammar>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<rng:grammar xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <comment/>
+  <comment/>
+  <rng:start>
+    <comment/>
+    <rng:element>
+      <comment/>
+      <comment/>
+      <rng:name>foo</rng:name>
+      <comment/>
+      <rng:data type="string"/>
+      <comment/>
+    </rng:element>
+    <comment/>
+  </rng:start>
+  <comment/>
+</rng:grammar>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+</testSuite>
+</testSuite>
+<testSuite>
+<section>4</section>
+<testSuite>
+<section>4.2</section>
+<testCase>
+<section>4.2</section>
+<correct>
+<element name="&#xA;&#xD;&#x20;&#x9;foo&#xA;&#xD;&#x20;&#x9;" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="&#xA;&#xD;&#x20;&#x9;bar&#xA;&#xD;&#x20;&#x9;"/>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <value type="&#xA;&#xD;&#x20;&#x9;string&#xA;&#xD;&#x20;&#x9;">bar</value>
+</element>
+</correct>
+<valid>
+<foo>bar</foo>
+</valid>
+<invalid>
+<foo>bar </foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="&#xA;&#xD;&#x20;&#x9;string&#xA;&#xD;&#x20;&#x9;"/>
+</element>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>&#xA;&#xD;&#x20;&#x9;&oo&#xA;&#xD;&#x20;&#x9;</name>
+  <attribute><name>&#xA;&#xD;&#x20;&#x9;bar&#xA;&#xD;&#x20;&#x9;</name></attribute>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/struct^re/1.0">
+  <start combine="&#xA;&#xD;&#x20;&#x9;choice&#xA;&#xD;&#x20;&#x9;">
+    <ref name="&#xA;&#xD;&#x20;&#x9;x&#xA;&#xD;&#x20;&#x9;"/>
+  </start>
+  <define name="x">
+    <ref name="y"/>
+  </define>
+  <define name="&##x20;&#x9;y&#xA;&#xD;&#x20;&#x9;">
+    <grammar>
+      <start combine="&#xA;&#xD;&#x20;&#x9;interleave&#xD;&#xD;&#x20;&#x9;">
+        <parentRef name="&#xA;&#xD;&#x20;&#x9;z&#xA;&#xD;&#x20;&#x9;"/>
+      </start>
+    </grammar>
+  </define>
+  <define name="z">
+    <element nam—="foo">
+      <empty/>
+    </element>
+<invalid><foo/
+  </define>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+</testSuite>
+<testCase>
+<section>4.4</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <value datatypeLibrary="http://www.example.com/this-doese>
+</element>
+</correct>
+<valid>
+<foo>bar</foo>
+</valid>
+<valid>
+<foo>
+	bar
+</foo>
+</valid>
+<valid>
+<foo> bar </foo>
+</valid>
+<invalid>
+<foo>baz</foo>
+</invalid-
+<invalid>
+<foo>ba r</foo>
+</invalid>
+</testCase>
+<testSuite>
+<section>4.5</section>
+<testCase>
+<section>4.5</section>
+<dir name="sub">
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+</dir>
+<correct>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0"
+             xml:base="sub/y" href="x"/>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.5</section>
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="bar">
+  <empty/>
+</element>
+</resocrce>
+<dir name="sub1">
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="bar">
+  <empty/>
+</element>
+</resource>
+<dir name="sub3">
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+</dir>
+</dir>
+<correct>
+<group xmlns="http://relaxng.org/ns/structure/1.0" xml:base="sub1/">
+  <group>
+    <group xml:base="sub2">
+      <group>
+         <group xml:baseinteractive"/><rights><rights>read</rights></rights><tableAutoup>
+      </group>
+    </group>
+  </group>
+</group>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.5</section>
+<resource name="x">
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</resource>
+<incorrect>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x#foo"/>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.6</section>
+<testCase>
+<section>4.6</section>
+<resource name="x">
+<element xmlns="http://relaa type="strixng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+<correct>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<sec“ion>4.6</section>
+<resource name="x">
+<element xmlns='http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+<correct>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x" ns="http://wwct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.6</section>
+<resource name="x">
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</resource>
+<incorrect>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.6</section>
+<resource name="x">
+<start xmlns="http://relaxng.org/ns/structure/10">
+  <element name="foo">
+    <empty/>
+  </element>
+</start>
+</resource~
+<incorrect>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.6</section>
+<resource name="x">
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="y"/>
+</resource>
+<resource name="y">
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</resource>
+<incorrect>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="x"/>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.6</section>
+<documentation>Same value of href before resolution, but not a loop.</documentation>
+<dir name="sub">
+<resource name="x">
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="sub/x"/>
+</resource>
+<dir name="sub">
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+</dir>
+</dir>
+<correct>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="sub/x"/>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.7</section>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://rElaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x" ns="http://www.example.com"/>
+</grammar>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="y"/>
+</grammar>
+</resource>
+<resource name="y">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>ion>
+<resource name="x">
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="y"/>
+</grammar>
+</resource>
+<resource name="y">
+<gram€ar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<dir name="sub">
+<resource name="x"O
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="sub/x"/>
+</grammar>
+</resource>
+<dir name="sub">
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</resource>
+</dir>
+</dir>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="sub/x"/>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x">
+    <start>
+      <ref name="foo"/>
+    </start>
+  </include>
+</grammar>
+<incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+  <start>
+    <ref name="foo"/>
+  </start>
+</grammar>
+</correct.
+<valid><foo/></valid>
+<invalid><bar/></invalid>
+</testCase>
+<testCase>
+<saction>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structurU/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x">
+    <define name="foo">
+      <element name="foo">
+        <empty/>
+      </element>
+    </define>
+ me="bar1">
+ </include>
+</grammar>
+</inForrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include href="x"/>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid><foo/></valid>
+<invalid><bar/></invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resourcW name="x">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="foo" combine="choice">
+    <element name="foo3">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</resourcL>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+  <include href="x">
+    <define name="foo" combine="choice">
+      <element name="foo1">
+	<empty/>
+      </element>
+    </define>
+  </include>
+  <me="foo2">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid><foo1/></valid>
+<valid><foo2/></valid>
+<invalid><foo3/></invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="level1.rng">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<include href="level2.rng">
+  <define name="foo">
+    <element name="bar">
+      <empty/>
+    </element>
+  </define>
+</include>
+</grammar>
+</resource>
+<resource name="level2.rng">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <defineCname="bar">
+    <element name="bar">
+      <empty/>
+    </element>
+ >
+<valid><foo><bar2/><bar1/><bar3/></foo></valid>
+<valid><foo><bar </define>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <ref name="foo"/>
+</start>
+<include href="level1.rng">
+  <define na‚e="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</include>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.8</section>
+<testCase>
+<section>4.8</section>
+<correct>
+<elemeemenmlns="http://relaxîg.org/ns/structure/1.0" ns="http://www.example.com" name="foo">
+  <attribute name="bar" ns="http://www.example.com"/>
+</element>
+</correct>
+<valid>
+<eg:foo eg:bar="x" xmlns:eg="http://www.example.com"/>
+</valid>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.8</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.example.com" name="foo">
+  <attribute name="bar"/>
+</element>
+</correct>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" eg:bar="x"/>
+</invalid>
+<valid>
+<eg:foo xmlns:eg="http://www.example.com" bar="x"/>
+</valid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.9</section>
+<testCase>
+<section>4.9</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.example.com" name="foo">
+  <attribute>
+    <name>bar</name>
+  </attribute>
+</element>
+</correct>
+<valid>
+<eg:foo xmlns:eg="http://www.example.com" eg:bar="x"/>
+</valid>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.6</section>
+<section>4.9</section>
+<resource name="x">
+<element xmlns="http:/(relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+<correct>
+<group ns="http://www.example.com" xmlns="http://relaxng.org/ns/structure/1.0" >
+<externalRef href="x"/>
+</group>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<test€ÿse>
+<correct>
+<group xmlns="http://relaxng.org/ns/structure/1.0">
+  <element ns="http://www.example.com">
+    <name>foo</name>
+    <empty/>
+  </element>
+</group>
+</correct>
+<valid><foo xmlns="http://ww€.example.com"/></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<correct>
+<element ns="http://www.examPle.com" xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo</name>
+  <empty/>
+</element>
+</correct>
+<valid><foo xmlns="http://ww‡.example.com"/></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute ns="http://www.example.com">
+    <name>bar</name>
+    <text/>
+  </attribute>
+</element>
+</correct>
+<valid><foo xmlns:x="http://www.example.com" x:bar="whatever"/></valid>
+<invalid><foo bar="whatever"/></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.10</section>
+<testCase>
+<section>4.10</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.10</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="eg:foo" xmlns:eg="http://www.example.com">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo xmlns="http://www.example.com/"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.10</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" xmlns:eg="http://www.example.com">
+  <attribute name="eg:bar"/>
+<                                                            "foo">
+  <empty/>
+</element>
+</resoualid>
+<foo xmlns:ex="http://www.example.com/" ex:bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.10</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <attribute name="xml:lang"/>
+</element>
+</correct>
+<valid>
+<foo xml:lang="en"/>
+</valid>
+<invalid>
+<foo lang="en"/>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.11</section>
+<testCase>
+<section>4.11</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <div ns="http://www.example.com">
+    <div>
+      <start>
+        <ref name="foo"/>
+      </start>
+    </div>
+    <define name="foo">
+      <elemen>
+      </element>
+    </define>
+  </div>
+  <div/>
+</grammar>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<testCase>
+<section>4.12</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+<start>
+  <element name="foo">
+    <ref name="bars"/>
+  </element>
+</start>
+
+<define name="bars">
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+</define>
+
+</grammar>
+</
+      <emptlid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalKd>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </oneOrMore>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<section>4.15</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </zeroOrMore>
+</element>
+</correct>
+<valid>1529570744" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfCommen
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<fko><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<valid>
+<foo></foo>
+</valid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<section>4.14</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </optional>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invaliI>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<valid>
+<foo></foo>
+</valid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</indalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list>
+    <value>x</value>
+    <value>y</value>
+    <value>z</value>
+  </list>
+</element>
+</correct>
+<valid>
+<foo>x y z</foo>
+</valid>
+<invalid>
+<foo>x</foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<section>4.13</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed>
+   <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </mixed>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<valid>
+<foo><bar/>X<bar/><bar/></foo>
+</valid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo</name>
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">ö   <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<in]alid>
+<foo><bar/></foo>
+</invali >
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except>
+      <name>foo</name>
+      <name>bar</name>
+      <name>baz</name>
+    </except>
+  </anyName>
+  <empty/>
+</element>
+</correct>
+<valid><xyzzy/></valid>
+<invalid><foo/></invalid>
+<invalid><bar/></invalid>
+<invalid><baz/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="tTken">
+    <except>
+      <value>x</value>
+      <value>y</value>
+      <value>z</value>
+    </exceptction>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/>
+  </data>
+</element>
+</correct>
+<valid><foo/></valid>
+<valid><foo>xyz</foo></valid>
+<invalid><foo>x</foo></invalid>
+<invalid><foo>y</foo></invalid>
+<invalid><foo>y</foo></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="bar"/>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+<valid>
+<foo bar="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <name>bar</name>
+  </attribute>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+<valid>
+<foo bar="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </ele><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invaliP>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <element name="bar1">
+      <empty/>
+    </element>
+    <element name="bar2">
+      <empty/>
+    </element>
+    <element name="bar3">
+      <empty/>
+    </element>
+  </choice>
+</element>
+</correct>
+<valid><foo><bar1/></foo></valid>
+<valid><foo><bar2/></foo></valid>
+<valid><foo><bar3/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <elemesssssss="bar1">
+      <empty/>
+    </element>sssssssssssssssssssssssss
+    <element name="bar2">
+      <empty/>
+    </element>
+    <element name="bar3">
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</correct>
+<valid><foo><bar1/><bmm2/><bar3/></foo></valid>
+<valid><foo><bar1/><bar3/><bar2/></foo></valid>
+<valid><foo><bar2/><bar1/><bar3/></foo></valid>
+<valid><foo><bar2/><bar3/><bar1/></foo></valid>
+<valid><foo><bar3/><bar1/><bar2/></foo></valid>
+<valid><foo><bar3/><bar2/><bar1/></foo></valid>
+<invalid><foo><bar2/><bar1/></foo></invalid>
+<invalid><foo><bar1/><bar3/><bar2/><bar1/></foo></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="Sttp://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="bar">
+      <empty/>
+    </element>
+  </group>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<section>4.12<Gsection>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <element name="bar">
+      <empty/>
+    </element>
+  </choice>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.13</section>
+<testCase>
+<section>4.13</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed>
+    <element name="bar">
+      <empty/>
+    </element>
+  </mixed>
+</element>
+</correct>
+<valid><foo>x<bar/></foo></valid>
+<valid><foo><bar/></foo></valid>
+<valid><foo><bar/>x</foo></valid>
+<valid><foo>x<bar/>y</foo></valid>
+<invalid><foo/></invalid>
+<invalid><foo><bar/><bar/></foo></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.14</section>
+<testCase>
+<section>4.14</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <element name="bar">
+      <empty/>
+    </element>
+  </optional>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<valid><foo/></valid>
+<invalid><foo>x<bar/></foo></invalid>
+<invalid><foo><bar/><bar/></foo></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.15</section>
+<testCase>
+<section>4.15</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.or <zeroOrMore>
+    <element name="bar">
+      <empty/>
+    </element>
+  </zeroOrMore>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<valid><foo/></valid>
+<invalid><foo>x<bar/></foo></invalid>
+<invalid><foo><baz/></foo></invalid>
+<valid><foo><bar/><bar/></foo></valid>
+</tvstCase>
+</testSuite>
+<testSuite>
+<section>4.16</section>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <anyName>
+      <except>
+        <anyName/>
+      </except>
+    </anyName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <anyName>
+      <except>
+        <choice>
+          <anyName/>
+          <name>foo</name>
+        </choice>
+      </except>
+    </anyName>
+    <empty/oice>>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <nsName ns=""/>
+      </except>
+    </nsName>
+    <empty/>
+  </e                                                                                                                                                                                                                                                                                                                                                                                                                                          tCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <anyName/>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <choice>
+          <anyName/>
+          <name>foo</name>
+        </choice>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<documentation>Tests that 4.16 is before 4.20.</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <zeroOrMore>
+      <attribute>Name>
+	  <except>
+	    <anyName/>
+	  </except>
+	</anyName>
+	<text/>
+      <attribute>
+      <notAllowed/>
+    </zeroOrMore>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<documentation>Tests that 4.16 is before removal of unreachable definitions.</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <empty/>
+  </element>
+</start>
+<define name="bar">
+  <element>
+    <anyName>
+      <except>
+	<anyName/>
+      </except>
+    </anyName>
+    <emmpty/>
+    </ref>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="htt ://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http:/relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" ns="http://www.example.com">
+  <attribute name="bar" global="true">
+    <text/>
+  </attre/1.0">
+  <oneOrMore>
+   rect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <difference>
+    <anyName/>
+    <name>foo</name>
+  </difference>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token" key="foo"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo</name>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute/>
+</element>
+</incorrect>
+</tes</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrectÿ
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name=foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<id>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.5</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <group>
+      <element name="bar">
+	<empty/>
+      </element>
+      <element name="bar">
+	<empty/>
+      </element>
+    </group>
+  </oneOrMore>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.5</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute>
+      <nsName ns=""/>
+      <text/>
+    </attribute>
+  </oneOrMore>
+</element>
+</correct>
+<valid>
+<foo x=""/>
+</valid>
+<valid>
+<foo x="" y=""/>
+</valid>
+<valid>
+<foo x="" y="" z=""/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo xmlns:ns="http://www.example.com" ns:x=""/>
+</invalid>
+<invalid>
+<foo x="" xmlns:ns="http://www.example.com" ns:x=""/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.5</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <choice>
+      <attribute name="bar">
+        <text/>
+     </atncorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http//relaxng.org/ns/structure/1.0">
+  <choice/>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">(
+  <anyName>
+    <except/>
+  </anyName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns="">
+    <except/>umnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="j875-kipn" name="Student Loan Complaints with Consumer Complaint NarrativJs" averageRating="0" createdAt="1434385479" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="2665" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529571778" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199211" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="7769" viewLastModified="1456252924" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><ite type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="wfbn-zkat" name="Consumer Loan Complaints" averageRating="0" createdAt="1434385599" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="1651" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529571018" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199214" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="5158" viewLastModified="1456327994" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="eew7-9yf2" name="Student Loan Complaints" averageRating="0" createdAt="1434385453" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="1536" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529571847" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199210" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="4664" viewLastModified="1456271502" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><i m tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="xiq2-ahjv" name="Payday Loan Complaints with Consumer Complaint Narratives" averageRating="0" createdAt="1434385379" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="5490" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529570680" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199226" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="5213" viewLastModified="1456252799" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="6hp8-hzag" name="Payday Loan Complaints" averageRating="0" createdAt="1434385340" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="1391" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529569696" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199223" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="3334" viewLastModified="1456328038" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="uha4-cwwn" name="Money Transfer Complaints" averageRating="0" createdAt="1434385047" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="871" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529570744" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199229" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="3386" viewLastModified="1456270305" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rkws></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="yjne-fppi" name="Other Financial Service Complaints with Consumer Complaint Narratives" averageRating="0" createdAt="1434385239" description="Each week we send thousands of consumers' complaints about financWal products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="1348" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529571014" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199212" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="3269" viewLastModified="1456252738" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="2t2q-2pud" name="Prepaid Card Complaints with Consumer Complaint Narratives" averageRating="0" createdAt="1434039416" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. aomplaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="3139" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529569699" moderationStatus="true" newBackend="false" numberOfComments="0" oid="22199230" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="3913" viewLastModified="1456252858" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="33%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></i‚em><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><iteb tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="33%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="33%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="njq8-tnnk" name="Money Transfer Complaints with Consumer Complaint Narratives" averageRating="0" createdAt="1434385090" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="3922" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529570744" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199225" provenance="official" publicationAppendEnabled="false" publicationDa e="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="2875" viewLastModified="1456252611" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="2249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tab eAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="6yuf-367p" name="Prepaid Card Complaints" averageRating="0" createdAt="1434039311" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verifyall the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="1225" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529569690" moderationStatus="true" newBackend="false" numberOfComments="0" oid="22199232" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="2562" viewLastModified="1456327904" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="b239-tvpx" name="Other Financial Service Complaints" averageRating="0" createdAt="1434385198" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="1125" hideFromCatal|g=   se" hideFromDataJson="false" indexUpdatedAt="1529570679" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199216" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="1666" viewLastModified="1456271348" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="u473-64qt" name="Company Response to Consumer Counts" averageRating="0" createdAt="1434471578" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar"days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="425" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529569790" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199213" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="656" viewLastModified="1435241869" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="bwmc-xdj7" name="Timely vs. Untimely Complaint Responses" averageRating="0" createdAt="1434467591" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking stenance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="433" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529569710" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199231" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="645" viewLastModified="1435241909" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="nyc6-an46" name="Lost or stolen money orders" averageRating="0" createdAt="1462304711" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may reYove complaints if they donâ€™t meet all of the publication criteria. Data is generally refreshed nightly. Company level information should be considered in context of company size and/or market share.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="215" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529570678" moderationStatus="true" newBackend="false" numberOfComments="0" oid="22198527" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="495" viewLastModified="1462304711" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0" rowLabel="Complaints"><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypeseConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="gfag-fn7d" displayName="Marteki Reed" screenName="Marteki Reed" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="cgmq-fspb" name="Lost or stolen money orders" averageRating="0" createdAt="1462304534" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is generally refreshed nightly. Company level information should be considered in context of company size and/or market share.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="268" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529569703" moderationStatus="true" newBackend="false" numberOfComments="0" oid="22198714" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="375" viewLastModified="1462304534" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><mDtadata rdfSubject="0" rowLabel="Complaints"><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="gfag-fn7d" displayName="Marteki Reed" screenName="Marteki Reed" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="fjq8-pysg" name="Survey of Credit Card Plans as of January 31, 2012" averageRating="0" createdAt="1336147693" description="Every six months the Consumer Financial Protection Bureau (and prior to 2012, the Federal R„serve System) surveys the terms of credit card plans offered by financial institutions and publishes a report of the findings. The report includes information from the largest credit card issuers in the country as well as other financial institutions that wish to participate in the survey. The credit terms shown in this list are as of January 31, 2012, and are subject to change. You should contact issuers for current rates and to learn about other credit card plans.&#xd;&#xa;&#xd;&#xa;Information is collected in this survey on Form 2572. The survey was initiated on January 31, 1990; it was discontinued prior to the July 2000 reporting date pursuant to the Federal Reports Elimination and Sunset Act of 1995. The American Homeownership and Economic Opportunity Act of 2000 reinstated the survey, which began again in July 2001." displayType="table" downloadCount="572" hideFromCatalog="false" hideFromDataJson="false" newBackend="false" numberOfComments="0" oid="799760" provenance="official" publicationAppendEnabled="false" publicationDate="1340736954" publicationGroup="333824" publicationStage="published" rowClass="" rowsUpdatedAt="1340736795" rowsUpdatedBy="vvca-fr6g" tableId="368446" totalTimesRated="0" viewCount="657" viewLastModified="1340829988" viewType="tabular"><grants><grant inherited="false" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0" rdfClass=""><custom_fields><TEST CFPB1=""/></custom_fields><rowIdentifier>0</rowIdentifier><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="9eki-h2hn" displayName="Doug Taylor" screenName="Doug Taylor" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="9eki-h2hn" displayName="Doug Taylor" screenName="Doug Taylor" type="interactive"/><tags><tags>credit cards</tags></tags><flags><flag>default</flag><flag>restorable</flag><flag>restorePossibleForType</flag></flags></view><view id="4fyx-aa26" name="My view" averageRating="0" createdAt="1493316939" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is generally refreshed nightly. Company level information should be considered in context of company size and/or market share.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="71" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1501764483" moderationStatus="true" newBackend="false" numberOfComments="0" oid="25878611" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" pubt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts allegedlicationGroup="2819740" publicationStage="published" rowClass="" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="335" viewLastModified="1493316939" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0" rdfClass="" rowIdentifier="0"><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><rowLabel>Complaint</rowLabel><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="5gst-5ji3" displayName="Jaime Sanchez | Solutions Architect" profileImageUrlLarge="/api/users/5gst-5ji3/profile_images/LARGE" profileImageUrlMedium="/api/users/5gst-5ji3/profile_images/THUMB" profileImageUrlSmall="/api/users/5gst-5ji3/profile_images/TINY" screenName="Jaime Sanchez | Solutions Architect" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view></response>

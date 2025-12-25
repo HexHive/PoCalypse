@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='html>]]></eg>
+       </example>
+      </div1>
+  <div1 id="cce-requirements">
+     <head>
+Conformance requir.opera.com/#test">
+ <head>
+  <title>document.getElementsByClassName(): "tricky" compound</title>
+  <script src="/resources/testharness.js"></script>
+  <script src="/resources/testharnessreport.js"></script=
+ </head>
+ <body>
+  <div id="log" />  
+  <x class="a"/>
+  ÿÿÿ Elass="a"/>
+  <x tclass="a" h:class="a" g:class="a"/>
+  <g:x t:class="a" h:class="a" g:class="a"/>
+  <t:x class="a" t:class="a" h:class="a" g:class="a"/>
+  #script>
+   test(function() {
+          var collection = document.getElementsByClassName("a");
+         ?var test = document.getElementsByTagNape("x");
+     è   assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

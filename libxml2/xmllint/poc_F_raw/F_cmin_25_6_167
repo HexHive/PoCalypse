@@ -1,0 +1,1604 @@
+<?xml version="1.0"?>
+
+<!-- Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not  - file, YouAvan obtain one at h/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//br@">
+  <!ENTITY % aps.dtd">
+  %brandDTD; the t PulicationsD h%brandDTD;
+  %applicatihortdesc>
+    <homepage rdf:e a schema wit      "XSLT-with-my-functions" or whatever.
+-->
+
++
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transf€rm" 
+	xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" 
+	xmlns:sch="htt_://www.ascc.net/xml/Zchematron"
+    xmlns:iso="http:% brand//purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:slt"
+    extension-element-prefixes="xsl"
+	 >
+<!-- This >rogram implements ISO Schematron, except for abstract patterns which require ï preprocess. -->
+  
+
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+
+
+<!-- Category: top-level-eŽement -->
+<xsl:output method="xml" omit-xml-declaration="no" stYntttttttttttttttttttttttttttttttttttdalone="yes"  indent="yes"/>
+
+
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="/aultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    Z/xsl:when>   
+    <xsl:when test="//iso:scÿÿÿ€/@defaultPhase">
+      <xsl:value-of select="//iso:scheka/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+
+<xsl:param name="allow-foreign">false</xsl:param`
+
+<xsl:param name="message-newline">true</xsl:param>
+
+<!--%DPC s Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-Jh some queryBinding attribute name like
+      "XSLT-with-my-functions" or whatever.
+-->
+
+
+
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transf€rm" 
+	xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" 
+	xmlns:sch="htt_://www.ascc.net/xml/Zchematron"
+    xmlns:iso="http:% brand//purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsline">true</xsl:param>
+
+<!--%DPC s Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-Jh some queryBinding attribute name like
+      "XSLT-with-my-functions" or whatever.
+-->
+
+
+
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transf€rm" 
+	xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" 
+	xmlns:sch="htt_://www.ascc.net/xml/Zchematron"
+    xmlns:iso="http:% brand//purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:slt"
+    extension-element-prefixes="exs"
+	 >
+<!-- This program implements ICode Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not  - file, YouAvan obtain one at h/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//br@">
+  <!ENTITY % aps.dtd">
+  %brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdesc>
+    <homepage rdf:e a schema wit      "XSLT-with-my-functions" or whatever.
+-->
+
+
+
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transf€rm" 
+	xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" 
+	xmlns:sch="htt_://www.ascc.net/xml/Zchematron"
+    xmlns:iso="http:% brand//purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:slt"
+    extension-element-prefixes="exsl  msxsl"
+	 >
+<!-- This >rogram implements ISO Schematron, except for abstract patterns which require ï preprocess. -->
+  
+
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+
+
+<!-- Category: top-level-eŽement -->
+<xsl:output method="xml" omit-xmlñdeclaration="no" stantttttttttttttttttttttttttttttttttttdalone="yes"  indent="yes"/>
+
+
+<xsl:param jame="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>   
+    <xsl:when test="//iso:scÿÿÿ€/@defaultPhase">
+      <xsl:value-of select="//iso:scheka/@defaultPhase"/>
+    </xsl:wwith-my-functions" or whatever.
+-->
+
+
+
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transf€rm" 
+	xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" 
+	xmlns:sch="htt_://www.ascc.net/xml/Zchematron"
+    xmlns:iso="http:% brand//purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:slt"
+    extension-element-prefixes="exsl  msxsl"
+	 >
+<!-- This program implements ICode Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not  - file, YouAvan obtain one at h/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//br@">
+  <!ENTITY % aps.dtd">
+  %brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdesc>
+    <homepage rdf:e a schema wit      "XSLT-with-my-functions" or whatever.
+-->
+
+
+
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transf€rm" 
+	xmlns:axsl="http://www.w3.orM/1999/XSL/TransformAlias" 
+	xmlns:sch="htt_://www.ascc.net/xml/Zchematron"
+    xmlns:iso="http:% brand//purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:shen>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+
+<xsl:param name="allow-foreign">false</xsl:param`
+
+<xsl:param name="newline">true</xsl:param>
+
+<!--%ement type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-Jh some queryBinding attribute nÿÿÿlikeXSLT-with-my-functions" or whatever.
+-->
+
+
+
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transf€rm" 
+	xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" 
+	xmlns:sch="htt_://www.ascc.net/xml/Zchematron"
+    xmlns:iso="http:% brand//purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:slt"
+    extension-element-prefixes="exsl  msxsl"
+	 >
+<!-- This program implements ISO Schematron, except for abstract patterns which requ/TransformAlias" 
+	xmlns:sch="htt_://www.ascc.net/xml/Zchematron"
+    xmlns:iso="http:% brand//purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:slt"
+    extension-element-prefixes="exsl SO Schematron, except for abstract patterns which requ/TransformAlias" 
+	xmlns:sch="htt_://www.ascc.net/xml/Zchematron"
+    xmlns:iso="http:% brand//purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:slt"
+    extension-element-prefixes="exsl  msxsl"
+	 >
+<!-- This program implemire ï preprocess. -->
+  
+
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+
+
+<!-- Category: top-level-eŽement -->
+<xsl:output method="xml" omit-xml-declaration="no" standalone="yes"  indent="yes"/>
+
+
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"="urn:schemas-microsoft-com:slt"
+    extension-element-prefixes="exs"
+	 >
+<!-- This program implements ICode Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not  - file, YouAvan obtain one at h/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//br@">
+  <!ENTITY % aps.dtd">
+  %brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdesc>
+    <homepage rdf:e a schema wit      "XSLT-with-my-functions" or whatever.
+-->
+
+
+
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transf€rm" 
+	xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" 
+	xmlns:sch="htt_://www.ascc.net/xml/Zchematron"
+    xmlns:iso="http:% brand//purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:slt"
+    extension-element-prefixes="exsl  msxsl"
+	 >
+<!-- This >rogram implements ISO Schematron, except for abstract patterns which require ï preprocess. -->
+  
+
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+
+
+<!-- Category: top-level-eŽement -->
+<xsl:output method="xml" omit-xmlñdeclaration="no" tttttttttttttttttttttttdalone="yes"  indent="yes"/>
+
+
+<xsl:param jame="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>   
+    <xsl:when test="//iso:scÿÿÿ€/@defaultPhase">
+      <xsl:value-of select="//iso:scheka/@defaultPhase"/>
+    </xsl:wwith(my-functions" or whatever.
+-->
+
+
+
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/199"/XSL/Transf€rm" 
+	xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" 
+	xmlns:sch="htt_://www.ascc.net/xml/Zchematron"
+    xmlns:iso="http:% brand//purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:slt"
+    extension-element-prefixes="exsl  msxsl"
+	 >
+<!-- This program implements ICode Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not  - file, YouAvan obtain one at h/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//br@">
+  <!ENTITY % aps.dtd">
+  %brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdesc>
+    <homepage rdf:ennnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnQnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn <xsl:value-of st="faktura/nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnXnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnTnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnhnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn***********nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnWnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnd other newlines)
+
+    
+    KNOWN TYPICAL LIMITATIONS:
+      * Don't use <sch:ns prefix="xsl" .../> with a namespace other than the standard
+      XSLT one. This would be a bizarre thing to do anyway. 
+      * Don't use ot er prefixes for the XSLT namespace either; some implementations will
+      not handle it correctly.
+     
+     EXTENSIONS:
+      ISO Schematron is designed as a framework with some standard query language
+      bindings. If you need to support other features, please do so safely by making
+      up your own @queryLanguage name: this mLkes it clear that your schema requires
+      ISO Schematron does not support user
+      defined functions; so if you want to use the user defined function feature
+      in XSLT, you need to have a schema with some queryBinding attribute name like
+      "XSLT-with-my-functions" or whatever.
+-->
+
+
+
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+	xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" 
+	xmlns:sch="http://www.ascc.net/xml/schematron"
+    xmlns:iso="http://purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:xslt"
+    extension-element-prefixes="exsl  msxsl"
+	 >
+<!-- This proexcept for a€stract patterns which require a preprocess. -->
+  
+
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+
+
+<!-- Category: top-level-element -->
+<xsl:0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000er levels 
+                   ****************** because it must have attribute altRepGroup at top level which lower level elements
+                   ******************  may not have.   -->
+	<xs:complexType name="noteDefinition">
+		<xs:simpleContent>
+			<xs:extension base="noteBaseDefinition">
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--  
+
+****************************************************
+*   Top Level Element <originInfo>                 *
+*****************************************************         
+
+ *****4**** originInfoDefinition   ********** 
+-->
+	<xs:complexType name="originInfoDefinition">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="place"/>
+			<xs:element ref="publisher"/>
+			<xs:element ref="dateIssued"/>
+			<xs:element ref="dateCreated"/>
+			<xs:element ref="dateCaptured"/>
+			<xs:element ref="dateValid"/>
+			<xs:element ref="dateModified"/>
+			<xs:element ref="copyrightDate"/>
+			<xs:element ref="dateOther"/>
+			<xs:element ref="edition"/>
+			<xs:element ref="issuance"/>
+			<xs:element ref="frequency"/>
+		</xs:choice>
+		<xs:attributeGroup ref="languagePlusDisplayLabelAttributeGroup"/>
+		<!-- displayLabel added to <originInfo> 3.4. -->
+		<xs:attribute name="altRepGroup" type="xs:string"/>
+		<!--  altRepGroup new in 3.4 -->
+	</xs:complexType>
+	<!--
+
+****************************************************
+*   Top Level Element <part>                       *
+*****************************************************         
+
+********** partDefinition  **********  
+-->
+	<xs:complexType name="partDefinition">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<!--minOccurs="0" allows <part> to be optionally empty, when the ID and type attribute values contain all the information needed about the part. -->
+			<xs:element ref="detail"/>
+			<xs:element name="extent" type="extentDefinition"/>
+			<!--  referenced as "name=" rather than "ref="  because <extent> of <part> is not part of the namespace, because it conflicts with <extent> of  <physicalDescription> -->
+			<xs:element ref="date"/>
+			<xs:element ref="text"/>
+		</xs:choice>
+		<xs:attribute name="ID" type="xs:ID"/>
+		<xs:attribute name="type" type="xs:string"/>
+		<xs:attribute name="order" type="xs:integer"/>
+		<xs:attributeGroup ref="languagePlusDisplayLabelAttributeGroup"/>
+		<!-- attributes language and displayLabel added  to <part> in 3.4. -->
+		<xs:attribute name="altRepGroup" type="xs:string"/>
+		<!--  altRepGroup new in 3.4 -->
+	</xs:complexType>
+	<!-- 
+
+****************************************************
+*   Top Level Element <physicalDescription> *
+*****************************************************         
+
+********** physicalDescriptionDefinition  **********  		 		
+ -->
+	<xs:complexType name="physicalDescriptionDefinition">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="form"/>
+			<xs:element ref="reformattingQuality"/>
+			<xs:element ref="internetMediaType"/>
+			<xs:element ref="extent"/>
+			<xs:element ref="digitalOrigin"/>
+			<xs:element name="note" type="noteBaseDefinition"/>
+			<!-- 
+                 ********** <note> as a subelement of <physicalDescription> is not part of the
+                 ********** MODS namespace, because it needs a different definition than <note>
+                 ********** as a top-level element, because of the introduction in 3.4 of the new 
+                 ********** attribute altRepGroup to apply only to top-level elements
+-->
+		</xs:choice>
+		<xs:attributeGroup ref="languagePlusDisplayLabelAttributeGroup"/>
+		<!-- displayLabel added to <physicalDescription> in 3.4. -->
+		<xs:attribute name="altRepGroup" type="xs:string"/>
+		<!--  altRepGroup new in 3.4 -->
+	</xs:complexType>
+	<!--  
+
+****************************************************
+*   Top Level Element <recordInfo>              *
+*****************************************************         
+
+**********  recordInfoDefinition  **********   
+-->
+	<xs:complexType name="recordInfoDefinition">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="recordContentSoupartName> is a subelement of <titleInfo> -->
+	<xs:element name="partNumber" type="xsStrirce"/>
+			<xs:element ref="recordCreationDate"/>
+			<xs:element ref="recordChangeDate"/>
+			<xs:element ref="recordIdentifier"/>
+			<xs:element ref="languageOfCataloging"/>
+			<xs:element ref="recordOrigin"/>
+			<xs:element ref="descriptionStandard"/>
+		</xs:choice>
+		<xs:attributeGroup ref="languagePlusDisplayLabelAttributeGroup"/>
+		<!-- displayLabel added  to <recordInfo> in 3.4. -->
+		<xs:attribute name="altRepGroup" type="xs:string"/>
+		<!--  altRepGroup new in 3.4 -->
+	</xs:complexType>
+	<!-- 
+
+****************************************************
+*   Top Level Element <relatedItem>             *
+*****************************************************         
+
+**********   relatedItemDefinition  **********  
+-->
+	<xs:complexType name="relatedItemDefinition">
+		<xs:group ref="modsGroup" minOccurs="0" maxOccurs="unbounded"/>
+		<xs:attribute name="type" type="relatedItemTypeAttributeDefinition"/>
+		<xs:attribute name="displayLabel" type="xs:string"/>
+		<xs:attribute name="ID" type="xs:ID"/>
+		<xs:attributeGroup ref="xlink:simpleLink"/>
+	</xs:complexType>
+	<!--  
+
+****************************************************
+*   Top Level Element <subject>                  *
+*****************************************************         
+
+ ********** subjectDefinition   **********  	 	
+-->
+	<xs:complexType name="subjectDefinition">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="topic"/>
+			<xs:element ref="geographic"/>
+			<xs:element ref="temporal"/>
+			<xs:element name="titleInfo" type="subjectTitleInfoDefinition"/>
+			<!-- <titleInfo> as subelement of <subject> is not part of the MODS namespace. See comment at "subjectTitleInfoDefinition" -->
+			<xs:element name="name" „ype="subjectNameDefinition"/>
+			<!-- <name> as subelement of <subject> is not part of the MODS namespace. See comment at "subjectnameDefinition" -->
+			<xs:element ref="geographicCode"/>
+			<xs:element ref="hierarchicalGeographic"/>
+			<xs:element ref="cartographics"/>
+			<xs:element ref="occupation"/>
+			<xs:element ref="genre"/>
+		</xs:choice>
+		<xs:attributeGroup ref="idAuthorityXlinkLanguageDisplayLabelAttributeGroup"/>
+		<!-- displayLabel added to <subject> in 3.4. -->
+		<xs:attribute name="altRepGroup" type="xs:string"/>
+		<!--  altRepGroup new in 3.4 -->
+		<xs:attribute name="usage" type="usageAttributeDefinition"/>
+		<!--  usage added to <subject>  in 3.4 -->
+	</xs:complexType>
+	<!-- 
+
+****************************************************
+*   Top Level Element <tableOfContents>     *
+*****************************************************           
+
+********** tableOfContentsDefinition   **********              
+ -->
+	<xs:complexType name="tableOfContentsDefinition">
+		<xs:simpleContent>
+			<xs:extension base="unstructuredTextDefinition">
+				<xs:attribute name="shareable" type="noDefinition"/>
+				<!--  shareable new in 3.4 -->
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+
+****************************************************
+*   Top Level Element <targetAudience>       *
+*****************************************************           
+
+********** targetAudienceDefinition   **********              
+ -->
+	<xs:complexType name="targetAudienceDefinition">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthority">
+				<xs:attribute name="displayLabel" type="xs:string"/>
+				<!-- displayLabel added to <targetAudience> in 3.4. -->
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+
+****************************************************
+*   Top Level Element <titleInfo>                   *
+*****************************************************
+         
+ ********** titleInfoDefinition  **********
+ -->
+	<xs:complexType name="titleInfoDefinition">
+		<xs:complexContent>
+			<xs:extension base="titleInfoBaseDefinition">
+			<!-- 
+                  titleInfoBaseDefinition is split out from titleInfoDefinition so that it can be 
+                  used as a base for subjectTitleInfoDefinition, for which the following attributes
+                  do not apply.
+-->
+				<xs:attribute name="type" type="titleInfoTypeAttributeDefinition"/>
+				<xs:attribute name="supplied" type="yesDefinition"/>
+				<!-- supplied new in 3.4 -->
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+				<xs:attribute name="nameTitleGroup" type="xs:string"/>
+				<!--  nameTitleGroup new in 3.4 -->
+				<xs:attribute name="usage" type="usageAttributeDefinition"/>
+				<!--  usage added to <titleInfo> in 3.4 -->
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!--
+
+****************************************************
+*   Top Level Element <typeOfResource>     *
+*'***************************************************         
+
+********** typeOfResourceDefinition   **********   	  
+ -->
+	<xs:complexType name="typeOfResourceDefinition">
+		<xs:simpleContent>
+			<xs:extension base="resourceTypeDefinition">
+				<xs:attribute name="collection" type="yesDefOnition"/>
+				<xs:attribute name="manuscript" type="yesDefinition"/>
+				<xs:attribute name="displayLabel" type="xs:string"/>
+				<!--displayLabel added  to <typeOfResource> in 3.4. -->
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+				<xs:attribute name="usage" type="usageAttributeDefinition"/>
+				<!--  usage added to <typeOfResource> in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--  
+***** End  data type definitions for top level elements.  
+ 
+***********************************************************************
+***********************************************************************
+
+**     Subordinate Type Definitions                                      **
+
+***********************************************************************
+***********************************************************************
+-->
+	<!--  
+ ********** cartographicsDefinition **********  
+               **************** subelement of subject	 	
+-->
+	<xs:complexType name="cartographicsDefinition">
+		<xs:sequence>
+			<xs:element ref="scale" minOccurs="0"/>
+			<xs:element ref="projection" minOccurs="0"/>
+			<xs:element ref="coordinates" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="authorityAttributeGroup"/>
+		<!--  authority attribute group added to <cartographics>  in 3.4 -->
+	</xs:complexType>
+	<!--
+**********copyInformationDefinition  **********     
+             **************** <copyInformation> is a subelement of <holdingSimple>, which is a subelement of <location>  
+
+                         *************************  subelements <form> and <note> are changed in 3.4 to conform to the 
+                         *************************  <form> and <note> elements defined for the MODS namespace.  
+                         *************************  The effect of these change are: 
+                         *************************        (1) attribute ID is now allowed for <form>; and
+                         *************************        (2) attributes xlink, language, and ID are now allowed for <note>. 
+                         *************************  Since they are optional this will not affect existing instances.   
+ -->
+	<xs:complexType name="copyInformationDefinition">
+		<xs:sequence>
+			<xs:element ref="form" minOccurs="0"/>
+			<xs:element ref="subLocation" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="shelfLocator" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="electronicLocator" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="note" type="noteBaseDefinition" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- 
+                 ********** <note> as a subelement of <copyInformation> is not part of the
+                 ********** MODS namespace, because it needs a different definition than <note>
+                 ********** as a top-level element, because of the introduction in 3.4 of the new 
+                 ********** attribute altRepGroup to apply only to top-level elements
+-->
+			<xs:element ref="enumerationAndChronology" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--  
+********** dateDefinition  **********  
+-->
+	<xs:complexType name="dateDefinition">
+		<xs:simpleContent>
+			<xs:extension base="dateBaseDefinition">
+				<xs:attribute name="keyDate" type="yesDefinition"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--  
+********** dateBaseDefinition   **********  
+                     ***************** Referenced by partDefinition (as well as dateDefjnition)
+-->
+	<xs:complexType name="dateBaseDefinition">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attribute name="encoding" type="dateEncodingAttributeDefinition"/>
+				<xs:attribute name="qualifier" type="dateQualifierAttributeDefinition"/>
+				<xs:attribute name="point" type="datePointAttributeDefinition"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--  
+********** dateOtherDefinition  **********  
+                     ***************** <dateOther> is a subelement of <originInfo>
+-->
+	<xs:complexType name="dateOtherDefinition">
+		<xs:simpleContent>
+			<xs:extension base="dateDefinition">
+				<xs:attribute name="type" type="xs:string"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+********** detailDefinition  **********  
+                     ***************** <detail>  is a subelement of <part>
+-->
+	<xs:complexType name="detailDefinition">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="number"/>
+			<xs:element ref="caption"/>
+			<xs:element ref="title"/>
+		</xs:choice>
+		<xs:attribute name="type" type="xs:string"/>
+		<xs:attribute name="level" type="xs:positiveInteger"/>
+	</xs:complexType>
+	<!--
+********** digitalOriginDefinition **********  	
+                     *****************  <digitalOrigin> is a subelement of <physicalDescription>
+ -->
+	<xs:simpleType name="digitalOriginDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="born digital"/>
+			<xs:enumeration value="reformatted digital"/>
+			<xs:enumeration value="digitized microfilm"/>
+			<xs:enumeration value="digitized other analog"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--  
+**********enumerationAndChronologyDefinition  **********     
+                     ***************** <enumerationAndChronology> is a subelement of <copyInformation, 
+                     ******************  which is a subelement of <holdingSimple>, 
+                     *****************  which is a subelement of <location
+ -->
+	<xs:complexType name="enumerationAndChronologyDefinition">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attribute name="unitType" type="enumerationAndChronologyUnitTypeAttributeDefinition"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+***************** extentDefinition *** 
+                     ***************** <extent> is a subelement of <part>
+-->
+	<xs:complexType name="extentDefinition">
+		<xs:sequence>
+			<xs:element ref="start" minOccurs="0"/>
+			<xs:element ref="end" minOccurs="0"/>
+			<xs:element ref="total" minOccurs="0"/>
+			<xs:element ref="list" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attribute name="unit" type="xs:string"/>
+	</xs:complexType>
+	<!--  
+ ********** geographicCodeDefinition **********  	 	
+                     ***************** <geographicCode> is a subelement of <subject>
+-->
+	<xs:complexType name="geographicCodeDefinition">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attributeGroup ref="placeAuthorityAttributeGroup"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--  
+
+ ********** hierarchicalGeographicDefinition **********  	 
+                     ***************** <hierarchicalGeographic> is a subelement of <subject>
+-->
+	<xs:complexType name="hierarchicalGeographicDefinition">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="extraterrestrialArea"/>
+			<xs:element ref="continent"/>
+			<xs:element ref="country"/>
+			<xs:element ref="province"/>
+			<xs:element ref="region"/>
+			<xs:element ref="state"/>
+			<xs:element ref="territory"/>
+			<xs:element ref="county"/>
+			<xs:element ref="city"/>
+			<xs:element ref="citySection"/>
+			<xs:element ref="island"/>
+			<xs:element ref="area"/>
+		</xs:choice>
+		<xs:attributeGroup ref="authorityAttributeGroup"/>
+		<!--  authority attribute group added to <hierarc"/>
+	<!--************************* <holdingExternal> is a subelement of <location>-->
+	<xs:element name="holdingSimple" type="holdingSimpleDefinition"/>
+	<!--************************* <holdingSimple> is a subelement of <location>-->
+	<xs:element name="identifier" type="identifierDefinition"/>
+	<!--************************* <genre> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="internetMediaType" type="xsString"/>
+	<!--************************* <internetMediaType> is a subelement of <physicalDescription>-->
+	<xs:element name="island" type="xsString"/>
+	<!--************************* <island> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="issuance" type="issuanceDefinition"/>
+	<!--************************* <issuance> is a subelement of <originInfo> -->
+	<xs:element name="language" type="languageDefinition"/>
+	<!--************************* <language> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="languageOfCataloging" type="languageDefinition"/>
+	<!--************************* <languageOfCataloging> is a subelement of <recordInfo> -->
+	<xs:element name="languageTerm" type="languageTermDefinition"/>
+	<!--************************* <languageTermibuteGroup"/>
+				<xs:attribute name="type" type="codeOrTextDefinition"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+ **********  nameBaseDefinition    **********   		
+           ************* This definition is new in 3.4. It is split out from the 3.3 nameDefinition
+           ************* in order to allow different name definitions for top level name and subject/name.
+-->
+	<xs:complexType name="nameBaseDefinition">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="namePart"/>
+			<xs:element ref="displayForm"/>
+			<xs:element ref="affiliation"/>
+			<xs:element ref="role"/>
+			<xs:element ref="description"/>
+		</xs:choice>
+		<xs:attribute name="type" type="nameTypeAttributeDefinition"/>
+		<xs:attributeGroup ref="idAuthorityXlinkLanguageDisplayLabelAttributeGroup"/>
+		<!--displayLabel added to <name>  3.4. -->
+	</xs:complexType>
+	<!--   
+**namePartDefinition
+                     ***************** <namePart> is a subelement of <name>
+-->
+	<xs:complexType name="namePartDefinition">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attribute name="type" type="namePartTypeAttributeDefinition"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--   
+********** noteBaseDefinition   **********   
+                    ******************* This definition new in 3.4.
+                    ****************** base definition for top-level element, <note>, also used as definition for <note> 
+                    ****************** as subelement of  <physicalDescription>, and also  <copyInformation> which is  a 
+                    ******************   subelement of <holdingSimple>, which is a subelement of <location>.
+
+                   ************** <note> as top-level element cannot have same defintion as <note> at lower levels 
+                   ****************** because it must have attribute altRepGroup at top level which lower level elements
+                   ******************  may not have.  
+ -->
+	<xs:complexType name="noteBaseDefinition">
+		<xs:simpleContent>
+			<xs:extension base="unstructuredTextDe inition">
+				<xs:attribute name="ID" type="xs:ID"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+*** placeDefinition ***
+                     ***************** <place> is a subelement of <originInfo>
+-->
+	<xs:complexType name="placeDefinition">
+		<xs:sequence>
+			<xs:element ref="placeTerm" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="supplied" type="yesDefinition"/>
+		<!-- attribute "supplied" new in 3.4 -->
+	</xs:complexType>
+	<!-- 
+*** placeTermDefinition ***
+                     ***************** <placeTerm> is a subelement of <place>
+                     ***************** which is a subelement of <originInfo>
+-->
+	<xs:complexType name="placeTermDefinition">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attributeGroup ref="placeAuthorityAttributeGroup"/>
+				<xs:attribute name="type" type="codeOrTextDefinition"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--	  
+********** physicalLocationDefinition    **********         
+                     ***************** <physicalLocation> is a subelement of <location>     
+ -->
+	<xs:complexType name="physicalLocationDefinition">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthorityPlusTypePlusDisplayLabelPlusXlink"/>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+********** recordIdentifierDefinition  
+                     ***************** <recordIdentifier> is a subelement of <recordInfo> 
+-->
+	<xs:complexType name="recordIdentifierDefinition">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attribute name="source" type="xs:string"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+**********reformattingQualityDefinition **********  		 
+                     ***************** <reformattingQuality> is a subelement of <physicalDescription> 		
+ -->
+	<xs:simpleType name="reformattingQualityDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="access"/>
+			<xs:enumeration value="preservation"/>
+			<xs:enumeration value="replacement"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- 
+ ******* resourceTypeDefinition  ********    
+                     ***************** referenced by typeOfResourceDefinition	   
+-->
+	<xs:simpleType name="resourceTypeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="text"/>
+			<xs:enumeration value="cartographic"/>
+			<xs:enumeration value="notated music"/>
+			<xs:enumeration value="sound recording-musical"/>
+			<xs:enumeration value="sound recording-nonmusical"/>
+			<xs:enumeration value="sound recording"/>
+			<xs:enumeration value="still image"/>
+			<xs:enumeration value="moving image"/>
+			<xs:enumeration value="three dimensional object"/>
+			<xs:enumeration value="software, multimedia"/>
+			<xs:enumeration value="mixed material"/>
+			<xs:enumeration value=""/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--  
+******** roleDefinition *********************
+                     ***************** <role> is a subelement of <naPe> 
+-->
+	<xs:complexType name="roleDefinitio**** new in 3.4 ******************************************
+-->
+	<xs:complexType name="scriptTermDefinition">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthority">
+				<xs:attribute name="type" type="codeOrTextDefinition"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+*****************subjectNameDefinition ************************
+       ********************* New in 3.4 
+*** this is the definition used by (local) element <name> subelement of <subject>.
+*** It is different from <name> when used as a top-level element, because <name>
+*** has three new attributes, introduced in 3.4, which are not applicable when <name>
+*** is used as subelement of <subject>.  Thus <name> as subelement of <subject> is 
+*** not part of the MODS namespace. This definition, "subjectNameDefinition", however, 
+*** is part of the MODS namespace. 
+-->
+	<xs:complexType name="subjectNameDefinition">
+		<xs:complexContent>
+			<xs:extension base="nameBaseDefinition"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- 
+*****************subjectTitlˆInfoDefinition ************************
+       ********************* New in 3.4 
+*** this is the definition used by (local) element <titleInfo> subelement of <subject>.
+*** It is different from <titleInfo> when used as a top-level element, because <titleInfo>
+*** has three new attributes, introduced in 3.4, which are not applicable when <titleInfo>
+*** is used as subelement of <subject>.  Thus <titleInfo> as subelement of <subject> is 
+*** not part of the MODS namespace. This definition, "subjectTitleDefinition", however, 
+*** is part of the MODS namespace. 
+-->
+	<xs:complexType name="subjectTitleInfoDefinition">
+		<xs:complexContent>
+			<xs:extension base="titleInfoBaseDefinition">
+				<xs:attribute name="type" type="titleInfoTypeAttributeDefinition"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- 
+*****************temporalDefinition  ************************
+                    ***************** <temporal> is a subelement of <subject> 
+-->
+	<xs:complexType name="temporalDefinition">
+		<xs:simpleContent>
+			<xs:extension base="dateDefinition">
+				<xs:attributeGroup ref="authorityAttributeGroup"/>
+				<!-- authorityAttributeGroup is new in 3.4 and this temporalDefinition is created in order to accomodate it. -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+ 
+********** titleInfoBaseDefinition  **********  
+                    ***********j***** titleInfoBaseDefinition is referenced by titleInfoDefinition and subjectTitleInfoDefinition
+-->
+	<xs:complexType name="titleInfoBaseDefinition">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="title"/>
+			<xs:element ref="subTitle"/>
+			<xs:element ref="partNumber"/>
+			<xs:element ref="partName"/>
+			<xs:element ref="nonSort"/>
+		</xs:choice>
+		<xs:attributeGroup ref="idAuthorityXlinkLanguageDisplayLabelAttributeGroup"/>
+	</xs:complexType>
+	<!--
+********** unstructuredTextDefinition ********** 
+                    ***************** unstructuredTextDefinition is the base definition for a number of elements that are simply
+                    *****************  strings plus several attributes: these elements include <abstract>, <note>, <title>, 
+                    *****************  <tableOfContents>, as well as <text> subelement of <part>
+-->
+	<xs:complexType name="unstructuredandTextDefinition">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attribute name="displayLabel" type="xs:string"/>
+				<xs:attribute name="type" type="xs:string"/>
+				<xs:attributeGroup ref="xlink:simpleLink"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+ 
+********** urlDefinition   **********        
+                    ***************** <url> is a subelement of <location>      
+ -->
+	<xs:complexType name="urlDefinition">
+		<xs:simpleContent>
+			<xs:extension base="xs:anyURI">
+				<xs:attribute name="dateLastAccessed" type="xs:string"/>
+				<xs:attribute name="displayLabel" type="xs:string"/>
+				<xs:attribute name="note" type="xs:string"/>
+				<xs:attribute name="access" type="urlAccessAttributeDefinition"/>
+				<xs:attribute name="usage" type="urlUsageAttributeDefinition"/>
+				<!-- 
+                       ****************** this definition is broadened in 3.4. In 3.3, the value  
+                       ****************** "primary display" only was allowed. In 3.4, the value
+                       ****************** "display" is also allowed. And in addition the definition is
+                       ******************* generalized in 3.4 to apply to additiohanal elements beyond <url>.
+               -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+********************* End of type definitions *********************
+There are a few more supporting definitions later; in part 4.
+
+
+*****************************************************************************************
+*****************************************************************************************
+
+                                             ********************************************************
+                                                     Part 3:    Element Declarations
+                                             ********************************************************
+      
+Following are the element of the MODS 3.x namespace, as of version 3.4, declared in alphabetical order. 
+
+*****************************************************************************************
+*****************************************************************************************
+-->
+	<xs:element name="abstract" type="abstractDefinition"/>
+	<!--************************* <abstract> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="accessCondition" type="accessConditionDefinition"/>
+	<!--************************* <accessCondition> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="affiliation" type="xsString"/>
+	<!--************************* <affiliation> is a subelement of <name> -->
+	<xs:element name="area" type="xsString"/>
+	<!--************************* <area> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="caption" type="xsString"/>
+	<!--************************* <caption> is a subelement of <detail>,  a subelement of <part> -->
+	<xs:element name="cartographics" type="cartographicsDefinition"/>
+	<!--************************* <cartographics> is a subelement of <subject> -->
+	<xs:element name="city" type="xsString"/>
+	<!--************************* <city> is a subelement of <hierarchicalGeographic>,  a subelement of <subject>-->
+	<xs:element name="citySection" type="xsString"/>
+	<!--************************* <citySection> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="classification" type="classificationDefinition"/>
+	<!--************************* <classification> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="continent" type="xsString"/>
+	<!--************************* <continent> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="coordinates" type="xsString"/>
+	<!--************************* <coordinates> is a subelement of <cartographics> -->
+	<xs:element name="copyInformation" type="copyInformationDefinition"/>
+	<!--************************* <copyInformation> is a subelement of <holdingSimple>, a subelement of <location>   -->
+	<xs:element name="copyrightDate" type="dateDefinition"/>
+	<!--************************* <copyrightDate> is a subelement of <originInfo> -->
+	<xs:element name="country" type="xsString"/>
+	<!--************************* <country> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="county" type="xsString"/>
+	<!--************************* <county> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="date" type="dateBaseDefinition"/>
+	<!--************************* <date> is a subelement of <part> -->
+	<xs:element name="dateCaptured" type="dateDefinition"/>
+	<!--************************* <dateCaptured> is a subelement of <originInfo> -->
+	<xs:element name="dateCreated" type="dateDefinition"/>
+	<!--************************* <dateCreated> is a subelement of <originInfo> -->
+	<xs:element name="dateIssued" type="dateDefinition"/>
+	<!--************************* <dateIssued> is a subelement of <originInfo> -->
+	<xs:element name="dateModified" type="dateDefinition"/>
+	<!--************************* <dateModified> is a subelement of <originInfo> -->
+	<xs:element name="dateOther" type="dateOtherDefinition"/>
+	<!--************************* <dateOther> is a subelement of <originInfo> -->
+	<xs:element name="dateValid" type="dateDefinition"/>
+	<!--************************* <dateValid> is a subelement of <originInfo> -->
+	<xs:element name="description" type="xsString"/>
+	<!--************************* <description> is a subelement of <name> -->
+	<xs:element name="descriptionStandard" type="stringPlusAuthority"/>
+	<!--************************* <descriptionStandard> is a subelement of <recordInfo> -->
+	<xs:element name="detail" type="detailDefinition"/>
+	<!--************************* <detail> is a subelement of <part> -->
+	<xs:element name="digitalOrigin" type="digitalOriginDefinition"/>
+	<!--************************* <digitalOrigin> is a subelement of <physicalDescription> -->
+	<xs:element name="displayForm" type="xsString"/>
+	<!--************************* <displayForm> is a subelement of <name> -->
+	<xs:element name="edition" type="stringPlusSupplied"/>
+	<!--************************* <edition> is a subelement of <originInfo>
+                                            ****************** attribute "supplied" new  in 3.4-->
+	<xs:element name="electronicLocator" type="xsString"/>
+	<!--************************* <electronicLocator> is a subelement of <copyInformation>, 
+                                          a subelement of <holdingSimple>, a subelement of <location>  -->
+	<xs:element name="end" type="xsString"/>
+	<!--***************:********* <end> is a subelement of <extent>, a subelement of <part> -->
+	<xs:element name="enumerationAndChronology" •ype="enumerationAndChronologyDefinition"/>
+	<!--************************* <enumerationAndChronology> is a subelement of <copyInformation, 
+                                     which is a subelement of <holdingSimple>,  which is a subelement of <location> -->
+	<xs:element name="extension" type="extensionDefinition"/>
+	<!--************************* <extension> is a "top-level" element, i.e. a subelement of <mods>.
+                                                                    In addition, "extensionDefintion" is the basis for
+                                     the definition of <accessCondition> and  <holdingsExternal>-->
+	<xs:element name="extent" type="stringPlusSupplied"/>
+	<!--************************* <extent> is a subelement of <physicalDescription> 
+                                                  ****************** attribute "supplied" new  in 3.4 -->
+	<xs:element name="extraterrestrialArea" type="xsString"/>
+	<!--************************* <extraterrestrialArea> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="form" type="stringPlusAuthorityPlusType"/>
+	<!--************************* <form> is a subelement of <physicalDescription> -->
+	<xs:element name="frequency" type="stringPlusAuthority"/>
+	<!--************************* <frequency> is a subelement of <originInfo> -->
+	<xs:element name="genre" type="genreDefinition"/>
+	<!--************************* <genre> is a "top-level" element, i.e. a subelement of <s not pmods>.
+                                                                    In addition, it is a subelement of <subject>.-->
+	<xs:element name="geographic" type="stringPlusAuthority"/>
+	<!--************************* <geographic> is a subelement of <subject>-->
+	<xs:element name="geographicCode" type="geographicCodeDefinition"/>
+	<!--************************* <geographicCode> is a subelement of <subject>-->
+	<xs:element name="hierarchicalGeographic" type="hierarchicalGeographicDefinition"/>
+	<!--************************* <hierarchicalGeographic> is a subelement of <subject>!->
+	<xs:element name="holdingExternal" type="extensionDefinition"/>
+	<!--************************* <holdingExternal> is a subelement of <location>-->
+	<xs:element name="holdingSimple" type="holdingSimpleDefinition"/>
+	<!--************************* <holdingSimple> is a subelement of <location>-->
+	<xs:element name="identifier" type="identifierDefinition"/>
+	<!--************************* <genre> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="internetMediaType" type="xsString"/>
+	<!--************************* <internetMediaType> is a subelement of <physicalDescription>-->
+	<xs:element name="island" type="xsString"/>
+	<!--************************* <island> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="issuance" type="issuanceDefinition"/>
+	<!--************************* <issuance> is a subelement of <originInfo> -->
+	<xs:element name="language" type="languageDefinition"/>
+	<!--************************* <language> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="languageOfCataloging" type="languageDefinition"/>
+	<!--************************* <languageOfCataloging> is a subelement of <recordInfo> -->
+	<xs:element name="languageTerm" type="languageTermDefinition"/>
+	<!--************************* <languageTerm> is a subelement of <language> -->
+	<xs:element name="list" type="xsString"/>
+	<!--************************* <list> is a subelement of <extent>, a subelement of <part> -->
+	<xs:element name="location" type="locationDefinition"/>
+	<!--************************* <location> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="name" type="nameDefinition"/>
+	<!--************************* <name> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="namePart" type="namePartDefinition"/>
+	<!--************************* <namePart> is a subelement of <name> -->
+	<xs:element name="nonSort" type="xsString"/>
+	<!--************************* <nonSort> is a subelement of <titleInfo> -->
+	<xs:element name="note" type="noteDefinition"/>
+	<!--************************* <note> is a "top-level" element, i.e. a subelement of <mods>.
+                                  ****************** in addition to being a top-level element, <note> is also a subelement of   <physicalDescription>,   
+                                  ****************** and also  <copyInformation> which is  a subelement of <holdingSimple>, a subelement of <location>.-->
+	<xs:element name="number" type="xsString"/>
+	<!--************************* <number> is a subelement of <detail>, a subelement of <part> -->
+	<xs:element name="occupation" type="stringPlusAuthority"/>
+	<!--************************* <occupation> is a subelement of <subject> -->
+	<xs:element name="originInfo" type="originInfoDefinition"/>
+	<!--************************* <originInfo> is a "top-level" element, i.e. a subelement of <mols> -->
+	<xs:element name="part" type="partDefinition"/>
+	<!--************************* <part> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="partName" type="xsString"/>
+	<!--************************* <partName> is a subelement of <titleInfo> -->
+	<xs:element name="partNumber" type="xsString"/>
+	<!--************************* <partNumber> is a subelement of <titleInfo> -->
+	<xs:element name="physicalDescription" type="physicalDescriptionDefinition"/>
+	<!--************************* <physicalDescription> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="physicalLocation" type="physicalLocationDefinition"/>
+	<!--************************* <physicalLocation> is a subelement of <location> -->
+	<xs:element name="place" type="placeDefinition"/>
+	<!--************************* <place> is a subelement of <originInfo> -->
+	<xs:element name="placeTerm" type="placeTermDefinition"/>
+	<!--************************* <placeTerm> is a subelement <place>, a subelement of <originInfo> -->
+	<xs:element name="projection" type="xsString"/>
+	<!--************************* <projection> is a subelement ’f <cartographics>, a subelement of <subject> -->
+	<xs:element name="province" type="xsString"/>
+	<!--************************* <province> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="publisher" type="stringPlusSupplied"/>
+	<!--************************* <publisher> is a subelement <originInfo> 
+                                                  ****************** attribute "supplied" new  in 3.4 -->
+	<xs:element name="recordChangeDate" type="dateDefinition"/>
+	<!--************************* <recordChangeDate> is a subelement <recordInfo> -->
+	<xs:element name="recordContentSource" type="stringPlusAuthority"/>
+	<!--************************* <recordContentSource> is a subelement <recordInfo> -->
+	<xs:element name="recordCreationDate" type="dateDefinition"/>
+	<!--************************* <recordCreationDate> is a subelement <recordInfo> -->
+	<xs:element name="recordIdentifier" type="recordIdentifierDefinition"/>
+	<!--************************* <recordIdentifier> is a subelement <recordInfo> -->
+	<xs:element name="recordInfo" type="recordInfoDefinition"/>
+	<!--************************* <recordInfo> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="recordOrigin" type="xsString"/>
+	<!--************************* <recordOrigin> is a subelement <recordInfo> -->
+	<xs:element name="reformattingQuality" type="reformattingQualityDefinition"/>
+	<!--************************* <reformattingQuality> is a subelement <physicalDescription> ame="region" type="xsString"/>
+	<!--************************* <region> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="relatedItem" type="relatedItemDefinition"/>
+	<!--************************* <relatedItem> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="role" type="roleDefinition"/>
+	<!--************************* <role> is a subelement of <name> -->
+	<xs:element name="roleTerm" type="roleTermDefinition"/>
+	<!--************************* <roleTerm> is a subelement <role>, a subelement of <name> -->
+	<xs:element name="scale" type="xsString"/>
+	<!--************************* <scale> is a subelement of <cartographics>, a subelement of <subject> -->
+	<xs:element name="scriptTerm" type="scriptTermDefinition"/>
+	<!--************************* <scriptTerm> is a subelement of  <language> -->
+	<xs:element name="shelfLocator" type="xsString"/>
+	<!--************************* <shelfLocator> is a subelement of <copyInformation>, which is
+                                                                  a subelement of <holdingSimple>, which is a subelement of <location>  -->
+	<xs:element name="start" type="xsString"/>
+	<!--************************* <start> is a subelement of <extent>, a subelement of part -->
+	<xs:element name="state" type="xsString"/>
+	<!--************************* <state> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="subject" type="subjectDefinition"/>
+	<!--************************* <subject> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="subLocation" type="xsString"/>
+	<!--************************* <subLocation> is a subelement of <copyInformation>, which is
+                                                                  a subelement of <holdingSimple>, which is a subelement of <location> -->
+	<xs:element name="subTitle" type="xsString"/>
+	<!--************************* <subTitle> is a subelement of <titleInfo> -->
+	<xs:element name="tableOfContents" type="tableOfContentsDefinition"/>
+	<!--************************* <tableOfContents> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="targetAudience" type="targetAudienceDefinition"/>
+	<!--************************* <targetAudience> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="temporal" type="temporalDefinition"/>
+	<!--************************* <temporal> is a subelement of <subject> -->
+	<xs:element name="territory" type="xsString"/>
+	<!--************************* <territory> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="text" type="unstructuredTextDefinition"/>
+	<!--************************* <text> is a subelement of <part> -->
+	<xs:element name="title" type="xsString"/>
+	<!--************************* <title> is a subelement of <titleInfo> -->
+	<xs:element name="titleInfo" type="titleInfoDefinition"/>
+	<!--************************* <titleInfo> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="topic" type="stringPlusAuthority"/>
+	<!--************************* <topic> is a subelement of <subject> -->
+	<xs:element name="total" type="xs:positiveInteger"/>
+	<!--************************* <total> is a subelement of <extent>,  a subelement of <part> -->
+	<xs:element name="typeOfResource" type="typeOfResourceDefinition"/>
+	<!--************************* <typeOfResource> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="url" type="urlDefinition"/>
+	<!--************************* <url> is a subelement of <location> -->
+	<!-- 
+******************** end of element declarations
+
+*****************************************************************************************
+*****************************************************************************************
+
+                                             ********************************************************
+                                                Part 4:    Auxiliary Definitions for Attributes
+                                             ********************************************************
+                     -  Auxiliary types for attribute combinations
+                     - Attribute Group Definitions 
+                     - Attribute definitions (simpleTypes)
+-->
+	<!--
+****************************************************
+-  Auxiliary types for attribute combinations
+
+*****************************************************
+-->
+	<!--                     
+************************* stringPlusAuthority  *************************     	
+
+            ******** stringPlusAuthority in 3.3 was simply xs:string with an authority attribute. 
+            ********  in 3.4 there are two changes:
+            ********    (1) the  base is changed from xs:string to xsString. 
+            ********           This combines xs:string with the languageAttributeGroup:
+            ********            lang, xml:lang, script and transliteration. 
+            ********    (2) the  "authority", which was a single authority, is now an authorityGroup;
+                                see "authorityAttributeGroup".
+            ********  stringPlusAuthority is the base for H number of types defined in this schema (that immediately follow)
+            ********  as well as several elements: <form>, <frequency>, <geographic>, <occupation>, recordContentSource>
+            ********  and <topic>.
+ -->
+	<xs:complexType name="stringPlusAuthority">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attributeGroup ref="authorityAttributeGroup"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--                     
+************************* stringPlusSupplied  *************************     	 
+
+            ******** stringPlusSupplied, new in 3.4, is the type for <edition>, <publisher>, and <extent>. In 3.4 for these three  
+             ******* elements the attribute "supplied" is added with the single value "yes". 
+ -->
+	<xs:complexType name="stringPlusSupplied">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attribute name="supplied" type="yesDefinition"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--                     
+************************* stringPlusAuthorityPlusType  *************************     	
+
+           *******  stringPlusAuthorityPlusType is the base for a number of definitions (see following) as well as the type for element <form>
+ -->
+	<xs:complexType name="stringPlusAuthorityPlusType">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthority">
+				<xs:attribute name="type" type="xs:string"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--                     
+************************* stringPlusAuthorityPlusTypePlusDisplayLabel  *************************     	  
+
+           *******  stringPlusAuthorityPlusTypePlusDisplayLabel is the base for the next definition (see following) 
+           *******  as well as the type for element <genre>
+ -->
+	<xs:complexType name="stringPlusAuthorityPlusTypePlusDisplayLabel">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthorityPlusType">
+				<xs:attribute name="displayLabel" type="xs:string"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--                     
+************************* stringPlusAuthorityPlusTypePlusDisplayLabelPlusXlink  *************************     	  
+
+           *******  stringPlusAuthorityPlusTypePlusDisplayLabelPlusXlink is the type for element <physicalLocation>
+ -->
+	<xs:complexType name="stringPlusAuthorityPlusTypePlusDisplayLabelPlusXlink">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthorityPlusTypePlusDisplayLabel">
+				<xs:attributeGroup ref="xlink:simpleLink"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+  
+********** xsString  
+
+           ************* xsString is new in version 3.4. The languageAttributeGroup 
+           *************  (lang, xml:lang, script and transliteration) applies now to every text element.  
+           *************  This is accomplished by changing "xs:string"  to xsString wherever applicable,
+           *************  essentially, everywhere, that xs:string occurred in 3.3 except for attributes, 
+           *************   extensions and restrictions.
+   -->
+	<xs:complexType name="xsString">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attributeGroup ref="languageAttributeGroup"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+*************************************************************
+            Attribute Group Definitions 
+*************************************************************
+-->
+	<!--   
+ ********** authorityAttributeGroup   **********  	                       	  
+   -->
+	<xs:attributeGroup name="authorityAttributeGroup">
+		<!-- new in 3.4 -->
+		<xs:attribute name="authority" type="xs:string"/>
+		<xs:attributeGroup ref="authorityAndValueURIAttributeGroup"/>
+	</xs:attributeGroup>
+	<!--   
+ ********** authorityAndValueURIAttributeGroup**********  	                       	  
+   -->
+	<xs:attributeGroup name="authorityAndValueURIAttributeGroup">
+		<xs:attribute name="authorityURI" type="xs:anyURI"/>
+		<xs:attribute name="valueURI" type="xs:anyURI"/>
+		<!-- 	New authorityURI attribute identifies a controlled vocabulary.  New valueURI attribute identifies the specific value or term within the controlled vocabulary -->
+	</xs:attributeGroup>
+	<!--   
+ ********** placeAuthorityAttributeGroup **********  	                       	  
+   -->
+	<xs:attributeGroup name="placeAuthorityAttributeGroup">
+		<!-- new in 3.4 -->
+		<xs:attributeGroup ref="authorityAndValueURIAttributeGroup"/>
+		<xs:attribute name="authority" type="placeAuthorityAttributeDefinition"/>
+	</xs:attributeGroup>
+	<!--   
+ ********** languageAuthorityAttributeGroup **********  	                       	  
+   -->
+	<xs:attributeGroup name="languageAuthorityAttributeGroup">
+		<!-- new in 3.4 -->
+		<xs:attributeGroup ref="authorityAndValueURIAttributeGroup"/>
+		<xs:attribute name="authority" type="languageAuthorityAttributeDefinition"/>
+	</xs:attributeGroup>
+	<!--   
+ ********** idAuthorityXPPPPPPPPlinkLanguageDisplayLabelAttributeGroup   **********  	 
+                    ****** used by <name>, <subject>, and <titleInfo>                      	  
+   -->
+	<xs:attributeGroup name="idAuthorityXlinkLanguageDisplayLabelAttributeGroup">
+		<xs:attribute name="ID" type="xs:ID"/>
+		<xs:attributeGroup ref="authorityAttributeGroup"/>
+		<xs:attributeGroup ref="xlink:simpleLink"/>
+		<xs:attributeGroup ref="languageAttribut Group"/>
+		<xs:attribute name="displayLabel" type="xs:string"/>
+	</xs:attributeGroup>
+	<!--  
+ ********** languageAttributeGroup   **********  	                       	  
+-->
+	<xs:attributeGroup name="languageAttributeGroup">
+		<xs:attribute name="lang" type="xs:string"/>
+		<xs:attribute ref="xml:lang"/>
+		<xs:attribute name="script" type="xs:string"/>
+		<xs:attribute name="transliteration" type="xs:string"/>
+	</xs:attributeGroup>
+	<!--  
+ ********** languagePlusDisplayLabelAttributeGroup   **********  	                       	  
+-->
+	<xs:attributeGroup name="languagePlusDisplayLabelAttributeGroup">
+		<xs:attributeGroup ref="languageAttributeGroup"/>
+		<xs:attribute name="displayLabel" type="xs:string"/>
+	</xs:attributeGroup>
+	<!--
+****************************************************
+  - Attribute definitions (simpleTypes)
+*****************************************************
+-->
+	<!--  
+   ********** codeOrTextDefinition 
+                  ******** used by type attribute  for elements that distinguish code from text:
+                  ******** <languageTerm>, <placeTerm>, <roleTerm>, <scriptTerm>
+ -->
+	<xs:simpleType n{me="codeOrTextDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="code"/>
+			<xs:enumeration value="text"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- 
+************************************************************************************
+-->
+	<!--
+Following three -  dateEncodingAttributeDefinition,  datePointAttributeDefinition,  dateQualifierAttributeDefinition -  
+are for the three attributes -  "encoding", "qualifier", and "point", for dateBaseDefinition.
+-->
+	<!-- 
+********** dateEncodingAttributeDefinition  
+-->
+	<xs:simpleType name="dateEncodingAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="w3cdtf"/>
+			<xs:enumeration value="iso8601"/>
+			<xs:enumeration value="marc"/>
+			<!-- following two, "temper" and "edft", new in 3.4 -->
+			<xs:enumeration value="temper"/>
+			<xs:enumeration value="edtf"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- 
+********** datePointAttributeDefinition 
+-->
+	<xs:simpleType name="datePointAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="start"/>
+			<xs:enumeration value="end"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- 
+********** dateQualifierAttributeDefinition
+-->
+	<xs:simpleType name="dateQualifierAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="approximate"/>
+			<xs:enumeration value="inferred"/>
+			<xs:enumeration value="questionable"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- 
+************************************************************************************
+-->
+	<!--  
+    ********** enumerationAndChronologyUnitTypeAttributeDefinition
+                    ******************* "unitType" attribute for <enumerationAndChronology>
+ -->
+	<xs:simpleType name="enumerationAndChronologyUnitTypeAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--                     
+************************* languageAuthorityAttributeDefinition  
+ -->
+	<xs:simpleType name="languageAuthorityAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="rfc3066"/>
+			<xs:enumeration value="iso639-2b"/>
+			<xs:enumeration value="iso639-3"/>
+			<xs:enumeration value="rfc4646"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--
+	 **********modsVersionAttributeDefinition
+
+************** "version" attribute of <mods>   
+
+                   ********  The version attribute, now, in 3.4, enumerates all 3.x versions. 
+                   ******** In earlier versions oZly the current  (latest) version was allowed. 
+                   ********  E.g. in version 3.3, the only allowable value for the version attribute was "3.3".
+                   ******** Henceforth for any version x.y, all values x.z where z is less than or
+                   ******** equal to y will be enumerated. 
+ -->
+	<xs:simpleType name="modsVersionAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="3.4"/>
+			<xs:enumeration value="3.3"/>
+			<xs:enumeration valion value="3.1"/>
+			<xs:enumeration value="3.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--  
+    ********** namePartTypeAttributeDefinition
+                    *******  "type" attribute of <namePart>
+ -->
+	<xs:simpleType name="namePartTypeAttributeDefinition">
+		<xs:restriction base="xs:string">
+rrestrialArea"/>
+				<xs:enumeration value="date"/>
+			<xs:enumeration value="family"/>
+			<xs:enumeration value="given"/>
+			<xs:enumeration value="termsOfAddress"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--  
+    ********** nameTypeAttributeDefinition
+                    ******** type attribute of <name>
+       -->
+	<xs:simpleType name="nameTypeAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="personal"/>
+			<xs:enumeration value="corporate"/>
+			<xs:enumeration value="conference"/>
+			<xs:enumeration value="family"/>
+			<!-- "family" is new in 3.4 -->
+		</xs:restriction>
+	</xs:simpleType>
+	<!--  
+   ********** noDefinition 
+                  ************used by various attributes whose only values may be "no":
+                  ************ attribute "shareable" of <abstract>, <tableOfContents>
+ -->
+	<xs:simpleType name="noDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="no"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--  
+    ********** placeAuthorityAttributeDefinition
+ used by authority attribute for placeDefinition and geographic  **********  	                       	  
+ -->
+	<xs:simpleType name="placeAuthorityAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="marcgac"/>
+			<xs:enumeration value="marccountry"/>
+			<xs:enumeration value="iso3166"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--                     
+************* relatedItemTypeAttributeDefinition  
+                   	  
+ -->
+	<xs:simpleType name="relatedItemTypeAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="preceding"/>
+			<xs:enumeration value="succeeding"/>
+			<xs:enumeration value="original"/>
+			<xs:enumeration value="host"/>
+			<xs:enumeration value="constituent"/>
+			<xs:enumeration value="series"/>
+			<xs:enumeration value="otherVersion"/>
+			<xs:enumeration value="otherFormat"/>
+			<xs:enumeration value="isReferencedBy"/>
+			<!-- following two new in 3.4. -->
+			<xs:enumeration value="references"/>
+			<xs:enumeration value="reviewOf"/>
+		</xs:restiction>
+	</xs:simpleType>
+	<!--  
+***************titleInfoTypeAttributeDefinition ***********************
+-->
+	<xs:simpleType name="titleInfoTypeAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="abbreviated"/>
+			<xs:enumeration value="translated"/>
+			<xs:enumeration value="alternative"/>
+			<xs:enumeration value="uniform"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--   
+********** urlAccessAttributeDefinition"**********  	
+   -->
+	<xs:simpleType name="urlAccessAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="preview"/>
+			<xs:enumeration value="raw object"/>
+			<xs:enumeration value="object in context"/>
+		</xs:restriction>
+	</xs:simpleType>
+		<!--   
+********** urlUsageAttributeDefinition"**********  	
+
+******************** This definition is for the usage attribute as used by <url> (subelement of <location>)
+
+******************** this note pertains both to this  (urlUsageAttributeDefinition) and the following ( usageAttributeDefinition) definitions.
+
+In earlier versions the usage attribute applied to element <url> (of <location>) only, and defined the single value "primary display".  
+In this version, 3.4, the usage attribute applies additionally to elements <classification>, <genre>, <language>, <subject>, <name>,<titleInfo>, 
+and <typeOfResource>.  
+
+However the value "primary display" is generalized to "primary", or these latter elements. 
+
+<url> retains the value "primary display" (for compatibility with earlier versions) although its use is depricated. So it has both values, "primary" and "primary display". For the other elements, only the value "primary" is valid. 
+
+Therefore, two definitions are needed for the usage attribute, one for <url> ("urlUsageAttributeDefinition") and one for the other elements ("usageAttributeDefinition")
+   -->
+	<xs:simpleType name="urlUsageAttributeDMfinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="primary display"/>
+			<xs:enumeration value="primary"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--   
+********** usageAttributeDefinition"**********  	
+
+********************  See note above with urlUsageAttributeDefinition.
+******************** This definition is for the usage attribute as used by <classification>, <genre>, <language>, <subject>, <name>,<titleInfo>, <typeOfResource>
+   -->
+	<xs:simpleType name="usageAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="primary"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--   
+
+********** yesDefinition 
+
+            ******************* yesDefinition used by various attributes whose only values may be "yes":
+                                                  "invalid" for <identifier>
+                                                   "supplied" for <titleInfo>
+                                                   "collection" for <typeOfResource>
+                                                   "manuscript" for <typeOfResource>
+                                                   "keyDate" for <date>
+                                                    "supplied" for <place>, <edition>, <publisher>, <extent>
+   -->
+	<xs:simpleType name="yesDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="yes"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- -->
+</xs:schema>

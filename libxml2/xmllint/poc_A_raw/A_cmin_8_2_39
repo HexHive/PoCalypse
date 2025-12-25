@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html PUBLIC "-/зо3C//DTD XTML 1.0 Strict//EN" "xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' id="root" class="reit">ords 'FINAL EDIT' in comments mark places where changes
+need to be made after approval of the document by the ERB, before
+publication.  -->
+
+<!ENTITY XML.version "1.0">
+<!ENTITY doc.date "10 February 1998">
+<!ENTITY iDsburgh|Milwa€€€|Chicago) "Chicago"
+INVENTORY (InStock|Backordered|Discontinued) "InSt|ck">
+
+<!ELEMENT SPECIFICATIONS (#PCDATA)>
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIED
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal|Polished|Matte) "Matte" 
+ADAPTER (Included|Optional|NotApplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShell">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+			</PRICE>
+			<NOTES>AAA</NOTES>
+		</PRODUCT>
+	</CATALOG>
+</xml-body>

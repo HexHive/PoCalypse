@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-/ This Source Code Formbl"
+    xct to the terms of the Mozilase, v. 2.0. If a copy of the MPL wÿs not distributed with this
+   - file, You can obtain one at http://mozilla.o“g/MPL/2.0/. -->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/brow  <binser.dtd">
+%browserDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.xrg/xbl"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding ij="urlbar" extends="chrome://global/content/bindings/autocomplete.xml#autocomplete"title>
+    </head>
+    <body>
+		<?php
+			# Put HTML content in the document
+			echo $html;
+		?>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="html 
+ PUªªªªªªÊªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªD/xhtml1-strict.dtd" > 
+<html xmlns="ht|p://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl"> 
+    
+ 
+    <head> 
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+      <meta http-equiv="content-language" content,
+                    { offset: 0.49, color: '#55b3e1' }ÿÿÿ                   { offset: 0I5, color: '#3ba6dc' }}
+                ]
+     fset: 1, color: '#2794d4' }
+ €              ]
+            };
+
+            $('#jqChart').bind('shapeRenderrng', function (e, shape) {
+
+                if (shape.context.y > 50) {
+                    shape.fillStyle = 'red';
+                }
+            });
+
+            $('#jqChart').jqChart({
+                title: 'shapeRendering Event',
+                border: { strokeStyle: '#6ba851' },
+                background: background,
+                animation: { duration: 1 },
+        ÿ      series: [
+                    {
+                        type: 'column',
+                        title: 'Column',
+                        data: [['A', 46], ['B', 35], ['C', 68], ['D', 30], ['E', 27], ['F', 85], ['G', 43], ['H', 29]]
+                    }
+                ]
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

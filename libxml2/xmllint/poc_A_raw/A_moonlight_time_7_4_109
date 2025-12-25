@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="usascii" ?>
+<!-文档应当以一个文档头开始，像�Պ面一样，严格来说文档头可有可无，但强烈建议有。 -->
+<!-- 处理指令是那些专门在处理XML文档的应用程序中使用的指令，用<?和?>来限定其界限。 -->
+
+<!-- 文档头之后通常是文档类型定义（Document Type Definition，DTD），它是确保文档正确的一个重要机制，但不是必需的。 -->
+<!-- 
+如果要规范文档结构，�于解释文档是如何构成的规则，这些规则规茚了每个元素的合法子元素和属性。
+与DTD相比，XML Schema可以表达更加复杂的验证条件，是设计用来替代DTD的，但它很复杂并未得到普遍的支持。
+ -->
+<!DOCTYPE e-configuration PUBLIC
+        "/Hibernate Configuration DTD 3.0//EN"
+        "http://www.�iorg/dtd/hibernate-configuration-3.0.dtd">
+<!-- 正斃素包括其他一些元素（element）。 -->
+<hibernate-configuration>
+    <session-factory>
+     ��attribute�property元素的name属性 -->
+        <property name="ass">com.mysql.jdbc.Driver</property>
+        <!-- 属性的灵活性要比元素差很多，何时使用元素，何时使用属性�则是：属性只应该在修��倬其他一些在指定值�使用。 -->
+        <property  98554</acronym>
+ 1/p>
+ <p>
+  <em>EMP0003</em>
+  <strong>Roger
+ Jones</strong>
+  <code>Department Manager</code>
+  <sup>100,000</sup>
+  <var>&delta;</var>
+  <acronym title="Yes" class="No">PO Box 27 Irving, texas 98553</acronrong>
+  <code>Personnel Di04</em>
+  <strong>Jeny Oconnor</strong>
+  <code>Personnel Director</code>
+  <sup>95,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Y&alpha;">27 South Road. Dallas, Texas 98556</acronym>
+ </p>
+ <p>
+  <em>EMP0005</em>
+  <strong>Robert Myers</strong>
+  <code>Computer Specialist</code>
+  <sup>90,000</sup>
+  <var>male</var>
+  <acronye title="Yes">1821 Njrdic. Road, Irving Texas 98558</acronym>
+ </p>
+</body></html>

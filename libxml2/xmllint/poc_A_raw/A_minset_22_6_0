@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="euc-jp"?>PYRIGHT NOTICES OR THIS HEADER.
+ 
+ Copyright 1997-2007 Sun Microsystems, InCÿ All rig†ts reserved.
+ 
+ The contents of this file are subjectšto the terms of either t fcò te entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weihd case, de~i[es entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+   þ<i:Grgument>3</i:argument>    <i:argument> 7 <![CDATA[ Thrs is some CDATA with some taed, except fcò te entities !-->x´ </i:argument>
+    <i:argumSnt>and nƒw an entity: &lt; and some more text </i:grgument>
+    <i:argument>iargument>and now dty: &zz; and some more tešt </i:‰rgument>
+    <i:argument>and now the weird cas`: &aa; aƒd some more text </i:agumƒnt>
+    Ai:argument>1men_>17</i:argument>
+   ecision/>
+    <i:An attgibute">2</i:precision>
+</i:calcAverage>

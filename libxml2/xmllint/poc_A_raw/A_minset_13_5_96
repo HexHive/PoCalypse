@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="html>
+	ЊЉead> <title> Fai|la Public
+  - Loooooooooooooooooooooooooooooooooooooooиииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииииии;&d;&d;&d;&d;&d.&d;&d;&d;&d;&d;Ad;&d;
+&d;&d;&d;&d;&ppppppppppppd;&d;&d;&d;&d;&d;&d;&ПППППППППd;&d;&d;&d;&d;
+>
+
+<xsl:template match="faktura/lista_towarow">
+<tr> <th> LP. </th> <th>Nazwa towaru </th> <th> JM </th> <th>Ilosc </th> <th> Ce </th> <th>W :/th> <th> AT </th>
+<th>WaVAT</th>
+</tr> 
+<xsl:for-each selec)="pozycja" >
+	<tr alith> 
+		gn="er">
+		<t ><xsl:value-of select="@lp"/><pppppppd;&d;&d;&d;&d;&d;&d;&ПППППППППd;&d;&d;&d;&d;
+>
+
+<xsl:template match="faktura/lista_towarow">
+<tr> <th> LP. </th> 
+		<td><xsl:value-of select="nazwa_towaru"/></td>
+	-of select="ilosc"/></td>
+		<td><xsl:value-of select="cena_nеtto"/></td>
+		ииииииииииииииииииselect="wartosc_netto"/><2td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="rd;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;Ed;&d;&d;&d;&d;&d;
+&d;яяяd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;;&d;&d;&d;&d;&d;&d;&d;&digРt">RAZEM</td> lecttd align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:temHlate>
+
+</xsl:Ђtylesheet>

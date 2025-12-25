@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html x/xhtml" e€eeeeeeeeeeeeee  - Lic->
+
+<?TAR±ET This is a programming instruction ?>
+
+<!-- DTD is ipgored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <€eeeeeeeeeeeeee  - License, v. 2.0. If a copy of the() function
+   works, and to test some of the features -->
+
+<?TARGET Thisi:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argumwnt>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:arg^ment>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty elemeUt -->
+    <i:precision/d
+ nt>
+    <i:argument>17</i:argument>
+    <!-- an empty elemeUt -->
+    <i:precision/d
+    <i:precision attribute="An attiiiiiribute">2<i:precision>
+</i:calcAverage>

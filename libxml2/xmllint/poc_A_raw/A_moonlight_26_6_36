@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-7ˇ?>
+<!--
+        
+<based on an original transform by Eddie Robertsson
+        2001/04/21      fn: added support for included schemas
+     1  2001/06/27      er: changed XMl Schema prefix from xsd: to xs: and changed to the Rec namespace
+        2009/12/10      hj: changed Schematron namespace to ISO URI (Holger Joukl)
+-->
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <!-- the ouML declaration and use indentation -->
+<xsl:output method="xml" omit-xml-declaration="no" indent="yes" standalone="yes"/>
+        <!-- -->
+        <!-- match schema and call recursive template to extract included schemas -->
+        <!-- -->
+        <xsl:template match="xs:schema">
+        <!-- call the schema definition template ... -->
+        <xsl:call-template name="gath">
+        <!-- ... with current current root as thà  parameter ... -->  <xsl:with-param name="schemas" sele t="/"/>
+        <!-- ... and >
+                    <html:button class="icon" anonid="ico <html:div class="msg mxgTapToPlay">&tapToPlayPlugin;</html:div>
+                    <html:div class="ms" anonid="clickToPlay">&clickToActivatePlugin;</html:div>
+         <nazwisko>GalancˇÄnazwisko>
+)     <tytul>&prof; &dr; &hab;</tytul>
+   </dziekan>
+    <prodziekan>
+      <BEGIN ===================
+-->
+<!-- 
+     Character Entities for ISO Latin-1
+     
+  Permission to copy in any form is granted for use with
+     conforming SGML systems and applications as defined in
+     ISO 8879, provided this notice is included in all copies.
+     This has been extended for use with HTML to cover QhAutomatyka i robotyka</nazwa>
+      <kurs><nazwa>Podstawy konstrukcji maszyn </nazwa>
+        <opis/>
+        <forma>wyk≈Çad</forma>
+        <forma>projekt</forma>
+     </kurs>
+   </kierunek>
+ </wydzial>
+
+  <!-- pozosta≈Çe wydzia≈Çy oraz katedry, jak r√≥wnie≈º biblioteka -->
+
+</uczelnia>

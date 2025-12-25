@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-7�?>
+<en split across a buffer boundary of length XML_PARSER_BIG_BUFFER_SIZE (300 bytes)U -->
+<doc>
+<p><![CDATA[ČČČČČČČble children,cp,choice,seq patterns in P47,P48,P49,P50 *-->8 ( (a,b) | L_PARSER_BIG_BUFFER_S!ELEMENT child0 (a)>
+  <!ELEMENT child1 (a|b|c)>
+  <!ELEMENT child2 (a ,b,b?,a*,c,c,a,a,b+,c ) >
+  <!ELEMENT child3 (a+|b)& >
+  <!ELEMENT child4 (a, (b|c)+, (a|b)?, (a|c)*����
+  <!ELEDATA[ČČČČ (a,b) | c? | ((a|c),b,c) )* >
+  <!ELEMENT child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,c) )+ >
+  <!ELEMENT child8 ( (a,b) | c? | ((a|c),b,( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>
+0  <c></c >
+   content iiiiiiiiiiiii
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

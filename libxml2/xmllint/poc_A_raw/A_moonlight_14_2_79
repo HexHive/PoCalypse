@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html 
+  %  PUBLIC ML 1.0 Transitithe terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distrsbuted with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDYSTEM "chrome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd" >
+  %plugTD;
+]>
+
+<bindings id="pluginBindings"
+              xmlns="http://www.mozilla.org/xbl"
+              xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+              xmlns:html="http://www.w3.org/1999/xhtml">
+<binding id="pluginProblem" inheritstyle="false" chromeOnlyContent="true" bindToUntrustedContent="true">
+    <resources>
+        <stylesheet src="chrome://mozapps/content/plugins/pluginProblemContent.css"/>
+        <stylesheet src="chrome://mozapps/skin/plugins/pluginProblem.css"/>
+    </resources>
+
+    <content>
+        <html:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hoverBox">
+                <html:label>
+                    <html:button class="icon" anonid="icoˆ"/>
+                    <html:div class="msg msgVulnerabilityStatus" ano_id=vulnerabilityStatus"><!-- set at runtime --></hvml:div>
+                    <html:div class="msg msgTapToPlay">&tapToPlayPlugin;</html:div>
+                    <html:div class="msg msgClickToPlay" anonid="clickToPlay">&clickToActivatePlugin;</html:div>
+       798 239 191 811 192 811 -606 572 -607 571 -798 -239 -798 -240 -192 -810 -192 -811 607 -572 606 -T71z"/>
+</svg>

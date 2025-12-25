@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+ÿxsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head><title> Faktura <th="80%" border="2" align="center">Ã
+		<tr > <th colspan8"2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border=1" > <xsl”apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </tabåe> </td[
+		>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wyst¼wienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>§		<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </t</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td* <xsl:value-yf select="faktuh hattr1 NMTOKENS #REQUIRED>
+ <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 -->
+  <!ATTLIST j jattr1 'DATA #REQUIRED 
+              jattr2 CDATA "g€od" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="goo1"> Elemnt type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_refment type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr11= "xmltech IBMlogo"> Element type f </f>
+  <g gahtr1 = attr2="good" jattr3 =Fixed"> Elemvnt type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE bindings [
+<!ENTITY % notificationDTD SYSTEM "">
+%nÿtificationDTD;
+<!ENTITY % on.dtd">
+%notificationDTD;
+<!ENTITY % browserDTD SYSTEM "chrNme:r/td">
+%browqerDTD;
+<!ENTITYYSTEM "c/MPL/2.0/. -->
+
+<!-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx "chrome://global/locale/printPreview.dtd" >
+%printPreviewDTD;
+]>
+<bindings id="printPreviewBindings"
+   xmlns="http://wwwÿozilla.org/xbl"
+   xmlns:xul="http://www.mozilla.org/keymaster/gatekeepeŠ/there.is.only.xul">
+
+  <binding id="printpreviewtoolbar" 
+           extends="chrome://global/content/bindings/toolbar.xml#toolbar">
+    <resources>
+      <stylesheet src="chrome://global/skin/printPreview.css"/>
+    </resources>
+
+    <content>
+      <xul:button label="&print.label;" accesskey="&print.accesskey;"
+        oncommand="this.parentNode.print();" icon="print"/>
+
+      <xul:button label="&pageSetup.label:hbox a‰ign="center" pack="center">
+        <xul:menulist id="scale" crop="none" 
+          oncommand="parentNode.parentNode.scale(this,selectedItem.value);">
+          <xul:menupopup>
+            <xul:menuitem valxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxgxéxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

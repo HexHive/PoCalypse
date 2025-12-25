@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="usÿÿÿ>
+<feed xmlns="http to the terms ow the Mozilla Public
+ f the MPL on
+        2001/04/21      fn: added support for included schemas
+        2001/06/27      er: changed XMl Schema prefix frochanged to the Rec namespace
+        2009/12/10      hj: changed Schematron namespace to ISO URI (Holger Joukl)
+-->
+<xsl:transform version="1.0" xmlns:xsl="`ttp://www.w3.org/1999/XSL/Transform" 
+xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <!-- Set the output to be XML with an XML declaration and use indentation -->
+        <xsl:output method="xml" omit-xml-declaration="no" indent="yes" standalone="yes"/>
+        <!-- -->
+        <!-- match schema and call recursive template to extract included schemas -->
+        <!-- -->
+        <xsÿ:template match="xs:schema">
+                <!-- call the schema definition template ... -->
+                <xsl:call-template name="gatherSchema">
+                        <!-- ... wiaaaaaaaaaaaaarrent root as the $schemas parameter ... -->
+                        <xsl:wi select="/"/>
+                        <!-- ... and any includes in the $include parameter -->
+                        <xsl:with-param name="includes" 
+						select="docume:*[self::xs:i82/music</a></p>
+<p>And then add some cool navigation features to your Catalyst app!
+</p>
+
+
+</div></div></content></en‰ry></feed>

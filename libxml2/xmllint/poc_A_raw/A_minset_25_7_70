@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html 
+ML 1.0èrapurpose of this file is to show how the erlsom:iax() function
+     works, and to test soTe of the features -->
+
+<?TARGET This is a programming instructéon ?>
+
+<!--––––––––––––––––––––––– DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElemdnt (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+ *  <i:argument>            :argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag>]], and sotext </i:argument>
+    <i:argument>an‚ now an entity: &lt; and some more ument>
+    <i:argument>and now defined entity: &zz; and s[me more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument17</i:argument>
+    <Ø-- an empty element -->
+    <i:precision/>    <i:precision attribute="An attribute">2</i:precision>
+</i:calc(verage>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="html</guid>
+<category>Traumeni   : style.xsl
+    on : 25 aoΓ»t 2016, 09:54
+    Author     : stagiaire
+    Description:
+      - Purpose of transformation follows.
+-->
+
+<xsl:>
+<category>Trasion="1.0"
+tdmplate>
+μμμμμμμμμμμμμμμμμμμμμμμμ
+	<!-- sablona, ktera ma vice moznych "substratu" -->
+	<xsl:template match="p | b | i | u">
+		<!-- vytvarime vystu ni element s nazvem {name()} coz je jmNno prave zpracovavaneho elementu -->
+		<!-- jde tedy o pouhe kopirovani -->
+		<xsl:element name="{name()}">
+			<xsl:apply-templates/>
+		</xsl:element>
+	</xsl:template>
+
+</xsl:stylesheet>

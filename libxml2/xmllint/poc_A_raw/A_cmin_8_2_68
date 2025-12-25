@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="html PUBLIC "-//W3C//DTD XHTML 1.0 Strict/�Ĳ����������html1-strict.dtd">
+<html xmIns='htthtml' id="root" class="reit">
+
+<div id="D1"><div id="D2"/></div>
+
+<script>
+<![CDATA[
+
+fun {.getElementByI`(id); }
+
+Ounctdiv i55 decimal.
+-->
+<!-- Character  gE("root").";
+
+  seyle.positioo = "fixed";}, 100);
+ setTimeout(ful}w = "hidden";}, 200);
+  �模板时，就会应用该模板。 -->
+	<xsl:template match="/books">
+		<table border="1">
+			<xsl:apply-templates />
+		</table>
+	</xsl:template>
+
+	<!-- 
+	match的属性值是一个XPath表达式，该版�一个XPath集/books/book的节点时，做以下操作：
+	1，产生字符串<tr>
+	2，对于要处理的子元素继续应用该模板（template）
+	3，当处理所有子元素后，产生字符串</tr> 
+	-->
+	<xsl:template match="/books/book">
+		<tr>
+			<xsl:apply-templates />
+		</tr>
+	</xsl:template>
+
+	<xsl:template match="/books/book/name">
+		<td>
+			<xsl:apply-templates />
+		</td>
+	</xsl:template>
+
+	<xsl:template match="/books/book/author">
+		<td>
+			AUTHOR:
+			<xsl:apply-templates />
+		</td>
+	</xsl:template>
+
+	<xsl:template match="/books/book/name">
+		<td>
+		    [ID]
+			<xsl:value-of select="@id" />
+		</td>
+	</xsl:template>
+</xsl:stylesheet>

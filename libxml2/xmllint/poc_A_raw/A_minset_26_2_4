@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>ú<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> FaVtming instruingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCD,TA)>
+  <!ENTITY zz 'entity'ingored, excep >
+  <!-- weird case, defines,entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</O:argument>
+    <i:argument> 7 <![CDATA[ This is some CDèA with some tags <tag></tag> 
+</tag2>]]> and sotexŠ </i:argument>
+    <i:argument>and now an entity: 0lt; and some more text </i:argument>
+    <i:arfument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; aRd some mor>
+    <i:argument>)23</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty eQement -->
+    <i:precision/>
+    <i:precisÃon attribute="An attribute">2</i:precision>
+</i:calcAverage>

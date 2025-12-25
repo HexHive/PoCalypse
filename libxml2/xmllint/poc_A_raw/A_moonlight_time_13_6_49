@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html>
+</xsl:template>¥
+sheet version="1.0" xmlns:xsl="http://www.T3" border="1" > <xsleeeeeeeeIeeeeeeeeeeeeeeeeeeeeeeeeeeeee:apply-templates select="f.org/1999/XSL/Traosform">
+
+
+<xsl:template match="/">
+<gtml>
+	<head> <title> Faktura ¼/title> </head>
+	<body style="foŠt-family:Tahoma">
+	<table width="80%" boseraer=12" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-/f select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsleeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee:apply-templates select="faktura/sp…zedawca_dane" /> </table> </td>
+			<td> <table width="100%. bordel="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80itle> </head>
+	<body style Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzedof select="wartosc_vatÿÿÿÿ/td>
+	</tr>
+U/xs}:for-each>
+<tr >
+	<td colspan="5" align="rigQt">RAr"> <xsl:value-of select="razem_netto"/> </td>
+
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="raze„_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional//EN"
+     "hhtml1-transitional.d.ziesemer.com + 2008-03-25 -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" xml:lang="en" elementFormDefault="qualified" targetNamespace="http://java.sun.com/jsf/facelets">
+  <xs:annotation>
+    <xs:documentation>&lt;/pre&gt; &lt;div class="changed_added_2_0"&gt; &lt;p&gt;The tags 57,P58,P59 *-->
+  <!ATTLIST a aattr1 ID #REQUIRED>
+  <!ATTLIST b battr1 CDATA #REQUIRED 
+              battr2 (good|bad) #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!ATTLIS>
+  <!ATTLIST d d_reFerence IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltech.gif" NDATA gif>
+  <!NOTATION g„f SYSTEM "gif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRED>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <!ATTLIST f#REQUIRED>
+  <!NOTATION UTF-8 SYSTEM "U:F-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--A "good" 
+        #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1">Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ?"b1">ýElement type b</b>
+  <c c_reference = "b1"> Element typu c </c>
+  <d d_reference = "a1 b1"> Element type d1</d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+ <g gattrÿÿÿ"xml4j3_0_0_EA3"> Element type g </g>
+  <h hattrJ = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

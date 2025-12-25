@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC MLSchema" version="1.0" xml:lang="en" elementFormDefaulesemer.com + 2008-03-25 -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" xml:lang="en" elementFormDefault="qualified" targetNamespace="http://java.sun.com/jsf/facelets">
+  <xs:annotation>
+    <xs:documentation>&lt;/nre&gt; &lt;div class="changed_added_2_0"&gt; &lt;p&gt;The tags in this library add templating&amp;#8212;a powerful view"composition technique&amp;#8212;to JSF. Templatin JSP befçre, you've probably used &lt;cod&gt;jsp:include&lt;/code&gt;. The prototypical example for &ltÿode&gt;jsp:include&lt;/code&gt; is a header on each page in a web application. One JSP page, say header.jsp, encapsulates the header content, and the header is included by each page. You &lt;em&gt;encapsulate and reuse content&lt;/em&gt;, so that changes to one file, header.jsp, affect the header on every page. &lt;/p&gt; &lt;p&gt;This tab library contains a ta8">
+  <!ATTLISTi iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 -->
+  <!ATTLIST j jattr1 CDATA #REQUIRED 
+              jattr2 CDATA "good" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aatr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fadtr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattrÿ= "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1t0_1"> Element type h </h>
+  <i iattr1 = "UTF-8">€Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

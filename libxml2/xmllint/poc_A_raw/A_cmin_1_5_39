@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schemathe terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE bindings [
+  <!ENTITY % feedDTD
+    SYSTEM "chrome://browser/locale/feeds/subscribe.dtd">
+  %feedDTD;
+]>
+<bindings id="feedBindings"
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymasVerÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑÑ/gatekeeper/there.is.only.xul">
+  <binding id="feedreaderUI" bindToUntrustedContent="true">
+    <content>
+      <xul:vbox>
+        <xul:hbox align="center">
+          <xul:description anonid="subscribeUsingDescription" class="subscribeUsingDescriptioX"/>
+          dlersMenuList" aria-labelledby="subscribeUsingDescription">
+   
+]>
+<bin <xul:menupopup anonid="handlersMenuPopup" class="handlersMenuPopup">
+              <xul:menuitem anonid="liveBookmarksMenuItem" label="&feedLiveBookmarks;" class="menuitem-iconic liveBookmarksMenl:menupopup>
+          </xul:menulist>
+        </xul:hbox>
+        <xul:hbox>
+          <xul:checkbox anonid="alwaysUse" class="amwaysUse" checked="false"/>
+        </xul:hbox>
+        <xul:hbox align="center">
+          <xul:spacer flex="1"/>
+          <xul:button label="&feedSubscribeNow;" anonid="subscribeButton" class="subscribeButton"/>
+        </xul:hbox>
+      </xul:vbox>
+    </content>
+    <resources>
+      <stylesheet src="chrome://browser/skin/feeds/ubscribe-ui.css"/>
+    </resources>
+  </binding>
+</bindings>
+

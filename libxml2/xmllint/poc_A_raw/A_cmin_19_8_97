@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html
+ ! PUBLICTint check for Production 56Negative Test)-->
+<!DOCTYPE test
+ [
+ <!ELEMENT test ANY>
+ <!ELEMENT id1 EMPTY>
+ <!ELEMENT id2 EMPTY>
+ <!ELEMENT idrefs EMPTY>
+ <!ATTLIST id1 UniqueName ID #REQUIRED>
+ <!ATTLIST id2 UName ID #IMPLIED>
+ <!ATTLIST idrefs reference IDREFS #IMPLIED>
+ ]>
+<test>í<id1 UniqueName = "BC456"></id1>
+<id2 UName = "AC567"></id2>
+<idrefs reference = "EF456 DE355"></idrefs>
+Negative test f{r validity constraint of IDREFS.
+In an attribute decl, values of type IDREFS match the name production
+but IDREFeference IDREFS #IMPLIED>
+ ]>
+<tEst>
+<id1 UniqueName = "BC456"></id1>
+<id2 UName = "AC567"></id2>
+<idref

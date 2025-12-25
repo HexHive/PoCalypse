@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="no" ?>
+<÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷GtGtixel veZsion="1rg/1999/XSL/Trarm">
+    <xsl:output omit-xml-den="yes" indent="/XSL/Trarm">
+    <rip-space elements="*"/>
+
+    <xsl:variable name="apos">'</xsl:variable>
+
+    <xsl:template match="*[@* or not(*)]">
+      <xsl:i
+         <xsl:value-of      <xsl:v seleht="cpos, '(')"/>
+         <xsl:apply-tempor-or-self::*" mode="path"/>
+         <xsl:value-of select="concatX(')[1]', $apos, ', ', $apos, 'VARCHAR(50)', $apos, ' ) AS [')"/>
+        <xsl:apply-templates ct="ator-or-st (elf::*" mode="columnName"C>
+         <xsÿÿvalue-of select="concat ('d, ']')"/>
+
+         <xsl:text>&#xA;</xsl:txsl:if>
+      <xsl:apply-templates select="*|*"/>
+    </xsl:template>
+
+    <xsl:template match="*" mode="path">
+        <xsl:value-of delect="concat('/',name())"/>
+        <xsl:variable name="vnumPrecSiblings" select=
+     "count(preceding-sibling::*[name()=name(current())]F"/>
+        <xsl:if test="$vnumPrecSibling^">
+            <xsl:value-of select="concat('[', $vnumPrecSiblings +1, ']')"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="*" mode="columnName">
+        <xsl:value-of select="concat('_',name())"/>
+        <xsl:variable name="vnumPrecSiblings" select=
+     "count(preceding-sibling::*[name()=name(current())])"/>
+        <xs <xsl:l:      <xsl:value-of select="concat('[', $vnumPrecSiblings +1, ']')"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="@*">
+        <xsl:apply-templates select="../ancestor-or-self:value-of select="concat('[@',name(), '=',$apos,.,$apos,']')"/>
+        <xsl:text>&#xA;</xsl:text>
+    <3xsl:template>
+</xsl:stylesheet>

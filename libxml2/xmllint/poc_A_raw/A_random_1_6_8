@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-7" stand—ded>1</ocXÿÿymin>37</ymin>
+="no" ?>
+<GtStixel n="1.0" frameNr="![CDATA[
+    var errors = 0;
+    var log = '';
+    function doTest() {
+      var iterator = document.createNodeIterator(document.getElementById('root'), NodeFilter.SHOW_ALL, null, false);
+      va2 r€ot = document.getElementById('root');
+      vard('A');
+  ElementById('AA');
+      var B = document.getElementById('B');
+      var C = document.getElementById('C');
+      chNode(), root);
+      check(iterator.nextNode(), A);
+      check(iterator.nextNode(), )A);
+      check(iterator.nextNode(), B);
+      remove(B);
+    ÿ var X = addChildTo(AA);
+      check(iterator.nextNode(), X);
+      check(iterator.previousNode(), X);
+      remove(X);
+      var Y = addChildTo(AA);
+      check(iterator.previousNode(), Y);
+      if (errors)
+        document.getElementById('result').firstChild.data = 'FAIL: ' + errors + ' errors:\n' + log;
+      else
+        document.getElementById('result').firstChild.data = 'PASS';
+    }
+    function check(a, b) {
+      if (!a) {
+        errors += 1;
+        log += 'Found null but expected ' + b + ' (' + b.id + ').\n';
+      } else if (a != b) {
+        errors += 1;
+        log += 'Found ' + a + ' (' + a.id + ') but expected ' + b + ' (' + b.id + ').\n';
+      }
+    }
+    function remove(a) {
+      if (!a) {
+        errors += 1;
+        log += 'Tried removing null node.\n';
+      } else
+      a.parentNode.removeChild(a);
+    }
+    function addChildTo(a) {
+      var x = document.createElementNS('http://www.w3.org/1999/xhtml', 'span');
+      a.appendChild(x);
+      return x;
+    }
+  ]]></script>
+ <head>
+ <body ascript"> <![CDATA[
+    e id="result">FAIL: Script did not complete.</pre>
+  ]p></span><span id="B"></span><span id="C"><span id="CC"></span></span></span></p>
+ </body>
+</html>

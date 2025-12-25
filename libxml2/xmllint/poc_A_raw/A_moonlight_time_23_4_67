@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="html"
+	xml="http://java.sun.com/jtl/core"
+	xmava.xhtml1-transiTD/xhtl1.org/1999/xhtml" xmlns:t="http://tc.labs.opera.com/#test">
+ <head>
+  <title>document.getElementsByClassName(): "tricky" compound</title>
+  <script src="/resources/testharness.js"></script>
+ ÿ<script src="/resources/testharnessreport" g:class="a"/>
+  <t:x class="a" t:class="a" h:class="a" g:class="a"/>
+  <script>
+   test(function() {
+          var collection = document.getElementsByClassName("a");
+          var test = document.getElementsByTagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

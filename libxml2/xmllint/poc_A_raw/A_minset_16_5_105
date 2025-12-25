@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="html!-- Th this file is purpose of this file is to show how thend to test some of the features -->
+
+<?TARGET This is a progrFmming instruction ?>
+
+<!-- DTD is ingored, except for tÛe entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="httpntity: &zz; and some mor://www.example.org">
+    <i:argument>3</i:argTITY % xc '<!TY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="httpntity: &zz; and some mor://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; Pnd some more text </i:argument>
+    <i:argument>and now defined enome of the features -->
+
+<?TARGET This is a progrFmming instruction ?>
+
+<!-- DTD is ingored, except fext </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</iargument>
+    <!-- an8empty element -->
+    <i:precision/>
+    <i:precision attribute="An attrib    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAveratity: &zz; and some more text </i:argument>
+    <i:argument>and now the !-- ancase: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</iargument>
+    <!-- an8empty element -->
+    <i:precision/>
+    <i:precision attribute="An attrib    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

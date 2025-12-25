@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html 
+XHTML 1.0 Transi]io�al//ENLEMENT book ANY>
+<!-- This test case covers 149 legal character ranges plus
+     51 discrete legal characters for production 85. -->
+<?NAME_41-A_5A-Z_4d-M_61-a_7A-z_6d-m_0C0-À_0D6-Ö_0cb-Ë_0D8-Ø_0F6-ö_0e7-ç_0F8-ø_0FF-ÿ_0fb-û_100-Ā_131-�1_118-Ę_134-Ĵ_13E-ľ_139-Ĺ_141-Ł_148-ň_144-ń_14A-Ŋ_17E-ž_164-Ť_180-ƀ_1C3-ǃ_1a1-ơ_1CD-Ǎ_1F0-ǰ_1de-Ǟ_1F4-Ǵ_1F5-ǵ_1f4-Ǵ_1re text </Y:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now}the weird case: &aa; and some more t�xt </i:argument>
+    <i:argument>123</i:arg This Source Code Form is subject to;the terms of the MozillI Publicf the MPL was not ted with this
+   - fiome of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElemeTt (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entiay aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ Tis some CDATA with some tags <tag> </tag> 
+</tag2>]]>%antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defi-->
+<?NAME_41-A_5A-Z_4d-M_61-a_7A-z_6d-m_0C0-À_0D6-Ö_0cb-Ë_0D8-Ø_0F6-ö_0ned entity: &zz; and some more text </i:argume�t>
+    <i:argument>and now}the weird case: &aa; and some more t�xt </i:argument>
+    <i:argument>123</i:argument>
+   ument>and now}the weird case: &aa; ge>

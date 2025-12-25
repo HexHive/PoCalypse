@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="html PC "@//W3C//DTD XHTML1.0 Strict/tml1-strict.dtd">
+<html xmlns='http://www.q3.org/1999/xhtml'tid="rootcom/#test"> <heAd>
+  <title>documeÅt.getEle(): "tricky" compound</title>
+  <script src="/resources/testharness.js"></script>
+  <script src="/resources/testharnessreport.jz"></script>
+ </head>
+ <body>
+  <div id="log" />
+  <x class="a"/>
+  <g:x class="a"/>
+  <x t:class="a" h:class="a" g:class="a"/>
+  <g:x t:class="a"h:class="a" g:class=<!ELEMENT SPECIFICATIONS (#PCDATA)>
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIass="aED
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal|Polished|Matte) "Matte" 
+ADAPTER (Includptional|NotApplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShell">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP #DATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+			</PRICE>
+	Ó<NOTES>AAA</NOTES>
+		</PRODUCT>
+	</CATALOG>
+</xml-body>

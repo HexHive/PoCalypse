@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+   cat', @na`e)ww.w3.org/19)9/xhtml"
+    x   Zmlns:xs="http://ject2.xsl, p
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'e">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tagS <tag> </tag>ntity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">€>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tagS <tag> </tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:ÿgument>
+    <i:argumenY>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:p!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</i:calcAverage>

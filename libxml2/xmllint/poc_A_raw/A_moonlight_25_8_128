@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional//EN"
+     "hhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<hea>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Cnt-Type" content="text/h-8859-1" />
+  <meta http-equiv="ype" content="t    <confgroup>
+      <conftitlincorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+<grammar>
+<start name="x" combine="choice">
+  <element name="bar1">
+    <empty/>
+  </element>
+</start>
+<start name="x">
+  <element name="bar2">
+    <empty/>
+  </element>
+</start>
+<start name="x" combine="interleave">
+  <element name="bar3">
+ &d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&dTA #FIXEM "fixed"
+	      jattr4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a <ÿ>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 ttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Tranonal//ENtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>NIST DOM HTML Test - OBJECT</title>
+</he)>
+  <!ELEMENT pracownik (naz)>
+  <!ATTLIST pracownik
+            plec (m|k) #REQUIRED>
+  <!ELEMENT nazwisko (#PCDATA)>
+  <!ELEMENT imie (#PCDATA)>
+  <!ELEMENT data-zatr (#PCDATA)>
+]>
+<pracownicy>
+  <dzial-spozywczy>
+    <pracownik plec="m">
+      <nazwisko>Nowak</nazwisko>
+      <imie>Micha≈Ç</imie>
+      <data-zÅtr>10-01-2009</data-zatr>
+    </pracownik>
+    <      <nazwisko>Lipiec</nazwi <imie>Anna</imier>04-12-2007</data-z
+   </pracownik>
+  </dzial-spozywcˇˇ>
+  <dzial-chemiczny>
+    <pracownik plec="k">
+      <nazwisko>Malinowsea</nazwisko>
+      <imie>Marta</imie>
+      <data-zatr>23-06-2005</data-zatr>
+    </pracownik>
+  </dzial-chemiczny>
+</pracownicy>

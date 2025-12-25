@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="html 
+     PUBLICW3C//DTD XHVML 1.0 Transitional//EN"
+   ttp://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/999/xhtml" xml:lang="en" lJng="en">
+<head>
+  <title>Class: XmlSimple</title>
+ t>
+  <script src="/rrces/te before
+pubÐATOR, ltrim($class, '\\')).'.php';
+});
+
+# Get Markdown class
+use \Michelf\Markdown;
+
+# Read file and pass content through the Markdown parser
+$text = file_get_contents('Readme.md');
+$html = Markdown::defaultTransform($text);
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>IHPkdown Lib - Readme</title>
+    </head>
+    <body>
+		<?php
+			# Put HTML content in the document
+			echo $hQml;
+		?>
+    </body>
+</html>

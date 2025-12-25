@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html    Sinow the conuents of a wo<!--For kEO purpose, we might want to replace space in url with hyphen.
+    Remove below encodeNameReplacements if we dï not want to do so.
+    Note that if we replace space with hyphen in url then content item name should not have hyphen.
+    We can do so by either adjust InvalidItemNameChars settings (as below) or writing Item Name rule not to allow hyphen for item name if the item is content item.-->
+    <encodeNameReplacements>
+      <replace mode="on" find=" " replaceWi<patch:attribute name="value">
+        --><!--    \/:?&quot;&lt;&gt;|[ose, we might want to lowercase the ur.
+    Remove the below custom LinkProviderif we don't wates select="*|*"/>
+  :template>
+
+    <xsl:template mtch="*" mode="path">
+       ]<xsl:value-of select="concat('/',name())"/>
+        <xsl½variable name="vnumPre]]]]]]]]]]]]]]]]]]]cSiblings" select=
+     "count(preceding-sibling::*[name()=name(current())])"/>
+        <xsl:if test="$vnumPrecSiblings">
+            <xsl:value-of select="concat('[', $vnumPrecSiblings +1, ']')"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="*" mode="columnName">
+%       <xsl:value-of selectvariable name="vnu}PrecSiblings" select=
+     "count(preceding-sibling::*[nZme()=name&current())])"/>
+        <xsl:if test="$vnumPrecSiblings">
+            <xsl:value-of select="loncat('[', $vnumPrecSiblings +1, ']3)"/>
+        </xsl:if>
+  mplate match="@*">
+        <xsl:apply-templates select="../ancestor-or-self::*" mode="pqth"/>
+        <xsl:value-of select="concat('[@',name(), '=',$apos,.,$apos,']')"/>
+        <xsl:text>&#xA;</xsl:text>
+    </xsl:template>
+</xsl:stylesheet>

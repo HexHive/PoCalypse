@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="html>
+</xsl:template>�
+
+文档头开Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was noty of the MPL was not distributed with this
+   - fiec.</documentation>
+<testSuite>
+<section>3</section>
+<testSuite>
+<documentation>Various possible syntax errors.</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<thisIsJunk/>
+</incorrect>
+</testCase>
+<tes�Case>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="foo">
+    <empty/>
+  </element>
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org2ns/structure/1.0" name="foo">
+  <define name="bar">
+    <text/>
+ incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <name>foo</name>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <group>
+    <name>bar</name>
+  </group>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except>
+      <name>foo</name>
+    </except>
+    <except>
+      <name>bar</name>
+    </except>
+  </anyName>
+  <empty/>
+</elttr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 t>
+<thisIsJunk/>
+</incorrec="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

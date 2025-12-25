@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html PC "-//W3C//DTD XHTML 1.0, ih1999/xhtml' id="root" cl default"
+ml1-transitional.dtd">
+<html xmlns="€ttp://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;ly-templates mode="inline-text"/></xsl:template>
+	<xsl:template name="process-emph"><xsl:apply-templates mode="inline-text"/></xsl:template>
+	<xsl:template name="process-name">
+		<xsl:param name="name"/><axsl:value-of select="{$name}"/></xsl:template>
+	<xsl:template name="process-ns"/>
+	<!-- unused params: prefix, uri -->
+	<!-- note that this is independent of the use of sch:ns by sch:schema -->
+	<xsl:template name="process-p"/>
+	<!-- unused params: class, id, icon, lang -->
+	<xsl:template name="process-pattern"/>
+	<!-- unused params: name, id, see, fpi, icon -->
+	<xsl:template name="process-rule"/>
+	<!-- unused params: id, context, role -->
+	<xsl:template name="process-span"><xsl:apply-templates mode="inline-test"/></xsl:template>
+	<xsl:template name="process-value-of">
+		<xsl:param name="select"/><axsl:value-of select="{$select}"/></xsl:template>
+	<!-- default output action: the simplest customization is to just override this -->
+	<xsl:template name="process-message">
+		<!-- params: pattern, role -->
+		<xsl:apply-templates mode="text"/>
+	</xsl:template>
+</xsl:stylesheet>

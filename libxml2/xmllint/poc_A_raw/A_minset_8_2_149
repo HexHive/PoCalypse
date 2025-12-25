@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="html 
+     PUBLI!-- The purpose of this file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'enti5y' >
+  <!-- wei defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: ;,
+_>ñ$<dos/TI"<!--->""
+%pe <!---->%pF;
+k>ñ$<doe ""
+%pe <!---->%pF;
+k>ñ$<doe <!---->ñ$<xy
+%pe <!----4%Te;,
+_>ñ$<dos/TI"<!---->""
+%pe <!--ù->%p)<!---@D%pe;
+$<doeÿõÿ€tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: ;,
+_>ñ$<dos/TI"<!--->""
+%pe <!)ñe ,!---->%pe;,
+_>c>
+ñ$<xy
+%pe <!----4%pe;,
+_>ñ$<dos/TI"W!---->""
+%pe <!---->%pF;
+k>ñ$<doe <!---->ñ$<x‹
+%pe <!----4%pe;,
+_>ñ$<dos/TI"<!---->""
+%pe <!---->%pF;
+k>ñ$<doe ""
+%pe <!---->%pF;
+k>ñ$<d---->""
+%pe <!-pe;
+$<doeÿÿÿ€---,!---->%pe;,
+_>c>
+ñ$<xy
+%c>
+)ñ$<xy
+%poc>
+)ñe ,!---->%pe;,
+_>c>
+ñ$<xy
+%pe <!----4%pe;,
+_>ñ$<dos/TI"W!--)->""
+%pe <!---->%pF;
+k>ñ$<[oe <!---->ñ$<x‹
+%pe <!----4%pe;,
+_>ñ$<dos/TI"<!---->""
+%pe <!---->%pF;
+k>ñ$<doe ""
+%pe <!---->%pF;
+k>ñ$<d---->""
+%pe <!-pe;
+$<doeÿÿÿ€---J%pe;
+_>ñ$<doc/Tã/>

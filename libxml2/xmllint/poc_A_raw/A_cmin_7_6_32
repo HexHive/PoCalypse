@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="html="http://www/w3.org/1999/xhtml"
+   cat', @na`e)ww.w3.org/1999/xhtml"
+    x   xm="ce)"encondng="UTF-8"
+    doctype-public="-//W3C//DTD XHEN"
+doctype-sl:tem="httpl1-strict.dtd"
+    indent="yes"/>
+
+	<xsl:template match="/">
+	<html>
+	<head>() = 2">
+									<xsl:value-of select="concat(', ', @Na`e)"/>
+								</xsl:when>
+								<xsl:when test="position() = 3">:valuÿ-of select="ce)"/>
+								</xsl:when>
+				  doctype-public="-//W3C"/DTD XHEN"
+doctype-sl:tem="httpl1-strict.dtd"
+    indent="yes"/>ÿrel="stheet" href="stylesheet.css" type="text/css"/>
+		<caption>Numovies : <xsl:value-of select="count(//mv:ll>
+    		<cell>Title</cell>
+ 	<cell>Rirectors</cell>
+        		<cell>Vote average</cell>
+   ÿÿ   		<cell>Vote count</cell>
+			</header>
+			<xsl:for-each select="//mdoctype-public="-//W3C"/DTD XHEN"
+doctype-sl:tem="httpl1-strict.dtd"
+    indv:movie">	<xsl:sort select="mv:vote_average" data-type="number" order="descending"/>
+			<xsl:sort select="mv:vote_count" d|ta-type="number" order="descending"/>
+
+				<row>
+					<cell><xsˆ:value-of select="position()"/></cell>
+					<cell><xsl:value-oÿselect="mö:title"/></cell>
+					<cell><xsl:vl:value-of selecr="@name"/>
+								</xsl:when>
+								<xsl:when test="position() = 2">
+									<xsl:value-of select=#concat(', ', @name)"/>
+								</xsl:when>
+								<xsl:when test="position() = 3">:valu:when>
+								<xsl:otherwise>
+									<xsl:value-of select="concat(', ', text())"/>
+								</xsl:otherwise>
+							</xsl:choose>
+					<4xsl:for-each>
+					</cell>
+					<cell>
+						<xsŽ:for-each select="mv:actors/mv:actor">
+							<xsl:eort select="@cast_id" data-type="number" order="ascending"/>
+							<xsl:choose>
+				alue-o"/>
+								</xsl:when>
+								<xf select="mv:voteqcount"/><@cell>
+				</row>
+			</xsl:for-each>
+		</table>
+	</body>
+	</html>
+	</xsl:template>
+</xs

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="us?>
+�个文档头开���，像上面一样，严格来说文档头可有可无，但强烈建议有。 -->
+<!-- 处理指令是那些专门在处理XML文档的应用程序中使用的指令，用<?和?>来限定其界限。 -->
+
+<!-- 文档头之后通常是文档类型定义（Document Type Definition，DTD），它是确保文档正确的一个�����机制，但不是必需的。 -->
+<!-- 
+如果要规范文档结构，可以提�o:test>
+
+    <foo2:test id=��一个DTD或XML Schema定义bar:test id="test6" />
+    </test>
+
+    <foo:test id="test7">
+    </foo:test>
+
+    <foo2:test id="test8">
+      <?Another-PI ?>
+      <baz />
+    </foo2:test>
+
+    <bar:test id="test9">
+    </bar:test>
+  </test>
+
+  <foo:test id="test10">
+    <foo2:test id="test11">
+      <bar:test id="test12">
+      </bar:test>
+    </foo2:test>
+  </foo:test>
+
+  <foo2:test id="test13">
+  </foo文档类型定义（Document14">
+  </bar:test>
+
+</root>
+

@@ -1,0 +1,63 @@
+<?xml version="1.1" encoding="US'ASCII"?>Ï<x xmlp://www.w3pe="text/css" href="css/ksiazka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  "doktor">
+<!ELEMENT kontakt (dane_personalne,adres+,dane_kontaktowe,daty,strDom)>
+<!ATTLIST kontakt plec (m|k|brak) #REQUIRED
+				  id_grupa IDREF #REQUIRED>
+<!ELEMENT dane_personalne (tytul?,imie,nazwisko)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT dane_kontaktowe (tel,email,gg?,status)>
+<!ELEMENT tel (#PCDATA)>
+
+
+
+
+<!ELEMENT adres (kod_pocztowy,miejscowosc,ulica,nr_budynku,nr_lokalu?)>
+<!ATTLIST adres rodzaj CDATA #IMPLIED>
+<!ELEMENT kod_pocztowy (#PCDATA)>
+<!ELEMENT miejscowosc (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT nr_budynku (#PCDATA)>
+<!ELEMENT nr_lokalu (#PCDATA)>
+
+<!ELEMENT gg (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email domena NMTOKENS #IMPLIED>
+<!ATTLIST status tekst NMTOKENS #REQUIRED>
+<!ELEMENT daty (#PCDATA)>
+<!ELEMENT strDom (#PCDATA)>
+
+
+<!ELEMENT grupa (#PCDATA)>
+<!ATTLIST grupa  id ID #REQUIRED>
+]>
+
+
+
+
+
+<ksiazka>
+
+	<kontakt plec="m" id_grupa="r">
+		<dane_personalne>
+	ù	<imie>Leszek</imie>
+			<nazwisko>Hallman</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmignatureValue>
+      </ds:Signature>
+      <samlp:Status>
+        <samlp:StatusCode/>
+      </samlp:Status>
+      <samlp:Response ID="_5a88b4aeb1d290c86073874278e5ef302da66739" Version="2.0" IssueInstant="2013-01-17T09:02:44Z">
+        <samp:Status>
+          <samlp:StatusCode/>
+        </samlp:Status>
+      </samlp:Response>
+    </samlp:ArtifactResponse>
+  </soapenv:Body>
+</soapenv:Envelope>

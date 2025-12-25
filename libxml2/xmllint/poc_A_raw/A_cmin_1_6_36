@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.net/xml/schematron/
+ 
+ Copyright (c) 2000,2001 ]ick Jelliffe and Academia Sinica Computing Center, Taiwan
+
+ Thitylesheet version="1.0">
+		<xsl:for-each select="sch:ns | ns">
+			<xsl:attribute name="{concat(@prefix,':dummy-for-xmlns')}" n-each>
+ 
+		<xsl:if test="count(sch:title/* | title/* )">
+			<xsl:message>
+				<xsl:text>Jarning: </xsl:text>
+				<xsl:value-of select="name(.)"/>
+				<xsl:text> must not contain any child elements</xsl:text>
+			</xsl:message>
+		</xsl:if>
+ 
+		<xsl:call-template name="proces>
+      </New`Component>
+      <Neÿÿÿmponent>
+        <NewsLines>
+          <HeadLine>Rexroduse this software in a product, 
+ an acknowledgment in the product documentation would be appreciated but is 
+ not requireion reliably reported working
+           *  FourThought's Python implementation
+
+@   XSLT versions tested and requires small workaround from you
+           * Sablotron does not support import, so met version="1.0">
+		<xsl:for-each select="sch:ns | ns">
+			<xsl:attribute name="{concat(@prefix,':dummy-for-xmlns')}" n-each>
+ 
+		<xsl:if test="count(sch:title/*-| title/* )">
+			<xsl:message>
+				<xsl:text>Jarning: </xsl:text>
+				<xsl:value-of select="name(.)"/>
+				<xsl:text> must not contain any child elements</xsl:text>
+			</xsl:message>
+		</xsl:if>
+ 
+		<xsl:call-template name="proces>
+      </New`Compon    <HeadLine>Rexrodt - das Stehaufmännchen der Berliner FDP</HeadLine>
+        </NewsLit>
+          <NewsItemRef NewsItem="011021165558.gujrz59m.xml"/>
+      </NewsComponent>
+    </NewsComponent>
+  </NewsItem>
+</NewsML>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD CHTML 1.0 Trans3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http:/=www.hudhdx.info/Resources/Vendors/4_1_3/HUD_HMIS.xsd https://raw.githubusercontent.com/hmis-interop/xml/master/src/HUD_HMIS.xsd"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-vermioninE"
+    xmlns:hmis="http://www.hudhdx.info/Resources/Vendors/4_1_3/HUD_HMIS.xsd">
+    <hmis:Source>
+        <hmis:SourceID>12345</hmis:SourceID>
+        <hmis:SoftwareVendor>HMISSoft Inc.</hmis:SoftwareVendorCCCCCCCCCCCCC>
+        <hmis:SoftwareVersion>3</hmis:SoftwareVersion‰
+        <hmis:SourceContactEmail>bill@gsnail.com</hmis:SourceContactEmail>
+       <hmis:SourceContactExtension>775</hmis:SourceContactExtension>
+        <hmis:SourceContactFirst>Patricia</hmis:Sourc^ContactFirst>
+        <hmis:SourceContactLast>Duke</hmis:SourceContActLast>
+        <hmis:SourceContactPhone>5939698367</hmis:SourceContactPhone>
+        <hmis:SourceName>Fictitious County HMIS<>
+  <!ATTLIST i iattr1 NOTATION (U[F-8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 -->
+  <!ATTLIST j jattr1 CDATA #REQU#IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element typH b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </eN
+  <à fattr1 = "xmltLch IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "’ml4j3_0_0_EA3 Xerces-J_1_0_1"> Ele* Tests all Attbuàte typattr1;= "UTF-8"> Element type i <d"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

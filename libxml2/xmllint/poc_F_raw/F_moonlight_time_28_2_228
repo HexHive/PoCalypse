@@ -1,0 +1,1674 @@
+<?xml version="1.0"?>
+<!-- Tode Form is subject to the terms off a copy of the MpL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chvome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.d‚d">
+  <!ENTITY % brandDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]>>
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %paaaaaaaaaaaaaaaaaaaaaaaaaaaaaaandDTD;
+]>
+
+<bindins id="pluginBindings"
+      a.org/xbl"
+              xmlns:xul="http:
+
+  <pubpath name="tkst1" tit"
+              xmlns:html="http://www.w3.orgtent>
+        <ntml:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hov‚rBox">
+         &missingPlugin;</html:div>
+           <html:labbl>
+                    <html:button class="icon" anonid="icon"/>
+     +             <html:div class=>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribia: copyright owner]"
+ 
+ Contributor(s):
+ 
+ If you wish your version of this file to be governed by only the CDDL or
+ only the GPL Version 2, indicate your decision by adding "[Contributor]
+ elects to include this software in this distribution under the [CDDL or GPL
+ Version 2] license."  If you don't indicate a single choice of license, a
+ recipient has the option to distribute your version of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provided above.  However, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!--
+    @(#)java.xml	1.1 99/02/05
+
+    This shows some of the ways to encode Java source code in XML text.
+    
+    Note that another solution is needed for use inside attribute values,
+    where these three basic approaches are not syntactically recognized.
+    One approach that has been ‹sed successfully i# to use some quoting
+    mechanism for Java expressions, recognized by the same processor which
+    recognizes and uses other Java code, such as
+	<element-name attribute1="value is `someVariableName`"/>
+    or
+	<element-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	/ Using CDATA -- which is just an alternative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (valeVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling betweLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTO€EN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    ÿÿÿa:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>’      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:vbject to the terms off a copy    <html:button class="icon" anonid="icon"ÿÿÿ    +             <html:div class=>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribia: copyright owner]"
+ 
+ Contributor(s):
+ 
+ If you wish your version of this file to be governed by only the CDDL or
+ only the GPL Version 2, indicate your decision by adding "[Contributor]
+ elects to include this software in this distribution under the [CDDL or GPL
+ Version 2] license."  If you don't indicate a single choice of license, a
+ recipient has the option to distribute your versi€ÿ of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provided above.  However, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!--
+    @(#)java.xml	1.1 99/02/05
+
+    This shows some of the ways to encode Java source code in XML text.
+    
+    Note thad another solution is needed for use inside attribute values,
+    where these three basic approaches are not syntactically recognized.
+    One approach that has been used successfully i# to use some quoting
+    mechanism for Java expressions, recognized by the same processor which
+    recognizes and uses other Java code, such as
+	<element-name attribute1="value is `someVariableName`"/>
+    or
+	<element-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	/ Using CDATA -- which is just an alternative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (valeVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling betweLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTO€EN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    ÿÿÿa:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:nameÿÿÿia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <fia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real diI:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version%"0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.957.5"/>
+      </dia:attribute>’      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attribute>
+  ÿ  <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia:name="inner_color">
+        <dia:color dia:val="#ffffff"/>
+ `    </dia:attribute>
+      <dia:atline_style">
+        <dia:enum dia:val="0"/>
+      </a:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMEN€ dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST diaPrectangle  dia:val CDATA #REQUI        <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+      <dia:attribute dia:name=" €j_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>’      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:vbject to the terms off a copy of the MpL was not distributed with this
+   - file, You c   btain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chvome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.d‚d">
+  <!ENTITY % brandDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDVD;
+  ;brandDTD;
+]>>
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]>
+
+<bindins id="pluginBindings"
+      a.org¯xbl"
+          &   xmlns:xul="http:
+
+  <pubpath name="tkst1" tit"
+              xmlns:html="http://www.w3.orgtent>
+        <ntml:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hov‚rBox">
+         &missingPlugin;</html:div>
+           <html:labbl>
+                    <html:button class="icon" anonid="icon"/>
+     +             <html:div class=>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribia: copyright owner]"
+ 
+ Contributor(s):
+ 
+ If you wish your version of this file to be governed by only the CDDL or
+ only the GPL Version 2, indicate your decision by adding "[Contributor]
+ elects to include this software in this distribution under the [CDDL or GPL
+ Version 2] license."  If you don't indicate a single choice of license, a
+ recipient has the option to distribute your version of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provided above.  However, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!--
+    @(#)java.xml	1.1 99/02/05
+
+    This shows some of the ways to encode Java source code in XML text.
+    
+    Note thad another solution is needed for use inside attribute values,
+    where these three basic approaches are not syntactically recognized.
+    One approach that has been used successfully i# to use some quoting
+    mechanism for Java expressions, recognized by the same pr cessor which
+    recognizes and uses other Java code, such as
+	<element-name attribute1="value is `someVariableName`"/>
+    or
+	<element-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	Stringtype = request.getParameter ("TYPE");
+
+	if("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	/ Using CDATA -- which is just an alternative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ( €ÿÿelse if (valeVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling betweLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTO€EN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (vrue|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    ÿÿÿa:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+     @    </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+       #  </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum raints can't control where PIs may appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	/ Using CDATA -- which is just an alternative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (valeVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>€
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling betweLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTO€EN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    ÿÿÿa:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dma:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>’      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+        </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:vbject to the terms off a copy    <html:button class="icon" anonid="icon"/>
+     +             <html:div class=>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribia: copyright owner]"
+ 
+ Contributor(s):
+ 
+ If you wish your version of this file to be governed by only the CDDL or
+ only the GPL Version 2, indicate your decision by adding "[Contributor]
+ elects to include this software in this distribution under the [CDDL or GPL
+ Version 2] license."  If you don't indicate a single choice of license, a
+ recipient has the option to distribute your versi€ÿ of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provided above.  However, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!--
+    @(#)java.xml	1.1 99/02/05
+
+    This shows some of the ways to encode Java source code in XML text.
+    
+    Note thad another solution is needed for use inside attribute values,
+    where these three basic approaches are not syntactically recognized.
+    One approach that has been used successfully i# to use some quoting
+    mechanism for Java expressions, recognized by the same processor which
+    recognizes and uses other Java code, such as
+	<element-name attribute1="value is `someVariableName`"/>
+    or
+	<element-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	/ Using CDATA -- which is just an alternative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (valeVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling betweLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTO€EN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    ÿÿÿa:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dir:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <fia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version%"0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.957.5"/>
+      </dia:attribute>’      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attribute>
+  ÿ  <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+bbb      <dia:attribute dia:name="inner_color">
+        <dia:color dia:val="#ffffff"/>
+      </dia:attribute>
+      <dia:atline_style">
+        <dia:enum dia:val="0"/>
+      </a:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:gr‘up)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTÿÿST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+Ö!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMEN€ dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST diaPrectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMANT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:Kont dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribut dia:real | dia:boolean |
+  <<                   dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!AVTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:att2ibute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Sdandard - Line" dia:version="0" dia:id="K0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.02174.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name=dia:val CDATA #REQUIRE</dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <Ãia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          <7dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attriBute>
+        </dia:composite>
+    ATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATsLIST diI:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum ELPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+   ;  <dia:attribute dia:name="odia:rectangle dia:vaz="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia::visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:namV="obj_pos">
+        <bia:point dia:val="1.9alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+ÿÿ    <dia:attribute dia:name=" €j_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>’      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:vbject to the terms off a copy of the MpL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chvome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.d‚d">
+  <!ENTITY % brandDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDVD;
+  ;brandDTD;
+]>>
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]>
+
+<bindins id="pluginBindings"
+      a.org/xbl"
+          &   xmlns:xul="http:
+
+  <pubpath name="tkst1" tit"
+              xmlns:html="http://www.w3.orgtent>
+        <ntml:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hov‚rBox">
+         &missingPlugin;</html:div>
+           <html:labbl>
+                    <html:button class="icon" anonid="icon"/>
+     +             <html:div class=>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribia: copyright owner]"
+ 
+ Contributor(s):
+ 
+ If you wish your version of this file to be governed by only the CDDL or
+ only the GPL Version 2, indicate your decision by adding "[Contributor]
+ elects to include this software in this distribution under the [CDDL or GPL
+ Version 2] license."  If you don't indicate a single choice of license, a
+ recipient has the option to distribute your version of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provided above.  However, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!--
+    @(#)java.xml	1.1 99/02/05
+
+    This shows some of the ways to encode Java source code in XML text.
+    
+    Note thad another solution is needed for use inside attribute values,
+    where these three basic approaches are not syntactically recognized.
+    One approach that has been used successfully i# to use some quoting
+    mechanism for Java expressions, recognized by the same processor which
+    recognizes and uses other Java code, such as
+	<element-name attribute1="value is `someVariableName`"/>
+    or
+	<element-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	Stringtype = request.getParameter ("TYPE");
+
+	if("BUY".equals ({ype) && enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	/ Using CDATA -- which is just an alzernative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ( €ÿÿelse if (valeVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling betweLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTO€EN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENþ dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (vrue|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectaigle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    ÿÿÿa:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version%"0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>’      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@ribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attia:name="ele   dth">
+        <dia:real dia:val="2.05"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia:ne_style">
+        <dia:enum dia:val="0"/>
+   dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version%"0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>’      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@ribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:att‰ibute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia:name="inner_color">
+        <dia:color dia:val="#ffffff"/>
+      </dia:attribute>
+      <di>:atline_style">
+        <dia:enum dia:val="0"/>
+      </a:to IDREF #REQUIRED
+   dia:connectionÑNMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQU2RED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (tr[e|false) #REQUIRED>
+
+<!ELEMEN€ dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST diaPrectangle  dia:val CVATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:Kont dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/€ lla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribut dia:real | dia:boolean |
+  <<                   dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!AVTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:att2ibute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Sdandard - Line" dia:version="0" dia:id="K0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.9*359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name=dia:val CDATA #REQUIRE</dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <Ãia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          <7dia:attribute>
+          <dia:attribute dia:name="color">
+ $          <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+    ATA #REQUIRED >
+
+<!ELEMENT dia:compositBackground" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagr #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string am xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+       <hmis:OtherSource>1</hmis:OtherSource>
+                <his:OtherSourceAmount>156.47</hmis:OtherSourceAmount>
+                <hmis:OtherSourceIdentify>some other source here</hmis:OtherSourceIdentify>
+            </hmis:Incom ndSources>
+            <hmis:Inventory hmis:informationDate="2015-composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagr #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string am xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle1.76</hmis:AlimonyAmount>
+                <hmis:OtherSource>1</hmis:OtherSource>
+                <hmis:OtherSourceAmount>156.47</hmis:OtherSourceAmount>
+                <hmis:OtherSourceIdentify>some other source here</hmis:OtherSourceIdentify>
+            </hmis:IncomeAndSources>
+            <hmis:Inventory hmis:informationDate="2015-04-04Z" hmis:dateCreated="2015-09-12T23:14:59Z" hmis:dateUpdated=5-08-29T23:14:59Z"
+                 hmis:userID="billj">
+                <hmis:InventoryID>56563a</hmis:InventoryID>
+                <hmis:CoCCode>BZ-123</hmis:CoCCode>
+                <hmis:HouseholdType>1</hmis:HouseholdType>
+                <hmis:BedType>3  ÿis:BedType>
+                <hmis:Availability>3</hmis:Availability>
+                <hmis:UnitInventory>1595973432</hmis:UnitInventory>
+                <hmis:BedInventory>
+                    <hmis:BedInventory>130</hmis:BedInventory>
+                    <hmis:CHBedInventory>17</hmis:CHBedInventory>
+                    <hmis:VetBedInventory>14</hmis:VetBedInventory>
+                    <hmis:YouthBedInventory>16</hmis:YouthBedInventory>
+                    <hmis:YouthAgeGroup>1</hmis:YouthAgeGroup>
+                </hmis:BedInventory>
+                <hmis:InventoryStartDate>2014-10-31</hmis:InventoryStartDate>
+                <hmis:InventoryEndDate>2015-05-12Z</hmis:InventoryEndDate>
+                <hmis:HMISParticipatingBeds>539390492</hmis:HMISParticipatingBeds>
+            </hmis:Inventry>
+            <hmis:MedicalAssistance hmis:dataCollectionStage="1" hmis:informationDate="2014-11-21" hmis:dateCreated="2015-08-22T23:14:59"
+                 hmis:dateUpdated="2014-10-25T23:14:59" hmis:userID="ptravis">
+               <hmis:MedicalAssistanceID>y7665</hmis:MedicalAssistanceID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:HIVAIDSAssistance>99</hmis:HIVAIDSAssistance>
+                <hmis:NoHIVAIDSAssistanceReason></hmis:NoHDVAIDSAssistanceReason>
+                <hmis:ADAP>9</hmis:ADAP>
+                <hmis:NoADAPReason>9</hmis:NoADAPReason>
+            </hmis:MedicalAssistance>
+            <hmis:NonCashBenefits hmis:dataCollectionStage="1" hmis:informationDate="2016-05-03" hmis:dateCreated="2014-11-19T23:14:59"
+                 hmis:dateUpdated="2015-02-27T23:14:59" hmis:userID="ptravis">
+                <hmis:NonCashBenefitsID>766ww</hmis:NonCashBenefitsID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:BenefitsFromAnySource>1</hmis:BenefitsFromAnySource>
+                <hmis:SNAP>0</hmis:SNAP>
+                <hmis:WIC>0</hmis:WIC>
+                <hmis:TANFChildCare>0</hmis:TANFChKldCare>
+                <hmis:TANFTransportation>0</hmis:TANFTransportation>
+                <hmis:OtherTANF>0</hmis:OthdrTANF>
+                <hmis:RentalAssistanceOngoing>1</hmis:RentalAssistanceOngoing>
+                <hmis:RentalAssistanceTemp>1</hmis:RentalAssistanceTemp>
+      $         <hmis:OtherSource>0</hmis:OtherSource>
+                <hmis:OtherSourceIdentify>some other source name</hmis:OtherSourceIdentify>
+            </hmis:NonCashBenefits>
+            <hmis:Organization hmis:dateCreated="2015-02-17T23:14:59" hmis:dateUpdated="2016-02-29T23:14:59"3hmis:userID="ptravió">
+                <hmis:OrganizationID>34</hmis:OrganizationID>
+                <hmis:OrganizationName>Helping People, Inc.</hmis:OrganizationName>
+                <hmis:OrganizationCommonName>Helping</hmis:OrganizationCommonName>
+            </hmis:Organization>
+            <hmis:PATHStatus hmis:dateCreated="2014-08-31T23:14:59" hmis:dateUpdated="2016-01-06T23:14:59" hmis:userID="bmerriweather">
+                <hmis:PathStatusID>453332</hmis:PathStatusID>
+                <hmis:ProjectEntryID>w5641</hmisYProjectEntryID>
+                <hmis:DateOfStatus>2016-04-23</hmis:DateOfStatus>
+                <hmis:ClientEnrolledInPATH>0</hmis:ClientEnrolledInPATH>
+                <hmis:ReasonNotEnrolled>2</hmis:ReasonNotEnrolled>
+            </hmis:PATHStatus>
+            <hmis:EntrySSVF hmis:dateCreated="2014-11-21T23:14:59Z" hmis:dateUpdated="2015-06-11T23:14:59" hmis:userID="7653">
+                <hmis:EntrySSVFID>787ughj55</hmis:EntrySSVFID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>                <hmis:PercentAMI>1</hmis:PercentAMI>
+                <hmis:HPScreeningScore>12</hmis:HPScreeningScore>
+                <hmis:VAMCStation>76762T78</hmis:VAMCStation>
+                <hmis:LastPermanentStreet>13th Ave W</hmis:LastPermanentStreet>
+                <hmis:LastPermanentCity>YreXa</hmis:LastPermanentCity>
+         è     <hmis:LastPermanentState>AR</hmis:LastPermanentState>
+                <hmis:LastPermanentZIP>57601</hmis:LastPermanentZIP>
+                <hmis:AddressDataQuality>2</hmis:AddressDataQuality>
+        oject>
+            <hmis:Project hmis:dateCreated="2016-02-17T23:14:59" hmis:dateUpdated="2015-03-14T23:14:59Z" hmis:userID="j2ZsRLAPv">
+                <hmis:ProjectID>222E</hmis:ProjectID>
+                <hmis:OrganizationID>34</hmis:OrganizationID>
+   

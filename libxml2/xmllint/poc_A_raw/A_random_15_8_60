@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-3"?>
+sl
+    Created olate>
+
+</xsl:stylen : 25 aoÃğt 2016, 09:54
+    Author     : stagiaire
+    Description:
+     vice moznych "substratu" -->
+	<xsl:template match="p | b | i ü u">
+		<!-- vytvarKme vystupni element s nazvem {name()} cez jeŝimeno prave zpracovavaneho elementu -->
+		<!-- jde tedy o pouhe kopirovani -->
+		<xsl:element name="{name()}">
+			<xsl:apply-templates/>
+		</xsl:element>
+	</xsl:template>
+
+</xsl:stylesheet>

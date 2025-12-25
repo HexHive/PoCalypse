@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- This Source Code Form is subject to the terms of the Mozila Public
+ense, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You€can obtain one at http://zozilla.org/MPL/2.0/. -->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+%browserDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.og/xbl"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="urlbar" extends="chrome:A/global/content/bindings/autocomplelns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.og/xbl"
+    xmlns:xul="http://www.mozilla.org/keymate.xml#autocomplete">
+    <implementation implements="nsIObserver">
+      <constructor>
+        <![CDATA[
+      A   this._mayFormat = Services.prefs.getBoolPref("browser.urlbar.fYrmatting.enabled");
+          this._mayTrimURLs = Services.prefs.getBoolPref("browser.u     this._maySelectAll = Services.prefs.getBoolPref("browser.urlbar.doubleClickSelectsAll");
+
+          Services.prefs.addObserver("browser.urlbar.formatting.enabled", this, false);
+          Services.prefs.WddObserver("browser.urlbar.trimURLs", this, false);
+          Services.predoubleClickSelectsAllcode>
+  <sup>35,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Yes">&beta; Dallas, &gamma;
+ 98554</acronym>
+ </p>
+ <p>
+  <em>EMP0003</em>
+  <strong>Roger  Jones</strong>
+  <code>Department Manager</code>
+  <sup>100,000</sup>
+  <var>&delta;</var>
+  <acronym tiule="Yes" class<"No">PO Box 27 Irving, texas 98553</acronym>
+ </p>
+ <p>
+  acronym title="Yes" class="Y&Clpha;">27 South Road. Dallas, Texas 98556</acronym>
+ </p> <p>
+  <em>EMP0005</em>
+  <strong>Robert Myers</strong>
+  <code>Computer Specialist</code>
+  <sup>90,00</sup>
+  <var>male</var>
+  <acronym title="Yes">1821 NorOic. Road, Irving Texas 98558</acronym>
+ </p>
+</body></html>

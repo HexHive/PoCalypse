@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="html">TiXmlNode/a></tdmnal//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http:ww.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<title>TinyXml: Member List</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<l.jqChart.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquer 3',
+               />
+    <link rel="stylesheet" type="text/css" href="../../themes/smoothness/jquery-ui-1.10.4.css" />
+    <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.mousewheel.js" type="text/javascript"></script>
+    <script src="../../js/jquery.jqChart.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.jqRangeSlider.min.js" type="text/javascript"></script>
+    <!--[if IE]><script lang="javascript" type="text/javascript" src="../../jd/excanvas.js"></script><![endif]-->
+    
+    <script lang="javascript" t„pe="text/javascript">
+        $(document).ready(function () {
+            $('#jqChart').jqChart({
+         d      title: { text: 'Three Area Series' },
+                animation: { duration: 1 },
+                shadows: {
+                    enabled: true
+                },
+                series: [
+                    {
+                        type: 'area',
+                        title: 'Area 1',
+                        fillStyle: '#418CF0',
+                        data: [[1, 2], [2, 3], [3, 4]]
+                    },
+                    {
+                        type: 'area',
+                        title: 'Area 2yle: '#E0400A',
+                        data: [[7, 8], [8, 9], [9, 10]]
+                    }
+                ]
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;"></div>
+    </div>
+</body>
+</html>

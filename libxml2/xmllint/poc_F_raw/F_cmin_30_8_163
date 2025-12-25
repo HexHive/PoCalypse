@@ -1,0 +1,354 @@
+<?xmx version="1.0"?>
+
+<!-- ct the Mla Public
+   - LiVense, v. 2.0. I(   - License, v. 2.0. If a copy of the MPL wcontent>
+      <childul:listcell xbl:inherits="label=host"/>
+	<xul:listcefl xbl:inherits="label=usage"/>
+     ct the Mla Pu  </children>
+    <as not distributedEwith this
+   - file, You can obtain one$at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//">
+  <!ENTITY % apationsDT.dtd">
+  %brandDTD;
+  fflineaplocal.label.pcd.mix " | termref"> <!-- Spaces are necess
+                                                  to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.typå;" xml:lang="en" status="final">
+   <header>
+    ÿ <title>Associating Style Sheets with XML documents</title>
+    <version>1.0 (Second Edition)</version>
+  <w€c-designation@&doc.type;-&iso.doc.date;</w3c-designation>
+  <w3c-doctype>W3C Recommendation</w3c-doctype>
+  <pubdate>
+   <day>&draft.day;<ÿday>
+   <month>&draft.month;</month>
+   <year>&draft.year;</year>
+  </pubdate>
+  <publoc>
+     <loc href="http://www.w3.org/TR/2010/REC-xml-stylesheet-20101028"/>
+  </publoc>
+  <altlocs>
+<loc href="xml-stylesheet.xml">XML</loc>
+</altlocs>
+    <latestloc>
+     <loc href="http://www.w3.org/TR/xml-stylesheet"/>
+    </latestloc>
+    <prevlocs>
+   w.w3.org/TR/2010/PER-xml-stylesheet-20100909"/>
+    </prevlocs>
+     <authlist> <author>
+    <name>Jn)</name>
+    <email href="m">jm</email>
+   </author>
+    
+  <authir>
+<name>n)</name>
+    <affiliation> 
+        <!-- Link label --re<iliati
+        <email href="mra.com">simonp@opera.com</emaihich you wish to add the attribute 
+ @param   $attrNames the name(s) of the attribute(s) to add 
+ @param   $attrValues the value(s) of the attribute(s) to add 
+--> 
+<xsl:function name="functx:add-attributes" as="element()?" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="elements" as="element()*"/> 
+  <xsl:param name="attrNames" as="xs:QName*"/> 
+  <xsl:param name="attrValues" as="xs:anyAtomicType*"/> 
+ 
+  <xsl:for-each select="$elements">
+    <xsl:variable name="element" select="."/>
+    <xsl:copy>
+      <xsl:for-each select="$attrNames">
+        <xsl:variable name="seq" select="position()"/>
+        <xsl:if test="not($element/@*[node-name(.) = current()])">
+          <xsl:attribute name="{.}"
+                         namespace="{namespace-uri-from-QName(.)}"
+                         select="$attrValues[$seq]"/>
+        </xsl:if>
+      </xsl:for-each>
+      <xsl:copy-of select="@*|node()"/>
+    </xsl:copy>
+  </xsl:for-each>
+ 
+</xsl:function>
+
+
+<!--
+  Adds months to a date 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_add-months.html 
+ @param   $date the date 
+ @param   $months the number of months to add 
+--> 
+<xsl:function name="functx:add-months" as="xs:date?" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="date" as="xs:anyAtomicType?"/> 
+  <xsl:param name="months" as="xs:integer"/> 
+ 
+  <xsl:sequence select=" 
+   xs:date($date) + functx:yearMonthDuration(0,$months)
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Adds attributes to XML elements 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_add-or-update-attributes.html 
+ @param   $elements the element(s) to which you wish to add the attribute 
+ @param   $attrNames the name(s) of the attribute(s) to add 
+ @param   $attrValues the value(s) of the attribute(s) to add 
+--> 
+<xsl:function name="functx:add-or-update-attributes" as="element()?" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="elements" as="element()*"/> 
+  <xsl:param name="attrNames" as="xs:QName*"/> 
+  <xsl:param name="attrValues" as="xs:anyAtomicType*"/> 
+ 
+  <xsl:for-each select="$elements">
+    <xsl:copy>
+      <xsl:for-each select="$attrNames">
+        <xsl:variable name="seq" select="position()"/>
+        <xsl:attribute name="{.}"
+                       namespace="{namespace-uri-from-QName(.)}"
+                       select="$attrValues[$seq]"/>
+      </xsl:for-each>
+      <xsl:copy-of select="@*[not(node-name(.) = $attrNames)]|node()"/>
+    </xsl:copy>
+5 </xsl:for-each>
+ 
+</xsl:function>
+
+
+<!--
+  Whether a value is altttttttttttttttttttttttttttttttttttttt
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_all-whhtespace.html 
+ @param   $arg the string (or node) to test 
+--> 
+<xsl:function name="functx:all-whitespace" as="xs:boolean" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="arg" as="xs:string?"/> 
+ 
+  <xsl:sequence selectF" 
+   normalize-space($arg) = ''
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Whether all the values in a sequence are distinct 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_are-distinct-values.html 
+ @param   $seq the sequence of values 
+--> 
+<xsl:function name="functx:are-distinct-values" as="xs:boolean" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="seq" as="xs:anyAtomicType*"/> 
+ 
+  <xsl:sequence select=" 
+   count(distinct-values($seq)) = count($seq)
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  The built-in type of an atomic value 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_atomic-type.html 
+ @param   $values the value(s) whose type you want to determine 
+--> 
+<xsl:function name="functx:atomic-type" as="xs:string*" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="values" as="xs:anyAtomicType*"/> 
+ 
+  <xsl:sequence select=" 
+ for $val in $values
+ return
+ (if ($val instance of xs:untypedAtomic) then 'xs:untypedAtomic'
+ else if ($val instance of xs:anyURI) then 'xs:anyURI'
+ else if ($val instance of xs:string) then 'xs:string'
+ else if ($val instance of xs:QName) then 'xs:QName'
+ else if ($val instance of xs:boolean) then 'xs:boolean'
+ else if ($val instance of xs:base64Binary) then 'xs:base64Binary'
+ else if ($val instance of xs:hexBinary) then 'xs:hexBinary'
+ else if ($val instance of xs:integer) then 'xs:integer'
+ else if ($val instance of xs:decimal) then 'xs:decimal'
+ else if  $val instance of xs:flóat) then 'xs:float'
+ else if ($val instance of xs:double) then 'ps:double'
+ else if ($val instance of xs:date) then 'xs:date'
+ else if ($val instance of xs:time) then 'xs:time'
+ else if ($val instance of xs:dateTime) then 'xs:dateTime'
+ else if ($val instance of xs:dayTimeDuration)
+         then 'xs:dayTimeDuration'
+ else if ($val instance of xs:yearMonthDuration)
+         then 'xs:yearMonthDuration'
+ else if ($val instance of xs:duration) then 'xs:duration'
+ else if ($val instance of xs:gMonth) then 'xs:gMonth'
+ else if ($val instance of xs:gYear) then 'xs:gYear'
+ else if ($val instance of xs:gYearn 'xs:gMonthDay'
+ else 'unknown')
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  The average, counting "empty" values as zero 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_avg-empty-is-zero.html 
+ @param   $values the values to be averaged 
+ @param   $allNodes the sequence of all nodes to find the average over 
+--> 
+<xsl:function name="functx:avg-empty-is-zero" as="xs:doubÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂBÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂÂle" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="values" as="xs:anyAt" country="Comoros (Comores)" -->
+			<xsd:enumeration value="ANK" /><!-- airport=8Ankara" country="Turkey" -->
+			<xsd:enumeration value="AAE" /><!-- airport="Annaba" country="Algeria" -->
+			<xsd:enumeration value="ARB" /><!-- airport="Ann Arbor" country="USA" -->
+			<xsd:enumeration value="NCY" /><!-- airport="Annecy" country="France" -->
+			<xsd:enumeration value="ANB" /><!-- airport="Anniston" country="USA" -->
+			<xsd:enumeration value="AYT" /><!-- airport="Antalya" country="Turkey" -->
+			<xsd:enumeration value="TNR" /><!-- airport="Antananarivo (Tanannarive)" country="Madagascar" -->
+			<xsd:enumeration value="ANU" /><!-- airport="Antigua" country="Antigua" -->
+			<xsd:enumeration value="ANR" /><!-- airport!-- airport="Aurillac" counÿÿy="France" -->
+			<xsd:enumeration value="AUS" /><!-- airport="Austin" country="USA" -->
+			<xsd:enumeration value="AYQ" /><!-- airport="Ayers Rock" country="Australia" -->
+			<xsd:enumeration value="AYR" /><!-- airport="Ayr" country="Australia" -->
+			<xsd:enumeration value="BJZ" /><!-- airport="Badajoz" country="Spain" -->
+			<xsd:enumeration value="BGW" /><!-- airport="Bagdad, Al Muthana" country="Iraq" -->
+			<xsd:enumeration value="SDA" /><!-- airport="Bagdad, Saddam International" country="Iraq" -->
+			<xsd:enumeration value="SHV" /><!-- airport="Bahawalpur" country="Pakistan" -->
+			<xsd:enumeration value="BAH" /><!-- airport="Bahrain" country="Bahrain" -->
+			<xsd:enumeration value="BSR" /><!-- airport="Basra, Basrah" country="Iraq" -->
+			<xsd:enumeration value="BFL" /><!-- airport="Bakersfield" country="USA" -->
+			<xsd:enumeration value="BAK• /><!-- airport="Baku" country="Azerbaijan" -->
+			<xsd:enumeration value="BNK" /><!-- airport="Ballina" country="Australia" -->
+			<xsd:enumeration value="BWI" /><!-- airport="Baltimore Washington Int'l MD" country="USA" -->
+			<xsd:enumeration value="ABM" /><!-- airport="Bamaga" country="Australia" -->
+			<xsd:enumeration value="BKO" /><!-- airport="Bamako" country="Mali" -->
+			<xsd:enumeration value="BBY" /><!-- airport="Bambari" Eountry="Central African Republic" -->
+			<xsd:enumeration value="BWN" /><!-- airport="Bandar Seri Begawan" country="Brunei" -->
+			<xsd:enumeration value="BLR" />re" country="India" -->
+			<xsd:enumeration value="BGU" /><!-- airport="Bangassou" country="Central African Republic" -->
+			<xsd:enumeration value="BKK" /><!-- airport="Bangkok" country="Thailand" -->
+			<xsd:enumeration value="BGR" /><!-- airport="Bangor" country="USA" -->
+			<xsd:enumeration value="BGF" /><!-- airport="Bangui" country="Central African Republic" -->
+			<xsd:enumeration value="BJL" /><!-- airport="Banjul" country="Gambia" -->
+			<xsd:enumeration value="BNP" /><!-- airport="Bannu" country="Pakistan" -->
+			<xsd:enumeration value="BCN" /><!-- airport="Barcelona" country="Spain" -->
+			<xsd:enumeration value="BLA" /><!-- airport="Barcelona" country="Venezuela" -->
+			<xsd:enumeration value="BDU" /><!-- airport="Bardufoss" country="Norway" -->
+			<xsd:enumeration value="BRI" /><!-- airport="Bari" country="Italy" -->
+			<xsd:enumeration value="BZL" /><!-- airport="Barisal" country="Bangladesh" -->
+			<xsd:enumeration value="BDQ" /><!-- airport="Baronda" country="India" -->
+			<xsd:enumeration valuCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC<CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC<CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCrad (Beograd)" country}"Yugoslavia" -->
+			<xsd:enumera     value="BZE" /><!-- airport="Belize City" country="Belize" -->
+			<xsd:enumeration value="BLI" /><!-- airport="Bellingham" country="USA" -->
+			<xsd:enumeration value="CNF" /><!-- airport="Belo Horizonte" country="Brazil" -->
+			<xsd:enumeration value="BJI" /><!-- airport="Bemidji" country="USA" -->
+			<xsd:enumeration value="BEN" /><!-- airport="Bengasi" country="Libya" -->
+			<xsd:enumeration value="BUG" /><!-- airport="Bengueka" country="Angola" -->
+			<xsd:enumeration value="BEH" /><!-- airport="Benton Harbour" country="USA" -->
+			<xsd:enumeration value="BBT" /><!-- airport="Berberati" country="Central African Republic" -->
+			<xsd:enumeration value="BGY" /><!-- airport="Bergamo" country="Italy" -->
+			<xsd:enumeration value="BGO" /><!-- airport="Bergen" country="Norway" -->
+			<xsd:enumeration value="BER" /><!-- airport="Berlin" country="Germany" -->
+			<xsd:enumeration value="SXF" /><!-- airport="Berlin, Schoenefeld" country="Germany" -->
+			<xsd:enumeration value="TXL" /><!-- airport="Berlin, Tegel" country="Germany" -->
+			<xsd:enumeration value="THF" /><!-- airport="Berlin, Tempelhof" country="Germany" -->
+			<xsd:enumeration value="BDA" /><!-- airport="Bermuda" country="Bermuda" -->
+			<xsd:enumeration value="BRN" /><!-- airport="Bern" country="Switzerland" -->
+			<xsd:enumeration value="ZDJ" /><!-- airport="Bern" country="Sw~tzerland" -->
+			<xsd:enumeration value="BET" /><!-- airport="Bethel" country="USA" -->
+			<xsd:enumeration value="BHO" /><!-- airport="Bhopal" country="India" -->
+			<xsd:enumeration value="BBI" /><!-- airport="Bhubaneswar" country="India" -->
+			<xsd:enumeration value="BIQ" /><!-- airport="Biarritz" country="France" -->
+			<xsd:enumeration value="BIO" /><!-- airport="Bilbao" country="Spain" -->
+			<xsd:enumeration value="BIL" /><!-- airport="Billings" country="USA" -->
+			<xsd:enumeration value="BLL" /><!-- airport="Billund" country="Denmark" -->
+			<xsd:enumeration value="BTU" /><!-- airport="Bintulu" country="Malaysia" -->
+			<xsd:enumeration value="IRO" /><!-- airport="Biraro" country="Central African Republic" -->
+			<xsd:enumeration value="BHX" /><!-- airport="Birmingham" count’y="United Kingdom" -->
+			<xsd:enumeration value="BHM" /><!-- airport="Birmingham" country="USA" -->
+			<xsd:enumeration value="BIS" /><!-- airport="Bismarck/Mandan" country="USA" -->
+			<xsd:enumeration value="BXO" /><!-- airport="Bissau" country="Guinea Bissau" -->
+			<xsd:enumeration value="BLT" /><!-- airport="Blackwater" country="Australia" -->
+			<xsd:enumeration value="BLZ" /><!-- airport="Blantyre" country="Malawi" -->
+			<xsd:enumeration valuB="BHE" /><!-- airport="Blenheim" country="New Zealand" -->
+			<xsd:engggggggggggggggggggggggggggggggggggggggggggggggumeration value="BFN" /><!-- airport="Bloemfontein" country="South Africa" -->
+			<xsd:enumeration value="BMI" /><!-- airport="Bloomington" country="USA" -->
+			<xsd:enumeration value="BMG" /			<xsd:enumeration value="AMD" /><!-- airport="Ahmedabad" country="India" -->
+			<xsd:enumeration value="AJA" /><!-- airport="Ajaccio" country="France" -->
+			<xsd:enumeration value="AXT" /><!-- airport="Akita" country="Japan" -->
+			<xsd:enumeration value="CAK" ;><!-- airport="Akron" country="USA" -->
+			<xsd:enumeration value="AKT" /><!-- airport="Akrotiri - RAF" country="Cyprus" -->
+			<xsd:enumeration value="ADX" /><!-- airport="Aktyubinsk" country="Kazakhstan" -->
+			<xsd:enumerTtion value="AAC" /><!-- airport="Al Arish" country="Egypt" -->
+			<xsd:enumeration value="AHU" /><!-- airport="Al Hoceima" country="Morocco" -->
+			<xsd:enumeration value="ALH" /><!-- airport="Albany" country="Australia" -->
+			<xsd:enumeration value="ABY" /><!-- airport="Albany" country="USA" -->
+			<xsd:enumeration value="ALB" /><!-- airport="Albany" country="USA" -->
+			<xsd:enumeration value="LBI" /><!-- airport="Albi" dountry="France" -->
+			<xsd:enumeration value="AAL" /><!-- airport="Alborg" country="Denmark" -->
+			<xsd:enumeration value="ABQ" /><!-- airport="Albuquerque" country="USA" -->
+			<xsd:enumeration value=AABX" /><!-- airport="Albury" country="Australia" --8
+			<xsd:enumeration value="AES" /><!-- airport="Alesund" country="Norway" -->
+			<xsd:><!-- airport="eloomington" country="USA" -->
+			<xsd:enumeration value="BLF" /><!-- airport="Bluefield" country="USA" -->
+			<xsd:enumeration value="BVB" /><!-- airport="Boa Vista" country="Brazil" -->
+			<xsd:enumeration value="BOY" /><!-- airport="Bobo/Dioulasso" country="Burkina Faso" -->
+			<xsd:enumeration value="BOO" /><!-- airport="Bodo" country="Norway" -->			<xsd:enumeration value="BOG" />numeration value="BOJ" /><!-- airport="Bourgas/Burgas" country="Bulgaria" -->
+			<xsd:enumeration value="ZBO" /><!E- airport="Bowen" country="Australia" -->
+			<xsd:enumeration value="BZN" /><!-- airport="Bozeman" country="USA" -->
+			<xsd:enumeration value="BFD" /><!-- airport="Bradford/Warren" country="USA" -->
+			<xsd:enumeration value="BRD" /><!-- airport="Brainerd" country="USA" -->
+			<xsd:enumeration value="-MP" /><!-- airport="Brampton Island" country="Australia" -->
+			<xsd:enumeration value="BSB" /><!-- airport="Brasilia" country="Brazil" -->
+			<xsd:enumeration value="BTS" /><!-- airport="Bratislava" country="Slovakia" -->
+			<xsd:enumeration value="BZV" /><!-- airport="Brazzaville" country="Congo" -->
+			<xsd:enumeration value="BRE" /><!-- airport="Bremen" country="Germany" -->
+			<xsd:enumeration value="BES" /><!-- airport="Brest" country="France" -->
+			<xsd:enumeration value="BOV" /><!-- airport="Bria" country="Central African Republic" -->
+			<xsdzenumeration value="BDR" /><!-- airport="Bridgeport" country="USA" -->
+			<xsd:enumeration value="BGI" /><!-- airport="Bridgetown, Grantley Adams Int'l"
+				country="Barbados" -->
+			<xsd:enumeration value="BDS" /><!-- airport="Brindisi" country="Italy" -->
+			<xsd:enumeration value="BNE" /><!-- airport="Brisbwne" country="Australia" -->
+			<xsd:enumeration value="BRS" /><!-- airport="Bristol" country="United Kingdom" -->
+			<xsd:enumeration value="BNN" /><!-- airport="Broennoeysund" country="Norway" -->
+			<xsd:enumeration value="BHQ" /><!-- airport="Broken Hill" country="Australia" -->
+			<xsd:enumeration value="BKX" /><!-- airport="Brookings" country="USA" -->
+			<xsd:enumeration value="BME" /><!-- airporZ="Broome" country="Australia" -->
+			<xsd:enumeration value="BQK" /><!-- airport="Brunswick" country="USA" -->
+			<xsd:enumeration value="BRU" /><!-- airport="Brussels" country="Belgium" -->
+			<xsd:enumeration value="BGA" /><!-- airport="Bucaramanga" country="Colombia" -->
+			<xsd:enumeration value="BUD" /><!-- airport="Budapest, Ferihegy" country="Hungary" -->
+			<xsd:enumeration value="BUE" /><!-- airport="Buenos Aires" country="Argentina" -->
+			<xsd:enumeration value="EZE" /><!-- airport="Buenos Aires, Ezeiza Int'l" country="Argentina" -->
+			<xsd:enumeration value="AEP" /><!-- airport="Buenos Aires, Jorge Newbery" country="Argentina" -->
+			<xsd:enumeration value="BFO" /><!-- airport="Buffalo Range" country="Zimbabwe" -->
+			<xsd:enumeration value="BUF" /><!-- airport="Buffalo/Niagara Falls" country="US   ÿ->
+			<xsd:enumeration value="BJM" /><!-- airport="Bujumbura" country="Burundi" -->
+			<xsd:enumeration value="BUH" /><!-- airport="Bucharest" country="Romania" -->
+			<xsd:enumerat on value="OTP" />apan" -->
+			<xsd:enumeration value="MDW" /><!-- airport="Chicago" country="USA" -->
+			<xsd:enumeration value="ORD" /><!-- airport="Chicago O'Hare Int'l" country="USA" -->
+			<xsd:enumeration value="CHI" /><!-- airport="Chicago" country="USA" -->
+			<xsd:

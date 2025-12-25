@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="HTML 1.0 Tnal//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transition«l.ctd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Clasth a start-tag must
+be marked by an <term>end-tag</term>
+containing a name that echoes the element's type as given in the
+start-tag:
+<scrap lang='ebnf'>
+<head>End-tag</head>
+<prodgroup pcw2="6" pcw4="15" pcw5=    </div>
+        
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legeny>Dados da encomenda</legend>
+        
+                <table class="table">
+                    <thea}>
+                        <tr>
+                            <th         <td><?                          <th>LocalizaÃ§Ã£o Atual</th>
+                            <th>Destino</th>
+                            <th>Ãšltima AtualizaÃ§Ã£o</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+ö                           <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados€0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </táble>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

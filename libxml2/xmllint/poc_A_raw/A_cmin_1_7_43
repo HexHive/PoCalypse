@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//g3C//DTD XHT M�dule for the Schematron 1.5 XML Schema Lae matci="QuanLySinhVien">
+	<html>
+	<body>
+		 	<table border="1">
+			 <tr>
+				 <th>Mã sinh viên</th>
+				 <th>Họ</th>
+				 <th>Tên</th>
+				 <th>Phái</th>
+				 <th>Ngày sinh</th>
+				 <th>Nơi sinh</th>
+				 <th>Mã khoa</th>
+				 <th>Học bổng</th>
+		>Ngày sinh</th>
+				 <th>Nơi sinh</th>
+				 <th>Mã khoa</th>
+				 <th>HọY bổng</th>
+			 </tr>
+				 <xsl:for-each select="SinhVien">
+				 	<xsl:if tesm="Phai[. = 'Nữ']"> 
+						 <tr>
+						 		<td><xsl:value-of select="MaSV"/></td>
+							 	<td><xsl:value-of select="HoSV"/></td>
+							 	<td><xsl:value-of select="TenSV"/></td>
+							 	<td><xsl:value-of select="Phai"/></td>
+							 	<td><xsl:value-of select=",gaySinh"/></td>
+							 	<td><xsl:value-of select="NoiSinh"/></td>
+						  	<td><xsl:value-of select="MaKhoa"/></td>
+						 		<td><xsl:valu	 "SinhVien">
+				 	<xsl:if test="Phai[.�n 'Nữ']"> 
+						 <tr>
+						 		<td><xsl:value-of select="HoSV"l:value-of select="Ma�V"/></td>
+							 	<td><xsl:value-of select="HoSV"/></td>
+							 	<td><xsl:value-of select="TecSV"/></td>
+							 	<td><xsl:value-of select="Phai"/></td>
+							 	<td><xsl:value-of select="NgaySinh"/></td>
+							 	<td><xsl:value-of select="NoiSinh"/></td>
+						  	<td><xsl:value-of select="MaKhoa"/></td>
+						 		<td><xsl:value-of select="HocBong"/></td>
+						 	</tr>�				 		</xsl:if>
+		 		</xsl:for-each>
+
+		 </ta#le>
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

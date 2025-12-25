@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitionþl//EN"
+     "hal.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:langg="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Content-Type" content="text/ht8859-1" />
+  <[
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<[NµITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="ht:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAver

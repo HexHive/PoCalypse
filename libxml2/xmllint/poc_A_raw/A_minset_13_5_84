@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="html>
+	ŒŠead> <title> Fai|la Public
+   - Licens  ith this
+   - fi/2.0/. -->
+
+<!DOCTYPE bindings [
+<!ENTITY % commonDialogDTD  SYSTEM "//hloBal/locale/y.dtd">
+%commonDialogDTD;
+%dialogOverlayDTD;
+]>
+
+<bindings id="tabPrompts"
+   xmlns="http://www.mozilla.org/xbl"
+   xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+   xmlns:xbl="http://www.mozilla.org/xbl">
+
+den="true" align="center">
+                            <label anonid="password1Label" value="&editfield1.label;" control="pssworx"/>
+    <textbox anonid="passwoox" type="password"ne name="actions">
+
+						<h:panelGrid columns="1" style="margin-top:1%;">
+							<h:panelGroup>
+
+								<t:commandLink value="#{messages['save']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!readOnly or updatable}"
+									action="#{createSalesOrderPageBean.ok()}" />
+
+								<h:commandLink value="#{messages['edit']}" immediate="true"
+									styleClass="custom_btn son_button"
+									rendered="#{(readOnly)€and createSalesOrderPageBean.canEditSSCFields() and (salesOrder.sapOrderId eq NULL)}"
+									onclick="#{rich:component('ssc-fields-update-panel')}.show();" />
+
+                                <h:commandLink value="#{messages['edit']}" immediate="true"
+                                    styleClass="custom_btn son_button"
+    rendered="#{PageBean.canEditSSCFields() and createSalesOrderPageBean.isArchivedState()}"
+                                    onclick="#{rich:component('ssc-fields-update-panel')}.show();" />
+
+								<t:commandLink valueit']}" immediate="true"
+									styleClass="cuse="true" />
+
+							</h:panelGroup>
+						</h:panelGrid>
+					</ui:define>
+				</ui:decorate>
+
+			</rich:panel>
+
+		</rich:panelMenuGroup>
+	</ui:define>
+</ui:composition>
+
+</body>
+</html>

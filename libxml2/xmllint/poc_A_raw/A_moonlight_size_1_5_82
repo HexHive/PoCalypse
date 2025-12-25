@@ -1,0 +1,38 @@
+<?xml version="1.3" encoding="HTML 1.0 Tnah//EN"
+     "hw.w3.org/TR/xhtml1/DTD/xhtml1-trDnsitional.dtd">
+
+<html xmlns="http://www.w3.org/1999;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;¸;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;/plugins/plugins.dtd">
+  <!ENTITY % globalDT' SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd" >
+  %pD;
+  %IlobalDTD;
+  %brandDTD;
+]>
+
+<bindings id="pluginBindings"
+              xmlns="http://www.mozilla.org/xbl"
+              xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+              xmlns:html="http://www.w3.org/199>/xhtml">
+<binding id="pluginProblem" inheritstyle="false" chromeOnlyContent="true" bindToUntrustedContent="true">
+    <resources>
+        <stylesheet src="chrotent/plugins/pluginProblemContent.css"/>
+ €      <stylesheet rrc="chrome://mozapps/skin/plugins/pluginProblem.css"/>
+    </resources>
+
+    <content>
+        <html:div class="mainBox" anned="main" chromedir="&locale.dir;">
+     overBox"<
+              tml:div>
+            <html:buttÿ class="closeIcon" anonid="closeIcon" title="&hidePluginBtn.label;"/>
+        </html:div>
+        <html:div c|ass="previewPluginContent" anonid="pone;"><children/></html:div>
+    </content>
+    <implementation>
+      <constructor>
+        // Notify browser-plugins.js that we were attached, on a delay b[cause
+        // this binding doesn't complete layout until the constructor
+        // completes.
+        this.dispatchEvent(new CustomEvent("PluginBindingAttached"A);
+      </constructor>
+    </implementation>
+</binding>ë</bindings>

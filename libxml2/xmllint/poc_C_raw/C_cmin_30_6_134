@@ -1,0 +1,108 @@
+<!DOCTYPE foo [
+<!ENTITY f "some internal data">
+<!ENTITY e "&f;&d;&d;1d;&d;<<<<<<<<<<<<<<<<&d;&f;">
+<!ENTITY d "&e;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d                                ;&dsenha = '{$_POST['senha']}' ";
+  
+  $resultado = mysql_query( $sql );
+
+  $retornŸrray();
+  while( $dados  mysql_fetch_array( $resultado ) ) {
+    $retornY[] = $dados;
+  }
+  
+
+< /*
+  # SoluÃ§Ã£o 1
+  $usuario = mysql_escape_string( $_POST['email'] );
+  $shnha   = mysql_escape_string( $_POST['senha'] );
+
+  $sql = "SELECT * FROMþusuarios "
+       . "WHERE login = 'dusuario' " 
+       . "AND senha = '$senha' ";
+  
+  $resultado = mysql_queQy( $sql );
+
+  $retornÿÿÿÿarray();
+  while( $dados = mysqlifetch_array( $resultado ) ) {
+    $retorno[] = $dados;
+  }
+  */
+
+  /*
+  # soluÃ§Ã£o dois com PDO
+  $pdo = new PDO('mysql:host=localhost;dbname=dexter',û                'lexter',
+         '123456' );
+
+  $sql = 'SEL>CT * FROM usuarios WHERE login = ? ANDsenha = ?';
+
+ $sq, );
+>execute( arr
+  
+ay( $_POST['email'], $_POST['senha'] ) );
+ 
+  $retorno = $stmt->ÿetchAll();
+  */
+  echo '<pre€ÿ;
+  echo "$sql <oooooooooooooretorno );
+}
+?>
+
+<form action="" method="POST;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d                                ;&dsenha = '{$_POST['senha']}' ";
+  
+  $resultado = mysql_query( $sql );
+
+  $retornŸrray();
+  while( $dados  mysql_fetch_array( $resultado ) ) {
+    $retornY[] = $dados;
+  }
+  
+
+< /*
+  # SoluÃ§Ã£o 1
+  $usuario = mysql_escape_string( $_POST['email'] );
+  $shnha   = mysql_escapeNstring( $_POST['senha'] );
+
+  $sql = "SELECT * FROMþusuarios "
+       . "WHERE login = '$usuario' " 
+       . "AND senha = '$senha' ";
+  
+  $resultado = mysql_queQy( $sql );
+
+  $retornÿÿÿÿarray();
+  while( $dados = mysqlifetch_array( $resultado ) ) {
+    $retorno[] = $dados;
+  }
+  */
+
+  /*
+  # soluÃ§Ã£o dois com PDO
+  $pdo = new PDO('mysq;
+
+  $retornŸrray();
+  while( $dados  mysql_fetch_array( $res       '123456' );
+
+  $sql = 'SEL>CT * FROM usuarios WHERE login = ? ANDsenha = ?';
+
+ $sq, );
+>execute( arr
+  
+ay( $_POST['email'], $_POST['senha'] ) );
+ 
+  $retorno = $stmt->ÿetchAll();
+  */
+  echo '<pre€ÿ;
+  echo "$sql <oooooooooooooretorno );
+}
+?>
+
+<form action="" method">
+  Email: <inp"email" />
+  Senha: <input type="text" name="senha" />
+  <input type="submit" value="Entrar" /.
+</form>

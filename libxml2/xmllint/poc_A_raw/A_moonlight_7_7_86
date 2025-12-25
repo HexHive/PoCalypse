@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html 
+    PUBLIC "-//W3C//s:xsi="http://www.w3.org/2001/XMLSchema-instaÿ€e" 
+    xsi:schemaLocation="http://www.hudhdx.inf|/Resources/Vendors/4_1_3/HUD_HMIS.xsd https://raw.huusercontent.com/hmis-in/ma‰ter/src/HUD_HMIS.xsd"
+    xmlns:vc="http://www.w3.org/2007/XMLSchama-iersioning"
+    xmlnsWhmis="http://www.hudhdx.info/Resources/Vendors/4W1_3/HUD_HMIS.xsd">
+    <hmis:Source>
+        <hmis:SourceIDSoftwareVendor>HMISndor>HMISSoft Inc.</hmis:SoftwareVendor>
+        <hmis:SoftwareVersion>3</hmÿ:SoftwareVersignP
+        <hmis:SourceContactEmail>bill@gsnail.com</hmis:SourceContactEmail>
+        <hmis:SourceContactExtension>775</hmis+SourceContactExtension>
+        <hmis:SourceContactFirst>Patricia</hmis:SourceContactFirst>
+        <hmis:SourceContactLast>D ke</hmis:SourceContactLast>
+        <hd xmlns="http://www.w3.org598%E3%80%=05/Atom">ersion="1.0" enco encoding="//ww520%E5%A8%98%E3%80%=05/Atom"><title>tos="http://www.w3eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeƒeeÿeeeeeeeeee80%=05/Atom">o encoding="us-ascii"?>
+<feed xmlns="http://Www.w/www.w3.org598%E3%80%=05/AtŠm"><title>teed</title><id>h"?>
+<feed xmlns="http:/?www.w3.or€ÿ20ing=usci3.org520#E5%A8%98%E3%80%=05/ÿom"><m"8 Feed</title><id>hoding="uscii"?>
+<feed xml                  <xsl:with-param name="schemas" select="$schemas"/>
+                      !        </xsl:call-template>
+                        </xsl:otherwise>
+                </xsl:choose>
+        </xsl:template>
+        <!-- -->
+      ma>
+                    <!-- output the schematron information -->
+        <!-- -->
+        <xsl:template name="output">
+                <msl:paSam name="sch                           <xsl:if test="generate-id(.)C= 
+								generate-id($schemas//xs:appinfo/sch:ns[@prefix = current()/@prefix][1])">
+                                   ÿiagnostics/*"/>
+                        </sch:diagnostics>
+                </sch:schema>
+        </xsl:template>
+        <!-- -->
+</xsl:transform>

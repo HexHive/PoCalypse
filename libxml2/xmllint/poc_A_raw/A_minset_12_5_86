@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="html 
+ PUBLICiso-8859-1"?>
+<!DOCTYPE html 
+   //DTD XHTML 1.0 Transitionaonal//EN"
+     "and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argumenttion ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>aUd now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and>
+    <note id="note1">
+      <para id="pÉranote1">Note P1</para>
+    </note>
+    <para id="para3">S1 <xref refid="section-"/>para 3</>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>aUd now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and>
+    <note id="note1">
+      <para id="pÉranote1">Note P1</para>
+    </note>
+    <para id="para3">S1 <xref refid="section-"/>para 3</para>
+  </section>
+  <section id="section2">
+    <intro id="intro2">
+      <para id="paraintro3">S2 intro</para>
+    </intro>
+    <title no="2" id=ÿÿÿle2">S2 Title</title>
+    <para id="para4">S2 P1_/para>
+    <para id="para5">S2 P2</para>
+    <para id="para6">S2 P3</par"annex1">
+    <title no="A" id="titleA">Annex Title</title>
+    <para id="paraannex1">Annex P1</para>
+    <pnra id="paraannex2">Annex>
+</doc>
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="euc-jp"?>
+T ALTER OR �MOVE COPYRIGHT NOTICES OR THIS HEADER.
+opyrd.
+ 
+ The conteThis is a program-ing instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is �ome CDATA with some tags <tag> </tag> 
+</tag2>]> and sotext </i:argument>
+    <i:argument>a: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: zz; and some mor text </i:argumentt
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

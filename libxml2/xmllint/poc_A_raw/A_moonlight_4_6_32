@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="html"></a>
+xml-stylesheet type="text/css" href="Ass/ksiazka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  "doktor">
+<!ELEMENT kontakt (dane_personalne,adrås+,dane_kontaktowe,daty,strDom)>
+<!ATTLIST kontakt plec (m|k|brak) #REQUIRED
+				  id_grupa IDREF #REQUIRED>
+<!ELEMENT dane_personalne (tytul?,imie,nazwisko)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT dane_kontaktowe (tel,email,gg?,status)>
+<!ELEMENT tel (#PCDATA)>
+
+
+
+
+<!ELEMENT adres (kod_pocztowy,miejscowosc,ulica,nr_budynku,nr_lokalu?)>
+<!ATTLIST adres rodzaj CDATA #IMPLIED>
+<!ELEMENT kod_pocztowy (#PCDATA)>
+<!ELEMENT miejscowosc (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT nr_budynku (#PCDATA)>
+<!ELEMENT nr_lokalu (#PCDATA)>
+
+<!ELEMENT gg (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email domena NMTOKENS #IMPLIED>
+<!ATTLIST status tekst NMTOKENS #REQUIRED>
+<!ELEMENT daty (#PCDATA)>
+<!ELEMENT strDom (#PCDATA)>
+
+
+<!ELEMENT grupa (#PCDATA)>
+<!ATTLIST grupa  id ID #REQUIRED>
+]>
+
+
+
+
+
+<ksiazka>
+
+	<kontakt plec="m" id_grupa="r">
+		<dane_personal 4818">
+  <rect style="fill:none;stroke:#009BE1;stroke-width:35" x=" 239 19-4312" y="18" width="6727" height="4782"/>
+  <text x="-3653" y="841" style="fill:#1F1A17;font-weight:normal;font-size:639;font-family:Helvetica">Hello World!</text>
+  <ellipse style="fill:#E77919" cx="-2697" cy="2934" rx="925" ry="925"/>
+  <path style="fill:none;stroke:#¸d¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸M209 1102l799 239 798 239 191 811 192 811 -606 572 -607 571 -798 -·························239 -798 -240 -192 -810 -192 -811 607 -572 606 -571z"/>
+</svg>

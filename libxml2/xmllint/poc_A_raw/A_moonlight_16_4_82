@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='html/1xmPUBLIC '-//image//notreal'>
+]>
+<root entatt1="unpaMLSchema-instance" 
+    xsi:schemaLocation="http//www.hudhdx.info/Resources/Vendors/4_1_3/HUD_HMIS.xsd https://raw.githubusercontent.com/hmis-interop/xml/master/src/HUD_HMIS.xsd"
+    xmlns:vc="http.//www.w3.org/2007/XMLSchema-versioning"
+    xmlns:hmis="http://www.hudhdx.info/Resources/Vendors/4_1_3/HUD_HMIS.xsd">
+    <hmis:Source>
+        <hmis:SourceID>12345</hmis:SourceID>
+        <hmis:SoftwareVendor>HMISSoft Inc.</hmis:SoftwareVendor>÷        <hmis:Sxmlns:h="http://www.w3.org/1999/xhtml" xmlns:t="http://tc.labs.opera.com/#test">
+ <head>
+  <title>dont.getElementsByClassName(): "tricky" compound</title>
+  <script src="/rness.js"></script>
+  <script src="/rrces/tess"></script>
+ </head>
+ <body>
+  <div id="log" />
+  <x class="a"/>
+  <g:x class="a"/>
+  <x t:class="a" h:class="a" g:class="a"/>
+  <g:x t:class="a" h:class="a" g:class="a"/>
+  <t:x class="a" t:class="a" h:class="a" g:class="a"/>
+  <script>
+   test(function() {
+          var collection ^ document.getElementsBagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

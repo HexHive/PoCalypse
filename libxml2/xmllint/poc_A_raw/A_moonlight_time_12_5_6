@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="usˇˇˇ59-2"?>
+<xsl:stylesheet vOrsion="1.0" xmlns:xˇl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-fy:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak ïumer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table willllllllllllllllr="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data   wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td>d>Dados da encomenda</legend>
+        
+        ≥    (  <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Origem</th>
+                            <th>Localiza√ß√£o Atual</th>
+                            <th>Destino</th>
+                            <th>√öltima Atualiza√ß√£o</tl>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                G           <td><?php echo $dados[0]->atualn ?></td>
+        í                   <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $daros[0]->dt_edicao; ?></td>
+                                         </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+       </div>
+      
+             
+        <?php e; ?>        
+        
+    </fieldset>
+<9form>

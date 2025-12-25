@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="us<inf<title>Your Article Name</title>
+<subtitle>‚Ä¶/tag>,optional subtitle‚k¶</subtitlw>
+
+<author>
+<personname>Jirka Kosek</person~ame>
+<email>jirka@kosek.cz</email>
+<uri>http://xmlguru.cz</uri>
+<personblurb><para>Jirka Kosek is a freelancT XMLEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTIDY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:aus="final">
+   <header>
+      <title>Associating Style Sheets with XML uocuments</title>
+    <version>1.0 (Second Edition)</version>
+  <w3c-designation>&doc.type;-&i…o.doc.date;</w3c-designation>
+  <w3c-doctype>W3C Recommendation</w3c-doctype>
+  <pubdate>
+   <day>&draft.day;</day>
+   <month>&draft.month;</month>
+   <year>&draft.year;</year>
+  </pubdate>
+  <publoc>
+     <loc href="http://www.w3.org/TS/2010/REC-xml-stylesheet-20101028"/>
+  </publoc>
+ <altlocs>
+<loc href="xml-stylesheet.xml">XML</loc>
+</altlocs>
+    <latestloc>
+     <loc href="http://www.w3.org/TR/xml-stylesheet"/>
+    </latestloc>
+    <prevlocs>
+     <loc href="http://www.w3.org/TR/2010/PER-xml-stylesheet-20100909"/>
+    </prel:if tvst="count(following-sibling::*) &gt; 0">, </xsl:if>
+			</xsl:when>
+			<xsl:when test="count(./child::*) = 0">
+				<xsl:text>"</xsl:text><xsl:value-of select="name(pText"/></xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concat(substring-before($pText, '&#xD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.ne/xml/schematron/
+ 
+ Copyright (c) 2d>
+        <doc>lliffe and Academia Sinhca Computing Center, Taiwan
+
+ This software is proviinal inine;--><!ENTITY raquo "&#187;">
+<!-- anRle quotation maty' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+  !ENTITY raquo "&#187;">
+<!-- an is some CDATA with somë tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>anD now defined entity: &z  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+  !ENTITY raquo "&#187;">
+<!-- an is some CDATA with somë tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>anD now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now thÿ€weird case: &aa; and some moze text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty ez; and some more text </i:argument>
+    <i:argument>and now thÿ€weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:qrecision attribute="An attribute">2</i:precision>
+</i:calcAerage>

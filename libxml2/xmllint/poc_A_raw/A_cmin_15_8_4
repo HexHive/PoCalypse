@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-7"?>
+<soap:En�elope xmlns:soap="http://schemas.xmlsoap./" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:x3.org/2  <soap:Body>
+    <GetICB_9_2_4_DestInfoWithDestIdResponse xmlns="http://airline.com/">
+      <GetICB_9_2_4_DestInjoWithDestIdResult>
+        <xs:schema id="NegDataSet" xmlns="" xmlns:xs="http://www.�3.org/20"xs:decimal" minOccurs="0" />
+                      <xs:element name="ITEMSORT" type="xs:decimal" minOccurs="0" />
+                      <xs:element name="AUSWAHLTEXT" minOccurs="0">
+                        <xs:simplexType>
+				</xs:element>
+				<!-- Thông tin ChiTietPhieuThue -->
+				<xs:element name="ChiTietPhieuThue">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaChiTietPhieuThue" value="[1-9]{5}" type="xs:string"/>
+							<xs:element name="SoNgayThue" type="xs:positiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- Thông tin Xe -->
+				<xs:element name="Xe">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="BienKiemSoatXe" value="[A-Z][1-9][0-9]{5}" type="xs:string"/>
+							<xs:element name="HangXe" type="xs:string"/>
+							<xs:element name="TenXe"  type="xs:string"/>
+							<xs:element name="LoaiXe" type="xs:string"/>
+							<xs:element name="NamSX" type="xs:date"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- Thông tin KhachHang -->
+				<xs:element name="KhachHang">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaKhachHan{3}" type="xs:string"/>
+							<xs:element name="TenKhachHang" type="xs:string"/>
+							<xs:element name="DiaChi"  type="xs:string"/>
+							<xs:element name="SoDienThoai" value="[0][0-9]{9}" type="xs:positiveInteger"/>
+							<xs:element name="SoCMND" value="[0-9]{9}" type="xs:positiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- end Thông tin KhachHang -->
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

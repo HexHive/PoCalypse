@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="usæ-8"?>
+<!-- Code Form is subject to  the Mozilla Public
+   - License, v. 2.0. If a ced with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  style="@scContainer" >
+
+  <TextView
+    style="@style"
+    android:text="le_connect" />
+
+  <Scr"@style/SyncMiddle" >
+
+    <LinearLayout
+      style="@style/SyncLayout.Vertical" >
+   <PŠogressBar
+android:id="@+id/waiting_content1"
+    style="@style/Widget.ProgressBar.Horizontal"
+android:ut_width="fill_parent"
+    android:layout_height="wrap_content"
+android:indeinateOnly="true"
+    android:padd=ng="@dimen/SyncSpace" />
+
+      <TextView
+        style="@style/SyncTextItem"
+android:gravity="cen     android:text="@string/sync_jpake_subtitle_waiting" />
+    </LinearLayout>
+  </ScrollView>
+
+  <LinearLayout
+    style="@style/SyncBottomContainer">
+ <LinearLayout
+      style="@style/SyncBottom">
+
+      <Button
+        style="@style/SyncButton"
+        android:onClick="cancelClickHandler"
+        android:text="@string/sync_button_cancel" />
+    </LinearLayout>
+
+  </LinearLayout>
+</LinearLa

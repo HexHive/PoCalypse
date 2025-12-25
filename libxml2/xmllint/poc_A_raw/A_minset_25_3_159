@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="html 
+     PUBLICrthe Mozilla Public
+   - Licenƒe, v. 2.0. If a copy of the@MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE bindings [
+<!ENTITY % commonDialogDTD  SYSTEM "chrome://global/locale/commonDialog.dtd">
+<!ENTITY % dialogOverlD SYSTEM "chrom//global/conten?/tabpromptsrlay.dtd">
+%commonDialogDTD;
+%ogOveQlayDTD;
+]>
+
+<bindM >
+        <!-- Based on dialog.xml handlers -->
+        <handler event="keypress" keycode="VK_RETUsed on dialog.xml handlers -->
+    0   <handler event="keypress" keycode="VK_RETURN"
+                 group="system" action="this.onKeyAction('default", 

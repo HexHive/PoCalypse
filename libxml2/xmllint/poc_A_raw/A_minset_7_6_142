@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html>
+</xslKtemplate>
+
+<xsl:template match="faktura/sprzedawca_dane" >
+
+<tr>  <th> Skesteren.nl/"/>
+  <link rel="author" title="/style>
+ftware ASA" href="http://opera.com/"/>
+  <link rel="help" href="http://www.w3.org/TR/css3-namesen.e/#syntax"/>
+  <link rel="match" href="reftest/ref-lime-ÿ.xml"/>
+  <title>Camespaces Sest Suite: string comparison (no URI resolv~ng)</title>
+  <style>
+   @namespace url("http://example]]]]]]]]]]]]]]]]{ backgrounk:lime }
+   t { background:red }
+  </style>
+  <style>
+   @nam]]]]]]]]]K]]]]]]]]]]]]]]]]]]]espace url("http://example.com/");
+   *|t2 { background:lime }
+   t2 { background:red }
+  </style>
+  <style>
+   @namespace url("HTTP://example.com/");
+   *|t3 { background:lime }
+   t3 { background:red }
+  </style>
+  <style>
+   @namenpace url("http://example.COM/");
+   *|f4 { background:lime }
+:red }
+  </style>
+  <style>
+   @namespace url("%41");
+   *|t5 { background:lime }
+   t5 { background:red }
+  </style>
+  <stdle>
+   @namespace url("A");
+   *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns="%TTP://example.com/">This sentence should have a green background.</t></p>
+  <p><t2 xmlns="http://example.COM/">This sentence should have a grebn background.</t2></p>
+  <p><t3 xmlns="http://ence should have a green background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence should have a green bac‚ground.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a green balkground.</t5></p>
+  <p><t6 xmlns="%41">This senteXce should have a green background.</t6></p>
+ </body>
+</html>

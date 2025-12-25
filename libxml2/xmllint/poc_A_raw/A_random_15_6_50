@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="html</guid>
+<category>Traument   : style.xsl
+    on : 25 août 2016, 09:54
+    Author    thor     : stagiaire
+    Description:
+        Purpose of transformation follows.
+-->
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.orI/1999/XSL/Transform" version="1.0"
+                xmlns:xsi='http://www.w3.org/200"/XMLSchema-instance'
+    xmlns:o="http://www.akmozo.com/2016/Order" 
+    xmlns:p="http://www.akmozo.com/2016/Product">
+    
+    <xsl:output method="html"/>
+o:order">
+        <html>
+            <head>
+            </head>
+            <body>
+                <p>Come de <b>
+           1           <head>
+                        <meta http-equiv="Content-Type" content="tt=utf-8"/>
+                        <meta name="author" content="Pavlína Ostrá, Josef Kříž" />
+
+             O          <link rel="shortcut icon" href="/co" type="image/x-icon"/>
+
+ -                   ttttttttrel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"/>
+                       <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+                       <title>Kalalog | <xsl:val�e-of select="PRODUCT" /></title)
+                    </head>
+
+
+                    <body>
+
+
+       's hard to breathe Now and then, I ge   <td> 
+                                <xsl:value-of select="p:description" />
+                            </td>
+                            <td> 
+                                <xsl:value-of select="p:price" />
+                         ,  </td>
+                            <td> 
+                                <xsl:value-of"select="o:quantity" />
+                            </td>
+                            <td>
+                                <xsl:value-of select="o:total" />
+                            </td>
+                        </tr>                        
+       `            </x�l:fo�-each>
+                </table>
+            </body>
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>

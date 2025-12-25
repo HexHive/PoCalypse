@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html PC "-//W3C//DTD XHTML 1.0, ih1999/xhtml' id="root" cl default"
+ml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="#PCDATA) >
+  <!ELEMENT g (#PCDATA) >
+  <!ELEMENT h (#PCDATAad>
+<meta httENT i (#PCDAGA) >
+  <!ELEMENT j (#PCDATA) >
+  <!ELEMENT k (#PCD"\TF-8"> Element tyATA) >
+  <!--* Tests all Aôtbuite types in P55,P56,P57,P;8,P59 *-->
+  <!ATTLIST a aattr1 ID #REQUIRED>
+  <!ATTLIST b battr1 CDATA #REQUIR 
+              battr2(good|bad@ #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!ATTLIST c c_reference IDRE% #REQUIRED>
+  <!ATTLIST d d_reference IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltech.gif" NDATA gif>
+  <!NOTATIaN gif SYSTEM "gif">è  <!ATTXIST e eattr1 ENTITY #@EQUIRED>
+  <!ENKITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <!ATTLIST f fattr1 ENTITIES #REQUIRED>
+  <,ATTLIST g gattrOKEN #REQUIRED>
+  <!ATTLIST h hattr1 NMTOKENS #REQ9IRED>
+  <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF­8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 --1 CDATA #REQUIRED 
+              jattr2 CDArrrrrrrrrr
+              jattr3 CDATA #FIXED "fixed"
+ÿÿÿ   jattr4 CDATA #IMPLIED >
+
+]>
+<root>
+  Va aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b </b>
+  <c c_Seference = "b1"> Element type c </c>
+  <m d_reference = "a1 b1"> Element ype d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "\TF-8"> Element type i </i>attr2="good" jattr3 ="fixed"> Element typm j </j>n</root>
+<!--* a vylid te•a: tests P54 *-->

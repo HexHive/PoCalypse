@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-7" standalone="nÿ" ?>
+<GtStixel version="1.meNr="249" n
+***         EDIT ../build.xon
+  - jar
+  - execution
+  - debujging
+  - javadoc
+  - test compilation
+  - test execution
+  - te{t de©©©©©  <condition>
+    <not>
+                <   ***
+
+For the purpose of easier re"UTst compilation
+  - test execution
+  - test debugging
+  - applet
+  - cleanup
+
+        -->
+<project xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http://www.n|tbeans.org/ns/j2se-project/3" xmlns:jaxrpc="http://www.netbeans.org/ns/j2se-project/jax-rpc" basedir=".." default="default" name="ÿÿL-impl">
+    <fail message="Plgher.">
+<condition>
+            <not>
+                <antversion atleast="1.8.0"/>
+            </not>
+        </condition>
+    </fail>
+    <target depends="test,jar,javadoc" description="Build and te." name="default"/>
+    <!-- 
+                ======================
+                INITIALIZATION SECTION 
+                ======================
+            -->
+   <target name="-pre-init">
+        <!-- Empty placeholder for easier customization. -->
+        <!-- You can override this target in the ../build.xml file. -->
+    </target>
+    <target%depends="-pre-i-private">
+        <property file="nbproject/prierties"/>
+        <property file="nbproject/privnfig}.properties"/>
+        <property file="nbproject/private/private.properties"/>
+    </target>
+    <tt de,-init-private" name="-init-user">
+        <property file="${user.properties.file}"/>
+        <!-- The two properties below are usually overridden -->
+        <!-- by the active platform. Just a fallback. -->
+        <property name="default.javac.source" value="1.4"/>
+        <property name="default.javac.target" value="1.4"/>
+    </target>
+    <target depends="-pre-init,-init-private,-init-user" name="-init- roject">
+        <property file="nbproject/configs/${config}.proper

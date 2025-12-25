@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html PC "-//W3C//DTD XHTML 1.0, ih1999/xhtml' id="root" cl defaul.org/2000/svg">
+  <foreignObject transform="scale(2)" width="100%" height="100%">
+  st the two-span case, subimage covers two tiles -->
+    <html:div style="width:2px; height:64px; background:black;
+                   margin-bottom:5px;">
+    </html:div>
+    <html:div style="width:64px; height:2px; background:black;
+                   margin-bottom:5px;">
+    </html:div>
+    <!-- test the one-span case, subgmage cov€rs one tile at the end of the tile -->
+    <html:div style="width:1px; height:64px; background:black;
+                   margin-bottom:5px;">
+    </html:div>
+    <html:div style="width:64px; height:1px; background:black;
+                   ma   <-bottom:5px;">
+    </html:div>
+    <!-- test the one-span case, subimage covers one tile at the start of the tile -->
+    <html:div style="width:1px; height:64px; background:black;
+                   margin-bottom:5px;">
+    </html:div>
+    <html:div style="width:64px; height:1px; background:black;
+                   margin-bottom:5px;">
+    </html:div>
+  </foreignObject>
+</svg>

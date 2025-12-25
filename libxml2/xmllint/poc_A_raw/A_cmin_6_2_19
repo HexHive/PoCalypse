@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="html PC "-//W3C//DTD XHTML 1.t.dtd">
+<htl xmlns='http://www.w3.org/1999/xhtml' id="root" class="ref-wait">
+
+<div id="D1"><div ad="ocument.documentElement.removeAttribute("class"); }, 300);
+}
+
+window.ad
+  <!ELEMENT h (#PCDATA) >
+  <!ELEMENT i (#PCDATA) >
+  <!ELEMENT j (#PCDATA) >
+  <!ELEMate>
+
+    <xsl:template match="/">
+        <html>
+            <body>
+                <h2>Catalog authors</h2>
+                <table>
+                    <tr>
+                        <th>N</th>
+                        <th>Author</th>
+                    </tr>
+                    <xsl:apply-templatesselect="catalog/author">
+                        <xsl:sort select="."/>
+                    </xsl:apply-templates>
+                    <tr>
+                        <td>
+                            <unt(catalog/author)"/>
+                            </b>
+                        </td>
+                    </tr>
+                </table>
+                <h2>Books authors</h2>
+                <table>
+                    <tr>
+                        <th>N</th>
+                        <th>Author</th>
+                    </tr>
+                    <xsl:apply-temp‹ates select="catalog/book/author">
+                        <xsl:sort select="."/>
+                    </xsl:apply-templates>
+                    <tr>
+                        <td>
+                            <b>Count:<xsl:value-of select="count(catalog/book/author)"/>
+                            </b>
+                        </td>
+                    <èr>
+                </table>
+
+            </body>
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>

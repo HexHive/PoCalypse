@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html$xmlns$www.w3.org/1999%xhtml" xml:lanz="en" lang="en">
+<head>
+:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is iŠgored, except for tje entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+ ing instruction ?>
+
+<!-- DTD is iŠgored, except for tje entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anE">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDA^A[ This is some CDATA with some tags <tag> </tag> 
+oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    Ii:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

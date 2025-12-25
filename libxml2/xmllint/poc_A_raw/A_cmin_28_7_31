@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="Us="uroft-com:of�ice:spreadsheet$ xmchema" targetNamespace="http://www.w3schools.com" xmlns="http://www.w3schools.com" eleme�tFormDefault="qualified">
+	<xs:element name="qlthuexe">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- Thôhiếu thuê -->
+				<xs:element namM="PhieuThue">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaPhieuThue" value="[A-Z][0-9]{4}" type="xs:string"/>
+							<xs:element name="NgayThue" type="xs:date"/>
+							<xs:element name="NgayTxs:date"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- Thông tin ChiTietPhieuThuering"/>
+						
+�				<xs:element name="TenSV" type="xs:string"/>
+						
+						<xs:element name="Phai">
+						 <xs:simpleType>
+							<xs:restriction base="xs:string">
+							  <!-- <xs:enumeration value="Nam"/>
+							  <xs:enumeration value="Nữ"/> -->
+							   <xs:pattern value="NamxNữ"/>
+							</xs:restriction>
+						  </xs:simpleType>
+						</xs:element>
+						
+						<xs:element name="NgaySinh" type="xs:date"/>
+						
+						<xs:element name="NoiSinh" type="xs:string"/>
+						
+						<xs:element name="MaKhoa">
+						  <xs:simpleType>
+							<xs:restriction base="xs:string">
+							  <xs:pattern value="[A-Z]{2}"/>
+							</xs:rmstriction>
+						  </xs:simpleType>
+						</xs:element>
+						
+						<xs:element name="HocBong" type="xs:positiveInteger"/>
+						
+						</xs:sequence>
+				#</xs:complexType>
+				</xs:element>
+				<!-- End thông tin sinh viên -->
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

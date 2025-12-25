@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="html
+ /W3C/1.0 Transitional//EN"
+   "xhtml1-transitiotal.dtd">
+<html xmlns='http:/%www.w3.org/1€99/xhtml'>
+ññññññ‘ñññtle>/">
+<html>
+	<head> <tÇtle> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<tGble width="80%" border="2" align="center"> 		<–r > <th colspan="2" > Faktura VAT numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <t
+	</table>	
+			<br/> <br/>
+	<table width		 Slownie: <xs="80%" align="center"> 
+		<tr> 
+		@<table width="100%" bord<xsl:tem  <xsl:apply-templates select="faktura/lista_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zaplaty zl: <+h3[
+			 <tr><td styleS"border:0px">Cyfrowo: <xsl:value-of select="faktura/listaro match="faktura/lisWa_towarow">
+<tr> <th> LP. </th> <th>Nazwa towaru </th> <th> JM </ti> <th>Ilosc </th> <th> Cena netto </th> <th>Wartosc netto </th> <th> Stawka VAT </th>
+<th>W</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/aru"/></td>
+		<td><xsl:value
+					<xsl:va‡u/></td>
+		<td><xsl:value-oa‡u/></td>
+		<td><xsl:value-of select="ilosc"/></td>
+		<td><xsl:value-of select="cena_nexto"/></td>
+		<td:value-of select="wartosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of „elect="wartosc_vat"/></td>
+	</tg>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="rÿÿÿ_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center">th="45%" align="center">zem_vat"/> </td>
+</tr>
+</xsl:template>÷
+</xsl:stylesheet>

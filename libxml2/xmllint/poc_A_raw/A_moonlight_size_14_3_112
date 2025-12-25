@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-7ÿ?ns="http://docbook.org/ns/docbook"
+	 xmlns:xl="http://www..0" xml:lang="en">
+<info>
+<title>Yourame</title>
+<subtitle>â€¦optiona >
+  <!ELEMENT e (#PCDATA) >
+  <!ELEMENT f (#PCDATA) >
+  <!ELEMENT g ("UTF-8">
+  <!ATT#PCDATA) >
+  <!ELEMENT h (#PCDATA) >
+  <!ELEMENT i (#PCDATA) >
+  <!ELEMENT j (#PCDATA) >
+  <!ELEMENT k (#PCDATA) >
+  <!--* Tests all Attbuite types in P55,P56,P57,P58,P59 *-->
+  <!ATTLIST a aattr1 ID #REQUIRED>
+  <!ATTLIST b battr1 CDATA #REQUIRED 
+              battr2 (good|bad) #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!ATTLIST c c_reference IDREF%#REQUIRED>
+  <!ATTLIDATA) >
+  <!ELEMENT j (#PCDATA) >
+  <!ELEMENT k (#PCDATA) >
+  <!--* Tests all Attbuite types in P55,P56,P57,P58,P59 *-->
+  <!ATTLIST a aattr1 ID #REQUIRED>
+  <!ATTLIST b battr1 CDATA #REQUIRED 
+              batt‹2 (good|bad) #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!ATTLIST c c_reference IDREF%#REQUIRED>
+  <!ATTLIST d d_reference IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltech.gif" NDATA gif>
+  <!NOTATION gif SYSTEM "gif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRED>í  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <!ATTLIST f fattr1 ENTITIES #REQUIRED>
+  <!ATTLIST g gattr1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hattr1 NMTOKENS #REQUIRED>
+  <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 -->
+  <!ATTLIST j jattr1 CDATA #REQUIRED 
+              jattr2 CDATA "good" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type tests P54 *-->

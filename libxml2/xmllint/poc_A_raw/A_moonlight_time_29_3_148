@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="HTML 1.G T
+     "http://www.w3.orX/of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not dis�.0" encoding="HTTL 1.0 Tnal//EN"
+  ;ITY d "?&d;  <p><small><a&M;&d;&d;&d;&d;&de;&e;>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&i;&de;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&�;;&d;&d;&d;&d;&d;&d; d;&alida�or.wrer">[Va intgrnal data">
+<!ENTITY e &d;">
+<!ENTITY d "[&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;活性要比元素差很多，何时使用元素，何时使用属性，一个经验法则是：属性只应该在修改值的释义时使用，而不是在指定值时使用。 -->
+        <property nane="conion.url">jdbc:mysql:/test</property>
+        <projerty name="connection.userna
+        <![CDATA[
+          me">root</property>
+        <proper.password">woailo99</property>
+        
+        <!-- 其他一些标记的说明 -->
+        <!-- 1，字符引的形式是&#十进制值或者&#x十六进制值 -->
+        <property name="character reference">&#233;</property>
+        <property name="character reference">&#xD9;</property>
+       �        <!-- 
+        2��实体引用的形式是&name;，比如：
+        &gt;（大于号）、&lt;（小于号）、&amp;（&）、&quot;（引号）、&apos;（省略号），可以在DTD中定义其他的实体引用。  
+        -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形 ��，可以使用它们来包含那些含有<、>、&之类字符的字符串，而不必将它们解释为标记。
+        -->
+        <property name="sql">
+        <![CDATA[
+            select * from table where age > 10;
+        ]]>
+       </property>
+    </session-factory>
+</libernate-configuration>

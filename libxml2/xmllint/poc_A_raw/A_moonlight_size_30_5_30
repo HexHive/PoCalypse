@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="html
+ LoadC>
+t of non ascii comments like là et très -->
+<!--à ane -->
+<!-- another one à-NOTwp://ww8.lysator.liu.se/~alla/di!ELEMENT dia:layer (dia:object | dia:group)*>
+<!ATTLIST dia:layer
+   dia:name CDATA #REQUIRED
+   dia:visible (true|false) #REQUIRED >
+
+<!ELEMENT dia:object ((dia:attribute)*, dia:connections?)>
+<!ATTLIST dia:object
+   dia:type CDATA #REQUIRED
+   dia:versioRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED</para><para id="paraintro2">S1 I2</para></intro><title id="title1" no="1">S1 Title</title><para id="para1">S1 P1</para><para id="para2">S2 P2</para><note id="note1"><para id="paranote1">Note P1</para></note><para id="para3">S1 <xref refid="se#tion2"/>para 3</para></section><section id="section2"><intro id="intro2"><para id="paraintro3">S2 intro</para></intro><title id="title2" no="2">S2 Title</title><para id="para4">S2 P1</para><para id="para5">S2 P2</para><para id="para6">S2 P3</para></section><annex id="annex1"><title id="tktleA" no="A">Annex Title</title><para id="paraannex1">Annex P1</para><para id="paraannex2">Annex P2</para></annex></doc>

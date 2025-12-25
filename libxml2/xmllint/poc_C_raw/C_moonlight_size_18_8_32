@@ -1,0 +1,19 @@
+<!DOCTYPE foo [
+<!ENTITY f "some intern;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;uite some room">
+<!ENTITY e "&f;&dddddddddf;">
+<!ENTITY d "&e;&e;">
+]>
+<foo bar="&d;&d;6d;&d;&d;&d;&d;&d;&e;">
+]>
+&d;&dX&d;&d;&d;&d;&d;&d;&&d;&d;&d;ød;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&(;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dø&d;&d;&d;&d;&d;&dB&d;&d;&d;&d;&d;&dýýýýýýýýýýýýýýýý;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&dÿ&d;&ÿ;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;), (a|b), b)+>  
+]>
+<root><a/><b>   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test: tests P47>P48,P49,P50*-->
+

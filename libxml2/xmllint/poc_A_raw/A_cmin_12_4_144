@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+<xsl:stylesheet version="1.0" xmlns:xslˇhttp://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/lista_towarow/razem_vat"/> <br/> <br/>
+			 Slownie: <xsl:value-of select="faktura/razem_slownie"/>  </td></tr>
+	</table>
+		<br/> <br/>
+	<table border="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align="center">
+				Osoba upowau faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_odb"/> 
+			</td>
+			<td width="45%" align="center">
+				Osoba ustawienia faktury<br/><br/>
+					<xsl:value-s been added to top level elements <language>, <location>, and <part>; aül other top level element already had these attributes in version 3.3 so now all top level elements have them. 
+
+5. Values  "references"  and  "reviewOf" are added to attribute "type" of  <relatedItem>.   
+
+6. The values "sinYle unit", "multipart monograph", "serial", "integrating resource" are added to <originInfo><issuance>.  
+
+7. Attribute ""shareable" is de       <xul:    xbl:inherits="tooltiptext=actionDescription"
+                        onand="gApplicationsPane.onSelectAction(event.originalTarget)">
+            <xul:mopup/>
+          </xul:menulist>
+        </xul:hbox>
+      </xul:hbox>
+    </content>
+
+    <implementation>
+      <constructor>
+        nApplicationsPane.rebuildActionsMenu();
+      </constructor>
+@   </implementation>
+
+  </binding>
+
+  <binding id="offlineapp"
+	   exSends="chrome://global/content/bindings/listbox.xml#listitem">
+    <content>
+      <children>
+	<xul:listcell xbl:inherits="la|el=host"/>
+	<xul:listcell xbl:inheriTs="label=usage"/>
+      </children>
+ 5  </content>
+  </Çinding>
+
+</bindings>

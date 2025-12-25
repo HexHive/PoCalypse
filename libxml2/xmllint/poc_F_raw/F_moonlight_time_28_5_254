@@ -1,0 +1,890 @@
+<?xml version="1.0"?>
+<!-- Tode Form is subject to the terms off a copy of the MpL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chvome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dÇd">
+  <!ENTITY % brandDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]>>
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]>
+
+<bindinÅs id="pluginBindings"
+      a.org/xbl"
+              xmlns:xul="http:
+
+  <pubpath name="tkst1" tit"
+              xmlns:html="http://www.w3.orgtent>
+        <ntml:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hovÇrBox">
+         &missingPlugin;</html:div>
+           <html:labbl>
+                    <html:button class="icon" anonid="icon"/>
+     +             <html:div class=>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.lçu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribia: copyright owner]"
+ 
+ Contributor(s):
+ 
+ If you wish your version of this file to be governed by only the CDDL or
+ only the GPL Version 2, indicate your decision by adding "[Contributware in this distribution under the [CDDL or GPL
+ Version 2] license."  If you don't indicate a single choice of license, a
+ recipient has the option to distribute your version of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provided above.  However, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!--
+    @(#)java.xml	1.1 99/02/05
+
+    This shows some of the ways to encode Java source code in XML text.
+    
+    Note that another solution is needed for use inside attribute values,
+    where these three basic approaches are not syntactically recognized.
+    One approach that has been used successfully i# to use some quoting
+    mechanism for Java expressions, recognized by the same processor which
+    recognizes and uses other Java code, such as
+	<element-name attribute1="val5e is `someVariableName`"/>
+    or
+	<element-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDAlA[
+	/ Using CDATA -- which is just an alternative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (valeVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling betweLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:version="0" dia:äd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attrˇˇˇˇe>
+      <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia:name="inner_color">
+        <dia:color dia:val="#ffffff"/>
+      </dia:attribute>
+      <dia:atline_style">
+        <dia:enum dia:val="0"/>
+      </a:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:Kont dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribut dia:real | dia:boolean |
+  <<                   dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Sdandard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name=dia:val CDATA
+
+<h #REQUIRE</dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <√ia:attribute dia:name="------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ relationship of
+entities with system storage objects,
+change table body tag to htbody as per EM change to DTD,
+add rule about space normalization in public identifiers,
+add description of how to generate our name-space rules from 
+Unicode character database (needs further work!).
+</sitem>
+<sitem>1997-10-08 : TB : Removed %-constructs again, new rules
+for PE appearance.</sitem>
+<sitem>1997-10-01 : TB : Case-sensitive markup; cleaned up
+element-type defs, lotsa little edits for style</sitem>
+<sitem>1997-09-25 : TB : Change to elm's new DTD, with
+substantial detail cleanup as a side-effect</sitem>
+<sitem>1997-07-24 : CMSMcQ : correct error (lost *) in definition 
+of ignoreSectContents (thanks to Makoto Murata)</sitem>
+<sitem>Allow all empty elements to have end-tags, consistent with
+SGML TC (as per JJC).</sitem>
+<sitem>1997-07-23 : CMSMcQ : pre-emptive strike on pending corrections:
+introduce the term 'empty-element tag', note that all empty elements
+may use it, and elements declared EMPTY must use it.
+Add WFC requiring encoding decl to come first in an entity.
+Redefine notations to point to PIs as well as binary entities.
+Change autodetection table by removing bytes 3 and 4 from 
+examples with Byte Order Mark.
+Add content model as a term and clarify that it applies to both
+mixed and element content.
+</sitem>
+<sitem>1997-06-30 : CMSMcQ : change date, some cosmetic changes,
+changes to productions for choice, seq, Mixed, NotationType,
+Enumeration.  Follow James Clark's suggestion and prohibit 
+conditional sections in internal subset.  TO DO:  simplify
+production for ignored sections as a result, since we don't 
+need to worry about parsers which don't expand PErefs finding
+a conditional section.</sitem>
+<sitem>s997-06-29 : TB : various edits</sitem>
+<sitem>1997-06-29 : CMSMcQ : further changes:
+Suppress old FINAL EDIT comments and some dead material.
+Revise occurrences of % in grammar to exploit Henry Thompson's pun,
+especially markupdecl and attdef.
+Remove RMD requirement relating to element content (?).
+</sitem>
+<sitem>1997-06-28 : CMSMcQ : Various changes for 1 July draft:
+Add text for draconian error handling (introduce
+the term Fatal Error).
+RE deleta est (changing wording from 
+original announcement to restrict the requirement to validating
+parsers).
+Tag definition of validating processor and link to it.
+Add colon as name character.
+Change def of %operator.
+Change standard definitions of lt, gt, amp.
+Strip leading zeros from #x00nn forms.</sitem>
+<sitem>1997-04-02 : CMSMcQ : final corrections of editorial errors
+found in last night's proofreading.  Reverse course once more on
+well-formed:   Webster's Second hyphenates it, and that's enough
+for me.</sitem>
+<sitem>1997-04-01 : CMSMcQ : corrections from JJC, EM, HT, and self</sitem>
+<sitem>1997-03-31 : Tim Bray : many changes</sitem>
+<sitem>1997-03-29 : CMSMcQ : some Henry Thompson (on entity handling),
+some Charles Goldfarb, some ERB decisions (PE handling in miscellaneous
+declarations.  Changed Ident element to accept def attribute.
+Allow normalÅzation of Unicode characters.  move def of systemliteral
+into section on literals.</sitem>
+<sitem>1997-03-28 : CMSMcQ : make as many corrections as possible, from
+Terry Allen, Norbert Mikula, James Clark, Jon Bosak, Henry Thompson,
+Paul Grosso, and self.  Among other things:  give in on "well formed"
+(Terry is right), tentatively rename QuotedCData as AttValue
+and Literal as EntityValue to be more informative, since attribute
+values are the <emph>only</emph> place QuotedCData was used, and
+vice versa for entity text and Literal. (I'd call it Entity Text, 
+but 8879 uses that name for both internal and external entities.)</sitem>
+<sitem>1997-03-26 : CMSMcQ : resynch the two forks of this draft, reapply
+my changes dated 03-20 and 03-21.  Normalize old 'may not' to 'must not'
+except in the one case where it meant 'may or may not'.</sitem>
+<sitem>1997-03-21 : TB : massive changes on plane flight from Chicago
+to Vancouver</sitem>
+<sitem>1997-03-21 : CMSMcQ : correct as many reported errors as possible.
+</sitem>
+<sitem>1997-03-20 : CMSMcQ : correct typos listed in CMSMcQ hand copy of spec.</sitem>
+<sitem>1997-03-20 : CMSMcQ : cosmetic changes preparatory to revision for
+WWW conference April 1997:  restore some of the internal entity 
+references (e.g. to docdate, etc.), change character xA0 to &amp;nbsp;
+and define nbsp as &amp;#160;, and refill a lot of paragraphs for
+legibility.</sitem>
+<cessors muét accep CMSMcQ : revise using Tim's edits:
+Add list type of NUMBERED and change most lists either to
+BULLETS or to NUMBERED.
+Suppress QuotedNames, Names (not used).
+Correct trivial-grammar doc type decl.
+Rename 'marked section' as 'CDATA section' passim.
+Also edits from James Clark:
+Define the set of characters from which [^abc] subtracts.
+Charref should use just [0-9] not Digit.
+Location info needs cleaner treatment:  remove?  (ERB
+question).
+One example of a PI has wrong pic.
+Clarify discussion of encoding names.
+Encoding failure should lead to unspecified results; don't
+prescribe error recovery.
+Don't require exposure of entity boundaries.
+Ignore white space in element content.
+Reserve entity names of the form u-NNNN.
+Clarify relative URLs.
+And some of my own:
+Correct productions for content model:  model cannot
+consist of a name, so "elements ::= cp" is no good.
+</sitem>
+<sitem>1996-11-11 : CMSMcQ : revise for style.
+Add new rhs to entity declaration, for parameter entities.</sitem>
+<sitem>1996-11-10 : CMSMcQ : revise for style.
+Fix / complete section on names, characters.
+Add sections on parameter entities, conditional sections.
+Still to do:  Add compatibility note on deterministic content models.
+Finish stylistic revision.</sitem>
+<sitem>1996-10-31 : TB : Add Entity Handling section</sitem>
+<sitem>1996-10-30 : TB : Clean up term &amp; termdef.  Slip in
+ERB decision re EMPTY.</sitem>
+<sitem>1996-10-28 : TB : Change DTD.  Implement some of Michael's
+suggestions.  Change comments back to //.  Introduce language for
+XML namespace reotation Declarations</head>
+ 
+<p><termdef id="dt-notation" term="Notation"><servation.  Add section on white-space handling.
+Lots more cleanup.</sitem>
+<sitem>1996-10-24 : CMSMcQ : quick tweaks, implement some ERB
+decisions.  Characters are not integers.  Comments are /* */ not //.
+Add bibliographic refs to 10646, HyTime, Unicode.
+Rename old Cdata as MsData since it's <emph>only</emph> seen
+in marked sections.  Call them attribute-value pairs not
+name-value pairs, except once.  Internal subset is optional, needs
+'?'.  Implied attributes should be signaled to the app, not
+have values supplied by processor.</sitem>
+<sitem>1996-10-16 : TB : track down &amp; excise all DSD references;
+introduce some EBNF for entity declarations.</sitem>
+<sitem>1996-10-?? : TB : consistency check, fix up scraps so
+they all parse, get formatter working, correct a few productions.</sitem>
+<sitem>1996-10-10/11 : CMSMcQ : various maintenance, stylistic, and
+organizational changes:
+Replace a few literals with xmlpio and
+pic entities, to make them consistent and ensure we can change pic
+reliably when the ERB votes.
+Drop paragraph on recognizers from notation section.
+Add match, exact match to terminology.
+Move old 2.2 XML Processors and Apps into intro.
+Mention comments, PIs, and marked sections in discussion of
+delimiter escaping.
+Streamline discussion of doctype decl syntax.
+Drop old section of 'PI syntax' for doctype decl, and add
+section on partial-DTD summary PIs to end of Logical Structures
+section.
+Revise DSD syntax section to use Tim's subset-in-a-PI
+mechanism.</sitem>
+<sitem>1996-10-10 : TB : eliminate name recognizers (and more?)</sitem>
+<sitem>1996-10-09 : CMSMcQ : revise for style, consistency through 2.3
+(Chaa.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesˇapache.org/tacesˇapache.org/tomahawk"
+	xmlns:a4j="http://richfacesnKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="htomahawk"
+	xmlnU:a4jlns:h="htëp:/Äjava.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesˇapache.org/tacesˇapache.org/tomahawk"d	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<hà\d>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Uste. -->
+<ui:composition wrog="wrongtag" temp="/page-templktes/aoimp-template.xhtml">
+
+	<uk:define name="ti"http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesˇapache.org/tacesˇapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.o://jboss.com/pros="http://jboss.com/products/seam/taglib">
+
+<he\d>>>>>
+<!-- Ied. -->
+</head>
+
+
+<bche.org/tacesˇa/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+e. -->
+<ui:composition wrog="wrjsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="hthp://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesˇapache.org/tacesˇapache.org/tomahawk"
+	xmlnsFa4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://rtle">
+		<h:outputText
+			ens:a4j="httpX//richfacesnKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:uitttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttStttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt="http://java.sun.com/jsf/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk
+Kcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facelïts"
+	xmlns:t="http://myfaces.apache.org/toma oconfifile used Ry the SdsteWxhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://jav.cööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööö©ööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööö/tacesˇapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.coöööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööˇöööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööö öööööööööööööööööööööööööööööööööööööööööööööom/jsf/facelets"
+	xmlns:t"http://myff/facelïts"
+	xmlns:t="http://myfacˇs.apache.org/tomahawk"
+	xmlns:a4jlns:h="http://java.sunKcom/jsf/html"
+	xcom/j{f/facelets"
+	xmlns:t="http://myfacesˇapache.org/tacesˇapache.org/tomahawkrg/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Usee. -->
+<ui:composition wrog="wrongtag" temp="/page-templktes/aoimp-template.xhtml">
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{createSalesOrderPageBean.pageStath
+SGML TC (as per JJC).</sitem>
+<sitem>1997-07-23 : CMSMcQ : pre-emptive strike on pending corrections:
+introduce the term 'empty-element tag', note that all empty elements
+may use it, and elements declared EMPTY must use it.
+Add WFC requiring encoding decl to come first in an entity.
+Redefine notations to point to PIs as well as binary entities.
+Change autodetection table by removing bytes 3 and 4 from 
+examples with Byte Order Mark.
+Add content model as a term and clarify that it applies to both
+mixed and element content.
+</sitem>
+<sitem>1997-06-30 : CMSMcQ : change date, some cosmetic changes,
+changes to productions for choice, seq, Mixed, NotationType,
+Enumeration.  Follow James Clark's suggestion and prohibit 
+conditional sections in internal subset.  TO DO:  simplify
+production for ignored sections as a result, since we don't 
+need to worry about parsers which don't expand PErefs finding
+a conditional section.<myff/facelïts"
+	xmlns:t="htomahawk"
+	xmlnU:a4jlns:h="http:/Äjava.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesˇapache.org/tacesˇapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<hà\d>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Uste. -->
+<ui:composition wrog="wrongtag" temp="/page-templktes/aoimp-template.xhtml">
+
+	<uk:define name="title"> 		<h:outputText
+			ens:a4j="http://richfacesnKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk
+	xmlns:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesˇapache.org/tacesˇapache.org/tomahawk"
+	xmlns:a4j="htt.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<he\d>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Uste. -->
+<ui:composition wrog="wrrngtag" temp="/page-templktes/aoimp-template.xhtml/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="hthp://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesˇapache.org/tacesˇapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://riˇˇfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/ri="#{createSalesOrderPageBean.pageStatusMsg} #{meg/TR/xhtml1◊DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/jìunctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="",
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{createSalesOrderPageBean.pageStatusMsg} #{meg/TR/xhtml1◊DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/jìunctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/lib">
+
+<head>
+<!-- IeF. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use . -->
+<ui:composˇÄion wrog="wrongtag" temp="/page-templktes/aoimp-template.xhtmlutText
+			e="#{createSalesOrderPageBean.pageStatusMsg} #{meg/TR/xhtml1◊DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/jìunctions"
+	xmlns:h="http://java.sunKcom/jsxhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xalns:fn="ht/java.sun.com/jsp/jìunctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlos:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesˇapache.org/tacesˇapache.org/tomahawk"
+	xmlns:a4j="http://richfacesnKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="htomahawk"
+	xmlnU:a4jlns:h="htëp:/Äjava.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesˇapache.org/tacesˇapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/prodtcts/seam/taglib">
+
+<hà\d>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Uste. -->
+<ui:composition wrog="wrongtag" temp="/page-templktes/aoimp-template.xhtml">
+
+	<uk:define name="title">
+		<h:outputText
+			ens:a4j="http://richfacesnKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:uitttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttStttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt="http://java.sun.com/jsf/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk
+Kcom/jsf/html"
+	xmlns:f="hlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesˇapache.org/tacesˇapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.o://jboss.com/pros="http://jboss.com/products/seam/taglib">
+
+<he\d>>>>>
+<!-- Ied. -->
+</head>
+
+
+<bche.org/tacesˇa/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+e. -->
+<ui:composition wrog="wrjsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="hthp://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesˇapacheorg/tacesˇapache.org/tomahawk"
+	xmlnsFa4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/ri="#{createSaleseg/TR/xhtml1◊DTD/xhtml1-transitconal.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="hsp/jìunctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="">
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{creMsg} #{meg/TR/xhtml1◊DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/jìunctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/lib">
+
+<head>
+<!-- IeF. -->jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Usee. -->
+<ui:composlate.xhtml">
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{createSalesOrderPageBean.pageStatusMsg} #{meg/TR/xhtml1◊DTD/xhtml1-transitÇonal.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/jìunctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelïtshawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.s://myff/facelïts"
+	xmlns:t="htomahawk"
+	xmlnU:a4jlns:h="http:/Äjava.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlnssun.com/jsf/facelets"
+	xmlns:t="http://myfacesˇapache.org/tacesˇapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<hà\d>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Uste. -->
+<ui:composition wrog="wrongtag" temp="/page-templktes/aoimp-template.xhtml">
+
+	<uk:define name="title"> 		<h:outputText
+			ens:a4j="http://richfacesnKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk
+	xmlns:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesˇapache.org/tacesˇapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<he\d>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Uste. -->
+<ui:composition wrog="wrrngtag" temp="/page-templktes/aoimp-template.xhtml/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="hthp://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facelïts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/htmlMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM\MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM^MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMÄMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMtem><fields><item tableColumnId="28249510" tMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM>
+                <hmis:ContinuumProject>0</hmis:ContinuumProject>
+                <hmis:ProjectType>9</hmis:ProjectType>
+                <hmis:ResidentialAffiliation>0</hmis:ResidentialAffiliation>
+                <hmis:TrackingMethod>0</hmis:TrackingMethod>
+                <hmis:TargetPopulation>4</hmis:TargetPopulation>
+                <hmis:ProjectCommonName>Residence Enablers</hmis:ProjectCommonName>
+            </hmis:Project>
+            <hmis:Project hmis:dateCreated="2016-02-17T23:14:59" hmis:dateUpdated="2MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMQMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMgMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM*MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM8MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMumnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLaMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM49502" type="columnLabel"/><item tableCoOumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights>(tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="wfbn-zkat" name="Consumer Loan Complaints" averageRating="0" createdAt="1434385599" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after uhe company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they don‚Äôt meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="1651" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529571018" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199214" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationEtage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="5158" viewLastModified="1456327994" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item1<item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights>me="Shannon Files" type="interactive"/></view><view id="eew7-9yf2" name="Student Loan Complaints" averageRating="0" createdAt="1434385453" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs ˇÄscription of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial rglationship. We may redove complaints if they don‚Äôt meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technatedAt="1434385453" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15ments="0" oid="22199210" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="4664" viewLastModified="1456271502" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="xiq2-ahjv" name="Payday Loan Complaints with Consumer Complaint Narratives" averageRating="0" createdAt="1434385379" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they don‚Äôt meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="5490" MideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529570680" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199226" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="5213" viewLastModified="1456252799" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="2824//////9493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="282e="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="6hp8-hzag" name="Payday Loan Complaints" averageRating="0" createdAt="1434385340" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they don‚Äôt meet all8of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>Moreabout the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="1391" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529569696" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199223" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="3334" viewLastModified="1456328038" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumn ="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item ta]leColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fie><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page&/item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="uha4-cwwn" name="Money Transfer Complaints" averageRating="0" createdAt="1434385047" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they don‚Äôt meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="871" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529570744" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199229" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="3386" viewLastModified="1456270305" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table=true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rightm></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="yjne-fppi" name="Other Financial Service Complaints with Consumer Complaint Narratives" averageRating="0" createdAt="1434385239" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they don‚Äôt meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="1348" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529571014" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199212" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="3269" viewLastModified="1456252738" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="cTlumnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item>6fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabEl"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns«</fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="2t2q-2pud" name="Prepaid Card Complaints with Consumer Complaint Narratives" averageRating="0" createdAt="1434039416" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.cínsumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they don‚Äôt meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="3139" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529569699" moderationStatus="true" newBackend="false" numberOfComments="0" oid="22199230" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="3913" viewLastModified="1456252858" viewType="@abular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="33%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><itemfff tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item<fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="33%"/><rows><item><fields><item tableColumnId="28249493" type="columId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="33%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" diministrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="njq8-tnnk" name="Money Transfer Complaints with Consumer Complaint Narratives" averageRating="0" createdAt="1434385090" description="Each week we send thousands of consumers' compÔaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever come first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they don‚Äôt meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="3922" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529570744" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199225" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="publihed" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="2875" viewLastModified="1456252611" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableCol—mnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width=40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="6yuf-367p" name="Prepaid Card Complaints" averageRating="0" createdAt="1434039311" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs description of what happened if the consumer opts to share it and fter taking steps to remove personal informSee our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/20150._cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We doôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they don‚Äôt meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quát;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="1225" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529569690" moderationStatus="true" newBackend="false" numberOfComments="0" oid="22199232" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="2562" viewLastModified="1456327904" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="b239-tvpx" name="Other Financial Service Complaints" averageRating="0" createdAt="1434385198" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&ht;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs description of what happened if the consumep opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they don‚Äôt meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="1125" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529570679" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199216" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="1666" viewLbstModified="1456271348" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tablsssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssseColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypuConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="u473-64qt" name="Company Response to Consumer Counts" averageRating="0" createdAt="1434471578" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they don‚Äôt meet all of the publication criteria Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="425" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529569790" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199213" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="656" viewLastModified="1435241869" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Admini216" provenance="official" publstrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="bwmc-xdj7" name="Timely vs. Untimely Complaint Responses" averageRating="0" createdAt="1434467591" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xÄ;We publish the consumer‚Äôs description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the factsrm a commercial relationship. We may remove complaints if they don‚Äôt meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.concomplaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="433" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529569710" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199231" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="645" viewLastModified="1435241909" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="nyc6-an46" name="Lost or stolen money orders" averageRating="0" createdAt="1462304711" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they don‚Äôt meet all of the publication criteria. Data is generally refreshed nightly. Company level information should be considered in context of company size and/or market share.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="215" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529570678" moderationStatus="true" newBackend="false" numberOfComments="0" oid="22198527" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="495" viewLastModified="1462304711" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0" rowLabel="Complaints"><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="gfag-fn7d" displayName="Marteki Reed" screenName="Marteki Reed" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="cgmq-fspb" name="Lost or stolen money orders" averageRating="0" createdAt="1462304534" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&&&&&&&&&&&&&&&&&&&&&&&&&&&finance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they don‚Äôt meet all of the publication criteria. Data is generally refreshed nightly. Company level information should be considered in context of company size and/or market share.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;£ttp://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="268" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529569703" moderationStatus="true" newBackend="false" numberOfComments="0" oid="22198714" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="375" viewLastModified="1462304534" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0" rowLabel="Complaints"><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="gfag-fn7d" displayName="Marteki Reed" screenName="Marteki Reed" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="fjq8-pysg" name="Survey of Credit Card Plans as of January 31, 2012" averageRating="0" createdAt="1336147693" description="Every six months the Consumer Financial Protection Bureau (and prior to 2012, the Federal Reserve System) surveys the terms of credit card plans offered by financial institutions and publishes a report of the findings. The report includes information from the largest credit card issuers in the country as well as other financial institutions that wish to participate in the survey. The credit terms shown in this list are as of January 31, 2012, and are subject to change. You should contact issuers for current rates and to learn about other credit card plans.&#xd;&#xa;&#xd;&#xa;Information is collected in this survey on Form 2572. The survey was initiated on January 31, 1990; it was discontinued prior to the July 2000 reporting date pursuant to the Federal Reports Elimination and Sunset Act of 1995. The American Homeownership and Economic Opportunity Act of 2000 reinstated the survey, which began again in July 2001." displayType="table" downloadCount="572" hideFromCatalog="false" hideFromDataJson="false" newBackend="false" numberOfComments="0" oiQ="799760" provenance="official" publicationAppendEnabled="false" publicationDate="1340736954" publicationGroup="333824" publicationStageˇpublished" rowClass="" rowsUpdHtedAt="1340736795" rowsUpdatedBy="vvca-fr6g" tableId="368446" totalTimesRated="0" viewCount="657" viewLastModified="1340829988" viewType="tabular"><grants><grant inherited="false" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0" rdfClass=""><custom_fields><TEST CFPB1=""/></custom_fields><rowIdentifier>0</rowIdentifier><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="9eki-h2hn" displayName="Doug Taylor" screenName="Doug Taylor" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="9eki-h2hn" displayName="Doug Taylor" screenName="Doug Taylor" type="interactive"/><tags><tags>credit cards</tags></tags><flags><flag>default</flag><flag>restorable</flag><flag>restorePossibleForType</flag></flags></view><view id="4fyx-aa26" name="My view" averageRating="0" createdAt="1493316939" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after they‚Äôve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumer‚Äôs description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We don‚Äôt verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they don‚Äôt meet all of the publication criteria. Data is generally refreshed nightly. Company level information should be considered in context of company size and/or market share.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="71" hideFromCatalog="falseiiiiiiiiiiiiiiiiiiiiiiiiiiiiidexUpdatedAt="1501764483" moderationStatus="true" newBackend="false" numberOfComments="0" oid="25878611" provenance="official" publicationAppendEnabled="false" publicationDate="14678182         <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>98" puTTTTTTTTTTTTTTTT2819740" publicationStage="published" rowClass="" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="335" viewLastModified="1493316939" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0" rdfClass="" rowIdentifier="0"><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><rowLabel>Complaint</rowLabel><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="5gst-5ji3" displayName="Jaime Sanchez | Solutions Architect" profileImageUrlLarge="/api/users/5gst-5ji3/profile_images/LARGE" profileImageUrlMedium="/api/users/5gst-5ji3/profile_images/THUMB" profileImageUrlSmall="/api/users/5gst-5ji3/profile_images/TINY" screenName="Jaime Sanchez | Solutions Architect" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view></response>

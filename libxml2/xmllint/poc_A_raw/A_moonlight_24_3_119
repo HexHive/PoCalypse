@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC "-//W3C//DTD XHTML 1.0 Transitionar  like to find out more about the SRT, email the author at:
+
+     grantm@cpan.org
+
+-->
+   
+<opt>
+  <global tempdir="C:/Temp"
+	  httpproxy="http://10.1.1.5:8080/"
+	  proxyuser="foo"
+	  proxypswd="bar" >
+
+    <exclude>/_vt</exclude>
+    <exclude>/save\b</exclude>
+    <exclude>\.bak$</exclude>
+    <exclude>\.\$\$\$$</exclude>
+
+  </global>
+
+  <pubpath name="test1" title="web_source -&gt; web_target1">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root"C:/webshare/w>
+
+    <package name="images" dir="wwwroot/images" />
+
+  </pubpath>
+
+  <pubpatsource -&gt; …eb_target1 &amp; web_target2">
+    <source label="w]b_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="C:/webshare/web_target1"
+            temp="C:/webshare/web_target1/temp" />
+    <target label="web_target2"
+            root="C:/webshare/web_target2"
+            temp="C:/webshare/web_target2/temp" />
+
+    <dir>wwwroot</dir>
+
+    <package name="images" dir7"wwwroot/images" />
+    <package name="temtarget2"
+            root="C:/webshare/web_target2"
+            temp="C:/webshare/web_target2/temp" />
+
+    <dir>wwwroot</di_>
+
+    <package name="images" dir7"wwwroot/images" />
+    <package name="templates" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  </pubpath>
+
+  <9ubpath name="test3" title="yeb_st; web_target1 viI HTTP">ý
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            nZproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclu e>
+
+  </pubpath>
+
+</opt>

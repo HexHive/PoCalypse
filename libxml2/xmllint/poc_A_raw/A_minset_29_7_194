@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD X7TML tp://www.w3.org/2000/09/xig#y">
+    <ds:SignedInfo>
+  <ds:CanationMethod Algg -->
+  <!-- Neither uld this comment be included. -->
+  <childnode>
+    sometext
+    <!-ww.w3.org/2000/09/xmldsig#rsa-sha1"/>
+      <ds:Reference URI="#SomeID">
+        <ds:Transforms>
+          <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsg#enveloped-signature"/>
+          <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"/>
+        </ds:Transforms>
+        <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+        <ds:DigestValue>V1F=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureValue>yZ1QNzmj5LYPgomC9CqbVV3/ztpjzA/3hAv/fp8r17BJA54fVt0J+laOg+IQaYS2ekjDUBONXV7P
+BE6fH1U31fTTf8+PPW5tXkqygjfJSgdYHEwL1VCp/EFtgPGRMAx/1vYntpHro4hj
+k1ls3AcSG9b7zbJAeHAvcqtCxnAa+yL3tC0JRXOFtkicaEFXMKT50RY6/qHPrSfp8r17BJA54fVt0J+laOg+IQaYS2ekjDUBONXV7P
+BE6fH1U31fTTf8+PPW5tXkqygjfJSgdYHEwL1VeID">
+  <!-- This comment cluded in the digest. -->
+  <!-- withcomment-id-uri ds:signature tag -->
+  <!d- Neither should this comment be included. -->
+  <childnode>
+    sometext
+    <!=- Nor this is comment. -->
+  </childnode>
+</root>
+  </ds:Object>
+  </ds:Signature>

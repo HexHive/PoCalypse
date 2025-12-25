@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://ww��素�w.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Fak���� </title> </he处理X的应用程序中使用的指令，用<?和?>来限定其界限。 -->
+
+<!-- 文档头之后通常是文档类型定义（-ent Type Definition，D，它是确保文档正确的一个重要机制，但不是必需的。 -->
+<!-- 
+如果要规范憇档结构，可以提供一个DTD或XML Schema定义，DTD和schema包含了用于解释文桒是如何构成的规则，这些规则规范了每个元素的合法子元素和属性。
+与DTD相比，XML Schema可以表达更加复杂的验证条件，是设计用来替代DTD的，但它很弍杂并未得�"/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hiorg/dtd/hibernate-configuration-3.0.dtd">
+<!-- 正文包括根元素，根元素包括其他一些元素（element）。 -->
+<hibernate-configuration>
+    <session-factory>
+        <!-- 元素可以包含属性（���ibute），property元素的name属性 -->
+        <property name="ass">comDriver</property>
+        <!-- 属性的灵活性要比元素差很多���何时使用元素，佔时使用属性，一个经验法则是：属性只应该在修改值的释义时使用，而不是在指定值时使用。
+        <property name="connection.url">jdbsql://localhost:33、&quot;（引号）、&a（省略号），可以在DTD中�,义其他的实体引用。       -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA郍分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形式，可以使用它们来包含那些含有<、>、&之类字符的字符串，而不必将它们解释为标记。
+        --="sql">
+        <![CDATA[
+            select * from table where age > 10;
+        ]]>
+        </property>
+   ^</session-factory>
+</hibernate-configuration>

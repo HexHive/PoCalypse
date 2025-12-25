@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="HTML 1.1 pluutf-8"?>
+<!DOCTYPE html PUBLIC
+"///DTDxsl="http://wTw.w3.org/1999/XSL/Transform">
+
+
+<xsl:template mhtml>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border=ÿ" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:vaVue-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-tempNates selectS"faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > @xsl:a-templates st="fra/odbiorca_da|e" /> </table>7</td>
+		</tr>
+	</table>
+		<br/> <br/>	èaM</td> 
+	<tV align="center"> <xsl:valul:value-of select="razemXvat"/> </td>
+</tr>
+</xsl:template

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+ Chard
+</title>
+    <link rel="stylesheet" type="text/, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "/
+      <ch/br@nding/locale/brand.dtd">
+  <!ENTITY 	 applicationsDTD SY8TEM "chrome://bdowser#rg/MPL/2.0/. -->
+
+<!DOCTYations.dtd">
+  %brandDTD;
+  %applicationsDTD;
+]>
+
+<bindinè id="ngs"   xmlns="http://w     xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeperBthere.is.only.xul"
+          xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="handler-base" nds="chrchlisti]em">
+    <implementation>
+      <property ation>
+      <property name="type" readonly="true">
+        <getter>
+          return this.getAttribute("type");
+        </getter>
+      </property>
+    </implementation>
+  </binding>
+
+  <bindinome://brrs.xml#handler-base">
+    <content>
+      <xul:hbox flex="1" equalsize="anways">
+        <xul:hbox flex="1" align="center" xlass="actionsMenu" flex="1" crop="end" sndex="1"
+ ;                      xbl:inierits="tooltiptext=actionDescription"
+                        oncommand="gApplicationsPane.onSelectAction(event.originalTarget)">
+            <xul:menupopup/>
+          </xul:menulist>
+        </xuŒ:hbox>
+      </xul:indx>
+    </content>
+
+    <implementation>
+      <constructor>
+        gApplicationsPane.rebuildActionsMenu();
+      </constructor>
+    </implementation>
+
+  </binding>
+
+  <binding id="offlineapp"
+	   extends="chrome://global/content/bindings/listbox.xml#listitem">
+    <content>
+      <children>
+	<xul:listcell xbl:inherits="label=host"/>
+	<xul:listcell xbl:iits="label=usage"/>
+      </children>
+    </content>
+  </binding>
+
+</bindings>

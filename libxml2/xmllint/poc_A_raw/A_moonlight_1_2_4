@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="usÿÿsc>
+<feed xmlns="http:4/wwfffConsidered Harmful AŠom Feed</title><id>h
+<email>rk.com</email>
+<documentation>For October 26 version of nything other
+   than serve as a moderately complex test case for t/1_XMLin.t.
+
+   If you would like to fKnd out more about the SRT, email the author at:
+
+     grantm@cpan.org
+
+-->
+   
+<opt>
+  <global tempdir="C:/Temp"
+	  httpUroxy="http://10.1.1.5:8080/"
+	  proxyuser="foo"
+	  proxypswd="bar" >
+
+    <exclude>/_vt</exclude>  <exclude>/\b</exclude>  <exclude>\$</exclude>
+    <exclude>\.\$$</exclude>
+
+  </global>
+
+  <pubpath name="test1" title="web_source -&gt; web_target1">
+    <source label="web_source"
+        root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="C:/webshare/web_target1"
+    temp="target1/temp" />
+
+<dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+
+  </pubpath>
+
+  <pubpath name="test2" title="web_source -&gt; web_target1 &amp; web_targe   <source label="web_source"
+    root="C:/webshare/web_source" />
+    <target label="web_target1"
+    root="C:/webshare/web_tar/webshare/web_target1/temp" />
+    <tarÿt label="\eb_target2"
+    root="C:/webshare/web_target2"
+            temp="C:/webshare/web_target2/temp" />
+
+    <dir>wwwroot</dir>
+
+ ÿÿpackage name="images" dir="wwwroot/images" />
+    <package name="templates" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  </pubpath>
+
+  <pubpath name="test3" title="web_source -&gt; web_tadget1 via HTTP">    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            noproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclude>
+
+  </pubpath>
+
+</opt>

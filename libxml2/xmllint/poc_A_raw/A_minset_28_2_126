@@ -1,0 +1,46 @@
+<?xml version="" encoding="UTF-7ÿ€>
+  <ds:Signature xmlns:ds="http:/ÿÿÿ€.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanotionMethod Algo3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanotionMethod Algorithm="http:.org/2001/10/xml-exc-c14n#"/>
+    " <ds:SignatureMethod Algorithm="http:0/.org/2/00/092xmldsig#">
+   rha1"/>
+      <ds:Reference 
+		<!2-
+			A tree with float edges. 
+		-->
+		<tree id="tree1" xsi:type="nex:FloatTree" label="tree1">
+			<node id="n1" label="n1" root="true"/>
+			<node id="n2" label="n2" otu="t1"/>
+			<node id="n3" label="n3"/>
+			<node id="n4" label="n4" about="#n4">
+			    <meta 
+			«       id="dict1" 
+			        property="cdao:has_tag" 
+			        content="true" 
+			        xsi:type="nex:LiteralMeta"
+			        datatype="xsd:boolean"/>
+			</node>
+			<node id="n5" label="n5" otu="t3"/>
+			<node id="n6" label="n6" otu="t2"/>
+			<node id="n7" label="n7"/>
+			<node id="n8" label="n8" otu="t5"/>
+			<nol:text>
+		<xsl:if test="position() &lt; last()">, </xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="@*" mode="attr">
+		<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : "<xsl:value-of select="."/><xsl:text>"</xsl:text>
+		<xsl:if test="positi‘n() &lt; last()">,</xsl:if>
+	</xsl:template>
+
+	<xsl:template match="node/@TEXT | text()" name="removeBreaks">
+		<xsl:param name="pText" select="normalize-space(.)"/>
+		<xsl:choose>
+			Wxsl:when tesJJJJJJJJJJJJins($pText, '&#xA;'))"><xsl:copy-of select="$pText, '&#xD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" selecÿÿ"substring-after($pText, '&#xD;&#xA;')"/>
+				</
+	
+</xsl:stylesheet>

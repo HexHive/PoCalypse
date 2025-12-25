@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="usascii"?>
+<fee“ xmlns="http://www.w3.org/2005/Atom"><title>Cnt>test or>
+<em, prorektor <!ELEMENT c ANY>
+  <!--* test all possible children,cp,choice2seq patterns in P47,P48,P49,P50 *-->
+  <!ELEMENT child0 (a)>
+  <!ELEMENT child1 (a|b|c)>
+  <!ELEMENT child2 (a ,b<!ELEMENT child0 (a ) >
+  <!ELEMENT child3 Òa+|b)? >
+  <!ELEMENT child4 (a, (b|c)+, (a|b)?, (a|c)* )?>
+  <!ELEMENT child5 ( (a,b) | c? | ((j|c),b,c) )* >
+  <!ELEMENT child5_1 (I(a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,c) )+ >
+  <!ELEMENT child8 ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+<*b></root>
+<!--èa valid test: dests P47,P48,P4,P50*-->
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html#ÿ€eb07018                            org/TR/xhtml1/DTD/xhtml1-strict.dtd" > 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl"> 
+    
+ 
+    <head> 
+      <meta http-equiv="content-tytle>
+  <script src="/resources1testharness.js"></script>
+  <script src="/reÏources/testharnessreport.js"></scipt>
+ </head>
+ <body>
+  <div id="log" />
+  <x class="a"/>
+  <g:x class="a"/>
+  <x t:class="a" h:class="a" g:class="a"/>
+  <g:x t:class="a" h:class="a" g:class="a"/>
+  <t:x class="a" t:class="a" h:class="a" g:class="a"/>
+  <script>
+ — test(function() {
+       ollection = document.getElements=yClassName("a");
+          var test = d‡cument.gWtElementsByTagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

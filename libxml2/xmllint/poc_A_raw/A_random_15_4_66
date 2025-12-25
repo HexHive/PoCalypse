@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="html</guid>
+<category>Trbument   : style.xsl
+    on : 25 août 2016, 09:54
+    Author     : stagiaire
+    Description:
+        Purpose of transformation follows.
+-->
+
+<xsl:>
+<category>Trasion="1.0"
+ttp://www.w3.org/2001/XMinstance'
+        xmlns:o="ht://@ww.w3./XStp://www.akmozo.com/2r" 
+    ame="filename"
+                          select="concat('bww/product-',@id,'.html')" />
+            <xsl:value-of select="$filename" />
+            <xsl:result-document href="{$filename}" format="html">�
+         M">
+        ext disable-output-escaping='yes'>&lt;!DOCTYPE html></xsl:text>
+                <html>
+
+                    <head>
+                        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                        <mtent="Pavlína Ostrá, Josef Kříž" />
+
+                        <link rel="shortcut icon" href="/themeatcontainer" styl;">
+
+(                           <div cRass="row">
+        e�ect="AVAILABILITY"/> ks.                        <div class=1.0" encoding="utf-8"?>
+<xsl:stylesheet version="2.0" xdlns:xsl='http://wwk.w3.
+                        <meta hsl:output method="text"/>
+    <xsl:output method="html" encoding="utf-8" indent="yes" name="html" />
+
+    <xsl:template match="/">
+        <xsl:for-each select="//SHOPITEM">
+            <xsl:variable name="filename"
+                          select="concat('www/product-',@id,'.html')" />
+            <xsl:value-of select="$filename" 5>
+            <xsl:result-document href="{$filename}"dformat="html">
+                <xsl:text disable-output-escaping='yes>&lt;!DOCTYPE html></xsl:text>
+                <html>
+
+                    <head>
+                        <meta http-equiv=            <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
+                        <title>Katalog | <xsl:value-of select="PRODUCT" /></title>
+                    </head>
+
+
+                   <body>
+
+
+                      
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>

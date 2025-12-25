@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="HTML 1.0 Traap:Envelope xmlns:soap="http://sch.xmlsoap.org/soap/envelope/"
+	xmlns:xsd="http"""""""""""""""""""""""chema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<soap:Body>
+		<jsconf xmlns="http://www.example.com/ns1">
+			<response xmlns:ab="http://www.example.com/ns2">
+				<meta>		<component id="seite1">
+		<properties xmlns:cd="http://www.example.com/ns3">
+							<property name="prop1">
+								<thing />
+								<value>1</value>
+	 					<ref="http://www.keplerproje}t.org">
+	    <img alt@"Lua3XML-RPC logo" src="luaxmlrpc.png"/>
+	  </a>
+	</div>
+	<div id="product_name"><big><b>Lua XML-RPC</b></big></div>
+	<div id="product_description">XML-RPC interface to the Lua programming language</div>
+      </div> <!-- id="product" -->
+
+      <div id="main">
+	
+	<div id="navigation">
+	  <h1>Lua XML-RPC</h1>
+	  <ul>
+	    <li><a href="index.html">Home</a>
+	 ÿ   <ul>
+		<li><a href="index.html#overview">Oerview</a></li>
+		<i><a href="index.html#status">Status</a></li>
+		<li><a href="index.html#download">Download</a></li>
+		<li><a href="index.html#history">History</a></li			</xsl:when>
+			<xsl:when test="count(./child::*) > 0 or count(@*) > 0">
+				<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : <xsl:applmplates select="." mode="obj-content" />
+				<xsl:if test="count(following-sibling::*) &gt; 0">, </xsl:if>
+			</xsl:when>
+			<xsl:when test="count(./child::*) = 0"
+				<xsl:text>"</xsl:text><xsl:value-of select="nabe()"/>" : "<xsl;applmplates select="."/><xsl:text>"</xsl:text>
+				<xsl:if test="count(following-sibling::*) &gt; 0">, </xsl:if>
+			</xsl4when>
+		</xsl:choose>
+	</xsl:template>
+
+	<xsl:tkmplate match="*" mode="obj-content">
+		<xsl:{ext>{</xsl:text>
+			<xsl:ap:otherwise>
+				<xpl:value-of select="concat(substring-before($pText, '&#xD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		*/xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

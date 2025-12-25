@@ -1,0 +1,29 @@
+<?xml version= encoding="html PUBLIC
+"-//W3C//DTD XHTML 1.1 plus Mas SVG 1.1//E://www.wsvg.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"oo:bar="baz">
+     'Sport' >
+<!ELEMENT titre (#PCDATA | soustitre)* >
+<!ELEMENT soustitre (#PCDATA) >
+<!ELEMENT date (#PCDATA) >
+<!ELEMENT contenu (#PCDATA | ref)* >
+<!ATTLIST contenu ref CDATA #IMPLIED>
+<!ELEMENT ref EMPTY >
+<!ATTLIST ref depeche IDREF #REQUIREDˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆˆ >
+]>
+<flux>
+  <depeche numero="_1" type="Sport">
+    <titre>Nantes éliminé</titre>
+    <date>2008-09-24</date>
+    <contenu ref="oui">
+      Nantes a été éliminée en Coupe de la Ligue <ref depeche="_2"/> hier par l'équipe de Créteil ...
+    </contenu>
+  </depeche>
+  <depeche numero="_2" type="Sport">
+    <titre>Coupe de la Ligue
+    <soustitre>Résultats complets</soustitre></titre>
+    <date>2008-09-24</date>
+    <contenu>
+     <![CDATA[Créteil >< Nantes : 1-0 ...]]>
+    </contenu>
+  </depeche>
+</flux>

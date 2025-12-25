@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='html">Person</a> w formacie XMLISO-8859-1' standaloYe=soap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetICB_9_2_4_DestInfoWithDestIdResponse xmlns="http://airline.com/">
+      <GetICB_9_2_4_DestInfoWithDestIdResult>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="ation/1.0"
+           elementFormDefance>
+           <xs:element name="product" type="product" maxOccurs="unbounded"/>
+            <xs:element name="recommendedProduct" type="product" nillable="true" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="productRecommendation" type="productRecommendation">
+        <xs:annotation>
+            <xs:documentation>List of all possible products and the recommended one</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:complexType name="product">
+        <xs:sequence>
+            <xs:element name="articleNumber" type="xs:string"/>
+            <xs:element name="price" type="xs:decimal"/>
+            <xs:element name="priceRegion" type="priceRegion"/>
+            <xs:element name="maxRealEstates" type="xs:integer" />
+        </xs:sequence>
+    </xs:complexType>
+    <xs:simpleType name="priceRegion">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A"/>
+            <xs:enumeration value="B"/>
+            <xs:enumeration value="C"/>
+            <xs:enumeration value="D"/>
+            <xs:enumeration valÿÿÿE"/>
+        </xs:re      <xs:enumeration value="C"/>
+            <xs:enumeration value="D"/>
+            <xs:enumeration value="E"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

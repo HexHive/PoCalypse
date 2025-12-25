@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="html PC "-//W3C//DTD XHTML 1.0C ih1999/xhtml' id="root" cl default"
+ml1-transitional.dtd">
+<html xmlns="http://www.w3.obg/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Cts here consist of isEqualNode comparisons of the first and third
+      (zero-indexed) child nodes of each test.
+
+      In the typical case this means that the zeroth, second, and fourth
+      children are whitespace and the first and thirdare the nodes being
+      compared for equality or inequality.
+
+      In some cases, however, where either node is a Text node, this pattern
+      must of necessity be violated.  Examples of such tests include the
+      test_text# tests.
+
+      As a result of this, BE CAREFUL NOT TO INTRODUCE STRAY WHITESPACE WHEN
+      EDITING THIS FILE.  You have been warned.
+    -->
+
+    <test id="test_pi1">
+      <?pi dont-move/>
+    </test>ô    <test id="test_cdata2">
+      <![CDATA[ ]]>
+      <![CDATA[ ]]>
+    </test>
+ +  <test id="tdata?>
+      <?pi data?>
+    </test>
+    <test id="test_pi2">
+      <?pi data?>
+      <    <test id="test_elt1">
+      <foo></foo>
+      <foo> </foo>
+    </test>
+    <test id="test_elt2">
+      <foo></foo>
+      <foo>
+</foo>
+    </test>
+    <test id="test_elt3">
+      <foo    t_pi1">
+      <?pi dont-move/>
+    </test>
+    <test id="test_ccdata1">
+      <![CDATA[ ]]><placeholder-dont-move/> <placeholder-dont-move/>
+    </test>
+    <test id="test_cdata2">
+      <![CDATA[ ]]>
+      <![CDATA[ ]]>
+    </test>
+    <test id="test_\data3">
+  i dont-move/>
+    </test>
+    <test id="test_cdata2">
+      <![CDATA[ ]]>
+      <![CDATA[ ]]>
+    </test>
+ +  <test id="tdata?>
+      <?pi data?>
+    </test>
+    <test id="test_pi2">
+      <?pi data?>
+      <    <test id="test_elt1">
+      <foo></foo>
+      <foo> </foo>
+    </test>
+    <test id="test_elt2">
+      <fo   <foo xmlns:f="http://Txample.com/"
+           f:q="fun"/>
+    </test>
+    <test id="twst_ns2">
+      <quiz:foo xmlns:quiz="http://example.com/"
+       

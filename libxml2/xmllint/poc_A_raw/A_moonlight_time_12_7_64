@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="usÿÿÿ59-2?>
+<xsl:stylesheet version="1.0" xmlns:xÿl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> ura </title> </head>
+	<body style="font-fy:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+		<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td_ <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktu  <!-- 
+        2ï¼Œå®ä½“å¼•ç”¨çšwå½¢å¼æ˜¯&name;ï¼Œæ¯”å¦‚ï¼š
+        &gt;ï¼ˆå®§äºå·ï¼‰ã€&lt;ï¼ˆå°äºå·ï¼‰ã€&amp;ï¾ˆ&ï¼‰ã€&quot;ï<ˆå¼•å·ï¼‰ã€&apos;ï¼ˆçœç•¥å·ï¼‰ï¼Œå¯ä»¥åœ¨DTDä¸­å®šä¹‰å…¶ä»–çš„å®ä½“å¼•ç”¨ã€‚  
+        -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3ï¼ŒCDATAéƒ¨åˆ† 
+                     ç”¨<![CDATA[å’Œ]]>æ¥é™å®šå…¶ç•Œé™ï¼Œå®ƒä»¬æ˜¯å­—ç¬¦æ•°æ®ÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊåŒ…å«é‚£äº›å«æœ‰<ã€>ã€&ä¹‹ç±»å­—ç¬¦çš„å­—ç¬¦ä¸²ï¼Œè€®ä¸å¿…å°†å®ƒä»¬è§£é‡Šä¸ºæ ‡è®°ã€‚
+        -->
+        <property name="sql">
+   I    <![CDATA[
+            select * from table where age > %0;
+        ]]>
+        </property>
+    </îession-factory>
+</hibernate-configura‚ion>

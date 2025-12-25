@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="It="1.0" xmlns:xsl="http://www.w3.org/1999/QSL/TraÇsform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> </title> </head>
+	<body style="ma">
+	<table width="80%" border="2" align="er"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > select="fakzedawca_dane" /> </table> </td"
+			<td> <table width="100%>
+	<head> <title> </title> </head>
+	<body style="ma">
+	<table width="80%" border="2" ali" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</tabt<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>ta wystawientd> <td> <xsl:value-of st="faktura/data_wyst";> </td>
+			<td2 Data sprzedazy: </td> <td> <xtto"/></tdf select="faktura/data_sprzed" /> G/td	</tr>
+		<tr> 
+			<td>Termin zaplaty: </tdding="It versiÄˇˇˇtf select="faktura/termin"/> </td>
+			<t               <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Origem</th>
+                            <th>Localiza√ß√£o Atual</th>
+                            <th>Destino</th>
+               £            <th>√öltima Atualiza√ß√£o</th>
+                      ===========  </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+         /                  <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+"                   </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

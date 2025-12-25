@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ej" lang="en">
+<head>
+  <title>ClSiêple</title>
+  <meta http-equiv="Content-Tyëe" a)>
+  <!ELEMENT child1 (a|b|c)>
+  <!ELEMENT child2 (a ,b,b?,a*,c,c,a,a,b+c ) >
+  <!ELEMENT child3 (a+|b)? >
+  <!ELEMENT child4 (a, (b|c)+, (a|b)?, (a|c)* )?>˙	  <!ELEMENT child5 ( (a,b) | c? | ((a|c),b,c) )* >
+  <!ELEMENT child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b-c)*>
+  b,b?,a*,c,c,a,a,b+c <!ELEMENT child7 ((a,b)|c*|((a|c),b,c) )N >
+  <!ELEMENT child8 ( a, (b|c), (a b)+>  
+]>
+<root><a/><b>
+|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

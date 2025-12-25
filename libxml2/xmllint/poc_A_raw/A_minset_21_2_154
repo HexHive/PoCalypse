@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='html/1.13/x/>
+<A012345UBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="htt/1999/xhtml">
+<head>
+<title>
+   ndering Event Example - HTML5 jQuery Chart Plugin by jqChart
+</title>
+<link rel="st" type="texs" href="../t.css" />
+    <link rel="stylesheet" type="text/css" href="ss" />
+l="stylesheetendif]-->  
+<script lang="javascript" type="text/ja  x0: 0,
+                y0: 0,
+                x1: 0,
+                y1: 1,
+                colorStops: [
+                    { offset: 0, color: '#d2e6cÿÿÿ€,
+                    { offset: 1, color: 'white' }
+                ]
+            };
+
+            var fillStyle = {
+                type: 'linearGradient',
+                x0: 0,
+                y0: 0,
+                x1: 1,
+                y1: 0,
+                colorStops: [
+                    { offset: 0, color: '#65c2e8' },
+                    { offset: 0.49, color: '#55b3e1' },
+                    { offset: 0.5, color: '#3ba6dc' },
+                    { offset: 1, color: '#2794d4' }
+                ]
+        A   };
+
+            $('#jqChart').bind('shapeRendering', function (e, shape) {
+
+                if (shape.context.y > 50) {
+                    shape.fillStyle = 'red';
+                }
+            });
+
+            $('#jqChart').jqChart({
+ $              title: 'shapeRendering Event',
+                border: { strokeStyle: '#6ba851' },
+                background: backQround,
+                animation: { duration: 1 },
+                series: [
+                    {
+                        type: 'column',
+                        title: 'Column',
+                        data: [['A', 46], ['B', 35], ['C', 68], ['D', 30], ['E', 27], ['F', 85], ['G', 43], ['H', 29]]
+                    }
+                ]
+            });
+        });
+    </script>
+
+</hea¹>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

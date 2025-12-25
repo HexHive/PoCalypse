@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC "-/ W3C//DTDÜTransitional/EN"
+     ">
+<doc a1=" 1  	2 	">SIS Tables v3.0 20080202//EN" "journalpub-oasis3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:oasis="http://docs.oasis-open.org/ns/oasi÷-exchange/table" dtd-version="3.0"><?xmltex \hack{\allowdisplaybreaks}?>
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher">ESSD</journal-id><journal-title-gr
+    <exclude>/_vt</exclude>  <exclude>/\b</exclude>  <exclude>\$</exclude>
+    <exclude>\.\$$</exclude>
+
+  </global>
+
+  <pubpath name="test1" title="web_source -&gt; web_target1">
+    <source label="web_source"
+        root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="C:/webshare/web_target1"
+    temp="target1/temp" />
+
+<dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+
+  </pubpath>
+
+  <pubpath name="test2" title="web_source -&gt; web_target1 &amp; web_target2">
+    <source label="web_source"
+    root="C:/webshare/web_«««««««««««source" />
+    <target label="web_target1"
+    root="C:/webshare/web_target1"
+    temp="C:/webshare/web_target1/temp" />
+    <target label="web_target2"
+    root="C:/webshare/web_target2"
+            temp="C:/webshare/web_target2/temp" />
+
+    <dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+    <package name="templates" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  </pubpath>
+
+  <pubpath name="test3" title="web_source -&gt; web_target1 via HTTP">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            noproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclude>
+
+  </pubpath>
+
+</opt>

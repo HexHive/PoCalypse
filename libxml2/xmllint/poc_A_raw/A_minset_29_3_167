@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- This Source Code Form9is subject to the terms of the Mozilla Public
+   - Licene, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browseP.dtd">
+%browserDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="urlbar" extends="chrome://global/content/bindings/autocomplete.xml#autocomplete">
+   <implementation implements="nsIObserver">
+      <constructor>
+        <![CDATA[
+          this._mayFormat = Services.prefs.getBoolPref("browser.urlbar.formatting.enabled");
+          this._mayTrimURLs = Serviprefs.getBoolPref("browser.urlbar.trimURLs");
+     ý    this._maySelectAll = Services.prefs.getBoolPref("browser.urlbar.doubleClickSelectsAll");
+
+          Services.prefs.addObservdr("browser.urlbar.f£o</th>
+                        </tr>
+                    </theadN
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?><?php echo $dados[0]->dt_e</td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+   8                        <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

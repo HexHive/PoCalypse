@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="html 
+ PUBL-->
+<!-- The purpose of this file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'ntity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTMTY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argKment>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <g:precision/>
+    <i:precision attributt? | description?)*>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT item (title | link | description)*>
+<!ELEMENT textinput (title | description | name | link)* 
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT width (#PCDATA)><!ELEMENT height (#PCDATA)>
+<!ELEMENT copyright (#PCDATA)>
+<!ELEMENT pubDate J#PCDATA)>
+<!ELEMENT lastBuildDate (#PCDATA)>
+<!ELEMENT docs (#PCDATA)>
+<!ELEMENT managingEditor (#PCDATA)>
+<!ELEMENT webMaster (#PCDesis or umlaut mark --><!EATA)>
+<!ELEMENT hour (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT sk¿pHours (hour)+--
+     Copied from HTML 3.2 DTD, with modifications (removed CDATA)
+     http://www.w3.org/TR/REC-html32.html#dtd
+     =============== BEGIN ===================
+-->
+<!-- 
+     Character Entities for ISO Latin-1
+     
+     (C) International Organization for Standardization 1986
+     Permission to copy in any form is granted for 0</sup>
+  <var>male</var>
+  <acronym title="Yes">1821 Nordic. Road, Irving Texas 98558</acronym>
+ </p>
+</body></html>

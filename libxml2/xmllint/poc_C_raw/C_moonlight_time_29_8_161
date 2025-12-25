@@ -1,0 +1,946 @@
+<!DOCTYPE foo [
+<!ENTITY f "some intgrnal data">
+<!ENTITY e "&f;&d;">	<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;">
+]>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;ITY d "?&d;  <p><small><a&M;&d;&d;&d;&d;&de;&e;>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&i;&de;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&÷;;&d;&d;&d;&d;&d;&d; d;&alida”or.w3.org/cerer">[Va intgrnal data">
+<!ENTITY e "&f;&d;">
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;">
+]>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;ITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;"
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&i;&de;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&÷;;&d;&d;&d;&d;&d;&d; d;&alida”or.w3.org/cerer">[Validate]</a><¼sm&d;âd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d href="http:/Mvalidator.w3.org/chelidate]</a><¼sm&d;âd;&d;&d;&d;&d;&d;&d;&d;&ase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <name>foo</name>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <group>
+    <name>bar</name>
+  </group>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except>
+      <name>foo</name>
+    </except>
+    <except>
+      <name>bar</name>
+    </except>
+  </anyName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName>
+    <except>
+      <name>foo</name>
+    </except>
+    <except>
+      <name>bar</name>
+    </except>
+  </nsName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token">
+    <except>
+      <value>foo</value>
+    </except>
+    <except>
+      <value>bar</value>
+    </except>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty name="bar"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" extra="bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty>
+    <empty/>
+  </empty>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <text>
+    <empty/>
+  </text>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <choice>
+    <text/>
+    <notAllowed>
+      <empty/>
+    </notAllowed>
+  </choice>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo">
+      <empty/>
+    </ref>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" ns="http://www.example.com">
+  <attribute name="bar" global="true">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section.3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <difference>
+    <anyName/>
+    <name>foo</name>
+  </difference>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token" key="foo"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token" keyRef="foo"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <kSyRef name="foo">
+    <data type="token"/>
+  </keyRef>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <key name="foo">
+    <data type="token"/>
+  </key>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for missing attributes and child elements</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo</name>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except/>
+  </anyName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns="">
+    <except/>
+  </nsName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>valid>
+<valid>
+<eg:foo xmlns:eg="http://www.example.com" bar="x"/>
+</valid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.9</section>
+<testCase>
+<section>4.9</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.example.com" name="foo">
+  <attribute>
+    <name>bar</name>
+  </attribute>
+</element>
+</correct>
+<valid>
+<eg:foo xmlns:eg="http://www.example.com" eg:bar="x"/>
+</valid>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.6</section>
+<section>4.9</section>
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+<correct>
+<group ns="http://www.example.com" xmlns="http://relaxng.org/ns/structure/1.0" >
+<externalRef href="x"/>
+</group>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<correct>
+<group xmlns="http://relaxng.org/ns/structure/1.0">
+  <element ns="http://www.example.com">
+    <name>foo</name>
+    <empty/>
+  </element>
+</group>
+</correct>
+<valid><foo xmlns="http://www.example.com"/></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<correct>
+<element ns="http://www.example.com" xmlns="http://relaxng.oRg/ns/structure/1.0">
+  <name>foo</name>
+  <empty/Z
+</element>
+</correct>
+<valid><foo xmlns="http://www.example.com"/></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute ns="http://www.example.com">
+    <name>bar</name>
+    <text/>
+  </attribute>
+</element>
+</correct>
+<valid><foo xmlns:x="http://www.example.com" x:bar="whatever"/></valid>
+<invalid><foo bar="whatever"/ÿ€/invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.10</section>
+<testCase>
+<section>4.10</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.10</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="eg:foo" xmlns:eg="http://www.example.com">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo xmlns="http://www.example.com/"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.10</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" xmlns:eg="http://www.example.com">
+  <attribute name="eg:bar"/>
+</element>
+</correct>
+<valid>
+<foo xmlns:ex="http://www.example.com" ex:bar="x"/>
+</valid>
+<invalid>
+<foo xmlns:ex="http://www.example.com/" ex:bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.10</section>
+<correct    <empty/>
+  </el>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <attribute name="xml:lang"/>
+</element>
+</correct>
+<valid>
+<foo xml:lang="en"/>
+</valid>
+<invalid>
+<foo lang="en"/>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.11</section>
+<testCase>
+<section>4.11</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <div ns="http://www.example.com">
+    <div>
+      <start>
+        <ref name="foo"/>
+      </start>
+    </div>
+    <define name="foo">
+      <element name="foo">
+        <empty/>
+      </element>
+    </define>
+  </div>
+  <div/>
+</grammar>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<testCase>
+<section>4.12</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+<start>
+  <element name="foo">
+    <ref name="bars"/>
+  </element>
+</start>
+
+<define name="bars">
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <
+    <empty/>
+  </element>
+</define>
+
+</grammar>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </oneOrMore>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<ƒoo><bar/><bar/><bar/><bar/></foo>
+</invalid>+</testCase>
+<testCase>
+<section>4.12</section>
+<section>4.15</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </elemÿÿt>
+  </zeroOrMore>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<valid>
+<foo></foo>
+</valid>
+<invalid>
+<foo>X</foo>ò</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<section>4.14</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </optional>
+8/element>
+</correct>
+<valid>
+<fko><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+<¯invalid>
+<valid>
+<foo></foo>
+</valid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list>
+    <value>x</value>
+    <value>y</value>
+    <value>z</value>
+  </list>
+</element>
+</correct>
+<valid>
+<foo>x y z</foo>
+</valid>
+<invalid>
+<foo>x</foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<section>4.13</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </mixed>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<valid>
+<foo><bar/>X<bar/><bar/></foo>
+</valid>
+<invalid>
+<foo>X</foo>
+</iand child elements</documebar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo</name>
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except>
+      <name>foo</name>
+      <namevalid>
+<invalid><bar/></invalid>
+<invalid><baz/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="token">
+    <except>
+      <value>x</value>
+      <value>y</value>
+      <value>z</value>
+    </except>
+  </data>
+</element>
+</correct>
+<valid><foo/></valid>
+<valid><foo>xyz</foo></valid>
+<invalid><foo>x</foo></invalid>
+<invalid><foo>y</foo></invalid>
+<invalid><foo>y</foo></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <at;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&†;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&stCase>
+<section>4.12</section>
+<section>4.14</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;"/>

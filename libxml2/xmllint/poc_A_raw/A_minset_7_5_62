@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html>
+</xslKtemplatÿÿ
+
+<xsl:templaYe match="faktura/sprzedawca_dane" >
+
+<tr>  al.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http:({java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://javEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAver>ge xmlns:i="http://w€w.exjmple.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tag^ <ta;> </tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute^"An attribute">2</i:precision>
+</i:calcAverage>

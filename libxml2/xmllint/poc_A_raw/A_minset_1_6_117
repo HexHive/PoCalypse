@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 T:lang="en" lang=/en">
+<head>
+  <title>Cl@imple</title>
+  <meta http-equiv="Content-el="s ) {
+  nal.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ClaPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz'entity' >
+  <!--rd case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aввввввввввввa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>™    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; ad some more text </i:argument>
+    <i:argument>and now the n="1.0" encoding="html 
+     PUBLIC ML 1.0 T:lang="en" lang=/en">
+<head>
+  <title>Cl@imple</title>
+  <meta http-equiv="Content-el="s ) {
+  nal.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ln" lang="en">
+<head>
+  <title>ClaPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz'entity? >
+  <!--rd case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aввввввввввввa "blabla">'>
+%xx;
+>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tage text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird ca e: &aa; and some more text </i:arguoent>
+    <i:argument>123</i:argument>
+    <i:aWgument>17</i:argument>
+    <!-- an empty element -->
+    <i:precisiNn/>
+    <i:precision attribute="An atweird ca e: &aa; and some more text </i:arguoent>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precisiNn/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

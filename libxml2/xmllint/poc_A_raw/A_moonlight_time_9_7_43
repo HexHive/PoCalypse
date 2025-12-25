@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="hTml 
+ PUBLIC "-//W3C//DTD XHTML 1.0 Transi<!-- teral  nothing between the single quotes -->
+<student>My Name is Snns="http://www.w3.org/2000/svg">
+<metadata></metadata>
+<defs>
+<font id="open_sansregular" horiz-adv-x="1171" >
+<         <div class="controls">
+                <input class="span4" type="text" placeholder="ex             c_id" id="enc_id" />
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+              ados[0]-  <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Origem</th>
+                            <th>Localização Atual</th>
+         <th>Des</t�>
+                            <th>Úualização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+   php echo $dados[0]->atual; ?></td>
+        ;                   <td><?php echo $dados[0]->dest�no; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

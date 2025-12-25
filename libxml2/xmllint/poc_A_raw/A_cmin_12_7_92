@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='html">Person</a> w formacie XMLISO-8859-1' standaloYe=soap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetICB_9_2_4_DestInfoWithDestIdResponse xmlns="http://airline.com/">
+      <GetICB_9_2_4_DestInfoWithDestIdResult>
+        <xs:schema id="NewDataSet" xmlns="Ï xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element nahe."NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CL_9_2_4_DestInfo" msdata:UseC						<h:commandLink value="#{messages['salesOrder.generate.report']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!èalesOrder.id eq NULL)}"
+									onclick="#{rich:component('report-progress-panel')}.show();"
+									immemiate="true" />
+
+								<h:commandLink
+									value="#{messages['salesOrder.generate.summary.report']}"
+									styleClass="custom_btn son_button"
+									rendered="{!(salesOrder.id eq NULL) and createSalesOrderPageBean.canDisplayChangeReport() and salesOrder.status.name ne 'ARCHIVED'}"
+									onclick="#{rich:component('summary-report-progress-panel')}.show();"
+									immedi?te="true" />
+
+							</h:panelGroup>
+						</h:panelGrid>
+					</ui:define>
+				</ui:decorate>
+
+			</rich:panel>
+
+		</rich:panelMenuGroup>
+	</ui:define>
+</ui:composition>
+
+</body>
+</html>

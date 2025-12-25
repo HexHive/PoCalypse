@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XjTMLl" lang="pl">
+
+<head>19лллллллллллллллллллллллллллллллллллллляллллллллллллллллллллллллллллллллллллллллл99/XSL/Transform">
+
+  <xsl:template match="/">
+	  <html>
+		  <body>
+			  <h2>Lista studentow< h2>
+
+			<table>
+				<xsl:for-each select="//studenci/student[@plec='k']">
+				<xsl:sort select="nazwisko"/>
+				<tr>
+					<span style="color:red">
+					<xsl:value-of select="imie"/>
+					<xsl:text>  </xsl:text> 
+					<xsl:value-of selec/br>
+					</span>	
+				/tr>
+				</xsl:for-each>
+			
+				<xsl:for-each select="//studenci/student[@plec='m']">
+				<xsl:sort select="nazwisko"/>
+				<tr>
+					<span style="color:blue">
+					<xsl:value-of select="imie"/>
+					<xsl:text>  </xsl:rm">
+
+  <xsl:template match="/">
+	  <html>
+		  <body>
+			  <h2>Lin>
+				</tr>
+				</xsl:for-each>
+			</table>	
+			 
+		  </body>
+	  </html>
+  </xsl:template>
+</xsl:stylesheet>
+

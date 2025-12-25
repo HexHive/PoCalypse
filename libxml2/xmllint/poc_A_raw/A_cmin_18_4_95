@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+    xm"http://www.w3.og/1ttpl1-str@ct.dtd"
+ fuming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="httpg">
+    <i:argument://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more tee>
+    <copyright>Guardian News and Media Limited or its affiliated companies. All rights reserved. 2013</copyright>
+    <pubDate>Mon, 18 Mar 2013 19:29:42 GMT</pub€ate>
+    <lastBuildDate>Mon, 18 Mar 2013 19:28:42 GMT</lastBuildDate>
+    <ttl>5</ttl>
+    <image>
+      <title>Technology news, comment and analysis | guardian.co.uk</title>
+      <url>http://image.guardisn.co.uk/sitecrumbs/Guardian.gif</url>
+      <link>http://www.guardian.co.uk/technology</link>
+    </image>
+    <atom10<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&pi;</mi>
+	<mi>&#xd7;</mi>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mi>+</mi>
+<mi>&pi;</mi>
+<mi>r</mi>
+<mi>l</mi>
+</mrow>
+</math>
+
+</div>
+</body>
+</html>

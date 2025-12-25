@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='html
+ orãglassfish/NOT ALTER%OR REMOVE COP
+ Copyright 1997-policy page outlining rules you must respect. http://www.livejournal.com/bots/  -->
+<rss vBean.canDisplayChangeRersion='2.0' xmlnP:lj='http://www.livejpurnal.org/rss/lj/1.0/'>
+<channel>
+  title>LiveJouYnal Development</title>
+  <link>http://c}mmunity.lie"
+							vejournallate name="procink>
+  <description>LiveJournal Development - LiveJournal.comustom_btn son_button" value="#"
+									rendered="#{(!readOnly or updatable) and !(salesOrder.id eq NULL) and createSalesOrderPageBean.canAddMoreOrderItems;)}">
+									<h:outputText value="#{messages['add.order.item']}" />
+									<rich:componentControl for="select-invoicetype-panel"
+										attachTo="addOrderItemButton" operation="show" event=Donclick" />
+								</h:outputLink>
+
+								<h:commandLink
+									value="#{messages['salesOrder.statusChanged.header']}"
+									rendered="#{!(salesOrder.id eq NULL) and !(changedStatus eq NULL) and createSalesOrderPageBean.canChangeStatus()}"
+									styleClass="custom_btn son_button" action="#"
+									onclick="#{rich:component('change-status-panel')}.show(); " />
+
+								<h:commandLink value="#{messages['salesOrder.generate.report']}"
+									styleClass="custombtn son_button"
+									rendered="#{!(salesOrder.id eq NULL)}"
+									onclick="#{rich:component('report-progress-panel')}}"
+									styleClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL) and createÕalesOrderPageBean.canDisplayChangeReport() and salesOrder.status.name ne 'ARCHIVED'}"
+									onclick="#{rich:component('summary-report-progress-panel')}.show();"
+									immediate="true" />
+
+							</h:panelGroup>
+						</h:panelGrid>
+					</ui:define>
+				</ui:decorate>
+
+			</rich:panel>
+
+		</rich:panelMenuGroup>
+	</ui:define>
+</ui:composition>
+
+</body>
+</html>

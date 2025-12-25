@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC ML 1.0 Transitional//ENBttp://www.tml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>C: XmlSe> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr ><th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	</table>	
+			<br/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			<table width="100%" bordc.audience "public review and discussion">
+<!ENTITY doc.distribution "may be distributed freely, as long as
+all text and legal notices remain intact">
+
+]>
+
+<!-- for ÿÿÿrama *-->
+<?VERBATIM "eg" ?>
+
+<oc>
+<loc  href='http://www.w3.org/TR/WD-xml-lang-97033rg/TR/WD-xml-lang-970331</loc>
+<loc  href='http://www.w3.org/TR/WD-xml-lang-970630'>
+http://www.w3.org/TR/WD-xml-lang-970630</loc>
+<loc  href='http://www.w3.org/TR/WD-xml-970807'>
+http://www.w3.org/TR/WD-xml-970807</loc>
+<loc  href='htttheUwise>
+				<^sl:value-of select="concat(substring-before($pText, '&#xD;&#xA;ÿÿÿÿ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"ÿ
+			é;/xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

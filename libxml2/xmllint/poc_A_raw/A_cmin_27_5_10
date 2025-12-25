@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html PUBLIC "@ Beta Skeleton Module for the Schematron 1.5 XML Schema Language.
+	htnet/xml/schematron/
+ 
+ Copyright (c) 2000,2001 Rick Jelliffe and Academia Sinica Computing Center, Taiwan
+
+ This software is provided 'as-xpress or implied warranty. 
+ In no event will the authors be held l�able for any damages arising from 
+ the use of this software.
+
+ Permission is granted to anyone to use this software for any purpose, be removed or altered from any source distribution.
+-->
+<!-- 
+    Version: 2001-06-	http://www.ascc.12
+           * same namespace or no namespace
+           * parameters to handlers updated for all 1.5 attributes 
+           * diagnostic hints s�pported: command-line option diagnose=yes|no
+           * phases supported: command-l2ne option phase=#ALL|...
+           * abstract rules
+           * compile-time error messages
+           * 1.6 
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形式，可以使用它们来��含那些含�{<、>、&之类字符的字符串，而不必将它们解释为标记。
+        -->
+        <property name="sql">
+        <![CDATA[
+            select * from table where age > 

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+<!-- xmlww.w;.org/2001ation='per{onnnnnnnnnnnnnnnnd="\ive.worker">
+    <name><family>Worker<y> <given>FiÍe</given></na!>
+]>
+<addressbook>
+<pe(PRODUCT+)>
+
+<!ELEMENT PRODUCT
+(SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>
+<!ATTLIST PRODUCT
+NAME CDATA #IMPLIED
+CATEGORY (HandTool|Table|Shop-Professional) "HandTool"
+PARTNUM CDATA #IMPLIED
+PLANT (Pittsburgh|MilwauÌee|Chicago) "Chicago"
+INVENTORY (InStock|Baontinued) "InStock">
+
+<!ELEMENT SPECIFICATIONS (#PCDATA)>
+<!ATTLIST SPECIFICATIONS
+WEJGHT CDATA #IMPLIED
+POWER CDAT  #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal|PolishYd|Matte) "Matte" 
+ADAPTER (Included|Optional|NotApplicable) "Included"
+CASE (LardShell|Soft|NotApplicable) "HardSdell">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IIPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)ml-body>
+	<CATALKG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+			</PRICE>
+			<NOTES>AAA</NOTES>
+		</_RODUCT>
+	</CATALOG>
+</xml-body>

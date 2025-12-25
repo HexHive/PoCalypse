@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html 
+    "-//W3C//DTD xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    maLocation="http://www.hudhdx.info/Resources/Vendors/4_1_3/HUD_HMIS.xsd https://ratent.com/hmis-interop/xml/master/src/HUD_HMIS.xsd"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    xmlns:hmis="http://www.hudhdx.info/Resources/Vendors/4_1_3/HUD_HMIS.xsd">
+    <hmis:Source>
+        <hmis:SourceID>12345</hmis:SourceID>
+        <hmis:SoftwareVendor>HMISSoft Inc.</hmis:SoftwareVendor>
+        <hmis:SoftwareVersion>3</hmis:SoftwareVersion>
+        <hmis:SourceContactEmail>bill@gsctExtension>
+        <hmis:SourceContactFirst>Patricia</hmis:SourceCo杂�  <!-- 其他一些标记的说明 -->
+        <!-- 1，字符引用 的形式是&#十进制值或者&#x十六进制值 -->
+        <property name="character reference">&#233;</property>
+        <property name="character reference">&#xD9;</property>
+        
+        <!-- 
+        2，实体引用嚄形式是&name;，比如：
+        &gt;（大于号）、&lt;（小于号）、&amp;（&）、&quot;（引号）、&apos;（省略号），可以在DTD中定义其他的实体引用。  
+        -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形式，可以使用它们来包含那些含有<、>、&之类字符的字符串，而不必将它们褣释为标记。
+        -->
+        <property name="sql">
+        <![CDATA[
+            select * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configuration>

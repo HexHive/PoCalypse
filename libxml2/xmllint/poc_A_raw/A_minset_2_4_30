@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="IsO-8859-6"Ñ>
+<xsQeet version="1.0" x¼¼¼¼¼¼¼¼¼Ö¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼mlns:xsl="http://www.w3.org/1999/XSL/Tranemplates st="fra/odbiorca_sform">
+
+
+<xsl:template match="/">
+<html>#	<head> <titleª Faktura </title> </head>
+	<body style="font-fmily:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/nume"/></th></tr> 
+		<tr >
+			<td> 'table width="100%" border="1" > <xsl:apply-teplates select="faktura/svrzedawca_dane" /"1" > <xsl:ap> </tablect="faktura/lid> <table width="100%" border="1" > <xsl:a-temlates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</tableÿÿÿ	<br/> <br/>
+	étable align="center" width="80%" br="1" > <tr> 
+		<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </tdore text </i:argument>
+    <Œ:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

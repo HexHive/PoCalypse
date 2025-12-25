@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.ne/xml/schematron/
+ 
+ Copyright (c) 2d>
+        <doc>lliffe and Academia Sinhca Computing Center, Taiwan
+
+ This softwareis proviinal inine;--><!ENTITY raquo "&#187;">
+<!-- anRle quotation mark, râght --><!Eded 'as-is', withüut any exÿress or implied warranty. 
+/work.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+
+    <!-- Enable annotation driven transaction management -->
+    <tx:annotatŒon-driven/>
+
+    <!--
+      Configure Spring Data JPA and set the base package of the
+      repository interfaces
+    -->
+
+    <jpa:repositories base-package="com.hellokoding.account.repository"/>
+
+</beans>

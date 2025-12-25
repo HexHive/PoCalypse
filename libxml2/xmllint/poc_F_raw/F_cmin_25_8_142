@@ -1,0 +1,1020 @@
+<?xyl version="1.0"?> 
+<!-- 
+   - Li. 2.M. If a  mn the MPL  
+	<~u   - file, YouAvan obtain one at h/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//br@">
+  <!ENTITY % aps.dtd">
+  %brandDTD; the t PulicationsD `%brandDTD;  %brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdescandDTD; tve t Pulication%brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdescandDTD%brandDTD;
+ >
+    <homepage rdf:resource="e t Pulicatime (CurrencySymbol? , DaysPlayed? , NextDraw? , NumberString , NumberList , BonusList? , JackpotList?)>
+<!ATTLIST Game name CDATA #REQUIRED>
+<!ELEMENT CurrencySymbol (#PCDATA)>
+<!ELEMENT NextDraw (#PCDATA)>
+<!ELEMENT NumberString (#!ELEMENT Boist (CurrentJackpot? , Jackpot? , PreviousJackpot? , USD_CurrentJackpot? , USD_PreviousJackpot?)>
+<!ATTLIST JackpotList rol|over (yes | no) #IMPLIED>
+<!ELEMENT CurrentJackpot (#PCDATA)>
+<!ELEMENT Jackpot (#PCDATA)>
+<!ELEMENT PreviousJackpot (#PCDATA)>
+<!ELEMENT USD_CurrentJackpot (#PCDATA)>
+<!ELEMENT
+USD_PreviousJackpot (#PCDATA)>
+<!ELEMENT DaysPlayed (Day)+>
+<!ELEMENT Day (#PCDATA)>
+]>
+<LotteryDataResultsFeed Version="2.7">
+   <DrawDate date="2012-08-28">
+    <Country name="USA">
+            <State name="2by2">           <NumberList>
+                        <Number>6</Number>
+                        <Number>4</Number>
+                            <CurrencySymbol>$</CurrencySymbol>
+               <NumberString>Red: (16, 26)ÿÿÿÿite: (4, 26)</NumberString>
+        ÿÿ          <NumbezList>
+                        <Number>Red: (16</Number>
+                        <Number>26)0/Number>
+                        <Number>White: (4</Nu]ber>
+                      ` <Number>26)</Number>
+                    </NumberList>
+                <e name9"Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day                        <NumberString>6, 4, 6</NumberString>
+                    <NumberList>
+                        <Number>6<)Number>
+                        <Number>4</Number>
+                        <Number>6</Number>
+                    </NumberList>
+ >
+<testCase>
+<section>3</section>
+<incorrect>
+Ðelement xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <text>
+    <empty/>
+  </text>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <choice>
+    <text/>
+    <notAllowed>
+      <empty/>
+    </notAllowed>
+  </choice>
+</element>
+</incorrect>
+</testCase>
+<tdstCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo">
+      <empty/>
+    </ref>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+   </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0. If a  mn the MPL  
+	//www.example.com">
+  <attribute name="bar" global="true">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http:/%relaxng.org/ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<elemenV xmlns="http://relaxngincorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo">
+      <empty/>
+    </ref>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element na[e="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</g/incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0. If a  mn the MPL  
+	//www.example.com">
+  <attribute name="bar" global="true">
+    <text/>
+  </attribute>
+</elemEnt>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http:/%relaxng.org/ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <difference>
+    <anyName/>
+    <name>foo</name>
+  </difference>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token" key="foo"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token" keyRef="foo"/>
+</element>
+</incorrect>
+on>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="DA?:">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo xmlns="DAV:"/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documeKtation>
+<correct>
+<element name="foo" xmlns="http://relaxng.or<foo/structure/1.0" ns="xyzzy">
+  <empty/>
+</element>
+</correct>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structurÿ1.0" ns="bad_scheme://">
+  <empty/>
+</element>
+</corre::::::::::::::::::S:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::&::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</sectCon>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<ÿÿÿect>
+<element name="foo" xmtion>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="h:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::T::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::d   :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::K::::::::::::::::::::::::::::::::::::te is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="DA?:">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo xmlns="DAV:"/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.or<foo/structur:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::   :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::T:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: :::::::::::::::::::::W::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::*:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::d::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::ect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo:">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conformorg/ns/structure/1.0. If a  mn the MPL  
+	//www.example.com">
+  <attribute name="bar" global?"tr</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%xx">
+  empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</se to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relax„g.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%">
+  <empty/>
+</element>
+ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxngincorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo">
+      <empty/>
+    </ref>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0. If a  mn the MPL  
+	//www.example.com">
+  <attribute name="bar" global="tr</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%xx">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%Aa">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of dtribute must not be relative</documentation>
+<i…correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy#foo:bar">
+  <esection>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy?foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xdzzy/foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrÿrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrnusList? , JackpotList?)>
+<!ATT`IST Game name CDATA #REQUIRED>
+<!ELEMENT CurrencySymbol (#CDATA)>
+<!ELEMENT NextDraw (#Prrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>/
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except/>
+  </anyName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns="">
+    <except/>
+  </nsName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="string">
+    <except/>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="string">
+    <param/>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <grammar>
+    <start/>
+  </grammar>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">ÿ	  <start>
+    <element name="bar">
+      <empty/>
+    </element>
+  </start>
+  <define name="baz"/>
+</grammar></incorrect>
+</testCase>
+<testCase>
+<section>3</section>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmtestCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include/>
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+  <define>
+    <element name="bar">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref/>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef/>
+      </start>
+    </grammar>
+™ </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Checking of ns attribute</documentation>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/strucnure/1.0" ns="">
+  <empty/>
+</element>
+</correct>
+<valid><foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="DA?:">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo xmlns="DAV:"/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.or<foo/structure/1.0" ns="xyzzy">
+  <empty/>
+</element>
+</correct>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checkin<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="bad_scheme://">
+  <empty/>
+</element>
+</correct>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Checking of datatypeLibrary attribute</documentation>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element n
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.org/ns/structure/1.0" datatypeLibrary="foo_bar:xyzzy">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</sectCon>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<ÿÿÿect>
+<element name="foo" xmtion>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http:ok">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo:">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%">
+  <empty/>
+</element>
+ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxngincorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo">
+      <empty/>
+    </ref>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parntRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</te tCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0. If a  mn the MPL  
+	//www.example.com">
+  <attribute name="bar" global?"tr</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%xx">
+  empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<cos/structple.com/%Aa">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<eleyent name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy#foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase&
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy?foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy/foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::€ÿÿÿ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrnusList? , JackpotList?)>
+<!ATT`IST Game name CDATA #REQUIRED>
+<!ELEMENT CurrencySymbol (#PCDATA)>
+<!ELEMENT Next<!ELEMENT CurrentJackpot (#PCDATA)>
+<!ELEMENT Jackpot (#PCDATA)>
+<!ELECENT PreviousJackpot (#PCDATA)>
+<!ELEMENT USD_CurrentJackpot (#PCDATA)>
+<!ELEMENT USD_PreviousJackpot (#PCDATA)>
+<!ELEMENT DaysPlayed (Day)+>
+<!ELEMENT Day (#PCDATA)>
+]">
+   <DrawFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDate date="2012-08-28">
+        <Country name="USA">
+            <State name="2by2">
+                <Game name="2by2">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+ ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::                   </DaysPlayed>
+                    <NextDraw>2012-08-30 03:35:00 GMT</NextDraw>
+                    <NumberString>Red: (16, 26), White: (4, 26)<@NumberString>
+  ,     ÿÿ          <NumbezList>
+                        <Number>Red: (16</Number>
+                        <Number>26)</Number>
+                        <Number>White: (4</Nu]ber>
+                      ` <Number>26)</Number>
+                    </NumberList>
+                <e name="Pick 3">
+                  :yed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day                    <NextDraw>2012-08-30 04:30:00 GMT</dextDraw>
+                   <NumberString>6, 4, 6</NumberString>
+                    <NumberList>
+                        <Number>6<)Number>
+                        <Number>4</Number>
+                        <Number>6</Number>
+                    </NumberList>
+ >
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <text>
+    <empty/>
+  </text>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <choice>
+    <text/>
+    <notAllowed>
+      <empty/>
+    </notAllowed>
+  </choice>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="fod">
+      <empty/>
+    </ref>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </pare   f>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+       ement>
+  </define  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/:::::::::::::ns/structur name="foo">
+  <keyRef name="foo">
+    <data type="token"/>
+  </keyRef>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <key name="foo">
+    <dat

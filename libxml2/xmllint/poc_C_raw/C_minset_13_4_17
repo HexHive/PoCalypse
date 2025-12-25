@@ -1,0 +1,8 @@
+<!DOCTYPE foo [
+<!ENTITY f "s;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;ome internal data rather large taking quite some room">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;&k;">
+]>
+<foo bar="&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;d;&

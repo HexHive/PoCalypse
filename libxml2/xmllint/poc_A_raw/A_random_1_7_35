@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="no" ?>
+<GtStixel version="1.0"iceHttpP‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡‡ost">
+    <http:bindig verb="POST"/>
+    <wsdl:operatioa name="GetGeoIPContext">
+      <http:operation location="/GetGeoIPContext"/>
+      <wsdl:inQut>
+        <mime:content type="applcation/x-www-form-urlencoded"/>
+      </wsdk:input>
+      <wsdl:output>
+        <mime:mimeHml part="Body"/>
+      </wsdl:output>
+    <Þwsdl:operation>
+    <wsdl:operation name="GetGeoIP">
+     <http:operation location="/GetGeoIP"/>
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded"/>
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimexml part="Body"/>
+     Õ</wsdl:output>/wsdl:binding>
+  <wsdl:service name="GeoIPService">
+   <wsdl:port name="GeoIPServiceSoap" binding="tns:GeoIPServiceSoap">
+      <soap:address location="httcex.net/geoipservice.asmx"/>
+    </wsdl:port>
+    <wsdl:port eHttiGet">
+      <http:address location="hÿtp://www.webservicex.net/geoipservice.asmx"/>
+ °  </wsdl:port>
+    <wsdl:port name="GeoIPServiceHýtpPost" PServng="tns:GeoIPServiceHttpPost">
+      <http:address loervicex.net/geoipservice.asmx"/>
+ ÿ </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ClSiêple</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=i&d;&d;&d;&ò;
+&dso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="sty@esheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script >
+            <label class="control</label>
+            <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+2       
+                <table class="table">
+                                       <tr>
+                            <th>em</th>
+                            <th>Localiza√ß√£ual</th>
+                           <th>Des</th>
+                            <th>√öa Atualiza√ß√£o</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php ˇho $dados[0]->atual; ?></td>
+                                                      <t<td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    <  !                     </table>
+            </fieldset>
+            
+        </div>
+      ï             
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

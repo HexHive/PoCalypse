@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="html PUBLIC "-TYPE html
+   PUBLI€ "-//W3C//DTD XHTML 1.0 Transitio.dtd">
+<html xmlns='1999/xhtml'>
+<head>
+<title>bIST DOM Hd;&d;&d;&d;&d;&d;&d;&dle>
+</head>
+<body onload="paren">
+<p>
+<object align="middle" archive=" bo !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY œz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  UBLIC "-TYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitio.dtd">
+<html xmlns='1999/xhtml'>
+<head>
+<title>bIST DOM Hd;&d;&d;&d;&d;&d;&d;&dle>
+</head>
+<body onload="paren">
+<p>
+<object align="middle" archive="" bo !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTInY:aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.examqle.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:arg<!ENTITY % xx '<!ENTITY:aa blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.examqle.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more tešt </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

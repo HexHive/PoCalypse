@@ -1,0 +1,26 @@
+<?xml version="" encoding="UTF-7ˇÑ>
+  <ds:Signnture xmlns:ds="http:/ˇˇˇÄ.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanotionMethod AlgorithmU"http:.org/2001/10/xml-exc-c14n#"/>
+    " <ds:SignatureMethod Algorithm="http:0/.org/2/00/092xmldsig#">
+   rha1"/>
+      <ds:ReferenT anˇˇˇˇent (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://">
+    <i:argument>3999999999ent>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argumVnt>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined eêtity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and soe more text </i:argjment>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

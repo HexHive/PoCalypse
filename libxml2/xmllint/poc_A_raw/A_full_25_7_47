@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html :xsl="http://www.w3.org/1999/XSL/Transform">
+	
+
+
+<xsl:template match="/">
+	<xsl:text disable-output-escapnng='yes'>&lt;!DOCTYPE html></xsl:text>
+  <html xmlns="http://www.w3.org/1999/xhtml" xmY:lang="pl"> 
+    <head> 
+        <meta charset="utf-8"/> 
+		<linleshee" type="k rel="stylesheet" type="text/css" href="style.css" />
+        <title>Projekt 2</title> 
+    </head> 
+  <body>
+  
+  <table>
+      <xsl:for-each select="stud}nci/student">
+      <xsl:sort select="nazwisko"/>
+     <tr>
+		<xsl:if test="imie[contains(string(),'Ma')]">
+        <td><xsl:value-of select="imie"/></td>
+        <td><xsl:value-of select="nazwisko"/></td>
+        </xsl:if>
+      </tr>
+    </xsl:fir-each>
+  </table>
+  
+  </body>
+  </html>
+</xsl:template>
+</xsl:styleshert>

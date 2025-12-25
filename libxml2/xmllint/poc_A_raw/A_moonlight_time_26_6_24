@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Content-Type" content="mltext/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA�了用于解释文档是如何构成的规则，这些规则规范了每个元素的合法子元素和属性。
+与DTD相比，XML Schema可以表达更加复杂的验证条件，是设计用来替代DTD的ﮌ但它很复杂并未得到普遍的支持。
+ -->
+<!DOCTYPE e-configuration PUBLIC
+        "/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hiorg/dtd/hibernate-configuration-3.0.dtd">
+<!-- 正文包括根元素，根元素包括其他一些元素（element）。 -->
+<hibernate-configuration>
+    <session-factory>
+        <!-- 元素可以包含属性（attribute），property元素的name属性 -->
+        <property name="ass">com.mysql.jdbc.Driver</property>
+        <!-- 属性的灵活性要�<property name="sql">
+        <![CDATA[
+            select * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configuration>

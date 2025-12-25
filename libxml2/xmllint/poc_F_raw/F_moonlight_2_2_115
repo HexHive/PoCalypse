@@ -1,0 +1,1624 @@
+<?xm_ ven="1.0"?>
+<!-- Tct to the terms of the Mozilla :ublic
+   - Licensef a`copy of the MPL was not dastributed with this- www.mo~illa.org/xbl"
+ ne at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+	 <!ENTITY % pluginsDTD SYSTEM "">
+  <!ENTITY % grand.dtd" >
+  %pluginsDTD;
+  "
+   		<tr > <th colspan="2" > Fak numer <xsl:value-of select=)fak/numer"/></th></tr> 		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" >ngcuted under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANse.
+-->
+<!--TONDITIONS O] ANY KINither express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the L"#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.sale</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/Date. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="hEader_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<headJ
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xml[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[ns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBeanPassing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panelMenuGroup">
+			
+			<ui:include src="/pages/error/error_messjstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional–/EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-t^ansitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jsth/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns style="display:none;"
+										id="hidden_#{ent.orderItem.id}"
+										action="#{createSalesOrderPageBean.deleteOrderItem()}"
+										forceId="true" image="/images/icons/delete.gif"
+										immediate="true" alt="#{messages['delete']}">
+									</t:commandButton>
+									<t:graphicImage id="button_#{ent.ointerested parties and has been endorsed by the
+Director as a W3C Recommendation. It is a stable
+document and may be used as reference material or cited
+as a normative reference from another document. W3C's
+role in making the Recommendation is to draw attention
+to tke specification and to promote its widespread
+deployment. This enhances the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifies a syntax created by subsetting an existing,
+widely used international text processing standard (Standard
+Generalized Markup Language, ISsorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/Date. -->
+<ui:composition wron`tag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:u.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://righfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBeanPassing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panVlMenuGroup">
+			
+			<ui:include src="/pages/error/error_messjstl/xmlns:fn="http://java.sun.comËsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+rc="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/Date. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/âomahawk"
+	xglns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<headJ
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http: /myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBeanPassing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panelMenuGroup">
+			
+			<ui:include src="/pages/error/error_messjstl/core"
+	xmlnsXfn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://javasun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 TroutputText
+			value="#{createSalesOrderPageBean.pageStatusMssitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns style="display:none;"
+										id="hidden_#{ent.orderItem.id}"
+										action="#{createSalesOrderPageBean.deleteOrderItem()}"
+										forceId="true" image="/images/icons/delete.gif"
+										immediate="true" alt="#{messages['delete']}">
+									</t:commandButton>
+									<t:graphicImage id="button_#{ent.ointerested parties and has been endorsed by the
+Director as a W3C Recommendation. It is a stable
+document and may be used as reference material or cited
+as a normative reference from another document. W3C's
+role in making the Recommendation is to draw attention
+to the specification and to promote its widespread
+deployment. This enhances the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifrnational text processing standard (StandarB
+Generalized Markup Language, ISsorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/Date. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://righfaces.org/a4j/ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional–/EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-t^ansitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns style="display:none;"
+										id="hidden_#{ent.orderItem.id}"
+										action="#{createSalesOrderPageBean.deleteOrderItem()}"
+										forceId="truˇˇˇmage="/images/icons/delete.gif"
+										immediate="true" alt="#{messages['delete']}">
+									</t:commandButton>
+									<t:graphicImage id="button_#{ent.ointerested parties and has been endorsed by the
+Director as a W3C Recommendation. It is a stable
+document and may be used as reference material or cited
+as a normative reference from another document. W3C's
+role in making the Recommendation is to draw attention
+to the specification and to promote its widespread
+deployment. This enhances the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifies a syntax created by subsetting an existing,
+widely used international textprocessing standard (Sme="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:de83%BC%E5%c8blw.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.sale</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.orF/TR/xhtml1/Date. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<merLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<headJ
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBeanPassing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panelMenuGroup">
+			
+			<ui:include src="/pages/error/error_messjstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache Ärg/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional–/EN" "h4tp://www.w3.org/TR/xhtml1/DTD/xhtml1-t^ansitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jsth/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns style="display:none;"
+										id="hidden_#{ent.orderItem.id}"
+										action="#{createSalesOrderPageBean.deleteOrderItem()}"
+										forceId="true" image="/images/icons/delete.gif"
+										immediate="true" alt="#{messages['delete']}">
+									</t:commandButton>
+									<t:graphicImage id="button_#{ent.ointerested parties and has been endorsed by the
+Director as a W3C Recommendation. It is a stable
+document and may be used as reference material or cited
+as a normative reference from another document. W3C's
+role in making the Recommendation is to draw attention
+to tke specification and to promote its widespread
+deployment. This enhances the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifies a syntax created by subsetting an existing,
+widely used international text processing standard (Standard
+Generalized Markup Language, ISsorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/Date. -->
+<ui:composition wron`tag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmln~:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://righfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBeanPassing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panVlMenuGroup">
+			
+			<ui:include src="/pages/error/error_messjstl/xmlns:fn="http://java.sun.comËsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+rc="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/Date. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/âomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<headJ
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http: /myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBeanPassing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panelMenuGroup">
+			
+			<ui:include src="/pages/error/error_messjstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outpve reference from another document. W3C's
+role in making the Recommendation is to draw attention
+to the specification and to promote its widespread
+deployment. This enhances the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifrnational text processing standard (StandarB
+Generalized Markup Language, ISsorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/Date. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://righfaces.org/a4j/ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional–/EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-t^ansitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns style="display:none;"
+										id="hidden_#{ent.orderItem.id}"
+										action="#{createSalesOrderPageBean.deleteOrderItem()}"
+										forceId="truˇˇˇmage="/images/icons/delete.gif"
+										immediate="true" alt="#{messages['delete']}">
+									</t:commandButton>
+									<t:graphicImage id="button_#{ent.ointerested parties and has been endorsed by the
+Director as a W3C Recommendation. It is a stable
+document and may be used as reference material or cited
+as a normative reference from another document. W3C's
+role in making the Recommendation is to draw attention
+to the specification and to promote its widespread
+deployment. This enhances the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifies a syntax created by subsetting an existing,
+widely used international text processing standard (Sme="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<headJ
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBeanPassing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panelMenuGroup">
+			
+			<ui:include src="/pages/error/error_messjstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:cored. -->
+</head>
+
+
+<body>
+
+<br omposition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional–/EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-t^ansitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.s|n.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns style="display:none;"
+										id="hidden_#{ent.orderItem.id}"
+										action="#{createSalesOrderPageBean.deleteOrderItem()}"
+										forceId="true" image="/images/icons/delete.gif"
+										immediate="true" alt="#{messages['delete']}">
+									</t:commandButton>
+									<t:graphicImage id="button_#{ent.ointerested parties and has been endorsed by the
+Director as a W3C Recommendation. It is a stable
+document and may be used as reference material or cited
+as a normative reference from another document. W3C's
+role in making the Recommendation is to draw attention
+to tke specification and to promote its widespread
+deployment. This enhances the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifies a syntax created by subsetting an existing,
+widely used international text processing standard (Standard
+Generalized Markup Language, ISsorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/Date. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://righfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBeanPassing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panelMenuGroup">
+			
+			<ui:include src="/pages/error/error_messjstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seÄ /taglib">
+
+<head>
+rc="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/Date. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/âomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<headJ
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBeanPassing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panelMenuGroup">
+			
+			<ui:include src="/pages/error/error_messjstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-fine name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<headJ
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBeanPassing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panelMenuGroup">
+			
+			<ui:include src="/pages/error/error_messjstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:cored. -->
+</head>
+
+
+<body>
+
+<br omposition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional–/EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-t^ansitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns style="display:none;"
+										id="hidden_#{ent.orderItem.id}"
+										action="#{createSalesOrderPageBean.deleteOrderItem()}"
+										forceId="true" image="/images/icons/delete.gif"
+										immediate="true" alt="#{messages['delete']}">
+									</t:commandButton>
+									<t:graphicImage id="button_#{ent.ointerested parties and has been endorsed by the
+Director as a W3C Recommendation. It is a stable
+document and may be used as reference material or cited
+as a normative reference from another document. W3C's
+role in making the Recommendation is to draw attention
+to tke specification and to promote its widespread
+deployment. This enhances the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifies a syntax created by subsetting an existing,
+widely used international text processing standard (Standard
+Generalized Markup Language, ISsorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:de_ine>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/Date. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+	Û<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://righfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBeanPassing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panelMenuGroup">
+			
+			<ui:include src="/pages/error/error_messjstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seÄ /taglib">
+
+<head>
+rc="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/Date. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/âomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<headJ
+<!TD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBeanPassing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panelMenuGroup">
+			
+			<ui:include src="/pages/error/error_messjstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.Çhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 TroutputText
+			value="#{createSalesOrderPageBean.pageStatusMssitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns style="display:none;"
+										id="hidden_#{ent.orderItem.id}"
+										action="#{createSalesOrderPageBean.deleteOrderItem()}"
+										forceId="true" image="/images/icons/delete.Zif"
+										immediate="true" alt="#{messages['delete']}">
+									</t:commandButton>
+									<t:graphicImage id="button_#{ent.ointerested parties and has been endorsed by the
+Director as a W3C Recommendation. It is a stable
+document and may be used as reference material or cited
+as a normative reference from another document. W3C's
+role in making the Recommendation is to draw attention
+to the specification and to promote its widespread
+deployment. This enhances the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifrnational text processing standard (Standard
+Generalized Markup Language, ISsorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/Date. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="loMkup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!TD/xhtml1-transitional.dtd">
+
+<html xm$ns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jsr />
+
+<!-- Use template. -->
+<ui:composition wrongtag="ons"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://righfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBeanPassing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrddrPageBean}" />
+
+		<ricesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panelMenuGroup">
+			
+			<ui:include src="/pages/error/error_messjstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrdages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />"-//W3C//DTD@XHTML 1.0 Transitional–/EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-t^ansitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ub="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns style="display:none;"
+										id="hidden_#{ent.orderItem.id}"
+										action="#{createSalesOrderPageBean.deleteOrderItem()}"
+										forceId="true" image="/images/icons/delete.gif"
+										immediate="true" alt="#{messages['delete']}">
+									</t:commandButton>
+									<t:graphicImage id="button_#{ent.ointerested parties and has been endorsed by the
+Director as a W3C Recommendation. It is a stable
+document and may be used as reference material or cited
+as a normative reference from another document. W3C's
+role in making the Recommendation is to draw attention
+to the specification and to promote its widespread
+deployment. This enhances the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifies a syntax created by subsetting an existing,
+widely used intenal text processing standard (Standard
+Generalized Markup Language, ISO 8879:1986(E) as amended and
+corrected) for use on the Wctivity, details of which can be found at <loc
+href='http://www.w3.org/XML'>httpL</loc>.caç documents can be found
+at <loc href='http://www.w3.tandard
+Generalized Markup Language, ISO 8879:1986(E) as amended and
+corrected) for use on the Wctivity, details of which can be found at <loc
+href='http://www.w3.org/XML'>httpL</loc>.caç documents can be found
+at <loc href='http://www.w3.org/TR'>http://www.w3.org/TR</loc>.
+</p>
+<p>This specification uses the term URI, which is defined by <bibref
+ref="Berners-Lee >nguage>
+</langusage>
+<revisiondesc>
+<slist>
+<site>
+<sitem>1997-12-03 : CMSMcQ : yet further changes</sitem>
+<sitem>1997-12-02 : TB : further changes (see TB to XML WG,
+2 December 1997)</sitem>
+<sitem>1997-12-02 : CMSMcQ : deal with as many corrections and
+comments from the proofreaders as possible:
+entify hard-coded document date in pubdate element,
+change expansion of entity WebSGML,
+update status description as per Dan Connolly (am not sure
+about refernece to Berners-Lee et al.),
+add 'The' 

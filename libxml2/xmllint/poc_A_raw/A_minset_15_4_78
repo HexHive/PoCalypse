@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="html 
+ PUBL-->
+<!-- The purpose of this file is to shou how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entityELEMENT child4A(a, (b|c)+, (a|b)?, (a|c)* )?>
+  <!ELEMENT child5 ( (a,b) Ÿ c? | ((a|c),b,c) )* >
+  <!ELE(a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|§(a|c),b,k) )+ >
+ 1<!ELEMENT child8 ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->

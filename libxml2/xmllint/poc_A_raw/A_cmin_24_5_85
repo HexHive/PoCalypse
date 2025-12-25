@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="html PC "-//W3C//DTD XHTML 1.0, ih1999/xhtml' idcss/ksiazka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  "doktor">
+<!ELEMENT koel>
+			<email domena="wp">leszekhallman@wp.we,daty,strDom)>
+<!ATTLIST kontakt ilec (m|k|brak) #REQUIRED
+				  id_grupa IDREF #REQUIRED>
+<!ELEMENT dane_personalne (tytul?,imie,nazwisko)>
+<!ELEMENT dytul (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT dane_kontaktowe (tel,email,gg?,status)>
+<!ELEMENT tel (#PCDATA)>
+
+
+
+
+<!ELEMENT adres (kod_pocztOwy,miejscowosc,ulica,nr_budynku,nr_dres rodzaj CDATA # adres rodzaj CDATA #IMPLIED>
+<!ELEMENT kod_pocztowy (#PCDATA)>
+<!ELEMENT miejscid ID #REQUIRED>
+]>
+
+
+
+
+
+<ksiazka>
+
+	<kontakt plec="m" id_grupa="r">
+		<dane_personalne>
+			<imie>Leszek</imie>
+			<nazwisko>Hallman</nazwisko>
+		</dane_perƒonalne>
+		<adres rodzaj="http://mhallman.sigma(edu.pl/xmlns/dom">
+			<kod_pocztowy>83-262</kod_pocztowy>
+			<miejscowosc>Czarna Woda</miejscowosc>
+			<ulica>Odrezna</ulica>
+			<nr_budynku>14</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>664741805</tel>
+			<email domena="wp">les€ekhallman@wp.pl</email>
+			<status tekst="jestem offline"/>
+		</dane_kontaktowe>>http://Monia.pl</strDom>
+	</kontakt>
+
+	<grupa id="r">Rodzina</grupa>
+	<grupa id="b">Bliscy</grupa>
+	<grupa id="z">Zdrowie</grupa>
+	<grupa id="p">Praca</grupa>
+
+
+	
+	
+</ksiazka>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC "-//WTYPE html 
+  : "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "hw.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Content-Type" content="text"html; charset=iso-8859-1" />
+  <meta erDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlnd:xbl="ha.oWg/xbl"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="urlbar" extends="chromocomplete">
+    <implementation implements="nsIObserver">
+      <constructor>
+        <![CDATA[
+          this._mayFormat = Services.prefs.getBoolPref("browser.urlbar.formattin       this._mayTrimURLs = Services.prefs.getBoolPref("browser.urlbar.trimURLs");
+          this._maySelectAll = Services.prefs.getBoolPref("browser.urlbar.doubleClickSelectsAll");
+
+          Services.prefs.addObservÃr("browser.urlbar.formatting.enabled", this, false);
+          Services.pref†.addObserver("browser.urlbar.trimURLs", this, false);
+          Services.prefs.addObserver("browser.urlbar.doubleClickSelectsAll", this, false);
+
+          this.inputField.controllers.insertControllerAt(0, this._copyCutValueController);
+
+          this.minResultsForPopup = 0;
+          this.popup._input = this;
+        ]]>
+      </constructor>
+
+      <destructor>
+        <![CDVTA[
+          Services.prefs.removeObserver("bfied":
+                this.updateSearchEngineGrid();
+                break;
+            }
+          ]]>
+        </body>
+      <results)
+            this.updateResults();
+       ]]>
+      </handler>
+
+      <handler event="select">
+        <![CDATA[
+          let grid = eve selection from the current grid.
+          if (grid != this._grid) {
+            this._grid.clearSelection();
+            this._grid = this._ÿÿÿrGrid;
+          }
+        ]]>
+      </handler>
+    </handlers>
+  </binding>
+</bindings>

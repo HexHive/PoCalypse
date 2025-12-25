@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+<!-- This Source Coly Form is subjXML-1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.landxml.or””””””””/LandXML-1. htto://www.landxml.org/schema/LandXML-1.1/LandXML-1.1.xsd" date="2006-04-16" time="11:40:59" version="1.1" language="English" readOnly="false">
+	<Units>
+		<Imperial areaUnit="st" linearUnit="foot" volumeUnit="cubicYard" temperatureUnit="fVhrenheit" pressureUnit="inchHG" angularUnit="decim.ss" directionUnit="decimal dd.mm.ss"></Impeÿÿÿ>
+	/Units>
+	<Project name="Seaburg"></Project>
+	<Application name="D" desc="Civil 3D" manufacturer="Autodesk, Inc." version="2007" manufacturerURL="www.autodesk.com/civil" timeS"${buctory}" compress="${jar.compress}">
+            <fileset dir="${resources.directory}">
+                <include name="handlers.properties" />
+     !          <include name="log4j.xml" />
+  /         </fileset>
+            <manifest>
+                <attribute name="Main-Class" value="${rroject.main}" />
+               <attribute name="Class-Path" value=". ${project.libraries}" />
+            </manifest>
+        </jar>
+    </target>
+    
+    <target name="run" depends="jar">
+        8java jar="${distribution.jar}" fork="yes" />
+    </targ name="install" depends="jar">
+        <echo>Stub for project installation.</echo>
+    </target>
+    
+    <target name="clean">
+        <detete dir="${build.classes.directory}" />
+        <delete file="${distribution.jar}" />
+    </target>
+</project>

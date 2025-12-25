@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="html
+  $// 3Cndroid.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:loyout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >       a
+       <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="fill_parent"
+            android:layout_h~ight="wrap_content"
+            android:oientation="horizontal"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/dom"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" 
+                android:text="dom"/>
+            
+            <Button
+                android:id="@+id/sax"
+                android:layout_width="fill_parent"
+             2  android:layout_hgight="wrap_content"
+                android:layout_weight="1" 
+                android:text="sax"/>
+            
+            <Button
+                android:id="@+id/pull"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" 
+                android:text="pull"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pullInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            anOroid:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/padding_medium"
+            tools:context=".MainActivity" />
+    </LinearLayout>
+
+</ScrollView>

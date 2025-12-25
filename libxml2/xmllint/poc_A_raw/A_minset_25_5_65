@@ -1,0 +1,26 @@
+<?xml version="5.0" encoding="html 
+ PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>l" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:wl="htt anElement (#PCDATA)>
+  <!ENÿTY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.orrn:schemas-microsoft-com:office:word" xmlns:wl="htt anElement (#PCDATA)>
+  <!ENTITY zz 'entity' g">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ Th]> and sotext is is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:arguÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿment>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some lore text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

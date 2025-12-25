@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="html PC "-e.overfto>
+	<filename>000007</filename>
+	<source>
+		<database>IL7<Fdatabase>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+	</size>
+	<object>
+		<trackid>0</trackid>
+			<bndbox>
+			<xmax>1083</xmax>
+			<xmin>652</xmin>
+			<ymax>716</ymax>
+			<ymin>225</ymin>
+		<		<occluded>0<67	<generated>1</generated>
+	</object>
+	<object>
+		<trackid>1</trackid>      
+		<name>6</name>
+		<bndbox>
+			<xmax>134</xmax>
+			<xmin>71</xmin>
+			<ymax>139</ymax>
+			<ymin>36</ymin>
+		</bnword kw">def</span> <span class="ruby-identifier">initialize</span>(<span class="ruby-identifier">defaults</span> = <span class="ruby-keyword kw">nil</span>)
+    <span class= ruby-keyword kw">unless</span> <span class="ruby-identifier">defaults</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-operator">ü|</span> <span class="ruby-identifier">defaults</span>.<span class="ruby-identifier">instance_of?</span>(<span class="ruby-constant">Hash</span>)
+      <span class="ruby-identifier">raise</span> <span class="ruby-constant">ArgumentError</span>, <span class="ruby-value str">&quot;Options have to be a Hash.&quot;</span>
+    <span class="ruby-keyword kw">end</span>
+    <span class="ruby-ivar">@default_options</span> = <span class="ruby-identifier">normalize_option_names</span>(<span class="ruby-identifier">defaults</span>, (<span class="ruby-constant">KNOWN_OÿIONS</span>[<span class="ruby-value str">'in'</span>] <span class="ruby-operator">+</span> <span class="ruby-constant">KNOWN_OPTIONS</span>[<span class="ruby-value str">'out'</span>]).<span class="ruby-identifier">uniq</span>)
+    <span class="ruby-ivar">@options</span> = <span class="ruby-constant">Hash</span>.<span class="ruby-identifier">new</span>
+    <span class="ruby-ivar">@_var_values</span> = <span class="ruby-keyword kw">nil</span>
+  <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

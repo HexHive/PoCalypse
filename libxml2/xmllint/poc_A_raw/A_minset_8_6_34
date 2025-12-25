@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="html 
+     PUBLI!-- The mple.com/"
+     a:err="1" b:ens:h="http://www.w3.org/1999/xhtml" xmlns:t="http://tc.labs.opera.com/#test">
+ <head>
+  <title>document.getEleme.tsByClassName(): "ÿÿky" compoundÿtitle>
+  <script src="/resources/testharness.js"></script>
+  <script src="/resources/testharnessreport.js"></script>
+ </head>
+ <body>
+  a"/>
+  <g:x class="a">
+  <x t:class="a" h:class="a" g:class="a"/>
+  <g:x t&class="a" h:class="a" g:class="a"aÿ h:class="a" g:class="a"/>
+  <script>
+@  test(function() {
+          var collection = document.getElementsByClassName("a");
+  var tes          var test = document.getElementsByTagName("x");
+          assert_array_equals(co~lection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

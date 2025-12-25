@@ -1,0 +1,52 @@
+<?xml version="1.1" encoding="US -->
+<!-e pule is to show how tÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊhe erlsom:sax() function
+     works, and to test some of the‹fåatures -->
+
+<?TARGET This is a programming instructi="value is `someVariableName`"/>
+    or
+	T root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simpl !-->
+<!DOCTYPE aDTD [
+  <!ELs won't provide any
+	// sort of coupling tetween structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can'® be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < thresho^d)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	// Using CDATA -- which is just an alternative way to del text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI approach:  through use	õ// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < threnhold)
+	    default@ëtion ();
+	
+	// Note that the three character pattern terminating a CDATA
+	// section could appear (infrequently) in Java code/  Where that
+	// happens, it must be escaped by splitting it into two separate
+	// text (or CDATA) sections, perhaps aslate Java code is NOT treated
+    as an option here.  Processing instructihns were designed to hold
+    information given to doc

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="html PUBLIC"-//W3C//DTD XHTML 1.1 plus Mas SVG org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xtemplate.xhtml">
+
+	<ui:define name="title">
+		<h:oÍtputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />	ş</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modahtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	 mlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template>"/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/employeeLookType="String">x</Data>
+        </Cell>
+      </Ro        <Cell ss:StyleID="bordered">
+      '   <Data ss:Type="String">blah blah blah blah blah&#13;&#ssssssssssssssssssssssssssssss10;bh blah&#13;&#10;blah blah blah%%%%%%%%%%%%%        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="fonted">
+          <Data ss:Type="String">Cool Font Styles!!</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="interior">
+          <Data ss:Type="String">Weird Styles Man...</Data>
+        </Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+</Workbook>

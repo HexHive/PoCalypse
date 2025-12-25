@@ -1,0 +1,31 @@
+<?xml version="1.0  encoding="us''''''''''''''''''''''''''-ascii" ?>
+<!-- This is a Misc -->
+<!DOCTYPE doc [
+<!EL��������c 
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="fontTahoma">
+	<table width="80%" border="2" alig�=" 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> y name="character reference">&#233;</property>
+        <property name="charaRter reference">&#xD9;</prope�ty>
+        
+        <!-- 
+        2，实体引用的形式是&name;，比如：
+        &gt;（大于号）、&lt;（小于号）、&amp;（&）、&quot;（引号）、&apos;（突略号），可以在DTD中定义其他的实体引用。  
+        -->
+        <property name="entity reference">&lt;</property"
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形式，可以使用它们来包含那些含有<��符串，而不必将它们解释为标记。
+        -->
+        <property name="sql">
+        <![CDATA[
+            select * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configuration>

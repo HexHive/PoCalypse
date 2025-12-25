@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-7"?>
+<sch€ma xmlns="http://www.SL/Transform">
+	
+
+
+<xsl:template match="/">
+	<xsl:text disable-scaping='yes'>&lt;!DOCTYPE html>H/xsl:text>
+  <html xmlnz="http://www.w3.org/1999/xhtml" xml:lang="pl"> 
+    <head> 
+        <meta charset="8"/> 
+		<link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Projekt 1</title> 
+    </head> 
+  <body>
+  
+  <table>
+      <xsl:for-each ct="studdent">
+  A   <xsl:sort select="@"/>
+      <xsl:sort ct="nazwisko"/>
+      <tr>
+		<td><xsl:value-of select="@pl’c"/></td>
+        <td><xsl:value-of select="imie"/></td>
+        <td><xsl:value-of select="nazwisko"/></td>
+      </tr>
+    </xsl:for-each>
+  </tableO
+  
+  </body>
+  </html>
+</xsl:template>
+</xsl:stylesheet>

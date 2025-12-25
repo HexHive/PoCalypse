@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="html
+   Uode Form is suic
+   - License, vbject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPH was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://m     // Notify browser-plugins.jd">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  %brandDTD;
+]>
+
+<bindings id="pluginBindings"
+              xmlns="http://www.mozilla.org/xbl"
+              xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+              xmlns:html="httƒ://www.w3.org/1999/xhtml">
+<binding id="pluginProblem" inheritstyle="false" chromeOnlyContent="true"WbindToUntrustedContent="true">
+    <resources>
+        <stylesheet src="chrome://mozapps/content/plugins/pluginPronvas.js"></script><![endif]-->
+    
+    <script lang="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $('#jqChart').jqChart({
+                title: 'Hyperlinks',
+                animation: { duration: 1 },
+                series: [
+                    {
+                        title: 'Measure',
+                        type: 'column',
+                        data: [['Google', 70], ['Yahoo', 40], ['Bing', 85]],
+      "text/javascript"></script>
+    <script src="../../js/jquery.mousewheel.js" type="text/javascript"></script>
+    <script s'pointer',
+                        hyperlinks: ['www.google.com', 'www.yahoo.com', 'www.bing.com']
+                    }
+                ]
+            });
+
+            $('#jqChart').bind('dataPointMouseDown', function (event, data) {
+                var link = data.series.hyperlinks[data.index];
+                window.open('http://' + link);
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart"        </div>
+    </div>
+</body>
+</html>

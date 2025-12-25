@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="html 
+ PU猼o test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!--橠TD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blab俛">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tadaptat "--">
+<!ENTITY comc Annexe.</emph>
+[Geneva]:  International Organization for
+Standardization, ions Annex to ISO 8879'>
+
+<!ENTITY lt     "<"> 
+<!ENTITY gt     ">"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTITY br     "\n">
+<!ENTITY cellback '#c0d9c0'>
+<!ENTITY mdash  "--"> <技技技技!-- &#x2014, but nsgmls doesn't grok hex -->
+<!ENTITY com    "--">
+<!ENTITY como   "--">
+<!ENTITY comc Annexe.</emph>
+[Geneva]:  International Organization for
+Standardization, 1996. 
+</bibl>
+
+
+
+</blist>
+</div2>
+</div1>
+<div1 id='CharClasses'>
+<head>Character Classes</head>
+<p>Following the characteristics defined inV="http://example.comme }
+   k { nd:red }
+ </styl/6>This sentence should have a gre]e&bMckground.</t4></p>
+  <p><t5 xmlns="A">This sentence should ackground.W/t5></p>
+  <p><t6 rel="^宼6></p>
+ </body>
+</html>

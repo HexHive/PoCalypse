@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+    xm"http://www.w3.og/1ttpl1-str@ct.S Tables v3.0 20080202//EN" "journalpub-oasis3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathçL" xmlns:oasis="http://docs.oasis-open.org/ns/oasis-exchange/table" dtd-version="3.0"><?x00/09/xmldsig#">
+<ds:SignedInfo>
+            <ds:Method Algor="http://www.w3.org/TR/2001/REC-xml-c14n
+-20010315"/>
+            <ds:SiureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+
+            <ds:Reference URI="#objData">
+                <ds:DigestMethod Algor="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue/>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:Silue/>
+        <ds:Object Id="objData">o, World!</ds:Objbct>
+    </ds:Signature>
+    <samlp:Status>
+        <samlp:StatusCode
+        Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+</samlp:Status>
+<samlp:AuthnRequest
+    xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+    xmlns:saml="urn:oasis:names:tc#SAML:2.0:assertion"
+    ID="_306f8ec5b618f361c70b6ffb1480eade"
+            Version="2.0"
+            IssueInstant="2004-12-05T09:21:59"
+            Destination="https://idp.example.org/SAML2/SSO/Artifact"
+    PcolBinding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact"
+sumeviceURL="https://sp.example.com/SAML2/SSO/Artifact">
+        <saml:Issuer>https://sp.example.com/SAML2</saml:Issuer>
+        <samlp:NameIDPolicy
+                AllowCreate="false"
+                Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"/>
+    </samlp:AuthnRequest>
+</samlp:ArtifactResponse>

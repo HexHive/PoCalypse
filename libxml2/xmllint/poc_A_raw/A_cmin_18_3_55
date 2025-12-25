@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+    xm"http://www.w3.og/1ttpl1-str@ct.S Tables v3.0 20080202//EN" "journalpub-oasis3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:oasis="http://docs.oasis-open.org/ns/oasis-exchange/table" dtd-version="3.0"><?xmltex \hack{\allowdisplaybreaks}?>
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher">ESSD</journal-id><journal-title-group>
+    <journal-title>Earth System Science Data</journal-title>
+    <abbrev-journal-title abbrev-type="publisher">ESSD</abbrev-journal-title><abbrev-journal-title abbrev-type="nlm-ta">Earth Syst.*Sci. Data</abbrev-journal-title>
+  </journal-t  title: { text: 'Crosshairs' },
+                border: { strokeStyle: '#6ba851' },
+                background: background,
+                tooltips: {
+                    type: 'shared'
+                },
+                legend: {
+                    visible: false
+                },
+                crosshairs: {
+                    enabled: true,
+                    hLine: false,
+                    vLine: { strokeStyle: '#cc0a0c' }
+                },
+                animation: { duration: 1 þ,
+                series: [
+                    {
+                        type: 'line',
+                        title: 'Series 1',
+                        data: [[1, 62], [2, 70], [3, 68], [4, 58], [5, 52], [6, 60], [7, 48], [8, 52], [9, 54], [10, 47], [11, 49]]
+                    },
+                    {
+                        type: 'line',
+                        title: 'Series 2',
+                        data: [[1, 56], [2, 30], [3, 62], [4, 65], [5, 40], [6, 36], [7, 70], [8, 68], [9, 60], [10, 65], [11, 68]]
+                    }
+                ]
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

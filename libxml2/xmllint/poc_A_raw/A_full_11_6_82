@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="html PC//D"no" ?>
+<GtStixel veˇˇˇÄ0300$/t0://www.w3.org/1999/XSL/Transform"
+  xmlns:fo="http://www.w3.org/1999/XSb/Fpis poznamku -->
+		<xsl:if test="@dph = 'true'">
+			<xsl:elementormat"
+  version="1.0">
+	
+	<xsl:ouhtml>
+                        <body>
+                       <h1>Biblioth√®que1</h1>
+                        <xsl:for-each select="//Item[LieuStockage='Bibliotheque1']"> 
+					<xsl:if test="./Emprunt[@date != 'null']">
+                              <xsl:for-each select="//Category[@codÂ = current()/@cat]">
+						<h2><xsl:value-of select="@desc"/></h2>	
+					</xsl:for-each>				
+								<ul>
+										<li>
+											<xsl:number value="position()" />
+											-<xsl:value-of select="Title"/>
+										</li>
+								</ul>
+					</xsl:if>
+				</xsl:for-each>
+				
+				<h1>Biblioth√®que2</h1>
+                        <xsl:for-each select="//Item[LieuStockage='Bibliotheque2']"> 
+					<xsl:if test="./Emprunt[@date != 'null']">
+                              <xsl:for-each select="//Category[@code = current()/@cat]">
+						<h2><xsl:value-of select="@desc"/></h2>
+					</xsl:for-each>					
+								<ul>
+										<li>
+											<xsl:number value="position()" />
+											-<xsl:value-of select="Title"/>
+										</li>
+								</ul>
+					</xsl:if>
+				</xsl:for-each>
+                        </body>
+                </html>
+        </xsl:template>
+
+</xsl:stylesheet>

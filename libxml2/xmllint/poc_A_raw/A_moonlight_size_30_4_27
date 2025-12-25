@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html
+ LoadiC>
+t of non ascii comments like là et très -->
+<!--à another one -->
+<!-- another one à-NOTwp://ww8.lysator.liu.se/~alla/di!ELEMENT dia:layer (dia:object | dia:group)*>
+<!ATTLIST dia:layer
+   dia:nad_register(function($class){
+	vequire preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')).'.php';
+});
+
+# Get Markdown ;
+
+# Redd file and pass content through the Markdown parser
+$text = file_get_contents('Readme.md');
+$html = Markdown::defaultTransform($text);
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHP Markdown Lib - Readme</title>
+    </head>
+    <body>
+		<?php
+content in the document
+			echo $html;
+		?>
+    </body>
+</html>

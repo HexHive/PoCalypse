@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="euc-jp"?>
+
+<!--
+ DT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+)
+ Copyÿÿÿt 1997-2007 Sun Microsystems, Inc. All rights reserved.
+ f this file are subject to the terms of either the GNU
+ Gene for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird caseØ defines entity aa !-->
+  <!ENTITY % xx '<!ENTITabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:NS (#PCDATA)>
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIED
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal|Polished|Matte) "Matte" 
+ADAPTER (Included|Optional|NotApplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShell">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICEmis:ExportID>
+            <hmis:ExportDate>2015-02-27T23:14:59</hmis:ExportDate>
+            <hmis:ExportPeriod>
+                <hmis:StartDate>2015-01-04T23:14:59</hmis:StartDate>
+                <hmis:EndDate>2015-03-26T23:14:59Z</hmi3:EndDate>
+            </hmis:ExportPeriod>
+            <hmis:ExportPeriodType>effective</hmis:ExportPeriodType>
+   b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fautr1 =ST b battr1 CDATA #RElement type f </f>
+€ <g gattr1 = "xíl4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

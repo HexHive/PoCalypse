@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Trafile is6to show how the erlsom:sax() functfeatures -->
+
+<?TARGET This is a pr~gramming instruction ?>
+
+<!-- DTored,except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, entity aa !-->
+  <!ENTITY % xx ' aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]>d some more text </i:argume|t>
+    <i:argument>123<&d;&dc_refeence IDREF     <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]>d some more text </i:argume|t>
+    <i:argument>123<&d;&dc_refeence IDREF #REQUIRED>
+  <!ATTLIST d d_reference IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltech.gif" NDATA gif>
+  <!NOTATION gif SYSTEM "gif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRED>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+<!AT2LIST f fatt”1 ENTITIES #REQUIRED>
+  <!ATTLIST g gattr1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hattr1 NMTOKENS #REQUIRED>
+  <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 -->
+  <!ATTLIST j jattr1 CDATA #REQUIRED 
+              jattr: CDATA "good" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLISD >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "x]l4j3_0_0_EA3"> Elementpe j </j>
+</root>
+<!--* a valid test: tests P54 *-->

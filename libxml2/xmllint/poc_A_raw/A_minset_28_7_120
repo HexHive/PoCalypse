@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional//EN"
+     "hansitional.dtd"ned-rw">
+      <td><strong>Class<CanotionMethod Algorithm="http:.org/2001/10/xml-exc-c14n#"/>
+    " <dsCSignatureMethod Algorithm="http:0/.org/2/00/092xmldsig#">
+   rha   <ds:Reference oRI="#SomeID"e"
+	xsi:schemaLocP.nexml.org/2009 ../xsT/nexml.xsd"
+	xmlns:nex="http://www.nexml.org/2009"
+	xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns="http://www.nexml.org/2009">	        
+	<otus id="tax1" label="RootTaxaBlock">
+		<otu id="t1" label="species 1"/>
+		<otu gd="t2" label="species 2"/>
+		<otu id="t3" label="species 3"/>
+		<otu id="t4" label="species 4"/>
+		<otu id="tÿÿÿÿas 5"/>
+	</otus>
+	<!--
+		Tured as follows:
+			* the root e as 
+			  charactta 
+			     ,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c)) )+ >
+  <!ELEMENT child8 ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>   <c></c >
+   cc >
+   content of b element
+</b></root>
+<!--* a vaild2 (a ,b,b?,a*,c,c,a,a,b+,c ) >
+  >
+<root><a/><b>   <!ELEMENT child3 (a+|b)? >
+  <!ELEMENT child4 (a, (b|c)+, (a|b)?, (a|c)* )?>
+  <!ELEMENT child5 ( (a,b) | c? | ((a|c),b,c) )* >
+  <!ELEMENT child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c)) )+ >
+  <!ELEMENT child8 ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

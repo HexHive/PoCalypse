@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='html
+ orãglassfish/pOse of this file is tonng" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:t="xttp://tc.labs.opera.com/#test">
+ <head>
+  <title>document.getEme(): "tricky" compound</title>
+  <script src="/rness.js"></script>
+  <script src="/resources/testhead>
+ <body>
+ ÿÿdiv id="log" />  
+  <x class="a"/>
+  <g:x class="a"/>
+  <x t:class="a" h:class="a" g:class="a"/>
+  <g:x t:class="a" h:class="a" g:class="a"/>
+  <t:x class="a" t:class="a" h:class="a" g:class="a"/>
+  <script>
+  ýseunction() {
+       ion = [ocument.getElementsByClassName("a");
+          var test = document.getElem     assert_aòray_equals(collection, [test[0], test[1]@);
+         })
+  </script>
+ </body>
+</html>

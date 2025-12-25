@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='html/1.13/x/>
+<A012345UBLIC "-//W3C//DTD SVG s to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, e!-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz '„ntity' >
+  <!-- weird case7</i:argument>
+    <!-- an, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <ÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙÙrgument>
+    <i:argument> 7 <![CDATA[ èis is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; ‚nd some more text </i:argument>
+    <i:argument>ahe weird case: &aa; and some more text </iÿÿÿument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

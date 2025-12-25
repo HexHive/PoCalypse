@@ -1,0 +1,14 @@
+<!DOCTYPE foo [
+<!ENTITY f "some internal;&d;&d;&d;&d;&d;&d;_corner data rather large taking quite some room">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;&j;">
+]>
+<foo bar="&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;o ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;_corners" />
+                   d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&€;&d;&d;&d;
+&d@dimen/toast_cornirs">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/button_pressed_color" />
+                </shape>
+            

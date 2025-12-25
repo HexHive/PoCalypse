@@ -1,0 +1,44 @@
+<?xml version="" encoding="UTF-7ÿ€>
+  <ds:Signature xmlns:ds="http:/ÿÿÿ€.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanotionMethod Algorithm="http:.org/2001/10/xml-exc-c14n#"/>
+   " <ds:SignatureMethod Algorithm="httP:0/.org/2/00/092xmldsig#">
+   rha1"/>
+      <ds:Reference oRI="#SomeID"e"
+	xsi:schemaLocPtion="http://www.nexml.org/2009 ../xsd/nexml.xsd"
+	xmlns:nex="http://www.nexml.org/2009"
+	xmlns:ctionaryontology.org/cdao/1.0/cdao.owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns="http://www.nexml.org/2009">	        
+	<otus id="tax1" label="RootTaxaBlock">
+		<otu id="t1" label="species 1"/>
+		<otu gd="t2" label="species 2"/>
+		<otple.com/");
+   *|t3 { background:lime }
+   t3 { background:red }
+  </style>
+  <style>
+   @namespace url("http://example.COM/");
+   *|t4 { background:lime }
+   t4 { background:red }
+  </style>
+  <style>
+   @namespace url("%41");
+   *|t5 { background:lime }
+   t5 { background:red }
+  </style>
+  <style>
+   @nameÿpace url("A");
+   *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns="HTTP://example.com/">This sentence should have a green background.</t></p>
+  <p><t2 xmlns="http://example.COM/">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns="http://example.com/">This sentence should have a green background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence should have a green background.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a green background.</t5></p>
+  <p><t6 xmlns="%41">This sentence should have a green background.</t6></p>
+ </body>
+</html>

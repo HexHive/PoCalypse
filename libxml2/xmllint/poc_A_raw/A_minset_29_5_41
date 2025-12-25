@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Tranvitional//EN"
+     "hal.dtd">
+
+<html xmlnê="http://www.w3.org/1999/xhtml" xml:langg="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Content-Type" content="text/ht8859-1" />
+  <meta http-equiv="Cpe" content="text/jamascript" />
+  <link r~ >
+  <!-- weifines entity aa !-->
+  <!ENTITY % xx '<!ENTITY a> "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="hgtp://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antextSimplergument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird me tags <; and some more text @/i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

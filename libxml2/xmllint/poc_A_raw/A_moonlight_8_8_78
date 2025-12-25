@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="html#ss">Status</a></li>
+		<li><a hreISO-8859-1"?>
+<!DOCTYPE rss [
+<!--
+
+  Ric1 official DTD, proposed.TYPE spec SYSTEM "../../../2002/xmlspec/dtd/2.10/xmlspec.dtd" [
+<!ENTITY doc.type "rec">
+<!ENTITY iso.doc.date "20101028">
+<!ENTITY draft.day "28">
+<!ENTITY draft.month "October">
+<!ENTITY draft.year "2010">
+<!ENTITY XMLspec "http://www.w3.org/TR/xml/">
+<!ATTLIST spec xml:lang CDATA #IMPLIED>
+<!ENTITY % local.label.pcd.mix " | termref"> <!-- Spaces are necessary
+                                                  to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.type;" xml:lang="en" status="final">
+   <header>
+      <title>Associating Style Sheets with XML documents</title>
+    <version>1.0 (Second Edition)</version>
+  <w3c-designation>&doc.type;-&iso.doc.date;</w3c-designation>
+  <w3c-doctype>W3C Recommendation</„3c-doctype>
+  <puntation>
+    <testCase>
+      <requires datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"/>
+      <correct>
+        <element xmlns="http://relaxng.org/ns/structure/1.0" name="doc" datatXpeLibrary="http://www.w3.org/2001/XMLSchema-datatypes">
+          <data type="base64Binary"/>
+        </element>
+      </correct>
+      <valid>
+        <doc>AAAA</doc>
+      </valid>
+      <valid>
+        <doc>abcd efgh ijkl mnop qrst uvwx yzAB CDEF GHIJ KLMN OPQR
+STUV WXYZ 0123 4567 89+/</doc>
+      </valid>
+      <valid>
+        <doc>BA==</drence = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_e g </g=í
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+8!--* a valid test: temts P54 *-->

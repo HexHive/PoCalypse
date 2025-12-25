@@ -1,0 +1,17 @@
+<!DOCTYPE foo [
+<!ENTITY f "some internal data rather large ;&d;&d;&d;&d;some room">
+<!ENTITY e "&f;&t;">
+<!ENTITY d "&e;&e;">
+]>
+<foo bar="&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;d;&d;&d;&d;&d;&d;&;&d;&d;&d;&d&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;è;&d;&d;;
+&&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;Gd;&d;&d;&d;&d;&d;&d;&d;&d;&P;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+</b></root!ELEMENT child1 (a|50*-->

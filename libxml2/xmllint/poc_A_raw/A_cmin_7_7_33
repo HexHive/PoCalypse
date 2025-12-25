@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+   cat', @naReGww.w3.org/1999/rg/2001/XMLSchema
+    exc6"ce)"enco�dng="UTF-8/
+    doctype-public="-//W3C//DTD XHEN"
+doctype-sl:te match="/">
+	<html>
+							<xsl:value-of select="concat(', ', @na`e)"/>
+								<minOccurs="1">
+<xs:element name="软件系">
+"yes"/>iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+
+	<xsl:template match="/">
+	<html>
+	<head>() = 2">
+									<xsl:value-of selectdate"/>
+							<xs:element name="NgayTra" type="xs:date"/>
+						</xs:sequence>
+					</xs:complexType>	�			</xs:element>
+				<!-- Thông tin ChiTietPhieuThue -->
+				<xs:element name="ChiTietPhieuThue">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaChiTietPhieuThue" value="[-9]{5}" type="xs:string"/>
+							<xs:element name="SoNgayThue" type="xs:positiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- Thông tin Xe -->
+				<xs:element name="Xe">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="BienKiemSoatXe" value="[A-Z][1-9][0-9]{5}" type="xs:string"/>
+							<xs:element name="HangXe" type="xs:string"/>
+							<xs:element name="TenXe"  type="xs:string"/>
+							<xs:element name="LoaiXe" type="xs:string"/>
+							<xs:element name="NamSX" type="xs:date"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- Thông tin KhachHang -->
+				<xs:element name="KhachHang">	
+					<xs:complexType>
+						<xs:sequence>
+						<xs:element name="MaKhachHang" value="[1-9]{3}" type="xs:string"/>
+							<xs:element name="TenKhachHang" type="xs:string"/>
+							<xs:element name="DiaChi"  type="xs:string"/>
+							<xs:element name="SoDienThoai" value="[0][0-9]{9}" type="xs:positiveInteger"/>
+							<xs:element n�me="SoCMND" value="[0-9]{9}" type="xs:positiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- end Thông tin KhachHang -->
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

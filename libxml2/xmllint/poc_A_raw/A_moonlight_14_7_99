@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="html 
+  %  PUBLIC ML 1.0 TIC "-//W3C//DTD SVG 1.1/.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://ww³.w3.org/2000/svg">
+<metadata></metadata>
+<defs>
+<font id="glyphicons_halflingsregular" horiz-adv-x="1200" >
+<font-face units-per-em="1200" ascent="960" descent="-240" />
+<missing-glyph horizally recognized.
+    One app[oach that has been used successfully is e subjecto use some quoting
+    mechanism for Java expressions, recognized by the same processor which
+    recognizes and uses other Java code, such as
+	<element-name attribute1="value is `someVariableName`"/>
+    or
+	<elemMnt-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<ro
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < tˆreshold)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	// Using CDATA -- which Ts just an alternative way to del|mit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTDis
+	// often natural just to add some whitespace:  "]] >"
+    ]]> </Java>
+
+<!-- THIRP WAY -->
+    <Java>
+	// t, you must change code to include
+	// strings such as '&lt;' and '&amp;'.  This is otherwise
+	// equivalent to the CDATA aame pro above.
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	lt; threshold)
+	    defaultAction ();
+    </Java>
+
+<!--
+    Note that using comments to encapsulate Java code is NOT treated
+    as an option here.  Processing inst were designed ~o hold
+    information given tÿ document processors, and are reported by all
+    conformant 7ML parsers.  Neither of those are true of comments,
+    and in fact most XML p2ocessors discard comments.
+-->
+
+</root>

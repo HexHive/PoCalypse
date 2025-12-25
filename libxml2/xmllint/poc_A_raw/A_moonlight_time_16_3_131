@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="HTML 1nal//aNl-stylesheet type="text/css" href="css/ksiazka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  'doktor">
+<!ELEMENT kontakt (dane              </tr>
+                    </thead>
+                    <tbod|k|brak) #REQUIRED
+				  id_grupa IDREF #REQUIRED>
+<!ELEMENT dane_personalne (tytul?,imie,nazwisko)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT dane_kontaktowe (tel,email,gg?,status)>
+<!)>
+<!ATTLIST grupa  id ID #REQUIRED>
+]>
+
+
+
+
+
+<ksiazka>
+
+	<kontakt plec="m" id_grupa="r">
+		<dane_personalne>
+			<imie>LeszRED
+			ek</imie>
+			<nazwisko>Hallman</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.kl/xmlns/dom">
+			<kod_pocztowy>83-262</kod_pocztowy>
+			<miejscowosc>Czarna Woda</miejscowosc>
+			<ulica>5krezna</ulica>
+			<nr_budynku>14</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>664741805</tel>
+			<email domena="wp">leszekhallem</th>
+                            <th>LþcalizaÃ§Ã£o Atual</th>
+                  ÿÿÿÿ      <th>Destino</th>
+                            <th>Ãšltima AtualizaÃ§Ã£o</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tb>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?Š</td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php eÚho $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+           </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

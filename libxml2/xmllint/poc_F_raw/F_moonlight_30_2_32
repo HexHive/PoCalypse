@@ -1,0 +1,526 @@
+<?xml version="1.0"?>
+<!-- T is subject to , You can obtain%one atmozilla.org/MPL/2.0/. -->
+<!DOCTYPE bind [
+  <!ENTITY
+% pluginsDTD SYSTEM "">
+  <!ENTITY % globllDTD SYSTEM "">
+  <!ENTITY % brandDd" >
+  %pluginsDTD;
+ ;
+]>
+ce 20=2</conftitle>
+      <confdates>August 7 - 10, 2012</confdates>
+  
+  %pluginsDTD;
+ ;
+]>
+ce 20=2</conftitle>
+      <confdates>August 7 - 10, 2012</confdates>
+    </confgroup> 
+    <abstract>
+     >
+  %pluginsDTD;
+ ;
+]>
+ceB2012</conftithe � database.d and used more frequently, even by non-statisticians7 a situation driven by the mainstream happy??? -->
+]>
+<spec w3c-doctype="&doc.type;" xml:lang="en" status="final">
+   <header>
+      <title>Associating Style Sheets with XML documents</tit�e>
+    <version>1.0 (Second Edition)</version>
+  <w3c-designation>&doc.type;-&iso.doc.date;</w3c-designation>
+  <w3c-doctype>W3C Recommendation</w3c-doctype>
+  <pubdate>
+   <day>&draft.day;</day>
+   <month>&draft.month;</month>
+   <year>&draft.year;</year>
+  </pubdate>
+  <publoc>
+     <loc href="http://www.w3.org/TR/2010/REC-xml-stylesheet-20101028"/>
+  </publoc>
+  <altlocs>
+<loc href="xml-stylesheet.xml">XML</loc>
+</altlocs>
+    <latestloc>
+     <loc href="http://www.w3.org/TR/xml-stylesheet"/>
+    </latestloc>
+    <prevlocs>
+     <loc href="http://www.w3.org/TR/2010/PER-xml-stylesheet-20100909"/>
+    </prevlocs>
+      <authlist>
+       <author>
+        <name>James Clark (First Edition)</name>
+        <email href="mailto:jjc@jclark.com">jjc@jclark.com</email>
+       </author>
+       <author>
+        <name>Silon Pieters (Second Edition)</name>
+        <affiliation>Opera Software</affiliation>
+        <emnil href="mailto:simonp@opera.com">simonp@opera.com</email>
+       </author>
+       <author>
+        <name>Henry S. Thompson (Second Edition)</name>
+        <affiliation>University of Edinburgh</affiliation>
+        <email href="mailto:ht@inf.ed.ac.uk">ht@inf.ed.ac.uk</email>
+       </author>
+      </authlist>
+    <errataloc href="http://www.w3.org/1999/06/REC-xml-stylesheet-19990629/errata"/>
+<translationloc href=" http://www.w3.org/2003/03/Translations/byTechnology?technology=xml-stylesheet"/>
+      <abstract><p>This document allows style sheets to be associated with an XML document by including one or more processing instructions with a target of <code>xml-stylesheet</code> in the document's prolog.</p></abstract>
+      <status>
+<p><emph>
+This section describes the status of this document at the time 
+of its publication. Other documents may supersede this document. 
+A list of current W3C publications and the latest revision of 
+this technical report can be found in the 
+<loc href="http://www.w3.org/TR/">W3C technical reports index</loc>
+at http://www.w3.org/TR/.
+</emph></p>
+<p>
+This document is a product of the
+<loc href="http://www.w3.org/XML/Core/">XML Core Working Group</loc>
+as part of the
+<loc href="http://www.w3.org/XML/Activity.html">W3C XML Activity</loc>.
+The English version of this specification is the only normative version. 
+However, for translations of this document, see 
+<loc href="http://www.w3.org/2003/03/Translations/byTechnology?technology=xml-stylesheet">
+http://www.w3.org/2003/03/Translations/byTechnology?technology=xml-stylesheet</loc>.
+</p>
+<p>
+This second edition incorporates all known errata as of the publication date,
+clarifies several areas left unspecified in the earlier edition, and has been
+restructured to allow other specifications to reuse the 
+rules for parsing pseudo-attributes from a string.  A more detailed description
+of the changes from the first edition is in <specref ref="changes"/>.
+This edition supersedes the previous
+<loc href="http://www.w3.org/1999/06/REC-xml-stylesheet-19990629/">edition of 29
+June 1999</loc>.
+</p>
+       <p>Comments on this document may be sent to
+<loc href="mailto:www-xml-stylesheet-comments@w3.org">www-xml-stylesheet-comments@w3.org</loc>;
+public
+<loc href="http://lists.w3.org/Archives/Public/www-xml-stylesheet-comments/">archives</loc>
+are available.  The errata list for this document is available at <loc href="http://www.w3.org/1999/06/REC-xml-stylesheet-19990629/errata">http://www.w3.org/1999/06/REC-xml-stylesheet-19990629/errata</loc></p>
+<p>
+This document has been reviewed by W3C Members, by software developers, and by other W3C groups and interested parties, and is endorsed by th5/#def-essential">Essential
+Claim(s)</loc>
+must disclose the information in accordance with
+<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section
+6 of the W3C Patent Policy</loc>.
+</p>
+</status>
+      <langusage>
+         <language id="en">English</language>
+       <language id="ebnf">Extended Backus-Naur Form (formal grammar)</language>
+      </langusage>
+      <revisiondesc>
+       <slist>
+        <sitem>Original, SP, in HTML 5</sitem>
+        <sitem>Converted to XML specprod, HST, 2009-09-09</sitem>
+        <sitem>Markup cleaned up from pblms introduced by automatic conversion, HST, 2009-�-11</sitem>
+        <sitem>Fixed termdef/ref mess, linked in XML spec productions,
+restructured conformance a bit, HST, 2009-09-11</sitem>
+        <sitem>Added stub bib entries, fixed all remaining validity errors,
+folded in some text from email wrt applications etc., tidied conformance and
+parsing a bit more, HST, 2009-09-16</sitem>
+        <sitem>Major editing by Simon, 2009-09-16 through 2009-12-02</sitem>
+        <sitem>Minor cleanup, SotD, and moving to XML date space, PBG, 2009-12-02</sitem>
+        <sitem>Copied 2009-12-04 changes back to editor space, HST, 2010-02-17</sitem>
+        <sitem>Implemented WG resolutions wrt issues, 2010-02-24, HST
+(diff-marked, with ednotes pointing to issues)</sitem>
+        <sitem>Further agreed/requested edits, 2010-03-10, HST</sitem>
+        <sitem>Prepare for PER publication, SotD from Paul's PER transition request</sitem>
+       </slist>
+      </revisiondesc>
+   </header>
+   <body>
+      <div1 id="introduction">
+         <head> Introduction</head>
+       <p><emph>(This section is non-normative.)</emph></p>
+       <p>Authors might have particular intentions as to how
+user agents are to present the information contained in their XML documents. 
+This specification provides a non-intrusive mechanism, using a processing
+instruction, to provide links to one or more style sheets, i.e. resources
+specifying the desired rendering in a designated language. User
+agents will use these resources to control presentation of XML.</p>
+       <example>
+        <p>Consider an XHTML document with style sheet associations using the <code>link</code> element:</p>
+        <eg><![CDATA[<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Example with link elements</title>
+  <link rel="stylesheet" href="common.css"/>
+  <link rel="stylesheet" href="default.css" title="Default style"/>
+  <link rel="alternate stylesheet" href="alt.css" title="Alternative style"/>
+  <link rel="stylesheet" href="single-col.css" media="all and (max-width: 30em)"/>
+ </head>
+ <body>
+  ...
+ </body>
+</html>]]></eg>
+        <p>This document could be written as follows, using <termref def="dt-xml-stylesheet">xml-stylesheet processing instructions</termref>:</p>
+        <eg><![CDATA[<?xml-stylesheet href="common.css"?>
+<?xml-stylesheet href="default.css" title="Default style"?>
+<?xml-stylesheet alternate="yes" href="alt.css" title="Alternative style"?>
+<?xml-stylesheet href="single-col.css" media="all and (max-width: 30em)"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head>
+  <title>Example with xml-stylesheet processing instructions</title>
+ </head>
+ <body>
+  ...
+ </body>
+</html>]]></eg>
+       </example>
+      </div1>
+      <div1 id="conformance-requirements">
+         <head>
+Conformance requirements</head>
+         <p>All diagrams, examples, and notes in this specification are
+non-normative, as are all sections explicitly marked non-normative.
+Everything else in this specification is normative.</p>
+         <p>The key words <rfc2119>must</rfc2119>, <rfc2119>must
+not</rfc2119>, <rfc2119>should</rfc2119>, <rfc2119>should not</rfc2119> and <rfc2119>may</rfc2119> in the normative parts
+of this document are to be interpreted as described in RFC 2119. These words do not appear in all uppercase letters in
+this specification. <bibref ref="rfc2119"/></p>
+         <p>The following conformance classes are defined by this specification:</p>
+         <glist>
+          <gitem>
+           <label>Documents</label>
+           <def>
+            <p>A document is considered to be a conforming document if it satisfies all <rfc2119>must</rfc2119>-level criteria in this specification that apply to documents.</p>
+            <p><termref def="dt-xml-stylesheet">xml-stylesheet
+processing instructions</termref> and their pseudo-attributes are intended for
+use by document authors to provide links to and information about one
+ or more stylesheets, as described in
+ <specref ref="the-xml-stylesheet-processing-instruction"/>, which are
+available to be applied to the containing document.</p>
+           </def>
+          </gitem>
+          <gitem>
+           <label>xml-stylesheet processors</label>
+          <def>
+            <p>XML defines an <xtermref href="&XMLspec;#dt-app">application</xtermref> as a software module which receives
+   the information content of an XML document from an <xtermref href="&XMLspec;#dt-xml-proc">XML processor</xtermref>.
+   <termdef term="xml-stylesheet processor" id="dt-xml-stylesheet-processor">An <term>xml-stylesheet processor</term> is such an
+   application which processes XML <xtermref href="&XMLspec;#sec-pi">processing instructions</xtermref> in accordance
+   with this specification.</termdef> <bibref ref="xml"/></p>
+           <p>An <termref def="dt-xml-stylesheet-processor">xml-stylesheet processor</termref> is considered to be a conforming <termref def="dt-xml-stylesheet-processor">xml-stylesheet processor</termref> if it satisfies all <rfc2119>must</rfc2119>-level criteria in this specification that apply to <termref def="dt-xml-stylesheet-processor">xml-stylesheet processors</termref>. <termd f def="dt-xml-stylesheet-processor">xml-stylesheet processors</termref> do not have to check or enforce any of the constraints on documents.</p>
+           </def>
+          </gitem>
+          <gitem>
+           <label>Applications</label>
+           <def>
+   <p>An <termref def="dt-xml-stylesheet-processor">xml-stylesheet processor</termref> <rfc2119>may</rfc2119> be part of a larger XML
+   application, or <rfc2119>may</rfc2119> function independently.  In either case,
+   <termdef term="application" id="dt-application">an <term>application</term> is the cons�   of the
+   pseudo-attribute analysis defined in this specification.</termdef></p>
+            <p>A detailed specification of how <termref def="dt-application">applications</termref> exploit the
+       information contained in <termref def="dt-xml-stylesheet">xml-stylesheet
+processing instructions</termref>
+       is out of scope for this document, as this may reasonably vary
+       from application to application.  Accordingly this
+       specification places no conformance requirements on
+       applications.</p>
+            <p>It is however expected that specifications governing the use of
+       stylesheet languages will reference this specification in
+       describing how applications may identify stylesheets for
+       use. Such specifications are expected to specify
+       interpretations for the values (or absense of value) of those
+       <termref def="dt-pseudo-attribute">pseudo-attributes</termref> which they make use of, doing so in a way
+       that is as consistent as possible with those <termref def="dt-pseudo-attribute">pseudo-attributes'</termref>
+       descriptions in <specref ref="the-xml-stylesheet-processing-instruction"/>,
+       insofar as this makes sense for the application and stylesheet language(s) in question.</p>
+           </def>
+          </gitem>
+         </glist>
+         <p>This specification is defined with reference to the vocabulary for
+         XML provided by the XML Information
+         Set. <bibref ref="infoset"/></pA
+         <p>The productions in this specification use the same
+         notation as used in the XML specification. Tokens in the
+         grammar that are not defined in this specification are defined in
+         the XML specification. <bibref ref="xml"/></p>
+      </div1>
+      <div1 id="pseudo-attributes">
+         <head>Pseudo-attributes</head>
+         <p><termdef term="rules for parsing pseudo-attributes from a string" id="dt-parsing">The <term>rules for parsing pseudo-attributes from a string</term> are given in this section.</termdef></p>
+         <p><termdef term="parsing result" id="dt-parsing-result">The <term>parsing result</term> is either a set of <termref def="dt-pseudo-attribute">pseudo-attributes</termref> or an error.</termdef></p>
+         <p>If the given string is not matched by the <nt def="NT-PseudoAtts">PseudoAtts</nt> production, the <termref def="dt-parsing-result">parsing result</termref> is an error.</p>
+         <scrap lang="ebnf'>
+            <head>Productions for strings with pseudo-attributes</head>
+            <prodgroup>
+
+               <prod id="NT-PseudoAtts" num="1a">
+                  <lhs>PseudoAtts</lhs>
+                  <rhs>
+                     <nt def="NT-PseudoAtt">PseudoAtt</nt>? (<xnt href="&XMLspec;#NT-S">S</xnt> <nt def="NT-PseudoAtt">PseudoAtt</nt>)* <xnt href="&XMLspec;#NT-S">S</xnt>?</rhs>
+               </prod>
+
+               <prod id="NT-PseudoAtt" num="2">
+                  <lhs>PseudoAtt</lhs>
+                  <rhs><xnt href="&XMLspec;#NT-Name">Name</xnt> <xnt href="&XMLspec;#NT-S">S</xnt>? "=" <xnt href="&XMLspec;#NT-S">S</xnt>? <nt def="NT-PseudoAttValue">PseudoAttValue</nt>
+                  </rhs>
+               </prod>
+
+               <prod id="NT-PseudoAttValue" num="3">
+                  <lhs>PseudoAttValue</lhs>
+                  <rhs>('"' ([^"&lt;&amp;] | <xnt href="&XMLspec;#NT-CharRef">CharRef</xnt> | <nt def="NT-PredefEntityRef">PredefEntityRef</nt>)* '"' | "'"
+([^'&lt;&amp;] | <xnt href="&XMLspec;#NT-CharRef">CharRef</xnt> | <nt def="NT-PredefEntityRef">PredefEntityRef</nt>)* "'")</rhs>
+               </prod>
+
+               <prod id="NT-PredefEntityRef" num="4">
+                  <lhs>PredefEntityRef</lhs>
+                  <rhs>"&amp;amp;" | "&amp;lt;" | "&amp;gt;" | "&amp;quot;" |
+"&amp;apos;"</rhs>
+               </prod>
+
+            </prodgroup>
+         </scrap>
+         <p>
+            <termdef term="pseudo-attribute" id="dt-pseudo-attribute">Each
+string matched by <nt def="NT-PseudoAtt">PseudoAtt</nt> in the <nt def="NT-PseudoAtts">PseudoAtts</nt> production
+represents a <term>pseudo-attribute</term>.</termdef> A
+<termref def="dt-pseudo-attribute">pseudo-attribute</termref> has a
+<termref def="dt-name">name</termref> and a <termref def="dt-value">value</termref>.
+         </p>
+     6   <p>
+<termdef id="dt-name" term="name">The
+string matched by
+<xnt href="&XMLspec;#NT-Name">Name</xnt> in the <nt def="NT-PseudoAtt">PseudoAtt</nt>
+production constitutes the <term>name</term> of the corrzsponding <termref def="dt-pseudo-attribute">pseudo-attribute</termref>.</termdef>
+         </p>
+         <p>
+<termdef id="dt-value" term="value">The string matched by
+<nt def="NT-PseudoAttValue">PseudoAttValue</nt> in the <nt def="NT-PseudoAtt">PseudoAtt</nt>
+production &#x2014; 
+with the
+three modifications specified below &#x2014; constitutes the <term>value</term>
+of the corresponding <termref def="dt-pseudo-attribute">pseudo-attribute</termref>.</termdef></p>
+       <olist>
+           <item><p>Each <xnt href="&XMLspec;#NT-CharRef">CharRef</xnt> is replaced with the character it represents according to
+XML <bibref ref="xml"/>.</p></item>
+           <item>
+            <p>Each <nt def="NT-PredefEntityRef">PredefEntityRef</nt> in <nt def="NT-PseudoAttValue">PseudoAttValue</nt> is replaced with U+0026 (&amp;) if it is
+"<code>&amp;amp;</code>", U+003C (&lt;) if it is
+"<code>&amp;lt;</code>", U+003E (&gt;) if it is
+"<code>&amp;gt;</code>", U+0022 (") if it is
+"<code>&amp;quot;</code>" and U+0027 (') if it is
+"<code>&amp;apos;</code>".</p>
+           </item>
+           <item><p>The
+ first and last character (the start and end quotes) are removed.</p></item>
+          </olist>
+         <p>The <termref def="dt-parsing-result">parsing result</termref> is an error if the XML <xtermref href="&XMLspec;#wf-Legalchar">Legal Character well-formedness contraint</xtermref> is violated for any <xnt href="&XMLspec;#NT-CharRef">CharRef</xnt>. <bibref ref="xml"/></p>
+         <p>The <termref def="dt-parsing-result">parsing result</termref> is an error if there are more than one <termref def="dt-pseudo-attribute">pseudo-attribute</termref> with the same <termref def="dt-name">name</termref>.</p>
+       <p>If 
+the <termref def="dt-parsing-result">parsing result</termref> is not an error, then it is the set of 
+<termref def="dt-pseudo-attribute">pseudo-attributes</termref> represented when the given string is matched by the 
+<nt def="NT-PseudoAtts">PseudoAtts</nt> production.</p>
+      </div1>
+      <div1 id="the-xml-stylesheet-processing-instruction">
+         <head>The xml-stylesheet processing instruction</head>
+         <p><termdef term="potential xml-stylesheet processing instruction" id="dt-potential-xml-stylesheet">A processing instruction information item is said to be a <term>potential xml-stylesheet processing instruction</term> if it has the [target] property <code>xml-stylesheet</code> and it either is in the [children] property of a document information item and appears before the element information item of the document information item's [children] property, or it appears in the [children] property of a document type declaration information item.</termdef></p>
+         <p>For <termref def="dt-potential-xml-stylesheet">potential xml-stylesheet processing instructions</termref> that are in the [children] property of a document information item, <termref def="dt-xml-stylesheet-processor">xml-stylesheet processors</termref> <rfc2119>must</rfc2119> report to the <termref def="dt-application">application</termref> the <termref def="dt-parsing-result">parsing result</termref> of invoking the <termref def="dt-parsing">rules for parsing pseudo-attributes from a string</termref>, using the processing instruction information item's [content] property as the string.</p>
+         <p>For <termref def="dt-potential-xml-stylesheet">potential
+xml-stylesheet processing instructions</termref> that are in the [children] property of a document type declaration information item, <termref def="dt-xml-stylesheet-processor">xml-stylesheet processors</termref> <rfc2119>may</rfc2119> report to the <termref def="dt-application">application</termref> the <termref def="dt-parsing-result">parsing result</termref> of invoking the <termref def="dt-parsing">rules for parsing pseudo-attributes from a string</termref>, using the processing instruction information item's [content] property as the string. <termdef term="ignored" id="dt-ignored">If it is not reported to the <termref def="dt-application">application</termref>, the processing instruction information item is said to be <term>ignored</term>.</termdef></p>
+         <note>
+          <p>Since non-validating XML processors are not required to read parameter entities or the external subset, it is possible that processing instructions that appear in parameter entities or the external subset will not be present in the document type declaration information item's [children] property. <bibref ref="xml"/></p>
+         </note>
+         <p><termdef term="xml-stylesheet processing instruction" id="dt-xml-stylesheet">A <termref def="dt-potential-xml-stylesheet">potential xml-stylesheet processing instruction</termref> is said to be an <term>xml-stylesheet processing instruction</term> if the <termref def="dt-parsing-result">parsing result</termref> is not an error when invoking the <termref def="dt-parsing">rules for parsing pseudo-attributes from a string</termref>, using the processing instruction information item's [content] property as the string.</termdef></p>
+            <p>Documents <rfc2119>must not</rfc2119> use processing instruction information items with the [target] property
+<code>xml-stylesheet</code> if they are not <termref def="dt-xml-stylesheet">xml-stylesheet processing instructions</termref>.</p>
+            <p>Documents <rfc2119>should not</rfc2119> use <termref def="dt-xml-stylesheet">xml-stylesheet processing instructions</termref> that are in the [children] property of a document type declaration information item.</p>
+         <p>An <termref def="dt-xml-stylesheet">xml-stylesheet processing instruction</termref> will match the following production:</p>
+         <scrap lang="ebnf">
+            <head>Production for xml-stylesheet processing instruction</head>
+            <prodgroup>
+
+               <prod id="NT-StyleSheetPI" num="1">
+                  <lhs>StyleSheetPI</lhs>
+                  <rhs>"&lt;?xml-stylesheet" ( (<xnt href="&XMLspec;#NT-S">S</xnt> <nt def="NT-PseudoAtts">PseudoAtts</nt>)? - (<xnt href="&XMLspec;#NT-Char">Char</xnt>* "?&gt;"
+<xnt href="&XMLspec;#NT-Char">Char</xnt>*) ) "?&gt;"</rhs>
+               </prod>
+
+            </prodgroup>
+         </scrap>
+         <p>Documents <rfc2119>may</rfc2119> specify the following <termref def="dt-pseudo-attribute">pseudo-attributes</termref> on
+<termref def="dt-xml-stylesheet">xml-stylesheet processing instructions</termref>, unless otherwise stated:</p>
+         <glist>
+            <gitem id="PA-href">
+               <label>
+                  <code>href</code>
+               </label>
+               <def>
+
+                  <p>Gives the address of the referenced style sheet. Documents <rfc2119>must</rfc2119> specify this <termref def="dt-pseudo-attribute">pseudo-attribute</termref>. Documents <rfc2119>must</rfc2119> set the <termref def="dt-value">value</termref> to a string that matches the grammar for
+&lt;IRI-reference&gt; given in RFC 3987. <bibref ref="rfc3987"/></p>
+
+                  <note>
+                   
+                   <p>It is possible to associate a style sheet that is in the
+same document as the <termref def="dt-xml-stylesheet">xml-stylesheet processing
+instruction</termref> by using just a fragment identifier in the <termref def="PA-href"><phrase><code>href</code></phrase></termref> <termref def="dt-pseudo-attribute">pseudo-attribute</termref>.</p>
+                   <p>For details on how this is managed in XSLT,
+see <xspecref href="http://www.w3.org/TR/xslt20/#embedded">3.11 Embedded
+Stylesheet Modules</xspecref> in <bibref ref="xslt"/>.</p>
+                  </note>
+               </def>
+            </gitem>
+
+            <gitem id="PA-type">
+               <label>
+                  <code>type</code>
+               </label>
+               <def>
+
+                  <p>Gives an advisoryructure.
+Physically, the document is composed of units called <termref
+def="dt-entity">entities</termref>.  An entity may <termref
+def="dt-entref">refer</termref> to other entities to cause their
+inclusion in the document. A document begins in a "root"  or <termrhf
+def="dt-docent">document entity</termref>.
+Logically, the document is composed of declarations, elements, 
+comments,
+character references, and
+processing
+instructions, all of which are indicated in the document by explicit
+markup.
+The logical and physical structures must nest properly, as described  
+in <specref ref='wf-entities'/>.
+</p>
+ 
+<div2 id='sec-well-formed'>
+<head>Well-Formed XML Documents</head> id="dt-wellformed" term="Well-Formed">
+A textual object is 
+a well-formed XML document if:</termdef>
+<olist>
+<item><p>Taken as a whole, it
+matches the production labeled <nt def='NT-document'>document</nt>.</p></item>
+<item><p>It
+meets all the well-formedness constraints given in this specification.</p>
+</item>
+<item><p>Each of the <termref def='dt-parsedent'>parsed entities</termref> 
+which is referenced directly or indirectly em>
+<sitee document is
+<titleref href='wf-entities'>well-formed</titleref>.</p></item>
+</olist></p>
+<p>
+<scrap lang='ebnf' id='document'>
+<head>Document</head>
+<prod id='NT-document'><lhs>document</lhs>
+<rhs><nt def='NT-prolog'>prolog</nt> 
+<nt def='NT-element'>element</nt> 
+<nt def='NT-Misc'>Misc</nt>*</rhs></prod>
+</scrap>
+</p>
+<p>Matching the <nt def="NT-document">document</nt> production 
+implies that:
+<olist>
+<item><p>It contains one or more�<termref def="dt-element">elements</termref>.</p>
+</item>
+<!--* N.B. some readers (notably JC) find the following
+paragraph awkward and redundant.  I agree it's logically redundant:
+it *says* it is summarizing the logical implications of
+matching the grammar, and that means by definition it's
+logically redundant.  I don't;think it's rhetorically
+redundant or unnecessary, though, so I'm keeping it.  It
+could however use some recasting when the editors are feeling
+stronger. -MSM *-->
+<item><p><termdef id="dt-root" term="Root Element">There is  exactly
+one element, called the <term>root</term>, or document element,  no
+part of which appIars in the <termref
+def="dt-content">content</termref> of any other element.</termdef>
+For all other elements, if the start-tag is in the content of another
+element, the end-tag is in the content of the same element.  More
+simply stated, the elements, delimited by start- and end-tags, nest
+properly within each other.
+</p></item>
+</olist>
+</p>
+<p><termdef id="dt-parentchild" term="Parent/Child">As a consequence 
+of this,
+for eachnon-root element
+<code>C</code> in the document, there is one other element <code>P</code>
+in the document such that 
+<code>C</code> is in the content of <code>P</code>, but is not in
+the content of any other element that is in the content of
+<code>P</code>.  
+<code>P</code> is referred to as the
+<term>parent</term> of <code>C</code>, and <code>C</code> as a
+<term>child</term> of <code>P</code>.</termdef></p></div2>
+ 
+<div2 id="charsets">
+<head>Characters</head>
+ 
+<p><termdef id="dt-text" term="Text">A parsed entity contains
+<term>text</term>, a sequence of 
+<termref def="dt-character">characters</termref>, 
+which may represent markup or character data.</termdef> 
+<termdef id="dt-character" term="Character">A <term>character</term> 
+is an atomic unit of text as specified by
+ISO/IEC 10646 <bibref ref="ISO10646"/>.
+Legal characters are tab, carriage return, line feed, and the legal
+graphic characters of Unicode and ISO/IEC 10646.
+The use of "compatibility characters", as defined in section 6.8
+of <bibref ref='Unicode'/>, is discouraged.
+</termdef> 
+<scrap lang="ebnf" id="char32">
+<head>Character Range</head>
+<prodgroup pcw2="4" pcw4="17.5" pcw5="11">
+<prod id="NT-Char"><lhs>Char</lhs> 
+<rhs>#x9 | #xA | #xD | [#x20-#xD7FF] | [#xE000-#xFFFD] 
+| [#x10000-#x10FFFF]</rhs> 
+<com>any Unicode character, excluding the
+surrogate blocks, FFFE, and FFFF.</com> </prod>
+</prodgroup>
+</scrap>
+</p>
+
+<p>The mechanism for encoding character code points in���it patterns may
+vary from entity to entity. All XML processors must accept the UTF-8
+and UTF-16 encodings of 10646; the mechanisms for signaling which of
+the two is in use, or for bringing other encodings into play, are
+discussed later, in <specref ref='charencoding'/>.
+</p>
+<!--
+<p>Regardless of the specific encoding used, any character in the ISO/IEC
+10646 character set m��e referred to by the decimal or hexadecimal
+equivalent of its 
+UCS-4 code value.
+</p>-->
+</div2>
+ 
+<div2 id='sec-common-syn'>
+<head>Common Syntactic Constructs</head>
+ 
+<p>This section defines some symbols used widely in the grammar.</p>
+<p><nt def="NT-S">S</nt> (white space) consists of one or more space (#x20)
+characters, carriage returns, line feeds, or tabs.
+
+<scrap lang="ebnf" id='whitk'>
+<head>White Space</head>
+<prodgroup pcw2="4" pcw4="17.5" pcw5="11">
+<prod id='NT-S'><lhs>S</lhs>
+<rhs>(#x20 | #x9 | #xD | #xA)+</rhs>
+</prod>
+</prodgroup>
+</scrap></p>
+<p>Characters are classified for convenience as letters, digits, or other
+chaer>
+      <text><![CDATA[Михаил Николаев  Японцев их деньги от цунами не спасли. А вот на счёт восстановления потенциал России ср�0ботает чётко. Людям платят большие компенсации�и построят новые дома. =======Да видели уже как погорельцам дома построили. Да чего там погорельцам -- сейчас людям которые потеряли все при потопе платять огромные деньги - 8-10 тыс рублей -- гуляй на них как хочешь. Ну или как в прошлый раз по�троят домики по качеству как сараи -- раньше даже на сайте Путина весели веб-камеры где было видно как строят дома погорельцам -- то еще было видео и жаль что я его не сохранил -- там было видно как хреново � level="1" date="12.07.2012 21:53:16+0300">
+      <user><![CDATA[Oumlsupeum Ouml]]></user>
+      <text><![CDATA[Напомним: суммарное число немецких переселенцев и членов их семей из СССР достигло к началу 2003 года внушительной величины в 2,17 млн. человек. Все они по приезде в ФРГ безущловно относились к русскоговорящим.]]></text>
+    </comment>
+    <comment id="18253888" level="2" date="12.07.2012 21:54:23+0300">
+      <user><![CDATA[Oumls>
+      <text><![CDATA[Вот так, и это на 2003 год.]]></text>
+    </comment>
+    <comment id="18253928" level="2" date="12.07.2012 21:57:34+0300">
+      <user><![CDATA[Кот Кацапот]]></user>
+      <text><![CDATA[Если в России гастарбарят 5лимонов украинцев то всех их можно в русскоговорящие записать ?]]></text>
+    </comment>
+    <comment id="18253941" level="3" date="12.07.:012 21:59:05+0300">
+      <user><![CDATA[Oumlsupeum Ouml]]></user>
+      <text><![CDATA[.... пересе�енцев и членов их семей из СССР....]]></text>
+    </comment>
+  </data>
+</response>

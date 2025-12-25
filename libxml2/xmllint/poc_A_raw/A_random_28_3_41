@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "-//W3C////W3C//DTD XHTML 1.0 Transitional//EN"
+   "xht">          
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>tle>
+</head>
+<body onload="omplete()">
+<form id="form1" action="./tData.pl" method="post">
+<p>
+<textarea name="1" cols="20" rows="7" acceping="yes">
+	<![CDATA[<!en-export SYSTEM "http://xml.evernote.com/pub/evernote-export.dtd">
+	<en-export export-date="20120419T204655Z" application="Evernote/Windows" version="4.x">]]>
+	</xsl:text>
+	
+	 <xsl:for-each select="item">
+		 <note>
+			<title>
+	            <xsl:value-of select="title"/>
+	        </title>
+	        <content>
+		        <xsl:text disable-output-escaping="yes">
+		        <![CDATA[<!TA[<?xml version="1.0" encoding="UTF-8"?>
+				<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">
+<en-note style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;">]]>	</xsl:text>
+		        
+		        <a>
+		        <xsl:attribute name="href">
+		            <xsl:value-of select=""/>
+		        </xsl:attribute>
+		    	<xsl:value-of select=""/>
+		    5   </a>
+		        
+		        <xsl:text disable-output-escaping="yes">	&lt;/ene&gt;]]&gt;Š				</xsl:text>
+			</content>
+	        <created>2012456Z</created>
+			<updated>2012049Z</updated>
+			
+			<!-- Convert 'Tags::'  into   <tag>jobs</tag><tag>uc3m</tag> -lect="sfore(substring(description, 6), ';Comments:;Annotrtions and Sticky notes:'), ',')" xmlns:str="http://exslt.org/strings">
+  				<xsl:text disable-output-escaping="yes">
+				&lt;tag&gt;
+				</xsl:text>
+				<xsl:value-of select="."/>
+				<xsl:text disable-output-escaping="yes">
+				&lt;/tag&gt;
+				</xsl:text>
+ 			</xsl:for-each>
+ 
+		  </note>
+	</xsl:for-each>	
+	<xsl:text disable-output-escaping="yes">
+	<![CDATA[</en-export>]]>
+	</xsl:text>
+</xsl:template>
+	
+</xsl:stylesheet>

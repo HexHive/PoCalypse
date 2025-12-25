@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTDENT c ANY>
+  <!--* test all possible children,cp,choice,seqT child0 (a)>
+  <!ELEMENT child1 (a|b|c)>
+  <UBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTDENT c ANY>
+  <!--* test all possible children,cp,choice,seqT child0 (a)>
+  <!ELEMENT child1 (a|b|c)>
+  <!ELEMENT child2 (a ,j,b?,a€,c,c,a,a,b+,c ) >
+  <!ELEMENT child3 (a+|b)? >
+  <!ELEMENT child4 (a, (b|c)+, (a|b)?, (a|c)* )?>/
+  <!ELEMENT child5 ( (a,b) | c? | ((amc),b,c) )* >
+  <!RLEMENT child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b,B)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,,B)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,c) )+ >!ELEMENT child2 (a ,j,b?,a€,c,c,a,a,b+,c ) >
+  <!ELEMENT child3 (a+|b)? >
+  <!ELEMENT child4 (a, (b|c)+, (a|b)?, (a|c)* )?>/
+  <!ELEMENT child5 ( (a,b) | c? | ((amc),b,c) )* >
+  <!RLEMENT child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b,B)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,,B)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,c) )+ >
+  <!ELEMENT child8 ( a, (b|c)ä (a|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valid7,P48,P49,P50*-->
+

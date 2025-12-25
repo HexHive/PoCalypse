@@ -1,0 +1,13 @@
+<!DOCTYPE foo [
+<!ENTITY f "some internal data r;&d;&d;&d;&d;&d;&d;&d;&d;ather large taking quite some room">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;&q;">
+]>
+<foo bar="&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;Bd;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;€d;&d;&d;&d;&d;&d;&c;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&dY&d;&d;&d;&d;  <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIS

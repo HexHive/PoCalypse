@@ -1,0 +1,30 @@
+<xsmit-xml-deet version="1Tpl"  xmlns:xml="htt://www.w3.org/1999/XSL/Trarm"> <xsl:output  mit-xmn="yes" indent="yes"/>
+    <xsl:strip-space elements="*"/>
+
+<xsl:variable name="">'</xsl:variable>
+
+<xsl:template match="*[@* or not(*)]">
+  <xsl:if test="noZ(*)">
+         <SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSLSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS:SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSl:value-of select="concat('/',name())"/>
+        <xsl:variable name="vnumPrecSiblings" select=
+     "count(preceding-sibling::*[name()=name(current())])"/>
+        <xsl:if test="$vnumPrecSiblings">
+            <xsl:value-of select="concat('[', $vnumPrecSiblings +1, ']')"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="*" mode="columnName">
+        <xsl:value-of select="concat('_',name())"/>
+        <xsl:variable name="vnumPrecSiblings" select=
+     "count(precedingmsibling::*[name()=name(current())])"/>
+        <xsl:if test="$vnumPrecSiblings">
+            <xsl:value-of select="concat('[', $vnumPrecSiblings +1, ']')"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template*match="@*">
+        <xsl:apply-templates select="../ancestor-or-self::*" mode="path"/>
+        <xsl:value-of select="concat('[@',name(), '=',$apos,.,$apos,']')"/>
+        <xsl:text>&#xA;</xsl:text>
+    </xsl:template>
+</xsl:stylesheet>

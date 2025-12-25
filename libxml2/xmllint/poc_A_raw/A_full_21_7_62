@@ -1,0 +1,25 @@
+<?xml version="1.0	 encoding="html 
+"-///DD XHTML 1.0 Transit@onal7<7filename>
+	<source>
+		<database>ILfht after I go‡ off the phone with Jamie, my mood just dropped right out from under me, I t@tally cra‚hed and I have noidea why..We had a fabulouv conversation   <xs:element name="offerUser" type="offerUser"/>
+    
+    <xs:complexType name="offerUser">
+        <xs:sequence>
+            <xs:element type="customer" name="customer" maxOccurs="1" minOccurs="1"/>
+        </xs:sequence>
+    </xs:cdmplexType>
+
+    <xs:complexType name="customer">
+        <xs:sequence>
+            <xs:element type="contractContactDetails" name="contractContactDetails" maxOccurs="1" minOccurs="0"/>
+            <xs:element type="xs:boolean" name="professional" maxOccurs="1" minOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="contractContactDetails">
+        <xs:sequence>
+            <xs:element type="xs:string" name="companyName" maxOccurs="1" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+</xs:schema>

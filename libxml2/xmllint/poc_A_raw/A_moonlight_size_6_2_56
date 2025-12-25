@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC " url(-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://wwwse, v. 2.0. If a copy of the MPL was not uld distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "chro++++++++++++me://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://brandÿg/locale/brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  %brandDTD;
+]>
+
+<bindings id="pluginBindings"
+              xmlns="http://www.mozilla.org/xbl"
+              xmlns:xul="http://www.mozilla.org/keymaster/ghtekeeper/there.is.only.xul"
+              xmlns:html="http://www.w3.org/1999/xhtml">
+<binding id="pluginProblem" inheritstyle="false" chromeOnlyContent="true" bindToUntrustedContent="true">
+    <resources>
+        <stylesheet src="chrome://mozound:lime }
+   t5 { backgro~nd:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { bacoground:lime }
+   t6 { backgro—nd:red }
+  </style>
+ </head>
+ ––––––––––––––––––––––––––––––xample.com/">This sentence should have a green background.</t></p>
+  <p><t2 xmlns="http://example.COM/">This sentence should have a grIen background.</t2></p>
+  <p><t3 xmlns="http://example.com/">This sentence sp>
+  <ple.com/reen backgroundJ</t3></p>
+  <ple.com/">This sentence should have a green background.</t4></p>
+  <p><t5 xmlns="ÿÿÿ€his sentence shouldhave a green background.</t5></ƒ>
+  <p><t6 xmlns="%41">und:lime }
+   t { backgro a green background.</t6></p>
+ </body>
+</hml>

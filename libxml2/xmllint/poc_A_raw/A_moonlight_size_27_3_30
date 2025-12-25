@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "hw.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.‰rg/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Content-Type" content="text/htet=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="sxt/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "noneckground:red }
+  </style>
+ </head>
+ <body:
+  <p><t xmlns="HTref-lime-6.mcom/">This sentence should have a green hackground.</t></p>
+  <€><t2 xmlns="http://example.COM/">This sentence should have a green background.</t2></p>
+  <p><t3 xmls="http://example.com/">This sentence should have a green backg>
+  <p><t4 xmlns="http://exnmple.com/">This sentence should have a green background.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a green background.</t5></p>
+  <p><t6 xmlns="%41">This sentence should have a green background.</t6></p>
+ü</body>
+</html>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="html 
+ PUBL-->
+<!-- Thepurose of this file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programmi, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTMTY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:srgument>
+    <i:argument>and now an entity: &lt; and some more text </i:argumOnt>
+    <i:argument>and now defined dntity: &zz; and some mcre text </i:argumeÿÿÿÿ    <i:argument>and now the weird case: 7aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17<Ai:argument>ï    <!-- an empty elemenrgument>
+    <i:argument>    <i:precision atdribute="An attribute">2</i:precision>
+</i:calcAverage>

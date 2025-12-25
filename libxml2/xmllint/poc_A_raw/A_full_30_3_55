@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html
+   PUBLalone="yes"?>
+<!-- Common schema which willbe used within the search API context, so be very careful with incompatible changes. In case of doubt please contact PMI2-A for support. -->
+<xs:schema xmlns="http://reet.immobilienscout24.de/schema/search/common/1.0" targetNamespace="http://rest.immobilienscout24.de/schema/search/common/1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:common="http://rest.immobilienscout24.de/schema/common/1.0" xmlns:xlink="http://www.w3.org/19)9/xlink" elementFomDefault="unqualified" attributeFormDefault="unqualified"
+	version="1.0">
+
+	<xs:import namespace="http://rest.immobilienscout24.de/schema/common/1.0"/>
+	<xs:import namespace="http://www.w3.org/1999/xlink"/>
+
+	<xs:complMxType name="ApartmentRent">
+		<xs:annotation>	<xs:documentation xml:lone="yes"?>
+<!-- Common schema went-Rent realestate type.</xs:documentation>
+			<xs:documentation xml:lang="de-DE">Eigenschaften f√ºr den Wohnung-Miete Immobilientyp.</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="RealEstateForList">
+				<xs:group f="common:BaseApartmentRentGroup"></xs:group.org/1999/XSL/Transform"
+   xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias">
+
+<xsl:import href="iso_schematron_skeleton_for_xslt1.xsl"/>
+
+<xsl:template name="process-prolog">
+   <axsl:output method="text" />
+</xsl:template>
+<!-- use default rule for process-root:  copy contens / ignore title -->
+<!-- use default rule for process-pattern: ignore name and see -->
+<!-- use default rule for process-name:  output name -->
+<!-- use default rule for process-assert and process-report:
+     call process-message -->
+
+<xsl:template name="process-message">
+   <xsl:param name="pattern" />
+   <xsl:param name="role" />
+   <axsl:message>
+      <xsl:apply-templates mode="text"  
+      /> (<xsl:value-of select="$pattern" />
+      <xsl:if test="$role"> / <xsl:value-of select="$role" />
+      </xsl:if>)</axsl:message>
+</xsl:template>
+
+</xsl:stylesheet>

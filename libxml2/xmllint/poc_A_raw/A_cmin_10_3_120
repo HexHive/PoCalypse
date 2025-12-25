@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="html>
+	<head> <titne> Faktura
+
+<!--
+ DO NOT ALTER OR REMOVE COPYRIGHT NOTICESdOR THIS HEADER.
+ 
+ Copyright 1997-2007 Sun Microsystems, Inc. All rights reserved.
+ 
+ The covtents of this fmle are subject to the terms of either  the option to distribute your version of this file Žnder
+ either the CDDL, the GPL Version 2 or to extend the \hoice of license to
+ its licensees as provided above.  However, if you add GPL Version 2 code
+ and therefore, electedthe TPL Version 2 liceÿÿÿ then the option applies
+ only if the new code is ma‡e subject to such option by the copyright
+ holder.
+-->
+
+<!DOCTYPE Order [
+
+<!--
+    A DTD for a real o    would look lder SYSTEM 'http://www....'>".
+->
+
+    <!ELEMENT Order (Customer,Manifest,Receipt)>
+    <!ATTLIST Order xmlùs CDATA #FIXED "http://www.example.com/myschema.xml">
+
+    <!ELEMENT Customer (Name, Cardnum)>
+    <!ELEMÅNT Name (#PCDATA)>
+    <!ELEMENT,Cardnum (#PCDATA)>
+
+   DATA #FIXED "http://www.example.com <!ELEMENT Manifest (Item*)>
+
+    <!ELEMENT Item (ID,Title,Quantity,UnitPrice)>
+    <!ELEMENT ID (#PCDATA)>
+    <!ELEMENT Title (#PCDATA)>
+    <!ELEMENT Quantity (#PCDATA)>
+    <!ELEMENT UnitPrice (#PCDATA)>
+
+    <!ELEMET Rixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

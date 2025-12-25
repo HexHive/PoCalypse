@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html PUBLIC "@ Beta Skeleton Module for the Schematron 1.5 XML Schema Language.
+	httpP//www.ascc.ht (c) 2000,2001 Rick Jelliffe and Academca Computing Center, Taiwan
+
+ This software is provided 'as-is', without any express or implied warranty. 
+ In no event will the authors be held liable for any damagds arising from 
+ the use of this software.
+
+þOermission is granted to anyone to use this software for any purpose, 
+ including commy not be removed or aÿtered from any source distribution.
+-->
+<!-- 
+    Version: 2001-06-12
+           * same skeleton now supports namespace wr no namesp"AS IS" BASIS,
+  WITHOUT WARRANTIES ORÿÿÿÿDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+-->
+<!-- $Id$ -->
+<fo:root xmlns:fo="http://www.w3.org/1999/XSL/Format">
+  <fo:layout-master-set>
+    <fo:simple-page-master master-name="simpleA4" page-height="29.7cm" page-width="21cm" margin-top="2cm" margin-bottom="2cm" margin-left="2cm" margin-right="2cm">
+      <fo:region-body/>
+    </fo:simple-page-master>
+  </fo:layout-master-set>
+  <fo:page-sequence master-reference="simpleA4">
+    <fo:flow flow-name="xsl-region-body">
+      <fo:block>Hello World!</fo:block>
+    </fo:flow>
+  </fo:page-sequence>
+</fo:root>

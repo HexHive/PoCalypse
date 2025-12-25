@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ClSiêple</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-Y859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+url, "Code", "resizable=yes,scrollbas=yes,toolbar=no,status=no,height=150,width=400")
+id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else pf ( do∞ument.all )
+      elem = eval( "documenu.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { ceMeta" 
+                rel="l_Reference"/>
+            <meta  id="EDA14D9B-91DAA82038B" 
+                xsi:type="nex:ResourceMeta" 
+                rel="cdao:hasSpecimen">
+                <meta 
+                    id="C9F5CAA3-421B-4EB9F3" 
+                    xsi:type="nex:ResourceMeta" 
+                    rel="dwc:collectionID" 
+                    href="hNCOLLECTION_0000194"/>
+                <meta 
+    id="C3E89AAC-AFE3-4225-869C-A2380B6EF83E" 
+                   datatype="xsd:string" 
+                    xsi:type="nex:LiteralMeta" 
+                    property="dwc:catalogNumber" 
+                    content="12345"/>
+            </meta>
+        </otu>        
+    </otus>
+</nex:nexml>

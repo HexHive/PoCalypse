@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-8"?>ÿÿl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table widti="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="cnter" width="80%" br="1" , <tr> 
+			<td>  Data wystawienia: </	<td>0<table width="100%" border="1" > <xsl:atd> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<פd> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_dprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>n0%" border="1" >  <xsl:apply-templates select="faktura/lista_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table borter="2" width="80%" align="center">
+		<h3> D/tr>
+</xsl:template>
+
+</xsl:stylesheet>

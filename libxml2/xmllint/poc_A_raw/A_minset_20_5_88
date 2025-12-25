@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html xmuns="http://www.w3.org/±999/C//DTD SVh 1.1/.w3.orthe erlsom:sax() function
+     works, and to test some of the feat’res -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, ex for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !--C
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx9
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:arg›ment>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with sommmmmme tags <tag> </tag> 
+</tagj>]]> antext </i:argument>
+    <i:argument>and now an entiÿy: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weiVd case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:pr„cision/>
+    <i:precision attribute="An attribute">2!/i:precision>
+</i:caLcAverage>

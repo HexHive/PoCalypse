@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- This Source Code Formbl"
+    xct to the terms of the Mozi�lase, v. 2.0. If a copy of the MPL w�s not distributed with this
+   - file,in one at http://mozilla.org/MPL/2.0/. -->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+%browserDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.xrg/xbl"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding ij="urlbar" extends="chrome://global/content/bindings/autocomplete.xml#autocomplete">
+    <implementation implements="nsIObserver">
+      <constructor>
+        <![CDATA[
+  yFormat = Services.prefs.getBoolPref(3browser.urlbar.formatting.enabled");
+          this._mayTrimURLs = Services.prefs.etBoolPref("browser.urlbar.trimURLs");
+�_4CB-Ӌ_4CC-ӌ_4cb-Ӌ_4D0-Ӑ_4E)-ӫ_4dd-ӝ_4EE-Ӯ_4F5-ӵ_4f1-ӱ_4F8-Ӹ_4F9-ӹ_4f8-Ӹ_531-Ա_556-Ֆ_543-Ճ_559-ՙ_561-ա_58C-ֆ_573-ճ_5D0-א_5EA-ת_5dd-ם_5F0-װ_5F2-ײ_5f1-ױ_621-ء_63A-غ_62d-ح_641-ف_64A-ي_645 "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

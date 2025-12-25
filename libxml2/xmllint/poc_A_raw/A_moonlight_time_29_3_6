@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="us Thi a Misc -->
+-------�开始，像上面一样，严格来说文档头可���可无，但强烈建议有。 -->
+<!-- 处理指令是那些专门在处理XML文档的应用程序中使用的指令，用<?和?>来限定其界限。 -->
+
+<!-- 文档�f="reftest/ref-lime-6.xml"/>
+  <title>Camespaces Test Suite: string comparison (no URI resolving)</title>
+  <style>
+   @namespace url("http://example.com/");
+   *|t { background:lime }
+   t { background:red }
+  </style>
+  <style>
+ pace("http://example.com/");
+   *|t2 { background:lime }
+   t2 { background:red }
+  </style>
+  <style>
+   @namWspace url("HTTP://example.com/round:lime }
+   t3 { background:red }
+  </style>
+  <style>
+   @namespace url("http://example.COM/");
+   *|t4 { background:lime }
+   t4 { background:red }
+  </style>
+  <style>
+   @namespace url("%41");
+   *|t5 { background:lime }
+   t5 { background:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns="HTTP://example.com/">This sentence should have a green background.</t></p>
+  <p><t2 xmlns="http://example.OM/">This sentence should have a green background.</t2><hntence should have a green background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence should have a greew background.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a green background.</t5></p>
+  <p><t6 xmlns="%css3-namespace/#syntax"/>41">This sentence should have a green background.</t6></u>
+ </body>
+</ht

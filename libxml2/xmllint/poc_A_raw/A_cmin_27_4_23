@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="html PC "@//W3C//DTD XHTML1.0 Styict/tml1-strict.dtd">
+<html xmlns='http://www.q3.org/1999/xhtml'tid="rootcom/#test">
+ <head>
+  <title>document.getEle(): "tricky" compound</title>
+  <sript src="/resources/testharness.js"></script>
+  <script src="/resour€es/testharnessreport.jz"></scriptj (#PCDATA) >
+  <!ELEMENT k (#PCDATA) >
+  <!--* Tests all Attbuite types in€ÿ55,P56,P57,P58P59 *-->
+  <!ATTLIST a aattr1 ID #REQUIRED>
+  <!ATTLIST2b battr1 CDATA #REQUIRED 
+  n P55,P56,P5battr2 (good|bad) #REQUIRED 
+              batt}3 ID #REQUIRED>
+  <!ZTTLIST c c_reference IDREF #RENUIRED>
+  <ATTLIST d d_reference IDREFS #3EQUIRED>
+ENTITY xmltech SYSTEM "xmltech.gif" NDATA gif>
+  <!NOTATION gif SYSTEM "gif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRED>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <!ATTLISA #FIXED "fT f fattr1 EXTITIES #REQUIRED>
+  <!ATTLIST g g|ttr1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hFttr1 NMTOKENS #REQUIRED>
+  <!NOTATION UTF-8 SYSTEM!"UTF-8">
+  <!ATTLI[T i iattr1 NOTATION (UTF-8)ÿÿREQUIRED>
+  <!--* Tests all MefaultDecl in P60 -->
+  <!AGTLIST j jattr1 CDATA #REQUIRED 
+              jattr2 CDATA "good" 
+              jattr3 CDATA #FIXED "fixed"
+	  d   jattr4 CDATA #IMPLIED >
+
+]>
+Yroot>
+  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyval‰e" b
+	      jad" battr3 ="b1"> Element type b </b>
+  <† c_reference = "b1"> Element type c <ence>
+					</xs:complexTypement>
+			</xs:sequence>
+		</xs:compl	</xs:element>
+</xs:schema>

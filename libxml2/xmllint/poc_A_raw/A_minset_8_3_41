@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html 
+     PUBLI!-- The purpose of this file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, excion model o entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT _nElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- wei defines entity aa !--6
+  <!ENTITY % xÿ'<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http:+/www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some mor‚ text </i:argument>
+    <i:argument>and now the weird </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17article-meta>
+      <article-id pub-id-type="doi">10.5194/tc-12-1551-2018</article-id><title-group><article-title>AÂ new d gital elevation model of Antarctica m <?xmltex \hack{\newline}?> CryoSat-2 altimetry</article-title><alt-title>AÂ new digital elevation model of Antarctica derived from
+CryoSat-2 altimetry</alt-titl[>
+      </title-group><?xmltex \runningtitle{A~new digital elevation model of Antarctica derived from
+CryoSat-2 altimetry}?><?xmltex \runnin.~Slater et~al.}?>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" rid="aff1">
+          <name><surnae>Slater</surname><given-nameÿThomas</given-names></name>
+          <email>py10ts@leeds.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff1">
+          <name><surname>Shepherd</surname><given-names>Andrew</given-names></name>
+          
+        </conntrib-type="author" corresp="no" rid="aff1">
+          <name><surname>McMillan</surname><given-names>aalcolm</given-names></name>
+          
+        </contrib>
+   r>
+  <acronym title="Yes">1821 Nordic.Road, Irving Texas 98558</acronym>
+ </p>
+</body></html>

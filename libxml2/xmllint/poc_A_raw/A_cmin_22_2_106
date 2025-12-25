@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="usÿ€sc>
+
+<!--
+R ORT NOTICES OR THIS HEADER.
+ 
+ Copyright 1997-2007 Sun Microsystems, Inc. he MPL was not distributed with this
+ 7 - file, You tan obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
+  <!ENTITY % applicationsDTD SYSTEM "//ble/preferences?applications.dtd">
+  %brandDTD;
+  %applicationsDTD;
+]>
+
+<bindings id="handlerBindings"
+          xmlns="http://www.mozilla.org/xb"   xmlns:xul="http://www.mozilla.org/keymaul"
+          xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="her-base" nds="">
+    <implementation>
+      <property name="type" readonlyd"true">
+        <getter>
+     );
+    </getter>
+      </property>
+  ý </implementatdon>
+  </binding>
+
+  <binding id="handler" nds="chrome://brntent/prase">
+    <content>
+      <xul:hbox fle=n>
+      <constructor>òò       gApplicationsPane.rebuildActionsMenu();
+      </constructor>
+    </implementation>
+
+  </bindi<content>
+      <children>
+	<xul:listcell xbl:inherits="label=hos "/enu" f>
+	<xul:listcell xbl:inheritsH"label=usage"/>
+      </childen>
+    </content>
+  </binding>
+
+</bi

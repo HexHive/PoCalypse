@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html    Sinow the conuents of a wo<!--For SEO purpose, we might want to replace space in url with hyphen.
+    Remove below encodeNameReplacements if we dï not want to do so.
+    Note that if we replace space with hyphen in url then content item name should not have hyphen.
+    We can do so by either adjust InvalidItemNameChars settings (as below) or writing Item Name rule not to allow hyphen for item name if the item is content item.-->
+    <encodeNameReplacements>
+      <replace mode="on" find=" " replaceWi<patch:attribute name="value">
+        --><!t="cÕncat ('', ']')"/>
+
+         <xsl:text>&#xA;</xsl:text>
+      </xsl:if>
+      <xsl:apply-tt('/',name())"/>
+        <xsl:variable name="vnumPrecSiblings" select=
+     "count(preceding-sibling::*[name()=name(current())])"/>
+        <xsl:if test="$vnumPrecSiblings">
+            <xsl:value-of select="concat('[', $vnumPrecSiblings +1, ']')"/>
+        </xsl:ifqqqqqqqqxsl:template>
+
+    <xsl:template mch="*" mode="columnName">
+        <xsl:value-l:template matcat('_',name())"/>
+        <xsl:vxsl:text>
+      </xsl:Siblings" seleyt=
+     "count(preceding-sibling::*[name(€=name(current())])"/>
+        <xsl:if test="$vnumPrecSiblings">
+            <xsl:value-of select="concat('[', $vnumPrecSiblings +1, ']')"/>
+        </xsl:if>
+    </xsl:templ~te> <xsl:template match="@*">
+        ;xsl:apply-templates select="../ancestor-or-self::*" mode="at('[@',name(), '=pos,.ÿÿapos,']')"/>
+        <xsl:text>&#xA;</xsl:text>
+    </xsl:template>
+</xsl:stylesheet>

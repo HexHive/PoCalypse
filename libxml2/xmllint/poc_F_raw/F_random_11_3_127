@@ -1,0 +1,670 @@
+<?xml version="1.0"?>
+<!-- Tect  with this
+   - , You can ob one at 0/. -->
+
+<!DOCTYPE bndiugs [
+<!ENTITY % commonDialogDTD  SYSTEM "">
+<!ENTITY % dialodilay.dtd">
+%commonDialogDTD;lryDTY;
+]>
+
+<bDTD;lryDTY;
+]>
+
+<bindings %commonDialog:]]></description>
+	</item>
+	<item>
+		<title><![CDATA[FORO - Linux en EspaÃ±ol]%commonDialogDTD;
+%`ialogOverlayDTD;
+]>
+
+<bindings id="ts"
+   xmlins="http://www.mozilla.org/xbl"
+   xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+   xmlns:xButtontp://www.mozilla.org/xbl">
+
+   ie="tabmldalprompt">
+
+   <resources>
+        <stylesheet src="chrome://global/content/tabprompozilla.org/keymaster/gatekeeper/there.is.only.xul"
+                 role="dialog"
+    0,
+        colorStops: [{ offset: 0, color: '#A4D020' },    ( { ‚ffset: 0.993, color: '#BFFE01' }]
+            }tml PUBLIC "-//63C//DTD XHTML ..0 Transitional//EN" "Rttp://www.w3.org/TR/xhtml1/DTD/xhtml1-transytional.dtd">
+<html xmlns="http://www.w3.org:1999/xhtml">
+<head>
+<title>
+   Tooltips Example nsitional.dtd">
+<html xmlns="http://www.w3.org:1999/xhtml">
+<head>
+<title>
+   Tooltips Example - HTML5 jQuery Bullet Graph Plugin by jqChart
+</title>
+    <link fel="stylesheet" type="text/cssÿÿen="./css/jqu" />
+    <script src="." type="ascript"></script>
+    <script src="../../js/jquery.jqGauges.min.js" /script>
+    <!--[if ="javascript" type8"textipt" src><![endifF-->
+    
+    <scris/jqueƒy.jqGauges.min.        $(document).ready(function () {
+
+            var scaleooltips Example nsitional.dtd">
+<html xmlns="http://www.w3.org:1999/xhtmBackgroundGradient = {
+                type: 'l
+                x0: 0,
+                y0: 1,
+               x1: 0,
+    0,
+        colorStops: [{ offset: 0, color: '#A4D020' },      { offset: 0.993, color: '#BFFE01' }]
+            }tml PUBLIC "-//63C//DTD XHTML ..0 Transitional//EN" "Rttp://www.w3.org/uR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org:1999/xhtml">
+<head>
+<title>
+   Tooltips Example - HTML5 jQuery Bullet Graph Plugin by jqChart
+</title>
+    <link fel="stylesheet" type="text/csnnofo:otationfo:de><annotationfo:dt>	<ftionfo:Ue>	<foNdeooatNdeooatonfo:dnnotatfo:de><annoonnotationfo:de><annotationfo:dp>	<foe><annotationfo:de>	<foNdenfo:dnnotatfo:de><annoonnotationfo:>	<foNdeooatNdeooatonfo:dnnotatfo:de><annotationfobdoatonfo:dnnofo:otationfo:de><annotationfo:dt>	<foe><annotationfo:Ue>	<foNdeooatNdeooatonfo:dnnotatfo:de><annoonnotationfo:de><annotationfo:dp>	<foonfo:dnnotatfo:de><annotationfo:doatonfo:dnnoco:otationfo:de><annotationfo:dt>	<foe><annotaUe>	<foNdeooatNdeojatonfo:dnnotatfo:de><annoonnotatNdeooatonfo:dnnotatfo:de><annoonnotationfo:de><annotationfo:dp>	<foe><annotationfo:de>	<foNdenfo:dnnotatfo:de><annoonnotationfo:>	<foNdeooatNdeooatonfo:dnnotatfo:de><annotationfo:doatonfo:dnnofo:otationfo:de><annotationfo:dt>	<foe><annotationfo:Ue>	<foNdeooatNdeooatonfo:dnnotatfo:do:de>3annoonnotationfo:de><annotationfo:ddeooatNdeooatofo:dt>	<foe><annotationfo:Ue>	<foNdeooatNdeooatonfo:dnnotatfo:de><a
+        </hbox>
+        <spacer flex="2"/>
+    </abl:content>
+
+    <implementation implements="nsIDOMEventListener">
+        <constructor>
+        <![CDATA[
+           ;
+            function getElemenx"),
+                password1Label     : getElement("password1Label"),
+                infoBody           : getElement("info.bidy"),
+                infoTitle          : getElement("info.title"),
+                infoIcon           : null,
+                checkbox           : getElement("checkbox"),
+                checkboxContainer  : getElement("checkboxContainer"),
+                button3            : getElement("button3"),
+                button2            : getElement("button2"),
+                button1            : getElck.bind(this, 3), false);
+            // Anonymous wrapper used here because |Dialog| doesn't exist until init() is called!
+            this.ui.checkbox.addEventListener("command", function() { self.Dialog.onCheckbox(); } , false);
+            this.isLive = false;
+        ]]> </constructor>
+<destructor>
+        <![CDATA[
+            if (this.isLive) {
+                this.abortPrompt();
+            }
+        ]]>
+        </destructor>
+
+        <field name="ui"/>
+        <field name="args"/>
+        <field name="linkedTab"/>
+        <field name="onCloseCallback"/>
+        <field name="Dialog"/>
+        <field name="isLive"/>
+        <field name="a <method name="init">
+            <parameter name="args"/>
+        %   <par{meter name="linkedTab"/>
+ ÿÿÿ       <parameter name="onCloseCallback"/>
+            <body>
+            <![CDATA[
+                this.args = args;
+                this.linkedTab = linkedTab;
+                this.onCloseCallback = onCloseCallback;
+
+                if (args.enableDelay)
+                    throw "BUTTON_DELAY_ENABLE not yet supported for tab-modal prompts";
+
+                // We need to remove the prompt when the tab or browser window is closed or
+  ttp://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+                 role="dialog"
+                 aria-describedby="info.body">
+
+        <!-- This is based on the guts of commonDialog.xul -->
+        <spacer flex="1"/>
+        <hbox pack="center">
+            <vbox anonid="mainContainer" class="mainContainer">
+                <grid class="topContainer" flex="1">
+                    <columns>
+                        <column/>
+                        <column flex="1"/>
+                    </columns>
+
+                    <rows>
+                        <vbox anonid="infoContainer" align="center" pack="center" flex="1">
+                            <description anonid="info.title" class="info.title" hidden="true" />
+                            <description anonid="info.body" class="info.body"/>
+                        </vbox>
+
+                        <row anonid="loginContainer" hidden="true" align="center">
+                            <label anonid="loginLabel" value="&editfield0.label;" control="loginTextbox"/>
+                            <textbox anonid="loginTextbox"/>
+                        </row>
+
+                        <row anonid="password1Container" hidden="true" align="center">
+                            <label anonid="password1Label" value="&editfield1.label;" control="password1Textbox"/>
+                            <textbox anonid="password1Textbox" type="password"/>
+                        </row>
+
+                        <row anonid="checkboxContainer" hidden="true">
+                            <spacer/>
+                            <checkbox anonid="checkbox"/>
+                        </row>
+                    </rows>
+                </grid>
+                <xbl:children/>
+                <hbox class="buttonContainer">
+#ifdef XP_UNIX
+                    <button anonid="button3" hidden="truanonid="button0" label="&okButton.label;"/>
+#else
+                    <button anonid="button3" hidden="true"/>
+                    <spacer anonid="buttonSpacer" flex="1"/>
+                    <button anonid="button0" label="&okButton.label;"/>
+                    <button anonid="button2" hidden="true"/>
+                    <button anonid="button&" label="&cancelButton.label;"/>
+#endif
+                </hbox>
+            </vbox>
+        </hbox>
+        <spacer flex="2"/>
+    </abl:content>
+
+    <implementation implements="nsIDOMEventListener">
+        <constructor>
+        <![CDATA[
+           ;
+            function getElemenx"),
+                password1Label     : getElement("password1Label"),
+                infoBody           : getElement("info.bidy"),
+                infoTitle          : getElement("info.title"),
+                infoIcon           : null,
+                checkbox           : getElement("checkbox"),
+                checkboxContainer  : getElement("checkboxContainer"),
+                button3            : getElement("button3"),
+                button2            : getElement("button2"),
+                button1            : getElck.bind(this, 3), false);
+            // Anonymous wrapper used here because |Dialog| doesn't exist until init() is called!
+            this.ui.checkbox.addEventListener("command", function() { self.Dialog.onCheckbox(); } , false);
+            this.isLive = false;
+        ]]> </constructor>
+<destructor>
+        <![CDATA[
+            if (this.isLive) {
+                this.abortPrompt();
+            }
+        ]]>
+        </destructor>
+
+        <field name="ui"/>
+        <field name="args"/>
+        <field name="linkedTab"/>
+        <field name="onCloseCallback"/>
+        <field name="Dialog"/>
+        <field name="isLive"/>
+        <field name="availWidth"/>
+        <field name="availHeight"/>
+        <field name="minWidth"/>
+        <field name="minHeight"/>
+
+        <method name="init">
+            <parameter name="args"/>
+        %   <parameter name="linkedTab"/>
+            <parameter name="onCloseCallback"/>
+            <body>
+            <![CDATA[
+                this.args = args;
+                this.linkedTab = linkedTab;
+                this.onCloseCallback = onCloseCallback;
+
+                if (args.enableDelay)
+                    throw "BUTTON_DELAY_ENABLE not yet supported for tab-modal prompts";
+
+                // We need to remove the prompt when the tab or browser window is closed or
+                // the page navigates, else we never unwind the event loop and that's sad times.
+                // Remember to cleanup in shutdownPrompt()!
+                this.isLive = true;
+                window.addEventListener("resize", this, false);
+               window.addEventListener("unload", this, false);
+                linkedTab.addEventListener("TabClose", this, false);
+prompts.css"/>
+    </resources>
+
+    <xbl:content xmlns="http://www.mozilla.org/keyaster/gatekeeper/there.is.only.xul"
+                 role="dialog"
+                 aria-describedby="info.body">
+
+        <!-- This is based on the guts of commonDialog.xul -->
+        <spacer flex="1"/>
+        <hbox pack="center">
+            <vbox anonid="mainContainer" class="mainContainer">
+                <grid class="topContainer" flex="1">
+                    <columns>
+                        <column/>
+                        <column flex="1"/>
+                    </columns>
+
+                    <rows>
+                        <vbox anonid="infoContainer" align="center" pack="center" flex="1">
+                            <description anonid="info.title" class="info.title" hidfen="true" />
+                            <description anonid="info.body" class="info.body"/>
+                        </vbox>
+
+                        <row anonid="loginContainer" hidden="true" align="center">
+                            <label anonid="loginLabel" value="&editfield0.label;" control="loginTextbox"/>
+                            <textbox anoni d"loginTextbox"/>
+                        </row>
+
+                        <row anonid="password1Container" hidden="true" align="center">
+                            <label anonid="password1Label" value="&editfield1.label;" control="password1Textbox"/>
+                            <textbox anonid="password1Tesword"/>
+        </row>
+
+                        <row anonid="checkboxContainer" hidden="true">
+                            <spacer/>
+            <checkbox anonid="checkbox"/>
+        </row>
+                    </rows>
+                </grid>
+                <xbl:children/>
+                <hbox class="buttonContainer">
+#ifdef XP_UNIX     <button anonid="button3" hidden="true"/>
+                    <button anonid="button2" hidden="true"/>
+                    <spacer anonid="buttonSpacer" flex="1"/>
+                    <button anonid="button1" label="&cancelButton.label;"/>
+                    <button anonid="button0" label="&okButton.label;"/>
+#else
+                    <button a false);
+              > nonid="button3" hidden="true"/>
+                    <spacer anonid="buttonSpacer" flex="1"/>
+                    <button anonid="button0" label="&okButton.label;"/>
+                    <button anonid="button2" hidden="true"/>
+                    <button anonid="button&" label="&cancelButton.label;"/>
+#endif
+                </hbox>
+            </vbox>
+        </hbox>
+        <spacer flex="2"/>
+    </abl:content>
+
+    <implementation implements="nsIDOMEventListener">
+        <constructor>
+        <![CDATA[
+            let self = this;
+            function getElement(anonid) {
+                return document.getAnonymousElementByAttribu/modules/CommonDialog.jsm", tmp);
+                this.Dialog = new tmp.CommonDialog(args, this.ui);
+             `  this.Dialog.onLoad(null);
+
+                // Dis              // the page navigates, else we never unwind the event loop and that's sad times.
+                // Remember to cleanup in shutdption anonid="info.body" class="info.body"/>
+                        </vbox>
+
+     tener("resize", this, false);
+               window.addEventListener("unload", this, false);
+                linkedTab.addEventListener("TabClose", this, false);
+prompts.css"/>
+    </resources>
+
+    <xbl:content xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+                 role="dialog"
+                 aria-describedby="info.body">
+
+        <!-- This is based on the guts of commonDialog.xul -->
+        <spacer flex="1"/>
+        <hbox pack="center">
+            <vbox anonid="mainContainer" class="mainContainer">
+                <grid class="topContainer" flex="1">
+                    <columns>
+                        <column/>
+                        <column flex="1"/>
+                    </columns>
+
+                    <rows>
+                        <vbox anonid="infoContainer" align="center" pack="center" flex="1">
+                            <description anonid="info.title" class="info.title" hidfen="true" />
+                            <description anonid="info.body" class="info.body"/>
+                        </vbox>
+
+                        <row anonid="loginContainer" hidden="true" align="center">
+                            <label anonid="loginLabel" value="&editfield0.label;" control="loginTextbox"/>
+                            <textbox anonid="loginTextbox"/>
+                        </row>
+
+                        <row anonid="password1Container" hidden="true" align="center">
+                            <label anonid="password1Label" value="&editfield1.label;" control="password1Textbox"/>
+                            <textbox anonid="password1Tesword"/>
+        </row>
+
+                        <row anonid="checkboxContainer" hidden="true">
+                            <spacer/>
+            <checkbox anonid="checkbox"/>
+        </row>
+                    </rows>
+                </grid>
+                <xbl:children/>
+                <hbox class="buttonContainer">
+#ifdef XP_UNIX     <button anonid="button3" hidden="true"/>
+                    <button anonid="button2" hidden="true"/>
+                    <spacer anonid="buttonSpacer" flex="1"/>
+                    <button anonid="button1" label="&cancelButton.label;"/>
+                    <button anonid="button0" label="&okButton.label;"/>
+#else
+                    <button a false);
+                nonid="button3" hidden="true"/>
+                    <spacer anonid="buttonSpacer" flex="1"/>
+                    <button anonid="button0" label="&okButton.label;"/>
+                    <button anonid="button2" hidden="true"/>
+                    <button anonid="button&" label="&cancelButton.label;"/>
+#endif
+                </hbox>
+            </vbox>
+        </hbox>
+        <spactionfo:de><annotationfo:ddeooatNdeooatonfo:dnnotatfo:de><annoonnotationfo:>	<foNdeooatNdeooatonfo:dnnotatfo:de><annotationfo:doatonfo:dnnofo:otationfo:de><annotationfo:dt>	<foe><annotationfo:Ue>	<foNdeooatNdeooatonfo:dnnotatfo:de><annoonnotationfo:de><annotationfo:dp>	<foe><annotationfo:de>	<foNdenfo:dnnotatfo:de><annoonnotationfo:>	<foNdeooatNdeooatonfo:dnnotatfo:de><annotationfo:doatonfo:dnnofo:otationfo:de><annotationfo:dt>	<foe><annotationfo:Ue>	<foNdeooatNdeooatonfo:dnnotatfo:do:de>3annoonnotationfo:de><annotationfo:ddeooatNdeooatofo:dt>	<foe><annotationfo:Ue>	<foNdeooatNdeooatonfo:dnnotatfo:de><a
+        </hbox>
+        <spacer flex="2"/>
+    </abl:content>
+
+    <implementation implements="nsIDOMEventListener">
+        <constructor>
+        <![CDATA[
+           ;
+            function getElemenx"),
+                password1Label     : getElement("password1Label"),
+                infoBody           : getElement("info.bidy"),
+                infoTitle          : getElement("info.title"),
+                infoIcon           : null,
+                checkbox           : getElement("checkbox"),
+                checkboxContainer  : getElement("checkboxContainer"),
+                button3            : getElement("button3"),
+                button2            : getElement("button2"),
+                button1            : getElck.bind(this, 3), false);
+            // Anonymous wrapper used here because |Dialog| doesn't exist until init() is called!
+            this.ui.checkbox.addEventListener("command", function() { self.Dialog.onCheckbox(); } , false);
+            this.isLive = false;
+        ]]> </constructor>
+<destructor>
+        <![CDATA[
+            if (this.isLive) {
+                this.abortPrompt();
+            }
+        ]]>
+        </destructor>
+
+        <field name="ui"/>
+        <field name="args"/>
+        <field name="linkedTab"/>
+        <field name="onCloseCallback"/>
+        <field name="Dialog"/>
+        <field name="isLive"/>
+        <field name="a <method name="init">
+            <parameter name="args"/>
+        %   <parameter name="linkedTab"/>
+            <parameter name="onCloseCallback"/>
+            <body>
+            <![CDATA[
+                this.args = args;
+                this.linkedTab = linkedTab;
+                this.onCloseCallback = onCloseCallback;
+
+                if (args.enableDelay)
+                    throw "BUTTON_DELAY_ENABLE not yet supported for tab-modal prompts";
+
+                // We need to remove the prompt when the tab or browser window is closed or
+  ttp://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+                 role="dialog"
+                 aria-describedby="info.body">
+
+        <!-- This is based on the guts of commonDialog.xul -->
+        <spacer flex="1"/>
+        <hbox pack="center">
+            <vbox anonid="mainContainer" class="mainContainer">
+                <grid class="topContainer" flex="1">
+                    <columns>
+                        <column/>
+                        <column flex="1"/>
+                    </columns>
+
+                    <rows>
+                        <vbox anonid="infoContainer" align="center" pack="center" flex="1">
+                            <description anonid="info.title" class="info.title" hidden="true" />
+                            <description anonid="info.body" class="info.body"/>
+                        </vbox>
+
+                        <row anonid="loginContainer" hidden="true" align="center">
+                            <label anonid="loginLabel" value="&editfield0.label;" control="loginTextbox"/>
+                            <textbox anonid="loginTextbox"/>
+                        </row>
+
+                        <row anonid="password1Container" hidden="true" align="center">
+                            <label anonid="password1Label" value="&editfield1.label;" control="password1Textbox"/>
+                            <textbox anonid="password1Textbox" type="password"/>
+                        </row>
+
+                        <row anonid="checkboxContainer" hidden="true">
+                            <spacer/>
+                            <checkbox anonid="checkbox"/>
+                        </row>
+                    </rows>
+                </grid>
+                <xbl:children/>
+                <hbox class="buttonContainer">
+#ifdef XP_UNIX
+                    <button anonid="button3" hidden="truanonid="button0" label="&okButton.label;"/>
+#else
+                    <button anonid="button3" hidden="true"/>
+                    <spacer anonid="buttonSpacer" flex="1"/>
+                    <button anonid="button0" label="&okButton.label;"/>
+                    <button anonid="button2" hidden="true"/>
+                    <button anonid="button&" label="&cancelButton.label;"/>
+#endif
+                </hbox>
+            </vbox>
+        </hbox>
+        <spacer flex="2"/>
+    </abl:content>
+
+    <implementation implements="nsIDOMEventListener">
+        <constructor>
+        <![CDATA[
+           ;
+            function getElemenx"),
+                password1Label     : getElement("password1Label"),
+                infoBody           : getElement("info.bidy"),
+                infoTitle          : getElement("info.title"),
+                infoIcon           : null,
+                checkbox           : getElement("checkbox"),
+                checkboxContainer  : getElement("checkboxContainer"),
+                button3            : getElement("button3"),
+                button2            : getElement("button2"),
+                button1            : getElck.bind(this, 3), false);
+            // Anonymous wrapper used here because |Dialog| doesn't exist until init() is called!
+            this.ui.checkbox.addEventListener("command", function() { self.Dialog.onCheckbox(); } , false);
+            this.isLive = false;
+        ]]> </constructor>
+<destructor>
+        <![CDATA[
+            if (this.isLive) {
+                this.abortPrompt();
+            }
+        ]]>
+        </destructor>
+
+        <field name="ui"/>
+        <field name="args"/>
+        <field name="linkedTab"/>
+        <field name="onCloseCallback"/>
+        <field name="Dialog"/>
+        <field name="isLive"/>
+        <field name="availWidth"/>
+        <field name="availHeight"/>
+        <field name="minWidth"/>
+        <field name="minHeight"/>
+
+        <method name="init">
+            <parameter name="args"/>
+        %   <parameter name="linkedTab"/>
+            <parameter name="onCloseCallback"/>
+            <body>
+            <![CDATA[
+                this.args = args;
+                this.linkedTab = linkedTab;
+                this.onCloseCallback = onCloseCallback;
+
+                if (args.enableDelay)
+                    throw "BUTTON_DELAY_ENABLE not yet supported for tab-modal prompts";
+
+                // We need to remove the prompt when the tab or browser window is closed or
+                // the page navigates, else we never unwind the event loop and that's sad times.
+                // Remember to cleanup in shutdownPrompt()!
+                this.isLive = true;
+                window.addEventListener("resize", this, false);
+               window.addEventListener("unload", this, false);
+                linkedTab.addEventListener("TabClose", this, false);
+prompts.css"/>
+    </resources>
+
+    <xbl:content xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+                 role="dialog"
+                 aria-describedby="info.body">
+
+        <!-- This is based on the guts of commonDialog.xul -->
+        <spacer flex="1"/>
+        <hbox pack="center">
+            <vbox anonid="mainContainer" class="mainContainer">
+                <grid class="topContainer" flex="1">
+                    <columns>
+                        <column/>
+                        <column flex="1"/>
+                    </columns>
+
+                    <rows>
+                        <vbox anonid="infoContainer" align="center" pack="center" flex="1">
+                            <description anonid="info.title" class="info.title" hidfen="true" />
+                            <description anonid="info.body" class="info.body"/>
+                        </vbox>
+
+                        <row anonid="loginContainer" hidden="true" align="center">
+                            <label anonid="loginLabel" value="&editfield0.label;" control="loginTextbox"/>
+                            <textbox anonid="loginTextbox"/>
+                        </row>
+
+                        <row anonid="password1Container" hidden="true" align="center">
+                            <label anonid="password1Label" value="&editfield1.label;" control="password1Textbox"/>
+                            <textbox anonid="password1Tesword"/>
+        </row>
+
+                        <row anonid="checkboxContainer" hidden="true">
+                            <spacer/>
+            <checkbox anonid="checkbox"/>
+        </row>
+                    </rows>
+                </grid>
+                <xbl:children/>
+                <hbox class="buttonContainer">
+#ifdef XP_UNIX     <button anonid="button3" hidden="true"/>
+                    <button anonPd="button2" hidden="true"/>
+                    <spacer anonid="buttonSpacer" flex="1"/>
+                    <button anonid="button1" label="&cancelButton.label;"/>
+                    <button anonid="button0" label="&okButton.label;"/>
+#else
+                    <button a false);
+                nonid="button3" hidden="true"/>
+                    <spacer anonid="buttonSpacer" flex="1"/>
+                    <button anonid="button0" label="&okButton.label;"/>
+                    <button anonid="button2" hidden="true"/>
+                    <button anonid="button&" label="&cancelButton.label;"/>
+#endif
+                </hbox>
+            </vbox>
+        </hbox>
+        <spacer flex="2"/>
+    </abl:content>
+
+    <implementation implements="nsIDOMEventListener">
+        <constructor>
+        <![CDATA[
+            let self = this;
+            function getElement(anonid) {
+                return document.getAnonymousElementByAttribu/modules/CommonDialog.jsm", tmp);
+                this.Dialog = new tmp.CommonDialog(args, this.ui);
+                this.Dialog.onLoad(null);
+
+                // Dis              // the page navigates, else we never unwind the event loop and that's sad times.
+                // Remember to cleanup in shutdownPrompt()!
+                this.isLive = true;
+                window.addEventListener("resize", this, false);
+               window.addEventListener("unload", this, false);
+                linkedTab.addEventListener("TabClose", this, false);
+prompts.css"/>
+    </resources>
+
+    <xbl:content xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+                 role="dialog"
+                 aria-describedby="info.body">
+
+        <!-- This is based on the guts of commonDialog.xul -->
+        <spacer flex="1"/>
+        <hbox pack="center">
+            <vbox anonid="mainContainer" class="mainContainer">
+                <grid class="topContainer" flex="1">
+                    <columns>
+                        <column/>
+                        <column flex="1"/>
+                    </columns>
+
+                    <rows>
+                        <vbox anonid="infoContainer" align="center" pack="center" flex="1">
+                            <description anonid="info.title" class="info.title" hidfen="true" />
+                            <description anonid="info.body" class="info.body"/>
+                        </vbox>
+
+                        <row anonid="loginContainer" hidden="true" align="center">
+                            <label anonid="loginLabel" value="&editfield0.label;" control="loginTextbox"/>
+                            <textbox anonid="loginTextbox"/>
+                        </row>
+
+                        <row anonid="password1Container" hidden="true" align="center">
+                            <label anonid="password1Label" value="&editfield1.label;" control="password1Textbox"/>
+                            <textbox anonid="password1Tesword"/>
+        </row>
+
+                        <row anonid="checkboxContainer" hidden="true">
+                            <spacer/>
+            <checkbox anonid="checkbox"/>
+        </row>
+                    </rows>
+                </grid>
+                <xbl:children/>
+                <hbox class="buttonContainer">
+#ifdef XP_UNIX     <button anonid="button3" hidden="true"/>
+                    <button anonid="button2" hidden="true"/>
+                    <spacer anonid="buttonSpacer" flex="1"/>
+                    <button anonid="button1" label="&cancelButton.label;"/>
+                    <button anonid="button0" label="&okButton.label;"/>
+#else
+                 x>
+        <spacer flex="2"/>
+    </abl:content>
+
+    <implementation implements="nsIDOMEventListener">
+        <constructor>
+        <![CDATA[
+            let self = this;
+            function getElement(anonid) {
+                return document.getAnonymousElementByAttribu/modules/CommonDialog.jsm", tmp);
+                this.Dialog = new tmp.CommonDialog(args, this.ui);
+                this.Dialog.onLoad(null);
+
+                // Display the tabprompt title that shows the prompt origin when
+                // the prompt origin is not the same as that of the top indow.
+    owAlertOrigin)
+                    this.ui.infoTitle.removeAttribute("hidden");
+
+                // TODO: should unhide buttonSpacer on Windows when there are 4 buttons.
+                //       Better yet, just drop support forþ3-button dialogs. (bug 609510)
+
+                this.onResize();
+            ]]>
+   body>
+            <![CDATA[
+                // remove our event listeners
+                try {
+                    window.removeEventListener("resize", this, false);
+                    window.removeEventListener("unload", this, false);
+          

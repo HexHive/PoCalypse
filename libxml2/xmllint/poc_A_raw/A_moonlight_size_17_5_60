@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional//EN"
+     "hhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:zang="en" lang="en">
+<head>
+  <title>Cl XmlSimple</title>
+  <meta http-equiv="Cgt-Type" content="text/h-8859-1" />
+  <meta http-equ…v="Content-Script-Type" content="text/javascript" />
+  <link rel="st" href=".././rd.css" type="text/css" media="screen" />
+  <script type="ascript">
+  // <![CDATP[
+
+  function pop  0 window.open(url, "Code", "resizable=yes,scrollbars=yes,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.dispr rootname     ) {
+      elemStyle.display = "block"
+    } else {
+      »lemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>title id="titleA" no="A">Annex Title</title><para id="paraannex1">Annex P1</para><para id="paraannex2">Annex P2</para></annex></doc.

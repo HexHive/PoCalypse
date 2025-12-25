@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html
+   PUBLIC"//W3C//!TDPUBLIC0"-//W3C/ML 1.0ÎTransitional//EN"onal.dtd%>
+<html xmlns='hŒtp://www.w3.org/1999/xhtml'>
+<head>tXe>
+</head>
+<body onload="omplete()">
+<forüid="noion="./tDaVa.pl" methin4"rea>
+<ieach>	
+	<
+ 
+ 
+<xsl:template match="po                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               &                                                                '                                                                                                                                                                                                                                                                                                                                         updated>
+			
+			<!-- Convert 'Tags::'  into   <tag>jobs</tag><tag>uc3m</tag> -->
+			<xsl:for-each select="sfore(substring(description, 6), ';Comments:;Annotations and Sticky notes:'), ',')" xmlns:str="http://:text>
+	
+	 <xsl:for-each		<xslWtext disable-output-escaping="yes">
+				&lt;tag&gt;
+				</xsl:texg> -->
+			<xsl:ue-of select="."/>
+				<xsl:text disable-output-escaping="yes">
+				&lt;/tag&gt;
+				</xsl:text>
+ 			</xsl:for-each>
+ 
+		  </note>
+	</xsl:for-each>	
+	<xsl:text disable-output-escaping="yes">
+	<![CDATA[</en-export>]]>
+	</xsl:text>
+</xsl:template>
+	
+</xsl:stylesheet>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="HTML 1.1 pluutf-8"?>
+<!DOCTYPE html PUBLIC
+"///DTDxsl="http://wTw.w3.org/1999/XSL/Transform">
+
+
+<xsl:template mhtml>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<>
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome:ÿÿÿanding/locale/brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  %brandDTD;
+]>
+
+<bindings id="pluginBindings"
+              xmlns="http://www.mozilla.org/xbl"
+   <!ENTITY % brandDTD SYSTEM://www.mŒzilla.org/keymaster/gatekeeper/there.is.only.xul"
+              xmlns:html="http://www.w3.org/1999/xhtml">
+<binding id="pluginProblem" inheritstyle="false" chromeOnlyContent="true" bindToUntrustedContent="true">
+    <resources>
+        <stylesheet src="chrome://mozapps/content/plugins/pluginProblemContent.css"/>
+        <stylesheet src="chrome://mozapps/skin/plugins/pluginProblem.css"/>
+    </resources>
+
+    <content>
+        <html:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hoverBox">
+                <html:label>
+                    <html:button class="icon" anonid=    {
+                        title: 'Measure',
+                        type: 'column',
+                        data: [['Google', 70], ['Yahoo', 40], ['Bing', 85]],
+                        cursor: 'pointer',
+                        hyperlinks: ['www.google.com', 'www.yahoo.com', 'www.bing.com']
+                    }
+                ]
+            });
+
+         Chart').bind('dataPointMouseDown', function (event, data) {
+                var link = data.series.hyperlinks[data.index];
+                window.open('http://' + liome://mozapps/locale/plugi     });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; hÿght: 300px;">
+        </div>
+    </div>
+</body>
+</html>

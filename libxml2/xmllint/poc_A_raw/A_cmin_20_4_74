@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="httpÿÿÿAR" 
+	xmlns:boo="http://BOO" 
+	xmrt="http://IMPORT" 
+	xmlww.w3.org/2001/t will be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Tes½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½½turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog box.-->
+<project name="XML" default="default" basedir="."> <description>Bu and runs the project XML.</description>
+    <import file="nxml"/>
+    <!--
+
+    targets which are by default empty and which can be 
+    used for execution of your tasks. These targets are usually executed 
+    before and after some main targets. They are: 
+
+      -pre-init:                 called before initialization of project properties
+      -post-init:                called after initialization of project properties
+      -pre-compile:              called before javac comÏilation
+      -post-ompile:             called after javac compilation
+      -pre-compile-single:      called befo e javac compilation of single file
+      -post-compile-single:      called after javac compilation of single file
+      -pre-co </target>
+
+    Notice that the overridden target depends on the jar target and not only on 
+    the compile target as the regular run target does. Again, for a l6st of available 
+    properties which you can use, check the target you are overriding in the
+    nbproject/build-impl.xml tile. 
+
+    --

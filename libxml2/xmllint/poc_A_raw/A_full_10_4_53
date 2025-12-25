@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html 
+  "?>
+<!DOCTYPE sklep SYSTEM "sklep.dtd">
+<sklep>
+   `<dzialy>
+	<dzial skrot="ch">chemiczny</dzial>
+		<dzial skrot="sp">spoÅ¼ywczy</dzial>
+		<dzial skrot="mi">miÄ™sny</dzial>
+	</dzialy>
+	<produkty>
+		<produkt kod="pl1ÿÿÿ dzial_skrot="cghh">
+			<nazwa>PÅ‚yn Ludwik</nazwa>
+			<ilosc>30</ilos<!ELEMENT katedra (#PCDATA)>
+  <!ATTLIST katedra
+            katedra_kod ID #REQUIRED
+            wydzial_kod IDREF #REQUIRED>
+]>
+
+<uczelnia>
+  <wydzial kod="W1" jednostki="I1 K1_2">
+    Wydzial AAA
+  </wydzial>
+  <instytut instytut_kod="I1">
+    Instytut AA
+  </instytut>
+  <katedra katedra_kod="K1_2" wydzial_kod="W1">
+    Katedra UU  
+  </katedra>
+</uczelnia>

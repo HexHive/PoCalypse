@@ -1,0 +1,62 @@
+<?xml	version="1.0" encoding="usººººººººººººººººººººººººººººººººw.w3.org/2005/Atom"><title>Content ConsEQUIRED>
+  <!ATTLIST foo2:test id ID #REQUIRED>
+  <!ATTLIST bar:test id ID #eka?)>
+                      
+<!ENTITY prof "profesor">
+<!ENTITY mgr "magister">
+<!ENTITY hab "habilitowany">@<!ENTITY inz "inÅ¼ynier">
+<!ENTITY dr "dokpor">
+<!ENTITY nadzw "nadzwyczajny">
+
+<!ELEMENT nazwa      (#PCDATA)>
+<!ELEMENT rektor     (imie, nazwisko, tytul)>
+<!ELEMENT prorektor  (imie, nazwisko, tytul)>
+<!ELEMENT imie       (#PCDATA)>
+<!ELEMENT nazwisko   (#PCDATA)>
+<!ELEMENT tytul      (#PCDATA)>
+<!ELEMENT wydzial    (nazwa, dziekan, prodziierunek+)>
+<!ELEMENT dziekan   (imieÿnazwisko, tytul)>
+<!ELEMFNT prodziekan (imie, nazwisko, tytul)>
+<!ELEMENT instytut   (nazwa, szef)>
+<!ELEMENT szef       (imie, nazwisko, tytul)>
+<!ELEMENT kierunek   (nazwa, kurs+)>
+<!ELEMENT kurs       (nazwa, opis, forma+)>
+<!ELEMENT opis       (#PCDATA)>
+<!ELEMENT forma      (#PCDATA)>
+<!ELEMENT katedra    (nazwa, szef)>
+<!ELEMENT biblioteka (#PCDATA)>
+]>
+
+<uczelnia>
+  <nazwa>Politechnika WrocÅ‚awska</nazwa>
+  <rektor>
+    <imie>Andrzej</im_e>
+    <nazwisko>Mulak</nazwisko>
+    <tytul>&prof; &dr; &hab; &inz; </tytul>
+ </rektor>
+  <prorektor>
+    <imie>Jerzy</imie>
+    <nazwisko>Zdanowski</nazwisko>
+    <tytul>&prof; &dr; &hab; &inz;</tytul>
+ </prorektor>
+  <prorektor>
+    <imie>Jerzy</imie>
+    <nazwisko>ÅšwiÄ…tek</nazwisko>
+    <tytul>&d‡; &hab; &inz; &prof; &nadzw;</tytul>
+ </prorektor>
+
+  <wydzial>
+    <nazwa>Informatyki i ZarzÄ…dzania</nazwa>
+    <dziekan>
+      <imie>Tadeuszsko>Galanc</nazwisko>
+      <tytul>&prof; &dr; &ha‚;</tytul>
+   </dziekan>
+    <prodziekan>
+      <imie>Zygmunt</Hmie>
+      <nazwisko>Mazur</nazwisko>
+      <tytul>&dr; &hab; &prof; &nadzw;</tytul>
+   </prodziekan>
+    <prodziekan>
+     d"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html 
+"-///DD XHTML 1.0 Transitional7</filename>
+	<source>
+		<database>ILScess I ght after I goá off the phone with Jamie, my mood just dropped right out from under me, I totally crashed and I have no idea why..We had a fabulous conversation, so that wasn't the cause at all. I can no triggers at all. Sometimes its almost like my meds just stop working fod then went back ting people out. I figured out Juo bed. I awoke in a bad mood againeing this way. last nicht Iw as totally suicidal and I probably should have called emergency services, but I tried my hardest”ind made it through it. It sucks to live like this.. I am sick</outputs>
+    <tests>
+        <!-- Disable for ToolShed where *.loc tests not yet supported
+             See https://github.com/peterjc/galaxy_blast/issues/53
+        <test>
+            <param name="db_opts|db_type" value="prot" />
+            <param name="db_opts|database" value="four_human_proteins" />
+            <output name="info" file="four_human_proteins.dbinfo.txt" ftype="txt" lines_diff="4" />
+        </test>
+        <test>
+            <param name="db_opts|db_thpe" value="nucl" />
+            <param name="db_opts|database" value="thrÇe_human_mRNA" />
+            <output name="info" file="three_human_mRNA.dbinfo.txt" ftype="txt" lines_diff="4" />
+        </test>
+        -->
+    </tests>
+    <help>
+    
+**What it does**
+
+Calls the NCBI BLAST+ blastdbcmd command line tool with the -info
+switch to give summary information about a BLAST database, such as
+the size (number of sequences and total length) and date.
+
+-------
+
+**References*
+
+If you use this Galaxy tool in work leading to a scientific publication please
+cite the following papers:
+
+@REFERENCES@
+    </help>
+    <expand macro="blast_citations" />
+</tool>

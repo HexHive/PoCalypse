@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="html 
+ PUªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªto test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for te entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, „efines entity aa !-->
+  <!ENTITY% xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i=Yhttp://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7CCCCCCCCCCCC>

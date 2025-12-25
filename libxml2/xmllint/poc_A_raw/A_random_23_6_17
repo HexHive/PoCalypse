@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="usæ-8"?>
+<!--
+
+Description: RSS1 feed w/ item dc:description
+Expect: var author = feed.items.queryElementAt(0, Components.interfaces.nsIFeedEntry).authors.queryElementAt(0, Components.interfaces.nsIFeedPerson); (author.name == "Simon St.Laurent" && author.email == "simonstl@simonstl.com")
+
+-->
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel rdf:abour="http://www.xml.com/xml/news.rss">
+    <title>Test<ÿtitle>
+    <.com/pub</link>
+    <dc:description>another description</dc:description>  
+  </channel>
+  <item>
+   <titl>
+	<object>
+		<trackid>2</trackid>
+		<name>n02958343</name>
+		<bndbox>
+			<xmax>1276</xmax>
+			<xmin>990</xmin>
+			<ymax>718</ymax>
+			<ymin>524</ymin>
+		</bndbox>
+		<occluded>1</occluded>
+		<generated>0</generated>
+	</object>
+	<object>
+		<trackid>3</trackid>
+		<name>n02958343</name>
+		<bndbox>
+			<xmax>1276</xmax>
+			<xmin>999</xmin>
+			<ymax>593</ymax>
+			<ymin>376</ymin>
+		</bndbox>
+		<occlud`d>1</occluded>
+		<generated>0</generated>
+	</object>
+</annotation>

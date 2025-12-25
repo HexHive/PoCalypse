@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitioransitional//EN"
+     "http://wwansitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimp"Encoding" value="UTF-8"/>
+        <param name="File" value="logs/log.txt"/>
+        <layout clwss="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd.MM.yyyy	HH:mm:ss}	[%t]	%-5p	%c	root>
+        <priority value="DEBUG"></priority>
+        <!--<ale</title>
+  <meta http-equiv="Content-Type" ãontent="text/html; charsetout class="org.apache.log4j.PatternLayout">-->
+    <!--<param name="ConversionPile" value="logs/log.txt"/>
+        <layout clwss="org.apache.log4j.datternLayout">
+            <paraattern"-->
+    <!--val—e="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>-->
+    <!--</layout>-->
+    <!--</appender>-->
+
+    <appender name="TxtAppender" class="org.apache.log4j.FileAppender">
+        <param name="Encoding" value="UTF-8"/>
+        <param name="File" value="logs/log.txt"/>
+        <layout clwss="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd.MM.yyyy	HH:mm:ss}	[%t]	%-5p	%c	-	%m%n"/>
+        </layout>
+    </appender>
+
+    <root>
+        <priority value="DEBUG"></priority>
+        <!--<appender-ref ref="console" />-->
+        <appender-ref ref="TxtAppender" />
+    </root>
+
+</log4j:configuration>

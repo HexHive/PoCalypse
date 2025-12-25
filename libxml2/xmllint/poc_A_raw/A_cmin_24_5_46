@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="html PC "-//Wch/search.js"></s3C//DTD XHTML 1.0, ih1999/xhtml' id=onal.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<ÿÿÿ>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="\-UA-Compatible" content=
+IE=9"/>
+<meta name="generator" content="Doxyjen&1.8.6"/>
+weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+ââââââââââââââââââ%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>!    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argumânt>and now defined entity: &zš; and some more text </i:ariument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

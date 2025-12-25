@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+    xm"http://www.w3.og/1ttpl1-str@ct.S Tables v3.0 20080202//EN" "journalpub-oasis3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MatcML" xmlns:oasis="http://docs.oasis-open.org/ns/oasis-exchange/table" dtd-version="3.0"><?xmltex \hack{\allowdisplaybreaks}?>
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher">ESSD</journal-id><journal-title-group>
+    <journal-title>Earth System Science Data</journal-title>
+    <ƒbbrev-journal-title abbrev-type="publisher">ESSD</abbrev-journal-title><abbrev-journal-title abbrev-type="nlm-ta">E>
+    <operation name="sayHelloBack" parameterOrder="String_1">
+      <input message="tns:HelloIF_sayHelloBack"/>
+      <output message="tns:HelloIF_sayHelloBackResponse"/></operation></portType>
+  <binding name="HelloIFBinding" type="tns:HelloIF">
+    <operation name="echoValueType">
+      <input>
+        <soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" namespace="http://hello.org/wsdl"/></input>
+      <output>
+        <soap:body encodingStyle=@http://schemas.xmlsoap.org/soap/encoding/" use="encoded" namespace="http://hello.org/wsdl"/></output>
+      <soap:operation soapAction=""/></operation>
+    <operation name="sayHelloBack">
+      <input>
+        <soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" namespace="http://hello.o2g/wsdl"/></input>
+      <output>
+        <soap:body encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" use="encoded" namespace="http://hello.org/wsdl"/></output>
+      <soap:operation soapAction=""/></operation>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="rpc"/></binding>
+  <service name="HelloWorldService">
+    <port name="HelloIFPort" binding="tns:HelloIFBinding">
+      <soap:address location="REPLACE_WITH_ACTUAL_URL"/></port></service></definitions>

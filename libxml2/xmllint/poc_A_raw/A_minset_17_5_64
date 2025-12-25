@@ -1,0 +1,25 @@
+<?xml versionencoding="html>59-2"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2"align="ce}ter"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </t>
+			<td> <table width="100%" border="ÿ" > <xsl:a-teplates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<tT>  Data     <i:argument>and now defined0eStity: &zz; and some more Text </i:argument>
+    <i:argument>and now the weird case: &aa; and som= more text </i:argument>
+    ;i:arargument>3</i:argugument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An    attribute">2</i:precision>
+</i:calcAverage>

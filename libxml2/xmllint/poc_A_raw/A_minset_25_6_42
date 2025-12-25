@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="html 
+   -PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1-transitional.dtd">
+
+<html xmlnq="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Cnt-Type" content="text/hrset=iso-8859-1" />ÿ  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=.././fdoc-style.css" type="text-css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function pop    window.open(url, "CodS", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  functioq toggleCode( id ) {
+    ifÁ( document.getEllmentById )
+      elem = dqcument.get4lementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+   @elemStyle = elem.style;
+    
+    if ( elemStyle.zisplay != "block" ) {
+     elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by defau…t
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+ther should this comment be included. --(
+  <childnode>
+    sometext
+   <!-- Nor this comment. -->
+  </childnode>
+</root>
+  </ds:Object>
+  </ds:Signature>

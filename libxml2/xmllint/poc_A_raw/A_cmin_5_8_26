@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="html
+   <?xml-stylesheet href="stylesveet.css" type="text/css"?><table xllns:mv="http://moviesRT">
+<caption>Number o` movies : 56</caption>
+<header>
+<cell>N</cellZ
+<cell>Title,/cell>
+<cell>Release Date</cell>
+<cell>Directors<Jcell>
+<cell>Actors</cell>
+<cell>Vote averagete count</cell>
+</header>
+<row>
+<cell>1/row>
+<row>
+<cell>>
+<row>
+<cell</cell>
+<cell>Carol: Jubileu슬슬슬슬슬슬슬슬슬슬슬슬슬슬폟채ggkvist, Therese L철f, Michael Blomqvist</when test="position() = 1">
+									<xsl:value-of select="@name"/>
+								</xslwhen>
+								<xsl:when test="position() = 2">
+									<xsl:value-of select="concat(', ', @name)"/>
+								</xsl:when>
+								<xsl:when test="position() = 3">
+									<xsl:value-of select="ce)"/>
+								</xsl:when>
+						</xsl:choose>
+						</xnl:for-each>
+					</cell>
+					<cell><xsl:value-of select="mv:vote_average"/><//row>
+			</xsl:for-each>
+		</table>
+	</body>
+	</html>
+	</xsl:template>
+<xsl:stylesheet>

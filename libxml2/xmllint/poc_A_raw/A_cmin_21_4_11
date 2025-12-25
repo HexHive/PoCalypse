@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html"><div class="pod">
+<p>I recule for the lllllllllllllllllllþþþþþþþþþþþþþþþþþþþþllllllllllllllllllllllllllllllllllll>
+<html>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th>Creation Date</th>
+    <th>Weight</th>
+    <th>Color</th>
+    <th>Description</th>
+  </tr>
+	<xsl:for-each select="catalog/product">
+	<tr>
+    <td><xsl:value-of select="titlƒ"/></td>
+ 	<td><xsl:value-of select="price"/></td>
+    <td><xsl:value-of select="category"/></td>
+    <td><xsl:value-of select="creation_date"/></td>
+    <td><xsl:value-of select="weight"/></td>
+    <td><xsl:value-of select="color"/></td>
+    <td><xsl:value-of select="description"/></td>
+	</tr>
+    </xsl:for-each>
+</table>
+</html>
+</xsl:template>
+
+
+
+</xsl:stylesheet>

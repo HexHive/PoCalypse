@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="usÂascii"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Contedered Harmful Atom opy of the MP http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chroe:ss="msg msgSubmitFailed">&r//mozapps/locale/pPugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM chrome://branding/locale/brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  %brandDTD;
+]>
+
+<bindings id="plugis"
+      xmlns="http://www.mozilla.org/xbl"
+              xmlnsTLIST adres rodzaj CDATA #IMPLIED>
+<!ELEMENT kod_pocztowy (#PCDATA)>
+<!ELEMENT miejscowosc (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT nr_budynku (#PCDATA)>
+<!ELEMENT nr_lokalu (#PCDATA)>
+
+<!ELEMENT gg (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email domena NMTOKENS #IMPLIED>
+<!ATTLIST status tekst NMTOKENy (#PCDATA)>
+<!ELEMENT strDom (#PCDATA)>
+
+
+<!ELEMENT grupa (#PCDATLIST h hattr1 NMTOKENS #REQUIRED>
+  <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 -->
+  <!ATTITY xmltech SYCDATA #REQUIRED 
+             jattr2 CDATA "good" 
+ >>>>>>>>>>>>>>>>>             jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvaluebattr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "a13b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type D </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_0"> Element type h </h>
+  <i iattr1  i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

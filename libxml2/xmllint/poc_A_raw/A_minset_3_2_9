@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-7"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/eŠvelohttp://www.w3.o1/XMLSchema-instance" xmlns:xsd="http://www.w3.oSg/2001/XMLSchema">
+  <soap:Body>
+    <GetICB_9_2_4_DestInfoWithDestIdResponse xmlns="httŒ://airline.com/">
+      <GetICB_9_2_4_DestInfoWithDestIdResult>
+       ttp://www.w3.org/2001/XMLSchema" x '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; ”nd some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and s|me more text </i:argument>
+    <i:argument>and now the weird case: &aa; and s{me more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty eleme^t -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

@@ -1,0 +1,1050 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsd:schema 
+	targetNamespace="http://www.iata.com/wac" 
+	xmlns:wac="http://www.iata.com/wac"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	attributeFormDefault="qualified"
+	elementFormDefault="qualified">
+		
+	<xsd:simpleType name="WAC">  <!--  Tipo reutilizado -->
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="PMI" /><!-- airport="Palma" country="Spain" -->
+			<xsd:enumeration value="AAR" /><!-- airport="Aarhus" country="Denmark" -->
+			<xsd:enumeration value="ABD" /><!-- airport="Abadan" country="Iran" -->
+			<xsd:enumeration value="AEH" /><!-- airport="Abeche" country="Chad" -->
+			<xsd:enumeration value="ABZ" /><!-- airport="Aberdeen" country="United Kingdom" -->
+			<xsd:enumeration value="ABR" /><!-- airport="Aberdeen" country="USA" -->
+			<xsd:enumeration value="ABJ" /><!-- airport="Abidjan" country="Ivory Coast" -->
+			<xsd:enumeration value="ABI" /><!-- airport="Abilene" country="USA" -->
+			<xsd:enumeration value="AUH" /><!-- airport="Abu Dhabi" country="UAE" -->
+			<xsd:enumeration value="ABV" /><!-- airport="Abuja International" country="Nigeria" -->
+			<xsd:enumeration value="AUE" /><!-- airport="Abu Rudeis" country="Egypt" -->
+			<xsd:enumeration value="ABS" /><!-- airport="Abu Simbel" country="Egypt" -->
+			<xsd:enumeration value="ACA" /><!-- airport="Acapulco" country="Mexico" -->
+			<xsd:enumeration value="ACC" /><!-- airport="Accra" country="Ghana" -->
+			<xsd:enumeration value="ADA" /><!-- airport="Adana" country="Turkey" -->
+			<xsd:enumeration value="ADD" /><!-- airport="Addis Ababa" country="Ethiopia" -->
+			<xsd:enumeration value="ADL" /><!-- airport="Adelaide" country="Australia" -->
+			<xsd:enumeration value="ADE" /><!-- airport="Aden" country="Yemen" -->
+			<xsd:enumeration value="AER" /><!-- airport="Adler/Sochi" country="Russia" -->
+			<xsd:enumeration value="AJY" /><!-- airport="Agades" country="Niger" -->
+			<xsd:enumeration value="AGA" /><!-- airport="Agadir" country="Morocco" -->
+			<xsd:enumeration value="SUM" /><!-- airport="Agana" country="Guam" -->
+			<xsd:enumeration value="AGZ" /><!-- airport="Aggeneys" country="South Africa" -->
+			<xsd:enumeration value="BQN" /><!-- airport="Aguadilla" country="Puerto Rico" -->
+			<xsd:enumeration value="AGU" /><!-- airport="Aguascaliente" country="Mexico" -->
+			<xsd:enumeration value="AMD" /><!-- airport="Ahmedabad" country="India" -->
+			<xsd:enumeration value="AJA" /><!-- airport="Ajaccio" country="France" -->
+			<xsd:enumeration value="AXT" /><!-- airport="Akita" country="Japan" -->
+			<xsd:enumeration value="CAK" /><!-- airport="Akron" country="USA" -->
+			<xsd:enumeration value="AKT" /><!-- airport="Akrotiri - RAF" country="Cyprus" -->
+			<xsd:enumeration value="ADX" /><!-- airport="Aktyubinsk" country="Kazakhstan" -->
+			<xsd:enumeration value="AAC" /><!-- airport="Al Arish" country="Egypt" -->
+			<xsd:enumeration value="AHU" /><!-- airport="Al Hoceima" country="Morocco" -->
+			<xsd:enumeration value="ALH" /><!-- airport="Albany" country="Australia" -->
+			<xsd:enumeration value="ABY" /><!-- airport="Albany" country="USA" -->
+			<xsd:enumeration value="ALB" /><!-- airport="Albany" country="USA" -->
+			<xsd:enumeration value="LBI" /><!-- airport="Albi" country="France" -->
+			<xsd:enumeration value="AAL" /><!-- airport="Alborg" country="Denmark" -->
+			<xsd:enumeration value="ABQ" /><!-- airport="Albuquerque" country="USA" -->
+			<xsd:enumeration value="ABX" /><!-- airport="Albury" country="Australia" -->
+			<xsd:enumeration value="AES" /><!-- airport="Alesund" country="Norway" -->
+			<xsd:enumeration value="ALJ" /><!-- airport="Alexander Bay" country="South Africa" -->
+			<xsd:enumeration value="ALY" /><!-- airport="Alexandria, El Nhouza country="Egypt" -->
+			<xsd:enumeration value="ESF" /><!-- airport="Alexandria" country="USA" -->
+			<xsd:enumeration value="FJR" /><!-- airport="Alfujairah (Fujairah)" country="UAE" -->
+			<xsd:enumeration value="AHO" /><!-- airport="Alghero Sassari" country="Italy" -->
+			<xsd:enumeration value="ALG" /><!-- airport="Algiers" country="Algeria" -->
+			<xsd:enumeration value="ALC" /><!-- airport="Alicante" country="Spain" -->
+			<xsd:enumeration value="ASP" /><!-- airport="Alice Springs" country="Australia" -->
+			<xsd:enumeration value="ADY" /><!-- airport="Alldays" country="South Africa" -->
+			<xsd:enumeration value="ABE" /><!-- airport="Allentown" country="USA" -->
+			<xsd:enumeration value="ALA" /><!-- airport="Alma Ata" country="Kazakhstan" -->
+			<xsd:enumeration value="LEI" /><!-- airport="Almeria" country="Spain" -->
+			<xsd:enumeration value="ALP" /><!-- airport="Aleppo" country="Syria" -->
+			<xsd:enumeration value="ALF" /><!-- airport="Alta" country="Norway" -->
+			<xsd:enumeration value="ACH" /><!-- airport="Altenrhein" country="Switzerland" -->
+			<xsd:enumeration value="AOO" /><!-- airport="Altoona" country="USA" -->
+			<xsd:enumeration value="ASJ" /><!-- airport="Amami" country="Japan" -->
+			<xsd:enumeration value="AMA" /><!-- airport="Amarillo" country="USA" -->
+			<xsd:enumeration value="AMM" /><!-- airport="Amman" country="Jordan" -->
+			<xsd:enumeration value="ATQ" /><!-- a"Amritsar" country="India" -->
+			<xsd:enumeration value="AMS" /><!-- airport="Amsterdam, Schiphol" country="Netherlands" -->
+			<xsd:enumeration value="QNB" /><!-- airport="Anand" country="India" -->
+			<xsd:enumeration value="ANC" /><!-- airport="Anchorage" country="USA" -->
+			<xsd:enumeration value="AOI" /><!-- airport="Ancona" country="Italy" -->
+			<xsd:enumeration value="ALV" /><!-- airport="Andorra La Vella H/P" country="Andorra" -->
+			<xsd:enumeration value="AXA" /><!-- airport="Anguilla" country="Anguilla" -->
+			<xsd:enumeration value="AJN" /><!-- airport="Anjouan" country="Comoros (Comores)" -->
+			<xsd:enumeration value="ANK" /><!-- airport="Ankara" country="Turkey" -->
+			<xsd:enumeration value="AAE" /><!-- airport="Annaba" country="Algeria" -->
+			<xsd:enumeration value="ARB" /><!-- airport="Ann Arbor" country="USA" -->
+			<xsd:enumeration value="NCY" /><!-- airport="Annecy" country="France" -->
+			<xsd:enumeration value="ANB" /><!-- airport="Anniston" country="USA" -->
+			<xsd:enumeration value="AYT" /><!-- airport="Antalya" country="Turkey" -->
+			<xsd:enumeration value="TNR" /><!-- airport="Antananarivo (Tanannarive)" country="Madagascar" -->
+			<xsd:enumeration value="ANU" /><!-- airport="Antigua" country="Antigua" -->
+			<xsd:enumeration value="ANR" /><!-- airport="Antwerp" country="Belgium" -->
+			<xsd:enumeration value="AOJ" /><!-- airport="Aomori" country="Japan" -->
+			<xsd:enumeration value="APW" /><!-- airport="Apia" country="Samoa" -->
+			<xsd:enumeration value="ATW" /><!-- airport="Appelton/Neenah/Menasha" country="USA" -->
+			<xsd:enumeration value="AQJ" /><!-- airport="Aqaba" country="Jordan" -->
+			<xsd:enumeration value="AJU" /><!-- airport="Aracaju" country="Brazil" -->
+			<xsd:enumeration value="ARH" /><!-- airport="Arkhangelsk" country="Russian Federation" -->
+			<xsd:enumeration value="ARK" /><!-- airport="Arusha" country="Tanzania" -->
+			<xsd:enumeration value="GPA" /><!-- airport="Araxos" country="Greece" -->
+			<xsd:enumeration value="RLT" /><!-- airport="Arlit" country="Niger" -->
+			<xsd:enumeration value="Axs" /><!-- airport="Armenia" country="Colombia" -->
+			<xsd:enumeration value="ACE" /><!-- airport="Arrecife/Lanzarote" country="Spain" -->
+			<xsd:enumeration value="AUA" /><!-- airport="Aruba" country="Aruba" -->
+			<xsd:enumeration value="AVL" /><!-- airport="Asheville" country="USA" -->
+			<xsd:enumeration value="ASB" /><!-- airport="Ashgabat, Ashkhabat" country="Turkmenistan" -->
+			<xsd:enumeration value="ASE" /><!-- airport="Aspen Snowmass" country="USA" -->
+			<rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrxsd:enumeration value="ATZ" /><!-- airport="Assiut" country="Egypt" -->
+			<xsd:enumeration value="ASU" /><!-- airport="Asuncion" country="Paraguay" -->
+			<xsd:enumeration value="ATH" /><!-- airport="Athens" country="Greece" -->
+			<xsd:enumeration value="ASW" /><!-- airport="Aswan, Daraw" country="Egypt" -->
+			<xsd:enumeration value="HEW" /><!-- airport="Athens, Hellinikon" country="Greece" -->
+			<xsd:enumeration value="AHN" /><!-- airport="Athens" country="USA" -->
+			<xsd:enumeration value="ATO" /><!-- airport="Athens" country="USA" -->
+			<xsd:enumeration value="ATL" /><!-- airport="Atlanta" country="USA" -->
+			<xsd:enumeration value="ACY" /><!-- airport="Atlantic City" country="USA" -->
+			<xsd:enumeration value="YAT" /><!-- airport="Attawapiskat, NT" country="Canada" -->
+			<xsd:enumeration value="AKL" /><!-- airport="Auckland" country="New Zealand" -->
+			<xsd:enumeration value="AGB" /><!-- airport="Augsburg" country="Germany" -->
+			<xsd:enumeration value="AGS" /><!-- airport="Augusta" country="USA" -->
+			<xsd:enumeration value="AUG" /><!-- airport="Augusta" country="USA" -->
+			<xsd:enumeration value="AUR" /><!-- airport="Aurillac" country="France" -->
+			<xsd:enumeration value="AUS" /><!-- airport="Austin" country="USA" -->
+			<xsd:enumeration value="AYQ" /><!-- airport="Ayers Rock" country="Australia" -->
+			<xsd:enumeration value="AYR" /><!-- airport="Ayr" country="Australia" -->
+			<xsd:enumeration value="BJZ" /><!-- airport="Badajoz" country="Spain" -->
+			<xsd:enumeration value="BGW" /><!-- airport="Bagdad, Al Muthana" country="Iraq" -->
+			<xsd:enumeration value="SDA" /><!-- airport="Bagdad, Saddam International" country="Iraq" -->
+			<xsd:enumeration value="BHV" /><!-- airport="Bahawalpur" country="Pakistan" -->
+			<xsd:enumeration value="BAH" /><!-- airport="Bahrain" country="Bahrain" -->
+			<xsd:enumeration value="BSR" /><!-- airport="Basra, Basrah" country="Iraq" -->
+			<xsd:enumeration value="BFL" /><!-- airport="Bakersfield" country="USA" -->
+			<xsd:enumeration value="BAK" /><!-- airport="Baku" country="Azerbaijan" -->
+			<xsd:enumeration value="BNK" /><!-- airport="Ballina" country="Australia" -->
+			<xsd:enumeration value="BWI" /><!-- airport="Baltimore Washington Int'l MD" country="USA" -->
+			<xsd:enumeration value="ABM" /><!-- airport="Bamaga" country="Australia" -->
+			<xsd:enumeration value="BKO" /><!-- airport="Bamako" country="Mali" ->
+			<xsd:enumeration value="BBY" /><!-- airport="Bambari" country="Central African Republic" -->
+			<xsd:enumeration value="BWN" /><!-- airport="Bandar Seri Begawan" country="Brunei" -->
+			<xsd:enumeration value="BLR" /><!-- airport="Bangalore" country="India" -->
+			<xsd:enumeration value="BGU" /><!-- airport="Bangassou" country="Central African Republic" -->
+			<xsd:enumeration value="BKK" /><!-- airport="Bangkok" country="Thailand" -->
+			<xsd:enumeration value="BGR" /><!-- airport="Bangor" country="USA" -->
+			<xsd:enumeration value="BGF" /><!-- airport="Bangui" country="Central African Republic" -->
+			<xsd:enumeration value="BJL" /><!-- airport="Banjul" country="Gambia" -->
+			<xsd:enumeration value="BNP" /><!-- airport="Bannu" country="Pakistan" -->
+			<xsd:enumeration value="BCN" /><!-- airport="Barcelona" country="Spain" -->
+			<xsd:enumeration value="BLA" /><!-- airport="Barcelona" country="Venezuela" -->
+			<xsd:enumeration value="BDU" /><!-- airport="Bardufoss" country="Norway" -->
+			<xsd:enumeration value="BRI" /><!-- airport="Bari" country="Italy" -->
+			<xsd:enumeration value="BZL" /><!-- airport="Barisal" country="Bangladesh" -->
+			<xsd:enumeration value="BDQ" /><!-- airport="Baronda" country="India" -->
+			<xsd:enumeration value="BAQ" /><!-- airport="Barranquilla" country="Colombia" -->
+			<xsd:enumeration value="BSL" /><!-- airport="Basel" country="Switzerland" -->
+			<xsd:enumeration value="EAP" /><!-- airport="Basel/Mulhouse" country="Switzerland/France" -->
+			<xsd:enumeration value="BIA" /><!-- airport="Bastia" country="France" -->
+			<xsd:enumeration value="BTR" /><!-- airport="Baton Rouge" country="USA" -->
+			<xsd:enumeration value="BYU" /><!-- airport="Bayreuth" country="Germany" -->
+			<xsd:enumeration value="BPT" /><!-- airport="Beaumont/Pt. Arthur" country="USA" -->
+			<xsd:enumeration value="BKW" /><!-- airport="Beckley" country="USA" -->
+			<xsd:enumeration value="PEK" /><!-- airport="Beijing" country="China" -->
+			<xsd:enumeration value="NAY" /><!-- airport="Beijing - Nanyuan" country="China" -->
+			<xsd:enumeration value="BEW" /><!-- airport="Beira" country="Mozambique" -->
+			<xsd:enumeration value="BEY" /><!-- airport="Beirut" country="Lebanon" -->
+			<xsd:enumeration value="BEL" /><!-- airport="Belem" country="Brazil" -->
+			<xsd:enumeration value="BHD" /><!-- airport="Belfast - Harbour" country="United Kingdom" -->
+			<xsd:enumeration value="BFS" /><!-- airport="Belfast International" country="United Kingdom" -->
+			<xsd:enumeration value="IXG" /><!-- airport="Belgaum" country="India" -->
+			<xsd:enumeration value="BEG" /><!-- airport="Belgrad (Beograd)" country="Yugoslavia" -->
+			<xsd:enumeration value="BZE" /><!-- airport="Belize City" country="Belize" -->
+			<xsd:enumeration value="BLI" /><!-- airport="Bellingham" country="USA" -->
+			<xsd:enumeration value="CNF" /><!-- airport="Belo Horizonte" country="Brazil" -->
+			<xsd:enumeration value="BJI" /><!-- airport="Bemidji" country="USA" -->
+			<xsd:enumeration value="BEN" /><!-- airport="Bengasi" country="Libya" -->
+			<xsd:enumeration value="BUG" /><!-- airport="Bengueka" country="Angola" -->
+			<xsd:enumeration value="BEH" /><!-- airport="Benton Harbour" country="USA" -->
+			<xsd:enumeration value="BBT" /><!-- airport="Berberati" country="Central African Republic" -->
+			<xsd:enumeration value="BGY" /><!-- airport="Bergamo" country="Italy" -->
+			<xsd:enumeration value="BGO" /><!-- airport="Bergen" country="Norway" -->
+			<xsd:enumeration value="BER" /><!-- airport="Berlin" country="Germany" -->
+			<xsd:enumeration value="SXF" /><!-- airport="Berlin, Schoenefeld" country="Germany" -->
+			<xsd:enumeration value="TXL" /><!-- airport="Berlin, Tegel" country="Germany" -->
+			<xsd:enumeration value="THF" /><!-- airport="Berlin, Tempelhof" country="Germany" -->
+			<xsd:enumeration value="BDA" /><!-- airport="Bermuda" country="Bermuda" -->
+			<xsd:enumeration value="BRN" /><!-- airport="Bern" country="Switzerland" -->
+			<xsd:enumeration value="ZDJ" /><!-- airport="Bern" country="Switzerland" -->
+			<xsd:enumeration value="BET" /><!-- airport="Bethel" country="USA" -->
+			<xsd:enumeration value="BHO" /><!-- airport="Bhopal" country="India" -->
+			<xsd:enumeration value="BBI" /><!-- airport="Bhubaneswar" country="India" -->
+			<xsd:enumeration value="BIQ" /><!-- airport="Biarritz" country="France" -->
+			<xsd:enumeration value="BIO" /><!-- airport="Bilbao" country="Spain" -->
+			<xsd:enumeration value="BIL" /><!-- airport="Billings" country="USA" -->
+			<xsd:enumeration value="BLL" /><!-- airport="Billund" country="Denmark" -->
+			<xsd:enumeration value="BTU" /><!-- airport="Bintulu" country="Malaysia" -->
+			<xsd:enumeration value="IRO" /><!-- airport="Biraro" country="Central African Republic" -->
+			<xsd:enumeration value="BHX" /><!-- airport="Birmingham" country="United Kingdom" -->
+			<xsd:enumeration value="BHM" /><!-- airport="Birmingham" country="USA" -->
+			<xsd:enumeration value="BIS" /><!-- airport="Bismarck/Mandan" country="USA" -->
+			<xsd:enumeration value="BXO" /><!-- airport="Bissau" country="Guinea Bissau" -->
+			<xsd:enumeration value="BLT" /><!-- airport="Blackwater" country="Australia" -->
+			<xsd:enumeration value="BLZ" /><!-- airport="Blantyre" country="Malawi" -->
+			<xsd:enumeration value="BHE" /><!-- airport="Blenheim" country="New Zealand" -->
+			<xsd:enumeration value="BFN" /><!-- airport="Bloemfontein" country="South Afrika" -->
+			<xsd:enumeration value="BMI" /><!-- airport="Bloomington" country="USA" -->
+			<xsd:enumeration value="BMG" /><!-- airport="Bloomington" country="USA" -->
+			<xsd:enumeration value="BLF" /><!-- airport="Bluefield" country="USA" -->
+			<xsd:enumeration value="BVB" /><!-- airport="Boa Vista" country="Brazil" -->
+			<xsd:enumeration value="BOY" /><!-- airport="Bobo/Dioulasso" country="Burkina Faso" -->
+			<xsd:enumeration value="BOO" /><!-- airport="Bodo" country="Norway" -->
+			<xsd:enumeration value="BOG" /><!-- airport="Bogota" country="Colombia" -->
+			<xsd:enumeration value="BOI" /><!-- airport="Boise" country="USA" -->
+			<xsd:enumeration value="BLQ" /><!-- airport="Bologna" country="Italy" -->
+			<xsd:enumeration value="BOM" /><!-- airport="Bombay" country="India" -->
+			<xsd:enumeration value="BON" /><!-- airport="Bonaire" country="Netherlands Antilles" -->
+			<xsd:enumeration value="YVB" /><!-- airport="Bonaventure, PQ" country="Canada" -->
+			<xsd:enumeration value="BOB" /><!-- airport="Bora Bora" country="French Polynesia" -->
+			<xsd:enumeration value="BOD" /><!-- airport="Bordeaux" country="France" -->
+			<xsd:enumeration value="HBH" /><!-- airport="Borg El Arab" country="Egypt" -->
+			<xsd:enumeration value="Bxs" /><!-- airport="Borrego Springs" country="USA" -->
+			<xsd:enumeration value="BOS" /><!-- airport="Boston - Logan" country="USA" -->
+			<xsd:enumeration value="BYK" /><!-- airport="Bouake" country="Ivory Coast" -->
+			<xsd:enumeration value="BOJ" /><!-- airport="Bourgas/Burgas" country="Bulgaria" -->
+			<xsd:enumeration value="ZBO" /><!-- airport="Bowen" country="Australia" -->
+			<xsd:enumeration value="BZN" /><!-- airport="Bozeman" country="USA" -->
+			<xsd:enumeration value="BFD" /><!-- airport="Bradford/Warren" country="USA" -->
+			<xsd:enumeration value="BRD" /><!-- airport="Brainerd" country="USA" -->
+			<xsd:enumeration value="BMP" /><!-- airport="Brampton Island" country="Australia" -->
+			<xsd:enumeration value="BSB" /><!-- airport="Brasilia" country="Brazil" -->
+			<xsd:enumeration value="BTS" /><!-- airport="Bratislava" country="Slovakia" -->
+			<xsd:enumeration value="BZV" /><!-- airport="Brazzaville" country="Congo" -->
+			<xsd:enumeration value="BRE" /><!-- airport="Bremen" country="Germany" -->
+			<xsd:enumeration value="BES" /><!-- airport="Brest" country="France" -->
+			<xsd:enuzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzry="Burundi" -->
+			<xsd:enumeration value="BUH" /><!-- airport="Bucharest" country="Romania" -->
+			<xsd:enumeration value="OTP" /><!-- airport="Bucharest, Otopeni" country="Romania" -->
+			<xsd:enumeration value="BUQ" /><!-- airport="Bulawayo" country="Zimbabwe" -->
+			<xsd:enumeration value="BHC" /><!-- airport="Bullhead City" country="USA" -->
+			<xsd:enumeration value="BDB" /><!-- airport="Bundaberg" country="Australia" -->
+			<xsd:enumeration value="BUR" /><!-- airport="Burbank" country="USA" -->
+			<xsd:enumeration value="BRL" /><!-- airport="Burlington" country="USA" -->
+			<xsd:enumeration value="BTV" /><!-- airport="Burlington" country="USA" -->
+			<xsd:enumeration value="BWT" /><!-- airport="Burnie (Wynyard)" country="Australia" -->
+			<xsd:enumeration value="BTM" /><!-- airport="Butte" country="USA" -->
+			<xsd:enumeration value="CAB" /><!-- airport"Cabinda" country="Angola" -->
+			<xsd:enumeration value="CAG" /><!-- airport="Cagliari" country="Italy" -->
+			<xsd:enumeration value="CNS" /><!-- airport="Cairns" country="Australia" -->
+			<xsd:enumeration value="CAI" /><!-- airport="Cairo Int'l" country="Egypt" -->
+			<xsd:enumeration value="CCU" /><!-- airport="Calcutta (Kolkata)" country="India" -->
+			<xsd:enumeration value="YYC" /><!-- airport="Calgary/Banff" country="Canada" -->
+			<xsd:enumeration value="CLO" /><!-- airport="Cali" country="Colombia" -->
+			<xsd:enumeration value="CCJ" /><!-- airport="Calicut" country="India" -->
+			<xsd:enumeration value="CLY" /><!-- airport="Calvi" country="France" -->
+			<xsd:enumeration value="YCB" /><!-- airport="Cambridge Bay" country="Canada" -->
+			<xsd:enumeration value="CBG" /><!-- airport="Cambrigde" country="United Kingdom" -->
+			<xsd:enumeration value="CGR" /><!-- airport="Campo Grande" country="Brazil" -->
+			<xsd:enumeration value="CBR" /><!-- airport="Canberra" country="Australia" -->
+			<xsd:enumeration value="CUN" /><!-- airport="Cancun" country="Mexico" -->
+			<xsd:enumeration value="CPT" /><!-- airport="Cape Town" country="South Africa" -->
+			<xsd:enumerati ÿ value="CCS" /><!-- airport="Caracas" country="Venezuela" -->
+			<xsd:enumeration value="CWL" /><!-- airport="Cardiff" country="United Kingdom" -->
+			<xsd:enumeration value="CLD" /><!-- airport="Carlsbad" country="USA" -->
+			<xsd:enumeration value="CVQ" /><!-- airport="Carnarvon" country="Australia" -->
+			<xsd:enumeration value="CRF" /><!-- airport="Carnot" country="Central African Republic" -->
+			<xsz:enumeration value="LRM" /><!-- airport="Casa de Campo/La Romana" country="Dominican Republic" -->
+			<xsd:enumeration value="CAS" /><!-- airport="Casablanca" country="Morocco" -->
+			<xsd:enumeration value="CMN" /><!-- airport="Casablanca, Mohamed V" country="Morocco" -->
+			<xsd:enumeration value="CSI" /><!-- airport="Casino" country="Australia" -->
+			<xsd:enumeration value="CPR" /><!-- airport="Casper" country="USA" -->
+			<xsd:enumeration value="CTG" /><!-- airport="Catagena" country="Colombia" -->
+			<xsd:enumeration value="CTA" /><!-- airport="Catania" country="Italy" -->
+			<xsd:enumeration value="CAY" /><!-- airport="Cayenne" country="French Guayana" -->
+			<xsd:enumeration value="CBU" /><!-- airport="Cebu" country="Philippines" -->
+			<xsd:enumeration value="CDC" /><!-- airport="Cedar City" country="USA" -->
+			<xsd:enumeration value="CID" /><!-- airport="Cedar Rapids" country="USA" -->
+			<xsd:enumeration value="CED" /><!-- airport="Ceduna" country="Australia" -->
+			<xsd:enumeration value="CES" /><!-- airport="Cessnock" country="Australia" -->
+			<xsd:enumeration value="KHV" /><!-- airport="Chabarovsk (Khabarovsk)" country="Russia" -->
+			<xsd:enumeration value="CMF" /><!-- airport="Chambery" country="France" -->
+			<xsd:enumeration value="CMI" /><!-- airport="Champaign" country="USA" -->
+			<xsd:enumeration value="IXC" /><!-- airport="Chandigarh" country="India" -->
+			<xsd:enumeration value="CHQ" /><!-- airport="Chania" country="Greece" -->
+			<xsd:enumeration value="CHS" /><!-- airport="Charleston" country="USA" -->
+			<xsd:enumeration value="CRW" /><!-- airport="Charleston" country="USA" -->
+			<xsd:enumeration value="CLT" /><!-- airport="Charlotte" country="USA" -->
+			<xsd:enumeration value="CHO" /><!-- airport="Charlottesville" country="USA" -->
+			<xsd:enumeration value="CXT" /><!-- airport="Charters Towers" country="Australia" -->
+			<xsd:enumeration value="CHA" /><!-- airport="Chattanooga" country="USA" -->
+			<xsd:enumeration value="MAA" /><!-- airport="Chennai (Madras)" country="India" -->
+			<xsd:enumeration value="CNX" /><!-- airport="Chiang Mai" country="Thailand" -->
+			<xsd:enumeration value="QCB" /><!-- airport="Chiba City" country="Japan" -->
+			<xsd:enumeration value="MDW" /><!-- airport="Chicago" country="USA" -->
+			<xsd:enumeration value="ORD" /><!-- airport="Chicago O'Hare Int'l" country="USA" -->
+			<xsd:enumeration value="CHI" /><!-- airport="Chicago" country="USA" -->
+			<xsd:enumeration value="CZA" /><!-- airport="Chichen Itza" country="Mexico" -->
+			<xsd:enumeration value="CIC" /><!-- airport="Chico" country="USA" -->
+			<xsd:enumeration value="CUU" /><!-- airport="Chihuahua, Gen Fierro Villalobos" country="Mexico" -->
+			<xsd:enumeration value="JKH" /><!-- airport="Chios" country="Greece" -->
+			<xsd:enumeration value="CIP" /><!-- airport="Chipata" country="Zambia" -->
+			<xsd:enumeration value="HTA" /><!-- airport="Chita (Tschita)" country="Russia" -->
+			<xsd:enumeration value="CTS" /><!-- airport="Chitose" country="Japan" -->
+			<xsd:enumeration value="CJL" /><!-- airport="Chitral" country="Pakistan" -->
+			<xsd:enumeration value="CGP" /><!-- airport="Chittagong" country="Bangladesh" -->
+			<xsd:enumeration value="CHC" /><!-- airport="Christchurch" country="New Zealand" -->
+			<xsd:enumeration value="CXI" /><!-- airport="Christmas Line" country="Iceland" -->
+			<xsd:enumeration value="CCZ" /><!-- airport="Chub Cay" country="Bahamas" -->
+			<xsd:enumeration value="YYQ" /><!-- airport="Churchill" country="Canada" -->
+			<xsd:enumeration value="CFG" /><!-- airport="Cienfuegos" country="Canada" -->
+			<xsd:enumeration value="CVG" /><!-- airport="Cincinnati" country="USA" -->
+			<xsd:enumeration value="CME" /><!-- airport="Ciudad Del Carmen" country="Mexico" -->
+			<xsd:enumeration value="CJS" /><!-- airport="Ciudad Juarez" country="Mexico" -->
+			<xsd:enumeration value="CEN" /><!-- airport="Ciudad Obregon" country="Mexico" -->
+			<xsd:enumeration value="CVM" /><!-- airport="Ciudad Victoria" country="Mexico" -->
+			<xsd:enumeration value="CKB" /><!-- airport="Clarksburg" country="USA" -->
+			<xsd:enumeration value="CMQ" /><!-- airport="Clermont" country="Australia" -->
+			<xsd:enumeration value="CFE" /><!-- airport="Clermont Ferrand" country="France" -->
+			<xsd:enumeration value="BKL" /><!-- airport="Cleveland" country="USA" -->
+			<xsd:enumeration value="CLE" /><!-- airport="Cleveland" country="USA" -->
+			<xsd:enumeration value="CBB" /><!-- airport="Cochabamba" country="Bolivia" -->
+			<xsd:enumeration value="COK" /><!-- airport="Cochin" country="India" -->
+			<xsd:enumeration value="COD" /><!-- airport="Cody/Powell/Yellowstone" country="USA" -->
+			<xsd:enumeration value="KCC" /><!-- airport="Coffmann Cove" country="USA" -->
+			<xsd:enumeration value="CFS" /><!-- airport="Coffs Harbour" country="Australia" -->
+			<xsd:enumeration value="CJB" /><!-- airport="Coimbatore" country="India" -->
+			<xsd:enumeration value="CLQ" /><!-- airport="Colima" country="Mexico" -->
+			<xsd:enumeration value="CLL" /><!-- airport="College Station/Bryan" country="USA" -->
+			<xsd:enumeration value="KCE" /><!-- airport="Collinsville" country="Australia" -->
+			<xsd:enumeration value="CGN" /><!-- airport="Cologne (Koeln)/Bonn" country="Germany" -->
+			<xsd:enuCMB" /><!-- airport="Colombo" country="Sri Lanka" -->
+			<xsd:enumeration value="COS" /><!-- airport="Colorado Springs" country="USA" -->
+			<xsd:enumeration value="CAE" /><!-- airport="Columbia" country="USA" -->
+			<xsd:enumeration value="CSG" /><!-- airport="Columbus" country="USA" -->
+			<xsd:enumeration value="CMH" /><!-- airport="Columbus" country="USA" -->
+			<xsd:enumeration value="CKY" /><!-- airport="Conakry" country="Guinea" -->
+			<xsd:enumeration value="CCR" /><!-- airport="Concord" country="USA" -->
+			<xsd:enumeration value="CZL" /><!-- airport="Constantine" country="Algeria" -->
+			<xsd:enumeration value="CND" /><!-- airport="Constanza" country="Romania" -->
+			<xsd:enumeration value="CPD" /><!-- airport="Coober Pedy" country="Australia" -->
+			<xsd:enumeration value="CTN" /><!-- airport="Cooktown" country="Australia" -->
+			<xsd:enumeration value="OOM" /><!-- airport="Cooma" country="Australia" -->
+			<xsd:enumeration value="CPH" /><!-- airport="Copenhagen" country="Denmark" -->
+			<xsd:enumeration value="COR" /><!-- airport="Cordoba" country="Argentina" -->
+			<xsd:enumeration value="ODB" /><!-- airport="Cordoba" country="Spain" -->
+			<xsd:enumeration value="CDV" /><!-- airport="Cordova" country="USA" -->
+			<xsd:enumeration value="CFU" /><!-- airport="Corfu" country="Greece" -->
+			<xsd:enumeration value="ORK" /><!-- airport="Cork" country="Ireland" -->
+			<xsd:enumeration value="CRP" /><!-- airport="Corpus Christi" country="USA" -->
+			<xsd:enumeration value="COO" /><!-- airport="Cotonou" country="Benin" -->
+			<xsd:enumeration value="CZM" /><!-- airport="Cozmel" country="Mexico" -->
+			<xsd:enumeration value="CGA" /><!-- airport="Craig" country="USA" -->
+			<xsd:enumeration value="CEC" /><!-- airport="Crescent City" country="USA" -->
+			<xsd:enumeration value="CGB" /><!-- airport="Cuiaba" country="Brazil" -->
+			<xsd:enumeration value="CUL" /><!-- airport="Culiacan" country="Mexico" -->
+			<xsd:enumeration value="CUR" /><!-- airport="Curacao" country="Netherlands Antilles" -->
+			<xsd:enumeration value="CWB" /><!-- airport="Curitiba" country="Brazil" -->
+			<xsd:enumeration value="DKR" /><!-- airport="Dakar" country="Senegal" -->
+			<xsd:enumeration value="DLM" /><!-- airport="Dalaman" country="Turkey" -->
+			<xsd:enumeration value="DBY" /><!-- airport="Dalby" country="Australia" -->
+			<xsd:enumeration value="DAL" /><!-- airport="Dallas" country="USA" -->
+			<xsd:enumeration value="DFW" /><!-- airport="Dallas/Ft. Worth" country="USA" -->
+			<xsd:enumeration value="DJO" /><!-- airport="Daloa" country="Ivory Coast" -->
+			<xsd:enumeration value="DAM" /><!-- airport="Damaskus" country="Syria" -->
+			<xsd:enumeration value="DAN" /><!-- airport="Danville" country="USA" -->
+			<xsd:enumeration value="DAR" /><!-- airport="Dar es Salam (Daressalam)" country="Tanzania" -->
+			<xsd:enumeration value="DRW" /><!-- airport="Darwin" country="Australia" -->
+			<xsd:enumeration value="DDI" /><!-- airport="Daydream Island" country="Australia" -->
+			<xsd:enumeration value="DAY" /><!-- airport="Dayton" country="USA" -->
+			<xsd:enumeration value="DAB" /><!-- airport="Daytona Beach" country="USA" -->
+			<xsd:enumeration value="DEC" /><!-- airport="Decatur" country="USA" -->
+			<xsd:enumeration value="YDF" /><!-- airport="Deer Lake/Corner Brook" country="Canada" -->
+			<xsd:enumeration value="DEL" /><!-- airport="Delhi, Indira Gandhi" country="India" -->
+			<xsd:enumeration value="HAG" /><!-- airport="Den Haag (The Hague)" country="Netherlands" -->
+			<xsd:enumeration value="DPS" /><!-- airport="Denpasar/Bali" country="Indonesia" -->
+			<xsd:enumeration value="DEN" /><!-- airport="Denver International" country="USA" -->
+			<xsd:enumeration value="DSK" /><!-- airport="Dera Ismail Khan" country="Pakistan" -->
+			<xsd:enumeration value="DRB" /><!-- airport="Derby" country="Australia" -->
+			<xsd:enumeration value="EMA" /><!-- airport="Derby (East Midlands)" country="United Kingdom" -->
+			<xsd:enumeration value="LDY" /><!-- airport="Derry (Londonderry)" country="United Kingdom" -->
+			<xsd:enumeration value="DSM" /><!-- airport="Des Moines" country="USA" -->
+			<xsd:enumeration value="DET" /><!-- airport="Detroit City" country="USA" -->
+			<xsd:enumeration value="DTW" /><!-- airport="Detroit Metropolitan Wayne County" country="USA" -->
+			<xsd:enumeration value="DTT" /><!-- airport="Detroit Metropolitan Area" country="USA" -->
+			<xsd:enumeration value="DVL" /><!-- airport="Devils Lake" country="USA" -->
+			<xsd:enumeration value="DPO" /><!-- airport="Devonport" country="Australia" -->
+			<xsd:enumeration value="DHA" /><!-- airport="Dhahran" country="Saudi Arabia" -->
+			<xsd:enumeration value="DAC" /><!-- airport="Dhaka" country="Bangladesh" -->
+			<xsd:enumeration value="DLG" /><!-- airport="Dillingham" country="USA" -->
+			<xsd:enumeration value="DNR" /><!-- airport="Dinard" country="France" -->
+			<xsd:enumeration value="DJE" /><!-- airport="Djerba" country="Tunisia" -->
+			<xsd:enumeration value="JIB" /><!-- airport="Djibouti" country="Djibouti" -->
+			<xsd:enumeration value="DOH" /><!-- airport="Doha" country="Qatar" -->
+			<xsd:enumeration value="DTM" /><!-- airport="Dortmund" country="Germany" -->
+			<xsd:enumeration value="DHN" /><!-- airport="Dothan" country="USA" -->
+			<xsd:enumeration value="DLA" /><!-- airport="Douala" country="Cameroon" -->
+			<xsd:enumeration value="DRS" /><!-- airport="Dresden" country="Germany" -->
+			<xsd:enumeration value="DXB" /><!-- airport="Dubai" country="UAE" -->
+			<xsd:enumeration value="DBO" /><!-- airport="Dubbo" country="Australia" -->
+			<xsd:enumeration value="DUB" /><!-- airport="Dublin" country="Ireland" -->
+			<xsd:enumeration value="DUJ" /><!-- airport="Dubois" country="USA" -->
+			<xsd:enumeration value="DBV" /><!-- airport="Dubrovnik" country="Croatia (Hrvatska)" -->
+			<xsd:enumeration value="DBQ" /><!-- airport="Dubuque" country="USA" -->
+			<xsd:enumeration value="DUS" /><!-- airport="Duesseldorf" country="Germany" -->
+			<xsd:enumeration value="DLH" /><!-- airport="Duluth" country="USA" -->
+			<xsd:enumeration value="DUD" /><!-- airport="Dunedin" country="New Zealand" -->
+			<xsd:enumeration value="DKI" /><!-- airport="Dunk Iceland" country="Australia" -->
+			<xsd:enumeration value="DRO" /><!-- airport="Durango" country="USA" -->
+			<xsd:enumeration value="DUR" /><!-- airport="Durban" country="South Africa" -->
+			<xsd:enumeration value="DYU" /><!-- airport="Dushanbe (Duschanbe)" country="Tadschikistan" -->
+			<xsd:enumeration value="DUT" /><!-- airport="Dutch Harbor" country="USA" -->
+			<xsd:enumeration value="DYA" /><!-- airport="Dysart" country="Australia" -->
+			<xsd:enumeration value="DZA" /><!-- airport="Dzaoudzi" country="Mayotte" -->
+			<xsd:enumeration value="ELS" /><!-- airport="East London" country="South Africa" -->
+			<xsd:enumeration value="IPC" /><!-- airport="Easter Island" country="Chile" -->
+			<xsd:enumeration value="EAU" /><!-- airport="Eau Clarie" country="USA" -->
+			<xsd:enumeration value="EDI" /><!-- airport="Edinburgh" country="United Kingdom" -->
+			<xsd:enumeration value="YEA" /><!-- airport="Edmonton" country="Canada" -->
+			<xsd:enumeration value="YEG" /><!-- airport="Edmonton, International" country="Canada" -->
+			<xsd:enumeration value="YXD" /><!-- airport="Edmonton, Municipal" country="Canada" -->
+			<xsd:enumeration value="EGS" /><!-- airport="Egilsstadir" country="Iceland" -->
+			<xsd:enumeration value="EIN" /><!-- airport="Eindhoven" country="Netherlands" -->
+			<xsd:enumeration value="ELP" /><!-- airport="El Paso" country="USA" -->
+			<xsd:enumeration value="ETH" /><!-- airport="Elat" country="Israel" -->
+			<xsd:enumeration value="VDA" /><!-- airport="Elat, Ovula" country="Israel" -->
+			<xsd:enumeration value="EKI" /><!-- airport="Elkhart" country="USA" -->
+			<xsd:enumeration value="EKO" /><!-- airport="Elko" country="USA" -->
+			<xsd:enumeration value="ELL" /><!-- airport="Ellisras" country="South Africa" -->
+			<xsd:enumeration value="EMY" /><!-- airport="El Minya" country="Egypt" -->
+			<xsd:enumeration value="ELM" /><!-- airport="Elmira" country="USA" -->
+			<xsd:enumeration value="ELY" /><!-- airport="Ely" country="USA" -->
+			<xsd:enumeration value="EDR" /><!-- airport="Emerald" country="Australia" -->
+			<xsd:enumeration value="EMD" /><!-- airport="Emerald" country="Australia" -->
+			<xsd:enumeration value="ENF" /><!-- airport="Enontekioe" country="Finland" -->
+			<xsd:enumeration value="EBB" /><!-- airport="Entebbe" country="Uganda" -->
+			<xsd:enumeration value="ERF" /><!-- airport="Erfurt" country="Germany" -->
+			<xsd:enumeration value="ERI" /><!-- airport="Erie" country="USA" -->
+			<xsd:enumeration value="EVN" /><!-- airport="Eriwan (Yerevan, Jerevan)" country="Armenia" -->
+			<xsd:enumeration value="EBJ" /><!-- airport="Esbjerg" country="Denmark" -->
+			<xsd:enumeration value="ESC" /><!-- airport="Escabana" country="USA" -->
+			<xsd:enumeration value="EPR" /><!-- airport="Esperance" country="Australia" -->
+			<xsd:enumeration value="EUG" /><!-- airport="Eugene" country="USA" -->
+			<xsd:enumeration value="ACV" /><!-- airport="Eureka" country="USA" -->
+			<xsd:enumeration value="EVV" /><!-- airport="Evansville" country="USA" -->
+			<xsd:enumeration value="EVE" /><!-- airport="Evenes" country="Norway" -->
+			<xsd:enumeration value="FAI" /><!-- airport="Fairbanks" country="USA" -->
+			<xsd:enumeration value="LYP" /><!-- airport="Faisalabad" country="Pakistan" -->
+			<xsd:enumeration value="FAR" /><!-- airport="Fargo" country="USA" -->
+			<xsd:enumeration value="FMN" /><!-- airport="Farmington" country="USA" -->
+			<xsd:enumeration value="FAO" /><!-- airport="Faro" country="Portugal" -->
+			<xsd:enumeration value="FAE" /><!-- airport="Faroer" country="Denmark" -->
+			<xsd:enumeration value="FYV" /><!-- airport="Fayetteville" country="USA" -->
+			<xsd:enumeration value="FAY" /><!-- airport="Fayetteville/Ft. Bragg" country="USA" -->
+			<xsd:enumeration value="FEZ" /><!-- airport="Fes" country="Morocco" -->
+			<xsd:enumeration value="FSC" /><!-- airport="Figari" country="France" -->
+			<xsd:enumeration value="FLG" /><!-- airport="Flagstaff" country="USA" -->
+			<xsd:enumeration value="YFO" /><!-- airport="Flin Flon" country="Canada" -->
+			<xsd:enumeration value="FNT" /><!-- airport="Flint" country="USA" -->
+			<xsd:enumeration value="FLR" /><!-- airport="Florence" country="Italy" -->
+			<xsd:enumeration value="FLO" /><!-- airport="Florence" country="USA" -->
+			<xsd:enumeration value="FLN" /><!-- airport="Florianopolis" country="Brazil" -->
+			<xsd:enumeration value="FRO" /><!-- airport="Floro" country="Norway" -->
+			<xsd:enumeration value="YFA" /><!-- airport="Fort Albert" country="Canada" -->
+			<xsd:enumeration value="FDF" /><!-- airport="Fort de France" country="Martinique" -->
+			<xsd:enumeration value="FOD" /><!-- airport="Fort Dodge" country="USA" -->
+			<xsd:enumeration value="FHU" /><!-- airport="Fort Huachuca/Sierra Vista" country="USA" -->
+			<xsd:enumeration value="FLL" /><!-- airport="Fort Lauderdale/Hollywood" country="USA" -->
+			<xsd:enumeration value="YMM" /><!-- airport="Fort McMurray" country="Canada" -->
+			<xsd:enumeration value="FMY" /><!-- airport="Fort Myers" country="USA" -->
+			<xsd:enumeration value="RSW" /><!-- airport="Fort Myers" country="USA" -->
+			<xsd:enumeration value="YSM" /><!-- airport="Fort Smith" country="Canada" -->
+			<xsd:enumeration value="FSM" /><!-- airport="Fort Smith" country="USA" -->
+			<xsd:enumeration value="YXJ" /><!-- airport="Fort St. John" country="Canada" -->
+			<xsd:enumeration value="VPS" /><!-- airport="Fort Walton Beach" country="USA" -->
+			<xsd:enumeration value="FWA" /><!-- airport="Fort Wayne" country="USA" -->
+			<xsd:enumeration value="FOR" /><!-- airport="Fortaleza" country="Brazil" -->
+			<xsd:enumeration value="FRW" /><!-- airport="Francistown" country="Zimbabwe" -->
+			<xsd:enumeration value="FRA" /><!-- airport="Frankfurt/Main Int'l" country="Germany" -->
+			<xsd:enumeration value="HNN" /><!-- airport="Frankfurt/Hahn" country="Germany" -->
+			<xsd:enumeration value="FKL" /><!-- airport="Franklin/Oil City" country="USA" -->
+			<xsd:enumeration value="YFC" /><!-- airport="Fredericton" country="Canada" -->
+			<xsd:enumeration value="FPO" /><!-- airport="Freeport" country="Bahamas" -->
+			<xsd:enumeration value="FNA" /><!-- airport="Freetown" country="Sierra Leone" -->
+			<xsd:enumeration value="FRJ" /><!-- airport="Frejus" country="France" -->
+			<xsd:enumeration value="FAT" /><!-- airport="Fresno" country="USA" -->
+			<xsd:enumeration value="FDH" /><!-- airport="Friedrichshafen" country="Germany" -->
+			<xsd:enumeration value="FUE" /><!-- airport="Fuerteventura" country="Spain" -->
+			<xsd:enumeration value="FUK" /><!-- airport="Fukuoka" country="Japan" -->
+			<xsd:enumeration value="FKS" /><!-- airport="Fukushima-shi, Fukushima " country="Japan" -->
+			<xsd:enumeration value="FNC" /><!-- airport="Funchal" country="Portugal" -->
+			<xsd:enumeration value="FUT" /><!-- airport="Futuna" country="Wallis and Futuna Islands" -->
+			<xsd:enumeration value="GBE" /><!-- airport="Gaborone" country="Botswana" -->
+			<xsd:enumeration value="GAD" /><!-- airport="Gadsden" country="USA" -->
+			<xsd:enumeration va-- airport="Gainesville" country="USA" -->
+			<xsd:enumeration value="GWY" /><!-- airport="Galway" country="Ireland" -->
+			<xsd:enumeration value="YQX" /><!-- airport="Gander" country="Canada" -->
+			<xsd:enumeration value="GOU" /><!-- airport="Garoua" country="Cameroon" -->
+			<xsd:enumeration value="GDN" /><!-- airport="Gdansk" country="Poland" -->
+			<xsd:enumeration value="GEX" /><!-- airport="Geelong" country="Australia" -->
+			<xsd:enumeration value="GVA" /><!-- airport="Geneva" country="Switzerland" -->
+			<xsd:enumeration value="GOA" /><!-- airport="Genoa" country="Italy" -->
+			<xsd:enumeration value="GRJ" /><!-- airport="George" country="South Africa" -->
+			<xsd:enumeration value="GEO" /><!-- airport="Georgetown" country="Guyana" -->
+			<xsd:enumeration value="GET" /><!-- ƒirport="Geraldton" country="Australia" -->
+			<xsd:enumeration value="GRO" /><!-- airport="Gerona" country="Spain" -->
+			<xsd:enumeration value="GIB" /><!-- airport="Gibraltar" country="Gibraltar" -->
+			<xsd:enumeration value="GCC" /><!-- airport="Gilette" country="USA" -->
+			<xsd:enumeration value="GIL" /><!-- airport="Gilgit" country="Pakistan" -->
+			<xsd:enumeration value="YGX" /><!-- airport="Gillam" country="Canada" -->
+			<xsd:enumeration value="GLT" /><!-- airport="Gladstone" country="Australia" -->
+			<xsd:enumeration value="PIK" /><!-- airport="Glasgow, Prestwick" country="United Kingdom" -->
+			<xsd:enumeration value="GLA" /><!-- airport="Glasgow" country="United Kingdom" -->
+			<xsd:enumeration value="GGW" /><!-- airport="Glasgow" country="USA" -->
+			<xsd:enumeration value="GDV" /><!-- airport="Glendive" country="USA" -->
+			<xsd:enumeration value="GOI" /><!-- airport="Goa" country="India" -->
+			<xsd:enumeration value="GYN" /><!-- airport="Goiania" country="Brazil" -->
+			<xsd:enumeration value="OOL" /><!-- airport="Gold Coast" country="Australia" -->
+			<xsd:enumeration value="GOO" /><!-- airport="Goondiwindi" country="Australia" -->
+			<xsd:enumeration value="YYR" /><!-- airport="Goose Bay" country="Canada" -->
+			<xsd:enumeration value="GOZ" /><!-- airport="Gorna" country="Bulgaria" -->
+			<xsd:enumeration value="GOT" /><!-- airport="Goteborg" country="Sweden" -->
+			<xsd:enumeration value="GOV" /><!-- airport="Gove (Nhulunbuy)" country="Australia" -->
+			<xsd:enumeration value="GHB" /><!-- airport="Govenors Harbour" country="Bahamas" -->
+			<xsd:enumeration value="GRX" /><!-- airport="Granada" country="Spain" -->
+			<xsd:enumeration value="GBI" /><!-- airport="Grand Bahama" country="Bahamas" -->
+			<xsd:enumeration value="GCN" /><!ÿ- airport="Grand Canyon" country="USA" -->
+			<xsd:enumeration value="GCM" /><!-- airport="Grand Cayman" country="Cayman Islands" -->
+			<xsd:enumeration value="GFK" /><!-- airport="Grand Forks" country="USA" -->
+			<xsd:enumeration value="GJT" /><!-- airport="Grand Junction" country="USA" -->
+			<xsd:enumeration value="GRR" /><!-- airport="Grand Rapids" country="USA" -->
+			<xsd:enumeration value="GPZ" /><!-- airport="Grand Rapids" country="USA" -->
+			<xsd:enumeration value="GRZ" /><!-- airport="Graz" country="Austria" -->
+			<xsd:enumeration value="GTF" /><!-- airport="Great Falls" coHntry="USA" -->
+			<xsd:enumeration value="GKL" /><!-- airport="Great Keppel Island" country="Australia" -->
+			<xsd:enumeration value="GRB" /><!-- airport="Green Bay" country="USA" -->
+			<xsd:enumeration value="LWB" /><!-- airport="Greenbrier/Lewisburg" country="USA" -->
+			<xsd:enumeration value="GSO" /><!-- airport="Greensboro/Winston Salem" country="USA" -->
+			<xsd:enumeration value="GLH" /><!-- airport="Greenville" country="USA" -->
+			<xsd:enumeration value="PGV" /><!-- airport="Greenville" country="USA" -->
+			<xsd:enumeration value="GSP" /><!-- airport="Greenville/Spartanburg country="USA" -->
+			<xsd:enumeration value="GND" /><!-- airport="Grenada" country="Grenada" -->
+			<xsd:enumeration value="GNB" /><!-- airport="Grenoble" country="France" -->
+			<xsd:enumeration value="GFF" /><!-- airport="Grffith" country="Australia" -->
+			<xsd:enumeration value="GTE" /><!-- airport="Groote Eyeland" country="Australia" -->
+			<xsd:enumeration value="GTI" /><!-- airport="Groote Eylandt" country="Australia" -->
+			<xsd:enumeration value="GON" /><!-- airport="Groton/New London" country="USA" -->
+			<xsd:enumeration value="GDL" /><!-- airport="Guadalajara" country="Mexico" -->
+			<xsd:enumeration value="GSI" /><!-- airport="Guadalcanal" country="Solomon Islands" -->
+			<xsd:enumeration value="GUM" /><!-- airport="Guam" country="Guam" -->
+			<xsd:enumeration value="GRU" /><!-- airport="Guarulhos Int'l - Sao Paulo" country="Brazil" -->
+			<xsd:enumeration value="GUA" /><!-- airport="Guatemala City" country="Guatemala" -->
+			<xsd:enumeration value="GYE" /><!-- airport="Guayaquil" country="Ecuador" -->
+			<xsd:enumeration value="GCI" /><!-- airport="Guernsey" country="United Kingdom" -->
+			<xsd:enumeration value="GPT" /><!-- airport="Gulfport/Biloxi" country="USA" -->
+			<xsd:enumeration value="ULU" /><!-- airport="Gulu" country="Uganda" -->
+			<xsd:enumeration value="GUC" /><!-- airport="Gunnison/Crested Butte" country="USA" -->
+			<xsd:enumeration value="GAU" /><!-- airport="Guwahati" country="India" -->
+			<xsd:enumeration value="GWD" /><!-- airport="Gwadar" country="Pakistan" -->
+			<xsd:enumeration value="GWE" /><!-- airport="Gweru" country="Zimbabwe" -->
+			<xsd:enumeration value="GYP" /><!-- airport="Gympie" country="Australia" -->
+			<xsd:enumeration value="HAC" /><!-- airport="Hachijo Jima" country="Japan" -->
+			<xsd:enumeration value="HFA" /><!-- airport="Haifa" country="Israel" -->
+			<xsd:enumeration value="HNS" /><!-- airport="Haines" country="USA" -->
+			<xsd:enumeration value="HKD" /><!-- airport="Hakodate" country="Japan" -->
+			<xsd:enumeration value="YHZ" /><!-- airport="Halifax Int'l" country="Canada" -->
+			<xsd:enumeration value="YUX" /><!-- airport="Hall Beach" …ountry="Canada" -->
+			<xsd:enumeration value="HAM" /><!-- airport="Hamburg - Fuhlsbuettel" country="Germany" -->
+			<xsd:enumeration value="HLT" /><!-= airport="Hamilton" country="Australia" -->
+			<xsd:enumeration value="YHM" /><!-- airport="Hamilton" country="Canada" -->
+			<xsd:enumeration value="HTI" /><!-- airport="Hamilton Island" country="Australia" -->
+			<xsd:enumeration value="HFT" /><!-- airport="Hammerfest" country="Norway" -->
+			<xsd:enumeration value="CMX" /><!-- airport="Hancock" country="USA" -->
+			<xsd:enumeration value="HAJ" /><!-- airport="Hannover" country="Germany" -->
+			<xsd:enumeration value="HAN" /><!-- airport="Hanoi - Noibai" country="Viet Nam" -->
+			<xsd:enumeration value="HRE" /><!-- airport="Harare" country="Zimbabwe" -->
+			<xsd:enumeration value="HRL" /><!-- airport="Harlington/South Padre Island" country="USA" -->
+			<xsd:enumeration value="YHR" /><!-- airport="Harrington Harbour, PQ" country="Canada" -->
+			<xsd:enumeration value="HAR" /><!-- airport="Harrisburg" country="USA" -->
+			<xsd:enumeration value="MDT" /><!-- airport="Harrisburg" country="USA" -->
+			<xsd:enumeration value="BDL" /><!-- airport="Hartford" country="USA" -->
+			<xsd:enumeration value="HDY" /><!-- airport="Hatyai (Hat Yai)" country="Thailand" -->
+			<xsd:enumeration value="HAU" /><!-- airport="Haugesund" country="Norway" -->
+			<xsd:enumeration value="HAV" /><!-- airport="Havana - Jos&#xCK;&#xA9; Mart&#xC3; Int'l" country="Cuba" -->
+			<xsd:enumeration value="HVR" /><!-- airport="Havre" country="USA" -->
+			<xsd:enumeration value="HIS" /><!-- airport="Hayman Island" country="Australia" -->
+			<xsd:enumeration value="HLN" /><!-- airport="Helena" country="USA" -->
+			<xsd:enumeration value="JHE" /><!-- airport="Helsingborg" country="Sweden" -->
+			<xsd:enumeration value="HEL" /><!-- airport="Helsinki - Vantaa" country="Finland" -->
+			<xsd:enumeration value="HER" /><!-- airport="Heraklion" country="Greece" -->
+			<xsd:enumeration value="HMO" /><!-- airport="Hermosillo - Gen. Pesqueira Garcia" country="Mexico" -->
+			<xsd:enumeration value="HVB" /><!-- airport="Hervey Bay" country="Australia" -->
+			<xsd:enumeration value="HIB" /><!-- airport="Hibbing" country="USA" -->
+			<xsd:enumeration value="HKY" /><!-- airport="Hickory" country="USA" -->
+			<xsd:enumeration value="ITO" /><!-- airport="Hilo" country="USA" -->
+			<xsd:enumeration value="HHH" /><!-- airport="Hilton Head Island" country="USA" -->
+			<xsd:enumeration value="HNK" /><!-- airport="Hinchinbrook Island" country="Australia" -->
+			<xsd:enumeration value="SGN" /><!-- airport="Ho Chi Minh City (Saigon)" country="Viet Nam" -->
+			<xsd:enumeration value="HBA" /><!-- airport="Hobart" country="Australia" -->
+			<xsd:enumeration value="HOQ" /><!-- airport="Hof" country="Germany" -->
+			<xsd:enumeration value="HOG" /><!-- airport="Holguin" country="Cuba" -->
+			<xsd:enumeration value="HMH" /><!-- airport="Home Hill" country="Australia" -->
+			<xsd:enumeration value="HOM" /><!-- airport="Homer" country="USA" -->
+			<xsd:enumeration value="HKG" /><!-- airport="Hong Kong - Int'l  (HKIA)" country="Hong Kong" -->
+			<xsd:enumeration value="ZJK" /><!-- airport="Hong Kong - Chek Lap Kok" country="Hong Kong" -->
+			<xsd:enumeration value="HIR" /><!-- airport="Honiara Henderson Int'l" country="Solomon Islands" -->
+			<xsd:enumeration value="HNL" /><!-- airport="Honolulu" country="USA" -->
+			<xsd:enumeration value="HNH" /><!-- airport="Hoonah" country="USA" -->
+			<xsd:enumeration value="HOR" /><!-- airport="Horta" country="Portugal" -->
+			<xsd:enumeration value="HOU" /><!-- airport="Houston" country="USA" -->
+			<xsd:enumeration value="IAH" /><!-- airport="Houston" country="USA" -->
+			<xsd:enumeration value="HUH" /><!-- airport="Huahine" country="French Polynesia" -->
+			<xsd:enumeration value="HUX" /><!-- airport="Huatulco" country="Mexico" -->
+			<xsd:enumeration value="HUI" /><!-- airport="Hue - Phu Bai" country="Viet Nam" -->
+			<xsd:enumeration value="HUY" /><!-- airport="Humberside" country="United Kingdom" -->
+			<xsd:enumeration value="HTS" /><!-- airport="Huntington" country="USA" -->
+			<xsd:enumeration value="HSV" /><!-- airport="Huntsville" country="USA" -->
+			<xsd:enumeration value="HRG" /><!-- airport="Hurghada Int'l" country="Egypt" -->
+			<xsd:enumeration value="HON" /><!-- airport="Huron" country="USA" -->
+			<xsd:enumeration value="HWN" /><!-- airport="Hwange National Park" country="Zimbabwe" -->
+			<xsd:enumeration value="HYA" /><!-- airport="Hyannis" country="USA" -->
+			<xsd:enumeration value="HYG" /><!-- airport="Hydaburg" country="USA" -->
+			<xsd:enumeration value="HYD" /><!-- airport="Hyderabad - Begumpet" country="India" -->
+			<xsd:enumeration value="HDD" /><!-- airport="Hyderabad" country="Pakistan" -->
+			<xsd:enumeration value="IBZ" /><!-- airport="Ibiza" country="Ibiza/Spain" -->
+			<xsd:enumeration value="IDA" /><!-- airport="Idaho Falls" country="USA" -->
+			<xsd:enumeration value="ILP" /><!-- airport="Ile des Pins" country="New Caledonia" -->
+			<xsd:enumeration value="IOU" /><!-- airport="Ile Ouen" country="New Caledonia" -->
+			<xsd:enumeration value="ILI" /><!-- airport="Iliamna" country="USA" -->
+			<xsd:enumeration value="IPL" /><!-- airport="Imperial" country="USA" -->
+			<xsd:enumeration value="IVC" /><!-- airport="Incercargill" country="New Zealand" -->
+			<xsd:enumeration value="IND" /><!-- airport="Indianapolis" country="USA" -->
+			<xsd:enumeration value="IGH" /><!-- airport="Ingham" country="Australia" -->
+			<xsd:enumeration value="IFL" /><!-- airport="Innisfail" country="Australia" -->
+			<xsd:enumeration value="INN" /><!-- airport="Innsbruck - Kranebitten" country="Austria" -->
+			<xsd:enumeration value="INL" /><!-- airport="International Falls" country="USA" -->
+			<xsd:enumeration value="YEV" /><!-- airport="Inuvik" country="Canada" -->
+			<xsd:enumeration value="IVC" /><!-- airport="Invercargill" country="New Zealand" -->
+			<xsd:enumeration value="INV" /><!-- airport="Inverness" country="United Kingdom" -->
+			<xsd:enumeration value="IYK" /><!-- airport="Inykern" country="USA" -->
+			<xsd:enumeration value="YFB" /><!-- airport="Iqaluit (Frobisher Bay)" country="Canada" -->
+			<xsd:enumeration value="IQTmerati" /><!-- airport="Iquitos" country="Peru" -->
+			<xsd:enumeration value="IKT" /><!-- airport="Irkutsk" country="Russia" -->
+			<xsd:enumeration value="LSG" /><!-- airport="Ishigaki" country="Japan" -->
+			<xsd:enumeration value="ISB" /><!-- airport="Islamabad - Islamabad Int'l" country="Pakistan" -->
+			<xsd:enumeration value="IOM" /><!-- airport="Isle of Man" country="United Kingdom" -->
+			<xsd:enumeration value="IST" /><!-- airport="Istanbul - Ataturk" country="Turkey" -->
+			<xsd:enumeration value="ITH" /><!-- airport="Ithaca/Cortland" country="USA" -->
+			<xsd:enumeration value="IVL" /><!-- airport="Ivalo" country="Finland" -->
+			<xsd:enumeration value="ZIH" /><!-- airport="Ixtapa/Zihuatenejo" country="Mexico" -->
+			<xsd:enumeration value="IZM" /><!-- airport="Izmir" country="Turkey" -->
+			<xsd:enumeration value="JAC" /><!-- airport="Jackson Hole" country="USA" -->
+			<xsd:enumeration value="JXN" /><!-- airport="Jackson" country="USA" -->
+			<xsd:enumeration value="JAN" /><!-- airport="Jackson" country="USA" -->
+			<xsd:enumeration value="MKL" /><!-- airport="Jackson" country="USA" -->
+			<xsd:enumeration value="JAX" /><!-- airport="Jacksonville" country="USA" -->
+			<xsd:enumeration value="OAJ" /><!-- airport="Jacksonville" country="USA" -->
+			<xsd:enumeration value="JAG" /><!-- airport="Jacobabad" country="Pakistan" -->
+			<xsd:enumeration value="JAI" /><!-- airport="Jaipur - Sanganeer" country="India" -->
+			<xsd:enumeration value="HLP" /><!-- airport="Jakarta - Halim Perdanakusma" country="Indonesia" -->
+			<xsd:enumeration value="JKT" /><!-- airport="Jakarta - Kemayoran" country="Indonesia" -->
+			<xsd:enumeration value="CGK" /><!-- airport="Jakarta - Soekarno-Hatta" country="Indonesia" -->
+			<xsd:enumeration value="JLR" /><!-- airport="Jalandhar" country="India" -->
+			<xsd:enumeration value="JMS" /><!-- airport="Jamestown" country="USA" -->
+			<xsd:enumeration value="JHW" /><!-- airport="Jamestown" country="USA" -->
+			<xsd:enumeration value="IXW" /><!-- airport="Jamshedpur - Sonari" country="India" -->
+			<xsd:enumeration value="JED" /><!-- airport="Jeddah - King Abdulaziz Int'l" country="Saudi Arabia" -->
+			<xsd:enumeration value="XRY" /><!-- airport="Jerez de la Frontera/Cadiz" country="Spain" -->
+			<xsd:enumeration value="JER" /><!-- airport="Jersey" country="United Kingdom" -->
+			<xsd:enumeration value="JRS" /><!-- airport="Jerusalem" country="Israel" -->
+			<xsd:enumeration value="JIW" /><!-- airport="Jiwani" country="Pakistan" -->
+			<xsd:enumeration value="JCB" /><!-- airport="Joacaba" country="Brazil" -->
+			<xsd:enumeration value="JPA" /><!-- airport="Joao Pessoa - Castro Pinto" country="Brazil" -->
+			<xsd:enumeration value="JKG" /><!-- airport="Joenkoeping" country="Sweden" -->
+			<xsd:enumeration value="JOE" /><!-- airport="Joensuu" country="Finland" -->
+			<xsd:enumeration value="JNB" /><!-- airport="Johannesburg - Johannesburg Int'l" country="South Africa" -->
+			<xsd:enumeration value="JST" /><!-- airport="Johnstown" country="USA" -->
+			<xsd:enumeration value="JHB" /><!-- airport="Johore Bahru" country="Malaysia" -->
+			<xsd:enumeration value="JLN" /><!-- airport="Joplin" country="USA" -->
+			<xsd:enumeration value="GJN" /><!-- airport="Jounieh" country="Lebanon" -->
+			<xsd:enumeration value="JNU" /><!-- airport="Juneau" country="USA" -->
+			<xsd:enumeration value="JYV" /><!-- airport="Jyvaeskylae" country="Finland" -->
+			<xsd:enumeration value="KBL" /><!-- airport="Kabul - Khwaja Rawash" country="Afghanistan" -->
+			<xsd:enumeration value="KOJ" /><!-- airport="Kagoshima" country="Japan" -->
+			<xsd:enumeration value="OGG" /><!-- airport="Kahului" country="USA" -->
+			<xsd:enumeration value="KAJ" /><!-- airport="Kajaani" country="Finland" -->
+			<xsd:enumeration value="KLX" /><!-- airport="Kalamata" country="Greece" -->
+			<xsd:enumeration value="AZO" /><!-- airport="Kalamazoo/Battle Creek" country="USA" -->
+			<xsd:enumeration value="KGI" /><!-- airport="Kalgoorlie" country="Australia" -->
+			<xsd:enumeration value="FCA" /><!-- airport="Kalispell" country="USA" -->
+			<xsd:enumeration value="KLR" /><!-- airport="Kalmar" country="Sweden" -->
+			<xsd:enumeration value="KAN" /><!-- airport="Kano" country="Nigeria" -->
+			<xsd:enumeration value="MUE" /><!-- airport="Kamuela" country="USA" -->
+			<xsd:enumeration value="QJU" /><!-- airport="Kanpur" country="Ifdia" -->
+			<xsd:enumeration value="MCI" /><!-- airport="Kansas City" country="USA" -->
+			<xsd:enumeration value="KHH" /><!-- airport="Kaohsiung Int'l" country="Taiwan" -->
+			<xsd:enumeration value="JHM" /><!-- airport="Kapalua West" country="USA" -->
+			<xsd:enumeration value="KHI" /><!-- airport="Karachi - Quaid-E-Azam Int'l" country="Pakistan" -->
+			<xsd:enumeration value="KSD" /><!-- airport="Karlstad" country="Sweden" -->
+			<xsd:enumeration value="AOK" /><!-- airport="Karpathos" country="Greece" -->
+			<xsd:enumeration value="KTA" /><!-- airport="Karratha" country="Australia" -->
+			<xsd:enumeration value="KRB" /><!-- airport="Karumba" country="Australia" -->
+			<xsd:enumeration value="KRP" /><!-- airport="Karup" country="Denmark" -->
+			<xsd:enumeration value="ZKE" /><!-- airport="Kaschechawan, PQ" country="Canada" -->
+			<xsd:enumeration value="KSL" /><!-- airport="Kassala" country="Sudan" -->
+			<xsd:enumeration value="KTR" /><!-- airport="Katherine" country="Australia" -->
+			<xsd:enumeration value="KTM" /><!-- airport="Kathmandu - Tribhuvan" country="Nepal" -->
+			<xsd:enumeration value="MPA" /><!-- airport="Katima Mulilo/Mpacha" country="Namibia" -->
+			<xsd:enumeration value="KHJ" /><!-- airport="Kauhajoki" country="Finland" -->
+			<xsd:enumeration value="MKK" /><!-- airport="Kaunakakai" country="USA" -->
+			<xsd:enumeration value="KVA" /><!-- airport="Kavalla" country="Greece" -->
+			<xsd:enumeration value="KZN" /><!-- airport="Kazan (Ka San)" country="Russia" -->
+			<xsd:enumeration value="KMP" /><!-- airport="Keetmanshoop" country="Namibia" -->
+			<xsd:enumeration value="YLW" /><!-- airport="Kelowna, BC" country="Canada" -->
+			<xsd:enumeration value="KEM" /><!-- airport="Kemi/Tornio" country="Finland" -->
+			<xsd:enumeration value="ZNS" /><!-- airport="Kempten" country="Germany" -->
+			<xsd:enumeration value="ENA" /><!-- airport="Kenai" country="USA" -->
+			<xsd:enumeration value="KIR" /><!-- airport="Kerry County" country="Ireland" -->
+			<xsd:enumeration value="KTN" /><!-- airport="Ketchikan" country="USA" -->
+			<xsd:enumeration value="EYW" /><!-- airport="Key West" country="USA" -->
+			<xsd:enumeration value="AHB" /><!-- airport="Khamis Mushayat" country="Saudi Arabia" -->
+			<xsd:enumeration value="UVL" /><!-- airport="Kharga - New Valley" country="Egypt" -->
+			<xsd:enumeration value="KRT" /><!-- airport="Khartoum" country="Sudan" -->
+			<xsd:enumeration value="KDD" /><!-- airport="Khuzdar" country="Pakistan" -->
+			<xsd:enumeration value="KEL" /><!-- airport="Kiel - Holtenau" country="Germany" -->
+			<xsd:enumeration value="KBP" /><!-- airport="Kiev - Borispol" country="Ukraine" -->
+			<xsd:enumeration value="IEV" /><!-- airport="Kiev - Zhulhany" country="Ukraine" -->
+			<xsd:enumeration value="KGL" /><!-- airport="Kigali - Gregoire Kayibanda" country="Rwanda" -->
+			<xsd:enumeration value="JRO" /><!-- airport="Kilimadjaro" country="Tanzania" -->
+			<xsd:enumeration value="ILE" /><!-- airport="Killeem" country="USA" -->
+			<xsd:enumeration value="KIM" /><!-- airport="Kimberley" country="South Africa" -->
+			<xsd:enumeration value="KNS" /><!-- airport="King Island" country="King Island" -->
+			<xsd:enumeration value="AKN" /><!-- airport="King Salomon" country="USA" -->
+			<xsd:enumeration value="KGC" /><!-- airport="Kingscote" country="Australia" -->
+			<xsd:enumeration value="KIN" /><!-- airport="Kingston - Norman Manley" country="Jamaica" -->
+			<xsd:enumeration value="ISO" /><!-- airport="Kingston" country="USA" -->
+			<xsd:enumeration value="FIH" /><!-- airport="Kinshasa - N'Djili" country="Congo (Zaire)" -->
+			<xsd:enumeration value="KKN" /><!-- airport="Kirkenes" country="Norway" -->
+			<xsd:enumeration value="KIK" /><!-- airport="Kirkuk" country="Iraq" -->
+			<xsd:enumeration value="KRN" /><!-- airport="Kiruna" country="Sweden" -->
+			<xsd:enumeration value="FKI" /><!-- airport="Kisangani" country="Zaire" -->
+			<xsd:enumeration value="KTT" /><!-- airport="Kittilae" country="Sweden" -->
+			<xsd:enumeration value="KIW" /><!-- airport="Kitwe" country="Zambia" -->
+			<xsd:enumeration value="KLU" /><!-- airport="Klagenfurt" country="Austria" -->
+			<xsd:enumeration value="LMT" /><!-- airport="Klamath Fall" country="USA" -->
+			<xsd:enumeration value="KLW" /><!-- airport="Klawock" country="USA" -->
+			<xsd:enumeration value="KLZ" /><!-- airport="Kleinsee" country="South Africa" -->
+			<xsd:enumeration value="NOC" /><!-- airport="Knock" country="Ireland" -->
+			<xsd:enumeration value="TYS" /><!-- airport="Knoxville" country="USA" -->
+			<xsd:enumeration value="UKB" /><!-- airport="Kobe" country="Japan" -->
+			<xsd:enumeration value="KCZ" /><!-- airport="Kochi" country="Japan" -->
+			<xsd:enumeration value="CGN" /><!-- airport="K&#xC3;&#xB6;ln, K&#xC3;&#xB6;ln/Bonn" country="Germany" -->
+			<xsd:enumeration value="ADQ" /><!-- airport="Kodiak" country="USA" -->
+			<xsd:enumeration value="OHT" /><!-- airport="Kohat" country="Pakistan" -->
+			<xsd:enumeration value="KOK" /><!-- airport="Kokkola/Pietarsaari" country="Finland" -->
+			<xsd:enumeration value="CCU" /><!-- airport="Kolkata (Calcutta) - Netaji Subhas Chandra" country="India" -->
+			<xsd:enumeration value="KOA" /><!-- airport="Kona" country="USA" -->
+			<xsd:enumeration value="HGO" /><!-- airport="Korhogo" country="Ivory Coast" -->
+			<xsd:enumeration value="KGS" /><!-- airport="Kos" country="Greece" -->
+			<xsd:enumeration value="BKI" /><!-- airport="Kota Kinabalu" country="Malaysia" -->
+			<xsd:enumeration value="OTZ" /><!-- airport="Kotzbue" country="USA" -->
+			<xsd:enumeration value="KWM" /><!-- airport="Kowanyama" country="Australia" -->
+			<xsd:enumeration value="KRK" /><!-- airport="Krakau" country="Poland" -->
+			<xsd:enumeration value="KRS" /><!-- airport="Kristiansand" country="Norway" -->
+			<xsd:enumeration value="KID" /><!-- airport="Kristianstad" country="Sweden" -->
+			<xsd:enumeration value="KSU" /><!-- airport="Kristiansund" country="Norway" -->
+			<xsd:enumeration value="KUB" /><!-- airport="Kuala Belait" country="Brunei" -->
+			<xsd:enumeration value="KUL" /><!-- airport="Kuala Lumpur - Int'l " country="Malaysia" -->
+			<xsd:enumeration value="SZB" /><!-- airport="Kuala Lumpur - Sultan Abdul Aziz Shah" country="Malaysia" -->
+			<xsd:enumeration value="KUA" /><!-- airport="Kuantan" country="Malaysia" -->
+			<xsd:enumeration value="KCH" /><!-- airport="Kuching" country="Malaysia" -->
+			<xsd:enumeration value="KMJ" /><!-- airport="Kumamoto" country="Japan" -->
+			<xsd:enumeration value="KNX" /><!-- airport="Kununurra" country="Australia" -->
+			<xsd:enumeration value="KUO" /><!-- airport="Kuopio" country="Finland" -->
+			<xsd:enumeration value="KUH" /><!-- airpTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT
+			<xsd:enumeration value="YVP" /><!-- airport="Kuujjuaq (FortChimo)" country="Canada" -->
+			<xsd:enumeration value="YGW" /><!-- airport="Kuujjuarapik" country="Canada" -->
+			<xsd:enumeration value="KAO" /><!-- airport="Kuusamo" country="Finland" -->
+			<xsd:enumeration value="KWI" /><!-- airport="Kuwait - Kuwait Int'l" country="Kuwait" -->
+			<xsd:enumeration value="UKY" /><!-- airport="Kyoto" country="Japan" -->
+			<xsd:enumeration value="LEK" /><!-- airport="Labe" country="Guinea" -->
+			<xsd:enumeration value="WLB" /><!-- airport="Labouchere Bay" country="USA" -->
+			<xsd:enumeration value="LBU" /><!-- airport="Labuan" country="Malaysia" -->
+			<xsd:enumeration value="XLB" /><!-- airport="Lac Brochet, MB" country="="Charters Towers" country="Australia" -->
+			<xsd:enumeration valCanada" -->
+			<xsd:enumeration value="LCG" /><!-- airport="La Coruna" country="Spain" -->
+			<xsd:enumeration value="LSE" /><!-- airport="La Crosse" country="USA" -->
+			<xsd:enumeration value="LAE" /><!-- airport="Lae" country="Papua New Guinea" -->
+			<xsd:enumeration value="LRH" /><!-- airport="La Rochelle" country="France" -->
+			<xsd:enumeration value="LAF" /><!-- airport="Lafayette" country="USA" -->
+			<xsd:enumeration value="LFT" /><!-- airport="Lafayette" country="USA" -->
+			<xsd:enumeration value="LOS" /><!-- airport="Lagos - Murtala Muhammed" country="Nigeria" -->
+			<xsd:enumeration value="YGL" /><!-- airport="La Grande" country="Canada" -->
+			<xsd:enumeration value="LHE" /><!-- airport="Lahore" country="Pakistan" -->
+			<xsd:enumeration value="LCH" /><!-- airport="Lake ChA" -->
+			<xsd:enumeration value="HII" /><!-- airport="Lake Havasu City" country="USA" -->
+			<xsd:enumeration value="TVL" /><!-- airport="Lake Tahoe" country="USA" -->
+			<xsd:enumeration value="LKL" /><!-- airport="Lakselv" country="Norway" -->
+			<xsd:enumeration value="LBQ" /><!-- airport="Lambarene" country="Gabon" -->
+			<xsd:enumeration value="SUF" /><!-- airport="Lamezia Terme" country="Italy" -->
+			<xsd:enumeration value="LMP" /><!-- airport="Lampedusa" country="Italy" -->
+			<xsd:enumeration value="LNY" /><!-- airport="Lanai City" country="USA" -->
+			<xsd:enumeration value="LNS" /><!-- airport="Lancaster" country="USA" -->
+			<xsd:enumeration value="LGK" /><!-- airport="Langkawi" country="Malaysia" -->
+			<xsd:enumeration value="LAI" /><!-- airport="Lannion" country="France" -->
+			<xsd:enumeration value="HLA" /><!-- airport="Lanseria" country="South Africa" -->
+			<xsd:enumeration value="LAN" /><!-- airport="Lansing" country="USA" -->
+			<xsd:enumeration value="LPB" /><!-- airport="La Paz - El Alto" country="Bolivia" -->
+			<xsd:enumeration value="LAP" /><!-- airport="La Paz - Leon" country="Mexico" -->
+			<xsd:enumeration value="LPP" /><!-- airport="Lappeenranta" country="Finland" -->
+			<xsd:enumeration value="LAR" /><!-- airport="Laramie" country="USA" -->
+			<xsd:enumeration value="LRD" /><!-- airport="Laredo" country="USA" -->
+			<xsd:enumeration value="LCA" /><!-- airport="Larnaca" country="Cyprus" -->
+			<xsd:enumeration value="LPA" /><!-- airport="Las Palmas" country="Spain" -->
+			<xsd:enumeration value="LAS" /><!-- airport="Las Vegas" country="USA" -->
+			<xsd:enumeration value="LBE" /><!-- airport="Latrobe" country="USA" -->
+			<xsd:enumeration value="LST" /><!-- airport="Launceston" country="Australia" -->
+			<xsd:enumeration value="PIB" /><!-- airport="Laurel/Hattisburg" country="USA" -->
+			<xsd:enumeration value="LVO" /><!-- airport="Laverton" country="Australia" -->
+			<xsd:enumeration value="LAW" /><!-- airport="Lawton" country="USA" -->
+			<xsd:enumeration value="LZC" /><!-- airport="Lazaro Cardenas" country="Mexico" -->
+			<xsd:enumeration value="YLR" /><!-- airport="Leaf Rapids" country="Canada" -->
+			<xsd:enumeration value="LEA" /><!-- airport="Learmouth (Exmouth)" country="Australia" -->
+			<xsd:enumeration value="LEB" /><!-- airport="Lebanon" country="USA" -->
+			<xsd:enumeration value="LBA" /><!-- airport="Leeds/Bradford" country="United Kingdom" -->
+			<xsd:enumeration value="LER" /><!-- airport="Leinster" country="Australia" -->
+			<xsd:enumeration value="LEJ" /><!-- airport="Leipzig" country="G,rmany" -->
+			<xsd:enumeration value="BJX" /><!-- airport="Leon" country="Mexico" -->
+			<xsd:enumeration value="LNO" /><!-- airport="Leonora" country="Australia" -->
+			<xsd:enumeration value="LWS" /><!-- airport="Lewiston" country="USA" -->
+			<xsd:enumeration value="LWT" /><!-- airport="Lewistown" country="USA" -->
+			<xsd:enumeration value="LEX" /><!-- airport="Lexington" country="USA" -->
+			<xsd:enumeration value="LBV" /><!-- airport="Libreville" country="Gabon" -->
+			<xsd:enumeration value="LDK" /><!-- airport="Lidkoeping" country="Sweden" -->
+			<xsd:enumeration value="LGG" /><!-- airport="Liege" country="Belgium" -->
+			<xsd:enumeration value="Pazifik&quot;" /><!-- airport="Lifou" country="&quot;Loyaute" -->
+			<xsd:enumeration value="LIH" /><!-- airport="Lihue" country="USA" -->
+			<xsd:enumeration value="LIL" /><!-- airport="Lille" country="France" -->
+			<xsd:enumeration value="LLW" /><!-- airport="Lilongwe - Lilongwe International" country="Malawi" -->
+			<xsd:enumeration value="LIM" /><!-- airport="Lima - J Chavez Int'l" country="Peru" -->
+			<xsd:enumeration value="QLI" /><!-- airport="Limassol" country="Cyprus" -->
+			<xsd:enumeration value="LIG" /><!-- airport="Limoges" country="France" -->
+			<xsd:enumeration value="LNK" /><!-- airport="Lincoln" country="USA" -->
+			<xsd:enumeration value="LDC" /><!-- airport="Lindeman Island" country="Australia" -->
+			<xsd:enumeration value="LNZ"@/><!-- airport="Linz - Hoersching" country="Austria" -->
+			<xsd:enumeration value="Democratic Republic of The&quot;" /><!-- airport="Lisala" country="&quot;Congo" -->
+			<xsd:enumeration value="LIS" /><!-- airport="Lisbon - Lisboa" country="Portugal" -->
+			<xsd:enumeration value="LSY" /><!-- airport="Lismore" country="Australia" -->
+			<xsd:enumeration value="LIT" /><!-- airport="Little Rock" country="USA" -->
+			<xsd:enumeration value="LPL" /><!-- airport="Liverpool" country="United Kingdom" -->
+			<xsd:enumeration value="LZR" /><!-- airport="Lizard Island" country="Australia" -->
+			<xsd:enumeration value="LJU" /><!-- airport="Ljubljana - Brnik" country="Slovenia" -->
+			<xsd:enumeration value="IRG" /><!-- airport="Lockhart River" country="Australia" -->
+			<xsd:enumeration value="LFW" /><!-- airport="Lome" country="Togo" -->
+			<xsd:enumeration value="YXU" /><!-- airport="London" country="Canada" -->
+			<xsd:enumeration value="LON" /><!-- airport="London" country="United Kingdom" -->
+			<xsd:enumeration value="LCY" /><!-- airport="London - City " country="United Kingdom" -->
+			<xsd:enumeration value="LGW" /><!-- airport="London - Gatwick" country="United Kingdom" -->
+			<xsd:enumeration value="LHR" /><!-- airport="London - Heathrow" country="United Kingdom" -->
+			<xsd:enumeraYion value="LTN" /><!-- airport="London - Luton" country="United Kingdom" -->
+			<xsd:enumeration value="STN" /><!-- airport="London - Stansted" country="United Kingdom" -->
+			<xsd:enumeration value="LGB" /><!-- airport="Long Beach" country="USA" -->
+			<xsd:enumeration value="LIJ" /><!-- airport="Long Island" country="USA" -->
+			<xsd:enumeration value="ISP" /><!-- airport="Long Island" country="USA" -->
+			<xsd:enumeration value="LRE" /><!-- airport="Longreach" country="Australia" -->
+			<xsd:enumeration value="GGG" /><!-- airport="Longview/Kilgore" country="USA" -->
+			<xsd:enumeration value="LYR" /><!-- airport="Longyearbyen - Svalbard" country="Svalbard/Norway" -->
+			<xsd:enumeration value="LTO" /><!-- airport="Loreto" country="Mexico" -->
+			<xsd:enumeration value="LRT" /><!-- airport="Lorient" country="France" -->
+			<xsd:enumeration value="LAX" /><!-- airport="Los Angeles" country="USA" -->
+			<xsd:enumeration value="SJD" /><!-- airport="Los Cabos" country="Mexico" -->
+			<xsd:enumeration value="LMM" /><!-- airport="Los Mochis" country="Mexico" -->
+			<xsd:enumeration value="TFN" /><!-- airport="Los Rodeos" country="Teneriffa/Spain" -->
+			<xsd:enumeration value="LSZ" /><!-- airport="(Mali) Losinj - Losinj Arpt" country="Croatia (Hrvatska)" -->
+			<xsd:enumeration value="LDE" /><!-- airport="Lourdes/Tarbes" country="France" -->
+			<xsd:enumeration value="SDF" /><!-- airport="Louisville" country="USA" -->
+			<xsd:enumeration value="LAD" /><!-- airport="Luanda - 4 de Fevereiro" country="Angola" -->
+			<xsd:enumeration value="LBB" /><!-- airport="Lubbock" country="USA" -->
+			<xsd:enumeration value="LKO" /><!-- airport="Lucknow" country="India" -->
+			<xsd:enumeration value="LUD" /><!-- airport="Luederitz" country="Namibia" -->
+			<xsd:enumeration value="MLA" /><!-- airport="Luga" country="Malta" -->
+			<xsd:enumeration value="LUG" /><!-- airport="Lugano" country="Switzerland" -->
+			<xsd:enumeration value="LLA" /><!-- airport="Lulea" country="Sweden" -->
+			<xsd:enumeration value="FBM" /><!-- airport="Lumbumbashi" country="Zaire" -->
+			<xsd:enumeration value="LUN" /><!-- airport="Lusaka" country="Zambia" -->
+			<xsd:enumeration value="LUJ" /><!-- airport="Lusisiki" country="South Africa" -->
+			<xd:enumeration value="LUX" /><!-- airport="Luxembourg" country="Luxembourg" -->
+			<xsd:enumeration value="LXR" /><!-- airport="Luxor" country="Egypt" -->
+			<xsd:enumeration value="LWO" /><!-- airport="Lvov (Lwow, Lemberg)" country="Ukraine" -->
+			<xsd:enumeration value="LYH" /><!-- airport="Lynchburg" country="USA" -->
+			<xsd:enumeration value="LYS" /><!-- airport="Lyon" country="France" -->
+			<xsd:enumeration value="MST" /><!-- airport="Maastricht/Aachen" country="Netherlands" -->
+			<xsd:enumeration value="MCP" /><!-- airport="Macapa" country="Brazil" -->
+			<xsd:enumeration value="MCZ" /><!-- airport="Maceio" country="Brazil" -->
+			<xsd:enumeration value="MKY" /><!-- airport="Mackay" country="Australia" -->
+			<xsd:enumeration value="MCN" /><!-- airport="Macon" country="USA" -->
+			<xsd:enumeration value="NOP" /><!-- airport="Mactan Island - Nab" country="Philippines" -->
+			<xsd:enumeration value="MSN" /><!-- airport="Madison" country="USA" -->
+			<xsd:enumeration value="MAA" /><!-- airport="Madras (Chennai)" country="India" -->
+			<xsd:enumeration value="MAD" /><!-- airport="Madrid - Barajas" country="Spain" -->
+			<xsd:enumeration value="SEZ" /><!-- airport="Mahe - Seychelles Int'l" country="Seychelles" -->
+			<xsd:enumeration value="MAH" /><!-- airport="Mahon" country="Spain" -->
+			<xsd:enumeration value="MTL" /><!-- airport="Maitland" country="Australia" -->
+			<xsd:enumeration value="MJN" /><!-- airport="Majunga" country="Madagascar" -->
+			<xsd:enumeration value="MZG" /><!-- airport="Makung" country="Taiwan" -->
+			<xsd:enumeration value="SSG" /><!-- airport="Malabo" country="Equatorial Guinea" -->
+			<xsd:enumeration value="AGP" /><!-- airport="Malaga" country="Spain" -->
+			<xsd:enumeration value="MLE" /><!-- airport="Male - International" country="Maledives" -->
+			<xsd:enumeration value="MYD" /><!-- airport="Malindi" country="Kenya" -->
+			<xsd:enumeration value="MMA" /><!-- airport="Malmo (Malmoe)" country="Sweden" -->
+			<xsd:enumeration value="MMX" /><!-- airport="Malmo (Malmoe) - Sturup" country="Sweden" -->
+			<xsd:enumeration value="MJC" /><!-- airport="Man" country="Ivory Coast" -->
+			<xsd:enumeration value="MGA" /><!-- airport="Managua - Augusto C Sandino" country="Nicaragua" -numeration value="MMY" /><!-- airport="Miyako Jima (Ryuku Islands) - Hirara" country="Japan" -->
+			<xsd:enumeration value="MBM" /><!-- airport="Mkambati" country="South Africa" -->
+			<xsd:enumeration value="MFF" /><!-- airport="Moanda" country="Gabon" -->
+			<xsd:enumeration value="MOB" /><!-- airport="Mobile" country="USA" -->
+			<xsd:enumeration value="MOD" /><!-- airport="Modesto" country="USA" -->
+			<xsd:enumeration value="MJD" /><!-- airport="Moenjodaro" country="Pakistan" -->
+			<xsd:enumeration value="MGQ" /><!-- airport="Mogadischu" country="Somalia" -->
+			<xsd:enumeration valexico" -->
+			<xsd:enumeration value="MTS" /><!-- airport="Manzini - Matsapha Int'l" country="Swaziland" -->
+			<xsd:enumeration value="MPM" /><!-- airport="Maputo - Maputo International" country="Mozambique" -->
+			<xsd:enumeration value="MDQ" /><!-- airport="Mar del Plata" country="Argentina" -->
+			<xsd:enumeration value="MAR" /><!-- airport="Maracaibo - La Chinita" country="Venezuela" -->
+			<xsd:enumeration value="MFQ" /><!-- airport="Maradi" country="Niger" -->
+			<xsd:enumeration value="MTH" /><!-- airport="Marathon" country="USA" -->
+			<xsd:enumeration value="MEE" /><!-- airport="Mare" country="New Caledonia" -->
+			<xsd:enumeration value="MGH" /><!-- airport="Margate" country="South Africa" -->
+			<xsd:enumeration value="PMV" /><!-- airport="Margerita" country="Venezuela" -->
+			<xsd:enumeration value="MBX" /><!-- airpor ="Maribor" country="Slovenia" -->
+			<xsd:enumeration value="MHQ" /><!-- airport="Mariehamn (Maarianhamina)" country="Finland" -->
+			<xsd:enumeration value="MVR" /><!-- airport="Maroua" country="Cameroon" -->
+			<xsd:enumeration value="MQT" /><!-- airport="Marquette" country="USA" -->
+			<xsd:enumeration value="RAK" /><!-- airport="Marrakech - Menara" country="Morocco" -->
+			<xsd:enumeration value="MUH" /><!-- airport="Marsa Matrah (Marsa Matruh)" country="Egypt" -->
+			<xsd:enumeration value="MRS" /><!-- airport="Marseille" country="France" -->
+			<xsd:enumeration value="MHH" /><!-- airport="Marsh Harbour" country="Bahamas" -->
+			<xsd:enumeration value="MVY" /><!-- airport="Martha's Vineyard" country="USA" -->
+			<xsd:enumeration value="MBH" /><!-- airport="Maryborough" country="Australia" -->
+			<xsd:enumeration value="MSU" /><!-- airport="Maseru - Moshoeshoe Int'l" country="Lesotho" -->
+			<xsd:enumeration value="MCW" /><!-- airport="Mason City" country="USA" -->
+			<xsd:enumeration value="MVZ" /><!-- airport="Masvingo" country="Zimbabwe" -->
+			<xsd:enumeration value="MMJ" /><!-- airport="Matsumoto, Nagano" country="Japan" -->
+			<xsd:enumeration value="MYJ" /><!-- airport="Matsuyama" country="Japan" -->
+			<xsd:enumeration value="MTO" /><!-- airport="Mattoon" country="USA" -->
+			<xsd:enumeration value="MUB" /><!-- airport="Maun" country="Botswana" -->
+			<xsd:enumeration value="MAU" /><!-- airport="Maupiti" country="French Polynesia" -->
+			<xsd:enumeration value="MRU" /><!-- airport="Mauritius - S.Seewoosagur Ram Int'l" country="Mauritius" -->
+			<xsd:enumeration value="MAZ" /><!-- airport="Mayaguez" country="Puerto Rico" -->
+			<xsd:enumeration value="MZT" /><!-- airport="Mazatlan" country="Mexico" -->
+			<xsd:enumeration value="MFE" /><!-- airport="McAllen" country="USA" -->
+			<xsd:enumeration value="MES" /><!-- airport="Medan" country="Indonesia" -->
+			<xsd:enumeration value="MDE" /><!-- airport="Medellin" country="Colombia" -->
+			<xsd:enumeration value="MFR" /><!-- airport="Medford" country="USA" -->
+			<xsd:enumeration value="MED" /><!-- airport="Medina" country="Saudi Arabia" -->
+			<xsd:enumeration value="MKR" /><!-- airport="Meekatharra" country="Australia" -->
+			<xsd:enumeration value="MEL" /><!-- airport="Melbourne - Tullamarine" country="Australia" -->
+			<xsd:eia" -->
+			<xsd:enumeration value="MIA" /><!-- airport="Miami" country="USA" -->
+			<xsd:enumeration value="MWD" /><!-- airport="Mianwali" country="Pakistan" -->
+			<xsd:enumeration value="MMM" /><!-- airport="Middlemount" country="Australia" -->
+			<xsd:enumeration value="MAF" /><!-- airport="Midland/Odessa" country="USA" -->
+			<xsd:enumeration value="MIK" /><!-- airport="Mikkeli" country="Finland" -->
+			<xsd:enumeration value="MIL" /><!-- airport="Milan" country="Italy" -->
+			<xsd:enumdration value="LIN" /><!-- airport="Milan - Linate" country="Italy" -->
+			<xsd:enumeration value="MXP" /><!-- airport="Milan - Malpensa" country="Italy" -->
+			<xsd:enumeration value="BGY" /><!-- airport="Milan - Orio Al Serio" country="Italy" -->
+			<xsd:enumeration value="MQL" /><!-- airport="Mildura" country="Australia" -->
+			<xsd:enumeration value="MLS" /><!-- airport="Miles City" country="USA" -->
+			<xsd:enumeration value="MFN" /><!-- airport="Milford Sound" country="New Zealand" -->
+			<xsd:enumeration value="MKE" /><!-- airport="Milwaukee" country="USA" -->
+			<xsd:enumeration value="MTT" /><!-- airport="Minatitlan" country="Mexico" -->
+			<xsd:enumeration value="MRV" /><!-- airport="Mineralnye Vody" country="Russia" -->
+			<xsd:enumeration value="MSP" /><!-- airport="Minneapolis - St. Paul Int'l" country="USA" -->
+			<xsd:enumeration value="MOT" /><!-- airport="Minot" country="USA" -->
+			<xsd:enumeration value="MSQ" /><!-- airport="Minsk, International" country="Belarus" -->
+			<xsd:enumeration value="MYY" /><!-- airport="Miri" country="Malaysia" -->
+			<xsd:enumeration value="QML" /><!-- airport="Mirpur" country="Pakistan" -->
+			<xsd:enumeration value="MSO" /><!-- airport="Missula" country="USA" -->
+			<xsd:enumeration value="MHE" /><!-- airport="Mitchell" country="USA" -->
+			<xsd:enumeration value="MMY" /><!-- airport="Miyako Jima (Ryuku Islands) - Hirara" country="Japan" -->
+			<xsd:enumeration value="MBM" /><!-- airport="Mkambati" country="South Africa" -->
+			<xsd:enumeration value="MFF" /><!-- airport="Moanda" country="Gabon" -->
+			<xsd:enumeration value="MOB" /><!-- airport="Mobile" country="USA" -->
+			<xsd:enumeration value="MOD" /><!-- airport="Modesto" country="USA" -->
+			<xsd:enumeration value="MJD" /><!-- airport="Moenjodaro" country="Pakistan" -->
+			<xsd:enumeration value="MGQ" /><!-- airport="Mogadischu" country="Somalia" -->
+			<xsd:enumeration value="OKU" /><!-- airport="Mokuti" country="Namibia" -->
+			<xsd:enumeration value="MLI" /><!-- airport="Moline/Quad Cities" country="USA" -->
+			<xsd:enumeration value="MBA" /><!-- airport="Mombasa - Moi International" country="Kenya" -->
+			<xsd:enumeration value="MIR" /><!-- airport="Monastir" country="Tunisia" -->
+			<xsd:enumeration value="MLU" /><!-- airport="Monroe" country="USA" -->
+			<xsd:enumeration value="MLW" /><!-- airport="Monrovia" country="Liberia" -->
+			<xsd:enumeration value="ROB" /><!-- airport="Monrovia - Roberts Int'l" country="Liberia" -->
+			<xsd:enumeration value="MBJ" /><!-- airport="Montenego Bay" country="Jamaica" -->
+			<xsd:enumeration value="QGF" /><!-- airport="Montenegro" country="Brazil" -->
+			<xsd:enumeration value="MRY" /><!-- airport="Monterey" country="USA" -->
+			<xsd:enumeration value="MTY" /><!-- airport="Monterrey" country="Mexico" -->
+			<xsd:enumeration value="NTR" /><!-- airport="Monterrey - Aeropuerto Del Norte" country="Mexico" -->
+			<xsd:enumeration value="MVD" /><!-- airport="Montevideo - Carrasco" country="Uruguay" -->
+			<xsd:enumeration value="MGM" /><!-- airport="Montgomery" country="USA" -->
+			<xsd:enumeration value="MPL" /><!-- airport="Montpellier - Frejorgues" country="France" -->
+			<xsd:enumeration value="YMQ" /><!-- airport="Montreal" country="Canada" -->
+			<xsd:enumeration value="YUL" /><!-- airport="Montreal - Dorval" country="Canada" -->
+			<xsd:enumeration value="YMX" /><!-- airport="Montreal - Mirabel" country="Canada" -->
+			<xsd:enumeration value="MTJ" /><!-- airport="Montrose/Tellruide" country="USA" -->
+			<xsd:enumeration value="MOZ" /><!-- airport="Moorea" country="French Polynesia" -->
+			<xsd:enumeration value="MOV" /><!-- airport="Moranbah" country="Australia" -->
+			<xsd:enumeration value="MRZ" /><!-- airport="Moree" country="Australia" -->
+			<xsd:enumeration value="MLM" /><!-- airport="Morelia" country="Mexico" -->
+			<xsd:enumeration value="MGW" /><!-- airport="Morgantown" country="USA" -->
+			<xsd:enumeration value="HNA" /><!-- airport="Morioka, Hanamaki" country="Japan" -->
+			<xsd:enumeration value="HAH" /><!-- airport="Moroni - Prince Said Ibrahim" country="Comoros (Comores)" -->
+			<xsd:enumeration value="YVA" /><!-- airport="Moroni - ,coni" country="Comoros (Comores)" -->
+			<xsd)enumeratinn value="MOW" /><!-- airport="Moscow - Metropolitan Area" country="Russia" -->
+			<xsd:enumeration value="DME" /><!-- airport="Moscow - Domodedovo" country="Russia" -->
+			<xsd:enumeration value="SVO" /><!-- airport="Moscow - Sheremetyevo" country="Russia" -->
+			<xsd:enumeration value="VKO" /><!-- airport="Moscow - Vnukovo" country="Russia" -->
+			<xsd:enumeration value="MWH" /><!-- airport="Moses Lake" country="US‘" -->
+			<xsd:enumeration value="OMO" /><!-- airport="Mostar" country="Bosnia and Herzegovina" -->
+			<xsd:enumeration value="OSM" /><!-- airport="Mosul" country="Iraq" -->
+			<xsd:enumeration value="MJL" /><!-- airport="Mouila" country="Gabon" -->
+			<xsd:enumeration value="MQQ" /><!-- airport="Moundou" country="Chad" -->
+			<xsd:enumeration value="GTN" /><!-- airport="Mount Cook" country="New Zealand" -->
+			<xsd:enumeration value="MGB" /><!-- airport="Mount Gambier" country="Australia" -->
+			<xsd:enumer tion value="MMG" /><!-- airport="Mount Magnet" country="Australia" -->
+			<xsd:enumeration value="ISA" /><!-- airport="Mt. Isa" country="Australia" -->
+			<xsd:enumeration value="MCL" /><!-- airport="Mt. McKinley" country="USA" -->
+			<xsd:enumeration value="MUC" /><!-- airport="Muenchen (Munich) - Franz Josef Strauss" country="Germany" -->
+			<xsd:enumeration value="FMO" /><!-- airport="Muenster/Osnabrueck" country="Germany" -->
+			<xsd:enumeration value="MSR" /><!-- airport="Muenster/Osnabrueck" country="Germany" -->
+			<xsd:enumeration value="MLH" /><!-- airport="Mulhouse" country="France" -->
+			<xsd:enumeration value="MUX" /><!-- airport="Multan" country="Pakistan" -->
+			<xsd:enumeration value="MJV" /><!-- airport="Murcia" country="Spain" -->
+			<xsd:enumeration value="MMK" /><!-- airport="Murmansk" country="Russia" -->
+			<xsd:enumeration value="MCT" /><!-- airport="Muscat - Seeb" country="Oman" -->
+			<xsd:enumeration value="MSL" /><!-- airport½"Muscle Shoals" country="USA" -->
+			<xsd:enumeration value="MKG" /><!-- airport="Muskegon" country="USA" -->
+			<xsd:enumeration value="MFG" /><!-- airport="Muzaffarabad" country="Pakistan" -->
+			<xsd:enumeration value="MVB" /><!-- airport="Mvengue" country="Gabon" -->
+			<xsd:enumeration value="JMK" /><!-- airport="Mykonos" country="Greece" -->
+			<xsd:enumeration value="MYR" /><!-- airport="Myrtle Beach" country="USA" -->
+			<xsd:enumer€tion value="MJT" /><!-- airport="Mytilene (Lesbos)" country="Greece" -->
+			<xsd:enumeration value="MZF" /><!-- airport="Mzamba" country="South Africa" -->
+			<xsd:enumeration value="NAN" /><!-- airport="Nadi" country="Fiji" -->
+			<xsd:enumeration value="NGS" /><!-- airport="Nagasaki" country="Japan" -->
+			<xsd:enumeration value="NGO" /><!-- airport="Nagoya - Komaki AFB" country="Japan" -->
+			<xsd:enumeration value="NAG" /><!-- airport="Nagpur" country="India" -->
+			<xsd:enumeration value="NBO" /><!-- airport="Nairobi" country="Kenya" -->
+			<xsd:enumeration value="ENC" /><!-- airport="Nancy" country="France" -->
+			<xsd:enumeration value="YSR" /><!-- airport="Nanisivik" country="Canada" -->
+			<xsd:enumeration value="NTE" /><!-- airport="Nantes" country="France" -->
+			<xsd:enumeration value="ACK" /><!-- airport="Nantucket" country="USA" -->
+			<xsd:enumeration value="NAP" /><!-- airport="Naples" country="Italy" -->
+		</xsd:restriction>
+	</xsd:simpleType>
+
+</xsd:schema>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+ Chart
+</ti. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
+  <!ENTITY % applicationsDTD SYSTEM "chrome://browse€/locale/preferences/applications.dtd">
+  %branlways">
+        tionsDTD;
+]>
+
+<bindings id="handles"
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http:ÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛÛ//www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+          xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="handler-base" nds="chrchlistétem">
+    <implementation>
+   @  <property name="type" readonly="true">
+        <getter>
+          return this.getAttribute("type");
+        </getter>
+      </property>
+    </implementation>
+  </binding>
+
+  <binding id="handler" nds="chrome://browser/content/prase">
+    <content>
+      <xul:hbox flex="1" equalsize="always">
+        <xul:h"gApplicationsPane.onSelectAction(event.originalTarget)">
+            <xul:mopup/>J          </xul:menulist>
+        </xul:hbox>
+      </xul:hbox>
+    </content>
+
+    <implementation>
+      <constructor>
+        gApplicationsPane.rebuildActionsMenu();
+    st"/>
+	<xul:listcell xbl:inherits="label=usage"/>
+      </children>
+    </content>
+  </binding>
+
+</bindings>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html 
+ PUBL-->
+<!-- The purpose of this file is to show how the erlsom:sax() function
+  
+     http://www.w3.org/TR/REC-html32.html#dtd
+     =============== BEGIN ===================
+-->
+<!-- 
+     Character Entities for ISO Latin-1
+     
+     (C) International Organization for Standardization 1986
+     Permission to copy in any form is granted for use wit‚
+     conformtr>
+	</table>
+</body>
+</html>
+</xsl:template>
+
+<xsl:template match="faktura/sprzedawca_dane" >
+
+<tr>  <th> Sprzedawca </th></tr>
+<tr align="center"r>
+<tr align="center"> NIe-of selºct="nip" /> </tr>
+<tr align="centeW"> REGON: <xsl:value-of select="regon" /></tr>
+
+</xsl:template>
+
+<xsl:template match="faktura/odbiorca_dane" >
+
+<tr8ÿth> Odbiorca </th> </tr>
+<tr act="pxzycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of select="nazwa_towaru"/></td>
+k¿pHour		<td><xsl:value-of select="jm"/></td>
+		<td><xsl:valueÿof select="ilosc"/></td>
+		<td><xsl:value-of kelect="cena_netto /></td>
+		<td><xsl:value-of select="wartosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" awign="right">RAZEM</td> 
+	<td align="ceàter"> <xsl:value-of select="razem_n…tto"/> </td> 
+	<td align="> <td> <xsl:vÿlue-of select=center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+<ðxsW:stylesheet>

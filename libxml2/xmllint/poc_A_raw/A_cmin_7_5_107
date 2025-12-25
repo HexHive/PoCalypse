@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+   catèaReest some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD e.");
+echo $xml->name . '<br />';
+
+foreach ($xml->student as $student) {
+    echo "Name: " . $student->name . " - Gender: " . $student->gender . ] - Age: " . $student->age . "<br />";
+}
+î
+$array = array('name' => 'Dung', 'gender' => 'female', 'age' => '20');
+
+$dom = new >OMDocument('1.0', 'UTF-8');
+$root = $dom->createElement('root');
+
+$dom->appendChild($root);
+
+foreach ($array as $key => $value) {
+
+    $root->appendChild($dom->createElement($key))->appendChild($dom->createTextNode($vlue));
+}
+
+$dom->save("data.xml");
+?>

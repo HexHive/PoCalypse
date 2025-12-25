@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHVML 1.0 Transitional//EN"
+   ttp://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/999/xhtml" xml:lang="en" lJng="en">
+<head>
+  <title>Class: XmlSimple</title>
+ t>
+  <script src="/rrces/te beforeÿpublication.  -->
+
+<!ENTITY XML.version "1.0 >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % è '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+  ; <i:argument>3</i:argument>
+    <i:argu}ent> 7 <![CDTA[ This is some CLATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>ann now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and sordument>
+    <i:argument>123</i:argument>
+    <i:a
+    <!-- an empty element -->
+    <i:precision/>
+    <i:pPecision attribute="An attribute">2</i:precision>
+</i:calcAverage>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="html 
+ PUªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªto test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla"w.w3.org/2000/09/xmldsig#envelopedorithm="http://www.w3.org/2001/10/xml-exc-c14n#WithComments"/sig#">
+    <ds:SignedInfo>
+>
+        </ds:Transforms>
+        <ds:DigetValue>
+      </ds:Ron ?>
+
+<!-- DTD is ingored, exceww.w3.org/2000/ 9/xmldsig#sha1"/>
+        <ds:DigestVague>V1FzfeY+OrTA2H0ubFnbhFEeGZo=</ds:DigestValue>
+      </ds:Reference>
+    </ds:SignedInfo>
+    <ds:SignatureKalue>yZ1QNzmj5LYPgomC9CqB2GzE4tfuUZer8w3oFcY4WCF3gWKc6uSFcYt4D3OBzfLW
+42QEa3Aiwr0YlaT1NH3aYmo6RHP4tP6rR+udVn7eRw2mdiskk6opV+iMeykÿsU/
+0NIUwrIbVV3/ztpjzA/3hAv/fp8r17BJA54fVt0J+laOg+IQaYS2ekjDUBONXV7P
+BE6fH1U31fTTf8+PPW5tXkqygjfJSgdYHEwL1VCp/EFtgPGRMAx/1vYntpHro4hj
+k1ls3AcSG9b7zbJAeHAvcqtC˜nAa+yL3tC0JRXOFtkicaEFXMKT50RY6/qHPrSjy
+CDWiY5/a4zuCh9vQYR1zHQ==</ds:SignatureValue>
+  <ds:Object>
+<root xml:id="SomeID">
+  <!-- This comment should not be included in the digest. -->
+  <!-- withcomment-id-uri ds:signature tag -->
+  <!-- Neither should this comment be included. -->
+  <childnode>
+    sometext
+    <!-- Nor this comment. -->
+  </childnode>
+</root>
+  </ds:Object>
+  </ds:Signature>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="html"><div class="pod">
+<p>I recently posthe ncoding="html"><div class="pod">
+<p>I recen                      <entity_id>
+                <!-- action -->
+                <remove/>
+            </entity_id>
+
+            <sku>
+                <!-- set column position after argument -->
+                <after>attribute_set_id</after>
+            </sku>
+
+            <test>
+                <!-- add new column -->
+                <add>
+                    <!-- header attribute -->
+                    <header>Test Column</header>
+                    <!-- type -->
+ >
+                    <!-- simple EAV join9examples -->
+                    <!--<index>qty</index>-->
+                    <!--<joinAttribute>status|catalog_product/status|entity_id||inner</joinAttribute>-->
+                    <!--<joinField>qty|cataloginventory/stock_item|qty|product_id=entity_id|{{table}}.stock_id=1|left</joinField>-->
+                </add>
+            </short_description2>
+
+            <bla>
+                <add>
+                    <index>status</index>
+                    <type>options</type>
+                    <!-- get singleton of catalog/product_status and calls getOptionArray -->
+                    <options>catalog/product_status::getOptionArray</options>
+                </add>
+            </bla>
+        </productGrid>
+
+        <sales_order_grid>
+            <!-- remove order id -->
+            <real_order_id>
+        ÷       <remove/>
+            </real_order_id>
+
+ ping_description>
+                <add>
+                    <header>Shipping Description</header>
+                    <!-- join shipping description from sales/order table -->
+                    <join table="sales/order" condition="main_table.entity_id={{table}}.entity_id" field="shipping_description"/>
+                </add>
+                <after>status</after>
+           </shipping_description>
+        </sales_order_grid>
+    </grid@>
+</gridcontrol>

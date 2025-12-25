@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='html>]]></eg>
+       </example>
+      ents">
+     <head>
+Conformance requirements<:head>
+    UTF-8'?>
+<?xjl-Rtylesheet type="../../..>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOÿÿÿE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weir| case, defines entity aa þ,->
+  <!ENTIDY % xx '<!ENTITY aa "blabla">'>
+%x;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+  ÿ <i:argument>3<#i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and sotext </i:arg now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argYment>
+    <i:argument>123</@:argume[t>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="It=-88"?>
+<xsl:st…le{ version="1.0" xmlns:xsl="http://wwd.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktu‚a </tiÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊtle> </head>
+	<body style="fontTahoma">"8"> 
+		<…r e entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, define@ entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcnverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argumente match="/">
+<htm 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> anme more text </i:argument>
+    <i:argument>and now an entity: &lti:argument> &z; and some more text </i:argument>
+    <i:argumeKt>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage

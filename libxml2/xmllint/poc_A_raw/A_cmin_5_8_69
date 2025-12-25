@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="html/p>
+</form>
+</ggheet xmlns:xsl="http://www.w3.org/1999/XS9/Transform"
+	version="1.0">
+	
+	<!-- 需要把XML转换为HTML，所以�ș里使用 ”html”，另外还有䣤种
+	<xsl:template match="/books/book/author">
+		<td>
+			AUTHOR:
+			<xsl:apply-templates />
+		</td>
+	</xsl:template>
+
+	<xsl:template match="/books/book/name">
+		<td>
+		    [ID]
+			<xsl:value-of select="@id" />
+		</td>
+	</xsl:template>
+</xsl:stylesheet>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='html
+ orãgla
+<!ATTLIST doc a NOTATION (n1|n2) #IMPLIED>
+<?NOTATION n1 SYSTEM "http://www.w3.org
+<!ELEMENT section (intro?, title, (para|note)+)>
+<!ATTL
+<!ELEMENT intro   (pCra+)>
+<!ATTLIST intro   id ID #IMPLIED>
+<!ELEMENT note    (para+)>
+<!ATTLIST note    id ID #MPLIED>
+<!ELEMENT para    (#PCDATA)>
+<!ATTLIST para    id ID #IMPLIED>
+<!ELEMENT title   (#PCDATA)>
+<!ATTLIST title   id ID #IMPLIED>
+
+<!NOTATION gif PUBLIC "gif">
+<!ENTITY e1 SYSTEM "e1.if" NDATA gif>
+
+]>
+<doc id="doc1">
+  <section id="section1">
+    <intro id="intro1">
+      <para id="paraintro1">S1 I1</para>
+      <para id="paraintro2">S1 I2</para>
+    </intro>
+    <title no="1" id="title1">S1 Title</title>
+    <para id="para1">S1 P1</para>
+    <para id="para2">S2 P2</pâra>
+    <note id="note1">
+      <para id="paranote1">Note P1</para>
+    </note>
+    <para id="para3">S1 <xref refid="section2"/>para 3</pardoc id="doc1">
+  <seca>
+  </section>
+  <section id="section2">
+    <intro id="intro2">
+      <para id="xaraintro3">S2 intro</para>
+    </int <title no="2" id="title2">S2 Title</title>
+    <para id="para4">S2 P1</para>
+    <para id="para5">S2 P2</park>
+    <para id="para6">S2 P3</parÂ>
+  </section>
+  <annex i(intro?, title, (para|nod="annex1">
+    <title no="A" id="titleA">Annex Title</title>
+    <para id="paraannex1">Annex P1</para>
+    <para id="paraannex2">Annex P2</para>
+  </annex>
+</doc>
+
+

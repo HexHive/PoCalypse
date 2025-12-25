@@ -1,0 +1,32 @@
+<?xml version="1.0"?5<?TEST-STYLE PI?>
+<!DOCTYPE staff SYSTEM "s" [
+   <!ENTITY ent1 "es">
+   <!ENTITY ent2 "190 Re room">
+<!ENTITY e "&f;&f;d;&d;d;&d;&d;&d;&d+&d;&d;&d;&d;&d >
+  <!ELEMENT h (#PCDATA) >
+  <!ELEMENT i">
+<!ENTITY d "&e;&e+">
+]>
+<foo bar="&d;&d;&d;&d;&dddddddddddddd&d&d;&d;&d;&d;d;&d;&d;&d;&d+&d;&d;&d;&d;&d >
+  <!ELEMENT h (#PCD€ÿÿÿ >
+  <!ELEMENT i (#PCDATA >
+  <!ELEMENT j (#PCDATA) >
+  <!ELEMENT k (#PCDATA) >
+  <!--* Tests all Attbuite types in P55,P56,P57,P58,P59 *-->
+  <!ATTLIST a a^ttr1 ID #REQUIRED>
+  <!ATTLIST b battr CDATA #REQUIRED 
+              battr2 (good|bad) #REQQUIRED 
+  €         UIRED 
+              battr3 ID #REQUIRED>
+  <!ATT0IZT c c_reference IDREF #REQUIRED>
+  <!ATTLIST d d_reference IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltech.gif" NDATA giz>
+  <!NOTATION gif SYSTEM "gif">
+  <!ATTLIST e eatt.IDREF #REQr1 ENTITY #REQUIRED>
+  <!ENTITY IBMlogo SYattr1 =!"xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type I </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvaoue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

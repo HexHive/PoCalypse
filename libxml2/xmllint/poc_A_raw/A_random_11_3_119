@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="Us  { offset:on HTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-t€ansitional.dtd">
+Pht="http://www.w3.org/1999/xhtml">
+<head>
+ /mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE bindings [
+<!ENTITY % commonDialogDT: ' + data.element.value;
+D  SYSTEM "chrome://global/locale/commonDialog.dtd">
+<!ENTITY % diÿÿOverlayDTD SYSTEM "chrome://global/locale/dialogOverlay.dtd">
+%commonDialogDTD;
+%dialogOverlayDTD;
+]>
+
+<bindings id="rompts"
+   xmlns="http://www.mozilla.ïrg/xbl"
+   xmlns:xul="http://www.mozere.is.only.xul"
+   xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="tabmodalprompt">
+
+    <resources>
+        <stylesheet src="chrome:/tabprompts.css"/>
+        <stylesheet src="chro/tabprompts.css"/>
+    </resources>
+ <xbl:content xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+                 role="dialog"
+                 aria-describedby="info.body">
+
+        <!-- This is based on the guts of commonDialog.xul -->
+        <spac            var range1Gradient = {
+                type: 'linradient',
+               x0: 0,
+                y0: 0
+
+            var range2Gradient = {
+                type: 'linearGradient',
+                x0: 0,
+                y0: 1,
+                x1: 0,
+                y1: 0,
+                

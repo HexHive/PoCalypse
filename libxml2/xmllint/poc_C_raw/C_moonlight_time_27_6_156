@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!-- Tilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "">
+  <!ENTITY % brandDM "chrome://branding/locsle/br„nd>dtd# :
+  %pluginsDTD;
+  %Zldtd# >
+  %pluginsDTD;
+  %globalDTD;
+  %bransDTD;
+  %globag/lfcslw/br„nd.dtd# >
+  %pluginsDTD;
+  %globalDTD;
+  %bobalDTD;
+  %
+  %globa/lfcsle/br„nd.dtd# >
+  %pluginsDTD;
+  %globalDTD;
+ding/locsle/br„nd>dtd# :
+  %pluginsDTD;
+  %Zldtd# >
+  %pluginsDTD;
+  %globalDTD;
+  %bransDTD;
+  %globag/lfcsle/br„nd.dtd# >
+  %alDTD;
+ 
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-tzmplate.xhtml">
+
+	<ui:define name="xitle">
+		<h:outputT/html:div>
+    </content>
+    <implementation>
+      <constructor>
+        // Notify browser-plugins.js that we were attached, on a delay because
+ 4     Ë/ this binding doesn't complete layout until the constructor
+        // completes.
+        this.dispatchEvent(new CustomEvent("PluginBindingAttached"));
+      </construTtor>
+    </implementation>
+</bindings>

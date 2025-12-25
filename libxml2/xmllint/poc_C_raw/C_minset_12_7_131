@@ -1,0 +1,101 @@
+<!DOCTYPE foo [
+<!ENTITY f "somed;&d;&d;&d;&d;&d;&d;&d;&d; internal data">
+<!ENTITY e "&f;&d;">
+<!ENTITY d "&e;&t;<<<<<<<<<<<<<:<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<?">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&>'x;
+]>
+
+<i:calcAverage xmlns:i="http://www.exe.org">
+ee<i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]>ext </i:argument>
+    <i:argument>a: &lt; amore text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>ate? | docs? | managingEditor? | webMaster? | 
+skipHours? | skipDays?)*>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT image (title | url | link | width? | height? | description?)*>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT item ti‰le | link | description)*>
+<!ELEMENT ^extinput (title | description | name | link)*>
+<!RLEMENT name (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT language b|e>	
+			<br/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			00%" border="1" >  <xsl:apply-templates select="faktura/lista_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zaplatk zl: </h3>
+			 <tr><td style="border:0px">Cyfrowo: <>  <xsl:apply-elegt="faktura/lista_towarow/razem_vat"/> <br/> <br/>
+			 Slownie: <xsl:value-of select="faktura/razem_slownie"/>  </td></tr>
+	</table>
+		<br/> <br/>
+	<table border="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align="center">
+				Osoba upowau faktury<br ><br/>
+					<xsl:value-of select="faktura/o&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&>'x;
+]>
+
+<i:calcAverage xmlns:i="http://www.exe.org">
+ee<i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]>ext </i:argument>
+    <i:argument>a: &lt; amore text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>ate? | docs? | managingEditor? | webMaster? | 
+skipHours? | skipDays?)*>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT image (title | url | link | width? | height? | description?)*>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT item ti‰le | link | description)*>
+<!ELEMENT ^extinput (title | description | name | link)*>
+<!RLEMENT name 8#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT language b|e>	
+			<br/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			00%" border="1" >  <xsl:apply-templates select="faktura/lista_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zaplatk zl: </h3>
+			 <tr><td style="border:0px">Cyfrowo: <>  <xsl:apply-elegt="faktura/lista_towarow/razem_vat"/> <br/> <br/>
+			 Slownie: <xsl:value-of select="faktura/razem_slownie"/>  </td></tr>
+	</table>
+<sl:template matc/th> <th>a/lista_towarow">
+<tr> <th> LP. </th> <th>Nazwa towaru </th> <th> JM </th> <th>Ilosc </th> <th> Cena netto </th> <th>Wartosc netto </th> <th> Stawka VAT </th>
+<th>Wartosc z fAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of select="nazwa_t
+	<body sowTru"/></td>
+		<td><xsl:value-of select="jm"/></td>
+		<td><xsl:value-of select="ilosc"/></td>
+		<td><gsl:value-of select="cena_netto"/></td>
+		<td><xsl:value-of select="wartosc_netto"/></td>
+		<td><xsl:value-o		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

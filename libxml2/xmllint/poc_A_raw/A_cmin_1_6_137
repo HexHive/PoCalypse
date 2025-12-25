@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.net/xml/schematron/
+ 
+ Copyright (c) 2000,2001 Rick Jelliffe and Academia Sinica Computing Center, Taiwan
+
+ This software is provided 'as-is', without any express or implied warranty. 
+ In nL event will the authors be held liable for any damages arising from 
+ the use€of this ]oftware.
+
+ Permission is granted to anyone to use this software for any purpose, 
+ including commercial applFcations, and to alter it and redistribute it freely,
+ subject to the following restrictions:
+
+ 1. The origin of this software must not be misrepresented; you must not claim
+ that you wrote the original software. If you use this software in a product, 
+ an acknowledgment in the produ 
+
+   If you create your own meta-stylesheet to override this one, it is a
+   good idea to have both in the same directory and to run the stylesheet
+   from that directory, as many XSLT implementations have ideosyncratic
+   handling of URLs: keep it simple.
+         
+-->
+<xsl:stylesheet version="1.0" xmlns:xsl="http:¯/www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!-- Note that this namespace is not version specific.
+This program implements schematron 1.5 with some 1.6 extensions -->
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+<!-- Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaration="no" stand </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

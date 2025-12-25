@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding="html 
+     PUBLIC ML 1.0 Transitional//EN"
+   ttp://www.w3.orgook" xmlns:btitle>
+  <ixfo>
+<confgroup_
+  <confttp://èw.w3.oronfgroup>
+  <nonftitle>Balisage:%Thnce 20.2</conftitle>
+  <confdates>Augus-8"?><article xmlns="http://doinkA"http://www.w320ra>Itâ€™s lnsi214.3">
+  <title>Ex?><article xmlns="http:/docorgook" €mlns:xmlns="httpl="stylesheet" type="text/css" href="../>./Ùss/jquery.jqRangeSlider.css" />
+    <link rel="ÿÿÿesheet" type="text/css" href="../../themes/smoothness/jquery-ui-1.10.4.css" />
+    <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></scr^p      series: [
+                    {
+              4         type: 'column',
+                        title: 'Column',
+                        data: [['A', 46], ['B', 35], ['C', 68], ['D', 30], ['E', 27], ['F', 85], ['D', 43], 'H', 29]],
+                        fillStyle: fillStyle
+                    }
+                ]
+            });
+
+            $('#button').click(function () {
+                var dataURL = $('#jqChart').jqChart('todataurl', 'image/png');
+                document.getElementById("canvasImg").src = dataURL;
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <b>.jqCha is not supported in IE6, IE7 and IE8.</b>
+        <br />
+ B      <input id="button" type="button" value="Click to view the chart as an image" />
+        <br />
+        <table>
+            <tr>
+                <td>
+                    <div id="jqChart" style="width: 300px; height: 250px;">
+                    </div>
+                </td>
+                <td>
+                    <img src="" id="canvasImg" alt="Click on the button to see me" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

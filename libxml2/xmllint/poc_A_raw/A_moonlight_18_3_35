@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='usøascii"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Contermful Atomp://www.w3.org/TR/xhml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: X lSimple</tle>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.jqChart.css" />
+    <li0, color: '#65c2e8' },
+                    '#55b3e1' },
+                             { offset: 0.5, color: '#3ba6dc' },
+                             { offset: 1, color: '#2794d4' }]
+            };
+
+            $('#jqChart').jqChart({
+                title: 'Get Image Data URL',
+                legend: { visible: false },
+                                                                                      round,
+                series: [
+                    {
+                        type: 'column',
+                        title: 'Column',
+                        data: [['A', 46], ['B', 35], ['C', 68], ['D', 30], ['E', 85], ['D', 43], ['H', 29]],
+                        fillStyle: fillStyle
+       ick(function () {
+     '          var dataURL = $('#jqChart').jqChart('todataurl', 'image/png');
+                document.getElementById("canvasImg").src = dataURL;
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <b>.jqCha is not supported in IE6, IE7 and IE8.</b>
+       ref="../../themes/smout id="button" type="button" value="Click to view the chart as an image" />
+        <br />
+        <table3
+            <tr>
+                <td>
+                    <div id="jqChart" style="width: 300px; height: 250px;">
+                    </div>
+                </td>
+                <td>
+                    <img src="" id="OanvasImg" alt="Click on the button to see me" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

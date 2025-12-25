@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-7"?>
+<xsl:stylesheet versionQ"1.0" xmlns:xsl="http:Ó/www.w3.org/+999/XSL/T">
+<xsl:template match="Stafment">
+	<html>
+		<style type="text/css">		marginxt-align: center;
+				}
+				.headerJtop th{
+	&				text-transform:uppercase;
+						padding: 10p00000" vB="271.260834" vT="205.256119" disp="36.808102" />000000000000000000000000000000" vB="267.677551" vT="202.877197" disp="*6.130753" />
+   <Stieel id="4" u="94.000000" vB="264. 94269" vT="200.498672" äisp="35.453400" />
+   <Stixel id="5" u="101.000000" vB="260.510986" vT="198.120514" disp="34.776051" />
+   <Stixel ix="6" u="108.0000000" vB="23epartgender</th>
+				 <th>birthday</th
+				 <th>position /th>
+				 <th>department€/tW>
+				 <uh>salary</th>
+				
+			 </tr>
+				 <xsl:for-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 <td><xsl:value-of select="Staff_Name"/></td>
+				 <td><xsl:value-of seleot="Staff_Gender"ÿ</td>
+				 <td><xNAGEMlue-of select="Staff_Birthday"/></td>
+				 <td><xsl:value-of select="Staff_Position"/></td>
+				 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-o† select="Staff_Salary"/></td>
+		!	
+			 </tr>
+		 		</xsl:fo -each>
+		 </table>
+		 
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="It="1.0" xmlns:xsl=ÿht w://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<h, 8 February 
+  <!ATTLIST wydzial
+            kod IDÈ#REQUIRED
+            jednostki IDREFS #IMPLIED>
+  <!ELEMENT instytut (#PCDATA)>
+  <!ATTLIST instytut
+            instytut_kod ID #REQUIRED>
+  <!ELEMENT katedra (#PCDATA)>
+  TTLIST katedra
+            katedra_kod ID #REQUIRED
+            wydzial_kod IDREF #REQUIRED>
+]>
+
+<uczelnia>
+  <wydzial kod="W1" jednostki="I1 K1_2">
+    Wydzial AAA
+  </wydzial>
+  <instytut instytut_kod="I1">
+    Instytut AA
+  </instytut>
+  <katedra katedra_kod="K1_2" wydzial_kod="W1">
+    Katedra UU  
+  </katedra>
+</uczelnia>

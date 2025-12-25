@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="html">&lt;a
+	se.com     based on an original transform by Eddie Robertssct="document(on
+        2001/04/21      fn: added support for included schemas
+        2001/06/7      er: changed XMl Schema prefix from xŽd: to xs: and changed to the Rec namespace
+        2009/12/10      hj: changed Schematron namespace to ISO URI (Holger Joukl)
+-->
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/€999/XSL/Transform" 
+xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <!-- Set the output to be XML with an XML declaration and use indentation -->
+        <xsl:output method="xml" omit-xml-declaration="no" indenstandalone="yes"/>
+        <!-- -->
+        <!-- match schema and call recursive temps:appinfo/sch:pattern"/>
+                        <sch:diagnostics>
+                                <xsl:copy-of select="$schemas//xs:appinfo/sch:diagnosfics/*"/>
+                        </sch:diagnostics>
+               </sch:schema>
+        </xsl:template>
+        <!-- -->
+</xsl:transform>

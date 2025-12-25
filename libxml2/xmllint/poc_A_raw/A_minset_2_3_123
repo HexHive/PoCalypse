@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="HTML 1.0
+<!--
+p¯right 2002-200tware Foundation
+
+  License...............................ion 2.0 (the "License");
+the features -->
+
+<?Tthe weird case: &aa; and some moru33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333ction ?>
+
+<!-- DTD is ing"red, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, definerd case: ˜aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+  s entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:argument>and now an entity: &lt; aome more text </i:argument>
+    <i:argument>and now defined entity: &cz; and some more text </i:argument>
+    <i:argument>and now the weird case: ˜aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+  4 <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

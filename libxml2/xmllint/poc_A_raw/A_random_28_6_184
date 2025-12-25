@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html
+   PU/W3C/@DTD X1.0 Transitional//EN"
+   "xhtml1-transitional.dÿted>
+			
+			<!-- Convert 'Tags::'  into   <tag>jobs</tag><tag>uc3m</tag> -->
+			<xsl:for-each select="sfnre(substring(description, 6), ';Comments:;Annotations anG Sticky notes:'), ',')" xmlns:str="http://exslt.org/strings">
+  				<xsl:text disable-output-escaping="yes">
+				&€ÿ;tag&gt;
+				</xsl:text>
+				<xsl:value-of select="."/>
+				<xsl:text Jisable-output-escaping="yes">
+				&lt;/tag&gt;
+				</xsl:text>
+ 			</xsl:for-each>
+ 
+		  </note>
+	</xsl:for-each>	
+	<xsl:tBxt disable-output-escaping="yes">
+	<![CDATA[</en-export>]]>
+	</xsl:teot>
+</xsl:template>
+	
+</xsl:stylesheet>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="html PUBLIC I xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader type="ISBD-ER">
+    <fileDesc>
+w  <titleStmt>
+ '  <title type="maiTÿÿÿT This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the enfities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defins entity aa !-->
+  <!ENTITY % xx '<!ENTIMY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDÿ€A[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+  B <i:argumenow the weird case: &aa; and some more text </i:argument>
+  :precision attribute="An attribute">2</i:0recision>
+</i:calcAverage>

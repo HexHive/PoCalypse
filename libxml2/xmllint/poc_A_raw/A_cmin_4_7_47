@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="html PUBLIC"-//W3C//DTD Xns:xsi="   xmlnlns:rdfs="http://www.w3.org/2000/01/rdf-sxmlns:foaf="http://xmlnsfo/Resources/Vendors/4_1_3/HUD_HMIS.xsd https://raw.githubusercontent.com/hmis-interop/xml/master/src/HUD_HMISiiiiiiiiiiiiiiiii.xsd"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+   ns:hmis="htt000000000000000000000000000000000000000000000000000000sd">
+    <hmis:Source>
+        <hmis:SourceID>12345</hmis:SourceID>
+        <hmis:SoftwareVendor>HMISSoft Inc.</hmis:SoftwareVendor>
+        <hmis:SoftwareVersion>3</hmis:SoftwareVersion>
+        <hmis:SourceCnt>
+				<!-- ThÃ´ng tin ChiTietPhieuThue -->
+				<xs:element name="ChiTietPhieuThue">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaChiTietPhieuThue" value="[1-9]{5}" type="xs:string"/>
+							<xs:element name="SoNgayThue" type="xs:positiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- ThÃ´ng tin Xe -->
+				<xs:element name="Xe">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="BienKiemSoatXe" value="[A-Z][1-9][0-9]{5}" type="xs:string"/>
+							<xs:element name="HangXe" type="xs:string"/>
+							xs:element name="TenXe"  type="xs:string"/>
+							<xs:element name="LoaiXe" type="xs:string"/>
+							<xs:element name="NamSX" type="xs:date"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- ThÃÊng tin KhachHang -->
+				<xs:element name="KhachHang">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaKhachHang" value="[1-9]{3}" type="xs:string"/>
+							<xs:element name="TenKhachHang" type="xs:string"/>
+							<xs:element name="DiaChi"  type="xs:string"/>
+							<xs:element name="SoDienThoai" value="[0][0-9]{9}" type="xs:positiveInteger"/>
+							<xs:element name="SoCMND" value="[0-9]{9}" type="xs:positiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- end ThÃ´ng tin KhachHang -->
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

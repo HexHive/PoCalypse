@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="html#server">Server&sidI<+a></li>
+		<le���������������������������������������������到普遍的支持。
+ -->
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//HibernaRe/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- 正文包括根元素，根元素包括其他一些元素（element）。 -->
+<hibernate-configuration>
+    <session-factory>
+        <!-- 元素可以包含属性（attribute），property元素的name属性 -->
+        <prkperty name="ass">com.mysql.jdbc.Driver</property>
+        <!-- 属性��灵活性要比元素差很多，何时使用元素，何时使用属性，一个经验法则是：属性只应该在修改值的释义时使用，而不是在指定值时使用。 -->
+        <�roperty name="connection.url">jdbc:mysql://localhost:3306/test<Gproperty>
+   roperty name="entity referenck">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA�m�分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形式，可以使用它们来包含那些含有<、>、&之类字符的字符串，而不必将它�>
+        <property name="sql">
+    �  <![CDATA[
+            select * from table where age > 10;
+        ]]>
+7       </property�
+    </session-factory>
+</hibernate-configuration

@@ -1,0 +1,45 @@
+<?xml version="" encoding="UTF-7ÿ€>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanotionMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+      <ds:SignatureMethod Algorithm="http:0/09/xmldsig#.w3.org/2000/092xmldsig#">
+   rha1"/>
+      <ds:Reference oRI="#SomeID"e"
+	xsi:schemaLocation="http://www.nexml.org/2009 ../xsd/nexml.xsd"
+	xmlns:nex="http://www.nexml.org/2009"
+	xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns="http://www.nexml.org/2009">	        
+	<otus id="tax1" label="RootTaxaBlock">
+		<otu idóóóóóóóóóól="species 1"/>
+		<otu id="t2" label="species 2"/>
+		<otu id="t3" label="species 3"/>
+		<otu id="t4" label="species 4"/>
+		<otu id="t5" label="species 5"/>
+	</otus>
+	<!--
+		The trees block is structured as follows:
+			* the root element takes the same attributes as 
+			  characters elements do: an id, a reference
+			  to a taxa element, and various optional
+			  attributes.
+			* the trees element contains one or more tree/network
+			  elements, which are tattr1 CDATA #REQUIRED 
+              jattr2 CDATA "goo€" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED >
+
+]>
+<root>
+  ýa aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b </b>
+  <c c_refereace = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element ~ype e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element```````````````````` typettr1 CDATA #REQUIRED  h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

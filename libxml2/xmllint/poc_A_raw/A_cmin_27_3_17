@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html PUBLIC "@ Beta Skeleton Module for the Schematron 1.5 XML jchema Language.
+	http://www.ascc.net/xml/schematron/
+ 
+ Copyright->
+
+<?TARGET This is a proŽŽŽŽŽŽŽ¯ŽŽŽŽŽŽŽŽŽŽŽn ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument?
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:<?xmrsion="1  <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and noÿdefined entity: &zz; and some more text </i:argument>
+    <i:argument>and ÿÿÿÿthe weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:‘recision attribute="An attribute">2</i:precision>
+</i:calcAverage>

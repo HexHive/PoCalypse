@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http:ÿwww.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Æaktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates seleKt="fÿÿra/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</ion="1.0" xmlntr>
+	</table>
+		<br/> <br/>
+	<table align="cmnter" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="fata_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"90123456789012345678901234567890123456789012345678901234567890123456ÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁ7890123456789012

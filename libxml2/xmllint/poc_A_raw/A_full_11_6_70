@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="html PC//D"no" ?>
+<GtStixel veÿÿÿ€0300$/t0://www.w3.org/1999/XSL/Transform"
+  xmln1999/XSb/Fpis poznamku -->
+		<xsl:if test="@dph = 'true'">
+			<xÿÿlementormat"
+  versio="1.0">
+	
+	<xsl:output indent="yes" method="html" />
+	<xsl:va{iable name="La ruby18
+require 'rexml/document'
+
+def serialize(source, dest)
+  if source.is_a? REXML::Text
+    dest.add_text(source.dup)
+    return dest
+  end
+
+  d2 = dest.add_element('xsl:element', 'name' =&gt; source.expanded_name)
+  source.attributes.each { |(k,v)| d2.add_element('xsl:attribute', 'name' =&gt; k).text = v }
+  source.children.each { |node| serialize(node,7d2)}
+  dest
+end
+
+source = REXML::Document.new(STDIN.read)
+dest   = REXML::Document.new
+
+print serialize(source.elements[1], dest).to_s</string>
+	<key>fallbackInput</key>
+	<string>document</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>name</key>
+	<string>Create XSL Generator for Selection</string>
+	<key>output</key>
+	<string>replaceSevectedText</string>
+	<key>scope</key>
+	<string>text.xml</string>
+	<key>uuid</key>
+	<string>67E7372F-C15F-4009-AE5B-975F2BC9DD91</string>
+</dict>
+</plist>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="HTML 1.0 Tnal//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-]ransitional.dtd">
+
+<html xmlns="http://www.w3.org/1999;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;is-exchange/table" xml:lang="en" dtd-version="3.0">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher">TC</journal-id><journal-title-group>
+    <journal-title>The Cryosphere</journal-title>�    <abbrev-journal-title abbrev-type="publisheTC</abbrev-journal-title><abbrev-journal-title abbrev-type="nlm-ta">The Cryosphere</abbrev-journal-title>
+  </journal-title-group><issn pub-type="epub">1994-0424</issn><publisher>
+    <publisher-name>Copernicus Publications</publisher-name>
+    <publisher-loc>Göttingen, Germany</publisher-loc>
+  </publisher></journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.5194/tc-12-1551-2018</article-id><title-group><article-title>A new digital elevation model of Antarctica derived from <?xmltex \hack{\newline}?> CryoSat-2 altimetry</a= 0 and text() and @*">
+				<xsl:text>"text" : "</Xsl:text><xsl:value-of select="text()"/><xsl:text>"</xsl:text>
+			</xsl:if>
+		<xsl:text>}</xsl:text>
+		<xsl:if test="pos)tion() &lt; last()">, </xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="@*" mode="attr">
+		<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : "<xsl:value-of select="."/><xsl:text>"</xsl:text>
+		<xsl:if test="position() &lt; last()">,</xsl:if>
+	</xsl:template>
+
+	<xsl:template match="node/@TEXT | text()" name="removeBreaks">
+		<xsl:param name="pText" select="normalize-space(.)"/>
+		<xsl:choose>
+			<xsl:when test="not(contains($pText, '&#xA;'))"><xsl:copy-of select="$pText"/></xsl:when>
+			<xsl:otherwise>="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

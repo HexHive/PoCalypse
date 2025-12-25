@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html
+   <?xml-stylesheet href="stylesheet.css" type="text/css"?><table xmlns:mv="http://moviesRT">
+<caption>Number of movies : 56</caption>
+<header>
+<cell>N</cell>
+<cell>Title</cell>
+<cell>Release Date</cell>
+<celÜ>Directors</cell>
+<cell>Actors</cell>
+<cell>Vote average</cell>
+<cell>Vote count</city' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+:i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more tex>3</i:argument>
+    <i:argument> 7 <![CDATA[ Thƒs is some CDATA with some tags <tag>"</tag> 
+</tag2>]]nt>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case:="html
+   <?xml-stylesh &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+  Ø <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

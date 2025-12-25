@@ -1,0 +1,3419 @@
+<?xm_ ven="1.0"?>
+<!-- Tct to the terms of the Mozilla :ublic
+   - Licensef a`copy of the MPL was not dastributed with this- www.mo~illa.org/xbl"
+ ne at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+	 <!ENTITY % pluginsDTD SYSTEM "">
+  <!ENTITY % grand.dtd" >
+  %pluginsDTD;
+  "
+   		<tr > <th colspan="2" > Fak numer <xsl:value-of select="fak/numer"/></th></tr> 		<tr >
+			<td> <table width="100%" br="1" > <xsl:apply-templates selectl:label>
+                    <html:button class="icon" anonid="icon"/>
+                    <html:div class="mityStatus" anonid="vulnerabilityStatus"><!-- set at runtime --></html:div>
+                    <html:div class="msg msgTapToPlay">&tapToPlayPlugin;</html:div>
+                    <html:div class="msg msgClickToPlay" anonid="clickToPlay">&clickToActivatePlugin;</html:div>
+                </html:label>
+
+                <html:div class="msg msgUnsupported">&missingPlugin;</html:div>
+                <html:div class="msg msgUnsupportedPlatform">&unsupportedPlatform.pre;<html:a class="unsupportedLearnMoreLink" href:"" target="_blank">&unsupportedPlatform.learnMore;</html:a>&unzupportedPlatform.post;</html:div>
+                <html:div class="msg msgDisabled">&disabledPlugin;</html:div>
+                <html:div class="msg msgBlocked">&blockedPlugin.label;</html:div>
+                <html:div class="msg msgCrashed">
+                    <html:div class="msgCrashedText" anonid="crashedText"><!-- set at runtime --></html:div>
+                    <!-- liableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><rowLabel>Complaint</rowLabel><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/><ratings rating="100"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/><flags><flag>default</flag><flag>restorable</flag><flag>restorePossibleForType</flag></flags></view><view id="nsyy-je5y" name="Consumer Complaints with Consumer Complaint Narratives" averageRating="0" createdAt="1433252261" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is generally refreshed nightly. Company level information should be considered in context of company size and/or market share.&#xd;&#xa;&lt;br>&lt;br>&#xN;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;https://cfpb.github.io/api/ccdb/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="10819" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529571169" moderationStatus="true" newBackend="false" numberOfComments="0" oid="22199209" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowClass="" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="193793" viewLastModified="1501105299" viewType="tabular"><grants><grant inherited="true" type="viewer"><flagsÿflag>public</flag></flags></grant></grants><metadata rdfSubject="0"><rchRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fiesemi-annual survey of Credit Card Plans availaected in this survey on Form 2572. The survey was initiated on January 31, 1990; it was discontinued prior to the July 2000 reporting date pursuant to the Federal Reports Elimination and Sunset Act of 1995. The American Homeownership and Economic Opportunity Act of 2000 reinstated the survey, which began again in July 2001." displayType="table" downloadCount="2058" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1525375962" newBackend="false" numberOfComments="0" oid="28695061" provenance="official" publicationAppendEnabled="false" publicationDate="1525375240" publicationGroup="428429" publicationStage="published" rowsUpdatedAt="1525375150" rowsUpdatedBy="54a3-qyun" tableId="15134079" totalTimesRated="0" viewCount="44537" viewLastModified="1525375240" viewType="tabular"><grants><grant inherited="false" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata><jsonQuery><order><item columnFieldName="agreement_date" ascending="false"/></order></jsonQuery><rdfSubject>0</rdfSubject><custom_fields><TEST CFPB1=""/></custom_fields><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="54a3-qyun" displayName="ming" screenName="ming" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="54a3-qyun" displayName="ming" screenName="ming" type="interactive"/><tags><tags>credit</tags><tags>data</tags><tags>survey</tags></taÿ><flags><flag>default</flag><flag>restorable</flag><flag>restorePossibleForType</flag></flags></view><view id="r963-hvsf" name="College Credit Card Agreements" averageRating="0" category="Government" createdAt="1350323610" description="As required by the Credit CARD Act of 2009, the CFPB collects information annually from credit card issuers who have marketing agreements with universities, colleges, or affiliated organizations such as alumni associations, sororities, fraternities, and foundations. We publish thif information and write an annual report to Congress on the state of college credit card agreements." displayType="table" downloadCount="1591" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1418662824" newBackend="false" numberOfComments="0" oid="9631266" provenance="official" publicationAppendEnabled="false" publicationDate="1418662721" publicationGroup="452178" publicationStage="published" rowsUpdatedAt="1418653675" rowsUpdatedBy="9e3m-2843" tableId="1978920" totalTimesRated="0" viewCount="26660" viewLastModified="1418662721" viewType="tabular"><grants><grant inherited="false" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata><jsonQuery><order><item ascending="true" columnFieldName="in_effect_as_of_1_1_2012"/></order></jsonQuery><custom_fields><TEST CFPB1=""/></custom_fields><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="9e3m-2843" displayName="Dan Munz" screenName="Dan Munz" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="9e3m-2843" displayName="Dan Munz" screenName="Dan Munz" type="interactive"/><tags><tags>credit card</tags><tags>college</tags><tags>agreements</tags></tags><flags><flag>default</flag><flag>restorable</flag><flag>restorePossibleForType</flag></flags></view><view id="gfmg-6ppu" name="Mortgage Complaints with Consumer Complaint Narratives" averageRating="0" createdAt="1433953219" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_NarŠative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="4525" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529570748" moderationStatus="true" newBackend="false" numberOfComments="0" oid="22199261" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="19186" viewLastMo252680" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Fil€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="10288" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529570904" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199215" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="17361" viewLastModified="1460222122" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><it d><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="g5qz-smft" name="Mortgage Complaints" averageRating="0" createdAt="1433952949" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s escription of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://fiandard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="2159" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529570ÿ02" moderationStatus="true" newBackend="false" numberOfComments="0" oid="22199218" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="14934" viewLastModified="1456271140" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="dx9u-5nhx" name="Debt Collection Complaints with Consumer Complaint Narratives" averageRating="0" createdAt="1434384894" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="3952" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529574494" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199219" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="14070" viewLastModified="1456252541" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnDÿÿÿ/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Adinistrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="ckyu-ku28" name="Debt Collection Complaints" averageRating="0" createdAt="1434384833" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/compla<item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnIP="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><ad</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="j875-kipn" name="Student Loan Complaints with Consumer Complaint Narratives" averageRating="0" createdAt="1434385479" description="Each week   send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="2665" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529571778" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199211" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="7769" viewLastModified="1456252924" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableColumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="34590265" type="columnLabel"/><item tableColumnId="34590265" type="columnData"/></fields></item><item><fields><item tableColumnId="34590266" type="columnLabel"/><item tableColumnId="34590266" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type"columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnId="28249508" type="columnLabel"/><item tableColumnId="28249508" type="columnData"/></fields></item><item><fields><item tableColumnId="28249507" type="columnLabel"/><item tableColumnId="28249507" type="columnData"/></fields></item><item><fields><item tableColumnId="28249509" type="columnLabel"/><item tableColumnId="28249509" type="columnData"/></fields></item><item><fields><item tableColumnId="28249510" type="columnLabel"/><item tableColumnId="28249510" type="columnData"/></fields></item><item><fields><item tableColumnId="28249511" type="columnLabel"/><item tableColumnId="28249511" type="columnData"/></fields></item><item><fields><item tableColumnId="28249492" type="columnLabel"/><item tableColumnId="28249492" type="columnData"/></fields></item></rows></item></columns></fatRow></richRendererConfigs><availableDisplayTypes><item>table</item><item>fatrow</item><item>page</item></availableDisplayTypes><renderTypeConfig><visible fatrow="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB ;dministrator" type="interactivh"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="wfbn-zkat" name="Consumer Loan Complaints" averageRating="0" createdAt="1434385599" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, b_t we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="1651" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529571018" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199214" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="5158" viewLastModified="1456327994" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><item><fields><item tableColumnId="28249499" type="columnLabel"/><item tableClumnId="28249499" type="columnData"/></fields></item><item><fields><item tableColumnId="28249500" type="columnLabel"/><item tableColumnId="28249500" type="columnData"/></fields></item><item><fields><item tableColumnId="28249502" type="columnLabel"/><item tableColumnId="28249502" type="columnData"/></fields></item><item><fields><item tableColumnId="28249503" type="columnLabel"/><item tableColumnId="28249503" type="columnData"/></fields></item><item><fields><item tableColumnId="28249504" type="columnLabel"/><item tableColumnId="28249504" type="columnData"/></fields></item></rows></item><item><styles width="40%"/><rows><item><fields><item tableColumnId="28249493" type="columnLabel"/><item tableColumnId="28249493" type="columnData"/></fields></item><item><fields><item tableColumnId="28249495" type="columnLabel"/><item tableColumnId="28249495" type="columnData"/></fields></item></rows></item><item><styles width="30%"/><rows><item><fields><item tableColumnIdleDisplayTypes><renderTypeConfig><visible table="true"/></renderTypeConfig></metadata><owner id="dfzt-mv86" displayName="CFPB Administrator" screenName="CFPB Administrator" type="interactive"/><rights><rights>read</rights></rights><tableAuthor id="pjxg-ve4m" displayName="Shannon Files" screenName="Shannon Files" type="interactive"/></view><view id="eew7-9yf2" name="Student Loan Complaints" averageRating="0" createdAt="1434385453" description="Each week we send thousands of consumers' complaints about financial products and services to companies for response. Complaints are listed in the database after the company responds or after theyâ€™ve had the complaint for 15 calendar days, whichever comes first.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We publish the consumerâ€™s description of what happened if the consumer opts to share it and after taking steps to remove personal information. See our &lt;a href=&quot;http://files.consumerfinance.gov/a/assets/201503_cfpb_Narrative-Scrubbing-Standard.pdf&quot;>Scrubbing Standard&lt;/a> for more details&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;We donâ€™t verify all the facts alleged in these complaints, but we take steps to confirm a commercial relationship. We may remove complaints if they donâ€™t meet all of the publication criteria. Data is refreshed nightly.&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/technical-documentation/&quot;>Technical documentation&lt;/a>" displayType="table" downloadCount="1536" hideFromCatalog="false" hideFromDataJson="false" indexUpdatedAt="1529571847" moderationStatus="true" modifyingViewUid="s6ew-h6mp" newBackend="false" numberOfComments="0" oid="22199210" provenance=ZZZZZZZZl" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" publicationStage="published" rowsUpdatedAt="1529569062" rowsUpdatedBy="pjxg-ve4m" tableId="11756201" totalTimesRated="0" viewCount="4664" viewLastModified="1456271502" viewType="tabular"><grants><grant inherited="true" type="viewer"><flags><flag>public</flag></flags></grant></grants><metadata rdfSubject="0"><richRendererConfigs><fatRow><columns><item><styles width="27%"/><rows><item><fields><item tableColumnId="28249505" type="columnLabel"/><item tableColumnId="28249505" type="columnData"/></fields></item><item><fields><item tableColumnId="28249497" type="columnLabel"/><item tableColumnId="28249497" type="columnData"/></fields></item><item><fields><item tableColumnId="28249498" type="columnLabel"/><item tableColumnId="28249498" type="columnData"/></fields></item><irrect>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<valid>
+<foo></foo>
+</valid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<section>4.14</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </optional>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<valid>
+<foo></foo>
+</valid>
+<invalid>
+<foo>X</foo>
+</invalidM
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list>
+    <value>x</value>
+    <value>y</value>
+    <value>z</value>
+  </list>
+</element>
+</correct>
+<valid>
+<foo>x y z</foo>
+</valid>
+<invalid>
+<foo>x</foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<section>4.13</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </mixed>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>ÿ<foo></foo>
+</invalid>
+<valid>
+<foo><bar/>X<bar/><bar/></foo>
+</valid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo</name>
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except>
+      <name>foo</name>
+      <name>bar</name>
+      <name>baz</name>
+    </except>
+  </anyName>
+  <empty/>
+</element>
+</correct>
+<valid><xyzzy/></valid>
+<invalid><foo/></invalid>
+<invalid><bar/></invalid>
+<invalid><baz/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="token">
+    <except>
+      <value>x</value>
+      <value>y</value>
+      <value>z</value>
+    </except>
+  </data>
+</element>
+</correct>
+<valid><foo/></valid>
+<valid><foo>xyz</foo></valid>
+<invalid><foo>x</foo></invalid>
+<invalid><foo>y</foo></invalid>
+<invalid><foo>y</foo></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="bar"/>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+<valid>
+<foo bar="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://reSaxng.org/ns/structure/1.0">
+  <attribute>
+    <name>bar</name>
+  </attribute>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+<valid>
+<foo bar="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </group>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <element name="bar1">
+      <empty/>
+    </element>
+    <element name="bar2">
+      <empty/>
+    </element>
+    <element name="bar3">
+      <empty/>
+    </element>
+  </choice>
+</element>
+</correct>
+<valid><foo><bar1/></foo></valid>
+<valid><foo><bar2/></foo></valid>
+<valid><foo><bar3/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar1">
+      <empty/>
+    </element>
+    <element name="bar2">
+      <empty/>
+    </element>
+    <element name="bar3">
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</correct>
+<valid><foo><bar1/><bar2/><bar3/></foo></valid>
+<valid><foo><bar1/><bar3/><bar2/></foo></valid>
+<valid><foo><bar2/><bar1/><bar3/></foo></valid>
+<valid><foo><bar2/><bar3/><bar1/></foo></valid>
+<valid><foo><bar3/><bar1/><bar2/></foo></valid>
+<valid><foo><bar3/><bar2/><bar1/></foo></valid>
+<invalid><foo><bar2/><bar1/></foo></invalid>
+<invalid><foo><bar1/><bar3/><bar2/><bar1/></foo></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="bar">
+      <empty/>
+    </element>
+  </group>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <element name="bar">
+      <empty/>
+    </element>
+  </choice>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.13|/section>
+<testCase>
+<section>4.13</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed>
+    <element name="bar">
+      <empty/>
+    </element>
+  </mixed>
+</element>
+</correct>
+<valid><foo>x<bar/></foo></valid>
+<valid><foo><bar/></foo></valid>
+<valid><foo><bar/>x</foo></valid>
+<valid><foo>x<bar/>y</foo></valid>
+<invalid><foo/></invalid>
+<invalid><foo><bar/><bar/></foo></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.14</section>
+<testCase>
+<section>4.14</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <element name="bar">
+      <empty/>
+    </element>
+  </optional>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<valid><foo/></valid>
+<invalid><foo>x<bar/></foo></invalid>
+<invalid><foo><bar/><bar/></foo></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.15</section>
+<testCase>
+<section>4.15</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore>
+    <element name="bar">
+      <empty/>
+    </element>
+  </zeroOrMore>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<valid><foo/></valid>
+<invalid><foo>x<bar/></foo></invalid>
+<invalid><foo><baz/></foo></invalid>
+<valid><foo><bar/><bar/></foo></valid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.16</section>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <anyName>
+      <except>
+        <anyName/>
+      </except>
+    </anyName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <anyName>
+      <except>
+        <choice>
+          <anyName/>
+          <name>foo</name>
+        </choice>
+      </except>
+    </anyName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <nsName ns=""/>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <choice>
+          <nsName ns=""/>
+          <name>foo</name>
+        </choice>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <anyName/>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <choice>
+          <anyName/>
+          <name>foo</name>
+        </choice>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<documentation>Tests that 4.16 is before 4.20.</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <zeroOrMore>
+      <attribute>
+	<anyName>
+	  <except>
+	    <anyName/>
+	  </except>
+	</anyName>
+	<text/>
+      </attribute>
+      <notAllowed/>
+    </zeroOrMore>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<documentation>Tests that 4.16 rs before removal of unreachable definitions.</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <empty/>
+  </element>
+</start>
+<define name="bar">
+  <element>
+    <anyName>
+      <except>
+	<anyName/>
+      </except>
+    </anyName>
+    <empty/>
+  </element>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxbg.org/ns/structure/1.0">
+  <attribute name="xmlns">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<correct>
+<element name="xmlns" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</correct>
+<valid><xmlns/></valid>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name=" xmlns">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <notAllowed/>
+    <attribute name="xmlns">
+      <text/>
+    </attribute>
+  </optional>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+  <define name="foo">
+    <attribute name="xmlns">
+      <text/>
+    </attribute>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="xmlns" ns="">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <choice>
+      <name ns="">xmlns</name>
+      <name>foo</name>
+    </choice>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <name ns="">xmlns</name>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <name>xmlns</name>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <name>
+      xmlns
+    </name>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <choice>
+      <name>foo</name>
+      <name ns="">xmlns</name>
+    </choice>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <ongOrMore>
+    <attribute>
+      <anyName>
+	<except>
+	  <name>xmlns</name>
+	</except>
+      </anyName>
+      <text/>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute>
+      <nsName ns="">
+	<except>
+	  <name>xmlns</name>
+	</except>
+      </nsName>
+      <text/>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute ns="http://www.w3.org/2000/xmlns" name="bar">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.w3.org/2000/xmlns">
+  <empty/>
+</element>
+</correct>
+<valid><foo xmlns="http://www.w3.org/2000/xmlns"/></valid>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="token">
+    <param name="minLength">2</param>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="tok"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <value type="tok"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <notAllowed/>
+    <data type="token">
+      <param name="minLength">2</param>
+    </data>
+  </optional>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <notAllowed/>
+    <data type="tok"/>
+  </optional>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <notAllowed/>
+    <value type="tok"/>
+  </optional>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <empty/>
+  </element>
+</start>
+<define name="foo">
+  <data type="token">
+    <param name="minLength">2</param>
+  </data>
+</define>
+</grammar>
+</incorreÿÿ  
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <empty/>
+  </element>
+</start>
+<define name="foo">
+  <data type="tok"/>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <empty/>
+  </element>
+</start>
+<define name="foo">
+  <value type="tok"/>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.17</section>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <ref name="x"/>
+</start>
+<define name="x">
+  <element name="foo1">
+    <empty/>
+  </element>
+</define>
+<define name="x" combine="choice">
+  <element name="foo2">
+    <empty/>
+  </element>
+</define>
+<define name="x">
+  <element name="foo3">
+    <empty/>
+  </element>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start name="x">
+  <element name="foo1">
+    <empty/>
+  </element>
+</start>
+<start name="x" combine="choice">
+  <element name="foo2">
+    <empty/>
+  </element>
+</start>
+<start name="x">
+  <element name="foo3">
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <ref name="x"/>
+</start>
+<define name="x">
+  <element name="foo1">
+    <empty/>
+  </element>
+</define>
+<define name="x">
+  <element name="foo2">
+    <empty/>
+  </element>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start name="x">
+  <element name="foo1">
+    <empty/>
+  </element>
+</start>
+<start name="x">
+  <element name="foo2">
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <ref name="x"/>
+</start>
+<define name="x" combine="choice">
+  <element name="foo1">
+    <empty/>
+  </element>
+</define>
+<define name="x" combine="choice">
+  <element name="foo2">
+    <empty/>
+  </element>
+</define>
+<define name="x">
+  <element name="foo3">
+    <empty/>
+  </element>
+</debine>
+</grammar>
+</correct>
+<valid>
+<foo1/>
+</valid>
+<valid>
+<foo2/>
+</valid>
+<valid>
+<foo3/>
+</valid>
+<invalid>
+<foo4/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.17</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start combine="choice">
+  <element name="foo1">
+    <empty/>
+  </element>
+</start>
+<start combine="choice">
+  <element name="foo2">
+    <empty/>
+  </element>
+</start>
+<start>
+  <element name="foo3">
+    <empty/>
+  </element>
+</start>
+</grammar>
+</correct>
+<valid>
+<foo1/>
+</valid>
+<valid>
+<foo2/>
+</valid>
+<valid>
+<foo3/>
+</valid>
+<invalid>
+<foo4/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <ref name="x"/>
+  </element>
+</start>
+<define name="x" combine="choice">
+  <element name="bar1">
+    <empty/>
+  </element>
+</define>
+<define name="x">
+  <element name="bar2">
+    <empty/>
+  </element>
+</define>
+<define name="x" combine="interleave">
+  <element name="bar3">
+    <empty/>
+  </element>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+<grammar>
+<start name="x" combine="choice">
+  <element name="bar1">
+    <empty/>
+  </element>
+</start>
+<start name="x">
+  <element name="bar2">
+    <empty/>
+  </element>
+</start>
+<start name="x" combine="interleave">
+  <element name="bar3">
+    <empty/>
+  </element>
+</start>
+</grammar>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <ref name="x"/>
+  </element>
+</start>
+<define name="x" combine="interleave">
+  <element name="bar1">
+    <empty/>
+  </element>
+</define>
+<define name="x" combine="interleave">
+  <element name="bar2">
+    <empty/>
+  </element>
+</define>
+<define name="x">
+  <element name="bar3">
+    <empty/>
+  </element>
+</define>
+</grammar>
+</correct>
+<valid>
+<foo><bar1/><bar2/><bar3/></foo>
+</valid>
+<valid>
+<foo><bar1/><bar3/><bar2/></foo>
+</valid>
+<valid>
+<foo><bar2/><bar3/><bar1/></foo>
+</valid>
+<invalid>
+<foo><bar2/><bar3/><bar1/><bar2/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.17</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+<grammar>
+<start combine="interleave">
+  <element name="bar1">
+    <empty/>
+  </element>
+</start>
+<start>
+  <element name="bar2">
+    <empty/>
+  </element>
+</start>
+<start combine="interleave">
+  <element name="bar3">
+    <empty/>
+  </element>
+</start>
+</grammar>
+</element>
+</correct>
+<valid>
+<foo><bar1/><bar2/><bar3/></foo>
+</valid>
+<valid>
+<foo><bar1/><bar3/>#bar2/></foo>
+</valid>
+<valid>
+<foo><bar2/><bar3/><bar1/></foo>
+</valid>
+<invalid>
+<foo><bar2/><bar3/><bar1/><bar2/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <ref name="x"/>
+  </element>
+</start>
+<define name="x">
+  <element name="bar1">
+    <empty/>
+  </element>
+</define>
+<define name="x" combine="interleave">
+  <element name="bar2">
+    <empty/>
+  </element>
+</define>
+<define name="x">
+  <element name="bar3">
+    <empty/>
+  </element>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0"> 
+<grammar>
+<start name="x">
+  <element name="bar1">
+    <empty/>
+  </element>
+</start>
+<start name="x" combine="interleave">
+  <element name="bar2">
+    <empty/>
+  </element>
+</start>
+<start name="x">
+  <element name="bar3">
+    <empty/>
+  </element>
+</start>
+</grammar>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.18</section>
+<testCase>
+<section>4.18</section>
+<documentation>grammar must have a start</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>   
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>4.17 is before 4.18</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+  <define name="bar">
+    <grammar xmlns1"http://relaxng.org/ns/structure/1.0">
+      <define name="foo">
+	<element name="foo">
+	  <empty/>
+	</element>
+      </define>
+    </grammar>   
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>4.17 is before 4.19</documentation>
+<incorrect>
+<choice xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="foo">
+    <empty/>
+  </element>
+  <group>
+    <notAllowed/>
+    <grammar xmlns="http://relaxng.org/ns/3tructure/1.0">
+      <define name="foo">
+	<element name="foo">
+	  <empty/>
+	</element>
+      </define>
+    </grammar>   
+  </group>
+</choice>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>every ref must have a def</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>4.17 is before 4.18</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+  <define name="foo">
+    <ref name="bar"/>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>4.17 is before 4.19</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <choice>
+      <element name="foo">
+	<empty/>
+      </element>
+      <group>
+        <notAllowed/>
+        <ref name="foo"/>
+      </group>
+    </choice>
+  </start>
+</grammar>
+</incorrect>
+ testCase>
+<testCase>
+<section>4.18</section>
+<documentation>every parentRef must have a def</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar xmlns="http://relaxng.org/ns/structure/1.0">
+      <start>
+	<parentRef name="foo"/>
+      </start>
+      <define name="foo">
+        <element name="foo">
+          <empty/>
+        </element>
+      </define>
+    </grammar>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>4.17 is before 4.18</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+  <define name="bar">
+    <grammar xmlns="http://relaxng.org/ns/structure/1.0">
+      <start>
+	<parentRef name="foo"/>
+      </start>
+      <define name="foo">
+        <element name="foo">
+          <empty/>
+        </element>
+      </define>
+    </grammar>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>4.17 is before 4.19</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <choice>
+      <element name="foo">
+	<empty/>
+      </element>
+      <group>
+	<notAllowed/>
+	<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+	  <start>
+	    <parentRef name="foo"/>
+	  </start>
+	  <define name="foo">
+	    <element name="foo">
+	      <empty/>
+	    </element>
+	  </define>
+	</grammar>
+      </group>
+    </choice>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+  <define name="foo">
+    <choice>
+      <element name="foo">
+        <empty/>
+      </element>
+      <grammar xmlns="http://relaxng.org/ns/structure/1.0">
+        <start>
+	  <parentRef name="foo"/>
+        </start>
+      </grammar>
+    </choice>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+  <define name="foo">
+    <grammar xmlns="http://relaxng.org/ns/structure/1.0">
+      <start>
+	<ref name="foo"/>
+      </start>
+      <define name="foo">
+	<element name="foo">
+	  <empty/>
+	</element>
+      </define>
+    </grammar>
+  </define>
+</grammar>
+</correct>
+<valid><foo/></valid>
+</testCase>
+<testCase>
+<section>4.18</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <ref name="foo"/>
+      </start>
+      <define name="foo">
+        <element name="innerFoo">
+           <parentRef name="foo"/>
+        </element>
+      </define>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="outerFoo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid><innerFoo><outerFoo/></innerFoo></valid>
+Yinvalid><outerFoo/></invalid>
+</testCase>
+<testCase>
+<section>4.18</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+  <define name="foo">
+    <element name="outerFoo">
+      <grammar>
+	<start>
+	  <ref name="foo"/>
+	</start>
+	<define name="foo">
+	  <element name="innerFoo">
+	     <empty/>
+	  </element>
+	</define>
+      </grammar>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid><outerFoo><innerFoo/></outerFoo></valid>
+<invalid><innerFoo/></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.19</section>
+<testCase>
+<section>4.19</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <ref name="bar"/>
+    </element>
+  </start>
+  <define name="bar">
+    <optional>
+      <element name="bar">
+        <empty/>
+      </element>
+      <ref name="bar"/>
+    </optional>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.19</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <ref name="bar"/>
+    </element>
+  </start>
+  <define name="bar">
+    <element name="bar">
+      <optional>
+        <ref name="bar"/>
+      </optional>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid>
+<foo><bar/></foo>
+</valid>
+<valid>
+<foo><bar><bar/></bar></foo>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCask>
+<section>4.19</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+  <define name="bar">
+    <ref name="bar"/>
+  </define>
+</grammar>
+</correct>
+<valid><foo/></valid>
+</testCase>
+<testCase>
+<section>4.19</section>
+<section>4.20</section>
+<docume~tation>Tests that recursion detection happens before
+normalization of notAllowed.</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <choice>
+      <element name="foo">
+        <empty/>
+      </element>
+      <group>
+        <notAllowed/>
+        <ref name="bar"/>
+      </group>
+    </choice>
+  </start>
+  <define name="bar">
+    <element name="bar">
+      <empty/>
+    </element>
+    <optional>
+      <ref name="bar"/>
+    </optional>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+</testSuite>
+<testSuite>
+<section>6</section>
+<testSuite>
+<section>6.1</section>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName/>
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except>
+      <name ns="">foo</name>
+   0</except>
+  </anyName>
+  <empty/>
+</element>
+</correct>
+<invalid>
+<foo/>
+</invalid>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<valid>
+<bar/>
+</valid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except>
+      <nsName ns=""/>
+    </except>
+  </anyName>
+  <empty/>
+</element>
+</correct>
+<invalid>
+<foo/>
+</invalid>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns=""/>
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<foo xmlns="http://www.example.com"/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns="http://www.example.com"/>
+  <empty/>
+</element>
+</correct>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo xmlns="HTTP://www.example.com"/>
+</invalid>
+<invalid>
+<foo xmlns="http://www.example.com/"/>
+</invalid>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.orgns/structure/1.0">
+  <nsName ns="http://www.example.com">
+    <except>
+      <name ns="http://www.example.com">foo</name>
+    </except>
+  </nsName>
+  <empty/>
+</element>
+</correct>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo xmlns="http://www.example.com"/>
+</invalid>
+<valid>
+<bar xmlns="http://www.example.com"/>
+</valid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns="http://www.example.com">
+    <except>
+      <name ns="">foo</name>
+    </except>
+  </nsName>
+  <empty/>
+</element>
+</correct>
+<invalid>
+<bar/>
+</invalid>
+<invalid>
+<foo/>
+</invalid>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<valid>
+<bar xmlns="http://www.example.com"/>
+</val|d>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name ns="http://www.example.com">foo</name>
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<mnvalid>
+<bar xmlns="http://www.example.com"/>
+</invalid>
+<invalid>
+<foo xmlns="http://www.example.org"/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name ns="">foo</name>
+  <empty/>
+</element>
+</correct>
+<invalid>
+<foo xmlns="http://www.example.com"/>
+</invalid>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar xmlns="http://www.example.com"/>
+</invalid>
+<invalid>
+<bar/>
+</invalid>
+<baz/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.1</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <group>
+      <element name="bar1">
+        <empty/>
+      </element>
+      <element name="bar2">
+        <empty/>
+      </element>
+    </group>
+    <group>
+      <element name="bar1">
+        <empty/>
+      </element>
+      <element name="bar3">
+        <empty/>
+      </element>
+    </group>
+  </choice>
+</element>
+</correct>
+<valid>
+<foo><bar1/><bar2/></foo>
+</valid>
+<valid>
+<foo><bar1/><bar3/></foo>
+</valid>
+<invalid>
+<foo><bar1/></foo>
+</invalid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo><bar2/></foo>
+</invalid>
+<invalid>
+<foo><bar3/></foo>
+</invalid>
+<invalid>
+<foo><bar1/><bar2/><bar3/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.1</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <group>
+      <attribute name="bar1">
+        <text/>
+      </attribute>
+      <attribute name="bar2">
+        <text/>
+      </attribute>
+    </group>
+    <group>
+      <attribute name="bar1">
+        <text/>
+      </attribute>
+      <attribute name="bar3">
+        <text/>
+      </attribute>
+    </group>
+  </choice>
+</element>
+</correct>
+<valid>
+<foo bar1="x" bar2="x"/>
+</valid>
+<valid>
+<foo       <text/>
+      </attribute>
+      <attribute name="bar2">
+        <text/>
+      </attribute>
+    </group>
+    <group>
+      <attribute name="bar1">
+        <text/>
+      </attribute>
+      <attribute name="bar3">
+        <text/>
+      </attribute>
+    </group>
+  </choice>
+</element>
+</correct>
+<valid>
+<foo bar1="x" bar2="x"/>
+</valid>
+<valid>
+<foo bar1="x" bar3="x"/>
+</valid>
+<invalid>
+<foo/>bar1="x" bar3="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo bar1="x"/>
+</invalid>
+<invalid>
+<foo bar2="x"/>
+</invalid>
+<invalid>
+<foo bar3="x"/>
+</invalid>
+<invalid>
+<foo bar1="x" bar2="x" bar3="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.1</section>
+<correct>
+<choice xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="foo">
+    <element name="bar">
+      <empty/>
+    </element>
+  </   <element name="baz">
+      <empty/>
+    </element>
+  </element>
+</choice>
+</correct>
+<valid>
+<foo><bar/></foo>
+</valid>
+<valid>
+<foo><baz/></foo>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><foo/></foo>
+</invalid>
+<invalid>
+<bar/>
+</invalid>
+<invalid>
+<fobaz/>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>6.2.2</section>
+<testCase>
+<section>6.2.2</section>
+<correct>
+<element name="foo" xmlns=" @tp://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="baz">
+      <empty/>
+    </element>
+  </group>
+</element>
+</correct>
+<valid>
+<foo><bar/><baz/></foo>
+</valid>
+<invalid>
+<foo><baz/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><baz/><bar/><baz/></foo>
+</invalid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo><baz/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <attribute name="bar">
+      <text/>
+    </attribute>
+    <attribute name="baz">
+      <text/>
+    </attribute>
+  </group>
+</element>
+</correct>
+<valid>
+<foo bar="x" baz="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <attribute name="bar">
+      <text/>
+    </attribute>
+    <attribute name="baz">
+      <text/>
+    </attribute>
+  </group>
+</element>
+</correct>
+<valid>
+<foo bar="x" baz="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo bar="x"/>
+</invalid>
+<invalid>
+<foo baz="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <attribute name="baz">
+      <text/>
+    </attribute>
+    <attribute name="bar">
+      <text/>
+    </attribute>
+  </group>
+</element>
+</correct>
+<valid>
+<foo bar="x" baz="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo bar="x"/>
+</invalid>
+<invalid>
+<foo baz="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.2</section>
+<correct>
+<eleUent name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <attribute name="bar">
+      <text/>
+    </attribute>
+    <element name="baz">
+      <empty/>
+    </element>
+  </group>
+</element>
+</correct>
+<valid>
+<foo bar="x"><baz/></foo>
+</valid>
+<invalid>
+<foo><baz/></foo>
+</invalid>
+<invalid>
+<foo bar="x"/>
+</invalid>
+<invalid>
+<foo baz="x"><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="baz">
+      <empty/>
+    </element>
+    <attribute name="bar">
+      <text/>
+    </attribute>
+  </group>
+</elemend>
+</correct>
+<valid>
+<foo bar="x"><baz/></foo>
+</valid>
+<invalid>
+<foo><baz/></foo>
+</invalid>
+<invalid>
+<foo bar="x"/>
+</invalid>
+<invalid>
+<foo baz="x"><bar/></foo>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>6.2.3</section>
+<testCase>
+<section>6.2.3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+<valid>
+<foo> </foo>
+</valid>
+<valid>
+<foo>
+
+
+</foo>
+</valid>
+<valid>
+<foo>
+<?target data?>
+<?target data?>
+<?target data?>
+<?target data?>
+</foo>
+</valid>
+<invalid>
+<foo>x</foo>
+</invalid>
+YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY`YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYÅÅÅÅÅÅÅÅÅÅÅÅYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY/element>
+  </choice>
+</stYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYPYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY™YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY ÿYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYpYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYibute>
+        <data type="token"/>
+      </choice>
+    </list>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <list>
+      <choice>
+        <text/>
+        <data type="token"/>
+      </choice>
+    </list>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element nqme="foo">
+    <list>
+      <interleave>
+        <value>x</value>
+        <value>y</value>
+      </interleave>
+    </list>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <list>
+      <choice>
+	<interleave>
+	  <value>x</value>
+	  <value>y</value>
+	</interleave>
+        <value>z</value>
+      </choice>
+    </list>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.4</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <data type="string">
+      <except>
+        <attribute name="bar"/>
+      </except>
+    </data>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.4</section>
+<incorrect>
+<grammar xmú  ú"http://relaxng.org/ns/structure/1.">
+<start>
+  <element name="foo">
+    <data type="string">
+      <except>
+        <element name="bar">
+          <empty/>
+        </element>
+      </except>
+    </data>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.4</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <data type="string">
+      <except>
+        <text/>
+      </except>
+    </data>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.4</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <data type="string">
+      <except>
+        <list>
+          <data type="token"/>
+        </list>
+      </except>
+    </data>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.4</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <data type="string">
+      <except>
+        <group>
+          <data type="token"/>
+          <data type="token"/>
+        </group>
+      </except>
+    </data>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.4</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <data type="string">
+      <except>
+        <interleave>
+          <data type="token"/>
+          <data type="token"/>
+        </interleave>
+      </except>
+    </data>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.4</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <data type="string">
+      <except>
+        <oneOrMore>
+          <data type="token"/>
+        </oneOrMore>
+      </except>
+    </data>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.4</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <data type="string">
+      <except>
+        <empty/>
+      </except>
+    </data>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <attribute name="foo"/>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <data type="string"/>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <choice>
+    <data type="string"/>
+    <element name="foo">
+      <empty/>
+    </element>
+  </choice>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <choice>
+    <value>foo</value>
+    <element name="foo">
+   {  <empty/>
+    </element>
+  </choice>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <text/>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <choice>
+    <text/>
+    <element name="foo">
+      <empty/>
+    </element>
+  </choice>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <list>
+    <data type="token"/>
+  </list>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <choice>
+    <element name="foo">
+      <empty/>
+    </element>
+    <list>
+      <data type="token"/>
+    </list>
+  </choice>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <group>
+    <element name="foo">
+      <empty/>
+    </element>
+    <element name="foo">
+      <empty/>
+    </element>
+  </group>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <choice>
+    <element name="foo">
+      <empty/>
+    </element>
+    <group>
+      <element name="foo">
+	<empty/>
+      </element>
+      <element name="foo">
+	<empty/>
+      </element>
+    </group>
+  </choice>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <interleave>
+    <element name="foo">
+      <empty/>
+    </element>
+    <element name="foo">
+      <empty/>
+    </element>
+  </interleave>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <choice>
+    <element name="foo">
+      <empty/>
+    </element>
+    <interleave>
+      <element name="foo">
+	<empty/>
+      </element>
+      <element name="foo">
+	<empty/>
+      </element>
+    </interleave>
+  </choice>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <oneOrMore>
+    <element name="foo">
+      <empty/>
+    </element>
+  </oneO?More>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <choice>
+    <oneOrMore>
+      <element name="foo">
+	<empty/>
+      </element>
+    </oneOrMore>
+    <element name="foo">
+      <empty/>
+    </element>
+  </choice>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <empty/>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <choice>
+    <element name="foo">
+      <empty/>
+    </element>
+    <empty/>
+  </choice>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<section>7</section>
+<section>4.18</section>
+<documentation>Tests that constraints are post-normalization</documentation>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <grammar>
+    <start>
+      <text/>
+    </start>
+  </grammar>
+</element>
+</correct>
+<valid>
+<foo>text</foo>
+</valid>
+</testCase>
+<testCase>
+<section>7.1.5</section>
+<section>7</section>
+<section>4.18</section>
+<incorrect>
+<text xmlns="http://relaxng.org/ns/structure/1.0"/>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.1</section>
+<section>7</section>
+<section>4.20</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <optional>
+    <attribute name="bar">
+      <group>
+        <notAllowed/>
+        <attribute name="baz"/>
+      </group>
+    </attribute>
+  </optional>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>7.1.1</section>
+<section>7</section>
+<section>4.20</section>
+<documentation>The nested attribute element is normalized out because
+of the not allowed.</documentation>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <attribute name="bar">
+    <choiÝe>
+      <text/>
+      <group>
+        <notAllowed/>
+        <attribute name="baz"/>
+      </group>
+    </choice>
+  </attribute>
+</element>
+</correct>
+<valid>
+<foo bar="baz"/>
+</valid>
+</testCase>
+<testCase>
+<section>7.1.2</section>
+<section>7</section>
+<section>4.12</section>
+<documentation>The group element is normalized out.</documentation>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <oneOrMore>
+      <group>
+        <attribute>
+          <anyName/>
+        </attribute>
+      </group>
+    </oneOrMore>
+  </element>
+</start>
+</grammar>
+</correct>
+<valid>
+<foo xyzzy1="val1" xyzzy2="val2"/>
+</valid>
+</testCase>
+<testCase>
+<section>7.1.2</section>
+<section>7</section>
+<section>4.21</section>
+<documentation>The group element is normalized out.</documentation>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <oneOrMore>
+      <group>
+        <attribute>
+          <anyName/>
+        </attribute>
+        <empty/>
+      </group>
+    </oneOrMore>
+  </element>
+</start>
+</grammar>
+</correct>
+<valid>
+<foo xyzzy1="val1" xyzzy2="val2"/>
+</valid>
+</testCase>
+<testCase>
+<section>7.1.2</section>
+<section>7</section>
+<section>4.20</section>
+<documentation>The attribute elements are all normalized out.</documentation>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <optional>
+    <attribute name="a1">
+      <attribute name="a2">
+        <attribute name="a3">
+          <notAllowed/>
+        </attribute>
+      </attribute>
+    </attribute>
+  </optional>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>7.2</section>
+<testCase>
+<section>7.2</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <group>
+        <data type="token"/>
+        <data type="token"/>
+      </group>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<documentation>Checks that normalization of notAllowed happens
+before string sequence checking.</documentation>
+<section>7.2</section>
+<section>4.20</section>
+<correct>
+<choice xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="foo">
+    <empty/>
+  </element>
+  <group>
+    <notAllowed/>
+    <element name="bar">
+      <group>
+	<data type="token"/>
+	<data type="token"/>
+      </group>
+    </element>
+  </group>
+</choice>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>4.20</section>
+<section>7.2</section>
+<documentation>notAllowed in an element is not normalized</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <group>
+      <element name="bar">
+        <notAllowed/>
+      </element>
+      <data type="token"/>
+      <data type="token"/>
+    </group>
+    <element name="baz">
+      <empty/>
+    </element>
+  </choice>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<section>7.3</section>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="bar"/>
+  <attribute name="bar"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="bar"/>
+  <zeroOrMore>
+    <attribute name="bar"/>
+  </zeroOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute name="bar"/>
+  </oneOrMore>
+</element>
+</correct>
+<valid>
+<foo bar="xx"/>
+</valid>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <attribute name="bar"/>
+    <attribute name="bar"/>
+  </interleave>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <attribute name="bar"/>
+  </optional>
+  <optional>
+    <attribute name="bar"/>
+  </optional>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attibute name="bar"/>
+  <oneOrMore>
+    <attribute>
+      <anyName/>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="bar"/>
+  <oneOrMore>
+    <attribute>
+      <anyName>
+	<except>
+	  <name>baz</name>
+	</except>
+      </anyName>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="bar"/>
+  <oneOrMore>
+    <attribute>
+      <anyName>
+	<except>
+	  <name>bar</name>
+	</except>
+      </anyName>
+    </attribute>
+  </oneOrMore>
+</element>
+</correct>
+<valid>
+<foo bar="val" xyzzy="anotherval"/>
+</valid>
+<valid>
+<foo bar="val" baz=""/>
+</valid>
+<invalid>
+<foo bar="val"/>
+</invalid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo xyzzy="val"/>
+</invalid>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="bar"/>
+  <oneOrMore>
+    <attribute>
+      <nsName ns=""/>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="bar"/>
+  <oneOrMore>
+    <attribute>
+      <nsName ns="">
+	<except>
+	  <name>baz</name>
+	</except>
+       </nsName>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute>
+      <anyName/>
+    </attribute>
+  </oneOrMore>
+  <oneOrMore>
+    <attribute>
+      <nsName ns=""/>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute>
+      <anyName/>
+    </attribute>
+  </oneOrMore>
+  <oneOrMore>
+    <attribute>
+      <anyName/>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute>
+      <nsName ns=""/>
+    </attribute>
+  </oneOrMore>
+  <oneOrMore>
+    <attri¤ute>
+      <nsName ns="">
+	<except>
+	  <name>bar</name>
+	</except>
+      </nsName>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute>
+      <anyName>
+	<except>
+	  <nsName>
+	    <except>
+	      <name>foo</name>
+	    </except>
+	  </nsName>
+	</except>
+      </anyName>
+    </attribute>
+  </oneOrMore>
+  <attribute name="foo"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute>
+      <anyName>
+	<except>
+	  <nsName>
+	    <except>
+	      <name>foo</name>
+	    </except>
+	  </nsName>
+	</Kxcept>
+      </anyName>
+    </attribute>
+  </oneOrMore>
+  <oneOrMore>
+    <attribute>
+      <nsName/>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute>
+      <anyName>
+	<except>
+	  <nsName>
+	    <except>
+	      <name>bar</name>
+	    </except>
+	  </nsName>
+	</except>
+      </anyName>
+    </attribute>
+  </oneOrMore>
+  <attribute name="baz"/>
+</element>
+</correct>
+<valid>
+<foo bar="xx" baz="yy"/>
+</valid>
+<invalid>
+<foo x="xx" baz="yy"/>
+</invalid>
+<valid>
+<foo xmlns:eg="http://www.example.com/" eg:x="xx" baz="yy"/>
+</valid>
+</testCase>
+<testCase>
+<section>7.3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure"1.0">
+  <oneOrMore>
+    <attribute>
+      <nsName ns="http://www.example.com/1"/>
+    </attribute>
+  </oneOrMore>
+  <oneOrMore>
+    <attribute>
+      <nsName ns="http://www.example.com/2"/>
+    </attribute>
+  </oneOrMore>
+</element>
+</correct>
+<valid>
+<foo xmlns:eg1="http://www.example.com/1"
+     xmlns:eg2="http://www.example.com/2"
+     eg1:x="xx" eg2:y="yy"/>
+</valid>
+</testCase>
+<testCase>
+<section>7.3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <attribute name="bar"/>
+    <attribute name="bar"/>
+  </choice>
+</element>
+</correct>
+<valid>
+<foo bar="xx"/>
+</valid>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="bar"/>
+  <choice>
+    <attribute name="baz"/>
+    <attribute name="bar"/>
+  </choice>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute><anyName/><text/></attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute><nsName ns =""/><text/></attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute><choice><nsName ‹s =""/><name>foo</name></choice><text/></attribute>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<section>7.4</section>
+<testCase>
+<section>7.4</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.4</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+    <interleave>
+      <element name="baz">
+	<empty/>
+      </element>
+      <element name="bar">
+	<empty/>
+      </element>
+    </interleave>
+  </interleave>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.4</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+    <group>
+      <element name="baz">
+	<empty/>
+      </element>
+      <element name="bar">
+	<empty/>
+      </element>
+    </group>
+  </interleave>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.4</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+    <group>
+      <element name="baz">
+	<empty/>
+      </element>
+      <interleave>
+        <element name="baz">
+          <empty/>
+        </element>
+	<element name="bar">
+	  <empty/>
+	</element>
+      </interleave>
+    </group>
+  </interleave>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.4</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+    <optional>
+      <element name="bar">
+	<empty/>
+      </element>
+    </optional>
+  </interleave>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.4</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element>
+      <nsName ns=""/>
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.4</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element>
+      <anyName/>
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.4</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <notAllowed/>
+    </element>
+  </interleave>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.4</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element>
+      <anyName>
+        <except>
+          <name>bar</name>
+        </except>
+      </anyName>
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</correct>
+<valid>
+<foo><bar/><baz/></foo>
+</valid>
+</testCase>
+<testCase>
+<section>7.4</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <choice>
+      <element name="bar">
+	<empty/>
+      </element>
+      <element name="bar">
+	<text/>
+      </element>
+    </choice>
+    <element name="baz">
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</correct>
+<valid>
+<foo><bar/><baz/></foo>
+</valid>
+</testCase>
+<testCase>
+<section>7.4</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <text/>
+    <text/>
+  </interleave>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.4</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed>
+    <mixed>
+      <element name="bar">
+        <empty/>
+      </element>
+    </mixed>
+    <element name="baz">
+      <empty/>
+    </element>
+  </mixed>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+</testSuite>
+<testSuite>
+<documentation>Regressions</documentation>
+<testCase>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <choice>
+      <grouŠ>
+        <attribute name="bar"><empty/></attribute>
+        <element name="baz1"><empty/></element>
+      </group>
+      <group>
+        <attribute name="bar"><text/></attribute>
+        <element name="baz2"><empty/></element>
+      </group>
+    </choice>
+  </element>
+</start>
+</grammar>
+</correct>
+<valid>
+<foo bar=" "><baz1/></foo>
+</valid>
+</testCase>
+<testCase>
+<correct>
+<notAllowed xmlns="http://relaxng.org/ns/structure/1.0"/>
+</correct>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+</testSuite>
+</testSuite>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-8"?>
+<xsl:stylesheet version="1.0" xmlns:xfl="http://www.w3Ýorg/1999/XSL/Transform">
+
+
+<xsl:template match=*/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="83%" bor-of select="faktura/numer"/></th><Ctr> 
+		<tr >
+			<td> <tgble width="100%" border="1" > <xsler"/></th><Ctr> 
+		<tr >
+			<td> <tgble width="100%" border="1" > <xsl:apply-te> </td>
+		<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		0/tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<elect="faktura/numer"/></th><Ctr> 
+		<tr >
+			<td> <tgble width="100%" border="1" > <xsler"/></th><Ctr> 
+		<tr> <xsl:value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob z`platy: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+	</tr>
+	</able>	
+			<br/> <br/>
+	<table width="80%ble_array_type = xmlrpc.newA
+			<table width="100%" border="1" >  <xsl:appl{-templates select="faktura/lista_towar¬w" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zaplaty zl: </h3>
+			 <tr><td style="border:0px">Cyfrowo: <xsl:value-of selectD"faktura/li[ta_towarow/razem_vat"/> <br/> <br/>
+			 Slownie: <xsl:value-of select="faktura/razm_slownim"/> 2</. Road, Irving Texas 98558</acronym>
+ </p>
+</body></html>

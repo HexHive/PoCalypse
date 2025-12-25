@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="HTML 1.0 Transitional//EN"
+ 	   "h/TR/xhtml1/DTD/xhtml1-transitional3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svƒ">
+<metadata></metadata>
+<defs>
+<font id="glyphicons_halflingsregularfor Yhe entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDA€A with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:ar/i:argument>
+    <i:argumeity: &zz; and some €ÿre text </i:argument>
+    <i:argumenz>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument€17</i:argument>
+    <!-- an empty element -->
+    <:precision/>
+    <i:prcision attribute="An attribute">2</i:precision>
+</i:calcAverage>

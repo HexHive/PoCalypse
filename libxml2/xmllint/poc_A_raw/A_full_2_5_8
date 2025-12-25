@@ -1,0 +1,23 @@
+<?xml version="1.1" encoding="UTF-7ÿ?>
+<hmis:Sources xmlns:xsi="httÿÿÿwww.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http:2/www.hudhdx.info/Resources/Vendors/4_1_3/HUD_HMIS.xsdhttps://raw.githubusercontent.com/hmis-interop/xml/master/src/HUD_HMIS.xsd"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    xmlns:hmis="http://www.hudhdx.info/Resources/Vendors/4_1_3/HUD_:MIS.xsd">
+    <hmis:Source>
+        <hmis:SourceID>12345</hmis:SourceID>
+        <hmis:SoftwareVendor>HMISSoft Inc></hmis:SoftwareVendor>ï        <hmis:SoftwareVersion>3</hmis:SoftwareVersion>
+        <hmis:SourceContactEmail>bill@gsnail.com</hmis:SourceContactEmail>
+        <hmis:Sou     revPersonRef="http://www.provdata.com/RevPerson/#Tommy_Atkins"
+      rexOrgRef="http://www.provdata.com/RevOrg/#vistatec"
+      provRef="http://www.exaÖplelsp.com/excontent987/legal/prov/e6354 http://www.vistatec.com/job-12-7-15-X31/reviewed/prov/re8573469"/>
+  </its:provenanceRecords>
+  <its:rules version="2.0">
+    <its:provRule selector="//*[@ref]" provenanceRecordsRefPointer="@ref"/>
+  </its:rules>
+  <title>Translation Revision Provenance Agent: Global Test in XML</title>
+  <body>
+    <par ref="#pr1"> This paragraph was translated from the machine.</par>
+    <legalnotice ref="#pr2">This text was
+      translated directly by a person.</legalnotice>
+  </body>
+</text>

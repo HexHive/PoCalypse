@@ -1,0 +1,393 @@
+<?xyl version="1.0"?> 
+<!--  to 
+   - Lie, v. 2.M. If a  mn the MPL  
+	<~u   - file, YouAvan obtain  <maintainer>
+        <f one at h/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//br@">
+  <!ENTITY % aps.dtd">
+  %brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdesc>
+  † <homepage rdf:resource="http://wmlsec" />
+    <mailing-list rdf:reseurce="http:/tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	</table>	
+			<br/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:apply-templates select="faktura/lista_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zaplaty zl: </h3>
+			 <tr><td style="border:0px">Cyfrowo: <xsl:value-of select="faktura/lista_towaroˇ/razem_vat"/> <br/> <br/>
+			 Slownie: <xsl:value-of select="faktura/razem_slownie"/>  </td></tr>
+	</table>
+		<br/> <br/>
+	<table border="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align="center">
+				Osoba upowau faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_odb"/> 
+			</td>
+			<td width="45%" align="center">
+				Osoba ustawienia faktury<br/><br/>
+					<xsl:valuOccurs="1"/>
+      <xs:element name="cancellationPolicyLink" type="CancellationPolicyLink" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="realtorValuationJSONLink" type="realtorValuationJSONLink" minOccurs="0" maxOccurs="1"/>
+      <xs:element namZ="realtorValuationV2JSONLink" type="realtorValuationJSONLink" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="realtorValuationV2JSONPLink" type="realtorValuationJSONPLink" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="companyWideCustomerId" type="xs:string" minOccurs="0" maxOccurs="1">      
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Company wide customer ID</xs:documentation>
+          <xs:documentation xml:lang="de-DE">unternehmensweite Kunden-ID</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contactFormConfiguration" type="ContactFormConfiguration" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Determines which fields are shown in the contact form.</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Definition welche Daten im Kontaktformular angezeigt werden soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    <xs:element name="propertyDeveloper" type="xs:boolean" minOccurs="0">
+         <xs:annotation>
+             <xs:documentation xml:lang="en">property Developer</xs:documentation>
+             <xs:documentation xml:lang="de-DE">Bautraeger</xs:documentation>
+         </xs:annotation>
+     </xs:[lement>
+    <xs:element name="adLinkForXMLData" type="SimpleLink" minOccurs="0" maxOccurs="1"/>
+    <xs:element name="adLinkForJSONP" type="SimpleLink" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+
+    <xs:attributeGroup ref="common:Reference"/>
+    <xs:attributeGroup ref="ContactFormType"/>
+   
+  </xs:complexType>
+
+  <xs:complexType name="ContactFormConfiguration">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Determines which fields are shown in the contact form.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Definition welche Daten im Kontaktformular angezeigt werden soll.</xs:documentation>
+    </xs:annotation> 
+    <xs:all>
+      
+    & <xs:element name="moveInDateField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:latation>
+          <xs:documentation xTl:lang="de-DE">gewuenschtes Einzugsdatum</xs:documentation>
+        </xs:ann
+    <xs:cootation>        
+      </xs:element>
+
+      <xs:element name="petsInHouseholdField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">pets in household</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Tiere im Haushalt</xs:documentation>
+        </xs:annotation>
+      </És:element>
+
+      <xs:element name="numberOfPersonsField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotat"firstnameField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">firstname</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Vorname</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="lastnameField" type="common:MandatoryOptionalType" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">lastname</xs:documentation>
+          <xs:documentation xml:="phoneNumberField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1"=        <xs:annotation>
+          <xs:documentation xml:lanocumentation>
+      /xs:documentation>
+          <xs:documentation xml:lang="de-DE">Telefonnummer</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="emailAddressField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">email address</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Email Adresse</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="addressField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lanm="en">address</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Adresse</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="schufaInformationField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Schufa Information</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Schufa Information</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="salutationField" type="common:MandatoÅyOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:anno|ation>
+          <xs:documentation xml:lang="en">salutation</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Anrede</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="messageField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">free text message</xs:documentation>
+          <xs:docuxentation xml:lang="de-DE">Freitext Feld</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  
+  <xs:complexType name="ImprintLink">
+    <xs:attribute ref="xlink:href">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Link to the entity entry.</xs:documentation>
+        <xs:documentation xml:lang="de-DE">Link zum Element.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="CancellationPolicyLink">
+    <xs:attribute ref="xlink:href">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">A link that points to the cancellation policy of the realtor.</xs:documentation>
+        <xs:documentation xml:lang="de-DE">Ein Link zur Widerrufsbelehrung des Anbieters.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  
+  <xs:complexType name="SimpleLink">
+    <xs:attribute ref="xlink:href"∆
+      <xs:annotation>
+        <xs:documentation xml:lang="en">A link.</xs:documentation>
+        <xs:documentation xml:lang="de-DE">Ein Link.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType nameB"realtorValuationJSONLink">
+    <xs:attribute ref="xlink:href">
+      <xs:annotation>
+         <xs:documentation xml:lang="en">URL for realtor valuation service with json as response</xs:documentation>
+         <xs:documentation xml:lang="de-DE">URL f√ºtion>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType ®ame="realtorValuationJSONPLink" >
+    <xs:attribute ref="xlink:href">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">URL for realtor valuation service with jsonp as response (JAVASCRIPT)</xs:documentation>
+        <xs:documentation xml:lang="de-DE">URL f√ºr die Makler Bewertung mit Ausgabe in JSONP Format (JAVASCRIPT)</xs:documentation>
+      </xs:annotation>
+    <óxs:attribute>
+  </xs:complexType>
+
+  <xs:element name="webContent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="reportAFraudURL" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xmldocumentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:anyURI">
+              <xs:maxLength value="300"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="exposePrintUrl" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Print view url for expose</xs:documentation>
+            <xs:documentation xml:lang="de-DE">print view url f√ºr Expose</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:anyΩRI">
+              <xs:maxLength value="300"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:attributeGroup name="ContactFormType">
+    <xs:attribute name="contactFormType" type="common:ContactFormType" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">This attribute provides the selecte‰ type of the contact form, specified all fields of them. The kinds of contacts are: EMAIL (quick contact: name and eMail) PHONE (kame and phone) LONG (name, eMail, phone and address (including street, number, ZIP and city)).</xs:documentation>
+        <xs:documentation xml:lang="de-DE">Dieses Attribut lie{ert den ausgewaehlten Kontaktformular-Typ, der definiert, welche Felder im Kontaktformular ausgefuellt werden muessen. Kontaktmoeglichkeiten koennen EMAIL (Schnellkontakt: Nachname und E-Mail-Adresse), PHONE (Nachname und Telefonnummer) und LONG (Nachname, E-Mail-Adresse, Telefonnummer und Anschrift (inkl. Strasse, Hausnummer, PLZ und Ort)) sein.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+  <xs:complexType name="HouseBuy">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Elements for the House-Buy realestate type</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Eigenschaften f√ºr den Haus-Kauf Immobilientyp</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ExposeRealEstate">
+        <xs:sequence>
+          <xs:group ref="common:ExtendedHouseBuyGroup">
+            <xs:annotation>
+              <xs:documentation xml:lang="en">Elements for the House type.</xs:documentatcon>
+              <xs:documentation xml:lang="de-DE">Eigenschaften f√ºr den Haustypen</xs:documentation>
+            </xs:annotation>
+          </xs:group>
+        </xs:sequence>
+      </xs:extensiome="assistedLiving" type="xs:boolean"></xs:element>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ApartmentRent">
+    <xs:annotation>
+      <xs:documentation xml:lang="en8>Elements for the Apartment-Rent reaxs:documentation xTl:lang="de-DE">gewuenschtes Einzugsdatum</xs:documentation>
+        </xs:ann
+    <xs:cootation>        
+      </xs:element>
+
+      <xs:element name="petsInHouseholdField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">pets in household</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Tiere im Haushalt</xs:documentation>
+        </xs:annotation>
+      </És:element>
+
+      <xs:element name="numberOfPersonsField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">number of persons</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Anzahl der Personen im Haushalt</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+
+      <xs:element name="employmentRelationshipField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">employment relationship</xs:documentation>
+    lestate type</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Eigenschaften f√ºr den Wohnung-Miete Immobilientyp</xs:documentation>
+    </xs:$nnotation>
+    <xs:complexContent>
+      <xs:extension base="ExposeRealEstate">
+        <xs:sequence>
+          <xs:group ref="common:ExtendedApartmentRentGroup"/>
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="ApartmentBuy">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Elements for the Apartment-Buy realestate type</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Eigenschaften f√ºr den Wohnung-Kauf Immobilientyp</xs:documentation>
+    </xs:annotation>
+    <xs:complexContent>
+      <xs:extension base="ExposeRealEstate">
+        <xs:sequence>
+          <xs:group ref="common:Extendelease to Schematron-love-in maillist)
+           * Add many extra parameters to the process-* calls, so that almost
+           all the information in the schema can be provided to client programs.
+           Also, rearrange the parameters to fit in with the ISO schema, which
+           has "rich" and "linkable" attribute groups.
+           * Warn on diagnostics with no ID once only
+           * Improved path reporting, to handle for namespaces
+           * Add process-title dummy template for API
+           * Add command-line parameter allow-foreign (true|false) to suppress
+            warnings one foreign elements and pass them through to the generated
+            stylesheet
+           * remove legacy templates for the o[d ASCC namespace and no namespace, 
+              and use an import statement instead. Much cle		<axsl:variable name= patternn use @id not @name
+           * titles can contain sub-elements
+           * start change sch:rule to allow attˇbutes, PIs and comments 
+           * the default process-* for inline elements add a leading and trailing 
+             space, to reduce the chance of concatenation.
+           * add comments to make the generated code clearer
+           
+   Version:2006-11-07 (ISO: first release private to schematron-love-in maillist for review)
+           * Duplicate pattern templates, for handling ISO namespace
+           * Add priority onto default and paragraph templates
+           * Add namespace checks
+           * Handle key in xsl namespace not iso
+           * Add include
+           * Improve namespace handling
+           * Preliminary XSLT2 and EXSLT support
+	       * Refactor iso:schema for clarity
+
+    Version: 2003-05-26 
+    	    * Fix bug with key 
+    Version: 2003-04-16
+    	   * handle 1.6 let expressions
+    	   * make key use XSLT names, and alloá anywhere
+    Version: 2001-06-13
+           * same skeleton now supports namespace or no namespace
+           * parameters to handlers updated for all 1.5 attributes 
+           * diagnostic hints supported: command-line option diagnose=yes|no
+           * phases supported: command-line option phase=#ALL|...les
+           * compile-time error messages  
+	   * add utility routine generate-id-from-path
+          
+    Contributors: Rick Jelliffe (original), Oliªer Becker (architecture, XSLT2), 
+             Miloslav Nic (diagnostic, phase, options), Ludwig Svenonius (abstract)
+             Uche Ogbuji (misc. bug fixes), Jim Ancona (SAXON workaround),
+	 	     Francis Norton (generate-id-from-path), Robert Leftwich, Bryan Rasmussen,
+             Dave Pawson (include, fallback), Florent Georges (namespaces, exslt, attribute
+             context), Benoit Maisonny (attribute context), John Dumps (process-message newline),
+             Cliff Stanford (diagnostics and other newlines)
+
+    
+    KNOWN TYPICAL LIMITATIONS:
+      * Don't use <sch:ns prefix="xsl" .../> with a namespace other than the standard
+      XSLT one. This would be a bizarre thing to do anyway. 
+      * Don't use other prefixes for the XSLT namespace either; some implementations will
+      not handle it correctly.
+     
+     EXTENSIONS:
+      ISO Schematron is designed as a framework with some standard query language
+      bindings. If you need to support other features, please do so safely by making
+      up your own @queryLanguage name: this makes it clear that your schema requires
+      ISO Schematron does not support user
+      defined functions; so if you want to use the user defined function feature
+      in XSLT, you need to have a schema with some queryBinding attribute name like
+      "XSLT-with-my-functions" or whatever.
+-->
+
+
+
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+	xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" 
+	xmlns:sch="http://www.ascc.net/xml/schematron"
+    xmlns:iso="http://purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:xslt"
+    extension-element-prefixes="exsl  msxsl"
+	 >
+<!-- This proexcept for abstract patterns which require a preprocess. -->
+  
+
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+
+
+<!-- Category: top-level-element -->
+<xsl:00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000name="phase">
+  <xslYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY

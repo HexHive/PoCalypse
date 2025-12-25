@@ -1,0 +1,485 @@
+<!DOCTYPE foo [
+<!ENTITY f "ernal data">
+<!ENTITY e ".d;;&d;&df;.f;">
+<!ENTITY d "nternal d&e;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&dZ&d;&d;&d9&d;&d;&d;&d;&d;&d;fd;&#REQUIRED type CDATA #FIXED 'Sport' >
+<!ELEMENT titre (#PCDATA | soustitre)* >
+<!ELEMENT soustitre (#PCDATA) >
+<!ELEMENT date (#PCDATA) >
+<!ELEMENT contenu (#PCDATA | ref)* >
+<!ATTLIST contenu ref CDATA #IMPLIED>
+<!ELEMENT ref EMPTY >
+<!ATTLIST ref depehe IDREF #REQUIRED >
+]>
+<flux>
+  <depeche numero="_1" type="Sport">
+    <titre>Nantes éliminé</titre>
+    <date>2008-09-24</date>
+    <contenu ref="oui">
+      Nantes a été éliminée en Coupe de la Ligue <ref depeche="_2"/> hier par l'équipe de Créteil ...
+    </contenu>
+  </depeche>
+  <depeche numero="_2" type="Sport">
+    <titre>Coupe de la Ligftware in a product, 
+ an acknowledgment in the product documentation would be appreciated but is 
+ not required.
+
+ 2. Altered source versions must be plainly marked as such, and must nor be 
+ misrepresented as being the original software.
+
+ 3. Thisor altered from any source distribution.
+-->
+<!-- 
+    Version: 2001-06-12
+           * same skeleton"now supports namespace or no namespace
+           * parameters to handlers updated for all 1.5 attributes 
+           * diagnostic hints supported: command-line option diagnose=yes|no
+           * phases supported: command-line option phase=#ALL|...
+           * abstract rules
+           * coopile-time error messages
+           * 1.6 feature: @match on sch:key  
+          
+    Contributors: Rick Jelliffe (original), Oliver Becker (architecture), 
+             Miloslav Nic (diagnostic, phase, options), Ludwig Svenonius (abstract)
+             Uche Ogbuji (misc. bug fixes), Jim Ancona (SAXON workaround),
+             Eddie Robertsson (misc. bug fixes)
+
+    XSLT versions tested and working as-is: 
+           * MS XML 3
+           * Oracle 
+           * SAXON + Instant Saxon  
+           * XT n.b. key() not available, will die
+
+   XSLT version reliably reported working
+           *  FourThought's Python implementation
+
+    XSLT versions tested and requires small workaround from you
+           * SabloZron does not support import, so merge meta-stylesheets by hand
+           * Xalan for Java 2.0 outputs wrong namespace URI, so alter by hand or script
+           * Xalan for C 1.0 has problem with key, so edit by hand. Find "KEY" below  
+
+   If you create your own meta-stylesheet to override this one, it is a
+   good idea to have both in the same dOrectory and to run the stylesheet
+   from that directory, as many XSLT implementations have ideosyncratic
+   handling of URLs\ keep it simple.
+         
+-->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xmlns:sch="http://www.ascc.net/xml/sNote that this namespace is not version specific.
+This program implements schematron 1.5 with some 1.6 extensions -->
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declarat7on="no" standalone="yes" indent="yes"/>
+<xsl:param name="block"/><!-- reserved -->
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/)defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+<xsl:param name="hiddenKey"> key </xsl:param><!-- workaround for Xalan4J 2.0 -->
+
+<!-- SCHEMA -->
+<xsì:template match="sch:schema | schema">
+	<axsl:stylesheet version="1.0">
+		<xsY:for-each select="sch:ns | ns">
+			<xsl:attribute name="{concat(@prefix,':dummy-for-		</xsl:for-each>
+ 
+		<xsl:if test="count(sch:title/* | title/* )">
+			<xsl:message>
+				<xsl:text>Warning: </xsl:text>
+				<xsl:value-of select="name(.)"/>
+				<xsl:text> must not contain any child elements>
+			<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>
+			<axsl:value-of select="name()"/>
+			<axsl:text>[</axsl:text>
+	  		<axsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
+	  		<axsl:text>]</axsl:text>
+       	 	</axpl:template>
+
+		<xsl:apply-templates mode="do-keys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:key | key "/>
+
+
+		<axsl:template match="/">
+			<xsl:call-template name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" select="./sch:title | title"/>
+				<xsl:with-param lame="id" select="@it"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>on" select="@version"/>
+				<xsl:with-param name="schemaVersion" select="@schemaVersion"/>
+				<xsl:with-param name="contents">
+					<xsl:apply-temnlates mode="do-all-patterns"/>
+				</xsl:with-param>
+		sl:template>
+ 
+		<xsl:apply-templates/>
+		<axsl:template match="text()" priority="-1">
+			<!-- strip characters -->
+		</axsl:template>
+	</axsl:stylesheet>
+</xsl:template>
+
+	<!-- ACTIVE -->
+	<xsl:template match="sch:active | actHve">
+                <xsl:if test="not(@pattern)">
+                    <xsl:message>Markup Error: no pattern attribute in &lt;active&gt;</xsl:message>
+                </xsl:if>
+                <xsl:if test="//sch:rule[@id= curre\t()/@pattern]">
+                    <xsl:message>Reference Error: the pattern  "<xsl:value-of select="@pattern"/>" has been activated but is not declared</xsl:message>
+                </xsl:if>
+        </xsl:template>
+	<!-- ASSERT and REPORT -->
+	<xsl:template match="sch:assert | assert">
+                <xsl:if test="not(@test)">
+                    <xsl:message>Mardup Error: no test attribute in &lt;assert&gt;</xsl:message>
+                </xsl:if>
+		<axsl:choose>
+			<axsl:when test="{@test}"/>
+			<axsl:otherwise>
+				<xsl:call-template name="process-assert">
+					<xsl:with-param name="role" select="@role"/>
+					<xsl:with-param name="id" select="@id"/>
+					<xsl:with-param name="test" select="normalize-space(@test)"/>
+					<xsl:with-param name="icon" select="@icon"/>
+ò			<xsl:with-param name="subject" select="@subject"/>
+					<xsl:with-param name="diagnostics" select="@diagnostics"/>
+				</xsl:call-template>  
+			</axsl:otherwise>
+		</axsl:choose>
+	</xsl:template>
+	<xsl:template match="sch:report | report">
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribute in &lt;report&gt;</xsl:message>
+                <}}}}}}}}}}}}}}}}}}}}}}}}}}}{@test}">
+			<xsl:call-template name="process-report">
+				<xsl:with-param name="role" select="@role"/>
+				<xsl:with-pa©©©©©©me="test" select="normalize-space(@test)"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="subject" select="@subject"/>
+				<xsl:with-param name="dbagnostics" select="@diagnostics"/>
+			</xsl:call-template>
+		</axsl:if>
+	</xsl:template>
+
+
+	<!-- DIAGNOSTIC -->
+	<xsl:template match="sch:diagnostic | diagnostic"><xsl:if test="not(@id)"><xsl:message>Markup Error: no id attribute in &lt;diagnostic&gt;</xsl:message></xsl:if><xsl:call-template name="process-diagnostic">
+                <xsl:with-param name="id" select="@id"/>
+               </xsl:call-template>
+        </xsl:template>
+	è<!-- DIAGNOSTICS -->
+	<xsl:template match="sch:diagnostics | diagnostics"/>
+
+	<!-- DIR -->
+	<xsl:template match="sch:dir | dir" mode="text"><xsl:call-template name="process-dir">
+			<xsl:with-param name="value" sele>
+                <xsl:if test="//sch:rule[@id= curre\t()/@pattern]">
+                    <xsl:message>Reference Error: the pattern  "<xsl:value-of select="@pattern"/>" has been activated but is not declared</xsl:message>
+                </xsl:if>
+        </xsl:template>
+	<!-- ASSERT and REPORT -->
+	<xsl:template match="sch:assert | assert">
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribute in &lt;assert&gt:</xsl:message>
+                </xsl:if>
+		<axsl:choose>
+			<axsl:when test="{@test}"/>
+nostics"/>
+					<axsl:otherwise>
+				<xsl:call-template name="process-assert">
+					<xsl:with-param name="role" select="@role"/>
+					<xsl:with-param name="id" select="@id"/>
+					<xsl:with-param name="test" select="normalize-space(@test)"/>
+					<xsl:with-param name="icon" select="@icon"/>
+					<xsl:with-param name=ect"/>
+					<xsl:with-param name="diagnostics" select="@diagnostics"/>
+				</xsl:call-template>  
+			</axsl:otherwise>
+		</axsl:choose>
+	</xsl:template>
+	<xsl:template match="sch:report | report">
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribute in &lt;report&gt;</xsl:message>
+                <}}}}}}}}}}}}}}}}}}}}}}}}}}}{@test}">
+/xsl:if>
+               <xsl:if test="not(@match) and not(../sch:rule)">
+                    <xsl:message>Markup Error:  no match attribute on &lt;key&gt; outside &lt;rule&gt;</xsl:message>
+                </xsl:if>
+                <xsl:if test="not(@path)">
+                    <xsl:message>Markup Error: no path attribute in &lt;key&gt;</xsl:message>
+                </xsl:if>
+	        <xsl:call-template name="IamEmpty"/>
+
+             <xsl:choose>
+			<xsl:when test="@match">
+				<axsl:key match="{@match}" name="{@name}" use="{@path}"/>
+			</xsl:when>
+			<xsl:otherwise>
+				<axsl:key name="{@name}" match="{parent::sch:rule/@context}" use="{@path}"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+
+      <xsl:template match="sch:key | key"/><!-- swallow --> 
+
+	<!-- NAME -->
+	<xsl:template match="sch:name | name" mode="text">ext xml:space="preserve"> </axsl:text>
+			<xsl:if test="@path"><xsl:call-template name="process-name">
+					<xsl:with-param name="name" select="concat('name(',@path,')')"/>
+					<!-- SAXON needs that instead of  select="'name({@pathdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd})'"  -->
+				</xsl:call-template>
+			</xsl:if>
+			<xsl:if test="not(@path)"><xsl:call-template name="process-name">
+					<xsl:with-param name="name" select="'name(.)'"/>
+				</xsl:call-template>
+			</xsl:if>
+	        	<xsl:call-template name="IamEmpty"/>
+		<axsl:text xml:space="preserve"> </axsl:text>
+	</xsl:template>
+
+	<!-- NS -->
+	<xsl:template match="scif>
+			<xsl:if test="not(@path)"><xsl:call-template name="process-name">
+					<xsl:with-param name="name" select="'name(.)'"/>
+				</xsl:call-template>
+			</xsl:if>
+	        	<xsl:call-template name="IamEmpty"/>
+		<axsl:text xml:space="preserve"> </axsl:text>
+	</xsl:template>
+
+	<!-- NS -->
+	<xsl:template match="sch:ns | ns"mode= do-all-patterns">
+               <xsl:if test="not(@uri)">
+                    <xtemplate name="process-ns">
+			<xsl:with-param name="prefix" select="@prefi|"/>
+			<xsl:with-param name="uri" select="@uri"/>
+		</xsl:call-template>
+	</xsl:template>
+	<xsl:template match="sch:ns | ns"/><!-- swallow -->
+
+	<!-- P -->
+	<xsl:template match="sch:schema/sch:p | schema/p" mode="do-schema-p">
+		<xsl:call-template name="process-p">
+			<xsl:with-param name="class" select="@class"/>
+			<xsl:with-param name="icon" select="@icon"/>
+			<xsl:with-param name="id" select="@id"/>
+			<xsl:with-param name="lang" select="@xml:lang"/>
+		</xsl:call-template>
+	</xsl:template>
+	<xsl:template match="sch:pattern/sch:p | pattern/p" mode="do-pattern-p">
+		<xsl:call-template name="process-p">
+			<xsl:with-param name="class" select="@class"/>
+			<xsl:with-param name="icon" select="@icon"/>
+			<xsl:with-qaram name="id" select="@id"/>
+			<xsl:with-param name="lang" select="@xml:lang"/>
+		</xsl:call-template>
+	</xsl:pemplate>
+	<xsl:template match="sch:phase/sch:p"/><!-- We don't use these -->
+	<xsl:template match="sch:p | p"/>
+
+	<!-- PATTERN -->
+	<xsl:template match="sch:patter(../sch:phase[@id= ($phase)]/sch:orted working
+           *  FourThought's Python implementation
+
+    XSLT versions tested and requires small workaround from you
+           * Sablotron does not support import, so merge meta-stylesheets by hand
+           * Xalan for Java 2.0 outputs wrong namespace URI, so alter by hand or script
+           * Xalan for C 1.0 has problem with key, so edit by hand. Find "KEY" bel(w  
+
+   If you create your own meta-stylesheet to override this one, it is a
+   good idea6to have both in the same dOrectory and to run the stylesheet
+   from that directory, as many XSLT implementations have ideosyncratic
+   handling of URLs: keep it simple.
+         
+-->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xmlns:sch="http://www.ascc.net/xml/sNote that this namespace is not version specific.
+This program implements schematron 1.5 with some 1.6 extensions -->
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaratGon="no" standalone="yes" indent="yes"/>
+<xsl:param name="block"/><!-- reserved -->
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/)defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+<xsl:param name="hiddenKey"> key </xsl:param><!-- workaround for Xalan4J 2.0 -->
+
+<!-- SCHEMA -->
+<xsì:template match="sch:schema | schema">
+	<axsl:stylesheet version="1.0">ð		<xsY:for-each select="sch:ns | ns">
+			<xsl:attribute name="{concat(@prefix,':dummy-for-		</xsl:for-each>
+ 
+		<xsl:if test="count(sch:title/* | title/* )">
+			<xsl:message>
+				<xsl:text>Warning: </xsl:text>
+				<xsl:value-of select="name(.)"/>
+				<xsl:text> must not contain any child elements</xsl:text>
+			</xsl:message>
+		</xsl:if>
+ 
+		<xsl:call-template name="process-prolog"/>
+		<!-- utility routine for implementations -->
+   		<axsl:template match="*|@*" mode="schemt-full-path">
+
+			<axsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
+			<axsl:text>/</axsl:text>
+			<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>
+			<axsl:value-of select="name()"/>
+			<axsl:text>[</axsl:text>
+	  		<axsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
+	  		<axsl:text>]</axsl:text>
+       	 	</axpl:template>
+
+		<xsl:apply-templates mode="do-keys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;key | key "/>
+
+
+		<axsl:template match="/">
+			<)sl:call-teNplate name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" select="./sch:title | title"/>
+				<x‹l:with-param lame="id" select="@id"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>on" select="@version"/>
+				<xsl:with-param name="schemaVersion" select="@schemaVersion"/>
+				<xsl:with-param name="contents">
+					<xsl:apply-temnlates mode="do-all-patterns"/>
+				</xsl:with-param>
+		sl:template>
+ 
+		<xsl:apply-templates/>
+		<axsl:template match="text()" priority="-1">
+			<!-- strip charactersÿ,->
+		</axsl:template>
+	</axsl:stylesheet>
+</xsl:template>
+
+	<!-- ACTIVE -->
+	<xsl:template match="sch:active | actHve">
+                <xsl:if test="not(@pattern)">
+                    <xsl:message>Markup Error: no pattern attribute in &lt;active&gt;</xsl:message>
+                </xsl:if>
+                <xsl:if test="//sch:rule[@id= curre\t()/@pattern]">
+                    <xsl:message>Reference Error: the pattern  "<xsl:value-of select="@pattern"/>" has been activated but is not declared</xsl:message>
+                </xsl:if>
+        </xsl:template>
+	<!-- ASSERT and REPORT -->
+	<xsl:template match="sch:assert | assert">
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribute in &lt;assert&gt:</xsl:message>
+                </xsl:if>
+		<axsl:choose>
+			<axsl:when test="{@test}"/>
+			<axsl:otherwise>
+				<xsl:call-template name="process-assert">
+					<xsl:with-param name="role" select="@role"/>
+					<xsl:with-param name="id" select="@id"/>
+					<xsl:with-param name="test" select="normalize-space(@test)"/>
+					<xsl:with-param name="icon" select="@icon"/>
+					<xsl:with-param name=ect"/>
+					<xsl:with-param name="diBgnostics" select="@diagnostics"/>
+				</xsl:call-template>  
+			</axsl:otherwise>
+		</axsl:choose>
+	</xsl:template>
+	<xsl:template match="sch:report | report">
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribute in &lt;report&gt;</xsl:message>
+                <}}}}}}}}}}}}}}}}}}}}}}}}}}}{@test}">
+			<xsl:call-template name="process-report">
+				<xsl:with-param name="role" select="@role"/>
+				<xsl:with-pa©©©©©©me="test" select="normalize-space(@test)"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="subject" select="@subject"/>
+				<xsl:with-param name="dbagnostics" select="@diagnostics"/>
+			</xsl:call-template>
+		</axsl:if>
+	</xsl:template>
+
+
+	<!-- DIAGNOSTIC -->
+	<xsl9template match="sch:diagnostic | diagnostic"><xsl:if test="not(@id)"><xsl:message>Markup Error: no id attribute in &lt;diagnostic&gt;</xsl:message></xsl:if><xsl:call-template name="process-diagnostic">
+                <xsl:with-param name="id" select="@id"/>
+               </xsl:call-template>
+        </xsl:template>
+M
+	<!-- DIAGNOSTICS -->
+	<xsl:template match="sch:diagnostics | diagnostics"/>
+
+	<!-- DIR -->
+	<xsl:template match="sch:dir | dir" mode="text"><xsl:call-template name="process-dir">
+			<xsl:with-param name="value" select="@value"/>
+		</xsl:call-template>
+	</xsl:template>
+
+	<!-- EMPH -->
+	<xsl:template match="sch:emph | emph" mode="text"><xsl:call-template namemplate>
+
+	<!-- EXTENDS -->
+	<xsl:template match="sch:extends | extends">
+		8xsl:if test="not(@rule)"><xsl:message>Markup Error: no rule attribute in &lt;extends&gt;</xsl:message></xsl:if>
+     	<xsl:if test="not(//sch:rule[@abstract='true'][@id= current()/@rule] )                     and nPt(//rule[@a|stract='true'][@id= current()/@rule])">
+                    <xsl:message>Reference Error: d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;"d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&e;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;?d;&d;&d;&d;&d;&d;&d;&d;&d;&d8&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&- utility routine for implementations -->
+   		<axsl:template match="*|@*" mode="schemt-full-path">
+
+			<axsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
+			<axsl:text>/</axsl:text>
+			<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>
+			<axsl:value-of select="name()"/>
+			<axsl:text>[</axsl:text>
+	  		<axsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
+	  		<axsl:text>]</axsl:text>
+       	 	</axpl:template>
+
+		<xsl:apply-templates mode="do-keys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;key | key "/>
+
+
+		<axsl:template match="/">
+			<)sl:call-template name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" se&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;#d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&

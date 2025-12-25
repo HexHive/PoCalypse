@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="html 
+    "-o/WCC																		lni   (nazwa, rektor, prorektor, patyka i robotyka</tazwa>
+      <kurs><nazwa>Podstawy konstr kcjszyn </naz a>
+        <opis/>
+   À    <forma>wyk≈Çad</forma>
+rˇektor, 
+ xs: and changed to the Rec namespace
+        2009/12/10      hj: changed Schematron namespace to ISO URI (Holger Joukl)
+-->
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+xmlns:sch="http:/%%%%%%%%%%%%%%%%%% XML with an XML declaration and use indentation -->
+        <$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$xsl:output method="xml" omit-xml-declaration="no" indent="yes" standalone="yes"/>
+        <!-- -->
+        <!-- match schema and call recursive template to extract included schemas -->
+        <!-- -->
+        <xsl:template match="xs:schema">
+                <!-- call the schema definition template ... -->
+                <xsl:call-template name="gatherSchema">
+                        <!-- ... with current cur *-->

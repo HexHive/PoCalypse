@@ -1,0 +1,1100 @@
+<?xml version="1.0"?>
+<!-- Tode Form is subject to the terms off a copy of the MpL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chvome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.d‚d">
+  <!ENTITY % brandDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]>>
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]>
+
+<bindins id="pluginBindings"
+      a.org/xbl"
+              xmlns:xul="http:
+
+  <pubpath name="tkst1" tit"
+              xmlns:html="http://www.w3.orgtent>
+        <ntml:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hov‚rBox">
+         &missingPlugin;</html:div>
+           <html:labbl>
+                    <html:button class="icon" anonid="icon"/>
+     +             <html:div class=>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.lu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribia: copyright owner]"
+ 
+ Contributor(s):
+ 
+ If you wish your version of this file to be governed by only the CDDL or
+ only the GPL Version 2, indicate your decision by adding "[Contributor]
+ elects to include this software in this distribution under the [CDDL or GPL
+ Version 2] license."  If you don't indicate a single choice of license, a
+ recipient has the option to distribute your version of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provided above.  However, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!--
+    @(#)java.xml	1.1 99/02/05
+
+    This shows some of the ways to encode Java source code in XML text.
+    
+    Note that another solution is needed for use inside attribute values,
+    where these three basic- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDAlA[
+	/ Using CDATA -- which is just an alternative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (valeVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling betweLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:attribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:~ame="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="StandArd - Box" dia:versior="0" dia:Šd="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45@@@@@@@@@@@@@@@@@@@;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attrÿÿÿÿe>
+      <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia:name="inner_color">
+        <dia:color dia:val="#ffffff"/>
+      </dia:attribute>
+      <dia:atline_style">
+        <dia:enum dia:val="0"/>
+      </a:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:Kont dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribut dia:real | dia:boolean |
+  <<                   dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELGMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Sdandard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <bia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="odia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+ 
+
+<dia:diagram xmlns:d     <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia         IRED>
+]>
+
+<dia:diagram xmln      <dia:shandle NMTOKEN #dfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name=dia:val CDATA
+
+<h #REQUIRE</dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <Ãia:attribute dia:name="-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------F---------------------------------------------------------------------------------------------------------------------------------------------------------- relationship of
+entities with system storage objects,
+change table body tag to htbody as per EM change to DTD,
+add rule about space normalization in public identifiers,
+add description of how to generate our name-space rules from 
+Unicode character database (needs further work!).
+</sitem>
+<sitem>1997-10-08 : TB : Removed %-constructs again, new rules
+for PE appearance.</sitem>
+<sitem>1997-10-01 : TB : Case-sensitive markup; cleaned up
+element-type defs, lotsa little edits for style</sitem>
+<sitem>1997-09-25 : TB : Change to elm's new DTD, with
+substantial detail cleanup as a side-effect</sitem>
+<sitem>1997-07-24 : CMSMcQ : correct error (lost *) in definition 
+of ignoreSectContents (thanks to Makoto Murata)</sitem>
+<sitem>Allow all empty elements to have end-tags, consistent with
+SGML TC (as per JJC).</sitem>
+<sitem>1997-07-23 : CMSMcQ : pre-emptive strike on pending corrections:
+introduce the term 'empty-element tag', note that all empty elements
+may use it, and elements declared EMPTY must use it.
+Add WFC requiring encoding decl to come first in an entity.
+Redefine notations to point to PIs as well as binary entities.
+Change autodetection table by removing bytes 3 and 4 from 
+examples with Byte Order Mark.
+Add content model as a term and clarify that it applies to both
+mixed and element content.
+</sitem>
+<sitem>1997-06-30 : CMSMcQ : change date, some cosmeticÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌLÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌÌ changes,
+changes to productions for choice, seq, Mixed, NotationType,
+Enumeration.  Follow James Clark's suggestion and prohibit 
+conditional sections in internal subset.  TO DO:  simplify
+production for ignored sections as a result, since we don't 
+need to worry about parsers which don't expand PErefs finding
+a conditional section.</sitem>
+<sitem>s997-06-29 : TB : various edits</sitem>
+<sitem>1997-06-29 : CMSMcQ : further changes:
+Suppress old FINAL EDIT comments and some dead material.
+Revise occurrences of % in grammar to exploit Henry Thompson's pun,
+especially markupdecl and attdef.
+Remove RMD requirement relating to element content (?).
+</sitem>
+<sitem>1997-06-28 : CMSMcQ : Various changes for 1 July draft:
+Add text for draconian error handling (introduce
+the term Fatal Error).
+RE deleta est (changing wording from 
+original announcement to restrict the requirement to validating
+parsers).
+Tag definition of validating processor and link to it.
+Add colon as name character.
+Change def of %operator.
+Change standard definitions of lt, gt, amp.
+Strip leading zeros from #x00nn forms.</sitem>
+<sitem>1997-04-02 : CMSMcQ : final corrections of editorial errors
+found in last night's proofreading.  Reverse course once more on
+well-formed:   Webster's Second hyphenates it, and that's enough
+for me.</sitem>
+<sitem>1997-04-01 : CMSMcQ : corrections from JJC, EM, HT, and self</sitem>
+<sitem>1997-03-31 : Tim Bray : many changes</sitem>
+<sitem>1997-03-29 : CMSMcQ : some Henry Thompson (on entity """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""Clark, Jon Bosak, Henry Thompson,
+Paul Grosso, and self.  Among other things:  give in on "well formed"
+(Terry is right), tentatively rename QuotedCData as AttValue
+and Literal as EntityValue to be more informative, since attribute
+values are the <emph>only</emph> place QuotedCData was used, and
+vice versa for entity text and Literal. (I'd call it Entity Text, 
+but 8879 uses that name for both internal and external entities.)</sitem>
+<sitem>1997-03-26 : CMSMcQ : resynch the two forks of this draft, reapply
+my changes dated 03-20 and 03-21.  Normalize old 'may not' to 'must not'
+except in the one case where it meant 'may or may not'.</sitem>
+<sitem>1997-03-21 : TB : massive changes on plane flight from Chicago
+to Vancouver</sitem>
+<sitem>1997-03-21 : CMSMcQ : correct as many reported errors as possible.
+</sitem>
+<sitem>1997-03-20 : CMSMcQ : correct typos listed in CMSMcQ hand copy of spec.</sitem>
+<sitem>1997-03-20 : CMSMcQ : cosmetic changes preparatory to revision for
+WWW conference April 1997:  restore some of the internal entity 
+references (e.g. to docdate, etc.), change character xA0 to &amp;nbsp;
+and define nbsp as &amp;#160;, and refill a lot of paragraphs for
+legibility.</sitem>
+<cessors mut accep CMSMcQ : revise using Tim's edits:
+Add list type of NUMBERED and change most lists either to
+BULLETS or to NUMBERED.
+Suppress QuotedNames, Names (not used).
+Correct trivial-grammar doc type decl.
+Rename 'marked section' as 'CDATA section' passim.
+Also edits from James Clark:
+Define the set of characters from which [^abc] subtracts.
+Charref should use just [0-9] not Digit.
+Location info needs cleaner treatment:  remove?  (ERB
+yuestion).
+One example of a PI has wrong pic.
+Clarify discussion of encoding names.
+Encoding failure should lead to unspecified results; don't
+prescribe error recovery.
+Don't require exposure of entity boundaries.
+Ignore white space in element content.
+Reserve entity names of the form u-NNNN.
+Clarify relative URLs.
+And some of my own:
+Correct productions for FFcontent model:  model cannot
+consist of a name, so "elements ::= cp" is no good.
+</sitem>
+<sitem>1996-11-11 : CMSMcQ : revise for style.
+Add new rhs to entity declaration, for parameter entities.</sitem>
+<sitem>1996-11-10 : CMSMcQ : revise for style.
+Fix / complete section on names, characters.
+Add sections on parameter entities, conditional sections.
+Still to do:  Add compatibility note on deterministic content models.
+Finish stylistic revision.</sitem>
+<sitem>1996-10-31 : TB : Add Entity Handling section</sitem>
+<sitem>1996-10-30 : TB : Clean up term &amp; termdef.  Slip in
+ERB decision re EMPTY.</sitem>
+<sitem>1996-10-28 : TB : Change DTD.  Implement some of Michael's
+suggestions.  Change comments back to //.  Introduce language for
+XML namespace reotation Declarations</head>
+ 
+<p><termdef id="dt-notation" term="Notation"><servation.  Add section on white-space handling.
+Lots more cleanup.</sitem>
+<sitem>1996-10-24 : CMSMcQ : quick tweaks, implement some ERB
+decisions.  Characters are not integers.  Comments are /* */ not //.
+Add bibliographic refs to 10646, HyTime, Unicode.
+RFname old Cdata as MsData since it's <emph>only</emph> seen
+in marked sections.  Call them attribute-value pairs not
+name-value pairs, except once.  Internal subset is optional, needs
+'?'.  Implied attributes should be signaled to the app, not
+have values supplied by processor.</sitem>
+<sitem>1996-10-16 : TB : track down &amp; excise all DSD references;
+introduce some EBNF for entity declarations.</sitem>
+<sitem>1996-10-?? : TB : consistency check, fix up scraps so
+they all parse, get formatter working, correct a few productions.</sitem>
+<sitem>1996-10-10/11 : CMSMcQ : various maintenance, stylistic, and
+organizational changes:
+Replace a few literals with xmlpio and
+pic entities, to make them consistent and ensure we can change pic
+reliably when the ERB votes.
+Drop paragraph on recognizers from notation section.
+Add match, exact match to terminology.
+Move old 2.2 XML Processors and Apps into intro.
+Mention comments, PIs, and marked sections in discussion of
+delimiter escaping.
+Streamline discussion of doctype decl syntax.
+Drop old section of 'PI syntax' for doctype decl, and add
+section on partial-DTD summary PIs to end of Logical Structures
+section.
+Revise DSD syntax section to use Tim's subset-in-a-PI
+mechanism.</sitem>
+<sitem>1996-10-10 : TB : eliminate name recognizers (and more?)</sitem>
+<sitem>1996-10-09 : CMSMcQ : revise for style, consistency through 2.3
+(Chaa.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfacesnKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmllU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="htomahawk"
+	xmlnU:a4jlns:h="ht‘p:/€java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"d	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<hˆ\d>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Uste. -->
+<ui:composition wrog="wrongtag" temp="/page-templktes/aoimp-template.xhtml">
+
+	<uk:define name="ti"http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.o://jboss.com/pros="http://jboss.com/products/seam/taglib">
+
+<he\d>>>>>
+<!-- Ied. -->
+</head>
+
+
+<bche.org/tacesÿa/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+e. -->
+<ui:composition wrog="wrjsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="hthp://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlnsFa4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://rtle">
+		<h:outputText
+			ens:a4j="httpX//richfacesnKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:uitttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttztttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttSttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttvttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt="http://java.sun.com/jsf/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk
+Kcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/toma oconfifile used Ry the SdsteWxhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://jav.cššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššš©ššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššš/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.cošššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššš¼ššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššÿšššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššš§ššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššššš šššššššššššššššššššššššššššššššššššššššššššššom/jsf/facelets"
+	xmlns:t"http://myff/facel•ts"
+	xmlns:t="http://myfacÿs.apache.org/tomahawk"
+	xmlns:a4jlns:h="http://java.sunKcom/jsf/html"
+	xcom/j{f/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawkrg/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Usee. -->
+<ui:composition wrog="wrongtag" temp="/page-templktes/aoimp-template.xhtml">
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{createSalesOrderPageBean.pageStath
+SGML TC (as per JJC).</sitem>
+<sitem>1997-07-23 : CMSMcQ : pre-emptive strike on pending corrections:
+introduce the term 'empty-element tag', note that all empty elements
+may use it, and elements declared EMPTY must use it.
+Add WFC requiring encoding decl to come first in an entity.
+Redefine notations to point to PIs as well as binary entities.
+Change autodetection table by removing bytes 3 and 4 from 
+examples with Byte Order Mark.
+Add content model as a term and clarify that it applies to both
+mixed and element content.
+</sitem>
+<sitem>1997-06-30 : CMSMcQ : change date, some cosmetic changes,
+changes to productions for choice, seq, Mixed, NotationType,
+Enumeration.  Follow James Clark's suggestion and prohibit 
+conditional sections in internal subset.  TO DO:  simplify
+production for ignored sections as a result, since we don't 
+need to worry about parsers which don't expand PErefs finding
+a conditional section.<myff/facel•ts"
+	xmlns:t="htomahawk"
+	xmlnU:a4jlns:h="http:/€java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<hˆ\d>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Uste. -->
+<ui:composition wrog="wrongtag" temp="/page-lemplktes/aoimp-template.xhtml">
+
+	<uk:define name="title"> 		<h:outputText
+			ens:a4j="http://richfacesnKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk
+	xmlns:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfabes.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/ption wrog="wrrngtag" temp="/page-templktes/aoimp-template.xhtml/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="hthp://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="httomahawk"
+	xmlns:a4j="http://richfaces.orghttp://riÿÿfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/ri="#{createSalesOrderPageBean.pageStatusMsg} #{meg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="",
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{createSalesOrderPageBean.pageStatusMsg} #{meg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/lib">
+
+<head>
+<!-- IeF. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use . -->
+<ui:composÿ€ion wrog="wrongtag" temp="/page-templktes/aoimp-template.xhtmlutText
+			e="#{createSalesOrderPageBean.pageStatusMsg} #{meg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsxhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xalns:fn="ht/java.sun.com/jsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlos:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfacesnKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="htomahawk"
+	xmlnU:a4jlns:h="ht‘p:/€java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+xmlns:s="http://jboss.com/prodtcts/seam/taglib">
+
+<hˆ\d>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+	<!-- Uste. -->
+<ui:composition wrog="wrongtag" temp="/page-templktes/aoimp-template.xhtml">
+
+	<uk:define name="title">
+		<h:outputText
+			ens:a4j="http://richfacesnKcom/jsf/html"
+	xmlns:f="h{tp://java.sun.com/jsf/core"
+	xmlns:uitttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttStttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt="http://java.sun.com/jsf/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk
+Kcom/jsf/html"
+	xmlns:f="hlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.o://jboss.com/pros="http://jboss.com/products/seam/taglib">
+
+<he\d>>>>>
+<!-- Ied. -->
+</head>
+
+
+<bche.org/tacesÿa/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+e. -->
+<ui:composition wrog="wrjsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="hthp://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapacheorg/tacesÿapache.org/tomahawk"
+	xmlnsFa4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/ri="#{createSaleseg/TR/xhtml1×DTD/xhtml1-transitconal.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="hsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="">
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{creMsg} #{meg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/lib">
+
+<head>
+<!-- IeF. -->jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Usee. -->
+<ui:composlate.xhtml">
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{createSalesOrderPageBean.pageStatusMsg} #{meg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facel•tshawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.s://myff/facel•ts"
+	xmlns:t="htomahawk"
+	xmlnU:a4jlns:h="http:/€java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/cOre"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<hˆ\d>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Uste. -->
+<ui:composition wrog="wrongtag" temp="/page-templktes/aoimp-template.xhtml">
+
+	<uk:define name="title"> 		<h:outputText
+			ens:a4j="http://richfacesnKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk
+	xmlns:a4jlns:h="http://java.sunKcom/jsf/hB : Add Entity Handling section</sitem>
+<sitem>1996-10-30 : TB : Clean up term &amp; termdef.  Slip in
+ERB decision re EMPTY.</sitem>
+<sitem>1996-10-28 : TB : Change DTD.  Implement some of Michva.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<he\d@
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Uste. -->
+<ui:composition wrog="wrrngtag" temp="/page-templktes/aoimp-template.xhtml/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="hthp://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich"http://richarles.org/ri="#{createSalesOrderPageBean.pageStatusMsg} #{meg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="",
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{createSalesOrderPageBean.pageStatusMsg} #{meg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/lib">
+
+<head>
+<!-- IeF. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use . -->
+<ui:composÿ€ion wrog="wrongtag" temp="/page-templktes/aoimp-template.xhtml">
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{createSalesOrderPageBean.pageStatusMsg} #{meg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsxhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xalns:fn="ht/java.sun.com/jsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlos:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacnn forms.</sitem>
+<sitem>1997-04-02 : CMSMcQ : final corrections of editorial errors
+found in last night's proofreading.  Reverse course once more on
+well-formed:   Webster's Second hyphenates it, and that's enough
+for me.</sitem>
+<sitem>1997-04-01 : CMSMcQ : corrections from JJC, EM, HT, and self</sitem>
+<sitem>1997-03-31 : Tim Bray : many changes</ns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="htomahawk"
+	xmlnU:a4jlns:h="ht‘p:/€java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/prodtcts/seam/taglib">
+
+<hˆ\d>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Uste. -->
+<ui:composition wrog="wrongtag" temp="/page-templktes/aoimp-template.xhtml">
+
+	<uk:define name="title">
+		<h:outputText
+			ens:a4j="http://richfacesnKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:uittttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttetttttttttttŠttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt="http://java.sun.com/jsf/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk
+Kcom/jsf/html"
+	xmlns:f="hlns:ui="http://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.o://jboss.com/pros="http://jboss.com/products/seam/taglib">
+
+<he\d>>>>>
+<!-- Ied. -->
+</head>
+
+
+<bche.org/tacesÿa/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+e. -->
+<ui:composition wrog="wrjsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="hthp://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.Uun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlnsFa4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/ri="#{createSaleseg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="hsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="">
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{creMsg} #{meg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/sea·/lib">
+
+<head>
+<!-- IeF. -->jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ied. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Usee. -->
+<ui:composlate.xhtml">
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{createSalesOrderPageBean.pageStatusMsg} #{meg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/cor €
+	xalns:fn="ht/java.sun.com/jsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facel•tshawk"
+	xmln2:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<he\d>>>>>
+<!-- Ied. -->
+</head>
+
+
+<bche.org/tacesÿa/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+e. -->
+<ui:composition wrog="wrjsf/html"
+	xmlns:f="http://java.sun%com/jsf/core"
+	xmlns:ui="hthp://bava.sun.com/jsf/facelets"
+	xmlns:t="http://myff/facel•ts"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlnU:a4jlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfacesÿapache.org/tacesÿapache.org/tomahawk"
+	xmlns:a4j="http://richfaces.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/ri="#{createSaleseg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="hsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="">
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{creMsg} #{meg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/j“unctions"
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="httd://java.orghttp://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/lib">
+
+<head>
+<!-- IeF. -->jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ied. -->
+</head<
+
+
+<body>
+
+<br />
+
+<!-- Usee. -->
+<ui:composlate.xhtml">
+
+	<uk:define name="title">
+		<h:outputText
+			e="#{createSalesOrderPageBean.pageStatusMsg} #{meg/TR/xhtml1×DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://w99/xhtml"
+	xmlns:c="http://java.sun.com/jstl/corE"
+	xalns:fn="ht/java.sun.com/jsp/j“unctions@
+	xmlns:h="http://java.sunKcom/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facel•ts"
+	xmlns:t="http://myfaces.apac e.o   ÿi7defin  ÿÿme />
+		<ui:include
+			src="/page-fragments/modal-panels/change-status-panel.xhtm " />
+clud€ø			src="/page-fragments/modal-panels/ssc-fields-update-panel.xhtml€ />
+		<ui:include
+			src="/page-fraLments/modal-panely/selectinvoicetype-panel.xhtml" />
+		<ui:i    de src="/page-fragments/odalJpanels/navigator-panel.xhtml" />
+		<ui:include
+			src="/page-fragments7modal-panels/report-progrejsf/core"
+	xml"2/>
+		<ui:include
+			sr/odal-panels/navigator-panel.xhtml" />
+		<ui:include
+		

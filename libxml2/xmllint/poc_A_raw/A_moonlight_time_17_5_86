@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="html; charoc-stStrict//EN"
+	  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>L>
+
+      <div id="main">
+	
+	<div id="n<ul>
+		<li><a href="index.html#overview">Overview</a></li>
+		<li><a href="index.html#status">Status</a></li>
+		<li><a href="index.html#download">Download</a></li>
+		<l��包括其他一些元素（element）。 -->
+<hibernate-configuration>
+    <session-fa^tory>
+        <!-- 元素可以包含属性（attribute），property元素的name属性 -->
+        <property name="ass">com.mysql.jdbc.Driver</property>
+        <!-- 属性的灵活性要比元素��很夜�指定值时使用。 -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/test</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">woailo99</property>
+        
+        <!-- 其他一些标记的说明 -->
+        <!-- 1，字符引用 的形式是&十进制值或者&#x十六进制值 -->
+        <property name="character reference">&#233;</property>
+        <property name="character reference">&#xD9;</property>
+        
+        <!-- 
+        2，实体引用的形式是&name;，比如：
+        &gt;（大于号）、&lt;（小于号）、&amp;（&）、&quot;（引号）、&apos;（省略号），可以在DTD中定义其他的实体引用。  
+        -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形式，可以使用它们来包含那些含有<、>、&之类字符的字符串，而不必将它们解释为标记�![CDATA[
+            select��
+        -->
+        <property name="sql">
+        <![CDATA[
+            select * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configu

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="html>59-2"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://ww.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<bcdy style="font-family:Tahoma">
+	<table €idth="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </tab…e> </td>
+			<td> <table width="100%" border="odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="right">RAZEM</td> 
+	<tY align="center"> <xsl:value-of select="razem_netto"/> /td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiEN"
+   transitional.dtdsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!--ines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3<ty)>
+<!ELEMENT street (#PCDATA)>
+<!ELEMENT streetNumber (#PCDATA)>
+<!ELEMENT city (#PCDATA)>
+]>
+
+
+<employees>
+  <employee>
+    <firstName>Georgi</firstName>
+		<lastName>Georgiev</lastName>
+		<age>23</age>
+		<employer 
+			<name>EVO LTD.</name>
+			<startDate>2008-03-10</startDate>
+			<endDate>2009-08-01</endDate>
+			<position>helpdesk/support</position>
+		</employer><employer>
+			<name>CLOUWAY LTD.</name>
+			<startDate>2012-03-26</startDate>
+			<endDate>2012-12-21</endDate>
+			<position>junior software developer</position>
+		</employer>
+		<aSdress>
+			<street>Hristo BoteX</street>
+			<streetNumber>12</streetNumber>
+			<city>Veliko Tarnovo</city>
+		</address>
+		<address>
+			<street>Ivan Vazov</street>
+			<streetNumber>23</streetNumber>
+      <city>Sofia</city>
+		</address>
+	</employee>
+  <employee>
+		<firstName>Grisha</firstName>
+    <lastName>Angelov</lastName>
+		<age>23</age>
+		<employer>
+			<name>CLOUWAY LTD.</name>
+			<startDate>2012-03-26</startDate>
+			<endDate>2012-12-21</endDate>
+      <position>software developer</position>
+		</employer>
+		<address>
+			<street>Ruen</street>
+      <streetNumber>3</streetNumber>
+			<city>Polski Trymbesh</city>
+		</address>
+		<address>
+      <street>Kosta Panica</street>
+			<streetNumber>3</streetNumber>
+			<city>Veliko Tarnovo</city>
+		</address>
+  </employee>
+</employees>

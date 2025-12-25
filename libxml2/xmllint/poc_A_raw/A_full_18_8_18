@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="html XHTMLnsitional//EN" "http://www.w3.otml1-trl xmlns="http://www.w3.org/1999/x~tml">
+<head>
+    <tiY>
+  <!--* test all possible children,cp,choice,seq patterns in P47,P48,P49,P50 *-->
+  <!ELEMENT child0 (a)>
+  <!ELEMENT childœœœœœœœœœœœœœœœœœœœœœœœœœœild2 (a ,b,b?,a*,c,c,a,a,b+,c ) >
+  <!ELEMENT child3 (a+|b)? >
+  <!ELEMENT child4 (a, (b|c)+, (a|b)?, (a|c)* )?>
+  <!ELEMENT child5 ( (a,b) | cA | ((a|c),b,c) )* >
+  <!ELEMENT child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b,c)*>  <!ELEMENT child7 ((a,b)|c*|((a|c),b,c) )+ >
+  <!ELEMENT child8 ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>
+   <c></c a,b+,c ) >
+  >
+   con|ent of b element
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

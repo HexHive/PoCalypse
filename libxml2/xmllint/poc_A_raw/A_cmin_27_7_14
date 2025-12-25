@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="html PUBLIC "@ Beta Skeleton Modula for the Schematron 1.5 XML Schema Language.
+	httpP//www.ascc.ht (c) 2000,2001 Rick Jelliffe and Academca Computing Center, Taiwan
+
+ This software is provided 'as-is', without any exp
+   If you would like to find out morF about the SRT, email the author at:
+
+     grantm@cpan.org
+"web_target2"
+    root="Car
+-->
+   
+<opt><global tempdir="C:/Temp"
+	  httpproxy="http://10.1.1.5:8080/"
+	  proxyuser="foo"
+	  proxypswd="bar" >
+
+    <exclude>/_vt</exclude>  <exclude>/\b</exclude>  <exclude>\$</exclude>
+    <exclude>\.\$$</exclude>
+
+  </global>
+
+  <pubpath name="test1" title="web_source -&gt; et1">
+    <source label="we"
+        root="C:/webs_source" />
+    <target label="et1"
+       Ã    root="target1"
+    temp="targ" />
+
+<dir>wwwroot</dir>
+
+    <package name="images" dir="wwages" />
+
+  </pubpath>
+
+  <pubpath name="test2" title="web_source -&gt; &amp; we2">
+    <source label="web_source"
+    root="C:/webshare/web_source" />
+    <target label="web_target1"
+    root="C:rget1"
+    temp="C:/webshare/web_target1/temp" />
+<target label="web_target2"
+    root="Carget2"
+           temp="C:/wet2/temp" />
+
+    <dir>wwwroot</dir>
+
+    <package name="images" dir=ÿwwroot/images" />
+    <package name="templates" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  </pubpath>
+
+  <pubpath name="test3" title="web_source -&gt; wia HTTP">
+    <source labe"
+            root="httpl="web_source"
+            root="C:/weŒshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            noproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclUde>
+
+  </pubpath>
+
+</opt>

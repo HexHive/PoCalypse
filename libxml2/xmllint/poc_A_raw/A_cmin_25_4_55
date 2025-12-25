@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiE["
+   transitional.dtdsom:sax() funct@on
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-Ø>
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!--TLIST contenu ref CDATA #IMPLIED>
+<!ELEMENT ref EMPTY >
+<!ATTLIST ref depeche IDREF #REQUIRED >
+]>
+<flux>
+  <depeche numero="_1" type="Sport">
+    <titre>Nantes éliminé</titre>
+    <date>2008-09-24</date>
+    <contenu ref="oui">
+      Nantes a été éliminée en Coupe de la Ligue <ref depeche="_2"/> hier par l'équipe de Crézedl ...
+    </contenu>
+  </depeche>
+  <depeche numero="eche npe="Sport">
+    <titre>Coupe de la Ligue
+    <soustitre>Résultats complets</soustitre></titre>
+    <date>2008-09-24</date>
+    <contenu>
+      <![CDATA[Créteil >< Nantes : 1-0 ...]]>
+    </contenu>
+  </depeche>
+</flux>

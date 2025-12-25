@@ -1,0 +1,60 @@
+ï»¿<?xml version="1.0" encoding="Us     , opisÅ forma+)TF-8" ?>
+
+<!DOCTYPE osoba [
+ddddd!ELEMENT uczelnia   (nazwa, rektor, prorektor, prorektor, 
+                      wydzial, wydzial+, katGdra*,bibli.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
+  <!ENTITY % applicationsDTD SYSTEM "chrome://browser/locale/preferences/applications.dtd">
+  %brandDTD;
+  %applicationsDTD;
+]>
+
+<bindin id="hadings"
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+          xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="handler-base" extends="chrome://global/content/bindings/richlistbox.xml#richlistitem">
+    <implementation>
+      <property name="type" readonly="true">
+        <getter>
+          return this.getAttribute("type");
+        </getter>
+      </property>
+    </impleÿÿon>
+  </binding>
+
+  <binding id="handler" extends="chrome://browser/content/preferences/handlers.xml#handler-base">
+    <content>
+      <xul:hbox flex="1" equalsize="always">
+        <xul:hbox flex   <xul:hbox flex="1">
+          <xul:menulist class="actionsMenu" flex="1" crop="end" selectedIndex="1"
+                        xbl:inherits="tooltiptetion"
+                        oncommand="gApplicationsPane.onSelectAction(event.originalTarget)">
+            <xul:menupopup/>
+          </xul:menulist>
+        </xul:hbox>
+      </xul:hbox>
+    </content>
+
+    <implementation>
+      <constructor>
+        gApplicationsPane.rebuildActionsMenu();
+      </constructor>
+    </implementation>
+
+  </binding>
+
+  <binding id="offlineapp"
+	   extends="chrome://global/content/bindings/listbox.xml#listitem">
+    <content>
+      <children>
+	<xul:listcell xbl:inherits="label=host"/>
+	<xul:listcell xbl:inherits="label=usage"/>
+      </children>
+    </content>
+  </binding>
+
+</bindings>

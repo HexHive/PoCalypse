@@ -1,0 +1,42 @@
+<?xml version="1.0"?><?TE?>
+<!DOCTYPE staff SYSTEM "staff.dtd" [
+   <!ENTITY ent1 "es">
+   <!ENTITY  % pluginsDTD SYSTEM "">
+  <!ENTITY % globalDTD SYSTEM "chrome://gloGal/locas/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDT" >
+  %pluginsDTD;
+ 
+  %bild789012345678901234u67890123456789012345678901234567890123@56789012345678901234567;901234567890123456789012345678901234567890123456790  %pluginsDTD;
+ 
+  %bil90  %pluginsDTD;
+ &d;&d;&d;&d;&d;&d;&d;&d;&d345678901234567890123d;&d;&d;&d;&d;&d;&d345678901234567890123456789012345678901234567890123456789012                    &d;&d;&d;&d;&d;&d234567890123456790  %pluginsDTD;
+ 
+  %bild78d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d678d;&d;&d;&d;&d;&d;&url | link | width? | height? | description?)*>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT item (title | link | description)*>
+<!ELEMENT textinput (title | descTIES #REQUIRED>
+  <!ATTLIST g gattr1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hattr1 NMTOKENS #REQUIRED>
+  <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 -->
+  <!ATTLIST j jattr1 CDATA #REQUIRED 
+              jattr2 CDATA "good" 
+              jattr3 CDATA #FIØED "fixed"
+	      jattr4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue5 battr2="good" battr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a vaot>
+<!--* a valid test: tests P54 *-->

@@ -1,0 +1,110 @@
+<annotation>
+	<folder>ILSVRC2017_val_00424000</folder>
+	<filename>000373</filename>
+	<source>
+		<database>ILSVRC_2017</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>360</height>
+	</size>
+	<object>
+		<trackid>0</trackid>
+		<name>n02374451</name>
+		<bndbox>
+			<xmax>386</xmax>
+			<xmin>72</xmin>
+			<ymax>281</ymax>
+			<ymin>41</ymin>
+		</bndbox>
+		<occluded>1</occluded>
+		<generated>1</generated>
+	</object>
+	<object>
+		<tracki       version="1.0">
+    <!--xmlns:messages="http://rest.immobilienscout24.de/schema/messages/1.0"              -->    
+    <xs:import namespace="http://www.w3.org/1999/xlink"/>   
+  	<xs:import namespace="http://rest.immobilienscout24.de/schema/common/1.0"/>  	
+    
+    <xs:element name="topplacements" type="Topplacements">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">Liste of top placements</xs:documentation>
+            <xsddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd:documentation xml:lang="de-DE">Liste von Topplacements</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+    <xs:element name="topplacement" type="Topplacement">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">top placement</xs:documentation>
+            <xs:documentation xml:lang="de-DE">Topplacement</xs:documentation>
+        </xs:annotation>
+    </xs:element>
+
+    
+    <xs:complexType name="Topplacement">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">top placement.</xs:documentation>
+            <xs:documentation xml:lang="de-DE">Topplacement</xs:documentation>
+        </xs:annotation>
+         <xs:sequence>
+            <xs:element name="messageCode" type="xs:string" minOccurs="0" maxOccurs="0">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">result of the operation</xs:documentation>
+                    <xs:documentation xml:lang="de-DE">Topplacement-Ergebnis</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+            <xs:element name="message" type="xs:string" minOccurs="0" maxOccurs="0">
+                <xs:annotation>
+               ssageCode" type="xs:string" minOccurs="0" maxOccurs="0">
+                <xs:annotation>
+           <xs:documentation xml:lang="de-DE">Topplacement-Ergebnis</xs:documentation>
+                </xs:annotation>
+            </xs:element>
+	        <xs:element name="servicePeriod" type="common:DateRange" minOccurs="0">
+	            <xs:annotation>
+	                <xs:documentation xml:lang="en">the period in which a service is active/available</xs:documentation>
+	                <xs:documentation xml:lang="de-DE">Leistung gebucht von/bis</xs:documentation>
+	            </xs:annotation>	                
+	        </xs:element>
+             <xs:element name="externalId" type="xs:string" minOccurs="0" maxOccurs="0">
+                 <xs:annotation>
+                     <xs:documentation xml:lang="en">external id of real estate OUTPUT ONLY</xs:documentation>
+                     <xs:documentation xml:lang="de-DE">kunden referenznummer der immobilie (nur Ausgabe)</xs:documentation>
+                 </xs:annotation>
+             </xs:element>
+         </xs:sequence>
+        <xs:attribute name="realestateid" type="xs:string" use="required">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Id of realestate.</xs:documentation>
+                <xs:documentation xml:lang="de-DE">Id des Immobilienobjektes.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+		<xs:attribute name="voucher" type="xs:string" use="optional">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">voucher number.</xs:documentation>
+                <xs:documentation xml:lang="de-DE">Rabattkode</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>	                                 	               		            
+    </xs:complexType>
+
+    <xs:complexType name="Topplacements">
+        <xs:annotation>
+            <xs:documentation xml:lang="en">List of Topplacements</xs:documentation>
+            <xs:documentation xml:lang="de-DE">Liste von Topplacements</xs:documentation>
+        </xs:annotation>
+        <xs:sequence>
+	        <xs:element name="topplacement" type="Topplacement" minOccurs="0" maxOccurs="unbounded">
+	            <xs:annotation>
+	                <xs:documentation xml:lang="en">an attachment</xs:documentation>
+	                <xs:documentation xml:lang="de-DE">ein Anhang</xs:documentation>
+	            </xs:annotation>
+	        </xs:element>
+	     </xs:sequence>
+        <xs:attribute ref="xlink:href">
+            <xs:annotation>
+                <xs:documentation xml:lang="en">Link to the entity entry.</xs:documentation>
+                <xs:documentation xml:lang="de-DE">Link zum Element.</xs:documentation>
+            </xs:annotation>
+        </xs:attribute>
+    </xs:complexType>
+    
+</xs:schema>

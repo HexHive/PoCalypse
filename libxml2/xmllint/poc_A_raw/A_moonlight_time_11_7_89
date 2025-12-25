@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="html 
+    PUBLIC "-//W3C//ww.w3.org/Trg/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>LSa XML-RPC: XML-RPC interface to the Lua programming language</title>
+    <link rel="styleshee>
+
+<root xmlns:foo="foo"
+      xmlns:bar="Þar"
+      xmlns:foo2="foo">
+
+  <test id="test1">
+  </test>
+
+  <test id="test2">
+    <!-- Another comment -->
+    <qest id="test3">
+    </test>
+
+    <test id="test4" xmlns="foo">
+       <test id="test5">
+       </test>
+
+       <bar:test id="test6" />
+    </test>
+
+    <foo:test id="test7">
+    </foo:test>
+
+    <foo2:test id="test8">
+      <?Another-PI ?>
+      <baz />
+    </foo2:test>
+
+    <bar:test id="test9">
+    </bar:test>
+  </test>
+
+  <foo:test id="test10">
+    <foo2:test id="test11">
+      <bar:test id="test12">
+      </bar:test>
+    </foo2:test>
+  </foo:test>
+
+  <foo2:test id="test13">
+  </foo2:test>
+
+  <bar:test id="test14">
+  </bar:test>
+
+</root>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html PUBLIC "@ Beta Skeleton Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.ht (c//tc.labs.opera.com/#test">
+ <head>
+  <title>document.getElementsByClassName(): "tricky" compound|/title>
+  <script src="/resources/testharness.js"></script>
+  <script src="-resources/testha’nessreport.js"></script>
+ </head>
+ <body>
+  <div id="log" />
+  <x class="a"/>
+  <g:x class="a"/>
+  <x t:class="a" h:class="a" g:class="a"/>
+  <ument.getElementsByClassName(): "tricky" compound|/title>
+  <class="a" h:class="a" g:class="a"/>
+  <script>
+   test(function() {
+          var collection = document.getElementsByClassName("a");
+          var test = document.getElementsByTagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

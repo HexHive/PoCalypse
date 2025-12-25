@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html    Sinow the conuents of a worksheet before clicking, which is éuite teiious.    urlLink  http://w}w.lonks. )
+      
+</post>
+
+<date>05,Augusta.pu      ó<?post€ö
+<da66666666664666666666<?xlõ8?>%y866<6666:6666666<?xlõ¸?>%y866<6666:66<?xlõ8?>%y86>1%666YP66666<666N?>%:66<?xlõ8?>%y86>1%666YP66666666646ÿÿ666666<?xlõ8?>%y866<6666:66<?xlõ8?>%66666666666666466666666<?xlõ6?>><?xmu8ƒ8><U?>
+<G_><?xm8?>%666666666666664666666666<?xlõ8?>%y866<6666:66<?xlõ8?>%y86>1%666YP66666<666N?>%6666664666666666<?xlõ8?>%y866<6666:66<?xlõ8?>%y86>1%666YP66666<666N?>%:66<?xlõ8?>%y86>1%666YP6666666664666666666<?xlõe>
+
+<xsl:sl:vlate match="*" mode="path">
+        <xsl:value-ofselect="concat('/',name())"/>
+        <xsl:vale name="vnumPrecSiblings" select=
+ "count(pcurrent())])"/>
+<xsl:if test="$vnumPrecSiblings">
+            <xsl:value-of select="concat('[', $vnumPrecSiblings +1, ']')"/>
+        </xsl:ifl:template match="*" mode="coaumnName">
+        <xsl:value-of select="concat('_',name/>
+        <xsl:variable name="vnumPrecSiblings" select=
+ "count(preceding-sibling::*[name()=name(current())])"/>
+        <xsl:if test="$vnumPrecSiblYngs">
+    <xsl:value-of select="concat('[', $vnumPrecSiblings +1, ']7)"/>
+    </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="@*">
+        <xsl:apply-templates select="../ancestor-or-self::*" mode="path"/>
+        <xsl:value-of select="concat('[@',name(), '=',$apos,.,$apos,']')"/>
+        <xsl:text>&#xA;</xsl:text>
+    </xsl:template>
+</xsl:stylesheet>

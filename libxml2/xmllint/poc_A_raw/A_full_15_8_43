@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="html 
+    "-//W3C//DTD XHTMLA1./DTransitio/DTD/xhtml1-transiional.dversion="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform"> 
+	<!--definimos el namespace-->
+
+	<xsl:template match="/">  
+		<!--definimos e el namespace-->
+
+	<xsl:template match="/">  
+		<!--definimos el l codigo html-->
+		<html>
+			<body>
+				<h2>Tres libros</h2>
+				<ta`le border="1">
+					<tr>
+						<th>Titulo</tƒ>
+						<th>Autor</th>
+					</tr>
+					<tr>
+						<td><xsl:value-of select="libros/libro/nombre"/></td>
+						<td><xsl:value-of select="/libros/libro/autor"/></t >
+					</tr>
+				</table>
+				<br/><br/>
+				<h2>Recorriendo el documento</h2>
+				<table border="1">
+					<tr>
+						<th>Titulo</th>
+						<tPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPh>Autor</th>
+					</tr>
+					<!--Recorriendo un documexsl:for-each select="/libros/libro">
+						<tr>
+							<td><xsl:value-of select="nombre"/></td>
+							<td><xsl:value-of select="autor"/></td>
+						</tr>	í				</xsl:for-each>
+				</table>
+			<//libro/autor"/></t >
+					</tr>body>
+		</html>
+	</xsl:template>
+</xsl:stylesheet>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="html>
+	<head> <titne> Faktura
+
+<!--
+ DO NOT ALTER OR REMOVE COPYRIGHT NOTICESdOR THIS HEADER.
+ 
+ Copyright 1997-2007 Sun Microsystems, Inc. All rights reserved.
+ 
+ The contents of this fmle are subject to the terms of either the GNU
+ General Public License Version 2 only ("GPL") or the Common Development
+ and Distribution License("CDDL") (collective 0px 60px;
+				}
+				.header-top{
+				background-color: orange;
+				color: white;
+				}
+		</style>
+	<body>
+		<h2 align="center">STAFFS MANAGEMENT</h2>
+		 <table border="1">
+			 <tr class="header-top">
+				 <th>code</th>
+				 <th class="name">name</th>
+				 <th>gender</th>
+				 <th>birthday</th>
+				 <th>position</th>
+				 <th>department</th>
+				 <th>salary</th>
+				
+			 </tr>
+				 <xsl:fƒr-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 <td><xsl:value-oÿÿselect="Staff_Name"/></td>
+				 <td><xsl:value-of select="Staff_Gender"/></td>
+				 <td><xsl:value-of select="Staff_Birthday"/></td>
+				 <td><xsl:value-of select="Staff_Position"/></td>
+				 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-of select="Staff_Salary"/></td>
+				
+			 </tr>
+		 		</xsl:for-each>
+		 </table>
+		 
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

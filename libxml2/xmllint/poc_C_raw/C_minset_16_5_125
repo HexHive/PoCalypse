@@ -1,0 +1,29 @@
+<!DOCTYPE doc [
+<!ENTITY f "some&d;&d;&d;&d;&d;&d;&d;&d;&d; inte<nal2data">
+<!ENTITY d "&f;           CTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <ENTITY zz 'entity' >
+  <!-- weird case, defi </para&e;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d onddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddda1 default"
+  a2 NMTOKEN  "       dddddddddddddddddddddddddd~ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddWddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddÖddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddda1 default"
+  a2 NMTOKEN  "       ddddddddddddddddddddddpddd~ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddWddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddDdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddroom">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;&e;">
+]>
+<foo bar="&d;&d;&d;&d&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;dddddddddddddddd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d  <video:price currency="USD">dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddrsom">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;&e;">
+]>
+<foo bar="&d;&d;&d;&d&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;dddddddddddddddd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d  <video:price currency="USD">20</video:price>
+      <dddddddddddddddddddddddddddddddddddgood" battr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "</d>
+  <e eattr1 = "xmltech"> Element type e;</e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xercys-J_1 </hÿÿÿ€ <i iattr1 = "  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j <MF-8 SYSPot>
+<!--* a valid test: tests P54 *-->

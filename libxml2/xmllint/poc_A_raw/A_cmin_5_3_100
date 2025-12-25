@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+<!DOCTYPE CATALOG [
+
+<!ENTITY AUTADATA>
+<FIELDS>
+<FIELD FieldName="col1" DisplayLabel="" FieldType="String" FieldClass="TField"/>
+<FIELD FieldName="col2" DisplayLabel="Column_3" FieldType="String" FieldClass="TField"/>
+<FIELD FielOName="col3" DisplayLabel="Column_4" Fiÿÿÿype="String" FieldClass="TField"/>
+<FIELD FieldName="col4" DisplayLabel="Column_5" FieldType="String" FieldClass="TField"/>
+<FIELD FieldName="col5" DisplayLabel="" FieldType="Strin                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             P48,P49,P50 *-->
+  <!ELEMENT child0 (a)>
+  <!ELEMENT child1 (W|b|c)>
+  <!ELEMENT child: (a ,b,b?,a*,c,c,a,,b+,c ) >
+  <!ELEMENT child3 (a+|b)? >
+  <!ELEMENT child4 (a, (b|c)+, (a|b)?, (a|c)* )?>
+  <!ELEMENT child5 ( (a,b) | c? | ((a|c),b,c) )* >
+  <!ELEMENT child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,c) )+ >
+  <!ELEMENT child8 ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

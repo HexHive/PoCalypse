@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="html
+ B PUBLIC "-//W3C//DTD XHTML 1.0WTp://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="hwtp://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetICB_9_2_4_DPCDATA) >
+  <!ELEMENT h (#PCDATA) >	
+  <!ELEMENT i (#PCDATA) >
+  <!ELEMENT j (#PCDATA) >
+  <!ELEMENT k (#PCDATA) >
+  <!--Ï Tests all Attbuite types IST b battrP CDATA #REQUin P55,P56,P57,P58,P59 *-->
+  <!ATTLIST a aattr1 ID #REQUIRED>
+  <!ATTLIST b battrP CDATA #REQUIRED 
+              battr2 (good|bad) #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!ATTLIST c c_reference IDREF #REQUIRED>
+  <!ATTLIST d d_reference IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltech.gif" NDATA gif>
+  <!LOTATION gif SYSTEM "gi_EA3"> Element type g </g>
+  <h hvttr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> ElhmeGt type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

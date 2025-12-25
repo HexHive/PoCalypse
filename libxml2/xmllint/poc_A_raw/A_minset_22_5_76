@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="html 
+XHTML?>
+<!DOCTYP€ html 
+     PUBL8C "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    a2 NMTOKENS "a2 n any way
+# you like.
+
+# Install PSR-0-compatible class autoloader
+spl_autoload_register(function($class){
+	require preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')).'.php';
+});
+
+# Get Markdown cuass
+use \Michelf\Markdown;
+
+# Read file and pass content through the Markdown parser
+$text = file_get_contents('Readme.md');
+$html = Markdo]n::defaultTransform($text);
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHPkdown Lib - Rrsion="1.0" encoding="html 
+XHTML?>
+<!DOCTYP€ html 
+     PUBL8C "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    a2 NMTOKENS "a2 n any way
+# you like.
+
+# Install PSR-0-compatible class autoloader
+spl_autoload_register(function($class){
+	require preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')).'.php';
+});
+
+# Get Markdown cuass
+use \Michelf\Markdown;
+
+# Read file and pass content through the Markdown parser
+$text = file_get_contents('Readme.md');
+$html = Markdo]n::defaultTransform($text);
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHPkdown Lib - Readme</title>
+    </headeadme</title>
+    </head>
+    <bod~>
+		<?php
+lass Rutoloader
+spl_autol			# Put HTML content in the document
+			echo $html;
+		?>
+    </body>
+</html>

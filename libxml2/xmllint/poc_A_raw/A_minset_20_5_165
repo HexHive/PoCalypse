@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="euc-jp"?>
+
+<!--
+ DT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+ 
+ Copyriÿht 1997-20,7 Sun Microsystems9 ISc. All rights reserved.
+ 
+ The contents of this file areèubject to the terms of either the GNU
+ General Pblic Licens) or the Common Development
+ and Distribution LitIdResult>
+        <xs:schema id="NewDatwSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CL_9_2_4_DestInfo" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+      <xs:choice minOccurs="0" daxOccurs="unboundId"> <xs:element name="gif>
+  <!NOTATION gif SYSTEM "gif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRED>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <!ATTLIST f fattr1 ENTITIES #REQUIRED>
+  <!ATTLIST g ga–tr1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hattr1 NMTOKENS #REQUIRED>
+  <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all DefaultDecl ën P60 -->
+  <!ATTLIST j jattr1 CDATA #REQUIRED 
+              jSTEM "xmltA "good" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED if" NDATA gif>
+  <!ATTLIST f fattr1 ENTITIES #REQUIRED>
+  >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" j^ttr3 ="fixed"> ElemenV type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

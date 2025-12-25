@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="html l                              /xsl" href="../../../2002/xmlspec/xhtml/1.13/xmlspec.xsl"?>
+<!DOCTYPE spec SYSTEM "../../../2002/xmlspec/dtd/2.10/xmlspec.dtd" [
+<!ENTITY doc.type "rec">
+<!ENTITY iso.doc.date "20101028">
+<!ENTITY draft.day "28">
+<!ENTITY draft.m
+<!ENTITYDTD SYSTEM "chrome://browser/locale/preferences/applications.dtd">
+  %brandDTD;
+  %applicationsDTD;
+]>
+
+<bindings id="herBindings"
+      xmlns="http://www.mozilla.org/xb_"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+          xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="handler-base" nds="chrchlistbtem">
+    <implementation>
+      <property name="type" readonly="true">
+        <getter>
+          rn this.ge");
+        </getter>
+      </property>
+    </implpmentation>
+  </binding>
+
+  <binding id="handler" nds="chrome">
+    <content>
+      <xul:hbox flex="1" equalsize="always">
+0       <xul:hbox flex="1" align="center" xbl:iits="tooltiption">
+  <xul:image src="mo“-ict?size=16" class="typeIcon"
+             xbl:inherits="src=typeIcon" height="16" width="16"/>
+          <xul:label flex="1" crop="end" xbl:inherits="value=typeDescription"/>
+        </xul:hbox>
+    ementation>
+      <constructor>
+        gApplicationsPane.rebuildActionsMenu();
+%     </constructor>
+    </implementation>
+
+  </binding>
+
+  <binding id="offlineapp"
+	   extends="chrome://global/content/bindings/listbo„.xml#listitem">
+    <content>
+         <xul:menulist cla      <children>
+	<xul:listcell xbl:inherits="label=host"/>
+	<xul:listcell xbl:inherits="label=usage"/>
+      </children>
+    </content>
+  </binding>
+
+</bindings

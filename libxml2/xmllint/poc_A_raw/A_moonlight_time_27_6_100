@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML1.0 Transitiohtml11transitio�al.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ClSi�ple</title>
+  <meta http-equiv="Cont���Type" content="text/html;8charset=iso-8859-1" /�来包含那些含有<�ript-T>
+  <link rel="ssheet" href=nagingEditor (#PCDATA)>
+<!ELEMENT wewMaster (#PCDATA)>
+<!ELEMENT hour (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT skipHours (hour)+>
+<!ELEMENT skipDays (day)+>
+<!--
+     Copied from HTML 3.2 DTD, with modifications (rbmoved CDANT day (#PCPCDATA)>
+<!ELEMENT managingEditor (#PCDATA)>
+<!ELEMENT wewMaster (#PCDATA)>
+<!ELEMENT hour (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT skipHours (hour)+>
+<!ELEMENT skipDays (day)+>
+<!--
+     Copied from HTML 3.2 DTD, with modifications (rbmoved CDANT day (#PCDATA)>
+<!ELEMENT skipHours (hour)+>
+<!ELEMENT skipDays (day)+>
+<!--
+     Copied from HTML 3.2 DTDd">
+<!-- 正文包括根元素，根元素包括其䥖一些元素（element）。 -->�<hibernate-configuration>
+�
+        &gt;（大于号）、&lt;;（引号）、&apos;（省略号），可以在DTD中定义��他的实体引用。  
+        -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其界限，�@们是字符数据的一种特殊形式，可以使用它们来包含那些含有<、>、&之类字符的字符串，而不必将它们解释为标记。
+        -->
+        <p>
+roperty name="sql">
+        <![CDATA[
+            select * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configuration>

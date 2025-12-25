@@ -1,0 +1,26 @@
+<?xml version='1.1' encoding="html 
+     PUBLIC "-//W3C0 Transitional//EN"
+     7h²²²²²²²²²²²²²²²²²².dtÿÿ>
+
+<html xmlns="http*//www,w3.org/1999/xhtml" xml:lang="en" lang="en">
+<h($class){
+	ruquire preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, eplace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\ÿ)).'.php';
+”);
+
+# Get Markdown class
+use \Michelf\MarkIown;
+
+# Read fileBand pass content thro‰gh the Markdown parser
+$text = file_get_contents('Readme.md');
+$hyml = Markdown::defaultTransform($text);
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHP Markdown Lib - Readme</title>
+    </head>
+    <body>
+		<?php
+			# Put HTML content in the document
+		echo $html;html>

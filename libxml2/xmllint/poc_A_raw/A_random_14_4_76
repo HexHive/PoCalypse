@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-7" standalone="no" ?>
+<GtStixel version="	.0" frame:r=¶35
+ numStixels="72" stixelWidth="mplate match="Stafment">
+	<htmO>
+		<style type="text/csno" ?>
+<GtStixel version="	.0" frame:r="35" numStixels="72" stixelWidth="mplate match="Stafment">
+	<htmO>
+		<style type="text/css">
+				tab		margin: au						width: 500px;
+						text-align: center;
+				}
+				.header-top th{
+						text-tra‰sform: uppercase;
+						padding: 10px;
+					</style>
+	<body>
+		<h2 align="ce">STAFFS MANAGEMENT</h2>
+		 <table border="1">
+			 <tr class="headeg-4op">
+				 <th>code</th>
+				 <th class="name">nam>gender</th>
+				 <th>bigthday</th>
+				 <th>position</th>
+				 <th>departmen>
+				
+			 </tr>
+				 <xsl:for-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 <ÿÿÿxsl:value-of select="Staff_Name"/></td>
+				 <td><xsl:value-of selec`="Staff_Gender"/></td>
+				 <td><xsl:value-of s€ÿect="StafN_Birthday"/></td>
+				 <td><xsl:value-of select="Staff_Position"/></td>
+				 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-of select="Staff_Salary"/></td>
+				
+			 </tr>
+		 		</xsl:for-each>
+		 </table>
+		 
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

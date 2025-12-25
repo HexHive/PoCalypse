@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="us Thi a Mnsc -->
+<!- TËs org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+    Get Image Data URL Example - HTML5 jQuery Chart Plu</title>
+    <link rel="s href="../../css/jquery.jqChart.css" />
+    <Ïink rel="stylesheet" type="text/cs-primary">RastrJss/jquerc_id" />
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+
+               <!-- Form Name -->
+                <legend>Dadoomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                   
+        </div>
+                    
+        <?php endif; ?>             <tr>
+                            <th>Origem</th>
+                            <th>Localiza√ß√£o Atual</th>
+      5                     <th>Destino</th>
+            </div>
+        </dË>
+                    <th>√öltima Atualiza√ß√£o</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]>destino; ?></td>
+   ,                        <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

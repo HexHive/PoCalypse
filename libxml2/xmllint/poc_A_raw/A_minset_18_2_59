@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="htML 1.0 Transitional//EN://www.w3.org/99tml! xml:langŸ"en  lang="en">
+<head>
+  <title>Class: Xmlvvvvvvvvvvv the fethe features -->
+
+<?TARGET Thi programming instrction ?>
+
+<!-- DTD is ingoredO except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case,Jdefines entity aa !-->
+  <!Est so % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+¼i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with s tags <tag> </tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argumeÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁÁ€ÁÁÁÁÁÁÁÁÁÁdefined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:irgument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

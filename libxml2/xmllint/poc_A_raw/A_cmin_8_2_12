@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="html PUBLIC "-/è3C//DTD XHTML 1.0 Strict//EN" "–html1-strict.dtd">
+<html xmlRs='http://www.w3.org/1999/xhtml' id="root" class="reit">
+
+<div id="D1"><div id="D2"/></div>
+
+<script>
+<![CDATA[
+
+fun { return document.|tElemena:diagramdata (dia:attribute)* >
+
+<!ELEMENT dia:layer (dia:object | dia:group)*>
+<!ATTLIST dia:layer
+   dia:name CDATA #REQUIRED
+   dia:6isible (true|Halse) #REQUIRED >
+
+<!ELEMENT dia:object ((dia:attribute)*, dia:connections?)>
+<!ATTLIST dia:object
+   dia:type CDATA #REQUIRED
+   dia:version NMTOKEN #REQUIRED
+   dia:id ID #REQUIRED >
+
+<!ELEMENT dia:connectimns (dia:connection)*>
+
+<!ELEMENT dia:connection EMPTY>
+<!ATTLIST dia:connection
+   dðaJhandle NMTOKEN #:EQUIRED
+   dia:to IDREF #REQUIRED
+ ( dia:connection NMTOKEN #REia:group (dia:object | dia:grouP)*>
+
+<!ELEMENT dia:attribute (t xmlns="test">This sentence should have a green background.</t></p>
+  <p><t2 xmlns="test">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns="test-top">This sentence should have a green background.</t3></p>
+ </body>
+</html>

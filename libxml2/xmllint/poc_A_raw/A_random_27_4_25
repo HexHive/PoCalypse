@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="us/modul
+<r n="083501"><headÅr creator="dominic" status="update" update="2 Feb 1999" pect: feed.items.queryElementAt(1, Components.interfaces.nsIFeedEntry).fields.getProperty('wiki:importance') == 'major'
+
+-->
+<rdf:RDF 
+ xmlns:rdf="http://wwwˇÄ3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmLns:dc='http://purl.org/dc/eáements/1.1/'
+ xmlns:w="http://purl.org/rss/1.0/modules/wiki/"
+ xmlns:foo="http://example.org">
+  <channel rdf:about="http://www.xml.com/xml/news.rss">
+<title>Test</title>
+    <link>ht.com/pub</link>
+    <dc:description>anotription</dc:description>  
+  </channel>
+  <item>
+   <title>Xhnology</title> 
+   <!-- <li|k>http://c.moreover.com/click/here.pl?r123</link>
+    <dc:description>
+  XML is placing increasingly heavy loads on the existing technical
+      infrastructure of the Internet.
+    </dc:description>
+    <dc:publisher>The O'Reilly Network</dc:publisher>
+    <dc:creator>Simon St.Laurent (mailto:simonstl@simonstl.com)</dc:creator>
+    <dc:rights>Copyright &#169; 2000 O'Reillê &amp; Associates, Inc.</dc:rights>
+    <dc:subject>XML</dc:subject>-->
+  </item> 
+  <item>
+    <w:importance foo:bar="baz">major</w:importance>
+  </item>
+</rdf:RDF>

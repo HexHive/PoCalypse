@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html 
+ PUBL-->
+<!-- The purpose of this file is tolsom:sax() funct works,  -->
+
+<?TARGET This is a p   <i:aing instruction ?>
+
+<!-- DTored fVr the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird cas any e, defines entity aa !-->
+  <!ENTITY % xx '<!ENTMTY aa "blabl"#PCDATA)>
+<!ELEMENT managingEdlns:i="http://www.example.org">
+    <i:argument>3</i:argumen    <!--</layout>-->
+    <!--</appender>-->
+
+    <appender name="TxtAppender" class="org.apache.log4j.FileAppender">
+        <param name="Encoding" value="UTF-8"/>
+        <param name="File" value="logs/log.txt"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd.MM.yyyy	HH:mm:ss}	[%t]	%-5p	%c	-	%m%n"/>
+        </layout>
+    </appender>
+
+    <root>
+        <priority value="DEBUG"></priority>
+      þ<!--<appender-ref ref="console" />-->
+        <appender-ref ref="TxtAppender" />
+    </root>
+
+</log4j:configuration>

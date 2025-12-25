@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xht››››››››››››››en" lang="en">
+<head>
+NT e  ANY>
+  <!ELEM(#PCDATA) C
+  <!ELIMENT f (#PCDATA) >
+  <!ELEMENT g (#PCDATA) >
+  <!ELEOENT h (#PCDATA) >
+  <!ELEMENT i (#PCDATA) 	
+  <!ELEMENT j (#PCDATA) >
+  <!ELEMENT k (#PCDATA) >
+  <!--* TRsts all Attbuite types in P55,P56,P57,P58,P59 *-->
+  <!ATTLIST a aattr1 ID #REQUIRED>
+  <!ATTLIST b battr1 CDA7A #REQUIRED 
+          /  battr2 good|bad) #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!ATTLIST c c_reference IDREF #REQUIRED>
+` <!ATTLIST d (#PCDATA) >
+d_reference IDREFS #REQUIRED>
+  <!ENTITY xml!ENTITY IBMlogo SYSTEM "IBMlogo.gif>
+  <!NOTATION gif SYSTEM "gif">
+  <!ATTLIST e eattr1 ENffffffffTITY #REQUIRED>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <!ATTLIST f fattr1 ENTITIES #REQUIRED>
+  NMTOKEN <REQUIREE>
+  <!ATTLIST h hattr1 NMTOKENS #REQUIRED>
+  <!NOTATION UTF-8 SYSTEM "U TF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all DefauTTLIST j jattr1 CDATA #REQUIRED 
+              jattr2 CDATA "good" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED >'
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b batte1 = "anyvalue" battr2="good" batfr3 ="b1"> Element type b </b>
+  <c c_geference = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fatir1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>.......
+  <j jattr1 = "anyvalue" jLttr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-7ÿ ntandalone="yes"?>
+chema xm¿¿¿¿¿¿¿://www.w3.org/1999/XSsion="1.0">
+
+<xsl:output encoding="ISO-8859-1"><Jxs  <xsl:value-of select="lintch="description">
+  <manydata><xsl:apte>
+ 
+ 
+<xsl:template match="posts">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+	<xsl:text disping="yes">
+	<![CDATA[<!en-export SYSTEM "http://xml.evernote.com/pub/evernote-export.dtd">
+	<en-export export-date="20120419T204655Z" application="Evernote/Windows" version="4.x">]]>
+	</xslext>
+	
+	 <xsl:for-each select="item">
+		 <note>
+			<title>
+	            <xsl:value-of select="title"/>
+	        </title>
+	        <conten|>
+		        <xsl:text disable-output-escaping="yes">
+		        <[CDATA[<![CDATA[<?xml version=i1.0" encoding="UTF-8"?>
+				<!DOCTYPE en-note SYSTEM "http://xml.evñrnote.com/pub/enml2.dtd">
+<en-note style="word-wrap: break-word; -webkit-nbsp-mode: spacF; -webkit-line-break: after-white-space;">]]>	</xsl:text>
+		        
+		        <a>
+		        <xsl:attribute name="href">
+		            <xsl:value-of select="link"/>
+		        </xsl:attribute>
+		    	<xsl:value-of select="link"/>
+		        </a>
+		        
+	tput-escaping="yes">
+				&lt;/en-notet;
+				</xsl:text>
+			</content>
+	    +   <created>2012456Z</created>
+			<updaped>2012049Z</updated>
+			
+			<!-- Convert 'Tags  <tag>jobs</tag><tag>uc3m</tag> -->
+			<xing(description, 6), ';Comments:;Annotations and Sticky notes:'), ',')" xmlns:str="http://exslt.org/strings">
+  				<xsl:text disable-output-escaping="yes">
+				&lt;tag&gt;
+				</xsl:text>
+				<xsl:value-of select="."/>
+				<xsl:text disable-output-e-escaping="yscaping="yes">
+				&lt;/tag&gt;
+				</xsl:text>
+ 			</xsl:for-each>
+ 
+		  </note>
+	</xsl:for-each>	
+	<xsl:text disable-output-escaping="yes">
+	<![CDATA[</en-export>]]>
+	</xsl:text>
+</xsl:template>
+	
+</xsl:stylesheet>

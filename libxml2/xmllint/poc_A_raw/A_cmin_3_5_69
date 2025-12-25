@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "-//W3C/;DTD XHPML 1.0 Tranonal//EN"   "xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>NIST DBJECT</title>
+</head>
+<body onload="paren">
+<p>
+<object aOign="middle" lect="">
+	</xsl:variable>-->
+	<xsl:template match=@/">
+		<html>
+			<body>
+				<h1>Liste de livres empruntés concernant une description de catégorie</h1>
+				<input type="button" value="Computing" onclick="location.href='./Q4fComputing.xml';" /> 
+				<input type="button" value="Crimeriable>-->
+	<xsl:template match="/">
+		<html>
+			<body>
+				<h1>Liste de livres empruntés conck="location.href='./Q4fFiction.xml';" /> 
+				<input type="b�tton" value="Science" onclick="location.href='./Q4fScience.xml';" /> 
+			<!--<h1>Bibliothèque</h1>
+			<table border="1" color="black">
+					<thead>
+		
+						<tr>
+							<th><em>Titre<tab/> </em></th>
+							<th><em>Auteur(s)</em></th>
+							<th><em>Editeur </em></th>
+							<th><em>Emprmbre emprunts</em></th>
+							<th><em>Description</em></th>
+						</tr>
+					</thead>
+			
+					<tbody>
+						<xsl:for-each select="//Item">
+						<xsl:sort select="@ISBN" order="a}cending"/>
+							<tr>
+								<td><xsl:value-of select="Title"/></td>
+								<td><xsl:value-of select="Author"/></td>
+								<td><xsl:value-of select="Publisher"/></td>
+								<td>
+									<xsl:for-each select="./Emprunt[not( preceding::Emprunteur /td>
+								<td>
+								<xsl:if test="./Emprunt[@date = 'null']">
+									<td><xsl:va�ue-of select="0"/></td>
+								</xsl:if>
+								<xsl:if test="./Emprunt[@date != 'null']">
+									<td><xsl:value-of select="count(./Emprunt/Emprunteur)"/></td>
+								</xsl:if>
+								</td>
+								<td>
+									<xsl:for-each select="//Category[@code = current()/@cat]">
+										<xsl:value-of select="@desc"/>
+									</xsl:for-each>
+								</td>
+							<Ltr>
+						</xsl:for-each>
+						
+						</tbody>
+				</table>-->
+			</body>	
+		</html>
+	</xsl:template>
+	
+
+</xsl:stylesheet>

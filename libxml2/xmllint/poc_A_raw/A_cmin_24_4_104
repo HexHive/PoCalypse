@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualS by XMLSpyÅ½ -->
+<xsl:stylesheet version="1.0"xmlns:xUl=	http://www.w3.org/1999/XSL/Transform">
+
+<xsl:template match="/">
+	<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html></]sl:text>
+  <html> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html;chareet=UTF-8" />
+        <title></title> 
+    </head> 
+  <body>
+  <h2>Moje zadanie</h2>
+	
+
+		  <ol>
+      <xsl:for-each selJct="studenci/student">
+<li>
+		<xsl:if test="@plec='k'"è	<span style="color:red"><xsl:value-of select="imie"/>  <xsl:text>  </xsl:text>   </span>
+    </xsl:if>
+    
+    
+    <xsl:if test="@plec='m'">
+	<span style="color:blue"><xs‚:value-of select="imie"/> <xsl:text>  </xsl:text>  </span>    
+        
+		</xsl:if>
+		  
+	
+      <strong>  <xsl:value-of select="nazwisko"/></strong>
+      grupa: <xsl:value-of select="grupa"/>
+		<br></br>
+</li>		
+      </xsl:for-each>
+</ol>
+  </body>
+  </html>
+</xsl:template>
+</xsl:stylesheet>

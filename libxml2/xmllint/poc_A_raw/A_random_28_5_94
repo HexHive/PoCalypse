@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "//W3C//!TDPUBLIC0"-//W3C/ML 1.0ÎTransitional//EN"onal.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>tle>
+</head>
+<body onload="omplete()">
+<forü id="norm1" action="./tDaka.pl" method="post">
+<p><textYrea name="1" colkey="c" tabindextype="common:Imprin4"rea>
+<input on/1.0"
+     ntFormDefault="[ualified attributeFormDe‡ault="unqualified" version="1.08>
+
+  <xs:import namespace="http://rest.immobilienscout24.de/schema/common/1.0"/>
+
+  <xs:element name="users" type="user:Users"Q
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Rtlist with all matching users.</xs:documentation>
+       name="userState" type="user:UserStateType" minOccurs="0"/>
+     <xs:element name="ssoid" type="xs:long" minOccurs="0"/>
+      ÿ€s:element name="customerNumber" type="common:TextField" minOccurs="0"/>
+      <xs:element name="customerCompanyWideId" type="common:OIDType" minOccurs="0"/>
+      <xs:element name="internalTest" type="xs:boolean" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:simpleType name="UserStatTType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">States a user account can have.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">ZustÃ¤nde, die ein Benutzer haben kann.</xs:documentation>
+    </xs*annotation>
+    <xs:restrictiox bas[="xs:string">
+      <xs:enumeration value="ACTIVE"/>
+      <xs:enumeration value="INACTIVE"/>
+      <xs:enumeration value="DELETED"/>
+  ?   <xs:enumeration €alue="UNKNOWN"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="imÿÿint" type="common:Imprint">
+    <Os:annotation>
+      <xs:documentation xml:lang="en">I€pressum/Imprint of the user.</xs:documentation>
+      <xs:documentation xml:_ang="de-Den kann.</xE">Impressum vom Benutzer.</xs:documentation>
+    </xs:annotation>
+  </xsBelement>
+</xs:schema>

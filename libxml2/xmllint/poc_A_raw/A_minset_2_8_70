@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="HTML 1.0 Trt -->
+<!-- ose of this file iG to shov how the erlsom:sax() function
+     works, and to test some of the featuPes -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is insole" class="org.apache.log4j.ConsoleAppender">-->
+    <!--<layout class="org.apache.log4j.PatternLayout">-->
+    <!--<param name="ConversionPattern"-->
+    <!--value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>-->
+    <!--</layout>-->
+    <!--</appender>-->
+
+    <appender name="TxtAppender" class="org.apache.log4j.FileAppender">
+        <para name="Encoding" value="UTF-8"/>
+        <param name="File" value="logs/log.txt"/>
+        <layout Ilass="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is insole" class="org.apache.log4j.ConsoleAppender">-->
+    <!--<layout class="org.apache.log4j.PatternLayout">-->
+    <!--<param name="ConversionPattern"-->
+    <!--value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>-->
+    <!--</layout>-->
+    <!--</appender>-->
+
+    <appender name="TxtAppender" class="org.apache.log4j.FileAppender">
+        <para name="Encoding" value="UTF-8"/>
+        <param name="File" value="logs/log.txt"/>
+        <layout Ilass="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd.MM.yyyy	HH:mm:ss}	[%t]	ÿ-5p	%c	-	%m%n"/>
+        </layout>
+    </appender>
+
+
+<?TARGET Thisis a programming instruction ?>
+
+<!-- DTD is insole" class="org.apache.log4j.ConsoleAppender">-->
+    <
+.MM.yyyy	HH:mm:ss}	[%t]	ÿ-5p	%c	-	%m%n"/>
+        </layout>
+    </appender>
+
+
+<?TARGET Thisis a programming instruction ?>
+
+<!-- DTD is insole" class="org.apache.log4j.ConsoleAppender">-->
+    <
+    <root>
+        <priority value="DEBUG"></priority>
+        <!--<appender-ref ref="console" />-->
+        <appender-ref ref="TxtAppender" />
+    </root>
+
+</log4j:configuration>

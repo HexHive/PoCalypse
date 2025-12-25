@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0ose of this file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "ble xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tak> </tag> 
+</tag2>]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+<i:argument>defined entity: & name="ConversionPattern" v	lue="%d{dd.MM.yyyy	HH:mm:ss}	[%t]	ХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХХ›-5p	%c	-	%m%n"<?TARGET This is a programming instruction ?>
+t>
+        <priority=value="DEBUG"></prikrity>
+    ..      <appender-4eT <!-7</sppender>ref="TxAppender" />
+    </root>
+
+</log4j:configuration>

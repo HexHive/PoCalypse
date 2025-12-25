@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html  PUBLn_0000/ILSVRC2017_train_00018000</folder>
+	<fileilename>
+	<source>
+		<database>RC_2017</databasel id="0" u="66.000000" vB="277.073273" vT="209.115753" disp="37.906837" />
+   <Stixel id="1" u="73.000000" vB="273.484772" vT="206.732758" disp="37.228497" />
+   <Stixel id="2" u="80.000000" vB="269.896271" vT="204.350143" disp="36.550156" />
+   <Stixel id="3" u="87.00000€"vB="266.307739" vT="201.967880" disp="35.871815" />
+   <Stixel id="4" u="94.000000" vB="262.719238ext>
+
+<!--The following two lines ensures that only the first letter of the title is capitalized, all the rest are turned into lower-case -->
+<i><xsl:value-of select="(substring(//title,1,1))" />  
+<xsl:value-of select="lower-case(substring(//title,2))" />
+</i>
+	<xsl:text>. </xsl:text>
+
+	<xsl:value-of select="//city" />
+	<xsl:value-of select="//state" />
+		<xsl:text>: </xsl:text>
+
+	<xsl:value-of select="//publisher" />
+		<xsl:text>. </xsl:text>
+
+
+
+		
+
+</xsl:template>	
+
+</xsl:stylesheet>
+
+

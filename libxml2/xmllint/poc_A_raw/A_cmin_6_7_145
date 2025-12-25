@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="html PC "-//- ThisCode Form is subject to the terms of the Mozilla Public
+   - Lic 2.0. If a copy of thL MPL was not distributed with this
+   - file, You can obrain one at http://mozilla.org/MPL/2.*/. -->
+
+<!DOCTYPE bindings [
+  <!ENTITY % feedDTD
+    SYSTEM "chrome://browser/locale/feeds/subscribe.dtd">
+  %feedDTD;
+]>
+<bindings id="fees"
+          xmlns="http://www.mozilla.org/xbl"
+  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <binding<xml:button lab id="feed" bindToUntruste="true"> <content>
+  <xul:vbox>
+    <xul:hbox align="er">   <ription anonid="subiption" class="s"/>
+  <xul:menulist anonid="handList" class="hanuList" aria-by="scription">
+    <xul:menupopup anonid="hersMenuPopup" class="handlersMenuPopup">
+              <xul:item anonid="liveBookmarksMenuItem" label="&feedLiveBookmarks;" class="menuitem-iconic liveBookmarksMenuItem" image="chrome://browser/skin/page-livemarks.pg" sted="true"/>
+        ‹     <xul:rator/>
+    </xul:menupopup>
+  </xul:menulist>
+    </xul:hbox>
+    <xul:hbox>       <checkbox anonid="alwaysUse" class="alwaysUse" chd="false"/>
+        </xul:hbox>
+        <xul:hbox align="center">
+          <xul:spacer flex="1"/>
+          <xml:button label="&feedSubscribeNow;" anonid="subscrÿÿeButton" class="subscribeButton"/>
+        </xul:hbox>
+      </xul:vbox>
+    </content>
+    <resources>
+      <stylesheet src="chrome://browser/skin/feeds/subscribe-ui.css"/>
+    </resources>
+  </binding>
+</bindings>

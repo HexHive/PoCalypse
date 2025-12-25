@@ -1,0 +1,648 @@
+<?xml-stylesheet href=coding="UTF-8"?>
+<hmis:Sources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.hudhdx.info/Resources/Vendors/4_1_3/HUD_HMIS.xsd https://raw.githubusercontent.com/hmis-interop/xml/master/src/HUD_HMIS.xsd"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    xmlns:hmis="http://www.hudhdx.info/Resources/Vendors/4_1_3/HUD_HMIS.xsd">
+    <hmis:Source>
+        <hmis:SourceID>12345</hmis:SourceID>
+        <hmis:SoftwareVendor>HMISSoft Inc.</hmis:SoftwareVendor>
+        <hmis:SoftwareVersion>3</hmis:SoftwareVersion>
+        <hmis:SourceContactEmail>bill@gsnail.com</hmis:SourceContactEmail>
+        <hmis:SourceContactExtension>775</hmis:SourceContactExtension>
+        <hmis:SourceContactFirst>Patricia</hmis:SourceContactFirst>
+        <hmis:SourceContactLast>Duke</hmis:SourceContactLast>
+        <hmis:SourceContactPhone>5939698367</hmis:SourceContactPhone>
+        <hmis:SourceName>Fictitious County HMIS</hmis:SourceName>
+        <hmis:Export>
+            <hmis:ExportID>37</hmis:ExportID>
+            <hmis:ExportDate>2015-02-27T23:14:59</hmis:ExportDate>
+            <hmis:ExportPeriod>
+                <hmis:StartDate>2015-01-04T23:14:59</hmis:StartDate>
+                <hmis:EndDate>2015-03-26T23:14:59Z</hmis:EndDate>
+            </hmis:ExportPeriod>
+            <hmis:ExportPeriodType>effective</hmis:ExportPeriodType>
+            <hmis:ExportDirective>other</hmis:ExportDirective>
+            <!--<hmis:Affiliation hmis:dateCreated="2016-04-11T23:14:59Z" hmis:dateUpdated="2015-05-30T23:14:59" hmis:userID="nf">
+                <hmis:AffiliationID>76yt</hmis:AffiliationID>
+                <hmis:ProjectID>222E</hmis:ProjectID>
+                <hmis:ResProjectID>222D</hmis:ResProjectID>
+            </hmis:Affiliation>-->
+            <hmis:Client hmis:dateCreated="2016-04-11T23:14:59Z" hmis:dateUpdated="2015-05-30T23:14:59" hmis:userID="ned100">
+                <hmis:PersonalID>A1a1</hmis:PersonalID>
+                <hmis:FirstName hmis:hashStatus="2">123456789012345678901234567890ABCDEF12d4</hmis:FirstName>
+                <hmis:MiddleName hmis:hashStatus="1">Barnaby</hmis:MiddleName>
+                <hmis:LastName hmis:hashStatus="3">Jones</hmis:LastName>
+                <hmis:NameSuffix>Sr.</hmis:NameSuffix>
+                <hmis:NameDataQuality>9</hmis:NameDataQuality>
+                <hmis:SSN hmis:hashStatus="1">79xx9xx8x</hmis:SSN>
+                <hmis:SSNDataQuality>2</hmis:SSNDataQuality>
+                <hmis:DOB>2014-11-18</hmis:DOB>
+                <hmis:DOBDataQuality>1</hmis:DOBDataQuality>
+                <hmis:Gender>4</hmis:Gender>
+                <hmis:OtherGender>intersex</hmis:OtherGender>
+                <hmis:Ethnicity>0</hmis:Ethnicity>
+                <hmis:Race>8</hmis:Race>
+                <hmis:VeteranStatus>9</hmis:VeteranStatus>
+            </hmis:Client>
+            <hmis:Contact  hmis:dateCreated="2015-08-13T23:14:59" hmis:dateUpdated="2015-03-30T23:14:59" hmis:userID="IFmMP">
+                <hmis:ContactID>98yuywwyy776ww</hmis:ContactID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:ContactDate>2015-08-13T23:14:59</hmis:ContactDate>
+                <hmis:ContactLocation>2</hmis:ContactLocation>
+            </hmis:Contact>
+            <hmis:DateOfEngagement hmis:dateCreated="2015-08-13T23:14:59" hmis:dateUpdated="2015-03-30T23:14:59" hmis:userID="IFmMP">
+                <hmis:DateOfEngagementID>4321s</hmis:DateOfEngagementID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:DateOfEngagement>2016-04-17</hmis:DateOfEngagement>
+            </hmis:DateOfEngagement>
+            <hmis:Disabilities hmis:dataCollectionStage="1" hmis:informationDate="2014-09-01" hmis:dateCreated="2014-09-01T23:14:59" hmis:dateUpdated="2016-04-17T23:14:59Z"
+                 hmis:userID="YBR5goXMKigc.">
+                <hmis:DisabilitiesID>6743e</hmis:DisabilitiesID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:DisabilityType>8</hmis:DisabilityType>
+                <hmis:DisabilityResponse>2</hmis:DisabilityResponse>
+                <hmis:IndefiniteAndImpairsIndependence>9</hmis:IndefiniteAndImpairsIndependence>
+                <hmis:DocumentationOnFile>1</hmis:DocumentationOnFile>
+                <hmis:ReceivingServices>99</hmis:ReceivingServices>
+                <hmis:PATHHowConfirmed>1</hmis:PATHHowConfirmed>
+                <hmis:PATHSMIInformation>3</hmis:PATHSMIInformation>
+                <hmis:TCellCountAvailable>1</hmis:TCellCountAvailable>
+                <hmis:TCellCount>1401</hmis:TCellCount>
+                <hmis:TCellSource>3</hmis:TCellSource>
+                <hmis:ViralLoadAvailable>1</hmis:ViralLoadAvailable>
+                <hmis:ViralLoad>999999</hmis:ViralLoad>
+                <hmis:ViralLoadSource>2</hmis:ViralLoadSource>
+            </hmis:Disabilities>
+            <hmis:DomesticViolence hmis:dataCollectionStage="1" hmis:informationDate="2014-11-21" hmis:dateCreated="2014-11-21T23:14:59"
+                 hmis:dateUpdated="2016-01-05T23:14:59Z" hmis:userID="fPKfm5Rtfi0m3OhjeFL_pozaSRUUA">
+                <hmis:DomesticViolenceID>87865g</hmis:DomesticViolenceID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:DomesticViolenceVictim>1</hmis:DomesticViolenceVictim>
+                <hmis:WhenOccurred>2</hmis:WhenOccurred>
+                <hmis:CurrentlyFleeing>8</hmis:CurrentlyFleeing>
+            </hmis:DomesticViolence>
+            <hmis:Education hmis:dataCollectionStage="1" hmis:informationDate="2014-11-21" hmis:dateCreated="2014-11-21T23:14:59" hmHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHis:dateUpdated="2014-11-21T23:14:59" hmis:userID="user7">
+                <hmis:EducationID>56t54</hmis:EducationID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:LastGradeCompleted>3</hmis:LastGradeCompleted>
+                <hmis:SchoolStatus>8</hmis:SchoolStatus>
+            </hmis:Education>
+            <hmis:Employment hmis:dataCollectionStage="5" hmis:informationDate="2014-11-21" hmis:dateCreated="2016-03-26T23:14:59Z"
+                 hmis:dateUpdated="2015-04-01T23:14:59Z" hmis:userID="sXKqL">
+                <hmis:EmploymentID>344r445y</hmis:EmploymentID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:Employed>8</hmis:Employed>
+                <hmis:EmploymentType>2</hmis:EmploymentType>
+                <hmis:NotEmployedReason>3</hmis:NotEmployedReason>
+            </hmis:Employment>
+            <hmis:Enrollment hmis:dateCreated="2015-05-08T23:14:59" hmis:dateUpdated="2015-01-27T23:14:59Z" hmis:userID="Hc8CQeYVWWj0dA9cWkDLe">
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:PersonalID>A1a1</hmis:PersonalID>
+                <hmis:ProjectID>222D</hmis:ProjectID>
+                <hmis:EntryDate>2016-04-12Z</hmis:EntryDate>
+                <hmis:HouseholdID>a34563w</hmis:HouseholdID>
+                <hmis:RelationshipToHoH>1</hmis:RelationshipToHoH>
+                <hmis:ResidencePrior>17</hmis:ResidencePrior>
+                <hmis:OtherResidencePrior>some other residence text here</hmis:OtherResidencePrior>
+                <hmis:ResidencePriorLengthOfStay>8</hmis:ResidencePriorLengthOfStay>
+                <hmis:EntryFromStreetESSH>1</hmis:EntryFromStreetESSH>
+                <hmis:DateToStreetESSH>2015-04-01</hmis:DateToStreetESSH>
+                <hmis:TimesHomelessPastThreeYears>2</hmis:TimesHomelessPastThreeYears>
+                <hmis:MonthsHomelessPastThreeYears>103</hmis:MonthsHomelessPastThreeYears>
+                <hmis:DisablingCondition>9</hmis:DisablingCondition>
+                <hmis:HousingStatus>6</hmis:HousingStatus>
+            </hmis:Enrollment>
+            <hmis:Enrollment hmis:dateCreated="2015-05-08T23:14:59" hmis:dateUpdated="2015-01-27T23:14:59Z" hmis:userID="Hc8CQeYVWWj0dA9cWkDLe">
+                <hmis:ProjectEntryID>w5642</hmis:ProjectEntryID>
+                <hmis:PersonalID>A1a1</hmis:PersonalID>
+                <hmis:ProjectID>222E</hmis:ProjectID>
+                <hmis:EntryDate>2016-04-12Z</hmis:EntryDate>
+                <hmis:HouseholdID>a34563w</hmis:HouseholdID>
+                <hmis:RelationshipToHoH>2</hmis:RelationshipToHoH>
+                <hmis:ResidencePrior>17</hmis:ResidencePrior>
+                <hmis:OtherResidencePrior>some other residence text here</hmis:OtherResidencePrior>
+                <hmis:ResidencePriorLengthOfStay>8</hmis:ResidencePriorLengthOfStay>
+                <hmis:EntryFromStreetESSH>0</hmis:EntryFromStreetESSH>
+                <hmis:TimesHomelessPastThreeYears>1</hmis:TimesHomelessPastThreeYears>
+                <hmis:MonthsHomelessPastThreeYears>103</hmis:MonthsHomelessPastThreeYears>
+                <hmis:DisablingCondition>9</hmis:DisablingCondition>
+                <hmis:HousingStatus>6</hmis:HousingStatus>
+            </hmis:Enrollment>
+            <hmis:EnrollmentCoC hmis:dataCollectionStage="1" hmis:informationDate="2015-06-24" hmis:dateCreated="2016-02-13T23:14:59Z"
+                 hmis:dateUpdated="2016-02-19T23:14:59" hmis:userID="DU5m">
+                <hmis:EnrollmentCoCID>56332</hmis:EnrollmentCoCID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:CoCCode>BZ-123</hmis:CoCCode>
+            </hmis:EnrollmentCoC>
+            <hmis:EnrollmentCoC hmis:dataCollectionStage="1" hmis:informationDate="2015-06-24" hmis:dateCreated="2016-02-13T23:14:59Z"
+                hmis:dateUpdated="2016-02-19T23:14:59" hmis:userID="DU5m">
+                <hmis:EnrollmentCoCID>56332</hmis:EnrollmentCoCID>
+                <hmis:ProjectEntryID>w5642</hmis:ProjectEntryID>
+                <hmis:CoCCode>BZ-123</hmis:CoCCode>
+            </hmis:EnrollmentCoC>
+            <hmis:Exit hmis:dateCreated="2014-10-07T23:14:59Z" hmis:dateUpdated="2015-11-06T23:14:59Z" hmis:userID="GO">
+                <hmis:ExitID>C2x</hmis:ExitID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:EitDate>2016-11-16Z</hmis:ExitDate>
+                <hmis:Destination>17</hmis:Destination>
+                <hmis:OtherDestination>Hotel Training Program</hmis:OtherDestination>
+            </hmis:Exit>
+            <hmis:Exit hmis:dateCreated="2014-10-07T23:14:59Z" hmis:dateUpdated="2015-11-06T23:14:59Z" hmis:userID="GO">
+                <hmis:ExitID>C3x</hmis:ExitID>
+                <hmis:ProjectEntryID>w5642</hmis:ProjectEntryID>
+                <hmis:ExitDate>2016-11-16Z</hmis:ExitDate>
+                <hmis:Destination>22</hmis:Destination>
+            </hmis:Exit>
+            <hmis:ExitHousingAssessment hmis:dateCreated="2015-02-09T23:14:59" hmis:dateUpdated="2015-08-17T23:14:59" hmis:userID="l_Xj">
+                <hmis:ExitHousingAssessmentID>326</hmis:ExitHousingAssessmentID>
+                <hmis:ExitID>C2x</hmis:ExitID>
+                <hmis:HousingAssessment>6</hmis:HousingAssessment>
+                <hmis:SubsidyInformation>2</hmis:SubsidyInformation>
+            </hmis:ExitHousingAssessment>
+            <hmis:ExitPATH hmis:dateCreated="2015-05-20T23:14:59Z" hmis:dateUpdated="2016-05-21T23:14:59" hmis:userID="y9SC3Udh_t0aJCX">
+                <hmis:ExitPATHID>676rt</hmis:ExitPATHID>
+                <hmis:ExitID>C2x</hmis:ExitID>
+                <hmis:ConnectionWithSOAR>0</hmis:ConnectionWithSOAR>
+            </hmis:ExitPATH>
+            <hmis:ExitRHY hmis:dateCreated="2015-11-22T23:14:59" hmis:dateUpdated="2015-10-11T23:14:59Z" hmis:userID="Zu6Nb5-">
+                <hmis:ExitRHYID>342r</hmis:ExitRHYID>
+                <hmis:ExitID>C2x</hmis:ExitID>
+                <hmis:WrittenAftercarePlan>9</hmis:WrittenAftercarePlan>
+                <hmis:AssistanceMainstreamBenefits>0</hmis:AssistanceMainstreamBenefits>
+                <hmis:PermanentHousingPlacement>0</hmis:PermanentHousingPlacement>
+                <hmis:TemporaryShelterPlacement>0</hmis:TemporaryShelterPlacement>
+                <hmis:ExitCounseling>0</hmis:ExitCounseling>
+                <hmis:FurtherFollowUpServices>1</hmis:FurtherFollowUpServices>
+                <hmis:ScheduledFollowUpContacts>1</hmis:ScheduledFollowUpContacts>
+                <hmis:ResourcePackage>9</hmis:ResourcePackage>
+                <hmis:OtherAftercarePlanOrAction>0</hmis:OtherAftercarePlanOrAction>
+                <hmis:FamilyReunificationAchieved>1</hmis:FamilyReunificationAchieved>
+                <hmis:ProjectCompletionStatus>3</hmis:ProjectCompletionStatus>
+                <hmis:EarlyExitReason>1</hmis:EarlyExitReason>
+            </hmis:ExitRHY>
+
+            <hmis:Funder hmis:dateCreated="2015-09-19T23:14:59" hmis:dateUpdated="2016-01-29T23:14:59Z" hmis:userID="m2Pym5-77tSVuI-IjerY">
+                <hmis:FunderID>76g</hmis:FunderID>
+                <hmis:ProjectID>222D</hmis:ProjectID>
+                <hmis:Funder>16</hmis:Funder>
+                <hmis:GrantID>S_w9P0npP</hmis:GrantID>
+                <hmis:StartDate>2016-06-11Z</hmis:StartDate>
+                <hmis:EndDate>2016-04-08</hmis:EndDate>
+            </hmis:Funder>
+            <hmis:Funder hmis:dateCreated="2015-09-19T23:14:59" hmis:dateUpdated="2016-01-29T23:14:59Z" hmis:userID="m2Pym5-77tSVuI-IjerY">
+                <hmis:FunderID>76g</hmis:FunderID>
+                <hmis:ProjectID>222E</hmis:ProjectID>
+                <hmis:Funder>16</hmis:Funder>
+                <hmis:GrantID>S_w9P0npP</hmis:GrantID>
+                <hmis:StartDate>2016-06-11Z</hmis:StartDate>
+                <hmis:EndDate>2016-04-08</hmis:EndDate>
+            </hmis:Funder>
+            <hmis:HealthInsurance hmis:dataCollectionStage="1" hmis:informationDate="2014-11-21" hmis:dateCreated="2016-01-13T23:14:59" hmis:dateUpdated="2014-09-29T23:14:59Z"
+                 hmis:userID="NdLgvXYr7g">
+                <hmis:HealthInsuranceID>sw1ws2</hmis:HealthInsuranceID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:InsuranceFromAnySource>8</hmis:InsuranceFromAnySource>
+                <hmis:Medicaid>0</hmis:Medicaid>
+                <hmis:NoMedicaidReason>1</hmis:NoMedicaidReason>
+                <hmis:Medicare>0</hmis:Medicare>
+                <hmis:NoMedicareReason>4</hmis:NoMedicareReason>
+                <hmis:SCHIP>1</hmis:SCHIP>
+                <hmis:NoSCHIPReason>3</hmis:NoSCHIPReason>
+                <hmis:VAMedicalServices>0</hmis:VAMedicalServices>
+                <hmis:NoVAMedReason>99</hmis:NoVAMedReason>
+                <hmis:EmployerProvided>1</hmis:EmployerProvided>
+                <hmis:NoEmployerProvidedReason>9</hmis:NoEmployerProvidedReason>
+                <hmis:COBRA>1</hmis:COBRA>
+                <hmis:NoCOBRAReason>9</hmis:NoCOBRAReason>
+                <hmis:PrivatePay>1</hmis:PrivatePay>
+                <hmis:NoPrivatePayReason>8</hmis:NoPrivatePayReason>
+                <hmis:StateHealthIns>0</hmis:StateHealthIns>
+                <hmis:NoStateHealthInsReason>4</hmis:NoStateHealthInsReason>
+            </hmis:HealthInsurance>
+            <hmis:HealthInsurance hmis:dataCollectionStage="1" hmis:informationDate="2014-11-21" hmis:dateCreated="2016-01-13T23:14: div count($samp/*)
+  return
+    &lt;spx:data-sketch
+      xml-doc-count="{$xml-docs}"
+      text-doc-count="{$text-docs}"
+      binary-doc-count="{$binary-docs}"
+      elements-per-doc="{$epd}"&gt;
+      {$cnames!&lt;spx:root-eldm
+        name="{.}"
+        count="{spx:est-by-QName(spx8QName(.))}"/&gt;
+      }
+      {$all-ns!&lt;spx:ns-seen&gt;{.}&lt;/spx:ns-seen&gt;}
+      {$dates!&lt;spx:date&gt;{.}&lt;/spx:date&gt;}
+      {$near-dates!&lt;spx:almost-date&gt;{.}&lt;/spx:almost-date&gt;}
+      {$all-years!&lt;spx:year&gt;{.}&lt;/spx:year&gt;}
+      {$all-smallnum!&lt;spx:small-num&gt;{.}&lt;/spx:small-num&gt;}
+    &lt;/spx:data-sketch&gt;
+    </programlisting>
+    <para>This code and the following listings make use of the following helper functions which
+    contain vendor-specific implementations, which are not important here (see the Code section
+    later for details):<variablelist>
+        <varlistentry>
+          <term>spx:est-docs()</term>
+          <lisyitem>
+            <para>A function that quickly estimates the total number of documents in the database.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>spx:est-test-docs()</term>
+          <listitem>
+            <para>A function that quickly estimates the total number of documents in the database that consist of a single text node.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>spx:random-sample()</term>
+          <listitem>
+            <para>A function that returns a random sample of documents from the database.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>spx:name()</term>
+          <listitem>
+            <para>Returns a Clark name of a given node.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>spx:formatq()</term>
+          <listitem>
+            <para>Returns a Clark name from a given QName.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>spx:node-path()</term>
+          <listitem>
+            <para>Returns an XPath expression that uniquely identifies a node.</para>
+          </listitem>
+        </varlistentry>
+      </variablelist></para>
+    <para>This code
+    produced the following (with adjustments for line length):<programlisting xml:space="preserve">
+&lt;spx:data-sketch
+xmlns:spx="http://dubinko.info/spelunx"
+  xml-doc-count="5789128"
+  text-doc-count="0"
+  binary-doc-count="0"
+  elements-per-doc="12.88" &gt;
+  &lt;spx:root-elem name="{...}person" count="1248848"/&gt;
+  &lt;spx:root-elem name="{...}media" count="2117625"/&gt;
+  &lt;spx:root-elem name="{...}streamlet" count="1173545"/&gt;
+  &lt;spx:root-elem name="{...}author" count="1248815"/&gt;
+  &lt;spx:ns-seen&gt;
+    http://example.com/ns/social-media/person
+  &lt;/spx:ns-seen&gt;
+  &lt;spx:ns-seen&gt;
+    http://example.com/ns/social-media/media
+  &lt;/spx:ns-seen&gt;
+  &lt;spx:ns-seen&gt;
+    http://example.com/ns/social-media/streamlet
+  &lt;/spx:ns-seen&gt;
+  &lt;spx:ns-seen&gt;
+    http://example.com/ns/social-media/author
+  &lt;/spx:ns-seen&gt;
+  &lt;spx:ns-seen&gt;
+    http://www.w3.org/XML/1998/namespace
+  &lt;/spx:ns-seen&gt;
+  &lt;spx:date&gt;{...}ingested&lt;/spx:date&gt;
+  &lt;spx:date&gt;{...}published&lt;/spx:date&gt;
+  &lt;spx:date&gt;{...}canonical&lt;/spx:date&gt;
+  &lt;spx:date&gt;{...}inserted&lt;/spx:date&gt;
+  &lt;spx:small-num&gt;{...}follower-count&lt;/spx:small-num&gt;
+  &lt;spx:small-num&gt;{...}influence&lt;/spx:small-num&gt;
+  &lt;spx:small-num&gt;{...}follower-count&lt;/spx:small-num&gt;
+&lt;/spx:data-sketch&gt;
+    </programlisting></para>
+    <para>This dataset appears fairly homogeneous: only four different root element
+    QNames, were observed over 1,000 samples. Additionally, these documents
+    contain a number of elements that seem date-like, but would require some
+    cleanup in order to be represented in as the Schema datatype xs:dateTime.
+    For purposes of this paper, one particular element, <code>influence</code>, 
+    as seen earlier, seems particularly
+    interesting. Is there a way to learn more about it?</para>
+  </section>
+  <section>
+    <title>Digging Deeper</title>
+    <para>It‚Äôs possible to perform similar kinds of analysis on specific nodes
+    in the database. Given a starting node, the system of XPath axes provides
+    a number of different ways in which to characterize that element‚Äôs use in
+    a larger dataset. Some care must be taken to handle edge c@ses, assuming
+    nothing in an unknown environment. The following code listing
+    characterizes a given element node (named with a QName) along several
+    important axes:<programlisting xml:space="preserve">
+  let $dv := distinct-values#1
+  let $n := ($sample-size, 1000)[1]
+  let $samp := spx:random-sample($n)
+
+  let $ocrs := $samp//*[node-name(.) eq $e]
+  let $vals := data($ocrs)
+  let $number-vals := $vals
+    [. castable as xs:double]
+  let $nv := $number-vals
+  let $date-values := $vals
+    [. castable as xs:dateTime]
+  let $blank-vals := $vals[matches(., "^\s*$")]
+  let parents := $dv(
+    $ocrs/node-name(..)!spx:formatq(.))
+  let $children := $dv($ocrs/*!spx:name(.))
+  let $attrs := $dv($ocrs/@*!spx:name(.))
+  let $roots := $dv($ocrs/root()/*!spx:name(.))
+  let $paths := $dv($ocrs/spx:node-path(.))
+  return
+    &lt;spx:node-report
+      estimate-count="{spx:est-by-QName($e)}"
+      sample-count="{count($ocrs)}"
+      number-count="{count($number-vals)}"
+      date-count="{count($date-values)}"
+      blank-count="{count($blank-vals)}"&gt;
+      {$parents!&lt;spx:parent&gt;{.}&lt;/spx:parent&gt;}
+      {$roots!&lt;spx:root&gt;{.}&lt;/spx:root&gt;}
+      {$paths!&lt;spx:path&gt;{.}&lt;/spx:path&gt;}
+      &lt;spx:min&gt;{min($number-vals)}&lt;/spx:min&gt;
+      &lt;spx:max&gt;{max($number-vals)}&lt;/spx:max&gt;
+      {if (exists($vals)) then
+      &lt;spx:mean&gt;
+        {sum($nv) div count($nv)}
+      &lt;/spx:mean&gt;
+      else ()
+      }
+    &lt;/spx:node-report&gt;
+    </programlisting></para>
+    <para>These two techniques combine to provide a powerful tool for picking
+    through an unknown dataset. First identify ‚Äòinteresting‚Äô element nodes,
+    then dig into each one to see how it is used in the data. While the sample
+    documents are in memory, it is possible to infer datatype information, and
+    for values that look numeric, to calculate the sample mink max, mean,
+    median, standard deviation, and other useful statistics.</para>
+    <para>These techniques can be readily expanded to include statistics for
+    other node types, notably attribute and processing-instruction
+    nodes.</para>
+  </section>
+  <section>
+    <title>Free-form faceting</title>
+    <para>Index-backed approaches make it possible to produce a histogram of values,
+    often called "facets", for example all the prices in a product database,
+    arranged into buckets of values like 'less than $10' or '$10 to $50'
+    and so on.</para>
+    <para>It‚Äôs possible to combine the concepts inteoduced thus far by breaking down a random sample into faceted data.
+    With no advance knowledge of the range of values, it‚Äôs difficult to arrange values into
+    reasonable buckets, but with some spelunking, as in the preceding section,
+    it‚Äôs possible to construct reasonable bucketing. Based on the exploration
+    from the preceding sections, the <code>influence</code> element looks
+    worth further investigation.</para>
+    <para>The following XQuery function plots out the values of a given
+    element as xs:double values&in specified ranges.<programlisting xml:space="preserve">
+declare function spx:histogram(
+  $e as xs:QName,
+  $sample-size as  xs:unsignedInt?,
+  $bounds as xs:double+
+) {
+  let $n := ($sample-size, 1000)[1]
+  let $samp := spx:random-sample($n)
+  let $full-population := spx:est-docs()
+  let $multiplier := ($full-population div $n)
+  let $ocrs := $samp//*[node-name(.) eq $e]
+  let $vals := data($ocrs)
+  let $number-vals := $vals
+    [. castable as xs:double]!xs:double(.)
+  let $bucket-tops := ($bounds, xs:float("INF"))
+  for $bucket-top at $idx in $bucket-tops
+  let $bucket-bottom :=
+    if ($idx eq 1)
+    then xs:float("-INF")
+    else $bucket-tops[position() eq $idx - 1]
+  let $samp-count := count($number-vals
+    [. lt $bucket-top][. ge $bucket-bottom])
+  let $p := $samp-count div $n
+  let $moe := 1 div math:sqrt($sample-size)
+  let $SE := math:sqrt(($p * (1 - $p)) div $n)
+  let $est-count := $samp-count * $multiplier
+  let $error := $SE * $full-population
+  let $est-top := $est-count + $error
+  let $est-bot := $est-count - $error
+  return
+    &lt;histogram-value
+      ge="{$bucket-bottom}"
+      lt="{$bucket-top}"
+      sample-count="{$samp-count}"
+      est-count="{$est-count}"
+      est-range="{$est-botd to {$est-top}"
+      error="{$error}"/&gt;
+};
+    </programlisting></para>
+    <para>This code accepts a particular QName referring to an element, a
+    sample size, and an ordered set of numeric bounds, and returns the
+    approximate count of values that occur in between each boundary. The first
+    bucket includes values down to <code>-INF</code>, and the last bucket
+    includes all values up to <code>INF</code>. Selecting values to partition
+    the values into order-of-magnitude buckets will give a broad firstÄˇ   approximation of the distribution.</para>
+    <para>For comparison, the following vendor-specific code, which requires a
+    pre-existing in-memory index, resolves the exact counts of different
+    values occurring in the database.</para>
+    <programlisting xml:space="preserve">
+for $bucket in cts:element-value-ranges(
+  QName("http://example.com/ns/social-media/person", "influence"),
+  (1,10,100,1000), "empties")
+return
+    &lt;histogram-value
+        ge="{($bucket/cts:lower-bound, '-INF')[1]}"
+        lt="{($bucket/cts:upper-bound, 'INF')[1]}"
+        count="{cts:frequency($bucket)}"/&gt;
+    </programlisting>
+    <para>The results of calling these function on the test database are given
+    below in table format.</para>
+  </section>
+  <section>
+    <title>How wrong can you get?</title>
+    <para>As the book Statistics Hacks <xref linkend="statshacks"/> states,
+    <quote>Anytime you have used statistics to summarize observations, you‚Äôve probably been wrong.</quote> This technique is no exception.</para>
+    <para>As mentioned earlier, if we assume that the sample is of a small
+    proportion of the overall population and is randomly selected, the maximum
+    margin of error is a simplhe
+    approximate e size. However, against
+    particular values we can usually find a more accurate estimate.</para>
+    <para>To estimate the overall proportion, the standard error of the
+    proportion must be computed, using the following formula.<programlisting xml:space="preserve">math:sqrt(($p - $p * $p) div $sample-size )</progr  Ä sting>The
+    maximum error, which occurs when the proportion is exactly 50%, is exactly
+    half of the margin of error calculation earlier<footnote>
+        <para>Half because margin of error already accounts foç error in the
+        plus or minus direction, i.e. a diameter, while standard error or the
+        proportion does not, i.e. a radius.</para>
+      </footnote>.</para>
+    <para>The following table illustrates the tradeoffs in accuracy, run-time,
+    and necessity of a preconfigured index. The columns on the left represent histogram buckets of values of various ranges,
+    while the rows across the top represent different sample sizes, or in the case of the final column, exact index resolution.
+    The hardware under test consisted of a 2.4Ghz Dual-core 64-bit Intel machine with two 15k rpm disks
+    in a RAID O configuration.</para>
+    <table border="1">
+      <caption>
+        <para>Comparison of run-time and accuracy</para>
+      </caption>
+      <thead>
+        <tr>
+          <th/>
+          <th>estimate, n=10</th>
+          <th>estimate, n=100</th>
+          <th>estimate, n=1000</th>
+          <th>estimate, n=10000</th>
+          <th>exact index resolution</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>values &lt; 1</td>
+          <td>115,7825</td>
+          <td>810,477</td>
+          <td>897,314</td>
+          <td>782,111</td>
+          <td>807,284</td>
+        </tr>
+        <tr>
+          <td>1 &lt;= values &lt; 10</td>
+          <td>0</td>
+          <td>0</td>
+         <td>17,367</td>
+          <td>25,472</td>
+          <td>28,414</td>
+        </tr>
+        <tr>
+          <td>10 &lt;= values &lt; 100</td>
+          <td>578,912</td>
+          <td>115,782</td>
+          <td>208,408</td>
+          <td>164,990</td>
+          <td>161,734</td>
+        </tr>
+        <tr>
+          <td>100 &lt;= values &lt; 1000</td>
+          <td>578,912</td>
+          <td>347,347</td>
+          <td>219,986</td>
+          <td>208,408</td>
+          <td>204,298</td>
+        </tr>
+        <tr>
+          <td>values &gt;= 1000</td>
+          <td>0</td>
+          <td>0</td>
+          <td>28,945</td>
+          <td>36,471</td>
+          <td>47,070</td>
+        </tr>
+        <tr>
+          <th>Run time</th>
+          <td>0.35 sec</td>
+          <td>0.48 sec</td>
+          <td>1.9 sec</td>
+          <td>19.4 sec</td>
+          <td>0.19 sec</td>
+        </tr>
+      </tbody>
+    </table>
+    <para>Unsurprisingly, at smaller sample sizes, it is probable that
+    infequently-occurring data will be completely excluded from the random
+  ˇ sample. Even the most frequently-occurring values, in this case the bucket
+    of values less than one, occurs in less than 14% of the 5.7M documents.
+    Given this, the accuracy of the random sampling technique, even at the
+    lower sample counts, is more than enough to give a general impression of
+    the distribution of the data values.</para>
+    <para>To visulaize this, it is possible to export these values into a
+    desktop spreadsheet program and produce a graph, including error bars, as
+    shown in the following figure.</para>
+    <figure>
+      <title>Graphical representation of data distribution (by percentage)</title>
+     <mediaobject>
+        <imageobject>
+          <imagedata format="png" fileref="../../../vol8/graphics/Dubinko01/Dubinko01-001.png"/>
+        </imageobject>
+      </mediaobject>
+    </figure>
+  </section>
+  <section>
+    <title>Conclusion</title>
+    <para>The techniques shown in the paper offer a useful framework within which to
+    make the initial foray into an unknown XML dataset. Starting with an automated
+    run-down of high-level features in the dataset, particular QNames chosen by the
+    user can be drilled down into deeper analysis. The dataset can even be summarized
+    through histogram facets, much like those available to significantly more
+    resource-intensive indexed databases.</para>
+    <para>The techniques shown here do not rely on proprietary features and are
+    applicable to a wide range of available XQuery processors.</para>
+    <para>The book How to Lie with Statistics <xref linkend="statslie"/>
+    concludes with advice on how to be properly skeptical of statistics, and
+    the guidelines apply to the techniques in this paper as much as in any
+    other area.</para>
+    <variablelist>
+      <varlistentry>
+        <term>What's missing?</term>
+        <listitem>
+          <para>Be on the lookout for areas where summarization may be
+          obscuring important facts.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Did somebody change the subject?</term>
+        <listitem>
+          <para>Beware of an unfounded jump from raw figures to
+          conclusions.</para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Does it make sense?</term>
+        <listitem>
+          <para>Any results that come from these techniques need to be
+          eyeballed. Anything that seems wildly out of proportion needs to be
+          more closely examined.</para>
+        </listi]em>
+      </varlistentry>
+    </variablelist>
+    <para>With those caveats, the techniques in this paper can provide a
+    useful lever by which to pry open a large, unkonwn XML data set.</para>
+  </section>
+  <section>
+    <title>Code availability</title>
+    <para>The code samples mentioned in this paper are in available in a 
+    project named Spelunx available at GitHub <xref linkend="spelunx"/>.</para>
+  </section>
+  <section>
+    <title>Further topics to explore</title>
+    <itemizedlist>
+      <listitem>
+        <para>Correlation and co-existence between given nodes</para>
+      </listitem>
+      <listitem>
+        <para>Multi-dimensional sampling, as in geographic data</para>
+      </listitem>
+      <listitem>
+        <para>Searching for correlated latitude and longitude pairs</para>
+      </listitem>
+      <listitem>
+        <para>Hypothesis testing and type I vs type II errors</para>
+      </listitem>
+      <listitem>
+        <para>Markov chain analysis for element and attribute
+        containership</para>
+      </listitem>
+      <listitem>
+        <para>Comparison and contrast with machine learning techniques</para>
+      </listitem>
+      <listitem>
+        <para>Exploring the availability of random-sampling extension
+        functions from different database vendors</para>
+      </listitem>
+      <listitem>
+        <para>Ways to summarize mixed content</para>
+      </listitem>
+    </itemizedlist>
+  </section>
+  <bibliography>
+    <title>Bibliography</title>
+    <bibliomixed xml:id="r_xml" xreflabel="R Language; Package 'XML'">Duncan Temple Lang (editor), <quote>Package 'XML', version 3.9-4</quote> [online]. [cited 13th July, 2012]. <link xlink:type="simple" xlink:show="new" xlink:actuate="onRequest">http://cran.r-project.org/web/packages/XML/XML.pdf</link></bibliomixed>
+    <bibliomixed xml:id="xquery" xreflabel="XQuery 3.0">Jonathan Robie, Don Chamberlin, Michael Dyck, and John Snelson (editors), <quote>XQuery 3.0: An XML Query Language</quote> [online]. [cited 13th July 2012]. <link xlink:type="simple" xlink:show="new" xlink:actuate="onRequest">http://www.w3.org/TR/2011/WD-xquery-30-20111213/</link></bibliomixed>
+    <bibliomixed xml:id="marklogic" xreflabel="MarkLogic docs">MarkLogic Corporation, <quote>MarkLogic Server Search Developer's Guide</quote> [online]. ¬© 2012 [cited 13th July 2012]. <link xlink:type="simple" xlink:show="new" xlink:actuate="onRequest">http://developer.marklogic.com/pubs/5.0/books/search-dev-guide.pdf</link></bibliomixed>
+    <bibliomixed xml:id="clarknotation" xreflabel="Clark notation">James Clark, <quote>XML Namespaces</quote> [online]. [cited 13thAJuly, 2012]. James describes "universal names written as a URI in curly brackets followed by the local name" which have proved to be a useful construction in more contexts than explaining namespAces. <link xlink:type="simple" xlink:show="new" xlink:actuate="onRequest">http://www.jclark.com/xml/xmlns.htm</link></bibliomixed>
+    <bibliomixed xml:id="statshacks" xreflabel="Statistics Hacks">Bruce Frey, <quote>Statistics Hacks: Tips &amp; Tools for Measuring the World and Beating the Odds</quote> (O'Reilly Media, 2006). Despite the name, includes a great deal of basic information on statistics and the math behind it.</bibliomixed>
+    <bibliomixed xml:id="statslie" xreflabel="How to Lie with Statistics">Darrell Huff, <quote>How to Lie with Statistics</quote> (W. W. Norton &amp; Company, 1993 reprint). To appreciate the power of statistics, you must understand how it can be used as a weapon.</bibliomixed>
+    <bibliomixed xml:id="spelunx" xreflabel="Spelunx">Micah Dubinko, <quote>Spelunx</quote> open source project [online] <link xlink:type="simple" xlink:show="new" xlink:actuate="onRequest">https://github.com/mdubinko/spelunx</link></bibliomixed>
+  </bibliography>
+</article>

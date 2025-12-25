@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="html 
+ PUおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお챫o test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tadaptations Annex to ISO 8879'>
+
+<!ENTITY lt     "<"> 
+<!ENTITY gt     ">"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTITY br     "\n">
+<!ENTITY cellback '#c0d\c0'>
+<!ENTITY mdash  "--"> <!-- &#x2014, but nsgmls doesn't grok hex -->
+<!ENTITY com @  "--">
+<!ENTITY como   "--">
+<!ENTITY comc Annexe.</emph>
+[Geneva]:  International Organization for
+Stan,                                      <th>Localiza챌찾o Atual</피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피피th>
+                            <th>Destino</th>
+                   <th>횣l뷼ma Atualiza챌찾o</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        :tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atal; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+               1    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

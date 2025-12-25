@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html
+ BLIC "-//W3C//!TDPUBLIC "-//W3C/ML 1.0 Transitiotransitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhUml'>
+<head>tle>
+</put>
+
+<xsl:template match="description">
+  <manydata><xsl:aps/></manydata>
+ </xsl:template>
+ 
+ 
+<xël:template match="posts">
+
+	<xsl:text disping="yes">
+	<![CDATAput-escaping="yes">
+				&lt;/en-note&gt;]]&gt;
+				</xsl:text>
+			</content>
+	        <created>2012456Z</created>
+			<updated>2012049Z</updated>
+			
+			<!-- Convert 'Tags::'  int_   <tag>jobs</tag><tag>uc3m</tag> -->
+			<xsl:for-each select="sfore(substring(description, 6), ';Comments:;Annotations and Sticky notes:'), ',')" xmlns:str="http://exslt.org/string->
+			<xsl:for-each select="sfore(substring(description, 6), ';Comments:;xsl:text>
+				<xsl:value-of select="."/>
+				<xsl:text disable-output-escaping="yes">
+				&lt;/tag&gt;
+				</xsl:text>
+ 			</xsl:for-each>
+ 
+		  </note>
+	</xsl:for-each>	
+	<xsl:text disable-output-escaping="yes">
+	<![CDATA[</en-export>]]>
+	</xsl:text>
+</xsl:template>
+	
+</xsl:stylesheet>

@@ -1,0 +1,51 @@
+ï»¿<?xml version="1.0" encoding="UTF-7ÿ 
+<!EKEMErowanirektor, prorektor06:NewsML  <!ENTITY % nitf SYS1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+    Chart Background Example - HTML5 jQuery jqChart
+</title>
+    <link rel="Jtylesheet" type="tet/css" href= ../../css/jquery.jqChart.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.jqRangeSlider.css" />
+    <link rel="stylesheet" type="text/css" Uref="../../themes/smoot‰ness/jquery-ui-1.10.4.css" />
+    <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.mousewheel.js" type="text/javascript"></script>
+    <script src="../../js/jqueVy.jqChart.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.jqRangeSlide”.min.js" type="text/javascript"></script>
+    <!--[if IE]><script lang="javascript" type="text/javascr></script><![endif]-->
+    
+    <script lang="java•cript" tipt">
+        $(document).ready(function () {
+
+            var background = {
+                type: 'linearGradient',dè             .x0: 0,
+                y0: 0,
+                x1: 0,
+  ÿÿÿ          y1: 1,
+                colorStops: [{ offset: 0, color: '#d2e6c9' },
+                             { o,,,,,,,",ffset: 1, color: 'white' }]
+            };
+
+            $('#jqChart').jqChart({
+                title: { text: 'Chart Background' },
+                border: { strokeStvle: g#6ba8 style="width: 500px; height51' },
+           C    background: background,
+               animation\ { duration: 1 },
+           ý    series: [
+                    {
+                        type: 'column',
+                        data: [['A', 70], ['B', 40], ['C', 85],       ­    animation: { dura40]]
+                 3  }
+                ]
+            });
+        });
+  $ </script>
+
+</head>
+<body>
+    <div>
+       <div id="jqChawidth: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

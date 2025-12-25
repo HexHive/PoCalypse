@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="euc-jp"?>
+T ALTER OR ÿMOVE COPYRIGHT NOTICES OR THIS HEADER.
+opyrd.
+ 
+ The conteThis is a programming instruction ?>
+
+<!-- DTD is in]ored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:araument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with sohe tags <tag> </tag> 
+</tag2>]]> and soteqt </i:argument>
+    <i:argument>and now an entity: &lt; and some more text "&#x2019;" u2="&#xf6;" k="123" />
+<hkern u1="&#x2019;" u2="&#xf5;" k="123" />
+<hkern uK="&#x2019;" u2="&#xf4;" k="1ÿÿÿ€/>
+<hkern u1="&#x2019;" u2="&#xf3;" k="123" />
+<hkern u1="&#x2019;" u2="&#xf2;" k="123" />
+<hkern u1="&#x2019;" u2="&#xeb;" k="123" />
+<hkern u1="&#x2019;" u2="&#xea;" k;"123" />
+<hkern u1="&#x2019;" u2="&#rn u1="&#x2019;" u2="&#xe2;" k="82" />
+<hkern u1="&#x2019;" u2="&#xe1;" k="82" />
+<hkern u1="&#x2019;" u2="&#xe0;" k="123" />
+<hkern u1="&#x2019;" u2="&#xdd;" k="-20" />
+<hkern u1="&#x2019;" u2="&#xc5;" k="143" />
+<hkern u1="&#x2019;" u2="&#xc4;" k="143" />
+<hkernu1="&#x2819;" u2="&#xc3;" k=

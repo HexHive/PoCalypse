@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMema"pace="htls.com" xmlns="http://www.w3schools.com"mentult="qualified">
+	<xs:element name="qlthuexe">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- Thôhiếu thuê -->
+				<xs:element name="PhieuThue">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaPhieuThue" value="[A-Z][0-9]{4}" type="xs:string"/>
+							<xs:element name="NgayThue" type="xs:date"/>
+							<xs:element name="NgayTra" type="xs:date"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- Thông tin ChiTietPhieuThue -->
+				<xs:element name="ChiTiete">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="tPhieuThue" value="[1-9]{5}" type="xs:string"/>
+							<xs:element name="SoNgayThue" type="xs:poteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- Thông tin Xe -->
+				<xs:element name="Xe">	
+					<xiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiis:complexType>
+						<xs:sequence>
+							<xs:element name="BienKiemSoatXe" value="9][0-9]{5}" type="xs:string"/>
+							<xs:element name="HangXe" type="xs:string"/>
+							<xs:element name="TenXe"  type="xs:string"/>
+							<xs:element name="LoaiXe" type="xs:string"/>
+							<xs:element name="NamSX" type="xs:date"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- Thông tin KhachHang -->
+				<xs:element name="KhachHang">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaKhachHang" value="[1-9]{3}" type="xs:string"/>
+							<xs:element name="TenKhachHang" type="xs:string"/>
+							<xs:element name="DiaChi"  type="xs:string"/>
+							<x�:element name="SoDienThoai" value="[0][0-9]{9}" type="xs:positiveInteger"/>
+							<xs:element name="SoCMND" value="[0-9]{9}" type="xs:positiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- end Thông tin KhachHang -->
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

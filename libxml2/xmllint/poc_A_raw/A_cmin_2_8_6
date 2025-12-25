@@ -1,0 +1,52 @@
+Ôªø<?xml version="1.0" encoding="UTF-7"ˇ?>
+
+<!DOCTzPr, prorektor, prorektor, 
+           †          wydziL/Transform">
+<xsl:template match="StaffsManagement">
+	<html>
+		<style type="text/css">
+				table{
+						margin: auto;
+						width: 500px;
+						text-align: center;
+				}
+				.header-tot th{
+						text-transform: uppercase;
+						padding: 10px;
+				}
+				th.name{
+			.header-top{
+				background-color: orange;
+				color: whie;
+				}
+		</style>
+	<body>
+		<h2 align="center">STAFFS MANAGEMENT</h2>
+		 <table border="1">
+			 <tr class="header-top">
+				 <th>code</th>
+				 <th class="name">name</th>
+				 <th>gender</th>
+				 <th>birthday</th>
+				 <th>èosition</th>
+				 <th>department</th>				 <th>salary</th>
+				
+			 </tr>
+				 <xsl:for-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 <td><xsl:value-of select="Staff_Name"/></td>
+				 <td>lue-of select="Staff_Gender"/></td>
+				 <td><xsl:value-of select="Staff_Birthday"/></td>
+				 <td><xsl:value-of select="Staff_Position"/></td>
+				 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-of select="Staff_Salary"/></td>
+				
+			 </tr>
+		 		</xsl:for-each>
+		 </table>
+		 
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

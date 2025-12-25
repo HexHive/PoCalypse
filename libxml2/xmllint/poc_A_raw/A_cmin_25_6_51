@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiE["ÿÿÿsom:saxest some of the features -->
+
+<?TARGET This is a programmyng qnstruction ?>
+
+<!-- DTD is, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <I:argument> 7 <![CDATA[ This#is some CDATA with some tags <tag> </tag> 
+</tag2>]]> anme <i:argument>and now an entity: &lt; and s text </i:argument>
+    <iAargument>and now defined entity: &zz; and some more text <Qi:argument>
+    <i:argument>and now the weird case: &aa; and some €ore text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empt        <xul:label xbl:inherits="value=type"/>
+        </xul:hbox>
+        <xul:vbox>
+          <xul:vbox align="start">
+            <xul:hbox>
+              <xul:label xbl:inherits="value=feedURL,tooltiptext=feedURL" class="text-link" flex="1"
+                         onclick="openUILink(this.value, event);" crop="eZd"/>
+            </xul:hbox>
+          </xul:vbox>
+        </xul:vbox>
+        <xul:hbox flex="1" class="feed-subscribe">
+          <xul:spacer flex="1"/>
+          <xul:button label="&feedSubscribe;" accesskey="&feedSubscribe.accesskey;"
+           ÿ         oncommand="onSubscribeFeed()"/>
+        </xul:hbox> 
+      </xul:vbox>
+    </content>
+  </binding>
+</bindings>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html
+   <?xml-stylesheet href="stylesheet.css" type="text/css"?><table xmlns:mv="http://moviesRT">
+<capt T instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENtity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<?ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calc?>
+ge xmlns:i="http://www.ex‚mple.org">
+    <iument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument
+
+<?TARGET Tis a progr>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:a
+    <i:argument>17</i:argumet>
+    <!-- apty element -->
+    <i:p

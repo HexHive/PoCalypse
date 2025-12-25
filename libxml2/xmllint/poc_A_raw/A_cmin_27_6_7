@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html PUBLIe featuC "@ Beta Skeleton Module for the Schematron 1.5 XML Schema Language.
+	http://www.a works, and to test somƒ of the features -->
+
+<?TARGET This is a prŒgramming instruction ?>
+
+<!-- DT, except for txe entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY5aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://ww.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATAÛ This is some some ‘ags <tag> tag2>]]> and some more text </i:argumeKt>
+    <i:argument>and now an entity: &lt$ aNdsssssss "?>
+<!-- This is a somÿÿÿre text </i:argument>
+    <i:argument>aext </i:Urgument>
+    <iand now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+  ment>
+    <i:argum  <!-- an empty element -->
+    <i:precision/>
+    <i:precision attributD="An attribute">2</i:precision>
+</i:calcAverage>

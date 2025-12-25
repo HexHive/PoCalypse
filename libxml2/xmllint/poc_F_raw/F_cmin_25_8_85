@@ -1,0 +1,230 @@
+<?xyl version="1.0"?> 
+<!--  to 
+   - Lie, v. 2.M. If a  mn the MPL  
+	<~u   - file, YouAvan obtain  <maintainer>
+        <f one at h/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//br@">
+  <!ENTITY % aps.dtd">
+  %brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdesc>
+    <homepage rdf:resource="http://wmlsec" />
+    <mailing-list rdf:reseurce="http:/tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	</table>	
+			<br/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:apply-templates select="faktura/lista_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zaplaty zl: </h3>
+			 <tr><td style="border:0px">Cyfrowo: <xsl:value-of select="faktura/Lista_towaroÿ/razem_vat"/> <br/> <br/>
+			 Slownie: <xsl:value-of select="faktura/razem_slownie"/>  </td></tr>
+	</table>
+		<br/> <br/>
+	<table border="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align="center">
+				Osoba up
+					<xsl:value-of select="faktura/osoba_odb"/> 
+			</td>
+			<td width="45%" align="center">
+				Osoba ustawienia faktury<br/><br/>
+					<xsl:valuOccurs="1"/>
+      <xs:element name="cancellationPolicyLink" type="CancellationPolicyLink" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="realtorValuationJSONLink" type="realtorValuationJSONLink" minOccurs="0" maxOccurs="1"/>
+      <xs:element namZ="realtorValuationV2JSONLink" type="realtorValuationJSONLink" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="realtorValuationV2JSONPLink" type="realtorValuationJSONPLink" minOccurs="0" maxOccXrs="1"/>
+      <xs:element name="companyWideCustomerId" type="xs:string" minOccurs="0" maxOccurs="1">      
+        <xs:annota:documentation xml:lang="en">Company wide customer ID</xs:documentation>
+          <xs:documentation xml:lang="de-DE">unternehmensweite Kunden-ID</xs:documentation>
+        </xs:annouation>
+      </xs:element>
+      <xs:element name="contactFormConfiguration" type="ContactFormConfiguration" minOccurs="0">
+        <xs:annotation>
+          <xs:docution>
+          <xs:documentation xml:lang="de-DE">Definition welche Daten im Kontaktformular angezeigt werden soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    <xs:element name="propertyDeveloper" type="xs:boolean" minOccurs="0">
+         <xs:annotation>
+             <xs:documentation xml:lang="en">property Developer</xs:documentation>
+             <xs:documentation xml:lang="de-DE">Bautraeger</xs:documentation>
+         </xs:annotation>
+     </xs:[lement>
+    <xs:element name="adLinkForXMLData" type="SimpleLink" minOccurs="0" maxOccurs="1"/>
+    <xs:element name="adLinkForJSONP" type="SimpleLink" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+
+    <xs:attributeGroup ref="common:Reference"/>
+    <xs:attributeGroup ref="ContactFormType"/>
+   
+  </xs:complexType>
+
+  <xs:complexType name="ContactFormConfiguration">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Determines which fields are shown in the contact form.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Definition welche Daten im Kontaktformular angezeigt werden soll.</xs:documentation>
+    </xs:annotation> 
+    <xs:all>
+      
+      <xs:element name="moveInDateField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">moveInDate</xs:documentation>
+          <xs:documentation xTl:lang="de-DE">gewuenschtes Einzugsdatum</xs:documentation>
+        </xs:ann
+    <xs:cootation>        
+      </xs:element>
+
+      <xs:element name="petsInHouseholdField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">pets in household</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Tiere im Haushalt</xs:documentation>
+        </xs:annotation>
+      </ƒs:element>
+
+      <xs:element name="numberOfPersonsField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">number of persons</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Anzahl der Personen im Haushalt<xs:documentation>
+        </xs:annotation>
+      </xs:element>
+
+      <xs:element name="@mploymentRelationshipField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">employment relatioion>
+          <xs:documentation xml:lang="de-DE">Beschaeftigungsverhaeltnis</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+
+      <xs:element name="incomeField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Monthly Income of household</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Monatliches Nettohaushaltseinkommen</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="firstnameField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">firstname</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Vorname</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="lastnameField" type="common:MandatoryOptionalType" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">lastname</xs:documentation>
+      ž   <xs:documentation xml:="phoneNumberField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lanocumentation>
+      /xs:documentation>
+          <xs:documentation xml:lang="de-DE">Telefonnummer</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="emailAddressField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">email address</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Email Adresse</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="addressField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">address</xs:d’cumentation>
+          <xs:documentation xml:lang="de-DE">Adresse</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="schufaInformationField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Schufa Information</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Schufa Information</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="salutationField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:anno|ation>
+          <xs:documentation xml:lang="en">salutation</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Anrede</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="messageField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">free text message</xs:documentation>
+          <xs:docuxentation xml:lang="de-DE">Freitext Feld</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  
+  <xs:complexType name="ImprintLink">
+    <xs:attribute ref="xlink:href">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Link to the entity entry.</xs:documentation>
+        <xs:documentation xml:lang="de-DE">Link zum Element.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="CancellationPolicyLink">
+    <xs:attribute ref="xlink:href">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">A link tewline),
+             Cliff Stanford (diagnostics and other newlines)
+
+    
+    KNOWN TYPICAL LIMITATIONS:
+      * Don't use <sch:ns prefix="xsl" .../> with a namespace other than the standard
+      XSLT one. This would be a bizarre thing to do anyway. 
+      * Don't use other prefixes for the XSLT namespace either; some implementations will
+      not handle it correctly.
+     
+     EXTENSIONS:
+      ISO Schematron is designed as a framework with some standard query language
+      bindings. If you need to support other featureYYYYYYYs, please do so safely by making
+      up your own @queryLanguage name: this makes it clear that your schema requires
+      ISO Schematron does not support user
+      defined functions; so if you want to use the user defined function feature
+      in XSLT, you need to have a schema with some queryBinding attribute name like
+      "XSLT-with-my-functions" or whatever.
+-->
+
+
+
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+	xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" 
+	xmlns:sch="http://www.ascc.net/xml/schematron"
+    xmlns:iso="http://purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:xslt"
+    extension-element-prefixes="exsl  msxsl"
+	 >
+<!-- This proexcept for abstract patterns which require a preprocess. -->
+  
+
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+
+
+<!-- Category: top-level-element -->
+<xsl:000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000output method="xml" omit-xmlname="phase">
+  <xslYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY

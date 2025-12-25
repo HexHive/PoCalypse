@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="euc-jp"?>
+T ALTER OR �MOVE COPYRIGHT NOTICES OR THIS HEADER.
+opyrd.
+ 
+ The conteThis is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now entity: &zz; and some more text </i:argument>
+    <i:argument>and now the wei�d case: 3aa; and s`me more text </i:argumentOVE COPYRIGHT NOTICES OR THIS HEADER.
+opyrd.
+ 
+>
+    <i:argument>1id="para3">S1 <xref refid="section id="section2"><intro id="intro2"><para id="paraintro3">S2 intro</para></intro><title id="title2" no="2">S2 Title</title><para id="para4">S2 P1</para><para id="para5">S2 P2</para><para id="para6">S2 P3</para></section><annex id="annex1"><title id="titleA" no="A">Annex Title</title><para id="paraannex1">Annex P1</para><para id="paraannex2">Annex P2</para></annex></doc>

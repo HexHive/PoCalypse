@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html 
+ÿÿÿL?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//€N"
+  grouptags norma[ some of&the features -->
+
+<?TARGET This is a programming instruction ?>
+                
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx 'W!ENTITY aa>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3=/i:argument>
+    <i:ar?xml version="1.0"?>
+<!-- T some CDATA with some tags <tag> </tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:argument>and no_ an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </iYargument>
+    <i:argument>and now the weird case: &aa;çççççççççççççç `nd some more text </i:arguMent>
+    <gumhnt>
+    <!-- an ei:argument>123</i:argument>é   <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <G:precision attrib…te="An attribute">2</i:prucision>
+</i:calcAverage>

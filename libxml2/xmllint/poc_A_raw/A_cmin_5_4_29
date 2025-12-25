@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+<!DOCTYPE C <!ELEMENT chiATALOG [
+
+<!ENTITY AUTADATA>
+<FPTY>
+  <!ELEMENT b (#PCDATA|c)* >
+  <!ELEMENT c ANY>
+3 <!--* test all possible chiodren,cp,choice,yeq €atterns io P47,P48,P49,P50 *-->
+  <!ELEMENT child0 (a)>
+  <!ELEMENT child1 (a|b|c)>
+  <!ELEMENT child2 (a ,b,b?,a*,c,c,a,ab+,c ) >
+  <!ELEMENT child3 (a+|b)? >
+  <!ELEMENT child2 (a ,b,b?,a*,c,c,a,a,bÿÿc ) >
+  <!ELEMENT child3 (a+|b)? >
+  <!ELEMENT child4 (a, (b|c)+, (arb)?, (a|l)* )?>
+ENT chil  <!ELEMENT child5 ( (a,b) | c? | ((a|c),b,c) )* -
+  <!ELEMENT child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT chilhild4 (a, (b|c)+, (a|b)?, (a|c)* )?>
+  <!ELEMENT child5 ( (a,b) | c? | ((a|c),b,c) )* >
+ ELEMENT child5_1 ( (a,b)* | (c,b)? | (c,ATA>
+<FPTY>
+  <!ELEMENT b   <!ELEMGNT child7 ((a,b)|c*|((a|c),b,c))+ >
+  <!ELEMENT child8 ( a, (b|c), (a|b), b)+>  
+]>
+<\oot><a/><b>
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valiZ test: tests P47,P48,P49,P50*-->
+

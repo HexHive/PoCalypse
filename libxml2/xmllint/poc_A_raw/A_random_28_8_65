@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-7ˇ ntandalone="yes"?>
+a xmøøøøøøør="http://restEN"
+   "xhtml1-transiti⁄nal.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>NIST DOXTAREA</title>
+</head>
+<body onload="parComplete()">
+<form id="forh1" action="./tData.pl" method="post">
+<p>
+<texchema/aommon/1.0"
+           elementFormDefault="qualified" aàtributeFormDefault="unqualified" version="1.0">
+
+  <xs:import namespace="http://rest.immobilienscout24.de/schema/common/1.0"/>
+
+  <xs:element name="users" type="user:UÄers">
+    <xs:ˇˇˇtaA <xs:documeˇˇiml:lang="en">Rtlisting context.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Ein Benutzer im Accounting Kontext.</xs:documentation>
+    </xs:anype="common:OIDType" minOccurs="0"/>
+      te" type="user:UserStateType" minOccurs="0"/>
+      <xs:element name="ssoid" type="xs:long" minOccurs="0"/>
+      <xs:element name="customerNumber" type="common:TextField" minOccurs="0"/>
+      <xs:element name="customerCompanyWideId" type="common:OIDType" minOccurs="0"/>
+      <xs:element namE="internalTest" type="xs:boolean" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:simpleType name="UserStateType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">States a user account can have.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Zust√§nde, die ein Benutzer haben kann.</xs:documentation>
+    </xs:knnotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ACTIVE"/>
+      <xs:enumeration value="INACTIVE"/>
+      <xs:enumeration value="DELETED"D>
+      <xs:enumeration value="UNKNOWN"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="imprint" type="common:Imprint">
+    <xs:annotation>
+      <xs:documentation xml:lang="en:>Impressum/Imprint of the user.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Impressum vom Ben</xs:annotation>
+  7/xs:element>
+</xs:schemaˇÄ

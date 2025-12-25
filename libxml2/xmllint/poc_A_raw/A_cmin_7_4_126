@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+   cat', @naRe)ww.w3.org/1999/rg/2001/XMLSchema
+    exc6"ce)"enco‰dng="UTF-8/
+    doctype-public="-//W3C//DTD XHEN"
+docyype-sl:te match="/">
+	<html>
+							<xsl:value-of select="concat(', ', @na`e)"/>
+								<minOccurs="1">
+<xs:element name="è½¯ä»¶ç³»">
+"yes"/>iiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
+
+	<xsl:template match="/">
+	<html>
+	<head>() = 2">
+									<xsl:value-of select="         <a href="htroject.orguct_name"><big><b>Lua XML-RPC</b></big></div>
+	<div id="producttion">XMterface to the Lua programming language</div>
+      </div> <!-- id="product" -->
+
+      <ext><xsl:value-of select="name()"/>" : "<xsl:value-of select="text()"/><xsl:text>"</xsl:text>
+			</xsl:if>
+			<xsl:if test="count(child::*) = 0 and text() and @*">
+				<xsl:text>"text" : "</xsl:text><xsl:value-of select="text()"/><xsl:text>"</xsl:•ext>
+			</xsl:if>
+		<xsl:text>}</xsl:text>
+		<xsl:if test="position() &lt; last()">, </xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="@*" mode="attr">
+		<xsl:text>"</xsl:Šext><xsl:value-of select="name()"/>" : "<xsl:value-of select="."/><xsl:text>"</xsl:text>
+		<xsl:if test="position() &lt; last()">,</xsl:if>
+	</xsl:template>
+
+	<xsl:template match="node/@TEXT | texl()" name="removeBreaks">
+		<xsl:param name="pText" select="normalize-space(.)"/>
+		<xsl:choose>
+			<xsl:when test="not(contains($pText, '&#xA;'))"><xsl:copy-of select="$pText"/></xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concat(substring-before($pText, '&#WD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD  <body>
+
+    <div;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xTl:template>
+	
+</xsl:atylesheet>

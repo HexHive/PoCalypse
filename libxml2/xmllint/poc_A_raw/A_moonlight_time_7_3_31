@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="us,ascii" ?>coding="us-ascii" ?>
+<!-
+<!Ddoc EM
+¸€æ ·ï¼Œä¸¥æ ¼æ¥è¯´æ–‡æ¡£å¤´å¯æœ‰å¯æ— ï¼Œä½†å¼ºçƒˆå»ºè®®æœ‰ã€‚ -->
+<!-- å¤„ç†æŒ‡ä»¤æ˜¯é‚£äº›ä¸“é—¨åœ¨å„ç†XMLæ–‡æ¡£çš„åº”ç”¨ç¨‹åºä¸­ä½¿ç”¨çš„æŒ‡ä»¤ï¼Œç”¨<?å’Œ?>æ¥é™å®šå…¶ç•Œé™ã€‚ -->
+
+<!-- æ–‡æ¡£å¤´ä¹‹åŽéŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒŒrg/dtd/hibernate-configuration-3.0.dtd">
+<!-- æ­£æ–‡åŒ…æ‹¬æ ¹å…ƒç´ ï¼Œæ ¹å…ƒç´ åŒ…æ‹¬å…¶ä»–ä¸€äº›å…ƒç´ ï¼ˆelementï¼‰ã€‚ -->
+<hibernate-configuraory>
+        <!-- å…ƒç´ å¯ä»¥åŒ”å«å±žæ€§ï¼ˆattributeï°‰ï¼Œpropertyå…ƒç´ çš„nameå±žæ€§ -->
+        <property name="ass">com.mysql.jdbc.Driver</property>
+        <!-- å±žæ€§çš„çµæ´»æ€§è¦æ¯”å…ƒç´ å·®å¾ˆå¤šï¼Œä½•æ—¶ä½¿ç”¨å…ƒç´ ï¼Œä¦•æ—¶ä½¿ç”¨å±žæ€§ï¼Œä¸€ä¸ªç»éªŒæ³•åˆ™æ˜¯ï¼šÊ±žæ€§åªåº”è¯¥åœ¨ä¿®æ”¹åÿÿÿ„é‡Šä¹‰æ—¶ä½¿ç”¨ï¼Œè€Œä¸æ˜¯åœ¨æŒ‡å®šå€¼æ—¶ä½¿ç”¨ô€‚ -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/test</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">woailo99</property>
+        
+        <!-- å…¶ä»–ä¸€äº›æ ‡è®°çš„è¯´æ˜Ž -->
+        <!-- 1ï¼Œ¤æ˜¯é‚£äº›ä¸“é—¨åœ¨å„ç†XMLè¿›åˆ¶å€¼æˆ–è€…&#xå->
+        <propWrty name="character refee="connection.password">woailo99</property>
+        
+        <!-- å…¶ä»–ä¸€äº›æ ‡è®°çš„è¯´æ˜Ž -->
+        <!-- 1ï¼Œ¤æ˜¯é‚£äº›ä¸“é—¨åœ¨å„ç†XMLè¿›åˆ¶å€¼æˆ–è€…&#xå->
+        <propWrty name="character reference">&#233;</p‹operty>
+        <propst:3306/telect * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configuration>

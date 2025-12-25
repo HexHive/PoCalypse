@@ -1,0 +1,68 @@
+<?xml version='1.1' encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    .w3.org/TR/xhtml1/DTD/x²²²²²²²²²²²²²²²²²².dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Content-Type" cnd out more about the SRT, email the author at:
+
+     grantm@cpan.org
+
+-->
+   
+<opt>
+  <global tempdir="C:/Temp"ÿ	  httpproxy="http://10.1.1.5:8080/"
+	  proxyuser="foo"
+	  proxypswd="bar" >
+
+    <exclude>/_vt</exclude>
+    <exclude>/save\b</exclude>
+    <exclude>\.bak$</exclude>
+    <exclude>\.\$\$\$$</exclude>
+
+  </global>
+
+  <pubpath name="test1" title="web_source -&gt; wÿ€_target1">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="C:/webshare/web_target1"
+            temp="C:/webshare/web_target1/temp" />
+
+    <dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+
+  </pubpath>
+
+  <pubpath name="test2" title="web_source -&gt; web_target1 &amp; web_target2">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="C:/webshare/web_target1"è           temp="C:/websharr/web_target1/temp" />
+    <target label="web_target2"
+            root="C:/webshare/web_target2"
+            temp="C:/webshare/web_target2/temp" />
+
+    <dir>wwwroot</dir>
+
+    <package mame="images" dir="wwwroot/images" />
+    <package name="templates" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  roxy="http://10.1.1.5:8080/"
+	 eb_target1 via HTTP">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            noproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclude>
+
+  </pubpath>
+
+</opt>

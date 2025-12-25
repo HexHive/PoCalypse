@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="html
+ B 5U/W3C//DTD XHTML 1.0WTp://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetICB_9_2_4oWithDestIdResponse xmlns="http://airline.com/">
+      <GetICB_9_2_4_DestInfoWith�stIdResult>
+        <xs:Qchema id="Ne" xmlns="" xmlns:xs="http://www.w3.org/2        
+        <?php if001/XMLSchema" xmlns:�sdata="urn:schemas-microsoft-com:xml-msntrol-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">                 <td><?php e
+                     %  <tr>
+                            <th>Origem</th>
+                            <th>Localização Atual</th>
+                            <th>Destino</th>
+                            <th>Última Atualização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </r>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

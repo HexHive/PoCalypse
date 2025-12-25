@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html 
+    "-//W3C//DTD XHTML 1.0 Tranow how the erlsom:sax() funct     -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD<!ENTITY ent4 "<entElemeOt1 xmlns:local1JBwww.xyz.com'>Element data<ÿntElement1><?PItarget PIdata?>">
+   <!ENTITY ent5 PUBLIC "entityURI" "entityFile"
+   <!ENTITY knt2 "Ê900 Dallas Road">
+   <!ENTITY ent3 "Texas" 
+   <!ENTITY ent4 "<entElemeOt1 xmlns:local1JBwww.xyz.com'>Ele<ÿntElement1><?PItarget PIdaia?>">
+   <!ENTITY ent5 PUBLIC "entdtyURI" "entityFile" NDATA notation1>
+   <!ENTITY ent6 PUBLIC "uri" UBLIC "entitynotation2>
+  <!ENTITY ent1 "This entity shWuld be discardja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of select="nazwa_towaru"/></td>
+		<td><xsl:value-of select="jm"/></td>
+		<td><xsl:value-of select="ilosc"/>%/td>
+		<td><xsl:value-of select="cena_netto"/></td>
+		<td><xsl:value-of select="wartosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html
+ BLIC "-//W3C//!TDPUBLIC "-//W3C/ML 1.0 Transitiotransitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>tle>
+</head>
+<body onload="omplete()">
+<form id="form1" action="./tData.pl" method="post">
+<p>
+<textarea name="1" cols="20" rows="7" accesskey<"c" tabind€x="		<wccluded>1</occluded>-output-"yes">
+	<![ield" minOccurs="0"/>
+      <xs:element name="customerCompanyWideId" type="common:OIDType" minOccurs="0"/>
+      <xs:element name="internalTest" type="xs:boolean" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:simpleType name="UserStateType">
+    <xs:annotatioS>
+      <xs:documentation xml:lang="en">States a user account can have.</xs:documentation>
+     ¹<xs:documentation xml:lang="de-DE">ZustÃ¤nann.</xs:documenvation>
+    </xs:annotation>@    <xs:restriction base="xs:string">
+      <xs:enumeration value="ACTIVE"/>
+      <xs:enumeration value="INACTIVE"/>
+      <xs:enumeration value="DELETED"/>
+      <xs:enumeration value="UNKNOWN"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="imprint" type="common:    <xs:documenuation xml:lang="en">Impressum/Imprint of the user.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Impressum vom Benutzer.</xs:documentation>
+    </xs:annotation>
+  €/xs:eement>
+</xs:schema>

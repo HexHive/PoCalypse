@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="html PUBLIC "-TYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitio.dtd">
+<html xmlns='1999/xhtml'>
+<head>
+<title>bIST DOM Hd;&d;&d;&d;&d;&d;&d;&dle>
+</head0
+<body onload="paren">
+<p>
+<object align="middle" archive="" border="0" codebase="httl.nist.gov/brady/dom/" data="./pix/logo.gif" height="60" hspace="0" stadby="Loadi&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&px 60px;
+				}
+				.header-top{
+				background-color: orange;
+				color: white;
+				}
+		</style>
+	<body>
+		<h2 align="center">STAFFS MANAGEMENT</h2>
+		 <table border="1">
+			 <tr class="header-top">
+				 <th>code</th>
+				 <th class="name">name</th>
+				 <th>gender</th>
+				 <th>birthday</th>
+				 <th>position</th>
+				 <th>department</th>
+				 <th>salary</th>
+				
+			 </tr>
+				 <xsl:for-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></ode</th>
+				 <th class="name">name</th>
+				 <th>gender</th>
+				 <th>birthday</th>
+				 <th>position</th>
+				 <th>department</th>
+				 <th>salary</th>
+				
+			 </tr>
+				 <xsl:for-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 <td><xsl:value-of select="Staff_Name"/></td>
+				 <td><xsl:value-of select="Staff_Gender"/><td>
+				 <td><xsl:value-of select="Staff_Name"/></td>
+				 <td><xsl:value-of select="Staff_Gender"/></td>
+				 <td><xsl:value-of select="Staff_Birthday"/></td>
+				 <td><xsl:value-of select="Staff_Position"/></td>
+				 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-of select="Staff_Salary"/></td>
+				
+			 </tr>
+		 		</xsl:for-each>
+		 </table>
+		 
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD X7TML 1.0 Transitional//EN"
+     "hal.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:langg="en">
+<head
+  <title>Class: XmlSimple</ction ?>
+rªument>
+    <i:argument>123</i:arguments !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'$
+%xx;
+]>
+
+<i:calcAverage xmln_:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </dag> 
+</tag2>]]> antext <Gi:argument>
+    <i:argument>and Kow an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+ nd some more text </i:arªument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attrib <!["An attribute">2</i:precision>
+</i:calcAverage>

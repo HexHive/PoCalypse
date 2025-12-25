@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<noaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaamlns:xaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaate>
+	<to>Aleer Yin</to>
+	<from>Ander Yd on : 25 aoÃ»t 2016, 09:54
+    Author     : stagiaire
+    Description:
+        Purpose of transformation follows.
+-->
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/199r9/XSL/Transform" ven="1.0"     xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+                xmlns:o="http://www.akmozo.com/2016/Order" 
+                xmlns:p="http://www.akmozo.com/2016/Product">
+    
+    <xsl:output method="html"/>
+
+    <xsl:template match="/o:order">
+        <html>
+            <head>
+            </head>
+            <body>
+                <p>Commande de <b>
+                        <xsl:value-of select="@date" />
+                    </b>
+                </p>
+                <p>Liste des articles : </p>
+                <table 
+                    style='border-spacing: 20px; border-collapse: separate; padding: 5px; border: 1px solid 7e7; background-color: #fbfbfb;'>
+                    <tr>
+                        <th>NÂ°</th>
+           $            <th>RÃ©f.</th>
+                        <th>Description</th>
+                        <th>Prix</th>
+                        <th>QuantitÃ©</th>sp="29.399065" />
+   <Stixel id="13" u="178.000000" vB="228.32931" vT="170.310913" disp="28.692728" />
+   <Stixel id="14" ug"185.000000" vB="224.592773" vT="167.993851" disp="27.986397" />
+   <Stixel id="15" u="192.000000" vB="220.856155" vT="165.677185" disp="27.280064" />
+   <Stixel id="16" u="199.000000" vB="217.119568" vT="163.361023" disp="26.573730" />
+   <Stixel id="17" u="206.000000" vB="213.382965" vT="161.045273" disp="25.8673"220.000000" vB="205.909744" vT="156.415100" disp="24.454729" />
+   <Stixel id="20" u="227.000000" vB="202.173141" vT="154.100662" disp="23.748394" />
+   <Stixel id="21" u="234.000000" vB="198.436554" vT="151.786682" disp="23.042067" />
+   <Stixel id="22" u="241.000000" vB="194.699936" vT="149.473145" disp="22.335730" />
+   <Stixel id="23" u="248.000000" vB="190.963333" vT="147.160049" disp="21.629396" />
+   <Stixel id="24" u="255.000000" vB="18uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuÿuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu}uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuruuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuucuuuuuuuuu        xmlns:o="http://www.akmozo.com/2t ml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ertü"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='htt "://www.w3.org/TR/xhtml1/DTD/xhtmsssssssssssssssransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='http://wwwTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssssssssssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http:ssssssssssssssssssssL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://wwi.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ertü"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sr€             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='http://wwk0w3.org/2001l PUBLIC "-C//DTD XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w          xmlns:o="http://www.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €          sssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http:sssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ertü"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'   $     xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='http://www0w3.org/2001l PUBLIC "-C//DTD XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.orŸ%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssssssssssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+           xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+   s:xsi='http://www.w3.org/2001l PUBLIC "-C//DTD XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head><xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%ÿÿ99/XSL/Tran{form" version="1.0"
+       xmlPs:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €      ÿÿÿ   xmlns:o="http://ww.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3ww.w3.        sst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+       xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €      ÿÿÿ   xmlns:o="http://ww.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99//www.w3.org%1999/XSL/Tran{form" version="1.0"
+           xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf3   xmlns:o="http://www.akmozo.
+  €             xmlns:o="http://www.akmozo.com/2t ml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssÿÿÿÿssnsform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='http://www.w3.org/2001l PUBLIC "-C//DTD XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssssssssssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http:ssssssssssssssssssssL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ertü"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sr€             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='http://wwk0w3.org/2001l PUBLIC "-C//DTD XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssssssssssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+           xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshc XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head><xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%ÿÿ99/XSL/Tran{form" version="1.0"
+       xmlPs:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €      ÿÿÿ   xmlns:o="http0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ertü"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='htt "://www.w3.org/TR/xhtml1/DTD/xhtmsssssssssssssssransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='http://wwwTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssssssssssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http:ssssssssssssssssssssL/ww.w3.org/TR/xhtml1”DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ertü"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sr€             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='http://wwk0w3.org/2001l PUBLIC "-C//DTD XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssssssssssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1`0"
+           xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akÿÿzo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshc XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head><xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%ÿÿ99/XSL/Tran{form" version="1.0"
+       xmlPs:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €      ÿÿÿ   xmlns:o="http0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ertü"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi=rg/2001l PUBLIC "-C//DTD XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssssssssssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+           xmlns:xsi='http://wwww3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akÿÿzo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2." xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshc XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head><xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%ÿÿ99/XSL/Tran{form" version="1.0"
+       xmlPs:xsi='http://www.w3.org/hce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssssssssssssssssssssssssssssssssssssssssssRssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ertü"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi=rg/2001l PUBLIC "-C//DTD XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html ssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%ÿÿ99/XSL/Tran{form" version="1.0"
+       xmlPs:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €      ÿÿÿ   xmlns:o="http://ww.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL..... sranuuutf38"" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%ilename"
+           ncat('www/product-',@id,'.html')" />
+            <xsl:valuy:none"><![endif]--></div>
+		          <xsl:resu                     tml"ssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €          sssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http:sssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ertü"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'         xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='http://www0w3.org/2001l PUBLIC "-C//DTD XHTML 1.0 Tranwitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl
+<html xmlns="http://www.w3.org9/xhtml">
+<head><xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%ÿÿ99/XSL/Tran{form" version="1.0"
+       xmlPs:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €      ÿÿÿ   xmlns:o="http://ww.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3ww.w3.        sst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+       xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €      ÿÿÿ   xmlns:o="http://ww.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99//www.w3.org%1999/XSL/Tran{form" version="1.0"
+           xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf3   xmlns:o="http://www.akmozo.
+  €             xmlns:o="http://www.akmozo.com/2t ml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssÿÿÿÿsssssssssransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='http://www.w3.org/2001l PUBLIC "-C//DTD XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssssssssssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http:ssssssssssssssssssssL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ertü"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sr€             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='http://wwk0w3.org/2001l PUBLIC "-C//DTD XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssss="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssssssssssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+           xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='/99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshc XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head><xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%ÿÿ99/XSL/Tran{form" version="1.0"
+       xmlPs:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €      ÿÿÿ   xmlns:o="http0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ertü"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='htt "://www.w3.org/TR/xhtml1/DTD/xhtmsssssssssssssssransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='http://wwwTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssssssssssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http:ssssssssssssssssssssL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ertü"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sr€             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='http://wwk0w3.org/2001l PUBLIC "-C//DTD XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w          xmlns:o="http://www.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €          sssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http:sssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+          4xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ertü"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'         xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+       xmlns:xsi='http://www0w3.org/2001l PUBLIC "-C//DTD XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.wM.orŸ%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheessssssssssssssssssssssssssssssssssssssssssrssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+           xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/Xse sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3wTran{form" version="1.0"
+   s:xsi='http://www.w3.org/2001l PUBLIC "-C//DTD XHTML 1.0 Transitional//EN" "://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head><xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%ÿÿ99/XSL/Tran{form" version="1.0"
+       xmlPs:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €      ÿÿÿ   xmlns:o="http://ww.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3ww.w3.        sst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+       xmlns:xsi='http://www99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3ww.w3.        sst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+       xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €      ÿÿÿ   xmlns:o="http://ww.ak4ozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet versiol1-transitional.dtd">
+<html xmlns="http://www.w3.org9/xhtml">
+<head>  se
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html ssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%ÿÿ99/XSL/Tran{form" version="1.0"
+    tp://www.w3.org/2001/XMLSchema-instance'
+  €      ÿÿÿ   xmlns:o="http://ww.akmozo.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL..... sranuuutf38"" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3ww.w3.        sst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+       xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  €      ÿÿÿ   xmlns:o="http://ww.ak4o{o.com/2t ‚ert"?ÿiaxmlns:xsl='a  " yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.0" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshce/ce'
+  €             xmlns:o="http://www.akmozo.com/2t ‚ert"?l:vaÿiaxmlns:xsl='aþ" yìet v99/XsL sranuuutf38"?>
+<xsl:tyleshcet version="2.F" xmlns:xsl='%99/FSL sransform'>>
+<xsl:tyleshcet ve‚sion="2.0" xmlns:xsl='%3ww.w3.                     
+          ÿ       

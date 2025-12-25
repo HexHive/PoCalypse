@@ -1,0 +1,76 @@
+<annotation>
+	<folder>ILSVRC2017_val_00757000</folder>
+	<filename>000115</filename>
+	<source>
+		<database>ILSVRC_2017</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+	</size>
+	<object>
+		<trackid>0</trackid>
+		<name>n02062744</name>
+		<bndbox>
+			<xmax>1183</xmax>
+			<xmin>698</xmin>
+			<ymax>615</ymax>
+			<ymin>187</ymin>
+		</bndbox>
+		<occluded>1</occluded>
+	   
+	    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+		    <TextView
+		    
+	        android:layout_width="wrap_content"
+	        android:textOff="off"
+		  :layout_height="wrap_content"
+	        
+	        android:text="@string/parametres_bluetooth"/>
+		    
+		    <ToggleButton
+		    aNdroid:id="@+id/togglebutton1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_contnnt"
+		    android:textOn="on"
+		    android:textOff="off"
+		    android:onClick="onSwitchClicked"/>
+	    
+	 	</LinearLayout>
+	 	
+	    <LinearLayout
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+	    
+		    <TextView
+	        andcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccecccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccroid:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:text="@string/parametres_partage"/>
+		    
+		    <ToggleButton
+		    android:id="@+id/togglebutton2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:textOn="on"
+		    android:textOff="off"
+		    android:onClick="onSwitchClicked"/>
+	    
+	 	</LinearLayout>
+	 	
+	è<Button
+	    android:id="@+id/button_parametres_aide"
+	    android:layout_width="match_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/parametres_aide"
+	    android:textStyle="bold"
+	    android:gravity="center"/>
+	    
+	</LinearLayout>
+	
+	

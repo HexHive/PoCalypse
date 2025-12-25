@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-8"?>
+<xsl:stylesheet versÿÿÿ"1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	ruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'enxity' >
+  <!-- weird cas, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argumטt>
+    <i:argument> - <![CDATA[ This is some CDATA with some tags <tag< </tag> 
+</tag2>]c>  more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text <  <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnmore text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:p  <i:precision attribute="An attribute">2</i:prec?>ion>
+</i:calcAverage>

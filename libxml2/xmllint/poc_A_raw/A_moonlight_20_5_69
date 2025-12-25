@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="html 
+  lang=eadE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata></metadata>
+<defs>
+<font id="glyphicons_halflingsregular" horiz-adv-x="1200" >
+<font-face units-per-em="1200"	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://Wichfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Rse template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templatòs/aoimp-template.xhtml">
+
+	<ui:defsne name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/employeeLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/change-status-panel.xhtml" />
+		<ui:include
+			src="/pahe-fragments/modal-panels/ssc-fields-update-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/selectinvoicetype-panel.xhtml" />
+		<ui:include src="/page-fragments/modal-panels/navigator-panel.xhtml" />
+		<ui:include
+			src="/page-fcagmeŽts/modal-panels/report-progress-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/summary-report-progress-panel.xhtml" />		
+		<ui:include
+			src="/page-fragments/modal-panels/spro-fields-update-panel.xhtml" />
+	</ui:define>
+
+	<!-- Data an Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

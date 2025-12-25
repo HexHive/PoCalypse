@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="html>
+	<hdad> <title> Fwktura </tithttp://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetICB_9_2_4_DestInfoWithDestet" [mlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:ålement name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CL_9_2_4_DestInfo" mse to use this software for any purpose, 
+ including commercial applications, and to alter it and redistribute it freely,
+ subject to the following rpstrictions:
+
+ 1. The origin of this software must not be misrepresented; you must not claim
+ that You wrote the original software. If you use this software in a product, 
+ an acknowledgment in the product documentation would be appreciated but is 
+ not require
+ 2. Altered source verions must be plainly `arked as such, and must not be 
+ misrepresented as being the original software.
+
+ 3. This notice may not be removed <xsl:copy-of select="$contents"/>
+</xsl:template>
+
+<!-- use default rule for process-pattern: ignore name and see -->
+<!-- use default rule for process-name: output name -->
+<!-- use default rule for process-assert and process-report:
+     call process-message -->
+
+<xsl:template name="process-message">
+   <xsl:param name="pattern"/>
+   <xsl:param name="role"/>
+   <xsl:text>In pattern </xsl:text>
+   <xsl:value-of select="$pattern"/>
+  V<xsl:if test="$role">
+      <xsl:text> (</xsl:text>
+      <xsl:value-of select="$role"/>
+      <xsl:text>)</xsl:text>
+   </xsl:if>:
+   <xsl:apply-templates mode="text"/>
+   <xsl:text>
+</xsl:text>
+</xsl:template>
+
+</xsl:stylesheet>

@@ -1,0 +1,3858 @@
+<?xml version="1.0"?>
+
+<!-- t did wiis
+   - , you can obtain ona at http:- , you can obtcin one at http://m.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "">
+  <!ENTITY % apns.dtd">
+  %brandDTD;
+C %a€pl>x&#x9;y</value>
+  <value>&#x23333333333333333333333333333330;x y</#x9;&#xA;&#xD;&#x208y&#x9;&#xA;&#xD;&<x20;‘>x&#x9;y</value>
+  <value>&#x20;x y</#x9;&#xA;  <name><family>Worker</family> <given>One</given></name>
+    <email>one@foo.com</email>
+    <link manager="Boss"/>
+  <>
+
+<!ENTITY WebSGML 
+ 'WebSGML Adaptations Annex to ISO 8879'>
+
+<!ENTITY lt     "<"> 
+<!ENTITY gt     ">"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTITY br     "\n">
+<!ENTITY cellback '#c0d9c0'>
+<!ENTITY mdash  "--"> <!-- &#x2014, but nsgmls doesn't grok hex -->
+<!ENTITY com    "--">
+<!ENTITY como   "--">
+<!ENTITY comc   "--">
+<!ENTITY hcro   "&amp;#x">
+<!-- <!ENTITY nbsp " "> -->
+<!ENTITY nbsp   "&#160;">
+<!ENTITY magicents "<code>amp</code>,
+<code>lt</code>,
+<code>gt</code>,
+<code>apos</code>,
+<code>quot</code>">
+ 
+<!-- audience and distribution status:  for use at publication time -->
+<!ENTITY doc.audience "public review and discussion">
+<!ENTITY doc.distribution "may be distributed freely, as long as
+all text and legal notices remain intact">
+
+]>
+<!-- for Panorama *-->
+<?VERBATIM "eg" ?>
+
+<spec>
+<header>
+<title>Extensuage (XML) 1.0</title>
+<version></version>
+<w3c-designation>REC-xml-&iso6.doc.date;</w3c-designation>
+<w3c-doctype>W3C Recommendation</w3c-doctype>
+<pubdate><day>&draft.day;</day><month>&draft.month;</month><year>&draft.year;</year></pubdate>
+
+<publoc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.xml">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.xml</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.dious
+	char€cter set standards.
+	-->
+<!ELEMENT cp_value (#PCDATA)>
+	<!-- 
+	The cp_value contains the codepoint of the character in a particular
+	standard. The standard will be identified in the cp_type attribute.
+	-->
+<!ATTLIST cp_value cp_type CDATA #REQUIRED>
+	<!-- 
+	The cp_type attribute states the coding standard applying to the
+	element. The values assigned so far are:
+		jis208 - JIS X 0208-1997 - kuten coding (nn-nn)
+		jis212 - JIS X 0212-1990 - kuten coding (nn-nn)
+		jis213 - JIS X 0213-2000 - kuten coding (p-nn-nn)
+		ucs - Unicode 4.0 - hex coding (4 or 5 hexadecimal digits)
+	-->
+<!ELEMENT radical (rad_value+)>
+<!ELEMENT rad_value (#PCDATA)>
+	<!-- 
+	The radical number, in the range 1 to 214. The particular
+	classification ๔ype is stated in the rad_type attribute.
+	-->
+<!ATTLIST rad_value rad_type CDATA #REQUIRED>
+	<!-- 
+	The rad_type attribute states the type of radical classification.
+		classical - as recorded in the KangXi Zidian.
+		nelson - as used in the Nelson "Modern Japanese-English 
+		Character Dictionary" (i.e. the Classic, not the New Nelson).
+		This will only be used where Nelson reclassified the kanji.
+	-->
+<!ELEMENT misc (grade?, stroke_count+, variant*, freq*, rad_name*)>
+<!ELEMENT grade (#PCDATA)>
+	<!-- 
+	The Jouyou Kanji grade level. 1 through 6 indicate the grade in which
+	the kanji is taught in Japanese schools. 8 indicates it is one of the
+	remaining Jouyou Kanji to be learned in junior high school, and 9 
+	indicates it is a Jinmeiyou (for use in names) kanji. [G]
+	-->
+<!ELEMENT stroke_count (#PCDATA)>
+	<!-- 
+	The stroke count of the kanji, including the radical. If more than 
+	one, the first is considered the accepted count, while subsequent ones 
+	are common miscounts. (See Appendix E. of the KANJIDIC documentation
+	for some of the rules applied when counting strokes in some of the 
+	radicals.) [S]
+	-->
+<!ELEMENT variant (#PCDATA)>
+	<!-- 
+	A cross-reference code to another kanji, usually regarded as a variant.
+	The type of cross-reference is given in the var_type attribute.
+	-->
+<!ATTLIST variant var_type CDATA #REQUIRED>
+	<!-- 
+	The var_type attribute indicates the type of variant code. The current
+	values are: 
+		jis208 - in JIS X 0208 - kuten coding
+		jis212 - in JIS X 0212 - kuten coding
+		jis213 - in JIS X 0213 - kuten coding
+		deroo - De Roo number - numeric
+		njecd - Halpern NJECD index number - numeric
+		s_h - The Kanji Dictionary (Spahn & Hadamitzky) - descriptor
+		nelson - "Classic" Nn present
+            in the ADDR field.  See 3gpp2 specification C.S0004 3.1.2.2.1.1
+            for valid values.'],
+         [PAGE_SUBCLASS_EXT, AA_INT,
+           'This option allows the user to specifically set the
+            [PAGE_SUBCLASS_EXT field of a GPM message.  If not given,
+            the value is set automatically based on the address information
+            present in the ADDR field.  See 3gpp2 specification C.S0004
+            3.1.2.2.1.1 for valid values.'],
+         [SLOTTED, AA_INT,
+           'If SLOTTED is set to 1 then this PDU will be delivered to the
+            mobile in slotted mode.  In this case the SLOTCYCLEINDEX
+            is required.
+            If the SLOTTED parameter is not specified then
+            unslotted is assumed.'],
+         [SLOTCYCLEINDEX, AA_INT,
+           'The slot cycle index used to deliver the PDU for slotted common
+            signaling channel messages.  Ignored if SLOTTED argument is
+            not included or set to 0.'],
+         [ADDRTYPE, AA_INT,
+           'ADDR_TYPE field of the PDU.  Refer to the 3gpp2
+            LAC specification for more detail.'],
+         [ADDRLEN, AA_INT,
+           'ADDR_LEN field of the PDU. Refer to the 3gpp2
+            LAC specification for more detail.'],
+         [ADDR, AA_BYTES,
+           'ADDRESS field of the PDU. Packed bits, packed 
+            according to the 3gpp2 LAC specification.
+           '],
+         [VALID_ACK, AA_INT,
+           'VALID_ACK field of ARQ sublayer. Refer to the 3gpp2
+            LAC specification for more detail.  Normally the script
+            writer would not include this optional argument.
+            If this argument is not included it will be internally derived 
+            based on layer 2 message transactions.
+           '],
+         [MACIINCL, AA_INT,
+           'Signals if LAC Message integrity fields are present.
+            If this argument is included and set to 1 then the
+            following arguments should be included: MACISDUKEY, MACIRANDC,
+            MACIINTEGRITY, MACISSEQORSSEQH, MACISSEQ, and MACISSEQH.
+            reference(TrueFalseType)
+            &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+           '],
+         [MACIRANDC, AA_INT,
+            '
+             RANDC random challenge value field for this PDU.  
+             Refer to the 3gpp2 LAC specification for more detail.
+            '],
+         [MACISDUKEY, AA_INT,
+           'Key ID of the integrity key used to compute the MAC-I
+            value for this PDU.'],
+         [MACIINTEGRITY, AA_INT,
+           'Identity of message integrity algorithm used for the
+            SDU carried by this PDU.'],
+         [MACISSEQORSSEQH, AA_INT,
+           'Security sequence number format indicator.'],
+  ast significant bits of the 32-bit security
+            sequence number used to compute MAC-I for this PDU.'],
+         [MACISSEQH, AA_INT,
+           'The 24 most significant bits of the 32-bit security
+            sequence number used to compute MAC-I for this PDU.'],
+         [RESERVEDFILL, AA_UINT,
+           '32 bit pattern to use for filling L2 reserved fields,
+            which are normally all 0 bits.  If this argument is
+            not included then reserved fields will be set to 0.'],
+         [CLASS_0_DONE, AA_INT,
+           'LAC GPM common field.  Normally the script writer
+            would not include this optional argument.
+            If this argument is not set it will be internally
+            derived.  This argument should only be included for
+            page messages like GPM.
+           '],
+         [CLASS_1_DONE, AA_INT,
+           'LAC GPM common field.  Normally the script writer
+            would not include this optional argument.
+            If this argument is not set it will be internally
+            derived.  This argument should only be included for
+            page messages like GPM.
+            '],
+         [TMSI_DONE, AA_INT,
+           'LAC GPM common field.  Normally the script writer
+            would not include this optional argument.
+            If this argument is not set it will be internally
+          ! derived.  This argument should only be included for
+            page messages like GPM.
+           '],
+         [ORDERED_TMSIS, AA_INT,
+           'LAC GPM common field.  Normally the script writer
+            would not include this optional argument.
+            If this argument is not set it will be internally
+            derived.  This argument should only be included for
+            page messages like GPM.
+           '],
+         [BROADCAST_DONE, AA_INT,
+           'LAC GPM common field.  Normally the script writer
+            would not include this optional argument.
+            If this argument is not set it will be internally
+            derived.  This argument should only be included for
+            page messages like GPM.
+           '],
+         [SDU_INCLUDED, AA_INT,
+            'This parameter can be included to override SDU_INCLUDED parameter
+             in layer 2. Refer to 3gpp2 LAC and Layer 3 specifications for more 
+             detail. If SDU_INCLUDED = 0, L2 will not include SDU in GPM messages.
+             If SDU_INCLUDED = 1, L2 will include SDU in GPM messages. If SDU_INCLUDED argument is not included,
+             L2 will set SDU_INCLUDED to 1 for GPM messages and include service option PDU in GPM.
+             reference(OnOffType)
+            '],
+         [CHANNELID, AA_INT,
+            'Specifies the channel on which to send this F-CSCH PDU.
+             If this field is omitted, the PDU will be internally
+             hashed to the correct channel. 
+             This might be useful for testing the PCH
+             hashing algorithm in mobiles.  If specified, use the desired
+             CHANNELID from either CDMA_F_PCH_MODIFY or CDMA_F_CCCH_MODIFY
+             depending on this sector's F-CSCH configuration.
+            '],
+         [ENCRYPTINC, AA_INT,
+            '
+             ENC_FIELDS_INCL field of the PDU.  Refer to the 3gpp2
+             LAC specification for more detail.  If this argument is
+             set to 1 then the ENCRYPTMODE and ENCRYPTSEQ arguments
+             should also be included.
+            '],
+         [ENCRYPTMODE, AA_INT,
+            '
+             SDU_ENCRYPT_MODE field of the PDU.  Refer to the 3gpp2
+             LAC specification for more detail.
+            '],
+         [ENCRYPTSEQ, AA_INT,
+            '
+             ENC_SEQ field of the PDU.  Refer to the 3gpp2
+             LAC specification for more detail.
+            '],
+         [PD, AA_INT,
+            'LAC layer PD field.  Normally this argument would not
+             be included by the script writer.  If this argument
+             is not included it will be internally derived. 
+            ']"
+    />
+    
+    <event
+       label="CDMA_SENF_BROADCAST_MESSAGE"
+       msgtype="0x1261"
+       description="This event sends broadcast messages on the PCH using 
+                    Periodic Broadcast Paging. This event may include an
+                    optional GPM containing one or more page records.  
+                    Exactly ESPM_POSITION slots before the scheduled 
+                    broadcast slot, this event enables Periodic Broadcast
+                    Paging by updating the ESPM's BCAST_INDEX field and 
+                    setting it to DBM_BCAST_INDEX. After transmitting the
+                    required broadcast messages, this event disables 
+                    Periodic Broadcast Paging by setting the ESPM's 
+                    BCAST_INDEX field to 0.
+       "
+       reqparams="
+         [BS, AA_INT,
+           'Base Station. reference(BaseStationType)'],
+         [SECTOR, AA_INT,
+           'Sector. reference(SectorType)'],
+         [PREVTOUSE, AA_UINT,
+           'Protocol revision (P_REV) to be used for the PDU.
+            reference(PrevSupportedType1)'],
+         [ESPM_OFFSET, AA_INT,
+           'The number of slots prior to the start of the broadcast cycle
+            in which the BROADCAST_INDEX field of the ESPM message will be 
+            set to DBM_BCAST_INDEX.  The BCAST_INDEX field will be set to 
+            DBM_BCAST_INDEX exactly ESPM_POSITION slots before the start 
+            of the broadcast cycle.  The first ESPM to use the updated 
+            BCAST_INDEX value is transmitted in the next slot scheduled to 
+            deliver an ESPM (based on its current PERIOD and OFFSET value as 
+            specified in the CDMA_OHM_MODIFY job).  The BCAST_INDEX field 
+            is set back to 0 immediately after transmitting the last 
+            broadcast message. 
+            &#60;br&#62; Valid Range:&#60;br&#62; &#160; -99 .. -65'],
+         [DBM_PDUBITCNT, AA_ULONGARRAY,
+           'The number of bits in the broadcast message.  Each index in 
+            array corresponds to the bit length of a PDU specified in the 
+            DBM_PDU parameter.  PDUs are joined together into the DBM_PDU 
+            field in the same order they are listed in this array.'],
+         [DBM_PDU, AA_BYTES,
+           'The Broadcast Message PDU (a DBM message).  Multiple PDUs 
+            can be sent by concatenating each PDU to the end of this field.  
+            The number and order of the PDUs must match the contents of the 
+            DBM_PDUBITCNT array.'],
+         [DBM_BCADDR, AA_BYTES,
+           'BC_ADDR field used in L2 addressing record of the DBM message 
+            (see 3gpp2 specification C.S0004 3.1.2.2.1.1.1.1).  Also used 
+            in the GPM page L2 Page-Type Specific fields if a GPM Broadcast 
+            Page Record is required.  If multiple PDUs are sent via this 
+            event, the address associated with each PDU is concatenated to 
+            this field.  Each address value must be 5 bytes in length.  The 
+            ordering of the 5 byte addresses must match the ordering of the 
+            DBM PDUs contained in the DBM_PDU parameter.'],
+         [DBM_BCAST_INDEX, AA_UINT,
+           'Value as specified in the ESPM or MC-RR Parameter Message. Used 
+            to aid in calculating the Broadcast paging cycle (ranges of 
+            slots where broadcast messages are sent).'],
+       "
+       optparams="
+         [CHANNELID, AA_INT,
+           'Specifies the channel on which to send the Broadcast DBM(s) and 
+            optional GPM.  If this field is omitted, the Broadcast DBM(s) will 
+            be sent on all channels, while the optional GPM will hash to its 
+            assigned channel based on its layer 2 address.'],
+         [SLOTCYCLEINDEX, AA_INT,
+           'The slot cycle index used to determine the start of the paging 
+            channel cycle on the common signaling channel.  This value is 
+            required when sending an optional voice GPM in slotted mode, or 
+            when using the OFFSET parameter to align the start of the 
+            broadcast and PCH cycles.'],
+         [OFFSET, AA_INT,
+           'Indicates the number of slots that should takeplace between the 
+            first slot of a broadcast paging cycle and the first slot of the
+            paging channel cycle. A positive value indicates the PCH cycle
+            should begin OFFSET slots after the start of tHe broadcast cycle. 
+            A negative value indicates the PCH cycle should start OFFSET 
+            slots before the broadcast cycle. A value of 0 forces the 
+            broadcast cycle and paging cycle to begin in the same slot. If 
+            an optional GPM is included, OFFSET defaults to 0.  If an 
+            optional GPM is not included, the OFFSET parameter will not be
+            used unless explicitly set by the user.  The IMSIFORHASHING 
+            parameters must be supplied if OFFSET is to be used in cases 
+            where an optional GPM is not included. 
+            &#60;br&#62; Valid Range:&#60;br&#62; &#160; -70 .. 65'],
+         [IMSITYPEFORHASHING, AA_ULONGARRAY,
+           'Type of optional IMSI value; see 3gpp2 specification C.S0004, 
+            section 3.1.2.2.1.3.1 address types 0 and 2 for formatting 
+            details.  This value is used for various IMSI hashing purposes 
+            as described in 3gpp2 C.S0005, section 2.6.7.  This value must 
+            be supplied when the GPM_ADDR specified for a GPM PDU does not 
+            contain an IMSI, or when the OFFSET parameter is provided without 
+            an optional GPM containing valid IMSI information.  The indices 
+            of this array correspond to the order in which address values 
+            have been added to the IMSIFORHASHING parameter.'],
+         [IMSILENFORHASHING, AA_ULONGARRAY,
+           'Length of optional IMSI value, see IMSITYPEFORHASHING for 
+            formatting details and situations in which this field is 
+            required.  The indices of this array correspond to the order 
+            in which address values have been added to the IMSIFORHASHING 
+            parameter. The length values in this array are used to separate 
+            each address value stored in the IMSIFORHASHING Parameter.'],
+         [IMSIFORHASHING, AA_BYTES,
+           'Value of optional IMSI, see IMSITYPEFORHASHING for formatting 
+            details and situations in which this field is required.  Multiple 
+            addresses can be sent by concatenating each address to the end 
+            of this field. The number and order of the addresses must match 
+            the contents of the IMSILENFORHASHING array.'],
+         [GPM_SDU_INCLUDED, AA_ULONGARRAY,
+           'This parameter can be included to override the SDU_INCLUDED 
+            parameter in layer 2. See 3gpp2 C.S0004, section 3.1.2.3.1.7.1 
+            for details. If SDU_INCLUDED = 0, L2 will  not include the 
+            SDU in the GPM message.  If SDU_INCLUDED = 1, L2 will include 
+            the SDU in the GPM message. If the SDU_INCLUDED argument is not 
+            included, L2 will set SDU_INCLUDED to 1 for GPM messages that 
+            include a service option PDU.  The indices of this array 
+            must correspond to the order in which PDUs have been added 
+            to the GPM_PDU parameter.
+            reference(OnOffType)'],
+         [GPM_ADDRTYPE, AA_ULONGARRAY,
+           'The type of address used in the Layer 2 GPM message (see 3gpp2 LAC 
+            specification C.S0004 3.1.2.2.1.3.1). The indices of this array 
+            correspond to the order in which address values have been added 
+            to the GPM_ADDR parameter.'],
+         [GPM_ADDRLEN, AA_ULONGARRAY,
+           'The length of the address used in the Layer 2 GPM message (see 
+            3gpp2 LAC specification C.S004 3.1.2.2.1.3.1). The indices of 
+            this array correspond to the order in which address values have
+            been added to the GPM_ADDR parameter.  The length values in 
+            this array are used to separate each address value stored in 
+            the GPM_ADDR parameter.'],
+         [GPM_ADDR, AA_BYTES,
+           'The address field used to deliver the PDU to the MS, packed 
+            according to the 3gpp2 LAC specification (see 3gpp2 LAC 
+            specification C.S0004 3.1.2.2.1.3.1).  Multiple Addresses can be 
+            sent by concatenating each address to the end of this field. The 
+            number and order of the addresses must match the contents of the 
+            GPM_ADDRLEN array.'],
+         [GPM_PDUBITCNT, AA_ULONGARRAY,
+           'Number of bits in this PDU.  Each index in array corresponds to 
+            the bit length of a PDU specified in the GPM_PDU parameter. PDUs 
+            are joined together into the GPM_PDU field in the same order 
+            they are listed in this array.'],
+         [GPM_PDU, AA_BYTES,
+           'The layer 3 PDU associated with the GPM used to start a service.  
+            Multiple PDUs can be sent by concatenating each PDU to the end of 
+            this field. The number and order of the PDUs must match the 
+            contents of the GPM_PDUBITCNT array.'], 
+       "
+    />
+    
+  </sndeventlist>
+
+  <!--                                                                      -->
+  <!-- Events that L script may receive from the CDMA COM Board application -->
+  <!--                                                                      -->
+  <rcveventlist>
+    <event
+       label="CDMA_L2_PDU_TO_L3"
+       msgtype="0x1240"
+       description="A PDU from L2 sent to L3 that was received over
+                    the air from a mobile station.
+                    Many of the arguments to
+                    this event come from the 3gpp2 LAC specification.
+                    Message integrity fields do not imply
+                    that the MD8470A internal software performs message
+                    integrity.  Encryption fields do not
+                    imply that the MD8470A internal software performs
+                    encryption - in fact it does not perform encryption.
+                    Authentication fields to not imply that the MD8470A
+                    internal software performs authentication.
+                   "
+       reqparams="
+         [BS, AA_INT,
+           'Base Station. reference(BaseStationType)'],
+         [SECTOR, AA_INT,
+           'Sector. reference(SectorType)'],
+         [SIGCHTYPE, AA_INT,
+           'Signalling channel this PDU was received on.
+            reference(SigChanType)'],
+         [MSGTAG, AA_INT,
+           'MSG_ID value of the PDU as defined in the 3gpp2 LAC
+            specification.  For example, RGM is 1, DBM is 3,
+            PRM is 5, etc.'],
+         [PREVTOUSE, AA_UINT,
+           'Protocol Revision (P_REV) used to interpret the PDU.
+            reference(PrevSupportedType1)'],
+         [ACKREQ, AA_INT,
+           'ACK_REQ field of ARQ sublayer received with
+            this PDU.  Refer to the 3gpp2 LAC specification 
+            for more detail.'],
+         [PDUBITCNT, AA_INT,
+           'Number of bits in PDU.'],
+         [PDU, AA_BYTES,
+           'The L3 payload delivered from L2 to the script.  Can be
+            decoded with the API's Decode() function.
+           ']
+       "
+       optparams="
+         [PD, AA_INT,
+           'LAC layer PD field received from mobile station with
+            this PDU.
+           '],
+         [ADDRTYPE, AA_INT,
+           'MSID_TYPE field of the PDU.  Refer to the 3gpp2
+            LAC specification for more detail.'],
+         [ADDRLEN, AA_INT,
+           'MSID_LEN field of the PDU. Refer to the 3gpp2
+            LAC specification for more detail.'],
+         [ADDR, AA_BYTES,
+           'MSID field of the PDU. Packed bits, packed according to the 3gpp2
+            LAC specification.'],
+         [VALID_ACK, AA_INT,
+           'VALID_ACK field of ARQ sublayer. Refer to the 3gpp2
+            LAC specification for more detail.
+           '],
+        [IMSI_CLASS, AA_INT,
+           'The IMSI class of the phone sending the PDU, Refer to 3gpp2 specification for more detail'],         
+        [IMSI_CLASS_0_TYPE, AA_INT,
+           'The IMSI_CLASS_0_TYPE of the phone sending the PDU,  Refer to 3gpp2 specification for more detail'],
+         [IMSI_S, AA_INT64,
+           'The IMSI_S of the phone sending the PDU,  Refer to 3gpp2 specification for more detail'],
+         [RESERVED, AA_INT,
+           'Layer 2 reserved field.  Normally set to 0 by the
+            mobile station.
+           '],
+         [PILOT_PN_PHASE, AA_INT,
+           'Array of pilot pn phases, sent as individual elements
+            with indices.']
+         [PILOT_STRENGTH, AA_INT,
+           'Array of pilot pn strengths, sent as individual elements
+            with indices.'],
+         [ACCESS_HO_EN, AA_INT,
+           'Array of Handoff Enable flags, sent as individual elements
+            with indices.'],
+         [ACCESS_ATTEMPTED, AA_INT,
+           'Array of access attempted flags. sent as individual elements
+            with indices'],
+         [MACIINCL, AA_INT,
+           'Signals if LAC Message integrity fields are present.
+            reference(TrueFalseType)
+           '],
+         [MACIRANDC, AA_INT,
+            '
+             RANDC random challenge value field for this PDU.  
+             Refer to the 3gpp2 LAC specification for more detail.
+            '],
+         [MACISDUKEY, AA_INT,
+           'Key ID of the integrity key used to compute the MAC-I
+            value for this PDU.'],
+         [MACIINTEGRITY, AA_INT,
+           'Identity of message integrity algorithm used for the
+            SDU carried by this PDU.'],
+         [MACISSEQORSSEQH, AA_INT,
+           'Security sequence number format indicator.'],
+         [MACISSEQ, AA_INT,
+           'The 8 least significant bits of the 32-bit security
+            sequence number used to compute MAC-I for this PDU.'],
+         [MACISSEQH, AA_INT,
+           'The 24 most significant bits of the 32-bit security
+            sequence number used to compute MAC-I for this PDU.'],
+
+         [AUTHINCL, AA_INT,
+           'Signals if Authentication fields are included.
+            reference(TrueFalseType)'],
+         [AUTHAUTHR, AA_INT,
+           'Authentication Response, response output of the
+            authentication algorithm.  AUTHR from the 3gpp2 LAC 
+            specification.'],
+         [AUTHRANDC, AA_INT,
+           'Random challenge value. RANDC from 3gpp2 LAC specification.'],
+         [AUTHCOUNT, AA_INT,
+           'Call history parameter.  COUNT from 3gpp2 LAC specification.'],
+       "
+    />
+    <event 
+       label="CDMA_L1_INDICATION_TO_L3"  
+       msgtype="0x1220" 
+       description="An indication sent from L1 to L3."
+       reqparams="
+         [BS, AA_INT, 
+           'Base Station, reference(BaseStationType)'],
+         [SECTOR, AA_INT, 
+           'Sector, reference(SectorType)'],
+         [INDICATION, AA_INT, 
+           'Indication type being sent, reference(L1ToL3IndType)']
+       "
+       optparams=""
+    />
+    <event
+       label="CDMA_RLP3_STATE_CHANGED"
+       msgtype="0x11c4"
+       description="An event signaling the radio link protocol 3 (RLP3) state has changed."
+       reqparams="
+         [SRID, AA_INT,
+           'Service reference identifier. This value must match the SRID value from the
+            CDMA_SERVICE_MODIFY job that resulted in this RLP3 instance. reference(SridEnumType)'],
+         [RLPSTATE, AA_INT,
+           'Current state of RLP3, reference(RlpStateType)']
+       "
+       optparams=""
+    />
+    <event
+       label="CDMA_RLP1_STATE_CHANGED"
+       msgtype="0x11c5"
+       description="An event signaling the radio link protocol 1 (RLP1) state has changed."
+       reqparams="
+         [SRID, AA_INT,
+           'Service reference identifier. This value matches the SRID value
+            from the
+            CDMA_SERVICE_MODIFY job that resulted in this RLP1 instance.
+            reference(SridEnumType)'],
+         [RLPSTATE, AA_INT,
+           'Current state of RLP1, reference(RlpStateType)']
+       "
+       optparams=""
+    />
+  </rcveventlist>
+
+  <!--                                            -->
+  <!-- Jobs that the CDMA application can receive -->
+  <!--                                            -->
+  <sndjoblist>
+    <job
+        label="CDMA_CONFIG"
+        msgtype  ="0x1000"
+        description = "Configures a CDMA Radio Access Network of RFs,
+          base stations, sectors, and associated channels.  Any existing
+          Radio Access Network is deleted and replaced by this new configuration. "
+        reqparams="
+          [PDU, AA_BYTES,
+            'This contains a packed message containing the configuration instructions.  The message
+             is a series of 32 bit words where each word specifies a resource.
+             The ordering of the words implies the parental architecture (ie.
+             a Base Station contains all resources until the next Base Station, a
+             Sector contains all resources until the next Sector.).  The message
+             should be coded as an XML file, read into a Message Database and
+             encoded as a binary Message and sent as the data in this PDU field.
+             The following resource types are supported in the XML file:
+             reference(ResourceType) ]
+        "
+        returns="
+          [01, AA_CSTRING,
+            'A perl hash, where the keys range from '01' to '99' and the values
+             contains the names of elements in the currently configured
+             CDMA Radio Access Network.
+             &lt;br&gt;
+             &lt;br&gt; Simplified example of returned associative array:
+             &lt;br&gt;
+             &lt;br&gt; key value
+             &lt;br&gt; --------------------
+             &lt;br&gt; 01 /BS1
+             &lt;br&gt; 02 /BS1/SEC1
+             &lt;br&gt; 03 /BS1/SEC1/F_PICH
+             &lt;br&gt; 04 /BS1/SEC1/F_SYNC
+             ']
+        "
+    />
+    <job
+        label="CDMA_CONFIG_QUERY"
+        msgtype  ="0x1001"
+        description = "Query and return a list of elements in the present CDMA configuration"
+        reqparams=""
+        returns="
+          [01, AA_CSTRING,
+            'A perl hash, where the keys range from '01' to '99' and the values
+             contains the names of elements in the currently configured
+             CDMA Radio Access Network.
+             &lt;br&gt;
+             &lt;br&gt; Simplified example of returned associative array:
+             &lt;br&gt;
+             &lt;br&gt; key value
+             &lt;br&gt; --------------------
+             &lt;br&gt; 01 /BS1
+             &lt;br&gt; 02 /BS1/SEC1
+             &lt;br&gt; 03 /BS1/SEC1/F_PICH
+             &lt;br&gt; 04 /BS1/SEC1/F_SYNC
+             ']
+        "
+    />
+    <job
+        label="CDMA_RF_MODIFY"
+        msgtype  ="0x13c0"
+        description="Modifies the current settings for the specified RF unit."
+        reqparams="
+          [RF, AA_INT,
+            'RF unit number. reference(RfType)']
+        "
+        optparams="
+          [AWGNLEVEL, AA_FLOAT,
+            'AWGN level, relative to total RF output level in dB units.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;-20.0 .. +12.0 dB
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; -20.0
+            '],
+          [AWGNENABLED, AA_INT,
+            'AWGN enable flag.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0 
+            '],
+          [REVERSEPOWER, AA_FLOAT,
+            'Expected mobile station transmit power in dBm.
+             This value can be determined from the open loop power equation.
+             If expected power is below the minimum rail, set this value
+             to the minimum rail.  If expected power is above the maximum
+             rail, set this value to the maximum rail.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;-60.0 .. +25.0 dBm
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; -21.2 
+            '],
+          [REVERSEFREQUENCY, AA_INT64,
+            'Reverse link frequency in Hz.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;400 MHz .. 2.7 GHz
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 833490000
+            '],
+          [FORWARDPOWER, AA_FLOAT,
+            'Total RF output power for this RF unit in dBm.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;
+             AWGNENABLED = 1: -118.0 .. -34.0 dBm &#60;br&#62; &#160;
+             AWGNENABLED = 0: -118.0 .. -16.0 dBm 
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; -55.0 
+            '],
+          [FORWARDFREQUENCY, AA_INT64,
+            'Forward link frequency in Hz.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;400 MHz .. 2.7 GHz
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 878490000
+            '],
+          [FORWARDCONNECTOR, AA_INT,
+            'Front panel connector to send output of this RF unit.
+             reference(TxConnectorType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0
+            '],
+          [REVERSECONNECTOR, AA_INT,
+            'Front panel connector to receive input from this RF unit.
+             reference(RxConnectorType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 1
+            ']
+        "
+    />
+    <job
+        label="CDMA_RF_QUERY"
+        msgtype  ="0x13c1"
+        description="Query and return the current settings for the specified RF unit."
+        reqparams="
+          [RF, AA_INT,
+            'RF unit number. reference(RfType)']
+        "
+        returns="
+          [AWGNLEVEL, AA_FLOAT,
+            'AWGN level, relative to total RF output level in dB units.'],
+          [AWGNENABLED, AA_INT,
+            'AWGN enabled.'],
+          [REVERSEPOWER, AA_FLOAT,
+            'Expected MD8470A input power setting in dBm.'],
+          [REVERSEFREQUENCY, AA_INT64,
+            'Reverse link frequency in Hz.'],
+          [FORWARDPOWER, AA_FLOAT,
+            'Total RF output power for this RF unit in dBm.'],
+          [FORWARDFREQUENCY, AA_INT64,
+            'Forward link frequency in Hz.'],
+          [FORWARDCONNECTOR, AA_INT,
+            'Front Panel Connector to send output of this RF unit.'],
+          [REVERSECONNECTOR, AA_INT,
+            'Front Panel Connector to receive input from this RF unit.']
+          [TOTALFORWARDPOWER, AA_FLOAT,
+            'Total RF output power for this RF unit in dBm. Includes AWGN power.'],
+        "
+    />
+    <job
+        label="CDMA_SECTOR_MODIFY"
+        msgtype  ="0x1040"
+        description="Modifies the operating parameters for the specified sector."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams="
+          [LEVEL, AA_FLOAT,
+            'Level setting of this sector in dB.  Will be internally rounded
+             to .1 dB.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0 
+            '],
+          [PNOFFSET, AA_INT,
+            'PN offset of the sector.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;  0 .. 511'],
+  2       [ENABLED, AA_INT,
+            'Sector enable.  If ENABLED is OFF, no signals will be
+             transmitted on this sector.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0 
+            ']
+        "
+    />
+    <job
+        label="CDMA_SECTOR_QUERY"
+        msgtype  ="0x108b"
+        description="Query and return the operating parameters
+                     for the specified sector."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [LEVEL, AA_FLOAT,
+            'Current level of this sector in dB.'],
+          [PNOFFSET, AA_INT,
+            'PN offset of this sector.'],
+          [ENABLED, AA_INT,
+            'Sector enable.']
+        "
+    />
+    <job
+        label="CDMA_ACCESS_PROBE_MODE_MODIFY"
+        msgtype  ="0x1409"
+        description="Modifies the access probe mode in all allocated access or enhanced access channels in the physical layer."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [ACCESS_PROBE_MODE, AA_INu,
+            'Access probe mode of all allocated access channels or enhanced access channel(s) in this sector. If access probe mode is 
+             set to NORMAL, the channel forwards received messages to layer 2. If access probe mode is set to DISCARD, all received
+             messages are discarded. reference(AccessProbeModeType)
+             &#60;br&#62; Valid Range:&#60;br&#62; &   "
+        optparams=""
+    />
+    <job
+        label="CDMA_ACCESS_PROBE_MODE_QUERY"
+        msgtype  ="0x140a"
+        description="Query and return access probe mode."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+        "
+        optparams=""
+        returns="
+          [ACCESS_PROBE_MODE, AA_INT,
+            'Access probe mode of access or enhanced access channel(s) allocated in this sector.
+             reference(AccessProbeModeType)'],
+        "
+    />
+
+    <job
+        label="CDMA_F_PICH_MODIFY"
+        msgtype  ="0x1080"
+        description="Modifies the operating parameters of the F_PICH
+          MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMSECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams="
+          [LEVEL, AA_FLOAT,
+            'Level setting of this F-PICH channel in dB, will
+             be internally rounded to 0.25dB resolution.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  -7.00 dB
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;  0.00 .. -30.00 dB'],
+          [ENABLED, AA_INT,
+            'Channel enable, reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0']
+        "
+    />
+    <job
+        label="CDMA_F_SYNC_MODIFY"
+        msgtype  ="0x1081"
+        description="Modify the operating parameters of the F_SYNC
+                     physical channel specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams="
+          [LEVEL, AA_FLOAT,
+            'Level setting of this F-SYNC channel in dB, will be
+             internally rounded to 0.25dB resolution.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  -16.00 dB
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;  0.00 .. -30.00 dB'],
+          [ENABLED, AA_INT,
+            'Channel enable. reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0
+            ']
+        "
+    />
+    <job
+        label="CDMA_F_PCH_MODIFY"
+        msgtype  ="0x1082"
+        description="Modify the operating parameters of the
+                     F-PCH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of paging channel. reference(PchChIdType)']
+        "
+        optparams="
+          [LEVEL, AA_FLOAT,
+            'Level setting of this F-PCH channel in dB, will be
+             internally rounded to 0.25dB resolution               &#60;br&#62; Default Value:&#60;br&#62; &#160;  -12.00 dB
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;  0.00 .. -30.00 dB'],
+          [ENABLED, AA_INT,
+            'Channel enable. reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0'],
+          [WALSHCODE, AA_INT,
+            'Walsh code of channel, it is derived from the channel ID if it
+            is not specified.  Internally derived Walsh codes are sequential
+            starting at 1 for PCH1, 2 for PCH2, etc.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;  0 .. 63'],
+          [DATARATE, AA_INT,
+            'Transmission rate of channel. reference(PchRatesType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  1'],
+ ญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญญ   calculate the long
+             code mask for this F-PCH.
+             If PCN is not specified it will be derived from the
+             CHANNELID parameter of this job.
+             reference(PcnEnumType)'],
+          [PILOT_PN, AA_INT,
+            'PILOT_PN used by the MD8470A internal embedded
+             software to calculate the long
+             code mask for this F-PCH.  If PILOT_PN is not specified it will
+             be derived from the PN offset of the sector this paging
+             channel is operating
+             on.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160; 0..511
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  PN offset of the sector which this F_PCH is operating on.'],
+          [PERIODIC_GPM_PREV, AA_INT,
+            'P_REV of null GPM messages periodically sent on this PCH.
+             This parameter is here for the sole purpose
+             of supporting Anritsu software analysis tools that use
+             it for proper decoding
+             of GPM messages.
+             reference(PrevSupportedType1)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 7'],
+          [LCM, AA_UINT64,
+            'Allows user to specify a long code mask instead of the
+             internally derived LCM.
+             LCM will be internally derived if ENABLEUSERDEFLCM is disabled.
+             *This parameter is for expert use only, do not set it without
+             proper knowledge and care.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User-defined long code mask enable.  If this parameter is
+             Xet to 'ON'
+             then the user-defined long code mask is used for this
+             channel instead of
+             the internally derived long code mask.reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            ']
+        "
+    />
+	<job
+        label="CDMA_F_QPCH_MODIFY"
+        msgtype  ="0x1083"
+        description="Modify the operating parameters of the
+                     F_QPCH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of this quick paging channel. reference(QpchChIdType)']
+        "
+        optparams="
+          [LEVELPAGE, AA_FLOAT,
+            'Level setting of paging indicator (PI) bits, relative to the pilot
+            channel.  Should match LEVEL_PAGE in ESPM message for proper
+            operation with a mobile station.
+            &#60;br&#62; Default Value:&#60;br&#62; &#160; 0.0
+            &#60;br&#62; Valid Range:&#60;br&#62; &#160;-5.0 .. +2.0
+             dB relative to the F-PICH on this sector. 
+            '],
+          [ENABLED, AA_INT,
+            'Channel enable. reference(OnOffType)
+            &#60;br&#62; Default Value:&#60;br&#62; &#160; 0
+            '],
+          [WALSHCODE, AA_INT,
+            'Walsh code of channel, it is derived from CHANNELID if it
+            is not specified.  QPCH1 is Walsh 80, QPCH2 is Walsh 48,
+            and QPCH3 is Walsh 112 if this parameter is not specified.
+            &#60;br&#62; Valid Range:&#60;br&#62; &#160;0 .. 127 '],
+          [MAXSLOTCYCLE, AA_INT,
+           'Value used in the equation T = 32 * 2^MAXSLOTCYCLE to determine how
+            long to enable the paging indicators on a configuration change.
+            See 'Quick Paging Channel Processing' in section 3 of the 3gpp2
+            layer 3 spec for more information.
+            &#60;br&#62; Default Value:&#60;br&#62; &#160; 0
+           '],
+          [NUMQPCH, AA_INT,
+            'This value is used in the QPCH hashing function to determine which
+             QPCH channel on this sector to hash to.  This value should
+             correspond to NUM_QPCH in the ESPM for proper operation with
+             a mobile station.
+            &#60;br&#62; Default Value:&#60;br&#62; &#160; 1
+            '],
+          [DATARATE, AA_INT,
+            'Transmission rate of channel. reference(QpchRatesType)
+            &#60;br&#62; Default Value:&#60;br&#62; &#160; 1
+            ']
+        "
+    />
+    <job
+        label="CDMA_F_BCCH_MODIFY"
+        msgtype  ="0x1084"
+        description="Modify the operating parameters of the F_BCCH
+                     physical channel specified by the BS, SECTOR,
+                     CHANNELID triplet.
+                     Currently
+                     only one BCCH per sector is supported."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_BCCH channel, reference(BcchChIdType)']
+        "
+        optparams="
+          [ENABLED,AA_INT,
+            'Channel enable. reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  OFF=0'],
+          [LEVEL, AA_FLOAT,
+            'Level setting of this F-BCCH channel in dB, will be internally rounded to 0.25dB resolution.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  -9.00 dB
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;  0.00 .. -30.00 dB'],
+          [WALSHCODE, AA_INT,
+            'Walsh code of channel, it is derived from the channel id if it
+            is not specified.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160; Depends on ENCODINGRATE parameter &#60;br&#62;  &#160;  &#160;  QUARTER_RATE encoding: 1..31&#60;br&#62;  &#160;  &#160;  HALF_RATE encoding: 1..63
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  1'],
+          [BCN, AA_INT,
+            'BCN used to derive the long code mask for this F-BCCH.
+             It is not required to specify this
+             parameter for proper operation of the F-BCCH.
+             If this parameter is not specified the BCN will be
+             derived from the required CHANNELID parameter.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160; 1..7
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  1 which
+             is derived from CHANNELID parameter value.  A CHANNELID
+             of 48 maps to a BCN of 1.'],
+          [PILOT_PN, AA_INT,
+            'PN offset of the sector which this channel is on.  This parameter
+             is used in calculating the LCM for this channel if
+             ENABLEUSERDEFLCM is disabled.  It is not required to specify
+             this parameter for proper operation of the F-BCCH.  If this
+             parameter is not specified the PILOT_PN will be derived from
+             the sector this F_BCCH is operating on.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160; 0..511
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  PN offset of the sector which this F_BCCH is operating on.'],
+          [ENCODINGRATE, AA_INT,
+            'Encoding rate of channel.  It is not necessary to specify
+             this parameter for proper operation of F-BCCH.
+             This value should be coordinated with
+             layer 3 signaling for proper operation with MS.
+             reference(EncodingRatesType)
+              &#60;br&#62; Default Value:&#60;br&#62; &#160; HALF_RATE=1 '],
+          [DATARATE, AA_INT,
+            'Transmission rate of channel.  It is not necessary to specify this parameter for proper operation of F-BCCH.
+             This value should be coordinated with
+             layer 3 signaling for proper operation with MS.
+             reference(BcchRatesType)
+              &#60;br&#62; Default Value:&#60;br&#62; &#160; _4800BPS=0'],
+          [LCM, AA_UINT64,
+            'Allows user to specify a long code mask instead of using
+             the internally derived long code mask.  LCM will be
+             internally generated if ENABLEUSERDEFLCM is disabled.
+             *This parameter is for expert use only, do not set it without
+             proper knowledge and care.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;
+              Calculated based on BCN and PILOT_PN'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User-defined long code mask enable.  If this parameter
+             is set to 'ON',
+             then the user-defined long code mask is used for this
+             channel instead of
+             the internally derived long code mask.reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            ']
+        "
+    />
+    <job
+        label="CDMA_F_CCCH_MODIFY"
+        msgtype  ="0x1086"
+        description="Modify the operating parameters of the
+                     F_CCCH physical channel specified by the BS, SECTOR,
+                     CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_CCCH channel. reference(FccchChIdType)']
+        "
+        optparams="
+          [ENABLED,AA_INT,
+            'Channel enable. reference(OnOffType)
+            &#60;br&#62; Default Value:&#60;br&#62; &#160;  OFF=0'],
+          [LEVEL, AA_FLOAT,
+            'Level setting of this F-CCCH channel in dB, will be internally rounded to 0.25dB resolution.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  -9.00 dB
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;  0.00 .. -30.00 dB'],
+          [WALSHCODE, AA_INT,
+            'Walsh code of channel, it is derived from the channel id if it
+            is not specified.
+            &#60;br&#62; Default Value:&#60;br&#62; &#160;  9'],
+          [ENCODINGRATE, AA_INT,
+            'Encoding rate of channel.
+             This value should be coordinated with
+             layer 3 signaling for proper operation with MS.
+             reference(EncodingRatesType)
+            &#60;br&#62; Default Value:&#60;br&#62; &#160; HALF_RATE=1 '],
+          [FRAMEFORMAT, AA_INT,
+            'Frame format of this F-CCCH.
+             This value should be coordinated with
+             layer 3 signaling for proper operation with MS.
+             reference(FccchRatesType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; _9600BPS_20MS_FRAMESIZE=0'],
+          [PERIODIC_GPM_PREV, AA_INT,
+            'P_REV of GPM messages sent to phone. This parameter is here
+             for the sole purpose
+             of supporting Anritsu software analysis tools that use
+             it for proper decoding
+             of GPM messages.
+             reference(PrevSupportedType1)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 7'],
+          [LCM, AA_UINT64,
+            'Allows user to specify a user-defined long code mask.
+             *This parameter is for expert use only, do not set it without
+             proper knowledge and care.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0x319a8000000'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User-defined long code mask enable.  If this parameter
+             is set to 'ON'
+             then the user-defined long code mask is used for this
+             channel instead of
+             the default long code mask from the 3gpp2 
+             layer 1 specification.reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            ']
+        "
+    />
+    <job
+        label="CDMA_R_ACH_MODIFY"
+        msgtype  ="0x10c0"
+        description="Modify the operating parameters of the
+                     R_ACH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of reverse access channel. reference(RachChIdType)']
+        "
+        optparams="
+          [PREAMBLELENGTH, AA_INT,
+            'Length of preamble, must match field in APM message or access
+             frames from the mobile will not be received correctly
+             by the MD8470A.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160; 0 .. 15
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 3
+            '],
+          [CAPSULELENGTH, AA_INT,
+            'Length of capsule, must match field in APM message or access
+             frames from the mobile will not be received correctly
+             by the MD8470A.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160; 0 .. 7 
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 7
+            '],
+          [ENABLED, AA_INT,
+            'Channel enable. reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0'],
+            '],๗	          [ACN, AA_INT,
+            'Access Channel Number for this access channel, used to generate
+             the long code mask if ENABLEUSERDEFLCM is OFF.  If ACN is not
+             specified it will be derived from the CHANNELID parameter for
+             this access channel.  A CHANNELID of RACH1 maps to ACN0.
+             reference(AcnEnumType)'],
+          [PCN, AA_INT,
+            'Paging Channel Number for this access channel, used to generate
+             the long code mask if ENABLEUSERDEFLCM is OFF.
+               of the sync message en       If PCN is not specified it will be derived from the
+             CHANNELID for this access channel.
+             There is an assumed 1:1 mapping between paging channels
+             and access channels in this case.
+             reference(PcnEnumType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 1-7 for
+              ACH1-ACH7. (Corresponds to CHANNELID)'],
+          [BASE_ID, AA_INT,
+            'Base Station ID Number, must match the base station id field in
+             the SPM message for correct operation with an MS.  Used in
+             calculating the long code mask for this
+             access channel.  This value will be truncated to 16 bits if greater
+             than 16 bits.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 1
+            '],
+          [PILOT_PN, AA_INT,
+            'PN offset of the sector, used in calculating the long code mask for
+             this access channel.  If PILOT_PN is not specified it will be derived
+             from the required SECTOR parameter to this job.
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160; 0..511
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  PN offset of the sector which this R_ACH is operating on.'],
+            '],
+          [LCM, AA_UINT64,
+            'Allows user to specify a user-defined long code mask instead
+             of the internally derived LCM.
+             LCM will be internally derived if ENABLEUSERDEFLCM is disabled.
+             *This parameter is for expert use only, do not set it without
+             proper knowledge and care.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous
+             execution of this job
+             is used.  If this parameter is set to 'OFF', the
+             default internally derived
+             long code mask is used.  If this parameter is not specified
+             it is defaulted to off. reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            ']
+        "
+    />
+    <job
+        label="CDMA_R_EACH_MODIFY"
+        msgtype="0x10c3"
+        description="Modify the operating parameters of the
+                     R_EACH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of R_EACH channel. reference(ReachChIdType)']
+        "
+        optparams="
+          [ENABLED, AA_INT,
+            'Channel enable. reference(OnOffType)
+              &#60;br&#62; Default Value:&#60;br&#62; &#160; OFF=0'],
+          [REACHID, AA_INT,
+            'REACHID for this access channel, used to generate
+             the long code mask if ENABLEUSERDEFLCM is OFF.  If REACHID is not
+             specified it will be derived from the CHANNELID parameter for
+             this access channel.  A CHANNELID of REACH1 maps to REACHID0.
+             reference(ReachIdEnumType)'],
+          [FCCCHID, AA_INT,
+            'FCCHID of the Forward Common Control Channel assoicated with
+             this channel.
+             FCCCHID is used in generating the long code mask for
+             this channel.
+             If not specified it will be derived from the required
+             CHANNELID parameter to this job.
+             There is an assumed 1:1 mapping between F-CCCH channels
+             and enhanced access channels in this case.
+             reference(FccchIdEnum)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;
+             1 for REACH0. (Corresponds to CHANNELID)'],
+          [BASE_ID, AA_INT,
+            'Base Station ID Number, must match the base station id field in
+             the SPM message for proper operation with a mobile.  Used in
+             generating the long code mask for this
+             EACH if ENABLEUSERDEFLCM is OFF.  This value will be
+             truncated to 16 bits if greater
+             than 16 bits.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 1'],
+          [SLOTOFFSET1, AA_INT,
+            'EACH_SLOT_OFFSET1 for this EACH. See 3GPP2 layer 1 spec for
+             details.  Valid range is 0..63.  This value should match
+             EACH_SLOT_OFFSET1 in the EAPM message for proper operation
+             with a mobile.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0'],
+          [SLOTOFFSET2, AA_INT,
+            'EACH_SLOT_OFFSET2 for this EACH. See 3GPP2 layer 1 spec for
+             details.  Valid range is 0..63.  This value should match
+             EACH_SLOT_OFFSET2 in the EAPM message for proper operation
+             with a mobile.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0'],
+          [EACHSLOT, AA_INT,
+            'Enhanced Access Channel slot duration (EACH_SLOT) for this EACH.
+             Valid range is 3..63.  This value + 1 must be greater than
+             (EACHPREAMBLENUMFRAC + 1) * (EACHPREAMBLEFRACDURATION+1).
+             This value should match EACH_SLOT in the EAPM message for
+             proper operation with a mobile.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 63'],
+          [EACHPREAMBLENUMFRAC, AA_INT,
+            'Number of fractional preambles, used for calculating the
+             preamble length.  Preamble length =
+             (EACHPREAMBLENUMFRAC + 1) * (EACHPREAMBLEFRACDURATION+1).
+             This value should match EACH_PREAMBLE_NUM_FRAC in the EAPM
+             message for proper operation with a mobile.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0'],
+          [EACHPREAMBLEFRACDURATION, AA_INT,
+            'Fractional preamble duration in units of 1.25 ms, used for
+             calculating the preamble length.  Preamble length =
+             (EACHPREAMBLENUMFRAC + 1) * (EACHPREAMBLEFRACDURATION+1).
+             This value should match EACH_PREAMBLE_FRAC_DURATION in the EAPM
+             message for proper operation with a mobile.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 15'],
+          [LCM, AA_UINT64,
+            'Allows user to specify the upper 33 bits of the long code mask
+             for this EACH.  The least significant 9 bits of the EACH long
+             code mask are set by internal software in real time.
+             *This parameter is for expert use only, do not set it without
+             proper knowledge and care.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; Calculated
+              based on REACHID, FCCCHID, BASE_ID and SLOT_OFFSET'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous
+             execution of this job
+             is used.  If this parameter is set to 'OFF', the default
+             internally derived
+             long code mask is used.  reference(OnOffType)
+              &#60;br&#62; Default Value:&#60;br&#62; &#160; OFF=0']
+       "
+    />
+    <job
+        label="CDMA_F_OCNS_MODIFY"
+        msgtype  ="0x108a"
+        description="Modify the operating parameters of the F_OCNS
+                     physical channel specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams="
+          [ENABLED, AA_INT,
+            'Channel enable. reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0'],
+          [WALSHCODE, AA_INT,
+            'Walsh code of this F-OCNS.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 60']
+        "
+    />
+    <job
+        label="CDMA_F_PCH_HALFFRAMEALIGNMENT_MODIFY"
+        msgtype  ="0x1085"
+        description="Enables or disbales half frame padding on all PCH channels.  
+                     If enabled, all data sent on each PCH channel will be 
+                     padded to a half frame boundry"
+        reqparams="
+          [ENABLED, AA_INT,
+            'Half frame padding enabled. reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0 ']
+        "
+        optparams=""
+    />
+    <job
+    
+        label    ="CDMA_F_PICH_QUERY"
+        msgtype  ="0x108d"
+        description="Query and return the operating parameters of
+                     the F_PICH physical channel specified by the BS,
+                     SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [LEVEL, AA_FLOAT,
+            'Current level setting of this F-PICH channel output in dB.'],
+          [ENABLED, AA_INT,
+            'Channel enable.
+            ']
+        "
+    />
+    <job
+        label="CDMA_F_SYNC_QUERY"
+        msgtype  ="0x108e"
+        description="Query and return the operating parameters of the
+                     F_SYNC physical channel specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [LEVEL, AA_FLOAT,
+            'Current level setting of this F-SYNC channel output in dB.'],
+          [ENABLED, AA_INT,
+            'Channel enable.']
+        "
+    />
+    <job
+        label="CDMA_F_PCH_QUERY"
+        msgtype  ="0x108f"
+        description="Query and return the operating parameters of the
+                     F_PCH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of paging channel. reference(PchChIdType)']
+        "
+        optparams=""
+        returns="
+          [LEVEL, AA_FLOAT,
+            'Current level of this F-PCH channel dB.'],
+          [ENABLED, AA_INT,
+            'Channel enable.'],
+          [WALSHCODE, AA_INT,
+            'Current Walsh code of this F-PCH.'],
+          [DATARATE, AA_INT,
+            'Current transmission rate of channel.'],
+          [PCN, AA_INT,
+            'PCN used by the MD8470A internal embedded software to
+             calculate the long
+             code mask for this F-PCH.'],
+          [PILOT_PN, AA_INT,
+            'PILOT_PN used by the MD8470A internal embedded software
+             to calculate the long
+             code mask for this F-PCH.
+             '],
+          [LCM, AA_UINT64,
+            'The current long code mask applied to this F-PCH.
+             '],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous
+             execution of this job
+             is used.  If this parameter is set to 'OFF, the
+             default internally derived
+             long code mask is used.'],
+          [PERIODIC_GPM_PREV, AA_INT,
+            'P_REV of null GPM messages periodically sent on this PCH.
+             This parameter is here8for the sole purpose
+             of supporting Anritsu software analysis tools that use it for 
+             proper decoding of GPM messages.']
+        "
+    />
+    <job
+        label="CDMA_F_PCH_HALFFRAMEALIGNMENT_QUERY"
+        msgtype  ="0x108c"
+        description="Query and return the current half frame padding 
+                     mode in use by all PCH channles."
+        reqparams=""
+        optparams=""
+        returns="
+          [ENABLED, AA_INT,  
+           'Half frame padding enabled flag. reference(OnOffType)']
+        "
+    />
+    <job
+        label="CDMA_F_QPCH_QUERY"
+        msgtype  ="0x1090"
+        description="Query and return the operating parameters of the
+                     F_QPCH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of quick paging channel. reference(QpchChIdType)']
+        "
+        optparams=""
+        returns="
+          [LEVELPAGE, AA_FLOAT,
+            'Current level paging indicator (PI) bits in dB relative
+            to the pilot channel.'],
+          [ENABLED, AA_INT,
+            'Channel enable.'],
+          [WALSHCODE, AA_INT,
+            'Walsh code of channel.'],
+          [DATARATE, AA_INT,
+            'Transmission rate of channel.'],
+          [MAXSLOTCYCLE, AA_INT,
+           'Value used in the equation T = 32 * 2^MAXSLOTCYCLE to determine how
+            long to enable the paging indicators on a configuration change.
+            See 'Quick Paging Channel Processing' in section 3 of the 3gpp2
+            layer 3 spec for more information.
+           '],
+          [NUMQPCH, AA_INT,
+            'This value is used in the QPCH hashing function to determine which
+             QPCH channel on this sector to hash to.
+            '],
+        "
+    />
+    <job
+        label="CDMA_F_BCCH_QUERY"
+        msgtype  ="0x1091"
+        description="Query and return the operating parameters of the
+                     F_BCCH physical channel specified by the BS, SECTOR, 
+                     CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_BCCH channel. reference(BcchChIdType)']
+        "
+        optparams=""
+        returns="
+          [ENABLED,AA_INT,
+            'Channel enable.'],
+          [LEVEL, AA_FLOAT,
+            'Current level of this F-BCCH in dB.'],
+          [WALSHCODE, AA_INT,
+            'Current Walsh code of this F-BCCH.'],
+          [BCN, AA_INT,
+            'BCN used to internally generate the current long code
+             mask for this F-BCCH if
+             ENABLEUSERDEFLCM is disabled.'],
+     ÿÿ [PILOT_PN, AA_INT,
+            'PILOT_PN used to internally generate the current
+             long code mask for this F-BCCH if ENABLEUSERDEFLCM is disabled.'],
+          [ENCODINGRATE, AA_INT,
+            'Current encoding rate of channel.'],
+          [DATARATE, AA_INT,
+            'Current transmission rate of channel'],
+          [LCM, AA_UINT64,
+            'The current long code mask for this F-BCCH.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User-defined long code mask enable.  If this parameter is
+             set to 'ON'
+             then the user-defined long code mask is used for this
+             channel instead of
+             the internally derived long code mask.']
+        "
+    />
+    <job
+        label="CDMA_F_CCCH_QUERY"
+        msgtype  ="0x1092"
+        description="Query and return the operating parameters of the
+                     F_CCCH physical channel specified by the BS, SECTOR,
+                     CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_CCCH channel. reference(FccchChIdType)']
+        "
+        returns="
+          [ENABLED,AA_INT,
+            'Channel enable.'],
+          [LEVEL, AA_FLOAT,
+            'Current level of this F-FCCH in dB.'],
+          [WALSHCODE, AA_INT,
+            'Current Walsh code of this F-CCCH.'],
+          [ENCODINGRATE, AA_INT,
+            'Current encoding rate of this F-CCCH.'],
+          [FRAMEFORMAT, AA_INT,
+            'Current transmission rate of this F-CCCH.'],
+          [LCM, AA_UINT64,
+            'The current long code mask for this F-CCCH.
+             '],
+          [PERIODIC_GPM_PREV, AA_INT,
+            'P_REV of GPM messages sent to phone. This parameter is here
+             for the sole purpose
+             of supporting Anritsu software analysis tools that use
+             it for proper decoding
+             of GPM messages.
+             '],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User-defined long code mask enable.  If this parameter
+             is set to 'ON'
+             then the user-defined long code mask is used for
+             this channel instead of
+             the internally derived long code mask.'].
+        "
+    />
+    <job
+        label="CDMA_R_ACH_QUERY"
+        msgtype  ="0x10c6"
+        description="Query and return the operating parameters of the
+                     R_ACH physical channel specified by the BS, SECTOR, CHANNELID triplet_QUERY"
+        msgtype  ="0x1095"
+        description="Query and return the operating parameters of the
+                     F_SCH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_SCH channel. reference(F_SchChIdType)']
+        "
+        optparams=""
+        returns="
+          [LEVEL, AA_FLOAT,
+            'Level setting of this F-SCH in dB.'],
+          [ENABLED, AA_INT,
+            'Channel enable.'],
+          [WALSHCODE, AA_INT,
+            'Current Walsh code of this F-SCH.'],
+          [ENCODINGSCHEME, AA_INT,
+            'Scheme used for encoding data on this F-SCH.
+            '],
+          [RC, AA_INT,
+            'Current radio configuration for this F-SCH.
+            '],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this F-SCH.'],
+          [MAXRATE, AA_INT,
+            'Maximum transmission rate of F-SCH.'],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated if ENABLEUSERDEFLCM is disabled.  This should be set initially before Enable is
+             set to ON and ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_INT64,
+    
+             long code mask is used.']
+        "
+    />
+    <job
+        label="CDMA_R_EACH_QUERY"
+        msgtype="0x10c9"
+        description="Query and return the operating parameters of the
+                     R_EACH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of R_EACH channel. reference(ReachChIdType)']
+        "
+        optparams=""
+        returns="
+          [REACHID, AA_INT,
+            'REACHID for this access channel, used to generate
+             the long code mask if ENABLEUSERDEFLCM is OFF.'],
+          [FCCCHID, AA_INT,
+            'FCCHID of the Forward Common Control Channel assoicated with
+             this channel.
+             FCCCHID is used in generating the long code mask for
+             this channel if ENABLEUSERDEFLCM is OFF.'],
+          [BASE_ID, AA_INT,
+            'Base Station ID Number,
+              used in generating the long code mask for this
+             EACH if ENABLEUSERDEFLCM is OFF.'],
+          [ENABLED, AA_INT,
+            'Channel enable.'],
+          [SLOTOFFSET1, AA_INT,
+            'EACH_SLOT_OFFSET1 for this EACH. See 3GPP2 layer 1 spec for
+             details.'],
+          [SLOTOFFSET2, AA_INT,
+            'EACH_SLOT_OFFSET2 for this EACH. See 3GPP2 layer 1 spec for
+             details.'],
+          [EACHSLOT, AA_INT,
+            'Enhanced Access Channel slot duration (EACH_SLOT) for this EACH.
+            '],
+          [EACHPREAMBLENUMFRAC, AA_INT,
+            'Number of fractional preambles.
+            '],
+          [EACHPREAMBLEFRACDURATION, AA_INT,
+            'Fractional preamble duration.
+            '],
+          [LCM, AA_UINT64,
+            'Current long code mask for this EACH.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous
+             execution of this job
+             is used.  If this parameter is set to 'OFF', the default
+             internally derived
+             long code mask is used.']
+       "
+    />
+    <job
+        label    ="CDMA_F_OCNS_QUERY"
+        msgtype  ="0x1096"
+        description="Query and return the operating parameters of
+                     the F_OCNS physical channel specified by the
+                     BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [ENABLED, AA_INT,
+            'Status of channel enable.'],
+          [WALSHCODE, AA_INT,
+            'Current Walsh code of this F-OCNS.'],
+          [LEVEL, AA_FLent level of this F-OCNS in dB.  This level is calculated
+             by internal embedded software in the MD8470A by analyzing
+             present levels
+             of all other forward channels on the given sector.  This level is
+             rounded to either 0.25dB or 0.1dB increments depending on the
+             channel resolution of this F-OCNS.'],
+          [AUTODISABLE, AA_INT,
+            'If 1, this indicates this F-OCNS has been turned off automatically
+             by MD8470A internal
+             embedded software when the sum of all channels on
+             this sector exceeds
+             unity.'],
+          [CHANRESOLUTION, AA_INT,
+            'Output level control resolution of channel,
+             0.25dB(NORMAL) or 0.1dB(HIGH).']
+        "
+    />
+    <job
+        label    ="CDMA_SCME_MODIFY"
+        msgtype  ="0x12ce"
+        description="Modify the operating parameters of the
+                     sync message engine specified by the BS, SECTOR pair.
+                     If the SCME is enabled
+                     the configured SCHM will be transmitted on this BS, SECTOR
+                     pair periodically."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [ENABLED, AA_INT,
+            'Sync Message Engine enable. reference(OnOffType)']
+        "
+        optparams="
+        "
+    />
+    <job
+        label    ="CDMA_SCME_QUERY"
+        msgtype  ="0x12cf"
+        description="Query and return the operating parameters
+                     of the sync message engine specified
+                     by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [ENABLED, AA_INT,
+            'Sync Message Engine enable.'],
+        "
+    />
+    <job
+        label    ="CDMA_SCM_MODIFY"
+        msgtype  ="0x12d3"
+        description="Modify the sync message (SCHM) specified by the
+                     BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station, reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector, reference(SectorType)']
+          [PDU, AA_BYTES,
+            'SCHM message in binary encoded format.
+             Normally this PDU would be generated using the API's Encode()
+             function for the SCHM.  The SCHM
+             should be coded as an XML file, read into a message database and
+             encoded as a binary message and sent as the data in this PDU field.
+            '],
+   '      [PDUBITCOUNT, AA_INT,
+            'Number of bits in PDU.'],
+          [PREVTODECODE, AA_INT,
+            'Protocol revision (P_REV) of SCHM PDU.  Used to
+             properly interpret SCHM PDp.
+             reference(PrevSupportedType1)']
+        "
+        optparams="
+        "
+    />
+    <job
+        label    ="CDMA_SCM_QUERY"
+        msgtype  ="0x12d0"
+        description="Query and return the binary image of the
+                     next sync message that will be sent to the phone."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [TIMESTAMP, AA_INT64,
+            'Present CDMA time in units of 80 ms.'],
+          [PDU, AA_BYTES,
+            'Sync message in binary encoded format.  Can be decoded
+             using API's Decode() function.
+            '],
+          [PDUBITCOUNT, AA_INT,
+            'Number of bits in PDU.'],
+          [PREVTODECODE, AA_INT,
+            'Protocol revision (P_REV) of SCHM PDU.  Used to
+             properly interpret SCHM PDU.']
+        "
+    />
+    <job
+        label    ="CDMA_OHME_MODIFY"
+        msgtype  ="0x12c2"
+        description="Enables/disables the overhead message engine
+                     specified by the BS, SECTOR
+                     pair.  If enabled, configured overhead messages
+                     are transmitted by the
+                     overhead message engine.  Overhead messages
+                     transmitted by the overhead
+                     message engine do not include the SCHM."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams="
+          [ACCMSGSEQ, AA_INT,
+            'ACC_MSG_SEQ value for overhead messages.
+             If this value is not specified it will
+             be internally derived, and incremented each time a dependent
+             parameter changes.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0 
+            '],
+          [CONFIGMSGSEQ, AA_INT,
+            'CONFIG_MSG_SEQ value.  If this value is not specified it
+             will be internally dervied, and incremented each time a
+             dependent parameter changes.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0 
+            '],
+          [ENABLED, AA_INT,
+            'Overhead Message Engine enable. reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0 
+            ']
+        "
+    />
+    <job
+        label    ="CDMA_OHME_QUERY"
+        msgtype  ="0x12c3"
+        description="Query and return the operating parameters of the 
+        overhead message engine specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [ACCMSGSEQ, AA_INT,
+            'Current ACC_MSG_SEQ value.'],
+          [CONFIGMSGSEQ, AA_INT,
+            'Current CONFIG_MSG_SEQ value.'],
+          [ENABLED, AA_INT,
+            'Overhead Message Engine enable.']
+        "
+    />
+    <job
+        label    ="CDMA_OHM_MNDIFY"
+        msgtype  ="0x12ca"
+        description="Modify the overhead message specified by the
+                     BS, SECTOR, MSGTAG triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector, reference(SectorType)'],
+         [MSGTAG, AA_INT,
+           'MSG_ID value of the overhead message as defined in the 3gpp2 LAC
+            specification.  For example, SPM is 1, APM is 2,
+            NLM is 3, etc.
+            reference(OverheadMessageType)
+           ']
+        "
+        optparams="
+          [PDU, AA_BYTES,
+            'Overhead message in binary encoded format.
+             Normally this PDU would be generated using the API's Encode()
+             function for a particular message.  The overhead message
+             should be coded as an XML file, read into a message database and
+             encoded as a binary message and sent as the data in this PDU field.
+            '],
+          [PDUBITCOUNT, AA_INT,
+            'Number of bits in PDU.'],
+          [PERIOD, AA_INT,
+            'Send this mess e out every PERIOD 80ms frames.  A PERIOD
+             of 0 prevents this message from being transmitted.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0 
+            '],
+          [OFFSET, AA_INT,
+            'Offset this message transmission by OFFSET 80ms
+             frames every PERIOD.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0 
+            '],
+          [PREVTODECODE, AA_INT,
+            'Protocol revision (P_REV) of overhead message PDU.  Used to
+             properly interpret PDU.
+             reference(PrevSupportedType1)'],
+          [BUILD, AA_INT,
+            'Will cause the overhead message to be rebuilt which will cause
+             the changes to affect the next overhead message sent to phone,
+             otherwise changes have no effect for now.  If this parameter is
+             absent or set to false then a CDMA_OHM_BUILD job will need to be
+             executed to make the changes in this job take effect.
+             reference(TrueFalseType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0 
+            ']
+          "
+    />    
+    <job
+        label    ="CDMA_OHM_QUERY"
+        msgtype  ="0x12c6"
+        description="Query and return the overhead
+                     message specified by the BS, SECTOR, MSGTAG triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [MSGTAG, AA_INT,
+            'Overhead message MSG_ID. reference(OverheadMessageType)']
+        "
+        optparams="
+        "
+        returns="
+          [TIMESTAMP, AA_INT64,
+            'Present CDMA time in units of 1.25 ms.'],
+          [PREVTODECODE, AA_INT,
+            'Protocol revision (P_REV) of overhead message PDU.  Used to
+             properly interpret PDU.'],
+          [PDU, AA_BYTES,
+            'Overhead message in binary encoded format.  Can be
+             decoded using API's Decode() function.
+            '],
+          [PERIOD, AA_INT,
+            'This message is transmitted every PERIOD 80ms frames.'],
+          [OFFSET, AA_INT,
+            'Offset message transmission by OFFSET 80ms frames
+             every PERIOD.']
+        "
+    />
+    <job
+        label    ="CDMA_OHM_BUILD"
+        msgtype  ="0x12c4"
+        description="Causes all configured overhead messages on the
+                     specified BS, SECTOR pair to be rebuilt with
+                     latest information."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+    />
+    <job
+        label   ="CDMA_F_FCH_L1_MODIFY"
+        msgtype ="0x1088"
+        description="Modify the operating parameters of the
+                     F_FCH physical channel specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams="
+          [LEVEL, AA_FLOAT,
+            'Level setting of this F-FCH in dB, will be internally
+             rounded to either 0.25dB or
+             0.1dB resolution depending on the channel resolution for this
+             channel specified in the CDMA_CONFIG job.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  -8.00 dB
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;  0.00 .. -30.00 dB'],
+          [ENABLED, AA_INT,
+            'Channel enable.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0
+            '],
+          [WALSHCODE, AA_INT,
+            'Walsh code of this F-FCH.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  30
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;
+             Depends on RC parameter &#60;br&#62;  &#160;
+             &#160;  RC1, RC2, RC3, RC5: 0..63&#60;br&#62;
+             &#160;  &#160;  RC4: 0..127'],
+          [RC, AA_INT,
+            'Radio configuration for this F-FCH. 
+             This parameter is dependent on L2 F_FCH MUXOPT. Please see CDMA_F_FCH_L2_MODIFY
+             for guidelines on setting L2 MUXOPT parameter. 
+             reference(F_FchRadioConfigType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  1'],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this F-FCH.  This value should be
+             coordinated with
+             layer 3 signaling for proper operation with an MS.
+             Range is 0..15.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [RPCENABLE, AA_INT,
+            'Reverse Power Control enable.  RPC should be enabled
+             for either F_FCH or F_DCCH when both FCH and DCCH are
+             active simultaneously.
+             This setting must be coordinated with layer 3
+             signaling when both F_DCCH and F_FCH are active on
+             a given call instance for proper operation with a mobile.
+             If this parameter is not specified it will default
+             to enabled.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  1'],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated
+             if ENABLEUSERDEFLCM is disabled.  This should be
+             set initially before Enable is
+             set to ON and ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_UINT64,
+            'Allows user to specify a long code mask.
+             *This parameter is for expert use only, do not set it without
+             proper knowledge !nd care.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User-defined long code mask enable.  If this parameter is
+             set to 'ON',
+             the user long code mask set in this, or a
+             previous execution of this job
+             is used.  If this parameter is set to 'OFF',
+             the default internally derived
+             long code mask is used.  If this parameter is not
+             specified it is defaulted to OFF.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+        "
+    />
+    <job
+        label    ="CDMA_F_FCH_L1_QUERY"
+        msgtype  ="0x1094"
+        description="Query and return the operating parameters of
+                     the F_FCH physical channel specified by the BS, SECTOR
+                     pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+        "
+        returns="
+          [LVEL, AA_FLOAT,
+            'Level setting of F-FCH in dB.'],
+          [ENABLED, AA_INT,
+            'Channel enable.'],
+          [WALSHCODE, AA_INT,
+            'Walsh code of this F-FCH.'],
+          [RC, AA_INT,
+            'Current radio configuration for this F-FCH.'],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this F-FCH.'],
+          [RPCENABLE, AA_INT,
+            'Reverse Power Control enable.'],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.
+             If not set, an ESN of
+             0 will be used.  Long code mask is only
+             calculated if ENABLEUSERDEFLCM is disabled.
+             This should be set initially before Enable is
+             set to ON and ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_UINT64,
+            'The current long code mask for this F-FCH.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User-defined long code mask enable.'],
+          [CHANRESOLUTION, AA_INT,
+            'Output level control resolution of channel,
+             0.25dB(NORMAL) or 0.1dB(HIGH)']
+        "
+    />
+    <job
+        label="CDMA_F_DCCH_L1_MODIFY"
+        msgtype  ="0x1087"
+        description="Modify the operating parameters of the
+                     F_DCCH physical channel specified by the BS, SECT\R pair."
+
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams="
+          [LEVEL, AA_FLOAT,
+            'Level setting of this F-DCCH in dB, rounded to either 0.25dB or
+            0.1dB resolution depending on the channel resolution for this
+            channel specified in the CDMA_CONFIG job.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  -8.00 dB
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;  0.00 .. -30.00 dB'],
+          [RC, AA_INT,
+            'Radio configuration for this F-DCCH.
+             This parameter is dependent on L2 F_DCCH MUXOPT. Please see CDMA_F_DCCH_L2_MODIFY
+             for guidelines on setting L2 MUXOPT parameter. 
+             reference(F_DcchRadioConfigType)
+             &#60;br&#+2; Default Value:&#60;br&#62; &#160;  3'],
+          [WALSHCODE, AA_INT,
+            'Walsh code of this F-DCCH.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 25
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160; Depends
+              on RC parameter &#60;br&#62;  &#160;
+             &#160;  RC3, RC5: 0..63&#60;br&#62;
+             &#160;  &#160;  RC4: 0..127'],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this F-DCCH.  This value should
+             be coordinated with
+             layer 3 signaling for proper operation with an MS.
+             If not set, a default of 0
+             will be used by MD8470A internal embedded software.
+             Range is 0..15.'],
+          [RPCENABLE, AA_INT,
+            'Reverse Power Control enable.  RPC should be enabled for
+             either F-FCH or F-DCCH if both FCH and DCCH are enabled
+             simultaneously.
+             This setting must be coordinated with L3 signaling when
+             both F-DCCH and F-FCHCare active on a given call instance
+             for proper operation with a mobile.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated
+             if ENABLEUSERDEFLCM is disabled.  This should be set
+             initially before Enable is
+             set to ON and ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_UINT64,
+            'Allows user to specify a long code mask instead of using the
+             permuted ESN.  LCM will be
+             calculated per the 3GPP2 specifications if
+             ENABLEUSERDEFLCM is disabled.
+             *This parameter is for expert use only, do not set it without
+             proper knowledge and care.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User-defined long code mask enable.  If this parameter
+             is set to 'ON',
+             the user-defined long code mask set in this, or a previous
+             execution of this job
+             is used.  If this parameter is set to 'OFF', the default
+             internally derived
+             long code mask is used.  reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+          [ENABLED, AA_INT,
+            'Channel enable, reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0
+            ']
+        "
+    />
+    <job
+        label="CDMA_F_DCCH_L1_QUERY"
+        msgtype  ="0x1093"
+        description="Query and return the operating parameters
+                     of the F_DCCH physical channel specified by the
+                     BS, SECTOR pir."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [LEVEL, AA_FLOAT,
+            'Current level setting of F-DCCH in dB.'],
+          [RC, AA_INT,
+            'Current radio configuration for this F-DCCH.'],
+          [WALSHCODE, AA_INT,
+            'Current Walsh code of this F-DCCH.'],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this F-DCCH.'],
+          [RPCENABLE, AA_INT,
+            'Reverse Power Control enable.'],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.'],
+          [ENABLED, AA_INT,
+            'Channel enable.'],
+          [LCM, AA_UINT64,
+            'The current long code mask for this F-DCCH.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous execution
+             of this job
+             is used.  If this parameter is set to 'OFF', the
+             default internally derived
+             long code mask is used.'],
+          [CHANRESOLUTION, AA_INT,
+            'Output level control resolution of channel,
+             0.25dB(NORMAL) or 0.1dB(HIGH).']
+        "
+    />
+    <job
+        label="CDMA_F_DCCH_L2_MODIFY"
+        msgtype="0x1063"
+        description="Modify the operating parameters of the
+                     F_DCCH logical channel specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams="
+          [MUXOPT, AA_UINT,
+            'Mux option.
+             Must match layer 3 signaling for proper operation with MS.
+             This parameter is dependent on L1 F_DCCH RC. Mux1 should be used
+             with RC3 and RC4 and Mux2 with RC5 for proper operation.  
+             reference(DcchMuxType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 1'],
+          [ENABLESIG, AA_INT,
+            'Enable channel for signaling.  Must be enabled before signaling
+             can occur on this F-DCCH. Should be enabled after the corresponding
+             physical F-DCCH channel is enabled.  reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic. Should be enabled before
+             sending service connect message (SCM) to the mobile station.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.  Should be set when
+             ENABLEPRI is set to ON.  Must match SRID argument to
+             CDMA_SERVICE_MODIFY for proper operation.
+              &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],         
+          [PREVTOUSE, AA_UINT,
+            'Protocol revision number to use when MD8470A internal
+             embedded software generates
+             layer 2 fields.  This value should be coordinated
+             with layer 3 signaling and overhead
+             message fields for proper operation with an MS.
+             reference(PrevSupportedType1)'],
+          [L2RESET, AA_UINT,
+            'Layer 2 internal ARQ sublayer sequence numbers will be
+             reset by default when ENABLESIG is set to ON. Setting L2RESET to OFF will
+             leave their values intact.  reference(OnOffType)
+             &#   @r&#62; Default Value:&#60;br&#62; &#160;  1']
+       "
+    />
+
+    <job
+        label="CDMA_F_DCCH_L2_QUERY"
+        msgtype="0x1064"
+        description="Query and return the operating parameters
+                     of the F_DCCH logical channel specified by the BS, SECTOR
+                     pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [MUXOPT, AA_UINT,
+            'Mux option.'],
+          [ENABLESIG, AA_INT,
+            'Enable channel for signaling.  Must be enabled before signaling
+             can occur on this F-DCCH. Should be enabled after the corresponding
+             physical F-DCCH channel is enabled.'],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic. Should be enabled before
+             sending service connect message (SCM) to the mobile station.'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.  Should be set when
+             ENABLEPRI is set to ON.  Must match SRID argument to
+             CDMA_SERVICE_MODIFY for proper operation.
+            '],
+          [PREVTOUSE, AA_UINT,
+            'Protocol revision number used when MD8470A internal
+             embedded software generates
+             layer 2 fields.  This value should be coordinated
+             with layer 3 signaling and overhead
+             message fields for proper operation with an MS.'],
+          [PHYLIST, AA_CSTRING,
+            'A text based list of physical channels to which this L2 channel is
+             presently supplying frames. (could be mulitple physical channels
+             during a soft handoff state.)']
+       "
+    />
+
+
+    <job
+        label="CDMA_R_DCCH_L1_MODIFY"
+        msgtype  ="0x10c2"
+        description="Modify the operating parameters of the
+                     R_DCCH physical channel specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams="
+          [RC, AA_INT,
+            'Radio configuration for this R-DCCH. 
+             This parameter is dependent on L2 R_DCCH MUXOPchRadioConfigType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  3'],
+          [PILOTGATINGRATE, AA_INT,
+            'Gating Rate. reference(GatingRateType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this R-DCCH.  This value should be coordinated with
+             layer 3 signaling for proper operation with an MS.  If not set, a default
+             of 0 will be used by MD8470A internal embedded software.
+             Range is 0..15.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+          [ENABLECALLDROP, AA_INT,
+            'Call drop enable flag. Enables L1 to send call dropped indication 
+             when CALLDROPPERIOD is reached. reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  1
+            '],
+          [CALLDROPorRIOD, AA_INT,
+            'Number of consecutive bad frames before sending call dropped
+             indication.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 150
+            '],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated if ENABLEUSERDEFLCM is disabled.  
+             This should be set initially before Enable is
+             set to ON and ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_UINT64,
+            'Allows user to specify a long code mask
+             *This parameter is for expert use only, do not set it without
+             proper knowledge and care.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous
+             execution of this job
+             is used.  If this parameter is set to 'OFF', the
+             default internally derived
+             long code mask is used.  reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+          [ENABLED, AA_INT,
+            'Channel enable, reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            ']
+        "
+    />
+
+    <job
+        label="CDMA_R_DCCH_L1_QUERY"
+        msgtype  ="0x10c8"
+        description="Query and return the operating parameters of the
+                     R_DCCH physical channel specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [RC, AA_INT,
+            'Current radio configuration for this R-DCCH.'],
+          [PILOTGATINGRATE, AA_INT,
+            'Current gating rate.'],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this R-DCCH.'],
+          [ENABLECALLDROP, AA_INT,
+            'Call drop enable.'],
+          [CALLDROPPERIOD, AA_INT,
+            'Number of consecutive bad frames before sending call dropped
+             indication to L3.'],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated if ENABLEUSERDEFLCM is disabled.  This should be set initially before Enable is
+             set to ON and ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_UINT64,
+            'The current long code mask for this R-DCCH.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous execution
+             of this job
+             is used.  If this parameter is set to 'OFF', the
+             default internally derived
+             long code mask is used.'],
+          [ENABLED, AA_INT,
+            'Channel enable.']
+        "
+    />
+    <job
+        label="CDMA_R_DCCH_L2_MODIFY"
+        msgtype="0x1067"
+        description="Modify the operating parameters of the
+                     R_DCCH logical channel specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams="
+          [MUXOPT, AA_UINT,
+            'Mux option. 
+             Must match layer 3 signaling for proper operation with MS.
+             This parameter is dependent on L1 R_DCCH RC. Mux1 should be used
+             with RC3 and Mux2 with RC4 for proper operation.  
+             reference(DcchMuxType)'],
+          [ENABLESIG, AA_INT,
+            'Enable channel for signaling.  Must be enabled before signaling
+             can occur on this R-DCCH. Should be enabled after the corresponding
+             physical R-DCCH channel is enabled.  reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic. Should be enabled before
+             sending service connect message (SCM) to the mobile station.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.  Should be set when
+             ENABLEPRI is set to ON.  Must match SRID argument to
+             CDMA_SERVICE_MODIFY for proper operation.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [PREVTOUSE, AA_UINT,
+            'Protocol revision (P_REV) number to use when generating L2 fields.
+             reference(PrevSupportedType1)']
+       "
+    />
+    <job
+        label="CDMA_R_DCCH_L2_QUERY"
+        msgtype="0x1068"
+        description="Query and return the operating parameters of the
+                     R_DCCH logical channel specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [MUXOPT, AA_UINT,
+            'Mux option.'],
+          [ENABLESIG, AA_INT,
+            'Enable channel for signaling.  Must be enabled before signaling
+             can occur on this R-DCCH. Should be enabled after the corresponding
+             physical R-DCCH channel is enabled.'],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic. Should be enabled before
+             sending service connect message (SCM) to the mobile station.
+             '],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.  Should be set when
+             ENABLEPRI is set to ON.  Must match SRID argument to
+             CDMA_SERVICE_MODIFY for proper operation.
+            '],
+          [PREVTOUSE, AA_UINT,
+            'Protocol revision (P_REV) number to use when generating L2 fields.
+             '],
+          [PHYLIST, AA_CSTRING,
+            'A text based list of physical channels to which this L2 channel is
+             presently supplying frames. (could be mulitple physical channels
+             during a soft handoff state.)']
+       "
+    />
+
+    <job
+        label="CDMA_F_SCH_L1_MODIFY"
+        msgtype="0x1089"
+        description="Modify the operating parameters of the
+                     F_SCH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_SCH channel. reference(F_SchChIdType)']
+        "
+        optparams="
+          [LEVEL, AA_FLOAT,
+            'Level setting of this F-SCH in dB, will be internally rounded to either 0.25dB or
+            0.1dB resolution depending on the channel resolution for this
+            channel specified in the CDMA_CONFIG job.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  -8.00 dB
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;  0.00 .. -30.00 dB'],
+          [ENABLED, AA_INT,
+            'Channel enable.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+             reference(OnOffType)
+            '],
+          [WALSHCODE, AA_INT,
+            'Walsh code of this F-SCH.  Care should be taken in selecting
+             Walsh codes for F-SCH because F-SCH Walsh lengths are variable
+             depending on MAXRATE.  Some selections of Walsh code will jam
+             channels on other Walsh codes.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  3
+            '],
+          [ENCODINGSCHEME, AA_INT,
+            'Scheme used for encoding data on this F-SCH. TURBO encoding is only
+             valid for MAXRATE values greater than _1X_SCH. 
+             This parameter must match L2 F_SCH ENCODINGSCHEME for proper operation.
+             reference(EncodingType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+          [RC, AA_INT,
+            'Radio configuration for this F-SCH. 
+             This parameter has dependency on L2 F_SCH MUXOPT. Please see CDMA_F_SCH_L2_MODIFY
+             for guidelines on setting L2 MUXOPT parameter. 
+             reference(F_SchRadioConfigType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  3'],
+          [MAXRATE, AA_INT,
+            'Maximum transmission rate of this SCH. 
+             This parameter has dependency on L2 F_SCH MUXOPT. Please see CDMA_F_SCH_L2_MODIFY
+             for guidelines on setting L2 MUXOPT parameter. 
+             reference(SchRatesType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  7'],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this F-SCH.  This value should be
+             coordinated with
+             layer 3 signaling for proper operation with an MS.
+             Range is 0..15.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+             '],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated if ENABLEUSERDEFLCM is disabled.  This should be set initially before Enable is
+             set to ON and ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_UINT64,
+            'Allows user to specify a long code mask instead of the
+             internally derived LCM.
+             LCM will be internally derived if ENABLEUSERDEFLCM is disabled.
+             *This parameter is for expert use only, do not set it without
+             proper knowledge and care.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous execution of this job
+             is used.  If this parameter is set to 'OFF', the default internally derived
+             long code mask is used.  reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+          [FSCH_START_TIME, AA_UINT64,
+            'Start time for Forward Supplemental Channel. This time
+             is an absolute time in 20ms units and has to be at least 40ms 
+             greater than system time when this job is received by
+             layer 1 FSCH module in the embedded code. This parameter cannot be
+             modified after the channel has started.'],
+          [FSCH_STOP_TIME, AA_UINT64,
+            'Stop time for Forward Supplemental Channel. This time
+             is an absolute time in 20ms units and has to be at least 20ms 
+             greater than start time when this job is received by
+             layer 1 FSCH module in the embedded code. Default value for this parameter
+             is INFINITY which means the channel remains open until it is explicitly
+             closed (by setting ENABLED to OFF). This parameter cannot be modified
+             after its value is set and the channel has been enabled.']
+        "
+    />
+    <job
+        label    ="CDMA_F_SCH_L1_QUERY"
+        msgtype  ="0x1095"
+        description="Query and return the operating parameters of the
+                     F_SCH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_SCH channel. reference(F_SchChIdType)']
+        "
+        optparams=""
+        returns="
+          [LEVEL, AA_FLOAT,
+            'Level setting of this F-SCH in dB.'],
+          [ENABLED, AA_INT,
+            'Channel enable.'],
+          [WALSHCODE, AA_INT,
+            'Current Walsh code of this F-SCH.'],
+          [ENCODINGSCHEME, AA_INT,
+            'Scheme used for encoding data on this F-SCH.
+            '],
+          [RC, AA_INT,
+            'Current radio configuration for this F-SCH.
+            '],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this F-SCH.'],
+          [MAXRATE, AA_INT,
+            'Maximum transmission rate of F-SCH.'],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated if ENABLEUSERDEFLCM is disabled.  This should be set initially before Enable is
+             set to ON and ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_INT64,
+            'Currently active long code mask for this F-SCH.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous execution
+             of this job
+             is used.  If this parameter is set to 'OFF', the default
+             internally derived
+             long code mask is used.'],
+          [CHANRESOLUTION, AA_INT,
+            'Output level control resolution of channel,
+             0.25dB(NORMAL) or 0.1dB(HIGH).'],
+          [FSCH_START_TIME, AA_UINT64,
+            'Start time for Forward Supplemental Channel.'],
+          [FSCH_STOP_TIME, AA_UINT64,
+            'Stop time for Forward Supplemental Channel.']
+        "
+    />
+    <job
+        label  ="CDMA_R_SCH_L1_MODIFY"
+        msgtype="0x10c5"
+        description="Modify the operating parameters of the
+                     R_SCH physical channel specified by the BS, SECTOR, CHANNELID triplet"
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_SCH channel. reference(R_SchChIdType)']
+        "
+        optparams="
+          [ENABLED, AA_INT,
+            'Channel enable. reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+          [RC, AA_INT,
+            'Radho configuration for thsk is used.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&is R-SCH. 
+             This parameter has dependency on L2 R_SCH MUXOPT. Please see CDMA_R_SCH_L2_MODIFY
+             for guidelines on setting L2 MUXOPT parameter. 
+             reference(R_SchRadioConfigType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  3'],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this R-SCH.  This value should be
+             coordinated with
+             layer 3 signaling for proper operation with a mobile.  If not
+             set a default
+             of 0 will be used by MD8470A internal embedded software.
+             Range is 0..15.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+          [MAXRATE, AA_INT,
+            'Maximum data rate of the channel.
+             This parameter has dependency on L2 R_SCH MUXOPT. Please see CDMA_R_SCH_L2_MODIFY
+             for guidelines on setting L2 MUXOPT parameter. 
+             reference(SchRatesType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  4
+            '],
+          [DECODINGSCHEME, AA_INT,
+            'Scheme used to decode. TURBO decoding is only valid for MAXRATE 
+             values greater than _1X_SCH. 
+             This parameter must match L2 R_SCH DECODINGSCHEME for proper operation.
+             reference(EncodingType)
+            &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated if
+             ENABLEUSERDEFLCM is disabled.  This should be set
+             initially before ENABLED is
+             set to ON when ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_UINT64,
+            'Allows user to specify a long code mask
+             *This parameter is for expert use only, do not set it without
+             proper knowledge and care.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous execution
+             of this job
+             is used.  If this parameter is set to 'OFF', the
+             default internally derived
+             long code mask is used.  reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+          [RSCH_START_TIME, AA_UINT64,
+            'Start time for Reverse Supplemental Channel. This time
+             is an absolute time in 20ms units and has to be at least 40ms 
+             greater than system time when this job is received by
+             layer 1 RSCH module in the embedded code. This parameter cannot be
+             modified after the channel has started.'],
+          [RSCH_STOP_TIME, AA_UINT64,
+            'Stop time for Reverse Supplemental Channel. This time
+             is an absolute time in 20ms units and has to be at least 20ms 
+             greater than start time when this job is received by
+             layer 1 RSCH module in the embedded code. Default value for this parameter
+             is INFINITY which means the channel remains open until it is explicitly
+             closed (by setting ENABLED to OFF). This parameter cannot be modified
+             after its value is set and the channel has been enabled.']
+        "
+    />
+    <job
+        label  ="CDMA_R_SCH_L2_MODIFY"
+        msgtype="0x106b"
+        description="Modify the operating parameters of the
+                     R_SCH logical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_SCH channel. reference(R_SchChIdType)']
+        "
+        optparams="
+          [MUXOPT, AA_UINT,
+            'Mux option. This parameter depends on L1 R_SCH RC and MAXRATE.  
+             See 3gpp2 specification Medium Access Control (MAC) Standard section 2.2 for appropriate values
+             for MUXOPT for each of the SCH MAXRATEs and RCs. 
+             Please note that Rate Set 1 corresponds to RC3 and Rate Set 2 corresponds
+             to RC4 for L1 R_SCH. 
+             reference(SchMuxType)'],
+          [DECODINGSCHEME, AA_INT,
+            'Scheme used to decode.
+             This parameter must match L1 R_SCH DECODINGSCHEME for proper operation.
+             reference(EncodingType)'],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic. Should be enabled before
+             sending extended supplemental channel assignment message
+             (ESCAM) to the mobile station.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.  Should be set when
+             ENABLEPRI is set to ON.  Must match SRID argument to
+             CDMA_SERVICE_MODIFY for proper operation.
+              &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],         
+       "
+    />
+    <job
+        label    ="CDMA_R_SCH_L2_QUERY"
+        msgtype  ="0x106c"
+        description="Query and return the operating parameters of the
+                     R_SCH logical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_SCH channel. reference(R_SchChIdType)']
+        "
+        optparams=""
+        returns="
+          [MUXOPT, AA_UINT,
+            'Mux option.'],
+          [DECODINGSCHEME, AA_INT,
+            'Scheme used to decode.'],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic.'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.'],
+          [PHYLIST, AA_CSTRING,
+            'A text based list of physical channels to which this L2 channel is
+             presently supplying frames. (could be mulitple physical channels
+             during a soft handoff state.)']
+       "
+    />
+    <job
+        label  ="CDMA_R_FCH_L1_MODIFY"
+        msgtype="0x10C4"
+        description="Modify the operating parameters of the
+                     R_FCH physical channel specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams="
+          [ENABLED, AA_INT,
+            'Channel enable.  F-FCH should be enabled before sending
+             a channel assignment to an MS. reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+          [RC, AA_INT,
+            'Radio configuration for this R-FCH. 
+             This parameter is dependent on L2 R_FCH MUXOPT. Please see CDMA_R_FCH_L2_MODIFY
+             for guidelines on setting L2 MUXOPT parameter. 
+             reference(R_FchRadioConfigType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  3'],
+          [  'Frame offset applied to this R-FCH.  This value should
+             be coordinated with
+             layer 3 signaling for proper operation with an MS.
+             If not set, a default
+             of 0 will be used by MD8470A internal embjdded software.
+             Range is 0..15.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+            '],
+          [CALLDROPPERIOD, AA_INT,
+            'Number of consecutive bad frames before sending call dropped
+             indication to L3.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  150'],
+            '],
+          [ENABLECALLDROP, AA_INT,
+            'Call drop enable flag. Enables L1 to send call dropped indication 
+             when CALLDROPPERIOD is reached. reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  1'],
+            '],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated if
+             ENABLEUSERDEFLCM is disabled.  This should be set
+             initially before ENABLED is
+             set to ON when ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_UINT64,
+            'Allows user to specify a long code mask
+             *This parameter is for expert use only, do not set it without
+             proper knowledge and care.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous
+             execution of this job
+             is used.  If this parameter is set to 'OFF', the
+             default internally derived
+             long code mask is used.  reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+        "
+    />
+    <job
+        label    ="CDMA_R_FCH_L1_QUERY"
+        msgtype  ="0x10ca"
+        description="Query and return the operating parameters
+                     of the R_FCH physical channel specified
+                     by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [ENABLED, AA_INT,
+            'Channel enable.'],
+          [RC, AA_INT,
+            'Current radio configuration for this R-FCH.
+            '],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this R-FCH.'],
+          [CALLDROPPERIOD, AA_INT,
+            'Number of consecutive bad frames before sending call dropped
+             indication to L3.'],
+          [ENABLECALLDROP, AA_INT,
+            'Call drop enable.'],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.
+            '],
+          [LCM, AA_UINT64,
+            'The current long code mask for this R-FCH.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous
+             execution of this job
+             is used.  If this parameter is set to 'OFF', the
+             default internally derived
+             long code mask is used.']
+        "
+    />
+    <job
+        label    ="CDMA_R_SCH_L1_QUERY"
+        msgtype  ="0x10cb"
+        description="Query and return the operating parameters of the
+                     R_SCH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_SCH channel. reference(R_SchChIdType)']
+        "
+        optparams=""
+        returns="
+          [ENABLED, AA_INT,
+            'Channel enable.'],
+          [RC, AA_INT,
+            'Current radio configuration for this R-SCH.'],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this R-SCH.'],
+          [MAXRATE, AA_INT,
+            'Maximum data rate of the channel.'],
+          [DECODINGSCHEME, AA_INT,
+            'Scheme used to decode.'],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated
+             if ENABLEUSERDEFLCM is disabled.  This should be set
+             initially before Enable is
+             set to ON and ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_UINT64,
+            'The current long code mask for this R-SCH.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous execution
+             of this job
+             is used.  If this parameter is set to 'OFF', the default
+             internally derived
+             long code mask is used.'],
+          [RSCH_START_TIME, AA_UINT64,
+            'Start time for Reverse Supplemental Channel.'],
+          [RSCH_STOP_TIME, AA_UINT64,
+            'Stop time for Reverse Supplemental Channel.']
+        "
+    />
+    <job
+        label  ="CDMA_F_FCH_L2_MODIFY"
+        msgtype="0x1061"
+        description="Modify the operating parameters of the
+                     F_FCH logical channel specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams="
+          [MUXOPT, AA_UINT,
+            'Mux option for this F-FCH logical channel.
+             Must match layer 3 signaling for proper operation with MS.
+             This parameter is dependent on L1 F_FCH RC. Mux1 should be used
+             with RC1, RC3, RC4 and Mux2 with RC2 and RC5 for proper
+             operation.  
+             reference(FchMuxType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 1'],
+          [ENABLESIG, AA_INT,
+            'Enable channel for signaling.  Must be enabled before signaling
+             can occur on this F-FCH. Should be enabled after the corresponding
+             physical F-FCH channel is enabled.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic. Should be enabled before
+             sending service connect message (SCM) to the mobile station.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.  Should be set when
+             ENABLEPRI is set to ON.  Must match SRID argument to
+             CDMA_SERVICE_MODIFY for proper operation.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [PREVTOUSE, AA_UINT,
+            'Protocol revision number to use when MD8470A internal
+             embedded software generates
+             layer 2 fields.  This value should be coordinated
+             with layer 3 signaling and overhead
+             message fields for proper operation with an MS.
+             reference(PrevSupportedType1)'],
+          [L2RESET, AA_UINT,
+            'Layer 2 internal ARQ sublayer sequence numbers will be
+             reset by default when ENABLESIG is set to ON. Setting L2RESET to OFF will
+             leave their values intact.  reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  1']
+          [LSORATE, AA_UINT,
+            'Frame rate for loopback service option calls.
+             reference(FlsoRatesType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  3']
+       "
+    />
+    <job
+        label    ="CDMA_F_FCH_L2_QUERY"
+        msgtype  ="0x1062"
+        description="Query and return the operating parameters
+                     of the F_FCH logical channel specified by the BS, SECTOR
+                     pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [MUXOPT, AA_UINT,
+            'Current mux option.'],
+          [ENABLESIG, AA_INT,
+            'Status of signaling subchannel.'],
+          [ENABLEPRI, AA_INT,
+            'Status of primary traffic subchannel.'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service id.'],
+          [PREVTOUSE, AA_UINT,
+            'Protocol revision number to used when MD8470A internal
+             embedded software generates
+             layer 2 fields.  This value should be coordinated with
+             layer 3 signaling and overhead
+             message fields for proper operation with an MS.'],
+          [LSORATE, AA_UINT,
+            'Frame rate for loopback service option calls.'],
+          [PHYLIST, AA_CSTRING,
+            'A text based list of physical channels to which this L2 channel is
+             presently supplying frames. (could be mulitple physical channels
+             during a soft handoff state.)']
+       "
+    />
+
+    <job
+        label  ="CDMA_R_FCH_L2_MODIFY"
+        msgtype="0x1065"
+        description="Modify the operating parameters of the
+                     R_FCH logical channel specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams="
+          [MUXOPT, AA_UINT,
+            'Mux option.
+             Must match layer 3 signaling for proper operation with MS.
+             This parameter is dependent on L1 R_FCH RC. Mux1 should be used
+             with RC1 and RC3 and Mux2 with RC2 and RC4 for proper
+             operation.  
+             reference(FchMuxType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 1'],
+          [ENABLESIG, AA_INT,
+            'Enable channel for signaling.  Must be enabled before
+             signaling can be received on this R-FCH.  Should be
+             enabled when L1 R-FCH is enabled.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic.  Should be enabled
+             in call flow when SCM is sent.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.  Should be set when
+             ENABLEPRI is set to ON.  Must match SRID argument to
+             CDMA_SERVICE_MODIFY for proper operation.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+     d    [PREVTOUSE, AA_UINT,
+            'Protocol revision (P_REV) number to use when interpreting
+             layer 2 fields.
+             reference(PrevSupportedType1)']
+       "
+    />
+    
+    <job
+        label   ="CDMA_R_FCH_L2_QUERY"
+        msgtype ="0x1066"
+        description="Query and return the operating parameters of the
+                     R_FCH logical channel specified by the BS, SECTOR pair."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)']
+        "
+        optparams=""
+        returns="
+          [MUXOPT, AA_UINT,
+            'Current mux option.'],
+          [ENABLESIG, AA_INT,
+            'Enable channel for signaling.'],
+          [ENABLEPRI, AA_INT,
+            'Status of primary traffic channel enable.'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.'],
+          [PREVTOUSE, AA_UINT,
+            'Protocol revision (P_REV) used to interpret layer 2 fields.'],
+          [PHYLIST, AA_CSTRING,
+            'A text based list of physical channels to which this L2 channel is
+             presently supplying frames. (could be mulitple physical channels
+             during a soft handoff state.)'],
+       "
+    />
+
+    <job
+        label="CDMA_SERVICE_MODIFY"
+        msgtype="0x11E2"
+        description="Modify the operating parameters of the specified
+                     Service Instance.  This job must be issued before
+                     enabling primary traffic (ENABLEPRI = ON) on a
+                     given layer 2 logical channel."
+        reqparams="
+          [SRID, AA_INT,
+           'Service reference identifieÿ.  Arbitrary service reference
+            handle. reference(SridEnumType)
+           ']
+          "
+        optparams="
+          [ENABLED, AA_INT,
+            'Enable the service. reference(OnOffType)'],
+          [SERVOPT, AA_INT,
+            'Service option number. reference(ServiceOptionType)'],
+          [LINKNUM, AA_INT,
+            'LINKNUM identifies the Datacom resource to be used by data service
+             options such as SO33 or SO15.  The value of LINKNUM is determined by the
+             Datacom configuration.  The LINKNUM parameter is not valid for non-data
+             service options.'],
+          [USERTRAFFICIPADDR, AA_CSTRING,
+            'Ip address of remote service, used to make loopback phone calls
+             between two phones']
+        "
+    />
+
+    <job
+        label="CDMA_SERVICE_QUERY"
+        msgtype="0x11E3"
+        description="Query and return operating parameters of the
+                     specified Service Instance."
+        reqparams="
+          [SRID, AA_INT,
+           'Service reference identifier.  Arbitrary service reference
+            handle. reference(SridEnumType)
+           ']
+        "
+        optparams=""
+        returns="
+          [ENABLED, AA_INT,
+            'Enable the service.'],
+          [SERVOPT, AA_INT,
+            'Service option number.'],
+          [LINKNUM, AA_INT,
+            'Datacom resource being used by this service.  The parameter is
+             only returned for data service options such as SO33 and SO15.'],
+          [USERTRAFFICIPADDR, AA_CSTRING,
+            'Ip address of remote service']
+        "
+    />
+
+    <job
+        label="CDMA_RLP3_MODIFY"
+        msgtype="0x11c0"
+        description="Modify the operating parameters of the radio link
+                     protocol 3 (RLP3) instance attached to the specified
+                     service instance.  This job should only be issued when the
+                     service instance is not in a call."
+        reqparams="
+          [SRID, AA_INT,
+           'Service reference identifier. This value must match the SRID value from the
+            CDMA_SERVICE_MODIFY job that resulted in this RLP3 instance. reference(SridEnumType)'],
+        "
+        optparams="
+          [NUMROUNDS, AA_INT,
+            'NUM_ROUNDS parameter for the base station.  This value defines the maximum
+             number of NAK rounds sent by RLP3 before declaring a frame lost.
+             &#60;br&#62; Acceptavle Values:&#60;br&#62; &#160; 0...16 
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0'],
+          [NAKCOUNT, AA_BYTEARRAY,
+            'NAK_COUNT array where NAK_COUNT(i) denotes the number of NAK's to send
+             in the i'th NAK round. There should be NUMROUNDS elements in this array.]
+        "
+    />
+    <job
+        label="CDMA_RLP3_QUERY"
+        msgtype="0x11c1"
+        description="Query and return operating parameters of the
+          radio link protocol 3 (RLP3) instance attached to the specified service
+          instance."
+        reqparams="
+          [SRID, AA_INT,
+           'Service reference identifier. This value must match the SRID value from the
+            CDMA_SERVICE_MODIFY job that resulted in this RLP3 instance. reference(SridEnumType)'],
+        "
+        optparams=""
+        returns="
+          [NUMROUNDS, AA_INT,
+            'NUM_ROUNDS parameter for the base station.  This value defines the maximum
+             number of NAK rounds sent by RLP3 before declaring a frame lost.'],
+          [NAKCOUNT, AA_BYTEARRAY,
+            'NAK_COUNT array where NAK_COUNT(i) denotes the number of NAK's to send
+             in the i'th NAK round.']
+          [RLPSTATE, AA_INT,
+            'Current state of RLP.']
+        "
+    />
+    <job
+        label="CDMA_RLP3_RESET"
+        msgtype="0x11c3"
+        description="Causes a reset of the specified radio link protocol 3 (RLP3) instance."
+        reqparams="
+          [SRID, AA_INT,
+           'Service reference identifier. This value must match the SRID value from the
+            CDMA_SERVICE_MODIFY job that resulted in t@ s RLP3 instance. reference(SridEnumType)'],
+        "
+        optparams=""
+    />
+    <job
+        label="CDMA_RLP1_RESET"
+        msgtype="0x11c2"
+        description="Causes a reset of the specified radio link protocol 1 (RLP1) instance."
+        reqparams="
+          [SRID, AA_INT,
+           'Service reference identifier. This value must match the SRID value from the
+            CDMA_SERVICE_MODIFY job that resulted in this RLP1 instance. reference(SridEnumType)'],
+        "
+        optparams=""
+    />
+    <job
+        label="CDMA_RLP2_RESET"
+        msgtype="0x000011c7"
+        description="Causes a reset of the specified radio link protocol 2 (RLP2) instance."
+        reqparams="
+          [SRID, AA_INT,
+           'Service reference identifier. This value must match the SRID value from the
+            CDMA_SERVICE_MODIFY job that resulted in this RLP2 instance. reference(SridEnumType)'],
+        "
+        optparams=""
+    />
+	<job
+        label  ="CDMA_F_SCH_L2_MODIFY"
+        msgtype="0x1069"
+        description="Modify the operating parameters of the
+                     F_SCH logical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_SCH channel. reference(F_SchChIdType)']
+        "
+        optparams="
+          [MUXOPT, AA_UINT,
+            'Mux option. This parameter depends on L1 F_SCH RC and MAXRATE.  
+             See 3gpp2 specification Medium Access Control (MAC) Standard section 2.2 for appropriate values
+             for MUXOPT for each of the SCH MAXRATEs and RCs. 
+             Please note that Rate Set 1 corresponds to RC3 and RC4 and Rate Set 2 corresponds
+             to RC5 for L1 F_SCH.], 
+          [ENCODINGSCHEME, AA_INT,
+            'Scheme used for encoding data on this F-SCH.
+             This parameter must match L1 F_SCH ENCODINGSCHEME for proper operation. reference(EncodingType)'],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic. Should be enabled before
+             sending extended supplemental channel assignment message
+             (ESCAM) to the mobile station.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.  Should be set when
+             ENABLEPRI is set to ON.  Must match SRID argument to
+             CDMA_SERVICE_MODIFY for proper operation.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+       "
+    />
+
+    <job
+        label    ="CDMA_F_SCH_L2_QUERY"
+        msgtype  ="0x106a"
+        description="Query and return the operating parameters
+                     F_SCH logical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+         [CHANNELID, AA_INT,
+            'ID of F_SCH channel. reference(F_SchChIdType)']
+        "
+        optparams=""
+        returns="
+          [MUXOPT, AA_UINT,
+            'Mux option.'],
+          [ENCODINGSCHEME, AA_INT,
+            'Scheme used for encoding data on this F-SCH.'],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic.'],
+          [PRISRID, AA_UINT,
+            'Current primary traffic channel service ID.
+            ']
+          [PHYLIST, AA_CSTRING,
+            'A text based list of physical channels to which this L2 channel is
+             presently supplying frames. (could be mulitple physical channels
+             during a soft handoff state.)'],
+    "
+    />
+    <job
+        label="CDMA_F_SCCH_L1_MODIFY"
+        msgtype="0x1097"
+        description="Modify the operating parameters of the
+                     F_SCCH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_SCCH channel. reference(FScchIdType)']
+        "
+        optparams="
+          [ENABLED, AA_INT,
+            'Channel enable.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+             reference(OnOffType)
+            '],
+          [LEVEL, AA_FLOAT,
+            'Level setting of this F-SCCH in dB, will be internally rounded
+             to 0.25dB.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  -8.00 dB
+             &#60;br&#62; Valid Range:&#60;br&#62; &#160;  0.00 .. -30.00 dB'],
+          [WALSHCODE, AA_INT,
+            'Walsh code of this F-SCCH.  Care should be taken in selecting
+             Walsh codes for F-SCCH because some selections of Walsh code
+             will jam channels on other Walsh codes.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  41-47
+            '],
+          [RC, AA_INT,
+            'Radio configuration for this F-SCCH. 
+             This parameter has dependency on L2 F_SCCH MUXOPT. Please see
+             CDMA_F_SCCH_L2_MODIFY for guidelines on setting L2 MUXOPT
+             parameter. 
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  2'],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this F-SCCH.  This value should be
+             coordinated with layer 3 signaling for proper operation with
+             a MS.
+             Range is 0..15.
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+             '],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated if ENABLEUSERDEFLCM is disabled.  This should be set initially before Enable is
+             set to ON and ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_UINT64,
+            'Allows user to specify a long code mask instead of the
+             internally derived LCM.
+             LCM will be internally derived if ENABLEUSERDEFLCM is disabled.
+             *This parameter is for expert use only, do not set it without
+             proper knowledge and care.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous execution of this job
+             is used.  If this parameter is set to 'OFF', the default internally derived
+             long code mask is used.  reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+        "
+    />
+    <job
+        label    ="CDMA_F_SCCH_L1_QUERY"
+        msgtype  ="0x1098"
+        description="Query and return the operating parameters of the
+                     F_SCCH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_SCCH channel. reference(FScchIdType)']
+        "
+        optparams=""
+        returns="
+          [ENABLED, AA_INT,
+            'Channel enable.'],
+          [LEVEL, AA_FLOAT,
+            'Level setting of this F-SCCH in dB.'],
+          [WALSHCODE, AA_INT,
+            'Current Walsh code of this F-SCCH.'],
+          [RC, AA_INT,
+            'Current radio configuration for this F-SCCH.'],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this F-SCCH.'],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated if ENABLEUSERDEFLCM is disabled.  This should be set initially before Enable is
+             set to ON and ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_INT64,
+            'Currently active long code mask for this F-SCCH.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous execution
+             of this job is used.  If this parameter is set to 'OFF', the
+             default internally derived long code mask is used.'],
+        "
+    />
+    <job
+        label  ="CDMA_R_SCCH_L1_MODIFY"
+        msgtype="0x10cc"
+        description="Modify the operating parameters of the
+                     R_SCCH physical channel specified by the BS, SECTOR, CHANNELID triplet"
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of R_SCCH channel. reference(RScchIdType)']
+        "
+        optparams="
+          [ENABLED, AA_INT,
+            'Channel enable. reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            '],
+          [RC, AA_INT,
+            'Radio configuration for this R-SCCH. 
+             This parameter has dependency on L2 R_SCCH MUXOPT. Please see
+             CDMA_R_SCCH_L2_MODIFY for guidelines on setting L2 MUXOPT parameter. 
+             reference(R_SchRadioConfigType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  2'],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this R-SCCH.  This value should be
+             coordinated with layer 3 signaling for proper operation with a
+             MS.  If not  set a default of 0 will be used by MD8470A internal
+             embedded software.
+             Range is 0..15.
+             &#60;br&#62; Default Value:&#60;br&#62; A#160;  0
+            '],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated if
+             ENABLEUSERDEFLCM is disabled.  This should be set
+             initially before ENABLED is
+             set to ON when ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_UINT64,
+            'Allows user to specify a long code mask
+             *This parameter is for expert use only, do not set it without
+             proper knowledge and care.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous execution
+             of this job is used.  If this parameter is set to 'OFF', the
+             default internally derived long code mask is used.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0
+            ']
+        "
+    />
+    <job
+        label    ="CDMA_R_SCCP_L1_QUERY"
+        msgtype  ="0x10cd"
+        description="Query and return the operating p@rameters of the
+                     R_SCCH physical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of R_SCCH channel. reference(RScchIdType)']
+        "
+        optparams=""
+        returns="
+          [ENABLED, AA_INT,
+            'Channel enable.'],
+          [RC, AA_INT,
+            'Current radio configuration for this R-SCCH.'],
+          [FRAMEOFFSET, AA_INT,
+            'Frame offset applied to this R-SCCH.'],
+          [ESN, AA_UINT,
+            'ESN used for calculating long code mask.  If not set, an ESN of
+             0 will be used.  Long code mask is only calculated
+             if ENABLEUSERDEFLCM is disabled.  This should be set
+             initially before Enable is
+             set to ON and ENABLEUSERDEFLCM is disabled.'],
+          [LCM, AA_UINT64,
+            'The current long code mask for this R-SCCH.'],
+          [ENABLEUSERDEFLCM, AA_INT,
+            'User long code mask enable.  If this parameter is set to 'ON',
+             the user long code mask set in this, or a previous execution
+             of this job
+             is used.  If this parameter is set to 'OFF', the default
+             internally derived
+             long code mask is used.']
+        "
+    />
+    <job
+        label  ="CDMA_F_SCCH_L2_MODIFY"
+        msgtype="0x106d"
+        description="Modify the operating parameters of the
+                     F_SCCH logical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_SCCH channel. reference(FScchIdType)']
+        "
+        optparams="
+          [MUXOPT, AA_UINT,
+            'Mux option. This parameter depends on L1 F_SCCH RC.  
+             See 3gpp2 specification Medium Access Control (MAC)
+             Standard section C.S0002 3.1.3 for appropriate values
+             for MUXOPT and RCs. Please note that Rate Set 1 corresponds to
+             RC1 and Rate Set 2 corresponds to RC2 for L1 F_SCCH. 
+             '],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic. Should be enabled before
+             sending extended supplemental channel assignment message
+             (ESCAM) to the mobile station.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.  Should be set when
+             ENABLEPRI is set to ON.  Must match SRID argument to
+             CDMA_SERVICE_MODIFY for proper operation.
+              &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],         
+       "
+    />
+    <job
+        label    ="CDMA_F_SCCH_L2_QUERY"
+        msgtype  ="0x106e"
+        description="Query and return the operating parameters of the
+                     F_SCCH logical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of F_SCCH channel. reference(FScchIdType)']
+        "
+        optparams=""
+        returns="
+          [MUXOPT, AA_UINT,
+            'Mux option.'],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic.'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.'],
+          [PHYLIST, AA_CSTRING,
+            'A text based list of physical channels to which this L2 channel is
+             presently supplying frames. (could be mulitple physical channels
+             during a soft handoff state.)']
+       "
+    />
+    <job
+        label  ="CDMA_R_SCCH_L2_MODIFY"
+        msgtype="0x106f"
+        description="Modify the operating parameters of the
+                     R_SCCH logical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of R_SCCH channel. reference(RScchIdType)']
+        "
+        optparams="
+          [MUXOPT, AA_UINT,
+            'Mux option. This parameter depends on L1 R_SCCH RC.  
+             See 3gpp2 specification Medium Access Control (MAC)
+             Standard section C.S0002 3.1.3 for appropriate values
+             for MUXOPT and RCs. Please note that Rate Set 1 corresponds to
+             RC1 and Rate Set 2 corresponds to RC2 for L1 R_SCCH. 
+             '],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic. Should be enabled before
+             sending extended supplemental channel assignment message
+             (ESCAM) to the mobile station.
+             reference(OnOffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.  Should be set when
+             ENABLEPRI is set to ON.  Must match SRID argument to
+             CDMA_SERVICE_MODIFY for proper operation.
+              &#60;br&#62; Default Value:&#60;br&#62; &#160;  0'],         
+       "
+    />
+    <job
+        label    ="CDMA_R_SCCH_L2_QUERY"
+        msgtype  ="0x1070"
+        description="Query and return the operating parameters of the
+                     R_SCCH logical channel specified by the BS, SECTOR, CHANNELID triplet."
+        reqparams="
+          [BS, AA_INT,
+            'Base Station. reference(BaseStationType)'],
+          [SECTOR, AA_INT,
+            'Sector. reference(SectorType)'],
+          [CHANNELID, AA_INT,
+            'ID of R_SCCH channel. reference(RScchIdType)']
+        "
+        optparams=""
+      R returns="
+          [MUXOPT, AA_UINT,
+            'Mux option.'],
+          [ENABLEPRI, AA_INT,
+            'Enable channel for primary traffic.'],
+          [PRISRID, AA_UINT,
+            'Primary traffic channel service ID.'],
+          [PHYLIST, AA_CSTRING,
+            'A text based list of physical channels to which this L2 channel is
+             presently supplying frames. (could be mulitple physical channels
+             during a soft handoff state.)']
+       "
+    />
+    <job
+        label    ="CDMA_SHO_SECTOR_ADD"
+        msgtype  ="0x1400"
+        description="Adds a list of sectors to one or more sectors to
+         create a soft or softer handoff situation.  A total of up
+         to 6 sectors can be in handoff, so up to 5 can be added
+         to the original sector."
+        reqparams="
+          [S1BS, AA_INT,
+            'Base Station number of first handoff sector in list.  Sectors in
+             handoff are specifed by base station / sector pairs.'],
+          [S1SECTOR, AA_INT,
+            'Sector number of first sector in handoff list. Sectors in handoff
+             are specifed by base station / sector pairs.']
+        "
+        optparams="
+          [HANDOFFTYPE, AA_INT,
+            'The handoff type, 1xRTT only supports one handoff type at a time
+             so you must specify the handoff type.  The handoff type defaults to
+             soft handoff if it is not specified.  reference(HandoffType)
+             &#60;br&#62; Default Value:&#60;br&#62; &#160; 0'],
+          [S1CODECHANFCH, AA_INT,
+            'F-FCH Walsh code channel of first sector in list.'],
+          [S1CODECHANDCCH, AA_INT,
+            'F-DCCH Walsh code channel of first sector in list.'],
+          [S1CODECHANSCH1, AA_INT,
+            'F-SCH Walsh code channel of first sector in list.'],
+            
+          [S1CODECHANSCCH1, AA_INT,
+            'F-SCCH1 Walsh code channel of first sector in list.'],
+          [S1CODECHANSCCH2, AA_INT,
+            'F-SCCH2 Walsh code channel of first sector in list.'],
+          [S1CODECHANSCCH3, AA_INT,
+            'F-SCCH3 Walsh code channel of first sector in list.'],
+          [S1CODECHANSCCH4, AA_INT,
+            'F-SCCH4 Walsh code channel of first sector in list.'],
+          [S1CODECHANSCCH5, AA_INT,
+            'F-SCCH5 Walsh code channel of first sector in list.'],
+          [S1CODECHANSCCH6, AA_INT,
+            'F-SCCH6 Walsh code channel of first sector in list.'],
+          [S1CODECHANSCCH7, AA_INT,
+            'F-SCCH7 Walsh code channel of first sector in list.'],
+            
+          [S2BS, AA_INT,
+            'Base Station number of second sector in list.'],
+          [S2SECTOR, AA_INT,
+            'Sector number of second sector in list.'],
+          [S2CODECHANFCH, AA_INT,
+            'FFCH Walsh code channel of second sector in list.'],
+          [S2CODECHANDCCH, AA_INT,
+            'F-DCCH Walsh code channel of second sUctor in list.'],
+          [S2CODECHANSCH1, AA_INT,
+            'F-SCH Walsh code channel of second sector in list.'],
+            
+          [S2CODECHANSCCH1, AA_INT,
+            'F-SCCH1 Walsh code channel of second sector in list.'],
+          [S2CODECHANSCCH2, AA_INT,
+            'F-SCCH2 Walsh code channel of second sector in list.'],
+          [S2CODECHANSCCH3, AA_INT,
+            'F-SCCH3 Walsh code channel of second sector in list.'],
+          [S2CODECHANSCCH4, AA_INT,
+            'F-SCCH4 Walsh code channel of second sector in list.'],
+          [S2CODECHANSCCH5, AA_INT,
+            'F-SCCH5 Walsh code channel of second sector in list.'],
+          [S2CODECHANSCCH6, AA_INT,
+            'F-SCCH6 Walsh code channel of second sector in list.'],
+          [S2CODECHANSCCH7, AA_INT,
+            'F-SCCH7 Walsh code channel of second sector in list.'],
+            
+          [S3BS, AA_INT,
+            'Base Station number of third sector in list.'],
+          [S3SECTOR, AA_INT,
+            'Sector number of third sector in list.'],
+          [S3CODECHANFCH, AA_INT,
+            'FFCH Walsh code channel of third sector in list.'],
+          [S3CODECHANDCCH, AA_INT,
+            'F-DCCH Walsh code channel of third sector in list.'],
+          [S3CODECHANSCH1, AA_INT,
+            'F-SCH Walsh code channel of third sector in list.'],
+            
+          [S3CODECHANSCCH1, AA_INT,
+            'F-SCCH1 Walsh code channel of third sector in list.'],
+          [S3CODECHANSCCH2, AA_INT,
+            'F-SCCH2 Walsh code channel of third sector in list.'],
+          [S3CODECHANSCCH3, AA_INT,
+            'F-SCCH3 Walsh code channel of third sector in list.'],
+          [S3CODECHANSCCH4, AA_INT,
+            'F-SCCH4 Walsh code channel of third sector in list.'],
+          [S3CODECHANSCCH5, AA_INT,
+            'F-SCCH5 Walsh code channel of third sector in list.'],
+          [S3CODECHANSCCH6, AA_INT,
+            'F-SCCH6 Walsh code channel of third sector in list.'],
+          [S3CODECHANSCCH7, AA_INT,
+            'F-SCCH7 Walsh code channel of third sector in list.'],
+            
+          [S4BS, AA_INT,
+            'Base Station number of fourth sector in list.'],
+          [S4SECTOR, AA_INT,
+            'Sector number of fourth sector in list.'],
+          [S4CODECHANFCH, AA_INT,
+            'FFCH Walsh code channel of fourth sector in list.'],
+          [S4CODECHANDCCH, AA_INT,
+            'F-DCCH Walsh code channel of fourth sector in list.'],
+          [S4CODECHANSCH1, AA_INT,
+            'F-SCH Walsh code channel of fourth sector in list.'],
+            
+          [S4CODECHANSCCH1, AA_INT,
+            'F-SCCH1 Walsh code channel of fourth sector in list.'],
+          [S4CODECHANSCCH2, AA_INT,
+            'F-SCCH2 Walsh code channel of fourth sector in list.'],
+          [S4CODECHANSCCH3, AA_INT,
+            'F-SCCH3 Walsh code channel of fourth sector in list.'],
+          [S4CODECHANSCCH4, AA_INT,
+            'F-SCCH4 Walsh code channel of fourth sector in list.'],
+          [S4CODECHANSCCH5, AA_INT,
+            'F-SCCH5 Walsh code channel of fourth sector in list.'],
+          [S4CODECHANSCCH6, AA_INT,
+            'F-SCCH6 Walsh code channel of fourth sector in list.'],
+          [S4CODECHANSCCH7, AA_INT,
+            'F-SCCH7 Walsh code channel of fourth sector in list.'],
+            
+          [S5BS, AA_INT,
+            'Base Station number of fifth sector in list.'],
+          [S5SECTOR, AA_INT,
+            'Sector number of fifth sector in list.']
+          [S5CODECHANFCH, AA_INT,
+            'FFCH Walsh code channel of fifth sector in list.'],
+          [S5CODECHANDCCH, AA_INT,
+            'F-DCCH Walsh code channel of fifth sector in list.'],
+          [S5CODECHANSCH1, AA_INT,
+            'F-SCH Walsh code channel of fifth sector in list.'],
+            
+          [S5CODECHANSCCH1, AA_INT,
+            'F-SCCH1 Walsh code channel of fifth sector in list.'],
+          [S5CODECHANSCCH2, AA_INT,
+            'F-SCCH2 Walsh code channel of fifth sector in list.'],
+          [S5CODECHANSCCH3, AA_INT,
+            'F-SCCH3 Walsh code channel of fifth sector in list.'],
+          [S5CODECHANSCCH4, AA_INT,
+            'F-SCCH4 Walsh code channel of fifth sector in list.'],
+          [S5CODECHANSCCH5, AA_INT,
+            'F-SCCH5 Walsh code channel of fifth sector in list.'],
+          [S5CODECHANSCCH6, AA_INT,
+            'F-SCCH6 Walsh code channel of fifth sector in list.'],
+          [S5CODECHANSCCH7, AA_INT,
+            'F-SCCH7 Walsh code channel of fifth sector in list.'],
+        "
+    />
+    <job
+        label    ="CDMA_SHO_SECTOR_REMOVE"
+        msgtype  ="0x1401"
+        description="Removes a list of sectors from the set of sectors
+         that are currently in soft or softer handoff.  A total of up
+         to 6 sectors can be in handoff, so up to 5 can be removed."
+        reqparams="
+          [S1BS, AA_INT,
+            'Base Station number of first handoff sector in list.  Sectors in
+             handoff are specifed by base station / sector pairs.'],
+          [S1SECTOR, AA_INT,
+            'Sector number of first sector in handoff list. Sectors in handoff
+             are specifed by base station / sector pairs.']
+        "
+        optparams="
+          [S2BS, AA_INT,
+            'Base Station number of second sector in list.'],
+          [S2SECTOR, AA_INT,
+            'Sector number of second sector in list.'],
+          [S3BS, AA_INT,
+            'Base Station number of third sector in list.'],
+          [S3SECTOR, AA_INT,
+            'Sector number of third sector in list.'],
+          [S4BS, AA_INT,
+            'Base Station number of fourth sector in list.'],
+          [S4SECTOR, AA_INT,
+            'Sector number of fourth sector in list.'],
+          [S5BS, AA_INT,
+            'Base Station number of fifth sector in list.'],
+          [S5SECTOR, AA_INT,
+            'Sector number of fifth sector in list.']
+        "
+    />
+    <job
+        label    ="CDMA_SHO_SECTOR_QUERY"
+        msgtype  ="0x1402"
+        description="Queries and returns a list of sectors that are currently
+         in soft or softer handoff."
+        reqparams=""
+        optparams=""
+        returns="
+          [HANDOFFTYPE, AA_INT,
+            'The handoff type, 1XRTT only supports one handoff type at a time
+             so you must specify the handoff type.  The handoff type defaults to
+             soft handoff if it is not specified.'],
+          [S1BS, AA_INT,
+            'Base Station number of first handoff sector in list.  Sectors in
+             handoff are specifed by base station / sector pairs.'],
+          [S1SECTOR, AA_INT,
+            'Sector number of first sector in handoff list.'], 
+          [S2BS, AA_INT,
+            'Base Station number of second sector in list.'],
+          [S2SECTOR, AA_INT,
+            'Sector number of second sector in list.'],
+          [S3BS, AA_INT,
+            'Base Station number of third sector in list.'],
+          [S3SECTOR, AA_INT,
+            'Sector number of third sector in list.'],
+          [S4BS, AA_INT,
+            'Base Station number of fourth sector in list.'],
+          [S4SECTOR, AA_INT,
+            'Sector number of fourth sector in list.'],
+          [S5BS, AA_INT,
+            'Base Station number of fifth sector in list.'],
+          [S5SECTOR, AA_INT,
+            'Sector number of fifth sector in list.'],
+          [S6BS, AA_INT,
+            'Base Station number of sixth sector in list.'],
+          [S6SECTOR, AA_INT,
+            'Sector number of sixth sector in list.']
+        "
+    />
+    <job
+        label    ="CDMA_SHO_FSCH_ADD"
+        msgtype  ="0x140b"
+        description="Starts a forward supplemental channel in each sector in handoff which
+                     doesn't already have a forward supplemental channel. This job can only be used
+                     to add supplemental channels during soft or softer handoffs. 
+                     Before this job is sent, forward supplemental channel must be open in the
+                     first sector in active set. First sector in active set is the sector
+                     on which the call was initiated. If this sector is not in active set 
+                     anymore (i.e. it is removed from handoff) the next sector which was added
+                     to the handoff is the first sector in active set. Parameters of this sector's
+                     forward supplemental channel are used to setup forward supplemental channels 
+                     in other sectors. Walsh code parameter is an exception and can be explicitly 
+                     set to a different value using this job."
+        reqparams=""
+        optparams="
+          [S1CODECHANSCH1, AA_INT,
+            'F-SCH Walsh code channel of first sector in list.'],
+          [S2CODECHANSCH1, AA_INT,
+            'F-SCH Walsh code channel of second sector in list.'],
+          [S3CODECHANSCH1, AA_INT,
+            'F-SCH Walsh code channel of third sector in list.'],
+          [S4CODECHANSCH1, AA_INT,
+            'F-SCH Walsh code channel of forth sector in list.'],
+          [S5CODECHANSCH1, AA_INT,
+            'F-SCH Walsh code channel of fifth sector in list.'],
+          [S6CODECHANSCH1, AA_INT,
+            'F-SCH Walsh code channel of sixth sector in list.'],
+                 "
+        returns=""
+    />
+    <job
+        label    ="CDMA_SHO_RSCH_ADD"
+        msgtype  ="0x140c"
+        description="Starts a reverse supplemental channel in each sector in handoff which
+                     doesn't already have a reverse supplemental channel. This job can only be used
+                     to add supplemental channels during soft or softer handoffs. 
+                     Before this job is sent, reverse supplemental channel must be open in the
+                     first sector in active set. First sector in active set is the sector
+                     on which the call was initiated. If this sector is not in active set 
+                     anymore (i.e. it is removed from handoff) the next sector which was added
+                     to the handoff is the first sector in active set. Parameters of this sector's
+                     reverse supplemental channel are used to setup reverse supplemental channels 
+                     in other sectors."
+        reqparams=""
+        optparams="
+                 "
+        returns=""
+    />
+    <job
+        label    ="CDMA_SHO_FSCH_REMOVE"
+        msgtype  ="0x140d"
+        description="Removes Forward Supplemental Channels from all the sectors 
+                     in handoff."
+        reqparams=""
+        optparams="
+          [FSCH_STOP_TIME, AA_UINT64,
+           'Stop time for Forward Supplemental Channel. This time
+            is an absolute time in 20ms units and has to be at least 20ms 
+            greater than start time when this job is received by
+            layer 1 FSCH module in the embedded code. This parameter is only valid 
+            if stop time in FSCH is currently set to INFINITY.']
+                 "
+    />
+    <job
+        label    ="CDMA_SHO_RSCH_REMOVE"
+        msgtype  ="0x140e"
+        description="Removes Reverse Supplemental Channels from all the sectors 
+                     in handoff."
+        reqparams=""
+        optparams="
+          [RSCH_STOP_TIME, AA_UINT64,
+           'Stop time for Reverse Supplemental Channel. This time
+            is an absolute time in 20ms units and has to be at least 20ms 
+            greater than start time when this job is received by
+            layer 1 RSCH module in the embedded code. This parameter is only valid 
+            if stop time in RSCH is currently set to INFINITY.']
+                 "
+    />
+    </sndjoblist>
+
+  <!--                                         -->
+  <!-- Jobs that the CDMA application may send -->
+  <!--                                         -->
+  <rcvjoblist>
+  </rcvjoblist>
+</apiconfig>
+

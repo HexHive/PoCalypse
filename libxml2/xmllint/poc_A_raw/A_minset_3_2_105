@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="html>
+	<hQad> <title> Faktus:soap="http://schemas.xmlsog/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetICB_9_2_4_DestInfoWithDestIdResponse xmlns="http://airline.com/">
+      <GetICB_9_2_4_DestInfoWith     <DESTINATION>PALMA DE MALLORCA</DESTINATION>
+              <COUNTRY>Spain Schengen</COUNTRY>
+              <AIRPORTNAME>Son San Juan</AIRPORTNAME>
+              <DISTANCE_APT_CTY>11 km</DISTANCE_APT_CTY>
+              <REVCABIN>08.02.10</REVCABIN>
+              <REVCOCKPIT>08.02.10</REVCOCKP>
+              <GROUPTEXT>General</GROUPTEXT>
+              NSORT>4</SORT>
+              <HEADING>Announcements:</HEADING>
+              <VISIBLE>-1</VISIBLE>
+              <SORT1>1</SORT1>
+              <ITEMSORT>1</ITEMSORT>
+              <AUSWAHLTEXT>Prerecorded Spanish announcementsavailable.</AUSWAHLTEXT>
+              <REVDATE>2009-12-30T00:00:00+01:00</REVDATE>
+              <CABIN>-1</CABIN>
+              <COCKPIT>0</COCKPIT>
+              <APIATA>PMI</APIATA>
+   ST j jattr1 CDATA #REQUIRED 
+              jattr2 CDATA "good" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b </b>ÿ  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = " b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_SA3"> ment type f </f>
+  <g gattr1 = "xml4j3_0_0_SA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

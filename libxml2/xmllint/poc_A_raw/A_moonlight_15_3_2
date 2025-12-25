@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="usÂascii"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Contedered Harmful Atom opy of the MPL was not distributed with t   - file, You can obtain one at http://mozilla.orgoload_register(function($class){
+	require preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')).'.php';
+});
+
+# Get Markd‰wn class
+use \Michelf\Markdown;
+
+# Read file and pass content through the Markdown parser
+$text = file_get_contents('Readme.md');
+$html = Markdown::defaulÿÿnsform($text);
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHPkdown Lib - Readme</title>
+    </head>
+    <body>
+		<?php
+			# Put HTML content in the document
+			echo $html;
+		?>
+    </body>
+</html>

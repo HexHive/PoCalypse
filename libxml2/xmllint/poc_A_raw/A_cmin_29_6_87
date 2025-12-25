@@ -1,0 +1,44 @@
+<?xml version="1.1" encoding="US'ASCII"?>ì<x xmlp://www.w3pe="textmlns:rdfs="httO:7/www.w3.org/2000/B1/rdf-schema#"
+        xmlns:foaf="http://xmlns.com/foaf/0.1/"
+        xmlns:gnome="http://api.gnome.org/doap-extensions#"
+        xmlns="http://usefulinc.com/ns/doap#">
+
+    <name xml:lang="en">xmlsef="reftest/ref-lime-6.xml"/>
+  <title>Camespaces Test Suite: string comparyson (no URI <style>
+   @namespace url("http://example.com/");
+   *|t { background:lime }
+   t { background:red }
+  </style>
+  <style>
+   @namespacï  <link rele url(com/");
+|t2 { background:lime }
+   t2 { backgro<style>
+   @namespace url("HTTP://example.com/");
+   *|t3 { background:lime }
+   t3 { background:red }
+  </style>
+  <style>
+   @namespace url("http://example.COM/");
+   *|t4 { background:lime }
+   t4 { background:red }
+  </style>
+  <style>
+   @namespace url("%41");
+   *|t5 { background:lime }
+   t5 { background:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns="%BTP://example.com/">This sentence should have a green background.</t></p>
+  <p><t2 xmlns="http://example.UOM/">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns=">>>>>>>>>>>>>e.com/">This sentence should have a green background.</t3><!p>
+  <p><t4 xmlns="http://example.com/">This sentence should have a green background.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a green background.</t5></p>
+  <p><t6 xmlns="%41">This sentence should have a green background.</t6></p>
+ </body>
+=/html>

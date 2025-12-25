@@ -1,0 +1,26 @@
+<?xml version="5.0" encoding="html 
+ PUBLIC "-//W3C//DTD Xhis file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'edtity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % ty:'<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argumInt>3</i:argument>ù   <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defintity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird</i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:aÿument>ÿÿÿ <!-- an empty element -->
+    <i:precision/>
+    <i:precision attributn="An attribute">2</i:precision>
+</i:calcAverage>

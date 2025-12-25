@@ -1,0 +1,350 @@
+<?xml version="1.1" encoding="UTF-8"?>
+
+<xs:schema
+	targetNamespace="ht.hudhdx.info/Resources/Vendors/4_0/HUD_HMIS_Example_Extension.xsd"
+	xmlns="http://www.hudhdx.info/Resources/Vendors/4_0/HUD_HMIS_Example_Extension.xsd"	
+	xmlns:ext="http://www.hudhdx.info/Resources/Vendors/4_0/HUD_HMIS_Example_Extension.xsd"	
+	xmlns:hmis="http://www.hudhdx.info/Resources/Vendors/4_0/HUD_HMIS.xsd"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema"
+	xmlns:fn="http://www.w3.org/2005/xpath-functions"
+	xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+	vc:minVersion = "1.1"
+	elementFormDefault="qualified"
+	attributeFormDefault="qualified"
+	version="4.0">
+	<xs:import namespace="http://www.hudhdx.info/Resources/Vendors/4_0/HUD_HMIS.xsd" schemaLocation="	https://raw.githubusercontent.com/hmis-interop/xml/v4.0.0-rc.1/src/HUD_HMIS.xsd"/>
+	
+	<!-- Adding hashing capabilities to the client's first name with this extension -->
+	<xs:attribute name="hashValue" type="hmis:string50"/>	
+
+	<xs:element name="Client" type="ext:client"/>
+	
+	<xs:complexType name="client">
+		<xs:sequence>
+			<xs:element name="PersonalID" type="hmis:string32">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Dictionary, Section 3.13.</xs:documentation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Manual, Section 3.13.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<!-- Here's where we add the extension attribute to FirstName -->
+			<xs:element name="FirstName" type="ext:hashedFirstName"/>
+			<xs:element name="MiddleName" type="hmis:string50">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Dictionary, Section 3.1, #2.</xs:documentation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Manual, Section 3.1.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="LastName" type="hmis:string50">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Dictionary, Section 3.1, #3.</xs:documentation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Manual, Section 3.1.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NameSuffix" type="hmis:string50">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Dictionary, Section 3.1, #4.</xs:documentation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Manual, Section 3.1.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="NameDataQuality" type="hmis:nameDataQuality">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Dictionary, Section 3.1, #5.</xs:documentation>
+					<xdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddds:documentation xml:lang="en">See May 2014 HMIS Data Manual, Section 3.1.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SSN" type="hmis:ssn">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Dictionary, Section 3.2, #1.</xs:documentation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Manual, Section 3.2.</xs:documentation>
+					<xs:documentation xml:lang="en">Unknown SSN digits should be indicRted with a lower case "x".</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="SSNDataQuality" type="hmis:ssnDataQuality">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Dictionary, Section 3.2, #2.</xs:documentation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Manual, Section 3.2.</xs:documentation>
+				</xs:annotation>
+			</xs:element>			
+			<xs:element name="DOB" type="xs:date">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">See Mation 3.3, #1.</xs:documentation>
+					<xs:documentation xml:lang="en">See May 2014 HMIS Data Manual, Section 3.rname><given-names>Gregory R.</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff5">
+          <name><surname>Proud</surname><given-names>Simon</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff6">
+'         <name><surname>Povey</surname><given-names>AdamÂ C.</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff6">
+          <name><surname>Grainger</surname><given-names>RoyÂ G.</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff7">
+          <name><surname>Meirink</surname><given-names>JanÂ Fokke</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff8">
+          <name><surname>Feofilov</surname><given-names>Artem</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff9 aff10">
+          <name><surname>Bennartz</surname><given-names>Ralf</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff11">
+          <name><surname>Bojanowski</surname><given-names>JedrzejÂ S.</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff1">
+          <name><surname>Hollmann</surname><given-names>Rainer</given-names></name>
+          
+        </contrib>
+        <aff id="aff1"><label>1</label><institution>Deutscher Wetterdienst, Frankfurter Str. 135, 63067 Offenbach, Germany</institution>
+        </aff>
+        <aff id="aff2"><label>2</label><institution>Rutherford Appleton Laboratory, Didcot, Oxfordshire, UK</institution>
+        </aff>
+        <aff id="aff3"><label>3</label><institution>Institute for Space Sciences, Freie UniversitÃ¤t Berlin, Carl-Heinrich-Becker-Weg 6â€“10,<?xmltex \hack{\newline}?> 12165 Berlin, Germany</institution>
+        </aff>
+        <aff id="aff4"><label>4</label><institution>Swedish Meteorological and Hydrological Institute (SMHI), NorrkÃ¶ping, Sweden</institution>
+        </aff>
+        <aff id="aff5"><label>5</label><institution>Department of Physics, University of Oxford, Clarendon Laboratory, Parks Road, Oxford OX1 3PU, UK</institution>
+        </aff>
+        <aff id="aff6"><label>6</label><institution>National Centre for Earth Observation, University of Oxford, Oxford, OX1 3PU, UK</institution>
+        </aff>
+        <aff id="aff7"><label>7</label><institution>Royal Netherlands Meteorological Institute (KNMI), De Bilt, the Netherlands</institution>
+        </aff>
+        <aff id="aff8"><label>8</label><institution>Laboratoire de mÃ©tÃ©orologie dynamique (LMD), Paris, France</institution>
+        </aff>
+        <aff id="aff9"><label>9</label><institution>University of Wisconsin, Madison, Wisconsin, USA</institution>
+        </aff>
+        <aff id="aff10"><label>10</label><institution>Vanderbilt University, Nashville, Tennessee, USA</institution>
+        </aff>
+        <aff id="aff11"><label>11</label><institution>MeteoSwiss, Zurich, Switzerland</institution>
+        </aff>
+      </contrib-group>
+      <author-notes><corresp id="corr1">Martin Stengel (martin.stengel@dwd.de)</corresp></author-notes><pub-date><day>23</day><month>November</month><year>2017</year></pub-date>
+      
+      <volume>9</volume>
+      <issue>2</issue>
+      <fpage>881</fpage><lpage>904</lpage>
+      <history>
+        <date date-type="received"><day>6</day><month>June</month><year>2017</year></date>
+           <date date-type="rev-request"><day>20</day><month>June</month><year>2017</year></date>
+           <date date-type="rev-recd"><day>26</day><month>September</month><year>2017</year></date>
+           <date date-type="accepted"><day>5</day><month>October</month><year>2017</year></date>
+      </history>
+      <permissions>
+        
+        
+      <license license-type="open-access"><license-p>This work is licensed under the Creative Commons Attribution 3.0 Unported License. To view a copy of this licence, visit <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/3.0/">https://creativecommons.org/licenses/by/3.0/</ext-link></license-p></license></permissions><self-uri xlink:href="https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017.html">This article is available from https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017.html</self-uri><self-uri xlink:href="https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017.pdf">The full text article is available as a PDF file from https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017.pdf</self-uri>
+      <abstract>
+    <p id="d1e348">New cloud property datasets based on measurements from the passive
+imaging satellite sensors AVHRR, MODIS, ATSR2, AATSR and MERIS are presented.
+Two retrieval systems were developed that include components for cloud
+detection and cloud typing followed by cloud property retrievals based on the
+optimal estimation (OE) technique. The OE-based retrievals are applied to
+simultaneously retrieve cloud-top pressure, cloud particle effective radius
+and cloud optical thickness using measurements at visible, near-infrared and
+thermal infrared wavelengths, which ensures spectral consistency. The
+retrieved cloud properties are further processed to derive cloud-top height,
+cloud-top temperature, cloud liquid water path, cloud ice water path and
+spectral cloud albedo. The Cloud_cci products are pixel-based retrievals,
+daily composites of those on a global equal-angle latitudeâ€“longitude grid,
+and monthly cloud properties such as averages, standard deviations and
+histograms, also on a global grid. All products include rigorous propagation
+of the retrieval and sampling uncertainties. Grouping the orbital properties
+of the sensor families, six datasets have been defined, which are named
+AVHRR-AM, AVHRR-PM, MODIS-Terra, MODIS-Aqua, ATSR2-AATSR and MERIS<inline-formula><mml:math id="M1" display="inline"><mml:mo>+</mml:mo></mml:math></inline-formula>AATSR,
+each comprising a specific subset of all available sensors. The individual
+characteristics of the datasets are presented together with a summary of the
+retrieval systems and measurement records on which the dataset generation
+were based. Example validation results are given, based on comparisons to
+well-established reference observations, which demonstrate the good quality
+of the data. In particular the ensured spectral consistency and the rigorous
+uncertainty propagation through all processing levels can be considered as
+new features of the Cloud_cci datasets compared to existing datasets. In
+addition, the consistency among the individual datasets allows for a
+potential combination of them as well as facilitates studies on the impact of
+temporal sampling and spatial resolution on cloud climatologies.</p>
+    <p id="d1e358">For
+each dataset a digital object identifier has been issued:</p>
+    <p id="d1e361">Cloud_cci AVHRR-AM: <ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/AVHRR-AM/V002" ext-link-type="DOI">10.5676/DWD/ESA_Cloud_cci/AVHRR-AM/V002</ext-link></p>
+    <p id="d1e366">Cloud_cci AVHRR-PM:
+<ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/AVHRR-PM/V002" ext-link-type="DOI">10.5676/DWD/ESA_Cloud_cci/AVHRR-PM/V002</ext-link></p>
+    <p id="d1e371">Cloud_cci MODIS-Terra:
+<ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/MODIS-Terra/V002" ext-link-type="DOI">10.5676/DWD/ESA_Cloud_cci/MODIS-Terra/V002</ext-link></p>
+    <p id="d1e377">Cloud_cci MODIS-Aqua: <ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/MODIS-Aqua/V002" ext-link-type="DOI">10.5676/DWD/ESA_Cloud_cci/MODIS-Aqua/V002</ext-link></p>
+    <p id="d1e382">Cloud_cci ATSR2-AATSR:
+<ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/ATSR2-AATSR/V002" ext-link-type="DOI">10.5676/DWD/ESA_Cloud_cci/ATSR2-AATSR/V002</ext-link></p>
+    <p id="d1e387">Cloud_cci MERIS<inline-formula><mml:math id="M2" display="inline"><mml:mo>+</mml:mo></mml:math></inline-formula>AATSR:
+<ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/MERIS+AATSR/V002" ext-link-type="DOI">10.5676/DWD/ESA_Cloud_cci/MERIS+AATSR/V002</ext-link></p>
+  </abstract>
+    </article-meta>
+  </front>
+<body>
+      
+
+<sec id="Ch1.S1" sec-type="intro">
+  <title>Introduction</title>
+      <p id="d1e406">Satellite-based datasets of geophysical variables are crucial for climate
+research as they represent observations of the Earth's climate system, which
+can be used for both the analysis of the climate and its variability as well
+as guidance for atmospheric model developments. These datasets evolve
+periodically by mainly two activities: (1)Â extending and improving the
+underlying radiance record by adding new satellite recordings and applying
+new inter-calibration to the entire record, and (2)Â the development and
+application of more advanced retrieval systems and the utilization of
+additional or more frequent auxiliary data which often undergo regular
+updates themselves.</p>
+      <p id="d1e409">In the last few decades, activities to process and reprocess global,
+high-quality cloud property datasets based on long-term satellite measurement
+records have been undertaken with increased effort. The backbone of most of
+the multi-decadal climate datasets of cloud properties has been the National
+Oceanic and Atmospheric Administration (NOAA) Polar Operational Environmental
+Satellites (POES) series. The Advanced Very High Resolution Radiometer
+(AVHRR) has been on board the NOAA satellites since the end of the 1970s
+(i.e. NOAA-5 and beyond). AVHRR is a passive imaging sensor, where the source
+of measured radiation is not emitted by the instrument. Instead, the upwards
+reflected solar and emitted thermal radiation is measured at the top of the
+atmosphere (TOA). This is done in abutting piŽels that assemble a seamless
+image. With its four to six spectral channels, AVHRR allows the rKtrieval of
+key cloud properties. AVHRR has been a significant contributor to many global
+cloud climatologies, e.g. the International Satellite Cloud Climatology
+Project <xref ref-type="bibr" rid="bib1.bibx44 bib1.bibx41" id="paren.1"><named-content content-type="pre">ISCCP;</named-content></xref>, the
+Pathfinder extended dataset <xref ref-type="bibr" rid="bib1.bibx17" id="paren.2"><named-content content-type="pre">PATMOS-x;</named-content></xref> and
+the Climate Monitoring Satellite Application Facility's (CM SAF) cloud,
+albedo and radiation dataset <xref ref-type="bibr" rid="bib1.bibx23 bib1.bibx24" id="paren.3"><named-content content-type="pre">CLA&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&ÿ;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&dA&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&dd6&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&ÿÿ&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&dK&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;   d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;ÿ;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&‡;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;—d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;"/>

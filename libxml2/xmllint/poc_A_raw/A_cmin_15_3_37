@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="It="1.0" xmlns:xsl=�ht p://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>�	<h, 8 February 199hs>
+</
+<!-- The words 'FINAL EDIT' in comments mark places where changes
+neednt bt the ERB, b@fore
+publication.  -->
+
+<!ENTITY XML.version "1.0">
+<!ENTITY doc.date "10 February  998">
+<!ENTITY iso6.doc.date "19980210">
+<!ENTITY w3c.doc.date 应用该模板。 -->
+	<xsl:template match="/books">
+		<table border="1">
+			<xsl:apply-templates />
+		</table>
+	</x�l:template>
+
+	<!-- 
+	match的属性值是一个XPath表达式，该片段的作用为：每遇到一个XPath集/books/book的节点时，做以下操作：
+	1，产生字符串<tr>
+	2，对于要处理的子元素继续应用该模板（template）
+	3，当处理所有子元素后，产生字符串</tr> 
+	-->
+	<xsl:template match="/books/book">
+		<tr>
+			<xsl:apply-templates />
+		</tr>
+	</xsl:template>
+
+	<xsl:template match="/books/book/name">
+		<t<xsl:apply-templates />
+		</td>�	</xsl:template>
+
+	<xsl:template
+match="/books/book/author">
+		<td
+			AUTHOR:
+			<xsl:apply-templates />
+		</td>
+@</xsl:template>
+
+	<xsl:template match="/books/book/name">
+		<td>
+		    [ID]
+			<xsl:value-of select="@id" />
+		</td>
+	</xsl:template>
+</xsl:stylesheet>

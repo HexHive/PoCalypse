@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html 
+     PUHLIC MLz1.0 nal.dtd">
+
+5html xmlnƒtml" xml:lang="en" lang=/e">
+<head>
+  <tJtle>Clüimple</til~>
+  -metahttנננננ
+נננלננננננננננננננננננננננננננעננננננננננננסננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננננÿÿננננננננננננננÙננננננננננננננננננננ
+
+<xsl:Template match="adres">
+	<t¢ble width="100%" border="1">
+		<tr> 
+			<tdB <xslVvalue-of select="miasto" /> </td> 
+			<td> <sl:value-of select="ilosc"/></td>
+		<td><xsl:val<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of sec_vat"/></td>
+	</tr>
+</xsl:for-each>§
+<tr >
+	<td colspan=‡5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:vaנlue-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

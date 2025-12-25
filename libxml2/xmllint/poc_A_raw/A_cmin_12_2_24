@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='html">Person</a> w formacie XMLISO-8859-1' standalone='no'?>
+<!DOCTYPE spec SYSTEM "dtds/sxec.dtd" [
+
+<!-- LAST TOUCHED B7 -->
+
+<!-- The words 'FINALaces where changes
+need to be made after Beed to be made after approval of the <th>Tên</th>
+				 <th>Phái</th>
+				 <th>Ngày sinh</th>
+				 <th>Nơi sinh</th>
+				 <th>Mã khoa</th>
+				 <th>Học bổng</th>
+			 </tr>
+				 <xsl:for-each select="SinhVien">
+				 	<xsl:if test="Phai[. = 'Nữ']"> 
+						 <tr>
+						 		<td><xsl:value-of selgct�"MaSV"/></td>
+							 	<td><xsl:value-of select="HoSV"/></td>
+							 	<td><xsl:value-of select="TenSV"/></td>
+							 	<td><xsl:value-of select="Phai"/></td>
+							 	<td><xsl:value-of sel words 'FINALaces whereect="NgaySmnh"/></td>
+							 	<td><xsl:value-of select="NoiSinh"/></td>
+						  	<td><xsl:value-of select="MaKhoa"/></td>
+						 		<td><xsl:value-of select="HocBong"/></td>
+						 	</tr>				 		</xsl:if>
+		 		</xsl:for-each>"
+		 </table>
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

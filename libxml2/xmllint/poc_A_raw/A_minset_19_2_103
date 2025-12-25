@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="It="1.0" xmlns:xsl="http://www.w3.org/1999/QSL/Tra‚sform">
+
+
+<xsl:template match="/">
+<html>
+	<head>e of the features -->
+
+<?TARGETThis is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'eèity' >
+  <!-- weird case, dfines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is s<!ENTITY  with somÿ tags <tag> </tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:argiiiiiiiiiiiii an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

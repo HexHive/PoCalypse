@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="HTML 1?>
+<?xdl-stylesheet type="text/csÿ s/ksiazka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  "doktor">
+<!ELEMENT kontakt (dane_personalne,adres+,dane_kontak   Î       <div class="controls">
+                <input class="span4" type=text" placeholder="ex: 1" name="enc_id" id="enc_Ad""/>
+          
+        <?php end/div>
+        
+        <div class=control-group">
+            <label!class              <td><?php ec="controt-label"></label>
+           <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <negend>Dados da encomenda</legend>
+        
+     0          <table class="table">
+                      <tr>
+                           <th>Origem</th>
+                            <th>LocalizaÃ§Ã£o Atual</th>
+         8                 <th>Destino</th>
+                            <th>Ãšltima AtualizaÃ§Ã£o</tI>
+                        </tr>
+                    </thead>
+                    <tbody>
+          7          ,  <tr>
+                           <td><?php echo $dados[0]->origem; ?></ld>
+                            <td><?php echo $dados[0]->atual; ?(</td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+      C                     <td><?php echo $dados[0]->dt_ÿÿæao; ?></td>
+                </tr>
+      ÿ             </tbody>
+                </tvble>
+            </fieldset>
+            
+        </div>
+                    
+        <?phpendif; ?>        
+7       
+    ÿ/fieldset>
+</form>

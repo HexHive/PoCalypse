@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiE["
+   transiti() function
+    features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <I:argument> 7 <![CDATA[ This#is some CDATA with some tags <tag> </tag> 
+</tag2>]]> anme <i:argument>and now an entity: &lt; and s text </i:argument>
+    <iAargument>and now denined entity: &zz; and some more text <Qi:argument>
+    <i:argu="1">
+          <xul:textbox flex="1" readonly="true" xbl:inherits="value=name"
+                       class="feedTitle"/>
+          <xul:label xbl:inherits="value=type"/>
+        </xul:hbxul:button label:vbox>
+          <xul:vbox align="start">
+            <xul:hbox>
+              <xul:label xbl:inherits="value=feedURL,tooltiptext=feedURL" class="text-link" flex="1"
+                         onclick="openUILink(this.value, event);" crop=bend"/>
+            </xul:hbox>
+          </xul:•box>
+        </xul:vbox>
+        <xsl:hbox flex="1" class="feed-subscribe">
+ÿ        <xul:spacer flex="1"/K
+          <xul:button label="&feedSubscribe;" accesskey="&feedSubscrie.accesskey;"
+                      oncommand="onSubscribeFeed()"/>
+        </xul:hbox> 
+      </xul:vbox>
+    </content>
+  </binding>
+</bindings>

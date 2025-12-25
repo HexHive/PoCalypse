@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="html
+   Pÿÿ XHT "&#94/xhtml"
+	xmln.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functionsë
+	xmlns:h=some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some ta]s <tag> </tÿÿÿ
+</tag2>]]> and somemore text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; afd sometml"
+	xmln.sun.com/jstl/core"
+	xmlencod="http://java.sun.com/jsp/jstl/functionsë
+	xmlns:h=some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+  7 <i:argumen tex more text </i:argument>
+    <i:argument>and now the weird case: &a <!ENTITY zz 'entity' >
+  <!-- weird case, definest>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

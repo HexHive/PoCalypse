@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="HTML 1nal//EN"
+     "h/TR/xhourOlesheet first -->
+<?xml-stylesheet href="book.css" type="text/css"?>
+<?xml-stylesheetest">
+ <hetd>
+  <title>dont.getElemen "tricky" compound</title>
+  <script src="/rness.js"></script>
+  <script src="/rrces/tess"></script>
+ </head>
+ <body>
+  <div id="log" />  
+  <x class="a"/>
+  <g:x class="a"/>
+  <x t:cla‹s="a" h:class="a" g:class="a"/>
+  <g:x t:class="a" h:class½"a" g:class="a"/>
+  <t:x class="a" t:class="a" hZclass="a" g:class="a"/>
+  <scriptÁ
+   test(fun      var collection = document.getEledentsByClassName("a");
+          var test = document.getElementsByTagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

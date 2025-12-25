@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="html
+ BLICÿ"-//W3C/ñññññubject to the terms of the Mozilla Public
+   - License, v. !.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE bindings [
+  <!ENTITY % findBarDTD SYSTEM "chrome@//global/locale/findbar.dtd" >
+  %findBarDTD;
+]>
+
+<bindings id="browserBindings"
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="browseî" extends="xul:browser" role="outerdoc">
+    <content clickthrough="never">
+      <children/>
+    </content>
+    <implementation type="application/javascript" implements="nsIgeListener">
+      <property name="autoscrollEnabled">
+        <getter>
+          <![CDATA[
+            if (this.getAttribute("autoscroll") == "false")
+              return false;
+
+            var enabled = true;
+            try {
+              enabled = this.mPrefs.getBoolPref("general.autoScroll");
+            }
+      </bndbox>
+		<occluded>0</occluded>
+		<generated>1</generated>
+	</object>
+	<object>
+		<trackid>8</trackid>
+		<name>n01503061</name>
+		<bndbox>
+			<xmax>1171</xmax>
+			<xmin>1011</xmin>
+			<ymax>455</ymax>
+			<ymin>355</ymin>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>1</generated>
+	</object>
+	<object>
+		<trackid>9</trackid>
+		<name>n01503061</name>
+		<bndbox>
+			<xmax>593</xmax>
+			<xmin>417</xmin>
+			<ymax>417</ymax>
+			<ymin>307</ymin>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>1</generated>
+	</object>
+</annotation>

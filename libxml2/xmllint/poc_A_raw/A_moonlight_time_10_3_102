@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="us Thi a Mnsc -->
+<!- T�s org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">烈建议有。 -->
+<!-- 处理指令是那些专门在处理XML文档的应用程序中使用的指令，用<?和?>来限定其界限。 -->
+
+<!-- 文档头之后通常是文档类型定义（Zocument Type Definition，DTD），它是确保文档正确的一个重要机制，但素的name属性 -->
+        <property name="ass">com.mysql.jdbc.Driver</property>
+        <!-- 属性的灵活性要比元素差很多，何时使用z��素，何时使用属性，一个经验�u则是：属性只应该在修改值的释义时使用，而不是在指定值时使用。 -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/test</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">woailo99</property>
+        
+        <!-- 其他一些标记的说明 -->
+        <!-- 1，字符引用 的形式是&#十进制值或者&#x十六进制值 -->
+        <property name="character reference">&#233;</property>
+        <property name="character reference">&#xD9;</property>
+        
+        <!-- 
+        2，实体引用的形式是&name;，比如：
+        &gt;（大���号）、&lt;（小于号）、&amp;（&）、&quot;（引号）、&apos;（省略号），可以在DTD中定义其他的实体引用。  
+        -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形式，可以使用它们来包含那些含有<、>、&之类字符的字符串，而不必将它们解释为标记。
+        -->
+        <property name="sql">
+�       <![CDATA[
+            select * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configuration>

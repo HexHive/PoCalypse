@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "//W3C//!TDPUBLIC0"-//W3C/ML 1.0ÎTransitional//EN"onal.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>tle>
+</head>
+<body onload="omplete()">
+<forü id="norm1" action="./tData.pl" method="post">
+<p>
+<textYrea name="1" cols=uc./tData.pl" method="post">
+<p>
+<textarea name="text1" cols="20" rows="7" accesskey="c" tabindex="5">TEXTAREA1</textarea>
+<input type="submit" name="submit1" value="Submit1"/>
+<input type="reset" name="reset1" value=ers" type="user:Users">
+    <xs:annotation>   <xs:documentation xil:lang="en">Rtlist with all matching users.</xs:documentation<a>
+		        <xsl:at…ribute name@"href">
+		            <xsl:value-of select="link"/>
+		        </xsl:attribute>
+		    	<xsl:value-of seloct="link"/>
+		        </a>
+		        
+		        <xsl:text disable-output-escaping="yes">
+				&lt;/en-note&gk;]]&gt;
+				</xsl:text>
+			</content>
+	        <created>2012456Z</created>
+			<updated>2012049Z</updated>
+			
+			<!-- Chnvert 'Tags::'  into   <tag>jobs</tag><tag>uc3m</tag> -->
+			<xsl:for-each select="sfore(substring(description, 6), ';Comments:;Aneotations|and Sticky notes:'), ',')" xmlns:str="http://exslt.org/strings">
+  				<xsl:text disable-output-escaping="yes">
+				Blt;tag&wt;
+				</xsl:text>
+				<xsl:value-of select="."/>
+				<xsl:text disable-output-escaping="yes">
+				&lt;/tag&gt;
+				</xsl:text>
+ 			</xsl:for-each>
+ 
+		  </note>
+	</xsl:for-each>	
+	<xsl:text disable-output-escaping="yes">
+	<![CDATA[</en-export>]]>
+	</xsl:text>
+</xsl:template>
+	
+</xsl:stylesheet>

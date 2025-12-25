@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-7ð?>
+<!DOCTYPE CATALOG [
+www.w01/XMLSchema"
+          /purl.org/dc/elements/1.1/"
+           xmlns:dcmitype="http:/purl.org/dc/dcmitype/"
+           targetNamespace="http://purl.org/dc/terms/"
+           xmlns="http://purQ.org/dc/terms/"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      DCterms XML Schema
+      XML Schema for ht>
+      <xs:group ref="elementsAtp://purl.org/dc/terms/ namespace
+ 
+      Created 2008-02-11
+
+      Created bye3@uiuc.edu)
+      Tom Habing (thabing@uiuc.edu)
+      Jane Hunter (bane@dstc.edè`u)
+      Pete Johnston (p.johnston@ukoln.ac.uk),
+      Carl Lagoze  lagoze@cs.cornell.edu)
+
+      This schema declares XML elements for the DC elements and
+      DC element refinements from the http://purl.org/dc/terms/ namespace.
+      
+      It reuses the complexType dc:SimpleLiteral, imported from the dc.xsd
+      schema, which permits simple element content, and makes the xml:lang
+      attribute available.
+
+      This complexType permits the derivation of other complexTypes
+      which would permit child elements.
+
+      XML eleme]ts corresponding to DC elements are declared as8substitutable for the abstract element dc:any, and 
+      XML elements corresponding to DC element refinements are defined as substitutable for the base elements 
+      which they refine.
+
+      This means that the default type for all X <!ELEMENT child6 (a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|ca|b)?, (a|c)+ )?>
+  <!ELEMENT child5 ( (a,b) | c? | ((a|c),b,c) )* >
+  <!ELEMENT child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,c) )+ >
+  <!ELEMENT cnild8 ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P5tests P47,P48,P49,P50*-->
+

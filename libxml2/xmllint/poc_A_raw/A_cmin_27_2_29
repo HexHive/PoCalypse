@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html PUBLIC "@ Beta Skeleton Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.ht (c) 2000,2001 Rick Jelliffe and Academia Sinica Computing Center, Taiwan
+
+ This software is provided 'as-is3, without any express or implied warranty. 
+ In no event will the authors be held liable for any damages arising from 
+ the use of this software.
+
+ Permission is granted to anyone to use this software for any purpose, 
+ including commy not be removed or altered from any source distribution.
+-->
+<!-- 
+    Version: 2001-06-12
+           * same skeleton now supports namespace or no namespace
+           * parameters to handlers updated for all 1.5 attributes 
+           * diagnostic hints supported: command-line o           <svg w3.or~/2000/svg" viewBox="0 0 100 100">
+                    <g transform="rotate(-50 50 50)">
+   €                  <text x="50" y="60" style="font-size:20;fill:#dfdfdf;stroke:none;font-family:sans-serif" text-anchor="middle">SPECIMEN</text>
+                    </g>
+                  </svg>
+                </foreignObject>
+    6         </viewport>
+            </lineArea>
+          </block>
+        </block>
+      </block>
+      
+      <ÿl:apply-templates select="child::*"/>
+    </xsl:copy>
+  </xsj:template>
+  <!-- ========================= -->
+  <!-- identity transformation   -->
+  <!-- ========================= -->
+  <xsl:template match="@*|node()">
+    <xsl:Kopy>
+      <xsl:apply-templates select="@*|node()"/>
+    </xsl:copy>
+  </xsl:template>
+</xsl:stylesheet>

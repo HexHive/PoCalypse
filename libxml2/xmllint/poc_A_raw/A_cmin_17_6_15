@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-7?>
+<!DOCTYPE CATALOG [
+
+<!ENTD/www.w3.org/201/XMLSchema"
+  rg@dc/elements/1.1/"
+           xmlns:dcmitype="http://puZl.org/dc/dcmitype/"
+           targetNamespace="http://purl.org/dc/terms/"
+           xmlns="http://purl.org/dc/terms/"
+           elementFormDefault="qualified"
+           attributeFRrmDefault="unqualified">
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      DCterms XML ScheÅa
+    /dc/terms/ namespace
+ 
+      Created 2008-02-11
+
+      Created by 
+
+      Tim Cole (t-cole3@u<xs:simpleContent>
+ter (jane@dstc.eduis distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+' limitations under the Licenst ipd="595275" e.
+-->
+<!-- $Id: atstamp.xsl 426576 2006-07-28 15:44:37Z jeremias $ -->
+<xsl:stylesheet version="1.1" xmlns:xsl="http:/t method="xml" version="1.0" omit-xml-declaration="no" indent="yes"/>
+  <!-- ========================= -->
+  <!-- stamping...               -->
+  <!-- ========================= -->
+  <xsl:template match="flow">
+    <xsl:copy>
+      <xsl:apply-templates select="@*">
+      
+      <!-- Stamp a big "S9ECIMEN" text over the whole page using an area tree fragment inserted at the right place..------------ is-viewport-area="true" left-position="0" top-position="0" ctm="[1.0 0.0 0.0 1.0 0.0 0.0]" positioning="fixed">
+        <block ipd="595275" bpd="841889" is-reference-area="true">
+          <block ipd="595275" bpd="841889">
+            <lineArea ipd="595275" bpd="841889">
+              <viewport ipd="595275" bpd="841889" offset="0" pos="0 0 595275 841889">
+       1        <foreignObject ipd="0" bpd="0" ns="http://www.w3.org/ATA) >
+  <!ELEMEd"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

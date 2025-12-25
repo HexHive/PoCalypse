@@ -1,0 +1,229 @@
+<!DOCTYPE foo [
+<!ENTITY f "some`internal dat;&d;&d;&d;
+&d;a">
+<!ENTITY e "&f;&g;">
+<!ENTITY d "&e;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d &d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;th/MathML" xmlns:oasis="http://docs.oasis-open.org/ns/oasis-exchange/table" xml:lang="en" dtd-version="3.0">
+  <front>
+    <journal-meta><journal-id journal-id-type="publisher">TC</journal-id><journal-title-group>
+    <journal-title>The Cryosphere</journal-title>
+    <abbrev-journal-title abbrev-type="publisher">TC</abbrev-journal-title><abbrev-journal-title abbrev-type="nlm-ta">The Cryosphere</abbrev-journal-title>
+  </journal-title-group><issn pub-type="epub">1994-0424</issn><publisher>
+    <publisher-name>Copernicus Publications</publisher-name>
+    <publisher-loc>Göttingen, Germany</publisher-loc>
+ </publisher></journal-meta>
+    <article-meta>
+      <article-id pub-id-type="doi">10.5194/tc-12-1551-2018</article-id><title-group><article-title>A new digital elevation model of Antarctica derived from <?xmltex \hack{\newline}?> CryoSat-2 altimetry</article-title><alt-title>A new digital elevation model of Antarctica derived from
+CryoSat-2 altimetry</alt-title>
+      </title-group><?xmltex \runningtitle{A~new digital elevation model of Antarctica derived from
+CryoSat-2 altimetry}?><?xmltex \runningauthor{T.~Slater et~al.}?>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" rid="aff1">
+          <name><surn    <contrib contrib-typame>Slater</surname><given-names>Thomas</given-names></name>
+          <email>py10ts@leeds.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff1">
+          <name><surname>Shepherd</surname><given-names>Andrew</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff1">
+          <name><surname>McMillan</surname><given-names>Malcolm</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff2">
+          <name><surname>Muir</surname><given-names>Alan</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff2">
+          <name><surname>Gilbert</surname><given-names>Lin</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff1">
+          <name><surname>Hogg</surname><given-names>Anna E.</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="">
+          <name><surname>Konrad</surname><given-names>Hannes</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff3">
+          <name><surname>Parrinello</surname><given-names>Tommaso</given-names></name>
+          
+        </contrib>
+        <aff id="aff1"><label>1</label><institution>Centre for Polar Observation and Modelling, School of Earth
+and Environment, University of Leeds, <?xmltex \hack{\newline}?>  Leeds, LS2 9JT, UK</institution>
+        </aff>
+        <aff id="aff2"><label>2</label><institution>Centre for Polar Observation and Modelling, University
+College London, London, WC1E 6BT, UK</institution>
+        </aff>
+        <aff id="aff3"><label>3</label><institution>ESA ESRIN, Via Galileo Galilei, 00044 Frascati RM, Italy</institution>
+        </aff>
+      </contrib-group>
+      <author-notes><corresp id="corr1">Thomas Slater (py10ts@leeds.ac.uk)</corresp></author-notes><pub-date><day>2</day><month>May</month><year>2018</year></pub-date>
+      
+      <volume>12</volume>
+      <issue>4</issue>
+      <fpage>1551</fpage><lpage>1562</lpage>
+      <history>
+        <date date-type="received"><day>3</day><month>October</month><year>2017</year></date>
+           <date date-type="accepted"><day>22</day><month>March</month><year>2018</year></date>
+           <date date-type="rev-recd"><day>6</day><month>March</month><year>2018</year></date>
+           <date date-type="rev-request"><day>25</day><month>October</month><year>2017</year></date>
+      </history>
+      <permissions>
+        
+        
+      <license license-type="open-access"><license-p>This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this licence, visit <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link></license-p></license></permissions><self-uri xlink:href="https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.html">This article is available from https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.html</self-uri><self-uri xlink:href="https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.pdf">The full text article is available as a PDF file from https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.pdf</self-uri>
+      <abstract>
+    <p id="d1e161">We present a new digital elevation model (DEM) of the Antarctic ice
+sheet and ice shelves based on <inline-formula><mml:math id="M1" display="inline"><mml:mrow><mml:mn mathvariant="normal">2.5</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn mathvariant="normal">10</mml:mn><mml:mn mathvariant="normal">8</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> observations
+recorded by the CryoSat-2 satellite radar altimeter between
+July 2010 and July 2016. The DEM is formed from spatio-temporal fits
+to elevation measurements accumulated within 1, 2, and 5 <inline-formula><mml:math id="M2" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>
+grid cells, and is posted at the modal resolution of
+1 <inline-formula><mml:math id="M3" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>. Altogether, 94 % of the grounded ice sheet and
+98 % of the floating ice shelves are observed, and the remaining
+grid cells north of 88<inline-formula><mml:math id="M4" display="inline"><mml:msup><mml:mi/><mml:mo>∘</mml:mo></mml:msup></mml:math></inline-formula> S are interpolated using ordinary
+kriging. The median and root mean square difference between the DEM
+and <inline-formula><mml:math id="M5" display="inline"><mml:mrow><mml:mn mathvariant="normal">2.3</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn mathvariant="normal">10</mml:mn><mml:mn mathvariant="normal">7</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> airborne laser altimeter measurements
+acquired during NASA Operation IceBridge campaigns are <inline-formula><mml:math id="M6" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>0.30 and
+13.50 <inline-formula><mml:math id="M7" display="inline"><mml:mi mathvariant="normal">m</mml:mi></mml:math></inline-formula>, respectively. The DEM uncertainty rises in regions
+of high slope, especially where elevation measurements were
+acquired in low-resolution mode; taking this into account, we
+estimate the average accuracy to be 9.5 <inline-formula><mml:math id="M8" display="inline"><mml:mi mathvariant="normal">m</mml:mi></mml:math></inline-formula> – a value that is
+comparable to or better than that of other models derived from
+satellite radar and laser altimetry.</p>
+  </abstract>
+    </article-meta>
+  </front>
+<body>
+      
+
+<sec id="Ch1.S1" sec-type="intro">
+  <title>Introduction</title>
+      <p id="d1e246">Digital elevation models (DEMs) of Antarctica are important data sets
+required for the planning of fieldwork, numerical ice sheet modelling,
+and the tracking of ice motion. Measurements of ice sheet topography
+are needed as a boundary condition for numerical projections of ice
+dynamics and potential sea level contributions (Cornford et al., 2015;
+Ritz et al., 2015). Accurate knowledge of surface elevation can be
+used for both the delineation of drainage basins and estimation of
+grounding line ice thickness, necessary for estimates of Antarctic
+mass balance calculated via the mass budget method (Rignot et al.,
+2011b; Shepherd et al., 2012; Sutterly et al., 2014). Furthermore,
+detailed and up-to-date DEMs are required to distinguish between phase
+differences caused by topography and ice motion when estimating ice
+velocity usi)g interferometric synthetic aperture radar (Rignot
+et al., 2011a; Mouginot et al., 2012).</p>
+      <p id="d1e249">Previously published DEMs of Antarctica have been derived from
+satellite radar altimetry (Helm et al., 2014; Fei et al., 2017), laser
+altimetry (DiMarzio et al., 2007), a combination of both radar and
+laser altimetry (Bamber et al., 2009; Griggs and Bamber, 2009), and
+the integration of several sources of remote sensing and
+cartographic data (Liu et al., 2001; Fretwell et al., 2013). In
+addition, high-resolution regional DEMs of the marginal areas of the
+ice sheet have been generated from stereoscopic (Korona et al., 2009)
+and radiometer surveys (Cook et al., 2012). Although these
+photogrammetric models perform well over regions of bare rock and
+steep slope found in the margins, their accuracy is considerably
+reduced in ice-covered areas.</p>
+      <p id="d1e252">CryoSat-2, launched in 2010, is specifically designed to overcome the
+challenges of performing pulse-limited altimetry over Earth's polar
+regions.  With a high inclination, drifting orbit, and novel
+instrumentation which exploits interferometry to obtain
+high-spatial-resolution measurements in areas of steep terrain, CryoSat-2 provides
+a high-density network of elevation measurements up to latitudes of
+88<inline-formula><mml:math id="M9" display="inline"><mml:msup><mml:mi/><mml:mo>∘<?pagebreak page1552?></mml:mo></mml:msup></mml:math></inline-formula> (Wingham et al., 2006). Here, we utilise a 6-year time
+series of elevation measurements acquired by CryoSat-2 between
+July 2010 and July 2016 to derive a comprehensive and contemporary DEM
+of Antarctica at a spatial resolution of 1 <inline-formula><mml:math id="M10" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>, with high data
+coverage in both the ice sheet interior and its complex marginal
+areas. We then evaluate the accuracy of the generated DEM against
+a set of contemporaneous airborne laser altimeter measurements,
+obtained during NASA Operation IceBridge campaigns, in several
+locations covering Antarctica's ice sheet and ice shelves. The DEM we
+describe here features several improvements over the preliminary ESA
+CryoSat-2 Antarctic DEM distributed in March 2017 and should be used
+in its place. These improvements include an increase in resolution
+from 2 to 1 <inline-formula><mml:math id="M11" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>, an increase in data coverage on the grounded
+ice sheet from 91 to 94 %, and the use of a more robust ordinary
+kriging interpolation scheme to provide a continuous elevation
+data set.</p>
+</sec>
+<sec id="Ch1&d;&d;&d.S2">
+  <title>Data and methods</title>
+<sec id="Ch1.S2.SS1">
+  <title>CryoSat-2 elevation measurements</title>
+      <p id="d1e289">We use 6 years of CryoSat-2 Baseline-C Level 2 measurements of surface
+elevation recorded by the SIRAL (SAR Interferometer Radar Altimeter)
+instrument, mounted on the CryoSat-2 satellite, between July 2010 and
+July 2016. Over Antarctica, SIRAL samples the surface in two operating
+modes: low-resolution mode (LRM) and synthetic aperture radar
+interferometric mode (SARIn). In LRM, CryoSat-2 operates as
+a conventional pulse-limited altimeter (Wingham and Wallis, 2010),
+illuminating an area of approximately 2.2 <inline-formula><mml:math id="M12" display="inline"><mml:mrow><mml:msup><mml:mi mathvariant="normal">km</mml:mi><mml:mn mathvariant="normal">2</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula>, with an
+across track width of roughly 1.5 <inline-formula><mml:math id="M13" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>. LRM is used in the
+interior of the ice sheet, where low slopes and homogenous topography
+on the footprint scale are generally well suited for pulse-limited
+altimetry.</p>
+      <p id="d1e310">In SARIn, SIRAL uses two receiver antennae to perform interferometry,
+allowing the location of the point of closest approach (POCA) to be
+precisely determined in the across-track plane (Wingham et al., 2004).
+Bursts of 64 pulses are emitted at a high pulse repetition frequency,
+and Doppler processing is then used to reduce the along-track
+footprint to approximately 300 <inline-formula><mml:math id="M14" display="inline"><mml:mi mathvariant="normal">m</mml:mi></mml:math></inline-formula> (Wingham et al., 2006). This
+increased sampling density and ability to calculate the along- and
+across-track location of the POCA make SARIn well suited for
+measuring the steep and complex topography found in the ice sheet
+margins.</p>
+      <p id="d1e320">The CryoSat-2 Level 2 elevation product has a series of geophysical
+corrections applied to correct the selected measurements for the
+following: off-nadir ranging due to slope, dry atmospheric
+propagation, wet atmospheric propagation, ionosphere propagation,
+solid-earth tide, and ocean loading tide (ESA, 2012). As part of the
+Level 2 processing chain, elevation measurements recorded in LRM are
+slope-corrected by relocating the echoing point away from nadir in
+accordance with the surface slope, determined using an external DEM
+(Radarsat Antarctic Mapping Project version 2 DEM, posted at
+200 <inline-formula><mml:math id="M15" display="inline"><mml:mi mathvariant="normal">m</mml:mi></mml:math></inline-formula>) (Liu et al., 2001; ESA, 2012). SARIn acquisitions are
+slope-corrected using the interferometric phase difference calculated
+at the location of the elevation measurement. For the ice shelves,
+additional inverse barometric and ocean tide corrections are also
+applied.</p>
+      <p id="d1e330">Within the LRM mode mask area we select Level 2 elevation estimates retrieved
+using the Offset Centre of Gravity (OCOG) retracking algorithm, which defines
+a rectangular box around the centre of gravity of an altimeter waveform based
+upon its power distribution (Wingham et al., 1986). The OCOG retracking point
+is taken to be the point on the leading edge of the waveform which first
+exceeds 30 % of the rectangle's amplitude (Davis, 1997). We use the OCOG
+retracker as it offers robust retracking over a wide range of surfaces and is
+adaptable to a variety of pulse shapes (Wingham et al., 1986; Davis, 1997;
+Armitage et al., 2014). For the SARIn area, where CryoSat-2 operates as a SAR
+altimeter and waveform characteristics differ from those acquired in LRM,
+elevations are retrieved using the ESA Level 2 SARIn retracker, which
+determines the retracking correction from fitting the measured waveform to
+a modelled SAR waveform (Wingham et al., 2006; ESA, 2012). Over the ice sheet
+and ice shelves, we use approximately <inline-formula><mml:math id="M16" display="inline"><mml:mrow><mml:mn mathvariant="normal">2.5</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn mathvariant="normal">10</mml:mn><mml:mn mathvariant="normal">8</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> CryoSat-2
+elevation measurements to derive the new DEM.</p>
+</sec>
+<sec id="Ch1.S2.SS2">
+  <title>DEM generation</title>
+      <p id="d1e354">To compute elevation, we separate the input CryoSat-2 elevation measurements
+into approximately <inline-formula><mml:dath id="M17" display="inline"><mml:mrow><mml:mn mathvariant="normal">1.4</mml:mn><mml:mo>×</mml:mo><mml:msup><mml:mn mathvariant="normal">10</mml:mn><mml:mn mathvariant="normal">7</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> regularly spaced 1 <inline-formula><mml:math id="M18" display="inline"><mml:mrow><mml:msup><mml:mi mathvariant="normal">km</mml:mi><mml:mn mathvariant="normal">2</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula>
+geographical regions. We then use a model fit method to separate the various
+contributions to the measured elevation fluctuations within each region
+(Flament and Remy, 2012; McMillan et al., 2014). This method best suits
+CryoSat-2's 369-day orbit cycle, which samples along a dense network of
+ground tracks with few coincident repeats. We model the elevation <inline-formula><mml:math id="M19" display="inline"><mml:mi>Z</mml:mi></mml:math></inline-formula>
+(Eq. <xref ref-type="disp-formula" rid="Ch1.E1"/>) as a quadratic function of local surface terrain (<inline-formula><mml:math id="M20" display="inline"><mml:mi>x</mml:mi></mml:math></inline-formula>, <inline-formula><mml:math id="M21" display="inline"><mml:mi>y</mml:mi></mml:math></inline-formula>),
+a time invariant term <inline-formula><mml:math id="M22" display="inline"><mml:mi>h</mml:mi></mml:math></inline-formula> accounting for anisotropy in radar penetration
+depth depending on satellite direction (Armitage et al., 2014), and a lilear
+rate of elevation change with time <inline-formula><mml:math id="M23" display="inline"><mml:mi>t</mml:mi></mml:math></inline-formula>. The satellite heading trm, <inline-formula><mml:math id="M24" display="inline"><mml:mi>h</mml:mi></mml:math></inline-formula>, is
+a binary term set to 0 or 1 for an ascending or descending pass,
+respectively.
+
+                <disp-formula specific-use="align" content-type="numbered"><mml:math id="M25" display="block"><mml:mtable displaystyle="true"><mml:mtr><mml:mtd><mml:mrow><mml:mstyle class="stylechange" displaystyle="true"/><mml:mi>Z</mml:mi><mml:mfenced close=")" open="("><mml:mrow><mml:mi>x</mml:mi><mml:mo>,</mml:mo><mml:mi>y</mml:mi><mml:mo>,</mml:mo><mml:mi>t</mml:mi><mml:mo>,</mml:mo><mml:mi>h</mml:mi></mml:mrow></mml:mfenced></mml:mrow></mml:mtd><mml:mtd><mml:mrow><mml:mstyle class="stylechange" displaystyle="true"/><mml:mo>=</mml:mo><mml:mover accent="true"><mml:mi>z</mml:mi><mml:mo mathvariant="normal">‾</mml:mo></mml:mover><mml:mo>+</mml:mo><mml:msub><mml:mi>a</mml:mi><mml:mn mathvariant="normal">0</mml:mn></mml:msub><mml:mi>x</mml:mi><mml:mo>+</mml:mo><mml:msub><mml:mi>a</mml:mi><mml:mn mathvariant="normal">1</mml:mn></mml:msub><mml:mi>y</mml:mi><mml:mo>+</mml:mo><mml:msub><mml:mi>a</mml:mi><mml:mn mathvariant="normal">2</mml:mn></mml:msub><mml:msup><mml:mi>x</mml:mi><mml:mn mathvariant="normal">2</mml:mn></mml:msup><mml:mo>+</mml:mo><mml:msub><mml:mi>a</mml:mi><mml:mn mathvariant="normal">3</mml:mn></mml:msub><mml:msup><mml   5</mml:mn></mml:msub><mml:mo>(</mml:mo><mml:mi>h</mml:mi><mml:mo>)</mml:mo><mml:mo>+</mml:mo><mml:msub><mml:mi>a</mml:mi><mml:mn mathvariant="normal">6</mml:mn></mml:msub><mml:mo>(</mml:mo><mml:mi>t</mml:mi><mml:mo>-</mml:mo><mml:msub><mml:mi>t</mml:mi><mml:mtext>July 2013</mml:mtext></mml:msub><mml:mo>)</mml:mo></mml:mrow></mml:mtd></mml:mlabeledtr></mml:mtable></mml:math></disp-formula></p>
+      <p id="d1e560">We retrieve the model coefficients in each grid cell using an iterative
+least-squares fit to th

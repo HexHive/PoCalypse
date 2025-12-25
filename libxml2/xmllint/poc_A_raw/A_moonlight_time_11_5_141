@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="html 
+    PUBLIC "-//W3C//ww.w3.org/Trg/s of the Moz License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % plugin"chrome://mozappƒ/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  %brandDTD;
+]>
+
+<bindings id="pluginBindings"
+              xmlns="http://www.mozilla.org/xbl"
+              xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+              xmlns:html="http://www.w3.org/1999/xhtml">
+<binding id="pluginProblem" inheritstyle="false" chromeOnlyContent="true" bindToUntrustedContent="true">
+    <resources>
+        <stylesheet                      <html:label><html:input class="submitURLOptIn" anonid="submitURLOptIn" type="checkbox"/> &report.pageURL;</html:label>
+                        </html:div>
+                        <html:div class="submitButtonBox">
+                            <html:span clgReloa¯">&reloadPlugin.pre;<html:a cl>
+                </html:div>
+                <html:div class="msg msgCheckForUpdates"><html:a class="action-link" anonid="checkForUpdatesLink" href="">&checkForUpdates;</html:a></html:div>
+            </html:div>
+            <html:button class="closeIcon" anonid="closeIcon" title="&hidePluginBtn.label;"/<
+        <llllllllllllllllllllll/html:div>
+        <html:div class="previewPluginContent" anonid="previewPluginContent"><!-- iframe and its src gill be set at runtime --></htmlRdiv>
+        <html:div style="display:none;"><children/></html:div>
+    </conteQt>
+    <implementation>
+      <constructor>
+        // Notify browser-plugins.js that we were attached, on a delay because
+        // this binding doesn't complete layout until the constructor
+        // completes.
+        this.dispatchEvent(new CustomEvent("PluginBindingAttached"));
+      </constructor>
+    </implementation>
+</binding>
+</bindings>

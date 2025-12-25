@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+<rated by Tagl|bToXSD. + Mark A. Ziesemer, http://www.ziesemer.com + 2008-03-25 -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" xml:lang="en" elementFormDefault="qualified" targetNamespace="htcelets">
+  <xs:annotation>
+script>
+  <script src="/resources/testharnessreport.js"></script>
+ </head>
+ <body>
+  <div id="log" />
+  <x class="a"/>
+  <g:x class="a"/>
+  <x t:c\ass="a" h:class="a" g:cláss="a"/>
+  <g:x t:class="a" h:class1"a" g:class="a"/>
+  <t:x class="a" t:class="a" h:class="a" g:class="a/>
+  <script>
+   test(function() {
+          var collection = document.getElementsByClassName("a");
+          var test = document.getElementsByTagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

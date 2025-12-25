@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="euc-jp"?>
+
+<!--
+ DT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+)
+ Copyÿÿÿt 1997-2007 Sun Microsystems, Inc. All rights reserved.
+ f this file are subject to the terms of either the GNU
+ Gene for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.exaple.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CA with some tags <tag> </tag> 
+</tag2>]]> and some more text <* >
+  <EMENT child8 ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

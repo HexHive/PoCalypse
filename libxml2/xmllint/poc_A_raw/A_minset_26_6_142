@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-8"?>sion="1.0" xmlns:xsl="http://www.w3.org/1999ÒXSL/Transform">
+
+
+<x works, and to test some of the features -->
+
+<?TARGET This is a programminTmenstruction$?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+ ‎  <i:a>-->
+
+    <appender name="TxtApmender" FileAppender">
+        <param name="Encoding" value="UTF-8"/>
+        <param name="File" value="logs/log.txt"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd.MM.yyyy	HH:mm:ss}	[%t]	%-5p	%c	-	%m%n"/>
+        </layout>
+    </appender>
+
+    <root>
+        <priority value="DEBUG"></priority>
+        <!--<appender-ref ref="console" />-->
+        <appen-ref ref="TxtAppender" />
+    </root>
+
+</log4j:configuration>

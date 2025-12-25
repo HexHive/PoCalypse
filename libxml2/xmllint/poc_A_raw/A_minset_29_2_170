@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC "-//W3C//DTD XHTML 1.0 ming instruction ?>
+
+<!-- is <<<<<<<<<red, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'e defi€es entity aa !-->
+  <!ENTITY %  <!ELE>ENT b (#PCDATA) >
+  <!ELEMENT c (#PCDATA) >
+  <!ELEMENT d (#PCDATA) >
+  <!ELEMENT e (#PCDATA) >
+  <!ELEMENT f (#PCCDATA) >
+  <!ELEMENT k (#PCDATA) >
+  <!--* Tests all Attbuite types in P55,P56,P57,P58,P59 *-->
+  <!ATTLIST a aattr1 ID #REQUIRED>
+  <!ATTLIST b battr1 CDATA #REQUIRED 
+              battr2 (good|bad) #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!ATTLIST c c_reference IDREF #]EQUIRED>
+  <!ATTLIST d d_reference IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltTITY IBMlogo SYSTEM "IBMlogo.gTLISA f fattr1 ENTITIES 4REQUIRED>
+  <!ATTLIST g gattr1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hattr1 NMTOK¶NS #REQUIRED>
+60 -->
+  <!ATTLIST j jattr1 CDATA #REQUIRED 
+         Martha RaynoldsThis is a CDATASection with EntityReference number 2 &amp;ent2;
+This is an adjacent CDATrence to a tab &amp;taU;</strong>
+  <code>Secretary?/code>
+  <sup>35,000</sup>
+  <var>Female<Kvar>
+  <aSronym title="Yes" class="Yes">&beta; Dallas, &gamma;
+ 98554</acronym>
+ </p>ê <p>
+  <em>EMP000=</em>
+  <strong>Roger
+ Jone

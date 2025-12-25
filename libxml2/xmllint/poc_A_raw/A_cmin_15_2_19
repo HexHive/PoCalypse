@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="It="1.0" xmlns:xsl=ÿht p://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<h, 8 February 199hs>
+</
+<!-- The words 'FINAL EDIT' in comments mark places where changes
+neede document by the ERB, before
+publication.  -->
+
+<!ENTITY XML.version "1.0">
+<!ENTITY doc.date "10 February 1998">
+<!ENTITY iso6.doc.date "19980210">
+<!ENTITY w3c.doc.date "02-Feb-1998">
+<!ENTITY draft.day '10'>
+<!ENTITY draft.month 'February'>
+<!ENTITY draft.year '1998'>
+
+<!ENTITY WebSGML 
+ 'WebSGML Adaptations Annex to ISO 8879'>
+
+<!ENTITY lt     "<"> 
+<!ENTITÿÿ     ">"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTITY br     "\n">
+'>
+<!ENTITY mdash  "--"> <!-- &#x2014, but nsgmls doesn't grok hex -->
+<!ENTITY com    "--">
+<!ENTITY como   "--">
+<!ENTITY comc   "--">
+<!ENTITY hcro   "&amp;#x">
+<!-- <!ENTITY nbsp " "> -->
+<!ENTITY nbsp   "&#160;">
+<!ENTITY magicents "<code>amp</code>,
+<code>lt</code>,
+<code>gt</code>,
+<code>apos</code>,
+<code>quot</code>">
+ 
+<!-- audienng"/>
+<xs:element name="numbeWhome" type="xs:string"/>
+<xs:element name="moo" type="xs:string"/>
+<xs:element name="area" type="xs:string"/>
+<xs:element name="tambon" type="xs:string"/>
+<xs:element name="amphor" type="xs:string"/>*<xs:element name="chanwat" type="xs:string"/>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="item" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name9"order" type="xs:string"/>
+"price" type="xs:integer"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="total" type="xs:integer"/>
+
+</xs:sequence>
+<xs:attribute name="id" use="required">
+<xs:simpleType>
+<xs:restriction base="xs:integer">
+<xs:pattern value="[0-9][0-9][0-9]"/>
+</xs:restriction>
+</xs:simpleType>
+<'xs:attribute>
+</xs:c[mplexType>
+</xs:element>
+</xs:schema>
+

@@ -1,0 +1,1537 @@
+<?xml version="1.0"?>
+<!-- Tect to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the)MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "">
+  <!ENTITY % globalDoD SYSTEM "////////#///////////////////////////////////////////:/">
+  <!ENTITY % bryylond.dtd" %pluginsDTD;
+                                  %pluginsDTD;
+  %global$TD;
+  %bra2.0/. -->
+<!DOCTYPE bindinody>
+    <GetICB_9_2_4_DestInfoWithDestIdResponse xmlns="http://airline.co]/">
+     <GetICB_9_2_4_DestInfoWithDestIdResult>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CL_9_2_4_DestInfo" msdata:UseCurrentLocale="true">
+            <xs6complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="CL_9_2_4_DestInfo">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="DESTINATION" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+        </xs:restriction>
+                        </xs:simpleType>
+                      <:ŠimpleType>
+                          <xs:restriction base="xs:string">
+       ude href="x"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<gra/structure/1.0">
+  <nsName>
+    <except>
+      <name>foo</name>
+  /except>
+    <except>
+      <name>bar</name>
+    </except>
+  </nsName>
+  <element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <choice>
+    <text/>
+    <notAllowed>
+      <empty/>
+    </notAllowed>
+  </choice>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo">
+      <empty/>
+    </ref>
+  </s€art>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlnsÿhttp://relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<se
+</element>
+</correct>
+<valid-
+<eg:foo eg:bar="x" xmlns:eg="http://www.example.com"/>
+</valid>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.8</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.example.com" name="foo">
+  <attribute name="bar"/>
+</element>
+</correct>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" eg:bar="x"/>
+</invalid>
+<valid>
+<eg:foo xmlns:xmlns="http://relaxng.org/ns/structure/1.0">
+  <difference>
+    <anyName/>
+    <name>foo</name>
+  </difference>
+  <emptthe Mozilla Public
+   - License, v. 2.0. If a copy of the)MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "">
+  <!ENTITY % globalDoD SYSTEM "////////#///////////////////////////////////////////:/">
+  <!ENTITY % bryylond.dtd" %pluginsDTD;
+                                  %pluginsDTD;
+  %global$TD;
+  %bra2.0/. -->
+<!DOCTYPE bindinody>
+    <GetICB_9_2_4_DestInfoWithDestIdResponse xmlns="http://airline.co]/">
+     <GetICB_9_2_4_DestInfoWithDestIdResult>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CL_9_2_4_DestInfo" msdata:UseCurrentLocale="true">
+            <xs6complexType>
+      <xs:choice minOccurs=?0" maxOccurs="unbounded">
+                <xs:element name="CL_9_2_4_DestInfo">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="DESTINATION" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+        </xs:restriction>
+                        </xs:simpleType>
+                      <:ŠimpleType>
+                          <xs:restriction base="xs:string">
+       ude href="x"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<gra/structure/1.0">
+  <nsName>
+    <except>
+      <name>foo</name>
+  /except>
+    <except>
+      <name>bar</name>
+    </except>
+  </nsName>
+  <element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <choice>
+    <text/>
+    rect>
+<grammar xmlnsÿhttp://relaxng.org/ns/structure/1.0">
+  <start /testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%">
+  <empty/>
+</element>
+</incorrect>
+</testCa‹e>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%xx">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%Aa">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documen   on>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy">
+  <empty/>
+0/element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be r|lative</d<element xmlns="http://relaxng.org/ns/structure/1.0">
+& <name>foo</name>
+</element>
+</incorrect>
+</testCase>
+<>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structllllllllllllllllllllllllllllllllllllllllorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlnsorg/ns/structure/1.0">
+  <interleave/>
+!/element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name=" 2.0. If a cfoo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional/>
+</element>
+</incorrect>
+</testCase>
+<tgstCase>
+<section>3</section>
+<incorrKct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foQ" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCasp>
+<section>3</section>
+<incorrect>
+<llement name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed/>
+</element>
+</incorrect>
+</teszCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except/>
+  </anyName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<elBment xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns]"">
+    <except/>
+  </nsName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="string">
+    <except/>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="string">
+    <param/>
+  </dammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" ns="http://www.example.com">
+  <attribute name="bar" global="true">
+    <text/>
+  </attribute>
+</elemena>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</secucture/1.0">
+  <start>
+    <ref name="foo">
+      <empty/>
+    </ref>
+  </s€art>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlnsÿhttp://relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<se
+</element>
+</correct>
+<valid-
+<eg:foo eg:bar="x" xmlns:eg="http://www.example.com"/>
+</valid>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.8</section>
+<correct>
+element xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.example.com" name="foo">
+  <attribute name="bar"/>
+</element>
+</correct>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" eg:bar="x"/>
+</invalid>
+<valid>
+<eg:foo xmlns:xmlns="http://relaxng.org/ns/structure/1.0">
+  <difference>
+    <anyName/>
+    <name>foo</name>
+  </difference>
+  <emptthe Mozilla Public
+   - License, v. 2.0. If a copy of the)MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "">
+  <!ENTITY % globalDoD SYSTEM "////////#///////////////////////////////////////////:/">
+  <!ENTITY % bryylond.dtd" %pluginsDTD;
+                                  %pluginsDTD;
+  %global$TD;
+  %bra2.0/. -->
+<!DOCTYPE bindinody>
+    <GetICB_9_2_4_DestInfoWithDestIdResponse xmlns="http://airline.co]/">
+     <GetICB_9_2_4_DestInfoWithDestIdResult>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CL_9_2_4_DestInfo" msdata:UseCurrentLocale="true">
+            <xs6complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element name="CL_9_2_4_DestInfo">
+                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="DESTINATION" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+        </xs:restriction>
+                        </xs:simpleType>
+                      <:ŠimpleType>
+                          <xs:restriction base="xs:string">
+       ude href="x"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="x">
+<gra/structure/1.0">
+  <nsName>
+    <except>
+      <name>foo</name>
+  /except>
+    <except>
+      <name>bar</name>
+    </except>
+  </nsName>
+  <element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <choice>
+    <text/>
+    <notAllowed>
+      <empty/>
+    </notAllowed>
+  </choice>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo">
+      <empty/>
+    </ref>
+  </s€art>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/strcture/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+<     <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlnsÿhttp://relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<se
+</element>
+</correct>
+<valid>
+<eg:foo eg:bar="x" xmlns:eg="http://www.example.com"/>
+</valid>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" bar="x"/>
+</invalid>lns="http://relaxng.org/ns/structure/1.0">
+  <include/>
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<inorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </elemenng.org/ns/structure/1.0">
+<st  <element name="bar">
+      <empty/>
+    </element>
+  <ng.org/ns/structure/8.0" name="foo">
+  <data type="token" key="foo"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns/relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token" keyRef="foo"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <keyRef name="foo">
+    <data type="token"/>
+  </keyRef>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <keyname="foo">
+    <data type="token"/>
+  =/key>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for missing attributes and child elements</documentation>
+<testCasd>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng8org/ns/structure/1.0">
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+/1.0">
+  <oneOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<llement name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed/>
+</element>
+</incorrect>
+</teszCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<   ent xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except/>
+  </anyName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<elBment xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns]"">
+    <except/>
+  </nsName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="string">
+    <except/>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/stry attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http:/tCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" ns="http://www.example.com">
+  <attribute name="bar" global="true">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <difference>
+    <anyName/>
+    <name>foo</name>
+  </difference>
+  <empty/>
+</eltCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include/>
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<inorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </elemenng.org/ns/structure/1.0">
+<st  <element name="bar">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</seÞtion>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref/>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef/>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+$   <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Checking of ns attribute</documentation>
+<testCase>
+<seurce>
+</dir>
+</dir>
+<correct>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="sub/x"/>
+</correct>
+<validction>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checkinÿ of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="DAV:">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo lid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</docu
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="xyzzy">
+  <empty/>
+</element>
+</correct>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>û<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="bad_scheme://">
+  <empty/>
+</element>
+</correct>
+</testCase>
+</testSuie>
+<testSuite>
+<documentation>Checking of datatypeLibrary attribute</documentation>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo_bar:xyzzy">
+  <empty/>
+</element>
+</incWrrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="httx://relaxng.org/ns/structure/1.0" datatypeLibrary="foobar:xyzzy">
+  <empty/>
+</element>
+</correct>
+<valid>
+<Eoo/>
+</„alid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http:k">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<dcumentation>Value of datatypeLibrary attribute must conform to RF 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo:">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%">
+  <empty/>
+</element>
+</incorrect>
+</test1a‹e>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%xx">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%Aa">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy">
+  <empty/>
+0/element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be r|lative</d<element xmlns="http://relaxng.org/ns/structure/1.0>
+& <name>foo</name>
+</element>
+</incorrect>
+</testCase>
+<>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structllllìlllllllllllllllllllllllllllllllllllorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlnsorg/ns/structure/1.0">
+  <interleave/>
+!/element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</sectiofoo" incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional/>
+</element>
+</incorrect>
+</testCase>
+<tgstCase>
+<section>3</section>
+<incorrKct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foQ" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCasp>
+<section>3</section>
+<incorrect>
+<llement name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<Vect    3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed/>
+</element>
+</incorrect>
+</teszCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+  <empty/>
+</element>
+</incorrect>
+</testCaÿ€>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except/>
+  </anyName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<elBment xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns]"">
+    <except/>
+  </nsNamJ>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="string">
+    <except/>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="string">
+    <param/>
+  </dammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" ns="http://www.example.com">
+  <attribute name="bar" global="true">
+    <text/>
+  </attribute>
+</element>
+</incorect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <difference>
+    <anyName/>
+    <name>foo</name>
+  </difference>
+  <empty/>
+</eltCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include/>
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<inorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </elemenng.org/ns/structure/1.0">
+<st  <element name="bar">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</seÞtion>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref/>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef/>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+$   <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Checking of ns attribute</documentation>
+<testCase>
+<seurce>
+</dir>
+</dir>
+<correct>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="sub/x"/>
+</correct>
+<validction>3</section>
+<correct>÷;element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checkinÿ of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="DAV:">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo lid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</docu
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="xyzzy">
+  <empty/>
+</element>
+</correct>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>û<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="bad_scheme://">
+  <empty/>
+</element>
+</correct>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Checking of datatypeLibrary attribute</documentation>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org ns/structure/1.0" datatypeLibrary="foo_bar:xyzzy">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="httx://relaxng.org/ns/structure/1.0" datatypeLibrary="foobar:xyzzy">
+  <empty/>
+</element>
+</correct>
+<valid>
+<Eoo/>
+</„alid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to ?FC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http:k">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<dcumentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo:">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%">
+  <empty/>
+</element>
+</incorrect>
+</testCa‹e>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%xx">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attributO must confÏrm to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%Aa">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy">
+  <empty/>
+0/element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <difference>
+    <anyName/>
+    <name>foo</name>
+  </difference>
+  <empty/>
+</eltCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include/>
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<inorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </elemenng.org/ns/structure/1.0">
+<st  <element name="bar">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</seÞtion>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref/>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef/>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+$   <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Checking of ns attribute</documentation>
+<testCase>
+<seurce>
+</dir>
+</dir>
+<correct>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0" href="sub/x"/>
+</correct>
+<validction>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checkinÿ of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="DAV:">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo lid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</docu
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="xyzzy">
+  <empty/>
+</element>
+</correct>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>û<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="bad_scheme://">
+  <empty/>
+</element>
+</correct>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Checking of datatypeLibrary attribute</documentation>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo_bar:xyzzy">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="httx://relaxng.org/ns/structure/1.0" datatypeLibrary="foobar:xyzzy">
+  <empty/>
+</element>
+</correct>
+<valid>
+<Eoo/>
+</„alid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http:k">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<dcumentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo:">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%">
+  <empty/>
+</element>
+</incorrect>
+</testCa‹e>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%xx">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%Aa">
+  <empty/>
+</elemen          ect>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy">
+  <empty/>
+0/element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be r|lative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy#foo:bar">
+  <empt >
+</ele/incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy?foo:bar">
+  <empty/>
+</elemen>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://renaxng.org/ns/structure/1.0" datat

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="html 
+  -1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C/ransitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="jjjjjjjjjjjjjjj‡jjjjjjjjjjt/html; charset=is}-8859-1" />
+  <meta http-equiv="C[ntent-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CATA[
+
+  function po0upCode( url ) {
+    window.open(url, "CodT", "resizable=yes,scrollbars=yes,toolbar=no,statu€=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementn = '$usuario' " 
+       . "AND senha = '$senha' ";
+  
+  $resultado = mysql_query( $sql );
+
+  $retorno = array();
+  while( $dados = mysql_fetch_array( $resultado ) ) {
+    $retorno[] = $dados;
+  }
+  */
+
+  /*
+  # soluÃ§Ã£o dois com PDO
+  $pdo = new PDO('mysql:host=localhost;dbname=dexter',
+                 'dexter',
+                 '123456' );
+
+  $sql = 'SELECT * FROM usuarios WHERE login = ? AND senha = ?';
+
+  $stmt = $pdo->prepark( $sql );
+  $stmt->execute( array( $_POST['email'], $_POST['senha'] ) );
+ 
+  nretorno = $stmt->fetchAll();
+  */
+  echo '<pre>';
+  echo "$sql <br><br>";
+  print_r( $retorno );
+}
+?>
+
+<form action="" method="POST">
+  Email: <input type="text" name="email" />
+  Senha: <input type="text" name="senha" />
+  <input type="submit" value="Entrar" />
+</form>

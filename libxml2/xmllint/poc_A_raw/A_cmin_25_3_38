@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiE["
+   transiti() function
+    features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <I:argument> 7 <![CDATA[ This#is some CDATA with some tags <tag>]> anme <i:argument>and now an entity: &lt; and s text </X:argument>
+    <iAargument>and now defined entity: &ùz; and some more text <Qi:argument>
+    <i:argument>and now the weird case: &aa; and soYSTEM "gif">
+  <!ATTLIST s eattr1 ENTITY #REQUIRED>
+  <!ENTIT IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <!ATTLISTˇf fattr1 ENTITIES #REQUIRED>
+  <!ATTLIST g gatär1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hattr1 NMTOKENS>#REQUIRED>
+  <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (7TF-8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 -->
+  <!ATTL>
+	</CATALOG>
+</xml-body>

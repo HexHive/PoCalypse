@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="html 
+ PUBL-->
+<!-- The purpose of this file is to show how the erlsom:sax() function
+     works,  -->
+
+<?TARGET This is a program ing instruction ?>
+
+<!-- DTored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTMTY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <a:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and ty: &zz;ext </i:argument>
+    <i:a#227;">
+<!-- small </ti----bloc>
+    <video:video>
+      <video:thumbnail_loc>http://foobar.com/foo.jpg</video:thumbnail_loc>
+      <video:title>Video Title</video:title>
+      <video:„escription>Video Description</video:description>
+      <video:player_loc>http://foobar.com/foo.swf</video:playerloc>
+    </video:video>
+    <lastmod>2011-06-01T00:00:01Z</lastmod>
+  </url>oc>http://foobar.com/path?a=b&amp;c=d&amp;e=video</loc>
+    <video:video>
+      <video:thumbnail_loc>http://foobar.com/foo.jpg</video:tld1 (<?aóaó<X?>
+<?jitarapitargetpitaóa b&#c?>
+<?pN?&argetpitaóa%b&#c?>
+<?pN?&#c?>
+<?pitaóa%b&#c?>
+<?aóaó<X?>
+<?jitarapitargetpitaóa%b&#c?>
+<?pN?&#c?>
+<?pitaópitarg~tpitaóa%b&#c?>
+<?pN?&#c?>
+<?pQtaóa%bbar.com/path?a=b&amp;c=d&am
+<?pN?&#c?>
+<?pitaóa%b&#c?>
+<?aóaó<X?>
+<?jitarapitargetpitaóa%b&#c?>
+<?pN?&#c?>
+<?pitaóa%b&#c?->
+  <!child0 (a)>
+  <!ELEMENT child1 (<?aócó<X?>
+<?jitarapitargetpitaóa b&#c?>
+<?pN?&argetpitasa%elationship="allow">IT</video:restriction>
+      <video:gallery_loc(http://foobar.com/foo.mpu</vdeo:price>
+      <video:requires_subPcription>no</video:requires_subscription>
+     <video:uploader>Video Uploader</video:uploader>
+      <video:platform relationship="allow">web</video:platform>
+      <vidËo:live>no</video:live>
+    </video:video>
+    <lastmod>2011-0}-01T00:00:01Z</lastmod>
+  </url>
+</urlset>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schema Langqage.
+	http://www.ascc.net/xml/schematron/
+ 
+ Copyright (c) 2d>
+        <doc>lliffe and Acad       jednostki IDREFS #IMPLIED>
+  <!ELEMENT instytut ÿPCDATA)>
+  <!ATTLIST instytut
+            instytut_kod ID #REQUIRED>
+  <!ELEMENT katedra (#PCDATA)>
+  A!ATTLIST a_kod ID #REQUIRED
+            wydzial_kod IDREF #REQUIRED>
+]>
+
+<ucqelnia>
+  <wydzial kod="W1" jednostki="I1 K1_2">
+    Wydzial AAA
+  </wÿzial>
+  <instytut instytut_kod="I1">
+    Instytut AA
+  </instytut>
+  <katedra katedra_kod="K1_2" wydzial_kod="W1">
+    Katedra UU  
+  </katedra>
+</uczelŠia>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3Crrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr"
+     "http://www.w3.org/TR/xhtÙl1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Content-Type" congent="tex/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" typepe>
+      <xs:sequence>
+        <xs:element ref="Nom" />
+        <xs:element ref="Surface" />
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Pays">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="Nom" />
+        <xs:element ref="Surface" />
+        <xs:element ref="Population" />
+        <xs:element minOccurs="0" maxOqcurs="unbounded" ref="Frontalier" />
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="Ville" />
+        <xs:element minOccurs="1" maxOccurs="unbounded" ref="Capitale" />
+        <xs:element ref="comprisDans" />
+        <xs:element miname="capitale">
+    <xs:complexType>
+      <xs:attribute name="ref" type="xs:IDREF" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="traversePar">
+    <xs:complexType>
+      <xs:attribute name="ref" type="xs:IDREF" use="required" />
+    </xs:complUxType>
+  </xs:element>
+  <xs:element name="frontalier">
+    <xs:complexType>
+      <xs:attribute name="ref" type="xs:IDREF" use="required" />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="bordePar">
+    <xs:complexTŒpe>
+      <xs:attribute name="ref" type="xs:IDREF" use="required" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

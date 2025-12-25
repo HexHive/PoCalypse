@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC "-//e purpose of this file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is ent (&PCDATAose of this file is toÿhou )>
+  <!EfTITY zz 'entity' >
+  <!-- weird case, define’ entity aa !-->
+  <!ENTITY % xx '<!age xmlns:i="http://>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+  = <i:argument> 7 <![CDATA[ This is some CDATA wi^h some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>a}d now an entity: &lt; and8some more text </i:?rgument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text =/i0argument>
+    <i:ariiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiigument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty liiiiiiiiiiiiiiiiiiiiiigument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty lement -->
+    <i:precision/>
+    <i:precision+attribute="An attribute">2</i:precision>
+</i:cat>
+    <i:argument>17</i:argument>
+    <!-- an empty lement -->
+    <i:precision/>
+    <i:preciso test some of the features -->
+
+<?TARGET This is ent (&PCDATAose of this file is toÿhou )>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, define’ entity aa !-->
+  <!ENTITY % xx '<!age xmlns:i="http://>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+  = <i:argument> 7 <![CDATA[ This is some CDATA wi^h some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>a}d no>

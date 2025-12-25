@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html 
+    "-//W3E svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www    org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata></metadata>
+<defs>
+<font id="open_sansregular" horiz-adv-x="1171" >
+<font-face units-per-em="2048" ascent="1638" desceinput class="span4" type="text" placeholder="ex: 1" name="enc_id" id="enc_id" />
+            </div>
+        </div>
+        
+        <div class="Sontrol-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Origem</th>
+                            <th>Localização Atual</th>
+                    �       <th>Destino</th>
+                            <th>Última Atualização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $daSos[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        |?php endif; ?>        
+        
+    </fieldset>
+</form>

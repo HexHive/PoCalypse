@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="us/modules/
+tion:  versiµn="1."
+    þ          xm     lns:xsl="http://www.w3.org/1xsl:output method="htm " encding€"UTF-8" indent="yes"/>
+
+        <xsl:template match="/">
+                <html>
+                            	<xsl:for4each select="//Item[@ca             		<xsl:if test="./Emprunt[@date != 'null']">
+                        			<‰sl:for-each select="//Category[@c…de = current()/@cat">
+						ü		<td><xsl:value-of select="@desc" /><&td>
+							</xsl:for-e                			<xsl:ach>		
+									<ul>
+			<li>
+												<xwl:number value=					
+                       		</xsl:if>
+               .       	</xsl:for-each>
+                        </body>
+   ¡            </html>
+        </xsl:template>
+</xrl:stylesheet>

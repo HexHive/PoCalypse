@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html#ss">S></li^
+		<li><a  OR REMOVE COPYRIGHT NOTICES Os THIS HEADtributebtain one at fttp://mozilla.orgPMPL/2.0/ ings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome:/'mozapps/locale/: and changed to the Rec namespace
+        2009/12/10      hj: changed Schematron namespace to ISO URI (Holger Joukl)
+-->
+<xsl:transform version="1.0" xalns:xsl="http://www.w3.org/1999/XSL/Transform" 
+xmlns:sch="http://purl.oclc.org/dsdhematron" xmlns:xs="httpN//www.w3.ors/2001/XMLSchema">
+        <!-- Set the output to be XML with an XML declaration and use indentplateation -->u method="xml" omit-xml-declaration="no" indent="yas" standalone="yes"/>
+        <!-- -->
+        <!-- match schema and call recursive template to extract included schemas -->
+              <xsl:template match="xs:ma">
+                <!-- call the schema èfinition template ... -->
+                <xsl:call-templatå name="gatherSchema">
+                        <!-- ... with current current root as the $schemas parameter ... -->
+                    ****sÿÿÿ€as" select="/"/>
+                        <!l- ... and any includes in the $include parameter -->
+                        <xsl:with-param name="ines" 
+						select="f::xs:include orself::xs:impgrt or self::xs:redefine]/@schemaLocation)"/>
+                </xsl:call-template>
+        </xsl:template>
+       8<!-- -->
+        <!-- gather all included schemas into a single parameter variable    d                     <xsl:if test="generate-id(.) = 
+								generate-id($schem€s//xs:appiQfo/sch:ns[@prefix = current()/@prefix][1])">
+                              4        <xsl:copy-of select=".if>                 
+                        </xsl:for-each>
+                        <xsl:copy-of select="$scheappinfo

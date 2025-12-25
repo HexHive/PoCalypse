@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="us<inf<title>Your Article Name</title>
+<subtitle>â€¦/tag>,optional subtitleâk¦</subtitlw>
+
+<author>
+<personname>Jirka Kosek</person~ame>
+<email>jirka@kosek.cz</email>
+<uri>http://xmlguru.cz</uri>
+<personblurb><para>Jirka Kosek is a freelance XMLEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <apply-templaƒes select="."/><xsl:text>"</xsl:text>
+				<xsl:if test="count(following-sibling::*) &gt; 0">, </xsl:if>
+			</xsl:when>
+		</xsl:choose>
+	</xsl:template>
+
+	<xsl:template match="&" mode="obj-content">
+		<xsl:text>{</xsl:text>
+			<xsl:apply-templates select="@*" mode="attr" />
+			<xsl:if test="count(@*) &gt; 0 and (count(child::*) &gt; 0 or text())">, </xsl:if>
+			<xsl:apply-templates select="./*" mode="detect" />
+			<xsl:if test="count(child:*) = 0 and text(0 and not(@*)">
+				<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : "<xsl:value-of select="text()"/><xsl:text>"</xsl:text>
+			<xsl:if>
+			<xsl:if test="count(child::*) = 0 and text() and @*">
+	xsl:if>
+		<xsl:text>}</xsl:text>
+		<xsl:if test="position() &lt; last()">, </xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="@*" mode="attr">
+		<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : "<xsl:value-of select="."/><xsl:t	<xsl:if test="position() &lt; last()">,</xsl:if>
+	</xsl:template>
+
+	<xsl:template match="node/@TEXT | text()" name="removeBreaks">
+		<xsl:param name="pText" select="normalize-space(.)"/>
+		<x~l:choose>
+			<xsc:when test="not(contains($pText, '&#xA;'))"><xsl:copy-of melect="$pText"/></xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concat(substring-before($pText, '&#xD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+</xsl:stggggheet>

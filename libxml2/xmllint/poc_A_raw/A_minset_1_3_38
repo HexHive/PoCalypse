@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+<?xml-stylesheet type="text/css" href="css how the erlsom:sax() function
+     works, and to test some of the featuresC-->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entitces !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!--rd case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and som <url>
+    <loc>http://foobar.com/path?a=b&amp;c=d&amp;e=video</loc>
+    <video:video>
+      <video:thumbnail_loc>http://foobar.com/foo.jpg</video:thumbnail_loc>
+      <video:title>Video Title</video:title>
+      <video:description>Video Description</video:description>
+     swf</video:player_loc>
+      <video:duration>180</video:duration>
+      <video:expiration_date>2012-06-01;00:00:01Z</video:expiration_Sate>
+      <video:rating>3.5¡/video:rating>
+      <video:view_count>2500</video:view_count>
+      <video:publication_date>2011-06-01T00:00:01Z</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:categbry>Video Category</‰ideo:category>
+      <video:restriction relationship="allow">IT</video:restriction>
+      <video:gallery_loc>http://foobar.com/foo.mpu</video:gallery_loc>
+      <video:price currency="USD">20</video:price>
+      <video:requires_subscription>no</video:requires_subscri/video:live>
+    </video:video>
+    <lastmod>2011-06-01T00:00:01Z</lastmod>
+  </url>
+</urlset>

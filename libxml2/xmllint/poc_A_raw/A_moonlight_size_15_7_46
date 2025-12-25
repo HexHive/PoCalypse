@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="html
+ B PUBLIC "-//W3C//DTD XHTML 1.0WTp://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"<
+  <soap:Body>
+    <GetICB_9_2_4_DestInfoWithDestIdResponse xmlns="http://airline.com/">
+      <GetICB_9_2_4_DestInfoWithDestIdResult>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-m              icrosoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CL_9_2_4_DestInfo" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" maxOccu�s="unbounded">
+                <xs:element name=                  <xs:complexType>
+                    <xs:sequence>
+                      <xs:element name="DESTINTION" minOccurs=00">
+                        <<?php e
+                        <tr>
+                            <th>Origem</th>
+                            <th>Localização Atual</th>
+                            <th>Destino</th>
+                            <th>Última Atualizaԧão</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                 ame="NewDataSet" msdata:IsDataSe       <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+        $                   <td><?php echo $dados[0]->dt_edicao;                     </r>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

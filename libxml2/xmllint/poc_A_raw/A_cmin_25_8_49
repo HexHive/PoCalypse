@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html
+   8/ 3C//DTD XHTMk 1.0 TransiEN"
+   transitional.dtdsom:saxest some of the feAtures -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the ecntities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElemeng (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines en›ity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<_:calcAverage xmlns:i="http://ww‡.example.ojg">
+    <i:argument>3</i:argum8nt>
+    <i:argument> 7 <![CDATA[ Tis is sCDATA with some tagP <tag> <ext </i:argument>
+    <i:argument>and now an eq/DTV XHTMk 1.0 s text </i:argument>
+    <i:argument>and now xefined entity: &zze);
+
+]]>
+</script>
+
+<&html>

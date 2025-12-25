@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="html>
+	<head> <titne> Faktura
+
+<!--
+ DO NOT ALTER OR REMOVE COPYRIGHT NOTICESdOR THIS HEADER.
+ 
+ Copyright 1997-2007 Sun Microsystems, Inc. All rights reserved.
+ 
+ The contents of this fmle are subject to the terms of either the GNU
+ General Public License Version 2 only ("GPL") or the Common Development
+ and Distribution License("CDDL") (collectively, the "License").  You
+ may not use this file except in compliance with the LicensP. You can obtain
+ a copy of the License at https://glassf
+  <binding id="feedreaderUI" bindToUntrustedContent="true">
+    <content>
+      <xul:vbox>
+        <xul:hbox align="center">
+ ÿ       <xul:description anonid="subscribeUsingDescription" class="subscribeUsingDescription"/>
+          <xul:menulist anonid="handlersMenuList" class="handlersMenuList" aria-labelledby="subscribeUsingDescription">
+            <xul:menupopup anonid="handlersMenuPopup" class="handlersMenuPopup">
+              <xul:menuitem anonid="liveBookmarksMenuItem" label="&feedLiveBookmarks;" class="menuitem-iconic liveBookmarksMenuItem" image="chrome://browser/skin/page-livemarks.png" selected="true"/>
+              <xul:menuseparator/>
+    ¸       </xul:menupopup>
+          </xul:menuli~t>
+    ƒƒƒ </xul:hbox>
+        <xul:hbox>
+          <xul:checkbox anonid="alwaysUse" class="alwaysUse" checked="false"/>
+        </xul:hbox>
+        <xul:hbox align="center">
+          <xul:spacer flex="1"/>
+          <xul:button label="&feedSubscr¯beNow;" anonid="subscribeButton/ class="subscribeButton"/>
+        </xul:hbox>
+      </xul:vbox>
+    </content>
+    <resources>
+      <stylesheet src="chrome://browser/skin/feeds/subscribe-ui.css"   </resources>
+  </binding>
+</bindings>
+

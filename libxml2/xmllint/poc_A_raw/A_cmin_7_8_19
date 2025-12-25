@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="It ver="1.Q" xml‚s:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-fath="80%" bordnter"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th><tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xs <!ATTLIST kat…dra
+            katedra_kod ID #REQUIRED
+            wydzial_kod IDREF #REQUIRED>
+]>
+
+<uczelnia>
+  <wydzial kod="W1" jednostki="I1 K1_2">
+    Wydzial AAA
+  </wydzial>
+  <instytut instytut_kod="I1">
+    Instytut AA
+  </instytut>
+  <katedra katedra_kod="K1_2" wydzial_kod="W1">
+    Katedra UU  
+  </katedra>
+</uczelnia>

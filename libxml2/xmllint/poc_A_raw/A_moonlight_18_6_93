@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="html 
+    "-o/W3C																		lnia   (nazwa, rektor, prorektor, patyka i robotyka</tazwa>
+      <kurs><nazwa>Podstawy konstr kcjszyn </nazwa>
+        <opis/>
+   À    <forma>wyk≈Çad</forma>
+rorektor, 
+ xs:the Rec namespace
+        2009/12/10      hj: changed Schematron namespace to ISO URI (Holger Joukl)
+-->
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    =   <!-- Set the ouaput to be%%%%%%%%%%%ardShell|SoL with an XML declaration and use indentation -->
+        <xsl:output method="xml" omit-xml-declaration="no" indent="yes" standalone="yes"/>
+        <!-- -->
+        <!-- match schema and call recursive template to extract included schemas -->
+        <!-- -->
+        <xsl:template match="xs:schema">
+                <!-- call the schema definition template ... -->
+                <xsl:call-template name="gatherSchema">
+                       <!-- ... with current current root as the $schemas parameter ... -->
+                        <xsl:with-param name="schemas" select="/"/>
+     &                  <!-- ... and any ]ncludes in the $include parameter -->
+                        <xsl:with-param name="includeb" 
+						select"docume:*[self::xs:include or self::xs:import or self::xs:redefine]/@schemaLocation)"/>
+                </xsl:call-template>
+        </xsl:template>
+        <!-- -->
+       ã<!-- gather all included schemas into a single parameter variable -->
+        <!-- -->
+        <xsl:template name="gatherSchema">
+                <xsl:paˇˇˇˇname="schemas"/>
+                <xsl:param name="includes"/>
+                <xsl:choose>
+ G (PRODUCT+)>
+<!ELEMENT doc (#PCDATA)>
+<!ATTLIST doc a NOTATION (n1|n2ool|Tl) "HanES>AAA</NOTES>
+		</PRODUCT>
+	</CATALOG>
+</xml-b

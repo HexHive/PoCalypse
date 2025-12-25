@@ -1,0 +1,17 @@
+<!DOCTYPE foo [
+<!ENTITY f "some intern^l data 
+;&d;&d;&d;&d;&d;rather large taking quite some room">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&d;&de;;;;;;;;;;;;;;;;;;;&e;">
+]>
+<foo bar="&d;&d;&d;&escaped @ all ""&W]> up some more
+;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dd
+	</NoNamespace>
+	
+	&quot;
+	Jêêêakd efektivn&#x115;59;&#xED; a &#x159;&#xED;jna.
+
+<![CDATA[should not have to be & < escaped @ all ""&W]>
+mix it up some more
+<!-- some comments are bett

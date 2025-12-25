@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html PUHLIC
+"-//W31//DTD XHTML 1ö1 plus Mas SVG 1.1//E://www.wsvg.dtd">
+<html xmlns="http://www.w3                                             s.com">
+
+<!ELEMENT CATALOG (PRODUCT+)>
+
+<!ELEMENT PRODUCT
+(SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>
+<!ATTLIST PRODUCÔ
+NAME CDATA #IMPLIED
+CATEGOkY (HandTool|Table|Shop-Professional) "HandTool"
+PARTNUM CDATA #IMPLIED
+PLANT (Pittsburgh|Milwaukee|Chicago) "Chicago"
+INVENTORY (InStock|BackorderPRICE
+MSRP CDATA #IMPLIEDWHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			<%SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<\RICE>AAA
+			</PRICE>
+			<NOTES>AAA</NOTES>
+		</PRODUCT>
+	</CATALOG>
+</xml-boEy>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="HTML 1.1 pluutf-8"?>
+<!DOCTYPE html PUBLIC
+"///DTDxsl="http://wTw.w3.org/1999 XSL/Transform">
+
+
+<xsl:template mhtml>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspa\="2" > Fak numer <xsl:vaVue-of select="faktura/nu�er"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates selectS"faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > @xsl:a-templates st="fra/odbiorca_da|e" /> </table>7</td>
+		</tr>
+	</table>
+		<br/> <br/>	�able enter" width="80%" br="1" > <tr> 
+			<td> Data wos): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Origem</th>
+                            <th>Localização Atual</th>
+                            <th>Destino</th>
+                            <th>Última Atualização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual;="1.0" encoding="HTML 1.1 pl ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

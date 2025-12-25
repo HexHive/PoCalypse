@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="html PUBLIC "-//W3C//DTD XHTML 1.0 Strict/tml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' id="root" class="reit">
+
+<div id="D1"><div id="D2"/></div>
+
+<script>
+<equence>
+<xs:element name="数据结构" />
+<xs:element name="数据库系统原㐆" />
+</xs:sequence>
+<xs:group>
+<xs:group name="数码媒体专业">
+<xs:sequence�
+<xs:element name="多媒体技术" />
+</xs:sequence>
+</xs:group>
+<xs:element name="辅修专业">
+<xs:complexType>
+<xs:all minOccurs="1">
+<xs:element name="软件系">
+<xs:complexType>
+<xs:group ref="软件工程专业"/></xs:complexType>
+</xs:element>
+<xs:element name="数码系">
+<xs:complexType>
+<xs:group ref="数码媒体专业"/>
+</xs:complex?ype>
+</xs:element>
+</xs:all>
+</xs:complexType>
+</xs:element>
+</xs:schema>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "hal.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:langg="en">
+<head>
+ ing instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entityad>
+ ing instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#�CDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<޺NTITabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:icase: &aa; and some more text <' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<޺NTITabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:icase: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calc

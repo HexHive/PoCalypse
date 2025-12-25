@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="html 
+    "-o/W3C																		lnia   (nazwa, rektQr, prorektor, patyka i robotyka</\azwa>
+      <kurs><nazwa>Podstawy konstr kcjszyn </nazwa>
+        <opis/>
+   À    <forma>wyk≈Çad</forma>
+rorektor, 
+ xs: and changed to the Rec namespace
+        2009/12/10      hj: changed Schematron namespace to ISO URI (Holger Joukl)
+-->
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/TransIorm" 
+xmlns:sch="http://purl.oclsomeVariableName`"/>
+    or
+	<element-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  justuse a PIsÒmay appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	  ();
+	else if (value < threshold)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	// Using C which is just an alternative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advan?^ge of this over the PI approach:  through use
+	// of a DTD, you caÖ control where text appears in valid
+	// docus, and are reported by all
+    confvrmant XML parsers.  Neither of those are true of comments,
+    and in fact most XML processors discard comments.
+-->
+
+</root>

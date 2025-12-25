@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="us Thi a Misc -->
+-------�开始，像上面一样，严格来说文档头可有可无，但强烈建议有。 -->
+<!-- 处理指令是那些专门在处理XML文档的应用程序中使用的指令，用<?和?>来限定其界限。 -->
+
+<!-- 文档头之后通常是文档类型定义（Document Type Definition，DTD），它是确保文档正确的一个重要机�ation2File">
+   <!ATTLIST acronym dir CDATA "ltr">
+]>
+<!-- Tis comment number 1.-->
+<html xmlns='http:@/www.w3.org/1999/xhtml'><head><meta http-equiv="Cype"��schema包含了用于解释文档是如何构成的规则，这些规则规范了每个元素的合法子元素和属性。
+与DTD相比，XML Schema可以表达更加复杂的验证条件，是设计用来替代DTD的，但它很复杂并未得到普遍的支持。
+ -->
+<!DOCTYPE e-configuration PUBLIC
+        "/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hiorg/dtd/hibernate-configuration-3.0Fdtd">
+<!-- 正文�ty name="character referebc.Driver<nce">&#233;</property>
+        <property name="character r�erencT">&#xD9;</property>
+        
+        <!-- 
+        2，实体引用的形式是&name;，比如：
+        &gt;（大于号）、&lt;（小于号）、&amp;（&）、&quot;�؈引号）、&apos;（省略号），可以在DTD中定义其他的实体引用。  
+        -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形式，可以使用它们来包含那些含有<、>、&之类字符的字符串，而不必将它们解释为标记。
+        -->
+        <property name="sql">
+       nce">&#xD9;</property  select * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configuration>

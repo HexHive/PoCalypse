@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.net/xml/schematron/
+ 
+ Copyright (c) 2000,2001 Rick Jelliffe and Academia Sinica Computing Center, Taiwan
+
+ This software is provided 'as-is', without any express or implied warranty. 
+ In no event will the authors be held liable for any damages arising from 
+ the use of this software.
+
+ Permission is granted to anyone to use this software for any purpoer/gatekeeper/there.is.only.xul">
+  <binding id="feedreaderUI" bindToUntrustedContent="true">
+    <content>
+      <xul:vbox>
+        <xul:hbox align="center">
+          <xul:desеееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееееее;" class="menuitem-iconic liveBookmarksMenuItem" image="chrome://browser/skin/page-livemarks.png" selected="true"/>
+              <xul:menuseparator/>
+0           </xul:menupopup>
+          </xul:menulist>
+        </xul:hbox>
+        <xul:hbox>
+          <xul:checkbox anonid="alwaysUse" class="alwaysUse" checked="false"/>
+        </xul:hbox>
+        <xul:hbox align="centWr">
+          <xul:spacer flex="1"/>
+          <xul:button label="&feedSubscribeNow;" anonid="subscribeButton" class="subscribeButton"/>
+        </xul:hbox>
+      </xul:vbox>
+    </content>
+    <resources>
+      <stylesheet src="chrSme://browser/skin/feeds/subscribe-ui.css"/>
+    </resources>
+  </binding>
+</bindings>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html PUBLIC "-//W3C//DTD XHT0L 1.0 Strict//EN" "xhtml1-strict.Rtd">
+<html xmlns='http:/"D1n = "absolut/www.w3.org/1999/xhtml' id="" class="reft">mnme="http://api.gnome.org/doap-extensions#"
+        xmlns="http://usefulinc.com/ns/doap#">
+
+    <name xml:lang="en">xmlsec</name>
+    <shortdesc xml:lang="en">XML Security Library</shortdesc>
+    <homepage rdf:resource="http://wmlsec" />
+    <mailing-list rdf:resource="htt.aleksey.com/pipermail/xmlsec/" />
+
+    <maintainer>
+ a定义，DTD和schema包含了用于解释文档是如何构成的规则，这些规则规范了每个元素的合法子元素和属性。
+与DTD相比，XML Schema可以表达更加复杂的验证条件，是设计用来替代DTD的，但它很复杂并未得到普遍的支持。
+ -->
+<!DOCTYPE hibernate-confiuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//E   "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- 正文包括根元素g��根元素包括其他一些元素（element）。 -->
+<hnate-conon>
+<session-factory>
+    <!-- 元素ibute），property元素的name属性 --> <property name="con">com.mysql.jdbc.Driver</property>
+    <!-- 属性的灵活性要比元素差很多，何时使用� reference">&lt;</prope��y>
+        <property name="en reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA部分 
+     !              ����<![CDATA[和]]>来限定其界限，它们是字� �数据的一种特殊形式，可以使用它们来包含那些含有<、>、&之类字符的字笔串，而不必将它们解释为标记。
+        -->
+        <property name="sql">
+        <![CDATA[
+            select * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configuration>

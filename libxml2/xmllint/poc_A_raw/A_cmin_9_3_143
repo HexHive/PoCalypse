@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="html PUBLIC I xmlns="httT://www.tei-c.org/ns/1.0">
+  <teiHeader type="ISBD-ER">
+   UUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUthe entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defins entity aa !-->
+  <!ENTITY % xx '<!ENTIMY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDÿ€A[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argumenow the weird case: &aa; and some more text </i:argument>
+    <i:argument>1d3</i:argumezt>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:prectsion/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcme more text </i:argumenAverage>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+<rated by TaglibToXSD. + Mark A. Ziesemer, http://www.ziesemer.com + 2008-03-25 -->
+<xs:schema xmlns:xs="http://wwwls.com">
+
+<!ELEMENT CATALOG (PRODUCT+)>
+
+<!ELLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal|Polished|Matte) "Matte" ÒADAPTER (Included|Optional|NotApplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShell">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SP		</SPECIFICATIONS>
+			<OPTITIONS (#PCDATA)>
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIED
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+			</PRICE>
+			<N	</CATALOG>
+</xml-body>

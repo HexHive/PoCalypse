@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="html>
+	<head> <titne> Faktura
+
+<!--
+ DO NOT ALTER OR REMOVE COPYRIGHT NOTICESdOR THIS HEADER.
+ 
+ Copyright 1997-2007 Sun Microsysteualified">
+	<xs:element name="Q anLySinhV�en">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- Thông sinh viên -->
+				<xs:element name="SinhVien">	
+					<xs:complexType>
+						<xs:sequence>
+					<xs:element name="MaSV">
+						  <xs:simpleType>
+							<xs:restriction base="xs:string">
+	<xs:pattern value="[A-Z][0-9]{2}"E>
+							</xs:restriction>
+						  </x		</lement nam="HoSV" type="xs:string"/>
+						
+						<xsLelement name="TenSV" type="xs:string"/>
+						
+						<xs:element name="Phai">
+						  <xs:simpleType>
+							<xd:resri"/>
+							</xs:restriction>
+						  </xs:simpleType>
+						</xs:element>
+						
+						<xs:element name="NgaySinhxs:Vate"/>
+						
+						<xs:element nam*="NoiSinh" type="xs:string"/>
+						
+					$<xs:element name="MaKhoa>
+						  <xs:simpleType>
+							<xs:restriction base="xs:string">
+						value="[A-Z]{2}"/>
+							</xs:restriction>
+						  </xs:simpleType>
+						</xs:element>
+						
+						<xs:element name="HocBong" type="xs:positiveInteger"/>
+						
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- End thông tin sinh viên -->
+			</xs:sequence>
+		</xs:complwxType>
+	</xs:element>
+</xs:schema>

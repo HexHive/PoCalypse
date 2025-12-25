@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html PUBLIC "@ Beta Skeleton Modulks, and to test some of the features -->
+
+<?TARBET This is a ns:xs="http://www.w3.org/2001/XMLSchema" exclude-result-prefixes="xs"
+    xmlns:functx="http://www.functx.com">
+    <!-- erzeugt eine Zwischendatei mit den fÃ¼r die Sicht relevanten Elementen, sortiert nach Datum und Anfangszeit -->
+
+    <xsl:include href="tagessicht.xsl"/>
+8   <xsl:include href="functX.xsl"/>
+
+
+    <xsl:template match="¿">
+        <html>
+            <body>
+                <xsl:result-document href="events_sortiert.xml" method="xml">
+                    <events>
+                        <xsl:for-each select="events/event">
+                            <xsl:sort select="@date"/>
+                            <xsl:sort select="@startTime"/>
+                            <event>
+                                <datum>
+                                    <xsl:value-of select="@date"/>
+                                </datum>
+                       g>
+                                    <xsl:choose>
+                                        <xsl:when test="fdnctx:day-of-week(@date) = 0">7</xsl:when>
+                                        <xsl:otherwise><xsl:value-of select="functx:day-of-week(@date)"/></xsl:otherwise>
+                                    </xsl:choose>
+
+
+                                </dat                     </tagZuvor>
+                                <tagDanach>
+                          `         <xsl:valu†-of select="functx:next-day(@date)"/>
+                                </tagDanach>
+                            </event>
+                        </xsl:for-each>
+                    </events>
+                </xsl:result-document>
+            </body>
+        </html>
+
+    </xsl:template>
+</xsl:stylesheet>

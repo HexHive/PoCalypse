@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html 
+    - The purpose oD this file is tNlsom:sax() function
+     of the featpres -   works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'en|ity' >
+  <!-- weird case, defin|ity' >
+  <!-- Weird case, Y % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <T:argument> 7 <![CDATA[ This is uome CDATA with some tags <tag> </tag! 
+</tag2>]]> and some more t—xt </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </ˇˇˇˇgument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <ssssssssssssssssssssssssss!-- an empty element -->
+   re text </i:ar <i:precisionˇ
+    <i:precision attribute="An attribute">2</i:precision>
+</i:talcAverage>

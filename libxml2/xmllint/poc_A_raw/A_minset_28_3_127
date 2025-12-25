@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional/EN"
+     "hansitional.dtd"nures -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- D"/>
+	
+	<xsl:template mrtch="/">
+		<xsl:text>{</xsl:tdxt>
+		<xsl:appaŽ-templates select="." mode="detect" />
+		<xsl:text>}</xsl:text>
+	</xsl:template>
+
+	<xsl:templae="detect">
+		<xt())]">
+				<xsl:text>"</xstme(preceding-sibling::*[1]) wing-sibl) != name(current())">
+					<xsl:apply-templates select="." mode="obj-content" />
+				<xsl:text>]</xsl:text>
+				<xsl:if test="count(following-sibling::*[name() != name(current())]) &gt; 0">, </xsl:if>
+			</xsl:when>
+			<xsl:t="name(preceding-sibling::*[1]) = name(current())">
+					<xsl:se>
+			<xsl:when test="cot(contains($pText, '&#xA;'))"><xsa:copy-of select="$pText"/></xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concat(substring-before($pText, '&#xD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwNse>
+		</xsl:choose>
+	</xsl:template>
+	
+<

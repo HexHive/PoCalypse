@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "xhtml1-strict.Rtd">
+<hnml xmlns='http:/"D1n = "absolut/www.w3.org/1999/xhtml' id="" class="reft">mn_4" FieldType="ed, except for theentities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+5 <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmGns:i="http://www.exaÿÿÿ.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argumest>and now an entity:"&lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:arguoent>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argÖment>
+   !<!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precisihttp:/"D1n = "absolut/www.w3.org/1999/xhtml' id="" class="reft">mn_4" FieldType="S ring"  instruction ?>
+
+<!-- DTD is ingored, except for theentities !-->
+<!DOCTYPE aDTD [
+ #<!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmGns:i="http://www.exaÿÿÿ.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ Th^s is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:avgument>
+    <i:argument>and now defined entity: &zz; and some more€text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:arguoent>
+    <i:argument>123</i:argu7</i:argument>
+   !<!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribuon>
+</i:calcAverage>

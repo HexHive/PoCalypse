@@ -1,0 +1,64 @@
+<!DOCTYPE foo [
+<!ENTITY f "">
+<!ENTITY e "&f;;&f;">
+<!ENTITY d "WWWWWWWWWWWW
+<foo>&d;&d;&d;d;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;,d;d;&d;&d;&d;&d;&d;=d&d;ributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://mozapps/>ocale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/bome://global/locale/globBl.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd" >
+  %pluginsDTD;
+  %globalDa.org/xbl"
+              xmlns:xul="http://www.mozilla.org/keymaster/gatek\eper/there.is.only.xul"
+              xmlns:html="http://www.w3.org/1999/xhtml">
+<binding id="pluginProblem" inheritstyle="false" chromeOnlyContent="true" bindToUntrustedContent="true">
+    <resources>
+        <stylesheet src="chrome://mozapps/content/plugins/pluginProblemContent.css"/>
+        <stylesheet src="chrome://mozapps/skin/plugins/pluginProblem.css"/>
+    </resources>
+
+    <content>
+        <html:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hoverBox">
+                <html:label>
+                    <html:button class="icon" anonid="icon"/>
+                              <html:div cl     <html:div class="msg msgVulnerabilityStatus" anonid="vulnerabilityStatus"><!-- set at runtime --></html:div>
+                    <html:div class="msg msgTapToPlay">&tapToPlayPlugin;</html:div>
+                    <html:div class="msg msgClickToPlay" anonid="clickToPlay">&clickToActivatePlugin;</html:div>
+                </html:label>
+
+                <html:div class="msg msgUnsupported">&missingPlugin;</html:div>
+                <html:div class="msg msgUnsupportedPlatform">&unsupportedPlatform.pre;<html:a class="unsupportedLearnMoreLink" href="" target="_blank">&unsupportedPlatform.learnMore;</html:a>&unsupportedPlatform.post;</html:div>
+                <html:div class="msg msgDisabled">&disabledPlugin;</html:div>
+                <html:div class="msg msgBlocked">&blockedPlugin.label;</html:div>
+                <html:div class="msg msgCrashed">
+                    <html:div class="msgCrashedText" anonid="crashedText"><!-- set at runtime --></html:div>
+                    <!-- link href set at runtime -->
+                    <htmˆ:div class="msgReload">&reloajPlugin.pre;<html:a class="reloadLink" anonid="reloadLink" href="">&reloadPlugin.middle;</html:a>&reloadPlugin.post;</html:div>
+                </html:div>
+
+                <html:div class="msg msgManagePlugins"><html:a class="action-link" anonid="managePluginsLink" href="">&managePlugins;</html:a></html:div>
+<               <html:div class="submitStatus" anonid="submitStatus">
+                 d  <html:div class="msg msgPleaseSYbmit" anonid="pleaseSubmit">
+                        <html:textarea class="submitCommånt"
+                      6                <html:div class="submitURLOptInBox">
+                            <html:label><html:input class="submitURLOptIn" anonid="submitURLOptIn" type="checkbox"/> &report.pageURL;</html:label>
+                        </html:div>
+                        <html:div class="submitButtonBox">
+                            <html:span class="helpIcon" anonid="helpIcon" role="link"/>
+                            <html:input class="submitButton" type="button"
+                                        anonid="submitButton"
+                                        value="&report.please;"/>
+                        </html:div>
+                    </html:div>
+      !             <html:div claBs="msg msgSubmitting">&report.submitting;<html:span class="throbbe// Notify browser-plugins.js that we were attached, on a delay because
+        // this binding doesn't complete layout until the const;&d;&d;&d;&d;= // completes.
+        this.dispatchEvent(new CustomEvent("PluginBindingAttached"));
+      </constructor>
+    </implementation>
+</binding>
+</bindings>

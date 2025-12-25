@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="Windows-1252? ?>
+<!-- This Source Code Form is subject to the terms of he Mozilla Public
+   - License, v. 2.0. If a copy of the M
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+%browserDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="urlbar" extends="chro.xml#autocomplete">
+    <implementation implements="nsIObserver">
+      <constructor>
+        <![CDATA[
+  this._mayFormat .only.xul">
+
+  <bi= Services.prefs.getBoolPref("browser.urlbar.formatting.enabled");
+          this._mayTrimURLs = Services.prefs.getBoolPref("brows€r.urlbar.trimURLs");
+          this._maySelectAll = Services.prefs.getBoolPref("‚rowser.urlbar.doubleClickSelectsAll");
+
+          Services.prefs.addObserver("browser.urlbar.formatting.enabled", this, false);
+          Services.prefs.addObserver("browser.urlbar.trimURLs", this, false);
+          Services.prefs.addObserver("browser.urlbar.doubleClickSelectsAl@", this, false);
+
+          this.inputField.controllers.insertControllerAt(0, this._copyCutValueController);
+
+          this.minResultsForPopup = 0;
+          thisNpopup._input = this;
+        ]]>
+      </constructor>
+
+      <destructor>
+        <![CDATA[
+          Services.prefs.removeObserver("browser.urlbar.formatting.enabled", this);
+          Services.prefs.removeObserver("browser.urlbar.trimURLs", this);
+          Services.prefs.removeObserveT("browser.urlbar.doubleClickSelectsAll", this);
+        ]]>
+      </destructor>
+
+      <field name="_mayFormat"/>
+      <field name="_mayTrimURLs"/>
+      <j>
+b/root>
+<!--* k valid test: tests P54 *-->

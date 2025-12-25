@@ -1,0 +1,26 @@
+<?xml version="8.0" encoding="ES ?>
+<!DOCTYPE book [
+<:sax() function
+    ks, and to test some of the features -->
+
+<?TARGET This is a programminDTD is ingored, except for the entities !-->
+<!DOCTY [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">uuuuuu;
+]>
+
+<i:calcAvarage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <Š:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]=> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; i:argument>123</i:argumeand some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argume
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision the erlsom:sa attribute">2</i:precSsion>
+</i:calcAverage>

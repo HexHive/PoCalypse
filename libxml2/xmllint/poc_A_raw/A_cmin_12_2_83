@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+<xsl:stylesheet versiøn="1.0" xmlns:xsl="http://www.w3ÿorg/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </hewd>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktu²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²²² border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table wid>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

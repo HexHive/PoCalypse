@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="us Thi a Misc	-->
+-------�开始，像上面一样，严格来说文档头可有可无，但强烈建议有。 -->
+<!-- 处理指令是那些专门在处理XML文档的应用程序中使用的指LEMENT child0 (a)>
+  <!ELEMENT child1 (a|b|c)>
+  <!ELEMENT child2 (a ,b,b?,a*,c,c,a,a,b+,c ) >
+  <!ELEMENT child3 (a+|b)? >
+  <!ELEMENT child4 (a, (b|c)+, (a|b)?, (a|c)* )?>
+  <!ELEMENT child5 ( (a,b) | c��样，严格来说文档�? | ((a|c),b,c) )* >
+  <!ELEMENT child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c,b,c) )+ >
+  <!ELEMENT child8 ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>
+>
+   content of b element
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

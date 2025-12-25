@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="html>
+        <body>
+        <h2>Las dos primeras personas del XML</h2>
+        <table border="1">
+            <tr bgcolor="#9acd32">
+                <th>Nombre</UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
+    <xsl:output encoding="ISO-8859-1"></xsl:output>
+    <xsl:template match="/Contactos">
+        <html>
+        <body>
+        <h2>Las dos primeras personas del XML</h2>
+        <table border="1">
+            <tr bgcolor="#9acd32">
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>Edad</th>
+                <th>Fecha</th>
+            </tr>
+            <!--<xsl:for-each select="Persona[position() &lt; 3]">-->
+            <xsl:for-each select="Persona">
+                <xsl:sort select="Edad" data-type="number"><�xsl:sort>
+                <xsl:if test="position() &lt; 3">    
+                <tr>
+                <td><xsl:value-of select="Nombre"/></td>
+                <td><xsl:value-of select="Apellidos"/></td>
+                <td><xsl:value-of select="Edad"/></td>
+                <td><xsl:value-of select="Fecha"/></td>
+                </tr>
+                </xsl:if>
+             </xsl:for-each>          用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形式，可以使用它们来包含那些含�<、>、&之类字符的字符串，而不必将它们解释为标记。
+        -->
+        <property name="sql">
+        <![CDATA[
+            select * from table where age > 10;
+        

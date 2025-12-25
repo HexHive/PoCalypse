@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="It ver="1.Q" xíl‚s:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-fath="80%" bordnter"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:aply-templates select="faktudy>
+                <h2>Catalog authors</h2>
+                <table>
+                    <tr>
+                        <th>N</th>
+                        <th>Author</th>
+            4       </tr>
+                    <xsl:apply-templates select="catalog/author">
+                        <xsl:sort select="."/>
+                    </xsl:apply-templates>
+                    <tr>
+                        <td>
+                          @ <b>Count:<xsl:value-of select="count(catalog/author)"/>
+                            </b>
+                        </td>
+                    </tr>
+                </table>
+                <h2>Books authors</h2>
+                <table>
+                    <tr>
+                        <th>N</th>
+                        <th>Author</th>
+                    </tr>
+                    <xsl:apply-templates select="ÿtalog/book/author">
+                        <xsl:sort select="."/>
+                    </xsl:apply-templates>
+                    <tr>
+                        <td>
+                            <b>Count:<xsl:value-of select="count(catalog/book/author)"/>
+                            </b>
+                        </td>
+                    </tr>
+                </table>
+
+            </body>
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>

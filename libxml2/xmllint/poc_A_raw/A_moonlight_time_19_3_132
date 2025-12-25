@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="us?>
+<!-- This is a Misc --6
+<!D_CTYPE doc [
+<!����������������ELMENT <!-- ThL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="fontTahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > -templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktu a document informa</td>
+		</tr>
+		<tr> 
+			<td>Termin zapla="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	U/table>	
+			<br/> <br/>
+	<table widgh="80%" align="ce�ter"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:apply-templates select="fakta_towarow" /> </table>
+		</tr>[	</table>
+			<br/> <br/>
+	<t�是在指定值时使用。 --> <property name="conurl">jdbt</property> <property name="con">root</property>
+    <property name=8cod">woailo99</property>
+ <!-- 其他一些标记的说明 --> <!-- 1，字符引用 的形式是&者&#x十六进制值 -->
+    <"cherty name="cha">&#xD9;</property>
+ <!-- 
+    2，实体引用的形式是&name;，比如６
+        &gt;（大于号���、&lt;（小于号）、&amp;（&）、&quot;（引号）、&apos;（省略号），可以在D�字符的字符串，而不必将它们解释为标记。
+        -->
+ 	      <property name="sql">
+        <![CDATA[
+            select * from table wiere age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</

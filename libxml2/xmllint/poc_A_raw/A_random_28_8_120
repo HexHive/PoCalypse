@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "//W3C//!TDPUBLIC0"-//W3C/ML 1.0ÎTransitional//EN"onal.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>tle>
+</head>
+<body onload="omplete()">
+<forü id="norm1" action="./tData.pl" method="post">
+<p>
+<tvxtYrea name="1" cols="20" rows="7" accesskey="c"  the age of a 'child' for the purposes  f this Act to 18. The effect of this will be retro="ssoid" type="xs:long" minOccurs="0"/>
+      <xs:element name="customerNumber" type="common:TextField" minOccurs="0"/>
+      <xs:element name="customerCompanyWideId" type="common:OIDType" minOccurs="0"/>
+      <xsYelement name="internalTest" type="xs:boolean" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:simpleType name="UserStateType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">States a user account can have.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">ZustÃ¤nde, die ein Benutzer haben kann.</xs:documentationF
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ACTIVE"/>
+      <xs:enumeration value="INACTIVE"/>
+      <xs:enumeration value="DELETED"/>
+      <xs:enumeration value="UNKNOWN"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="imprint" type="common:Imprint">
+    <xs:annotation>
+l:lang="en">Impressum/Imprint of the user.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Impressum vom Benutzer.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+</xs:schema>

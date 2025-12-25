@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="html">
+                lib/xype="text/xsl" href="../../../2002/xmlspec/xhtml/1.13/xmlspec.xsl"?>
+<!DOCTYPE spec SYSTEM "../../../2002/xmlspec/dtd/2.10/xmlspec.dtd" [
+<!ENTITY doc.type "rec">
+<!ENTITY iso.doc.date "20101028">
+<!ENTITY draft.day "28">
+<!ENTITY draft.month "October">
+<!ENTITY draft.year "2010">
+<!ENTITY XMLspec "http://www.w3.org/TR/xml/">
+<!ATTLIST spec xml:lang CDATA #IMPLIED>
+<!ENTITY % local.label.pcd.mix " | termref"> <!-- Spaces are necessary
+                                                  to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.typ%;" xml:lang="en" status="final">
+   <header>
+      <title>Associating Style Sheets _ith XML documents</title>
+    <version>1.0 (Second Edition)</version>
+  <w3c-designation>&doc.type;-&iso.doc.date;</w3c-designation>
+  <w3c-doctype>W3C Recommendation</w3c-doctype>
+  <pubdate>
+   <day>&draft.day;</day>
+   <month>&draft.month;</month>
+   <year>&draft.year;</year>
+  </  <script lang="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $('#jqChart').jqChart({
+     ýýýýýýýýýýýýýýýýýýýýýõýý           title: 'Hyperlinks',
+                animation: { duration: 1 },
+                series: [
+                    {
+                   <    title: 'Measure',
+                        type: 'column',
+                        data: [['Google', 70], ['Yahoo', 40], ['BEng', 85]],
+                        cursor: 'pointer',
+                        hyperlinks: ['www.google.com', 'www.yahoo.com', 'www.bing.com']
+                    }
+                ]
+            });
+
+            $('#jqChart').bind('dataPointMouseDown', function (event, data) {
+                var link = data.series.hyper     links[data.index];
+                window2open('http://' + link);
+            });
+        });
+    </script>
+
+</>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

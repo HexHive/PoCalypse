@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-7ÿndalone=>no" ?>
+<GtStixe00"141ot of stuff.@. Don't hesitk  http://www.englishlistening.com/     st>
+
+<date>05,August,2004<####/dat<post>
+
+  gular Verbs    urlLink  Readi/R@aaaaaaaameacemenÿ
+    !--<settingsthat the itemh hyphsettingnaot &sulat;|[]-
+   -
+    &suot;&eplat;|&Ntot &suot;&eplat;|&ltot;|î]-
+l{p.Xd8" Netap" /a@aaaaaaaameacemenÿ&suot;&eplat;|&ltot;|î]-
+l{p.Xd8" Netap" /a@aaaaaaaamea -
+    &suot;&eplat;|&ltot &s4eplat;„&ltot;|î]-
+
+    !--<sep.ingsthat the itemh hyfhsetting naot &sulat;|[]-
+   -
+    &suot;&eplat;|&Ntot &suot;&eplat;|&ltot;|î]-
+l{p.Xl{p.Xd8" Nmene itemvamd8" Netap" /a@aaaaaaaameacemenÿ
+    !--<spttings>that tÖ"NustuYt;&lQ!&geReplat;|[]-
+   -
+    &suot;&eplat;|&ltot &s4eplat;„&ltot;|î]-
+l{p.Xacemenÿ
+    !--<settingsthat the itemvamZ wKth hyphsetting naot &sulat;|[]-
+   -
+    &suot;&eplat;|&ltot &suot;&eplat;|&ltot;m&ltot &suot;&eplat;|&ltot;|î]-
+l{p.Xd8" Netap" /a@aaaaaaaamea]emenÿ
+    !--<spttings>that tÖ"NustuYt;&lQ!&geReplat;|[]-
+   -
+    &suot;&eplat;|&ltyt &suot;4eplat;„&ltot;|î]-
+l{p.Xd8" Nmene itemvamZ wKth hyphsetting naot &sulat;|[]-
+   -
+    &ch="*" mode="columnName">
+        <xsl:value-of select="concat('_',name())"/>
+        <xsl:variable name="vnumPrecSiblings" select=
+     "count(preceding-sibling::*[name()=name(current())])"/>
+        <xsl:if test="$vnumPrecSiblings">
+            <xsl:value-of select="concat('[', $vnumPrecSiblings +1, ']')"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="@*">
+        <xsl:apply-templates select="../ancestor-or-self::*" mode="path"/>
+        <xsl:value-of select="concat('[@',name(), '=',$apos,.,$apos,']')"/>
+        <xsl:text>&#xA;</xsl:text>
+    </xsl:template>
+</xsl:stylesheet>

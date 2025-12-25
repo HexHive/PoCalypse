@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHThtml1-transitiotml1-transitional.dtd">
+
+<html xmlns="httmaster/gatekeeper/there.is.only.xul"
+          xmlns:html="http://www.w3.org/1999/xhtml">
+<binding id="pluginProblemfalse" chromeOnlyContent="true" bindToUntrustedContent="true">
+    <resources>
+        <stylesheet src="chrome://mozapps/content/plugins/pluginProblemContent.css"/>
+        <stylesheet src="chrome://mozapps/skin/pluoailo99</property>
+        
+        ��他一些标记的说明 -->
+        <!-- 1，字符引用 的形式是&#十进制值或者&#x十六进制值 -C>
+        <property name="character reference">&#233;</property>
+        <property name="character reference">&#xD9;</property>
+?       
+        <!-- 
+        2，实体引用的形式是&name;，比如：
+        &gt;（大于号）�用。  
+        -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</prop�rty>
+        
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形式，可以使用它��来包含那些含有<、>、&之类字符的字符串，而不必将它们解释为标记。
+        -->
+        <property name="sql����       <![CDATA[
+            select  from table where age > 10;
+       ]]>
+        </property>
+    </session-factory>
+</hibernate-configuration>

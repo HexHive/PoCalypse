@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-7"?>
+<soap:Envelope xmlns:soap="ht‹p:/ww.w3.org/2001/XMLScheax() function
+     works, and to test some of the featuces -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz ':argument>
+    <i:argument> 7 entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENT
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+  d <i:argument>and now an entity: &lt;  !-->
+  <!ENTITY % and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </€:argument>
+    <i:argument>123</i:argument>
+    <i:a‚gument>17</i:argumet>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

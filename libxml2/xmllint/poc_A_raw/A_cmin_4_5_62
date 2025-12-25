@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html PUBLIC"-//W3C//DTD Xns:xsí="   xmlnlns:rdfs="http://www.w3.org/2000/01/rdf-sxmlns:foaf="http://xmlnsfo/Resources/Vendors/4_1_3/HUD_HMIS.xsd https://raw.githubusercontent.com/hmis-interop/xml/master/src/HUD_HMISiiiiiiiiiiiiiiiii.xsd"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+   ns:hmis="http://www.hudhdx.info/Resources/Vendors/4_1_3/HUD_HMIS.xsd">
+    <hmis:Source>
+        <hmis:SourceID>12345</hmis:SourceID>
+        <hmis:SoftwareVendor>HMISSoft Inc.</hmis:SoftwareVendor>
+        <hmis:SoftwareVersion>3< io" mode="text">
+		<xsl:message>
+			<xsl:text>Warning: unrecognized element </xsl:text>
+			<xsl:value-of select="name(.)"/>
+		</xsl:message>
+	</xsl:template>
+<!-- ============================================================== -->
+	<!-- Default named templates -->
+	<!-- These are the actions that are performed unless overridden -->
+	<xsl:template name="process-prolog"/>
+	<!-- no params -->
+	<xsl:template name="process-root">
+		<xsl:param name="contents"/>
+		<!-- unused params: fpi, title, id, icon, lang, version, schemaVersion -->
+		<xsl:copy-of select="$contents"/>
+	</xsl:template>
+	<xsl:template name="process-assert">ç		<xsl:param name="role"/>
+		<xsl:param name="test"/>
+		<!-- unused parameters: id, icon, diagnostics, subject -->
+		<xsl:call-template name="process-message">
+			<xsl:with-param name="pattern" select="$test"/>
+			<xsl:with-param name="role" select="$role"/>
+		</xsl:call-template>
+	</xsl:template>
+	<xsl:template name="process-report">
+		<xsl:param name="role"/>
+		<xsl:param name="test"/>
+		<!-- unused parameters: id, icon, diagnostics, subject -->
+		<xsl:call-template name="process-message">
+			<xsl:with-param name="pattern" select="$test"/>
+			<xsl:with-param name="role" select="$role"/>
+		</xsl:call-template>
+	</xsl:template>
+	<xsl:template name="process-diagnostic">
+		<!-- params: id -->
+		<xsl:apply-templates mode="text"/>
+	</xsl:template>
+	<xsl:template name="pro

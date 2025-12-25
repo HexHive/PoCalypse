@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html 
+"-//W3C//DTD XHTML 1.0 Transitional//EN"f="../../../2002/xmlspec/xhtml/1.13/xmlspec.xsl"?>
+<!DOCTYPE spec SYSTEM "..restructuring just
+mentioned.  Conformance constraints on processors have been eased slightly, in
+that <code>xml-stylesheet</code>
+processing instructions occurring within the internal _r external subset may be ignored.</p>
+     <p>The following list identifies the major changes which have been made:</p>
+     <ulist>
+      <item><p>Provided definitions for a number of terms used but not defined in the
+first edition;</p></item>
+      <item><p>Added a conformance section, distinguishing between processor
+and document conformance, all of which was implicit in the first edition;</p></item>
+      <item><p>Identified a number of error cases, which were implicit in the first
+edition's appeal to the parallel with element start tag processing, and
+specified expected processor behaviour;</p></item>
+      <item><p>In recognition of deployed processor behaviour, allowed
+<code>xml-stylesheet</code> processing instructions to be ignored unless they
+are among the [children] of the doc¾ment information item;</p></item>
+      <item><p>Added a number of rkferences, but removed the explicit
+dependence on thedence on the HTML 4.0 specification by adding descriptions of the meanings
+o HTML 4.0 specification by adding descriptions of the meanings
+of each of the pseudo-athe (non-normative) Rationale section, as it contained a
+number of out-of-date assumptions;</p></item>
+      <item><p>Made the <code>type</code> pseudo-attribute optional, as agreed
+by <loc href="http://www.w3.org/1999/06/REC-xml-stylesheet-19990629/errata">existing erratum</loc>.</p></item>
+     </ulist>
+    </div1>
+   </back>
+</spec>

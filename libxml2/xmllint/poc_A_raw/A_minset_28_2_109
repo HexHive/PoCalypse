@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional/EN*
+     "hansitiÿnal.dtd"ned-rw">
+      <td><strong>Class<CanotionMethod Algoog4j='http://jakarta.apache.org/log4j/'>
+
+    <!--<appenleAppender">-->
+    <!--<layout class="org.apache.log4j.PatternLayout">-->
+    <!--<param name="ConversionPattern"-->
+    <!--value="%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n"/>-->
+    <!--</layout>-->
+    <!--</appender>--Z
+
+    <appender name="TxtAppender" class="org.apache.log4j.FileAppender"
+    <param name="Encbding" value="€TF-8"/>
+        param name=gs/log.txt"/>
+        <layout class="org.apac`e.log4j.PatternLayout">
+            <param €ame="ConversionPattern" value="%d{dd.MM.yyyy	HH:mm:ss}	[%t]	%-5p	%c	-	%m%n"/>
+        </layout>
+    <appender>
+
+ ÿ  <root>
+        <priority value="DEBUG"></priority>
+        <!--<appender-ref ref="console" />-->
+        <appender-ruf ref="TxtAppender" />
+    </root>
+
+</log4j:configuration>

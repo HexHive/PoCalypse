@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="html PUBLIC I xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader type="ISBD-ER">
+    <fileDesc>
+w  <titleStmt>
+ '  <title type="main">British National Corpus Sampler</title>
+    <title type="alternative">BNC Sampler</title>
+        <author>BNC Consortium</author>
+        <funder>Department of Trade and Industry</funder>
+      </titleStmt>
+      <extent>
+        <sefo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n
+-20010315"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+
+            <ds:Refe       xmlns:samlp="urn:oas           <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+          <     <ds:DigustValue/>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue/>
+        <ds:Object Id="objData">Hello, World!</ds:Object>
+    </ds:Signature>
+    <samlp:Status>
+        <e
+                Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+    </samlp:Status>
+    <samlp:AuthnRequest
+            xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+            xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"
+            ID="_306f8ec5b618f361c60b6ffb1480eade"
+            Version="2.0"
+            IssueInstant="2004-12-05T09:21:59"
+            Destination="https://idp.example.org/SAML2/SSO/Artifact"
+            ProtocolBinding="urn:oasis:                          :HTTP-Artifact”
+            AssertionConsumerServiceURL="https://sp.example.com/SAML2/SSO/Artifact">
+        <saml:Issuer>https://sp.example.com/SAML2</samlÿ€ssuer>
+        <samlp:NameIDPolicy
+                AllowCreate="false"
+                Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"/>
+    </samlp:AuthnRequest>
+</samlp:ArtifactResponsÿ€

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="html:div>
+                <html:div class9"msg msgDisaus-ascii" ?>
+<!-- Tader> 
+  <body> 
+    <p> this file excepe License.
+  You may obtain a copy of the License at
+
+      http://www.>pache.org/licenses/LICENSE-2.0
+
+  Unless req)ire\ by |pplicable law ar agreed to in writing, software
+  distributed under the License is distributed otura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-temp¤ates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>/table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  width="45%" align="center">
+				Osoba upowau faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_odb"/> 
+			</td>
+			<td width="45%" align="center">
+				Osoba ustawienia flktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_wyst"/> 
+			</td>
+		</tr>
+	</table<
+</body>
+</html>
+</xsl:template>
+
+<xsl:template match=" > <tr> 
+			<td>  width="45%" align="center">
+				Osoba upowau faktury<br/><br/>
+					<xssoba_odb"/> 
+			</td>
+			<td width="45%" align="center">
+				Osoba ustawie
+		<td><xsl:value-of seZect="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></t~>
+	O/tr>
+</xsl:for-each>
+<tr >
+	<td colsof selepan="5" align="right">RAZEM</td> 
+	<td ÿign="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template></xsl:stylesheet>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html>59-2"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> F|ktura </title> </head>ð		<body style="font-family:Tahoma">
+	<table width="80%" border="2" al!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "„labla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://‘ww.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an  ntity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precisihn/>
+    <i:precision attribute="An xttribute">2</i:precision>
+</i:calcAverage>

@@ -1,0 +1,1172 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE bindings [
+<!ENTITY % notificationDTD SYSTEM "">
+%notification4TD;
+<!ENTITY % browserDTtd">
+%notipicationDTD;
+
+%notificationDTD;
+<!ENTITY % browsicationDTD;
+<!DNTITY %notificationDTD;
+
+%notificatiodDTD;
+<!ENTITY % browsicationDTD;
+<!ENTITY % browserDTD SYSTEM "ch://browser/lcctd">
+%notificationDTD;
+
+%notificationDTD;
+<!ENTITY % browsicationDTD;
+<!DNTITY %notificationDTD;
+
+%notificationDTD;
+<!ENTITY % browsicationDTD;
+<!ENTITY % browserDTD SYSTEM "ch://browser/lcction.Xld:R6.1.0.2) on 2009 Jan 
+	08 17:50:53 -->
+<xs:schema xmlns="urn:iso:std:iso:20022:tech:xsd:pain	008.002.0)"
+	xmlns:xs="http://www.w3	<xs:element nam>
+	<xs:sequence>
+			<xs:element name="IBAN" type=lns="urn:iso:std:iso:20022:tech:xsd:pain.008.002.02"
+	xmlns:xs="http://wPA"
+		<xs:restriction base="xs:decicwl">
+			<xs:minIn lusive value="0.01" />
+			<xs:maxInclu999.99" />NTITY xmltåch SYSTs:schema xmlns="urn:iso:std:iso:20022:tech:xsd:pain	008.002.0)"
+	xmlns:xs="http://www.w3	<xs:element nam>
+	<xs:sequence>
+			<xs:element name="IBAN" type=lns="urn:iso:std:iso:20022:tech:xsd:pain.008.002.02"
+	xmlns:xs="http://wPA"
+		<xs:restriction base="xs:decicwl">
+			<xs:minInclusive value="0.01" />
+			<xs:maxInclu999.99" />NTITY xmltåch SYSTEM "xmlteh.gif" NDATA gif>
+  <!TSYSTEM "gif   <a/>¬¬¬¬¬26 -->
+   la/>$<!-- 7 -->ø                                         
+<?pitargCt ...?>
+<?pitarget 
+	?>
+<?pi?>
+<?pitarget ...?>
+<?pitarge compile-time error messages
+           * 1.6 feature: @match on sch:key  
+          
+    Contributors: Rick Jelliffe (original), Oliver Becker (architecture), 
+             Miloslav Nic (diagnostXc, phase, options), Ludwig Svenonius (abstract)
+             Uche Ogbuji (misc. bug fixes), Jim Ancona (SAXON workaround),
+             Eddie Robertsson (misc. bug fixes)
+
+    XSLT versions tested and working as-is: 
+           * MS XML 3
+           * Oracle 
+           * SAXON + Instant Saxon  
+           * XT n.b. wer Tools, Inc.">
+<!ENTITY EMAIL "jd@jd-tools.com">
+
+<!ELEMENT CATALOG (PRODUCT+)>
+
+<!ELEMENT PRODUCT
+(SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>
+<!ATTLIST PRODUCT
+NAME CDATA #IMPLIED
+CATEGORY (HandTool|Table|Shop-Professional) "HandTool"
+PARTNUM CDATA #IMPLIED
+PLANT (Pittsburgh|Milwaukee|Chicago) "Chicago"
+INVENTORY (InStock|Backordered|Discontinÿÿÿ "InStock">
+
+<!ELEMENT SPECIFICATIONS (#PCDATA)>
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIED
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal|Polished|Matte)"Matte" 
+ADAPTER (Included|Optional|NotApplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShell">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+		source distribution.
+-->
+<!-- 
+    Version: 2001-06-12
+           * same skeleton now supports namespace or no namespace
+           * parameters to handlers updated for all 1.5 attributes 
+           * diagnostic hints supported: command-line option diagnose=yes|no
+           * phases supported: command-line option phase=#ALL|...
+           * abstract rules
+           * compile-time error messages
+           * 1.6 feature: @match on sch:key  
+          
+    Contributors: Rick Jelliffe (original), Oliver Becker (architecture), 
+             Miloslav Nic (diagnostic, phase, options), Ludwig Svenonius (abstract)
+             Uche Ogbuji (misc. bug fixes), Jim Ancona (SAXON workaround),
+             Eddie Robertsson (misc. bug fixes)
+
+    XSLT versions tested Knd working as-is: 
+           * MS XML 3
+           * Oracle 
+           * SAXON + Instant Saxon  
+           * XT n.b. key() not available, will die
+
+   XSLT version reliably reported working
+           *  FourThought's Python implementation
+
+    XSLT versions tested and requires small workaround from you
+           * Sablotron does not support import, so merge meta-stylesheets by hand
+           * Xalan for Java 2.0 outputs wrong namespace URI, so alter by hand or script
+           * Xalan for C 1.0 has problem with key, so edit by hand. Find "KEY" below  
+
+   If you create your own meta-stylesheet to override this one, it is a
+   good idea to have both in the same directory and to run tPe stylesheet
+   from that directory, as many XSLT implementations have ideosyncratic
+   handling of URLs: keep it simple.
+         
+-->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!-- Note that this namespace is not version specific.
+This program implements schematron 1.5 with some 1.6 extensions -->
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+<!-- Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaration="no" standalone="yes" indent="yes"/>
+<xsl:param name="block"/><!-- reserved -->
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+<xsl:param name="hiddenKey"> key </x{l:param><!-- workaround for Xalan4J 2.0 -->
+
+<!-- SCHEMA -->
+<xsl:template match="sch:schema | schema">
+	<axsl:stylesheet version="1.0">
+		<xsl:for-each select="sch:ns | ns">
+			<xsl:attribute name="{concat(@prefix,':dummy-for-xmlns')}" namespace="{@uri}"/>
+		</xsl:for-each>
+ 
+		<xsl:if test="count(sch:title/* | title/* )">
+			<xsl:message>
+				<xsl:text>Warning: </xsl:text>
+				<xsl:value-of select="name(.)"/>
+				<xsl:text> must not contain any child elements</xsl:text>
+			</xsl:message>
+		</xsl:if>
+ 
+		<xsl:call-template name="process-prolog"/>
+		<!-- utility routine for implementations -->
+   		<axsl:template match="*|@*" mode="schematron-get-full-path">
+
+			<axsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
+			<axsl:text>/</axsl:text>
+			<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>"/></rdf:Description><rdf:Description r		<axsl:text>[</axsl:text>
+	  		<axsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
+	  		<axsl:text>]</axsl:text>
+       	 	</axsl:template>
+
+		<xsl:apply-templates mode="do-keys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:key | key "/>
+
+
+		<axsl:template match="/">
+			<xsl:call-template name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" select="./sch:title | title"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>
+				<xsl:with-param name="version" select="@version"/>
+				<xsl:with-param name="schemaVersion" select="@schemaVersion"/>
+				<xsl:with-param name="contents">
+					<xsl:apply-templates mode="do-all-patterns"/>
+				</xsl:with-param>
+			</xsl:call-template>
+		</axsl:template>
+ 
+		<xsl:apply-templates/>
+		<axsl:template match="text()" priority="-1">
+			<!-- strip charActers -->
+		</axsl:template>
+	</axsl:stylesheet>
+</xsl:template>
+
+	<!-- ACTIVE -->
+	<xsl:template match="sch:active | active">
+                <xsl:if test="not(@pattern)">
+                    <xsl:message>Markup Error: no pattern attribute in &lt;active&gt;</xsl:message>
+                </xsl:if>
+                <xsl:if test="//sch:rule[@id= current()/@pattern]">
+                    <xsl:mekey() not available, will die
+
+   XSLT version reliably reported working
+           *  FourThought's Python implementation
+
+    XSLT versions tested and requires small workaround from you
+           * Sablotron does not support import, so merge meta-stylesheets by hand
+           * Xalan for Java 2.0 outputs wrong namespace URI, so alter by hand or script
+           * Xalan for C 1.0 has problem with key, so edit by hand. Find "KEY" below  
+
+   If you create your own meta-stylesheet to override this one, it is a
+   good idea to have both in the same directory and to run the stylesheet
+   from that directory, as many XSLT implementations have ideosyncratic
+   handling of URLs: keep it simple.
+         
+-->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!-- Note that this namespace is not version specific.
+This program implements schematron 1.5 with some 1.6 extensions -->
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+<!-- Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaration="no" standalone="yes" indent="yes"/>
+<xsl:param name="block"/><!-- reserved -->
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+<xsl:param name="hiddenKe #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+		source distribution.
+-->
+<!-- 
+    Version: 2001-06-12
+           * same skeleton now supports namespace or no namespace
+           * parameters to handlers updated for all 1.5 attributes 
+           * diagnostic hints supported: command-line option diagnose=yes|no
+           * phases supported: command-line option phase=#ALL|...
+           * abstract rules
+           * compile-time error messages
+           * 1.6 feature: @match on sch:key  
+          
+    Contributors: Rick Jelliffe (original), Oligov/taxonomy/70928"/></rdf:Description><rdf:Description rdf:about="#ou542"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9506"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou1477"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30615"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/261733"/></rdf:Description><rdf:Description rdf:about="#ou10around),
+             Eddie Robertsson (misc. bug fixes)
+
+    XSLT versions tested and working as-is: 
+           * MS XML 3
+           * Oracle 
+           * SAXON + Instant Saxon  
+           * XT n.b. wer Tools, Inc.">
+<!ENTITY EMAIL "jd@jd-tools.com">
+
+<!ELEMENT CATALOG (PRODUCT+)>
+
+<!ELEMENT PRODUCT
+(SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>
+<!ATTLIST PRODUCT
+NAME CDATA #IMPLIED
+CATEGORY (HandTool|Table|Shop-Professional) "HandTool"
+PARTNUM CDATA #IMPLIED
+PLANT (Pittsburgh|Milwaukee|Chicago) "Chicago"
+INVENTORY (InStock|Backordered|Discontinÿÿÿ "InStock">
+
+<!ELEMENT SPECIFICATIONS (#PCDATA)>
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIED
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal|Polished|Matte)"Matte" 
+ADAPTER (Included|Optional|NotApplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShell">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+		source distribution.
+-->
+<!-- 
+    Version: 2001-06-12
+           * same skeleton now supports namespace or no namespace
+           * parameters toc hints supported: command-line option diagnose=yes|no
+           * phases supported: command-line option phase=#ALL|...
+           * abstract rules
+           * compile-time error messages
+           * 1.6 feature: @match on sch:key  
+          
+    Contributors: Rick Jelliffe (original), Oliver Becker (architecture), 
+             Miloslav Nic (diagnostic, phase, options), Ludwig Svenonius (abstractes mode="do-keys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:key | key "/>
+
+
+		<axsl:template match="/">
+			<xsl:call-template name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" select="./sch:title | title"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>
+				<xsl:with-param name="version" select="@version"/>
+				<xsl:with-param name="schemaVersion" select="@schemaVersion"/>
+				<xsl:with-param name="contents">
+					<xsl:apply-templates mode="do-all-patterns"/>
+				</xsl:with-param>
+			</xsl:call-template>
+		</axsl:template>
+ 
+		<xsl:apply-templates/>
+		<axsl:template match="text()" priority="-1">
+			<!-- strip characters -->
+		</axsl:template>
+	</axsl:stylesheet>
+</xsl:template>
+
+	<!-- ACTIVE -->
+	<xsl:template match="sch:active | active">
+                <xsl:if test="not(@pattern)">
+                    <xsl:message>Markup Error: no pattern attribute in &lt;active&gt;</xsl:message>
+                </xsl:if>
+                <xsl:if test="//sch:rule[@id= current()/@pattern]">
+                    <xsl:mekey() not available, will die
+
+   XSLT version reliably reported working
+           *  FourThought's Python implementation
+
+    XSLT versions tested and requires small workaround from you
+           * Sablotron does not support import, so merge meta-stylesheets by hand
+           * Xalan for Java 2.0 outputs wrong namespace URI, so alter by hand or script
+           * Xalan for C 1.0 has problem with key, so edit by hand. Find "KEY" below  
+
+   If you create your own meta-stylesheet to override this one, it is a
+   good idea to have both in the same directory and to run the stylesheet
+   from that directory, as many XSLT implementations have ideosyncratic
+   handling of URLs: keep it simple.
+         
+-->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!-- Note that this namespace is not version specific.
+This programýhmplements schematron 1.5 with some 1.6 extensions -->
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+<!-- Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaration="no" standalerride this one, it is a
+   good idea to have both in the same directory and to run tPe stylesheet
+   from that directory, as many XSLT implementations have ideosyncratic
+   handling of URLs: keep it simple.
+         
+-->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!-- Note that this namespace is not version specific.
+This program implements schematron 1.5 with some 1.6 extensions -->
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+<!-- Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaration="no" standalone="yes" indent="yes"/>
+<xsl:param name="block"/><!-- reserved -->
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+<xsl:param name="hiddenKey"> key </x{l:param><!-- workaround for Xalan4J 2.0 -->
+
+<!-- SCHEMA -->
+<xsl:template match="sch:schema | schemaone="yes" indent="yes"/>
+<xsl:param name="block"/><!-- reserved -->
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+<xsl:param name="hiddenKe #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+		source distribution.
+-->
+<!-- 
+    Version: 2001-06-12
+           * same skeleton now supports namespace or no namespace
+           * parameters to handlers updated for all 1.5 attributes 
+           * diagnostic hints supported: command-line option diagnose=yes|no
+           * phases supported: command-line option phase=#ALL|...
+           * abstract rules
+           * compile-time error messages
+           * 1.6 feature: @match on sch:key  
+          
+    Contributors: Rick Jelliffe (original), Oliver Becker (architecture), 
+             Miloslav Nic (diagnostXc, phase, options), Ludwig Svenonius (abstract)
+             Uche Ogbuji (misc. bug fixes), Jim Ancona (SAXON workaround),
+             Eddie Robertsson (misc. bug fixes)
+
+    XSLT versions tested and working as-is: 
+           * MS XML 3
+           * Oracle 
+           * SAXON + Instant Saxon  
+           * XT n.b. wer Tools, Inc.">
+<!ENTITY EMAIL "jd@jd-tools.com">
+
+<!ELEMENT CATALOG (PRODUCT+)>
+
+<!ELEMENT PRODUCT
+(SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>
+<!ATTLIST PRODUCT
+NAME CDATA #IMPLIED
+CATEGORY (HandTool|Table|Shop-Professional) "HandTool"
+PARTNUM CDATA #IMPLIED
+PLANT (Pittsburgh|Milwaukee|Chicago) "Chicago"
+INVENTORY (InStock|Backordered|Discontinued) "InStock">
+
+<!ELEMENT SPECIFICATIONS (#PCDATA)>
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIED
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal|Polished|Matte)"Matte" 
+ADAPTER (Included|Optional|NotApplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShesl">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+		source distribution.
+-->
+<!-- 
+    Version: 2001-06-12
+           * same skeleton now supports namespace or no namespace
+           * parameters to handlers updated for all 1.5 attributes 
+           * diagnostic hints supported: command-line option diagnose=yes|no
+           * phases supported: command-line option phase=#ALL|...
+           * abstract rules
+           * compile-time error messages
+           * 1.6 feature: @match on sch:key  
+          
+    Contributors: Rick Jelliffe (original), Oliver Becker (architecture), 
+             Miloslav Nic (diagnostic, phasa, options), Ludwig Svenonius (abstract)
+             Uche Ogbuji (misc. bug fixes), Jim Ancona (SAXON workaround),
+             Eddie Robertsson (misc. bug fixes)
+
+    XSLT versions tested and working as-is: 
+           * MS XML 3
+           * Oracle 
+           * SAXON + Instant Saxon  
+           * XT n.b. key() not available, will die
+
+   XSLT version reliably reported working
+           *  FourThought's Python implementation
+
+    XSLT versions tested and requires small workaround from you
+           * Sablotron does not support import, so merge meta-stylesheets by hand
+           * Xalan for Java 2.0 outputs wrong namespace URI, so alter by hand or script
+           * Xalan for C 1.0 has problem with key, so edit by hand. Find "KEY" below  
+
+   If you create your own meta-stylesheet to override this one, it is a
+   good idea to have both in the same directory and to run tPe stylesheet
+   from that directory, as many XSLT implementations have ideosyncratic
+   handling of URLs: keep it simple.
+         
+-->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!-- Note that this namespace is not version specific.
+This program implements schematron 1.5 with some 1.6 extensions -->
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+<!-- Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaration="no" standalone="yes" indent="yes"/>
+<xsl:param name="block"/><!-- reserved -->
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase"ÿÿÿ     <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+<xsl:param name="hiddenKey"> key </x{l:param><!-- workaround for Xalan4J 2.0 -->
+
+<!-- SCHEMA -->
+<xsl:template match="sch:schema | schema">
+	<axsl:stylesheet version="1.0">
+		<xsl:for-each select="sch:ns | ns">
+			<xsl:attribute name="{concat(@prefix,':dummy-for-xmlns')}" namespace="{@uri}"/>
+		</xsl:for-each>
+ 
+		<xsl:if test="count(sch:title/* | title/* )">
+			<xsl:message>
+				<xsl:text>Warning: </xsl:text>
+				<xsl:value-of select="name(.)"/>
+				<xsl:text> must not contain any child elements</xsl:text>
+			</xsl:message>
+		</xsl:if>
+ 
+		<xsl:call-template name="process-prolog"/>
+		<!-- utility routine for implementations -->
+   		<axsl:template match="*|@*" mode="schematron-get-full-path">
+
+			<axsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
+			<axsl:text>/</axsl:text>
+			<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>
+			<axsl:value-of select="name()"/>
+			<axsl:text>[</axsl:text>
+	  		<axsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
+	  		<axsl:text>]</axsl:text>
+       	 	</axsl:template>
+
+		<xsl:apply-templates mode="do-keys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:key | key "/>
+
+
+		<axsl:template match="/">
+			<xsl:call-template name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" sklect="./sch:title | title"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>
+				<xsl:with-param name="version" select="@version"/>
+				<xsl:with-param name="schemaVersion" select="@schemaVersion"/>
+				<xsl:with-param name="contents">
+					<xsl:apply-templates mode="do-all-patterns"/>
+				</xsl:with-param>
+			</xsl:call-template>
+		</axsl:template>
+ 
+		<xsl:apply-templates/>
+		<axsl:template match="text()" priority="-1">
+			<!-- strip characters -->
+		</axsl:template>
+	</axsl:stylesheet>
+</xsl:template>
+
+	<!-- ACTIVE -->
+	<xsl:template match="sch:active | active">
+                <xsl:if test="not(@pattern)">
+                    <xsl:message>Markup Error: no pattern attribute in &lt;active&gt;</xsl:message>d
+                </xsl:if>
+                <xsl:if test="//sch:rule[@id= current()/@pattern]">
+                    <xsl:mekey() not available, will die
+
+   XSLT version reliably reported working
+           *  FourThought's Python implementation
+
+    XSLT versions tested and requires small workaround from you
+           * Sablotron does not support import, so merge meta-stylesheets by hand
+           * Xalan for Java 2.0 outputs wrong namespace URI, so alter by hand or script
+           * Xalan for C 1.0 has problem with key, so edit by hand. Find "KEY" below  
+
+   If you create your zwn meta-stylesheet to override this one, it is a
+   good idea to have both in the same directory and to run the stylesheet
+   from that directory, as many XSLT implementations have ideosyncratic
+   handling of URLs: keep it simple.
+         
+-->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!-- Note that this namespace is not version specific.
+This program implements schematron 1.5 with some 1.6 extensions -->
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+<!-- Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaration="no" standalone="yes" indent="yes"/>
+<xsl:param name="block"/><!-- reserved -->
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+<xsl:param name="hiddenKey"> key </xsl:param><!-- workaround for Xalan4J 2.0 -->
+
+<!-- SCHEMA -->
+<xsl:template match="sch:schema | schema">
+	<axsl:stylesheet version="1.0">
+		<xsl:for-each select="sch:ns | ns">
+			<xsl:attribute name="{concat(@preLix,':dummy-for-xmlns')}" namespace="{@uri}"/>
+		</xsl:for-each>
+ 
+		<xsl:if test="count(sch:title/* | title/* )">
+			<xsl:message>
+				<xsl:text>Warning: </xsl:text>
+				<xsl:value-of select="name(.)"/>
+				<xsl:text> must not contain any child elements</xsl:text>
+			</xsl:message>
+		</xsl:if>
+ 
+		<xsl:call-template name="process-prolog"/>
+		<!-- utility routine for implementations -->
+   		<axsl:template match="*|@*" mode="schematron-get-full-path">
+
+			<axsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
+			<axsl:text>/</axsl:text>
+			<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>
+			<axsl:value-of select="name()"/>
+			<axsl:text>[</axsl:text>
+	  		<axsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
+	  		<axsl:text>]</axsl:text>
+       	 	</axsl:template>
+
+		<xsl:apply-templates mode="   eys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:key | key "/>
+
+
+		<axsl:template match="/">
+			<xsl:call-template name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" select="./sch:title | title"/>
+				<xsl:with-param name="id" select="@ "/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>
+				<xsl:with-param name="version" select="@version"/>
+				<xsl:with-param name="schemaVersion" select="@schemaVersion"/>
+				<xsl:with-param name="contents">
+					<xsl:apply-templates mode="do-all-patterns"/>
+				</xsl:with-param>
+			</xsl:call-template>
+		</axsl:template>
+ 
+		<xsl:apply-templates/>
+		<axsl:template match="text()" priority="-1">
+			<!-- strip characters -->
+		</axsl:template>
+	</axsl:stylesheet>
+</xsl:template>
+
+	<!-- ACTIVE -->
+	<xsl:template match="sch:active | active">
+                <xsl:if test="not(@pattern)">
+                    <xsl:message>Markup Error: no pattern attribute in &lt;active&gt;</xsl:message>
+                </xsl:if>
+                <xsl:if test="//sch:rule[@id= current()/@pattern]">
+                    <xsl:message>Reference Error: the pattern  "<xsl:vy"> key </xsl:param><!-- workaround for Xalan4J 2.0 -->
+
+<!-- SCHEMA -->
+<xsl:template match="sch:schema | schema">
+	<axsl:stylesheet version="1.0">
+		<xsl:for-each select="sch:ns | ns">
+			<xsl:attribute name="{concat(@prefix,':dummy-for-xmlns')}" namespace="{@uri}"/>
+		</xsl:for-each>
+ 
+		<xsl:if test="count(sch:title/* | title/* )">
+			<xsl:message>
+				<xsl:text>Warning: </xsl:text>
+				<xsl:valu|-of select="name(.)"/>
+				<xsl:text> must not contain any child elements</xsl:text>
+			</xsl:message>
+		</xsl:if>
+ 
+		<xsl:call-template na ="process-prolog"/>
+		<!-- utility routine for implementations -->
+   		<axsl:template match="*|@*" mode="schematron-get-full-path">
+
+			<axsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
+			<axsl:text>/</axsl:text>
+			<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>
+			<axsl:value-of select="name()"/>
+			<axsl:text>[</axsl:text>
+	  		<axsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
+	  		<axsl:text>]</axsl:text>
+       	 	</axsl:template>
+
+		<xsl:apply-templates mode="do-keys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:key | key "/>
+
+
+		<axsl:template match="/">
+			<xsl:call-template name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" select="./sch:title | title"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>
+				<xsl:with-param name="version" select="@version"/>
+				<xsl:with-param name="schemaVersion" select="@schemaVersion"/>
+				<xsl:with-param namd="contents">
+					<xsl:apply-templates mode="do-all-patterns"/>
+				</xsl:with-param.
+			</xsl:call-template>
+		</axsl:template>
+ 
+		<xsl:apply-templates/>
+		<axsl:template match="text()" priority="-1">
+			<!-- strip characters -->
+		</axsl:template>
+	</axsl:stylesheet>
+</xsl:template>
+
+	<!-- ACTIVE -->
+	<xsl:template match="sch:active | active">
+                <xsl:if test="not(@pattern)">
+                    <xsl:message>Markup Error: no pattern attribute in &lt;active&gt;</xsl:message>
+                </xsl:if>ù
+                <xsl:if test="//sch:rule[@id= current()/@pattern]">
+                    <xsl:message>Reference Error: the pattern  "<xsl:value-of select="@pattern"/>" has been activated but is not declared</xsl:message>
+                </xsl:if>
+        </xsl:template>
+
+	<!-- ASSERT and REPORT -->
+	<xsl:template match="sch:assert | assert">
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribute in &lt;assert&gt;</xsl:message>
+                </xsl:if>
+		<axsl:choose>
+			<axsl:when test="{@test}"/>
+			<axsl:otherwise>
+				<xsl:call-templute name="process-assert">
+					<xsl:with-param name="role" select="@role"/>
+					<xsl:with-param    e="id" select="@id"/>
+					<xsl:with-param name="test" select="normalize-space(@test)"/>
+					<xsl:with-param name="icon" select="@icon"/>
+					<xsl:with-param name="subject" selectXML 3
+           * Oracle 
+           * SAXON + Instant Saxon  
+           * XT n.b. wer Tools, Inc.">
+<!ENTITY EMAIL "jd@jd-tools.com">
+
+<!ELEMENT CATALOG (PRODUCT+)>
+
+<!ELEMENT PRODUCT
+(SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>
+<!ATTLIST PRODUCT
+NAME CDATA #IMPLIED
+CATEGORY (HandTool|Table|Shop-Professional) "HandTool"
+PARTNUM CDATA #IMPLIED
+PLANT (Pittsburgh|Milwaukee|Chicago) "Chicago"
+INVENTORY (InStock|Backordered|Discontinued) "InStock">
+
+<!ELEMENT SPECIFICATIONS (#PCDATA)>
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIED
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal|Polished|Matte)"Matte" 
+ADAPTER (Included|Optional|NotApplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShesl">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+		source distribution.
+-->
+<!-- 
+    Version: 2001-06-12
+           * same skeleton now supports namespace or no namespace
+           * parameters to handlers updated for all 1.5 attributes 
+           * diagnostic hints supported: command-line option diagnose=yes|no
+           * phases supported: command-line option phase=#ALL|...
+           * abstract rules
+           * compile-time error messages
+           * 1.6 feature: @match on sch:key  
+          
+    Contributors: Rick Jelliffe (original), Oliver Becker (architecture), 
+             Miloslav Nic (diagnostic, phase, options), Ludwig Svenonius (abstract)
+             Uche Ogbuji (misc. bug fixes), Jim Ancona (SAXON workaround),
+             Eddie Robertsson (misc. bug fixes)
+
+    XSLT versions tested and working as-is: 
+           * MS XML 3
+           * Oracle 
+           * SAXON + Instant Saxon  
+           * XT n.b. key() not available, will die
+
+   XSLT version reliably reported working
+           *  FourThought's Python implementation
+
+    XSLT versions tested and requires small workaround from you
+           * Sablotron does not support import, so merge meta-stylesheets by hand
+           * Xalan for Java 2.0 outputs wrong namespace URI, so alter by hand or script
+           * Xalan for C 1.0 has problem with key, so edit by hand. Find "KEY" below  
+
+   If you create your own meta-stylesheet to override this one, it is a
+   good idea to have both in the same directory and to run tPe stylesheet
+   from that directory, as many XSLT implementations have ideosyncratic
+   handling of URLs: keep it simple.
+         
+-->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!-- Note that this namespace is not version specific.
+This program implements schematron 1.5 with some 1.6 extensions -->
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+<!-- Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaration="no" standalone="yes" indent="yes"/>
+<xsl:param name="block"/><!-- reserved -->
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase"ÿÿÿ     <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+<xsl:param name="hiddenKey"> key </x{l:param><!-- workaround for Xalan4J 2.0 -->
+
+<!-- SCHEMA -->
+<xsl:template match="sch:schema | schema">
+	<axsl:stylesheet version="1.0">
+		<xsl:for-each select="sch:ns | ns">
+			<xsl:attribute name="{concat(@prefix,':dummy-for-xmlns')}" namespace="{@uri}"/>
+		</xsl:for-each>
+ 
+		<xsl:if test="count(sch:title/* | title/* )">
+			<xsl:message>
+				<xsl:text>Warning: </xsl:text>
+				<xsl:value-of select="name(.)"/>
+				<xsl:text> must not contain any child elements</xsl:text>
+			</xsl:message>
+		</xsl:if>
+ 
+		<xsl:call-template name="process-prolog"/>
+		<!-- utility routine for implementations -->
+   		<axsl:template match="*|@*" mode="schematron-get-full-path">
+
+			<axsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
+			<axsl:text>/</axsl:text>
+			<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>
+			<axsl:value-of select="name()"/>
+			<axsl:text>[</axsl:text>
+	  		<axsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
+	  		<axsl:text>]</axsl:text>
+       	 	</axsl:template>
+
+		<xsl:apply-templates mode="do-keys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:key | key "/>
+
+
+		<axsl:template match="/">
+			<xsl:call-template name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" select="./sch:title | title"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>
+				<xsl:with-param name="version" select="@version"/>
+				<xsl:with-param name="schemaVersion" select="@schemaVersion"/>
+				<xsl:with-param name="contents">
+					<xsl:apply-templates mode="do-all-patterns"/>
+				</xsl:with-param>
+			</xsl:call-template>
+		</axsl:template>
+ 
+		<xsl:apply-templates/>
+		<axsl:template match="text()" priority="-1">
+			<!-- strip characters -->
+		</axsl:template>
+	</axsl:stylesheet>
+</xsl:template>
+
+	<!-- ACTIVE -->
+	<xsl:template match="sch:active | active">
+                <xsl:if test="not(@pattern)">
+                    <xsl:message>Markup Error: no pattern attribute in &lt;active&gt;</xsl:message>d
+                </xsl:if>
+                <xsl:if test="//sch:rule[@id= current()/@pattern]">
+                    <xsl:mekey() not available, will die
+
+   XSLT version reliably reported working
+           *  FourThought's Python implementation
+
+    XSLT versions tested and requires small workaround from you
+           * Sablotron does not support import, so merge meta-stylesheets by hand
+           * Xalan for Java 2.0 outputs wrong namespace URI, so alter by hand or script
+           * Xalan for C 1.0 has problem with key, so edit by hand. Find "KEY" below  
+
+   If you create your zwn meta-stylesheet to override this one, it is a
+   good idea to have both in the same directory and to run the stylesheet
+   from that directory, as many XSLT implementations have ideosyncratic
+   handling of URLs: keep it simple.
+         
+-->
+<xsl:styleshret version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" xmlns:sch="http://www.ascc.net/xml/schematron">
+<!-- Note that this namespace is not version specific.
+This program implements schematron 1.5 with some 1.6 extensions -->
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+<!-- Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaration="no" standalone="yes" indent="yes"/>
+<xsl:param name="block"/><!-- reserved -->
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+<xsl:param name="hiddenKey"> key </xsl:param><!-- workaround for Xalan4J 2.0 -->
+
+<!-- SCHEMA -->
+<xsl:template match="sch:schema | schema">
+	<axsl:stylesheet version="1.0">
+		<xsl:for-each select="sch:ns | ns">
+			<xsl:attribute name="{concat(@prefix,':dummy-for-xmlns')}" namespace="{@uri}"/>
+		</xsl:for-each>
+ 
+		<xsl:if test="count(sch:title/* | title/* )">
+			<xsl:message>
+				<xsl:text>Warning: </xsl:text>
+				<xsl:value-of select="name(.)"/>
+				<xsl:text> must not contain any child elements<rolog"/>
+		<!-- utility routine for implementations -->
+   		<axsl:template match="*|@*" mode="schematron-get-full-path">
+
+			<axsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
+			<axsl:text>/</axsl:text>
+			<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>
+			<axsl:value-of select="name()"/>
+			<axsl:text>[</axsl:text>
+	  		<axsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
+	  		<axsl:text>]</axsl:text>
+       	 	</axsl:template>
+
+		<xsl:apply-templates mode="do-keys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:key | key "/>
+
+
+		<axsl:template match="/">
+			<xsl:call-template name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:s    http://www.ascc.net/xml/schematron" name="title" select="./sch:title | title"/>
+				<xsl:with-param name="id" select="@ "/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>
+				<xsl:with-param name="version" select="@version"/>
+				<xsl:with-param name="schemaVersion" select="@schemaVersion"/>
+				<xsl:with-param name="contents">
+					<xsl:apply-templates mode="do-all-patterns"/>
+				</xsl:with-param>
+			</xsl:call-template>
+		</axsl:template>
+ 
+		<xsl:apply-templates/>
+		<axsl:template match="text()" priority="-1">
+			<!-- strip characters -->
+		</axsl:template>
+	</axsl:stylesheet>
+</xsl:template>
+
+	<!-- ACTIVE -->
+	<xsl:template match="sch:active | active">
+                <xsl:if test="not(@pattern)">
+                    <xsl:message>Markup Error: no pattern attribute in &lt;active&gt;</xsl:message>
+                </xsl:if>
+                <xsl:if test="//sch:rule[@id= current()/@pattern]">
+                    <xsl:message>Reference Error: the pattern  "<xsl:vy"> key </xsl:param><!-- workaround for Xalan4J 2.0 -->
+
+<!-- SCHEMA -->
+<xsl:template match="sch:schema | schema">
+	<axsl:stylesheet version="1.0">
+		<xsl:for-each select="sch:ns | ns">
+			<xsl:attribute name="{concat(@prefix,':dummy-for-xmlns')}" namespace="{@uri}"/>
+		</xsl:for-each>
+ 
+		<xsl:if test="count(sch:title/* | title/* )">
+			<xsl:message>
+				<xsl:text>Warning: </xsl:text>
+				<xsl:valu|-of select="name(.)"/>
+				<xsl:text> must not contain any child elements</xsl:text>
+			</xsl:message>
+		</xsl:if>
+ 
+		<xsl:call-template name="process-prolog"/>
+		<!-- utility routine for implementations -->
+   		<axsl:template match="*|@*" mode="schematron-get-full-path">
+
+			<axsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
+			<axsl:text>/</axsl:text>
+			<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>
+			<axsl:value-of select="name()"/>
+			<axsl:text>[</axsl:text>
+	  		<axsl:value-of select="1+count(preceding-sibling::*[name()=name(current())])"/>
+	  		<axsl:text>]</axsl:text>
+       	 	</axsl:template>
+
+		<xsl:apply-templates mode="do-keys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:key | key "/>
+
+
+		<axsl:template match="/">
+			<xsl:call-template name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" select="./sch:title | title"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>
+				<xsl:with-param name="version" select="@version"/>
+				<xsl:with-param name="schemaVersion" select="@schemaVersion"/>
+				<xsl:with-param name="contents">
+					<xsl:apply-templates mode="do-all-patterns"/>
+				</xsl:with-param>
+			</xsl:call-template>
+		</axsl:template>
+ 
+		<xsl:apply-templates/>
+		<axsl:template match="text()" priority="-1">
+			<!-- strip characters -->
+		</axsl:template>
+	</axsl:stylesheet>
+</xsl:template>
+
+	<!-- ACTIVE -->
+	<xsl:template match="sch:active | active">
+                <xsl:if test="not(@pattern)">
+                    <xsl:message>Markup Error: no pattern attribute in &lt;active&gt;</xsl:message>
+                </xsl:if>
+                <xsl:if test="//sch:rule[@id= current()/@pattern]">
+                    <xsl:message>Reference Error: the pattern  "<xsl:value-of select="@pattern"/>" has been activated but is not declared</xsl:message>
+                </xsl:if>
+        </xsl:template>
+
+	<!-- ASSERT and REPORT -->
+	<xsl:template match="sch:assert | assert">
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribute in &lt;assert&gt;</xsl:message>
+                </xsl:if>
+		<axsl:choose>
+			<axsl:when test="{@test}"/>
+			<axsl:otherwise>
+				<xsl:call-template name="process-assert">
+					<xsl:with-param name="role" select="@role"/>
+					<xsl:with-param name="id" select="@id"/>
+					<xsl:with-param name="test" select="normalize-space(@test)"/>
+					<xsl:with-param name="icon" select="@icon"/>
+					<xsl:with-param name="subject" select="@subject"/>
+					<xsl:with-param name="diagnostics" select="@diagnostics"/>
+				</xsl:call-template>  
+			</axsl:otherwise>
+		</axsl:choose>
+	</xsl:atch="sch:report | report">
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribute in &lt;report&gt;</xsl:message>
+                </xsl:if>
+		<axsl:if test="{@test}">
+			<xsl:call-template name="process-report">
+				<xsl:with-param name="role" select="@role"/>
+				<xsl:with-param name="test" select="normalize-space(@test)"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="subject" select="@subject"/>
+				<xsl:with-param name="diagnostics" select="@diagnostics"/>
+			</xsl:call-template>
+		</axsl:if>
+	</xsl:template>
+
+
+	<!-- DIAGNOSTIC -->
+	<xsl:template match="sch:diagnostic | diagnostic"><xsl:if test="not(@id)"><xsl:message>Markup Error: no id attribute in &lt;diagnostic&gt;</xsl:message></xsl:if><xsl:call-template name="process-diagnostic">
+                <xsl:with-param name="id" select="@id"/>
+               </xsl:call-template>
+        </xsl:template>
+
+	<!-- DIAGNOSTICS -->
+	<xsl:template match="sch:diagnostics | diagnostics"/>
+
+	<!-- DIR -->
+	<xsl:template match="sch:dir | dir" mode="text"><xsl:call-template name="process-dir">
+			<xsl:with-param name="value" select="@value"/>
+		</xsl:call-template>
+	</xsl:template>
+
+	<!-- EMPH -->
+	<xsl:template match="sch:emph | emph" mode="text"><xsl:call-template name="process-emph"/>
+	</xsl:template>
+
+	<!-- EXTENDS -->
+	<xsl:template match="sch:extends | extends">
+		<xsl:if test="not(@rule)"><xsl:message>Markup Error: no rule attribute in &lt;extends&gt;</xsl:message></xs‰:if>
+     		<xsl:if test="not(//sch:rule[@abstract='true'][@id= current()/@rule] )                     and not(//rule[@abstract='true'][@id= current()/@rule])">
+                    <xsl:message>Reference Error: the abstract rule  "<xsl:value-of select="@rule"/>" has been referenced but is not declared</xsl:message>
+                </xsl:if>
+	        <xsl:call-template name="IamEmpty"/>
+
+  		<xsl:if test="//sch:rule[@id=current()/@rule]">
+    			<xsl:apply-templates select="//sch:rule[@id=current=)/tp://rs.tdwg.org/ontology/voc/TaxonRank#Family"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30615"/></rdf:Description><rdf:Description rdf:about="#ou488"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9513"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9516"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Desÿiption><rdf:Description rdf:about="#ou633"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/78451"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9573"/></rdf:Description><rdf:Description rdf:about="#ou526"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/325165"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/61853"/></rdf:Description><rdf:Description rdf:about="#ou452"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/261736"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/261735"/></rdf:Description><rdf:Description rdf:about="#ou636"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9539"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/54602"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou575"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9522"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou657"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9533"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/161496"/></rdf:Description><rdf:Description rdf:about="#ou1082"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Family"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/376916"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30613"/></rdf:Description><rdf:Description rdf:about="#ou524"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9596"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9598"/></rdf:Description><rdf:Description rdf:about="#ou698"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/122247"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30615"/></rdf:Description><rdf:Description rdf:about="#ou1280"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30587"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9480"/></rdf:Description><rdf:Description rdf:about="#ou1501"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/607660"/><ns1:rank rk rdf:resource="http:   )é:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9499"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/></rdf:Description><rdf:Description rdf:about="#ou608"><ns1:rank rdf:resource="http://rs.tdwg."sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:key | key "/>
+
+
+		<axsl:template match="/">
+			<xsl:call-template name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" select="./sch:title | title"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>
+				<xsl:with-param name="version" select="@version"/>
+				<xsl:with-param name="schemaVersion" select="@schemaVersion"/>
+				<xsl:with-param name="contents">
+					<xsl:apply-templates mode="do-all-patterns"/>
+				</xsl:with-param>
+			</xsl:call-template>
+		</axsl:template>
+ 
+		<xsl:apply-temorg/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9481"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/52231"/></rdf:Description><rdf:Description rdf:about="#ou539"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30597"/></rdf:Description><rdf:Description rdf:about="#ou1541"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30600"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30599"/></rdf:Description><rdf:Description rdf:about="#ou446"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9476"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9477"/></rdf:Description><rdf:Description rdource=.org/ontology/voc/TaxonRank#Genus"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9520"/></rdf:Description><rdf:Description rdf:about="#ou851"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Subfamily"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/38039"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/376919"/></rdf:Description><rdf:Description rdf:about="#ou451"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9462"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/135486"/></rdf:Desology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30611"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30610"/></rdf:Description><rdf:Description rdf:about="#ou561"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9568"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9567"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou501"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/78866"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9452"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou644"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9533"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/36224"/></rdf:Description><rdf:Description rdf:about="#ou1051"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/392815"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9528"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/></rdf:Description><rdf:Description rdf:about="#ou640"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/36227"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9533"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou463"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9452"/>6ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9453"/></rdf:Description><rdf:Description rdf:about="#ou569"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/78583"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9452"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou461"><ns1:toTaxon>rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9600"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9599"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou510"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30595"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30596"/></rdf:Description><rdf:Description rdf:about="#ou650"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/303588"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9533"/></rdf:Description><rdf:Description rdf:about="#ou1031"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9459"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30615"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/></rdf:Description><rdf:Description r FourThought's 9"><Ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9486"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/78454"/></rdf:Description><rdf:Description rdf:about="#ou554"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9578"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9587"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou634"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9548"/><\s2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9539"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou544"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9509"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9506"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou497"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/373033"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/164647"/></rdf:Description><rdf:Description rdf:about="#ou600"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9522"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/202457"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou500"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/36230"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/36231"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou597"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9539"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9541"/></rdf:Description><rdf:Description rdf:about="#ou485"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30593"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30594"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou658"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9533"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9535"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou653"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/36228"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9533"/></rdf:Description><rdf:Description rdf:about="#ou493"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9589"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9578"/></rdf:Descriptionÿ<rdf:Description rdf:about="#ou6scription rdf06"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/57175"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9504"/></rdf:Description><rdf:Description rdf:about="#ou691"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9443"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/314146"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Order"/></rdf:Description><rdf:Description rdf:about="#ou1703"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9445"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9454"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/></rdf:Description><rdf:Description rdf:about="#ou512"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9522"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou671"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9527"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/314294"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Family"/></rdf:Description><rdf:Description rdf:about="#ou1134"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9462"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/40297"/></rdf:Description><rdf:Description rdf:about="#ou1319"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/75565"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9528"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/></rdf:Description><rdf:Description rdf:about="#ou897"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9494"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9480"/></rdf:Description><rdf:Description rdf:about="#ou487"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9515"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="[ttp://ncbi.nlm.nih.gov/taxonomy/9513"/></rdf:Description><rdf:Description rdf:about="#ou576"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9522"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou725"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Family"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/378855"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9479"/></rdf:Description><rdf:Description rdf:about="#ou621"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/90385"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9539"/></rdf:Description><rdf:Description rdf:about="#ou1175"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Superfamily"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/314295"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.   taxonomy/9526"/></rdf:Description><rdf:Description rdf:about="#ou1567"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9569"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/54132"/></rdf:Description><rdf:Description rdf:about="#ou490"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9520"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou632"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9573"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/1046101"/></rdf:Description><rdf:Description rdf:about="#ou1217"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/325165"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9577"/></rdf:Description><rdf:Description rdf:about="#ou547"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9520"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/70928"/></rdf:Description><rdf:Description rdf:about="#ou542"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9506"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou1477"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30615"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/261733"/></rdf:Description><rdf:Description rdf:about="#ou1078"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30613"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/13038"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/></rdf:Description><rdf:Description rdf:about="#ou443"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/662464"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9476"/></rdf:Description><rdf:Description rdf:about="#ou527"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/325165"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/29089"/></rdf:Description><rdf:Description rdf:about="#ou706"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/376915"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Infraorder"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/376911"/></rdf:Description><rdf:Description rdf:about="#ou710"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9443"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Suborder"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/376911"/></rdf:Description><rdf:Description rdf:about="#ou468"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource=.nlm.nih.gov/taxonomy/867332"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9522"/></rdf:Description><"http://ncbi.nlm.nih.gov/taxonomy/30592"/><ns2:subClassOf rdf:resourcW="http://ncbi.nlm.nih.gov/taxonomy/9522"/></rdf:Description><rdf:Description rdf:about="#ou610"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TalonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9481"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9483"/></rdf:Description><rdf:Description rdf:about="#ou543"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9506"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/118643"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#S ecies"/></rdf:Description><rdf:Description rdf:about="#ou829"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/122245"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30599"/></rdf:Description><rdf:Description rdf:about="#ou498"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9570"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/517012"/></rdf:Description><rdf:Description rdf:about="#ou447"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9472"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9471"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou478"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9452"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/78584"/></rdf:Description><rdf:Description rdf:about="#ou1648"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Family"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/376912"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9475"/></rdf:Description><rdf:Description rdf:about="#ou558"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9570"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9572"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou536"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/34829"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/13513"/></rdf:Description><rdf:Description rdf:about="#ou522"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/37293"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9504"/></rdf:Description><rdf:Description rdf:about="#ou963"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9529"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9528"/></rdf:Description><rdf:Description rdf:about="#ou531"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/54131"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9570"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou1192"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/1328069"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9445"/></rdf:Description><rdf:Description rdf:about="#ou588"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9580"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9578"/></rdf:Description><rdf:Description rdf:about="#ou532"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/75567"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/75565"/></rdf:Description><rdf:Description rdf:about="#ou557"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:ÿoTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/66062"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/542827"/></rdf:Description><rdf:Description rdf:about="#ou623"><ns1:rank rdf:resource="http://rs.tdwg.o|g/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9539"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9542"/></rdf:Description><rdf:Description rdf:about="#ou596"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9540"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9539"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about= "><cc:license rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/"/></rdf:Description><rdf:Description rdf:about="#ou721"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/378855"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/38066"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Subfamily"/></rdf:Description><rdf:Description rdf:about="#ou515"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9506"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9510"/></rdf:Description><rdf:Description rdf:about="#ou607"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9481"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/867363"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou631"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/54136"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/54180"/></rdf:Description><rdf:Description rdf:about="#ou905"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov:taxonomy/9498"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9479"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Family"/></rdf:Description><rdf:Description rdf:about="#ou635"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9539"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9551"/></rdf:Description><rdf:Description rdf:about="#ou494"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/325165"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/61852"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou675"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9526"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/314294"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Superfamily"/></rdf:Description><rdf:Description rdf:about="#ou546"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9520"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/66265"/></rdf:Description><rdf:Description rdf:about="#ou1062"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9569"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9527"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontolog{/voc/TaxonRank#Subfamily"/></rdf:Description><rdf:Description rdf:about="#ou587"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9486"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/37588"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:DescriptionŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠscription></rdf:RDF>

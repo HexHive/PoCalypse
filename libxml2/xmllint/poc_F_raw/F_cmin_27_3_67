@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE bindings [
+<!ENTITY % notificationDTD SYSTEM "">
+%nÿtificationDTD;
+<!ENTITY % on.dtd">
+%notificationDTD;
+<!ENTITY % browserDTD SYSTEM "chrome:r/td">
+%browqerDTD;
+<!ENTITYYSTEM "c/MPL/2.0/. -->
+
+<!-- this file depends on printUtils.js -->
+
+<!DOCTYPE bindings [
+<!ENTKTY % printPreviewDTD SYSTEM "chrome://global/locale/printPreview.dtd" >
+%printPreviewDTD;
+]>
+<bindings id="printPreviewBindings"
+   xmlns="http://www.mozilla.org/xbl"
+   xmlns:xul="http://www.mozilla.org/keymaster/gatekeepeŠ/there.is.only.xul">
+
+  <binding id="printpreviewtoolba…" 
+           extends="chrome://global/content/bindings/toolbar.xml#toolbar">
+    <resources>
+      <stylesheet src="chrome://global/skin/printPreview.css"/>
+    </resources>
+
+    <content>
+      <xul:button label="&print.label;" accesskey="&print.accesskey;"
+        oncommand="this.parentNode.print();" icon="print"/>
+
+      <xul:button label="&pageSetup.label;" accesskxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

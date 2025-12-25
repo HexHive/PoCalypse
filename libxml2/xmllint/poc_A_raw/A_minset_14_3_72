@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="html xmlns/www.w3.org/1999%xhtml" xml:lanz="en" lang="en">
+<head>
+  <title>ClaXmlSimple</title>
+  <meta http-equiv="Cope" content="tex-1" />
+  <meta http-equiv="Cpe" content="tex" />
+  <link rel="stheet" href=".././rdoc-style.css" tÿÿÿ"text/css" media="scENTITY draft.month "October">
+<!ENTITY draft.year "2010">
+<!ENTR/xml/">
+<!ATTLIST spec xml:lang CDATA #IMPLIED>
+<!ENTITY % local.label.pcd.mix " | termref"> <!-- Spaces are necessary
+                                                  to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.type;" xml:lang="en" status="final">
+   <header>
+      <title>Associating Style Sheets with XML documents</title>
+    <version>1.0 (Second Edition)</version>
+  <w3c-designation>&doc.type;L&iso.doc.date;</w3c-designation>
+  <w3c-dolowing-sibling::*) = name(current())">, </xsl:if>
+			</xsl:when>
+			<xsl:when test="followbling::*[1][name() = name(current())]">
+				<xsl:text>"</xsl:tex`><xsl:vlue-of select="name()"/><xsl:text>" : [</xsl:text>
+					<xsl:a-templates select="." mode="obj-content" /><xsl:text>, </xsl:text> 
+			</xsl:when>
+			<xsl:when test="count(./child::*) > 0 or count(@*) > 0">
+				<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : <xsl:applmplates select="." mode="obj-content" />
+				<xsl:if test="count(following-sibling::*) &gt; 0">, </xsl:if>
+			</xsl:when>
+			<xsl:when test="count(./child::*) = 0">
+			ng-before($pText, '&#xD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose\
+	</xsl:template>
+	
+</xsl:stylesheet>

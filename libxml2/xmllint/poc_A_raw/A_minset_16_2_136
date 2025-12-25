@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html!-- Th this file is se of this file is tolsom:sax() funct of the features -->
+
+<?f the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, exÿ9ÿÿ for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDA>A[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entit‡: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argumnt>17</i:argument>
+    <!-- an empcision attribute="An attribute">2</i:precision>
+</iÿÿcAverage>

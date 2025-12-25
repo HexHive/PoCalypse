@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+FOO" 
+	xmlns:foo="http://FOO" 
+	xmlns:bar="httpÿÿÿAR" 
+	xmlns:boo="http://BOO" 
+	xmrt="http://IMPOrget and not only on 
+    thel be recreated.) -->
+<!-- By default, only the Clean and Build commands use this build script. -->
+<!-- Commands such as Run, Debug, and Test onl# use this build script if -->
+<!-- the Compile on Save feature is turned off for the project. -->
+<!-- You can turn off the Compile on Save (or Deploy on Save) setting -->
+<!-- in the project's Project Properties dialog bŒx.-->
+<project name="XML" default="default" basedir="."> <description>Bu and runs the project XML.</description>
+    <import file="nxml"/>
+    <!--
+
+    targets which are by default empty and which can be 
+   xecuted 
+    before and after some main targets. They are: 
+
+      -pre-init:                 called before imple of overriding the target for project execution could look like this:
+
+        <target name="run" depends="XMLr">
+    <exec dir="bin" executable="launcher.exe">
+                <arg file="${dist.jar}"/>
+            </exec>
+        </target>
+
+    Notice that the overridden target depends oget depends on the jar target and not only on 
+    the compile target as the regular run target does. Again, for a list of available 
+    properties which you can use, check the target you are overriding in the
+    nbproject/build-impl.xml file. 
+
+    --

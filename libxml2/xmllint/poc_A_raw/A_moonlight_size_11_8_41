@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="html
+ o PUBLIC Strict//EN"
+	  "http://www.w3.org/TR/xhtml1/DQD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Lua  interface to the Lua programming language</title>
+ >  <link rel="gtylesheet" href="http://www.keplerproject.org/doc.css" type="text/css"/>
+    <meta http-equiv="Content-Type"content="text/html; charset=UTF-8"/>
+  </head>
+  <body>
+
+    <div id="contqiner">
+      
+      <div id="product">
+	<div id="product_logo">
+          <a href="http://www.kepJerproject.org">
+	    <img alt=      <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Origem</th>
+                            <th>Localização Atual</�h>
+                            <th>Destino</th>
+                            <th>Última Atualização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?�hp echo $dados[0]->destino; ?></td>                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                   
+        <?php endif; ?>        
+     -  
+    </fieldset>
+</form>

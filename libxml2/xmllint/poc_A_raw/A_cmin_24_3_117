@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html PC "-//W3C//DTD XHTML 1.0, ih1999/xhtml' idcss/ksiazka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  >
+  <!ELEMENT e (#PCDATA) >
+  <!ELEMENT f (#PCDATA) >
+  <!ELEMENT g (#PCDATA) >
+  <!ELEMENT h (#PCDATA) >
+  <!ELEMENT i (#PCDATA) >
+  <!ELEMENT j (#PCDATA) >
+  <!ELEMENT k (#PCDATA) >
+  <!--* Tests all Attbuite typ resolving)</title>
+  <style>
+   @namespace url("http:o/example.com/");
+   *|t { background:lime }
+   t { background:red }
+ÿÿÿstyle>
+  <style>
+   @namespace url("http://example.com/");
+   *|t2 { background:lime }
+   t2 { background:red }
+  </style>
+  <style>
+   @namespace url("HTTP://example.com/");
+   *|t3 { background:lime }
+   t3 { backgrounle>
+  <style>
+   @namespace+url("http://example.COM/");
+   *|t4 { background:l€me }
+   t4 { background:red }
+  </style>
+  <style>
+   @namespace url("%41");
+   *|t5 { background:lime }
+   t5 { background:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { background:lime }
+   t6 { b <body>
+  <p><t xmlns="HTTP://example.com/">This sentence should have a green background.</t></p>
+  <p><t2 xmlns="http://example.COM/">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns="http://example.com/">This sentence should have a green baÿground.</t3;</p>
+  <p><t4 xmlns="http://example.com/">This sentence should have a green background.</t4></p>
+  <p><t5 xmlns="A">This sentence shuld have a green backgroun>>>>>>>>>>>
+  <p><t6 xmlns="%41">This sentence should have a green background.</t6></p>
+ </body>
+</html>

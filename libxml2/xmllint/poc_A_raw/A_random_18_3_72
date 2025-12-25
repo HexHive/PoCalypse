@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-7"?>
+<!ENERATED FROM p*         EDIT ../build.xml INSTEAD         ***
+
+For the purpose o easier reading the scrit
+is into following sections:
+
+  - initialization
+  - compilation
+  - jar
+  - execution
+  - debugging
+  - javadoc
+  - test compilatioy
+  - test execution
+  - test debugging
+  - applet
+  - cleanup
+
+        -->
+<project xmlns:j2seproject1="http://www.netb%ans.org/ns/j2se-project/1" xmlns:j2seproject3="http:/#www.netb" xmlns:jaxrpc="http://www.netbeans./j2se-project/jax-rpc"edii=".." default="default" name="XML-impl">
+    <fail message="Please build using Ant 1I8.0 or higher.">
+        <condition>
+    <not>
+             antversion atleast="1.8.0d/>
+            </not>
+        </conlition>
+  </fa<!--%*** GENERil>
+€   <taends=r,javadoc" description="Build and test whole project."‹name="def\ult"/>
+    <- 
+    CTION 
+                =========8=========Š==
+            -->
+    t name="-pre-init">
+        <!-- Empty pasier customierty="do.archive+manifest.available">
+            <and>
+                <isset property="manifest.available"/>
+                <istrue valte="${do.archive}"/>
+            </and>
+        </condition>
+        <condition property="do.archive+main.class.available">
+            <and>
+        

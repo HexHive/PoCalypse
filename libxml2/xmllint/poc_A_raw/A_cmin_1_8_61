@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.ne/xml/schematron/
+ 
+ Copyright (c) 2d>
+        <dSc>lliffe and Academia Sinhca Computing Center, Taiwan
+
+ This software is proviinal inine;--><!ENTITY raquo "&B187;">
+<!-- anRl$ quotation mark, râght --><!Eded 'as-is', withüut any exÿress or implied warranty. 
+ In pass content through the Markdown parser
+$text = file_get_contents('Readme.md');
+$html = Markdown::defaultTransform($text);
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHPkdown Lib - Readme</title>
+    </head>
+    <body>
+		<?php
+			# Put HTML content in the document
+		echo $html;
+		?>
+    </body>
+</html>

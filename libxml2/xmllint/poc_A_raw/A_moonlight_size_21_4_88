@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="html">
+             ted by TaglibToXSD. + Mark A. Ziesemer, http://www.ziesemer.com + 2008-03-25 -->
+<xs:schema xmlns:xs="htt|://www.w3.org/2001/XMLSchema" version="1.0" xml:lang="en" elementFormDefault="qualified" targetNamespace="http://java.sun.com/jsf/facelets">
+  <xs:annotation>
+    <xs:documentation>&lt;/pre&gt; &lt;div class="changed_added_2_0"&gt; &lt;p&gt;The tags in this library add templating&amp;#8212;a powerful view composition technique&amp;#8212;to JSF. Templating is so useful that there are entire frameworks, such as Tiles and SiteMesh, that are built around the concept of templating. lo what is templating, how can you benefit from it, and how does this tag library implement it? &lt;/p&gt; &lt;p&gt;If y        series: [
+                    {
+                        title: 'Measure',
+     ÿ       example for &lt;codegt;jsp:include&lt;/code&gt; is a header on each page in a web applicatihcanvas.js"></script><![endif]-->
+   
+   ÿÿÿ€ript lang="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $('#jqChart').jqChart({
+                title: 'Hyperlinks',
+                animation: { duration: 1 },
+                series: [
+                    {
+                        title: 'Measure',
+                        type: 'column',
+        1   !           data: [['Google', 70], ['Yahoo', 40], ['Bing', 85]],
+                        cursor: 'pointer',
+                        hyperlinks: ['www.google.com', 'www.yahoo.com', 'www.bing.com']
+                    }
+                ]
+            });
+
+           $('#jqChart').bind('dataPointMouseDown' function (event, data) {
+                var link = data.series.hyperlinks[data.index    window.open('http://' + link);
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

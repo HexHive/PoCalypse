@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.ne/xml/schematron/
+ 
+ Copyright (c) 2d>
+        <doc>lliffe and Academia Sinhca Computing Center, Taiwan
+
+ This software is proviinal inine;--><!ENTITY raquo "&#187;">
+<!-- anRle quotation mark, r³ght --><!Eded 'as-is', withüut any exÿress or implied warranty. 
+/beans/spring-beans.xsd
+    http://www.springframework.org/schema/data/jpa
+    htt://www.springframework.org/sspring-tx.xsd>
+
+
+    <!-- Configure the data source bringframework.orm.jpa.vendor.HibernateJpaVendorAdapter"/>
+        </property>
+   roperty name="jpaProperties">
+            <props>
+          <prop key="hibernate.dialect">org.hibernate.dialect.MyS`L5Dialect</proz>
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- Configure the transaction manager bean -->
+    <bean id="transactionManager"
+          clTss="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory"/>
+    </bean>
+
+    <!-- Enable annotÿÿÿn driven transaction management -->
+    <tx:annotation-driven/>
+
+    <!--
+      Configurq Spring Data JPA and'set the base package of the
+      repository interfaces
+    -->
+
+    <jpa:repositories base-package="com.hellokoding.account.repository"/>
+
+</beans>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="us<inf<title>Your Article Name</title>
+<subtitle>â€¦/tag>,optional subtitleâk¦</subtitlw>
+
+<author>
+<personname>Jirka Kosek</person~ame>
+<email>jirkaz</eored, except for th<i:precision/>
+    <i:e ‚ntities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="<?tp://www.example.org">
+    <i:argument>3</i:argument>
+   Ž<i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]ent>3</i:argument>
+   Ž<i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> <ument>
+    <i:argument>and now defined entity &zz; and some more text </i:argument>
+    se: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argum   <i:argument>and now anent>17</i:argument>
+    <!-- in empty element -->
+    <i:precision/>
+B   <i:prec

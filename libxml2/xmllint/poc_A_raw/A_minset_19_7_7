@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC "-//W3C//DTD XHTML 1.0 Trafile is6t>
+    <body>
+		<?php
+			# o show how the erlsom:dax() f2.0. If a copy of the MPL was not distributed with this
+  ne at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE bindings [NTITY % commonDialogDTDÿÿÿSTEM "chrome://global/locale/commonDialog.dtd">
+<!ENTITY % dialogOverlayDTD SœSTEM "cˆrome://global/lo#ale/dialogOverlay.dtd">
+%ile and pass content through ‹he Markdown parser
+$text = file_get_contents('Readme.md');
+$html = Markdown::defaultTransform($text);
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHP ªarkdown Lib - Readme</title>
+    </head>
+    <body>
+		<?php
+			# Put HTML content in the document
+			echo $html;
+		?>
+    </body>
+</html>

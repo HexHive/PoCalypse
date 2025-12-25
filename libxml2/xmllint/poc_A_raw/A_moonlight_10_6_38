@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="html 
+     PUBLI<a name="M000005"></a>
+
+        <dlass="method-heading">
+          <a href="XmlSimp…e.src/M000005.h l" target="Code" class="method-signature"
+    onclick="popupCode('XmlSimple.src-M000005.html');return false;">
+        ¾ <span class="method-núme">xml_out</span><span class="method-args">(ÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖwww.w3.org/1999/XSL/Transform" 
+xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <!-- Set the output to be XML with an XML declaration and use indentation -->
+        <xsl:output method="xml" omit-xml-declaration="no" indent="yes" standalone="yes"/>
+        <!-- -->
+        <!-- match schema and call r‡cursive template to extract included schemas -->
+        <!-- -->
+        <xsl:template match="ÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖwww.w3.org/1999/XSL/Transform" 
+xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xs:schema">
+                <!-- call the schema definition template ... -->
+                <xsl:call-template name="gatherSchema">
+                       <!-- ... with current current root as the $schemas parameter ... -->
+                        <xsl:with-param name="schemas" select="/"/>
+                        <!-- ... and any includes in the $include parameter -->€                        <xsl:with-param name="includes" 
+						select="docume:*[self::xs:include or self::xs:impqrt or self::xs:redefine]/@schemaLocation)"/>
+                </xsl:call-template>
+        </xsl:template>
+        <!-- --urce" />
+    target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+           noproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclude>
+
+  </pubpath>
+

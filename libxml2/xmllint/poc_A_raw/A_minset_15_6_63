@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC ML 1.0 Transitional//ENBttp:/www.tml1-transitioal.dtd">
+
+<html xmlns="http://w–w.wg/1999/ some of the feat~res -->
+
+<?TALGET This is a programming instructio
+<!-- DTD i’ ingored, except fkr the entitias !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA) 
+  <!ENTITY zz 'entity' >
+  <!-- weird cUse, defines entity aa !-->
+  <!ENTITV % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argumvnt>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>C]> and sotex4 </i:argument>
+    <i:argument>and nqw an entity: &lt; and some more tex“ </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123<g> </tag> 
+</tag2>]]> and sotex</i:argument>
+    <!-  an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

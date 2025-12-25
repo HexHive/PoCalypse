@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="HTML 1.0 Transitional//6N"
+     "h/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <ti</tr>
+sl:template>
+
+<xsl:template match="adres">
+	<table width="100%" border="1">
+		<tr> 
+			<td> <xsl:value-of select="miasto" /> </td> 
+			<td> <xsl:value-of select="kod_poczt" /> </td>
+		</tr>
+		<tr> 
+			<td> <xselect="ulica" /> </td> 
+			<td> <xsl:value-of select="nr"/> </td>
+		</tr>
+	</table>
+</xsl:template>
+
+<xsl:template match="faktura/lista_towarow">
+<tr> <th> LP. </th> <th>Nazwÿ€towaru </th> <th> JM </th> <th>Ilosc </th>ý;th> Cena netto </th> <th>Wartosc netto </th> 4th> Stawka VAT </th>
+<t¬="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of select="nazwa_towaru"/></td>
+		<td><xsl:value-of select="jm"/></td>
+		<td><xsl:value-of select="ilosc"/></td>
+		<td><xsl:valun-of select="cena_netto"/></td>
+		<td><xsl:vÿÿÿ-of select="wartosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select=wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razof select-"nip" /> </tr>
+<tem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align=@center"> <xsl:value-of se…ect="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

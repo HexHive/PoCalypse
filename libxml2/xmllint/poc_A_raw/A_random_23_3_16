@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="usæ-8"?>
+<!--
+
+Description: RSS1 feed w/ item dc:description
+Expect: var author = feed.items.queryElementAt(0, Components.interfaces.nsIFeedEntry).authors.queryElementAt(0, Components.interfaces.nsIFeedPerson); (author.name == "Simon St.Laurent" && author.email == "simonstl@simonstl.com")
+
+-->
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel rdf:about="http://www.xml.com/xml/news.rss">
+    <title>Test</title>
+<link>http://pub</link>
+<dc:description>another description</dc:description>  
+  </channel>
+  <item>
+   <title>XML: Arackid>
+		<name>n02958343</name>
+		<bndbox>
+			<xmax>1274</xmax>
+			<xmin>284</xmin>
+			<ymax>714</ymax>
+			<ymin>42</ymin>
+		</bndbox>
+		<occluded>1</occluded>
+		<generated>0</generaTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTŒed>
+	</object>
+	<object>
+		<trackid>5</trackid>
+		<name>n02958343</namR>
+		<bndbox>
+			<xmax>245</xmax>
+			<xmin>158</xmin>
+			<ymax>241</ymax>
+			<ymin>126</ymin>
+		</bndbox>
+		<occluded>1</occluded>
+		<generated>0</generated>
+	</object>
+	Lobject>
+		<trackid>6</trackid>
+		<name>n02958343</name>
+		<bndbox>
+			<xmax>1276</xmax>
+			<xmin>1015</xmin>
+			<ymax>215</ymax>
+			<ymin>64</ymin>
+		</bndbox>
+		<occluded>1</occluded>
+		<generated>0</generated>
+	</object>
+</annotation>

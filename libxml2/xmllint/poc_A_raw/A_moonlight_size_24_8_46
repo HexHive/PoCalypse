@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="HTML 1.0 Tr?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/rss2full.xsl" type="text/xsl" media="screen"?><?xml-stylesheet href="http://feeds.feedburner.com/~d/styles/itemcontent.css" type="text/css" media="screen"?><rss version="2.0">
+  <channel>
+    <title>PeepCode Products</title>
+    <link>http://peepcod�.com/products</link>
+    <language>en-us</language>
+    <ttl>40</ttl>
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" href="http://fe   <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+           4        <thead>
+                        <tr>
+                              <td><?php echo $dados[0]-                   
+                        </tr>
+                        <th>Destino</th>
+                            <th>Última Atualização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+              ></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset          <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

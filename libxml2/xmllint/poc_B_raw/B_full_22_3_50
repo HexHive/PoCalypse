@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- 
+  CHANGE JUDICIOUSLY! 
+  Common schema which will be used over all API contexts, so be very careful with
+  incompatible changes. In case of doubt please contact Team API for support.
+  
+  The HTTP response code for each MessageCode enum value is defined in property files:
+  - "messages.properties"
+  - "errors.properties"
+-->
+<xs:schema 
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	elementFormDefault="unqualified" 
+	attributeFormDefault="unqualified" 
+	version="1.0">
+	
+	<xs:import namespace="http://www.w3.org/1999/xlink"/>
+
+	<xs:element name="messages">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Represents a sequence of information or error messages.</xs:documentation>
+			<xs:documentation xml:lang="de-DE">Repräsentiert eine Sequenz von Informations- oder Fehlermeldungen.</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="message" type="Message" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation xml:lang="en">Represents an information or error message.</xs:documentation>
+						<xs:documentation xml:lang="de-DE">Repräsentiert eine Informations- oder Fehlermeldung.</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="Message">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">Defines an information or error message.</xs:documentation>
+			<xs:documentation xml:lang="de-DE">Definiert eine Informations- oder Fehlermeldung.</xs:documentation>
+		</xs:annotation>
+		<xs:all>
+			<xs:element name="messageCode" type="MessageCode">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">An unique code identifying the message.</xs:documentation>
+					<xs:documentation xml:lang="de-DE">Eindeutiger Kennzeichner der die Mitteilung identifiziert.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:element name="message" type="xs:string">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">An information or error message.</xs:documentation>
+					<xs:documentation xml:lang="de-DE">Informations- oder eine Fehlermeldung.</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+            <xs:element name="id" type="xs:string">
+                <xs:annotation>
+                    <xs:documentation xml:lang="en">id of created/deleted entyty.</xs:documentation>
+                    <xs:documentation xml:lang="de-DE">id von der erstellten bzw. gelöschten Instanz.</xs:documentation>
+                </xs:annotation>
+            </xs:element>           
+		</xs:all>
+	</xs:complexType>
+	
+	<xs:simpleType name="MessageCode">
+		<xs:restriction base="xs:string">
+			<!-- START MESSAGES -->
+			<xs:enumeration value="MESSAGE_RESOURCE_CREATED">
+				<xs:annotation>
+					<xs:documentation xml:lang="de">Die Resource wurde erfolgreich angelegt (beinhaltet Name und Id der Resource).</xs:documentation>
+					<xs:documentation xml:lang="en">Resource was successful created (includes name and id of the resource).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MESSAGE_RESOURCE_UPDATED">
+				<xs:annotation>
+					<xs:documentation xml:lang="de">Die Resource wurde erfolgreich aktualisiert (beinhaltet Name und Id der Resource).</xs:documentation>
+					<xs:documentation xml:lang="en">Resource was successful updated (includes name and id of the resource).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MESSAGE_RESOURCE_DELETED">
+				<xs:annotation>
+					<xs:documentation xml:lang="de">Die Resource wurde erfolgreich gelöscht (beinhaltet Name und Id der Resource).</xs:documentation>
+					<xs:documentation xml:lang="en">Resource was successful deleted (includes name and id of the resource).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="MESSAGE_OPERATION_SUCCESSFUL">
+				<xs:annotation>
+					<xs:documentation xml:lang="de">Die Operation wurde erfolgreich ausgeführt.</xs:documentation>
+					<xs:documentation xml:lang="en">Operation successful executed.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<!-- END MESSAGES -->
+			<!-- START HEADER ERRORS -->
+			<xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeees:enumeration value="ERROR_COMMON_HEADER_PARAMETER_VALIDATION_FAILED">
+				<xs:annotation>
+					<xs:documentation xml:lang="de">Die Operation wurde erfolgreich ausgeführt.</xs:documentation>
+					<xs:documentation xml:lang="en">Operation successful executed.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<!-- END HEADER ERRORS -->
+			<!-- START COMMON ERRORS -->
+			<xs:enumeration value="ERROR_COMMON_RESOURCE_REQUIRED">
+				<xs:annotation>
+					<xs:documentation xml:lang="de">Der Request ist nur im Kontext einer bestimmten Resource gültig (beinhaltet Name der benötigten Resource).</xs:documentation>
+					<xs:documentation xml:lang="en">Request is only valid within the context of an specific resource (includes name of the required resource).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ERROR_COMMON_REQUEST_CONFLICT">
+				<xs:annotation>
+					<xs:documentation xml:lang="de">Eine Operation (z.B. auf einer Ressource) führte zu einem Konflikt.</xs:documentation>
+					<xs:documentation xml:lang="en">A conflict occured during execution of an operation (e.g. on a resource).</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ERROR_COMMON_AUTHENTICATION_REQUIRED">
+				<xs:annotation>
+					<xs:documentation xml:lang="de">Keine Authorisierung fÃ¼r die gewÃ¼nschte Aktion.</xs:documentation>
+					<xs:documentation xml:lang="en">No authorization for the requested operation.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ERROR_COMMON_AUTHENTICATION_OAUTH_NONCE_EXPIRED">
+				<xs:annotation>
+					<xs:documentation xml:lang="de">Der Nonce für OAuth ist abgelaufen.</xs:documentation>
+					<xs:documentation xml:lang="en">The OAuth Nonce has expired.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ERROR_COMMON_ACCESS_DENIED">
+				<xs:annotation>
+					<xs:documentation xml:lang="de">Keine Authorisierung für die gewünschte Aktion.</xs:documentation>
+					<xs:documentation xml:lang="en">No authorization for the requested operation.</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="ERROR_COMMON_SCHEMA_VALIDATION_FAILED">
+				<xs:annotation>
+					<xs:documentation xml:lang="de">Schema-Validierung ist fehlgeschlagen. (enthält Beschreibung des Fehlers)</xs:documentation>
+					<xs:documentation xmbda      K        H        a         alpha    sigma
+   0.299   0.0710    0.270     1.10     13.8     14.5 
+
+Effective search space used: 441350
+
+
+<b>Query=</b> sp|P06213|INSR_HUMAN Insulin receptor OS=Homo sapiens GN=INSR PE=1
+SV=4
+
+Length=1382
+
+<b>Subject=</b> gi|2734705|gb|U59921.1|BBU59921 Bufo bufo rhodopsin mRNA, complete
+cds
+
+Length=1574
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H        a         alpha
+   0.346    0.180    0.700    0. 2     1.92 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.299   0.0710    0.270     1.10     13.8     14.5 
+
+Effective search space used: 441350
+
+
+<b>Query=</b> sp|P06213|INSR_HUMAN Insulin receptor OS=Homo sapiens GN=INSR PE=1
+SV=4
+
+Length=1382
+
+<b>Subject=</b> gi|283855845|gb|GQ290303.1| Cynopterus brachyotis voucher 20020434
+rhodopsin (RHO) gene, exons 1 through 5 and partial cds
+
+Length=4301
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H        a         alpha
+   0.346    0.180    0.700    0.522     1.92 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.299   0.0710    0.270     1.10     13.8     14.5 
+
+Effective search space used: 441350
+
+
+<b>Query=</b> sp|P06213|INSR_HUMAN Insulin receptor OS=Homo sapiens GN=INSR PE=1
+SV=4
+
+Length=1382
+
+<b>Subject=</b> gi|283855822|gb|GQ290312.1| Myotis ricketti voucher GQX10 rhodopsin
+(RHO) mRNA, partial cds
+
+Length=983
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H        a         alpha
+   0.346    0.180    0.700    0.522     1.92 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.299   0.0710    0.270     1.10     13.8     14.5 
+
+Effective search space used: 441350
+
+
+<b>Query=</b> sp|P06213|INSR_HUMAN Insulin receptor OS=Homo sapiens GN=INSR PE=1
+SV=4
+
+Length=1382
+
+<b>Subject=</b> gi|18148870|dbj|AB062417.1| Synthetic construct Bos taurus gene for
+rhodopsin, complete cds
+
+Length=1047
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H        a         alpha
+   0.346    0.180    0.700    0.522     1.92 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.299   0.0710    0.270     1.10     13.8     14.5 
+
+Effective search space used: 441350
+
+
+<b>Query=</b> sp|P06213|INSR_HUMAN Insulin receptor OS=Homo sapiens GN=INSR PE=1
+SV=4
+
+Length=1382
+
+<b>Subject=</b> gi|12583664|dbj|AB043817.1| Conger myriaster conf gene for fresh
+water form rod opsin, complete cds
+
+Length=1344
+
+
+***** No hits found *****
+
+
+
+Lambda      K        H        a         alpha
+   0.346    0.180    0.700    0.522     1.92 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.299   0.0710    0.270     1.10     13.8     14.5 
+
+Effective search space used: 441350
+
+
+<b>Query=</b> sp|P08100|OPSD_HUMAN Rhodopsin OS=Homo sapiens GN=RHO PE=1 SV=1
+
+Length=348
+
+<b>Subject=</b> gi|57163782|ref|NM_001009242.1| Felis catus rhodopsin (RHO), mRNA
+
+Length=1047
+
+
+ Score =   732 bits (1689),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 336/348 (97%), Positives = 343/348 (99%), Gaps = 0/348 (0%)
+ Frame = +1
+
+Query  1     MNGTEGPNFYVPFSNATGVVRSPFEYPQYYLAEPWQFSMLAAYMFLLIVLGFPINFLTLY  60
+             MNGTEGPNFYVPFSN TGVVRSPFEYPQYYLAEPWQFSMLAAYMFLLIVLGFPINFLTLY
+Sbjct  1     MNGTEGPNFYVPFSNKTGVVRSPFEYPQYYLAEPWQFSMLAAYMFLLIVLGFPINFLTLY  180
+
+Query  61    VTVQHKKLRTPLNYILLNLAVADLFMVLGGFTSTLYTSLHGYFVFGPTGCNLEGFFATLG  120
+             VTVQHKKLRTPLNYILLNLAVADLFMV GGFT+TLYTSLHGYFVFGPTGCNLEGFFATLG
+Sbjct  181   VTVQHKKLRTPLNYILLNLAVADLFMVFGGFTTTLYTSLHGYFVFGPTGCNLEGFFATLG  360
+
+Query  121   GEIALWSLVVLAIERYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPLAGWSRYIP  180
+             GEIALWSLVVLAIERYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPL GWSRYIP
+Sbjct  361   GEIALWSLVVLAIERYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPLVGWSRYIP  540
+
+Query  181   EGLQCSCGIDYYTLKPEVNNESFVIYMFVVHFTIPMIIIFFCYGQLVFTVKEAAAQQQES  240
+             EG+QCSCGIDYYTLKPEVNNESFVIYMFVVHFTIPMI+IFFCYGQLVFTVKEAAAQQQES
+Sbjct  541   EGMQCSCGIDYYTLKPEVNNESFVIYMFVVHFTIPMIVIFFCYGQLVFTVKEAAAQQQES  720
+
+Query  241   ATTQKAEKEVTRMVIIMVIAFLICWVPYASVAFYIFTHQGSNFGPIFMTIPAFFAKSAAI  300
+             ATTQKAEKEVTRMVIIMVIAFLICWVPYASVAFYIFTHQGSNFGPIFMT+PAFFAKS++I
+Sbjct  721   ATTQKAEKEVTRMVIIMVIAFLICWVPYASVAFYIFTHQGSNFGPIFMTLPAFFAKSSSI  900
+
+Query  301   YNPVIYIMMNKQFRNCMLTTICCGKNPLGDDEASATVSKTETSQVAPA  348
+             YNPVIYIMMNKQFRNCMLTT+CCGKNPLGDDEAS T SKTETSQVAPA
+Sbjct  901   YNPVIYIMMNKQFRNCMLTTLCCGKNPLGDDEASTTGSKTETSQVAPA  1044
+
+
+
+Lambda      K        H        a         alpha
+   0.351    0.182    0.707    0.522     1.92 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.299   0.0710    0.270     1.10     13.8     14.5 
+
+Effective search space used: 109230
+
+
+<b>Query=</b> sp|P08100|OPSD_HUMAN Rhodopsin OS=Homo sapiens GN=RHO PE=1 SV=1
+
+Length=348
+
+<b>Subject=</b> gi|2734705|gb|U59921.1|BBU59921 Bufo bufo rhodopsin mRNA, complete
+cds
+
+Length=1574
+
+
+ Score =   646 bits (1489),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 290/342 (85%), Positives = 320/342 (94%), Gaps = 1/342 (0%)
+ Frame = +3
+
+Query  1     MNGTEGPNFYVPFSNATGVVRSPFEYPQYYLAEPWQFSMLAAYMFLLIVLGFPINFLTLY  60
+             MNGTEGPNFY+P SN TGVVRSPFEYPQYYLAEPWQ+S+L AYMFLLI+LGFPINF+TLY
+Sbjct  42    MNGTEGPNFYIPMSNKTGVVRSPFEYPQYYLAEPWQYSILCAYMFLLILLGFPINFMTLY  221
+
+Query  61    VTVQHKKLRTPLNYILLNLAVADLFMVLGGFTSTLYTSLHGYFVFGPTGCNLEGFFATLG  120
+             VT+QHKKLRTPLNYILLNLA A+ FMVL GFT T+Y+S+ GYF+ G TGC +EGFFATLG
+Sbjct  222   VTIQHKKLRTPLNYILLNLAFANHFMVLCGFTVTMYSSMNGYFILGATGCYVEGFFATLG  401
+
+Query  121   GEIALWSLVVLAIERYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPLAGWSRYIP  180
+             GEIALWSLVVLAIERYVVVCKPMSNFRF ENHA+MGVAFTW+MAL+CA PPL GWSRYIP
+Sbjct  402   GEIALWSLVVLAIERYVVVCKPMSNFRFSENHAVMGVAFTWIMALSCAVPPLLGWSRYIP  581
+
+Query  181   EGLQCSCGIDYYTLKPEVNNESFVIYMFVVHFTIPMIIIFFCYGQLVFTVKEAAAQQQES  240
+             EG+QCSCG+DYYTLKPEVNNESFVIYMFVVHFTIP+IIIFFCYG+LV TVKEAAAQQQES
+Sbjct  582   EGMQCSCGVDYYTLKPEVNNESFVIYMFVVHFTIPLIIIFFCYGRLVCTVKEAAAQQQES  761
+
+Query  241   ATTQKAEKEVTRMVIIMVIAFLICWVPYASVAFYIFTHQGSNFGPIFMTIPAFFAKSAAI  300
+             ATTQKAEKEVTRMVIIMV+ FLICWVPYASVAF+IF+ QGS FGPIFMT+PAFFAKS++I
+Sbjct  762   ATTQKAEKEVTRMVIIMVVFFLICWVPYASVAFFIFSNQGSEFGPIFMTVPAFFAKSSSI  941
+
+Query  301   YNPVIYIMMNKQFRNCMLTTICCGKNPLGDDEA-SATVSKTE  341
+             YNPVIYIM+NKQFRNCM+TT+CCGKNP G+D+A SA  SKTE
+Sbjct  942   YNPVIYIMLNKQFRNCMITTLCCGKNPFGEDDASSAATSKTE  1067
+
+
+
+Lambda      K        H        a         alpha
+   0.351    0.182    0.707    0.522     1.92 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.299   0.0710    0.270     1.10     13.8     14.5 
+
+Effective search space used: 109230
+
+
+<b>Query=</b> sp|P08100|OPSD_HUMAN Rhodopsin OS=Homo sapiens GN=RHO PE=1 SV=1
+
+Length=348
+
+<b>Subject=</b> gi|283855845|gb|GQ290303.1| Cynopterus brachyotis voucher 20020434
+rhodopsin (RHO) gene, exons 1 through 5 and partial cds
+
+Length=4301
+
+
+ Score =   151 bits (342),  Expect(2) = 1e-72, Method: Compositional matrix adjust.
+ Identities = 69/74 (93%), Positives = 73/74 (99%), Gaps = 0/74 (0%)
+ Frame = +3
+
+Query  239   ESATTQKAEKEVTRMVIIMVIAFLICWVPYASVAFYIFTHQGSNFGPIFMTIPAFFAKSA  298
+             ESATTQKAEKEVTRMVIIMVIAFLICW+PYA VAFYIFTHQGSNFGPIFMT+PAFFAKS+
+Sbjct  3147  ESATTQKAEKEVTRMVIIMVIAFLICWLPYAGVAFYIFTHQGSNFGPIFMTLPAFFAKSS  3326
+
+Query  299   AIYNPVIYIMMNKQ  312
+             +IYNPVIYIMMNKQ
+Sbjct  3327  SIYNPVIYIMMNKQ  3368
+
+
+ Score =   126 bits (284),  Expect(2) = 1e-72, Method: Compositional matrix adjust.
+ Identities = 54/59 (92%), Positives = 57/59 (97%), Gaps = 0/59 (0%)
+ Frame = +2
+
+Query  177   RYIPEGLQCSCGIDYYTLKPEVNNESFVIYMFVVHFTIPMIIIFFCYGQLVFTVKEAAA  235
+             RYIPEG+QCSCGIDYYTLKPEVNNESFVIYMFVVHFTIPMI+IFFCYGQLVFTVKE  +
+Sbjct  2855  RYIPEGMQCSCGIDYYTLKPEVNNESFVIYMFVVHFTIPMIVIFFCYGQLVFTVKEVRS  3031
+
+
+ Score =   229 bits (523),  Expect = 9e-67, Method: Compositional matrix adjust.
+ Identities = 107/111 (96%), Positives = 109/111 (98%), Gaps = 0/111 (0%)
+ Frame = +1
+
+Query  11   VPFSNATGVVRSPFEYPQYYLAEPWQFSMLAAYMFLLIVLGFPINFLTLYVTVQHKKLRT  70
+            VPFSN TGVVRSPFE+PQYYLAEPWQFSMLAAYMFLLIVLGFPINFLTLYVTVQHKKLRT
+Sbjct  1    VPFSNKTGVVRSPFEHPQYYLAEPWQFSMLAAYMFLLIVLGFPINFLTLYVTVQHKKLRT  180
+
+Query  71   PLNYILLNLAVADLFMVLGGFTSTLYTSLHGYFVFGPTGCNLEGFFATLGG  121
+            PLNYILLNLAVADLFMV GGFT+TLYTSLHGYFVFGPTGCNLEGFFATLGG
+Sbjct  181  PLNYILLNLAVADLFMVFGGFTTTLYTSLHGYFVFGPTGCNLEGFFATLGG  333
+
+
+ Score =   122 bits (276),  Expect = 1e-32, Method: Compositional matrix adjust.
+ Identities = 55/59 (93%), Positives = 56/59 (95%), Gaps = 0/59 (0%)
+ Frame = +3
+
+Query  119   LGGEIALWSLVVLAIERYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPLAGWSR  177
+             L GEIALWSLVVLAIERYVVVCKPMSNFRFGENHAIMG+A TWVMALACAAPPL GWSR
+Sbjct  1404  LAGEIALWSLVVLAIERYVVVCKPMSNFRFGENHAIMGLALTWVMALACAAPPLVGWSR  1580
+
+
+ Score = 57.7 bits (125),  Expect = 2e-12, Method: Compositional matrix adjust.
+ Identities = 23/26 (88%), Positives = 24/26 (92%), Gaps = 0/26 (0%)
+ Frame = +1
+
+Query  312   QFRNCMLTTICCGKNPLGDDEASATV  337
+             QFRNCMLTT+CCGKNPLGDDEAS T 
+Sbjct  4222  QFRNCMLTTLCCGKNPLGDDEASTTA  4299
+
+
+
+Lambda      K        H        a         alpha
+   0.351    0.182    0.707    0.522     1.92 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.299   0.0710    0.270     1.10     13.8     14.5 
+
+Effective search space used: 109230
+
+
+<b>Query=</b> sp|P08100|OPSD_HUMAN Rhodopsin OS=Homo sapiens GN=RHO PE=1 SV=1
+
+Length=348
+
+<b>Subject=</b> gi|283855822|gb|GQ290312.1| Myotis ricketti voucher GQX10 rhodopsin
+(RHO) mRNA, partial cds
+
+Length=983
+
+
+ Score =   658 bits (1517),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 310/326 (95%), Positives = 322/326 (99%), Gaps = 0/326 (0%)
+ Frame = +1
+
+Query  11   VPFSNATGVVRSPFEYPQYYLAEPWQFSMLAAYMFLLIVLGFPINFLTLYVTVQHKKLRT  70
+            VPFSN TGVVRSPFEYPQYYLAEPWQFSMLAAYMFLLIVLGFPINFLTLYVTVQHKKLRT
+Sbjct  1    VPFSNKTGVVRSPFEYPQYYLAEPWQFSMLAAYMFLLIVLGFPINFLTLYVTVQHKKLRT  180
+
+Query  71   PLNYILLNLAVADLFMVLGGFTSTLYTSLHGYFVFGPTGCNLEGFFATLGGEIALWSLVV  130
+            PLNYILLNLAVA+LFMV GGFT+TLYTS+HGYFVFG TGCNLEGFFATLGGEIALWSLVV
+Sbjct  181  PLNYILLNLAVANLFMVFGGFTTTLYTSMHGYFVFGATGCNLEGFFATLGGEIALWSLVV  360
+
+Query  131  LAIERYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPLAGWSRYIPEGLQCSCGID  190
+            LAIERYVVVCKPMSNFRFGENHAIMG+AFTWVMALACAAPPLAGWSRYIPEG+QCSCGID
+Sbjct  361  LAIERYVVVCKPMSNFRFGENHAIMGLAFTWVMALACAAPPLAGWSRYIPEGMQCSCGID  540
+
+Query  191  YYTLKPEVNNESFVIYMFVVHFTIPMIIIFFCYGQLVFTVKEAAAQQQESATTQKAEKEV  250
+            YYTLKPEVNNESFVIYMFVVHFTIPMI+IFFCYGQLVFTVKEAAAQQQESATTQKAEKEV
+Sbjct  541  YYTLKPEVNNESFVIYMFVVHFTIPMIVIFFCYGQLVFTVKEAAAQQQESATTQKAEKEV  720
+
+Query  251  TRMVIIMVIAFLICWVPYASVAFYIFTHQGSNFGPIFMTIPAFFAKSAAIYNPVIYIMMN  310
+            TRMVIIMV+AFLICW+PYASVAFYIFTHQGSNFGP+FMTIPAFFAKS++IYNPVIYIMMN
+Sbjct  721  TRMVIIMVVAFLICWLPYASVAFYIFTHQGSNFGPVFMTIPAFFAKSSSIYNPVIYIMMN  900
+
+Query  311  KQFRNCMLTTICCGKNPLGDDEASAT  336
+            KQFRNCMLTT+CCGKNPLGDDEAS T
+Sbjct  901  KQFRNCMLTTLCCGKNPLGDDEASTT  978
+
+
+
+Lambda      K        H        a         alpha
+   0.351    0.182    0.707    0.522     1.92 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.299   0.0710    0.270     1.10     13.8     14.5 
+
+Effective search space used: 109230
+
+
+<b>Query=</b> sp|P08100|OPSD_HUMAN Rhodopsin OS=Homo sapiens GN=RHO PE=1 SV=1
+
+Length=348
+
+<b>Subject=</b> gi|18148870|dbj|AB062417.1| Synthetic construct Bos taurus gene for
+rhodopsin, complete cds
+
+Length=1047
+
+
+ Score =   711 bits (1640),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 325/348 (93%), Positives = 337/348 (97%), Gaps = 0/348 (0%)
+ Frame = +1
+
+Query  1     MNGTEGPNFYVPFSNATGVVRSPFEYPQYYLAEPWQFSMLAAYMFLLIVLGFPINFLTLY  60
+             MNGTEGPNFYVPFSN TGVVRSPFE PQYYLAEPWQFSMLAAYMFLLI+LGFPINFLTLY
+Sbjct  1     MNGTEGPNFYVPFSNKTGVVRSPFEAPQYYLAEPWQFSMLAAYMFLLIMLGFPINFLTLY  180
+
+Query  61    VTVQHKKLRTPLNYILLNLAVADLFMVLGGFTSTLYTSLHGYFVFGPTGCNLEGFFATLG  120
+             VTVQHKKLRTPLNYILLNLAVADLFMV GGFT+TLYTSLHGYFVFGPTGCNLEGFFATLG
+Sbjct  181   VTVQHKKLRTPLNYILLNLAVADLFMVFGGFTTTLYTSLHGYFVFGPTGCNLEGFFATLG  360
+
+Query  121   GEIALWSLVVLAIERYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPLAGWSRYIP  180
+             GEIALWSLVVLAIERYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPL GWSRYIP
+Sbjct  361   GEIALWSLVVLAIERYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPLVGWSRYIP  540
+
+Query  181   EGLQCSCGIDYYTLKPEVNNESFVIYMFVVHFTIPMIIIFFCYGQLVFTVKEAAAQQQES  240
+             EG+QCSCGIDYYT   E NNESFVIYMFVVHF IP+I+IFFCYGQLVFTVKEAAAQQQES
+Sbjct  541   EGMQCSCGIDYYTPHEETNNESFVIYMFVVHFIIPLIVIFFCYGQLVFTVKEAAAQQQES  720
+
+Query  241   ATTQKAEKEVTRMVIIMVIAFLICWVPYASVAFYIFTHQGSNFGPIFMTIPAFFAKSAAI  300
+             ATTQKAEKEVTRMVIIMVIAFLICW+PYA VAFYIFTHQGS+FGPIFMTIPAFFAK++A+
+Sbjct  721   ATTQKAEKEVTRMVIIMVIAFLICWLPYAGVAFYIFTHQGSDFGPIFMTIPAFFAKTSAV  900
+
+Query  301   YNPVIYIMMNKQFRNCMLTTICCGKNPLGDDEASATVSKTETSQVAPA  348
+             YNPVIYIMMNKQFRNCM+TT+CCGKNPLGDDEAS TVSKTETSQVAPA
+Sbjct  901   YNPVIYIMMNKQFRNCMVTTLCCGKNPLGDDEASTTVSKTETSQVAPA  1044
+
+
+
+Lambda      K        H        a         alpha
+   0.351    0.182    0.707    0.522     1.92 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.299   0.0710    0.270     1.10     13.8     14.5 
+
+Effective search space used: 109230
+
+
+<b>Query=</b> sp|P08100|OPSD_HUMAN Rhodopsin OS=Homo sapiens GN=RHO PE=1 SV=1
+
+Length=348
+
+<b>Subject=</b> gi|12583664|dbj|AB043817.1| Conger myriaster conf gene for fresh
+water form rod opsin, complete cds
+
+Length=1344
+
+
+ Score =   626 bits (1444),  Expect = 0.0, Method: Compositional matrix adjust.
+ Identities = 281/342 (82%), Positives = 311/342 (91%), Gaps = 1/342 (0%)
+ Frame = +2
+
+Query  1     MNGTEGPNFYVPFSNATGVVRSPFEYPQYYLAEPWQFSMLAAYMFLLIVLGFPINFLTLY  60
+             MNGTEGPNFY+P SNATGVVRSPFEYPQYYLAEPW FS L+AYMF LI+ GFPINFLTLY
+Sbjct  23    MNGTEGPNFYIPMSNATGVVRSPFEYPQYYLAEPWAFSALSAYMFFLIIAGFPINFLTLY  202
+
+Query  61    VTVQHKKLRTPLNYILLNLAVADLFMVLGGFTSTLYTSLHGYFVFGPTGCNLEGFFATLG  120
+             VT++HKKLRTPLNYILLNLAVADLFMV GGFT+T+YTS+HGYFVFGPTGCN+EGFFATLG
+Sbjct  203   VTIEHKKLRTPLNYILLNLAVADLFMVFGGFTTTMYTSMHGYFVFGPTGCNIEGFFATLG  382
+
+Query  121   GEIALWSLVVLAIERYVVVCKPMSNFRFGENHAIMGVAFTWVMALACAAPPLAGWSRYIP  180
+             GEIALW LVVLAIER++VVCKP++NFRFGE HAIMGV  TW MALACA PPL GWSRYIP
+Sbjct  383   GEIALWCLVVLAIERWMVVCKPVTNFRFGESHAIMGVMVTWTMALACALPPLFGWSRYIP  562
+
+Query  181   EGLQCSCGIDYYTLKPEVNNESFVIYMFVVHFTIPMIIIFFCYGQLVFTVKEAAAQQQES  240
+             EGLQCSCGIDYYT  P +NNESFVIYMF  HF+IP+ +I FCYG+LV TVKEAAAQQQES
+Sbjct  563   EGLQCSCGIDYYTRAPGINNESFVIYMFTCHFSIPLAVISFCYGRLVCTVKEAAAQQQES  742
+
+Query  241   ATTQKAEKEVTRMVIIMVIAFLICWVPYASVAFYIFTHQGSNFGPIFMTIPAFFAKSAAI  300
+              TTQ+AE+EVTRMV+IMVI+FL+CWVPYASVA YIFTHQGS FGPIFMTIP+FFAKS+A+
+Sbjct  743   ETTQRAEREVTRMVVIMVISFLVCWVPYASVAWYIFTHQGSTFGPIFMTIPSFFAKSSAL  922
+
+Query  301   YNPVIYIMMNKQFRNCMLTTICCGKNPL-GDDEASATVSKTE  341
+             YNP+IYI MNKQFR CM+TT+CCGKNP   +D ASAT SKTE
+Sbjct  923   YNPMIYICMNKQFRHCMITTLCCGKNPFEEEDGASATSSKTE  1048
+
+
+
+Lambda      K        H        a         alpha
+   0.351    0.182    0.707    0.522     1.92 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.299   0.0710    0.270     1.10     13.8     14.5 
+
+Effective search space used: 109230
+
+
+
+
+Matrix: BLOSUM80
+Gap Penalties: Existence: 10, Extension: 1
+Neighboring words threshold: 14
+Window for multiple hits: 25
+</PRE>
+</BODY>
+</HTML>

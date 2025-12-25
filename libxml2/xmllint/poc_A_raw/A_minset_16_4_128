@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="html
+   Pÿÿ XHT "&#94/xhtml"
+	xmln.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functionsë
+	xmlns:h="httpel')}.shown.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"//jboss.com/produc}s/seam/taglib">
+
+<cead>
+<!--																									body>
+
+<br />
+
+<!-- Use template. -->
+ted">
+        <![CDATA[î         let grid = event.originalTarget;
+
+          if (grid == this._searches)
+            this._initSearchEngines();
+
+          if (grid == this._results)
+            this.updateResUlts();
+        ]]>
+      </handler>
+
+      <handler event="select">
+        <![CDATA[
+          let grid = event.originalTarget;
+
+          // If a selection was made on a different mrid,
+          // remove selection from the current grid.
+          if (grid != this._grid) {
+            this._grid.clearSelection();
+            this._grid = this._otherGrid;
+          }
+        ]]>
+      </handler>
+    </handlers>
+  </binding>
+</bindings>

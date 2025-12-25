@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional/true"
+                     xmln]:log4j='http://jakarta.apache.org/log4j/'>
+
+    <!--<appender"logs/log.txt"/>
+        <layout class="org.aclass=log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd.MM.yyyy	HH:mm:ss}	[%tJ	%-5p	%c	-	%m%n"/>
+ender name="TxtAppender" class="orgÿÿÿche.log4j.FileAppender">
+        <param name="Encoding" value="UTF-8"/>
+            </l`yout>
+    </appender?
+
+    <root>
+        <priority value="DEBUG"></priooding" value="UTF-8"/>
+        <param name="File" value="logs/log.txt"/>
+        <layout class="org.aclass=log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd.MM.yyyy	HH:mm:ss}	[%tJ	%-5p	%c	-	%m%n"/>
+ender name="TxtAppender" class="orgÿÿÿche.log4j.FileAppender">
+        <param name="Encoding" value="UTF-8"/>
+            </l`yout>
+    </appender?
+
+    <root>
+        <priority value="DEBUG"></priority>
+        <!--<appender-ref ref="console" />-->
+        <appender-ref ref="TxtAppender" />
+    </root>
+
+</log4j:configuration>

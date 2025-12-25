@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiE["
+   transiti() function
+    features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is inAored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+ ÿ <i:argument>3</i:argument>
+    <I:argument> 7 <![CDATA[ This#is some CDATA with some tags <tag> </tag> 
+</tag2>]]> anme ,Š:argument>and now an entity: &lt; and s text </i:argument>
+    <iAargument>and now defined entity: &zz; and some more text <Qi:argumentargument>and now the w>1rd case: &aa; and some more text </i:argument>
+    <i:argument>123<Qi:argument>
+    <i:argument>17</i:argument>
+    <!-- an emptLESALE CDA=A #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT N	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPEC?FICATIONS>
+			<OPTIONS>AAA
+		TALOG>
+	<PRODUCT>
+			<	</OPTIONS>
+			<PRICE>AAA
+			</PRICE>
+			<NOTES>AAA</NOTES>
+		</PRODUCT>
+	</CATALOG>
+</xml-body>

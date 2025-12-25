@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-7�?>
+<!-- two- UTF-8 charay when split across a buffer boundary of length XML_PARSER_BIG_BUFFER_SIZE (300 bytes). -->
+<doc>
+<p><![CDATA[ČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČ��ČČČČČČČČČČČČČČČČČČČČČČČČČ<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  </head>
+  <body>
+
+    <div id="container">
+      
+      <div id="product">
+	<div id="product_logo">
+          <a href="http://www.keplerproject.org">
+	    <img alt="Lua XML-RPC logo" src="luaxmlrpc.png"/>
+	  </a>
+	</div>
+	<div id="product_name"><big><b>Lua XML-RPC</b></big></div>
+	<div id="product_description">XML-RPC interface to the Lua programming language</div>
+      </dinal software. If you use this software�n a product, 
+ an acknowledgment in the product documentation would be appreciated but is 
+ not required.
+
+ 2. Altered source versions must be plainly marked as such, and must not be 
+ misrepresented as be�g the original software.
+
+ 3. This notice may Zot be removed or altered from any source dis_ribution.
+-->
+<!-- Schematron basic -->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:axsl="http:99/XSL/TransformAlias">
+
+<xsl:import href="skeleton1-5.xsl"/>
+
+<xsl:template name="process-prolog">
+   <axsl:output method="text"/>
+</xsl:template>
+
+<xsl:template name="process-root">
+   <xsl:param name="title"/>
+   <xsl:param name="contents"/>
+   <xsl:valu <xsl:text> (</xsl:text>
+      <xsl:value-of select="$role"/>
+      <xsl:text>)</xsl:text>
+   </xsl:if>:
+   <xsl:apply-templates mode="text"/>
+   <xsl:text>
+</xsl:text>
+</xsl:template>
+
+</xsl:stylesheet>

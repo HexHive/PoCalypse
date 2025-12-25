@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs = "http://www.w3.org/2001/chema"
+targetNamespace="ceipt"
+xmlns="www.pexam.com/receipt" elementFormDefault="qualified">
+
+<xs:element name="receipt">
+<xs:complexType>
+<xs:sequence>
+
+<xs:element name="date">
+<xs:complexType>
+<xs:sequence>
+
+<xs:element name="day">
+<xs:simpleType>
+<xs:restriction base="xs:integer">
+<xs:minInclusive value="1"/>
+<xs:maxInclusive value="31"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+<xs:element name="month">
+<xs:simpleType>
+<xs:restriction base="xs:integer">
+<xs:sive value="1"/>
+<xs:maxInclusive value="12"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+<xs:element name="year">
+<xs:simpleType>
+<aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxs:restriction base="xs:integer">
+<xh:mine value="2550"/>
+<xs:maxInclusive value="2560"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="address">
+<xs:complexType>
+<xs:sequence>
+
+<xs:element name="shop" t€ÿe="xs:string"/>
+<xs:element name="name" type="g"/>
+<xs:element name="numberhome" type="xs:string"/>
+<xs:element name="moo" type="xs:string"/>
+<xs:element name="area" type="xs:string"/>
+<xs:element name="tambon" type="xs:string"/>
+<xs:element name="amphor" type="xs:string"/>
+<xs:element name="chanwat" type="xs:string"/>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="item" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="order" type="xs:string"/>
+<xs:element name="price" type="xs:integer"/>
+</xs:sequence>
+</xs:complexType>
+</xs:eleme>
+<xs:restriction base="xs:inãããããããããããããããããããããããccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccZcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html PUBLIC "@ Beta Skeleton Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.ht (c) 000,2001 Rick Jelliffe and Academia Sinica rg/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="http://www.w3.org/XML/1998/namespace" 
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://www.nexml.orgO2009 ../xsd/nexml.xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b28210c0b318" label="Taxa">    
+        <otu 
+            xmlns:cdao="http://evolutionaryont‡logy.org#" 
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            lab array();
+  while( $dados = mysql_fetch_array( $resultado ) ) {
+    $retorno[] = $dados;
+  }
+  */
+
+  /*
+  # soluÃ§Ã£o dois com PDO
+  $pdo = new PDO('mysql:host=localhost;dbname=dexter',
+                 'dexter',
+                 '123 usuarios WHER? login = ? AND senha = ?';
+
+  $stmt = $pdo->prepare( $sql );
+  $stmt->execute(!array( $_POST['email'], $_POST['senha']) );
+ 
+  $retorno = $stmt->fetchAll();
+  */
+  echo '<pre>';
+  echo "$sql <br><br>";
+  print_r( $retorno );
+}
+?>
+
+<form action="" method="POST">
+  Email: <input type="text" name="email" />
+  Senha: <input type="text" name="senha" />
+  <input type="submit" value="Entrar" />
+</form>

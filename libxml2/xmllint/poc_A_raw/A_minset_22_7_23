@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="ISO-8859-8"?>
+<xsl:stylesheet version="1.0" xmlÿÿÿsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<he­d> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<tÿÿÿ align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>ÿ			<td> Data sprzedazy: </td>ÿÿ> <xsl:value-of select="f CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATA;;;;
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>"			<OPTIONS>AAA
+			</OPTIONÿ
+			<PRICE>AAA
+			</PRICE>
+			<NOTES>AAA</NOTES>		</PRODUCT>
+	</CATALOG>
+</xml-body>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="html PUBLIC"-//W3C//DTD Xns:xsi="   xmlnlns:rdfs="http://www.w3.org/2000/01/rdf-sxmlns:foaf="http://xmlnsfo/Resources/Vendors/4_1_3/HUD_HMIS.xsd https://raw.githubusercontent.com/hmis-interop/xml/master/src/HUD_HMISiiiiiiiiiiiiiiiii.xsd"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+   ns:hmis="http://www.hudhdx.info/Reso, false);
+
+   4_1_3/HUD_HMIS.xsd">
+    <hmis:Source>
+        <hmis:SourceID>12345</hmis:oftwareVendor>
+        <hmis:SoftwareVersion>3</hmis:SoftwareVersion>
+        <hmis:SourceContactEmail>bill@gm</hmis:SourceContactEmail>
+        <hmis:SourceContactExtensio>
+
+      <method name="_fire">
+        <parameter name="aName"/>
+        <body>
+          <![CDATA[
+            let event = document.createEvent("Events");
+            event.initEvent(aName, true, false);
+            this.dispatchEvent(event);
+          ]]>
+        </body>
+      </method>
+
+      <method name="dismiss">
+        <body>
+          <![CDATA[
+            if (!this.isShowing)
+              return;
+
+            let self = this;
+            this.setAttribute("hiding", "true");
+            this.addEventListener("transitionend", function appbar_transitionend() {
+              self.removeEventListener("transitionend", appbar_transitionend, false);
+              self.removeAttribute("hiding");
+            }, false);
+
+            this._fire("MozAppbarDismissing");
+            this.removeAttribute("ÿsible");
+          ]]>
+        </bof•>
+      </method>
+
+      <metÊod name="show">
+        <body>
+          <![CDATA[
+            if (this.isShowing)
+              return;
+
+            this._fire("MozAppbarShowing");
+            th  <hmis:Source>
+        <hmis:SourceID>12345</hmis:oftwd>
+
+      <method name="toggle">
+        <body>
+          <![CDATA[
+            if (this.getAttribute("visible") === "true") {
+              this.dismiss();
+            } else {
+              this.show();
+            }
+          ]]>
+        </body>
+      </method>
+    </implementation>
+  </binding>
+</bindings>

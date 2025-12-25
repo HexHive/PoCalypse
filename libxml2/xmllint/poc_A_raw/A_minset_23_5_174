@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='html>]]></eg>
+       </example>
+      </div1>
+  <div1 id="cce-requirements">
+     <head>
+Conformance requirements</head>stylesheet type="../../../2002/xmlspec/xhtml/1.13/xmlspec?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+Y>
+
+<i:calcAverage ymlns:i="http://www.example.org">
+    <i:argument>3</i:argumentÿÿ    <i:argument> 7 <![CDATA[This is some CDATA with som} tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: ?xml versione more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

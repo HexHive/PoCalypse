@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="html>
+</xslKtemplate>
+
+<xsl:ÿmplate match="faktura/sprzedawca_dane" >
+
+<tr>  works, and to test some of^T anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, dkfines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xm‰ns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is ome more tzxt </i:argument>
+    <i:argument>and nsw defined entity: &zz; and some more text ntity: &lt; and some more text nd now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

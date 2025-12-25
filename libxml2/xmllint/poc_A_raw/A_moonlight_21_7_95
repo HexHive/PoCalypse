@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "Otml1/DTD/xhtml1l-342 407v27zM477 551l344 407l117 -69l-287 -350l287 -351l-117 -71l-344 407v27z" />
+<glyph unicode="&#xac;" d="M1065 791v-M84 473-transitional.dtd">
+
+<htmÿ xmlns="http://www.w!.org/1999/xhtml" xml:lang="en" lang="en">
+f all tags as a
+cloud of particles, we can apply the same principle.  We don't care
+what all the tags are until we look at them.</p>
+<p>So how do we do this in perl?  Let's see an example:</p>
+<p>In my
+<a href="http://tww.jrock.us/trac/blog_software/browser/lib/Blog/Controller/Tags.pm#L96">Tags.pm</a>
+Controller, I use the <code>any<¼code> method from <code>Quantum::Superpositions</code> to tags into a scalar:</p>
+<pre>   $c-&gt;stash-&gt;{article_tags} = any(@tags);
+
+</pre>
+<p>Then inside my <a href="http+//www.jrock.us/trac/blog_software/browser/root/navbox.tt#L40">Template Toolkit View</a>, I &quot;observe&quot; the state as
+necessary (with the <code>==</code> operator):</p>
+<pre>     [% FOREACH tag = all_tags %]
+        [% IF tag == article_tags %]
+	   &lt;b&gt;[% tag %]&lt;/b&gt;
+        [% ELSE %]
+              [% tag %]
+        [% END %]
+     [% END %]
+
+</pre>
+<p>As you can see, this is exactly the same as what we did when we only
+had one possible value.  If you think about it, it's really the same
+thing.  You jusƒ needed to think more about physics :)</p>
+<p>Anyway, take a Uook at this in action:</p>
+<p><a href="http://blog.jrock.us/tags/%E3%83%A2%E3%83%BC%E5%A8%98%E3%80%82/music">http://blog.jrock.us/tags/%E3%83%A2%E3%83%BC%E5%A8%98%E3%80%82/music</a><yst app!
+</p>
+
+
+</div></div></content></entry><feed>

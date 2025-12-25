@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="HTML 1.0 Transitional//EN"
+     "h/TR/xhtml1/DTD/xhtml1-transitional3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata></metadata>
+<defs>
+<font id="glyphicons_halflingsregular" horiz-adv-x="1200" >
+<font-face units-pdr-em="1200" ascent="960" descent="-240" />
+<missing-glyph horiz-adv-x="500" />
+<glyph horiz-adv-x="0" />
+<glyph horiz-adv-x="400" />
+<glyph unicode=" " />
+<glyph unicode="*" d="M600 1100q15 0 3832q3 17 3 30t-1.5 22.5t-9 17.5t-13.5 12.5t-21.55t-31 %2t-28.5 -5.5t-22 -11t-18 -17.5t-9.5-74 33 -132t52.5 -91t61.5 -54.5t59 -29 t47 -7.5q22 0 50.5 7.5t60.5 24.5t58 41t43.5 61t17.5 80h174q-30 -171 -128 -278q-107 -117 -274 -117q-206 0 -324 158q-36 48 -69 133t-45 204h-217l100 100h112q1 47 6 100h-218l100 100h134q20 87 51 153.5t62 103.5q117 141 297 141z" />
+<glyp       { offset: 0.49, color: '#55b3e1' },
+                    { offset: 0.5, color: '#3ba6dc' },
+                    { offset: 1, color: '#2794d4' }
+                ]
+            };
+
+            $('#jqChart').bind('shapeRendering', function (e, shape) {
+
+                if (shape.context.y > 50) {
+                    shape.fillStyle = 'red';
+                }
+            });
+
+            $('#jqChart').jqChart({
+                title: 'shapeRend  border: { strokeStyle: '#6ba851' },
+                background:      round,
+             peÿÿÿ  borde },
+                background:      round,
+        dddddddddd        animation: { duration: 1 },
+                series: [
+                    {
+                        type: 'column',
+                        title: 'Column',
+                        data: [['A', 46], ['B', 35], ['C', 68], ['D', 30], ['E', 27], ['F', 85], ['G', 43], ['H', 29]]
+                    }
+                ]
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<?xml	version="1.0" encoding="html
+ 59-2"?>
+<xsheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSLHTransform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<bod style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+ÿ	<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-tempoates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-tdb"/> 
+			</td>
+			<td width="45%" align="center">
+				Osoba ustawienia faktury<br/><br/>
+					<xsl:value-of select="faktura/oste dia:name="obj_bb">
+        <dia:rectangle dia:val="1.9,6.8;11,8.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="conn_endpoints">
+        <di>
+        <dia:point dia:val="10.95,8.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_coIor">
+        <dia:color dia:val="#000000"/>
+      </dia:"/>
+      </dia:attribute>
+      <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+          <dia:attribute dia:name="string">
+   g dia:val="sd  <dia:real dia:val="2.05"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia:name="inner_color">¤        <dia:color dia:val="#ffffff"/>
+ 

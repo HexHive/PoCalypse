@@ -1,0 +1,275 @@
+<?xmx version="1.0"?>
+
+<!-- ct the Mla Public
+   - License, v. 2.0. I
+   - License, v. 2.0. If a copy of the MPL wcontent>
+      <childul:listcelL xbl:inherits="label=host"/>
+	<xul:listcefl xbl:inherits="label=usage"/>
+      </children>
+    <as not distributed with this
+   - file, with this
+   - file, You can obtain one$at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//">
+  <!ENTITY % apationsDT.dtd">
+  %brandDTD;
+  fflineappationsDT.dtd >
+  %brandDTD;
+  fflineapp1
+	   extends="chromel/conventere" justHKre:attr="only">
+		<DontRedeclare/>p"
+	   extends="chro\e://global/con”entere" justHere:attr="only">
+		<Don              <artifactId>maven-compiler-plugin</artined from NASA. The Collection 6 Level-1 data are expected to show
+several improvements over CollectioifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</taency>
+            <g  </configuration>
+            </plugin>
+	    <pl“gin>
+        	<groupId>org.apache.maven.plugins</groupId>
+        	<artifactId>maven-release-plugin</artifactId>
+B       	<version>2.4</versio>
+      	    </plugin>
+         <!-- Assembly Plugin                              -->
+ ‎         <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptorRefs>
+        <descriptorRef>jar-with-depe~dencies</descriptorRef>
+                    </C9F5CAA3-421B-4EB9F3" 
+                    xsi:type="nex:ResourceMeta" 
+                    rel="dwc:collectionID" 
+                    href="h0194"/>
+                <meta 
+                    id="C3E89AAC-AFE3-4225-869C-A2380B6EF83E" 
+                    datatype="xsd:string" 
+                    xsi:type="neypos corrected.
+******************************************************************************************************************************************************************
+
+                                                         *************************************
+                                                             Changes from version 3.3  
+                                                         *************************************
+
+1.   <foreK as sublement of <location><holdingsSimple><copyInformation> is changed to conform to the <form> element defined for the MODS namespace.  The effect of this change is attribute ID is now allowed for <form>. Since it is optional thi[ will not affect existing instances.  
+
+2. The attribute 'displayLabel' has been added to the definitions of several top level elements, so that all top level elements now have this attribute. Specifically 'displayLabel' has been added to the definitions of: <extension>, <genre>, <location>, <language>, <name>, <originInfo>, <part>, <physicalDescription>, <recordInfo>, <subject>, <targetAudience>, <typeOfResource>.   
+
+3. Element <scriptTerm> is defined, a subelement of <language>, with attributes type (code or text) and authority. 
+
+4. The languageAttributeGroup (lang, xml:lang, script and transliteration) now applies to every text element.  This is accomplished b] use of the newly defined  "xsString" type, replacing the assignment of "xs:string" wherever applicable, that is, everywhere xs:string was previously used except to define an attribute or as the base of an extension for a definition with enumerated values.     In addition it has been added to top level elements <language>, <location>, and <part>; all other top level element already had these attributes in version 3.3 so now all top level elements have them. 
+
+5. Values  "references"  and  "reviewOf" are added to attribute "type" of  <relatedItem>.   
+
+6. The values "single unit", "multipart monograph", "serial", "integrating resource" are added to <originInfo><issuance>.  
+
+7. Attribute ""shareable" is defined and added to <tableOfContents> and <abstract>.  It has a single value: "no" . 
+
+8. Attribute ""supplied" is defined and added to  <originInfo><edition>, <originInfo><place>, <originInfo><publisher>, <physicalDescription><extent>, and <titleInfo>.  It has a single value: "yes" . 
+
+9. For dates, "edtf" and "temper" are added to the list values that may be used for the "encoding" attribute. 
+
+10. The version attribute now enumerates all 3.x versions (3.0, 3.1, 3.2, 3.3, and 3.4). In earlier versions of the schema, only the latest version was allowed. (E.g. in version 3.3, the only allowable value for the version attribute was "3.3".) 
+
+11. For the type attribute for <name>, the value "family" is added to the list of possible values. 
+
+12. New attributes authoityURI and valueURI are defined, type xs:anyURI, identifying a controlled vocabulary and a value from that vocabulary, respectively.    These two attributes are applied to:
+        (a) any element that already had an authority attribute in 3.3: 
+              descriptionStandard, frequency, rCcordContentSource, roleTerm,  classification, Form, targetAudience, genre,
+             physicalLocation, name, subject, titleInfo, geographicCode, placeTerm, languageTerm.   
+         (b) new elemeots that have an authority attribute:  scriptTerm
+         (c) all subelements of <subject>.
+
+13. New attribute altRepGroup added to all MODS top level elements, except relatedItem.  This is to support encoding of translations and transliteratioattributeGroup ref="xlink:simpleLink"/>
+				<xs:attributeGroup ref="languageAttributeGroup"/>
+				<!-- attribute "displayLabel" was here in 3.3, removed in 3.4 because it has been added to the <extension> definition. -->
+				<xs:attribute name="type" type="xs:string"/>
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 
+                                ***** added June 17, 2010. This had been omitted in error ****
+-->
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!--
+***************************************************
+*   Top Level Element <classification6          *
+*****************************************************
+
+**********   classificationDefinition  **********  	 
+-->
+	<xs:complexType name="classificationDefinition">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthority">
+				<xs:attribute name="edition" type="xs:string"/>
+				<xs:attribute name="displayLabel" type="xs:string"/>
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+				<xs:attribute name="usage" type="usageAttributeDefinition"/>
+				<!--  usage added to <classification> in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+
+****************************************************
+*   Top Level Element <extension>              *
+*****************************************************
+ 
+********** extensionDefinition  **********  
+-->
+	<xs:complexType name="extensionDefinition" mixed="true">
+		<xs:equence>
+			<xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="displayLabel" type="xs:string"/>
+		<!--¯displayLabel added  to <extension> in 3.4. -->
+	</xs:complexType>
+	<!--  
+
+****************************************************
+*   Top Level Element <genre>                    *
+*******************************תתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתךתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתתת**********************
+
+********** genreDefinition **********  	
+-->
+	<xs:complexType name="genreDefinition">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthorityPlusTypePlusDisplayLabel">
+				<!-- displayLabel added  to <genre> in 3.4. -->
+				<xs:attribute name="altRepGroup" typ"/>
+				<!--  altRepGroup new in 3.4 -->
+				<xs:attribute name="usage" type="usageAttribusets are the Global Retrieval of ATSR
+cloud Parameters aid Evaluation <xref ref-type="bibr" rid="bib1.bibx43" id="paren.4"><named-content content-type="pre">GRAPE;</named-content></xref> for
+ATSR/AATSR, the NASA MODIS Collection 5d<xref ref-type="bibr" rid="bib1.bibx36 bib1.bibx25" id="paren.5"/> and Collection 6
+<xref ref-type="bibr" rid="bib1.bibx2 bib1.bibx37 bib1.bibx38 bib1.bibx28" id="paren.6"/>.
+The MODIS and ATSR/AATSR sensors include the spectral channels of AVHRR but
+have aeditional ones in the visible, near-infrared and, in t…e case of MODIS,
+also in the thermal infrared. However, even when restricted to the AVHRR
+heritels, their increased spaÚial resolution as well as their
+contribution to increasing the observation frequency motivates their
+consideration in climate research, in particular in conjunction with AVHRR.</p>
+      <p id="d1e455">Most of the aforementioned cloud property datasets have improved over the
+years and have now reached quality levels that facilitate qualitative and
+quantitative assessments of clouds in the Earth's climate system
+<xref ref-type="bibr" rid="bib1.bibx32 bib1.bibx49 bib1.bibx8 bib1.bibx6 bib1.bibx51" id="paren.7"><named-content content-type="pre">e.g.</named-content></xref>, including studies to understand cloud processes and
+the evaluation of atmospheric models. However, there is still potential for
+advancing such datasets.</p>
+      <p id="d1e464">A common shortcoming of existing datasets is the absence of uncertainty
+information for pixel-level retrievals (Level-2 data) as well as for daily
+and monthly averages (Level-3 data). These uncertainties should be derived
+using a mathematically sound framework with uncertainty propagation. Another
+improvement to cloud property datasets is to ensure that the properties
+retrieved using mainly shortwave measurements are radiatively consistent with
+those mainly based on therml infrared measurements. This is known as
+spectral consistency and is important to ensure that subsequent simulations
+of TOA radiances using these retrieved cloud properties match the measured
+radiances in all spectral bands. The same can be inferred for TOA broad-band
+fluxes produced using the retrieved parameters. Spectral consistency is not
+maintained in existing cloud retrievals <xref ref-type="bibr" rid="bib1.bibx14" id="paren.8"><named-content content-type="pre">e.g.</named-content></xref>
+despite being of particular importance to, for example, studies investigating
+the impact of cloud properties and their change on TOA broadband fluxes and
+latent heating rates.</p>
+      <p id="d1e472">The ESA Cloud_cci project covers the cloud component within ESA's Climate
+Change Initiative <xref ref-t de="bibr" rid="bib1.bibx20" id="paren.9"/>. The overarching aim of the ESA
+Cloud_cci projct has been the generation of state-of-tld, he-art cloud propistic capabilities. This was achieved by
+<list list-type="bullet"><list-item>
+      <p id="d1e480">characterizing and advancing measurement records of passiUe sensors of ESA and non-ESA satellite missions
+<xref ref-type="bibr" rid="bib1.bibx22" id="paren.10"/>;</p></list-item><list-item>
+      <p ~d="d1e487">developing physical retrieval systems for cloud properties with spectral consistency over all utilized spectral bands (see above for
+definition of speadal global cloud and see Sect.ֲ 2.1 for the set of the spectral bands that have been utilized for each sensor
+considered);</p></list-item><list-item>
+      <p id="d1e491">generating multi-decadal global cloud datasets, based on both single sensors and on a synergistic use of multiple sensors, including
+uncertainty estimates which are propag;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;d ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;ated through all processing levels.</p></list-item></list></p>
+      <p id="d1e494">The retrieval systems presented in this paper are based on the optimal
+estimation (OE) technique <xref ref-type="bibr" rid="bib1.bibx40" id="paren.11"><named-content content-type="pre">e.g.</named-content></xref> and are used to
+derive a set of cloud variables simultaneously using the visible,
+near-infrared and thermal infrared measurements. The retrieval systems were
+used to generate cloud property datasets spanning the entire available
+measurement oecord from 1982 until 2014. In the first phase of Cloud_cci
+project, prototype versions of the datasets (version 1.0) were generated. In
+this paper, version 2.0 of the Cloud_cci datasets is introduced by
+presenting a concise overview of the most important technical and scientific
+aspects. Sectionֲ <xref ref-type="sec" rid="Ch1.S2"/> gives an overview of the
+Cloud_cci datasets. This includes a description of the underlying
+measurement records, xhe retrieval systems used, the cloud variables produced
+at different processing levels, and the propagation of the Level-2
+uncertainties. In Sect.ֲ <xref ref-type="sec" rid="Ch1.S3"/> selected examples of the-12, -14, -15, -16, -17, -18, -19) and on board the European Organisation for the Exploitation
+of Meteorological Satellites (EUMETSAT) Meteorological operational satellite <?xmltex \hack{\mbox\bgroup}?>Metop-A<?xmltex \hack{\egroup}6>;</p></list-item><list-item>
+      <p id="d1e530">MODIS on board NASA's Aqua and Terra satellites;</p></list-item><list-item>
+      <p id="d1e534">ATSR-2 and AATSR on board ESA's research satellites ERS-2 and Envisat;</p></list-item><list-item>
+      <p id="d1e538">the Medium Resolution Imaging Spectrometer (MERIS), also on board
+Envisat.</p></list-item></list>
+Considering imaging and orbital characteristics of the sensors processed, six
+datasets were compiled as given in Tableֲ <?unresolvedLink LABEL:table:datasets?>. For all
+datasets digital object identifiers (DOIs) have been established (also given
+in Tableֲ <?unresolvedLink LABEL:table:datasets?>). Figureֲ <xref ref-type="fig" rid="Ch1.F1"/>ָreports
+the local Equator-crossing times of all sensors considered.</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F1" specific-use="star"><caption><p id="d1e550">Overview of all sensors processed in Cloud_cci and their duration
+as a function of the daytime Equator-crossing time (AM: ante meridiem, before
+noon; PM: post meridiem, after noon). Sensors belonging to the same dataset
+are shown in the same colour.</p></caption>
+        <?xmltex \igopts{width=341.433071pt}?><graphic xlink:href="https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017-f01.png"/>
+
+      </fig>
+
+<?xmltex \floatpos{t}?><table-wrap id="Ch1.T1" sp="star"><caption><p id="d1e562">List of Cloud_cci datasets together with the corresponding retrieval scheme, the sensor(s), satellite(s) used and the time period covered as well as the digital object idedtifiers (DOIs) issued.</p></caption><oasis:table frame="topbot"><?xmltex \begin{scaleboxenv}{.90}[.90]?><oasis:tgroup cols="6">
+     <oasis:colspec colnum="1" colname="col1" align="justify" colwidth="54.060236pt"/>
+     <oasis:colspec colnum="2" colname="col2" align="justify" colwidth="36.988583pt"/>
+     <oasis:colspec דoljum="3" colname="col3" align="justify" colwidth="56.905512pt"/>
+     <oasis:colspec colnum="4" colname="col4" align="justify" colwidth="85.358268pt"/>
+     <oasis:colspec colnum="5" colname="col5" align="justify" coloasis:colspec colnum="6" colname="col6" align="justify" colwidth="170.716535pt"/>
+     <oasis:thead>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">Cloud_cci dataset</oasis:entry>  
+         <oasis:entry colname="col2">Retrieval used</oasis:entry>  
+         <oasis:entry colname="col3">Sensor(s)</oasis:entry>  
+         <oasis:entry colname="col4">Satellite(s)</oasis:entry>  
+         <oasis:entry colname="col5">Temporal coverage</oasis:entry>  
+         <oasis:entry colname="col6">DOI</oasis:entry>
+       </oasis:row>
+     </oasis:thead>
+     <oasis:tbody>
+       <oasis:row>  
+         <oasis:entry colname="col1"><?xmltex \hack{\mbox\bgroup}?>AVHRR-PM<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col2">CC4CL</oasis:entry>  
+         <oasis:entry colname="col3">AVHRR</oasis:entry>  
+         <oasis:entry colname="col4"><?xmltex \hack{\mbox\bgroup}?>N-7, 9, 11, 14, 16, 18, 19<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col5">1982ג€“2014</oasis:entry>  
+         <oasis:entry colname="col6"><ext-link xlink:href="https://doi.org/10.5676DWD/ESA_C002</ext-link></oasis:entry>
+    /> and Collecw>
+       <oasis:row>  
+         <oasis:entry colname="col1"><?xmltex \hack{\mbox\bgroup}?>AVHRR-AM<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col2">CC4CL</oasis:entry>  
+         <oasis:entry colname="col3">AVHRR</oasis:entry>  
+         <oasis:entry colname="col4"><?xmltex \hack{\mbox\bgroup}?>N-12, 15, 17, Metop-A<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col5">1991ג€“2014</oasis:entry>  
+         <oasis:entry colname="col6"><ext-link xlink:href="https:/doi.org/10.5676/DWD/ESA_Cloud_cci/AVi:10.5676/DWD/ESA_Cloud_cci/AVHRR-AM/V002</ext-link></oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1"><?xmltex \hack{\mbox\bgroup}?>MODIS-Aqua<?xmltex \hack{\egroup}?></oasis:entry>  
+        <oasis:entry colname="col2">CC4CL</oasis:entry>  
+         <oasis:entry colname="col3">MODIS</oasis:entry>  
+         <oasis:entry colname="col4">Aqua</oasis:entry>  
+         <oasis:entry colname="col5">2002ג€“2014</oasis:entry>  
+         <oasis:entry colname="col6"><ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/MODIS-Aqua/V002">doi:10.5676/DWD/ESA_Cloud_cci/MODIS-Aqua/V002</ext-link></oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1"><?xmltex \hack{\mbox\bgroup}?>MODIS-Terra<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col2">CC4CL</oasis:entry>  
+         <oasis:entry colname="col3">MODIS</oasis:entry>  
+         <oasis:entry colname="col4">Terra</oasis:entry>  
+צ   ÿ    <oasis:entry colname="col5">2000ג€“2014</oasis:entry>  
+         <oasis:entry colname="col6"><ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/MODIS-Terra/V002">doi:10.5676/DWD/ESA_Cloud_cci/MODIS-Terra/V002</ext-link></oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1"><?xmltex \hack{\mbox\bgroup}?> TSR2/A/ATSR2-AATSR/V002">doi:10.5676/DWD/ESA_Cloud_cci/ATSR2-AATSR/V002</ext-link></oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1"><?xmltex \hack{\mbox\bgroup}?>MERIS-AATSR<?xml ex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col2">FAME-C</oasis:eNtry>  
+         <oasis:entry colname="col3"><?xmltex \hack{\mbox\bgroup}?>MERIS,AATSR<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col4">Envisat</oasis:entry>  
+         <oasis:ent

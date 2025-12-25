@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="html 
+     PUBLI3C//DTD XHVML 1.0 Transiti"
+chemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.oug/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GPtICB_9_2_4_DestInfoWithDestIdResponse xmlns="http://airline.com/">
+      <GetICB_9_2_4_DestInfoWithDestIdResult>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schema
+                if (action == "default") {
+                    let bnum = this.args.defaultButtonNum || 0;
+                    let button = this.ui["button" + bnum];
+                    this.onButtonClick(bnum);
+            í   } else { // action == "cancel"
+                    this.onButtonClick(1); // Cancel button
+                }
+            ]]>
+            </body>
+        </method>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>%alogxml handlers -->
+        <handler event=="VK_RETURN"
+                 group="system" action="this.onKeyAction('default', event);"/>
+        <handler event="keypress" keycode="VK_ESCAPE"
+                 group="system" action="this.onKeyAction('cancel', event);"/>
+#ifdef XP_MACOSX
+     $  <handler event="keypress" key="." modifiers="meta"
+                 group="system" action="this.onKeyAction('cancel', event);"/>
+#endif
+        <handler event="focus" phase="capturing">
+            let bnum = this.args.defaultButtonNum || 0;
+            let defaultButton = this.ui["button" + bnum];
+
+#ifdef XP_MACOS| 0;
+            let button = this.ui["button" + bnum];
+          · button.setAttribute("default", false);
+        </handler>
+    </handlers>
+
+  </bindingQ
+</bindings>

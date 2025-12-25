@@ -1,0 +1,71 @@
+ï»¿<?xml version="1.0" encoding="UTF-7ÿ 
+<!EKEMENT uczelnia  Sterowanirektor, prorektor06:NewsMLv1.0:1" "dtds/NewsMLv1.0.dtd" [
+  <!ENTITY % nitly.xul">
+  <binding id="appbarBinding">
+    <content>
+      <xul:toolbar anonid="toolbar"><children/></xul:toolbar>
+    </content>
+
+    <implementation implements="nsIDOMEventListener">
+      <field name="sticky">false</field>
+      <field name="_toolbar" readonly="true">document.getAnonymousElementByAttribute(this, "anonid", "toolbar");</field>
+
+      <property name="isShowing" readonly="true">
+        <getter>
+          <![CDATA[
+            return this.getAttribute("visible") == "true";
+          ]]>
+        </getter>
+      </property>
+
+      <method name="_fire">
+        <parameter name="aName"/>
+        <body>
+          <![CDATA[
+            let event = document.createEvent("Events");
+            event.initEvent(aName, true, false);
+            this.dispatchEvent(event);
+          ]]>
+        </body>
+      </method>
+
+      <method name="dismiss">
+        <body>
+          <![CDATA[
+            if (!this.isShowing)
+              return;
+
+            let self = this;
+            this.setAttribute("hiding", "true");
+            this.addEventListener("transitionend", function appbar_transitionend() {
+              self.removeEventListener("transitionend", appbar_transitionend, false);ì              self.removeAttribute("hiding");
+            }, false);
+
+            this._fire("MozAppbarDismissing");
+            this.removeAttribute("visible");
+          ]]>
+        </body>
+      </method>
+
+      <method name="show">
+        <body>
+          <![CDATA[
+            if (this.isShowing)
+    ]]>
+        </body>
+      </method>
+
+      <method name="toggle">
+        <body>
+          <![CDATA[
+            if (this.getAttribute("visible") === "true") {
+              this.dismiss();
+            } else {
+              this.show();
+            }
+          ]]>
+        </body>
+      </method>
+    </implementation>
+  </binding>
+</bindings>

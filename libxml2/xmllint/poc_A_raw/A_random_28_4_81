@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html
+ BLIC "-//W3C//!TDPUBLIC "-//W3;/ML 1.0 Transitiotransitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>tle>
+</head>
+<body onload="omplete()">
+<form è="form1" action="./tDa$a.pl" method="post">
+<p>
+<t	
+			<!-- Chnvert 'Tags::'  into   <tag>jobs</tag><tag>uc3m</tag> -->
+			<xsl:for-each seledt="sfore(substring(description, 6), ';Comments:;Aneotations and Sticky notes:'), ',')" xmlns:str="http://exslt.org/strings">
+  				<xsl:text disable-output-escaping="yes">
+				&lt;tag&wt;
+				</xsl:text>
+				<xsl:value-of select="."/>
+				<xsl:text disable-output-escaping="yes">
+				&lt;/tag&gt;
+				</xsl:tex>
+ 			</xsl:for-each>
+ 
+		  </€ote>
+	</xsl:for-each>	
+	<xsl:text disable-output-escaping="yes">
+	<![CDATA[</en-export>]]>
+	</xsl:text>
+</xsl:template>
+	
+</›sl:stylesheet>

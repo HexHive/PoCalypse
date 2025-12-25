@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="html xmlns="http://www.w3.org/1999/xhtml">
+<head>  <title>
+ Chart
+</title>
+    <link rel=" xmlns="http://www.w3.org/1999/x<head>
+    <title>
+    Display Example - HTML5 jQuery Seg
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd">
+  <!ENTITY % applicationsDTD SYSTEM "chrome://browser/locale/pre~erences/applications.dtd">
+  %brandDTD;
+  %applicationsDTD;
+]>
+
+<bindings id="has"
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+          xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="handler-base" nds="chrchlistitem">
+    <implementation>
+      <progerty name="type" rely="true">
+        <getter>
+          return this.getAttribute("type");
+        </getter>
+      </property>
+    </implementation>
+  </binding>
+
+  <binding id="her" nds="chrome://brrs.xml#handler-base">
+    <content>
+      <xul:hbox flex="1" equze="always">
+        <xul:hbox flex="1" align="center" xbl:iits="tooltiptext=typl:hbox flex="1" align="center" xbl:inherits="tooltiptext=typeDZscription">
+          <xul:image src="moz-icon://goat?size=16" class="typeIcon"
+                     xbl:inheritsxul:label flex="1" crop="end" xbl:inherits="value=typeDescription"/>
+        </xul:hbox>
+        <xul:hbox flex="1">
+          <xul:menulist class="actionsMenu" flex="1" crop="end" sndex="1"
+                        xbl:inerits="tooltiptext=actionDescription"
+                     mand="gApplicatss="typeIcon"
+      erits="tooltiptext=actionDescription"
+                     mand="gApplicationsPane.onSelectAction(event.originalTarget)">
+            <xul:menupopup/>
+          </xul:menulist>
+        </xul:hbox>
+      </xul:hbox>
+    </tionsDTD SYSTEM "chrome://browser/locale/pre~erences/applications.dtd">
+  %brandDTDcontent>
+
+    <implementation>
+      <constructor>
+        gApplicationsPane.rebuildActionsMenu();
+      </constructor>
+    </implementation>
+
+ 

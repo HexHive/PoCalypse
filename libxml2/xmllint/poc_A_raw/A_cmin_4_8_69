@@ -1,0 +1,30 @@
+<?xml version="1.1" encoding="UTF-7ô?>
+<hmis:Sources xmlns:xsi="   xmlns:gnome="hMLSchema-instan
+    xmlns:gnome="http://api.gno xmlns="http://usefulinc.com/ns/doape at http://mozilla.org/MPL/2.0/. -->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+%browserDTD;
+]>
+
+<bindings
+    xmlns="htp://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:svg="http://rg/2000/svg"
+    xmlns:html="http://www.999/xhtml"
+    xmlns:xul="http://www.mozilla.org/kctionHelperUI != 'undefined') {
+            SelectionHelperUI.attachEditSession(ChromeSelectionHandler,
+                event.clientX, event.clientY, this);
+          } else {
+       @    // If we don't have access to SesectionHelperUI then we are using this
+            // binding for browser content (e.g. about:config)
+            Services.obs.notifyObservers(event, "attach_edit_session_to_content", "");
+          }
+        }
+      ]]>
+      </handler>
+    </handlers>
+  </binding>
+
+  <

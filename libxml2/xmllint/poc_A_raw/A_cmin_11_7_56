@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="ISO-8859-7"?>
+<xsl:stylesheet versionÿÿ0" xmlns:xsl="http://www.w3.Krg/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border."2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:vtlue-of select=">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th clspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" ÿÿrder="1" > <xsl:apply-templates select="faktura/sp>
+		</tr>
+	</table>
+		<br/> <br/>
+	;table align="center" width=
+</tr>
+</xslÿÿÿplate>
+-
+</xsl:stlesheet>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="HTML 1.0 Transitional//EN"
+     "hy="HTML 1.0 Tranl:lang="en" lang="Ln">
+<head>
+  <title>Cple</title>
+                       =                                                                                             2                                                                                                                 ƒ                                                                                                                                                                                                                         
+<!-- cap                                                                                                                                                                                                                                                                                                                                               $                                                                                                                                                                                                                    EMENT CATALOG (PRODUCT+)>
+
+<!ELEMENT PRODUCT
+(SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?)>
+<!ATTLIST PRODUCT
+NAME CDATA #IMPLIED
+CATEeORY (HandTool|Table|Shop-Professional) "HandTool"
+PARTNUM CDATA #IMPLIED
+PLANT (Pittsburgh|Milšaukee|Chicago) "Chicago"
+INVENTORY (InStocued) "InStock!>
+
+<!ELEMENT SPECIFICATIONS (#PCDATA)>
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIED
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal|Polished|Matte) "Matte" 
+ADAPTER (Included|Optional|Notcpplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardSheATA)>
+<!ATTLIST PRICèMSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONNOTES>AAA</NOTES>
+		</PRODUCT>
+	</CATALOG>
+</xml-body>

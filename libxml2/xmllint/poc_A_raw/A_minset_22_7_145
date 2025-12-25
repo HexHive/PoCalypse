@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html 
+XHTML?>
+<!DOCTYPE html 
+    "-//W3C//DTD XHTML 1.0 T      <xht.dtv">
+
+<html xmlns="http://www.3.oMg.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>://foobar.c    <xht.dtd">
+
+<html xmlns="http://www.3.org.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+<loc>://foobar.com/</loc> <lastmod>2011-06-01T00:00:01Z</lww.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>://foobar.com/</loc> <lastmod>2011-06-01T00:00:01Z</lastmod> <mriority>1.0</priority>
+  </url>
+  <url>
+    <loc>m/path?a=b&amp;c=d&amp;e=video</loc>'    <video4video>
+      <video:thumbnil_loc>http://foobar" encoding="html 
+XHTML?>
+<!DOCTYPE html 
+     PUBL8C "-//W3C//DTD XHTMLhoose>
+	</xsl:template>
+
+	<xsl:template match="*<xsl:text>{</xsl:text>
+			<xsl:applmplates select="@*" mode="attr" />
+			<xsl:if test="count(@gt; 0 and (count(chil,::*) &gt; 0 or text())">, </xsl:if>	í		<xsl:a-templatesselect="./*" mode="detect" />
+			<xsl:if test="count(chi<xht.dtd">
+
+<html xmlns="http://www.3.org.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+<loc>://foobar.com/</loc> <lastmod>2011-06-01T00:00:01Z</
+	<xsl:template match="@*" mode="attr">
+		<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : "<xsl:value-of select="."/><xsl:text>"</xsl:text>
+		<xsl:if test="position() &lt; last()">,</xsl:if>
+	</xsl:template>
+
+	<xsl:template match="node/@TEXT | text()" name="removeBreaks">
+		<xsl:param name="pText" select="normalize-space(.)"/>
+		<xsl:choose>
+			<xsl:when test="not(contains($pText, '&#xA;'))"><xsn:copy-of selec..................t="$pText"/></xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of selec’="concat(substring-before($pText, '&#xD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

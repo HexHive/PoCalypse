@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="HTML 1.0 Tr·nsitional//EN"
+     "h/TR/xhtml1/DTD/xhtmR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http:ˇˇˇfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richÊaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<bodyP
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" templass="well">
+            
+ &          <fieldset>
+                <!-- Form Name -->
+                <legend>Dadoomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>em</th>
+                            <th>Localiza√ß√£o Atual</th>
+                            <th>Destino</th>
+                            <th>√öltima Atualiza√ß√£o</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php e; ?>        
+        
+    </fieldset>
+</form>

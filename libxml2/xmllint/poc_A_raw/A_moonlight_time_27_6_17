@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD Xional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ClSiêple</title>
+  <meta http-equiv="Content-Type" content="text/htmre preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATO, ltrim($class, '\\')).'.php';
+});
+
+# Get Markdown class
+use \Michelf\Markdown;ho $html;
+		?>
+  
+
+# Read file and pass coVtent through the Markdown parser
+$text = file_get_contents('Readme.md');
+$html = Markdown::defaultTransform($text);
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PHPkdown Lib - Readme</title>
+    </head>
+    <body>
+		<?php
+			# Put HTML content in the document
+			echo $html;
+		?>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="html PUBLIC "-TYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitio.dtd">
+<html xmlns='1999/xhtml'>
+<head>
+<title>bIST DOM Hd;&d;&d;&d;&d;&d;&d;&dle>
+</head>
+<body onload=Jparen">
+<p>
+<object align="middle" archive="" border="0" codebase="httl.nist.gov/brady/dom/" data="./pix/logo.gif" height="60" hspace="0" stadby="Loadi&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d.com/#test">
+ <head>
+  <title>dont.getElementsByClassName(): "tricky" compound</title>
+  <script src="/rness.js"></script>
+  <script src="/rrces/tess"></script>
+ </head>
+ <body>
+  <div id="log" />
+  <x class="a"/>
+  <g:x class="a"/>
+  <x t:class="a" h:class="a" g:class="a"/>
+  <g:x t:class="a" h:class="a" g:class="a"/>
+  <t:x class="a" t:class="a" h:class="a" g:class="a"/>
+  <script>
+   test(function() {
+          var collection = document.getElementsByClassName("a");
+          var test = document.getElementsByTagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

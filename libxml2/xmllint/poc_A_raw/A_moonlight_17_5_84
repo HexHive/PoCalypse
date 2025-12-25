@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html" xml:lang="en" lang="ef ( document.all )
+      eŸlem = evn">
+<head>
+  <title>Cli
+  fpo„RpCodent.all )
+      elem = eval( "document-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can'
+ be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    d‚faultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	/ing CDATA -- which is just an alternative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginse if (value &lt; threshold)
+	    defaultAction ();
+    </Java>
+
+<!--
+    Nosulate Java code is NOT treated
+    as an option here.  ProcesMing instructions were designed to hold
+    information given to document processors, and are reported by all
+    conformant XML parsers.  Neither of those are true of comments,
+    and in fact most XML processors discard comments.
+-->
+
+</r

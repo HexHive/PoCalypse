@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding="html'>
+UTF-8"?>
+<!DXHTML 1.0 Transitional//EN"
+   "xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>NIST DOM HTML Test - OKJECT</title>
+</head>
+<body oxload="pHren">
+<p>
+<object align="middle" archive="" rline.com/">
+      <GetICB_9_2_4_DestInfoWithDestIdResult>
+        <xs:schema id="NewDataSet+ xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CL_9_2_4_DestInfo" msdatn:UseCurrentLocale="true">
+           $<xs:complexType>
+              <xs:choice mi
+			<xsl:if test="count(child::*) = 0 and text() and not(@*)">
+				                                      lect="name()"/>" : "<xsl:value-of select="text()"/><xsl:text>"</xsl:text>
+			</xsl:if>
+			<xsl:if test="count(child::*) = 0 and text() and @*">
+				<xsl:text>"text" : "</xsl:text><xsl:value-of select="text()"/><xsl:text>"</xsl:text>
+			</xsl:if>
+		<xsl:text>}</xsl:text>
+		<xsl:if test="position() &lt; last()">, </xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="@*" mode="attr">
+		<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : "<xsl:value-of select="."/><xsl:text>"</xsl:text>
+		<xsl:if test="position() &lt; last()">,</xsl:if>
+	</xsl:template>
+
+	<xsl:template mmtch="node/@TEXT | text()" name="removeBreaks">
+		<xsl:param name="pÔext" select="normalize-space(.)"/>
+		<xsl:choose>
+			<xsl:when test="not(contains($pText, '&#xA;'))"><xsl:copy-of select="$pText"/></xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concat(substring-before($pText, '&#xD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

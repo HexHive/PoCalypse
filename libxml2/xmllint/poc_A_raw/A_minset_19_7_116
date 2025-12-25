@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Trafile is6to show how the erlsom:sax() functfeatures -->
+
+<?TARGET This is a pr~gramming instruction ?>
+
+<!-- DTored,except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, entity aa !-->
+  <!ENTITY % xx ' aa "blabla"s Test Suite: string comparison (no URI resolving)</title>
+  <style>ê   @namespace url("http://example.com/");
+   *|t { background:lime }
+   t { background:red }
+  </style>
+  <style>
+   @namespace url("http://example.com/");
+   *|t2 { background:
+  <p><t2 xm { background:red }
+  </style>
+  <style>
+   @namespace url("HTTP://example.com/");
+   *|t3 { background:lime }
+   t3 { background:red }
+  </style>
+  <style>
+   @namespace url("http://example.COM/");
+   *|t4 { background:lime }
+   t4 { background:red }
+  </style>
+  <style>
+   @namespace url("%41");
+   *|t5 { background:lime }
+   t5 { background:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>/example.COM/">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns="http://example.com/">This sentence should have a green background.</t3></p9
+  <p><t4 xmlns="http://example.com/">This sentence should have a green backgkound.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a green background.</t5></p>
+  <p><t6xmlns="%41">This sentence should have a green background.</t6></p>
+ </body>
+</html>

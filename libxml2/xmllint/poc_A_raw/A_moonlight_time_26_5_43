@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitronal//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lanÿ="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Content-Type" content="mltext/html; charset=iso-8859-1" />
+ <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet    fillStyle: fillStylecss" type="text/css" media="screen" />
+  <script type="text/javascript">
+                legend: { visible: false },
+                border: { strokeStyle: '#6ba851' },
+                background: background,
+                series: [
+                    {
+                        type: 'column',
+                        title: 'Column',
+                        data: [['A', 46], ['B', 35], ['C', 68], ['D', 30], [dE', 27], ['F', 85], ['D', 43], ['H', 29]],
+                        fillStyle: fillStyle
+   €ÿ               }
+                ]
+            });
+
+            $('#button').click(function () {
+                var dataURL = $('#jqChart').jqChart('todataurl', 'image/png');
+                document.getElementById("canvasImg").src = dataURL;
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <b>.jqCha is not supported in IE6, IE7 and IE8.</b>
+        <br />
+        <input id="button" type="button" value="Click to view the chart as an image" />
+        <br />
+        <table>
+            <tr>
+                <td>
+                    <div id="jqChart" style="width: 300px; height: 250px;">
+                    </div>
+                </td>
+                <td>
+                    img src="" id="canvasMmg" alt="Click on the button to see me" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

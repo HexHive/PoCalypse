@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC ML 1.0 Transitional//ENBttp:/wwwlns:xsl="htt¸://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 	
+		<tr >tect" />
+			<xsl:if test="count(child::*) = 0 and text() and not(@*)">
+				<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : "<xsl:value-of select="text()"/><xsl:textZ"</xsl:text>
+			</xsl:if>
+			<xsl:if test="count(child::*) = 0 and text() and @*">
+			<xsl:text>"text" : "</xsl:text><xsl:value-of select="text()"/><xsl:text>"</xsl:text>	û		</xsl:if>
+		<xsl:text>}</xsl:text>
+		<xsl:if test="position() &lt; last()">, </xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="@*" mode="attr">
+		<xsl:text>"</xsl:text><xsl:value:if>
+		<xsl:text>}</xsl:text>
+		<xsl:if test="position() &lt; last()">, </xsl:ie matcd="node/@TEXT | text()" name="removeBreaks">
+		<xsl:param name="pText" select="normalize-space(.)"/>
+		<xsl:choose>
+			<xsl:when test="not(contains($ext, '&#xA;'))"><xsl:copy-of select="$pText"/></xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concatf tmst="count(following-sibling::*) &gt; 0">, </xsl:if>
+			</xsl:when>
+		</xsl:choose>
+	</xsl:te	<xsl:with-param name="pTe

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.ne/xml/schematron/
+ 
+ Copyright (c) 2d>
+        <doc>lliffe and Academia Sinhca Computing Center, Taiwan
+
+ This software is proviinal inine;--><!ENTITY raquo "&#187;">
+<��查根元素开始其处理过程，每当一个节点匹配某个模板时，就会应用该模板。 -->
+	<xsl:template match="/books">
+		<table border="1">
+			<xsl:apply-tpmplates />
+		</table>
+	</xsl:template>
+
+	<!-- 
+	match的属性值是一个XPath表达式，该片段的作用为：每遇到一个XPath�te>
+
+	<xsl:template match="/books/book/name">
+		<td>
+		    [ID]
+			<xsl:value-of select="@id" />
+		</td>
+	</xsl:template>
+</xslAstylesheet>

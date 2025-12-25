@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html PUBLIC "-TYPE html
+   PUBLIC "-//W3C//DT[ XHTML 1.0 Transitio.dtd">
+<html xmlls='1999/xhtml'>
+<head>
+<title>bIST e"
+	xsi:schemaLocation="http://www.edrdams.com vuelo.xsd ">
+	<idaVuelta /> <!-- Element Content. Existe o no( puede ser idaVuelta, solo ida, multidestino -->
+	<origen>PMI</origen><!-- String. Codigos determinados -->
+	<destino>MAD</destino><!--String. Codigos determinados -->
+	<fechaSalida>2005-02-13</fechaSalida>
+	 o 1, Solo fechas mayores que la fecha actual, 
+		Entero. Entre 1 a 31
+		Entero. Entre 1 a 12
+		Entero. AÃ±o mayor que el actual -->
+	
+	<fechaRegreso>2005-02-20</fechaRegreso><!-- Element Content.ÿSolo 1, Solo fechas mayores que la fecha 
+			de salida -->
+	
+
+	<cantidad><!-- Element Content. Solo 1, Puede tener hasta 3 hijos -->
+		<adultos>1</ad Entero -->
+		<bebes>100</bebes><!-- Entero -->
+	</cantidad>
+	<equipaje xsi:type="edreams:extTipoEquipaje">
+		<cantidad>1</cantidad>
+		<tipo>Instrumento</tipo>
+	</equipaje>
+	<escalasClase> <!-- Element Content. Puede tener 2 atributos, 1 vac o, otro String -->
+		<direto /><!-- Vacio -->
+		<clase>Turista</clase><!-- String -->
+	</escalasClase>
+	<hotel /><!-- Opcional -->
+</edreams:busqueda>

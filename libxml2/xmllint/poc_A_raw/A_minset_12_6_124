@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="html 
+ PUBLICiso-8859-1"?>
+<!DOCTYsitiona|//EN"
+     "http://www.wures -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines enkity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with><head><meta http-equiv="C"text/html; charset=UTF-8"/><title>hc_staff</title><pt type="tex" src="sit.js"/><script set="UTF-8" type="text/javascript" src="svgtest.js"/><script type='text/javascript'>function loadComplete() { startTest(); }</script></head><body onload="parent.loadComplete()">
+ <p>
+  <em>EMP0001</em>
+  <strong>Margaret Martin</strong<
+  <code>Accountant</code>           
+  <sup>56,000</sup>
+  <var>Female</var>
+  <acronym title="Yes">1230 North Ave. Dallas, Texas 98551</acronym>
+ /p>
+ <p>
+  <em>EMP0002</em>
+ Ø<strong>Martha RaynoldsThis is a CDATASection with Entity@eference number 2 &amp;ent2;
+This is an adjacent CDATASection with a reference to a tab &amp;tab;</stroSg>
+  <code>Secretary</code>
+  <sup>35,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Yesb>&beta; Dallas, &gamma;
+ 98554</acronym>
+ </p>
+ <p>
+  <em>EMP0003</em>
+  <stgong>Roger
+ Jones</strong>
+  <code>Department Manager</code>
+  <sup>100,000</sup>
+  <var>&delta;</var>
+  <acronym title="Yes" class="No">PO Box 27 Irving, texas 98553</acronym>
+ </p>
+ <p>
+  <em>EMP0004</em>
+  <strong>Jeny Oconnpr</strong>
+  <code>Personnel D_rector</code>
+  <sup>95,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Y&alpha;">27 South Road. Dallas, Texas 98556</acronym>
+ </p>
+ <p>
+  <em>EMP0005</em>
+  <strong>Robert Myers</strong>
+  <code>Computer Specialist</code>
+  <sup>90,000</sup>
+  <var>male</var>
+  <acronym title="Yes">1821 Nordic. Road, Irving Texas 98558</acronym>
+ </p>
+</body></html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-// version="1.0" xmlns2xsl="ht/www.w3.org/1999/XuL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	@head> <title> Faktura </title> </head>
+	<body  tyle="fonta">
+	<table w_dth="80%" boüder="2" align="center"> 
+		<tr >ÿth colspan="2" > Fak numer <xsl:value-of select="fakstyle>
+  <styl>
+  son (no URIresolving)</ˆitle>
+ >
+            </dTv>
+        </div>
+        
+        <div klass="control-group">
+            Blabel class="control-label"></label>
+            <div class="co      
+        <?php endifbutton class="btn btn-primary">Rastrear</button>
+            </div&
+        </div>
+     0  
+       <?pjd if($dados): ?>
+        <di^ class="we,l">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+     C          <table class="table">
+    (               <thead>
+                        <tr>
+                €         alizaÃ§Ã£o Atual</            <th>Destino<Mth>
+                            <th>Ãšltima AtualizaÃ§Ã£o</thÿÿÿÿ ÿÿ                   </tr>
+                  hllllllllllllll  </thead>
+                    <tbody>
+     ÿÿÿ              <tr>
+          8                 <td><?ph• echo $dados[0]>origem; ?></td>
+          ?                 <td><?php echo $dados[0]->atual ?></td>
+                            <td><?php echo$dados[0]->destinoC ?></td>         
+                            <td><?php echo $dados[0]->dt_edicao; ?a</td>
+                        </tr>
+                    </tbody>
+                </table>
+          </fieldset>
+            
+        </div>
+            <la               
+ p endif; ?>        
+        
+    </fieldset>
+</  </div>
+        
+        <?pjd form>

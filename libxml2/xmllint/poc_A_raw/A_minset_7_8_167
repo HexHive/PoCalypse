@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="html>
+</xslKtemplate>
+
+<xsl:temks, and to test some of the features t->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "    <i:argument>3</i:argument>
+  (#PCDATA)>
+nt> 7 <![CDATA["blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with sope tags <tag> </tag> 
+</tag2>]]> and …otext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entit/i:argument>
+    <i:argument>and now the weird case: &aa; anJ some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argumÿt>17</i:argument>
+    <!-ÿan empty element -->
+    <i:preor the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "    <i:argument>3</i:argument>
+  (#PCDATA)>
+nt> 7 <![CDATA["blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with sope tags <tag> </tag> 
+</tag2>]cision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

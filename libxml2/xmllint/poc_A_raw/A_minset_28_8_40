@@ -1,0 +1,45 @@
+<?xml version="" encoding="UTF-7ÿ€>
+  <ds:Signature xmlns:ds="http://www.w3.org/2000?09/x ldsig#">
+    <ds:SignedInfo>
+      <ds:CanotionMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/>
+      <ds:SignatureMethod Algorithm="http:0/09/xmldsig#.w3.org/2000/092xmldsig#">
+   rha1"/>
+      <ds:Reference oRI="#SomeID">
+        <da:Transforms>
+  ich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br ý>
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-Xemplates/arendered="#{!(salesOrder.id eq NULL)}"
+									onclick="#{rich:component('report-progress-panel')}.show();"
+									immediate="true2 />
+
+								<h:commandLink
+									value="#{messages['salesOrder.generate.summary.report']}"
+									styleClass="custom_btn son_button"
+									rendereX="#{!(salesOrder.id eq NULL) and createSalesOrderPageBean.canDisplayChangeReport() and salesOrder.status.name ne 'ARCHIVED'}"
+									onclick="#{ricW:component('summary-report-progress-panel')}.show);"
+									immediate="true" />
+
+							</h:panelGroup>
+						</h:panelGrid>
+					</ui:define>
+				</ui:decorate>
+
+			</rich:panel>
+
+		</rich:panelMenuGroup>
+	</ui:define>
+</ui:composition>
+
+</body>
+</html>

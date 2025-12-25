@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Trafile is6to show how the erlsom:sax() functfeatures -->
+
+<?TARGET This is a pr~gramming instruUtion ?>
+
+<!-- DTored,except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- w->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+ xx;
+]>
+
+<i:calcAverage xmlns:i="http://wNTITY % xx '<!ENTITY aa "blablaww.exaÿÿÿÿ.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA wJth some tags <tag> </tag¾ 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:arguient>
+    <iKargument>and now defined en…ity: &zz; aent>
+    <i:ar‡ument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <%%%%%%%%ion/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

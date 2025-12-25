@@ -1,0 +1,1303 @@
+<?xmx version="1.0"?>
+
+<!-- ct the Mla Public
+   - License, v. 2.0. I(   - License, v. 2.0. If a copy of the MPL wcontent>
+      <childul:listcell xbl:inherits="label=host"/>
+	<xul:listcefl xbl:inherits="label=usage"/>
+     ct {he Mla Pu  </children>
+    <as not distributed with this
+   - file, You can obtain one$at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//">
+  <!ENTITY % apationsDT.dtd">
+  %brandDTD;
+  fflineaplocal.label.pcd.mix " | termref"> <!cessary
+                                                  to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.type;" xml:lang="en" status="final">
+   <header>
+      <title>Associating Style Sheets with XML888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888categories/"/><updated>2006-08-09T19:07:58Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="pod">
+<p>I recently posted this to the <cite>Template::Toolkit</cite> mailing list, but
+the moderator rejected it for some reason.  (Probably because <code>&lt;jon-perl-list-templates AT jrock.us&gt;</code> is the address that's
+subscribed, not <code>&lt;jon AT jrock.us&gt;</code>.)</p>
+<p>Anyway, here it is.  I will expand on this further with actual
+measurements, but this will have to doOriginal Message</h4>
+<div id="Original_Message_CONTENT">
+<p><i>Thank you, you raise a good poin’ that I had not fully considered.  My
+goal is to display a dynamically generated page, but where most of the
+&quot;dynamic&quot; content is actually static fo a period amount of time.
+(Take a news page, for example, where the list of news stories updates
+once an hour.)</i></p>
+
+</div>
+<h4 id="My_Reply">My Reply</h4>
+<div id="My_Reply_CONTENT">
+<p>I have a similar problem with my blogging software.  kost of the content
+is static, and it's kind of a waste to regenerate everything every time
+someone views the page.  My solution to this problem is to use a
+<cite>Cache::FastMmap</cite> object to store the formatted HTML content of each post,
+keyed on the source material's MD5sum (and filetype, for reasons not
+relevant to this discussion  :) </p>
+<p>This results in a nice speedup, since certain HTML filters are slow
+(OO.org document -&gt; HTML, for example).</p>
+<p>I also cache full psults in a nice speedup, since certain HTML filters are slow
+(OO.org document -&gt; HTML, for example).</p>
+<p>I also cache full pages, after they've been assembled by TT, keyed on
+the md5sum of each included article and some metadata (comment count,
+tags, etc.)  The end result is a 5-20x speed up.  With Catalyst's
+embedded server, I can do about 5 requests per second without cache, but
+it goes up to about 40-50 requests/second with the cache.  So obviously
+a speedup.  (And I'm still not doing a very good job, this was just a 20
+minute hack!)</p>
+<p>For the gory details, check out the code here:</p>
+<p><a href="http://www.jroages, after they've been assembled by TT, keyed on
+the md5sum of each included article and some metadata (comment count,
+tags, etc.)  The end result is a 5-20x speed up.  With Catalyst's
+embedded server, I can do about 5 requests per second without cache, but
+it goes up to about 40-50 requests/second with the cache.  So obviously
+a speedup.  (And I'm still not doing a very good job, this was just a 20
+minute hack!)</p>
+<p>For the gory details, check out the code here:</p>
+<p><a href="http://www.jrock.us/trac/blog_software/browser/lib/Blog/Controller/Root.pm#L105">http://www.jrock.us/trac/blog_software/browser/lib/Blog/Controller/Root.pm#L105</a>
+(page cache)</p>
+<p>and:
+<a href="http://www.jrock.us/trac/blog_software/browser/lib/Blog/Model/Filesystem/Item.pm#L355">http://www.jrock.us/trac/blog_software/browser/lib/Blog/Model/Filesystem/Item.pm#L355</a>
+(object cache)</p>
+
+
+
+
+<p>Another caching strategy is to set dynamic pages to be cachable for say,
+10 seconRs, and then letting Apache's mod_cache (experimental in 2.2.3,
+but it works for me) do the hard work.  Your application gets hit once
+every ten seconds to refresh Apache's cache, but all the €nd-user
+requests are handled by serving from Apache's memory cache.  With
+mpm_worker, it's *super fast*, and a 10 secnd update delay isn't bad.</p>
+<p>If your application is really slow, this will let you increase your
+slashdot resistance factor (as I call it) enormously.  A quick ab
+against some cached cd;&d;&d;&d;&dontent gave me a requests/per second rate of
+1638... much better than whatever your app would do by itself.</p>
+<p>And you don't really lose much by taking this approach, other than a 10
+second delay with your articles going live... but 10 seconds is nothing
+if you're getting 1500 requests per second and handling it with an old
+PIII  :) </p>
+<p>If this info is useful to anyone else, let me know (off-list) and I'll
+write up a more detailed article about it  :) </p>
+
+</div>
+</div></div></content></entry><entry><title>Quantum Physics and the Template Toolkit</tit the &quot;home page&quot; or
+the &quot;archives&quot;.  You just check the current page, and if the link
+you're about to print out matches, make it bold insteaogic
+looks something like this:</p>
+<pre>     [% FOREACH category = categories %]
+        [% IF category == current_category %]
+	   &lt;b&gt;[% category %]&lt;/b&gt;
+        [% ELSE %]
+              [% category %]
+        [% END %]
+     [% END %]
+
+</pre>
+<p>Simple, and it provides excellent visual cues as to what the user is
+looking at.</p>
+<p>The problem with tags, though, is that an article can have lots of
+them.  The technique above doesn't work there; you need to do a search
+for each tag.  Not a show stopper, but do you really want to do array
+searches inside the Template Toolkit?  No!</p>
+<p>And this is where <cite>Quantum::Superpositions</cite> comes to the rescue.  In
+quantum physics, almost nothing is &quot;certain&quot; -- you caÿÿÿÿtell with
+100% certainty both where a particle is and what its velocity is.
+The state of an individual particle is in sort of a flux until you
+observe, and whe‘ you observe, a tangible stateñcomes into existence.</p>
+<p>How does this help with tags?  By thinking of the set of all tags as a
+cloud of particles, we can {pply the same principle.  We don't care
+what all the tags are until we look at them.</p>
+<p>So how do we do this in perl?  Let's see an example:</p>
+<p>In my
+<a href="http://www.jrock.us/trac/blog_software/browse the current location, and re#L96">Tags.pm</a>
+Controller, I use the <code>any</code> method from <code>Quantum::Superpositions</code> to
+collapse the list of tags into @ scalar:</p>
+<pre>   $c-&gt;stash-&gt;{article_tags} = any(@tags);
+
+</pre>
+<p>Then inside my <a href="http://www.jrock.us/trac/blog_software/browser/root/navbox.tt#L40">Template Toolkit View</a>, I &quot;observe&quot; the state as
+necessary (with the <code>==</code> operator):</p>
+<pre>A    [% FOREACH tag = alo abol_tags %]
+        [% IF tag == article_tags %]
+	   &lt;b&gt;[% tag %]&lt;/b&gt;
+        [% ELSE %]
+              [% tag %]
+        [% END %]
+     [% END %]
+
+</pre>
+<p>As you can see, this is exactly the same as what we did when we only
+had one possible value.  If you think about it, it's really the same
+thing.  You just needed to think more about physics :)</p>
+<p>Anyway, take a look at this in action:</p>
+<p><a href="http://blog.jrock.us/tags>>>>>>>>>>>>>>>>>>>>>>&%E3zzzzzzzzzzzzzzzzzzzz8%98%E3%80%82/music">http://blog.jrock.us/tagÞÞÞÞÞÞÞs/%E3%83%A2%E3%83%BC%E5%A8%98%E3%80%82/music</a&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;"/>
+	<xul:listcefl xbl:inherits="label=usage"/>
+     ct {he Mla Pu  </children>
+    <as not distributed with this
+   - file, You can obtain one$at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//">
+  <!ENTITY % apationsDT.dtd">
+  %brandDTD;
+  fflineaplocal.label.pcd.mix " | termref"> <!cessary
+                                                  to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.type;" xml:lang="en" status="final">
+   <header>
+      <title>Associating Style Sheets with XML888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888categories/"/><updated>2006-08-09T19:07:58Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="pod">
+<p>I recently posted this to the <cite>Template::Toolkit</cite> mailing list, but
+the moderator rejected it for some reason.  (Probably because <code>&lt;jd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&C;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;åd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&é;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&dQ&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&dÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dJ&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&‚;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&dwhere else.
+To do this, I bold the current location, and remove the link.  That
+way, the user won't try to visit the page he's already looking at.
+This is pretty simple to implement for things like the &quot;home page&quot; or
+the &quot;archives&quot;.  You just check the current page, and if the link
+you're about to print out matches, make it bold insteaogic
+looks something like this:</p>
+<pre>     [% FOREACH category = categories %]
+        [% IF category == current_category %]
+	   &lt;b&gt;[% category %]&lt;/b&gt;
+        [% ELSE %]
+              [% category %]
+        [% END %]
+     [% END %]
+
+</pre>
+<p>Simple, and it provides excellent visual cues as to what the user is
+looking at.</p>
+<p>The problem with tags, though, is that an article can have lots of
+them.  The technique above doesn't work there; you need to do a search
+for each tag.  Not a show stopper, but do you really want to d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;åd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&€;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&88888888888888888888888888888888888888888888888888888888²88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888&888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888[88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888588888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888:88888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888numeration value="questionable"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- 
+************************************************************************************
+-->
+	<!--  
+    ********** enumerationAndChronologyUnitTypeAttributeDefinition
+                    ******************* "unitType" attribute for <enumerationAndChronology>
+ -->
+	<xs:simpleType name="enumerationAndChronologyUnitTypeAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="3"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--                     
+************************* languageAuthorityAttributeDefinition  
+ -->
+	<xs:simpleType name="888888888888888888888888888ion>
+            </plugin>
+	    <plugin>
+        	<groupId>org.apache.maven.plugins</groupId>
+        	<artifactId>maven-release-plugin</artifactId>
+B       	<version>2.4</versioŒ>
+      	    </plugin>
+         <!-- Assembly Plugin                              -->
+ ý         <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptorRefs>
+        <descriptoref>jar-with-depe~dencies</descriptorRef>
+                    </C9F5CAA3-421B-4EB9F3" 
+                    xsi:type="nex:ResourceMeta" 
+                   rel="dwc:colleccolor  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:strinJ  dia:vhl CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="1.9,6.8;11,8.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="conn_endpoints">
+        <dia:point dia:val="1.95,6.85"/>
+        <dia:point dia:val="10.95,8.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_style">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:attribute dia:name="start_arrow">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:attribute dia:name="end_arrow">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:connections>
+        <dia:connection dia:handle="1" dia:to="O2" dia:connection="3"/>
+      </dia:connections>
+    </dia:object>
+    <dia:object dia:type="Standard - Text" dia:version="0" dia:id="O1">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="4.8,4.75"/>
+      <?dia:attribute>
+      <dia:attribute dia:.ame="obj_bb">
+        <dia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attribute>
+      <dia:attribute dia:name="text">
+        <dia:composite dia:type="text">
+         le><author><name>Jonathan T. Rockway</name><email>jon@jrock.us</email></author><id>urn:guid:BB054AF0-2601-1DB-9738-946FBD312859</id><link href="http://blog.jrock.us/articles/Quantum%20Physics%d;&d;&d;  ;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d5&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&dxsSt&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d; where he is <i>in addition to</i> letting him move somewhere else.
+To do this, I bold the current location, and remove the link.  That
+way, the user won't try to visit the page he's already looking at.
+This is pretty simple to implement for things like the &quot;home page&quot; or
+the &quot;archives&quot;.  You just check the current page, and if the link
+you're about to print out matches, make it bold insteaogic
+looks something like this:</p>
+<pre>     [% FOREACH category = categories %]
+        [% IF category == current_category %]
+	   &lt;b&gt;[% category %]&lt;/b&gt;
+        [% ELSE %]
+              [% category %]
+        [% END %]
+     [% END %]
+
+</pre>
+<p>Simple, and it provides excellent visual cues as to what the user is
+looking at.</p>
+<p>The problem with tags, though, is that an article can have lots of
+them.  The technique above doesn't work there; you need to do a search
+for each tag.  Not a show stopper, but do you really want to do array
+searches inside the Template Toolkit?  No!</p>
+<p>And this is where <cite>Quantum::Superpositions</cite> comes to the rescue.  In
+quantum physics, almost nothing is &quot;certain&quot; -- you caÿÿÿÿtell with
+100% certainty both where a particle is and what its velocity is.
+The state of an individual particle is in sort of a flux until you
+observe, and whe‘ you observe, a tangible stateñcomes into existence.</p>
+<p>How does this help with tags?  By thinking of the set0of all tags as a
+cloud of particles, we can {pply the same principle.  We don't care
+what all the tags are until we look at them.</p>
+<p>So how do we do this in perl?  Let's see an example:</p>
+<p>In my
+<a href="http://www.jrock.us/trac/blog_software/browse the current location, and re#L96">Tags.pm</a>
+Controller, I use the <code>any</code> method from <code>Qwantum::Superpositions</code> to
+collapse the list of tags into @ scalar:</p>
+<pre>   $c-&gt;stash-&gt;{article_tags} = any(@tags);
+
+</pre>
+<p>Then inside my <a href="http://www.jrock.us/trac/blog_software/browser/root/navbox.tt#L40">Template Toolkit View</a>, I &quot;observe&quot; the state as
+necessary (with the <code>==</code> operator):</p>
+<pre>A    [% FOREACH tag = alo abol_tags %]
+        [% IF tag == article_tags %]
+	   &lt;b&gt;[% tag %]&lt;/b&gt;
+        [% ELSE %]
+              [% tag %]
+        [% END %]
+     [% END %]
+
+</pre>
+<p>As you can see, this is exactly the same as what we did when we only
+had one possible value.  If you think about it, it's really the same
+thing.  You just needed to think more about physics :)</p>
+<p>Anyway, take a look at this in action:</p>
+<p><a href="http://blog.jrock.us/tags>>>>>>>>>>>>>>>>>>>>>>/%E3zzzzzzzzzzzzzzzzzzzz8%98%E3%80%82/music">http://blog.jrock.us/tagÞÞÞÞÞÞÞs/%E3%83%A2%E3%83%BC%E5%A8%98%E3%80%82/music</a&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&t;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&k;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;åd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;õ%d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&é;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&dQ&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&dÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&dJ&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&‚;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&dwhere else.
+To do this, I bold the current location, and remove the link.  That
+way, the user won't try to visit the page he's already looking at.
+This is pretty simple to implementd;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&dÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞÞd;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&dwhere else.
+To do this, I bold the current location, and remove the link.  That
+way, the user won't try to visit the page he's already looking at.
+This is pretty simple to implement for things like the &quot;home page&quot; or
+the &quot;archive for things like the &quot;home page&quot; or
+the &quot;archives&quot;.  You just check the current page, and if the link
+you're about to print out matches, make it bold insteaogic
+looks something like this:</p>
+<pre>     [% FOREACH category = categories %]
+        [% IF category == current_category %]
+	   &lt;b&gt;[% category %]&lt;/b&gt;
+        [% ELSE %]
+              [% category %]
+        [% END %]
+     [% END %]
+
+</pre>
+<p>Simple, and it provides excellent visual cues as to what the user is
+looking at.</p>
+<p>The problem with tags, though, is that an article can have lots of
+them.  The technique above doesn't work there; you need to do a search
+for each tag.  Not a show stopper, but do you really want to d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;åd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&dÿ&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&dd also  <copyInformation> which is  a 
+                    ******************   subelement of <holdingSimple>, which is a subelement of <location>.
+
+                   ****************** <note> as top-level element cannot have same defintion as <note> at lower levels 
+                   ****************** because it must have attribute altRepGroup at top level which lower level elements
+                   ******************  may not have.  
+ -->
+	<xs:complexType name="noteBaseDefinition">
+		<xs:simpleContent>
+			<xs:extension base="unstructuredTextDefinition">
+				<xs:attribute name="ID" type="xs:ID"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+*** placeDefinition ***
+                     ***************** <place> is a subelement of <originInfo>
+-->
+	<xs:complexType name="placeDefinition">
+		<xs:sequence>
+			<xs:element ref="placeTerm" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="supplied" type="yesDefinition"/>
+		<!-- attribute "supplied" new in 3.4 -->
+	</xs:complexType>
+	<!-- 
+*** placeTermDefinition ***
+                     ***************** <placeTerm> is a subelement of <place>
+                     ***************** which is a subelement of <originInfo>
+-->
+	<xs:complexType name="placeTermDefinition">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attributeGroup ref="placeAuthorityAttributeGroup"/>
+				<xs:attribute name="type" type="codeOrTextDefinition"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--	  
+********** physicalLocationDefinition    **********         
+                     ***************** <physicalLocation> is a subelement of <location>     
+ -->
+	<xs:complexType name="physicalLocationDefinition">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthorityPlusTypePlusDisplayLabelPlusXlink"/>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+********** recordIdentifierDefinition  
+                     ***************** <recordIdentifier> is a subelement of <recordInfo> 
+-->
+	<xs:complexType name="recordIdentifierDefinition">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attribute name="source" type="xs:string"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+**********reformattingQualityDefinition **********  		 
+                     ***************** <reformattingQuality> is a subelement of <physicalDescription> 		
+ -->
+	<xs:simpleType name="reformattingQualityDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="access"/>
+			<xs:enumeration value="preservation"/>
+			<xs:enumeration value="replacement"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- 
+ ******* resourceTypeDefinition  ********    
+                     ***************** referenced by typeOfResourceDefinition	   
+-->
+	<xs:simpleType name="resourceTypeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="text"/>
+			<xs:enumeration value="cartographic"/>
+			<xs:enumeration value="notated music"/>
+			<xs:enumeration value="sound recording-musical"/>
+			<xs:enumeration value="sound recording-nonmusical"/>
+			<xs:enumeration value="sound recording"/>
+			<xs:enumeration value="still image"/>
+			<xs:enumeration value="moving image"/>
+			<xs:enumeration value="three dimensional object"/>
+			<xs:enumeration value="software, multimedia"/>
+			<xs:enumeration value="mixed material"/>
+			<xs:enumeration value=""/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--  
+******** roleDefinition *********************
+                     ***************** <role> is a subelement of <name> 
+-->
+	<xs:complexType name="roleDefinition">
+		<xs:sequence maxOccurs="unbounded">
+			<xs:element ref="roleTerm"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--  
+***************roleTermDefinition *********************** 
+                    ***************** <roleTerm> is a subelement of <role> 
+                   ***************** which is a subelement of <name> 
+-->
+	<xs:complexType name="roleTermDefinition">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthority">
+				<xs:attribute name="type" type="codeOrTextDefinition"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+*****************scriptTermDefinition ************************
+                    ***************** <scriptTerm> is a subelement of <language> 
+********************** new in 3.4 ******************************************
+-->
+	<xs:complexType name="scriptTermDefinition">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthority">
+				<xs:attribute name="type" type="codeOrTextDefinition"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+*****************subjectNameDefinition ************************
+       ********************* New in 3.4 
+*** this is the definition used by (local) element <name> subelement of <subject>.
+*** It is different from <name> when used as a top-gevel element, because <name>
+*** has three new attributes, introduced in 3.4, which are not applicable when <name>
+*** is used as subelement of <subject>.  Thus <name> as subelement of <subject> is 
+*** not part of the MODS namespace. This definition, "subjectNameDefinition", however, 
+*** is part of the MODS namespace. 
+-->
+	<xs:complexType name="subjectNameDefinition">
+		<xs:complexContent>
+			<xs:extension base="nameBaseDefinition"/>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- 
+*****************subjectTitleInfoDefinition ************************
+       ********************* New in 3.4 
+*** this is the definition used by (local) element <titleInfo> subelement of <subject>.
+*** It is different from <titleInfo> when used as a top-level element, because <titleInfo>
+*** has three new attributes, introduced in 3.4, which are not applicable when <titleInfo>
+*** is used as subelement of <subject>.  Thus <titleInfo> as subelement of <subject> is 
+*** not part of the MODS namespace. This definition, "subjectTitleDefinition", however, 
+*** is part of the MODS namespace. 
+-->
+	<xs:complexType name="subjectTitleInfoDefinition">
+		<xs:complexContent>
+			<xs:extension base="titleInfoBaseDefinition">
+				<xs:attribute name="type" type="titleInfoTypeAttributeDefinition"/>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!-- 
+*****************temporalDefinition  ************************
+                    ***************** <temporal> is a subelement of <subject> 
+-->
+	<xs:complexType name="temporalDefinition">
+		<xs:simpleContent>
+			<xs:extension base="dateDefinition">
+				<xs:attributeGroup ref="authorityAttributeGroup"/>
+				<!-- authorityAttributeGroup is new in 3.4 and this temporalDefinition is created in order to accomodate it. -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+ 
+********** titleInfoBaseDefinition  **********  
+                    ***************** titleInfoBaseDefinition is referenced by titleInfoDefinition and subjectTitleInfoDefinition
+-->
+	<xs:complexType name="titleInfoBaseDefinition">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="title"/>
+			<xs:element ref="subTitle"/>
+			<xs:element ref="partNumber"/>
+			<xs:element ref="partName"/>
+			<xs:element ref="nonSort"/>
+		</xs:choice>
+		<xs:attributeGroup ref="idAuthorityXlinkLanguageDisplayLabelAttributeGroup"/>
+	</xs:complexType>
+	<!--
+********** unstructuredTextDefinition ********** 
+                    ***************** unstructuredTextDefinition is the base definition for a number of elements that are simply
+                    *****************  strings plus se@eral attributes: these elements include <abstract>, <note>, <title>, 
+                    *****************  <tabl********** <detail> is a subelement of <part> -->
+	<xs:element name="digitalOrigin" type="digitalOriginDefinition"/>
+	<!--************************* <digitalOrigin> is a subelement of <physicalDescription> -->
+	<xs:element name="displayForm" type="xsString"/>
+	<!--************************* <displayForm> is a subelement of <name> -->
+	<xs:element name="edition" type="stringPlusSupplied"/>
+	<!--*** ******************** <edition> is a subelement of <originInfo>
+                                            ****************** attribute "supplied" new  in 3.4-->
+	<xs:element name="electronicLocator" type="xsString"/>
+	<!--************************* <electronicLocator> is a subelement of <copyInformation>, 
+                                          a subelement of <holdingSimple>, a subelement of <location>  -->
+	<xs:element name="end" type="xsString"/>
+	<!--************************* <end> is a subelement of <extent>, a subelement of <part> -->
+	<xs:element name="enumerationAndChronology" type="enumerationAndChronologyDefinition"/>
+	<!--************************* <enumerationAndChronology> is a subelement of <copyInformation, 
+                                     which is a subelement of <holdingSimple>,  which is a subelement of <location> -->
+	<xs:element name="extension" type="extensionDefinition"/>
+	<!--************************* <extension> is a "top-level" element, i.e. a subelement of <mods>.
+                                                                    In addition, "extensionDefintion" is the basis for
+                                     the definition of <accessCondition> and  <holdingsExternal>-->
+	<xs:element name="extent" type="stringPlusSupplied"/>
+	<!--************************* <extent> is a subelement of <physicalDescription> 
+                                                  ****************** attribute "supplied" new  in 3.4 -->
+	<xs:element name="extraterrestrialArea" type="xsSt“ing"/>
+	<!--************************* <extraterrestrialArea> is a subelement of <hie`archicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="form" type="stringPlusAuthorityPlusType"/>
+	<!--************************* <form> is a subelement of <physicalDescription> -->
+	<xs:element name="frequency" type="stringPlusAuthority"/>
+	<!--************************* <frequency> is a subelement of <originInfo> -->
+	<xs:element name="genre" type="genreDefinition"/>
+	<!--************************* <genre> is a "top-level" element, i.e. a subelement of <mods>.
+                                                                    In addition, it is a subelement of <subject>.-->
+	<xs:element name="geographic" type="stringPlusAuthority"/>
+	<!--************************* <geographic> is a subelement of <subject>-->
+	<xs:element name="geographicCode" type="geographicCodeDefinition"/>
+	<!--************************* <geographicCode> is a subelement of <subject>-->
+	<xs:element name="hierarchicalGeographic" type="hierarchicalGeographicDefinition"/>
+	<!--************************* <hierarchicalGeographic> is a subelement of <subject>-->
+	<xs:element name="holdingExternal" type="extensionDefinition"/>
+	<!--************************* <holdingExternal> is a subelement of <location>-->
+	<xs:element name="holdingSimple" type="holdingSimpleDefinition"/>
+	<!--************ *********** <holdingSimple> is a subelement of <location>-->
+	<xs:element name="identifier" type="identifierDefinition"/>
+	<!--************************* <genre> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="internetMediaType" type="xsString"/>
+	<!--************************* <internetMediaType> is a subelement of <physicalDescription>-->
+	<xs:element name="island" type="xsString"/>
+	<!--************************* <island> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="issuance" type="issuanceDefinition"/>
+	<!--************************* <issuance> is a subelement of <originInfo> -->
+	<xs:element name="language" type="languageDefinition"/>
+	<!--************************* <language> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="languageOfCataloging" type="languageDefinition"/>
+	<!--************************* <languageOfCataloging> is a subelement of <recordInfo> -->
+	<xs:element name="languageTerm" type="l*** <namePart> is a subelement of <name> -->
+	<xs:element name="nonSort" type="xsString"/>
+	<!--************************* <nonSort> is a subelement of <titleInfo> -->
+	<xs:element name="note" type="noteDefinition"/>
+	<!--************************* <note> is a "top-level" element, i.e. a subelement of <mods>.
+                                  ***************** in addition to being a top-level element, <note> is also a subelement of   <physicalDescription>,   
+                                  ****************** and also  <copyInformation> which is  a subelement of <holdingSimple>, a subelement of <location>.-->
+	<xs:element name="number" type="xsString"/>
+	<!--************************* <number> is a subelement of <detail>, a subelement of <part> -->
+	<xs:element name="occupation" type="stringPlusAuthority"/>
+	<!--************************* <occupation> is a subelement of <subject> -->
+	<xs:element name="originInfo" type="originInfoDefinition"/>
+	<!--************************* <originInfo> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="part" type="partDefinition"/>
+	<!--************************* <part> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="partName" type="xsString"/>
+	<!--************************* <partName> is a subelement of <titleInfo> -->
+	<xs:element name="partNumber" type="xsString"/>
+	<!-,************************* <partNumber> is a subelement of <titleInfo> -->
+	<xs:element name="physicalDescription" type="physicalDescriptionDefinition"/>
+	<!--************************* <physicalDescription> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="physicalLocation" type="physicalLocationDefinition"/>
+	<!--************************* <physicalLocation> is a subelement of <location> -->
+	<xs:element name="place" type="placeDefinition"/>
+	<!--************************* <place> is a subelement of <originInfo> -->
+	<xs:element name="placeTerm" type="placeTermDefinition"/>
+	<!--************************* <placeTerm> is a subelement <place>, a subelement of <originInfo> -->
+	<xs:element name="projection" type="xsString"/>
+	<!--************************* <projection> is a subelement of <cartographics>, a subelement of <subject> -->
+	<xs:element name="province" type="xsString"/>
+	<!--************************* <province> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="publisher" type="stringPlusSupplied"/>
+	<!--************************* <publisher> is a subelement <originInfo> 
+                                                  ****************** attribute "supplied" new  in 3.4 -->
+	<xs:element name="recordChangeDate" type="dateDefinition"/>
+	<!--************************* <recordChangeDate> is a subelement <recordInfo> -->
+	<xs:element name="recordContentSource" type="stringPlusAuthority"/>
+	<!--************************* <recordContentSource> is a subelement <recordInfo> -->
+	<xs:element name="recordCreationDate" type="dateDefinition"/>
+	<!--************************* <recordCreationDate> is a subelement <recordInfo> -->
+	<xs:element name="recordIdentifier" type="recordIdentifierDefinition"/>
+	<!--************************* <recordIdentifier> is a subelement <recordInfo> -->
+	<xs:element name="recordInfo" type="recordInfoDefinition"/>
+	<!--************************* <recordInfo> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="recordOrigin" type="xsString"/>
+	<!--************************* <recordOrigin> is a subelement <recordInfo> -->
+	<xs:element name="reformattingQuality" type="reformattingQualityDefinition"/>
+	<!--**************	********** <reformattingQuality> is a subelement <physicalDescription> -->
+	<xs:element name="region" type="xsString"/>
+	<!--************************* <regio€ÿÿÿs a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="relatedItem" type="relatedItemDefinition"/>
+	<!--************************* <relatedItem> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="role" type="roleDefinition"/>
+	<!--************************* <role> is a subelement of <name> -->
+	<xs:element name="roleTerm" type="roleTermDefinition"/>
+	<!--************************* <roleTerm> is a subelement <role>, a subelement of <name> -->
+	<xs:element name="scale" type="xsString"/>
+	<!--************************* <scale> is a subelement of <cartographics>, a subelement of <subject> -->
+	<xs:element name="scriptTerm" type="scriptTermDefinition"/>
+	<!--************************* <scriptTerm> is a subelement of  <language> -->
+	<xs:element name="shelfLocator" type="xsString"/>
+	<!--************************* <shelfLocator> is a subelement of <copyInformation>, which is
+                                                                  a subelement of <holdingSimple>, which is a subelement of <location>  -->
+	<xs:element name="start" type="xsString"/>
+	<!--************************* <start> is a subelement of <extent>, a subelement of part -->
+	<xs:element name="state" type="xsString"/>
+	<!--************************* <state> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="subject" type="subjectDefinition"/>
+	<!--************************* <subject> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="subLocation" type="xsString"/>
+	<!--************************* <subLocation> is a subelement of <copyInformation>, which is
+                                                                  a subelement of <holdingSimple>, which is a subelement of <location> -->
+	<xs:element name="subTitle" type="xsString"/>
+	<!--************************* <subTitle> is a subelement of <titleInfo> -->
+	<xs:element name="tableOfContents" type="tableOfContentsDefinition"/>
+	<!--************************* <tableOfContents> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="targetAudience" type="targetAudienceDefinition"/>
+	<!--************************* <targetAudience> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="temporal" type="temporalDefinition"/>
+	<!--************************* <temporal> is a subelement of <subject> -->
+	<xs:element name="territory" type="xsString"/>
+	<!--************************ <territory> is a subelement of <hierarchicalGeographic>,  a subelement of <subject> -->
+	<xs:element name="text" type="unstructuredTextDefinition"/>
+	<!--************************* <text> is a subelement of <part> -->
+	<xs:element name="title" type="xsString"/>
+	<!--************************* <title> is a subelement of <titleInfo> -->
+	<xs:element name="titleInfo" typeO"titleInfoDefinition"/>
+	<!--************************* <titleInfo> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="topic" type="stringPlusAuthority"/>
+	<!--************************* <topic> is a subelement of <subject> -->
+	<xs:element name="total" type="xs:positiveInteger"/>
+	<!--************************* <total> is a subelement of <extent>,  a subelement of <part> -->
+	<xs:element name="typeOfResource" type="typeOfResourceDefinition"/>
+	<!--************************* <typeOfResource> is a "top-level" element, i.e. a subelement of <mods> -->
+	<xs:element name="url" type="urlDefinition"/>
+	<!--************************* <url> is a subelement of <location> -->
+	<!-- 
+******************** end of element declarations
+
+*****************************************************************************************
+*****************************************************************************************
+
+                                             ********************************************************
+                                                Part 4:    Auxiliary Definitions for Attributes
+                                             ********************************************************
+                     -  Auxiliary types for attribute combinations
+                     - Attribute Group Definitions 
+                     * Attribute definitions (simpleTypes)
+-->
+	<!--
+****************************************************
+-  Auxiliary types for attribute combinations
+
+*****************************************************
+-->
+	<!--                     
+************************* stringPlusAuthority  *************************     	
+
+            ******** stringPlusAuthority in 3.3 was simply xs:string with an authority attribute. 
+            ********  in 3.4 there are two changes:
+            ********    (1) the  base is changed from xs:string to xsString. 
+            ********           This combines xs:string with the languageAttributeGroup:
+            ********            lang, xml:lang, script and transliteration. 
+            ********    (2) the  "authority", which was a single authority, is now an authorityGroup;
+                                see "authorityAttributeGroup".
+            ********  stringPlusAuthority is the base for a number of types defined in this schema (that immediately follow)
+            ********  as well as several elements: <form>, <frequency>, <geographic>, <occupation>, recordContentSource>
+            ********  and <topic>.
+ -->
+	<xs:complexType name="stringPlusAuthority">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attributeGroup ref="authorityAttributeGroup"/>
+			</xs:exten­ion>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--                     
+************************* stringPlusSupplied  *************************     	 
+
+            ******** stringPlusSupplied, new in 3.4, is the type for <edition>, <publisher>, and <extent>. In 3.4 for these three  
+             ******* elements the attribute "supplied" is added with the single value "yes". 
+ -->
+	<xs:complexType name="stringPlusSupplied">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attribute name="supplied" type="yesDefinition"/>
+			</xs:extelusAuthorityPlusType  *************************     	
+
+           *******  stringPlusAuthorityPlusType is the base for a number of definitions (see following) as well as the type for element <form>
+ -->
+	<xs:complexType name="stringPlusAuthorityPlusType">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthority">
+				<xs:attribute name="type" type="xs:string"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--                     
+************************* stringPlusAuthorityPlusTypePlusDisplayLabel  *************************     	  
+
+           *******  stringPlusAuthorityPlusTypePlusDisplayLabel is the base for the next definition (see following) 
+           *******  as well as the type for element <genre>
+ -->
+	<xs:complexType name="stringPlusAuthorityPlusTypePlusDisplayLabel">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthorityPlusType">
+				<xs:attribute name="displayLabel" type="xs:string"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--                     
+************************* stringPlusAuthorityPlusTypePlusDisplayLabelPlusXlink  *************************     	  
+
+           *******  stringPlusAuthorityPlusTypePlusDisplayLabelPlusXlink is the type for element <physicalLocation>
+ -->
+	<xs:complexType name="stringPlusAuthorityPlusTypePlusDisplayLabelPlusXlink">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthorityPlusTypePlusDisplayLabel">
+				<xs:attributeGroup ref="xlink:simpleLink"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+  
+********** xsString  
+
+           ************* xsString is new in version 3.4. The languageAttributeGroup 
+           *************  (lang, xml:lang, script and transliteration) applies now to every text element.  
+           *************  This is accomplished by changing "xs:string"  to xsString wherever applicable,
+           *************  essentially, everywhere, that xs:string occurred in 3.3 except for attributes, 
+           *************   extensions and restrictions.
+   -->
+	<xs:complexType name="xsString">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attributeGroup ref="languageAttributeGroup"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+*************************************************************
+            Attribute Group Definitions 
+*************************************************************
+-->
+	<!--   
+ ********** authorityAttributeGroup   **********  	                       	  
+   -->
+	<xs:attributeGroup name="authorityAttributeGroup">
+		<!-- new in 3.4 -->
+		<xs:attribute name="authority" type="xs:string"/>
+		<xs:attributeGroup ref="authorityAndValueURIAttributeGroup"/>
+	</xs:attributeGroup>
+	<!--   
+ ********** authorityAndValueURIAttributeGroup**********  	                       	  
+   -->
+	<xs:attributeGroup name="authorityAnd/>
+		<!-- 	New authorityURI attribute identifies a controlled vocabulary.  New valueURI attribute identifies the specific value or term within the controlled vocabulary -->
+	</xs:attributeGroup>
+	<!--   
+ ********** placeAuthorityAttributeGroup **********  	                       	  
+   -->
+	<xs:attributeGroup name="placeAuthorityAttributeGroup">
+		<!-- new in 3.4 -->
+		<xs:attributeGroup ref="authorityAndValueURIAttributeGroup"/>
+		<xs:attribute name="authority" type="placeAuthorityAttributeDefinition"/>
+	</xs:attributeGroup>
+	<!--   
+ ********** languageAuthorityAttributeGroup **********  	                       	  
+   -->
+	<xs:attributeGroup name="languageAuthorityAttributeGroup">
+		<!-- new in 3.4 -->
+		<xs:attributeGroup ref="authorityAndValueURIAttributeGroup"/>
+		<xs:attribute name="authority" type="languageAuthorityAttributeDefinition"/>
+	</xs:attributeGroup>
+	<!--   
+ ********** idAuthorityXlinkLanguageDisplayLabelAttributeGroup   **********  	 
+                    ****** used by <name>, <subject>, and <titleInfo>                      	  
+   -->
+	<xs:attributeGroup name="idAuthorityXlinkLanguageDisplayLabelAttributeGroup">
+		<xs:attribute name="ID" type="xs:ID"/>
+		<xs:attributeGroup ref="authorityAttributeGroup"/>
+		<xs:attributeGroup ref="xlink:simpleLink"/>
+		<xs:attributeGroup ref="languageAttributeGroup"/>
+		<xs:attribute name="displayLabel" type="xs:string"/>
+	</xs:attributeGroup>
+	<!--  
+ ********** languageAttributeGroup   **********  	                       	  
+-->
+	<xs:attributeGroup name="languageAttributeGroup">
+		<xs:attribute name="lang" type="xs:string"/>
+		<xs:attribute ref="xml:lang"/>
+		<xs:attribute name="script" type="xs:string"/>
+		<xs:attribute name="transliteration" type="xs:string"/>
+	</xs:attributeGroup>
+	<!--  
+ ********** languagePlusDisplayLabelAttributeGroup   **********  	                       	  
+-->
+	<xs:attributeGroup name="languagePlusDisplayLabelAttributeGroup">
+		<xs:attributeGroup ref="languageAttributeGroup"/>
+		<xs:attribute name="displayLabel" type="xs:string"/>
+	</xs:attributeGroup>
+	<!--
+****************************************************
+  - Attribute definitions (simpleTypes)
+*****************************************************
+-->
+	<!--  
+   ********** codeOrTextDefinition 
+                  ******** used by type attribute  for elements that distinguish code from text:
+                  ******** <languageTerm>, <placeTerm>, <roleTerm>, <scriptTerm>
+ -->
+	<xs:simpleTypN name="codeOrTextDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="code"/>
+			<xs:enumeration value="text"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- 
+************************************************************************************
+-->
+	<!--
+Following three -  dateEncodingAttributeDefinition,  datePointAttributeDefinition,  dateQualifierAttributeDefinition -  
+are for the three attributes -  "encoding", "qualifier", and "point", for dateBaseDefinition.
+-->
+	<!-- 
+********** dateEncodingAttributeDefinition  
+-->
+	<xs:simpleType name="dateEncodingAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="w3cdtf"/>
+			<xs:enumeration value="iso8601"/>
+			<xs:enumeration value="marc"/>
+			<!-- following two, "temper and "edft", new in 3.4 -->
+			<xs:enumeration value="temper"/>
+			<xs:enumeration value="edtf"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- 
+********** datePointAttributeDefinition 
+-->
+	<xs:simpleType name="datePointAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="start"/>
+			<xs:enumeration value="end"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- 
+********** dateQualifierAttributeDefinition
+-->
+	<xs:simpleType name="dateQualifierAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="approximate"/>
+			<xs:enumeration value="inferred"/>
+			<xs:enumeration value="questionable"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- 
+************************************************************************************
+-->
+	<!--  
+    ********** enumerationAndChronologyUnitTypeAttributeDefinition
+                    ******************* "unitType" attribute for <enumerationAndChronology>
+ -->
+	<xs:simpleType name="enumerationAndChronologyUnitTypeAttributeDefinition">
+		<x/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--                     
+************************* languageAuthorityAttributeDefinition  
+ -->
+	<xs:simpleType name="languageAuthorityAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="rfc3066"/>
+			<xs:enumeration value="iso639-2b"/>
+			<xs:enumeration value="iso639-3"/>
+			<xs:enumeration value="rfc4646"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--
+	 **********modsVersionAttributeDefinition
+
+************** "version" attribute of <mods>   
+
+                   ********  The version attribute, now, in 3.4, enumerates all 3.x versions. 
+                   ******** In earlier versions only the current  (latest) version was allowed. 
+                   ********  E.g. in version 3.3, the only allowable value for the version attribute was "3.3".
+                   ******** Henceforth for any version x.y, all values x.z where z is less than or
+                   ******** equal to y will be enumerated. 
+ -->
+	<xs:simpleType name="modsVersionAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="3.4"/>
+			<xs:enumeration value="3.3"/>
+			<xs:enumeration value="3.2"/>
+			<xs:enumeration value="3.1"/>
+			<xs:enumeration value="3.0"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--  
+    ********** namePartTypeAttributeDefinition
+                    *******  "type" attribute of <namePart>
+ -->
+	<xs:simpleType name="namePartTypeAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="date"/>
+			<xs:enumeration value="family"/>
+			<xs:enumeration value="given"/>
+			<xs:enumeration value="termsOfAddress"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--  
+    ********** nameTypeAttributeDefinition
+        5           ******** type attribute of <name>
+       -->
+	<xs:simpleType name="nameTypeAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="personal"/>
+			<xs:enumeration value="corporate"/>
+			<xs:enumeration value="conference"/>
+			<xs:enumeration value="family"/>
+			<!-- "family" is new in 3.4 -->
+		</xs:restriction>
+	</xs:simpleType>
+	<!--  
+   ********** noDefinition 
+                  ************used by various attributes whose only values may be "no":
+                  ************ attribute "shareable" of <abstract>, <tableOfContents>
+ -->
+	<xs:simpleType name="noDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="no"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--  
+    ********** placeAuthorityAttributeDefinition
+ used by authority attribute for placeDefinition and geographic  **********  	                       	  
+ -->
+	<xs:simpleType name="placeAuthorityAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="marcgac"/>
+			<xs:enumeration val[e="marccountry"/>
+			<xs:enumeration value="iso3166"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--                     
+************* relatedItemTypeAttributeDefinition  
+                   	  
+ -->
+	<xs:simpleType name="relatedItemTypeAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="preceding"/>
+			<xs:enumeration value="succeeding"/>
+			<xs:enumeration value="original"/>
+			<xs:enumeration value="host"/>
+			<xs:enumeration value="constituent"/>
+			<xs:enumeration value="series"/>
+			<xs:enumeration value="otherVersion"/>
+			<xs:enumeration value="otherFormat"/>
+			<xs:enumeration value="isReferencedBy"/>
+			<!-- following two new in 3.4. -->
+			<xs:enumeration value="references"/>
+			<xs:enumeration value="reviewOf"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--  
+***************titleInfoTypeAttributeDefinition ***********************
+-->
+	<xs:simpleType name="titleInfoTypeAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="abbreviated"/>
+			<xs:enumeration value="translated"/>
+			<xs:enumeration value="alternative"/>
+			<xs:enumeration value="uniform"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--   
+********** urlAccessAttributeDefinition"**********  	
+   -->
+	<xs:simpleType name="urlAccessAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="preview"/>
+			<xs:enumeration value="raw object"/>
+			<xs:enumeration value="object in context"/>
+		</xs:restriction>
+	</xs:simpleType>
+		<!--   
+********** urlUsageAttributeDefinition"**********  	
+
+******************** This definition is for the usage attribute as used by <url> (subelement of <location>)
+
+******************** this note pertains both to this  (urlUsageAttributeDefinition) and the following ( usageAttributeDefinition) definitions.
+
+In earlier versions the usage attribute applied to element <url> (of <location>) only, and defined the single value "primary display".  
+In this version, 3.4, the usage attribute applies additionally to elements <classification>, <genre>, <language>, <subject>, <name>,<titleInfo>, 
+and <typeOfResource>.  
+
+However the value "primary display" is generalized to "primary", for these latter elements. 
+
+<url> retains the value "primary display" (for compatibility with earlier versions) lthough its use is depricated. So it has both values, "primary" and "primary display". For the other elements, only the value "primary" is valid. 
+
+Therefore, two definitions are needed for the usage attribute, one for <url> ("urlUsageAttributeDefinition") and one for the other elements ("usageAttributeDefinition")
+   -->
+	<xs:simpleType name="urlUsageAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="primary display"/>
+			<xs:enumeration value="primary"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--   
+********** usageAttributeDefinition"**********  	
+
+********************  See note above with urlUsageAttributeDefinition.
+******************** This definition is for the usage attribute as used by <classification>, <genre>, <language>, <subject>, <name>,<titleInfo>, <typeOfResource>
+   -->
+	<xs:simpleType name="usageAttributeDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="primary"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!--   
+
+********** yesDefinition
+
+            ******************* yesDefinition used by various attributes whose only values may be "yes":
+                                                  "invalid" for <identifier>
+                                                   "supplied" for <titleInfo>
+                                                   "collection" for <typeOfResource>
+                                                   "manuscript" for <typeOfResource>
+                                                   "keyDate" for <date>
+                                                    "supplied" for <place>, <edition>, <publisher>, <extent>
+   -->
+	<xs:simpleType name="yesDefinition">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="yes"/>
+		</xs:restriction>
+	</xs:simpleType>
+	<!-- -->
+</xs:schema>

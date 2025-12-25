@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html"><div class="pod">
+<p>I reculllllllllllllllllllllllllllllllllllllll€lllllll   works, and to temmmmmmmmmmmmmmmmmmtures -->
+
+<?TARGET This is"h programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !--¾
+  <!ENTITY % xx '<!ENTITY aa "blabla!>'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> anme more text </i:argument>
+ âââââ:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and somext </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision'attribute="An attribute">2</i:precision>
+</i:caRcAverage>

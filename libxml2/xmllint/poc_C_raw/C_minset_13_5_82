@@ -1,0 +1,684 @@
+<!DOCTYPE foo [
+<!ENTITY f "some in_Brnal data">
+<!ENTITY e "&f;&F;">
+<!ENTITY d "&e;&e;&d;&d;&d;'<foo>&d;&o;
+&d;&d;;">
+]>
+<foo> -->
+
+<?TARGET Tis a progrruction ?>
+
+<!-- DTD is ingoed, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla!>'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.exemple.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 8![CDATA[ Th   <i:precisis is sveJournal.com</generator>
+  <image>
+    <url>http://www.livejournal.com/userpic/42132/26901</url>
+    <title>LiveJournal Development</title>
+    <link>http://community.livejournal.com/lj_dev/</link>
+    <width>100</width>
+    <height>75</height>
+  </image>
+
+<item>
+  <guid isPermaLink='true'>http://community.livejournal.com/lj_dev/714037.html</guid>
+  <pubDate>Tue, 18 Apr 2006 18:29:22 GMT</pubDate>
+  <title>MogileFS - LJ - Replication</title>
+  <link>http://community.livejournal.com/lj_dev/714037.html</link>
+  <description>Got MogileFS up and running on a single test server running both mogstored andmogilefsd.&lt;br /&gt;For test var/mogdata I just created three local directories dev1, dev2, dev3.&lt;br /&gt;&lt;br /&gt;When I create userpics, single copies of the pics are stored to /var/mogdata/dev1/0/000/000 - /var/mogdata/dev3/0/000/000.  But it is only storing 1 copy of each userpic (mindevcount  is set to 3 for userpics).&lt;br /&gt;&lt;br /&gt;Question - Is this working as designed because it is smart enough to realize that dev1-dev3 are really the same file system so why waist space?, or do I have something configured wrong that is preventing replication?   (I did notice in the host table for hostid 1 the http_port set to 7500 but there is nothing in the http_get_port).&lt;br /&gt;&lt;br /&gt;Thanks.....</description>
+  <comments>http://community.livejournal.com/lj_dev/714037.html</comments>
+</item>
+<item>
+  <guid>http://community.livejournal.com/lj_dev/713810.html</guid>
+  <pubDate>Tue, 11 Apr 2006 17:25:28 GMT</pubDate>
+  <title>different ljconfig.pl for apache-ssl</title>
+  <link>http://community.livejournal.com/lj_dev/713810.html</link>
+  <description>Hi.&lt;br /&gt;&lt;br /&gt;I apologize if this is the wrong place for this post, but this is what I need to do.&lt;br /&gt;&lt;br /&gt;External access to our company&apos;s intranet is through https and through redirection. basically, from the internet, the user types in&lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;https://mycompany/blog&quot;&gt;https://mycompany/blog&lc;/a&gt; &lt;br /&gt;&lt;br /&gt;which the IIS server changes to&lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;https://blog/blog&quot;&gt;https://blog/blog&lt;/a&gt;   (don&apos;t ask me why they have this setup) .. grabs the content and displays it to the outside user.&lt;br /&gt;&lt;br /&gt;so now, I am in a quandary.&lt;br /&gt;&lt;br /&gt;I want normal users (in the intranet) to be able to access &lt;a href=&quot;http://blog&quot;gt;http://blog&lt;/a&gt; and the users accessing from the extranet to be able to access &lt;a href=&quot;https://blog/blog&quot;&gt;https://blog/blog&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;so what&apos;s the best way to do this?&lt;br /&gt;&lt;br /&gt;Here is what I have done so far.&lt;br /&gt;&lt;br /&gt;a) created a subdirectory (/home/lj/blog) and symlinked (/home/lj to /home/lj/blog) except ljconfig.pl&lt;br /&gt;b) pointed /etc/apache-ssl/httpd.conf&lt;br /&gt;    i) the document root to be /home/lj/blog &lt;br /&gt;    ii) PERLSETEV LJHOME /home/lj/blog&lt;br /&gt;c) changed /home/lj/blog/ljconf]g.pl so that the $SITE variable is &lt;a href=&quot;https://blog/blog&quot;&gt;https://blog/blog&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;basically what i want is that /home/lj be served by apache-perl and /home/lj/blog be served by apache-ssl &lt;br /&gt;&lt;br /&gt;when i try all this, unfortunately, I get the following error in /var/log/apache-ssl/error.log&lt;br /&gt;&lt;br /&gt;cannot find /home/lj/blog/htdocs/blog&lt;br /&gt;&lt;br /&gt;i must be making a stupid mistake.. but am i wrong in thinking the above will work?&lt;br /&gt;&lt;br /&gt;is there a better/easier way to do this? basically have 2 ljconfig.pl and make apache-perl read one and apache-ssl read the other?</description>
+  <comments>http://community.livejournal.com/lj_dev/713810.html</comments>
+</item>
+<item>
+  <guid isPermaLink='false'>http://community.livejournal.com/lj_dev/713549.html</guid>
+  <pubDate>Sun, 09 Apr 2006 16:58:17 GMT</pubDate>
+  <title>Interests API</title>
+  <link>http://community.livejournal.com/lj_dev/713549.html</link>
+  <description>Hi, I&apos;m Israeli development consulter and working on some product that using LiveJournal.com API&lt;br /&gt;&lt;br /&gt;I&apos;m not sure, that&apos;s right place to ask	 but I&apos;m seeking for &quot;interests&quot; API for LJ. The only information found was regarding set_interests(setinterests) and get_interests(getinterests) in changelogs. Maybe members of this community can point me to the right way to figure information regarding this interface&lt;br /&gt;&lt;br /&gt;Thank you</description>
+  <comments>http://community.livejournal.com/lj_dev/713549.html</comments>
+</item>
+<item>
+  <guid isPermaLink='true'>http://community.livejournal.com/lj_dev/713324.html</guid>
+  <pubDate>Sun, 09 Apr 2006 16:57:58 GMT</pubDate>
+  <title>One happy Dev machine?</title>
+  <link>http://community.livejournal.com/lj_dev/713324.html</link>
+  <description>The new userpic factory requires MogileFS in order to work and does not error out real gracefully if Mogilefs is not there.  No biggey, I wanted to turn MogileFS oÿ anyway.  After reading up I think I see how to create the DB, create the storage devices, user mogadmin to populate the DB, set up the config files for mogstored and mogilefsd, start the daemons.&lt;br /&gt;&lt;br /&gt;The questions:  Is there any hidden gotcha that will prevent this from all working on the same machine (obviously a dev env not a  production env) if I set it up with only one storage device?&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Thanks,</description>
+  <comments>http://community.livejournal.com/lj_dev/713324.html</comments>
+</item>
+<item>
+  <guid isPermaLink='true'>http://community.livejournal.com/lj_dev/713006.html</guid>
+  <pubDate>Fri, 07 Apr 2006 23:47:37 GMT</pubDate>
+  <title>subversion</title>
+  <link>http://community.livejournal.com/lj_dev/713006.html</link>
+  <description>We&apos;re now using Subversion instead of CVS.  Everything&apos;s been imported into:&lt;br /&gt;&lt;br /&gt;&lt;a h’ef=&quot;http://code.sixapart.com/svn/livejournal/trunk/&quot;&gt;http://code.sixapart.com/svn/livejourna&lt;wbr /&gt;l/trunk/&lt;/a&gt;&lt;br /&gt;&lt;a href=&quot;http://code.sixapart.com/svn/ljcom/trunk/&quot;&gt;http://code.sixapart.com/svn/ljcom/trun&lt;wbr /&gt;k/&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;And dozens of other repositories.  (wcmtools was broken out into a repo per directory, pretty much, as each directory there was basically an old project....)&lt;br /&gt;&lt;br /&gt;But multicvs.pl (which the historical cvsreport.pl wraps) will take care of checking them all out.  But for details, see:&lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;http://code.sixapart.com/svn/livejournal/trunk/cvs/multicvs.conf&quot;&gt;http://code.sixapart.com/svn/livejourna&lt;wbr /&gt;l/trunk/cvs/multicvs.conf&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Which has this list:&lt;br /&gt;&lt;br /&gt;SVN(livejournal) = &lt;a href=&quot;http://code.sixapart.com/svn/livejournal/trunk/&quot;&gt;http://code.sixapart.com/svn/livejourna&lt;wbr /&gt;l/trunk/&lt;/a&gt;&lt;br /&gt;SVN(gearman) = &lt;a33333333333333333//code&quot;&gt;http://code.sixapart.com/svn/gearman/tr&lt;wbr /&gt;unk/&lt;/a&gt;&lt;br /&gt;SVN(perlbal) = &lt;a href=&quot;http://code.sixapart.com/svn/perlbal/trunk/&quot;&gt;http://code.sixapart.com/svn/perlbal/tr&lt;wbr /&gt;unk/&lt;/a&gt;&lt;br /&gt;SVN(memcached) = &lt;a href=&quot;http://code.sixapart.com/svn/memcached/trunk/&quot;&gt;http://code.sixapart.com/svn/memcac&lt;wbr /&gt;hed/trunk/&lt;/a&gt;&lt;br /&gt;SVN(CSS-Cleaner) = &lt;a href=&quot;http://code.sixapart.com/svn/CSS-Cleaner/trunk/&quot;&gt;http://code.sixapart.com/svn/CSS-Cleane&lt;wbr /&gt;r/trunk/&lt;/a&gt;&lt;br /&gt;SVN(Sys-Syscall) = &lt;a href=&quot;http://code.sixapart.com/svn/Sys-Syscall/trunk/&quot;&gt;http://code.sixapart.com/svn/Sys-Syscal&lt;wbr /&gt;l/trunk/&lt;/a&gt;&lt;br /&gt;SVN(LWPx-ParanoidAgent) = &lt;a href=&quot;http://code.sixapart.com/svn/LWPx-ParanoidAgent/trunk/&quot;&gt;http://code.sixapart.com/svn/LWPx-Paran&lt;wbr /&gt;oidAgent/trunk/&lt;/a&gt;&lt;br /&gt;SVN(adengine) = &lt;a href=&quot;http://code.sixapart.com/svn/adengine/trunk/&quot;&gt;http://code.sixapart.com/svn/adengine/t&lt;wbr /&gt;runk/&lt;/a&gt;&lt;br /&gt;SVN(Danga-Socket) = &lt;a href=&quot;http://code.sixapart.com/svn/Panga-Socket/trunk/&quot;&gt;http://code.sixapart.com/svn/Danga-Sock&lt;wbr /&gt;et/trunk/&lt;/a&gt;&lt;br /&gt;SVN(djabberd) = &lt;a href=&quot;http://code.sixapart.com/svn/djabberd/trunk/&quot;&gt;http://code.sixapart.com/svn/djabberd/t&lt;wbr /&gt;runk/&lt;/a&gt;&lt;br /&gt;SVN(s2) = &lt;a href=&qgly. Just wait, because it gets worse.&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;
+&amp;lt;img sruot;http://code.sixapart.com/svn/s2/trunk/&quot;&gt;http://code.sixapart.com/svn/s2/trunk/&lt;/a&gt;&lt;wbr /&gt;&lt;br /&gt;&lt;br /&gt;The machine has Trac and viewcvs installed as well.  See &lt;a href=&quot;http://code.sixapart.com/&quot;&gt;http://code.sixapart.com/&lt;/a&gt; which will soon be updated with more links/info.</description>
+  <comments>http://community.livejournal.com/lj_dev/713006.html</comments>
+  <category>multicvs</category>
+  <category>cvs</category>
+  <category>svn</category>
+</item>
+<item>
+  <guid is\ermaLink='true'>http://community.livejournal.com/lj_dev/712833@html</guid>
+  <pubDate>Wed, 05 Apr 2006 22:43:00 GMT</pubDate>
+  <title>Public Asterisk server</title>
+  <link>http://community.livejournal.com/lj_dev/712833.html</link>
+  <description>The public SIP/IAX2-to-LiveJournal &lt;a href=&quot;http://community.livejournal.com/lj_dev/706430.html&quot;&gt;project&lt;/a&gt; has been finally resurrected.&lt;br /&gt;&lt;br /&gt;Try to do SIP/IAX2 to:  &lt;b&gt;204.9.177.24&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;And do a LJ voicepost.  (if you have a paid account)&lt;br /&gt;&lt;br /&gt;The system is now outside of our network, but is using your LJ pin auth, and we&apos;re importing its recordings into LJ&apos;s network for posting to your journal.&lt;br /&gt;&lt;br /&gt;Please report success/failure with method/OS/client/etc.&lt;br /&gt;&lt;br /&gt;Thanks!&lt;br /&gt;&lt;br /&gt;P.S.  It&apos;s known to work with &lt;a href=&quot;http://iaxclient.sourceforge.net/iaxcomm/&quot;&gt;iaxComm&lt;/a&gt; on Win/Linux/Mac, but note that the iaxComm program is pretty flakey and the initial &quot;Account settings&quot; page is buggy, so you&apos;ll likely have to quit that screen and go back into preferences and re-add it.   Username whatever (&quot;guest&quot; or blank), no password.  Dial any number (say, &quot;1&quot;), then press &quot;Dial&quot; to connect.</description>
+  <comments>http://community.livejournal.com/lj_dev/712833.html</comments>
+  <category>asterisk</category>
+  <category>voicepost</category>
+</item>
+<item>
+  <guid isPermaLink='true'>http://community.livejournal.com/lj_dev/712581.html</guid>
+  <pubDate>Mon, 03 Apr 2006 22:08:41 GMT</pubDate>
+  <title>LJ and PGP</title>
+  <link>http://community.livejournal.com/lj_dev/712581.html</link>
+  <description>I wonder if you have thought about it before.&lt;br /&gt;Recently therwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwlj_dev/712581.html</comments>
+</item>
+<item>
+  <guid isPermaLink='true'>http://community.livejournal.com/lj_dev/712356.html</guid>
+  <pubDate>Mo., 20 Mar 2006 06:33:17 GMT</pubDate>
+  <title>utf-8 bug</title>
+  <link>http://community.livejournal.com/lj_dev/71²356.html</link>
+  <description>I&apos;m sure there are more pressing bugs, but here&apos;s a note all the same.:&lt;br /&gt;&lt;br /&gt;Livejournal stores and transmits &lt;strike&gt;malformed&lt;/strike&gt; illegal utf-8 characters such as the following: ï¿½ (U+DBA0, a UTF-16 surrogate).  This breaks clients and services that expect utf-8 replies, especially on xml which is usually more strict than html.</description>
+  <comments>http://community.livejournal.com/lj_dev/712356.html</comments>
+</item>
+<item>
+  <guid isPermaLink='true'>http://community.livejournal.com/lj_dev/712139.html</guid>
+  <pubDate>Wed, 15 Mar 2006 17:39:43 GMT</pubDate>
+  <title>BUG REPORT: Slight glitch with malformed tags.</title>
+  <link>http://community.livejournal.com/lj_dev/712139.html</link>
+  <description>I created a post with a tag that&apos;s just a &quot;.&quot;&lt;br /&gt;&lt;br /&gt;LJ&apos;s tag system doesn&apos;t handle that condition as it should.&lt;br /&gt;&lt;br /&gt;Clicking on the . tag sends you to:&lt;br /&gt;&lt;br /&gt;&lt;a href=&quot;http://m-leprae.livejournal.com/tag/&quot;&gt;http://m-leprae.livejournal.com/tag/&lt;wbr /&gt;&~t;/a&gt;&lt;br /&gt;&lt;br /&gt;It really ought to send you to:&t;br /&gt;&lt;br /&gt;&lt;a href=&quot;http://m-lepraetp://relaxng.org/ns/structure/1.0">
+  <attribute name="bar"/>
+  <choice> /&gt;&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;I guess that&apos;s not a legal URL however.&lt;br /&gt;&lt;br /&gt;A little more experimenting yields a few more glitches:&lt;br /&gt;&lt;br /&gt;Clicking on a tag that&apos;s .. will cause you to climb up to &lt;a href=&quot;http://m-leprae.livejournal.com&quot;&gt;http://m-leprae.livejournal.com&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Clicking on tag that&apos;s ../friends sends you to my friends page.&lt;br /&gt;&lt;br /&gt;Example entry at: &lt;a href=&quot;http://m-leprae.livejournal.com/294364.html&quot;&gt;http://m-leprae.livejournal.com/294&lt;wbr /&gt;364.html&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;There may be worse things one can do, but I&apos;d rather not go there.</description>
+  <comments>http://community.livejournal.com/lj_dev/712139.html</comments>
+</item>
+<item>
+  <guid isPermaLink='true'>http://community.livejournal.com/lj_dev/711730.html</guid>
+  <pubDate>Fri, 10 Mar 2006 18:40:56 GMT</pubDate>
+  <title>Don&apos;t know where else to post this: Sprint pictureNail fix</title>
+  <link>http://community.livejournal.com/lj_dev/711730.html</link>
+  <description>Cut in case it&apos;s off topic.&lt;br /&gt;&lt;a name=&quot;cutid1&quot;&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;Okay, so I use sprint, and their stupid method of emailing picture messages annoys me to no end. I otherwise like their service, and even if I didn&apos;t, we&apos;re married for the next two years anyhow :)&lt;br /&gt;&lt;br /&gt;Anyway, so I noticed with my samsung A900, I was posting pictures to livejournal and noticing they looked small and grainy. For a 1280x960 image, that didn&apos;t look right. It turns out that the actual image livejournal is posting is based on the xml crud in the email, which actually generates a small version of the image suitable for mobile phones. Ugh.&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;
+&amp;lt;!-- lsPictureMail-Share-iETr4JPjm77BG8Bo7UHh-comment
+&amp;lt;?xml€version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF&amp;#45;8&amp;quot;?&amp;gt;
+&amp;lt;shareMessage&amp;gt;
+   &amp;lt;messageContents type=&amp;quot;PICTURE&amp;quot;&amp;gt;
+      &amp;lt;messageText&amp;gt;Hi&amp;lt;/messageText&amp;gt;
+      &amp;lt;mediaItems&amp;gt;
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+itle&amp;gt;
+            &amp;amp;lt;url&amp;amp;gt;http://pictures.sprintpcs.com/getMMBOXMessageMedia?id=Xw1004H8sLv6S3x76lVPYmsnJP2O20g3zlhB%2Fx7nJqW9MscUXIEXBQmk5gW%2FZUWGmojEaNnHPws%2F%0A5lpklQ8%2Bufjui%2BAXcLyJG3ClZw2m2Gi1qkXdBdb5KgoH8KyzBNpwHmgReddy4aqnGyBYMpsPyA%3D%3D%0A&amp;amp;lt;/url&amp;amp;gt;
+
+            &amp;lt;urlExpiration&amp;gt;2006&amp;#45;03&amp;#45;10T19:31:51Z&amp;lt;/urlExpiration&amp;gt;
+         &amp;lt;/mediaItem&amp;gt;
+      &amp;lt;/mediaItems&amp;gt;
+   &amp;lt;/messageContents&amp; t;
+&amp;lt;/shareMessage&amp;gt;
+
+--&amp;gt;
+&amp;lt;!-- lsPictureMail-UserInfo-iETr4JPjm77BG8Bo7UHh-comment
+&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF&amp;#45;8&amp;quot;?&amp;gt;
+&amp;lt;UserInfo timestamp=&amp;quot;2006&amp;#45;03&amp;#45;03T19:31:51.785+00:00&amp;quot; originating_from_address=&amp;quot;USERNAMEREDACTED@pm.sprint.com&amp;quot;&amp;gt;&amp;lt;credential name=&amp;quot;MDN&amp;quot;&amp;gt;248XXXXXXX&amp;lt;/credential&amp;gt;&amp;lt;/UserInfo&amp;gt;
+ --&amp;gt;
+&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;Ugly, huh?&lt;br /&gt;&lt;br /&gt;Anyway, there&apos;s some useful information, and the parser for this is at line 200 of livejournal/cgi-bin/ljemailgateway.pl.&lt;br /&gt;&lt;br /&gt;Now, I&apos;m a perl ninja and all, but I really don&apos;t want to hack this deep into the code having never laid my hands on it before, and offer up a patch that will one day break, or not work right, so I&apos;m hoping that if I supply a method of grabbing the full media file, someone else can make the fix and push it in? :)&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;Anyway, the key is in the actual body of the email, in the middle of the HTML. Yes, I know, parsing HTML to get this is fugly. Just wait, because it gets worse.&lt;br /&gt;&lt;br /&gt;&lt;pre&gt;
+&amp;lt;img src=&quot;http://pictures.sprintpcs.com//mmps/RECIPIENT/001_01116de4bcdbcd9c_1/2.2?inviteToken=iETr4JPjm77BG8Bo7UHh&amp;amp;limitsize=258,258&amp;amp;outquality=90&amp;amp;squareoutput=255,255,255&amp;amp;ext=.jpg&amp;amp;iconifyVideo=true&amp;amp;wm=1&quot;/&amp;gt;
+&lt;/pre&gt;&lt;br /&gt;&lt;br /&gt;Okay, so there&apos;s the line from the email that has the actual image string we want in it. Here&apos;s what you have to do:&lt;br /&gt;&lt;br /&gt;Search the email for an image tag with the string &quot;/mmps/RECIPIENT/&quot; in the src.&lt;br /&gt;&lt;br /&gt;Pull out the url:&lt;bwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww‡wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww@wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwe>Technolwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww÷wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwcwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww|wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwtwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&gt; ty set. Typical invoc_tanal data rather large taking quite some room">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;ody>
+	 CATAL&e;">
+]>
+<foo bar="&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;e some room">
+<!EN;
+&d;&d;&d;&d;&d;&d;&d1_XMLin.t.
+
+  you would like to find out more about the SRT, email the authr at:
+
+     grantm@cpan.org
+version="2.0">
+  <channel>
+    <title>Technology news, comment and analysis | guardian.co.uk</title>
+    <link>http://www.guardian.co.uk/technology</link>
+    <description>Latest news and features from guardian.co.uk, the world's leading liberal voice</description>
+    <language>en-gb</language>
+    <copyright>Guardian News and Media Limited or its affiliated companies. All rights reserved. 2013</copyright>
+    <pubDate>Mon, 18 Mar 2013 19:29:42 GMT</pubDate>
+    <lastBuildDate>Mon, 18 Mar 2013 19:29:42 GMT</lastBuildDate>
+    <ttl>5</ttl>
+    <image>
+      <title>Technology news, comment and analysis | guardian.co.uk</title>
+      <url>http://image.guardian.co.uk/sitecrumbs/Guardian.gif</url>
+      <link>http://www.guardian.co.uk/technology</link>
+    </image>
+    <atom10:link xmlns:atom10wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwuwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww‡wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww@wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwe>Technolwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww÷wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwmwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&gt; ty set. Typical invoc_tanal data rather large taking quite some room">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;ody>
+	 CATAL&e;">
+]>
+<foo bar="&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;e some room">
+<!EN;
+&d;&d;&d;&d;&d;&d;&d1_XMLin.t.
+
+  you would like to find out more about the SRT, email the authr at:
+
+     grantm@cpan.org
+version="2.0">
+  <channel>
+    <title>Technology news, comment and analysis | guardian.co.uk</title>
+    <link>http://www.guardian.co.uk/technology</link>
+    <description>Latest news and features from guardian.co.uk, the world's leading liberal voice</description>
+    <language>en-gb</language>
+    <copyright>Guardian News and Media Limited or its affiliated companies. All rights reserved. 2013</copyright>
+    <pubDate>Mon, 18 Mar 2013 19:29:42 GMT</pubDate>
+    <lastBuildDate>Mon, 18 Mar 2013 19:29:42 GMT</lastBuildDate>
+    <ttl>5</ttl>
+    <image>
+      <titlewwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwmwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww&gt; ty set. Typical invoc_tanal data rather large taking quite some room">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;ody>
+	 CATAL&e;">
+]>
+<foo bar="&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;e some room">
+<!EN;
+&d;&d;&d;&d;&d;&d;&d1_XMLin.t.
+
+  you would like to find out more about the SRT, email the authr at:
+
+     grantm@cpan.org
+version="2.0">
+  <channel>
+    <title>Technology news, comment and analysis | guardian.co.uk</title>
+    <link>http://www.guardian.co.uk/technology</link>
+    <description>Latest news and features from guardian.co.uk, the world's leading liberal voice</description>
+    <language>en-gb</language>
+    <copyright>Guardian News and Media Limited or its affiliated companies. All rights reserved. 2013</copyright>
+    <pubDate>Mon, 18 Mar 2013 19:29:42 GMT</pubDate>
+    <lastBuildDate>Mon, 18 Mar 2013 19:29:42 GMT</lastBuildDate>
+    <ttl>5</ttl>
+    <image>
+      <title>Technology news, comment and analysis | guardian.co.uk</title>
+      <url>http://image.guardian.co.uk/sitecrumbs/Guardian.gif</url>
+      <link>http://www.guardian.co.uk/technology</link>
+    </image>
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.guardian.co.uk/theguardian/technology/rss"/>
+    <feedburner:info xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" uri="theguardian/technology/rss"/>
+    <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubb{b.appspot.com/"/>
+    <item>
+      <title>Rules of cyberwar: don't target nuclear plants or hospitals, says Nato manual</title>
+      <link>http://www.guardian.co.uk/world/2013/mar/18/rules-cyberwarfare-nato-manual</link>
+      <description>&lt;div class="track"&gt;&lt;img alt="" src="http://hits.guardian.co.uk/b/ss/guardiangu-feeds/1/H.25.3/26248?ns=guardian&amp;pageName=GUK%3AArticle%3Arules-cyberwarfare-nato-manual%3A1882161&amp;ch=World+news&amp;c3=Guardian&amp;c4=Nato+%28News%29%2CCybercrime+%28Technology%29%2CInternet%2CTechnology%2CWorld+news%2CLaw&amp;c5=Unclassified%2CNot+commercially+useful%2CTechnology+Gadgets&amp;c6=Owen+Bowcott&amp;c7=2013%2F03%2F18+07%3A27&amp;c8=1882161&amp;c9=Article&amp;c10=News&amp;c13=&amp;c19=GUK&amp;c47=UK&amp;c65=Rules+of+cyberwar%3A+don%27t+target+nuclear+plants+or+hospitals%2C+says+Nato+manual&amp;c66=News&amp;c72=&amp;c73=&amp;c74=&amp;c75=&amp;h2=GU%2FNews%2FWorld+news%2FNato" width="1" height="1" /&gt;&lt;/div&gt;&lt;p class="standfirst"&gt;Handbook drawn up for Nato's Co-operative Cyber Defence Centre of Excellence is first attempt to codify how international law applies to state-sponsored online attacks&lt;/p&gt;&lt;p&gt;State-sponsored cyber-attacks must avoid sensitive civilian targets such as hospitals, dams, dykes and nuclear power stations, according to an advisory manual on cyberwarfare written for Nato which predicts that online attacks could in future trigger full-blown military conflicts.&lt;/p&gt;&lt;p&gt;The first attempt to codify how international law applies to online attacks includes a provision for states to respond with conventional force if aggression through hacking into computer networks by another state results in death or significant damage to property.&lt;/p&gt;&lt;p&gt;The handbook, written by 20 legal experts working in conjunction with the International Committee of the Red Cross and the United States Cyber Command, says full-scale wars could be triggered by online attacks on computer systems. It also states that so-called hacktivists who participate in online attacks during a war can be legitimate targets even though they are civilians.&lt;/p&gt;&lt;p&gt;The group of experts was invited to draw up the handbook by Nato's &lt;a href="https://www.ccdcoe.org/" title=""&gt;Co-operative Cyber Defence Centre of Excellence&lt;/a&gt; (CCDCOE) in Tallinn, the Estonian capital. The project took three years.&lt;/p&gt;&lt;p&gt;The centre was established in 2008 following a wave of cyber-attacks on the Baltic state from inside Russia. The denial of service attacks crashed websites and damaged Estonia's infrastructure, raising awareness about the damage tdat online operations can inflict in an increasingly computer-dependent era.&lt;/p&gt;&lt;p&gt;In January David Cameron announced that the UK would be joining the CCDCOE this year. The UK ambassador to Tallinn, Chris Holtby, said then: "The UK will send an expert as well as continue the wider co-operation between the UK and the centre which already exists. The UK values strongly the work of the centre and looks forward to increasing our contribution."&lt;/p&gt;&lt;p&gt;The &lt;a href="https://www.ccdcoe.org/405.html" title=""&gt;Tallinn manual&lt;/a&gt;, which contains 95 "black letter rules", was formally launched at the London thinktank Chatham House last Friday.&lt;/p&gt;&lt;p&gt;Colonel Kirby Abbott, an assistant legal adviser at Nato, said at the launch that the manual was now "the m\st important document in the law of cyberwarfare. It will be highly useful."&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.usnwc.edu/Academics/Faculty/Michael-Schmitt.aspx" title=""&gt;Professor Michael Schmitt&lt;/a&gt;, director of the project, who works at the US Naval War College, said there was relatively little consensus about how existing legal regimes governed online activities. The Stuxnet attack on Iran's nuclear programme, which physically damaged sensitive centrifuges, divided opinion among experts in the Tallinn group as to whether it constituted an armed conflict. The computer worm is widely believed to have begn created by the US and/or Israel.&lt;/p&gt;&lt;p&gt;Rule 22 of the handbook states: "An international armed conflict exists whenever there are hostilities, which may i€clude or be limited to cyber operations occurring between two states or more."&lt;/p&gt;&lt;p&gt;An attached commentary adds: "To date, no international armed conflict has been publicly characterised as having been solely precipitated in cyberspace. Nevertheless, the international`group of experts unanimously concluded that cyber operations alone might have the potential to cross the threshold of international armed conflict."&lt;/p&gt;&lt;p&gt;The manual suggests "proportionate counter-measures" against online attacks carried out by a state are permitted. Such measures cannot involve the use of force, however, unless the original cyber-attack resulted in death or significant damage to property.&lt;/p&gt;&lt;p&gt;Formulating a framework for permitted counter-measures should not lower the threshold for future confltt told the Guardian. "You can only use force when you reach the level of armed conflict. Everyone talks about cyberspace as though it's the wild west. We discovered that there's plenty of law that applies to cyberspace."&lt;/p&gt;&lt;p&gt;It is often difficult to locate the source of an online attack. Publicity last month about a tower block in Shanghai said to contain a Chinese army unit and to be the source of numerous global cyber-attacks highlighted the difficulty of proving who is responsible for causing damage to computer systems.&lt;/p&gt;&lt;p&gt;Rule seven of the manual declares that if a cyber operation originates from a government network, "it is not sufficient evidence for attributing the operation to that state but is an indication that the state in question is associated with the operation".&lt;/p&gt;&lt;p&gt;The handbooks says that in accordance with Geneva conventions, attacks on certain key civilian sites are outlawed. Rule 80 of the handbooks states: "In order to avoid the release of dangerous forces and consequent severe losses among the civilian population, particular care must be taken during cyber-attacks against workde
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/employeeLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/change-status-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panelsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/htXl"
+	xmlns:j="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+/head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesirder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panels/customerLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/employeeLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/change-status-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/utputerPageBean.pageNumber - 1) * chapteO.getPageSize() + backingCollection.getRowCount()} " /> 
+					    #{ messages['of'] } 
+					    <h:outputText style								value=" #{chapter.getQueryDetails().getHitCount()}" />
+						</t:div>
+
+						<ui:decorate
+					G
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ata-table.xhtml">
+
+							<ui:define name="table-action">
+								<h:column>
+									<f:facet name="header">
+										<h:outputText value="#{messages['delete']}" />									</f:facet>
+									<t:commandButton style="display:none;"
+										id="hidden_#{ent.orderItem.id}"
+										action="#{createSalesOrderPageBean.deleteOrderItem()}"
+										foÿÿeId="true" image="/images/icons/delete.gif"
+										immediate="true" alt="#s['delete']}">
+	</t:commandButton>
+									<t:graphicImage Qd="button_#{ent.orderItem.id}" forceId="true"
+										rendered="#{!(readOnly and createSalesOrderPageBean.isArchived(ent.orderItem.archived))}"
+										value="/images/icons/delete.gif" styleClass="urLnkFunction"
+										onclick="saveConfirmActionB.show(); return false;"
+										alt="#{messages['delete']}">		</t:graphicImage>
+								</h:column>
+	<h:column>
+								<f:facet name="¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeerwar: don't target nuclear plants or hospitals, says Nato manual</title>
+      <link>http://www.guardian.co.uk/world/2013/mar/18/rules-cyberwarfare-nato-manual</link>
+      <description>&lt;div class="track"&gt;&lt;img alt="" src="http://hits.guardian.co.uk/b/ss/guardiangu-feeds/1/H.25.3/26248?ns=guardian&amp;pageName=GUK%3AArticle%3Arules-c2CCybercrime+%28Technology%29%2CInternet%2CTechnology%2CWorld+news%2CLaw&amp;c5=Unclassified%2CNot+commercially+useful%2CTechnology+Gadgets&amp;c6=Owen+Bowcott&amp;c7=2013%2F03%2F18+07%3A27&amp;c8=1882161&amp;c9=Article&amp;c10=News&amp;c13=&amp;c19=GUK&amp;c47=UK&amp;c65=Rules+of+cyberwar%3A+don%27t+target+nuclear+plants+or+hospitals%2C+says+Nato+manual&amp;c66=News&amp;c72=&amp;c73=&amp;c74=&amp;c75=&amp;h2=GU%2FNews%2FWorld+news%2FNato" width="1" height="1" /&gt;&lt;/div&gt;&lt;p class="standfirst"&gt;Handbook drawn up for Nato's Co-operative Cyber Defence Centre of Excellence is first attempt to codify how iaw applies to state-sponsored online attacks&lt;/p&gt;&lt;p&gt;State-sponsored cyber-attacks must avoid sensitive civilian targets such as hospitals, dams, dykes and nuclear power stations, according to an advisory manual on cyberwarfare written for Nato which predicts that online attacks could in future trigger full-blown military conflicts.&lt;/p&gt;&lt;p&gt;The first attempt to codify how international law applies to online attacks includes a provision for states to respond with conventional force if aggression through hacking into computer networks by another state results in death or significant damage to property.&lt;/p&gt;&lt;p&gt;The handbook, written by 20 legal experts working in conjunction with the International Committee of the Red Cross and the United States Cyber Command, says full-scale wars could be triggered by online attacks on computer systems. It also states that so-called hap&gt;The group of experts was invited to draw up the handbook by Nato's &lt;a href="https://www.ccdcoe.org/" title=""&gt;Co-operative Cyber Defence Centre of Excellence&lt;/a&gt; (CwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwCDCOE) in Tallinn, the Estonian capital. The project took three years.&lt;/p&gt;&lt;p&gt;The centre was establisgly computer-dependent era.&lt;/p&gt;&lt;p&gt;In January David Cameron announced that the UK would be joining "The UK will send an ex rt as well as continue the wider co-operatioment in the law of cyberwarfare. It will be highly useful."&lt;/p&gt;&lt;p&gt;&lt;a href="http://www.usnwc.edu/Academics/Faculty/Michael-Schmitt.aspx" title=""&gt;Professor Michael Schmitt&lt;/a&gt;, director of the project, who works at the US Naval War College, said there was relatively little consensus about how existing legal regimes governed online activities. The Stuxnet attack on Iran's nuclear programme, which physically damaged sensitive centrifuges, divided opinion among expe

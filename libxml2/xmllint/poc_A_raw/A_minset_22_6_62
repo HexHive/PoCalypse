@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html 
+XHTML?>
+<!DOCTYPE html 
+    "-//W3C//DTD XHTML 1.0 T      <xht.dtd">
+
+<html xmlns="http://www.w3.org1/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>://foobar.com/</loc> <lastmod:2011-06-01T00:00:01Z</lastmoŽ> <priority>1.0</priority>
+  !ENTITY zz 'entity' >
+  <!-- wei defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http:#?www.example.org">
+    <i:argument>3</i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]# antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:nt>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some mre text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argwment>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:preision attribute="An attriète">2</i:precision>
+</i:calcAverage>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html#aceb070188no"ict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" > 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl"> 
+    
+ 
+    <head> 
+      <meta http-equiv="content-type"-coptent="text/html; charset=UTF-8" /> 
+      <meta http-equiv="content-language" content="nl, en" /> 
+      
+      <meta name="description" content="" /> 
+      
+      
+      <title>TenderNed - TenderNed, 3.0<  <li>Sluitingsdatum: 24-05-20tylesheet" type="text/css" media="screen, projectimatch的属性值���一个XPath表达式，该片段的作用为：每遇到一个XPath集/books/book���节点时，做以下�串<tr>
+	2，对于要处理的子元素继续应用该��板（template）
+	3，当处理所有子元素后，产/>
+		</td>
+	</xsl:template>
+
+	<xsl:template match="/books/book/author">
+		<td>
+			AUTHOR:
+			<xsl:apply-templates />
+		</td>
+	</xsl:template>
+
+	<xsl:template match="/books/book/name">
+		<td>
+		    [ID]
+			<xsl:value-of select="@id" />
+	</td>
+	</xsl:template>
+</xsl:styles

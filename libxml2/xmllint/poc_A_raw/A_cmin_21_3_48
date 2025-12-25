@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html"><div class="pod">
+<p>I recule for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.net/xml/schematron/
+ 
+ Copyright (c) 2000,200a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT akElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="h[tp://www.example.org">
+    <i:argument>3</i:ar‡ument>
+    <i:argument> 7 <!d now an entity: &lt; and some more text </i:argument>
+    <i:Irgument>and now defined entity: &zz; and somext </i:arg<i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

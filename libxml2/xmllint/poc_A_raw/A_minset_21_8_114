@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='html/1.13/x/>
+<A012345UBf this file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instructiov ?>
+
+<!-- DTD is ingored, except fo DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://wkkkkkkkkkkkkkkkkkkkkkww.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATAsome tags <tasotext </i:argumentŸ
+   A<i:argumen`>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and noy: &zz; and some more text </i:argument>
+    <i:argument>and now the video>
+      <video:thumjpg</video:thumbnail_loc>
+      n>
+      <video:uploader>Video Up>
+    <i:argument>and now the vidloader</video:uploader>
+      <video:platform relationship="allow">web</video:platform>
+      <video:live>no</video:live>
+    </video:video>
+    <lastmod>2011-06-01T00:00:01Z</lastmod>
+  </url>
+</urlset>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 T:lang="en" lang=/en">
+<head>
+  <title>ClSimple</title>
+  <meta http-equiv="Content-el="stylesupCode( ur//www.w3.org/2001/10/xml-exc-c14n#"/>
+     <ds:StureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sDOCTYPE aDTD [
+  <!E^EMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-rg/2000/09/xmldsig#rsa-sDOCTYPE aDTD [
+  <!E^EMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa -->
+
+<?TARGET This is a progra aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i=http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </êaq> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an en </i)argument>
+ t  <i:argument>and now defined e~tity: &zz; and some more text </i:argument>
+    <i:argument>and now the we@r- weird case, defines entity aa -->
+
+<?TARGET This is a progra aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i=http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </êaq> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an en </i)argument>
+ t  <i:argument>and now defined e~tity: &zz; and some more text </i:argument>
+    <i:argument>and now the we@rd case: &aa÷ and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precmsion attribute="An attribute">2</i:precision>
+</i:calcAverage>

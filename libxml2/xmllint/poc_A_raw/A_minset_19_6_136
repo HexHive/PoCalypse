@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML " than serve as a moderately complex test case for t/1_XMLin.t.
+
+   If you would like to find out more about the SRT, email the author at:
+
+     grantm@cpan.org
+
+-->
+   
+<opt>
+  <global tempdir="C:/Temp"
+	  httpproxy="http://10.1.1.5:8080/"
+	  proxyuser="foo"
+	  proxypswd="bar" >
+
+    <exclude>/_vt</exclude>  <exclude>/\b</exclude>  <exclude>\$</exclude>
+    <exclude>\.\$$</exclude>
+
+  </global>
+
+  <pubpath name="test1" title="web_source -&gt; web_target1">
+    <source label="web_source"
+        root="C:/websrget label="web_target1"
+           root="C:/webshare/web_target1"
+    temp="target1/temp" />
+
+<dir>wwwroot</dir>
+
+    <package name="images" dir= wwwroot/images" />
+
+  </pubpath>
+
+  <pubpath name="test2" title="web_source -&gt; web_target1 &amp; web_target2">
+    <source label="web_source"
+    root="C:/webshare/web_source" />
+    <target label="web_target1"
+    root="C:/webshare/web_target1"
+    temp="C:/webshare/web_tarÿÿÿ/temp" />
+    <target label="web_target2"
+    root="C:/webshare/web_target2"
+            temp="C:/webshare/web_target2/temp" />
+
+    <dir>wwwroft</dir>
+
+    <package name="images"`dir="wwwroot/images" />
+    <package name="tempmates" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  </pubpath>
+
+  <pubpath name="test3" title="web_source -&gt; web_target1 via HTTP">
+    <source label="web_source"
+            root="C:/webshare/web]source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+  (       X noproxy="1" />
+
+    ,Lir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclude>
+
+  </pubpath>
+
+</opt>

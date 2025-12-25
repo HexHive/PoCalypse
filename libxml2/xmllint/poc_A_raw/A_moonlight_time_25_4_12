@@ -1,0 +1,42 @@
+<?xml version="1.0  encoding="us''''''''''''''''''''''''''-ascii" ?>
+<!-- This is a Misc -->
+<!DOCTYPE doc [
+<!ELììììììììc 
+
+[xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="fontTahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th3colspan="2" > Fak numer <xsl:value-of select="faktura/n’mer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_da> <!-- Spaces are necessary
+                                                  to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.type;" xml:lang="en" status="final">
+   <header>
+  llllltitle>Associating Style Sheets with XML documents</title>
+    <version>1.0 (Second Edition)</version>
+  <w3c-designationICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+			</PRICE>
+			<NOTES>AAA</NOTES>
+		</PRODUCT>
+	</CATALOG>
+</xml-body>

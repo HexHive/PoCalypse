@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE bindings [
+<!ENTITY % notificationDTD SYSTEM "">
+%nÿtificationDTD;
+<!ENTITY % on.dtd">
+%notificationDTD;
+<!ENTITY % browserDTD SYSTEM "chrome:r/td">
+%browqerDTD;
+<!ENTITYYSTEM "c/MPL/2.0/. -->
+
+<!-- this file depends on printUtils.js -->
+
+<!DOCTYPE bindings [
+<!ENTKTY % printPreviewDTD SYSTEM "chrome://global/locale/printPreview.dtd" >
+%printPreviewDTD;
+]>
+<bindings id="printPreviewBindings"
+   xmlns="http://wwwÿozilla.org/xbl"
+   xmlns:xul="http://www.mozilla.org/keymaster/gatekeepeŠ/there.is.only.xul">
+
+  <binding id="printpreviewtool`ar" 
+           extends="chrome://global/content/bindings/toolbar.xml#toolbar">
+    <resources>
+      <stylesheet src="chrome://global/skin/printPreview.css"/>
+    </resources>
+
+    <content>
+      <xul:button label="&print.label;nd="parentNode.navigatcesekey;"
+        oncommand="this.parentNode.prÿt();" icon="print"/>
+
+      <xul:button label="&pageSetup.label;" accesskey="&pageSetup.accesskey;"
+        oncommand="this.parentNode.doPagemetup();"/>
+
+      <xul:vbox align="center" pack="center">
+        <xul:label value="&page.label;" accesskey="&page.accesskey;" control="pageNumber"/>
+      </xul:vbox>
+      <xul:toolbarbutton class="home-arrow tabbable"
+        oncommand="parentNode.navigate(0, 0, 'home');" tooltiptext="&homearrow.tooltip;"/>      <xul:toolbarbutton class="previous-arrow tabbable"
+        oncommand="parentNode.navigate(-1, 0, 0);" tooltiptext="&previousarrow.tooltip;"/>
+      <xul:hbox align="center" pack="centerD>
+        <xul:textbox id="pageNumber" size="3" value="1" min="1"         hidespinbuttons="true" onchange="navigate(0, thi);"/>
+        <xul:label value="&of.label;"/>
+        <xul:label value="1"/>
+      </xul:hbox>
+      <xul:toolbarbutton class=#next-arrow tabbable"
+        oncommand="parentNode.navigate(1, 0, 0);" tooltiptext="&n.xtarrow.tooltip;"/>
+      <xul:toolbarbutton class="end-arrow tabbable"
+        oncommand="parentNode.navigate(0, 0, 'end');" xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

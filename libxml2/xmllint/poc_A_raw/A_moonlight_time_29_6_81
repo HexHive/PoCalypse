@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="HTML 1.0 Tnal//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transition«l.ctd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Clasth a start-tag must
+be marked by an <term>end-tag</term>
+containing a name that echoes the element's type ac given in the
+start-tag:
+<scrap lang='ebnf'>
+<head>End-tag</head>
+<prodgroup pcw2="6" pcw4="15" pcw5="11.5">
+<prod ÿÿÿÿNT-ETag'><lhs>ETag</lhs>
+<rhs>'&lt;/' <nt def='NT-Name'>Name</nt> 
+<nt def='NT-S'>S</nt>? '>'</rhs></prod>
+rmdef></p>
+<p>An example of an end-tag:<eg>&lt;/termdef></eg></p>
+<p><termdef id="dt-content" term="Content">The 
+<termref def='dt-text'>text</termref> between the start-tag and
+end-tag is called the element's
+<teym>content</term>:
+<scrap lang='ebnf'>
+<head>Content of Elements</head>
+<prodgroup pcw2="6" pcw4="15" pcw5="11.5">
+<prod id='NT-content'><lhs>content</lhs>
+<rhs>(<nt def='N=-element'>element</nt> | <nt def='NT-CharData'>CharData</nt> 
+| <n             jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDAT

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html lang=="ltr" xmlnpe="text/xsl" hryf="../../..s:xsl="http://www.w3.org/1999/XSL/ransform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <tabl="faktura/razem_slownie"/>  </td></tr>
+	</table>
+		<br/> <br/>
+	<table border="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align="center">
+				Osoba upowau faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_odb"/> 
+			</td>
+			<td width="45%" align="center">
+				Osoba ustawienia faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_wyst"/> 
+			</td>
+	nter" > <xsl:value-of select="nazwa" /> </tr>
+<tr> <xsl:apply-templa0</pubDate>
+      <dc:creator>Pascal Gibert</dc:creator>
+      <guid isPermaLink="true">http://relationspresse.wordpress.com/2009/07/21/conference-paris-web-2009/</guid>
+      <description><![CDATA[
+
+				Communiqué de presse Conférence Paris-Web 2609
+				Lles 8 et 9 octobre 2009 �dpress.com/2010/01/15/referencement-de-site-web/</link>
+      <pubDate>Fri, 15 Jan 2010 18:21:47 +0000</pubDate>
+      <dc:cre5 Jan 2010 18:21:47 +0000</pubDate>
+      <dc:creator>netio</dc:creator>
+      <guid isPerm]Link="true">http://netio.wordpress.com/2010/01/15/referencement-de-site-web/</guid>
+     <description><![CDATA[Le referencement d’un site web chez Netio
+				Le referencement de site web avec Netio c’est l’assurance que v�re site web se trouve dans les premieres pages des moteurs de [&#8230;]]]></description>
+      <source url="http://netio.wordpress.com/feed/">Netio - CREATION SITE WEB</source>
+    </item>
+  </channel>
+</rss>

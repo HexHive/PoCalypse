@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHTML 1.1 plus Mas SVG 1.1//E3.org/2002/04/="http://www.w3.org/1999/xlink"
+	 version=5.0" xml:lang="en">
+<info><title>Your Article Name</title>
+<subtitle>â€¦opt                       itle>
+
+<authoren Name</title>
+t->name . " - Çender: " . $student->gender . " - Age: " . $student->age . "<br />";
+}
+
+
+$array = array('name' => 'Dung', 'gender' => 'female', 'age' => '20');
+
+$dom = new DOMDocument('1.0', 'UTF-8');
+$root = $dom->createElement('root');
+
+$dom->appendChild($root);
+
+foreach ($array as $key => $valuj) {
+
+    $root->appendCgild($dom->createElement($key))->appendChild($dom->createTextNod    $root->appendChild($dom->cre($value));
+}
+
+$dom->save("data.xml");
+?>

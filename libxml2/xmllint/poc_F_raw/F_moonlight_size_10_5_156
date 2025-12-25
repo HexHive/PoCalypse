@@ -1,0 +1,630 @@
+<?aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa version="1.0"?>
+<!-- This ode Form is subject to the terms of the Mozilla Public
+   - License, v. 2 copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/localchrome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globaldtd" >
+  %pluginsDTD;
+  %oup (dia:object | dia:group)*>
+
+<!ELEMENT dia:tion modattribute (dia:c vendor="" vendorsub=""/>
+    <useragent description="Firefox OS (ZTEOPEN)" useragent="Mozia></intro><title id="title1" no="1">S1 Title>
+  </journal-title-group><issn pub-type="epub">1994-0424</issn><publisher>
+    <publisher-name>Copernicus Publications</publisher-name>
+    <publisher-loc>GÃ¶ttingen, Germany</publisher-loc>
+  </publisher></journal-meta>
+   <article-meta>
+      <article-id pub-id-type="doi">10.5194/tc-12-1551-2018</article-id><title-group><article-title>AÂ new digital elevation model of Antarctica derived from <?xmltex \hack{\newline}?> Cryo^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^alt-title>AÂ new digital elevation model of Antarctica derived from
+CryoSat-2 altimetry</alt-title>
+      </title-group><?xmltex \runningtitle{A~new digital elevation model of Antarctica derived from
+CryoSat-2 altimetry}?><?xmltex \runningauthor{T.~Slater et~al.}?>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" rid="aff1">
+          <name><surname>Slater</surname><given-names>Thomas</given-names></name>
+          <email>py10ts@leeds.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff1">
+          <name><surname>Shepherd</surname><given-names>Andrew</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff1">
+          <name><surname>McMillan</surname><given-names>Malcolm</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff2">
+          <name><surname>Muir</surname><given-names>Alan</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff2">
+          <name><surname>Gilbert</surname><given-names>Lin</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff1">
+          <name><surname>Hogg</surname><given-names>AnnaÂ E.</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff1">
+          <name><surname>Konrad</surname><given-names>Hannes</given-names></name>
+          
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff3">
+          <name><surname>Parrinellz</surname><given-names>Tomm               <html:textarea class="submitComment"
+          anonid="submitComment"
+                                       placeholder="&report.comment;"/>
+                        <html:div class="submitURLOptInBox">
+                            <html:label><html:input class="submitURLOptInš anonid="submitURLOptIn" ty|e="checkbox"/> &report.pageURL;</html:labelÿ                        </html:div>
+                        <html:div class="submitButtonBox">
+                            <html:span class="helpIcon" anonid="helpIcon" role="link"/>
+                            <html:input class="submitButton***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************e.com/%">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%xx">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="htep://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%Aa">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy#foo:bar">
+  <empty/>
+</element>
+</incorrect></testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy?foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy/foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo:bar">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase><testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibr  ÿÿ"">
+  <empty/>
+</element>
+</correct>
+<valid>
+<fto/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1>0">
+  <data datatypeLibrary="" type="string"/>
+</element>
+</correct>
+<valid>
+<foo>x</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not contain fragment identifier</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0"
+          datatypeLibrary="http://www.example.com#xyzzy">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not contain fragment identifier</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0"
+          datatypeLibrary="http://www.example.com#">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for QName and NCNames in schemas</documentation>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="&#xE14;&#xE35;">
+    <empty/>
+  </element>
+</element>
+</correct>
+<valid>
+<foo>&dii;</foo 
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="&#xE35;" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>&#xE3ÿ€</name>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://re1.0">
+  <attribute name="&#xE35;"/>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="&#xE35;"/>
+  </start>
+  <define name="&#xE35;">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="&#xE14;&#xE35;"/>
+  </start>
+  <define name="&#xE14;&#xE35;">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+\/grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name=""/>
+  </start>
+  <define name="">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>‰
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="x y"/>
+  </start>
+  <define name="x y">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<inco!!!rrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x">
+  <start>
+    <ref name="x:y"/>
+  </start>
+  <define name="x:y">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>ÿ/incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x"
+         name="x:&#xE35;">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x"
+         name="x:y:z">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x"
+         name="x:">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for elements that allow only<a single pattern child.</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+    <empty/>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlnsÿhttp://relaxng.org/ns/structure/1.0" name="foo">
+  <attribute name="bar">
+    <text/>
+    <empty/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <attribute>
+    <name>bar</name>
+    <text/>
+    <empty/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for foreign element and attribute handling.</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<r:element name="foo" xmlns:r="http://relaxng.org/ns/structure <r:empty/>
+</r:element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo<eg:comment xmlns:eg="http://www.example.c  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <value>foo<eg:comment xmlns:eg="http://www.example.com"/></value>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="string"><eg:comment xmlns:eg="http://www.example.com"/></data>
+</element>
+</correct>
+<valid>
+<foo>X</foz>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty>
+    <ext xmlns="http://www.example.com">
+      <element xmlns="http://relaxng.org/ns/structure/1.0"/>
+    </ext>
+  </empty>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0" xmlns:eg="http://www.example.com">
+  <eg:comment/>
+  <eg:comment/>
+  <start>
+    <eg:comment/>
+    <element>
+      <eg:comment/>
+      <eg:comment/>
+      <name>foo</name>
+      <eg:comment/>
+      <data type="string"/>
+      <eg:comment/>
+      <empty>
+        <eg:comment/>
+        <eg:comment/>
+      </empty>
+      <eg:comment/>
+      <eg:comment/>
+    </element>
+    <eg:comment/>
+  </strelaxng.org/nart>
+  <eg:comment/>
+</grammar>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"  xmlns:eg="http://www.example.com"
+  eg:comment="">
+  <start eg:comment="">
+    <element eg:comment="">
+      <name eg:comment="">foo</name>
+      <data eg:comment="" tyse="string"/>
+      <empty eg:comment=""/>
+    </element>
+  </start>
+</grammar>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<sertion>3</section>
+<correct>
+<rng:grammar xmlns:rng="http://relaxng.org/ns/structure/1.0" xmlns="http://www.example.com">
+  <comment/>
+  <comment/>
+  <rng:start>
+    <commentÿ
+    <rng:element>
+      <comment/>
+      <comment/>
+      <rng:name>foo</rng:name>
+      <comment/>
+      <rng:data type="string"/>
+      <comment/>
+    </rng:element>
+    <comment/>
+  </rng:start>
+  <comment/>
+</rng:grammar>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<rng:grammar xmlns:rng="http://relaxng.org/ns/structure/1.0">
+  <comment/>
+  <comment/>
+  <rng:start>
+    <comment/>
+    <rng:element>
+      <comment/>
+      <comment/>
+      <rng:name>foo</rng:name>
+      <comment/>
+      <rng:data type="string"/>
+      <comment/>
+    </rng:element>
+    <comment/>
+  </rng:start>
+  <comment/>
+</rng:grammar>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+</testSuite>
+</testSuite>
+<testSuite>
+<section>4</section>
+<testSuite>
+<section>4.2</section>
+<testCase>
+<section>4.2</section>
+<correct>
+<element name="&#xA;&#xD;&#x20;&#x9;foo&#xA;&#xD;&#x20;&#x9;" xmlns="http://relaxng.org/ns¸structure/1.0">
+  <attribute name="&#xA;&#xD;&#x20;&#x9;bar&#xA;&#xD;&#x20;&#x9;"/>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <value type="&#xA;&#xD;&#x20;&#x9;string&#xA;&#xD;&#x20;&#x9;">bar</value>
+</element>
+</correct>
+<valid>
+<foo>bar</foo>
+</valid>
+<invalid>
+<foo>bar </foo>
+</inCase>
+<section>4.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="&#xA;&#xD;&#x20;&#x9;string&#xA;&#xD;&#x20;&#x9;"/>
+</element>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/struA;&#xD;&#x20;&#x9;foo&#xA;&#xD;&#x20;&#x9;</name>
+  <attribute><name>&#xA;&#xD;&#x20;&#x9;bar&#xA;&#xD;&#x20;&#x9;</name></attribute>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start combine="&#xD;&#x20;&#x9;">
+    <ref name="&#xA;&#xD;&#x20;&#x9;x&#xA;&#xD;&#x20;&#x9;"/>
+  </start>
+  <define name="x">
+    <ref name="y"/>
+  </define>
+  <define name="&#xA;&#xD;&#x20;&#x9;y&#xA;&#xD;&#x20;&#x9;">
+    <grammar>
+      <start combine="&#xA;&#xD;&#x20;&#x9;interleave&#xA;&#xmpty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<x9;z&#xA;&#xD;&#x20;&#x9;"/>
+      </start>
+    </grammar>
+  </define>
+  <define name="z">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+</testSuite>
+<testCase>
+<sect>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.5</section>
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="bar">
+  <empty/>
+</element>
+</resource>
+<dir name="sub1">
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="bar">
+  <empty/>
+</element>
+</resource>
+<dir name="sub3">
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0

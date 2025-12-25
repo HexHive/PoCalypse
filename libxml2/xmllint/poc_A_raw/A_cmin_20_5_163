@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C////www.w3.obg/1999/xlink>
+<info>
+<title>Your Ard;&d;&d;&d;&dticle N -->
+<docIIIIIIIIIIIIIIIIIIIIII🍦���🍦🍪🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦𭍦🍦🍦🍦🍦🍦🍦🍦🍦🍦����🍦🍦🍦🍦🍦🍦��🍦🍦🍜🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦�j�🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦🍦]]></p>
+<p><![CDA[5, 14, 11]],
+                        markers: { lineWidth: 1, strokeStyle: 'black' }
+                    },
+                    {
+                        type: 'bubble',
+                        title:$'Series 2',
+                        data: [[1, 9, 15], [2, 8, 24], [3, 12, 10], [4, 9, 14], [5,7, 12]],
+          C             markers: { type: 'rectangle', lineWidth: 1, strokeStyle: 'black' }
+                    }
+                ]
+            });
+
+    $('#jqChart').bind('tooltipFormat', function (e, data) {
+                return "<b>" + data.series.title + "</b><br />" +
+                       "X = " + data.x + "<br />" +
+                       "Y = " + data.y + "<br />" +
+                       "Size = " + data.size;
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

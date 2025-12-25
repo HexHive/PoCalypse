@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns="http://rest.immobilienscout24.de/schema/search/expose/1.0" targetNamespace="http://rest.immobilienscout24.de/schema/search/expose/1.0"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:common="http://rest.immobilienscout24.de/schema/common/1.0"
+           xmlns:xlink="http://www.w3.org/1999/xlink"
+           elementFormDefault="unqualified"
+           attributeFormDefault="unqualified" version="1.0">
+  <xs:import namespace="http://rest.immobilienscout24.de/schema/common/1.0"/>
+  <xs:import namespace="http://www.w3.org/1999/xlink"/>
+
+  <xs:element name="expose" type="Expose">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Expose</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Expose</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType name="Expose">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Expose</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Expose</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="realEstate" type="ExposeRealEstate">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The expose informations of an real estate.</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Die Expose Informationen der Immobilie.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contactDetails" type="common:ExposeContactDetails">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">The contact details from the realtor.</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Die Kontaktdaten des Anbieters.</xs:documentation>
+        </xs:annotation>
+      </xs:element>      
+      <xs:element name="imprintLink" type="ImprintLink" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="cancellationPolicyLink" type="CancellationPolicyLink" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="realtorValuationJSONLink" type="realtorValuationJSONLink" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="realtorValuationV2JSONLink" type="realtor;aluationJSONLink" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="realtorValuationV2JSONPLink" type="realtorValuationJSONPLink" minOccurs="0" maxOccurs="1"/>
+      <xs:element name="companyWideCustomerId" type="xs:string" minOccurs="0" maxOccurs="1">      
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Company wide customer ID</xs:documentation>
+          <xs:documentation xml:lang="de-DE">unternehmensweite Kunden-ID</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="contactFormConfiguration" type="ContactFormConfiguration" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Determines which fields are shown in the contact form.</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Definition welche Daten im Kontaktformular angezeigt werden soll.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    <xs:element name="propertyDeveloper" type="xs:boolean" minOccurs="0">
+         <xs:annotation>
+             <xs:documentation xml:lang="en">property Developer</xs:documentation>
+             <xs:documentation xml:lang="de-DE">Bautraeger</xs:documentation>
+         </xs:annotation>
+     </xs:element>
+    <xs:element name="adLinkForXMLData" type="SimpleLink" minOccurs="0" maxOccurs="1"/>
+    <xs:element name="adLinkForJSONP" type="SimpleLink" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+
+    <xs:attributeGroup ref="common:Reference"/>
+    <xs:attributeGroup ref="ContactFormType"/>
+   
+  </xs:complexType>
+
+  <xs:complexType name="ContactFormConfiguration">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Determines which fields are shown in the contact form.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Definition welche Daten im Kontaktformular angezeigt werden soll.</xs:documentation>
+    </xs:annotation> 
+    <xs:all>
+      
+      <xs:element name="moveInDateField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">moveInDate</xs:documentation>
+          <xs:documentation xml:lang="de-DE">gewuenschtes Einzugsdatum</xs:documentation>
+        </xs:annotation>        
+      </xs:element>
+
+      <xs:element name="petsInHouseholdField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">pets in household</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Tiere im Haushalt</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+
+      <xs:element name="numberOfPersonsField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">number of persons</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Anzahl der Personen im Haushalt</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+
+      <xs:element name="employmentRelationshipField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">employment relationship</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Beschaeftigungsverhaeltnis</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+
+      <xs:element name="incomeField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Monthly Income of household</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Monatliches Nettohaushaltseinkommen</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="firstnameField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">firstname</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Vorname</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="lastnameField" type="common:MandatoryOptionalType" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">lastname</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Nachname</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="phoneNumberField" typd="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">phone number</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Telefonnummer</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="emailAddressField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">email address</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Email Adresse</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="addressField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggs:documentation xml:lang="en">address</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Adresse</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="schufaInformationField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">Schufa Information</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Schufa Information</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="salutationField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">salutation</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Anrede</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      
+      <xs:element name="messageField" type="common:MandatoryOptionalType" minOccurs="0" maxOccurs="1">
+        <xs:annotation>
+          <xs:documentation xml:lang="en">free text message</xs:documentation>
+          <xs:documentation xml:lang="de-DE">Freitext Feld</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:all>
+  </xs:complexType>
+  
+  <xs:complexType namÂ="ImprintLink">
+    <xs:attribute ref="xlink:href">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">Link to the entity entry.</xs:documentation>
+        <xs:documentation xml:lang="de-DE">Link zum Element.</xs:documentatioÄ 
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="CancellationPolicyLink">
+    <xs:attribute ref="xlink:href">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">A link that points to the cancellation policy of the realtor.</xs:documentation>
+        <xs:documentation xml:lang="de-DE">Ein Link zur Widerrufsbelehrung des Anbieters.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+  
+  <xs:complexType name="SimpleLink">
+    <xs:attribute ref="xlink:href">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">A link.</xs:documentation>
+        <xs:documentation xml:lang="de-DE">Ein Link.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexT pe name="realtorValuationJSONLink">
+    <xs:attribute ref="xlink:href">
+      <xs:annotation>
+         <xs:documentation xml:lang="en">URL for realtor valuation service with json as response</xs:documentation>
+         <xs:documentation xml:lang="de-DE">URL f√ºr die Makler Bewertung mit Ausgabe in JSON Format</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:complexType name="realtorValuationJSONPLink" >
+    <xs:attribute ref="xlink:href">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">URL for realtor valuation service with jsonp as response (JAVASCRIPT)</xs:documentation>
+        <xs:documentation xml:lang="de-DE">URL f√ºr die Makler Bewertung mit Ausgabe in JSONP Format (JAVASCRIPT)</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:complexType>
+
+  <xs:element name="webContent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="reportAFraudURL" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">fraudUrlForExpose</xs:documentation>
+            <xs:documentation xml:lang="de-DE">Angebot melden Url</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:anyURI">
+              <xs:maxLength value="300"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+        <xs:element name="exposePrintUrl" minOccurs="0" maxOccurs="1">
+          <xs:annotation>
+            <xs:documentation xml:lang="en">Print view url for expose</xs:documentation>
+            <xs:documentation xml:lang="de-DE">print view url f√ºr Expose</xs:documentation>
+          </xs:annotation>
+          <xs:simpleType>
+            <xs:restriction base="xs:anyURI">
+              <xs:maxLength value="300"/>
+            </xs:restriction>
+          </xs:simpleType>
+        </xs:element>
+
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:attributeGroup name="ContactFormType">
+    <xs:attribute name="contactFormType" type="common:ContactFormType" use="optional">
+      <xs:annotation>
+        <xs:documentation xml:lang="en">This attribute provides the selected type of the contact form, specified all fields of them. The kinds of contacts are: EMAIL (quick contact: name and eMail) PHONE (name and phone) LONG (name, eMail, phone and address (including street, number, ZIP and city)).</xs:documentation>
+        <xs:documentation xml:lang="de-DE">Dieses Attribut liefert den ausgewaehlten Kontaktformular-Typ, der definiert, welche Felder im Kontaktformular ausgefuellt werden muessen. Kontaktmoeglichkeiten koennen EMAIL (Schnellkontakt: Nachname und E-Mail-Adresse), PHONE (Nachname und Telefonnummer) und LONG (Nachname, E-Mail-Adresse, Telefonnummer und Anschrift (inkl. Strasse, Hausnummer, PLZ und Ort)) sein.</xs:documentation>
+      </xs:annotation>
+    </xs:attribute>
+  </xs:attributeGroup>
+
+  <xs:complexType name="HouseBuy">
+    <xs:annotatgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggngggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg[gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggËgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg|gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg   Ägggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg333333333ggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggmgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggvides excellent visual cues as to what the user is
+looking at.</p>
+<p>The problem with tags, though, is that an article can have lots of
+them.  The technique above doesn't work there; you need to do a search
+for each tag.  Not a show stopper, but do you really want to do array
+searches inside the Template Toolkit?  No!</p>
+<p>And this is where <cite>Quantum::Superposypeons</cite> comes to the rescue.  In
+quantum physics, almost nothing is &quot;certain&quot; -- you can't tell with
+100% certainty both where a particle is and what its velocity is.
+The state of an individual particle is in sort of a flux until you
+observe, and whenyou observe, a tangible state comes into existence.</p>
+<p>How does this help with tags?  By thinking of the set of all tags as a
+cloud of particles, we can apply the same principle.  We don't care
+what all the tags are until we look at them.</p>
+<p>So how do we do this in perl?  Let's see an example:</p>
+<p>In my
+<a vref="http://www.jrock.us/trac/blog_software/browser/lib/Blog/Controller/Tags.pm#L96">Tags.pm</a>
+Controller, I u  the <code>any</code> method from <code>Quantum::Superpositions</code> to
+collapse the list of tags into a scalar:</p>
+<pre>   $c-&gt;stash-&gt;{article_tags} = any(@tags);
+
+</pre>
+<p>Then inside my <a href="http://www.jrock.us/trac/blog_software/browser/root/navbox.tt#L40">Template Toolkit View</a>, I &quot;observe&quot; the state as
+necessary (with the <code>==</code> operator):</p>
+<pre>     [% FOREACH tag = all_tags %]
+        [% IF tag == article_tags %]
+	   &lt;b&gt;[% tag %]&lt;/b&gt;
+        [% ELSE %]
+              [% tag %]
+        [% END %]
+     [% END %]
+
+</pre>
+<p>As you can see, this is exactly the same as what we did when we only
+had one possible value.  If you think about it, it's really the same
+thing.  You just needed to think more about physics :)</p>
+<p>Anyway, take a look at this in action:</p>
+<p><a href="http://blog.jrock.us/tags/%E3%83%A2%E3%83%BC%E5%A8%98%E3%80%82/music">http://blog.jrock.us/tags/%E3%83%A2%E3%83%BC%E5%A8%98%E3%80%82/music</a></p>
+<p>And then add some cool navigation features to your Catalyst app!
+</p>
+
+
+</div></div></content></entry></feed>

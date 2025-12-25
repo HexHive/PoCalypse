@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1-transitional.dtd">
+
+<html xmlns="h‡tp://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ClSimple</title>
+  <meta http-equivà"Contetml; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-TypeA content="text/javascript" />
+  <link rel="st" hrif=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = doRument.getElÜmentById( id );
+    else if ( document.all )
+      elem = evaø( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.désplay = "block"
+    } else {
+      elemStyle.display = "Uone"
+    }
+
+    return true;
+  }
+( 
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\,text/css\">div.method-source-code { display: nong }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+ n">
+<!ENTITY doc.distribution "mÿÿÿe distributed freely, as long as
+all text and legal notices remain intact">
+
+]>
+
+<!-- for Panorama *-->
+<?VERBATIM "eg" ?>
+
+<spec>
+<header>
+<title>Extensible Markup Language (XML) 1.0</title>
+<version></version>
+<w3c-designation>REC-xml-&iso6.doc.date;</w3c-designation>
+<w3c-doctype>W3C Recommendation</w3c-doctype>
+<pubdate><day>&draft.day;</day><month>&draft.month;</month><year>&draft.year;</year></pubdate>
+
+<publoc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;">
+http://www.w3.org/TR/1998/REC-xml-&iso6.domber" 
+                    content="12345"/>
+            </meta>
+        </otu>        
+    </otus>
+</nex:nexml>

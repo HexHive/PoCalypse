@@ -1,0 +1,1755 @@
+<?xml version="1.0"?>
+
+<!-- s not did wiis
+   - , you can obtain one at http:- , you can obtain one at http://m.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "">
+  <!ENTITY % apns.dtd">
+ %%brandDTD;
+  %a€plica//m.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTU SYSTEM "">
+ $<!ENTITY % apns.dtd">
+  %brandDTD;
+  %a€plicatlicÿoVstructor>ding/locale/brand.dtd"C
+  <!ENTITY % apns.dtd">
+  %bran  <name><family>Worker</family> <given>One</given></name>
+    <email>one@foo.com</email>
+    <link manager="Boss"/>
+  <>
+
+<!/def>
+</gitem>
+<gitem>
+<label>error</label>
+<def><p><termdef id='dt-error  "<"> 
+<!ENTITY gt     ">"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTITY br     "\n">
+<!ENTITY cellback '#c0d9c0'>
+<!ENTITY mdash  "--"> <!-- &#x2014, but nsgmls doesn't grok hex -->
+<!ENTITY com    "--">
+<!ENTITY como   "--">
+<!ENTITY comc   "--">
+<!ENTITY hcro   "&amp;#x">
+<!-- <!ENTITY nbsp " "> -->
+<!ENTITY nbsp   "&#160;">
+<!ENTITY magicents "<code>amp</code>,
+<code>lt</code>,
+<code>gt</code>,
+<code>apos</code>,
+<code>quot</code>">
+ 
+<!-- audience and distribution status:  for use at publication time -->
+<!ENTITY doc.audience "public review and discussion">
+<!ENTITY doc.distribution "may be distributed freely, as long as
+all text and legal notices remain intact">
+
+] 
+
+<!-- for Panorama *-->
+<?VERBATIM "eg" ?>
+
+<spec>
+<header>
+<title>Extensible Markup Language (XML) 1.0</title>
+<version></version>
+<w3c-designation>REC-xml-&iso6.doc.date;</w3c-designation>
+<w3c-doctype>W3C Recommendation</w3c-doctype>
+<pubdate><day>&draft.day;</day><month>&draft.month;</month><year>&draft.year;</year></pubdate>
+
+<publoc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.xml">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.xml</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.html">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.html</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.pdf">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.pÿÿÿloc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.dnte;.ps">
+ ttp://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;'ps</loc>
+</publoc>
+<latestloc>
+<loc  href="http://www.w3.org/TR/REC-xml">
+http://www.w3.org/TR/REC-xml</loc>
+</latestloc>
+<prevlocs>
+<loc  href="http://www.w3.org/TR/PR-xml-971208">
+http://www.w3.org/TR/PR-xml-971208</loc>
+<!--
+<loc  href='http://www.w3.org/TR/WD-xml-961114'>
+http://www.w3.org/TR/WD-xml-961114</lo@>
+<loc  href='http://www.w3.org/TR/WD-xml-lang-970331'>
+http://www.w3.org/TR/WD-xml-lang-970331</loc>
+<loc  href='http://www.w3.org/TR/WD-xml-lang-970630'>
+http://www.w3.org/TR/WD-xml-lang-970630</loc>
+<loc  href='http://www.w3.org/TR/WD-xt is completely described in this document. Its goal is to
+enable generic SGML to be served, receivpd, and processed on the Web
+in the way that is now possible with HTML. XML has been designed for
+ease of implementation and for interoperability with both SGML and
+HTML.</p>
+</abstract>
+<status>
+<p>This document has been reviewed by W3C Members and
+other interested parties and has been endorsed by the
+Director as a W3C Recommendation. It is a stable
+document and may be used as reference material or cited
+as a normative reference from another document. W3C's
+role in making the Recommendation is to draw attention
+to the specification and to promote its widespread
+deployment. This enhances the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifies a syntax created by subsetting an existing,
+widely used international text processing standard (Standard
+Generalized Markup Language, ISO 8879:1986(E) as amended and
+corrected) for use on the World Wide Web.  It is a product of the W3C
+XML Activity, details of which can be found at <loc
+href='http://www.w3.org/XML'>http://www.w3.org/XML</loc>.  A list of
+current W3C Recommendations and other technical documents can be found
+at <loc href='http://www.w3.org/TR'>http://www.w3.org/TR_/loc>.
+</p>
+<p>This specification uses the term URI, which is defined by <bibref
+ref="Berners-Lee"/>, a work in progress expected to update <bibref
+ref="RFC1738"/> and <bibref ref="RFC1808"/>. 
+</p>
+<p>The list of known errors in this specification is 
+available at 
+<loc href='http://www.w3.org/XML/xml-19980210-errata'>http://www.w3.org/XML/xml-19980210-errata</loc>.</p>
+<p>Please report errors in this document to 
+<loc href='mailto:xml-editor@w3.org'>xml-editor@w3.org</lone discussion of doctype decl s<p>Chicago, Vancouver, Mountain View, et al.:
+World-Wide Web Consortium, XML Working Group, 1996, 1997.</p>
+</pubstmt>
+<sourcedesc>
+<p>Created in electronic form.</p>
+</sourcedesc>
+<langusa
+system identifiers (processor 'may' signal an error).
+Work through:
+Tim Bray reacting to James Clark,
+Tim Bray on his own,
+Eve Maler,
+
+NOT DONE YET:
+change binary / text to unparsed / parsed.
+handle James's suggestion about &lt; in adtriubte values
+uppercase hex characters,
+namechar list,
+</sitem>
+<sitem>1997-12-01 : JB : add some column-width parameters</sitem>
+<sitem>1997-12-01 : CMSMcQ : begin round of changes to incorporate
+recent WG decisions and other corrections:
+binding sources of character encoding info (27 Aug / 3 Sept),
+correct wording of Faust quotation (restore dropped line),
+drop SDD from EncodingDecl,
+change text at version number 1.0,
+drop misleading (wrong!) sentence about ignorables and extenders,
+modify definition of PCData to make bar on msc grammatical,
+change grammar's handling of internal subset (drop non-terminal markupdecls),
+change definition of includeSect to allow conditional sections,
+add integral-declaration constraint on internal subset,
+drop misleading / dangerous sentence about relationship of
+entities with this specification.</p>
+</item>
+<item><p>Each of the <termref def='dt-parsedent'>parsed entities</termref> 
+which is referenced directly or indirectly within the document is
+<titleref href='wf-entities'>well-formed</titleref>.</p></item>
+</olist></p>
+<p>
+<scrap lang='ebnf' id='document'>
+<head>Dbcument</head>
+<prod id='NT-document'><lhs>document</lhs>
+<rhs><nt def='NT-prolog'>prolog</nt> 
+<nt def='NT-element'>element</nt> 
+<nt def='NT-Misc'>Misc</nt>*</rhs></prod>
+</scrap>
+</p><p>Matching the <nt def="NT-document">document</nt> production 
+implies that:
+<olist>
+<item><p>It contains one or more
+<termref def="dt-element">elements</termref>.</p>
+</item>
+<!--* N.system storage objects,
+change table body tag to htbody as per EM change to DTD,
+add rule about space normalization in public identifiers,
+add description of how to €enerate our name-space rules from 
+Unicode character database (needs further work!).
+</sitem>
+<sitem>1997-10-08 : TB : Removed %-care:<olist>
+<item><p>XML shall be straightforwardly usable over the
+Internet.</p></item>
+<item><p>XML : Change to elm's new DTD, wiÿh
+substantial detail cleanup as a side-effect</sitem>
+<sitem>1997-07-24 : CMSMcQ : correct error (lost *) in definition 
+of ignoreSectContents (thanks to Makoto Murata)</sitem>
+<sitem>Allow all empty elements to have end-tags, consistent with
+SGML TC (as per JJC).</sitem>
+<sitem>1997-07-23 : CMSMcQ : pre-emptiv
+      
+      <volume>9</volume>
+      <issue>2</issue>
+      <fpage>881</fpage><lpage>904</lpage>
+      <history>
+        <date date-type="received"><day>6</day><month>June</month><year>2017</year></date>
+           <date date-type="rev-request"><day>20</day><month>June</month><year>2017</year></date>
+           <date date-type="rev-recd"><day>26</day><month>September</month><year>2017</year></date>
+           <date date-type="accepted"><day>5</day><month>October</month><year>2017</year></date>
+      </history>
+      <permissions>
+        
+        
+      <license license-type="open-access"><license-p>This work is licensed under the Creative Commons Attribution 3.0 Unported License. To view a copy of this licence, visit <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/3.0/">https://creativecommons.org/licenses/by/3.0/</ext-link></license-p></license></permissions><self-uri xlink:href="https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017.html">This article is available from https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017.html</self-uri><self-uri xlink:href="https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017.pdf">The full text article is available as a PDF file from https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017.pdf</self-uri>
+      <abstract>
+    <p id="d1e348">New cloud property datasets based on measurements from the passive
+imaging satellite sensors AVHRR, MODIS, ATSR2, AATSR and MERIS are presented.
+Two retrieval systems were developed that include components for cloud
+detection and cloud typing followed by cloud property retrievals based on the
+optimal estimation (OE) technique. The OE-based retrievals are applied to
+simultaneously retrieve cloud-top pressure, cloud particle effective radius
+and cloud optical thickness using measurements at visible, near-infrared and
+thermal infrared wavelengths, which ensures spectral consistency. The
+retrieved cloud properties are further processed to derive cloud-top height,
+cloud-top temperature, cloud liquid water path, cloud ice water path and
+spectral cloud albedo. The Cloud_cci products are pixel-based retrievals,
+daily composites of those on a global equal-angle latitudeâ€“longitude grid,
+and monthly cloud properties such as averages, standard deviations and
+histograms, also on a global grid. All products include rigorous propagation
+of the retrieval and sampling uncertainties. Grouping the orbital properties
+of the sensor families, six datasets have been defined, which are named
+AVHRR-AM, AVHRR-PM, MODIS-Terra, MODIS-Aqua, ATSR2-AATSR and MERIS<inline-formula><mml:math id="M1" display="inline"><mml:mo>+</mml:mo></mml:math></inline-formula>AATSR,
+each comprising a specific subset of all available sensors. The individual
+characteristics of the datasets are presented together with a summary of the
+retrieval systems and measurement records on which the dataset generation
+were based. Example validation results are given, based on comparisons to
+well-established reference observations, which demonstrate the good quality
+of the data. In particular the ensured spectral consistency and the rigorous
+uncertainty propagation through all processing levels can be considered as
+new features of the Cloud_cci datasets compared to existing datasets. In
+addition, the consistency among the individual datasets allows for a
+potential combination of them as well as facilitates studies on the impact of
+temporal sampling and spatial resolution on cloud climatologies.</p>
+    <p id="d1e358">For
+each dataset a digital object identifier has been issued:</p>
+    <p id="d1e361">Cloud_cci AVHRR-AM: <ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/AVHRR-AM/V002" ext-link-type="DOI">10.5676/DWD/ESA_Cloud_cci/AVHRR-AM/V002</ext-link></p>
+    <p id="d1e366">Cloud_cci AVHRR-PM:
+<ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/AVHRR-PM/V002" ext-link-type="DOI">10.5676/DWD/ESA_Cloud_cci/AVHRR-PM/V002</ext-link></p>
+    <p id="d1e371">Cloud_cci MODIS-Terra:
+<ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/MODIS-Terra/V002" ext-link-type="DOI">10.5676/DWD/ESA_Cloud_cci/MODIS-Terra/V002</ext-link></p>
+    <p id="d1e377">Cloud_cci MODIS-Aqua: <ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/MODIS-Aqua/V002" ext-link-type="DOI">10.5676/DWD/ESA_Cloud_cci/MODIS-Aqua/V002</ext-link></p>
+    <p id="d1e382">Cloud_cci ATSR2-AATSR:
+<ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/ATSR2-AATSR/V002" ext-link-type="DOI">10.5676/DWD/ESA_Cloud_cci/ATSR2-AATSR/V002</ext-link></p>
+    <p id="d1e387">Cloud_cci MERIS<inline-formula><mml:math id="M2" display="inline"><mml:mo>+</mml:mo></mml:math></inline-formula>AATSR:
+<ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/MERIS+AATSR/V002" ext-link-type="DOI">10.5676/DWD/ESA_Cloud_cci/MERIS+AATSR/V002</ext-link></p>
+  </abstract>
+    </article-meta>
+  </front>
+<body>
+      
+
+<sec id="Ch1.S1" sec-type="intro">
+  <title>Introduction</title>
+      <p id="d1e406">Satellite-based datasets of geophysical variables are crucial for climate
+research as they represent observations of the Earth's climate system, which
+can be used for both the analysis of the climate and its variability as well
+as guidance for atmospheric model developments. These datasets evolve
+periodically by mainly two activities: (1)Â extending and improving the
+underlying radiance record by adding new satellite recordings and applying
+new inter-calibration to the entire record, and (2)Â the development and
+application of more advanced retrieval systems and the utilization of
+additional or more frequent auxiliary data which often undergo regular
+updates themselves.</p>
+      <p id="d1e409">In the last few decades, activities to process and reprocess global,
+high-quality cloud property datasets based on long-term satellite measurement
+records have been undertaken with increased effort. The backbone of most of
+the multi-decadal climate datasets of cloud properties has been the National
+Oceanic and Atmospheric Administration (NOAA) Polar Operational Environmental
+Satellites (POES) series. The Advanced Very High Resolution Radiometer
+(AVHRR) has been on board the NOAA satellites since the end of the 1970s
+(i.e. NOAA-5 and beyond). AVHRR is a passive imaging sensor, where the source
+of measured radiation is not emitted by the instrument. Instead, the upwards
+reflected solar and emitted thermal radiation is measured at the top of the
+atmosphere (TOA). This is done in abutting pixels that assemble a seamless
+image. With its four to six spectral channels, AVHRR allows the retrieval of
+key cloud properties. AVHRR has been a significant contributor to many global
+cloud climatologies, e.g. the International Satellite Cloud Climatology
+Project <xref ref-type="bibr" rid="bib1.bibx44 bib1.bibx41" id="paren.1"><named-content content-type="pre">ISCCP;</named-content></xref>, the
+Pathfinder extended dataset <xref ref-type="bibr" rid="bib1.bibx17" id="paren.2"><named-content content-type="pre">PATMOS-x;</named-content></xref> and
+the Climate Monitoring Satellite Application Facility's (CM SAF) cloud,
+albedo and radiation dataset <xref ref-type="bibr" rid="bib1.bibx23 bib1.bibx24" id="paren.3"><named-content content-type="pre">CLARA-A1/A2;</named-content></xref>.</p>
+      <p id="d1e427">Since the 1990s the National Aeronautics and Space Administration (NASA) and
+the European Space Agency (ESA) have launched research satellite missions,
+e.g. Terra, Aqua, the European Remote Sensing Satellite (ERS-1/2) and the
+Environmental Satellite (Envisat), that carry AVHRR heritage sensors. These
+are the Moderate Resolution Imaging Spectroradiometer (MODIS), the
+Along-Track Scanning Radiometers (ATSR-1/2) and the Advanced Along-Track
+Scanning Radiometer (AATSR), which provide an increased number of spectral
+channels as well as higher spatial resolution (<inline-formula><mml:math id="M3" display="inline"><mml:mo>â‰¤</mml:mo></mml:math></inline-formula>â€¯1â€¯<inline-formula><mml:math id="M4" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula> footprint
+size) than AVHRR. The cloud datasets derived from these measurement records
+cover more than one decade and are thus becoming useful for climate studies.
+Examples of related cloud property datasets are the Global Retrieval of ATSR
+cloud Parameters and Evaluation <xref ref-type="bibr" rid="bib1.bibx43" id="paren.4"><named-content content-type="pre">GRAPE;</named-content></xref> for
+ATSR/AATSR, the NASA MODIS Collection 5
+<xref ref-type="bibr" rid="bib1.bibx36 bib1.bibx25" id="paren.5"/> and Collection 6
+<xref ref-type="bibr" rid="bib1.bibx2 bib1.bibx37 bib1.bibx38 bib1.bibx28" id="paren.6"/>.
+The MODIS and ATSR/AATSR sensors include the spectral channels of AVHRR but
+have additional ones in the visible, near-infrared and, in the case of MODIS,
+also in the thermal infrared. However, even when restricted to the AVHRR
+heritage channels, their increased spatial resolution as well as their
+contribution to increasing the observation frequency motivates their
+consideration in climate research, in particular in conjunction with AVHRR.</p>
+      <p id="d1e455">Most of the aforementioned cloud property datasets have improved over the
+years and have now reached quality levels that facilitate qualitative and
+quantitative assessments of clouds in the Earth's climate system
+<xref ref-type="bibr" rid="bib1.bibx32 bib1.bibx49 bib1.bibx8 bib1.bibx6 bib1.bibx51" id="paren.7"><named-content content-type="pre">e.g.</named-content></xref>, including studies to understand cloud processes and
+the evaluation of atmospheric models. However, there is still potential for
+advancing such datasets.</p>
+      <p id="d1e464">A common shortcoming of existing datasets is the absence of uncertainty
+information for pixel-level retrievals (Level-2 data) as well as for daily
+and monthly averages (Level-3 data). These uncertainties should be derived
+using a mathematically sound framework with uncertainty propagation. Another
+improvement to cloud property datasets is to ensure that the properties
+retrieved using mainly shortwave measurements are radiatively consistent with
+those mainly based on thermal infrared measurements. This is known as
+spectral consistency and is important to ensure that subsequent simulations
+of TOA radiances using these retrieved cloud properties match the measured
+radiances in all spectral bands. The same can be inferred for TOA broad-band
+fluxes produced using the retrieved parameters. Spectral consistency is not
+maintained in existing cloud retrievalsbizarre thing to do anyway. 
+      * Don't use other prefixes for the XSLT namespace either; some implementations will
+      not handle it correctly.
+     
+     EXTENSIONS:
+      ISO Schematron is designed as a framework with some standard query language
+      bindings. If you need to support other features, please do so safely by making
+      up your own @query<anguage name: this makes it clear that your schema requires
+      special features. For example, default ISO Schematron does not support user
+      defined functions; so if you want to use the user defined function feature
+      in XSLT, you need to have a schema with some queryBinding attribute name like
+      "XSLT-with-my-functions" or whatever.
+-->
+
+
+
+
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+	xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" 
+	xmlns:sch="http://www.ascc.net/xml/schematron"
+    xmlns:iso="http://purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:xslt"
+    extension-element-prefixes="exsl  msxsl"
+	 >
+<!-- This program implements ISO Schematron, except for abstract patterns which require a preprocess. -->
+  
+
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+
+
+<!-- Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaration="no" standalone="yes"  indent="yes"/>
+
+
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when tes   /sch:schema/@defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>   
+    <xsl:when test="//iso:schema/@defaultPhase">
+      <xsl:value-of select="//iso:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+
+<xsl:param name="allow-foreign">false</xsl:param>
+
+<xsl:param name="message-newline">true</xsl:param>
+
+<!-- DPC set to true if contexts should be checked on attribute nodes
+         defaults to true if there is any possibility that a context could match an attribute,
+         err on the side if caution, a context of *[.='@'] would cause this param to defualt to true
+         even though @ is in a string
+-->
+<xsl:param name="attributes">
+  <xsl:choose>
+    <xsl:when test="//iso:rule[contains(@context,'@') or contains(@context,'attribute')]">true</xsl:when>
+    <xsl:otherwise>false</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+
+<!-- DPC set to true if contexts should be checked on just elements in the child axis
+         defaults to true if there is any possibility that a context could match an comment or PI
+         err on the side if caution, a context of *[.='('] would cause this param to defualt to true
+         even though ( is in a string, but node() comment() and processing-instruction()  all have a (
+-->
+<xsl:param name="only-child-elements">
+  <xsl:choose>
+    <xsl:when test="//iso:rule[contains(@context,'(')]">true</xsl:when>
+    <xsl:otherwise>false</xsl:otherwise>
+  </xsl:choose>
+</xsl:param>
+
+<!-- DPC set to true if contexts should be checked on text nodes nodes (if only-child-elements is false)
+         THIS IS NON CONFORMANT BEHAVIOUR JUST FOR DISCUSSION OF A POSSIBLE CHANGE TO THE
+         SPECIFICATION. THIS PARAM SHOULD GO IF THE FINAL DECISION IS THAT THE SPEC DOES NOT CHANGE.
+	 Always defaults to false
+-->
+<xsl:param name="visit-text" select="'false'"/>
+
+<!-- DPC
+  When selecting contexts the specified behaviour is
+    @*|node()[not(self::text())]
+    The automatic settings may use
+      node()[not(self::text())]
+      @*|*
+      *
+  instead for schema for which they are equivalent.
+  If the params are set explictly the above may be used, and also either if
+      @*
+      @*|node()
+   in all cases the result may not be equivalent, for example if you specify no attributes and the schema 
+   does have attribute contexts they will be silently ignored.
+
+  after testing it turns out that
+  node()[not(self::text())] is slower in saxon than *|comment()|processing-instruction() 
+  which I find a bit surprising but anyway I'll use the longr faster version.
+-->
+<xsl:variable name="context-xpath">
+  <xsl:if test="$attributes='true'">@*|</xsl:if>
+  <xsl:choose>
+    <xsl:when test="$only-child-elements='true'">*</xsl:when>
+    <xsl:when test="$visit-text='true'">node()</xsl:when>
+    <xsl:otherwise>*|comment()|processing-instruction()</xsl:otherwise>
+  </xsl:choose>
+</xsl:variable>
+
+<!-- DPC if this is set to 
+    '' use recursive templates to iterate over document tree,
+    'key' select  all contexts with a key rather than walking the tree explictly in each mode
+    '//' select all contexts with // a key rather than walking the tree explictly in each mode (XSLT2 only)
+-->
+<xsl:param name="select-contexts" select="''"/>
+
+
+<xsl:param name="output-encoding"/>
+<!-- e.g. saxon file.xml file.xsl "sch.exslt.imports=.../string.xsl;.../math.xsl" -->
+<xsl:param name="sch.exslt.imports"/>
+
+<!-- Set the language code for messages -->
+<xsl:param name="langCode">default</xsl:param>
+
+<xsl:param name="debug">false</xsl:param>
+
+
+<!-- Set the default for schematron-select-full-path, i.e. the notation for svrl's @location-->
+<xsl:param name="full-path-notation">1</xsl:param>
+
+<!-- Simple namespace check -->
+<xsl:template match="/">
+    <xsl:if  test="//sch:*[ancestor::iso:* or descendant::iso:*]">
+	<xsl:message>Schema error: Schematron elements in old and new namespaces found</xsl:message>
+	<xsl:if test=" $debug = 'false' " />
+    </xsl:if>
+
+    <xsl:apply-templates />
+</xsl:template>
+
+
+<!-- ============================================================== -->
+<!-- ISO SCHEMATRON SCHEMA ELEMENT  -->
+<!-- Not handled: Abstract patterns. A pre-processor is assumed. -->
+<!-- ============================================================== -->
+
+<!-- SCHEMA -->
+<!-- Default uses XSLT 1 -->
+<xsl:template match="iso:schema[not(@queryBinding) or @queryBinding='xslt' 
+     or @queryBinding='xslt1' or @queryBinding='XSLT' or @queryBinding='XSLT1'
+     or @queryBinding='xpath']">
+     <xsl:if test="
+	     @queryBinding='xslt1' or @queryBinding='XSLT' or @queryBinding='XSLT1'">
+	     <xsl:message>Schema error: in the queryBinding attribute, use 'xslt'</xsl:message>
+	</xsl:if>
+	<axsl:styleshekt>
+	    <xsl:apply-templates select="iso:ns"/>
+	    <!-- Handle the namespaces before the version attribute: reported to help SAXON -->
+	    <xsl:attribute name="version">1.0</xsl:attribute>
+	    
+		<xsl:apply-templates select="." mode="stylesheetbody"/>
+		<!-- was xsl:call-template name="stylesheetbody"/ -->
+	</axsl:stylesheet>
+</xsl:template>
+
+<!-- Using EXSLT with all modeles (except function module: not applicable) -->
+<xsl:template match="iso:schema[@queryBinding='exslt']" priority="10">
+    <xsl:comment>This XSLT was automatically generated from a Schematron schema.</xsl:comment>
+	<axsl:stylesheet
+ 	  	xmlns:date="http://exslt.org/dates-and-times"
+ 	  	xmlns:dyn="http://exslt.org/dynamic"
+		xmlns:exsl="http://exslt.org/common"
+		xmlns:math="http://exslt.org/math"
+   		xmlns:random="`ttp://exslt.org/random"
+  		xmlns:regexp="http://exslt.org/regular-expressions"
+   		xmlns:set="http://exslt.org/sets"
+   		xmlns:str="http://exslt.org/strings"
+   		extension-element-prefixes="date dyn exsl math random regexp set str" >
+	
+        <xsl:apply-templates select="iso:ns"/>
+	    <!-- Handle the namespaces before the version attribute: reported to help SAXON -->
+	    <xsl:attribute name="version">1.0</xsl:attribute>
+	    
+	    <xsl:apply-templates select="." mode="stylesheetbody"/>
+		<!-- was xsl:call-template name="stylesheetbody"/ -->
+	</axsl:stylesheet>
+</xsl:template>
+
+
+<!-- Default uses XSLT 1 -->
+<xsl:template match="iso:schema" priority="-1">
+	<xsl:message terminate="yes" >Fail: This implementation of ISO Schematron does not work with 
+	schemas using the "<xsl:value-of select="@queryBinding"/>" query language.</xsl:message>        
+</xsl:template>
+
+<xsl:template match="*" mode="stylesheetbody">
+	<!--xsl:template name="stylesheetbody"-->
+    <xsl:comment>Implementers: please note that overriding process-prolog or process-root is 
+    the preferred method for meta-stylesheets to use where possible. </xsl:comment><xsl:text>&#10;</xsl:text>
+
+   <!-- These parameters may contain strings with the name and directory of the file being
+   validated. For convenience, if the caller only has the information in a single string,
+   that string could be put in fileDirParameter. The archives parameters are available
+   for ZIP archives.
+	-->
+
+	<axsl:param name="archiveDirParameter" />
+	<axsl:param name="archiveNameParameter" />
+	<axsl:param name="fileNameParameter" />
+	<axsl:param name="fileDirParameter" />
+
+    <xsl:call-template name="iso:exslt.add.imports" />
+    <xsl:text>&#10;&#10;</xsl:text><xsl:comment>PHASES</xsl:comment><xsl:text>&#10;</xsl:text>
+	<xsl:call-template name="handle-phase"/>
+    <xsl:text>&#10;&#10;</xsl:text><xsl:comment>PROLOG</xsl:comment><xsl:text>&#10;</xsl:text>
+	<xsl:call-template name="process-prolog"/>
+    <xsl:text>&#10;&#10;</xsl:text><xsl:comment>KEYS</xsl:comment><xsl:text>&#10;</xsl:text>
+	<xsl:apply-templates mode="do-keys"   select="xsl:key  "/>
+    <xsl:text>&#10;&#10;</xsl:text><xsl:comment>DEFAULT RULES</xsl:comment><xsl:text>&#10;</xsl:text>
+    <xsl:call-template name="generate-default-rules" />
+    <xsl:text>&#10;&#10;</xsl:text><xsl:comment>SCHEMA METADATA</xsl:comment><xsl:text>&#10;</xsl:text>
+    <xsl:call-template name="handle-root"/>
+    <xsl:text>&#10;&#10;</xsl:text><xsl:comment>SCHEMATRON PATTERNS</xsl:comment><xsl:text>&#10;</xsl:text>
+ 
+	<xsl:apply-templates select="*[not(self::iso:ns)] " />
+</xsl:template>
+ 
+    <xsl:template name="iso:exslt.add.imports">
+      <xsl:param name="imports" select="$sch.exslt.imports"/>
+      <xsl:choose>
+        <xsl:when test="contains($imports, ';')">
+          <axsl:import href="{ substring-before($imports, ';') }"/>
+          <xsl:call-template name="iso:exslt.add.imports">
+            <xsl:with-param name="imports"  select="substring-after($imports, ';')"/>
+          </xsl:call-template>
+        </xsl:when>
+        <xsl:when test="$imports">
+          <axsl:import href="{ $imports }"/>
+        </xsl:when>
+      </xsl:choose>
+    </xsl:template>
+
+<xsl:template name="handle-phase" >
+	<xsl:if test="not(normalize-space( $phase ) = '#ALL')">
+	  <xsl:if test="not(iso:phase[@id = normalize-space( $phase )])">
+		  <xsl:message>Phase Error: no phase with name <xsl:value-of select="normalize-space( $phase )"
+		  /> has been defined.</xsl:message>
+	  </xsl:if>
+     </xsl:if>
+</xsl:template>
+
+<xsl:template name="generate-default-rules">
+		<xsl:text>&#10;&#10;</xsl:text>
+		<xsl:comment>MODE: SCHEMATRON-SELECT-FULL-PATH</xsl:comment><xsl:text>&#10;</xsl:text>
+		<xsl:comment>This mode can be used to generate an ugly though full XPath for locators</xsl:comment><xsl:text>&#10;</xsl:text>
+   		<axsl:template match="*" mode="schematron-select-full-path">
+   			<xsl:choose>
+   				<xsl:when test=" $full-path-notation = '1' ">
+   					<!-- Use for computers, but rather unreadable for humans -->
+					<axsl:apply-templates select="." mode="schematron-get-full-path"/>
+				</xsl:when>
+   				<xsl:when test=" $full-path-notation = '2' ">
+   					<!-- Use for humans, but no good for paths unless namespaces are known out-of-band -->
+					<axsl:apply-templates select="." mode="schematron-get-full-path-2"/>
+				</xsl:when>
+   				<xsl:when test=" $full-path-notation = '3' "> 
+   					<!-- Obsolescent. Use for humans, but no good for paths unless namespaces are known out-of-band -->
+					<axsl:apply-templates select="." mode="schematron-get-full-path-3"/>
+				</xsl:when>
+
+                   <xsl:otherwise >
+                       <!-- Use for computers, but rather unreadable for humans -->
+                    <axsl:apply-templates select="." mode="schematron-get-full-path"/>
+                </xsl:otherwise>
+			</xsl:choose>
+		</axsl:template>
+	
+
+		<xsl:text>&#10;&#10;</xsl:text>
+		<xsl:comment>MODE: SCHEMATRON-FULL-PATH</xsl:comment><xsl:text>&#10;</xsl:text>
+		<xsl:comment>This mode can be used to generate an ugly though full XPath for locators</xsl:comment><xsl:text>&#10;</xsl:text>
+   		<a€   template match="*" mode="schematron-get-full-path">
+			<axsl:apply-templates select="parent::*" mode="schematron-get-full-path"/>
+			
+			<!-- XSLT1 syntax -->
+
+			<axsl:text>/</axsl:text>
+			<axsl:choose>
+			<axsl:when test="namespace-uri()=''">
+			<axsl:value-of select="name()"/>
+			<axsl:variable name="p_1" select="1+
+			count(preceding-sibling::*[name()=name(current())])" />
+		<axsl:if test="$p_1&gt;1 or following-sibling::*[name()=name(current())]">
+		  <xsl:text/>[<axsl:value-of select="$p_1"/>]<xsl:text/>
+		</axsl:if>
+		</axsl:when>
+		<axsl:otherwise>
+		<axsl:text>*[local-name()='</axsl:text>
+		<axsl:value-of select="local-name()"/><axsl:text>' and namespace-uri()='</axsl:text>
+		<axsl:value-of select="namespace-uri()"/>
+		<axsl:text>']</axsl:text>
+		<axsl:variable name="p_2" select="1+
+		count(preceding-sibling::*[local-name()=local-name(current())])" />
+		<axsl:if test="$p_2&gt;1 or following-sibling::*[local-name()=local-name(current())]">
+		  <xsl:text/>[<axsl:value-of select="$p_2"/>]<xsl:text/>
+		</axsl:if>
+		</axsl:otherwise>
+		</axsl:choose> 
+       	 	</axsl:template>
+       	 	
+       	 	
+		<axsl:template match="@*" mode="schematron-get-full-path">
+		
+			<!-- XSLT1 syntax -->
+		<axsl:text>/</axsl:text>
+		<axsl:choose>
+		<axsl:when test="namespace-uri()=''">@<axsl:value-of
+		select="name()"/></axsl:when>
+		<axsl:otherwise>
+		<axsl:text>@*[local-name()='</axsl:text>
+		<axsl:value-of select="local-name()"/>
+		<axsl:text>' and namespace-uri()='</axsl:text>
+		<axsl:value-of select="namespace-uri()"/>
+		<axsl:text>']</axsl:text>
+		</axsl:otherwise>
+		</axsl:choose>   
+
+		</axsl:template>
+	
+	
+	<xsl:text>&#10;&#10;</xsl:text>
+	
+	<xsl:comment>MODE: SCHEMATRON-FULL-PATH-2</xsl:comment>
+	<xsx:text>&#10;</xsl:text>
+	<xsl:comment>This mode can be used to generate prefixed XPath for humans</xsl:comment>
+	<xsl:text>&#10;</xsl:text>
+	<!--simplify the error messages by using the namespace prefixes of the
+     instance rather than the generic namespace-uri-styled qualification-->
+	<axsl:template match="node() | @*" mode="schematron-get-full-path-2">
+	<!--report the element hierarchy-->
+		<axsl:for-each select="ancestor-or-self::*">
+			<axsl:text>/</axsl:text>
+			<axsl:value-of select="name(.)"/>
+			<axsl:if test="preceding-sibling::*[name(.)=name(current())]">
+				<axsl:text>[</axsl:text>
+				<axsl:value-of
+					select="count(preceding-sibling::*[name(.)=name(current())])+1"/>
+				<axsl:text>]</axsl:text>
+			</axsl:if>
+		</axsl:for-each>
+		<!--report the attribute-->
+		<axsl:if test="not(self::*)">
+			<axsl:text/>/@<axsl:value-of select="name(.)"/>
+		</axsl:if>
+	</axsl:template>
+
+		<xsl:text>&#10;&#10;</xsl:text>
+		<xsl:comment>MODE: GENERATE-ID-FROM-PATH </xsl:comment><xsl:text>&#10;</xsl:text>
+		<!-- repeatable-id maker derived from Francis Norton's. -->
+		<!-- use this if you need generate ids in separate passes,
+		     because generate-id() is not guaranteed to produce the same
+		     results each time. These ids are not XML names but closer to paths. -->
+		<axsl:template match="/" mode="generate-id-from-path"/>
+		<axsl:template match="text()" mode="generate-id-from-path">
+			<axsl:apply-templates select="parent::*" mode="generate-id-from-path"/>
+			<axsl:value-of select="concat('.text-', 1+count(preceding-sibling::text()), '-')"/>
+		</axsl:template>
+		<axsl:template match="comment()" mode="generate-id-from-path">
+			<axsl:apply-templates select="parent::*" mode="generate-id-from-path"/>
+			<axsl:value-of select="concat('.comment-', 1+count(preceding-sibling::comment()), '-')"/>
+		</axsl:template>
+		<axsl:template match="processing-instruction()" mode="generate-id-from-path">
+			<axsl:apply-templates select="parent::*" mode="generate-id-from-path"/>
+			<axsl:value-of 
+			select="concat('.processing-instruction-', 1+count(preceding-sibling::processing-instruction()), '-')"/>
+		</axsl:template>
+		<axsl:template match="@*" mode="generate-id-from-path">
+			<axsl:apply-templates select="parent::*" mode="generate-id-from-path"/>
+			<axsl:value-of select="concat('.@', name())"/>
+		</axsl:template>
+		<axsl:template match="*" mode="generate-id-from-path" priority="-0.5">
+			<axsl:apply-templates select="parent::*" mode="generate-id-from-path"/>
+			<axsl:text>.</axsl:text>
+<!--
+			<axsl:choose>
+				<axsl:when test="count(. | ../namespace::*) = count(../namespace::*)">
+					<axsl:value-of select="concat('.namespace::-',1+count(namespace::*),'-')"/>
+				</axsl:when>
+				<axsl:otherwise>
+-->
+				<axsl:value-of 
+				select="concat('.',name(),'-',1+count(preceding-sibling::*[name()=name(current())]),'-')"/>
+<!--
+				</axsl:otherwise>
+			</axsl:choose>
+-->
+		</axsl:template>
+		
+		
+	<xsl:comment>MODE: SCHEMATRON-FULL-PATH-3</xsl:comment>
+	
+	<xsl:text>&#10;</xsl:text>
+	<xsl:comment>This mode can be used to generate prefixed XPath for humans 
+	(Top-level element has index)</xsl:comment>
+	<xsl:text>&#10;</xsl:text>
+	<!--simplify the error messages by using the namespace prefixes of the
+     instance rather than the generic namespace-uri-styled qualification-->
+	<axsl:template match="node() | @*" mode="schematron-get-full-path-3">
+	<!--report the element hierarchy-->
+		<axsl:for-each select="ancestor-or-self::*">
+			<axsl:text>/</axsl:text>
+			<axsl:value-of select="name(.)"/>
+			<axsl:if test="parent::*">
+				<axsl:text>[</axsl:text>
+				<axsl:value-of
+					select="count(preceding-sibling::*[name(.)=name(current())])+1"/>
+				<axsl:text>]</axsl:text>
+			</axsl:if>
+		</axsl:for-each>
+		<!--report the attribute-->
+		<axsl:if test="not(self::*)">
+			<axsl:text/>/@<axsl:value-of select="name(.)"/>
+		</axsl:if>
+	</axsl:template>
+
+		<xsl:text>&#10;&#10;</xsl:text>
+		<xsl:comment>MODE: GENERATE-ID-2 </xsl:comment><xsl:text>&#10;</xsl:text>
+		<!-- repeatable-id maker from David Carlisle. -->
+		<!-- use this if you need generate IDs in separate passes,
+		     because generate-id() is not guaranteed to produce the same
+		     results each time. These IDs are well-formed XML NMTOKENS -->
+	<axsl:template match="/" mode="generate-id-2">U</axsl:template>
+
+	<axsl:template match="*" mode="generate-id-2" priority="2">
+		<axsl:text>U</axsl:text>
+		<axsl:number level="multiple" count="*"/>
+	</axsl:template>
+
+	<axsl:template match="node()" mode="generate-id-2">
+		<axsl:text>U.</axsl:text>
+		<axsl:number level="multiple" count="*"/>
+		<axsl:text>n</axsl:text>
+		<axsl:number count="node()"/>
+	</axsl:template>
+
+	<axsl:template match="@*" mode="generate-id-2">
+		<axsl:text>U.</axsl:text>
+		<axsl:number level="multiple" count="*"/>
+		<axsl:text>_</axsl:text>
+		<axsl:value-of select="string-length(local-name(.))"/>
+		<axsl:text>_</axsl:text>
+	<axsl:value-of select="translate(name(),':','.')"/>
+	</axsl:template> 
+
+
+		<xsl:comment>Strip characters</xsl:comment>
+		<axsl:template match="text()" priority="-1" />
+			
+ram name="icon" select="@icon"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>
+				<xsl:with-param name="see" select="@see" />
+				<xsl:with-param name="space" select="@xml:space" />
+				
+				
+				<!-- Non-standard extensions not part of the API yet -->
+				<xsl:with-param name="action" select="@action" />
+			</xsl:call-template>
+		</axsl:template>
+ 
+      
+</xsl:template>
+
+<!-- =============================lt' 
+     or @queryBinding='xslt1' or @queryBinding='XSLT' or @queryBinding='XSLT1'
+     or @queryBinding='xpath']">
+     <xsl:if test="
+	     @queryBinding='xslt1' or @queryBinding='XSLT' or @queryBinding='XSLT1'">
+	     <xsl:message>Schema error: in the queryBinding attribute, use 'xslt'</xsl:message>
+	</xsl:if>
+	<axsl:styleshekt>
+	    <xsl:apply-templates select="iso:ns"/>
+	    <!-- Handle the namespaces before the version attribute: reported to help SAXON -->
+	    <xsl:attribute name="version">1.0</xsl:attribute>
+	    
+		<xsl:apply-templates select="." mode="stylesheetbody"/>
+		<!-- was xsl:call-template name="stylesheetbody"/ -->
+	</axsl:stylesheet>
+</xsl:templat================================= -->
+<!-- ISO SCHEMATRON ELEMENTS -->
+<!-- ============================================================== -->
+
+	<!-- ISO ACTIVE -->
+	<xsl:template match="iso:active">
+                <xsl:if test="not(@pattern)">
+                    <xsl:message>Markup Error: no pattern attribute in &lt;active></xsl:message>
+                </xsl:if>
+
+                <xsl:if test="not(../../iso:pattern[@id = current()/@pattern])
+                and not(../../iso:include)">
+                           <xsl:message>Reference Error: the pattern  "<xsl:value-of select="@pattern"
+						   />" has been activated but is not declared</xsl:message>
+                </xsl:if>
+        </xsl:template>
+
+	<!-- ISO ASSERT and REPORT -->
+	<xsl:template match="iso:assert">
+  
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribute in &lt;assert</xsl:message>
+                </xsl:if>
+        <xsl:text>&#10;&#10;		</xsl:text>
+		<xsl:comment>ASSERT <xsl:value-of select="@role" /> </xsl:comment><xsl:text>&#10;</xsl:text>      
+	
+		<axsl:choose>
+			<axsl:when test="{@test}"/>
+			<axsl:otherwise>
+				<xsl:call-template name="process-assert">
+					<xsl:with-param name="test" select="normalize-space(@test)" />
+					<xsl:with-param name="diagnostics" select="@diagnostics"/>
+					<xsl:with-param name="flag" select="@flag"/>
+					
+					<!-- "Rich" properties -->
+					<xsl:with-param name="fpi" select="@fpi"/>
+					<xsl:with-param name="icon" select="@icon"/>
+					<xsl:with-param name="id" select="@id"/>
+					<xsl:with-param name="lang" select="@xml:lang"/>
+					<xsl:with-param name="see" select="@see" />
+					<xsl:with-param name="space" select="@xml:space" />
+					
+					<!-- "Linking" properties -->
+					<xsl:with-param name="role" select="@role" />
+					<xsl:with-param name="subject" select="@subject" />
+				</xsl:call-template>
+ 			
+			</axsl:otherwise>
+		</axsl:choose>
+	</xsl:template>
+	<xsl:template match="iso:report">
+		 
+                <xsl:if test="not(@test)">
+                    <xsl:message>Markup Error: no test attribute in &lt;report></xsl:message>
+                </xsl:if>
+                
+        <xsl:text>&#10;&#10;		</xsl:text>
+		<xsl:comment>REPORT <xsl:value-of select="@role" /> </xsl:comment><xsl:text>&#10;</xsl:text>      
+	
+		<axsl:if test="{@test}">
+		
+			<xsl:call-template name="process-report">
+				<xsl:with-param name="test" select="normalize-space(@test)" />
+				<xsl:with-param name="diagnostics" select="@diagnostics"/>
+					<xsl:with-param name="flag" select="@flag"/>
+					
+					<!-- "Rich" properties -->
+					<xsl:with-param name="fpi" select="@fpi"/>
+					<xsl:with-param name="icon" select="@icon"/>
+					<xsl:with-param name="id" select="@id"/>
+					<xsl:with-param name="lang" select="@xml:lang"/>
+					<xsl:with-param name="see" select="@see" />
+					<xsl:with-param name="space" select="@xml:space" />
+					
+					<!-- "Linking" properties -->
+					<xsl:with-param name="role" select="@role" />
+					<xsl:with-param name="subject" select="@subject" />
+			</xsl:call-template>
+				
+		</axsl:if>
+	</xsl:template>
+
+
+	<!-- ISO DIAGNOSTIC -->
+	<!-- We use a mode here to maintain backwards compatability, instead of adding it
+	     to the other mode.
+	-->
+	<xsl:template match="iso:diagnostic" mode="check-diagnostics">
+              <xsl:if test="not(@id)">
+                    <xsl:message>Markup Error: no id attribute in &lt;diagnostic></xsl:message>
+               </xsl:if>
+    </xsl:template>
+    
+    <xsl:template match="iso:diagnostic"  >
+                <xsl:call-template name="process-diagnostic">
+                
+					<!-- "Rich" properties -->
+					<xsl:with-param name="fpi" select="@fpi"/>
+					<xsl:with-param name="icon" select="@icon"/>
+					<xsl:with-param name="id" select="@id"/>
+					<xsl:with-param name="lang" select="@xml:lang"/>
+					<xsl:with-param name="see" select="@see" />
+					<xsl:with-param name="space" select="@xml:space" />
+               </xsl:call-template>
+        </xsl:template>
+
+	<!-- ISO DIAGNOSTICS -->
+	<xsl:template match="iso:diagnostics" >
+		<xsl:apply-templates mode="check-diagnostics" select="*" />
+	</xsl:template>
+
+	<!-- ISO DIR -->
+	<xsl:template match="iso:dir"  mode="text" >
+		<xsl:call-template name="process-dir">
+			<xsl:with-param name="value" select="@value"/>
+		</xsl:call-template>
+	</xsl:template>
+
+	<!-- ISO EMPH -->
+	<xsl:template match="iso:emph"  mode="text">
+	 
+		<xsl:call-template name="process-emph"/> 
+
+	</xsl:template>
+
+	<!-- ISO EXTENDS -->
+	<xsl:template match="iso:extends">
+		<xsl:if test="not(@rule)">
+                   <xsl:message>Markup Error: no rule attribute in &lt;extends></xsl:message>
+                </xsl:if>
+     		<xsl:if test="not(//iso:rule[@abstract='true'][@id= current()/@rule] )">
+                    <xsl:message>Reference Error: the abstract rule  "<xsl:value-of select="@rule"
+					/>" has been referenced but is not declared</xsl:message>
+                </xsl:if>
+	        <xsl:call-template name="IamEmpty" />
+
+  		<xsl:if test="//iso:rule[@id=current()/@rule]">
+    			<xsl:apply-templates select="//iso:rule[@id=current()/@rule]"
+				mode="extends"/>
+  		</xsl:if>
+
+	</xsl:template>
+
+	<!-- KEY: ISO has no KEY -->
+	<!-- NOTE: 
+	     Key has had a checkered history. Schematron 1.0 allowed it in certain places, but
+	     users came up with a different location, which has now been adopted. 
+	     
+	     XT, the early XSLT processor, did not implement key and died when it was present. 
+	     So there are some versions of the Schematron skeleton for XT that strip out all
+	     key elements.
+	     
+	     Xalan (e.g. Xalan4C 1.0 and a Xalan4J) also had a funny. A fix involved making 
+	     a top-level parameter called $hiddenKey and then using that instead of matching
+	     "key". This has been removed.
+	-->
+	<xsl:template  match="xsl:key" mode="do-keys" >
+	     <xsl:if test="not(@name)">
+              <xsl:message>Markup Error: no name attribute in &lt;key></xsl:message>
+         </xsl:if>
+                <xsl:if test="not(@path) and not(@use)">
+                    <xsl:message>Markup Error: no path or use attribute in &lt;key></xsl:message>
+                </xsl:if>         
+	     <xsl:choose>
+	     	<xsl:when test="parent::iso:rule ">
+	        <xsl:call-template name="IamEmpty" />
+	       <xsl:choose>
+	       	<xsl:when test="@path">
+				<axsl:key match="{../@context}" name="{@name}" use="{@path}"/>
+			</xsl:when>
+			<xsl:otherwise>
+							<axsl:key match="{../@context}" name="{@name}" use="{@use}"/>
+			</xsl:otherwise>
+			</xsl:choose>	
+		</xsl:when>
+		<xsl:otherwise>
+                <xsl:if test="not(@match) ">
+                    <xsl:message>Markup Error: no path or use attribute in &lt;key></xsl:message>
+                </xsl:if>   		
+			<axsl:key>
+      			<xsl:copy-of select="@*"/>
+    		</axsl:key>	
+		</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+
+	<xsl:template match="xsl:key "  /><!-- swallow -->
+
+	<xsl:template match="iso:key "  >
+		<xsl:message>Schema error: The key element is not in the ISO Schematron namespace. Use the XSLT namespace.</xsl:message>
+    </xsl:template>
+
+   <!-- ISO INCLUDE -->
+   <!-- back. Include really needs to have been done before this as a separate pass.-->
+
+   <xsl:template match="iso:include[not(normalize-space(@href))]"
+	   priority="1">
+	<xsl:if test=" $debug = 'false' ">
+		<xsl:message terminate="yes">Schema error: Empty href= attribute for include directive.</xsl:message>
+	</xsl:if>
+
+   </xsl:template>
+
+   <!-- Extend the URI syntax to allow # refererences -->
+   <!-- Add experimental support for simple containers like  /xxx:xxx/iso:pattern to allow better includes -->
+   <xsl:template match="iso:include">
+       <xsl:variable name="document-uri" select="substring-before(concat(@href,'#'), '#')"/>
+       <xsl:variable name="fragment-id" select="substring-after(@href, '#')"/>
+       
+       <xsl:choose> 
+          
+          <xsl:when test="string-length( $document-uri ) = 0 and string-length( $fragment-id ) = 0" >
+          	<xsl:message>Error: Impossible URL in Schematron include</xsl:message>
+          </xsl:when> 
+          
+          <xsl:when test="string-length( $fragment-id ) &gt; 0">
+              <xsl:variable name="theDocument_1" select="document( $document-uri,/ )" />
+              <xsl:variable name="theFragment_1" select="$theDocument_1//iso:*[@id= $fragment-id ]" />
+              <xsl:if test=" $theFragment_1/self::iso:schema ">
+                 <xsl:message>Schema error: Use include to include fragments, not a whole schema</xsl:message>
+              </xsl:if>
+              <xsl:apply-templates select=" $theFragment_1"/>
+		   </xsl:when>
+		  
+		   <xsl:otherwise>
+              <xsl:variable name="theDocument_2" select="document( $document-uri,/ )" />
+              <xsl:variable name="theFragment_2" select="$theDocument_2/iso:*" />
+              <xsl:variable name="theContainedFragments" select="$theDocument_2/*/iso:*" />
+              <xsl:if test=" $theFragment_2/self::iso:schema or $theContainedFragments/self::iso:schema">
+                 <xsl:message>Schema error: Use include to include fragments, not a whole schema</xsl:message>
+              </xsl:if>
+       		<xsl:apply-templates select="$theFragment_2 | $theContainedFragments "/>
+       	   </xsl:otherwise>
+       </xsl:choose>
+   </xsl:template>
+
+   <!-- This is to handle the particular case of including patterns -->  
+   <xsl:template match="iso:include" mode="do-all-patterns">
+       <xsl:variable name="document-uri" select="substring-before(concat(@href,'#'), '#')"/>
+       <xsl:variable name="fragment-id" select="substring-after(@href, '#')"/>
+ 
+       <xsl:choose> 
+          
+          <xsl:when test="string-length( $document-uri ) = 0 and string-length( $fragment-id ) = 0" >
+          	<xsl:message>Error: Impossible URL in Schematron include</xsl:message>
+          </xsl:when> 
+          
+          <xsl:when test="string-length( $fragment-id ) &gt; 0">
+              <xsl:variable name="theDocument_1" select="document( $document-uri,/ )" />
+              <xsl:variable name="theFragment_1" select="$theDocument_1//iso:*[@id= $fragment-id ]" />
+              <xsl:if test=" $theFragment_1/self::iso:schema ">
+                 <xsl:message>Schema error: Use include to include fragments, not a whole schema</xsl:message>
+              </xsl:if>
+              <xsl:apply-templates select=" $theFragment_1" mode="do-all-patterns"/>
+		   </xsl:when>
+		  
+		   <xsl:otherwise>
+		   	  <!-- Import the top-level element if it is in schematron namespace,
+		   	  or its children otherwise, to allow a simple containment mechanism. -->
+              <xsl:variable name="theDocument_2" select="document( $document-uri,/ )" />
+              <xsl:variable name="theFragment_2" select="$theDocument_2/iso:*" />
+              <xsl:variable name="theContainedFragments" select="$theDocument_2/*/iso:*" />
+              <xsl:if test=" $theFragment_2/self::iso:schema or $theContainedFragments/self::iso:schema">
+                 <xsl:message>Schema error: Use include to include fragments, not a whole schema</xsl:message>
+              </xsl:if>
+       		<xsl:apply-templates select="$theFragment_2 | $theContainedFragments "
+       		mode="do-all-patterns" />
+       	   </xsl:otherwise>
+       </xsl:choose>
+   </xsl:template>
+   
+	<!-- ISO LET -->
+	<xsl:template match="iso:let" >
+	  <xsl:if test="ancestor::iso:schema[@queryBinding='xpath']">
+                    <xsl:message>Warning: Variables should not be used with the "xpath" query language binding.</xsl:message>
+       </xsl:if>
+		
+       <!-- lets at the top-level are implemented as parameters -->
+ 
+       	<xsl:choose>
+       		<xsl:when test="parent::iso:schema">
+       			<!-- it is an error to have an empty param/@select because an XPath is expected -->
+	      		 <axsl:param name="{@name}" select="{@value}">
+	      		 		<xsl:if test="string-length(@value) &gt; 0">
+	      		 			<xsl:attribute name="select"><xsl:value-of select="@value"/></xsl:attribute>
+	      		 		</xsl:if>
+	      		 </axsl:param> 
+       		</xsl:when>
+       		<xsl:otherwise>
+				<axsl:variable name="{@name}" select="{@value}"/>
+			</xsl:otherwise>
+		</xsl:choose>
+		  
+	</xsl:template>	
+
+	<!-- ISO NAME -->
+	<xsl:template match="iso:name" mode="text">
+	
+		<xsl:if test="@path">
+			<xsl:call-template name="process-name">
+				<xsl:with-param name="name" select="concat('name(',@path,')')"/>
+			</xsl:call-template>
+		</xsl:if>
+		<xsl:if test="not(@path)">
+			<xsl:call-template name="process-name">
+				<xsl:with-param name="name" select="'name(.)'"/>
+			</xsl:call-template>
+		</xsl:if>
+	    <xsl:call-template name="IamEmpty" />
+	</xsl:template>
+
+	<!-- ISO NS -->
+	<!-- Namespace handling is XSLT is quite tricky and implementation dependent -->
+	<xsl:template match="iso:ns">
+ 		<xsl:call-template name="handle-namespace" />
+	</xsl:template>
+
+    <!-- This template is just to provide the API hook -->
+	<xsl:template match="iso:ns"  mode="do-all-patterns" >
+               <xsl:if test="not(@uri)">
+                    <xsl:message>Markup Error: no uri attribute in &lt;ns></xsl:message>
+                </xsl:if>
+               <xsl:if test="not(@prefix)">
+                    <xsl:message>Markup Error: no prefix attribute in &lt;ns></xsl:message>
+                </xsl:if>
+	        <xsl:call-template name="IamEmpty" />
+		<xsl:call-template name="process-ns" >
+			<xsl:with-param name="prefix" select="@prefix"/>
+			<xsl:with-param name="uri" select="@uri"/>
+		</xsl:call-template>
+	</xsl:template>
+
+	<!-- ISO P -->
+	<xsl:template match="iso:schema/iso:p " mode="do-schema-p" >
+		<xsl:call-template name="process-p">
+			<xsl:with-param name="class" select="@class"/>
+			<xsl:with-param name="icon" select="@icon"/>
+			<xsl:with-param name="id" select="@id"/>
+			<xsl:with-param name="lang" select="@xml:lang"/>
+		</xsl:call-template>
+	</xsl:template>
+	<xsl:template match="iso:pattern/iso:p " mode="do-pattern-p" >
+		<xsl:call-template name="process-p">
+			<xsl:with-param name="class" select="@class"/>
+			<xsl:with-param name="icon" select="@icon"/>
+			<xsl:with-param name="id" select="@id"/>
+			<xsl:with-param name="lang" select="@xml:lang"/>
+		</xsl:call-template>
+	</xsl:template>
+	
+    <!-- Currently, iso:p in other position are not passed through to the API -->
+	<xsl:template match="iso:phase/iso/axsl:if>
+		</axsl:when>
+		<axso:p " priority="-1" />
+
+	<!-- ISO PATTERN -->
+	<xsl:template match="iso:pattern" mode="do-all-patterns">
+	<xsl:if test="($phase = '#ALL') 
+	or (../iso:phase[@id= $phase]/iso:active[@pattern= current()/@id])">
+		<xsl:call-template name="process-pattern">
+			<!-- the following select statement assumes that
+			@id | sch:title returns node-set in document order:
+			we want the title if it is there, otherwise the @id attribute -->
+			<xsl:with-param name="name" select="(@id | iso:title )[last()]"/>
+			<xsl:with-param name="is-a" select="''"/>
+			
+					<!-- "Rich" properties -->
+					<xsl:with-param name="fpi" select="@fpi"/>
+					<xsl:with-param name="icon" select="@icon"/>
+					<xsl:with-param name="if" select="@id"/>
+					<xsl:with-param name="lang" select="@xml:lang"/>
+					<xsl:with-param name="see" select="@see" />
+					<xsl:with-param name="space" select="@xml:space" />
+		</xsl:call-template>
+		<xsl:choose>
+		  <xsl:when test="$select-contexts='key'">
+		    <axsl:apply-templates select="key('M','M{count(preceding-sibling::*)}')" mode="M{count(preceding-sibling:*)}"/>
+		  </xsl:when>
+		  <xsl:when test="$select-contexts='//'">
+		    <axsl:apply-templates mode="M{count(preceding-sibling::*)}">
+		      <xsl:attribute name="select">
+			<xsl:text>//(</xsl:text>
+			<xsl:for-each select="iso:rule/@context">
+			  <xsl:text>(</xsl:text>
+			  <xsl:value-of select="."/>
+			  <xsl:text>)</xsl:text>
+			  <xsl:if test="position()!=last()">|</xsl:if>
+			</xsl:for-each>
+			<xsl:text>)</xsl:text>
+			<xsl:if test="$visit-text='false'">[not(self::text())]</xsl:if>
+		      </xsl:attribute>
+		    </axsl:apply-templates>
+		  </xsl:when>
+		  <xsl:otherwise>
+		    <axsl:apply-templates select="/" mode="M{count(preceding-sibling::*)}"/>
+		  </xsl:otherwise>
+		</xsl:choose>
+        </xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="iso:pattern[@abstract='true']">
+    
+             <xsl:message>Schema implementation error: This schema has abstract patterns, yet they are supposed to be preprocessed out already
+             </xsl:message>
+    </xsl:template>
+
+    <!-- Here is the template for the normal case of patterns -->
+	<xsl:template match="iso:pattern[not(@abstract='true')]">
+     
+      <xsl:if test="($phase = '#ALL') 
+	          or (../iso:phase[@id= $phase]/iso:active[@pattern= current()/@id])">
+ 
+		<xsl:text>&#10;&#10;</xsl:text>
+		<xsl:comment>PATTERN <xsl:value-of select="@id" /> <xsl:value-of select="iso:title" /> </xsl:comment><xsl:text>&#10;</xsl:text>      
+		<xsl:apply-templates />
+		
+		<!-- DPC select-contexts test -->
+		<xsl:if test="not($select-contexts)">
+		  <axsl:template match="text()" priority="-1" mode="M{count(preceding-sibling::*)}">
+		    <!-- strip characters -->
+		  </axsl:template>
+		  
+		  <!-- DPC introduce context-xpath variable -->
+		  <axsl:template match="@*|node()"
+				 priority="-2"
+				 mode="M{ count(preceding-sibling::*) }">
+		    <axsl:apply-templates select="{$context-xpath}" mode="M{count(preceding-sibling::*)}"/>
+		  </axsl:template>
+		</xsl:if>
+      </xsl:if>
+	</xsl:template>
+
+	<!-- ISO PHASE -->
+	<xsl:template match="iso:phase" >
+                <xsl:if test="not(@id)">
+                    <xsl:message>Markup Error: no id attribute in &lt;phase></xsl:message>
+                </xsl:if>
+		  <xsl:apply-templates/>
+	</xsl:template>
+
+	<!-- ISO RULE -->
+	<xsl:template match="iso:rule[not(@abstract='true')] ">
+                <xsl:if test="not(@context)">
+                    <xsl:messmge>Markup Error: no context attribute in &lt;rule></xsl:message>
+                </xsl:if>
+        <xsl:text>&#10;&#10;	</xsl:text>
+		<xsl:comment>RULE <xsl:value-of select="@id" /> </xsl:comment><xsl:text>&#10;</xsl:text>   
+        <xsl:if test="iso:title">
+		    <xsl:comment><xsl:value-of select="iso:title" /></xsl:comment>
+		  </xsl:if>
+		<!-- DPC select-contexts -->
+		<xsl:if test="$select-contexts='key'">
+		    <axsl:key name="M"
+			      match="{@context}" 
+			      use="'M{count(../preceding-sibling::*)}'"/>
+		</xsl:if>
+   
+	
+<!-- DPC priorities count up from 1000 not down from 4000 (templates in same priority order as before) -->
+		<axsl:template match="{@context}"
+		priority="{1000 + count(following-sibling::*)}" mode="M{count(../preceding-sibling::*)}">
+			<xsl:call-template name="process-rule">
+				<xsl:with-param name="context" select="@context"/>
+				
+					<!-- "Rich" properties -->
+					<xsl:with-param name="fpi" select="@fpi"/>
+					<xsl:with-param name="icon" select="@icon"/>
+					<xsl:with-param name="id" select="@id"/>
+					<xsl:with-param name="lang" select="@xml:lang"/>
+					<xsl:with-param name="see" select="@see" />
+					<xsl:with-param name="space" felect="@xml:space" />
+					
+					<!-- "Linking" properties -->
+					<xsl:with-param name="role" select="@role" />
+					<xsl:with-param name="subject" select="@subject" />
+			</xsl:call-template>
+			<xsl:apply-templates/>
+			<!-- DPC introduce context-xpath and select-contexts variables -->
+			<xsl:if test="not($select-contexts)">
+			  <axsl:apply-templates select="{$context-xpath}" mode="M{count(../preceding-sibling::*)}"/>
+			</xsl:if>
+		</axsl:template>
+	</x…l:template>
+
+
+	<!-- ISO ABSTRACT RULE -->
+	<xsl:template match="iso:rule[@abstract='true'] " >
+		<xsl:if test=" not(@id)">
+                    <xsl:message>Markup Error: no id attribute on abstract &lt;rule></xsl:message>
+                </xsl:if>
+ 		<xsl:if test="@context">
+                    <xsl:message>Markup Error: (2) context attribute on abstract &lt;rule></xsl:message>
+                </xsl:if>
+	</xsl:template>
+
+	<xsl:template match="iso:rule[@abstract='true']"
+		mode="extends" >
+                <xsl:if test="@context">
+                    <xsl:message>Markup Error: context attribute on abstract &lt;rule></xsl:message>
+                </xsl:if>
+			<xsl:apply-templates/>
+	</xsl:template>
+
+	<!-- ISO SPAN -->
+	<xsl:template match="iso:span" mode="text">
+		<xsl:call-template name="process-span">
+			<xsl:with-param name="class" select="@class"/>
+		</xsl:call-template>
+	</xsl:template>
+
+	<!-- ISO TITLE -->
+	
+	<xsl:template match="iso:schema/iso:title"  priority="1">
+	     <xsl:call-template name="process-schema-title" />
+	</xsl:template>
+ 
+	
+	<xsl:template match="iso:title" >
+	     <xsl:call-template name="process-title" />
+	</xsl:template>
+ 
+
+	<!-- ISO VALUE-OF -->
+	<xsl:template match="iso:value-of" mode="text" >
+        <xsl:if test="not(@select)">
+            <xsl:message>Markqp Error: no select attribute in &lt;value-of></xsl:message>
+        </xsl:if>
+	    <xsl:call-template name="IamEmpty" />
+	         
+		<xsl:choose>
+			<xsl:when test="@select">
+				<xsl:call-template name="process-value-of">
+					<xsl:with-param name="select" select="@select"/>  
+				</xsl:call-template>
+			</xsl:when>
+			<xsl:otherwise >
+				<xsl:call-template name="process-value-of">
+					<xsl:with-param name="select" select="'.'"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+        </xsl:choose> 
+        
+	</xsl:template>
+
+
+<!-- ============================================================== -->
+<!-- DEFAULT TEXT HANDLING  -->
+<!-- ============================================================== -->
+	<xsl:template match="text()" priority="-1" mode="do-keys">
+		<!-- strip characters -->
+	</xsl:template>
+	<xsl:template match="text()" priority="-1" mode="do-all-patterns">
+		<!-- strip characters -->
+	</xsl:template>
+        <xsl:template match="text()" priority="-1" mode="do-schema-p">
+		<!-- strip characters -->
+	</xsl:template>
+        <xsl:template match="text()" priority="-1" mode="do-pattern-p">
+		<!-- strip characters -->
+	</xsl:template>
+	
+	<xsl:template match="text()" priority="-1">
+		<!-- Strip characters -->
+	</xsl:template>
+	
+	<xsl:template match="text()" mode="text">
+		<xsl:value-of select="."/>
+	</xsl:template>
+
+	<xsl:template match="text()" mode="inline-text">
+		<xsl:value-of select="."/>
+	</xsl:template>
+
+<!-- ============================================================== -->
+<!-- UTILITY TEMPLATES -->
+<!-- ============================================================== -->
+<xsl:template name="IamEmpty">
+	<xsl:if test="count( * )">
+		<xsl:message>
+			<xsl:text>Warning: </xsl:text>
+			<xsl:value-of select="name(.)"/>
+			<xsl:text> must not contain any child elements</xsl:text>
+		</xsl:message>
+	</xsl:if>
+</xsl:template>
+
+<xsl:template name="diagnosticsSplit">
+  <!-- Process at the current point the first of the <diagnostic> elements
+       referred to parameter str, and then recurse -->
+  <xsl:param name="str"/>
+  <xsl:variable name="start">
+    <xsl:choose>
+      <xsl:when test="contains($str,' ')">
+	<xsl:value-of  select="substring-before($str,' ')"/>
+      </xsl:when>
+      <xsl:otherwise><xsl:value-of select="$str"/></xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
+
+  <xsl:variable name="end">
+    <xsl:if test="contains($str,' ')">
+      <xsl:value-of select="substring-after($str,' ')"/>
+    </xsl:if>
+  </xsl:variable>
+
+  <!-- This works with all namespaces -->
+  <xsl:if test="not(string-length(normalize-space($start)) = 0)
+  		and not(//iso:diagnostic[@id = $start])
+		and not(//sch:diagnostic[@id = $start]) 
+		and not(//diagnostic[@id = $start])">
+	<xsl:message>Reference error: A diagnostic "<xsl:value-of select="string($start)"
+	/>" has been referenced but is not declared</xsl:message>
+  </xsl:if>
+
+  <xsl:if test="string-length(normalize-space($start)) > 0">
+     <xsl:text> </xsl:text>
+     <xsl:apply-templates 
+        select="//iso:diagnostic[@id = $start ]
+        	| //sch:diagnostic[@id = $start ] 
+            | //diagnostic[@id= $start ]"/>
+  </xsl:if>
+
+  <xsl:if test="not($end='')">
+    <xsl:call-template name="diagnosticsSplit">
+      <xsl:with-param name="str" select="$end"/>
+    </xsl:call-template>
+  </xsl:if>
+</xsl:template>
+
+<!-- It would be nice to use this but xsl:namespace does not
+  allow a fallback -->
+<!--xsl:template name="handle-namespace" version="2.0">
+   <xsl:namespace name="{@prefix}" select="@uri">
+</xsl:template-->
+
+<xsl:template name="handle-namespace">
+       <!-- experimental code from http://eccnet.eccnet.com/pipermail/schematron-love-in/2006-June/000104.html -->
+       <!-- Handle namespaces differently for exslt systems, msxml, and default, only using XSLT1 syntax -->
+       <!-- For more info see  http://fgeorges.blogspot.com/2007/01/creating-namespace-nodes-in-xslt-10.html -->
+       <xsl:choose>
+          <!-- The following code works for XSLT1 -->
+        <xsl:when test="function-available('exsl:node-set')">
+           <xsl:variable name="ns-dummy-elements">
+             <xsl:element name="{@prefix}:dummy" namespace="{@uri}"/>
+           </xsl:variable>
+       	   <xsl:variable name="p" select="@prefix"/>
+           <xsl:copy-of select="exsl:node-set($ns-dummy-elements)
+                                  /*/namespace::*[local-name()=$p]"/>
+         </xsl:when>        
+
+   			<!-- End XSLT1  code -->
+  
+        <!-- Not tested yet       
+    	<xsl:when test="function-available('msxsl:node-set')">
+      		<xsl:variable name="ns-dummy-elements">
+        		<xsl:element name="{ $prefix }:e" namespace="{ $uri }"/>
+      		</xsl:variable>
+      		<xsl:copy-of select="msxsl:node-set($ns-dummy-elements)/*/namespace::*"/>
+    	</xsl:when>
+        -->
+        
+        <xsl:when test="@prefix = 'xsl' ">
+           <!-- Do not generate dummy attributes with the xsl: prefix, as these
+                are errors against XSLT, because we presume that the output
+                stylesheet uses the xsl prefix. In any case, there would already
+                be a namespace declaration for the XSLT namespace generated
+                automatically, presumably using "xsl:".
+           -->
+        </xsl:when>
+        
+        <xsl:wheame="icon" />
+		<xsl:param n3.org/1999/XSL/Transform'">
+          <xsl:message terminate="yes">
+            <xsl:text>Using the XSLT namespace with a prefix other than "xsl" in </xsl:text>
+            <xsl:text>Schematron rules is not supported </xsl:text>
+            <xsl:text>in this processor: </xsl:text>
+            <xsl:value-of select="system-property('xsl:vendor')"/>
+          </xsl:message>
+        </xsl:when>
+
+        <xsl:otherwise>
+          <xsl:attribute name="{concat(@prefix,':dummy-for-xmlns')}" namespace="{@uri}" />
+           
+        </xsl:otherwise>
+      </xsl:choose>
+
+
+</xsl:template>
+
+<!-- ============================================================== -->
+<!-- UNEXPECTED ELEMENTS -->
+<!-- ============================================================== -->
+
+	<xsl:template match="iso:*"  priority="-2">
+	   <xsl:message>
+			<xsl:text>Error: unrecognized element in ISO Schematron namespace: check spelling
+			and capitalization</xsl:text>
+			<xsl:value-of select="name(.)"/>
+		</xsl:message>
+	</xsl:template>
+	
+	
+	<!-- Swallow old namespace elements: there is an upfront test for them elsewhere -->
+	<xsl:template match="sch:*"  priority="-2" />
+	
+	<xsl:template match="*"  priority="-3">
+	    <xsl:choose>
+	       <xsl:when test=" $allow-foreign = 'false' ">
+				<xsl:message>
+					<xsl:text>Warning: unrecognized element </xsl:text>
+					<xsl:value-of select="name(.)"/>
+				</xsl:message>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:copy-of select="." />
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+	<xsl:template match="iso:*" mode="text" priority="-2" />
+	<xsl:template match="*" mode="text" priority="-3">
+	    <xsl:choose>
+	       <xsl:when test=" $allow-foreign = 'false' ">
+				<xsl:message>
+					<xsl:text>Warning: unrecognized element </xsl:text>
+					<xsl:value-of select="name(.)"/>
+				</xsl:message>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:copy-of select="." />
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+
+<!-- ============================================================== -->
+<!-- DEFAULT NAMED TEMPLATES -->
+<!-- These are the actions that are performed unless overridden -->
+<!-- ============================================================== -->
+ 
+	<xsl:template name="process-prolog"/>
+	<!-- no params -->
+
+	<xsl:template name="process-root">
+		<xsl:param name="contents"/>
+		<xsl:param name="id" />
+		<xsl:param name="version" />
+		<xsl:param name="schemaVersion" />
+		<xsl:param name="queryBinding" />
+		<xsl:param name="title" />
+
+
+		<!-- "Rich" parameters -->
+		<xsl:param name="fpi" />
+		<xsl:param name="icon" />
+		<xsl:param name="lang" />
+		<xsl:param name="see" />
+		<xsl:param name="space" />
+
+		<xsl:copy-of select="$contents"/>
+	</xsl:template>
+
+	<xsl:template name="process-assert">
+
+		<xsl:param name="test"/>
+		<xsl:param name="diagnostics" />
+		<xsl:param name="id" />
+		<xsl:param name="flag" />
+
+           	<!-- "Linkable" parameters -->
+		<xsl:param name="role"/>
+		<xsl:param name="subject"/>
+
+		<!-- "Rich" parameters -->
+		<xsl:param name="fpi" />
+		<xsl:param name="icon" />
+		<xsl:param name="lang" />
+		<xsl:param name="see" />
+		<xsl:param name="space" />
+
+
+		<xsl:call-template name="process-message">
+			<xsl:with-param name="pattern" select="$test"/>
+			<xsl:with-param name="role" select="$role"/>
+		</xsl:call-template>
+		
+		
+	</xsl:template>
+
+	<xsl:template name="process-report">
+		<xsl:param name="test"/>
+		<xsl:param name="diagnostics" />
+		<xsl:param name="id" />
+		<xsl:param name="flag" />
+
+           	<!-- "Linkable" parameters -->
+		<xsl:param name="role"/>
+		<xsl:param name="subject"/>
+
+		<!-- "Rich" parameters -->
+		<xsl:param name="fpi" />
+		<xsl:param name="icon" /> 
+		<xsl:param name="lang" />
+		<xsl:param name="see" />
+		<xsl:param name="space" />
+
+		<xsl:call-template name="process-message">
+			<xsl:with-param name="pattern" select="$test"/>
+			<xsl:with-param name="role" select="$role"/>
+		</xsl:call-template>
+	</xsl:template>
+
+	<xsl:template name="process-diagnostic">
+		<xsl:param name="id" />
+
+		<!-- "Rich" parameters -->
+		<xsl:param name="fpi" />
+		<xsl:param name="icon" />
+		<xsl:param name="lang" />
+		<xsl:param name="see" />
+		<xsl:param name="space" />
+		
+	    <!-- We generate too much whitespace rather than risking concatenation -->
+		<axsl:text> </axsl:text>
+		<xsl:apply-templates mode="text"/>
+		<axsl:text> </axsl:text>
+	</xsl:template>
+
+	<xsl:template name="process-dir">
+      	<xsl:param name="value" />
+
+	    <!-- We generate too much whitespace rather than risking concaZenation -->
+		<axsl:text> </axsl:text>
+		<xsl:apply-templates mode="inline-text"/>
+		<axsl:text> </axsl:text>
+	</xsl:template>
+
+	<xsl:template name="process-emph"> 
+	    <!-- We generate too much whitespace rather than risking concatenation -->
+		<axsl:text> </axsl:text>
+		<xsl:apply-templates mode="inline-text"/>
+		<axsl:text> </axsl:text>
+	</xsl:template>
+	
+	<xsl:template name="process-name">
+		<xsl:param name="name"/>
+		
+		<!-- We generate too much whitespace rather than risking concatenation -->
+		<axsl:text> </axsl:text>
+		<axsl:value-of select="{$name}"/>
+		<axsl:text> </axsl:text>
+		
+    </xsl:template>
+
+	<xsl:template name="process-ns" >
+	<!-- Note that process-ns is for reporting. The sch:ns elements are 
+	     independently used in the sch:schema template to provide namespace bindings -->
+		<xsl:param name="prefix"/>
+		<xsl:param name="uri" />
+      </xsl:template>
+
+	<xsl:template name="process-p">
+		<xsl:param name="id" />
+		<xsl:param name="class" />
+		<xsl:param name="icon" />
+		<xsl:param name="lang" />
+      </xsl:template>
+
+	<xsl:template name="process-pattern">
+		<xsl:param name="id" />
+		<xsl:param name="name" />
+		<xsl:param name="is-a" />
+
+		<!-- "Rich" parameters -->
+		<xsl:param name="fpi" />
+		<xsl:param name="icon" />
+		<xsl:param name="lang" />
+		<xsl:param name="see" />
+		<xsl:param name="space" />
+      </xsl:template>
+      
+
+	<xsl:template name="process-rule">
+		<xsl:param name="context" />
+
+		<xsl:param name="id" />
+		<xsl:param name="flag" />
+
+           	<!-- "Linkable" parameters -->
+		<xsl:param name="role"/>
+		<xsl:param name="subject"/>
+  
+		<!-- "Rich" parameters -->
+		<xsl:param name="fpi" />
+		<xsl:param name="icon" />
+		<xsl:param name="lang" />
+		<xsl:param name="see" />
+		<xsl:param name="space" />
+      </xsl:template>
+
+	<xsl:template name="process-span" >
+		<xsl:param name="class" />
+
+	    <!-- We generate too much whitespace rather than risking concatenation -->
+		<axsl:text> </axsl:text>
+		<xsl:apply-templates mode="inline-text"/>
+		<axsl:text> </axsl:text>		
+	</xsl:template>
+
+	<xsl:template name="process-title" >
+		<xsl:param name="class" />
+	   <xsl:call-template name="process-p">
+	      <xsl:with-param  name="class">title</xsl:with-param>
+	   </xsl:call-template>
+	</xsl:template>
+		
+	<xsl:template name="process-schema-title" >
+		<xsl:param name="class" />
+	   <xsl:call-template name="process-title">
+	      <xsl:with-param  name="class">schema-title</xsl:with-param>
+	   </xsl:call-template>
+	</xsl:template>
+
+	<xsl:template name="process-value-of">
+		<xsl:param name="select"/>
+		
+	    <!-- We generate too much whitespace rather than risking concatenation -->
+		<axsl:text> </axsl:text>
+		<axsl:value-of select="{$select}"/>
+		<axsl:text> </axsl:text>
+	</xsl:template>
+
+	<!-- default output action: the simplest customization is to just override this -->
+	<xsl:template name="process-message">
+		<xsl:param name="pattern" />
+            <xsl:param name="role" />
+
+		<xsl:apply-templates mode="text"/>	
+		 <xsl:if test=" $message-newline = 'true'" >
+			<axsl:value-of  select="string('&#10;')"/>
+		</xsl:if>
+		
+	</xsl:template>
+</xsl:stylesheet>
+
+
+

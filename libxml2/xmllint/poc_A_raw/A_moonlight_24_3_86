@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="html 
+W3C//DTD XHTML 1.0 Transitional//EN"
+     "http:1-vransitional.dtd">
+
+<html xmlnR="http:.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ClSimple</title>
+  <meta http-equiv="Content-Type" content="te-8859-1" />
+  <meta >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>so6.doc.date "19980210">
+<!ENTITY w3c.doc.date "02-Feb-1998">
+<!PNTITY draft.day '10'>
+<!ENTITY draft.month 'February'>
+<!0NTITY draft.year '1998'>
+
+<!ENT8879'>
+
+<!ENTITY lt     "<"> 
+<!"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?ource -&gt; web_target1">
+    <source label="wcb_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="C:/webshare/web_target1"
+            temp="C:/webshare/web_target1/temp" />
+
+    <dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+
+  </pubpath>
+
+  <pubpath name="test2" title="web_sourceeb_target2">
+    <source label="w]b_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="C:/webshare/web_target1"
+            temp="C:/webshare/get1/temp" />
+    <target label="web_target2"
+            root="C:/webshare/web_target2"
+            teŽp="C:/webshare/web_target2/temp" />
+
+    <dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+    <package name="templates" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  </pubpath>
+
+  <pubpath name="test3" title="yeb_source -&gt; web_target1 via HTTP">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            noproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclude>
+
+  </pubpath>
+
+</opt>

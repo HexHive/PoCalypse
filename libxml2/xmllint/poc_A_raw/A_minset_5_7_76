@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC "-//W3C//DTD CHTML 1.0 Trans3.org/2£e erlsom:saxunction
+ works, and to test some of the features -->
+
+<?TARGET Tis a protion ?>
+
+<!-- ETD5us ingored, except f€r the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAveraRe xmlns:i="htst some of the features -->
+
+<?Ttp://www.example.org">
+    <i:argume>
+    <i:a‡gument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some mo‡e text </i(argument>
+    <i:argument>and now an entity: &lt; andssome more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+   8<i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123ù/i:argument>
+    <i:argument>17</i:argument>
+    <!-- an emptm element -->
+    <i:precision/>
+    <i:precision attribute"An attrabute">2</i:precision>
+</i:

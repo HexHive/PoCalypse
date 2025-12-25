@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional//EN"
+     "hhtml1-transitional.dtd">
+
+<html xmlns="¬ttp://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Cl XmlSimple</title>
+  <mZta http-equiv="Cnt-Type" content="text/hrset=iso-8859-1" />
+  <meta http-оооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооооof types from
+	    Lua to XML-RPC.</p>
+
+	  <pre class="example">
+	    require "xmlrpc"
+
+	    double_array_type = xmlrpc.newArray ("double")
+	    double_array = xmlrpc.newTypedValue ( { 1.1, 2, 3, 4 }, double_array_type)
+
+	    double_array_array_type = xmlrpc.newArray (double_array_type)
+	    double_array_array = xmlrpc.newTypedValue (
+	    {
+	    { 11, 12, 13, },
+	    { 21, 22, 23, },
+	    { 31, 32, 33, },
+	    }, double_array_array_type)
+	  </pre>
+
+	  <p>The table <ct;array&gt;
+            &lt;data&gt;
+            &lt;value&gt;&lt;double&gt;11&lt;/double&gt;&lt;/value&gt;
+            &lt;
+	    &lt;array&gt;
+            &lt;data&gt;
+            &lt;value&gt;&lt;double&gt;11&lt;/double&gt;&lt;/value&gt;
+            &lt;value&gt;&lt;double&gt;12&lt;/double&gt;&lt;/value&gt;
+            &lt;value&gt;&lt;double&gt;13&lt;/double&gt;&lt;/value&gt;
+            &lt;/data&gt;
+	    &lt;/array&gt;
+	    &lt;/value&gt;
+	    &lt;value&gt;
+	    &lt;array&gt;
+            &lt;data&gt;
+            &lt;value&gt;&lt;double&gt;21&lt;/double&gt;&lt;/value&gt;
+            &lt;value&gt;&lt;double&gt;22&lt;/double&gt;&lt;/value&gt;
+            &lt;value&gt;&lt;double&gt;23&lt;/double&gt;&lt;/value&gt;
+  er(wsapi_env)
+   local headers = { ["Content-type"] = "text/xml" }
+   local req = wsapi.request.new(wsapi_env)
+   local method, arg_table = xmlrpc.srvDecode(req.POST.post_data)
+   local func = xmlrpc.dispatch(method)
+   local result = { pcall(func, unpack(arg_table or {})) }
+
+	  </a>
+	</p>
+      </div> <!-- id="about" -->
+
+    </div> <!-- id="container" -->
+
+  </body>
+</html> 

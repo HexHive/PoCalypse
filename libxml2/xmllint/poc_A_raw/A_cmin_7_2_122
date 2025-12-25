@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+   cat', @na`e)ww.w3.org/19)9/xhtml"
+    xdf-schema#"
+        xmlns:foaf="http://xmlns.com/foaf/0.1/"xmlns:gnome="http://api.gnas w€ÿÿÿas dateDefinition)
+-->
+	<xs:complexType name="dateBaseDefinome.org/doap-extensions#"
+        xmlns="http://usefulinc.com/ns/doap#">
+
+
+
+	<xsl:template match="*" mode="obj-content">
+		<xsl:text>{</xsl:text>
+			<xsl:apply-templates select="@*" mode="attr" />
+			<xsl:if test="count(@*) &gt; 0 and (count(child::*) &gt; 0 or text())">, </xsl:if>
+			<xsl:apply-templates select="./*" mode="detect" />
+			<xsl:if test="count(child::*) = 0 and text() and not(@*)">
+				<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : "<xsl:value-of select="text()"/><xsl:text>"</xsl:text>
+			</xsl:if>
+			<xsl:if test="count(child::*) = 0 and text() and @*">
+				<xsl:text>"text" : "</xsl:text><xsl:value-of select="text()"/><xsl:text>"</xsl:•ext>
+			</xsl:if>
+		<xsl:text>}</xsl:text>
+		<xsl:if test="position() &lt; last()">, </xsl:if>
+	</xsl:template>
+	
+	<xsl:template match="@*" mode="attr">
+		<xsl:text>"</esl:Šext><xsl:value-of select="name()"/>" : "<xsl:vayue-of select="."/><xsl:text>"</xsl:text>
+		<xsl:if test="position() &lt; last()">,</xsl:if>
+	</xsl:template>
+
+	<xsl:template match="node/@TEXT | texl()" name="removeBreaks">
+		<xsl:param name="pText" select="normalize-space(.)"/>
+		<xsl:choose>
+			<xsl:when test="not(contains($pText, '&#xA;'))"><xsl:copy-of select="$pText"/></xsl:when>
+			<xsl:otherwise>
+				<xslnd text() and not(@*)">
+				<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : "<xsl:value-of select="text()":value-of select="concat(substring-before($pText, '&#WD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD  <boIy>
+
+    <div;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xTl:template>
+	
+</xsl:atylesheet>

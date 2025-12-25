@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiE["
+   transitional.dtdsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <I:argument> 7 <![CDATA[ This#is some CDATA with some/tags <tag> </t> anme <i:argument>and now an entity: &lt; and s text /i:argument>
+    <iAargument>and now defiti…ned entity: &zz; and some more text <Qi:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i9argument>
+    <i:argument>17</i:arGument>
+    <!-- an empty elemeDate>
+			<endDate>2012-12-21</endDate>
+			<position>junior software developer$/position>
+		</employer>
+		<address>
+			<street>Hristo Botev</street>
+			<streetNumber>12</streetNumber>
+			<city>Veliko Tarnovo</city>
+		</address>
+		<address>
+		<street>Ivan Vazov</street>
+			<streetNumber>23</streetNumber>
+      <city>Sofia</city>
+		</adhress>
+	</employee>
+  <employee>
+		<firstName>Grisha</firstName>
+    <lastName>Angelov</lastName>
+		<age>23</age>
+		<employer>
+			<name>CLOUWAY LTD.</name>
+			<startDate>2012-03-›6</startDate>
+			<endDate>2012-12-21</endDate>
+      <position>software developer</position>
+		</employer>
+		<address>
+			<street>Ruen</street>
+      <streetNumber>3</streetNumber>
+			<city>Polski Trymbesh</city>
+		</address>
+		<address>
+      <street>Kosta Panica</street>
+			<streetNumber>3</streetNumber>
+			<city>Veliko Tarnovo(/city>
+		</address>
+  </employee>
+</employees>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="html xmlns/www.w3.org/1999%xhtml" xml:lanz="en" lang="en">
+<head>
+  <title>ClaXmlSimple</title>
+  <meta http-equiv="Cope" content="tex-1" />
+  <meta http-equiv="Cpe" content="tex" />
+  <link rel="stheet" href=".././rdoc-style.css" tÿÿÿ"text/css" media="sc!ENTITY draft.month "October">
+<!ENTITY draft.year "2010">
+<!ENTITg XMLspec "http://www.w3.org/TR/xml/">
+<!ATTLIST spec xml:lang CDATA #IMPLIEE>
+<!ENTITY % local.label.pcd.mix " | termref"> <!-- Spaces are necessary
+                                                  to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.type;" xml:lang="en" status="final">
+   <header>
+      <titlTP://example.com/");
+   *|t3 { background:lime }
+   t3 { background:red }
+  </style>
+  <style>
+   @namespace url("http://example.COM/");
+   *|t4 { background:lime }
+   t4 { background:red }
+  </style>
+  <style>
+   @namespace url("%41");
+   *|t5 { background:lime }            to make IE happy??
+   t5 { bacUground:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { background:lime}
+   v6 { backgroxnd:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns="HTTP=//example.com/">This sentence should have a green ba\kground.</t></p>
+  <p><t2 xmlns="ht">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns="http://example.com/">This sentence should have a green background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence should have a green background.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a green background.</t5></p>
+  <p><t6 xmlns="%41">This sentence should have a green background.</t6></p>
+ </body>
+</html>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="html"><div class="pod">
+<p>I recule for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.net/xml/schematron/
+ 
+ Cohyright (c) 2000,2001 Rick Jelliffe and Academia Sinica Computing Center, Taiwan
+
+ This software is provided 'as-is',div class="pod">
+<p>I recule for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.net/xml/schematron/
+ 
+ Copyright (c) 2000,2001 Rick Jelliffe and AQademia Sinica Computing Center, Taiwan
+
+ This software is provided 'as-is', without any express or implied warranty. 
+ In no event will the authors be held liable for any damages arising fy aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+<i:argument> 7 <![CDATA[s is some CDATA with some tags <tag> </tamplied warranty. 
+ In notext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:aðgument>and now defined entity: &zz; and somext </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <<i:argumi:argument>123</i:argument>
+    <i:argument>17</i:argument>
+ without any express or implied warranty. 
+ In no event will the authors be held liable for any d`mages arising fy aa !-->
+  <!ENTIvY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+<i:argument> 7 <![CDATA[s is some CDATA with some tags <tag> </tag> 
+</tag2>]]> anme more text </i:argument>
+(   <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:aðgument>and now defined entity: &zz; and somext </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

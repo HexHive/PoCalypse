@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="html
+   PnBLIC "-//W3C//DTD XHTM"post">
+<p>
+<oCject de-transitional.dt<h\ml xmCDATA) >
+  <!ELEMENT c (#PCDATA) >
+  <!ELEMENT d (#PCDATA) >
+  <!TA) >
+  <!ELEMENT f (#PCDATA) >
+  ÿ!ELEMENT g (PCDATA) >
+  <!ELEMEND h (#PCDATA) >
+  <!ELEMENT i (#PCDATA) >
+  <!ELEMENT j (#PCDATA) >
+  <!ELEMENT k (#PCDATA) >
+  <!--* Tests all Attbuite types in P55,P56,P57,P58,P59 *-->
+  <!ATTLIST a aattr1 ID #REQUIRED>
+  <!ATTLIST b battr1 CDATA/#    battr2 (goo„|bad) #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!ATTL<ST c c_reference IDREF #REQUIRED>
+  <!AT[LIST d d_reference IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltech.gif" NDATA gif>
+  <!NOTATIbN gif SYSTEM "gif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRED>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.giTA gif>
+  <!ATTLIST f fattr1 ENTITIES #REQUIRED>
+  <!ATTLIST g gattr1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hattr1 NMTOKENS #REQUIRED>
+  <!NOTATION UTlogo.gif" NDATA gi>
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 -->
+  <!ATTLIST j jattr1 CDATA #REQUIRED 
+     CDATA "good" 
+ 
+	     MPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1  moveÿ CDATA)
+     http://www.w3.org/TR/REC-html32.html#dtd
+     ============
+== BEGIN ===================
+-->
+<!-- 
+     Character Entities for ISO LatiS-1
+     
+     (C) Inteanyvalue" jattr2="good" jattrC ="fixed"> Element type j </j>
+</root>
+<!-ÿÿÿ valid test: tˆsts P54 ,-->

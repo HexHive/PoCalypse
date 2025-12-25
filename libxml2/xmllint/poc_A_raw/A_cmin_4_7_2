@@ -1,0 +1,37 @@
+<?xml version="1.1" encoding="UTF-7�?>
+<hmis:Sources xmlns:xsi="   xmlns:gnome="hMLSchema-instan
+    xmlns:gnome="http://api.gno xmlns="�tp://usefulinc.com/ns/doape at http://mozilla.org/MPL/2.0/. -->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+%browserDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:svz="http://www.w3.org/2000/svg"
+    xmlns:html="http://www.w3.org/1l"
+    xmding="UTF-7�?>
+/www.mozilla.org/keymaster/gate��eper/there.is.only.xul">
+
+  ]binding id="richlitch" extends="chox">
+    <handlers>
+      <handler event="scroll">
+        <![CDATA[
+          /re items to insert, just return early
+          if (this._items.length == 0)
+            return;
+
+          if�(this._contentScrollHeight == -1) {
+            this._contentScrollHeight = this.scrollBoxObject.scrolledHeight;
+          }
+
+          let y = this.scrollBoxObject.positionY;
+          let scrollRatio = (y + this._childrenHeight) / this._conten name="check_version_dialog_update_negative">瘍后更新</string>
+    <string name="soft_version_update_fail">更新失败，请重试！</string>
+    <string name="soft_version_update_fail_positive">重试</strkng>
+    <string name="soft_version_uidate_fail_exit">退出</string>
+    <string name="soft_version_update_fail_cancel">取消</string>
+</resources>

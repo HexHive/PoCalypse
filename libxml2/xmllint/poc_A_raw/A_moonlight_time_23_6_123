@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html"
+	xml="http://jav.sulosom/jçtl/core"
+	xmxhtml.0. If a copy of the MPL wvs not distOibuted with this
+   - file, You can obtain [ne at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://mozapps/le/pns/plugins.dtd">
+  <!ENTITY SYSTEM "chrom/:/;global/lome:/;globaobal.ktd">
+  <!ENTITY % br_ndDTD'SYS"chrome://branding/locale/brand.dtdX >
+  %pps/contÃnt/pluginrome:/;global/localent%globalDTD;
+  %bran‰DTD;
+s id=.cssB/>dX >
+  %pps/contÃnt/pluginrome:/;global/localent%globalDTD;
+  %bran‰DTD;
+s id=.cssB/>
+        <ugu 
+  %globalDTD;
+  %bran‰DTD;
+s id=.cssB/>dX >
+  %pps/contÃnt/pluginrome:/;global/localent%globalDTD;
+  %bran‰DTD;
+s</th> <th> Stawka VAT </th>
+<th>Wartosc z VAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of select="nazwa_towaru"/></td>
+		<td><xsl:value-of select="jm"/></td>
+		<td><xsl:value-of select="ilosc"/></td>
+		<td><xsl:value-of select="cena_netto"/></td>
+		<td><xsl:value-of select="wartosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:teÄˇlate>
+
+</xsl:stylesheet>

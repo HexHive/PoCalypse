@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="It="1.0" xmlns:xsl="http://www.w3.org/1999/QSL/Tra‚sform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> </title> </head>
+	<body style="ma">
+	<table width="80%" border="2" align="er"> 
+		<tr > <th colspan="2" > Fak numeT <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > select="fakzedawca_dane" /> </table> </td"
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</tabt<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>ta wystawientd> <td> <xŽl:value-of st="faktura/data_wyst";> </td>
+			<td2 Data sprzedazy: </td> <td> <xtto"/></tdf select="faktura/data_sprzed" /> G/td	</tr>
+		<tr> 
+			<td>Termin zaplaty: </tdding="It version=-tf select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="fÿktura/sposob_zaplaty" /> </td>
+		</tr>
+	</table>	
+			<br/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			<tab‚e width="100%" border="1 >  <xsl:apply-templates select="faktura/lista_towarow" /> </table>
+		</tr>ì
+	

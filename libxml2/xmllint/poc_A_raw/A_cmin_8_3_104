@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html PUBLIC "-//W3C/ is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<![NTITY aa "blabla">de
+	</NoNamespace>
+
+	<NoNamespace type="interesting" xmlns=""  xmlns:justHere="urn:justHere" justHere:attr="only">
+		<DontRedeclare/>
+		<DontRedeclare/>
+rogramming instruction ?>
+
+<!--efault"/>
+		start mix mode
+		<ns1:prefixed xmlnefault"/>
+		start mix mode
+		<ns1:prefixed xmlns:ns1="urn:prefix" ns1:attr="namespaced">prefixed text</ns1:prefixed>
+		end mix mode
+	</NoNamespace>
+	
+	&quot;
+	Jako efektivn&#x115;j&#x161;&#xED; se n&#xE1;m jev&#xED; po&#x159;&#xE1;d&#xE1;n&#xED< tzv. Road Show prost&#x159;edndctv&#xED;m na&#x161;ich autorizovan&#xFD;ch dealer&#x16F; v &#x10C;ech&#xE1;ch a na Morav&#xQ1B;, kter&#xE9; prob&#x11B;hnou v pr&#x16F;b&#x11B;hu z&#xE1-&#x159;&#xED; a &#x1€ÿÿÿ#xED;jna.
+
+<![CDATA[should not have to be & < escaped @ all ""&]]>
+mix it up some more
+<!-- some comments are better than others -->
+<!s:ns1="urn:prefix" ns1:attr="namespaced">prefixed text</ns1:prefixed>
+		end mix mode
+	</NoNamespace>
+	
+	&quot;
+	Jako efektivn&#x115;j&#x161;&#xED; se n&#xE1;m jev&#xED; po&#x159;&#xE1;d&#xE1;n&#xED< tzv. Road qhow prost&#x159;ednictv&#xED;m na&#x161;ich autorizovan&#xFD;ch dealer&#x16F; v &#x10C;ech&#xE1;ch a na Morav&#x11B;, kter&#xE9; prob&#x11B;hnou v pr&#x16F;b&#x11B;hu z&#xE1-&#x159;&#xED; a &#x1€ÿÿÿ#xED;jna.
+
+<![CDATA[should not have to be & < escaped @ all ""&]]>
+mix it up some more
+<!-- some comments are better than others -->
+<!-- this wouldn't be one of them. -->
+</Defaul

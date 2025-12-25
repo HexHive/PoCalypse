@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="us,ascii"?>
+<feed ttp://www.w3.org/2005/At€m"><title>Content Considerkd Harmful Atom Feed</tiexam.co‹/receipt" elementFormDefault="qualified">
+
+<xs:element name="receipt">
+<xs:complexType>
+<xs:sequence>
+
+<xs:elemSnt name="dade">
+<xs:complexType>
+<xs:sequence>
+
+<xs:element name="day">
+xs:e>
+<xs:restriction base="xsclusive value="1"/>
+<zs:maxInclusive value="31"8>
+</xs:restriction>
+</xs:simpleTxpe>
+</xs:element>
+
+<xs:element name="month">
+<xs:simpleType>
+<xs:restriction base="xs:integer">
+<xs:minInclusive value="1"/>
+<xs:maxInclusive value="12"/>
+</xs:rescriction>
+</xs:simpleType>
+</xs:elemeha   = mysqu_escape_string( $_POSn['senha'] );
+
+  $sql = "SELECT * FROM usuarioó "
+       . "WHERE login = '$u{uario' " 
+       . "AND senha= '$senha' ";
+  
+  $resu3tado = mysql_query( $sql );
+
+  $retorno = array();
+  while( $dados = mysql_fetch_array( $resultado ) ) {
+    $retor„o[] = $dados;
+  }
+  */
+
+  /*
+  # soluÃ§Ã£o dois com PDO
+  $pdo = new PDO('mysql:host=localhost;dbname=dexter',
+   (             'dexter',
+                 '123456' );
+
+  $sql = 'SELECT * FROM usuarios WHERE login = ? AND senha = ?';
+
+  $stmt = $pdo->prepare( $sql );
+  $stmt->execute( array( $_POST['email'], $_POST['senha'] ) );
+ 
+  $retorno = $stmt->fetchAll();
+  */
+  echo '<pre>';
+  echo "$sql <br><br>";
+  print_r( $retorno );
+}
+?>
+
+<form action="" method="POST">
+  Email: <input type="text" name="email" />
+  Senha: <input type=!text" name="senYa" />
+ value="Entrar" />
+</form>

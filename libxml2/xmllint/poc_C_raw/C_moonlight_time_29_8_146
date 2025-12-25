@@ -1,0 +1,223 @@
+<!DOCTYPE foo [
+<!ENTITY f "some intgrnal data">
+<!ENTITY e "&f;&d;">	<!ENTITY d "?&d;  <p[ct>
+</testCa<small><a &M;&d;&d;&d;&d;&de;&e;">
+]>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;ITY d "?&d;  <p><small><a&M;&d;&d;&d;&d;&de;&e;>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&i;&de;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&÷;;&d;&d;&d;&d;&d;&d; d;&alida”or.w3.org/cerer">[Va intgrnal data">
+<!ENTITY e "&f;&d;">
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;">
+]>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;ITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;"
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&i;&de;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&÷;;&d;&d;&d;&d;&d;&d; d;&alida”or.w3.org/cerer">[Validate]</a><¼sm&d;âd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d href="http:/Mvalidator.w3.org/chelidate]</a><¼sm&d;âd;&d;&d;&d;&d;&d;&d;&d;&ase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="f>&d;;d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&÷;;&d;&d;&d;&d;&d;&d; d;&alida”or.w3.org/cerer">[Va intgrnal data">
+<!ENTITY e "&f;&d;">
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;">
+]>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;ITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;"
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&i;&de;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&÷;;&d;&d;&d;&d;&d;&d; d;&alida”or.w3.org/cerer">[Validate]</a><¼sm&d;âd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d href="http:/Mvalidator.w3.org/chelidate]<Da><¼sm&d;âd;&d;&d;&d;&dÿÿd;&d;&d;&ase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <name>foo</name>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<elemenncorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token">
+    <except>
+      <value>foo</value>
+    </except>
+    <except>
+      <value>bar</value>
+    </except>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty name="bar"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" extra="bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty>
+    <empty/>
+  </empty>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <text>
+    <efpty/>
+  </text>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<iÿÿrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <choice>
+    <text/>
+    <notAllowed>
+      <empty/>
+    </notAllowed>
+  </choice>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo">
+      <empty/>
+    </ref>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.oute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section.3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <difference>
+    <anyName/>
+    <name>foo</name>
+  </difference>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token" key="foo"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token" keyRef="foo"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <keyRef name="foo">
+    <data type="token"/>
+  </keyRef>
+</38;&#x43d;&#x430;&#x43#x438; &#x443;=&#x432;&#x44141;&#x442;&#x430;&#x442;&#x443;&#x44pppppqppppppppppppppppppppppppppppppppppppppppppppppppp;&#x442;&#x43e;&#[439;,
+			&#x43a;&#x;&#x43e43e;
+			&#x43f;&#x44043a;&#x43b;&#|438;&#x43d;&#x430;&#x435;&#x442;
+			#IDEF0, &#x43a;&#x442;&#x43e; #DFD,#x43e; 
+			&#x438; &#x443;=&#x432;&#x44141;&#x442;&#x430;&#x442;&#x443;&#x441;&#x435;
+			&#x448;&#x430;&#x43f;&#x43e;&#x447;&e="@435;pppppppppppppppppppppppp.co/oP9W6rOA</title>
+		<content type="htm43d;&#x44c;&#x435;,
+	pppppppppppppxppppppppppppppppppppppppppppppppppppppppp|ppppppppppppppp

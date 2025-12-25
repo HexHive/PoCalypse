@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-7"sl"http://www.wX"221.094940" vT="171.986435" d3.org/1999/XSL/T">
+<xsl:template match="Stafment">
+	<html>
+		<style type="text/css">
+				tab		margin: au						win: au						width: 500px;
+						text-align: cente‹;
+				}
+				.header-top th{
+						text-transform: uppercase;
+						padding: color: white;
+				}
+		</style>
+	<body>
+		<h2 align="ce">STENT</h2>
+		 <table border="1">
+			 <tr class="he">
+		
+<xtyles/th>
+				 <th class="name">name</th>
+				 <th>gr</th>
+				 <th>birthday</th>
+				 <th>position<>
+			 <tr class="he">
+		
+<xtyles/th>
+				 <th class="name">name</th>
+				 <th>gr</th>
+				 <th>››››››››››››››››		 <th>position</th>
+				 <th>department</th>
+				 <th>salary</th>
+				 </tr>
+				 <xsl:for-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Coäe"/></td>
+				 <td><xsl:value-of select="Staff_Name"/></td>
+				 <td><xsl:value-of select="Ster"/></td>
+				 <td><xsl:value-of select="Staff_Birthday"/></td>
+				 <td><xsl:value-of select="Staff_Position"/></td>
+				 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-of select="Staff_Salary"/></td>
+				
+			 </tr>
+		 		</xsl:for-each>
+		 </table>
+		 
+	</ÿÿdy>
+	</html>
+</xsl:template>
+</xsl:style/th>
+				 <th>department</th>
+				 <th>salary</th>
+				 </tr>
+				 <xsl:for-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 <td><xsl:value-of select="Staff_Name"/></td>
+				 <td><xsl:value-of select="Ster"/></td>
+				 <td><xsl:value-of select="Staff_Birthday"/></td>
+				 <td><xsl:value-of select="Staff_Position"/></td>
+			 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-of select="Staff_Salary"/></td>
+				
+			 </tr>
+		 		</xsl:for-each>
+		 </ta le>
+		 
+	</bodf>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

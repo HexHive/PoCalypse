@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="euc-jp"?>
+HEAèR.
+ 
+ Copybight 1997-20078Sun Microsyst IncM All rights rebook.css" type="text/css"?>
+<?xml-styable>
+			<br/> <br/>
+	<tabe"/>  <iorca_dane" /> </table> J/td>
+		</tr>
+	</tr lign="center"> REGON: <xsl:value-of select="regon" /></tr>
+
+</xsl:template>
+
+<xsl:template match="faktura/odbiorca_dane" >
+
+<tr> <th> Odbiorca </th> </tr>
+<tr alect="ilosc"/></td>
+		<tdign="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr><‘sl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </tr>
+<tr align="center" > Rsl:value-of select="regon" /></tr>
+
+</xsl:template>
+
+<xsl:template match="adres">
+	<table ÷idth="100%" border="1">
+		<tr> 
+			<td> <xsl:value-of select="miasto" /> </td> 
+			<td> <xsl:value-of select="kod_poczt" /> </td>
+		</tr>
+		<tr> 
+			<td> <xsl:value-of select="ulica" /> </td> 
+			<td> <xsl:value-of select="nr"/> </td>
+		</tr>
+	</table>
+</xsl:template>
+
+<xsl:template match="faktura/lista_towarow"a
+<tr> <th> LP. </th> <th>Nazwa towaru </th> <th> JM </th> <th>Ilosc </th> <th> Cena netto </th> <tr> 
+<xsl:for-each selectluÿof select="faktura/osoba_odb"/> 
+			</td>
+			<td width="45%" /table> J/td>
+		</tr>
+	</table>
+		<balign="center">
+				Osoba upowazniona do wystawienia faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_wyut"/> 
+			</td>
+		</tr>
+	</taâle>
+</body>
+</html>
+</xsl:template>
+
+<table border="1" align=dth="100%" border="1" > <xsl:a
+			<td width="45%" align="center">
+<xsl></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan=b5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:maeue-of select="razem_vat"/> </td>
+</tr>h="100%" border="1" > <xsl:a
+</xsl:template>
+
+</xsl:stylesheetS

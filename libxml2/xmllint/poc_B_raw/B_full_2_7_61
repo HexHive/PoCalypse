@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLma">
+
+<xsd:element name="main">
+<xsd:complexType>
+<xsd:sequence>
+	<xsd:element ref="kaseta"  minOccurs="1" maxOccurs="100"/>
+	<xsd:element ref="wypo"/>
+</xsd:sequence>
+</xsd:complexType>
+
+<xsd:key name="kluczKaseta">
+	<xsd:selector xpath="kaseta"/>
+	<xsd:field xpath="id"/>
+</xsd:key>
+
+<xsd:unique name="unikatKareta">
+	<xsd:selector xpath="kaseta"/>
+	<xsd:field xpath="tytul"/>
+</xsd:unique>
+
+<xsd:key name="kluczWypozycz">
+	<xsd:selector xpath="wypozyczenia"/>
+	<xsd:field xpath="ide"/>
+</xsd:key>
+
+<xsd:keyref name="idKaseta" refer="kluczKaseta">
+	<xsd:selector xpath="wypozyczenia"/>
+	<xsd:field xpath="ide"/>
+</xsd:keyref>
+
+
+
+</xsd:element>
+
+<xsd:element name="kaseta">
+<xsd:complexType>
+	<xsd:sequence>
+		<xsd:element name="tytul" type="xsd:string"/>
+		<xsd:element name="opis" type="xsd:string"/>
+		<xsd:element name="cena" type="xsd:integer"/>
+		<xsd:element name="id" type="xsd:integer"/>
+		<xsd:element name="rezyser" type="xsd:string"/>
+		<xsdeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeexsd:complexType>
+	<xsd:sequence>
+		<xsd:element name="dataw" type="xsd:string"/>
+		<xsd:element name="zwrot" type="xsd:string"/>
+		<xsd:element name="ide" type="xsd:integer"/>
+	</xsd:sequence>
+</xsd:complexType>
+</xsd:element>
+
+</xsd:schema>

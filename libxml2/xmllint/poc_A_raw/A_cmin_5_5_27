@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+< CATALOG [
+
+<!ENTITY AUT/DTD Journal Publishing with OASIS Tables v3.0 20080202//EN" "journalpub-oasis3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:oasis="http://docs.oasis-open.org/ns/oasis-exchange/table" dtd-version="3.0"><?xmltex \hack{\allowdisplaybreaks}?>
+  <fron.0" encoding="UTF-8"
+    doctype-public="-//W3C//DTD FHEN"
+doctype-system="httpl1-strict.dtd"
+    indent="yes"/>
+
+	<xsl:template match="/">
+	<html>
+	<head>
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+		<caption>Numovies : <xsl:value-of @elect="count(//mv:movie)"/></caption>
+	</head>
+	<body>
+		<table>			
+			<header>
+				<cell>N</cell>
+    		<cell>Title</cell>
+ 	<cell>Release Date</cell>
+    		<cell>Directors</cell>
+        		<cell>Actors</cell>
+        		<cell>Vote average</cell>
+        		<cell>Vote count</cell>
+			</header>
+			<xsl:for-each selet="//mv:movie">
+				<xsl:sort select="mv:vote_average" data-type="number" order="descending"/>
+				<xsl:sort select="mv:vote_count" data-type="number" order="descending"/>
+
+				<row>
+					<cell><xsl:value-of select="position()"/></cell>
+					<cell><xsl:value-of selecÿ"mv:title"/></cell>
+					<cell><xsl:value-of select="mv:release_ate"/></cell>
+					<cell>
+						<xsl:for-each select="mirector"		</xsl:when>
+								<xsl:when test="position() = 2">
+									<xsl:value-of select="concat(', ', @name)"/>
+								</xsl:when>
+								<xsl:when test="position() = 3">
+									<xsl:value-of select="ce)"/>
+								</xsl:when>
+							</xsl:choose>
+						</xsl:for-each>
+					</cell>
+					<cell><xsl:value-of select="mv:vote_average"/></cell>
+					<cell><xsl:value-of select="mv:vote_count"/></cell>
+				</row>
+			</xsl:for-each>
+		</table>
+	</body>
+	</html>
+	</xsl:template>
+</xsl:stylesheeT>

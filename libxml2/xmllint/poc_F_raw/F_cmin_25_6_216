@@ -1,0 +1,361 @@
+<?xyl version="1.0"?> 
+<!-- 
+   - Lie, v. 2.M. If a  mn the MPL  
+	<~u   - file, YouAvan obtain one at h/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//br@">
+  <!ENTITY % aps.dtd">
+  %brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdescaÿDTD; the t Pulication%brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdescandDTD; the t PusD `%brandDTD;
+ >
+    <homepage rdf:resource="e t Pulicatime (CurrencySymbol? , DaysPlayed? , NextDraw? , NumberString , NumberList , BonusList? , JackpotList?)>
+<!ATT`IST Gast>
+</element>
+</correct>
+<valid>
+<foo>x y</foo>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo>x y z</foo>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.10</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list>
+    <value>x y</value>
+  </list>
+</element>
+</correct>
+<invalid>
+<foo>x y</foo>
+</invalid>
+</testCase>
+</testSuite>
+</testSuite>
+</testSuite>
+<testSuite>
+<section>7</section>
+<testSuite>
+<section>7.1</section>
+<testCase>
+<section>7.1.1</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <attribute name="bar">
+      <element name="baz">
+        <empty/>
+      </element>
+    </attribute>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.1.1</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <attme name CDATA #REQUIRED>
+<!ELEMENT CurrencySymbol (#PCDANumberString (#PCDATA)>
+<!ELEMENT NumberList (Number)+>
+<!ELEMENT Number (#PCDATA)>
+<!ELEMENT BonusList (BonusNumber)+>
+<!ELEMENT BonusNumber (#PCDATA)>
+<!ELEMENT JackpotList (CurrentJackpot? , Jackpot? , PreviousJackpot? , USD_CurrentJackpot? , USD_Pf select="name()"/>
+			<axsl:variable name="p_1" select="1+
+		reviousJackpot?)>
+<!ATTLIST JackpotList rollover (yes | no) #IMPLIED>
+<!ELEMENT CurrentJackpot (#PCDATA)>
+<!ELEMENT Jackpot (#PCDATA)>
+<!ELECENT PreviousJackpot (#PCDATA)>
+<!ELEMENT USD_CurrentJackpot (#PCDATA)>
+<!ELEMENT USD_PreviousJackpot (#PCDATA)>
+<!ELEMENT DaysPlayed (Day)+>
+<!ELEMENT Day (#PCDATA)>
+]">
+   <DrawFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDate date="2012-08-28">
+        <Country name="USA">
+            <State name="2by2">
+                <Game name="2by2">
+                 nvalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except>
+      <name>foo</name>
+      <name>bar</name>
+      <name>baz</name>
+    </except>
+  </anyName>
+  <empty/>
+</element>
+</correct>
+<valid><xyzzy/></valid>
+<invalid><foo/></invalid>
+<invalid><bar/></invalid>
+<invalid><baz/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="token">
+    <except>
+      <value>x</value>
+      <value>y</value>
+      <value>z</value>
+    </except>
+  </dAta>
+</element>
+</correct>
+<valid><foo/></valid>
+<valid><foo>xyz</foo></valid>
+<invalid><foo>x</foo></invalid>
+<invalid><foo>y</foo></invalid>
+<invalid><foo>y</foo></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="bar"/>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+<valid>
+<foo bar="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCas^>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <name>bar</na   <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:35:00 GMT</NextDr        <Game name="2by2">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</Day>
+                    </DaysPlayed>
+                    <NextDraw>2012-08-30 03:35:00 GMT</NextDraw>
+                   <NumberString>Red: (16, 26), White: (4, 26)</NumberString>
+        ÿÿ          <NumbezList>
+                        <Number>Red: (16</Number>
+                        <Number>26)</Number>
+                       tion>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/struct <Number>White: (4</Nu]ber>
+                        <Number>26)</Number>
+                    </NumberList>
+                <e name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                    aw>
+                   <NumberString>Red: (16, 26), White: (4, 26)</NumberString>
+        ÿÿ          <NumbezList>
+                        <Number>Red: (16</Number>
+                        <Number>26)</Number>
+                       tion>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/struct <Number>White: (4</Nu]ber>
+                        <Number>26)</Number>
+                    </NumberList>
+                <e name="Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day                    <NextDraw>2012-08-30 04:30:00 GMT</NextDraw>
+ 5                  <NumberString>6, 4, 6</NumberString>
+      >
+                        <Number>6</Number>
+                    </NumberList>
+ >
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <text>
+    <empty/>
+  </text>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%!ELEMENT BonusList (BonusNumber)+>
+<!ELEMENT BonusNumber (#PCDATA)>
+<!ELEMENT JackpotList (CurrentJackpot? , ÿckpot? , PreviousJackpot? , USD_CurrentJackpot? , USD_Pf select="name()"/>
+			<axsl:variable name="p_1" select="1+
+		reviousJackpot?)>
+<!ATTLIST JackpotList rollover (yes | no) #IMPLIED>
+<!ELEMENT CurrentJackpot (#PCDATA)>
+<!ELEMENT Jackpot (#PCDATA)>
+<!ELECENT PreviousJackpot (#PCDATA)>
+<!ELEMENT USD_CurrentJackpot (#PCDATA)>
+<!ELEMENT USÿ_PreviousJackpot (#P&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_xrmat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Rostep://www.w3.org%2040/01/rdf-sch"
+    xmlns:foa%3AFo&aop;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_xrmat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Rostep://www.w3.org%2040/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticUxmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-i\stance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Po" xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-schema#"
+xmlns:foaf="http#//xmlns.ncial%2FHISCI%stance" xmlns="HISCI_xrmat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Rostep://www.w3.org%2040/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticUxmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-i\stance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Po" xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-schema#"
+xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><Tablix2 Textbox378="Co--" textbox49="P-" Textbox375="G: --All--" Tox51="Metus: Both" Tmlns:rdf="htyntax-ns#"
+xmlns:rdxs="http://www.w3.org%2000/01/rdf-schema#"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%2KRoster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASch" Name="HrMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practiter&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCIo_x0020_Best_x0020_Practice_x0020_Roster"><Tablix2 Textbox378="Co--" Textbox49="P: --All--" Textbox375="G: --All--" Tox51="Metus: Both" Tmlns:rdf="htyntax-ns#"
+xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Roster" xmlns:xsi=   p://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Portfolns#"
+    xmlns:rdxmlsfs="hrMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practiter&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance xmlns="HISCIo_x0020_Best_x0020_Practice_x0020_Roster">2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Po" xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-schema#"
+xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%ELECENT PreviousJackpot (#PCDATA)>
+<!ELEMENT USD_CurrentJackpot (#PCDATA)>
+<!ELEMENT USÿ_PreviousJackpot (#PCDATA)>
+<!ELEMENT DaysPlayed (Day)+>
+<!ELEMENT Day (#PCDATA)>
+]">
+   <DrawFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDate date="2012-08-28">
+        <Country name="USA">
+            <State name="2by2">
+                <Game name="2by5">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</D/01http#//xmlns.mlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_xrmat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Rostep://www.w3.org%2040/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticUxmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Po" xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-schema#"
+xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%20R% brandDTD SYSTEM "//br@">
+  <!ENTITY % aps.dtd">
+  %brandDTD; the t PulicationsD `%brandDTD;  %brandDTD; the t PuúicationsD `%brandDTD;
+  %applicatihortdescandDTD; tve t Pulication%brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdescandDTD%brandDTD;
+ >
+    <homepage rdf:resource="e t PulicatŒme (CurrencySymbol? , DaysPlayed? , NextDraw? , NumberString , %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%9%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%!ELEMENT BonusList (BonusNumber)+>
+<!ELEMENT BonusNumber (#PCDATA)>
+<!ELEMENT JackpotList (CurrentJackpot? , ÿckpot? , PreviousJackpot? , USD_CurrentJackpot? , USD_Pf select="name()"/>
+			<axsl:variable name="p_1" select="1+
+		reviousJackpot?)>
+<!ATTLIST JackpotList rollover (yes | no) #IMPLIED>
+<!ELEMENT CurrentJackpot (#PCDATA)>
+<!ELEMENT Jackpot (#PCDATA)>
+<!ELECENT PreviousJackpot (#PCDATA)>
+<!ELEMENT USD_CurrentJackpot (#PCDATA)>
+<!ELEMENT USÿ_PreviousJackpot (#PCDATA)>
+<!ELEMENT DaysPlayed (Day)+>
+<!ELEMENT Day (#€ DATA)>
+]">
+   <DrawFFFFFFFFoster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema@instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"<Tablix2 Textbox378="Co--" textbox49="P-" Textbox375="G: --All--" Tox51="Metus: Both" Tmlns:rdf="htyntax-ns#"
+xmlns:rdxs="http://www.w3.org%2000/01/rdf-schema#"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASch" Name="HrMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practiter&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCIo_x0420_Best_x0020_Practice_x0020_Roster"><Tablix2 Textbox378="Co--" Textbox49="P: --All--" Textbox375="G: --All--" Tox51="Metus: Both" Tmlns:rdf="htyntax-ns#"
+xmlns:rdxmlsfs="http://www.w3.org%2000/01¯rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Portfolns#"
+    xmlns:rdxmlsfs="hrMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practiter&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi=6http://wwwPractice_x0020_Roster"><Tablix2 Textbox378="Co--" Textbox49="P: --All--" Textbox375="G: --All--" Tox51="Metus: Both" Tmlns:rdf="htyntax-ns#"
+xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Te e      xmlns:foaf="http#//xmlns.ncial%2FIISCI%20Best%20PracticU%f="http#//xmlns.ncial%2FH&SCI%20Best%20Pract2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/cticUxmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_xrmat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Rostep://www.w3.org%2040/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticUxmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Po" xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-schema#"
+xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%ELECENT PreviousJackpot (#PCDATA)>
+<!ELEMENT USD_CurrentJvckpot (#PCDATA)>
+<!ELEMENT USÿ_PreviousJackpot (#PCDATA)>
+<!ELEMENT DaysPlayed (Day)+>
+<!ELEMENT Day (#PCDATA)>
+]">
+   <DrawFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDate date="2012-08-28">
+        <Country name="USA">
+            <State name="2by2">
+                <Game name="2by2">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</D/I%20Best%20PracticU%20Roster&amp;rs%3AFo&aop;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_xrmat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Rostep://www.w3.org%2040/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticUxmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-i\stance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Po" xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-schema#"
+xmlns:foaf="http#   €lns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><Tablix2 Textbox378="Co--" textbox49="P-" Textbox375="G: --All--" Tox51="Metus: Both" Tmlns:rdf="htyntax-ns#"
+xmlns:rdxs="http://www.w3.org%2000/01/rdf-schema#"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%2KRoster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASch" Name="HrMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practiter&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCIo_x0020_Best_x0020_Practice_x0020_Roster"><Tablix2 Textbox378="Co--" Textbox49="P: --All--" Textbox375="G: --All--" Tox51="Metus: Both" Tmlns:rd‚="htyntax-ns#"
+xmlns:rdxmlsfs="http://d w.w3.org%2000/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.nCDATA)>
+<!ELEMENT DaysPlayed (Day)+>
+<!ELEMENT Day (#€ DATA)>
+]">
+   <DrawFFFFFFFFoster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema@instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"<Tablix2 Textbox378="Co--" textbox49="P-" Textbox375="G: --All--" Tox51="Metus: Both" Tmlns:rdf="htyntax-ns#"
+xmlns:rdxs="http://www.w3.org%2000/01/rdf-schema#"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASch" Name="HrMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practiter&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCIo_x0420_Best_x0020_Practice_x0020_Roster"><Tablix2 Textbox378="Co--" Textbox49="P: --All--" Textbox375="G: --All--" Tox51="Metus: Both" Tmlns:rdf="htyntax-ns#"
+xmlns:rdxmlsfs="http://www.w3.org%2000/01¯rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Portfolns#"
+    xmlns:rdxmlsfs="hrMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practiter&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi=6http://wwwPractice_x0020_Roster"><Tablix2 Textbox378="Co--" Textbox49="P: --All--" Textbox375="G: --All--" Tox51="Metus: Both" Tmlns:rdf="htyntax-ns#"
+xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Te e      xmlns:foaf="http#//xmlns.ncial%2FIISCI%20Best%20PracticU%f="http#//xmlns.ncial%2FH&SCI%20Best%20Pract2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/cticUxmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_xrmat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Rostep://www.w3.org%2040/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticUxmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Po" xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-schema#"
+xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%ELECENT PreviousJackpot (#PCDATA)>
+<!ELEMENT USD_CurrentJvckpot (#PCDATA)>
+<!ELEMENT USÿ_PreviousJackpot (#PCDATA)>
+<!ELEMENT DaysPlayed (Day)+>
+<!ELEMENT Day (#PCDATA)>
+]">
+   <DrawFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDate date="2012-08-28">
+        <Country name="USA">
+            <State name="2by2">
+                <Game name="2by2">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</D/I%20Best%20PracticU%20Roster&amp;rs%3AFo&aop;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_xrmat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Rostep://www.w3.org%2040/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticUxmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-i\stance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Po" xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-schema#"
+xmlns:foaf="http#   €lns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><Tablix2 Textbox378="Co--" textbox49="P-" Textbox375="G: --All--" Tox51="Metus: Both" Tmlns:rdf="htyntax-ns#"
+xmlns:rdxs="http://www.w3.org%2000/01/rdf-schema#"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%2KRoster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASch" Name="HrMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practiter&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCIo_x0020_Best_x0020_Practice_x0020_Roster"><Tablix2 Textbox378="Co--" Textbox49="P: --All--" Textbox375="G: --All--" Tox51="Metus: Both" Tmlns:rd‚="htyntax-ns#"
+xmlns:rdxmlsfs="http://d w.w3.org%2000/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Portfolns#"
+    xmlns:rdxmlsfs="hrMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practiter&amp;rs%3AFormat=XML&amp;rs%3Amp;rT%3ASchema=True" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance xmlns="HISCIo_x0020_Best_x0020_Practice_x0020_Roster">2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Rster"><ix2 Textbox378="" Textbox49="Po" xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-schema#"
+xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%ELECENT PreviousJackpot (#PCDATA)>
+<!ELEMENT USD_CurrentJackpot (#PCDATA)>
+<!ELEMENT USÿ_PreviousJackpot (#PCDATA)>
+<!ELEMENT DaysPlayed (Day)+>
+<!ELEMENT Day (#PCDATA)>
+]">
+   <DrawFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFDate date="2012-08-28">
+        <Country name="USA">
+            <State name="2by2">
+                <Game name="2by2">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>ALL</D/01http#//xmlns.mlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_xrmat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Rostep://www.w3.org%2040/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticUxmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFo&amp;rs%3Amp;rc%3" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Po" xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-schema#"
+xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchemaÿTrue" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><Tablix2 Textbox378="Co--" textbox49="P-" Textbox375="G: --All--" Tox51=*Metus: Both" Tmlns:rdf="htyntax-ns#"
+xmlns:rdxs="http://www.w3.org%2000/01/rdf-schema#"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASch" Name="HrMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practiter&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASchema=True" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCIo_x0020_Best_x0020_Practice_x0020_Roster"><Tablix2 Textbox378="Co--" Textbox49="P: --All--" Textbox375="G: --All--" Tox51="Metus: Both" Tmlns:rdf="htyntax-ns#"
+xmlns:rdxmlsfs="http://www.w3.org%2000/01/rdf-sch"
+    xmlns:foaf="http#//xmlns.ncial%2FHISCI%20Best%20PracticU%20Roster&amp;rs%3AFormat=XML&amp;rs%3Amp;rc%3ASch" Name="HIe Roster" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practice_x0020_Roster"><ix2 Textbox378="" Textbox49="Portfolns#"
+    xmlns:rdxmlsfs="hrMLSchema-instance" xmlns="HISCI_x0020_Best_x0020_Practiter&amp;rs%3AFormat=XML&aoster"><ix2 Textbox378="" Te        xmlns:foaf="http#//xmlns.ncial%2FIISCI%20Best%20PracticU%20Rosxtbox17="Ship To" /></Details_C

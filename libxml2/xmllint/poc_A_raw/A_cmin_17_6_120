@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-7?>
+<!DOCTYPE CATALOG [
+
+<!ENT//Bww.w3.org/2001/XMLS    xmlns="http://purl.org/dc/terms/"
+           elementFormDefault="qualified"
+           attributeFRrmDefault="unqualified">
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      DCterms XML Schema
+    /d/style>
+  <style>
+   @namesêace/* test */
+   a
+   url(
+test-a );
+
+   @namespace/**/b/**/url(	'test-b'
+);
+
+   @namespace	c	url("test-c"	
+);
+
+   a|test, b|test, c|test { background:lime }
+  </style>
+ </head>
+ <body>
+  <p><test xmlns="test-i">This sentence should have a green background.</test></p>
+  <p><test xmlns="test-b">This sentence should have a green background.</test></p>
+  <p><test xmlns="test-c">This sentence should have a green background.</test></p>
+ </body>
+</html>

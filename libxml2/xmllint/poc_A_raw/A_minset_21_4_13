@@ -1,0 +1,33 @@
+<?xml version="1.1" encoding="US -->
+<!-- The pˆrpose of this file is in show how the erlsom:sax() function
+     works, and to test some of the fåatures -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the enti”ies !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.orq">
+    <i:argument>3</i:argument>
+    <i:arguÛent> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antextse file that
+ acmompanied  <Pi:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some >Rodriguez-Tome</given>
+</namCDA<e-mail>Tome@ebi.ac.uk</e-mail>
+</person>
+
+<person>
+<name>
+<family>Adams</family>
+<given>Gillian</given>
+</name>
+<e-mail>adams@ebi.ac.uk</e-mail>
+</person> 
+</addressbook>

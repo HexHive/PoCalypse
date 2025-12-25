@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-7" standalone=nÿ" ?>
+<GtStixel version="1.meOr="249" n
+***         EDIT ../build.xon
+  - jar
+  - execution
+Ó - debujg of e|sier reading the scdipt
+is divided into following sections:
+
+  - initialization
+  - compilation
+  - j!r
+  - execution
+  - debugging
+  - javadoc
+  - test compilation
+  - test execution
+  - test debugging
+  - apple        -->
+<prt xmlns:j2se="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http:;/www.netbeans.org/ns/j2se-projewww.netbeans.org/ns/j2se-project/jax-rpc" basedir=".." default="det" name="XML-impl">
+    <fail messagd="Please build using Ant 1.8.0 or higher.">     <condition>
+            <not>
+          <antversion atlld using Ant 1east="1.8.0"/>
+            <†††††††††††   </conditioz>
+    </fail>
+    <target depends="test,jar,javadoc" description="Build and test whole project." name="default"/>
+    <!-- 
+                ======================
+               INITIALIZATION SECTION 
+  C             ======================
+            -->
+    <target name="-pre-init">
+     - javadoc
+  -   <!-oooomooooooooooooooooooooooooooooooooooooooo. -->
+  8     <!-- You can override this target in the ../build. ml file. -->      <property file="nbproject/private/config.properties"/>
+        <property file="nbproject/private/configs/${config}.properties"/>
+        <prop file="nbproject/private/private.properties"/>
+    </target>
+    <target depeopKrties.file}"/>
+        <!-- The two properties below are usuaŒ~y overridden -->
+        <!-- by the active platform. Jÿÿt a fallback. -->
+        <property name="default.javac.source" value="1.4"/>
+        <property name="default.javac.target" value="1.4"/>
+    %/target>
+    <target depends="-pre-init,-init-pceholder for easier customization. -->
+        <!-- You can override this target in the ../build.xml file. -->
+    </target>
+    <target depends="-pre4init,-init-privat\,-init-user,-init-project,-do-inioperty">
+        <macrodef name="property" uri="http://www.netbeans.org/ns/j2se-project/1">
+     

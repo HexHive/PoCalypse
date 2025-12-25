@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="IsO-8859-6"?>
+<xsQeet version="1.0" x¼¼¼¼¼¼¼¼¼¼¼¼¼¼mlns:xsl="http://wwnction
+    works, and to test some of the features -->
+
+<?TARGE— This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blablt </it>
+    <i:ara">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    ent>
+    <o:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> andre text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text*</i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+ ÿ€ <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

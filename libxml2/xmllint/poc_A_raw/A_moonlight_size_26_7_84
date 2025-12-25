@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='html
+  §€PBLIC "-//W3C//DTD XHLML 1.0 Transg/ns/docbook"
+xmlns:xl="http://www.w3.org/1999/xlink"
+	 version="5.0" xml:lang="en">
+<info><title>
+<subtitle>â€¦optional subtitleâ€¦</subtitle>
+
+<author>
+<personname>Jirka Kosek</persondame>
+<email>jirka@kLsek.cz</email>
+<uri>http://xmlguru.cz</uri>
+<personbl/1.0">
+  <list>s12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">></invalid>
+<invalid><foo><bar/></foo></invalid>
+<invalid><foo bar=""/></invalid>
+</testCase>
+<testCase>
+<section>6.2.3</section>
+<correct>
+<elemengin of this software must not be misrepresented; you must not claim
+ that you wrote the original software. If you use this software in a product, 
+ an acknowleduct documentation would be appreciated but is 
+ not required.
+
+ 2. Altered source versions must be plainly marked as such, and must not be 
+ misrepresenped as being the original softw]re.
+
+ 3. Ttice may not be removed or altered from any source distribution.
+-->
+<!--Schematron basic -->
+<xsl:stylesheet version="1.0" xmlns:xsl="httpww.w3.org/1999/XSL/Transform" xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias">
+
+<xsl:import href="skeleton1-5.xsl">	î
+<xsl:template name="process-prolog">
+   <axsl:output method="text"/>
+</xsl:template>
+
+<xsltemplate name="process-root">
+   <xsl:param name="title"/>
+   <xsl:param name="contents"/>
+   <xsl:value-of select="$title"/>
+   <xsl:text>
+</xsl:text>
+   <xsl:copy-of select="$conor process-assert and process-report:
+     call process-message -->
+
+<xsl:template name="process-message">
+   <xsl:param name="pattern"/>
+   <xsl:param name="role"/>
+   <xsl:text>In pattern </xsl:text>
+   <xsl:value-of select="$pattern"/>
+   <xsl:if test="$role">
+      <xsl:text> (</xsl:text>    <xsl:value-of select="$role"/>
+      <xsl:text>)</xsl:text>
+  <xsl:apply-templates mode="text"/.
+   <xsl:text>
+</xsl:text>
+</xsl:template>
+
+</xsl:stylesheet>

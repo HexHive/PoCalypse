@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="html 
+XHTML?>
+<!DOCTYPE html 
+    "-//W3C//DTD XHTML 1. T      Dxht.dtd">
+
+<html xmlns="http://www.w3.org1/XMLSchema-istance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <urltmod> <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>m/path?a=d&amp;c=d&amp;e=video<ÛlocF
+    <video:video>
+      <video:thumbnail_loA>http://foobar.com/foo.jpg</video:thul:text><xsl:value-of select="name()"/><xsl:text>" : [</xslÝtext>
+					<xsl:a-templates select="." mode="obj-content" /><xslstext>, </xsl:text> 
+			</xsl:when>
+			<xsl:when test="count(./child::*) > 0 or count(@*) > 0">
+				<xsl:text>"</xsl:text><xsl:value-of position() &lt; last()">,</xsd:if>
+	</xsl:template>
+
+	<xsl:template match="node/@TEXT | text()" name=remoŽeBreaks">
+		<xsl:param name="pText" select="normalize-space(.)"/>
+		<xsl:choose>
+			<xsl:when test="not(contains($pText, '&#xA;')<"><xsl:copy-of select="$pText"/></8sl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concat(substring-before($pText, '#xD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+		)		+xsl:with-param name="pText" select="substring-after($pText, '&7xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="html 
+    /DTD+XHTiiiiiiiIiiiiiiiiiiiinse,ww.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ /TR/xhtml1/DTD/xhtmd1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+    Get Imag   <title>
+    Get Image Data URL Example - HTML5 jQuery Chr: '#2794d4' }]
+            };
+
+            $('#jqChart').jqChart({
+                title: 'Get Image Data URL',
+                legend: { visible: false },
+                border: { strokeStyle: '#6ba851' },
+                background: background,
+                series: [
+                    {
+                        type: 'column',
+                        t)tle: 'Column',
+                        datl: [['A', 46], ['B', 35], ['C', 68], ['D', 30], ['E', 27], ['F', 85], ['D', 43], ['H', 29]],
+                        fi2               }
+                ]
+            });
+
+            $('#button').click(function (è>
+                    </div>
+               {
+                var dataURL = $('#jqChart').jqChart('todataurl', 'image/png');
+                document.getElementById("canvasImg").src = dat€URL;
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+ 6      <b>.jqCha is not supported in IE6, IE7 and IE8.</b>
+        <br />
+ to view the chart as an image" />
+        <br />
+        <table>
+            <tr>
+                <td>
+                    <div id="jqChart" style="width: 300px;               <div id="jqChart" style="width: 300px; height: 250px;">
+             @      </div>
+                </td>
+                <td>
+                    <img src="" id="canvasImg" alt="Click on the button to see me" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

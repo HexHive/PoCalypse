@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="us��sc>
+
+<!="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.w3schools.com" xmlns="http://www.w3schools.com" elementFormDefault="qualified">
+	<xs:element name="QuanLySinhVien">
+		<xs:complexType>
+			<x�:sequence>
+				<!-- Thông tin sinh viên -->
+				<xs:element name="SinhVien">	
+					<xs:complexType>
+						<xs:sequence>
+						
+						<xs:element name="MaSV">
+						  <xs:simpleType>
+							<xs:restriction base="xs:string">
+							  <xs:pattern value="[A-Z][0-9]{2}"/>
+							</xs:restriction>
+						  </xs:simpleType>
+						</xs:element>
+						
+						<xs:element name="HoSV" type="xs:string"/>
+						
+						<xs:element name="TenSV" type="xs:string"/>
+						
+						<xs:element name="Phai">
+						  <xs:simpleType>
+							<xs:restriction base="xs:string">
+xs:string"/>
+						
+						<xs:							  <!-- <xs:enumeration value="Nam"/>
+							  <xs:enumeration value="Nữ"/> -->
+							   <xs:pattern value="Nam|Nữ"/>
+							</xs:restriction>
+						  </xs:simpleType>
+						</xs:element>
+						
+						<xs:element name="NgaySinh" type="xs:date"/>
+						
+						<xs:element name="NoiSinh" type="xs:string"/>
+						
+						<xs:element name="MaKhoa">
+						  <xs:simpleType>
+							<xs:restriction base="xs:string">
+							  <xs:pattern value="[A-Z]{2}"/>
+							</xs:restriction>
+						  </xs:simpleType>
+						</xs:element>
+						
+						<xs:element name="HocBong" type="xs:positiveInteger"/>
+						
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- End thông tin sinh viên -->
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

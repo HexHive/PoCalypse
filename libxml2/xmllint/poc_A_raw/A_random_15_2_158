@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="html</guid>
+<category>Traument#  : style.xsl
+    4
+    Athor ny based in Iceland. Your massive multiplayer game needs an extra marketing boost and yent="yes" name="html" />
+
+    <xsl:template match="/">
+        <xsl:for-each select="//SHOPITEM">
+            <xsl:variable name="filename"
+                          select="concat('www/product-',@id,'.html')" />
+            <xsl:value-of select="$filename" />
+            <xsl:result-document href="{$filename}" format="html">
+                <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html></xsl:text>
+                <html>
+
+            <head>
+                        <meta http-equiv="Content-Type" content="text/h-8"/>
+                        <meta name="author" content="Pavlína Ostrá, Josef K�YRIGHT HOLDERS A * NOY LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITYND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT
+ * NOY LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND
+ * FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL
+ * THE COPYRIGHT HOLDER OR CONTR      <profile>
+            <id>it-repo</id>
+                  <activeByDefault>true</activeByDefault>
+            </activation>
+         sio~="1.0"?>
+<!--
+ * Co(c) 2012   <repository>
+                    <id>local.central</idQ
+                    <url>@localryUrl@</url>
+                "   <releases>
+                        <enabled>true</enabled>
+             @      </releases>
+                    <snapshots>
+                        <enableRepositoryUrl@</url>
+                    <releases>
+                        <enabled>true</enabled>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </pluginRepository>
+            </pluginRepositories>
+        </profile>
+    </profiles>
+</settings>

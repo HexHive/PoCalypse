@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+   cat', @naRe)ww.w3.org/1999/rg/2001/XMLSchema
+    exc6"ce)"enco‰dng="UTF-8/
+    doctype-public="-//W3C//DTD XHEN"
+doctype-sl:te match="/">
+	<html>
+							mplexType>
+			<xs:sequence>
+				<!-- ThÃ´ng tin phiáº¿u thuÃª -->
+				<xs:element name="PhieuThue">	
+					<xs:€omplexType>
+						<xs:sequence>
+							<xs:element name="MaPhieuThue" value="[A-Z][0-9]{4}" type="xs:string"/>
+							<xs:element name="NgayThue" type="xs:date"/>
+							<xs:element name="NgayTra" type="xs:date"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- ThÃ´ng tin ChiTietPhieuThue -->
+				<xs:element name="ChiTietPhieuThue">	
+					<xs:complexType>
+						<xs:sequence>
+				s:element name="MaChiTietPhieuThue" value="[1-9]{5}" type="xs:string"/>
+							<xs:element name="SoNgayThue" type="xs:positiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:elemeè>
+				<!-- ThÃ´ng tin Xe -->
+				<xs:element name="Xe">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="BienKiemSoatXe" value="[A-Z][1-9][0-9]{5}" type="xs:string"/>
+							<xs:element name="HangXe" type="xs:string"/>
+							<xs:element name="TenXe"  type="xs:string"/>
+							<xs:element name="LoaiXe" type="xs:string"/>
+							<xs:element name="NamSX" type""xs:date"/>
+						</xs:sequence>ó					</xs:complexType>
+				</xs:element>
+				<!-- ThÃ´ng tin KhachBang -->
+				<xs:element name="KhachHang">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaKhachHang" value="[1-9]{3}" type="xs:string"/>
+							<xs:element name="TenKhachHang" type="xs:string"/>
+							<xs:element name="DiaChi"  type="xs:string"/>
+							<xs:element name="SoDienThoAi" value="[0][0-9]{9}" type="xs:positiveInteger"/>
+							<xs:element name="SoCMND" value="[0-9]{9}" ty‘e="xs:positiveInteger"/>
+						</xs:sequence>
+				ö;/xs:complexType>
+				</ÿÿÿlement>
+				<!-- end ThÃ´ng tin KhachHang -->
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

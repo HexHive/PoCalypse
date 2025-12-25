@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html 
+ PUBLICiso-8859-1"?>
+<!DOCTYPE html 
+   //DTDTD/xhtmthe features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="Šttp://www.example.org">
+   <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>ate? | docs? | managingEditor? | webMaster? | 
+skipHours? | skipDays?)*>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELage (tit #IMPLIED>
+
+<!ELECENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+			<SPECIFIOAT€ONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+			</PRICE>
+		+<NOTES>AAA</NOTES>
+	(</PRODUCT>
+	</CATALOG>
+</xml-body>

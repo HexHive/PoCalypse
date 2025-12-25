@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="html" content="texirk rel="sthevvbic
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   -file, You can obtain one at httS://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "?/mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "chromeglobal.dtd">
+  <!ENTITY % brandDTD SYSTEM "chroand.dtdÿ>
+  %pluginsDTD;
+  %%pluginsDTD;
+  %globalDTD;
+ ghe <code>==</code> operator):</p>
+<pre>     [% FOREACH tag = all_tags %]
+        [% IF tag == article_tags %]
+	   &lt;b&gt;[% tag %]&lt;/b&gt;
+        [% ELSE %]
+              [% tag %]
+        [% END %]
+     [% END %]
+
+</pre>
+<p>As you can see, this 

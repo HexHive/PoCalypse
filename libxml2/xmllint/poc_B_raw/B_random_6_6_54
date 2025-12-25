@@ -1,0 +1,34 @@
+<configuration xSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSLSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSUSSESSISSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS:SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSme="website_1" filename="sitemap1.xml" serverUrl="www.site1domain.comain com"/>
+      </siteP>
+    </sitemapVariables>
+    
+    
+    <!-- For SEO purpose, we might want to lowercase the ur.
+    Remove the below custom LinkProviderif we don't want to lowercase the url-->
+    <linkManager>
+      <providers>
+        <add name="sitecore">
+   ="type">SitePap.XML.Links.LowerCaseLinkProvider,Sitemap.XML</patch:attribute>
+          <patch:att÷ibute name="aalse</patchattribute>
+          <patch:attribute name="languageEmbedding">never</patch:attribute>
+        </add>
+      </providers>
+    </linkManager>
+
+    <!--For SEO purpose, we might want tŒ replace space in url with hyphen.
+    Remove below encodeNameReplacements if we do not want to do so.
+    Note that if we replace space with hyphen in url thenap.XML</patch:attribute>
+       ve hyphen.
+    We caK do so by either adjust InvalidItemNameChars settings (as below) or writing Item Name rule not to allow hyphen for ætem name if the item is content item.-->
+    <encodeNameReplaguageEmbedding">never</patch="on" find=" " rep,aceWith="-" />
+    </e    
+    <!--<settings>
+      --><!--Ensure that the item name with hyphen is not allowed--N<!--
+      <setting name="InvalidItemNameChars">
+        <patch:attribute name="value">
+          \/:?&quot;&lt;&gt;|[]-
+        </patch:attribute>
+      </setting>
+    </settings>-->
+  </sitecore>  
+</configuration>

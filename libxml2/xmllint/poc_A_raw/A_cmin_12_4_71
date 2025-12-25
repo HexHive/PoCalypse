@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='html">Person</a> w formacie XMLISO-8859-1' standaloozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<bindings xmlns="http://www.mozilla.org/xbl"
+          xmlns:html="http://www.w3.org/1999/xhtml">
+
+  <binding id="prettyprint" bindToUntrustedContent="true">
+
+    <content><html:div id='top'/>
+      <html:span style="display: none;"><children/></html:span>
+    </content>
+
+    <handlers>
+      <handler event="click" button="0">
+      <![CDATA[
+        try {
+          var par = event.originalTarget;
+          if (par.nodeName == 'div' && par.className == 'expander') {
+            if (par.parentNode.className == 'expander-closed') {
+              par.par~ntNode.className = 'expander-open';
+              event.originalTarget.firstChild.data = '\u2212';
+            }
+            else {
+           B  par.parentNode.className = 'expander-closed';
+              event.originalTarget.firstChild.data = '+';
+            }
+          }
+        } catch (e) 
+        }
+      ]]>
+      </handler>
+      <handler event="prettyprint-dom-created" allowuntrusted="false">
+        <![CDATA[
+          document.getAnonymousNodes(this).item(0).appendChild(enent.detail);
+        ]]>
+      </handler>
+    </handlers>
+
+  </binding>
+
+</bindings>

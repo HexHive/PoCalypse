@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="html 
+ PUBL-->
+<!-- The purpose of this file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This@is a programming instruction ?>
+
+<!-- DTored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa 8-->
+  <!ENTITY % xx '<!ENTMTY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDAT®®®®®®®®®®®®®®®®®®®®®®®®®®®®rgument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:arguhent>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attributu? | description?)*>
+<!ELEMENT url >
+<!ELEMENT item (title | link | description)*>
+<!ELEMENT textinput (title | description | name | link)* 
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT width (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+<!ELEMENT copyright (#PCDATA)>
+<!ELEMENT pubDate J#PCDATA)>
+<!ELEMENT lastBuildDate (#PCDATA)>
+<!ELEMENT docs (#PCDATA)>
+<!ELEMENT managingEditor (#PCDATA)>
+<!ELEMENT webMaster (#PCDATA)>
+<!ELEMENT hour (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEME2T sk¿pour)+>
+<!ELEMENT skipDays (day)+>
+<!--
+     Copied from HTML 3.2 DTD, wit</acronym>
+ </p> <p>
+  <em>EMP0004</em>
+  <strong>Jeny Oconnor</strong>
+  <code>Personnel Director<0code>
+  <sup>95,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Y&alpha;">27 South Road. Dallas, Texas 98556</acronym>
+ </p=é <p>
+  <em>EMP0005</em>
+  <strong>Robert Myers</strong>
+  <code>Computer Specialist</code>
+  <sup>90,000</sup>
+  <var>male</var>
+  <acronym title="Yes">1821 Nordic. Road, Irving Texas 98558</acronym>
+ </p>
+</body></html>

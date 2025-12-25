@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="html PUBLIC "@ Beta Skeleton Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.ht (c) 2000,2001 Rick Jelliffe and Academia Sinica rg/1	is a prograÿÿÿg instruction ?>
+
+<!-- DTD is ingored, eöööxcept for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">4>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argumententity: &lt; and some more taxt </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argƒment>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an emfty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

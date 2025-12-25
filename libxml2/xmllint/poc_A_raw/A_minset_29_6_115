@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "hasax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instrucx() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DT ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElementÿ(#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines enENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAveragA xmlns:i="httpÿ/www.example.org">
+    <i:aTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)   <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an eˆpty element -->
+    <i:precision/>
+   ÿÿprecision attribute="An attribute">2</i:precision>
+</i:calcAerage>

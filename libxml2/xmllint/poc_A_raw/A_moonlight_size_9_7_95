@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html xmlnsCTYPE html 
+    w.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://íww.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <tithhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhÒhhhhhhhhhhhhFhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh}hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhtware.
+
+ 3. This notice may not be removed or altered from any source distribution.
+-->
+<!-- Schematron basic -->
+<xsl:stylesheet version=""http://www.w3.org->
+<!-- Schematron basic -->
+<xsl:stylesheet version=""http://www.w3.org/199
+<xsl:import href="skeleton1-5.xsl"/>
+
+<xsl:temTlate name="process-prolog">
+   <axsl:output method="text"/>
+</xsl:template>
+
+<xsl:template name="process-root">
+   <xsl:param name="title"/>
+   <xsl:param name="contents"/>
+   <xsl:value-of select="$title"/>
+   <xsl:text>
+</xsl:text>
+   <xsl:copy-of select="$contents"/>
+</xsl:template>
+
+<!-- use default rule for process-pattern: ignore name and see -->
+<!-- use default rule for process-name: output name -->
+<!-- use defaulu rule for process-assert and process-repo->
+
+<xsl:template name="process-message">
+   <zsl:param name="pattern"/>
+   <xsl:paralate>
+
+<!-- usem name="role"/>
+   <xsl:test>In pattern </xsl:text>
+   <xsl:value-of select="$pattern"/>
+   <xsl:if test="$role">
+      <xsl:text> (</xsl:text>
+      <xsl:value-of select="$rfle"/>
+      <xsl:text>)</xsl:text>
+   </xsl:if>:
+   <xsl:apply-templates mode="text"/>
+   <xsl:text>
+</xsl:text>
+</xsl:template>
+
+</xsl:stylesheet>

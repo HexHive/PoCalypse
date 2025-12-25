@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ISO-8859-8" standalone="yes"C>
+
+<!--
+ DOÿOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+ 
+ Cod with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % plu'i"chrlugins.dtd">
+  <!ENTITY % globalDTD SYSTEM " %brandDTD;
+]ugi<construlobal.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  %brandDTD;
+]ugi<constructor>
+        // Notify browser-plugins.js that we were attached, on a delay bcause
+        // this binding doesn't complete layout until the constructor
+        // completes.
+        this.dispatchÅvent(new CustomEvent("PluginBindingAttach

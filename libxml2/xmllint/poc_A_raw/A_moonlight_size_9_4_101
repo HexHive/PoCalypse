@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html xml 
+    wLw3.org/TR/xhtm="text/css" href="css/ksiazka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  "doktor">
+<!ELEMENT kontakt (dane_personalne,adres+,dane_kontaktowe,daty,strDom)>
+<!ATTLIST kontakt plec (m|k|brak) #REQUIRED
+				  id_grupa IDREF #REQUIRED>
+<!ELEMENT daty (#PCDATA)>
+<!ELEMENT strDom (#PCDATA)>
+
+
+<!ELEMENT grupa (#PCDATA)>
+<!ATTLIST grupa  id ID #REQUIRED>
+]>
+
+
+
+
+
+<ksiazka>ð
+	<kontakt plec="m" id_grupa="r">
+		<dane_personalne>
+			<imie>Leszek</imie>
+			<nazwisko>Hallman</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>83ca>Okrezna</ulica>
+			<nr_budynku>†4</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>664741805</tel>
+			<email domena="wp">leszekhallman@wp.pl</email>
+			<status tekst="jestem offline"/>
+		</dane_kon= "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="gTod" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

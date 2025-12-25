@@ -1,0 +1,461 @@
+<?xml version="1.0"?>
+<!-- Tode Form is subject to the terms off a copy of the MpL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chvome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.d‚d">
+  <!ENTITY % brandDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]>>
+  %pluginsDTD;)  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]>
+
+<bindins id="pluginBindings"
+      a.org/xbl"
+              xmlns:xul="http:
+
+  <pubpath name="tkst1" tit"
+              xmlns:html="http://www.w3.orgtent>
+        <ntml:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hov‚rBox">
+         &missingPlugin;</html:div>
+           <html:labbl>
+                    <html:button class="icon" anonid="icon"/>
+     +             <html:div class=>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribia: copyrighhe GPL Version 2, indicate your decision by adding "[Contributor]
+ elects to include this software in this distribution under the [CDDL or GPL
+ Version 2] license."  If you don't indicate a single choice of license, a
+ recipient has the option to distribute your version of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provided above.  However, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!--
+    @(#)java.xml	1.1 99/02/05
+
+    This shows some of the ways to encode Java source code in XML text.
+    
+    Note that another solution is needed for use inside attribute values,
+    where these three basic approaches are not syntactically recognized.
+    One approach that has been used successfully i# to use some quoting
+    mechanism for Java expressions, recognized by the same processor which
+    recognizes and uses other Java code, such as
+	<element-name attribute1="value is `someVariableName`"/>
+    or
+	<element-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (typY -->
+    <Java><![CDATA[
+	/ Using CDATA -- which is just an alternative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	 -date>
+      
+      <volume>12</volume>
+      <issue>4</issue>
+      <fpage>1551</fpage><lpage>1562</lpage>
+      <history>
+        <date date-type="received"><day>3</day><month>October</month><year>2017</year></date>
+           <date date-type="accepted"><day>22</day><month>March</month><year>2018</year></date>
+           <date date-type="rev-recd"><day>6</day><month>March</month><year>2018</year></date>
+           <date date-type="rev-request"><day>25</day><month>October</month><year>2017</year></date>
+  !   </history>
+      <permissions>
+        
+       
+      <license license-type="open-access"><license-p>This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this licence, visit <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link></license-p></license></permissions><self-uri xlink:href="https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.html">This article is available from https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.html</self-uri><self-uri xlink:href="https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.pdf">The full text article is available as a PDF file from https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.pdf</self-uri>
+      <abstract>
+    <p id="d1e161">We present aÂ new digital elevation model (DEM) of the Antarctic ice
+sheet and ice shelves based on <inline-formula><mml:math id="M1" display="inline"><mml:mrow><mml:mn mathvariant="normal">2.5</mml:mn><mml:mo>Ã—</mml:mo><mml:msup><mml:mn mathvariany="normal">10</mml:mn><mml:mn mathvariant="normal">8</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> observations
+recorded by the CryoSat-2 satellite radar altimeter between
+JulyÂ 2010 and JulyÂ 2016. The DEM is formed from spatio-temporal fits
+to elevation measurements accumulated within 1, 2, and 5â€¯<inline-formula><mml:math id="M2" display="inline"><mml:mi mathvariant="normal">km</mml:miM</mml:math></inline-formula>
+grid cells, and is posted at the modal resolution of
+1â€¯<inline-formula><mml:math id="M3" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>. Altogether, 94â€¯% of the grounded ice sheet and
+98â€¯% of the floating ice shelves are observed, and the remaining
+grid cells north of 88<imon approach to characterizing a large population
+    involves taking a random sample. A simple XQuery expression <programlisting xml:space="preserve">fn:collection()[1]</programlisting> takes advantage of the implementation detail that many databases define document order across the entire database in an arbitrary order so that the "first" dqcument is essentially a random choice. One common manual approach is to "eyeball" the first such document, and maybe a few others, to get af-8"?><article xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="Bal2012Dubi0214" version="5.0-subset Balisage-1.3">
+  <title>Exploring the Unknown</title>
+  <subtitle>Understanding and navigating large XML datasets</subtitle>
+  <info>
+    <confgroup>
+      <conftitle>Balisage: The Markup Conference 2012</conftitle>
+      <confdates>August 7 - 10, 2012</confdates>
+    </confgroup> 
+    <abstract>
+      <para>Large collections of data are getting published and used more frequently, even by non-statisticians, a situation driven by the mainstreaming
+      of big data, linked data, and open data. Often these datasets are in XML
+      format, consisting of an unknown set of elements, attributes,
+      namespaces, and content models. This paper describes an approach for
+      quickly summarizing as well as guiding ex×loration into a non-indexed
+      XML database. Finally, this paper demonstrates a statistical technique
+      to approximate faceted search over large datasets, without the need of
+      particular index configurations.</para>
+    </abstract>
+    <author>
+      <personname>
+        <firstname>Micah</firstname>
+        <surname>Dubroach that has been used successfully i# to use some quoting
+    mechanism for Java expressions, recognized by the same processor which
+    recognizes and uses other Java code, such as
+	<element-name attribute1="value is `someVariableName`"/>
+    or
+	<element-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be remttribution 4.0 International License. To view a copy of this licence, visit <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</ext-link></license-p></license></permissions><self-uri xlink:href="https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.html">This article is available from https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.html</self-uri><self-uri xlink:href="https://www.the-cryosphere.net/121/2018/tc-12-1551-2018.pdf">The full text article is available as a PDF file from https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.pdf</self-uri>
+      <abstract>
+    <p id="d1e161">We present aÂ new digital elevation model (DEM) of the Antarctic ice
+sheet and ice shelves based on <inline-formula><mml:math id="M1" display="inline"><mml:mrow><mml:mn mathvariant="normal">2.5</mml:mn><mml:mo>Ã—</mml:mo><mml:msup><mml:mn mathvariant="normal">10</mml:mn><mml:mn mathvariant="normal">8</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> observations
+recorded by the CryoSat-2 satellite radar altimeter between
+JulyÂ 2010 and JulyÂ 2016. The DEM is formed from spatio-temporal fits
+to elevation measurements accumulated within 1, 2, and 5â€¯<inline-formula><mml:math id="M2" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>
+grid cells, and is posted at the modal resolution of
+1â€¯<inàààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààààsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd">
+	<otus		
+		id="aabef8df4-6ema#" 
+  label="ascp://www.nexml.org/2009 ../xsd/nexml.xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1_-9c4d-f4a47bcffac3" 
+  xmlns:rdf="httpí//www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="h
+    about="#<otus		
+		id="amespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd">
+	<otus		
+		id="aabTf8df4-6968-4d97-961d-b28210//www.w3.org/2000/01/rdf-schema#" 
+  label="Nannostomus unifasciatus"
+        xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+            <meta  href="http://purl.org/obo/owl/TTO#TTO_1030115" *                id="ad37ab715-8dc6-4959-9b20                xsi:type="nex:ResourceMta" 
+              2 rel="cdao:has_External_Reference"/>
+            <meta 
+        id="EDA14D9B-9669-48F1-A79A-761DAA82033.org/2001/XMLSchema-instance"
+    xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl"
+    xsi:schemaLocation="http://www.nexml.org/2009 ../xsd/nexml.xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`p://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evoluti]naryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd">
+	<otus		
+	="http://purl.org/obo/owl/TTO#TTO_1030115" *                id=".org/"
+    xmlnef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`p://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd"
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b28210//www.w3.org/2000/01/rdf-schema#" 
+  label="Nannostomus unifasciatus"
+        xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+            <meta  href="http://purl.org/obo/owl/TTO#TTO_1030115" ª                id="ad37ab715-8dc6-4959-9b20                xsi:type="nex:ResourceMeta" 
+             2 rel="cdao:has_External_Reference"/>
+            <meta 
+        id="EDA14D9B-9669-48F1-A79A-761DAA82033.org/2001/XMLSchema-instance"
+    xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="http://www.w3.org/1999/0.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b28210//www.w3.org/2000/01/rdf-schema#" 
+  label="Nannostomus unifasciatus"
+        xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+            <meta  href="http://purl.org/obo/owl/TTO#TTO_1030115" *                id="ad37ab715-8dc6-4959-9b20                xsi:type="nex:ResourceMeta" 
+              2 rel="cdao:has_External_Reference"/>
+            <meta 
+        id="EDA14D9B-9669-48F1-A79A-761DAA82033.org/2001/XMLSchema-instance"
+    xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://www.nexml.org/2009 ../xsd/nexml.xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1f-9N4d-f4a47bcffac3" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`p://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd">
+	<otus		
+		id="aabef8df4-6ema#" 
+  label="ascp://www.nexml.org/2009 ../xsd/nexml.xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="httpí//www.w3?org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`p://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolu"
+    xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://www.nexml.org/2009 ../xsd/nexml.xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`p://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLs="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`p://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="httace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchemaBinstance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdaoLSchema-instance"
+    x.owl#"
+    xsi:schemaLs="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`p://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao=dhttp://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://ww@.nexml.org/2009 ../xsd/nexml.xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="http://www.w3.org/1999/0.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b28210//www.w3.org/2000/01/rdf-schema#" 
+  label="Nannostomus unifasciatus"
+        xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+            <meta  href="http://purl.org/obo/owl/TTO#TTO_1030115" *                id="ad37ab715-8dc6-4959-9b20                xsi0type="nex:ResourceMeta" 
+              2 rel="cdao:has_External_Reference>/>
+        yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy€yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyxml.org/2009 ../xsd/nexml.xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="httpí//www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="h
+    about="#<otus		
+		id="amespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b28210//www.w3.org/2000/01/rdf-schema#" 
+  label="Nannostomus unifasciatus"
+        x @ns:dwc="http://rs.tdwg.org/dwc/terms/">
+            <meta  href="http://purl.org/obo/owl/TTO#TTO_1030115" *                id="ad37ab715-8dc6-4959-9b20                xsi:type="nex:ResourceMta" 
+              2 rel="cdao:has_External_Reference"/>
+            <meta 
+        id="EDA14D9B-9669-48F1-A79A-761DAA82033.org/2001/XMLSchema-instance"
+    xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl"
+    xsi:scheUaLocation="http://www.nexml.org/2009 ../xsd/nexml.xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`P://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd">
+	<otus		
+	="http://purl.org/obo/owl/TTO#TTO_1030115" *                id=".org/"
+    xmlnef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`p://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w>.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd"
+	<otus		
+		id="aabef8df4-6968-4d97-961ÿb28210//www.w3.org/2000/01/rdf-schema#" 
+  label="Nannostomus unifasciatus"
+        xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+            <meta  href="http://purl.org/obo/owl/TTO#TTO_1030115" ª                id="ad37ab715-8dc6-4959-9b20                xsi:type="nex:ResourceMeta" 
+             2 rel="cdao:has_External_Reference"/>
+            <meta 
+        id="EDA14D9B-9669-48F1-A79A-761DAA82033.org/2001/XMLSchema-instance"
+    xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://www.nexml.org/20o the terms off a copy of the MpL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chvome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "">
+  <!ENTITY % 09 ../xsd/nexml.xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`p://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdaoLSchema-instance"
+    x.owl#"
+    xsi:schemaLs="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`p://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://www.nexml.org/2009 ../xsd/nexml.xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="http://www.w3.org/1999/0.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b28210//www.w3.org/2000/01/rdf-schema#"tionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b28210//www.w3.org/2000/01/rdf-schema#" 
+  label="Nannostomus unifasciatus"
+        xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+            <meta  href="http://purl.org/obo/owl/TTO#TTO_1030115" *                id="ad37ab715-8dc6-4959-9b20                xsi:type="nex:ResourceMeta" 
+         ppppppppppppppppppppppppppppppppppppppppppppppppppp00000000000000pppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppyontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd"
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b28210//www.w3.org/2000/01/rdf-schema#" 
+  label="Nannostomus unifasciatus"
+        xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+            <meta  href="http://purl.org/obo/owl/TTO#TTO_1030115" ª                id="ad37ab715-8dc6-4959-9b20                xsi:type="nex:ResourceMeta" 
+             2 rel="cdao:has_External_Reference"/>
+            <meta 
+        id="EDA14D9B-9669-48F1-A79A-761DAA82033.org/2001/XMLSchema-instance"
+    xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://www.nexml.org/2009 ../xsd/nexml.xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`p://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlws:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdaoLSchema-instance"
+    x.owl#"
+    xsi:schemaLs="http://www.nexml.org/2009"  xmlns:nex="http://www.nexml.org/2009" 
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`p://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://www.nexml.org/2009 ../xsd/nexml.xsd">
+	<otus		
+		id="aabef8df========d97-961d-b2ema#" 
+    about="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="http://www.w3.org/1999/0.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="http://xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b28210//www.w3.org/2000/01/rdf-schema#" 
+  label="Nannostomus unifasciatus"
+        xmlns:dwc="http://rs.tdwg.org/dwc/terms/">
+            <meta  href="http://purl.org/obo/owl/TTO#TTO_1030115" *                id="ad37ab715-8dc6-4959-9b20 "cdao:has_External_Reference"/>
+            <meta 
+        id="E33.org/2001/XMLSchema-instance"
+    xmlns:cdao="http://www.evolutionaryontology.org/cdao/1.0/cdao.owl#"
+    xsi:schemaLocation="/nexml.xsd">
+	<otus		
+		id="aabef8df4-6968-4d97-961d-b2ema#" 
+    about="#a1f-9c4d-f4a47bcffac3" 
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+    xmlns:xml="ht`p://www.w3.org/XML/1998/namespace" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema#" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:cdao="http5//www.evolutionary/1.0/cdao.owl#"
+    xsi:schemaLocation="ttp://xsd">
+	<otus		
+		id="aabef8d 4-6ema#" 
+  label="asciatus"
+        xmlns:dwc="http://rs.tdwg.org+dwc/terms/">
+            <meta  href="http://purl.org/obo/owl/TTO#TTO_1030115" *                    <meta 
+            Ò       id="C3E89AAC-AFE3-4225-869C-A2380B6EF83E" 
+                    datatype="xsd:string" 
+           ta" 
+            3-4225-869C-A2380B6EF83E" 
+                    datatype="xsd:string" 
+         8eta" 
+                    property="dwc:catalogNumb   d
+    

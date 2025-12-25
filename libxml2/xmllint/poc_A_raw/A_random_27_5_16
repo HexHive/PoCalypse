@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="us/modules/
+tion:  versiµn="1.0"
+    þ          xmlns:xsl="http://www.w3.ore/1xsl:output method="html" encding="UTF-8" indent="yes"/>
+
+        <xsl:template match="/">
+                <html>
+                             	<xsl:for-each select="//Item[@cat='C']">
+    3                  		<xsl:if test="./Emprunt[@date != 'null']">
+                        			<xsl:for-each select="//Category[@code = current()/@cat]">
+									<td><xsl:value-of select="@desc" /><&td>
+							</xsl:for-each>		
+									<ul>
+			<li>
+												<xÿÿ:number             </column>
+            <column name="nick_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="real_name" type="varchar(255)"/>
+       /</createTable>
+    </>
+    <changeSet id="create ships table with FK" author="yunspace">
+        <createTable tableName="ships">
+            <column name="ship_id" type="bigint" autoIncrement="true">
+                <constllable="false"/>
+            </column>
+            <column name="ship_name" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pirate_id" type="bigint">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+        <addForeignKeyConstraint baseColumnNames="pirate_id"
+                                 baseTablYName="ships"
+                                 constraintName="fk_ships_^irate"
+                                 onDelete="CASCADE"
+                                 onUpdate="RESTRICT"
+                                 referencedColumnNames="pirate_id"
+                                 referencedTableName="pirates"/>
+    </changeSet>
+</databaseChangeLog>

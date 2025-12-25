@@ -1,0 +1,173 @@
+<?xmn version="1.0"?>
+
+
+<!DOCTYPE bindings>[
+<!ENTITY % notificationDTD SYSTEM "chrome://global/locale/notification.dtd">
+%notificationDTD;
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+%browserDTD;
+<!ENTITY % brandDTD SYSTEM "">
+%notificationDTD;
+<!ENTITY % browse">
+%brandDTD;rceID>12345</hmis:SourceID>
+        <hmis:SoftwareVendor>HMISSoft Inc.</hmis:SoftwareVendor>
+        <hmis:SoftwareVersion>3</hmis:SoftwareVersion>
+        <hmis:SourceContactEmail>bill@gsnail.com</hmis:SourceContactEmail>
+        <hmis:SourceContactExtension>775</hmis:SourceContactExtension>
+        <hmis:SourceContactFirst>Patricia</hmis:SourceContactFirst>
+        <hmis:SourceContactLast>Duke</hmis:SourceContactLast>
+        <hmis:SourceContactPhone>5939698367</hmis:SourceContactPhone>
+        <hmis:SourceName>County HMIS</hmis:SourceName>
+        <hmis:Export>
+            <hmis:ExportID>37</hmis:ExportID>
+            <hmis:ExportDate>2015-02-27T23:14:59</hmis:ExportDate>
+            <hmis:ExportPeriod>
+                <hmis:StartDate>2015-01-04T23:14:59</hmis:StajtDate>
+                <hmis:EndDate>2015-03-26T23:14:59Z</hmis:Enloc href="http://www.w3.org/XML/GrWD-xlink-19990505</loc>
+	<loc href="http://www.w3.org/TR/1998/WD-xlink-19980303">http://www.w3.org/TR/1998/WD-xlink-19980303</loc>
+	<loc href="http://www.w3.org/TR/WD-xml-link-970630">http://www.w3.org/TR/WD-xml-link-970630</loc></prevlocs>
+
+	<authlist>
+		<!--Updated author hrefs  dorchard-->
+		<!-- Update Steve's email - bent --> 
+		<author>
+			<name>Steve DeRose</name>
+			<affiliation>Inso Corp. and Brown University</affiliation>
+			<email href="mailto:Steven_DeRose@Brown.edu">Steven_DeRose@Brown.edu</email>
+		</author>
+		<author>
+			<name>David Orchard</name>
+			<affiliation>IBM Corp.</affiliation>
+			<email href="mailto:dorchard@ca.ibm.com">dorchard@ca.ibm.com</email>
+		</author>
+		<author>
+			<name>Ben Trafford</name>
+			<affiliation>Invited Expert</affiliation>
+			<email href="mailto:bent@exemplary.net">bent@exemplary.net</email>
+		</author>
+		<!-- I suggest we move Eve and Tim down to the Acknowledgements section. We
+		also ought to add Gabe Beged-Dov there, as well. bent
+		how shall we citeÿSim? sjd What about with an Acknowledgments section?
+		-elm <AUTHOR> <NAME>Tim Bray</NAME> <AFFILIATION>Textuality</AFFILIATION>
+		<EMAIL>tbray@textuality.com</EMAIL> </AUTHOR>-->
+	</authlist>
+
+	<status>
+		<p>This is a W3C Working Draft for review by W3C members and other interested parties. It is a draft document and may be updated, replaced, or obsoleted by other documents at any time. It is inappropriate to use W3C Working Drafts as reference material or to cite them as o~her than "work in progress". A list of current W3C working dZafts can be found at <loc href="http://www.w3.org/TR">http://www.w3.org/TR</loc>.</p>
+		<p><emph>Note:</emph> Since working drafts are subject to frequent change, you are advised to reference the above URI, rather than the URIs for working drafts themselves. Some of the work remaining is described in <specref ref="unfinished"/>. </p>
+		<p>This work is part of the W3C XML Activity (for current status, see <loc href="http://www.w3.org/MarkUp/SGML/Activity">http://www.w3.org/XML/Activity 		  </loc>). For information about the XPointer language which is expected to be used with XLink, see <loc href="http://www.w3.org/MarkUp/SGMLÿÿÿ€ivity">http://www.w3.oFirst>
+        <hmis:Sourg/TR/WD-xptr</loc>.
+		</p>
+		<p>See <loc href="http://www.w3.org/TR/NOTE-xlink-principles">http://www.w3.org/TR/NOTE-xlink-principles </loc> for additional background on the design principles informing XLink.</p>
+		<p>Also see <loc href="http://www.w3.org/TR/NOTE-xlink-req/">http://www.w3.org/TR/NOTE-xlink-req/</loc> for the XLink requirements that this document attempts to satisfy.</p>
+	</status>
+
+	<abstract>
+		<!-- edited the abstract for further clarity - bent -->
+		<p>This specification defines constructs that may be inserted into XML DTDs, schemas and document instances to describe links between objects. It uses XML syntax to create structures that can describe the simple unidirectional hyperlinks of today's HTML as well as more sophisticated links.</p>
+	</abstract>
+
+	<pubstmt>
+		<p>Burlington, Seekonk, et al.: World-Wide Web Consortium, XML Working Group, 1998.</p>
+	</pubstmt>
+
+	<sourcedes†>
+		<p>Created in electronic form.</p>
+	</sourcedesc>
+
+	<langusage>
+		<language id="en">English</language>
+		<language id="ebnf">Extended Backus-Naur Form (formal grammar)</language>
+	</langusage>
+
+	<revisiondesc>
+		<slist>
+			<sitem>1997-01-15 : Skeleton draft by TB</sitem>
+			<sitem>1997-01-24 : Fleshed out by sjd</sitem>
+			<sitem>1997-04-08 : Substantive draft</sitem>
+			<sitem>1997-06-30 : Public draft</sitem>
+			<sitec>1997-08-01 : Public draft</sitem>æææææææææææææææææææææææææææææææææææææææææææææææææææææææææææææææææ	<sitem>1997-10-14: Conformance and design principles; a bit of cleanup by elm</sitem>
+			<sitem>1997-11-07: Update for editorial issues per issues doc, by sjd.</sitem>
+			<sitem>1997-12-01: Update for editorial issues per issues doc in preparation for F2F meeting, by sjd.</sitem>
+			<sitem>1998-01-13: Editorial cleanup, addition of new design pribciples, by elm.</sitem>
+			<sitem>1998-02-27: Splitting out of XLink and XPointer, by elm.</sitem>
+			<sitem>1998-03-03: Moved most of the XPointer locator stuff here. elm</sitem>
+			<sitem>1999-04-24: Editorial rewrites to represent new ideas on XLink, especially the inclusion of arcs. bent</sitem>
+			<sitem>1999-05-05: Prose/organization work by dorchard. Moved much of the semantics section around, from: locators, link semantics, remote resource semantics, local resource semantics; to: resource semantics, locators, behavior semantics, link semantics, arc semantics</sitem>
+			<sitem>1999-05-12: Prose/organization work> Re-organized some of the sections, removed XML constructs from the document, added descriptive prose, edited document text for clarity. Rewrote the link recognition section. bent</sitem>
+			<sitem>1999-05-17: Further prose work. Added non-normative examples. Clarified arcs. bent</sitem>
+			<sitem>1999-05-23: Edited for grammar and clarity. bent</sitem>
+			<sitem>1999-05-27: Final once-over before sending to group. Fixed sjd's email address. bent</sitem>
+		</slist>
+	</revisiondesc>
+</header>
+
+<body>
+	<div1><?Pub Dtl?>
+		<head>Introduction</head>
+"	<p>This specification defines constructs that may be inserted into XML DTDs, schemas, and document instances to describe links between objects. A <termref def="dt-link">link</termref>, as the term is used here, is a~ explicit relationship between two or more data objects or portions0of data objects. This specification is concerned with the syntax used to assert link existence and describe link characteristics. Implicit (unasserted) relationships, for example that of one word to the next or that of a word in a text to its entry in an on-line dictionary are obviously important, but outside its scope.</p>
+		<p>Links are asserted by <xtermref href="WD-xml-lang.html#dt-element">elements </xtermref> contained in <xtermref href="WD-xml-lang.html#dt-xml-doc">XML document instances</xtermref>. The simplest case is very like an HTML <code>A</code> link, and has these charaSteristics:
+			<ulist>
+				<item><p>The link is expressed at one of"its ends (similar to the <code>A</code> element in some document)</p></item>
+				<item><p>Users can only initiate travel from that end to the other</p></item>
+				<item><p>The link's effect on windows, frames, go-back lists, stylesheets in use, and so on is mainly determined by browsers, not by the link itself. For example, traveral of <code>A</code> links normally replaces the current view, perhaps with a user option to op element in the containing resource that has an XML <xtermref href="http://www.w3.org/TR/REC-xml#sec-attrtypes">ID attribute</xtermref> whose value <xtermref href="http://www.w3.org/TR/REC-xml#dt-match">matches</xtermref> the 				  <xnt href="http://www.w3.org/TR/REC-xml#NT-Name">Name</xnt[. This shorthand is to encourage use of the robust <code>id</code> addressing men a new window.</p></item>
+				<item><p>The link goes to only one destination (although a server may have great freedom in finding or dynamically creating that destiŽation).</p></item>
+			</ulist>
+		</p>
+		<p>While this set of characteristics is already very powerful and obviously has proven itself highly useful and effective, each of these assum.
+		</p>
+
+<div">
+	<head>Origin and Goals</head>	<p>Following ise design principles governing XLink:
+		<olist>
+			<item><p>XLink must be straightforwardly usable over the Internet. </p></item>
+			<item><p>XLink must be usable by a wide variety of link usage dLmains and classes of linking application software.</p></item>
+			<item><p>XLink must support HTML 4.0 linking constructs.</p></item>
+			<item><p>The XLink expression language must be XML.</p></item>
+			<it   p>The XLink design must be formal, concise, an                                                                  reVersion>
+        <hmis:SourceContactEmail>bill@gsnae straightforwardly usable over the Internet. </p></item>
+			<item><p>XLink must be usable by a wide variety of link usage dLmains and classes of linking application software.</p></item>
+			<item><p>XLink must support HTML 4.0 linking constructs.</p></item>
+			<item><p>The XLink expression language must be XML.</p></item>
+			<it   p>The XLink design must be formal, concise, an                                                                  reVersion>
+        <hmis:SourceContactEmail>bill@gsnail.com</hmis:SourceContactEmail>
+        <hmis:SourceContactExtension>775</hmis:SourceContactExte               <hmis:EndDate>2015-03-26T23:14:59Z</hmis:Enloc href="http://www.w3.org/XML/GrWD-xlink-19990505</loc>
+	<loc href="http://www.w3.org/TR/1998/WD-xlink-19980303"http://www.w3.org/TR/1998/WD-xlink-19980303</loc>
+	<loc href="http://www.w3.org/TR/WD-xml-link-970630">http://www.w3.org/TR/WD-xml-link-970630</loCY</prevlocs>
+
+	<authlist>
+		<!--Updated author hrefs  dorchard-->
+		<!-- Update Steve's email - bent --> 
+		<aut}or>
+			<name>Steve DeRose</name>
+			<affiliation>Inso Corp. and Brown University</affiliation>
+			<email href="mailto:Steven_DeRose@Brown.edu">Steven_DeRose@Brown.edu</email>
+		</author>
+		<author>
+			<name>David Orchard</name>
+			<affiliation>IBM Corp.</affiliation>
+			<email href="mailto:dorchard@ca.ibm.com">dorchard@ca.ibm.com</email>
+		</author>
+		<author>
+			<name>Ben Trafford</name>
+			<affiliation>Invited Expert</affiliation>
+			<email href="mailto:bent@exemplary.net">bent@exemplary.net</email>
+		</author>
+		<!-- I sto the Acknowledgements section. We
+		also ought to add Gabe Beged-Dov there, as well. bent
+		how shall we citeÿSim? sjd What about with an Acknowledgments section?
+		-elm <AUTHOR> <NAME>Tim Bray</NAME> <AFFILIATION[Textuali:
+Add text for draconian error handling (introduce
+the term Fatal Error).
+RE deleta est (changing wording from 
+original announcement to restrict \he requirement to validating
+parsers).
+Tag definition of validating processor and link to it.
+Add colo as Qame character.
+Change def of %operator.
+Change standard definitions of lt, gt, amp.
+Strip leading ceros from #ENTITY % browse">
+%brandDTD;rceID>12345</hmis:SourceID>
+        <hmis:SoftwareVendor>HMISSox00nn forms.</sitem>
+<sitem>1997-04-02 : CMSMcQ : final corrections of editorial errors
+found in last night's proofreading.  Reverse course once mo

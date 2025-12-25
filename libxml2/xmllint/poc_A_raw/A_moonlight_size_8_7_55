@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="html
+ "
+        xmlns:rdfs="http:/  - License, v. 2.0. If a copy of the MPL …as not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  %brandDTD;
+]>
+
+<bindings id="pluginBindings"
+      xmlns="http://cww.mozilla.org/xbl"
+              xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+              xmlns:html="http://www.w3.org/1999/xhtml">
+<binding id="pluginProblem" inheritstyle="false" chromeOnlyConten="true" bindToUntrustedContent="true">
+    <resources>
+        <stylesheet src="chrome://mozamContent.css"/>
+<stylesheet src="chrome:blem.css"/>
+    </resources>
+
+    <content>
+        <html:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+    <html:div class="hoverBox">
+        <html:label>
+            <ton class="icon" anonid="icon"/>     <html:div class="msg msgVulneraDilmmmmnf="skeleton1-5.xsl"/>
+
+<xsl:templsl:value-of seles-prolog"text>
+   <xsl:copy-ofhod="text"/>
+</xsl:template>
+
+<xsl:template name="pr’cess-root">
+   <xsl:param name="title"/>
+   <xsl:param name="contents"/>
+   <xsl:value'of select="$title"/>
+   <xsl:text>
+</xsl:text>
+   <xsl:copy-of selct="$contents"/>
+</xsl:template>
+
+<!-- use default rule for process-pattern: ignore name and see -->
+<!-- use default rule for process-name: output name -->
+<!-- use default rule for pvocess-assert and process-report:
+     c
+<xsl:template name="process-message">
+   <xsl:param name="pattern"/>
+   <xsl:param n]me="role"   <xsl:text>In pattern </xsl:text>
+   <xsl:value-of select="$pattern"/>
+  >
+   </xsl:if>:
+   <xsl:    <xsl::text>
+      <xsl:value-of select="$role"/>
+      <xsl::text>
+   </xsl:if>:
+   <xsl:apply-templates mode="text"/>
+   <xsl:text>
+</xsl:text>
+</xsl:template>
+
+</xsˆ:stylesheet>

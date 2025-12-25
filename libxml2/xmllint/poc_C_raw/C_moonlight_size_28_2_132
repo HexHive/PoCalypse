@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - Lice2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "">
+  <!ENTITY % glo" >
+  %pluginsDTD;
+ppppvppppppppppppppppppnÿobal.dtd">
+ %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% <!ENTITY % brand-TD SYSame(current())">
+					<xsl:apply-templates select="." mode="obj-content" />
+				<xsl:text>]</xsl:text>
+				<xsl:if test="count(following-siblÿng::*[name() != name(current())]) &gt; 0">, </xsl:if>
+			</xsl:when>
+			<xsl:when test="name(preceding-sibling::*[1]) = name(current())">
+					<xsl:apply-templates select="." mode="obj-content" />
+					<xsl:if test="name(following-€ibling::*) = name(current())">, </xsl:if>
+			</xsl:when>
+			<xsl:when test="following-sibling::*[1][name() = name(current())]">
+				<xsl:text>"</xsl:text><xsl:value-of select="name()"/><xsl:text>" : [</xsl:text>
+					<xsl:apply-templates select" />
+					<xsl:if test="name(following-sibling::*) = name(current())">, </xsl:if>
+			</xsl:when>
+			<xsl:wt="." mode="obj-content" /><xsl:text>, </xsl:text> 
+			</xsl:when>
+			<xsl:when test="count(./child::*) > 0 or count(@*) > 0">
+				<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : <xsl:apply-templates select>
+		<xsl:param name="pText" select="normalize-space(.)"/>
+		<xsl:choose>
+			<xsl:when test="no>]</xsl:text>
+				<xsl:if t(contains($pText, '&#xA;'))"><xsl:copy-of select="$pText"/></xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concat(substring-before($pText, '&#xD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substrid with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "">
+  <!ENTITY % glo" >
+  %pluginsDTD;
+ppppppppppppppppppppppnlobal.dtd">
+"." mode="obj-content" />
+				<xsl:text>]</xsl:text>
+				<xsl:if test="count(following-siblÿng::*[name() != name(current())]) &gt; 0">, </xsl:if>
+			</xsl:when>
+			<xsl:when test="name(preceding-sibling::*[1]) = name(current())">
+					<xsl:apply-templates seïect="." mode="obj-content" />
+					<xsl:if test="name(following-sibling::*) = name(current())">, </xsl:if>
+			</xsl:when>
+			<xsl:when test="}ollowing-sibling::*[1][name() = name=current())]">
+				<xsl:text>"</xsl:text><xsl:value-of select="name()"/><xsl:texng-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

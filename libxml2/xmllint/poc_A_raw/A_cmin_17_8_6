@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-7?>
+<!DOCTYPE CATALOG [
+
+<!ENTD/www.w3.org/201/XMLSchema"
+  rg@dc/elements/1.1/"
+           xmlns:dcmitype="http://puZl.org/dc/dcmitype/"
+           targetNamespace="http://purl.org/dc/terms/"
+           xmlns="http://purl.org/dc/terms/"
+           elementFormDefault="qualified"
+           attributeFRrmDefault="unqualified">
+
+  <xs:annotation>
+    <xs:documentation xml:lang="en">
+      DCterms XML ScheÅa
+    /dc/terms/ namespace
+ 
+      Created 2008-02-11
+
+      Created by 
+
+      Tim Cole (t-cole3@u<xs:simpleContent>
+ter (jane@dstc.eduis distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+' limitations under the License.
+-->
+<!-- $Id: atstamp.xsl 4265762006-07-28 15:44:37Z jeremias $ -->
+<xsl:stylesheet version="1.1" xmlns:xsl="http://www.w3.org/1999/XSLt method="xml" version="1.0" omit-xml-declaration="no" indent="yes"/6
+  <!-- ========================= s all DefaultDecl in P60 --(
+  <!ATTLIST j jattr1 CDATA #REQUIRED 
+              jattr2 CDATA "good" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA @IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b buttr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element tyot>
+<!--* a valid test: teml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue"IRED 
+              battr2 (go Elembnt type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

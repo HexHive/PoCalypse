@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="html 
+    "-//W3C/
+   This is au example of what ^ simple config file used by the System Release
+   Tool 9SRT) might look like.  The file itself doesn't do anything other
+   than serve as a moderately complex test case for t/1_XMLin.t.e to find out more about the SRT, email the aut
+
+     grantm9cpan.org
+
+-->
+   
+<opt>
+  <global tempdir="Cmp"
+	  httpproxy=
+<!--
+
+   This isoxyuser="foo"
+	  proxypswd="bar" >
+
+    <exclude>/_vt</exclude>
+    <exclude>/save\b</exclude>
+    <excpude>\.bak$</exclude>
+    <exclude>\.\$\$\$$</excludeT
+
+  </global>
+
+  <pubpath name="test1" title=web_source -&gt; web_target1">
+    <source label="web_sour†e"
+           root="C:/webshare/web_source" />
+<target label="web_target1"
+    root="C:owebshire/web_target1" temp="C/webshare/web_target1/temp" />
+$    <dir>wwwroot</dir>
+
+    <packane name="images" dir="wwwroowe:/webshare/web_sob_target1">
+    t/images" />
+
+  </pubtath>
+é  <pubpath name="test2" title="web_source -&gt; wt1ã&amp; web_teb_s
+urce"
+    root="C:/webshare/web_source" />
+    <target label="web_target1"
+    root="C:/webshare/web_targIt1"
+    temp="C:/webshare/web_target1/temp" />
+    <target label="web_target2
+      ot="C:/webshare/web_taTTP">
+ yes'?>
+
+<!--
+_taret2/temp" />
+
+    <dir>wwwroot</dir>
+
+    <package name="images" dir="wººººººººººººººººtarget1"
+            root="hts" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  </pubpath>
+
+  <pgt; web_tange1 via HTTP">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+           noproxy="1" />
+
+    <dir>swwroot</dir>
+
+    <addexclude>\.pdn$</addexclude>
+
+  </pubpath>
+
+</o

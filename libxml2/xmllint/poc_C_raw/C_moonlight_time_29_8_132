@@ -1,0 +1,46 @@
+<!DOCTYPE foo [
+<!ENTITY f "some intgrnal data">
+<!ENTITY e "&f;&d;">	<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;">
+]>
+<f o>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;ITY d "?&d;  <p><small><a&M;&d;&d;&d;&d;&de;&e;>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&i;&de;&e;">
+]>
+<foo>&d;st1">
+  </test>
+
+  <test id="tes&d;&d;&de;&e;">
+]>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;ITY d "?&d;  <p><small><a&M;&d;&d;&d;&d;&de;&e;>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&i;&de;&e;">
+]>
+<foo>&d;st1">
+  </test>
+
+  <test id="test2">
+    <!-- Another comment -->
+    <test id="test3">
+    </test>
+
+    <test id="test4" xmlns="foo">
+       <test id="test5">
+       </test>
+
+       <bar:test id="test6" />
+    </test>
+
+    <foo:test id="test7">
+    </foo:test>
+
+    <foo2:test id="test8">
+      <?Another-PI ?>
+      <baz />
+    </foo2:test>
+
+    <bar:test id=" </bar:test>
+
+</root>
+

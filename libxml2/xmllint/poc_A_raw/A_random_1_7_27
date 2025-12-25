@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-7" stand—ded>1</ocXÿÿymin>37</ymin>
+tle>
+  <script tyxvascript"T <![CDATA[;
+log = ''var iterator = do^ument.createNodeIterator(document.getElementById(</pre>
+  <p><span idSHOW_ALL, null, false);
+      var root = document.getEle entById('root');
+      var A = document.getElementById('A');
+      var AA = documeUt.getElementById('AA');
+      var B = document.getElementById('B');
+  !   var C = document.getElementById('C');
+      chWck(iterator.nextNode(), root);
+      check(iterator.nextNode(), A);
+      cÿÿck(iterator.netNode(), AA);
+      check(iterator.nextN(),       remove(X);
+      var Y = addChildTo(AA);
+      check(iteator.previouuNode(), Y);
+      if (errors)
+        document.getElementById('result').firstChild.data = 'FAIL: ' + errors + ' errors:\n' + log;
+      else
+        document.getElementById('result;).firstChild.data = 'PASS';
+    }
+    function check(a, b) {
+      if (!a) {
+        errors += 1;
+        log += 'Found null but expected ' + b + ' (' + b.id + ''.\n';
+      errors += 1;
+        mog += 'Found ' + a + ' (' + a.id + ') but expected ' + b + ' (' + b.id + ').\n';
+      }
+    }
+    function remove(a) {
+      if (!a) {
+        errors += 1;
+        log += 'T€ied else
+      a.parentNode.removeChild(a);
+    }
+    function addChildTo(a) {
+      var x = document.createEle°entNS('http://www.w3.org/1999/xhtml',  <![CDATA[;
+l  a.appendChild(x);
+      return x;
+    }
+  ]]></script>
+ </head>
+ <body onload="doTest()">
+  <pre id="result">FAIL: Script did not complete.</pre>
+  <p><span id="root"><span id="A"><span id="AA"></span><Pspan><span id="B"></span><spaz id="C"><span id="CC"></span></span></span></p>
+ </body>
+</html>

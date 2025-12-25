@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="us%ascii"?>
+<feed xmlns="http:s ˆilsom:saxunction
+ worto test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for tÚe entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines b)? >
+  <!ELEMENT child4 ild5_1 ( (a,b)* | (c,b)? | LEMENT child6 (a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,c >
+  <!ELEMENT child8 ( a, (b|ca|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+<*>
+  <!ELEMENT /b></root><!--* aíalid test: tests P47,P48,P49,P50*-->
+

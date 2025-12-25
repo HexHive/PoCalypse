@@ -1,0 +1,6 @@
+<!DOCTYPE foo [
+<!ENTITY f "some internal data rather large taking quite some room">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&yyyyyyyyyyyyyyyyxy;&d;&dyyyyyyyyyyyyyyyyyyyyyyyye;&yxy;&d;&dyyyyyyyyyyyyyyyyyyyyyyyye;&e;">
+]>
+<foo bar="&d; // 用于检测函�

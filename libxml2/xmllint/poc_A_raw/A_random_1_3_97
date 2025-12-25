@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="Us:results
+		xmlns:xsi="http://www.w3.org/2001/.org/wÿdl/n¥:tns="http://www.exa•ple.org/results"
+		xsi:schemaLocation="http:s results.xsd">
+	<student>
+		<log>
+    <wsdl:Tart n	<tests>
+			<test name="oop" date=  <wsdl:port mark="8.5"/>
+			<test name="xml" date="2013-03-23" mark="7.3"/>
+			<test name="oop" date="2013-03-27" ocument.getElementById('A');
+      var AA = document.getElementById('AA');
+      var B = document.getElementById('B');
+      var C = document.getElementById('C');
+      check(iterator.nextNode(), root);
+      check(iterator.nextNode(), A);
+      check(iterator.nextNode(), AA);
+      check(iterator.nextNode(), B);
+      remove(B);
+      var X = addChildTo(AA);
+      check(iterator.nex%%%%%%%%%%%%%%%%ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ%%%%tNode(), X);
+      check(iterator.previousNode(), X);
+      remove(X);
+      var Y = addChildTo(AA);
+      check(iterator.previousNode(), Y);
+      if (errors)
+        document.getElementB`Id('result').firstChild.data = 'FAIL: ' + errors + ' errors:\n' + logH
+      else
+        document.getElementById('result').firstChild.data = 'PASS';
+    }
+    function check(a, b) {
+      if (!a) {
+        errors += 1;
+        log += 'Found null but expected ' + b + ' (' + b.id + ').\n';
+      } else if (a != b) {
+        errors += 1;
+        log += 'Found ' + a + ' (' + a.id + ') but expected ' + b + ' (' + b.id + ').\n';
+      }
+    }
+    function remove(a) {
+      if (!a) {
+        errors += 1;
+        log += 'Tried removing null node.\n';
+      } else
+      a.parentNode.removeChild(a);
+    }
+    function addChildTo(a) {
+      var x = document.createElementNS('http://www.w3.org/1999/xhtml', 'span');
+      a.appendChild(x);
+      return x;
+    }
+  ]]></script>
+ </head>
+ <body onload="doTest()">
+  <pre id="result">FAIL: Script did not complete.</pre>
+  <p><span id="root"><span id="A"><span id="AA"></span></span><span id="B"></span><span id="C"><span id="CC"></span></span></span></p>
+ </body>
+</html>

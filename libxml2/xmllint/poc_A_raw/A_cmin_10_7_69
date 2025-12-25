@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="html>
+	<head> <ti--
+ DO is to show how thlsom:sax() function
+     works, and to test some of tqe features -->
+
+<?TARGET This is a programming ifstruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, d””””””””””””””””””””””””””””””””””””””””””””””””””efines entity aa !-->
+  <!ENTITY % xx '<!ENTITY                                                                                                                    @                                                                                                -                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     aa "blabla">'>
+%xx;
+]>
+
+<i:calcAFerage xmlns:i="http://www.ele.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CCATA[ Thisrgument> 7 <![CCATA[ This is some CDATA with sme tags <tag> </tag> ]> antext </i:argument>
+   ment>and now an entity: &lt; and some mo                                                                                                                                                                                                                                                                                                                        B                                                                                                                      

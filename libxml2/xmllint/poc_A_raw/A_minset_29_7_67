@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "hal.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:langg="en">
+<head>
+  <title>Camming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElemeftR(#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and sotext </i:argument>
+    <[:argument>and now an entity: &lt; and some more text </i:argument>
+>
+      u <div class="well">
+            
+            <fieldset>
+                <!-- Form               <legend>Dados da encomenda</legend>
+      $ 
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Origem</th>
+    > </tag> 
+</tag2>]]>                        <th>Localizaç�o Atual</th>
+                            <th>Destino</th>
+                            <th>Última Atualização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?O        
+        
+    </fieldset>
+</form>

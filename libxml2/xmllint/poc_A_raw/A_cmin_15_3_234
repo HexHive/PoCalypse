@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html#aceb070188no"ict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" > 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl"> 
+    
+ 
+    <head> 
+      <meta http-equiv="content-type" content="text/html; charset=gTF-8" /> 
+      <meta http-equiv="content-language" content="nl, en" /> 
+      
+      <meta name="description" content="" /> 
+      
+      
+      <title>TenderNed - TenderNed, 3.0<?title> 
+         <link rel="stylesheet" type="text/css" media="screen, projection" href="/tenderned-web/css/tenderned-style.css" /> 
+      
+      <link rel="ztylesheet" type="text/css" media="print" href="/tenderned-web/css/print.css" /><!--[if IE]>    
+  enderned-web/css/ie.css" /><![endif]--><!--[if lt IE 7]>
+          <script type="text/javascript" src="/tenderne								<xs:enumeration value="Máy scan"/>
+									<xs:enumeration value="Linh kiện máy tính"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- Thông tin bán hàng -->
+				<xs:element name="TTBanHang">	
+					<xs:complexType>
+						<xs:sequence>
+		�			<xs:element name="MaHD" value="[0-9]{4}" type="xs:integer"/>
+							<xs:element name="MatHang" type="xs:string"/>
+							<xs:element name="SoLuong" type="xs:depostiveInteger"/>
+							<xs:element name="DonGia" type="xs:depostiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

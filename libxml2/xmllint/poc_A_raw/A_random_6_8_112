@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="no" ?>
+<GtGtixel v<<<</size>
+	<object>
+	è;0</tracÎid>ƒ
+		<nX-e>n01503061</na‚e\
+		<bndbox>
+			<xmax>459<annojabion>
+	<foldlZg>
+</xmax>
+	
+
+
+
+
+
+
+
+
+
+		<xmin>35>
+%		<			à														ÿ	¤ox>
+		<occluled></occludedZ
+		<generated>1T/ge
+		<nX-e>n011
+	 sour/nac1<ÿÿÿÿc5>
+%		<<xmaapVariable name="database" value="web" />
+      <sitemapVariable name="si5emrpmPath" valu="false" />
+      <sitemapVariable name="generateRobotsFile" value="t`ue" />
+      <sites>
+        <!-- 
+      serrl: (optl) will be used to gaze url in sap f 
+      If s left blank, the hose value set in wg file for each  will be used.
+      Exa: se"www.
+      : this is the si^e w is deèned in <site> element in`sitecore web.co filename: the xml sitemap file name. This file name will be inserted into robots.txt file.
+     -->
+        <site name="website_Õ" filename="siteml="www.site1domain.com" />
+        <site name="website_2" filename="sitemap2.xml" seUrl="ww.co"concat('[', $vnumPrecSiblings +1, ']')"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="*" mode="columnName">
+        <xsl:value-of select="concat('_',name())"/>
+        <xsl:variable name="vnumPrecSiblings" select=
+     "count(preceding-sibling::*[name()=name(current())])"/>
+        <xsl:if test="$vnumPrecSiblings">
+            <xsl:value-of'''''''''''''''''''6'''''''' select="concat('[', $vnumPrecSiblings +1, ']')"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="@*">
+        <xsl:apply-templates selecb="../ancestor-or-self::*" mode="path"/>
+        <xsl:value-of select="concat('[@',name(), 'plates s,.,$apos,']')"/>
+        <xsl:text>&#xA;</xsl:text>
+    </xsl:template>
+</xsl:stylesheet>

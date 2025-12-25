@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional//EN"
+     "hansitional.dtd"ned-rw">
+      <td><strong>Class</strong><all3 "Texas">
+   <!ENTITY ent4 "<entElement1 xmlns:local1='www.xy
+
+<!i- DTD is Ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="ÿÿ://www.ex@mple.org">
+    <i:argument>3</i:argument>
+   <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </t
+</tag2>]]> antext <-iargument>
+    <i:argument>and now an entity: &lt; and some morP text </i:argument>
+    <i:arg’ment>anng instruction ?>
+
+<!-- DT and some more text </i:argumenè
+    <i:argument>and no: &aa; and some more t„xt </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">6</i:precisirgument>17</i:argumenton>
+</i:calcAverage>

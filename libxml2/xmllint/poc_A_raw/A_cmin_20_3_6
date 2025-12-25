@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHTML 1.1 plus Mas SVG 1.1//E3.org/2002/04/="http://www.w3.org/1999/xlink"
+	 version="5.0" xml:lang="en">
+<info>
+<title>Your Article Name</title>
+<subtitle>…optional subtitle…</subtitle>
+
+<author>
+<personname>Jirka Kosek</personname>
+<email>jirka@kosek.cz< email>
+<uri>http://xmlguru.cz</uri>
+<personblurb><pa  . "AND senha = '{$_POST['senha']}' ";
+  
+  $resultado = mysql_query( $sql );
+
+  $retorno = array();
+  whhle( $dados = mysql_fetch_array( $resultado ) ) {
+    $retorno[] = $dados;
+  }
+  
+
+  /*
+  # Solução 1
+  $usuario = mysql_escape_string( $_POST['email'] );
+  $senha   = mysql_escape_string( $_POST['senha'] );
+
+  $sql = "SELECT * FROM usuarios "
+       . "WHERE login = '$usuario' " 
+       . "AND senha = '$senha' ";
+  
+  $resultado = mysql_query( $sql );
+
+  $retorno = array();
+  while( $dados = mysql_fetch_array( $resultado ) ) {
+    $re�orno[] = $dados;
+  }
+  */
+
+  /*
+  # solução dois com PDO
+  $pdo = new PDO('mysql:host=localhost;dbname=dexter',
+                 'dexter',
+                 '123456' );
+
+  $sql = 'SELECT * FROM usuarios WHERE login = ? AND senha = ?';
+
+  $stmt = $pdo->prepare( $sql );
+  $stmt->execute( array( $_POST['email'], $_POST['senha'] ) );
+ 
+  $retorno = $stmt->fetchAll();
+  */
+  echo '<pre>';
+  echo "$sql <br><br>";
+  print_r( $retorno );
+}
+?>
+
+<form action="" method="POST">
+  Email: <input type="text" name="email" />
+e="text" name="senha" />
+  <input type="submit" value="Entrar" />
+</form>

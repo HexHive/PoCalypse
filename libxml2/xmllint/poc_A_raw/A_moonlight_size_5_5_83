@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-/W3C//DTD XHTSL 1.0 Transitional//EN"
+     "hsit.org/1999/XSL/Transform">
+
+
+<xsl:template matrh="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahomi">
+	<table width="80%" border="2" align="cewter"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /e align="center" width="80%" br="1" > 
+		<tr> 
+			<td>   wystawienia: </td> <td> <xsl:value-of st="faktura/dattd>  @wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> 0/td=ù
+			<td> Data sprzedazy: </td> <td> <“sl:value-of select4"fakturaccc;
+stroke:#000000;stroke-width:1"/>
+ 
+<!-- szarok (trÃ³jkÄ…t) o czarnym brzegu-->
+<svg:polygon points="0,100 200,100 100,0"
+style="fill:#cccccc;
+stroke:#000000;stroke-width:1"/>
+ 
+<!-- etykieta tekstowa -->
+
+</svg:svg> 
+</div>ð	
+</div>
+<div id="wzor">
+<h1 class="nagÿÿÿk">ML</h1>
+<p class="normalny">WzÃ³r na pole caÅ‚kowite stoÅ¼ka:</p>
+<math xmlns="http://www.w3.org/1998/Math/MathML">
+<mrow>
+	<mi>&pi;</mi>
+	<mi>&#xd7;</mi>
+<msup>
+<mi>r</mi>
+<mn>2</mn>
+</msup>
+<mi>+</mi>
+<mi>&pi;</mi>
+<mi>r</mi>
+<mi>l</mi>
+</mrow>
+</math>
+
+</div>
+</body>
+</html>

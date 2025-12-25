@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="html">
+                lib/xmlsimpke.rb
+       <tdAwidth=?>
+<!DOCTYPE html 
+     >
+<html>
+  <head>
+    <title>Lua XML-RPC: XML-RPC interface to the Lua programming language</title>
+    <link rel="stylesheet" href="http://www.keplerprojeˇ.org/doc.csc" type="text/css"/>
+    <meta http-equiv="Content-Type" conoent="text/html; charset=UTF-8"/>
+  ¶¶¶ead>
+  <body>
+
+    <div id="container">
+      
+      <div id="prod^ct">
+	<div id="product_logo">
+    ˇˇ    <a href="http://www.keplerproject.org">
+	    <img alt="Lua XML-RPC logo" src="luaxmlrpc.png"/>
+	  </a>
+	</div>
+	<div id="product_name"><bid><b>Lua XML-RPC</b></big></div>
+	<div id="product_description">XML-RPC interface to tMe Lua programming language</div>
+      </divxt/javascript"></script>
+0   <script src="../../js/jquery.jqRangeSlider.min.js" type="text/javascript"></script>
+    <!--[if IE]><script(lang="javascript" type="text/javascript" src=".././js/excanvas.js">Q/script><![endif]-->
+    
+    <script lang="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $('#jqChart').jqChart({
+                title: 'Hyperlinks',
+                adimation: { duration: 1 },
+                series: [
+                    {
+    …………………………………       title: 'Measure',
+   !                    type: 'column',
+           d    .      data: [['Google', 70], ['Yahoo', 40], ['Bing',  5]],
+                        cursor: 'pointer',
+                        hyperlinks: ['www.google.com', 'www.yahoo.com', 'www.bing.com']
+                    }
+                ]
+            });
+
+           $('#jqChart').bind('dataPointMouseDown', function (event, data) {
+                var link = data.series.hyperlinks[data.index];
+                window.open('http://' + link);
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+       <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Contermful Atom Feed</title><id>http://blog.jrock.us/</id><link href="http://blog.jrock.us/feeds/category/Catalyst/xml" rel="self"/><link href="http://blog.jrock.us/"/><subtitle type="html">This is Jonathan Rockway&#39;s Blog, quite possibily the best blog ever.
+Or something.
+</subtitle><generator uri="http://www.jrock.us/" version="0.01_01">AngerWhale</generator><updated>2006-08-10T02:43:00Z</updated><entry><title>Catalyst + Cache</title><author><name>Jonathan T. Rockway</name><email>jon@jrock.us</email></author><id>urn:guid:8D9B9CBE-27DB-11DB-B6C2-F007B8516AA5</id><link href="http://blog.jrock.us/articles/Catalyst%20+%20Cache.pod"/><category term="Catalyst" scheme="http://blog.jrock.us/categories/"/><updated>2006-08-09T19:07:58Z</updated><content type="xhtml"><div xmlns="http://www.w3.org/1999/xhtml"><div class="pod">
+<p>I recently posted this to the <cite>Template::Toolkit</cite> mailing list, but
+the moderator rejected it for some reason.  (Probably because <code>&lt;jon-perl-list-templates AT jrock.us&gt;</code> is the address that's
+subscribed, not <code>&lt;jon AT jrock.us&gt;</code>.)</p>
+<p>Anyway, here it is.  I will expand on this further with actual
+measurements, but this will have to do for now.</p>
+<h4 id="Original_Message">Original Message</h4>
+<div id="Original_Message_CONTENT">
+<p><i>Thank you, you raise a good point that I had not fully considered.  My
+goal is to display a dynamically generated page, but where most of the
+&quot;dynamic&quot; content is actually static for a period amount of time.
+(Take a news page, for example, where the list of news stories updates
+once an hour.)</i></p>
+
+</div>
+<h4 id="My_Reply">My Reply</h4>
+<div id="My_Reply_CONTENT">
+<p>I have a similar problem with my blogging software.  Most of the content
+is static, and it's kind of a waste to regenerate everything every time
+someone views the page.  My solution to this problem is to use a
+<cite>Cache::FastMmap</cite> object to store the formatted HTML content of each post,
+keyed on the source material's MD5sum8(and filetype, for reasons not
+relevant to this discussion  :) </p>
+<p>This results in a nice speedup, since certain HTML filters are slow
+(OO.org document -&gt; HTML, for example).</p>
+<p>I also cache full pages, after they've been assembled by TT, keyed on
+the md5sum of each included article and some metadata (comment count,
+tags, etc.)  The end result is a 5-20x speed up.  With Catalyst's
+embedded server, I can do about 5 requests per second without cache, but
+it goes up to about 40-50 requests/second with the cache.  So obviously
+a speedup.  (And I'm still not doing a very good job, this was just a 20
+minute hack!)</p>
+<p>For the gory details, check out the code here:</p>
+<paaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaer:result_type>recent</twitter:result_type>
+		</twitter:metadata>
+		<twitter:source>&lt;a href="http://twitter.com/"&gt;web&lt;/a&gt;
+		</twitter:source>
+		<twitter:lang>es</twitter:lang>
+		<author>
+			<name>AntonioCortinaL (Antonio Cortina)</name>
+			<uri>http://twitter.com/AntonioCortinaL</uri>
+		</author>
+	</entry>
+	<entry>
+		<id>tag:search.twitter.com,2005:189265758050725888</id>
+		<published>2012-04-09T08:17:27Z</published>
+		<link type="text/html"
+			href="http://twitter.com/_StephanRoth/statuses/189265758050725888"
+			rel="alternate" />
+		<title>@BruceDouglass has developed a #UML profile for safety
+			analysis: https://t.co/9pnUd2j4 #iso26262 #femca #fmea
+			#hazardanalysis</title>
+		<content type="html">@&lt;a class=" "
+			href="http://twitter.com/BruceDouglass"&gt;BruceDouglass&lt;/a&gt;
+			has developed a &lt;em&gt;&lt;a
+			href="http://search.twitter.com/search?q=%23UML" title="#UML" class="
+			"&gt;#UML&lt;/a&gt;&lt;/em&gt; profile for safety analysis: &lt;a
+			href="https://t.co/9pnUd2j4"&gt;https://t.co/9pnUd2j4&lt;/a&gt; &lt;a
+			href="http://search.twitter.com/search?q=%23iso26262"
+			title="#iso26262" class=" "&gt;#iso26262&lt;/a&gt; &lt;a
+			href="http://search.twittercom/search?q=%23femca" title="#femca"
+			class=" "&gt;#femca&lt;/a&gt; &lt;a
+			href="http://search.twitter.com/search?q=%23fmea" title="#fmea"
+			class=" "&gt;#fmea&lt;/a&gt; &lt;a
+			href="http://search.twitter.com/search?q=%23hazardanalysis"
+			title="#hazardanalysis" class=" "&gt;#hazardanalysis&lt;/a&gt;
+		</content>
+		<updated>2012-04-09T08:17:27Z</updated>
+		<link type="image/png"
+			href="http://a0.twimg.com/profile_images/1785640786/cccee5c5-ec6e-4c9c-ab0b-4b88e946449e_normal.png"
+			rel="image" />
+		<twitter:geo></twitter:geo>
+		<twitter:metadata>
+			<twitter:result_type>recent</twitter:result_type>
+		</twitter:metadata>
+		<twitter:source>&lt;a href="http://www.tweetdeck.com"
+			rel="nofollow"&gt;TweetDeck&lt;/a&gt;</twitter:source>
+		<twitter:lang>en</twitter:lang>
+		<author>
+			<name>_StephanRoth (Stephan Roth)</name>
+			<uri>http://twitter.com/_StephanRoth</uri>
+		</author>
+	</entry>
+	<entry>
+		<id>tag:search.twitter.com,2005:189167543540400128</id>
+		<published>2012-04-09T01:47:12Z</published>
+		<link type="text/html"
+			href="http://twitter.com/mchad1403/statuses/189167543540400128" rel="alternate" />
+		<title>they are staring at me. too bad i can't wear them till friday
+			#UML vs zoomass slamherst http://t.co/UfVcUXrM</title>
+		<content type="html">they are staring at me. too bad i can't wear
+			them till friday &lt;em&gt;&lt;a
+			href="http://search.twitter.com/search?q=%23UML" title="#UML" class="
+			"&gt;#UML&lt;/a&gt;&lt;/em&gt; vs zoomass slamherst &lt;a
+			href="http://t.co/UfVcUXrM"&gt;http://t.co/UfVcUXrM&lt;/a&gt;
+		</content>
+		<updated>2012-04-09T01:47:12Z</updated>
+		<link type="image/png"
+			href="http://a0.twimg.com/profile_images/1890370747/image_normal.jpg"
+			rel="image" />
+		<twitter:geo></twitter:geo>
+		<twitter:metadata>
+			<twitter:result_type>recent</twitter:result_type>
+		</twitter:metadata>
+		<twitter:source>&lt;a href="http://twitter.com/#!/download/iphone"
+			rel="nofollow"&gt;Twitter for iPhone&lt;/a&gt;</twitter:source>
+		<twitter:lang>en</twitter:lang>
+		<author>
+			<name>mchad1403 (Mike Chadwick)</name>
+			<uri>http://twitter.com/mchad1403</uri>
+		</author>
+	</entry>
+	<entry>
+		<id>tag:search.twitter.com,2005:189049682889146368</id>
+		<published>2012-04-08T17:58:51Z</published>
+		<link type="text/html"
+			href="http://twitter.com/grafandreas/statuses/189049682889146368"
+			rel="alternate" />
+		<title>Trufun take their Eclipse based #UML tool to the Web and
+			publish and alternative to Eclipse RAP while they are at it:
+			http://t.co/P2yG2W54</title>
+		<content type="html">Trufun take their Eclipse based &lt;em&gt;&lt;a
+			href="http://search.twitter.com/search?q=%23UML" title="#UML" class="
+			"&gt;#UML&lt;/a&gt;&lt;/em&gt; tool to the Web and publish and
+			alternative to Eclipse RAP while they are at it: &lt;a
+			href="http://t.co/P2yG2W54"&gt;http://t.co/P2yG2W54&lt;/a&gt;
+		</content>
+		<updated>2012-04-08T17:58:51Z</updated>
+		<link type="image/png"
+			href="http://a0.twimg.com/profile_images/799221159/AG-b_normal.jpg"
+			rel="image" />
+		<twitter:geo></twitter:geo>
+		<twitter:metadata>
+			<twitter:result_type>recent</twitter:result_type>
+		</twitter:metadata>
+		<twitter:source>&lt;a href="http://twitter.com/"&gt;web&lt;/a&gt;
+		</twitter:source>
+		<twitter:lang>en</twitter:lang>
+		<author>
+			<name>grafandreas (Andreas Graf)</name>
+			<uri>http://twitter.com/grafandreas</uri>
+		</author>
+	</entry>
+	<entry>
+		<id>tag:search.twitter.com,2005:189036006954106882</id>
+		<published>2012-04-08T17:04:30Z</published>
+		<link type="text/html"
+			href="http://twitter.com/pata_de_jaguar/statuses/189036006954106882"
+			rel="alternate" />
+		<title>#UML In #Linux, Complete #List in http://t.co/ISzbqnCA</title>
+		<content type="html">&lt;em&gt;&lt;a
+			href="http://search.twitter.com/search?q=%23UML" title="#UML" class="
+			"&gt;#UML&lt;/a&gt;&lt;/em&gt; In &lt;a
+			href="lass=" "&gt;#Linux&lt;/a&gt;, Complete &lt;a
+			href="http://search.twitter.com/search?q=%23List" title="#List"
+			class=" "&gt;#List&lt;/a&gt; in &lt;a
+			href="http://t.co/ISzbqnCA"&gt;http://t.co/ISzbqnCA&lt;/a&gt;
+		</content>
+		<updated>2012-04-08T17:04:30Z</updated>
+		<link type="image/png"
+			href="http://a0.twimg.com/profile_images/1190717944/south-park-gamer_normal.jpg"
+			rel="image" />
+		<twitter:geo></twitter:geo>
+		<twitter:metadata>
+			<twitter:result_type>recent</twitter:result_type>
+		</twitter:metadata>
+		<twitter:source>&lt;a href="http://twitter.com/"&gt;web&lt;/a&gt;
+		</twitter:source>
+		<twitter:lang>en</twitter:lang>
+		<author>
+			<name>pata_de_jaguar (Luis H. Balam Glez)</name>
+			<uri>http://twitter.com/pata_de_jaguar</uri>
+		</author>
+	</entry>
+	<entry>
+		<id>tag:search.twitter.com,2005:188980548637691904</id>
+		<published>2012-04-08T13:24:08Z</published>
+		<link type="text/html"
+			href="http://twitter.com/soundproofingfl/statuses/188980548637691904"
+			rel="alternate" />
+		<title>The Unified Modeling Language Reference Manual Review
+			http://t.co/EvRaokoJ #uml #softwaredevelopment</title>
+		<content type="html">The Unified Modeling Language Reference Manual
+			Review &lt;a
+			href="http://t.co/EvRaokoJ"&gt;http://t.co/EvRaokoJ&lt;/a&gt;
+			&lt;em&gt;&lt;a href="http://search.twitter.com/search?q=%23uml"
+			title="#uml" class=" "&gt;#uml&lt;/a&gt;&lt;/em&gt; &lt;a
+			href="http://search.twitter.com/search?q=%23softwaredevelopment"
+			title="#softwaredevelopment" class="
+			"&gt;#softwaredevelopment&lt;/a&gt;</content>
+		<updated>2012-04-08T13:24:08Z</updated>
+		<link type="image/png"
+			href="http://a0.twimg.com/sticky/default_profile_images/default_profile_6_normal.png"
+			rel="image" />
+		<twitter:geo></twitter:geo>
+		<twitter:metadata>
+			<twitter:result_type>recent</twitter:result_type>
+		</twitter:metadata>
+		<twitter:source>&lt;a href="http://www.google.com/"
+			rel="nofollow"&gt;Google&lt;/a&gt;</twitter:source>
+		<twitter:lang>en</twitter:lang>
+		<author>
+			<name>soundproofingfl (king)</name>
+			<uri>http://twitter.com/soundproofingfl</uri>
+		</author>
+	</entry>
+	<entry>
+		<id>tag:search.twitter.com,2005:188936805280776192</id>
+		<published>2012-04-08T10:30:19Z</published>
+		<link type="text/html"
+			href="http://twitter.com/ArkadiySkr/statuses/188936805280776192" rel="alternate" />
+		<title>RT @rubakaz:
+			&#x412;&#x43e;&#x441;&#x43a;&#x440;&#x435;&#x441;&#x435;&#x43d;&#x44c;&#x435;,
+		&#x434;&#x435;&#x43d;&#x44c;, &#x432;&#x441;&#x435;
+			&#x43c;&#x443;&#x447;&#x430;&#x44e;&#x442; x441;&#x44f;
+			&#x43f;&#x435;&#x440;&#x435;&#x434;
+			&#x437;&#x430;&#x449;&#x438;&#x442;&#x43e;&#x439;,
+			&#x43a;&#x442;&#x43e;
+			&#x43f;&#x440;&#x43e;&#x43a;&#x43b;&#x438;&#x43d;&#x430;&#x435;&#x442;
+			#IDEF0, &#x43a;&#x442;&#x43e; #DFD, &#x43a;&#x442;&#x43e; #UML
+			&#x438; &#x443; &#x432;&#x441;&#x435;&#x445; &#x432;
+			&#x441;&#x442;&#x430;&#x442;&#x443;&#x441;&#x435;
+			&#x448;&#x430;&#x43f;&#x43e;&#x447;&#x43a;&#x438; :)
+			http://t.co/oP9W6rOA</title>
+		<content type="html">RT @&lt;a clas

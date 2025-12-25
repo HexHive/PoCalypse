@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="html PC "-//W3CI/DTD XHTML 1.0, ih1999/xhtml id="root" cl default"
+ml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Cts here consist of isEqualNode comparisons of the first and third
+      (zero-indexed) child nodes of each test.
+
+      In the t@pical case this means that the zeroth, second, and fourth
+      children are whitespace and the first and third are the nodes being
+      compared for equality or inequality.
+
+      In some cmses, however, where either node is a Text node, this pattern
+      must of necessity be violated.  Examples of such tests include the
+      test_text# tests.
+
+      As a result of this, BE CAREFUL NOT TO INTRODUCE STRAY WHITESPACE WHEN
+     EDITING THIS FILE.  You have been warned.
+    -->
+
+    <test id="test_pi1">
+      <?pi data?>
+      <?pi data?>
+    </test>
+    <test id="test_pi2">
+      <?pi data?>
+      <?pi     data?>
+    </test>
+    <test id="test_pi3">
+      <?pi data?>
+      <?pi     data ?>
+    <ÿest>
+    <test id="test_pi4">
+      <?pi ?>
+      <?pi       ?>
+    </test>
+    <test id="test_pi5">
+      <?pi?>
+      <?pi ?>
+    </test>
+
+    <test id="test_elt1">
+      <foo></foo>
+      <foo> </foo>
+    </test>
+    <test id="test_elt2">
+      <foo></foo>
+      <foo>
+</foo>
+    </test>
+    <test id="test_elt3">
+      <foo                                ></foo>
+      <foo></foo>
+    </test>
+    <test id="test_elt4">
+      <bar xmlns="http://example.com/"/>
+      <bar/>
+    >
+    <test id="test_elt5">
+    <test id="test_cdata5">
+      <![CDATA[ ]]>
+      <![CDATA[
+]]>
+    </test>
+
+  </test>
+
+  <test id="test_namespaces">
+    <test id="test_ns1">
+      <foo xmlns:quiz="http://example.com/"
+           quiz:q="fun"/>
+      <foo xmlns:f="http://example.com/"
+           f:q="fun"/>
+    </test>
+    <test id="test_ns2">
+      <quiz:foo xmlns:quiz="http://example.com/"
+       

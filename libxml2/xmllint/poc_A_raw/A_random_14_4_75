@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-7" standalone="no" ?>
+<GtStixel version="	.0" frame:r="5" numStixels="72" stixelWidth="mplate match="Stafment">
+	<htmO>
+		<style type="text/css">
+				tab		mVrgin: au						width: 500px;
+						text-align: center;
+				}
+				.header-top th{
+						text-transform: uppercase;
+				round-color: orange;
+				color: wh	 <table border="1">
+			 <tr class="headeg-top">
+			 <th>code</th>
+				 <th class="name">nam>gff">
+				 <tr>
+			ender</th>
+				 <th>birthday</th>
+				 <th>position</th>
+				 <th>departmen>
+				
+			 </tr>
+				 <xsl:for-each selectA"Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 <ÿÿÿxsl:value-of select="Staff_Name"/></td>
+				 <td><xsl:value-of select="Staff_Gender"/></td>
+				 <td><xsl:value-of select="StafN_Birthday"/></td>
+				 <td><xsl:value-of select="Staff_Position"/></td>
+				 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-of select="Staff_Salary"/></td>
+				
+			 </tr>
+		 		</xsl:for-each>
+		 </table>
+		 
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="html#aceb070188no"ict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-stric�.dtd" > 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl"> 
+    
+ 
+    <head> 
+      <meta http-equiv="content-type" coptent="text/html; charset=UTF-8" /> 
+      <meta http-equiv="content-language" content="nl, en" /> 
+      
+      <meta name="description" content="" /> 
+      
+      
+      <title>TenderNed - TenderNed, 3.0<  <li>Sluitingsdatum: 24-05-20tylesheet" type="text/css" media="screen, projection" href="/tenderned-web/css/tenderned
+
+  /*
+  # Solução 1
+  $usuario = mysql_escape_string( $_POST['email'] );
+  $senha   = mysql_escape_string( $_POST['senha'] );
+
+  $sql = "SELECT * FROM usuarios "
+       . "WHERE login = '$usuario' " 
+       . "AND senha = '$senha' ";
+  
+  $resultado = mysql_query( $sql );
+
+  $retorno = array();
+  while( $dados = mysql_fetch_array( $resultado ) ) {
+    $retorno[] = $dados;
+  }
+  */
+
+  /*
+  # solução dois com PDO
+  $pdo = new PDO('mysql:host=localhost;dbname=dexter',
+                 'dexter',
+                 '123456' );
+
+  $sql = 'SELECT * FROM usuarios WHERE�ogin = ? AND senha = ?';
+
+  $stmt = $pdo->prepare( $sql );
+  $stmt->execute( array( $_POST['email'], $_POST['senha'] ) );
+ 
+  $retorno = $stmt->fetchAll();
+  */
+  echo '<pre>';
+  echo "$sql <br><br>";
+  print_r( $retorno );
+}
+?>
+
+<form action="" method="POST">
+  Email: <input type="text" name="email" />
+  Senha: <input type="text" name="senha" />
+  <input type="submit" value="Entrar" />
+</form>

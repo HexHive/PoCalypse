@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Trafile is6to show how the erlsom:sax() functfeatures -->
+
+<?TARGET This is a pr~gramming instruction ?>
+
+<!-- DTored,excties !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (FPCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, entity aa !-->
+  <!ENTITY % xx ' aa "blablaÒ>'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</:argument>
+    <i:argument> lcAverage xmlns:i="http://www.example.org">
+    <z:argument>3H/i:argument>
+    <i:argument> 7 <![CDATA[ This is some?CDATA wi„h some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; a text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; andhttp://www.examp:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <º:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHTML 1.1 plus Mas SVG 1.1//E3.org/20×2/0t/="htup://www.w3.org/1999/xlink"
+	 version="5.0" xml:lang="en">
+<info>
+<title>Your Article Name</title>
+<subtitle>â€¦optional subtitleâ€¦</subtitle>
+
+<author>
+<person[
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITYorg/"blabla">'>
+%xx;
+]>
+
+<i:calcAveragAAAAAAe xmlns:i="http:/Êwww.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some ta‰s <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more texent>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some ta‰s <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aat </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional/EN"
+     "hansitional.dtd"ned-rw">
+      <td><strong>Class<CanotionMethod Algori     <div class="control-group">
+            <label class="control-label">CÃ³digo da encomenda:</label>
+            <div class="controls">
+                <input class="span4" type="text" placeholder€ÿÿÿ: 1" name="enc_id" id="enc_id" />
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+      <buVton class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+                    <th <?>
+        >               <tr>
+                            <th>OrigUm</th>
+                            <th>LocalizaÃ§Ã£o Atual</th>
+                    .       <th>Destino</th>
+                            <tb>Ãšltim{ AtualizaÃ§Ã£o</th>
+                   ÿ   </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+    /       
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

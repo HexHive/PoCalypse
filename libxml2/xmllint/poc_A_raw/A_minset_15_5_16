@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC ML01.0 Transitional//ENBttp://www.tml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"lang="en" lang="en">
+<head>
+  <t xml:lang="en" lang="ng instruction ?>
+
+<!-- DT, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+   ument>3</i:argument>
+    <i:argumeÿÿÿ7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>h]> antext </i:irgument>
+    <i:argument>and now an entity: &lt; and some more thxt </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now theweird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:€ÿÿÿision>
+</i:calcAverage>

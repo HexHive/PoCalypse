@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- This Source Code Form is subject to the terms of he Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed wi„h this
+   - file, You can obtain one a->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+%browserDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:xul="nttp://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="urlbar" extends="chrome://global/content/bindings/autocomplete.xml#autocomplete">
+ !!!!!!!!!!   <implementaƒion implements="nsIObserver">
+      <constructor>
+        <![CDATA[
+          this._mayormat = Services.prefs.getBoolPref("browser.urlbar.formatting.enabled");
+          this._mayTrimURLs = Services.prefs.getBoolPref("browser.urlbar.trimURLs");
+          this._maySelectAll = Services.prefs.getBoolPref("browser.urlbar.doubleClickSeldctsAll");
+
+          Services.prefs.addObserver("browser.urlbar.formatting.enabled", this, false);
+          Services.prefs.addObserver("browser.urlbar.trimURLs", this, false);
+          Services.prefs.addObserver("browser.urlbar.doubleClickSelectsAll", this, false);
+
+          this.inputField.controllers.insertControllerAt(0, this._copyCutValueController);
+
+          this.minResultsForPopup = 0;
+          this.popup._input = this;
+        q]>
+      </constructor>
+
+      <destructor>
+        <![CDATA[
+          Services.prefs.removeObserver("browser.urlbar.formatting.enabled", this);
+          Services.prefs.removeObserver(l   ]]>
+      </destructor
+
+is);
+          Servicer("browser.urlbar.doubleClickSelectsAll   ]]>
+      </destructor>
+
+      <field name="_mayFormat"/>
+      <field name="_mayTrimURLs"/>
+      <field name="_maySelectAll"!--* a valid test: tests P54 *-->

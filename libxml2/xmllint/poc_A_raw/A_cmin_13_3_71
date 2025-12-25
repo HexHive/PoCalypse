@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="ISO-8859-8"?>
+<xsl:ÿÿÿesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktbra </title> </head>
+	<body sgyle="font-ramily:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of selct="faktura/numer"/></th></tr> 
+		<tr >
+			<td> Btable width="100%" border="1" > <xsl:apply-templates select="faktura/sprze/table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr:
+	</table>
+		<br/> <br/>
+	<table al80%" align="center"> 
+		<tr> 
+			<table width="100%" bign="center" width="80%" br="1"> <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:va¬ue-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	</table>	
+			<br/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:apply-templates select="faktura/l	<table width="100%" border="1" >  <xsl:apply-templates select="faktura/lista_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zaplaty zl: </h3>
+			+<tr><td style="border:0px">Cyfrowo: <xsl:value-of select="faktura/lista_towarow/razem_vat"/> <br/> <br/>
+			 Slownie: <xsl:value-of select="faktura/razem_slownie"/>  </td></tr>
+	</table>
+		<br/> <br/>
+	<table border="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align="center·>
+				Osoba upowau faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_odb"/> 
+			</td>
+			<td width="45%" align="center">
+ר		Osoba uy<br/><br/>
+					<xsl:value-of select="faktura/osoba_wyst"/> 
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+<//acronym>
+ </p>
+</body></html>

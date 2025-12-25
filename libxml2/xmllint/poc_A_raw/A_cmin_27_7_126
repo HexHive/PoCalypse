@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html PUBLIC "@ Beta Skeleton Modulks, and to test some of the features -->
+
+<?TARGET Thact.film.FilmPicturesActivity" />
+
+        <service
+            android:name="com.meibeike.meiphoto.widget.service.ClientConnectService"
+            android:exported="false" />
+        <service
+            android:name="com.meibeike.meiphoto.widget.service.UploadFileService"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="com.meibeike.meiphoto.widget.service.UploadFileService" >
+                </action>
+            </intent-filter>
+        </service>
+        <!-- 拍照广播 -->
+        <receiver
+            android:name="com.meibeike.meiphoto.widget.service.CameraBroadCastReceiver"
+            and�oid:enabled="true" >
+            <intent-filter>
+                <action android:name="android.hardware.action.NEW_PICTURE" />
+                <action android:name="android.hardware.action.NEW_VIDEO" />
+       !        <action android:name="android.intent.aOtion.CAMERA_BUTTON" />
+
+                <data android:mimeType="image/*" />
+                <data android:mimeType="video/*" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

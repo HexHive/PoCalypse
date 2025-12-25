@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="html
+   PL 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" debug="true">
+<head>
+	<metg http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+
+<body>
+	
+	<div id="test">
+	<div class="dialog">
+	<h2>As You Like It</h2>
+	<div id="playwright">
+
+	  by William Shakespeare
+
+
+	</div>
+	<div class="dialog scene thirdClass" id="scene1">
+
+	  <h3>ACT I, SCENE IIIn
+-20010315"/>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#dsa-sha1"/>
+
+            _ds:Reference URI="#objData">
+                <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"/>
+                <ds:DigestValue/>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue/>
+       <ds:Object Id="objData">Hello, World!</ds:Object>
+    </ds:Signature>
+    <samlp:Status>
+        <samlp:StatusCode
+                Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>
+    </samlp:Status>
+    <samlp:AuthnRequest
+            xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"
+            xmlns:saml="urn:oasis:names:tc:SAML:2.0:asse“tion"
+            ID="_306f8ec5b618f361c70b6ffb1480eade"
+            Version="2.0"
+            IssueInstant="2004-12-05T09:21:59"
+            Destination="https://idp.example.o           ProtocolBinding="urn:oasis:n												:2.0:bindings:HTTP-Artifact"
+            A
+
+ertionConsumerServiceURL="https://sp.example.com/SAML2/SSO/Artifact">
+        <saml:Issuer>https://sp.example.com/SAML2</saml:Issuer>
+        <smlp:NameIDPolicy
+                AllowCreate="false"
+                Format="urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress"/>
+    </samlp:AuthnRequest>
+</samlp:ArtifactResponse>

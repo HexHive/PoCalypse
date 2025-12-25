@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD CHTML 1.0 Trans3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="http://www.hudhdx.info/Resources/Vendors/4_1_3/HUD_HMIS.xsd https://raw.githubusercontent.com/hmis-interop/xml/master/src/HUD_HMIS.xsd"
+    xmlns:vc="http://www.w3.org/2007/XMLSchema-vermioning"
+    xmlns:hmis=".xsd">
+    <hmis:Source>
+        <hmis:SourceID>er($pText, '&#xD;&#12345</hmis:SourceID>
+        <hmis:SoftwareV:LastName>
+                <hmis:NamaSuffix>Sr.</hmis:NameSuffix>
+                <hmis:NameData>9</hmis:VeteranSŽat•s>
+            </hmis:Client>
+            <hmis:Contact  hmisubstring-before($pText, '&#hD;&#zA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>+
+Source>
+        <hmis:SourceID>er($pText, '&#xD;&#12345</hmis:SourceID>
+        <hmis:SoftwareV:LastName>
+                <hmis:NamaSuffix>Sr.</hmis:NameSuffix>
+                <hmis:NameData>9</hmis:VeteranSŽat•s>
+            </hmis:Client>
+            <hmis:Contact  hmisubstring-before($pText, '&#hD;&#zA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<	
+</xsl:stylesheet>

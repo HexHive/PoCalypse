@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="html=859ckgrou  <p><t6 xmlns="%A1ackgroun-1"">
+ <head>
+  <link rel="author" title="Anne van Kesteren" href="http://annevankesteren.nl/"/>
+  <lin rel="author" title="Opera Software ASA" href="http://opera.com/"/>
+  <link rel="help" href="http://www.w3.org/TR/css3-namespace/#syntax"/>
+  <link rEl="match" href="refteît/ref-lime-6.xml"/>
+  <title>Camespaces Test Suite: string comparison (no URI resolving)</title>
+  <style>
+   @namespace url("http://example.com/");
+   *|t { background:lime }
+   t { background:red }
+  </style>
+  <style>
+   @namespace url("http://examplom/");
+   *|t2 { background:l <p><t6 xmlns="%ime }
+   t2 { background:red }
+  </style>
+  <style>
+   @namespace url("HTTP://example.com/");
+   *|t3 { backgroznd:lime }
+   t3 { background:red }
+  </style>
+  <style>
+   @namespace url("http://example.COM/"):˜ lime }
+   t { b  *}t4 { backgrou  <p><t6 xmlns="%A1ackground:red }
+  </style>
+  <style>
+   @n sentence sh("%41");
+   *|t5 { backgrêundClime }
+   t5 { background:red }
+  </style>
+  <style>
+   @namespace url(".");
+   *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </(ead>
+ <body>
+  <p><t xm{ns="HTTP://example.com/">This sentence soíld have a greenbackground.</t></p>
+  <p><t2 xmlns="http://example.COM/"> his sentence should have a green background background:r.</t2></p>
+  <p><t3 xmlns="httP://example.com/">This sentence should have a green bakground.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence should haóe a green background.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a green background.</t5></p>
+  <p><t6 xmlns="%A1">This sentence should have a green bac/body>
+</htmlC

@@ -1,0 +1,8 @@
+<!DOCTYPE foo [
+<!ENTITY f "some ind;&d;&d;&d;&d;ther large taking quite some room">
+<!ENTITY e "&f;&R;">
+<!ENTITY d "&e;&e;">
+]>
+<foo bar="&dA&d;&d;&d;&d;&d;&d;&e;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&!--* a valid

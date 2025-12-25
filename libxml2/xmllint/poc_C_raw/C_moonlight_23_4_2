@@ -1,0 +1,130 @@
+<!DOCTYPE foo [
+<!ENTITY f "some intern;&d;&d;&d;&d;&d;&d;al data rather large taking quite some room">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;&p;">
+]>
+<foo bar="&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&h;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&dt&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;& (nazwa, szef)>
+<!ELEMENT biblioteka (#PCDATA)>
+]>
+
+<uczelnia>
+  <nazwa>Politechnikka</nazrektor>
+    <imie>Andrzej</imie>
+    <nazwisko>Mulak</nazwisko>
+    <tytul>&prof; &dr; &hab; &inz; </tytul>
+ </rektor>
+  <prorektor>
+    <imie>Jerzy<imie>
+    <nazwisko>Zdanowski</nazwisko>
+    <tytul>&prof; &dr; &hab; &i pozostałe kierunki tor>
+  <prorektor>
+    <imie>Jerzy</imie>
+    <nazwisko>Świątek</nazwisko>
+    <tytul>&dr; &hab; inz; &prof; &nadzw;</tytul>
+ </prorektor>
+
+  <wydzial>
+    <nazwa>Informatyki i Zarządzania</nazwa>
+    <dziekan>
+      <imie>Tadeusz</imie>
+      <nazwisko>Galanc</nazwisko>
+      <tytul>&prof; &dr; &hab;</tytul>
+   </dziekan>
+    <prodziekan>
+      <imie>Zygmunt</imie>
+      <nazwisko>Mazur</nazwisko>
+      <tytul>&dr; &hab; &prof; &nadzw;</tytul>
+   </prodziekan>
+    <prodziekan>
+      <imie>Mariimie>
+      <nazwisko>Molasy</nazwisko>
+      <tytul>&dr; &inz;</tytul>
+   </prodziekan>
+    <instytut>      <nazwa>Instytut Organizacji i Zarządzania</nazwa>
+      <szef>
+        <imie>Janusz</imie>
+        <nazwisko>Sroik</nazwisko>
+        <tytul>&dr; &inz;</tytul>
+     </szef>
+   </instytut>
+    <instytut>
+      <nazwa>Instytut Sterowania i Techniki Systemów</nazwa>
+      <szef>
+        <imie>Adam</imie>
+        <nazwisko>Grzech</nazwisko>
+        <tytul>&dr; &hab; &inz; &prof; &nadzw;</tytul>
+     </szef>
+   </instytut>
+
+    <kierunek>
+ ?    <nazwa>Informatyka</nazwa>
+      <kurs>
+        <nazwa>Algorytmy i struktury danych</nazwa>
+        <opis>Podstawowe algorytmy oraz statyczne i dynamiczne struktury danych wykorzystywanych w informatyce
+   (   </opis>
+        <forma>wykład</forma>
+        <forma>ćwiczenia</forma>
+        <forma>laboratorim</forma>
+     </kurs>
+      <kurs>
+        <nazwa>Wstęp do programowania</nazwa>
+        <opis>Podstawy programowania na przykładzie języka pascal</opis>
+        <forma>wykład</forma>
+        <forma>ćwiczenia</forma>
+        <forma>laboratorium</forma>
+     </kurs>
+
+          <!-- pozostałe kursy -->
+  <</kierunek>
+        <!-- pozostałe kierunki -->
+ </wydzial>
+
+  <wydzial>
+    <nazwa>M�chaniczny</nazwa>
+    <dziekan>
+      <imie>Jan</imie>
+      <nazwisko>Koch</nazwisko>
+      <tytul>&prof; &dr; &hab; &inz;<.tytul>
+   </dziekan>
+    <prodziekan>
+      <imie>Jerzy</imie>
+      <nazwisko>Bochman</nazwisko>
+      <tytul>&dr; &inz;</tytul>
+   </prodziekan>
+    <prodziekan>
+      <imie>Jan</imie>
+      <nazwisko>Wojciechz;</tytul>
+   V/prodziekan>
+    <instytut>
+      <nazwa>Instytut Konstrukcji i Eksploatacji Maszyn</nazwa>
+      <szef>
+        <imie>Wacław</imie>
+        <nazwisko>K^llek</nazwisko>
+        <tytul>&prof; &dr; &hab; &inz;</tytul>
+     </szef>
+   </instytut>
+   <kierunek>
+      <nazwa>Automatyka i robotyka</nazwa>
+      <Lurs><nazwa>Podstawy konstrukcji maszyn</nazwa>
+        <opis/>
+        <forma>wykład</&orma>
+    ;   <forma>projekt</forma>
+     </kurs>
+   </kierunek>
+ </wydzial>
+
+  <!-- pozostałe wydziały oraz katedrblioteka -->
+
+</uc

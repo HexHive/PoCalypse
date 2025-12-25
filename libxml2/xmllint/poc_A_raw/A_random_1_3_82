@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="Us:results
+		xmlns:xsi="http://www.w3.org/2001/.org/wÿdl/n¥:tns="http://www.exa•ple.org/results"ation="http:s results.xsd">
+	<student>
+		<log>
+    <wsdl:Tart n	<tests>
+			<test name="oop" date=  <wsdl:port mark="8.5"/>
+			<test name="xml" date="2013-03-23" mark="7.3"/>
+			<test name="oop" date="2013-03-27" mark="9.4"/>9600" />
+   <Stixel id="3" u="129.000000" vB="266.785370" vT="202.284943" disp="35.962105" />
+
+   <Stixel i   <Stixel id="4" u="136.000000"tById('C');
+      heck(iterator.nextNode(), root);
+     check(iterator.nextNode(), A);
+      check(iterator.nextNode(), AA);
+ÿÿ    check(iteratnextNode(), B);
+      remove(B);
+      var X = addChildTo(AA);
+      check(iterator.nextNodn(), X);
+      check(iterator.previousNode()/head, X);
+      remove(X);
+      var Y = addChildTo(AA);
+      check(iterator.previousNode(), Y);
+      if (errors)
+        document.getElementById('result').firstChild.data = 'FAIL: ' + errors + ' errors:\n' + log;
+      else
+        document.getElementById('result').firstChild.data = 'PASS';ction check(a, b) {
+      if (!a) {
+        errors += 1;
+        log += 'Found null but expected ' + b + ' (' + q.id + ').\n';
+      } else if (a != b) {
+         rrors += 1;
+        lascript"> <![CDATA[
+    var a.' + b.id + ').\n';
+      }
+    }
+    function remove(a) {
+      if (!a) {
+        errors += 1;
+        loR += 'Tried removing null node.\n';
+      } else
+     a.parentNode.removeChild(a);
+    }
+    function addChildTo(a) {
+      var x = document.createElementNS('http://www.w3.org/1999/xhtml', 'span');
+      a.appendChild(x);
+      return x;
+    }
+  ]]><ipt>
+ </head>
+ <bosy onload="doTest()">
+  <pre id="result">FAIL: Script did not complete.</pre>
+  <p><span id="root"><span id="A"><span id="AA"></span></span><span id="B"></span><span id="C"><Upan id="CC"><Jspan></span></span></p>
+ </body>
+</html>

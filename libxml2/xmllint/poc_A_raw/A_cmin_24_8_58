@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="html PC "-//W3C//DTD XHTML 1.0, ih1999˛xhtml' id="rc ANY>
+  <!--* test*>
+  <!ELEMENT child7 ((aversion="1.0" encoding="html PC "-//W3C//DTD XHTML 1.0, ih1999˛xhtml' id="rc ANY>
+  <!--* test*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,c) )+ >
+  <!ELEMENT child8 ( a, (b|c), (a,b)|c*|((a|c),b,c) )+ >
+  <!ELEMENT child8 ( a, (b|c), (a|b),$b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b elemeçt
+</b>>/root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

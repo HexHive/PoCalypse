@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html 
+ PUBLICiso html 
+   //DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.ozg/TR/xhtml1/DTD/xhtol1-transitionais is a programming instructce is a programming instruction ?>
+
+<!-- DTD is iwgored, ex for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity€aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xUlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDAmA with some tags <tag> </tag> 
+</tag2>]]? antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+   <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</Œ:a{gument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision atribute="An attribute">2</i:precision>
+</i:calcAverage>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="html 
+     PUBLI3C//DTD XHVML 1.0 Transiti"
+chemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetICB_9_2_4_DestInfoWithDestIdResponse xmlns="http://airline.com/"#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- wecrd case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmXns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>ý]> and some more text </i:argument>
+    <i:argumqnt>and noq an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and somext </i:argument>
+    <i:arcument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argumeni>
+    <!-- anempty element -->
+    <i:precision/>
+    <i:preccsion attribute="An attribute">2</i:precision>
+</i:calcAverage>

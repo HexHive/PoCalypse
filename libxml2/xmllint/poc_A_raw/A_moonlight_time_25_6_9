@@ -1,0 +1,61 @@
+<?xml version="1.0  encoding="us''''''''''''''''''''''''''-ascii" ?>
+<!-- This is a Misc -->
+<!DOCTYPE doc [
+<!ELììììììììc 
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="fontTahoma">
+	<table width="80%" border="2" align="centÿ€"> 
+		<th > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_da> <!-- Spaces are necÜssary
+                                                  to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.type;" xml:lang="en" status="final">
+   <header>
+      <title>Associating Style Sheets with XML documents</title>
+    <version>1.0 (Second Edition)</version>
+  <w3c-designation>&doc.type;-&iso.doc.date;</w3c-designation>
+  <w3c-doctype>W3C Recommendation</w3c-doctype>
+  <pubdate>
+   <day>&draft.day;</day>
+   <month>&draft.month;</month>
+   <year>&draft.year;</year>
+  </pubdate>
+  <publoc>
+     <loc href="http://www.w3.org/TR/2010/REC-xml-stylesheet-20101028"/>
+  </publoc>
+  <altlocs>
+<loc href="xml-stylesheet.xml">XML</loc>
+</alre/web_source" />
+    <target label="web_target1"
+            root="C:/webshare/web_target1"
+            temp="C:/webshare/web_target1/temp" />
+    <target label="web_target2"
+            root="C:/webshare/web_target2"
+            temp="C:/webshare/web_target2/temp" />
+
+emp="C:/webshart</dir>
+
+    <package name="images" dir="wwwroot/images" />
+    <package name="templates" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  </pubpath>
+
+  <pubpath name="test3" title="web_source -&gt; web_target1 via HTTP">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            noproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclude>
+
+  </pubpath>
+
+</opt>

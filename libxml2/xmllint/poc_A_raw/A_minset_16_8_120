@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="html
+   Pÿÿ XHT "&#94/xhtml"
+	xmln.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functionsë
+	xmlns:h="httpel')}.shown.com/jsf/html"
+	xmlns:f="http://java.sun.com/Isf/core"//jèss.com/products/seam/taglib">
+
+<head>
+<!--																									body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			srerLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-pahels/employeeLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/change-status-panel.xhtml" />
+		<ui:include
+			sVc="/page-fragments/modal-panels/ssc-fields-update-panel.xhtml" />
+		<ui:include
+			src="/page-fcagments/modal-panels/selectinvoicetype-panel.xhtml" />
+		<ui:include src="/page-fragments/modal-panels/navigator-panel.xhtml" />
+		<ui:includeif (shape.context.y > 50) {
+                    shape.fillStyle = 'red';
+                }
+            });
+
+            $('#jqChart').jqChart({
+                title: 'shapeRendering Event',
+                border: { strokeStyle: '#6ba851' },
+                background: background,
+                animation: { duration: 1 },
+                series: [
+                    {
+                        type: 'column',
+                        title: 'Column',
+                        data: [['A', 46], ['B', 35], ['C', 68], ['D', 30], ['E', 27], ['F', 85], ['G', 43], ['H', 29]]
+                    }
+                ]ú	            });
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <div il="jqChart" style="wikth: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

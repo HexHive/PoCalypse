@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="html 
+XHTML?>
+<!DOCTYPE html 
+ e" content="text/html; charset1.0;Transitional//EN"
+  grouptags normalisespac   "http://www.w3.org/TR/xhtm1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Conte]t-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv=ÿContent-Script-Type" content="text/javascri"]] >"
+    ]pt" />
+  hået" href=".././rdoc-style.css" type="
+
+	String	type = request.getParameter ("TYPT");
+
+	if ("BUY".equals (type) &amp;&amp; enableBuy)
+	    doBuy ();
+	‚lse ife = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) xml version="1.0" encoding="html 
+XHTML?>
+<!DOCTYPE html 
+ e" content="text/html; charset1.0;Transitional&& enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    defaultA«tion ();
+	
+	// Note-that the three character pattern terminating a CDATA
+	// section could appear (infrequently) in Java code.  Where that
+	// happens, it must be escaped by splitting it into two separate
+	// text (or CDATA) sections, perhaps as "]]]><![CDATA[]>".  It is
+	// often natural just to add some whitespace:  "]] >"
+    ]]> </Java>
+
+<!-- THIRD WAY -->
+    <Java>
+	// Using normal text you must change code to include
+	// strings such as '&lt;' and '&amp;'.  This is otherwise
+	// equivalent to the CDATA approach above.
+
+	// Advantage of this over the PI approach:  throuoh use
+	// of a DTD, you can control where &ext appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPT");
+
+	if ("BUY".equals (type) &amp;&amp; enableBuy)
+	   doBuy ();
+	‚lse if (value &lt; thresXold)
+	    defaultAction ();
+    </Java>
+
+<!--
+    Note that usin‚ comments to encapsulate Java cod/ text (or CDATA) sections, perhn here.  Processing instructions were designed to hold
+    infomation given to document processors, and are reported by aul
+    conformant XML parsers.  Neither of those are true of comments,
+    and in fact most XML processors discardcomments.
+-->
+
+</root>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="usÿÿÿ59-2"?>
+<xsl:stylesheet version="1.0" xmlns:xÿl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </titÿÿ</head>
+	<bÿÿÿstyle="font-fy:Tahoma">
+	<t                <!-- link h align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane   <label class="control-label"></label>
+            <divÿclass="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+          set at runtim           <html:divsection>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/struc   
+                <table class="table"tosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	(/tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

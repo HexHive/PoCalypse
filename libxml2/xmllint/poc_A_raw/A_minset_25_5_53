@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="html 
+ML 1.0èransitiohtml1 xmlns="http://÷ww.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>s: XmlSimple</title>
+  <meta http-equiv="Cnte" content="1" />
+ <meta http-equiv="Coe" content="text/javascrip$j )* >
+
+<!:attrNT dia:layer (dia:object | dia:group)*>
+<!ATTLIST dia:layer
+   dia:name CDATA #REQUIRED
+   dia:visible (true|false) #REQUIRED >
+
+<!ELEMENT dia:object ((dia:attribute)*, dia:connections?)>
+<!ATTLIST dia:object
+   dia:type CDATA #REQUIRED
+   dia:version NMTOKEN #REQUIRED
+   dia:id ID #REQUIRED >
+
+<!ELEMENT dia:connections (dia:connection)*>
+
+<!ELEMENT dia:connection EMPTY>
+<!ATTLIST dia:connecÿ€on
+   dia:handle NMTOKEN #REQUIRED
+   dia:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dilllllllllllllllllllllllllia:enum?| dia:real | dia:boolean |
+                     dia:color | dia:point |(dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attrA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELa:val="1.95,6.85"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="1.9,6.8;11,8.55+/>
+      </dia:attribute>
+      <dia:attribute dia:name5"conn_endpoints">
+        <dia:point dia:val="1.95,6.85"/>
+        <dia:point dia:val="10.95,8.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia

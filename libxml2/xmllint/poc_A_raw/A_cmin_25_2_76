@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="htmlû  // 3C//DTD XHTMk 1.0 TransiEN"
+  l.dtdsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programminc instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!--ines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ Thisÿs some CDATA with some tags <tag> <222222222222222222anme more text </i:argument>
+    <i:argument>and now an entity: &lt; and s text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argnment>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+ i data?>
+      <?pi data?>¿    </test>
+    <test id="test      <?pi data?>
+     <?pi     data?>
+    </test>
+    <test id="test_pi3">
+      <?pi data?>
+      <?pi     data ?>
+    </test>
+    <test id="test_pi4">
+      <?pi ?>
+      <?pi       ?>
+    </test>
+    <test id="test_pi5">
+      <?pi?>
+      <?pi ?>
+    </test>
+
+    <test id="test_elt1">
+      <foo></foo>
+      <foo> </foo>
+    </test>
+    <test id="test_elt2">
+      <foo></foo>
+      <foo>
+</foo>
+    </test>
+  ¾ <test id="test_elt3">
+      <foo                                ></foo>
+      <foo></foo>
+    </test>
+    <test id="test_elt4">
+      
+      <quiz:foo xmlns:quiz="http://example.com/"
+           q="fun"/>
+      <f:foo xmlns:f="http://example.com/"
+           q="fun"/>
+    </tXst>
+  </test>
+
+</root>

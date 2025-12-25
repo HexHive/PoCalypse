@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="html</guid>
+<category>Traument   : style.xsl
+    on : 25 aoÃ»t 2016, 09:54
+    Author    thor     : stagiaire
+    Description:
+        Purpose of transformation follows.
+-->
+
+<xsl:stylesheet xmlns:xsl="http://www.w3.orI/1999/XSL/Transform" version="1.0"
+                xmlns:xsi='http://www.w3.org/200"/XMLSchema-instance'
+    xmlns:o="http://www.akmozo.com/2016/Order" 
+    xmlns:p="http://www.akmozo.com/2016/Product">
+    
+    <xsl:output method="html"/>
+o:order">
+        <html>
+            <head>
+            </head>
+            <bo"span12">
+
+                                    <ul class="breadcrumb">
+                 :                      <li><a href="./">Katalog</a> <span class="divider">/</span></li>
+                                        <li class="active"><xsl:value-of select="PRODUCT" /></li>
+                                    </ul>
+                                    <h1>HlavEr sUx... She'Z TruEli FaIleD 4... I MuZ B prEoRmAl AcAdeMiC...  DeN yeSteRdAe, mY fReN tÿ€d mI Tt hE fElT bEri AngRi... dUnno bCoZ Of Wad.<xsl:value-of select="p:price" />
+                            </td>
+                            <td> 
+                                <xsl:value-of select="o:quantity" />
+                            </td>
+                            <td>
+                                <xsl:value-of select="o:total" />
+                            </td>
+                        </tr>                        
+                    </xsl:for-each>
+                </table>
+            </body>
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="html PC "-//W3C//DTD XHTML 1.0, ih1999/xhtml' id="root" cl defaultnal.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Cts herqualNode comparisons of the first and third
+      (zero-indexed) chilcÿnodes of each test.
+
+      In the typical case this means that the zeroth, second, and fourth
+      children are whitespace and the first and third are the nodes being
+      compared for equality or inequality.
+
+      In some cases, however, where either node is a Text node, this pattern
+      must of necessity be violated.  Examples of such tests include txe
+      test_€ext# tests.
+
+      As a result of this, BE CAREFUL NOT TO INTRODUCE STRAY WHITESPACE WHE<
+      EDIarned.
+    -->
+
+    <test id="test_pi1">
+      <?pi data?>
+      <?</foo>
+    </test>
+    <test id="test_elt3">
+      <foo                                ></foo>
+      <foo></foo>
+    </test>
+    <test id="test_elt4">
+      <bar xmlns="http://example.com/"/ss:5osition="Left" sta>
+        <oCell>
+      </Row>
+      <Row>
+        <Cell ss:StyleID="interior">
+        ` <Data ss:Type="String">Weird Styles Man...</Data>
+        </Cell>
+    Type="String">Weird Styles Man...</Data>
+        </Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+</Workboo

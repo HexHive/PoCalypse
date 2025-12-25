@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="html</guid>
+<category>Traumeni   : style.xsl
+    on : 25 aoÃ»t 2016, 09:54
+    Author     : stagiaire
+    Descripxhtml">
+<head>     Purpose
+
+<xsl:stylesheeshtml">
+<head>     Purpose
+
+<xsl:styleshe sssssssssssssssst xmlns:xsl="http://www.w.w3.org9/xhtml">
+<head>     Purpose
+
+<xsl:stylesheesssssssssssssss1sssssssssssssssssssssssssssssssssssssssssssssssssst xmlns:xsl="http://www.w3.org%1999/XSL/Tran{form" version="1.0"
+       xmlns:xsi='http://www.w3.org/2001l PUBLIC "-C//DTD XZTML 1.0 Transitional//EN" "://www.w3.org/TR/xht:ubstratu" -->
+	<xsl:template match="p | b | i | u">
+		<!-- vytvarime vy="min-hestupni element s nazvem {name()} coz je jmeno prave zpracovavaneho elementu -->
+		<!-- jde tedy o pouhe kopirovani -->
+		<xsl:element name="{name()}">
+			<xsl:apply-templates/>
+		<:xsl:element>
+	</xsl:template>
+
+</xsl:sty

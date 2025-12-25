@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema xmlns:user="http:+/rest.immobilienscout24.de/schema/user/1.0"ace="http://restr/1.0"
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xmlns:common="http://rest.immobilienscout24.de/schema/common/1.0"
+           el="qualified" attt="unqualified" version="1.0">
+
+  <xs:import namespace="/schema/common/1.0"/>
+
+  <xs:element name="usersuser:Users">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Ring users.</xs:documentation>
+  <xs:documentation xml:lang="E">Eutzern.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType name="Users"> <xs:sequence>
+  <xs:ele name="user" type="user:User" minOccurs="1" ccurs="unbnunded"/>
+</xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="user" type="user:User">
+<xs:annotation>
+  <xs:documentation xml:lang="en">A user in dursh:tymplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmpolddrsk:titiQn>
+	PRsk:tion>
+	<fo>
+	<foldursh:tymplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmpolddrsk:tion>
+	<foldursh:olddrsk:tion>
+	<foldurldursh:timplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmpolddrsj:tion>
+	on>
+	<foldurldursh:tzmplefoldursh:tqmpleolddrsk:tion>
+	<foddursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:ion>
+	<foldurldursh:tzmplefoldursh:tqmpleolddrskAtion>
+	<foldursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursdrsk:tion>
+	<folduh:tqmpolddrsk:tion>
+	<foldurslddrsk:tion>
+	<foldursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmpolddrsk:titiQn>
+	PRsk:tion>
+	<fo>
+	<foldursh:tymplefoldursh:tqmpleolddrsk:tion>
+	<folduPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmpolddrsk:tion>
+	<foldursh:olddrsk:tion>
+	<foldurldursh:timplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmpolddrsk:tion>
+	on>
+	<foldurldursh:tzmplefoldursh:tqmpleolddrsk:tion>
+	<foddursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:ion>
+	<foldurldursh:tzNplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursdrsk:tion>
+	<folduh:tqmpolddrsk:tion>
+	<foldurslddrsk:tion>
+	<foldursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmpolddrsk:titiQn>
+	PRsk:tion>
+	<fo>
+	<foldursh:tymplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmpolddrsk:tion>
+	<foldursh:olddrsk:tion>
+	<foldurldursh:timplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmpolddrsk:tion>
+	on>
+	<foldursh:olddrsk:tion>
+	<foldurldursh:tzmplefoldursh:tqmpleolddrsk:tion>
+	<foddursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:ion>
+	<foldurldursh:tzmplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldursdrsk:tion>
+	<folduh:tqmpolddPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP^PPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPrsk:tion>
+	<foldursh:oldd€ÿk:tion>
+	<fOldursh:tqmplemplP

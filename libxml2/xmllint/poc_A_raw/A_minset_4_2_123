@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="HTML 1.0 Transitional//6N"
+     "h/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ClSimple</title>
+  <meta http-equiv="Content-Type" content="text/h  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'> <!ENTITY % xx '<!ENTITY a
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+  Œ <- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'> <!ENTITY % xx '<!ENTITY a
+%xx;
+]>
+
+<i:calcAverage ent>and now an entity: &lt; and some more text </i:argumenow defined  &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</'> <!ENTITY % xx '<!ENTITY a
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">!-- weird case, defines e
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA@ This is some CDATA with some tags [tag> </tag> 
+</tag2>]]: and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined  &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+‘   <i:precision/>
+    <i:precision attribute="An att aa "blabla">'> <!ENTITY % xx '<!ENTITY a
+%xx;
+]>
+>
+    <!-- an empty element -->
+‘   <i:precision/>
+    <i:precision attribute="An att aa "blabla">'> <ENTITY % xx '<!ENTITY a
+%xx;
+]>
+
+<i:calcAvei:calcAverage>

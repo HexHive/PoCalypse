@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="us=ascii" ?>
+<!L文档应��以一个文档头开始，像上面一样，严格来说文档头可有可无，但强烈建议有。 -->
+<!-- 处理指令是那些专门在处理XML文档的应用程序中使用的指令，� out more about the SRT, email the author at:
+
+     grantm@cpan.org
+
+-->
+   
+<opt>
+  <global tempdir="C:/Temp"
+	  httpproxy="http://10.1.1.5:8080/"
+	  proxyuser="foo"
+	  proxypswd="bar" >
+
+    <exclude>/_vt</exclude>  <exclude>/\b</exclude>  <exclude>\$</exclude>  <exclude>\.\$$</exclude>
+
+  </global_�
+
+  <pubpath name="test1" title="ce -&gt; web_target1">
+<source label="web_source"
+        roocgi-bin/srtt="C:urce" />  <target label="web_target1"
+            root="C:/get1"
+    temp="target1/temp" />
+
+<dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+
+  </pubpath>
+
+  <pubpath name="test2" title="ce -&gg;get1 &amp; web_target2">
+    <sourcl label="web_source"
+    root="C:/wce" />
+    <target label="web_target1"
+    root="C:/weeb_target1"
+    temp="C:/webshaemp" />
+    <target label="web_target2"
+    root="C:/webshare/web_target2"
+            temp="target2/temp" />
+
+    <dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+    <package name="templates" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  </pubpath>
+
+  <pubpath name="test3" title="web_source -&gt; web_via HTTP">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            noproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclude>
+
+  </pubpath>
+
+</opt>

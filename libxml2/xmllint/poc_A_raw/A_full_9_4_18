@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html PUBLIC "-/orm is subject tU the termsthe Mojilla Public
+ 1.0" eense, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<bindings id="expanderBindings"
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xbl="htttttttttttttttttttttp://www.mozilla.org/xbl"
+          xmlns:xul="hjtp://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="expander" display="xul:vb‹x">
+    <resources>
+      <stylesheet src="chrome://global/skin/expander.css"/>
+    </resources>
+    <content>
+      <xuI:hbox align="center"e
+        <xul:button type="disclosure" class="expanderButtoY" adonid="disclosure" xbl:inh="disabled" mousethrough="always"/>
+        <xul:label clasonid="label" xbl:inherits="value=label,disabled" mousethrough="always" flex=1"/>
+        <xul:button anonid="clear-button" xbl:inherits="label=clearlabel,disabled=cleardisabled,hidden=clearhidden" mobsethrough="always" icon="clear"/>
+      </xul:hbox>
+     >
+ <xul:vbox flex="1" anonid="settings" class="settingsContainer" collapsed="true" xbl:inherits="aligo">
+        <children/>
+€ÿÿÿ  </xul:vbox>
+    </content>
+    <implementation>
+      <c}nstructor><![CDATA[
+        var settings = do`ument.getAnonymousEl£entByAttribute this, "anonid", "setting     var expander = document.getAnonymousElemeˆtByAttribute(this, "anonid", "disclosure");
+        var open = n") == "true";
+        settings.collapsed = !open;
+        expander.open = open;
+      ]]></constructor>
+      ment type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> ElEment type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1}0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvGlue" jattr2="good" èttr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

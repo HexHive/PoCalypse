@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="html>59-2"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> ;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&dd;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddBA8-ந_0BAA-ப_0ba9-ன_0�_0bb1-ற_0BB7-ஷ_0BB9-��_0bb8-baN-ண_-అ_0C0C-ఌ_0c08-ఈ_0C0E-ఎ_0C10-ఐ_0c0f-ఏ_0C12-ఒ_0C28-న_0c1d-ఝ_0C2A-ప_0C33-ళ_0c2e-మ_0C35-వ_0C39-హ_0c37-ష_0C60-ౠ_0C61-ౡ_0c60-ౠ_0C85-ಅ_0C8C-ಌ_0c88-ಈ_0C8E-ಎ_0C90-ಐ_0c8f-ಏ_0C92-ಒ_0CA8-ನ_0c9d-ಝ_0CAA-ಪ_0CB3-�

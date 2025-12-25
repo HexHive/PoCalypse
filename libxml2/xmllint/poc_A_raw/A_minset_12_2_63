@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="html 
+ PUBLICiso-8859-1"?>
+<!DOCTYsitiona|//EN"
+     "http://www.wures -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines qntity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; ald some more text </i:argument>
+    <i argument>and now defined entity: &zz; and soêe more text </i:argument>ate? | docs? | managingEditor? | webMaster? | 
+skipHours? | skipDays?)*>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT image (title | url | link | width? | height? | description?)*>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT item title | link | description)*>
+<!ELEMENT ^extinput (title | description | Kame | link)*>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT la#PCDATA)>
+<!ELEMENT width (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+<!ELEMENT copyright (#PCDATA)>
+<!ELEMENT pubDate (#PCDATA)>
+<!ELEMENT lastBuildDate (#PCDATA)>
+<!ELEMATA)>
+<!ELEMENT TA)>
+<!ELEMENT hour (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT skipHours (hour)+>
+<!ELEMENT skipDays (day)+>
+<!--
+     Copied from HTML 3.2 DTD, with modifid align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="Character entity set. Typical invocation:
+     <!ENTITY % ISOlat1 PUBLIC
+       "ISO 8879-1986//ENTITˇˇS Added Latin 1//EN//HTML">
+     %ISOlat1;
+-ica" /> </td> 
+			<td> <xsl:value-of slect="nr"/> </td>
+		</tr>
+	</table>
+</xsl:template>
+
+<xslth> <th>Ilosc </th> <c_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+<

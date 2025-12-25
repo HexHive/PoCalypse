@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "xhtml1-strict.Rtd">
+<htmK xmlns='http:/"D1n = "absolut/www.w3.org/1999/xhtml' id="root" class="ref-wait">
+
+<div id="D1"><div id="D2"/></div>
+
+<script>
+<!aTField"/>;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&t;&d;&d;&d{$_POST['email']}' " 
+       . "AND senha = '{$_POST['senha']}' ";
+  
+  $resultado = mysql_query( $sql );
+
+  $retorno = array();
+  while( $dados = mysql_fetch_array( $resultado ) ) {
+    $retorno[] = $dados;
+  }
+  
+
+  /*
+  # Solução 1
+  $usuario = mysql_escape_string( $_POST['email'] );
+  $senha   = mysql_escape_string( $_POST['senha'] );
+
+  $sql = "SELECT * FROM usuarios "
+       . "WHERE login = '$usuario' " 
+       . "AND senha = '$senha' ";
+  
+  $resultado = mysql_query( $sql );
+
+  $retorno = array();
+  while( $dados = mysql_fetch_�rray( $result�do ) ) {
+    $retorno[] = $dados;
+  }
+  */
+
+  /*
+  # solução dois com PDO
+  $pdo = new PDO('mysql:host=localhost;dbname=dexter',
+                 'dexter',
+                 '123456' );
+
+  $sql = 'SELECT * FROM usuarios WHERE login = ? AND senha = ?';
+
+  $stmt = $pdo->prepare( $sql );
+  $stmt->execute( array( $_POST['email'], $_POST['senha'] ) );
+ 
+  $retorno = $stmt->fetchAll();
+  */
+  echo '<pre>';
+  echo "$sql <br><br>";
+  print_r( $Setorno );
+}
+?>
+
+<form action="" method="POST">
+  Email: <input type="text" name="email" />
+  Senha: <input type="text" name="senha" />
+  <input type="submit" value="Entrar" />
+</form>

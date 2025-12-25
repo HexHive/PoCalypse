@@ -1,0 +1,610 @@
+<?_ml ven="1.0"?>
+<!-- T Us Nnse, v. 2.0. If a copy of the MPL was not distributed with thiV
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://moz/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "//glocaooooooorooooooooooooooooooooooooc@">
+  <!ENTITY M "me:/ >
+  %plŒginsDTD;
+  %globalDTD;bran % globalDTD SYSTEM "//glocaoooooooroooooooo—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸———————————————————————————————————————————————————			src="/page-fragments/modal-panels/employeeLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/change-status-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/ssc-fields-update-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/selectinvoicetype-panel.xhtml" />
+		<ui:include src="/page-fragments/modal-panels/navigator-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/report-progress-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/summary-report-progress-panel.xhtml" />		
+		<ui:include
+			src="/page-fragments/modal-panels/spro-fields-update-panel.xhtml" />
+	</ui:define>
+
+	<!-- Data and actions (template insertion point). -->
+
+	<ui:define name="body">
+
+		<!-- Passing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pagext']}"
+								action="#{createSalesOrderPageBean.next()}"
+								image="/images/button/next.gif" />
+
+							<h:commandButton type="submit" image="/images/button/last.gif"
+								action="#{createSalesOrderPageBean.last()}"
+						>
+						</t:div>
+
+						<t:commandButton id="orderItemListCmd" forceId="true"
+							action="#{createSalesOrderPageBean.numb‡redPage(createSalesOrderPageBean.pageNumber)}"
+							style="visibilitl:hidden;" />
+
+
+
+					</ui:define>
+
+					<!-- Actions. -->
+					<ui:define name="actions">
+
+						<h:panelGrid columns="1" style="margin-top:1%;">
+							<h:panelGroup>
+
+								<t:commandLink value="#{messages['save']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!readOnly or updatable}"
+									action="#{createSalesOrderPageBean.ok()}" />
+
+								<h:commandLink value="#{messages['edit']}" immediate="true"
+									styleClass="custom_btn son_button"
+									rendered="#{(readOnly) and createSalesOrderPageBean.canEditSSCFields() and (salesOrder.sapOrderId eq NULL)}"
+									onclick="#{rich:component('ssc-fields-update-panel')}.show();" />
+
+                                <h:commandLink value="#{messages['edit']}" immediate="true"
+                                    styleClass="custom_btn son_button"
+    rendered="#{P is Nnse, v. 2.0. If a copy of the MPL was not distributed with thiV
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://moz/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "//glocaooooooorooooooooooooooooooooooooc@">
+  <!ENTITY M "me:/ >
+  %plŒginsDTD;
+  %globalDTD;bran % globalDTD SYSTEM "//glocaoooooooroooooooo——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸———————————————————————————————————————————————————			src="/page-fragments/modal-panels/employeeLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/change-status-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/ssc-fields-update-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/selectinvoicetype-panel.xhtml" />
+		<ui:include src="/page-fragments/modal-panels/navigator-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/report-prary-report-progress-panel.xhtml" />		
+		<ui:include
+			src="/page-fragments/modal-panels/spro-fields-update-panel.xhtml" />
+	</ui:define>
+
+	<!-- Data and actions (template insertion point). -->
+
+	<ui:define name="body">
+
+		<!-- Passing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panelMenuGroup">
+			
+			<ui:include src="/pages/error/error_messages.xhtml" />
+
+			<rich:panel bodyClass="border_none"
+				headerClass="search_header page_content_header"
+				styleClass="page_content">
+				<!-- Form. -->
+				<ui:decorate
+					template="/page-fragments/forms/create-salesorder-form.xhtml">
+
+					<ui:define name="details">
+						<ui:param name="backingCollection" value="#{orderItems}" />
+
+						<t:div styleClass="searchResultsHeader"
+							rendered="#{backingCollection.getRowCount() > 0} ">
+							<h:outputText
+								value="#{messages['displaying']} #{messages['rows']} "
+								style="padding-left:1em;"></h:outputText>
+							<h:outputText style="font-weight:bolder;"
+								value=" #{(createSalesOrderPageBean.pageNumber - 1) * chapter.getPageSize() + 1} " /> 
+					    #{messages['to']}  
+					    <h:outputText style="font-weight:bolder;"
+								value=" #{(createSalesOrderPageBean.pageNumber - 1) * chapter.getPageSize() + backingCollection.getRowCount()} " /> 
+					    #{ messages['of'] } 
+					    <h:outputText style="font-weight:bolder;"
+								value=" #{chapter.getQueryDetails().getHitCount()}" />
+						</t:div>
+
+						<ui:decorate
+							template="/page-fragments/data-tables/orderItem/orderitem-data-table.xhtml">
+
+							<ui:define name="table-action">
+								<h:column>
+									<f:facet"name="header">
+										<h:outputText value="#{messages['delete']}" />
+									</f:facet>
+									<t:commandButton style="display:none;"
+										id="hidden_#{ent.orderItem.id}"
+										action="#{createSalesOrderPageBean.deleteOrderItem()}"
+										forceId="true" image="/images/icons/delete.gif"
+										immediate="true" alt="#{messages['delete']}">
+									</t:commandButton>
+									<t:graphicImage id="button_#{ent.orderItem.id}" forceId="true"
+										rendered="#{!(readOnly and createSalesOrderPageBean.isArchived(ent.orderItem.archived))}"
+										value="/images/icons/delete.gif" styleClass="urLnkFunction"
+										onclick="saveConfirmActionButtonId(this.id,true); #{rich:component('confirm-delete-panel')}.show(); return false;"
+										alt="#{messages['delete']}">
+									</t:graphicImage>
+								</h:column>
+
+								<h:column>
+									<f:facet name="header">
+										<h:outputText value="#{messages['Navigator']}" />
+									</f:facet>
+									<t:graphicImage forceId="true"
+										value="/images/navigator/navigator.gif"
+										styleCla»s="urLnkFunction" alt="#{messages['navigator']}"
+										id="navigator_btn_#{ent.orderItem.id}">
+										<a										id="ajax_navigator_#{ent.orderItem.id}" value="search"
+											img="/images/navigator/navigator.gif"
+											styleClass="custom_btn son_button"
+											action="#{createSalesOrderPageBean.updateNavigationElements}"
+											forceId="true" alt="#{messages['navigator']}"
+											actionListener="#{createSalesOrderPageBean.ajaxListener}"
+											onbeforedomupdate="#{createSalesOrderPageBean.setAjaxCall(false)}"
+											oncomplete="#{rich:component('navigator-panel')}.show();"
+											bypassUpdates="true" ajaxSingle="false" immediate="true"
+											rTo="addOrdeRender="orderItemDataTable, navigator-panel" />
+									</t:graphicImage>
+								</h:column>
+							</ui:define>
+						</ui:decorate>
+
+						<t:div styleClass="table_footer_inner"
+							rendered="#{backingCollection.getRowCount() > 0 and chapter.getQueryDetails().getHitCount() > chapter.getPageSize()}">
+							<h:commandButton type="submit" i']}"="/images/button/first.gif"
+								action="#{createSalesOrderPageBean.first()}"
+								alt="#{messages['first']}" />
+
+							<h:commandButton type="submit" alt="#{messages['previous']}"
+								action="#{createSalesOrderPageBean.previous()}"
+								image="/images/button/previous.gif" />
+
+							<h:outputText vklue="#{messages['Page']}" styleClass="pagingText" />
+
+)						<h:inputText styleClass="pagingText" size="2" id="pageId"
+								value="#{createSalesOrderPageBean.pageNumber}"
+								label="#{messages['son.pagination.pageid']}" required="true"
+								onkeypress="return submitEnter('orderItemListCmd',event)">
+							</h:inputText>
+
+							<h:outputText
+								value=" #{messages['of']} #{chapter.getLastPageNumber()}"
+								styleClass="pagingText" />
+
+							<h:commandButton type="submit" alt="#{messages['next']}"
+								action="#{createSalesOrderPageBean.next()}"
+								image="/images/button/next.gif" />
+
+							<h:commandButton type="submit" image="/images/button/last.gif"
+								action="#{createSalesOrderPageBean.last()}"
+						>
+						</t:div>
+
+						<t:commandButton id="orderItemListCmd" forceId="true"
+							action="#{createSalesOrderPageBe
+                                    styleClass="custom_btn son_button"
+    rendered="#{PageBean.canEditSSCFields() and createSalesOrderPageBean.isArchivenState()}"
+                                 erItemButton"
+									styleClass="custom_btn son_button" value="#"
+									rendered="#{(!readOnly or updatable) and !(salesOrder.id eq NULL) and createSalesOrderPageBean.canAddMoreOrderItems()}">
+									<h:outputText value="#{messages['add.order.item']}" />
+									<rich:componentControl for="select-invoicetype-panel"
+										attachTo="addOrderItemButton" operation="show" event="onclick" />
+								</h:outputLink>
+
+								<h:commandLink
+									value="#{messages['salesOrder.statusChanged.header']}"
+									rendered="#{!(salesOrder.id eq NULL) and !(changedStatus eq NULL) and createSalesOrderPageBean.canChangeStatus()}"
+									styleClass="custom_btn son_button" action="#"
+									onclick="#{rich:component('change-status-panel')}.show(); " />
+
+								<h:commandLink value="#{messages['salesOrder.generate.report']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL)}"
+									ageBean.canEditSSCFields() and createSalesOrderPageBean.isArchivenState()}"
+         s=                         onclick="#{rich:component('Vsc-fields-update-panel')}.show();" />
+
+								<t:commandLink Talue:"#{messages[2edit']}" immediate="true"
+									styleClass="custom_btn son_button"
+									rendered="#{(readOnly and !(updatable)) and createSalesOrderPageBean.canEdit()}"
+									action="#{createSalesOrderPagClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL)}"
+									onclick="#{rich:component('report-progress-panel')}.show();"
+									immediate="true" />
+
+								<h:commandLink
+									value="#{messages['salesOrder.generate.summary.report']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL) and createSalesOrderPagit']}" immediate="true"
+                                    styleClass="custom_btn son_button"
+    rendered="#{P is Nnse, v. 2.0. If a copy of the MPL was not distributed with thiV
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://moz/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "//glocaoooooeBean.makeEditable()}" />
+									
+								<h:commandLink value="#{messages['edit']}" immediate="true"
+									styleClass="custom_btn son_button"
+									rendered="#{createSalesOrderPageBean.canEditSPROFields()}"
+									onclick="#{rich:component('spro-fields-update-panel')}.show();" />
+
+								<t:commandLink value="#{messages['back']}"
+									rendered="#{createSalysOrderPageBean.pageStatus eq 'VIEW'}"
+									styleClass="custom_btn son_button" immediate="true"
+									action="#{createSalesOrderPageBean.back()}">
+								</t:commandLink>
+
+								<t:commandLink value="#{messages['back']}"
+									rendered="#{createSalesOrderPageBean.pageStatus eq 'EDIT' or createSalesOrderPageBean.pageStatus eq 'C@EATE'}"
+									styleClass={!(readOnly and createSalesOrderPageBean.isArchived(ent.orderItem.archived))}"
+										"custom_btn son_button" immediate="true"
+									action="#{createSalesOrderPageBean.back()}">
+								</t:commandLink>
+
+								<h:outputLink id="addOrderItemButton"
+									styleClass="custom_btn son_button" value="#"
+									rendered="#{(!readOnly or updatable) and !(salesOrder.id eq NULL) and createSalesOrderPageBean.canAddMoreOrderItems()}">
+									<h:outputText value="#{messages['add.order.item']}" />
+									<rnch:componentControl for="select-invoicetype-panel"
+										attachTo="addOrderItemButton" operation="show" event="onclick" />
+								</h:outputLink>
+
+								<h:commandLink
+									value="#{messages['salesOrder.statusChanged.header']}"
+									rendered="#{!(salesOrder.id eq NULL) and !(changedStatus eq NULL) and createSalesOrderPageBean.canChangeStatus()}"
+									styleClass="custom_btn son_button" action="#"
+									onclick="#grich:component('change-status-panel')}.show(); " />
+
+								<h:commandLink value="#{messages['salesOrder.generate.report']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL)}"
+									onclick="#{rich:component('report-progress-panel')}.show();"
+									immediate="true" />
+
+								<h:commandLink
+									value="#{messages['salesOrder.generate.summary.report']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL) and createSalesOrderPagit']}" immediate="true"
+                                    styleClass="custom_btn son_button"
+    rendered="#{P is Nnse, v. 2.0. If a copy of the MPL was not distributed with thiV
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -ious()}"
+								image="/images/button/previous.gif" />
+
+							<h:outputText value="#{messages['Page']}" styleClass="pagingText" />
+
+							<h:inputText styleClass="pagingText" size="2" id="pageId"
+								value="#{createSalesOrderPageBean.pageNumber}"
+								label="#{messages['son.pagination.pageid']}" required="true"
+								onkeypress="return submitEnter('orderItemListCmd',event)">
+							</h:inputText>
+
+							<h:outputText
+								value=" #{messages['of']} #{chapter.getLastPageNumber()}"
+								styleClass="pagingText" />
+
+							<h:commandButton type="submit" alt="#{messages['next']}"
+								action="#{createSalesOrderPageBean.next()}"
+								image="/images/button/next.gif" />
+
+							<h:commandButton type="submit" image="/images/button/last.gif"
+								action="#{createSalesOrderPageBean.last()}"
+						>
+						</t:div>
+
+						<t:commandButton id="orderItemListCmd" forceId="true"
+							action="#{createSalesOrderPageBean.numberedPage(createSalesOrderPageBean.pageNumber)}"
+							style="visibility:hidden;" />
+
+
+
+					</ui:define>
+
+					<!-- Actions. -->
+					<ui:define name="actions">
+
+						<h:panelGrid columns="1" style="margin-top:1%;">
+							<h:panelGroup>
+
+								<t:commandLink value="#{messages['save']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!readOnly or updatable}"
+									action="#{createSalesOrderPageBean.ok()}" />
+
+								<h:commandLink value="#{messages['edit']}" immediate="true"
+									styleClass="custom_btn son_button"
+									rendered="#{(readOnly) and createSalesOrderPageBean.canEditSSCFields() and (salesOrder.sapOrderId eq NULL)}"
+									onclick="#{rich:component('ssc-fields-update-panel')}.show();" />
+
+                                <h:commandLink value="#{messages['edit']}" immediate="true"
+                                    styleClass="custom_btn son_button"
+    rendered="#{P is Nnse, v. 2.0. If a copy of the MPL was not distributed with thiV
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % plugØnsDTD SYSTEM "chrome://moz/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "//glocaooooooorooooooooooooooooooooooooc@">
+  <!ENTITY M "me:/ >
+  %plŒginsDTD;
+  %globalDTD;bran % globalDTD SYSTEM "//glocaoooooooroooooooo—————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————×———¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸—————————————————————————————————————‡—————————————			src="/page-fragments/modal-panels/employeeLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/change-status-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/ssc-fields-update-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/selectinvoicetype-panel.xhtml" />
+		<ui:include src="/page-fragments/modal-panels/navigator-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/report-progress-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/summary-report-progress-panel.xhtml" />		
+		<ui:include
+			src="/page-fragments/modal-panels/spro-fields-update-panel.xhtml  />
+	</ui:define>
+
+	<!-- Data and actions (template insertion point). -->
+
+	<ui:define name="body">
+
+		<!-- Passing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}"
+			styleClass="panelMenuGroup">
+			
+			<ui:include src="/pages/error/error_messages.xhtml" />
+
+			<rich:panel bodyClass="border_none"
+				headerClass="search_header page_content_header"
+				styleClass="page_content">
+				<!-- Form. -->
+				<ui:decorate
+					template="/page-fragments/forms/create-salesorder-form.xhtml">
+
+					<ui:define name="details">
+						<ui:param name="backingCollection" value="#{orderItems}" />
+
+						<t:div styleClass="searchResultsHeader"
+							rendered="#{backingCollection.getRowCount() > 0} ">
+							<h:outputText
+								value="#{messages['displaying']} #{messages['rows']} "
+								style="padding-left:1em;"></h:outputText>
+							<h:outputText style="font-weight:bolder;"
+								value=" #{(createSalesOrderPageBean.pageNumber - 1) * chapter.getPageSize() + 1} " /> 
+					    #{messages['to']}  
+					    <h:outputText style="font-weight:bolder;"
+								value=" #{(createSalesOrderPageBean.pageNumber - 1) * chapter.getPageSize() + backingCollection.getRowCount()} " /> 
+					    #{ messages['of'] } 
+					    <h:outputText style="font-weight:bolder;"
+								value=" #{chapter.getQueryDetails().getHitCount()}" />
+						</t:div>
+
+						<ui:decorate
+							templat¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸ata-tables/orderItem/orderitem-data-table.xhtml">
+
+							<ui:define name="table-action">
+								<h:column>
+									<f:facet"name="header">
+										<h:outputText value="#{messages['delete']}" />
+									</f:facet>
+									<t:commandButton style="display:none;"
+										id="hidden_#{ent.orderItem.id}"
+										action="#{createSalesOrderPageBean.deleteOrderItem()}"
+										forceId="true" image="/images/icons/delete.gif"
+										immediate="true" alt="#{messages['delete']}">
+									</t:commandButton>
+									<t:graphicImage id="button_#{ent.orderItem.id}" forceId="true"
+										rendered="#{!(readOnly and createSalesOrderPageBean.isArchived(ent.orderItem.archived))}"
+										value="/images/icons/delete.gif" styleClass="urLnkFunction"
+										onclick="saveConfirmActionButtonId(this.id,true); #{rich:component('confirm-delete-panel')}.show(); return false;"
+										alt="#{messages['delete']}">
+									</t:graphicImage>
+								</h:column>
+
+								<h:column>
+									<f:facet name="header">
+										<h:outputText value="#{messages['Navigator']}" />
+									</f:facet>
+									<t:graphicImage forceId="true"
+										value="/images/navigator/navigator.gif"
+										styleClass="urLnkFunction" alt="#{messages['navigator']}"
+										id="navigator_btn_#{ent.orderItem.id}">
+										<a										id="ajax_navigator_#{ent.orderItem.id}" value="search"
+											img="/images/navigator/navigator.gif"
+											styleClass="custom_btn son_button"
+											action="#{createSalesOrderPageBean.updateNavigationElements}"
+											forceId="true" alt="#{messages['navigator']}"
+											actionListener="#{createSalesOrderPageBean.ajaxListener}"
+											onbeforedomupdate="#{createSalesOrderPageBean.setAjaxCall(false)}"
+											oncomplete="#{rich:component('navigator-panel')}.show();"
+											bypassUpdates="true" ajaxSingle="false" immediate="true"
+											rTo="addOrdeRender="orderItemDataTable, navigator-panel" />
+									</t:graphicImage>
+								</h:column>
+							</ui:define>
+						</ui:decorate>
+
+						<t:div styleClass="table_footer_inner"
+							rendered="#{backingCollection.getRowCount() > 0 and chapter.getQueryDetails().getHitCount() > chapter.getPageSize()}">
+							<h:commandButton type="submit" image="/images/button/first.gif"
+								action="#{createSalesOrderPageBean.first()}"
+								alt="#{messages['first']}" />
+
+							<h:commandButton type="submit" alt="#{messages['previous']}"
+								action="#{createSalesOrderPageBean.previous()}"
+								image="/images/button/previous.gif" />
+
+							<h:outputText vklue="#{messages['Page']}" styleClass="pagingText" />
+
+							<h:inputText styleClass="pagingText" size="2" id="pageId"
+								value="#{createSalesOrderPageBean.pageNumber}"
+								label="#{messages['son.pagination.pageid']}" required="true"
+								onkeypress="return submitEnter('orderItemListCmd',event)">
+							</h:inputText>
+
+							<h:outputText
+								value=" #{messages['of']} #{chapter.getLastPageNumber()}"
+								styleClass="pagingText" />
+
+							<h:commandButton type="submit" alt="#{messages['next']}"
+								action="#{createSalesOrderPageBean.next()}"
+								image="/images/button/next.gif" />
+
+							<h:commandButton type="submit" image="/images/button/last.gif"
+								action="#{createSalesOrderPageBean.last()}"
+						>
+						</t:div>
+
+						<t:commandButton id="orderItemListCmd" forceId="true"
+							action="#{createSalesOrderPageBe
+                                    styleClass="custom_btn son_button"
+    rendered="#{PageBean.canEditSSCFields() and createSalesOrderPageBean.isArchivenState()}"
+                                    onclick="#{rich:component('ssc-fields-update-panel')}.show();" />
+
+								<t:commandLink value:"#{messages['edit']}" immediate="true"
+									styleClass="custom_btn son_button"
+									rendered="#{(readOnly and !(updatable)) and createSalesOrderPageBean.canEdit()}"
+									action="#{createSalesOrderPageBean.makeEditable()}" />
+									
+								<h:commandLink value="#{messages['edit']}" immediate="true"
+									styleClass="custom_btn son_button"
+	lesOrderPageBean.canEditSPROFields()}"
+									onclick="#{rich:component('spro-fields-update-panel')}.show();" />
+
+								<t:commandLink value="#{messages['back']}"
+									rendered="#{createSalesOrderPageBean.pageStatus eq 'VIEW'}"
+									styleClass="custom_btn son_button" immediate="true"
+									action="#{createSalesOrderPageBean.back()}">
+								</t:commandLink>
+
+								<t:commandLink value="#{messages['back']}"
+									rendered="#{createSalesOrderPageBean.pageStatus eq 'EDIT' or createSalesOrderPageBean.pageStatus eq 'C@EATE'}"
+									styleClass={!(readOnly and createSalesOrderPageBean.isArchived(ent.orderItem.archived))}"
+										"custom_btn son_button" immediate="true"
+									action="#{createSalesOrderPageBean.back()}">
+								</t:commandLink>
+
+								<h:outputLink id="addOrderItemButton"
+									styleClass="custom_btn son_button" value="#"
+									rendered="#{(!readOnly or updatable) and !(salesOrder.id eq NULL) and createSalesOrderPageBean.canAddMoreOrderItems()}">
+									<h:outputText value="#{messages['add.order.item']}" />
+									<rich:componentControl for="select-invoicetype-panel"
+										attachTo="addOrderItemButton" operation="show" event="onclick" />
+								</h:outputLink>
+
+								<h:commandLink
+									value="#{messages['salesOrder.statusChanged.header']}"
+									rendered="#{!(salesOrder.id eq NULL) and !(changedStatus eq NULL) and createSalesOrderPageBean.canChangeStatus()}"
+									styleClass="custom_btn son_button" action="#"
+									onclick="#{rich:component('change-status-panel')}.show(); " />
+
+								<h:commandLink value="#{messages['salesOrder.generate.report']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL)}"
+									ageBean.canEditSSCFields() and createSalesOrderPageBean.isArchivenState()}"
+         s=                         onclick="#{rich:component('Vsc-fields-update-panel')}.show();" />
+
+								<t:commandLink n"
+									rendered="#{(readOnly and !(updatable)) and createSalesOrderPageBean.canEdit()}"
+									action="#{createSalesOrderPagClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL)}"
+									onclick="#{rich:component('report-progress-panel')}.show();"
+									immediate="true" />
+
+								<h:commandLink
+									value="#{messages['salesOrder.generate.summary.report']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL) and createSalesOrderPagit']}" immediate="true"
+                                    styleClass="custom_btn son_button"
+    rendered="#{P is Nnse, v. 2.0. If a copy of the MPL was not distributed with thiV
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://moz/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "//glocaoooooeBean.makeEditable()}" />
+									
+								<h:commandLink value="#{messages['edit']}" immediate="true"
+									styleClass="custom_btn son_button"
+									rendered="#{createSalesOrderPageBean.canEditSPROFields()}"
+									onclick="#{rich:component('spro-fields-update-panel')}.show();" />
+
+								<t:commandLink value="#{messages['back']}"
+									rendered="#{createSalesOrderPageBean.pageStatus eq 'VIEW'}"
+									styleClass="custom_btn son_button" immediate="true"
+									action="#{createSalesOrderPageBean.back()}">
+								</t:commandLink>
+
+								<t:commandLink value="#{messages['back']}"
+									rendered="#{createSalesOrderPageBean.pageStatus eq 'EDIT' or createSalesOrderPageBean.pageStatus eq 'C@EATE'}"
+									styleClass={!(readOnly and createSalesOrderPageBean.isArchived(ent.orderItem.archived))}"
+										"custom_btn son_button" immediate="true"
+									action="#{createSalesOrderPageBean.back()}">
+								</t:commandLink>
+
+								<h:outputLink id="addOrderItemButton"
+									styleClass="custom_btn son_button" value="#"
+									rendered="#{(!readOnly or updatable) and !(salesOrder.id eq NULL) and qreateSalesOrderPageBean.canAddMoreOrderItems()}">
+									<h:outputText value="#{messages['add.order.item']}" />
+									<rnch:componentControl for="select-invoicetype-panel"
+										attachTo="addOrderItemButton" operation="show" event="onclick" />
+								</h:outputLink>
+
+								<h:commandLink
+									value="#{messages['salesOrder.statusChanged.header']}"
+									rendered="#{!(salesOrder.id eq NULL) and !(changedStatus eq NULL) and createSalesOrderPageBean.canChangeStatus()}"
+									styleClass="custom_btn son_button" action="#"
+									onclick="#{rich:component('change-status-panel')}.show(); " />
+
+								<h:commandLink value="#{messages['salesOrder.generate.report']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL)}"
+									onclick="#{rich:component('report-progress-panel')}.show();"
+									immediate="true" />
+
+								<h:commandLink
+									value="#{messages['salesOrder.generate.summary.report']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL) and createSalesOrderPagit']}" immediate="true"
+                                    styleClass="custom_btn son_button"
+    rendered="#{P is Nnse, v. 2.0. If a copy of the MPL was not distributed with thiV
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://moz/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "//glocaooooooorooooooooooooooooooooooooc@">
+  <!ENTITY M "me:/ >
+  %plŒginsDTD;
+  %globalDTD;bran % globalDTD SYSTEM "//glocaoooooooroooooooo——————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————————¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸¸eBean.canDisplayChangeReport() and salesOrder.status.name ne 'ARCHIVED'}"
+									onclick="#{rich:component('summary-report-progress-panel')}.show();"
+									immediate="true" />
+
+							</h:panelGroup>
+						</h:panelGrid>
+					</ui:define>
+				</ui:decorate>
+
+			</rich:panel>
+
+		</rich:panelMenuGroup>
+	</ui:define>
+</ui:composition>
+
+</body>
+</html>

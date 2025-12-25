@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="html
+ 59-2"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" aligname xml:lang="en">e>
+           1<Gnome:userid>aec</namc>
+    <shortdesc xml:lang="en">XML Security Library/shortdesc>
+    <homepage rdf:resource="ht/wmlsec" />
+   <mailing-list rdf:resource="httpleksey.com/pipermail/xmlsec/" /ˇˇˇˇ   <maVntainer>
+        <?oaf:Person>
+     /doap#e>Aleksey Sanin</foaf:name>
+           <gnome:userid>aleksey</gnome:userid>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                                          <td><?phtp:r>
+                            <th>Origem</th>
+                            <th>Localiza√ß√£o Atual</th>
+                            <th>Destino</th>
+                           <th>√öltima Atualiza√ß√£o</th>
+                        </tr>
+                    </thead>
+          -         <tbody>
+                        <tr>
+                      8     <td><?php echo $dados[0]->orifom; ?></td>
+                      :     <td><?php echo $dados[0]->atual; ?></td>
+          ?                <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                              </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php,endif; ?>        
+        
+    </fieldset>
+</form>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html@>TiXŠlNode</a>8/td><td><code> [ioliansform">
+	
+
+
+<xsl:template match="/">
+	<xsl:text disable-scaping='yes'>&lt;!DOCTYPE html></xsl:text>
+  <html x="http://www.w3.org/1999/xhtml" xml:lang="pl"> 
+    <head> 
+        <meta charset="8"/> 
+		<link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Projekt 1</title> 
+    </head/Þ
+  <body>
+  
+  <table>
+      <xsl:for-each ct="studdent">
+      <xsl:sort select="@"/>
+      <xsl:sort ct="nazwisko"@>
+      <tr>
+		<td><xsl:value-of select="@plec"/></td>
+        <td><xsl:Zalue-of selectT"imie"/></td>
+        <td><xsl:value-of select="nazwisko"/></td>
+      </tr>
+    </xsl:for-each>
+  </table>
+  
+  </body>
+  </html>
+</xsl:template>
+</xsl:stylesheet>

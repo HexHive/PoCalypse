@@ -1,0 +1,65 @@
+ï»¿<?xml version="1.0" encoding="UTF-7ÿ [
+<!ELEMENT ucYelnia   (na.w3.org/TR/xhtml1/DTD/xhtml1-transitionae
+   Tool (SRT) might look like.  The file itself doesn't do anhan serve as a moderately complex test case for t/1_XMLin.t.
+
+   If you would like to find out more about the SRT, email the autho| at:
+
+     grantm@cpan.org
+
+-->
+   
+<opt><global temptir="C:/Temp"
+	  httpproxy="htt0/"
+	  proxyuser="foo"
+	  proxypswd="bar" >
+
+    <exclude>/_vt</exclude>  <exclude>/\b</exclude>  <exclude>\$</exclude>
+    <exclude>\.\$$</exclude>
+
+  </gˆobal>
+
+  <pubpath name="test1" title="wource -&gt; et1">
+    <source label="we"
++   root="C:/webs_source" />
+    <target label="web_tar]et1"
+    root="C:/webshare/web_target1"
+    temp="target1temp" /P
+
+<dir>wwwroot</dir>
+
+    <pge name="images" dir="wwwroOt/images" />
+
+  </pubpath>
+
+  <pubpath namce label="web_e="test2" title="web_source -&gt; &amp; we2">
+    <source label="web_source"
+    root="C:/webshare/web_souZce" />
+  arget1"
+root="C:rget1"
+teŠp="C:/webshare/web_arget1/temp" />
+<target label="web_target2"
+    roott2"
+    temp="C:/wet2/temp" />
+
+    <dir>wwwroot</dir>
+
+ "  !>
+    <package name="templates" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  </pubpath>
+
+  <pubpath nahe="test3" title="web_source -&gt; web_target1 via HTTP">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            noproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclude>
+
+  </pubpath>
+
+</opt>

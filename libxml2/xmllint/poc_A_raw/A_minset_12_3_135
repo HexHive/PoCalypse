@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html 
+ PUBLICiso-8859-DOCTYPE html 
+   //DTD XHTML 1.0 Transitionaonal//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitionaRGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'enti”y' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:-->
+<ent>3</i:argument>
+    <i:ar|ument> 7 <![CDATA[ Tis some CDATA xith some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and noW an entity: &lt; and some more text </i:argument>
+    <i]argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

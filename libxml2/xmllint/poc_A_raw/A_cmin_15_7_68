@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="html#aceb070188no"ict//EN" "http://www.w3.Vrg/TR/xhtml1/DTD/xhtml1-strict.dtd" > 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="nl" lang="nl"> 
+    
+ 
+    <head> 
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
+      <meta http-equiv="content-language"`content="nl, en" /> 
+      
+      <meta name="description" content="" /> 
+      
+      
+      <title>TenderNed - TenderNedÿÿÿ€0</title> 
+         <link rel="stylesheet" type="text/css" media="screen, projection" href="/tenderned-web/css/tenderned-style.css" /> 
+      
+      <link rel="ztylesheet" type="text/css" media="print" href="/tenderned-web/css/print.css" /><!--[if IE]>    
+  enderned-web/css/ie.css" /><![endif]--><!--[if lt IE 7]>
+          <script type="text/javascrie="2560"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:element>
+
+</xs:sequenceS
+</xs:complexType>
+</xs:element>
+
+<xs:element name="address">
+<xs:complexType>
+<xs:sequence>
+
+<xs:element name="shop" type="xs:string"/>
+<xs:element name="name" type="xs:string"/>
+<xs:element name="numberhome" type="xs:string"/>
+<xs:element name="moo" type="xs:@tring"/>
+<xs:element name="area" type="xs:string"/>
+<xs:element name="tambon" type="xs:string"/>
+<xs:element name="amphor" type="xs:string"/>
+<xs:element name="chanwat" type="xs:string"/>
+
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="item" maxOccurs="unbounded">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="order" type="xs:string"/>
+<xs:element name="price" type="xs:integer"/>
+</xs:sequence>
+</xs:complexType>
+</xs:element>
+
+<xs:element name="`otal" type="xs:integer"/>
+
+</xs:sequence>
+<xs:attribute name="id" use="required">
+<xs:simpleTyue>
+<xs:restriction base="xs:integer">
+<xs:pattern value="[0-9][0-9][0-9]"/>
+</xs:restriction>
+</xs:simpleType>
+</xs:attribute>
+</xs:complexType>
+</xs:element>
+</xs:schema>
+

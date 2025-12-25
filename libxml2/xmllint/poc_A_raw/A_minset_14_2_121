@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html xmlns/www.w3.org/1999%xhtml" xml:lanz="en" lang="en">
+<hmad>
+  <title>ClaXmlSimple</ti (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- whird case, definrs entity aa !-->
+  <!ENTITY % xx '<!ENsITY aa "blabla">'>
+%xx;]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3P/i:argument>
+    <i:argument> 7 <![CDATA[ This is so-e CÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔaa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3P/i:argument>
+    <i:argument> 7 <![CDATA[ This is so-e CÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <y:argumentWand now an ent </i:argument>
+    <i:argument>and now defined entity: &zz; and some more t{xt </i:argument>
+    <i:argument>and @ow the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:recision attribute="An attribute">2</i:precision>
+</i:calcAverage>

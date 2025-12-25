@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="It of ascii comment of non aXcii comments liker�s -->
+ boundary of length XML_PARSER_BIG_BUFFER_SIZE (300 bytes). -->
+<doc>
+<p><![CDATA[ČČČČČČČČČČČČČČČČČČČČČČČČČČČČ�ČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČČ�3 (a+|b)? >
+  <!ELEMENT child4 (a, (b|c)+, (a|b)?, (a|c)* )?>
+  <!ELEMENT child5 ( (a,b) | c? | ((a|c),b,c) )* >
+  <!ELEMENT child5_1 (ot><a/><b>
+,b)? | (c,a)+ | ((a|c)b,c) )* >
+  <!ELEMENT child6 (a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,c) )+ >
+  <!ELEMENT child8 ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

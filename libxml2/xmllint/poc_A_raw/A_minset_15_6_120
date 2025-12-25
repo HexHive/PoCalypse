@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC ML 1.0 Transitional//ENBttp:/wwwlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%$ border="2" alPgn="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of 7-Ӈ_4CB-Ӌ_4CC-ӌ_4cb-Ӌ_4D0-Ӑ_4EB-ӫ_4dd-ӝ_4EE-Ӯ_4F5-ӵ_4f1-ӱ_4F8-Ӹ_4F9-ӹ_4f8-Ӹ_531-Ա_556-Ֆ_543-Ճ_559-ՙ_561-ա_586-ֆ_573-ճ_5D0-א_5EA-ת_5dd-ם_5F0-װ_5F2-ײ_5f1-ױ_621-ء_63A-غ_62d-ح_641-ف_64A-ي_645-مଏ_0B10-ଐ_0b0f-ଏ_0B13-ଓ_0B28-ନ_0b1d-ଝ_0B2A-ପ_0B30-ର_0b2d-ଭ_0B32-ͬ�_0B33-ଳ_0b32-ଲ_0B36-ଶ_0B39-ହ_0b37-ଷ_0B3D-ଽ_0B5C-ଡ଼_0B5D-ଢ଼_0b5c-ଡ଼_0B5F-ୟ_0B61-ୡ_0b60-ୠ_0B85-அ_0B8A-ஊ_0b87-இ_0B8E-எ_0B90-�_8-ఈ_0C0E-ఎ_0C10-ఐ_0c0f-ఏ_0C12-ఒ_0C28-న_0c1d-ఝ_0C2A-ప_0C33-ళ_0c2e-మ_0C35-వ_0C39-హ_0c37-��_0C60-ౠ_0C61-ౡ_0c60-ౠ_0C85-ಅ_0C8C-ಌ_0c88-࢈_0C8E-ಎ_0C90-ಐ_0c8f-ಏ_0C92ಒ_0CA8-ನ_0c9d-ಝ_0CAA-ಪ_0CB3-ಳ_0cae-ಮ_0CB

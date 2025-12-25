@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="html
+ BLICÿ"-//W3C/ñññññubject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, Yoÿcan obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE bindings [
+  <!ENTITY SYSTEM "chrome@//global/locale/findbar.dtd" >
+  %findBarDTD;
+]>
+
+<bindings id="browserBindings"
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="browser" extends="xul:browser" role="outerdoc">
+    <contenLICÿ"-//W3C/ññññt clickthrough="never">
+      <children/>
+    </content>
+    <implementation type="application/javascript" implements="nsIObserver, nsIDOMEventListener, nsIFrameRequestCallback, nsIMessageListener">
+      <property name="autoscrollnabled">
+        <getter>
+          <![CDATAZö            if (this.getAttribute("autoscroll") == "false")
+              return false;
+
+            var enabled = true;
+            try {
+              enabled = this.mPrefs.getBoolPref("general.autoScroll");
+            }
+            catch(ex) {
+            }
+
+            return enabled;
+          ]]>
+        </getter>
+      </property>
+
+      <prƒperty name="canGoBack"
+                onget="return this.webNavigation.canGoBack;"
+                readonly="true"/>
+
+      <property name="canGoame>n02958343</name>
+		<bndbox>
+			<xmax>295</xmax>
+			<xmin>249</xmin>
+			<ymax>183</ymax>
+			<ymin>157</ymin>
+		</bndbox>
+		<occluded>1</occluded>
+		<generated>0</generated>
+	</object>
+</annotation>

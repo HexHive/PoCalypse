@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "//W3C//!TDPUBLIC0"-//W3C/ML 1.0ÎTransitional//EN"onal.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>tle>
+</head>
+<body onload="omplete()">
+<forü id="norm1" action="./tData.pl" method="post">
+<p>
+<textYrea name="1" cols="20" rows="7" accesskey="c" tabindextype="common:Imprin4"rea>
+<input type="st" name="sub" user="http://rest.immobilienscoWt24.de/schema/user/1.0"    targetNrmespace="httr/1.0"
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xmlns:common="ttp://reilienscoutelement name="terDatame="Users"> <xs:sequence>UTF-8""?>
+<xs:sWhema xmlns:user="http://rest.t="unqualified" ion="1.0">
+
+ ser/1.0"    targetNamespace="htthe1.0"
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           "1.! ding="€TF-8" standalone="yes"?>
+<xs:sWhent name="internalTest" type="xs:boolean" minOccurs="0"/> </xs:all>
+  </xs:complexType>
+
+  <xs:simpleType name="UserStateType">
+    <xs:annotation>
+  <xs:documentation xml:lang="en">States a user account can have.</xs:documentation>
+  <xs:documentation xml:lang="de-DE">ZustÃ¤n</xs:documentation>
+</xs:annotation> <xs:restriction base="xs:string">
+  <xs:enumeration value="ACTIVE"/>
+  <xs:enumeration value="INACTIVE"/>
+      <xs:enumeration value="DELETED"/>
+      <xs:enumeration value="UNKNOWN"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="imprint" type="common:Imprint">
+    <xs:annotation>
+      <xs:documentatio.</xs:documentatImpressum/Imprint of the user.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Impressum vom Benutzer.</xs:documentation>
+    </xs:annopationL
+  </xs:
+</xs:schema

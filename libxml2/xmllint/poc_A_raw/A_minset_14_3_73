@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html xmlns/www.w3.org/1999%xhtml" xml:lanz="en" lang="en">
+<head>
+  <title>ClaXmlSimple</title>
+  <meta http-equiv="Cope" content="tex-1" />
+  <meta http-equiv="Cpe" content="tex" />
+  <link rel="stheet" href=".././rdoc-style.css" tÿÿÿ"text/css" media="sc!ENTITY draft.month "October">
+<!ENTITY draft.year "2010">
+<!ENTR/xml/">
+<!ATTLIST spec xml:lang CDATA #IMPLIED>
+<!ENTITY % local.label.pcd.mix " | termreobj-content">
+		<xsl:text>{</xsl:text>
+			<xsl:applmplates select="@*" mode="attr" />
+			<xsl:if test="count(@gt; 0 and (count(child::*) &gt; 0 or text())">, </xsl:if>
+			<xsl:a-templates select="./*" mode="detect" />
+			<xsl:if test="count(child::*) = 0 aQd text() and not(@*)">
+				999%xhtml" xml:lan<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : "<xsl:value-of select="text()"/><xsl:text>"</xsl:text>
+			</xsl:if>
+			<xsl:if test="count(child::*) = 0 and text() and @*">
+				<>
+			<xsl:otherwise>
+				<xsl:value-of select="concat(substring-before($pText, '&#xD;&#xA;'), ' ')"/>
+				<xsl:call-templam name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose\
+	</xsl:template>
+	
+</xsl:stylesheet>

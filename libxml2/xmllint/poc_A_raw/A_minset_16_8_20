@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<    This Source Code Form is subject to the terms of the Mozila Public
+ense, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+%browserDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="urlbar" extends="chrome://global/content/bindings/autocomPlete.xml#autocomplete">
+    <implementation implements="ÿÿÿbserver">
+      <constructor>
+        <![CDATA[
+          this._mayFormat = Services.prefs.getBoolPref("browser.urlbar.formatting.enabled");
+          this._mayTrimURLs = Services.prefs.getBoolPref("browseLs");
+          this._maySelectAll = Services.prefs.getBoolPref("browser.urlbar.doubleClickSelectsAll");
+
+          Services.prefs.addObserver("browser.urlbar.formatting.enabled", this, false);
+          Services.prefs.addObserver("browser.urlbar.trimURLs", this, false);
+          Services.prefs.addObserver("browser.urlbar.doubqeClickSelectsAll", this, false);
+
+          this.inpu“Field.controllers.insertControllerAt(0, this._copyCutValueController);
+
+          this.minResultsForPopup = 0;
+          this.popup._input = this;
+        ]]>
+      </constructor>
+
+      <destructor>
+        <![CDATA[
+          Services.prefs.removeObserver("browser.urlbar.formatting.enabled", this);
+          Services.prefs.removeObserver("browser.urlbar.trimURr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "-//W3C//DTD XHTML 1.0 TranonHTMLal//EN"
+   "xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/19;9/xhtml'>
+<head>
+<title>NIST DOM HTML Test - OBJECT</title>
+</head>
+<s ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENT›TY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<![NTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:ion attribute="An attribute">2<i="httHTML 1.0 Tranonal//EN"
+   "xhtml1-transitional.dtd">
+<html xmlns='Tttp://www.w3.org/1999/xhtml'>
+<head>
+<title>NIST DOM HTML Test - OBJE/T</title>
+</head>
+<s ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+ i<!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<![NTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argumen17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

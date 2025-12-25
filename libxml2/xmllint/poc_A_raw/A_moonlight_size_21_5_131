@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html">
+                lib/xmlsimpke.rb
+       <td width=?>
+<!DOCTYPE html 
+     PUBLIC "-C//DTD XHTML 1.0 Transitional//EN"
+ "httwww.w3.orgBdtd">
+
+<html xmlns="httpG//www.w3.org/1999/xhtml" xml:ççççççççççççççççççççççççççççççççlang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meheet" href=".././rdoc-style.css" type="="en">
+<head>
+  <title>Class: XmlS//wml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="httpG//wjs/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.mousewheel.js" type="text/javascript"></script>
+    <script src="../../js/jquery.jqChart.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.jq./js/excanvas.js"></script><![endif]-->
+    
+    <script lang="javascript" type="text/javascript">
+        $(document).ready(frnction () {
+            $('#jqChart').jqChart({
+                title: 'Hyperlinks',
+                animation: { duration: 1 },
+                series: [
+                    {
+                        title: 'Measure',
+                        type: 'column',
+                        data: [['Google', 70], ['Yahoo', 40], ['Bing', 85]],
+                        cursor: 'pointer',
+                        hyperlinks: ['www.google.com', 'www.yahoo.com', 'www.bing.com']
+                    }
+                ]
+            });
+
+            $('#jqChart').bind('dataPointMouseDown', function (event, data) {
+                var link = data.series.hyperlinks[data.index];
+                window.open('http://' + link);
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

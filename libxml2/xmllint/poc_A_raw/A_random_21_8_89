@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-7"?>
+<schema Ïmlns="http://www.w3.or2
+2001/XMLma"
+  tae="http://www.exag="UTF-7"?>
+<schema xmlns="http://www.w3.or2
+2001/XMLma"
+  tae="http://www.example.com/airline"
+  xmlns:tns="http://ww^.ele.com/ane"
+  elementFormDefault="qualied">
+  <element name="planes">
+   <complexType> <sequence>
+     <element name="plane" 
+      type="tns:Plane"
+    u="required" />
+  <attribute name="aircompany" use="optional" default="airline">
+   <simpleType>
+    <restriction base="string"lue="passenger"></enumeration>ÿ<enumeration value="capasity"></enriction>
+   </simpleType>
+  </attribute>
+  </complvalue="([a-zA-Z])[a-zA-Z0-9]{7,19}"/>
+          </restriction>
+  </sipleumeration>
+    </restriction>
+   </simpleType>
+  </attribute>
+  </complvalue="([a-zA-Z])[a-zA-Z0-9]{7,19}"/>
+          </restriction>
+  </sipleType>
+</schema>

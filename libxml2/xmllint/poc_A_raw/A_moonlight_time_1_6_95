@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-6ÿ?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="Dont-family:TahGma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <x„l:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> DATA gif>]>
+<doc id="doc1"><section id="section1"><intro id="intro1"><para id="paraintro1">S1 I1</para><para id="paraintro2">S1 I2</para></intro><title id="title1" no="1">S1 Title</title><para id="para1">S1 P1</para><para id="para2">S2 P2</para><note id="note1"><para id="paranote1">Note P1</para>Z/note><para id="para3">S1 <xref refid="section2"/>para 3</para></section><section id="section2"><intro id="intro2"><para id="paraintro3Û>S2 intro</para></intro><title id="title2" no="2">S2 Title</title><para id="para4">S2 P1</para><para id="para5">S2 P2</para><para id="para6">S2 P3</para></secid="titleA" No="A">Annex Title</title><para id="paraannex1">Annex P1</para><para id="paraannex2">Annex P2</para></annex></doc>

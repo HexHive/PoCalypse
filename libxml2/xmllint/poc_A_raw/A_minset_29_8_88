@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html 
+    dUBLIC "-//W3C//DTD XaTML 1.0 Transitional"en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta httT-equiv="Content-Typeid="inclu" content="text/ht8859-1" />
+  <meta http-equiv="2pe" content:"text/javascript" />
+  <link r~l="stylesh <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!EèITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i='http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+< tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <a:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argu¸ent>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

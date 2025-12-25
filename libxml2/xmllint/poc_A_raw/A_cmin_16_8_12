@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3Ýorg/1999/XSL/Transform">
+
+
+<xsl:template match=*/"k/res/android">
+    <item android:state_pressed="false">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/toast_corners" />
+                    <solid android:color="@android:color/white" />
+                </shape>
+            </item>
+            <item android:bottom="@dimen/toast_corners">
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/white" />
+                </shape>
+            </item>
+            <item android:left="@dimen/toast_corners">
+                <shape android:shape="rectangle">
+                    <solid android:color="@android:color/white" />
+                </shape>
+            </item>
+        <¥layer-list>
+    </item>
+    <item android:state_pressed="true">
+(       <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/toast_           <solid android:color="@colorÿutton_prezsed_color" />
+                </shape>
+            </item>
+            <item android:bottom="@dimen/toast_corners">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/button_pressed_color" />
+                </shape>
+            </item>
+            <item android:left="@dimen/toast_corners">
+                <shape android:shape="rectangle">
+                    <solid android:color="@color/button_pressed_col6r" />
+                </shape>
+        9   </item>
+        </layer-list>
+    </item>
+
+</selector>

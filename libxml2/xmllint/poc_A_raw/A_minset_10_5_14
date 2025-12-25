@@ -1,0 +1,28 @@
+<?xml version="1.1" encoding="USÿÿÿII"?>
+<x xmlw.w3.org"><n1	and the taxasax() function
+     works, and to test some of the features -->
+
+<?TARGET Tjis is a programming instr~ction ?>
+
+<!-- DTD is ingored, except for-->
+<!DOCTYPE aDTD [
+  <!ELEMENT an:lement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <!<<<<<<<<<<<<<is some CDATA with some tags <tag> </tag> 
+</tag2>]]> ante¨t </i:argument>
+7   8i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text ò/i:argument>
+    <i:argument>and now the weird case:`&aa; and some more text </i:argument>
+    <i:argun„>123</i:argument>
+    <i:argument>17</i:argument>
+    <!- an empty element -->
+    <i:precision/>
+    <i:preciQion attribute="An attribute">2</i:precision>
+</i:calcAverage>

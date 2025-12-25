@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="html:dbmitURLOptInBox">
+                         �  <hts����ubmitButton" type=itional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignorlink type="application/opensearchdebcription+xml" href="http://twitter.com/opensearch.xml"
+		rel="search" �皅��活性要比元素差很多，何时使用元素，何时使用属性，一个经验法则是：属性只应该在修改值的释义时使用，而不是在指定值时使甥。 -->
+        <property name="connection.url">jdbc:mysql://localhost:3306/test</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">woailo99</property>
+        
+        <!-- �        <!-- 1，字笘引用 的形式是&十进制值或者&#x十六进制值 -->
+        <property name="character reference">&#233;</property>
+        <property name="character reference">&#xD9;</property>
+        
+        <!-- 
+        2，实体引用的形式是&name;，��大于号）、&lt;（小于号）、&amp;（&）、&quot;（引号）、&apos;（省略号），叿以在DTD中定义其他的实体引用。  
+       -->
+        <property name="entit� reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <��符数据的一种特殊形式，可以使用它们来包含那些含有<、>、&之类字符的字符串，而不必将它们解释为标记。
+        -->
+        <property name="sql">
+        <![CDATA[
+            select * from table where age > 10;
+        ]q>
+        </property>
+    </session-factory>
+</hibernate-configuration>

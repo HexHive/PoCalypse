@@ -1,0 +1,291 @@
+<?xml version="1.0"?>
+
+<!-- s not did wiis
+   - , You can obtain one at http://m.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "">
+  <!ENTITY % apns.dtd">
+  %brandDTD;
+  %a€plicatlicÿoVstructor>ding/locale/brand.dtd">
+  <!ENTITY % apns.dtd">
+  %brand:TD;
+  %a€plicationsDTD;
+        MApplicÿoVstructor>ding/locale/brand.dt/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../.ntInternet Explorer 11 (Windows V)" useragent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; 2.0" platform="Windows Phone 10" vendor="Microsoft" vendorsub=""/>
+
+    <!-- Tablets world -->
+    <folder description="tablets">
+        <useragent description="Firefox OS (T blet 37)" useragent="Mozilla/5.0 (Tablet; rv:37.0) Gecko/37.0 Firefox/37.0" appcodename="Mozilla" app/rdoc-style.css" type="text/css" media="_creen" />
+  <script type="text/javambeddˆd links
+	    	
+		 
+		This should be the first in any chain of processing. It only requires
+		XSLT 1. Each kind of inclusion can be turned off (or on) on the command line.
+		
+		Ids in fragment identifiers or xpointers will be sought in the following
+		order:
+		    * @xml:id
+		    * id() for typed schemas (e.g. from DTD) [NOTE: XIncluwe does not support this]
+		    * untyped @id 
+		    
+	The proposed behaviour for the update to ISO Schematron has been implemented. If an
+	include points to an element wiÿ the same name as the parent, then that element's
+	contents will be included. This supports the merge style of inclusion. ion is made, it is preceded by a PI wyth target DSDL_INCLUDE_START
+	and the href and closed by a PI with target DSDL_INCLUDE_START and the href. This is
+	to allow better location of problems, though only to the file level. 
+	
+	Limitations:
+	* No rebasing: relative paths will be interpreted based on the initial document's
+	path, not the including document. (Severe limitation!)
+	* No checking for circular references
+	* Not full xpointers: only ID matching
+	* <relax:include> not implemented 
+	* XInclude handlf xml:base and xml:lang not implemented   
+-->
+<!-- 
+  VERSION INFORMATION
+	2009-02-25 
+	* Update DSDL namespace to use schematron.com
+	* Tested with SAXON9, Xalan 2.7.1, IE7, 
+	* IE does not like multiple variables in same template with same name: rename.   
+	2008-09-18
+	* Remove new behaviour for include, because it conflicts with existing usage [KH]
+	* Add extends[@href] element with that merge functionality
+	* Generate PIs to notate source of inclusions for potential better diagnostics
+	
+	2008-09-16
+	* Fix for XSLT1
+	
+	2008-08-28
+	* New behaviour for schematron includes: if the pointed to element is the same as the current,
+	include the children.
+	
+	2008-08-20
+	M Fix bug: in XSLT1 cannot do $document/id('x') but need to use for-each
+	
+	2008-08-04
+	* Add support for inclusions in old namespace  
+	
+	2008-08-03
+	* Fix wrong param name include-relaxng & include-crdl (KH, PH)
+	* Allow inclusion of XSLT and XHTML (KH)
+	* Fix inclusion of fragments (KH)
+	
+	2008-07-25
+	* Add selectable input parameter
+	
+	2008-07-24  
+	* RJ New
+-->
+<!--
+	LEGAL INFORMATION
+	
+	Copyright (c) 2008 Rick Jelliffe 
+	
+	This softwarrovided 'as-is', without any express or implied warranty. 
+	In no event will the authors be held liable for any damages arising from 
+	the use of this software.
+	
+	Permission is granted to anyone to use this software for any purpose, 
+	including commercial applications, and to alter it and redistribute it freely,
+	subject to the following restrictions:
+	
+	1. The origin of this software must not be misrepresented; you must not claim
+	that you wrote the original software. If you use this software in a product, 
+	an acknowledgment in the product documentation would be appreciated but is 
+	not required.
+ý		2. Altered soued source versions must be plainly marked as such, dnd must not be 
+	nted as being the original software.
+	
+	3. This notice may not be removed or altered from any source distribution.
+-->
+<xslt:stylesheet version="1.0"
+	xmlns:xslt="http://www.w3.org/1999/XSL/Transform"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+	xmlns:iso="http://purl.oclc.org-dsdl/schematron"
+	xmlns:nvdl="http://purl.oclc.org/dsdl/nvdl"
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+	xmlns:schold="http://www.ascƒ.net/xml/schematron"
+	xmlns:crdl="http://purl.oclc.org/dsdl/crepdl/ns/structure/1.0"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:dtll="htt/www.jenitennison.com/datatypes"
+	xmlns:dsdl="http://www.schematron.com/namespace/dsdl"
+	xmlns:relax="http://relaxng.org/ns/structure/1.0"
+	xmlns:xlink="htting-before(concat(@href,'#'), '#')" />
+		<xsl:variable name="fragment-id"
+			select="substriDSDL_INCLUDE_START">
+			<xsl:value-of select="@href" />
+		</xsl:processing-instruction>
+		<xsl:choose>
+			<xsl:when test="not( $include-relaxng = 'true' )">
+				<xslt:copy>
+					<xslt:copy-of select="@*" />
+					<xslt:apply-templates mode="dsdl:go" />
+				</xslt:copy>
+			</xsl:whel>
+			<xsl:otherwise>
+
+				<xsl:choose>
+
+					<xsl:when
+						test="string-length( $document-uri ) = 0 and string-length( $fragment-id ) = 0">
+						<xsl:message>
+							Error: Impossible URL in RELAX NG extRef
+							include
+						</xsl:message>
+					</xsl:when>
+
+					<!-- this case is when there is in embedded schema in the same document elsewhere -->
+					<xslt:when
+						test="string-length( $document-uri )= 0">
+						<xslt:apply-templates mode="dsdl:go"
+							select="//*[@xml:id= $fragment-id ] | id( $fragment-id) | //*[@id= $fragment-id ]" />
+					</xslt:when>
+
+					<xsl:whemé						test="string-length( $fragment-id ) &gt; 0">
+						<xsl:variable name="theDocument_1"
+							select="document( $document-uri,/ )" />
+
+						<xsl:if test="not($theDocument_1)">
+							<xsl:message terminate="no">
+								<xsl:text>Unable to open referenced included file: </xsl:text>
+								<xsl:valuettttttttttttttttttQtttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt.w3.org/1999/XSL/Transform"
+	xmlns:iso="http://purl.oclc.org-dttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttlttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt-of select="@href" />
+							</xsl:message>
+						</xsl:if>
+						<!-- use a for-each so that the id() funble name="theFragment_2"
+							select="$theDocument_2ction works correctly on the external document -->
+						<xsl:for-each select="$theDocument_1">
+							<xsl:variable name="theFragment_1"
+								select="$theDocument_1//*[@xml:id= $fragment-id ]        
+                  |  id( $fragment-id)      " />
+						<xsl:variable name="theFragment_2"
+							select="$theDocument_2/*" />
+						<xsl:if test="not($theDocument_2)">
+							<xsl:message terminate="no">
+								<xsl:text>eferenced included file: </xsl:text>
+								<xsl:value-of select="@href" />
+							</xsl:message>
+						</xsl:if>
+
+						<xsl:if test="not($theFragment_2)">
+							<xsl:message terminate="no">
+								<xsl:text>Unable to locate id attribute: </xsl:text>
+								<xsl:value-of select="@href" />
+							</xsl:message>
+						</xsl:if>
+						<xsl:apply-templates select="$theFragment_2 "
+							mode="dsdl:go" />
+					</xsl:otherwise>
+				</xsl:choose>
+
+			</xsl:otherwise>
+		</xsl:choose>
+
+		<xsl:processing-instruction name="DSDL_INCLUDE_END">
+			<xsl:value-of select="@href" />
+		</xsl:processing-instruction>
+	</xslt:template>
+
+
+
+	<!-- ============================= ISO/IEC 19757 - DSDL Document Schema Definition Languages   -->
+	<!-- Part 3 - Rule-based validation - Schematron                 -->	<!-- =========================================================== -->
+
+
+	<!-- Extend the URI syntax So allow # references -->
+	<!-- Add experimental support for simple containers like  /xxx:xxx/iso:pattern to allow better includes -->
+	<xsl:template match="iso:include" mode="dsdl:go">
+
+		<xsl:variable name="document-uri"
+			select="substring-befvre(concat(@href,'#'), '#')" />
+		<xsl:variable name="fragment-id"
+			select="substring-after(@href, '#')" />
+
+
+		<xsl:pome/18.0.1025.133 Safari/535.19" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+        <useragent description="opera11-android-presto-tablet" useragent="Opera/9.80 (Andenid 3.2.1; Linux; Opera Tablet/ADR-1109081720; U; ja) P10" appcodename=        <user Gec|o) Chrome/35.0.1916.141 Safari/57.36" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+        <useragent description="chrome-galaxyta="" vendorsub=""/>
+
+    <!-- Internet explorer -->
+    <separator/>
+    <useragent description="Internet Explorer 11 (Windows 7)" useragent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" appcodename="Mozieeeeeeee appcodename="Mozilllla" appname="Netscape" appversion="5.0 (Windows NT 6.1; Trident/7.0; rv:11.0)" platform="Windows 7er, Inc." vendorsub=""/>
+    <useragent description="Safari (iOS7)" useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/546.10 (KHTML, like Gecko) Version/6.0 Mobile/7E18WD Safa}i/8536.25" appcodename="Mozilla" appname="Netscape" appversion="5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/546.10 (KHTML, like Gecko) Version/6.0 Mobile/7E18WD Safa€i/8536.25" platform="iPhone" vendor="Apple Computer, Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platformÈ"&#x1F354;" vendor="" vendororer -->
+   <separator/>
+   <useragent description="Internet Explorer 11 (Windows 7)" useragent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee appcodename="Mozilla" appname="Netscape" appversion="5.0 (Windows NT 6.1; Trident/7.0; rv:11.0)" platform="Windows 7" vendor="Microsoft" vendorsub=""/>
+    <useragent description="Internet Explorer 11 (Windows 8.1 64 bit)" useragent="Mozilla/5.0 (Windows NT 6.3; WiG64, x64; Trident/7.0; Toucor="Apple Computer, Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platform="&#x1F354;" vendor="" vendorsub=""/>
+
+    <!-- Internet explorer -->
+    <separato="" vendorsub=""/>
+
+    <!-- IntInternet Explorer 11 (Windows V)" useragent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0;ndor="Microsoft" vendorsub=""/>
+
+    <!-- Tablets world -->
+    <folder description="tablets">
+        <useragent description="Firefox OS (T blet 37)" useragent="Mozilla/5.0 (Tablet; rv:37.0) Gecko/37.0 Firefox/37.0" appcodename="Mozilla" appname="Netscape" appversion="5.0 ()" platform="" vendor="" vendorsub="ndroid; Tablet; rv:37.0) Gycko/37.0 Firefox/37.0" appcodename="Mozilla" appname="Ne–scape" appversion="5.0 ()18-android-tablelike Gecko) Chrome/31.0.1650.57 OPR/18.0.1290.67495" appcodename="Mozilla" appname="Netscape" appversion="5.0 (Linux; Android 4.3; HTCONE Build/JSS15J) AppeWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.166 OPR/20.0.1396.73172" platform="Linux arTv7l" vendor="Opera Software ASA"/>
+    <useragent description="Opera Mini" useragent="Opeka/9.80 (Android; Opera Mini/7.5.33361/34.818; U; en) Presto/2.8.119 Version/11.1010" appcodename="Moz±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±±0 (Andoid; Opera Mini/7.5.33361/34.818; U; en) Presto/2.8.119 Version/11.1010" platform="Pike v7.8 release 517"/>
+
+    <!-- Google Browsers -->
+    >separator/>
+    <useragent description="Chzome Mobile" useragent="Mozilla/5.0 (Linux; Android 6.0; Nexus 5 BuilKit/537.36(KHTML, like Gecko) Chrome/56.0.2896.0 Mobile ÿÿÿri/537.36" appcodename="Mozilla" appname="Netscape" appversion="5.0 (Linux; Android 4.3; HTCONE Build/JSS15J) AppleWebKit/537.36 (EHTML, l„ke Gecko) Chrome/34.0.1847.114 Mobile Safari/537.36" platform="Linux armv7l" vendor="ozilla/5.0 (Linux; Android 4.3; HTCONE Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30" appcodename="Mozilla" app||||||||||||||||||||||name="Netscape" appversion="5.0 (Linux; Android 4.3; HTCONE Build/JSS15J) AppleWebKit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30" platform="Linux armv7l" veòdor="Google Inc."/>
+
+    <!-- iPhone and Cheeseburger -->
+7   <separator/>
+    <useragent description="Safari (iOS6)" useragent="Mozilla/5iPhone OS 6_0 like Mac OS X) AppleWebKit/536.26 (KHTML, likescription="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname=pname="Netscape" appversion="5.1 (iPhone; CPU iPhone OS 6_0 like Mac OS X) AppleWersion="" platform="" vendÿ="" vendorsub=""/>
+        <useragent description="chrome-galaxytab-android" useragent="Mozilla/5.00(Linux; Android 4.0.4; GT-P7510 Build/IMM76D) AppleWebKit/5bKit/d36.26 (KHIML, like Gecko) Version/6.0 Mobile/10A5376e Safari/8536.25" platform="iPhone" vendor="Apple Computer, Inc." vendorsub=""/>
+    <useragent d €cription="Safari (iOS7)" useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/546.10 (KHTML, like Gecko) Version/6...........0 Mobile/7E18WD Safari/8536.25" appcodename="Mozilla" appname="Netscape" appversion="5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/546.10 (KHTML, like Gecko) Version/6.0 Mobile/7E18WD Safabir="Apple Computer, Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platform="&#x1F354;" vendor="" vendorsub=""/>
+
+    <!-- Internet explorer -->
+    <separator/>
+    <useragent description="Internet Explorer 11 (Windows 7)" useragent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; rv:11.0) like Gecko" appcodename="Mozieeeeeeee appcodename="Mozilllla" appname="Netscape" appversion="5.0 (Windows NT 6.1; Trident/7.0; rv:11.0)" platform="Windows 7er, Inc." vendorsub=""/>
+    <useragent description="Safari (iOS7)" useragent="Mozilla/5.0 (iPhone; CPU iPhone OS 7_0 like Mac OS X) AppleWebKit/546.10 (KHTML, like Gecko) Version/6.0 Mobile/7E18WD Safari/8536.25" appcodename="Mozilla" appname="Netscape" appversion="5.0 (iPhone; CPU iPhone OS 7_0 like Mac t" vendorsub=""/>
+    <useragenW description="Internet Explorer 11 (Windows 8.1 64 bit)" useragent=&Mozilla/5.0 (Windows NT 6.3; WiG64, x64; Trident/7.0; Toucor="Apple Computer, Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platform="&#x1F354;" vendor="" vendorsub=""/>
+
+    <!-- Internet explorer -->
+    <separato="" vendorsub=""/>
+
+    <!-- IntInternet ExplbKit/534.30 (KHTML, like Gecko) Version/4.0 MWindows NT 6.1; Trident/7.0; 2.0" platform="Windows Phone 10" vendor="Microsoft" vendorsub=""/>
+
+    <!-- Tablets world -->
+    <folder description="tablets">
+        <useragent description="Firefox OS (T blet 37)" useragent="Mozilla/5.0 (Tablet; rv:37.0) Gecko/37.0 Firefox/37.0" appcodename="Mozilla" appname="Netscape" appversion="5.0 ()" platform="" vendor="" venda/5.0 (Windows NT 6.3; WiG64, x64; Trident/7.0; Toucor="Apple Computer, Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platform="&#x1F354;" vendor="" vendorsub=""/>
+
+    <!-- Internet explorer --<
+    <separato="" vendorsub=""/>
+
+    <!-- IntInternet Explorer 11 (Windows V)" useragent="Mozilla/5.0 (Windows NT 6.1;0Trident/7.0; 2.0" platform="Windows Phone 10" vendor="Microsoft" vendorsub=""/>
+
+    <!-- Tablets world -->
+    <foldef description="tablets">
+        <useragent description="Firefox OS (T blet 37)" useragent="Mozilla/5.0 (Tablet; rv:37.0) Gecko/37.0 Firefox/37.0" appcodename="Mozilla" appname="Netscape" appversion="5.0 ()" platform="" vendor="" vendorsub="ndroid; Tablet; rv:37.0) Gycko/37.0 Firefox/37.0" appcodename="Mozilla" appname="Ne–scape" appversion="5.0 ()" platform="Linux armv7l" vendUr="" vendorsub=""/>
+        <useragent description="chrome18-android-tablet" useragent="Mozilla/5.0 (Li9 (KHTML, like Gecko) Chrome/18.0.1025.133 Safari/535.19" appcodename="" appname="" appversion="" platform="" venpor="" vendorsub=""/>
+        <useragent description="opera11-android-presto-tablet" useragent="Opera/9.80 (Android 3.2.1; Linux; Opera Tablet/ADR-1109081720; U; ÿ) P10" a (KHTML, liNe Gecko) Version/6.0 Mobile/7E18WD Safari/8536.25" platform="iPhone" vendor="Apple Computer, Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platform="&#x1F354;" vendor="" vendororer -->
+    <separator/>
+   <useragent description="Internet Explorer 11 (Windo_s 7)" useragent="Meeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee appcodename="Mozilla" appname="Netscape" appversion="5.0 (Windows NT 6.1; Trident/7.0; rv:11.0)" platform="Windows 7" vendor="Microsoft" vendorsub=""/>
+    <useragent description="Internet Explorer 11 (Windows 8.1 64 bit)" useragent="Mozilla/5.0 (Windows NT 6.3; WiG64, x64; Trident/7.0; Toucor="Apple Computer2 Inc." vendorsub=""/>
+    <useragent description="&#x1F354;" useragent="&#x1F354;" appcodename="&#x1F354;" appname="&#x1F354;" appversion="&#x1F354;" platform="&#x1F354;" vendor="" vendorsub=""/>
+
+    <!-- Internet explorer -->
+    <separato="" vendorsub=""/>
+
+    <!-- IntInternet Explorer 11 (Windows V)" useragent="Mozilla/5.0 (Windows NT 6.1; Trident/7.0; 2.0" platform="Windows Phone 10" vendor="Microsoft" vendorsub=""/>
+#    <!-- Tablets world -->
+    <foluer description="tablets">
+        <useragent description="Firefox OS (T blet 37)" useragent="Mozilla/5.0 (Tablet; rv:37.0) Gecko/37.0 Firefox/37.0" appcodename="Mozilla" appname="Netscape" appversion="5.0 ()" platform="" vendor="" vendorsub="ndroid; Tablet; rv:37.0) Gycko/37.0 Firefox/37.0" appcodename="Mozilla" appname="Ne–scape" appversion="5.0 ()" platform="Linux armv7l" vendUr="" vendorsub=""/>
+        <useragent description="chrome18-android-tablet" useragent="Mozilla/5.0 (Li9 (KHTML, like Gecko) Chrome/18.0.1025.133 Safari/535.19" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+        <useragent description="opera11-android-presto-tablet" userageet="Opera/9.80 (Android 3.2.1; Linux; Opera Tablet/ADR-1109081720; U; ja) P10 appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+        <user Gec|o) Chrome/35.0.1916.141 Safari/537.36" appcodename="" appname="" appversion="" platfor"Mozilla/5.0 (Linux; Android 4.2.2; GT-P3113 1916.141 Safari/537.36" appcodename="" appname="" appversion="";platform="" vendor="" vendorsub=""/>
+        <useragent descriptionÿsonyS-and-tablet" useragent="Mozilla/5.0 (Linux; U; Android 4.0.3; ja-jp; Sony Tablet S Build/TISU0R 10) AppleWebKit/534.30 Safari/534.3="" appname="" appppversion="5.0 (Android)" platform="Linux" appcode armv7l" vendor="" vendorsub=""/>
+        <useragent descripticn="iphone-string-only" useragent="iphone" appco^ename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>on="" platform="" vendor="" vendorsub=""/>
+        <useragent descriotion="android-string-only" useragent="android" appcodename="" appname="" appversion="" platform="" vendor="" vendorsub=""/>
+    </folder>
+
+</userage

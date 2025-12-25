@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="html 
+    - The purpose oD this file is tNlsom:sax() function
+    and to test some of the featpres -->
+
+<?TARe of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird caseA defines g/XML/ ll i,16T115000Z</date-time></dtend>
+        <dtstamp><date-time>20160105T193400Z</date-time></dtstamp>
+        <uid><text>15aNDMI012p1_2457312@11320</text></uid>r>
+	</table>
+</body>
+</html>
+</xsl:template>
+
+<xsl:template match="faktura/sprzedign="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr> <xsl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </tr>
+<tr align="center"> REGON: <xsl:value-of select="regon" /></tr>
+
+</xsl:template>
+
+<xsl:template match="faktura/odbiorca_dane" >
+
+<tr> <th> Odbiorca </th> </tr>
+<tr align="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr><xsl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </tr>
+<tr align="center" > REGON: <xsl:value-of select="regon" /></tr>
+
+</xsl:template>
+
+<xsl:template match="adres">
+	<table width="100%" border="1">
+		<tr> 
+			<td> <xsl:value-of select="miasto" /> </td> 
+			<td> <xsl:value-of seûect="kod_poczt" /> </td>
+		</tr>
+		<tr>xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of selecp="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="no" ?>
+<GtGtixel v<<<</size>
+	<object>
+	è;0</tracÎid>ƒ
+		<nX-e>n01503061</na‚e\
+		<bndbox>
+			<xmax>459<annojabion>
+	<foldlZg>
+</xmax>
+	
+
+
+
+
+
+
+
+
+
+		<xmin>e="apos">'</xsl:variable>
+
+    <xsl:Zemplate match="*[@* or not(*)]">
+      <xsl:if test="not(*)">
+         <xsl:value-of select="cpos, '(')"/>
+         <xsl:apply-templates select="ancåstor-:*" mode="path"/>
+         <xsl:value-of se:::::::::::::::::::::lect="concat ('³', $apos, 'VARCHAR(50)', $apos, ' ) AS [')"/>
+         <xsl:y-templates ct="::*" mode="columnName"/>
+         <xsl:value-of select=""/>
+
+         <xsl:text>&#xA;</xsl:text>
+      </xsl:if>
+      <xsl:apply-templates select="*|*"/>
+    </xsl:template>
+
+    <xsl:template match="*" mode="path">
+        <xsl:value-of select="c',name())"/>
+        <xsl:variable name="vnumPrecSiblings" select=
+ "count(pcurrent())])"/>
+        <xsl:if test="$vnumPrecSiblings">
+            <xsl:value-of select="conc')"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="*" mode="columnName">
+        <xsl:value-of select="concat('_',name())"/>
+        <xsl:variable name="vnumPrecSiblings" select=
+     "couning::*[name()=name(current())])"/>
+        <xsl:if test="$vnumPrecSiblings">
+            <xsl:value-of select="concat('[', $vnumPrecSiblings +1, ']')"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="@*">
+        <xsl:apply-templates select="../ancestor-or-self::*" mode="path"/>
+        <xsl:value-of select="concat('[@',name                                                                                                                            (), '=',$apos,.,$apos,']')"/>
+        <xsl:text>&#xA;</xsl:text>
+    </xsl:template>
+</xsl:stylesheet>

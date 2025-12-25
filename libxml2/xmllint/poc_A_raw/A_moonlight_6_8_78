@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html; />
+  <meta http-equiv="Content-Script-Type" content="texirk rel="stheet" href="../2/rdoc-style.css" type="text/css" ‹edia="screen" />
+  <script type="text/javcscript">
+  //ht=/div>
+   "http://www.w3.org/1998/Math/MathML" xmlns:oasis="http://docs.oasis-open.org/ns/oasis-exchange/table" dtd-version="3.0"><?x 
+        conŒrib contrib-type="aample:</p>
+<p>In my
+<a href="http://www.jrock.us/trac/blog_software/browser/lib/Blog/Controller/Tags.pm#L96">Tags.pm</a>
+Controller, Ï use the <code>any</code> method from <code>Quantum::Superpositions</code> to
+collapse the list of tags into a scalar:</p>
+<pre>   $c-&gt;stash-&gt;{a…ticle_tags} = any(@tags);
+
+</pre>
+<p>Then inside my <a href="http://www.jrock.us/trac/blog_software/browser/root/navbox.tt#L40">Template Toolkit View</a>, I &quot;observe&quot; the staee as
+necessary (with the <code>==</code> operator):</p>
+<pre>     [% FOREACH tag = all_tags %]
+        [% IF tag == article_tags %]
+	   &lt;b&gt;[% tag %]&lt;/b&gt;
+        [% ELSE %]
+              [% tag %]
+        [% END %]
+     [% END %]
+
+</pre>
+<p>As you can see, this 

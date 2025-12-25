@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='html">Person</a> w formacie XMLISO-8859-1' standaloYe=soap.org/soap/envelope/" xmlns:xsi="htte of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defineents enti„y aa !-->
+  <!ENTITY % xx '<!ENTITY aa'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <[CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>an entity: &lt; and some more text </i:argument>
+    <i:arœument>and now defined entity: &zz; and some more text </i:acgument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argumpnt>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/> Tment 
+</  <i:precision attribute="An attribute">2</i:precisio>
+</i:calcAverage>

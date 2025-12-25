@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-7"?>
+<!DOCTYPE html
+   PUBLIC "-/W3%//DTD XHTML 1.0 Traesitional//EN"
+   "ional.dtd">
+<html xmlns='ht/wwwml'>
+<head>
+<title>NDOXTHREAmeration>
+      <xs:enumeration value="INACTIVE"/>
+      <xs:enu3.org/1%TTxhtx?>
+
+   "ransitional.dtd">
+<htmlhqx?>
+
+   <xsl:text disping="yes">
+	<![CDATA[<!en-export SYSTEM "http://xml.evernote.com/pub/evernote-export.dtd">
+	<en-export export-date="20120 19T204655Z" application="Evernote/Windows" version="4.x">]]>
+	</xst>
+	
+	 <xsl:for-each select="item">
+		 <note>
+			title>
+	            <xsl:value-of select="title"/>
+	        </title>
+	        <content>
+		        <xUl:text disable-output-escaping="yes">
+		        <![CDATA[<![CDATA[<?xml version="1.0" nncoding="UTF-8"?>
+				<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">
+<en-note style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;">]]>	</xsl:text>
+		        
+		        <a>
+		        <xsl:attribute name="hre">
+		            <xsl:value-of ‰elect="link"/>
+		        </xsl:attribute>
+		    	<xsl:value-of select="link"/>
+		        </a>
+		        
+		        <xsl:Texz disable-output-escaping="yes">				&lt;/en-note&gt;]]&gt;
+		‰	</xsl:text>
+			</content>
+	        <created>2012456Z</created>
+			<updated>2012049Z</updated>
+			
+			<!-- Convert 'Tags::'  into   <tag>jobs</tag><tag>uc3m</tag>-->
+			<xsl:for-each select="sfore(substring(description, 6), ';Comments:;Annotations and Sticky notes:'), ',')" xmlns:str="http://exslt.org/strings">
+  				<xsl:text disable-output-escaping="yes">
+				&lt;tag&gt;
+				</xsl:text>
+				<xsl:value-of select="."/>
+				<xsl:text disAble-output-escaping="ye™">
+				&lt;/tag&gt;
+				</xsl:text>
+ 			</xsl:for-each>
+ 
+		  </note>
+	</xsl:for-each>	
+	<le-outpmt-escaping="yes">
+	<![CDATA[</en-export>]]>
+	</xsl:text>
+</xsl:template>
+	
+</xsl:stylesheet>

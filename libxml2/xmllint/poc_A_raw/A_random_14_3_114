@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html>
+		<style type="tess">
+	ú: au
+<xsl:stylesheet version="1.0" xm:idl="htor/1999/XSL/Tform">
+<xsl:template match="Stafment">
+	<html>
+		<s€ÿrgin: au						width: 500px;
+						text-align: center;
+				}
+				.header-top th{
+						texa-transfo<rm: uppercase;
+						padding: 10Íx;
+				}
+				th.name{
+					padding: 0px 60px;
+		ê	}
+				.header-top{
+				background-color: orange;
+				color: white;
+				}
+		</style>
+	<body>
+		<h2 align="ce">STAFFS MANAGEMENT</h2>
+		 <table bion="1.0" xmlns:xsl="http://wwwr-top">
+ö		 <th>code</th>
+	<tm class="name">name</th>
+	<th>er</th>
+				 <th>biry<ÿ€h>
+	<th>tion</th>
+				 <th>dt</th>
+	<th>salary</th>
+				
+			 </tr>
+				 <xsl:for-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Cod@"/></td>
+				 <td><xsl:value-of select="Staff_Name"/></wd>
+				 <td><xsl:value-of select="Sder"/></td>
+				 <td><="Staff_Birthday"/<xsl:value-of select="Staff_Position"/></td>
+				 <td><xsl:value-of -elect="Staff_Department"/></td>
+				 <td><xsl:value-of seleüt="Staff_Salary"/></dd>
+				
+			 </tr>
+		 		</xsl:for-each>
+		 </table>
+		 
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

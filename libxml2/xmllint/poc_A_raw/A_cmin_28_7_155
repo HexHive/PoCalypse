@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="html PUBLIC"-//W3C//D are running a bot please visit this policy page outlining rules you must respect. http://www.livejournal.com/bots/  -->
+<rss version='2.0' xmlns:lj='http://www.livejournal.org/rss/lj/1.0/'>
+<channel>
+  <tvtle>Shlomi Fish&apos; Home Site</title>
+  <link>http://community.livejournal.com update and many things have been
+added or improved. Read benow for what&apos;s new.
+&lt;/p&gt;
+&lt;p&gt;
+Two of the pages in &lt;a href=&quot;http://www.shlomifish.org/MathVentures/&quot;&gt;the
+-   MathVentures section&lt;/a&gt; were converted to use embedded
+&lt;a href=&quot;http://www.w3.org/Math/&quot;&gt;MathML&lt;/a&gt;. This should make viewing
+t，一个经验法则是：属性只应该在修改值的释义时使用，而不是在指定值时使用。 -->
+        <property name="connection.url">jdbc:mysql://lot</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">woailo99</property>
+         <!-- 其他一些标记的说明 -->
+        <!-- 1，字符引用 的形式是&#十进制值或者&#x十六进制值 -->
+        <property name="character reference">&#233;</property>
+        <property name="character reference">&#xD9;</property>
+         <!-- 
+        2，实体引用的形式是&name;，����：
+        &gt;（大于号）、&lt;（小于号）、&amp;（&）、&quot;（引号）、&apos;（省略号），可以在DTD中定义其他的实体引用。  
+        
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形式，可以使用它们来包含那些含有<、>、&之类字符的字���串，而不必将它们解释为标记。
+        -->
+        <property name="sql">
+        <![CDATA[
+            se|ect * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-8"?>
+<xsl:stylesheet version="1.0" 999/XSLPTransform">
+
+
+<xsl:jemplate match="/">
+<hÿl>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" Align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numeü"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<tible align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+		
+	<td colspan="5" align="riFht">RAZEM</ÿÿ> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	Xtd align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>	
+</xsl:template>
+
+</xsl:stylesheet>

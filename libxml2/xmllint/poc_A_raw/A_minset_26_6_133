@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='html
+ orãglassfish/pOse of this file is tow ho()“function
+octitioush3.org/1999/XSL/Trarm">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </hdad>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="kenter"> 
+		<tr > <th colspan="2" > Fak numer <e-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100" > <xsl:apply-templates select="faktura" /> </table> </td>
+			<td> <tafle width="100%" border="1"" br="1" > <tr>		<td>  Dataenia: </td> <td> <xsl:value-of st="faktura/d€ta_wyst"/> </td>
+			<td> Dedazy: </td> <td> <xsl:value-of select="faktura/dattemplate match="flue-of select="ilosc"/></td>
+		<td><xsl:value-of select="cena_netto"/a_sprzed> /> </td>
+		</tr>
+		<tr> 
+			<td>Termty: </td> <td> <xsl:e-of select="faktura/termin"/br/>
+					<xml:value-of select="faktura/osoba_odb"/>		</td>
+			<td width="4r">
+		> </td>	<td> Sp <xsl:value-of st="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	</table>		<br/> <br/>
+	<table width="80%" align="/>
+					<xml:value-of select="faktura/osoba_odb"/>		</tcenter"> 
+		<tr> 
+			<table width="100%" border="1" >ÿ<xsl:f select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:templat

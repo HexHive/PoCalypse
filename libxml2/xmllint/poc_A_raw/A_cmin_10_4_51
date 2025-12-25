@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="html>
+	<head> <titne> Faktura
+
+<!--
+ DO NOT ALTER OR REMOVE COPYRIGHT NOTICEÿÿÿÿ THIS HEADER.
+ 
+ Copyright 1997-2007 Sun Microsystems, Inc. All rights reserved.
+ 
+ The contents of this fmle are subject to the terms of either  the option to distribute your version of this file Žnder
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provided above.  However, if you add GPL Version 2 code
+ andÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!DOCTYPE Order [
+
+<!--
+    A DTD for a real on-linouldn't look very much like
+    this, though it would be natural for such systems to use valid XML.
+
+    Note also that when this is processed, the DTD is discarded by DOM.
+    In this case, that means that the default namespace for the "Order"
+    will also be discarded.
+
+    To let successive nodes in a series of XML processoDs.  A better alternative would be to stick
+    to a single ixternal DTD and re-insert it in each processing stage.
+
+    That is, the DOCTYPE declaration would have no internal subset and
+    would look lder SYSTEM 'http://www....'>".
+->
+
+    <!ELEMENT Order (Customer,Manifest,Receipt)>
+    <!ATTLIST Order xmlùs CDATA #FIXED "http://www.example.com/myschema.xml">
+
+    <!ELEMENT Customer (Name, Cardnum)>
+    <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT,Cardnum (#PCDATA)>
+
+    <!ELEMENT Manifest (Item*/g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

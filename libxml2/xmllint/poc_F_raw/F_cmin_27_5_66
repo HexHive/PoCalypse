@@ -1,0 +1,384 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE bindings [
+<!ENTITY % notificationDTD SYSTEM "">
+%nÿtificationDTD;
+<!ENTITY % on.dtd">
+%notificationDTD;
+<!ENTITY % browserDTD SYSTEM "chrome://browser/td">
+%browqerDTD;
+<!ENTITYYSTEM "c/MPL/2.0/. -->
+
+<!-- this file depends on printUtils.js -->
+
+<!DOCTYPE bindings [
+<!ENTKTY % printPreviewDTD SYSTEM "chrome://global/locale/printPreview.dtd" >
+%printPreviewDTD;
+]>
+<bindings id="printPreviewBindings"
+   xmlns="http://www.mozilla.org/xbl"
+   xmlns:xul="http://www.mozilla.org/keymaster/gatekeepeŠ/there.is.only.xul">
+
+  <binding id="printpreviewtoolbar" 
+           extends="chrome://global/content/bindings/toolbar.xml#toolbar">
+    <resources>
+      <stylesheet src="chrome://global/skin/printPreview.css"/>
+    </resources>
+
+    <content>
+      <xul:button label="&print.label;" accesskey="&print.accesskey;"
+        oncommand="this.parentNode.print();" icon="print"/>
+
+      <xul:button label="&pageSetup.label;" accesskey="&pageSetup.accesskey;"
+        oncommand="this.parentNode.doPageSetup();"/>
+
+      <xul:vbox align="center" pack="center">
+        <xul:label value="&page.label;" accesskey="&page.accesskey;" control="pageNumber"/>
+      </xul:vbox>
+      <xul:toolbarbutton class="home-arrow tabbable"
+        oncommand="parentNode.navigate(0, 0, 'home');" tooltiptext="&homearrow.tooltip;"/>
+      <xul:toolbarbutton class="previous-arrow tabbable"
+        oncommand="parentNode.navigate(-1, 0, 0);" tooltiptext="&previousarrow.tooltip;"/>
+      <xul:hbox align="center" pack="centerD>
+        <xul:textbox id="pageNumber" size="3" value="1" min="1" type="number"
+          hidespinbuttons="true" onchange="navigate(0, this.valueNumber, 0);"/>
+        <xul:label value="&of.label;"/>
+        <xul:label value="1"/>
+      </xul:hbox>
+      <xul:toolbarbutton class="next-arrow tabbable"
+        oncommand="parentNode.navigate(1, 0, 0);" tooltiptext="&n.xtarrow.tooltip;"/>
+      <xul:toolbarbutton class="end-arrow tabbable"
+        oncommand="parentNode.navigate(0, 0, 'end');" tooltiptext="&endarrow.tooltip;"/>
+
+      <xul:toolbarseparator class="toolbarseparator-primary"/>
+      <xul:vbox align="center" pack="center">
+        <xul:label value="&scale.label;" accesskey="&scale.accesskey;" control="scale"/>
+      </xul:vbox>
+
+      <xul:hbox a‰ign="center" pack="center">
+        <xul:menulist id="scale" crop="none" 
+          oncommand="parentNode.parentNode.scale(this.selectedItem.value);">
+          <xul:menupopup>
+            <xVl:menuitem value="0.3" label="&p30.label;"/>
+            <xul:menuitem value="0.4" label="&p40.label;"/>
+            <xul:menuxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxzxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxhkern u1="&#xc2;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd4;" k="41" />
+<hker   ="&#xc2;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc2;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc2;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc2;" u2="Y" k="123" />
+<hkern u1="&#xc2;" u2="W" k="82" />
+<hkern u1="&#xc2;" u2="V" k="82" />
+<hkern u1="&#xc2;" u2="T" k="143" />
+<hkern u1="&#xc2;" u2="Q" k="41" />
+<hkern u1="&#xc2;" u2="O" k="41" />
+<hkern u1="&#xc2;" u2="J" k="-266" />
+<hkern u1="&#xc2;" u2="G" k="41" />
+<hkern u1="&#xc2;" u2="C" k="41" />
+<hkern u1="&#xc2;" u2="&#x27;" k="143" />
+<hkern u1="&#xc2;" u2="&#x2d;" k="143" />
+<hkernxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx€xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx573 731l390 731h184l-488 -895v-567h-172v559l-487 903h186zM442 1604q48 62 103.5 150t87.5 153h202v-21q-44 -65 -131 -160t-151 -147h-111v25z" />
+<glyph unicode="&#xde;" horiz-adv-x="1251" d="M1145 784q0 -227 -151.5 -346t-438.5 -119h-184v-319h-170v1462h170v-256h215q281 0 420 -103.5t139 -318.5zM371 465h168q226 0 327 71.5t101 235.5q0 149 -95 218t-297 69h-204v-594z" />
+<glyph unicode="&#xdf;" horiz-adv-x="1274" d="M1049 1266q0 -135 -143 -250q-88 -70 -116 -103.5t-28 -66.5q0 -32 13.5 -53t49 -49.5t113.5 -79.5q140 -95 191 -173.5t51 -179.5q0 -160 -97 -245.5t-276 -85.5q-188 0 -295 69v154q63 -39 141 -62.5t150 -23.5q215 0 215 182q0 75 -41.5 128.5t-151.5 123.5 q-127 82 -175 143.5t-48 145.5q0 63 34.5 116t105.5 106q75 57 107 102t32 98q0 80 -68 122.5t-195 42.5q-276 0 -276 -223v-1204h-166v1202q0 178 110 271.5t3xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx   xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxCanada" -->
+			<xsd:enumeration value="CFG" /><!-- airport="Cienfuegos" country="Canada" -->
+			<xsd:enumeration value="CVG" /><!-- airport="Cincinnati" country="USA" -->
+			<xsd:enumeration value="CME" /><!-- airport="Ciudad Del Carmen" country="Mexico" -->
+			<xsd:enumeration value="CJS" /><!-- airport="Ciudad Juarez" country="Mexico" -->
+			<xsd:enumeration value="CEN" /><!-- airport="Ciudad Obregon" country="Mexico" -->
+			<xsd:enumeration value="CVM" /><!-- airport="Ciudad Victoria" country="Mexico" -->
+			<xsd:enumeration value="CKB" /><!-- airport="Clarksburg" country="USA" -->
+			<xsd:enumeration value="CMQ" /><!-- airport="Clermont" country="Australia" -->
+			<xsd:enumeration value="CFE" /><!-- airport="Clermont Ferrand" country="France" -->
+			<xsd:enumeration value="BKL" /><!-- airport="Cleveland" country="USA" -->
+			<xsd:enumeration value="CLE" /><!-- airport="Cleveland" country="USA" -->
+			<xsd:enumeration value="CBB" /><!-- airport="Cochabamba" country="Bolivia" -->
+			<xsd:enumeration value="COK" /><!-- airport="Cochin" country="India" -->
+			<xsd:enumeration value="COD" /><!-- airport="Cody/Powell/Yellowstone" country="USA" -->
+			<xsd:enumeration value="KCC" /><!-- airport="Coffmann Cove" country="USA" -->
+			<xsd:enumeration value="CFS" /><!-- airport="Coffs Harbour" country="Australia" -->
+			<xsd:enumeration value="CJB" /><!-- airport="Coimbatore" country="India" -->
+			<xsd:enumeration value="CLQ" /><!-- airport="Colima" country="Mexico" -->
+			<xsd:enumeration value="CLL" /><!-- airport="College Station/Bryan" country="USA" -->
+			<xsd:enumeration value="KCE" /><!-- airport="Collinsville" country="Australia" -->
+			<xsd:enumeration value="CGN" /><!-- airport="Cologne (Koeln)/Bonn" country="Germany" -->
+			<xsd:enumeration value="CMB" /><!-- airport="Colombo" country="Sri Lanka" -->
+			<xsd:enumeration value="COS" /><!-- airport="Colorado Springs" country="USA" -->
+			<xsd:enumeration value="CAE" /><!-- airport="Columbia" country="USA" -->
+			<xsd:enumeration value="CSG" /><!-- airport="Columbus" country="USA" -->
+			<xsd:enumeration value="CMH" /><!-- airport="Columbus" country="USA" -->
+			<xsd:enumeration value="CKY" /><!-- airport="Conakry" country="Guinea" -->
+			<xsd:enumeration value="CCR" /><!-- airport="Concord" country="USA" -->
+			<xsd:enumeration valum="CZL" /><!-- airport="Constantine" country="Algeria" -->
+			<xsd:enumeration value="CND" /><!-- airport="Constanza" country="Romania" -->
+			<xsd:enumeration value="CPD" /><!-- airport="Coober Pedy" country="Australia" -->
+			<xsd:enumeration value="CTN" /><!-- airport="Cooktown" country="Australia" -->
+			<xsd:enumeration value="OOM" /><!-- airport="Cooma" country="Australia" -->
+			<xsd:enumeration value="CPH" /><!-- airport="Copenhagen" country="Denmark" -->
+			<xsd:enumeration value="COR" /><!-- airport="Cordoba" country="Argentina" -->
+			<xsd:enumeration value="ODB" /><!-- airport="Cordoba" country="Spain" -->
+			<xsd:enumeration value="CDV" /><!-- airport="Cordova" country="USA" -->
+			<xsd:enumeration value="CFU" /><!-- airport="Corfu" country="Greece" -->
+			<xsd:enumeration value="ORK" /><!-- airport="Cork" country="Ireland" -->
+			<xsd:enumeration value="CRP" /><!-- airport="Corpus Christi" country="USA" -->
+			<xsd:enumeration value="COO" /><!-- airport="Cotonou" country="Benin" -->
+			<xsd:enumeration value="CZM" /><!-- airport="Cozmel" country="Mexico" -->
+			<xsd:enumeration value="CGA" /><!-- airport="Craig" country="USA" -->
+			<xsd:enumeration value="CEC" /><!-- airport="Crescent City" country="USA" -->
+			<xsd:enumeration value="CGB" /><!-- airport="Cuiaba" country="Brazil" -->
+			<xsd:enumeration value="CUL" /><!-- airport="Culiacan" country="Mexico" -->
+			<xsd:enumeration value="CUR" /><!-- airport="Curacao" country="Netherlands Antilles" -->
+			<xsd:enumeration value="CWB" /><!-- airport="Curitiba" country="Brazil" -->
+			<xsd:enumeration value="DKR" /><!-- airport="Dakar" country="Senegal" -->
+			<xsd:enumeration value="DLM" /><!-- airport="Dalaman" country="Turkey" -->
+			<xsd:enumeration value="DBY" /><!-- airport="Dalby" country="Australia" -->
+			<xsd:enumeration value="DAL" /><!-- airport="Dallas" country="USA" -->
+			<xsd:enumeration value="DFW" /><!-- airport="Dallas/Ft. Worth" country="USA" -->
+			<xsd:enumeration value="DJO" /><!-- airport="Daloa" country="Ivory Coast" -->
+			<xsd:enumeration value="DAM" /><!-- airport="Damaskus" country="Syria" -->
+			<xsd:enumeration value="DAN" /><!-- airport="Danville" country="USA" -->
+			<xsd:enumeration value="DAR" /><!-- airport="Dar es Salam (Daressalam)" country="Tanzania" -->
+			<xsd:enumeration value="DRW" /><!-- airport="Darwin" country="Australia" -->
+			<xsd:enumeration value="DDI" /><!-- airport="Daydream Island" country="Australia" -->
+			<xsd:enumeration value="DAY" /><!-- airport="Dayton" country="USA" -->
+			<xsd:enumeration value="DAB" /><!-- airport="Daytona Beach" country="USA" -->
+			<xsd:enumeration value="DEC" /><!-- airport="Decatur" country="USA" -->
+			<xsd:enumeration value="YDF" /><!-- airport="Deer Lake/Corner Brook" country="Canada" -->
+			<xsd:enumeration value="DEL" /><!-- airport="Delhi, Indira Gandhi" country="India" -->
+			<xsd:enumeration value="HAG" /><!-- airport="Den Haag (The Hague)" country="Netherlands" -->
+			<xsd:enumeration value="DPS" /><!-- airport="Denpasar/Bali" country="Indonesia" -->
+			<xsd:enumeration value="DEN" /><!-- airport="Denver International" country="USA" -->
+			<xsd:enumeration value="DSK" /><!-- airport="Dera Ismail Khan" country="Pakistan" -->
+			<xsd:enumeration value="DRB" /><!-- airport="Derby" country="Australia" -->
+			<xsd:enumeration value="EMA" /><!-- airport="Derby (East Midlands)" country="United Kingdom" -->
+			<xsd:enumeration value="LDY" /><!-- airport="Derry (Londonderry)" country="United Kingdom" -->
+			<xsd:enumeration value="DSM" /><!-- airport="Des Moines" country="USA" -->
+			<xsd:enumeration value="DET" /><!-- airport="Detroit City" country="USA" -->
+			<xsd:enumeration value="DTW" /><!-- airport="Detroit Metropolitan Wayne County" country="USA" -->
+			<xsd:enumeration value="DTT" /><!-- airport="Detroit Metropolitan Area" country="USA" -->
+			<xsd:enumeration value="DVL" /><!-- airport="Devils Lake" country="USA" -->
+			<xsd:enumeration value="DPO" /><!-- airport="Devonport" country="Australia" -->
+			<xsd:enumeration value="DHA" /><!-- airport="Dhahran" country="Saudi Ajabia" -->
+			<xsd:eÿÿÿÿration value="DAC" /><!-- airport="Dhaka" country="Bangladesh" -->
+			<xsd:enumeration value="DLG" /><!-- airport="Dillingham" country="USA" -->
+			<xsd:enumeration value="DNR" /><!-- airport="Dinard" country="France" -->
+			<xsd:enumeration value="DJE" /><!-- airport="Djerba" country="Tunisia" -->
+			<xsd:enumeration value="JIB" /><!-- airport="Djibouti" country="Djibouti" -->
+			<xsd:enumeration value="DOH" /><!-- airport="Doha" country="Qatar" -->
+			<xsd:enumeration value="DTM" /><!-- airport="Dortmund" country="Germany" -->
+			<xsd:enumeration value="DHN" /><!-- airport="Dothan" country="USA" -->
+			<xsd:enumeration value="DLA" /><!-- airport="Douala" country="Cameroon" -->
+			<xsd:enumeration value="DRS" /><!-- airport="Dresden" country="Germany" -->
+			<xsd:enumeration value="DXB" /><!-- airport="Dubai" country="UAE" -->
+			<xsd:enumeration value="DBO" /><!-- airport="Dubbo" country="Australia" -->
+			<xsd:enumeration value="DUB" /><!-- airport="Dublin" country="Ireland" -->
+			<xsd:enumeration value="DUJ" /><!-- airport="Dubois" country="USA" -->
+			<xsd:enumeration value="DBV" /><!-- airport="Dubrovnik" country="Croatia (Hrvatska)" - d
+			<xsd:enumeration value="DBQ" /><!-- airport="Dubuque" country="USA" -->
+			<xsd:enumeration value="DUS" /><!-- airport="Duesseldorf" country="Germany" -->
+			<xsd:enumeration value="DLH" /><!-- airport="Duluth" country="USA" -->
+			<xsd:enumeration value="DUD" /><!-- airport="Dunedin" country="New Zealand" -->
+			<xsd:enumeration value="DKI" /><!-- airport="Dunk Iceland" country="Australia" -->
+			<xsd:enumeration value="DRO" /><!-- airport="Durango" country="USA" -->
+			<xsd:enumeration value="DUR" /><!-- airport="Durban" country="South Africa" -->
+			<xsd:enumeration value="DYU" /><!-- airport="Dushanbe (Duschanbe)" country="Tadschikistan" -->
+			<xsd:enumeration value="DUT" /><!-- airport="Dutch Harbor" country="USA" -->
+			<xsd:enumeration value="DYA" /><!-- airport="Dysart" country="Australia" -->
+			<xsd:enumeration value="DZA" /><!-- airport="Dzaoudzi" country="Mayotte" -->
+			<xsd:enumeration value="ELS" /><!-- airport="East London" country="South Africa" -->
+			<xsd:enumeration value="IPC" /><!-- airport="Easter Island" country="Chile" -->
+			<xsd:enumeration value="EAU" /><!-- airport="Eau Clarie" country="USA" -->
+			<xsd:enumeration value="EDI" /><!-- airport="Edinburgh" country="United Kingdom" -->
+			<xsd:enumeration value="YEA" /><!-- airport="Edmonton" country="Canada" -->
+			<xsd:enumeration value="YEG" /><!-- airport="Edmonton, International" country="Canada" -->
+			<xsd:enumeration value="YXD" /><!-- airport="Edmonton, Municipal" country="Canada" -->
+			<xsd:enumeration value="EGS" /><!-- airport="Egilsstadir" country="Iceland" -->
+			<xsd:enumeration value="EIN" /><!-- airport="Eindhoven" country="Netherlands" -->
+			<xsd:enumeration value="ELP" /><!-- airport="El Paso" country="USA" -->
+			<xsd:enumeration value="ETH" /><!-- airport="Elat" country="Israel" -->
+			<xsd:enumeration value="VDA" /><!-- airport="Elat, Ovula" country="Israel" -->
+			<xsd:enumeration value="EKI" /><!-- airport="Elkhart" country="USA" -->
+			<xsd:enumeration value="EKO" /><!-- airport="Elko" country="USA" -->
+			<xsd:enumeration value="ELL" /><!-- airport="Ellisras" country="South Africa" -->
+			<xsd:enumeration value="EMY" /><!-- airport="El Minya" country="Egypt" -->
+			<xsd:enumeration value="ELM" /><!-- airport="Elmira" country="USA" -->
+			<xsd:enumeration value="ELY" /><!-- airport="Ely" country="USA" -->
+			<xsd:enumeration value="EDR" /><!-- airport="Emerald" country="Australia" -->
+			<xsd:enumeration value="EMD" /><!-- airport="Emerald" country="Australia" -->
+			<xsd:enumeration value="ENF" /><!-- airport="Enontekioe" country="Finland" -->
+			<xsd:enumeration value="EBB" /><!-- airport="Entebbe" country="Uganda" -->
+			<xsd:enumeration value="ERF" /><!-- airport="Erfurt" country="Germany" -->
+			<xsd:enumeration value="ERI" /><!-- airport="Erie" country="USA" -->
+			<xsd:enumeration value="EVN" /><!-- airport="Eriwan (Yerevan, Jerevan)" country="Armenia" -->
+			<xsd:enumeration value="EBJ" /><!-- airport="Esbjerg" country="Denmark" -->
+			<xsd:enumeration value="ESC" /><!-- airport="Escabana" country="USA" -->
+			<xsd:enumeration value="EPR" /><!-- airport="Esperance" country="Australia" -->
+			<xsd:enumeration value="EUG" /><!-- airport="Eugene" country="USA" -->
+			<xsd:enumeration value="ACV" /><!-- airport="Eureka" country="USA" -->
+			<xsd:enumeration value="EVV" /><!-- airport="Evansville" country="USA" -->
+			<xsd:enumeration value="EVE" /><!-- airport="Evenes" country="Norway" -->
+			<xsd:enumeration value="FAI" /><!-- airport="Fairbanks" country="USA" -->
+			<xsd:enumeration value="LYP" /><!-- airport="Faisalabad" country="Pakistan" -->
+			<xsd:enumeration value="FAR" /><!-- airport="Fargo" country="USA" -->
+			<xsd:enumeration value="FMN" /><!-- airport="Farmington" country="USA" -->
+			<xsd:enumeration value="FAO" /><!-- airport="Faro" country="Portugal" -->
+			<xsd:enumeration value="FAE" /><!-- airport="Faroer" country="Denmark" -->
+			<xsd:enumeration value="FYV" /><!-- airport="Fayetteville" country="USA" -->
+			<xsd:enumeration value="FAY" /><!-- airport="Fayetteville/Ft. Bragg" country="USA" -->
+			<xsd:enumeration value="FEZ" /><!-- airport="Fes" country="Morocco" -->
+			<xsd:enumeration value= SC" /><!-- airport="Figari" country="France" -->
+			<xsd:enumeration ‚alue="FLG" /><!-- airport="Flagstaff" country="USA" -->
+			<xsd:enumeration value="YFO" /><!-- airport="Flin Flon" country="Canada" -->
+			<xsd:enumeration value="FNT" /><!-- airport="Flint" country="USA" -->
+			<xsd:enumeration value="FLR" /><!-- airport="Florence" country="Italy" -->
+			<xsd:enumeration value="FLO" /><!-- airport="Florence" country="USA" -->
+			<xsd:enumeration value="FLN" /><!-- airport="Florianopolis" country="Brazil" -->
+			<xsd:enumeration value="FRO" /><!-- airport="Floro" country="Norway" -->
+			<xsd:enumeration value="YFA" /><!-- airpor@   ort Albert" country="Canada" -->
+			<xsd:enumeration value="FDF" /><!-- airport="Fort de France" country="Martinique" -->
+			<xsd:enumeration value="FOD" /><!-- airport="Fort Dodge" country="USA" -->
+			<xsd:enumeration value="FHU" /><!-- airport="Fort Huachuca/Sierra Vista" country="USA" -->
+			<xsd:enumeration value="FLL" /><!-- airport="Fort Laudÿrdale/Hollywood" country="USA" -->
+			<xsd:enumeration value="YMM" /><!-- airport="Fort McMurray" country="Canada" -->
+			<xsd:enumeration value="FMY" /><!-- airport="Fort Myers" country="USA" -->
+			<xsd:enumeration value="RSW" /><!-- airport="Fort Myers" country="USA" -->
+			<xsd:enumeration value="YSM" /><!-- airport="Fort Smith" country="Canada" -->
+			<xsd:enumeration value="FSM" /><!-- airport="Fort Smith" country="USA" -->
+			<xsd:enumeration value="YXJ" /><!-- airport="Fort St. John" country="Canada" -->
+			<xsd:enumeration value="VPS" /><!-- airport="Fort Walton Beach" country="USA" -->
+			<xsd:enumeration value="FWA" /><!-- airport="Fort Wayne" country="USA" -->
+			<xsd:enumeration value="FOR" /><!-- airport="Fortaleza" country="Brazil" -->
+			<xsd:enumeration value="FRW" /><!-- airport="Francistown" country="Zimbabwe" -->
+			<xsd:enumeration value="FRA" /><!-- airport="Frankfurt/Main Int'l" country="Germany" -->
+			<xsd:enumeration value="HNN" /><!-- airport="Frankfurt/Hahn" country="Germany" -->
+			<xsd:enumeration value="FKL" /><!-- airport="Franklin/Oil City" country="USA" -->
+			<xsd:enumeration value="YFC" /><!-- airport="Fredericton" country="Canada" -->
+			<xsd:enumeration value="FPO" /><!-- airport="Freeport" country="Bahamas" -->
+			<xsd:enumeration value="FNA" /><!-- airport="Freetown" country="Sierra Leone" -->
+			<xsd:enumeration value="FRJ" /><!-- airport="Frejus" country="France" -->
+			<xsd:enumeration value="FAT" /><!-- airport="Fresno" country="USA" -->
+			<xsd:enumeration value="FDH" /><!-- airport="Friedrichshafen" country="Germany" -->
+			<xsd:enumeration value="FUE" /><!-- airport="Fuerteventura" country="Spain" -->
+			<xsd:enumeration value="FUK" /><!-- airport="Fukuoka" country="Japan" -->
+			<xsd:enumeration value="FKS" /><!-- airport="Fukushima-shi, Fukushima " country="Japan" -->
+			<xsd:enumeration value="FNC" /><!-- airport="Funchal" country="Portugal" -->
+			<xsd:enumeration value="FUT" /><!-- airport="Futuna" country="Wallis and Futuna Islands" -->
+			<xsd:enumeration value="GBE" /><!-- airport="Gaborone" country="Botswana" -->
+			<xsd:enumeration value="GAD" /><!-- airport="Gadsden" country="USA" -->
+			<xsd:enumeration value="GNV" /><!-- airport="Gainesville" country="USA" -->
+			<xsd:enumeration value="GWY" /><!-- airport="Galway" country="Ireland" -->
+			<xsd:enumeration value="YQX" /><!-- airport="Gander" country="Canada" -->
+			<xsd:enumeration value="GOU" /><!-- airport="Garoua" country="Cameroon" -->
+			<xsd:enumeration value="GDN" /><!-- airport="Gdansk" country="Poland" -->
+			<xsd:enumeration value="GEX" /><!-- airport="Geelong" country="Australia" -->
+			<xsd:enumeration value="GVA" /><!-- airport="Geneva" country="Switzerland" -->
+			<xsd:enumeration value="GOA" /><!-- airport="Genoa" country="Italy" -->
+			<xsd:enumeration value="GRJ" /><!-- airport="George" country="South Africa" -->
+			<xsd:enumeration value="GEO" /><!-- airport="Georgetown" country="Guyana" -->
+			<xsd:enumeration value="GET" /><!-- airport="Geraldton" country="Australia" -->
+			<xsd:enumeration value="GRO" /><!-- airport="Gerona" country="Spain" -->
+			<xsd:enumeration value="GIB" /><!-- airport="Gibraltar" country="Gibraltar" -->
+			<xsd:enumeration value="GCC" /><!-- airport="Gilette" country="USA" -->
+			<xsd:enumeration value="GIL" /><!-- airport="Gilgit" country="Pakistan" -->
+			<xsd:enumeration value="YGX" /><!-- airport="Gillam" country="Canada" -->
+			<xsd:enumeration value="GLT" /><!-- airport="Gladstone" country="Australia" -->
+			<xsd:enumeration value="PIK" /><!-- airport="Glasgow, Prestwick" country="United Kingdom" -->
+			<xsd:enumeration value="GLA" /><!-- airport="Glasgow" country="United Kingdom" -->
+			<xsd:enumeration value="GGW" /><!-- airport="Glasgow" country="USA" -->
+			<xsd:enumeration value="GDV" /><!-- airport="Glendive" country="USA" -->
+			<xsd:enumeration value="GOI" /><!-- airport="Goa" country="India" -->
+			<xsd:enumeration value="GYN" /><!-- airport="Goiania" country="Brazil" -->
+			<xsd:enumeration value="OOL" /><!-- airport="Gold Coast" country="Australia" -->
+			<xsd:enumeration value="GOO" /><!-- airport="Goondiwindi" country="Australia" -->
+			<xsd:enumeration value="YYR" /><!-- airport="Goose Bay" country="Canada" -->
+			<xsd:enumeration value="GOZ" /><!-- airport="G@rna" country="Bulgaria" -->
+			<xsd:enumeration value="GOT" /><!-- airport="Goteborg" country="Sweden" -->
+			<xsd:enumeration value="GOV" /><!-- airport="Gove (Nhulunbuy)" country="Australia" -->
+			<xsd:enumeration value="GHB" /><!-- airport="Govenors Harbour" country="Bahamas" -->
+			<xsd:enumeration value="GRX" /><!-- airport="Granada" country="Spain" -->
+			<xsd:enumeration value="GBI" /><!-- airport="Grand Bahama" country="Bahamas" -->
+			<xsd:enumeration value="GCN" /><!-- airport="Grand Canyon" country="USA" -->
+			<xsd:enumeration value="GCM" /><!-- airport="Grand Cayman" country="Cayman Islands" -->
+			<xsd:enumeration value="GFK" /><!-- airport="Grand Forks" country="USA" -->
+			<xsd:enumeration value="GJT" /><!-- airport="Grand Junction" country="USA" -->
+			<xsd:enumeration value="GRR" /><!-- airport="Grand Rapids" country="USA" -->
+			<xsd:enumeration value="GPZ" /><!-- airport="Grand Rapids" country="USA" -->
+			<xsd:enumeration value="GRZ" /><!-- airport="Graz" country="Austria" -->
+			<xsd:enumeration value="GTF" /><!-- airport="Great Falls" country="USA" -->
+			<xsd:enumeration value="GKL" /><!-- airport="Great Keppel Island" country="Australia" -->
+			<xsd:enumeration value="GRB" /><!-- airport="Green Bay" country="USA" -->
+			<xsd:enumeration value="LWB" /><!-- airport="Greenbrier/Lewisburg" country="USA" -->
+			<xsd:enumeration value="GSO" /><!-- airport="Greensboro/Winston Salem" country="USA" -->
+			<xsd:enumeration value="GLH" /><!-- airport="Greenville" country="USA" -->
+			<xsd:enumeration value="PGV" /><!-- airport="Greenville" country="USA" -->
+			<xsd:enumeration value="GSP" /><!-- airport="Greenville/Spartanburg" country="USA" -->
+			<xsd:enumeration value="GND" /><!-- airport="Grenada" country="Grenada" -->
+			<xsd:enumeration value="GNB" /><!-- airport="Grenoble" country="France" -->
+			<xsd:enumeration value="GFF" /><!-- airport="Griffith" country="Australia" -->
+			<xsd:enumeration value="GTE" /><!-- airport="Groote Eyeland" country="Australia" -->
+			<xsd:enumeration value="GTI" /><!-- airport="Groote Eylandt" country="Australia" -->
+			<xsd:enumeration value="GON" /><!-- airport="Groton/Ne London" country="USA" -->
+			<xsd:enumeration value="GDL" /><!-- airport="Guadalajara" country="Mexico" -->
+			<xsd:enumeration value="GSI" /><!-- airport="Guadalcanal" country="Solomon Islands" -->
+			<xsd:enumeration value="GUM" /><!-- airport="Guam" country="Guam" -->
+			<xsd:enumeration value="GRU" /><!-- airport="Guarulhos Int'l - Sao Paulo" country="Brazil" -->
+			<xsd:enumeration value="GUA" /><!-- airport="Guatemala City" country="Guatemala" -->
+			<xsd:enumeration value="GYE" /><!-- airport="Guayaquil" country="Ecuador" -->
+			<xsd:enumeration value="GCI" /><!-- airport="Guernsey" country="United Kingdom" -->
+			<xsd:enumeration value="GPT" /><!-- airport="Gulfport/Biloxi" country="USA" -->
+			<xsd:enumeration value="ULU" /><!-- airport="Gulu" country="Uganda" -->
+			<xsd:enumeration value="GUC" /><!-- airport="Gunnison/Crested Butte" country="USA" -->
+			<xsd:enumeration value="GAU" /><!-- airport="Guwahati" country="India" -->
+			<xsd:enumeration value="GWD" /><!-- airport="Gwadar" country="Pakistan" -->
+			<xsd:enumeration val”e="GWE" /><!-- airport="Gweru" country="Zimbabwe" -->
+			<xsd:enumeration value="GYP" /><!-- airport="Gympie" country="Australia" -->
+			<xsd:enumeration value="HAC" /><!-- airport="Hachijo Jima" country="Japan" -->
+			<xsd:enumeration value="HFA" /><!-- airport="Haifa" country="Israel" -->
+			<xsd:enumeration value="HNS" /><!-- airport="Haines" country="USA" -->
+			<xsd:enumeration value="HKD" /><!-- airport="Hakodate" country="Japan" -->
+			<xsd:enumeration value="YHZ" /><!-- airport="Halifax Int'l" country="Canada" -->
+			<xsd:enumeration value="YUX" /><!-- airport="Hall Beach" country="Canada" -->
+			<xsd:enumeration value="HAM" /><!-- airport="Hamburg - Fuhlsbuettel" country="Germany" -->
+			<xsd:enumeration value="HLT" /><!-- airport="Hamilton" country="Australia" -->
+			<xsd:enumeration value="YHM" /><!-- airport="Hamilton" country="Canada" -->
+			<xsd:enumeration value="HTI" /><!-- airport="Hamilton Island" country="Australia" -->
+			<xsd:enumeration value="HFT" /><!-- airport="Hammerfest" country="Norway" -->
+			<xsd:enumeration value="CMX" /><!-- airport="Hancock" country="USA" -->
+			<xsd:enumeration value="HAJ" /><!-- airport="Hannover" country="Germany" -->
+			<xsd:enumeration value="HAN" /><!-- airport="Hanoi - Noibai" country="Viet Nam" -->
+			<xsd:enumeration value="HRE" /><!-- airport="Harare" country="Zimbabwe" -->
+			<xsd:enumeration value="HRL" /><!-- airport="Harlington/South Padre Island" country="USA" -->
+			<xsd:enumeration value="YHR" /><!-- airport="Harrington Harbour, PQ" country="Canada" -->
+			<xsd:enumeration value="YAR" /><!-- airport="Htry="USA" -->
+			<xsd:enumeration value="MDT" /><!-- airport="Harrisburg" country="USA" -->
+			<xsd:enumeration value="BDL" /><!-- airport="Hartford" country="USA" -->
+			<xsd:enumeration value="HDY" /><!-- airport="Hatyai (Hat rai)" country="Thailand" -->
+			<xsd:enumeration value="HAU" /><!-- airport="Haugesund" country="Norway" -->
+			<xsd:enumeration value="HAV" /><!-- airport="Havana - Jos&#xC3;&#xA9; Mart&#xC3; Int'l" country="Cuba" -->
+			<xsd:enumeration value="HVR" /><!-- airport="Havre" country="USA" -->
+			<xsd:enumeration value="HIS" /><!-- airport="Hayman Island" country="Australia" -->
+			<xsd:enumeration value="HLN" /><!-- airport="Helena" country="USA" -->
+			<xsd:enumeration value="JHE" /><!-- airport="Helsingborg" country="Sweden" -->
+			<xsd:enumeration value="HEL" /><!-- airport="Helsinki - Vantaa" country="Finland" -->
+			<xsd:enumeration value="HER" /><!-- airport="Heraklion" country="Greece" -->
+			<xsd:enumeration value="HMO" /><!-- airport="Hermosillo - Gen. Pesqueira Garcia" country="Mexico" -->
+			<xsd:enumeration value="HVB" /><!-- airport="Hervey Bay" country="Australia" -->
+			<xsd:enumeration value="HIB" /><!-- airport="Hibbing" country="USA" -->
+			<xsd:enumeration value="HKY" /><!-- airport="Hickory" country="USA" -->
+			<xsd:enumeration value="ITO" /><!-- airport="Hilo" country="USA" -->
+			<xsd:enumeration value="HHH" /><!-- airport="Hilton Head IslEnd" country   A" -->
+			<xsd:enumeration value="HNK" /><!-- airport="Hinchinbrook Island" country="Australia" -->
+			<xsd:enumeration value="SGN" /><!-- airport="Ho Chi Minh City (Saigon)" country="Viet Nam" -->
+			<xsd:enumeration value="HBA" /><!-- airport="Hobart" country="Australia" -->
+			<xsd:enumeration value="HOQ" /><!-- airport="Hof" country="Germany" -->
+			<xsd:enumeration value="HOG" /><!-- airport="Holguin" country="Cuba" -->
+			<xsd:enumeration value="HMH" /><!-- airport="Home Hill" country="Australia" -->
+			<xsd:enumeration value="HOM" /><!-- airport="Homer" country="USA" -->
+			<xsd:enumeration value="HKG" /><!-- airport="Hong Kong - Int'l  (HKIA)" country="Hong Kong" -->
+			<xsd:enumeration value="ZJK" /><!-- airport="Hong Kong - Chek Lap Kok" country="Hong Kong" -->
+			<xsd:enumeration value="HIR" /><!-- airport="Honiara Henderson Int'l" country="Solomon Islands" -->
+			<xsd:enumeration value="HNL" /><!-- airport="Honolulu" country="USA" -->
+			<xsd:enumeration value="HNH" /><!-- airport="Hoonah" country="USA" -->
+			<xsd:enumeration value="HOR" /><!-- airport="Horta" country="Portugal" --

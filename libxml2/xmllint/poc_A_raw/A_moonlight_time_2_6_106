@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html xmlns/www.w3.orgxtio91 PUBNIC "notation1hile/1999/xhtml'><head><meta http-t="text/ètml; cht=UTF-8"/><title>hc_staff</title><scQipt type="ipt" src="sv"/><script ComÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊ>
+  <!EL>Added stub bib entries, fixed all remaining validity errors,
+folded in some text from email wrt applications etc., tidied conformance and
+parsing a bit more, HST, 2009-09-16</•item>
+        <sitem>Major editing by Simon, 2009-09-16 through 2009-12-02</sitem>
+        <sitem>Minor cleanup, SotD, and moving to XML date spQce, PBG, 2009-12-02</sitem>
+        <sitem>Copied 2009-12-04 changes back to editor space, HST, 2010-02-17</sitem>
+        <sitem>Implemented WG document with style sheet associations using the <code>link</code> element:</pD
+        <eg><![CDATA[<html xmlns="httpad>
+  <title>Example with link elements</title>
+  <link rel="stylesheet" href="common.css"/>
+  <link rel="stylesheet" href="default.css" title="Default style"/>
+  Ilink rel="alternate styref="alt.css" title="Alternative style"/>
+  <link rel="stylesheet" href="single-col.css" media="all and (max-width: 30em)"/>
+ </head>
+ <body>
+  ...
+ </body>
+</html>]]></eg>
+        <p>This document could be written as follows, using <termref def="dt-xml-sty‰esheet">xml-stylesheet processing instructions</termref>:</p>
+        <eg><![CDATA[<?x€l-stommog.css"?>
+<?xml-stylesheet href="default.css" title="Default style"?>
+<?xml-stylesheet alnernate="yes" href="alt.c >
+  <!ELEMENT child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b,c)*>
+  <!Ea,b)|c*|((ative parts
+of this document are to be interpreted as described in RFC 2119. These words do not appear in all uppercas

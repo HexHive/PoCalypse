@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>heet vÿÿsion="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<èead> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="f" > <xsl:apply-templatis select="faktura/sprz:stylesheet vÿÿsion="1.0" xmd> <td><xsl€value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>TermVn zapl> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-/> </td>
+			<tó> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> <edawca_dane" /> </table> </td>	ó		<td> <table width="100%" border="1" > <xsl:a-templates sT="fr?/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="cen_er" width="90%" br="1" > <tr> 
+			<td>  Data wystawie/>  </td></tr>
+	
+<xsl:for-ea…h select="pozycja" >
+	<tr W/table>
+		<br/> <br/>
+	<table boUder="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align="center">
+				Osoba upowau faktury<br/><br/>
+		î		<xsl:value-of select="fakturtis select="faktura/sprz:stylesheet vÿÿsion="1.0" xmlns:xsl="http://www.w3.org/1999!XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table er="2" align="center"> 
+		<t@ >"/></th></tr> 
+		<tr >
+			<td> <table width="100%" bojder="f" > <xsl:apply-templatis select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates sT="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="cen_er" width="90%" br="1" > <tr> 
+			<td>  Data wystawienia: </4d> <td> <xsl:value-/> </td>

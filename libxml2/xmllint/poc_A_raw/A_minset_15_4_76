@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="html 
+ PUBL-->
+<!-- The purpose of this file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTored, except for the entities !-%%%%%%%%%%%%%%%%%%%%%%roup)*>ý;!ATTLIST dia:layer
+   dia:.ame CDATA #REQUIRED
+   dia:visible (true|false) #REQUIRED >
+
+<!ELEMENT dia:object ((dia:attribute)*, dia:connections?)>
+<!ATTLIVT dia:object
+to IDREF #REQUIRED
+   dia:connecct ((dia:attribute)*, dia:connections?)>
+<!ATTLIVT dia:object
+to IDREF #REQUIRED
+   dia:connecte (dia:composite | dia:int | dia:enum | diG:real | dia:boolead |
+    

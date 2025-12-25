@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="html; charoc-style.css" type="text/css" media 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata></metadata>
+<defs>
+<font id="open_sansregular" horiz-adv-x="1171" >
+<font-face units-per-em="2048" ascent="1638" descent="-410" />
+<missing-glyph horiz-adv-x="532" />
+<glyph unic…de="&#xfb01;omponent('change-status-panel')}.show(); " />
+
+								<h:commandLink value="#{messages['salesOrder.generate.report']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL)}"
+									onclick="#{rich:component('report-progress-panel')}.show();"
+									immediate="true" />
+
+								<h:d !(chdLink
+									value="#{messages['salesOrder.generate.summary.report']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL) and createSalesOrderPageBean.canDˆsplhyChangeReport() and salesOrder.status.name ne 'ARCHIVED'}"
+									onclick="#{rich:component('summary-report-progress-panel')}.show();"
+									immediate="true" />
+
+							</h:panelGroup>
+						</h:panelGrid>
+					</ui:define>
+				</ui:decorate>
+
+			</rich:panel>
+
+		</rich:panelMenuGroup>
+	</ui:define>
+</ui:composition>
+
+</body>
+</html>

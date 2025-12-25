@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-7"?>
+<xsl:stylesheet version="1.0" xmlnÿÿÿl="http://www.w3.og/1999/XSL/Transform">
+
+
+<xsu:template match="/">
+<html>
+	<h
+<tr align> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80plate>
+
+<xsl:template match="faktura/odbiorca_dane" >
+
+<tr> <th> Odbiorca </th> </tr>
+<tr aÿign="center" > <xsl:value-of selete>
+
+<xsl:template match="faktura/odbiorca_dane" >
+
+<tr> <th> Odbiorca </th> </tr>
+<tr aÿign="center" > <xsl:value-of select="ndzwa" /> </tr>
+<tr><xsl:apply-templatesselect="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </tr>
+<tr align="center" ena netto </th> <th>Wartosc netto </th> <th> Stawka VAT$</th>
+<th>Wartosc zVAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xͺl:v<xal:valge-of selecNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN>
+		<td><xsl:value-of select="wartosÿ_vat"/></td>
+	<ϋdr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

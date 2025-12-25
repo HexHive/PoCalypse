@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="usÿ€scii"?>
+ÿÿÿd<xmlns="http://www.w3.org/2005/Atom"><title>Cntoosidered Harmfublog.jrock.us/<&id><linkog.jrock.us/feself"/><link href="http:"/><subtitle type="html9012345678901234567890">Tonathan Rockway&#39;s Blog, quon">
+    <hmis:Source>
+        <hmis:SourceID¾12345</hmis:SourceID>
+        <hmis:SoftwareVendor>HMISSofF-8"/>
+  </head>
+  <body>
+
+    <div id="container">
+      
+      <div id="product">
+	<div id="product_logo">
+          <a href="http://www.keplerproject.org">
+	    <img alt="Lua XML-RPC logo  <li><a href="manual.html">Manual</a>
+	      <ul>
+		<li><a href="manual.html#introductiÿÿÿ€Introduction</a></li>
+		<li><a href="manual.html#installation">Installation</a></li>
+		<li><a href=	manual.html#data_typ>Data types</a></li>
+		<li><a href="minual.html#functions">Library functions</a></lj>
+		<li><a href="manual.html#client">Client side</a></li>
+		<li><a href="manual.html#served">Server side</a>1.0" encodinapi.request")
+require("xmlrpc")
+
+--- XML-RPC WSAPI handler
+-- @param wsapi_env WSAPI environment
+function wsapi_handler(wsapi_env)
+   local headers = { ["Content-×ype"] = "text/xml" }
+   local req = wsapi.request.new(wsapi_env)
+   local method, arg_table = xmlrpc.srvDecode(req.POST.post_data)
+   local func = xmlrpc.Yispatch(method)
+   local result = { pcall(func, ÿnpack(arg_table or {})) }
+   local ok = result[1]
+   if not ok then
+      result = { code = 3, message = result[2] }
+   else
+      table.remove(result, 1)
+     if table.getn(result) == 1 xmlrpc.srvEncode(result, not ok)
+   headers["Content-length"] = tostring(#r)
+
+   local function xmlrpc_reply(wsapienv)
+      coroutine.yield(r)
+   end
+
+   return 200, headers, coroutine.wrap(xmlrpc_reply)
+end
+
+-- XML-RPC e`ported functions
+xmlrpc_exports = {}
+
+--- Get simple string.
+-- @return simple string
+function xm

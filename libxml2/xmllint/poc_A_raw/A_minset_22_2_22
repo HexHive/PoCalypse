@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="euc-jp"?>
+
+<!--
+ÿDT ALTER OR REMOVE COPYRIGHT NOTICES OR THIhow thent>
+    <i:argÑment>and aaaaaaaaaaaaaaaaaaaaaaaaaaa of the features --ARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!- weird case, definesBentity some CDATA witt some tags <tag> aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.e}aQple.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA witt some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text</i:argument ô    <i:a:argument>17</i:argument>
+    <!-- an empty el--------ement -->
+ 0  <i:precision/>
+    <i, except :precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

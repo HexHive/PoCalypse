@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="HTML 1.0 Transitional//EN"
+     "h/TR/xhtml1/DTD/xhtml1-transitional3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata></met" descent="-240" />
+<missing-glyph horiz-adv-x="500" />
+<glyph horiz-adv-x="0" />
+<glyph horiz-adv-x="400" />
+<glyph unicode=" " />
+<glyph unicode="*" d="M600 1100q15 0 34 -1.5t30 -3.5l11 -1q10 -2 17.5 -10.5t7.5 -18.5v-224l158 158q7 7 18 8t19 -6l106 -106q7 -8 6 -19t-8 -18l-158 -158h224q10 0 18.5 -7.5t10.5 -17.5q6 -41 6 -75q0 -15 -1.5 -34t-3.5 -30l-1 -11q-2 -10 -10.5 -17.5t-18.5 -7.5h-224l158 -158 q7 -7 8 -18t-6 -19l-106 -106q-8 -7 -19 -6t-18 8l-158 158v-224q0 -10 -7.5 -18.5t-17.5 -10.5q-41 -6 -75 -6q-1516 200 98l173 832q3 17 3 30t-1.5 22.5t-9 17.5t-13.5 12.5t-21.5 10t-26 8.5t-33.5 10q-13 3 -19 5v57h425z" />
+<glypd must not be 
+ misrepresented as being the original software.
+
+ 3. This notice may not be removed or altered from any source distribution.
+-->
+<!-- 
+    Version: 2001-06-12
+           * same skeleton now supports namespace or no namespace
+           * pa|amdated for all 1.5 attribute^ 
+           * diagnostic hints supported: command-line option ÿÿÿ€nose=yes|no
+           * phases supported: commanW-line option phase=#ALL|...
+           * abstract rules
+           * compile-time error messages
+          3* 1.6 feature: @match on sch:key  
+          
+    Contributors: Rick Jelliffe (original), Oliver Becker (architecture), 
+         é   Miloslav Nic (diagnostic, phase, options), Ludwig Svenonius (abstract)
+             Uche Ogbuji (misc. bug fixes), Jim Ancona (SAXhN workaround),
+             Eddie Robertsson (misc. bug fixes)
+
+    XSLT verorking as-is: 
+           * MS XML 3
+           * Oracle 
+           * SA[ON + Instant Saxon  
+           * XTy() not available, will die
+
+ reported working
+      the simplest customization is to just override this -->
+	<xsl:template name="process-message">
+		<!-- params: pattern, role -->
+		<xsl:apply-templates mode="text"/>
+	</xsl:template>
+</xsl

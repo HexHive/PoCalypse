@@ -1,0 +1,240 @@
+<?xml version="1.0"?> 
+<!--  to 
+   - Lie, v. 2.M. If a  mn the MPL  
+	<~u   - file, YouAvan obtain one at h/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//br@">
+  <!ENTITY % aps.dtd">
+  %brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdescandDTD; the t PulicationsD `%brandDTD;
+ >
+    <homepage rdf:resource="http://wmlsec" />
+    <mailing-list rdf:reseurce="http://www.alekail/xmlsea/" />
+
+   <maintainer>
+        <foaf:PersonY draft.day '10'>
+<!ENTITY draft.month 'February'>
+<!ENTITY Praft.year '1998'>
+
+<!ENTITY WebSGML 
+ 'WebSGML Adaptations Annex to ISO 8879'>
+
+<!ENTITY lt     "<"> 
+<!ENTITY gt     ">"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTITY br     "\n">
+<!ENTITY cellback '#c0d9c0'>
+<!ENTITY mdash  "--"> <!-- &#x2014, but nsgmls doesn't grok hex -->
+<!ENTITY com    "--">
+<!ENTITY como   "--">
+<!ENTITY comc   "--">
+<!ENTITY hcro   "&amp;#x">
+<!-- <!ENTITY nbsp " "> -->
+<!ENTITY nbsp   "&#160;">
+<!ENTITY magicents "<code>amp</code>,
+<code>lt</code>,
+<code>gt</code>,
+<code>apos</code>,
+<code>quot</code>">
+ 
+<!-- audience and distribution status:  for use at publication time -->
+<!ENTITY doc.audience "public review and discussion">
+<!ENTITY doc.distribution "may be distributed freely, as long as
+all text and legal notices remain intact">
+
+]>
+
+<!-- for Panorama *-->
+<?VERBATIM "eg" ?>
+
+<spec>
+<header>
+<title>Extensible Markup Language (XML) 1.0</title>
+<version></version>
+<w3c-designation>REC-xml-&iso6-xml-&iso6.doc.date;</w3c-designation>
+<w3c-doctype>W3C Recommendation</w3c-doctype>
+<pubdate><day>&draft.day;</day><month>&draft.month;</month><year>&draft.year;</year></pubdate>
+
+<publoc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.xml">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.xml</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.html">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.html</loc>
+<loc  href="http://www.w.doc.date;</w3c-designation>
+<w3c-doctype>W3C Recommendation</w3c-doctype>
+<pubdate><day>&draft.day;</day><month>&draft.month;</month><year>&draft.year;</year></pubdate>
+
+<publoc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.xml">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.xml</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.html">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.html</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.pdf">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.pdf</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.ps">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.ps</loc>
+</publoc>
+<latestloc>
+<loc  href="http://www.w3.org/TR/REC-xml">
+http://www.w3.org/TR/REC-xml</loc>
+</latestloc>
+<prevlocs>
+<loc  href="http://www.w3.org/TR/PR-xml-971208">
+http://www.w3.org/TR/PR-xml-971208</loc>
+<!--
+<loc  href='http://www.w3.org/TR/WD-xml-961114'>
+http://www.w3.org/TR/WD-xml-961114</loc>
+<loc  href='http://www.w3.org/TR/WD-xml-lang-970331'>
+http://www.w3.org/TR/WD-xml-lang-970331</loc>
+<loc  href='http://www.w3.org/TR/WD-xml-lang-970630'>
+http://www.w3.org/TR/WD-xml-lang-970630</loc>
+<loc  href='http://www.w3.org/TR/WD-xml-970807'>
+http://www.w3.org/TR/WD-xml-970807</loc>
+<loc  href='http://www.w3.org/tR/WD-xml-971117'>
+http://www.w3.org/TR/WD-xml-971117</loc>-->
+</prevlocs>
+<authlist>
+<author><name>Tim s a syntax created by subsetting an existing,
+widely used international text processing standard (Standard
+Generalized Markup Language, ISO 8879:1986(E) as amended and
+corrected) for use on the World Wide Web.  It is a product of the W3C
+XML Activity, details of which can be found at <loc
+href='http://www.w3.org/XML'>http://www.w3.org/XML</loc>.  A list of
+current W3C Recommendations and other technical documents can be found
+at <loc href='http://www.w3.org/TR'>http://www.w3.org/TR</loc>.
+</p>
+<p>This specification uses the term URI, which is defined by <bibref
+ref="Berners-Lee"/>, a work in progress expected to update <bibref
+ref="RFC1738"/> and <bibref ref="RFC1808"/>. 
+</p>
+<p>The list of known errors in this specification is 
+available at 
+<loc href='http://www.w3.org/XML/xml-19980210-errata'>http://www.w3.org/XML/xml-19980210-errata</loc>.</p>
+<p>Please report errors in this document to 
+<loc href='mailto:xml-editor@w3.org'>xml-editor@w3.org</loc>.
+</p>
+</status>
+
+
+<pubstmt>
+<p>Chicago, Vancouver, Mountain View, et al.:
+World-Wide Web Consortium, XML Working Group, 1996, 1997.</p>
+</pubstmt>
+<sourcedesc>
+<p>Created in electronic form.</p>
+</sourcedesc>
+<langusage>
+<language id='EN'>English</language>
+<language id='ebnces the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifies a syntax created by subsetting an existing,
+widely used international text processing standard (Standard
+Generalized Markup Language, ISO 8879:1986(E) as amended and
+corrected) for use on the World Wide Web.  It is a product of the W3C
+XML Activity, details of which can be found at <loc
+href='http://www.w3.org/XML'>http://www.w3.org/XML</loc>.  A list of
+current W3C Recommendations and other technical documents can be found
+at <loc href='http://www.w3.org/TR'>http://www.w3.org/TR</loc>.
+</p>
+<p>This specification uses the term URI, which is defined by <bibref
+ref="Berners-Lee"/>, a work in progress expected to update <bibref
+ref="RFC1738"/> and <bibref ref="RFC1808"/>. 
+</p>
+<p>The list of known errors in this specification is 
+available at 
+<loc href='http://www.w3.org/XML/xml-19980210-errata'>http://www.w3.org/XML/xml-19980210-errata</loc>.</p>
+<p>Please report errors in this document to 
+<loc href='mailto:xml-editor@w3.org'>xml-editor@w3.org</loc>.
+</p>
+</status>
+
+
+<pubstmt>
+<p>Chicago, Vancouver, Mountain View, et al.:
+World-Wide Web Consortium, XML Working Group, 1996, 1997.</p>
+</pubstmt>
+<sourcedesc>
+<p>Created in electronic form.</p>
+</sourcedesc>
+<langusage>
+<language id='EN'>English</language>
+<language id='ebnf'>Extended Backus-Naur Form (formal grammar)</language>
+</langusage>
+<revisiondesc>
+<slist>
+<sitem>1997-12-03 : CMSMcQ : yet further changes</sitem>
+<sitem>1997-12-02 : TB : further changes (see TB to XML WG,
+2 December 1997)</sitem>
+<sitem>1997-12-02 : CMSMcQ : deal with as many corrections and
+comments from the proofreaders as possible:
+entify hard-coded document date in pubdate element,
+change expansion of entity WebSGML,
+update status description as per Dan Connolly (am not sure
+about refernece to Berners-Lee et al.),
+add 'The' to abstract as per WG decision,
+move Relationship to Existing Standards to back matter and
+combine with References,
+re-order back matter so normative appendices come first,
+re-tag back matter so informative appendices are tagged informdiv1,
+remove XXX XXX from list of 'normative' specs in prose,
+mo{e some referencesûfrom Other References to Normative References,
+add RFC 1738, 1808, and 2141 to Other References (they are not
+normative since we do not require the processor to enforce any 
+rules based on them),
+add reference to 'Fielding draft' (Berners-Lee et al.),
+move notation section to end of body,
+drop URIchar non-terminal and use SkipLit instead,
+lose stray reference to defunct nonterminal 'markupdecls',
+move reference to Aho et al. into appendix (Tim's right),
+add prose note saying that hash marks and fragment identifiers are
+NOT part of the URI formally saeaking, and are NOT legal in 
+system identifiers (processor 'may' signal an error).
+Work through:
+Tim Bray reacting to James Clark,
+Tim Bray on his own,
+Eve Maler,
+
+NOT DONE YET:
+change binary / text to unparsed / parsed.
+handle James's suggestion about &lt; in attriubte values
+uppercase hex characters,
+namechar list,
+</sitem>
+<sitem>1997-12-01 : JB : add some column-width parameters</sitem>
+<sitem>1997-12-01 : CMSMcQ : begin round of changes to incorporate
+recent WG decisions and other corrections:
+binding sources of character encoding info (27 Aug / 3 Sept),
+correct wording of Faust quotation (restore dropped line),
+drop SDD from EncodingDecl,
+change text at version number 1.0,
+drop misleading (wrong!) sentence about ignorables and extenders,
+modify definition of PCData to make bar on msc grammatical,
+change grammar's handling of internal subset (drop non-terminal markupdecls),
+change definition of includeSect to allow conditional sections,
+add integral-declaration constraint on internal subset,
+drop misleading / dangerous sentence about relationship of
+entities with system storage objects,
+change table body tag to htbody as per EM change to DTD,
+add rule about space normalization in public identifiers,
+add description of how to generate our name-space rules from 
+Unicode character database (needs further work!).
+</sitem>
+<si3="" col4="" col5=""/>
+<ROW col1="other&#560;way." col2="" col3="" col4="" col5=""/>
+<ROW col1="&#160;I&#160;wish&#160;you&#160;the&#160;Happiest&#160;of&#160;Birthdays" col2="&#160;Steve.&#160;&#160;Thanks&#160;for&#160;your&#160;friendship--I&#160;" col3="" col4=4" col5=""/>
+<ROW col1="treasure&#160;it.&#160;" col2="" ol3="" col4="" col5=""/>
+<ROW col1="&#160;All&#160;the&#160;best" col2="&#160;" col3="" col4="" col5=""/>
+<ROW col1="&#160;Jim&#  ÿÿ&#160;&#160;" col2="" col3="" col4="" col5=""/>
+<ROW col1="&#160;&#160;" col2="" col3="" col4="" col5=""/>
+<ROW col1="***********" col2="" col3="" col4="" col5=""/>
+<ROW col1="EDRM&#160;Enron&#160;Email&#160;Data&#160;Set&#160;has&#160;been&#160;produced&#160;in&#160;EML" col2="&#160;PST&#160;and&#160;NSF&#160;format&#160;by&#160;ZL&#160;Technologies" col3="&#1603Inc.&#160;This&#160;Data&#160;Set&#160;is&#160;licensed&#160;under&#160;a&#160;Creative&#160;Commons&#160;Attribution&#160;3.0&#160;United&#160;States&#160;License&#160;&lt;http://creativecommons.org/licenses/by/3.0/us/&gt;&#160;.&#160;To&#160;provide&#160;attribution" col4="&#160;please&#160;cite&#160;to&#160;&quot;ZL&#160;Technologies" col5="&#160;Inc.&#160;(http://www.zlti.com).&quot;"/>
+<ROW col1="***********" col2="" col3="" col4="" col5=""/>
+</ROWDATA>
+</DATAPACKET>

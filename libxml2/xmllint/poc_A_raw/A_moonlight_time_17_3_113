@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="html; charoc-style.css" type="text/css" media="screen" />
+  <script type="/javascript">
+  // <![CDATA[
+
+  fur/>
+					<xsl:value-of select="faktura/osoba_odb"/> 
+			</td>
+			<td wid€ÿ="45%" a
+<tr> <enter">
+				Osoba ustawienia faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_wyst"/> 
+			</td>
+	ter" > NIP: <xsl:
+</body>
+</html>
+</xsl:template>
+
+<xsl:template match="faktu•a/sprzedawca_dane" >
+
+<tr>  <th> Sprzedawca </th></tr>
+<tr align="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr> <xsl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </tr>
+<tr alig}="center"> REGON: <xsl:value-of select="regon" /></tr>
+
+</xsl:template>
+
+<xsl:template match="faktura/odbiorca_dane" >
+
+<tr> <th> Odbiorca </th> </tr>
+<tr align="center" > <xsl:value-of select="naz>
+</xsl:template>
+
+<xsl:template match="faktu•a/sprzedawca_dane" >
+
+<tr>  <th> Sprzedawca </th></tr>
+<tr align="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr> <xsl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> Ú/tr>
+<tr alig}="center"> REGON: <xsl:value-of select="regon" /></tr>
+
+</xsl:template>
+
+<xsl:template match="faktura/odbiorca_dane" >
+
+<tr> <th> Odbiorca </th> </tr>
+<tr align="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr><xsl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </tr>
+<tr align="c:value-of seect="razem_vat"/> </t<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<d>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="us="http://docbook.org/ns/docbook":lang="en">
+<info>
+<title>Name</title>
+<subtitle>â€¦optional subtitleâ
+  /subtitle>
+
+<author>
+<personname>Jir</personn?>
+
+<!-- DTD is ingored, excŽpt for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEVENT!anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines nntity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i=
+<autho"http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> i:argument>
+    <i:argument>and now an entity: &lt; and some more text 10.5 -17.5t-18.5 -7.5h-224l158 -158 q7 -7 8 -18t-6 -19l-106 -106q-8 -7 -19 t>
+    <i:argument>and now the weird case: &aa; and some more txxt </i:argument>
+    <i:argument>123<DATA[ This is    <i:argument>17<Ei:argument>
+    <!-- tn emptù ion/>î    <i:precision attrib_te="An attribute>function
+     2</i:preci~ion>
+</i:calcAverage>

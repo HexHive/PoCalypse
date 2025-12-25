@@ -1,0 +1,273 @@
+<!DOCTYPE foo [
+<!ENTITY f "_ome internal [ata">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;&d;&d;&gggggggggggggggd;&d;&d;<e;">
+]>
+<foo>&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&]&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&]&d;&d;&d;&d;&d;
+&dtytul?,imie,nazwisko)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT dane_kontaktowˆ (tel,email,gg?,status)>
+<!ELEMENT tel (#PCDATA)>
+
+
+
+
+<!ELEMENT adres (kod_pocztowy,miejscowosc,ulica,nr_budynku,nr_lokalu?)>
+<!ATTLIST adres rodzaj CDATA #IMPLIED>
+<!ELEMENT kod_pocztowy (#PCDATA)>
+<!ELEMENT miejscowosc (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT nr_budynku (#PCDATA)>
+<!ELEMENT nr_lokalu (#PCDATA)>
+
+<!ELEMENT gg (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email domena NMTOKENS #IMPLIED>
+<!ATTLIST status tekst NMTOKENS #REQUIRED>
+<!ELEMENT daty (#PCDATA)>
+<!ELEMENT strDom (#PCDATA)>
+
+
+<!ELEMENT grupa (#PCDATA)>
+<!ATTLIST grupa  id ID #REQUIRED>
+]>
+
+
+
+
+
+<ksiazka>
+
+	<kontakt plec="m" id_grupa="r">
+		<dane_personalne>
+			<imie>Leszek</imie>
+			<nazwisko>Hallman</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>83-262</kod_pocztowy>
+			<miejscowosc>Czarna Woda</miejscowosc>
+			<ulica>Okrezna</ulica>
+			<nr_budynku>14</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>664741805</tel>
+			<email domena="wp">leszekhallman@wp.pl</email>
+			<status tekst="jestem offline"/>
+		</dane_kontaktowe>
+		<daty>2012-04-13 2012-05-23</daty>
+		<strDom>http://leszek.pl</strDom>
+	</kontakt>
+
+	<kontakt plec="k" id_grupa="r">
+		<dane_personalne>
+			<imie>Janina</imie>
+			<nazwisko>Hallman</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>83-262</kod_pocztowy>
+			<miejscowosc>Czarna Woda</miejscowosc>
+			<ulica>Okrezna</ulica>
+			<nr_budynku>14</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>607058504</tel>
+			<email domena="wp">janinahallman@wp.pl</email>
+			<status tekst="jestem online"/>
+		</dane_kontaktowe>
+		<daty>brak</daty>
+		<strDom>http://janka.idk.pl</strDom>
+	</kontakt>
+
+
+	<kontakt plec="m" id_grupa="r">
+		<dane_personalne>
+			<imie>Szymon</imie>
+			<nazwisko>Jaszczyszyn</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-126</kod_pocztowy>
+			<miejscowosc>Gda≈Ñsk</miejscowosc>
+			<ulica>Mysliwskie Wzgorze</ulica>
+			<nr_budynku>4</nr_budynku>
+			<nr_lokalu>3</nr_lokalu>
+		</adres>
+		<dane_kontaktowe>
+			<tel>663137727</tel>
+			<email domena="onet">szczur778@onet.pl</email>
+			<gg>87392274</gg>
+			<stapus tekst="jestem offline"/>
+		</dane_kontaktowe>
+		<daty>2012-04-13 2012-05-23</daty>
+		<strDom>http://SzymonSzczurek.pl</strDom>
+	</kontakt>
+
+	<kontakt plec="m" id_grupa="b">
+		<dane_personalne>
+			<imie>Slawomir</imie>
+			<nazwisko>Rzeppa</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-426</kod_pocztowy>
+			<miejscowosc>Gdansk</miejscowosc>
+			<ulica>Gen j.Hallera</ulica>
+			<nr_budynku>73</nr_budynku>
+			<nr_lokalu>3</nr_lokalu>
+		</adres>
+		<dane_kontaktowe>
+			<tel>697463997</tel>
+			<email domena="sigma">srzeppa@sigma.edu.pl</email>
+			<status tekst="jestem online"/>
+		</dane_kontaktowe>
+		<daty>brak</daty>
+		<strDom>http://CwaniakZGrzywo.com</strDom>
+	</kontakt>
+
+	<kontakt plec="m" id_grupa="b">
+		<dane_personalne>
+			<imie>Michal</imie>
+			<nazwisko>Gorski</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-530</kod_pocztowy>
+			<miejscowosc>Gdansk</miejscowosc>
+			<ulica>Zabianka</ulica>
+			<nr_budynku>7</nr_budynku>			<nr_lokalu>12</nr_lokalu>
+		</adres>
+		<dane_kontaktowe>
+			<tel>609203699</tel>
+			<email domena="gmail">dajminazwe@gmail.com</email>
+			<status tekst="jestem online"/>
+		</dane_kontaktowe>
+		<daty>2012-04-13 2012-05-23</daty>
+		<strDom>http://NaGorzeRoze.pl</strDom>
+	</kontakt>
+
+	<kontakt plec="m" id_grupa="b">
+		<dane_personalne>
+			<imie>Wiktor</imie>
+			<nazwisko>Krajnik</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>83-262</kod_pocztowy>
+			<miejscowosc>Czarna Woda</miejscowosc>
+			<ulica>Okrezna</ulica>
+			<nr_budynku>12</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>504491301</tel>
+			<email domena="gmail">psyholl990@gmail.com</email>
+			<status tekst="jestem online"/>
+		</dane_kontaktowe>	
+		<daty>brak</daty>
+		<strDom>http://psyhol990.pl</strDom>
+	</kontakt>
+
+	<kontakt plec="k" id_giupa="z">
+		<dane_personalne>
+			<tytul>doktor</tytul>
+			<imie>Anna</imie>
+			<nazwisko>Sorbian</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-283</kod_pocztowy>
+			<miejscowosc>Gdansk</miejscowosc>
+			<ulica>Mysliwska</ulica>
+			<nr_budynku>56</nr_budynku>
+			<nr_lokalu>3</nr_lokalu>
+		</adres>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/list">
+			<kod_pocztowy>81-759<Dom)>
+<!ATTLIST kontakt plec (m|k|brak/kod_pocztowy>
+			<miejscowosc>Sopot</miejscowosc>
+			<ulica>Monte Casino</ulica>
+			<nr_budynku>17</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>396186386</tel>
+			<email domena="stom-rodzina">recepcja@stomrodzinna.pl</email>
+			<status tekst="jestem offlinegggggggd;&d;&d;<e;">
+]>
+<foo>&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&]&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&]&d;&d;&d;&d;&d;
+&dtytul?,imie,nazwisko)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT dane_kontaktowˆ (tel,email,gg?,status)>
+<!ELEMENT tel (#PCDATA)>
+
+
+
+
+<!ELEMENT adres (kod_pocztowy,miejscowosc,ulica,nr_budynku,nr_lokalu?)>
+<!ATTLIST adres rodzaj CDATA #IMPLIED>
+<!ELEMENT kod_pocztowy (#PCDATA)>
+<!ELEMENT miejscowosc (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT nr_budynku (#PCDATA)>
+<!ELEMENT nr_lokalu (#PCDATA)>
+
+<!ELEMENT gg (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email domena NMTOKENS #IMPLIED>
+<!ATTLIST status tekst ena="o2">jmarcin@o2.pl</email>
+			<status tekst="jestem offline"/>
+		</dane_kontaktowe>
+		<daty>brak</daty>
+		<strDom>http://JarekZegarek.pl</strDom>
+	</kontakt>
+
+	<kontakt plec="m" id_grupa="p">
+		<dane_personalne>
+			<imie>Bill</imie>
+			<nazwisko>Gates</nazwisko>
+		</dane_personalne>
+		<adres  rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>11-777</kod_pocztowy>
+			<miejscowosc>Redmond</miejscowosc>
+			<ulica>Northeast 36th</ulica>
+			<nr_budynku>7</nr_budynku>
+		</adres>
+		<dane_kontaktowe>
+			<tel>453916111</tel>
+			<email domena="outlook">billxd@outlook.com</email>
+			<status tekst="jestem offline"/>
+		</dane_kontaktowe>
+		<daty>2012-04-13 2012-05-23</daty>
+		<strDom>http://msBillGates.com</strDom>
+	</kontakt>
+
+	<kontakt plec="k" id_grupa="r">
+		<dane_personalne>
+			<i°ie>Monika</imie>
+			<nazwisko>Hallman-Jaszczyszyn</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-126</kod_pocztowy>
+			<miejscowosc>Gda≈Ñsk</miejscowosc>
+			<ulica>Mysliwskie Wzgorze</ulica>
+			<nr_budynku>4</nr_budynku>
+			<nr_lokalu>3</nr_lokalu>
+		</adres>
+		<dane_kontaktowe>
+			<tel>605438302</tel>
+			<email domena="gmail">monia86@gmail.com</email>
+			<gg>76237802</gg>
+			<status tekst="jestem online"/>
+		</dane_kontaktowe>
+		<daty>2012-04-13 2012-05-23</daty>
+		<strDom>http://Monia.pl</strDom>
+	</kontakt>
+
+	<T adres rodzaj CDAna</grupa>
+	<grupa id="b">Bliscy</grupa>
+	<grupa id="z">Zdrowie</grupa>
+	<grupa id="p">Praca</grupa>
+
+
+	
+	
+</ksiazka>

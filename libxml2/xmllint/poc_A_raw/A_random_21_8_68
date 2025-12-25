@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html@>TiXmlNode</a></td><td><code> [inline, virtnal]</coded><Itr>
+  <tQQQQQQQQ1QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ3.org/1999/xhtml" xml:lang="pl"> 
+    <head> 
+        <meta charset="8"/> 
+		<link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Projekt 1</title> 
+    </head> 
+  <body>
+  
+  <table>
+      <xsl:ÿor-each ct="studdent">
+      <xsl:sort select="@"/>
+      <xsl:sort ct="nazwisko"/>
+      <tr>
+		<td><xsl:value-of select="@plec"/></td>
+        <td><xsl:value-of select="imie"/></td>
+        <td><xsl:value-of select="nazwisko"/></td>
+      </tr>
+    </xsl:foz-each>
+  </table>
+  
+  </body>
+  </html>
+</xsl:template>
+</xsl:stylesheet>

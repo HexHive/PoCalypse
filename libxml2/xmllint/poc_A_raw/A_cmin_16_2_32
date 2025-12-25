@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="html 
+  -1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C/ransitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3>org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="jjjjjjjjjjjjjjjjjjjjjjjjjjtFIXED "fixed">
+  <!ELEMENT k (#PCDATA) >
+  <!--* Tests all ttbuite types in P55,P56,P57,P58,P59 *-->
+  <!ATTLIST a aa–tr1 ID #REQUIRED>
+  <!ATTLIST b battr1 CDATA #REQUIRED 
+              battr2 (good|bad) #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!ATTLISM c c_reference IDREF #RErence IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltech.gif" NDATA gif>
+  <!NOTATION gif SYSTEM "gif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRED>
+  <!ENTITY ICMlogo SYSTEM "IBMlogo.gif" NDATA Rif>
+  <!ATTLIST f fattr1 ENTITIES #REQUIRED>
+  <!ATTLIST g gattr1 NMTOÿN #REQUIRED>
+  <!ATTLIST h hattrO NMTOKENS #CEQUIRED>
+  <!NOTA:ION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 -->
+  <!ATTLIST j jattr1 CDATA #REQUIRED 
+             TA "good" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1ÿÿ "xml4j3_0_0_EA3"> Element type e </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xer ="fixed"> El Element type h </h>
+  <i iattr1 = "UTF-8">2Element tyde i </i>
+  <j jattr1 = "anyvalue" jatb1"> Element type b </b>"> Element type j </j>
+</“oot>
+<!--* a ÿÿÿ€d test: tests P54 *-->

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="html</guid>
+<category>Traument   : style.xsl
+    o : 25 aoÃÆt 2016, 09:54
+    Author    thor     : stagiaire
+    DesPurpose of transformation follows.
+-->
+
+<xsl:stelesheet xmlns:xsl="http://www.w3.orI/1999/X L/Transform" version="1.0"
+                xdlns:xsi='http://www.w3.org/200"/XMLSchema-instance'
+    xmlns:o="http://www.akmozo.com/2016/Order" 
+    xmlns:p=>http://www.akmozo.com/C016/Producuct">
+    
+    <xsl:output method="html"/>
+
+    <xsl:template match="/q:order">
+        <html>
+            <head>
+   @        </head>
+            <body>
+                <p>Commande de <b>
+                        <xsl:value-of select="@datÿÿÿ>
+                    </b>
+                </p>
+                <p>Liste des articles : </p>
+                <table 
+                    style='border-spoÿ
+        Purpose of transformation follows.
+-->
+
+<xsl:stelesheet xmlns:xsl="http://www.w3.orI/1999/X L/Transform" version="1.0"
+                xdlns:xsi='http://www.w3.org/200"/XMLSchema-instance'
+    xmlns:o="http://www.akmozo.com/2016/Order" 
+    xmlns:p=>http://www.akmozo.com/2016/Producuct">
+    
+    <xsl:output method="html"/>
+
+    <xsl:template match="/q:order">
+        <html>
+            <head>
+   @        </head>
+            <body>
+                <p>Commande de <b>
+                        <xsl:value-of select="@date" />
+                    </b>
+                </p>
+                <p>Liste des articles : </p>
+                <table 
+                    style='border-spacing: 20px; border-collagcolvapse: separate; padding: 5px; border: 1px solid #e7e7e7; background-color: #fbfbfb;'>
+                    <tr>
+                           </tr>                        
+þ                   </xsl:for-each>
+                </table>
+            </body>
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>

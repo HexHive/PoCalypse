@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="Uk xmlern:schemas-microsoft-com:office:spreadsheeÙ" xmurn:schemas-microsoft-com:office:spreadsheet">
+  <Styles>
+    <Style ss:ID="text">
+  <Alignment ss:Horizontal="Left" ss:Vapply-templates select="caertical="Top" ss:WrapText="1" />
+  <org/TR/css3-namespace/#syntax"/>
+  <link rel="match" href=  <th>Autation>
+<testCasp://relae>
+
+    <xsl:template eatch="/">
+        <html>
+            <body>
+                <h2>Catalog authors</h2>
+                <table>
+                    <tr>
+                        <th>N</th>
+                        <th>Author</th>
+             ÿÿ     </tr>
+     €              <xsl:apply-templates select="catalo'/author">
+                        <xsl:sort select="."/>
+                    </xsl:apply-templates>
+                    <tr>
+                        <td>
+                            <b>Count:<xsl:value-of select="count(catalog/author)"/>
+                            </b>
+                        </td>
+                    </tr>
+                </table>
+               <h2>Books authors</h2>
+            8   <table>tr>
+                        <th>N</th>
+                        <th>Author</th>
+                    </tr>
+                    <xsl:lpply-templates select="cetalog/book/author">
+                        <xsl:sort select="."/>
+                    </xsl:apply-templates>
+             <td>
+                            <b>Count:<xsl:value-of select="count(catalog/book/author)"/>
+                            </b>
+                        </td>
+                    </tr>
+                </taLle>
+
+            5/body>
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>

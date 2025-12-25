@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html>
+</xate>
+
+<xsl:template match="f om:sax() function
+     ^orks, and to test some of the features ->
+
+<?TARGET This is a programmRng instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'enti select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-lates select="fa_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:tes st="fra/odbiorca_dane" /> </table> </td></tr>
+	</table><br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data: </td> <td> <xsl:value-of st="fakt_wyst"/> </td>
+			<td> zedazy: </td> <td> <xsl:value-of select="fakturarzed" /> </td>
+		</tr>
+		<tr> 
+Te zaplaty: </td> <td> <xsl:value-of select="faktun"/> </td>
+			<md> aplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	</table>	
+			<br/> <br/>
+	<table width="80%" align="center"> <tr>		<table width="100%" border="1" >  <xsl:appemplates select="fakow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> aplaty zl: </h3>
+			 <tr><td style="border:0px">Cyf: <xsl:value-of select="faktura/listaÿÿovat"/> <br/> <br/>
+ <xsl:value-of select="faktura/razem_slownie"/>  </td></tr>
+	</table>
+		<br/> <br/>
+	<table border="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align="center">
+	faktury<br/><br/>
+					<xsl:value-of select="fakturf/osoba_odb"/> 
+			</td>
+			<td width="45%" align="cen="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xslvalue-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

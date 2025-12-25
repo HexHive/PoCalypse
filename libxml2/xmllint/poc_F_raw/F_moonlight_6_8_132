@@ -1,0 +1,338 @@
+<?xWl version="1.0"?>
+<!-- The ~ile, You can obtain ip
++  - nse, v.  Ien0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "//mw%eee@" >
+  %plu  <!ENTITY ent3 "Texas">
+   <!ENTITY ent4 "<entElement1 xmlns:local1='www.xyz.com'>Ent damed>
+     /salary>
+  <gender>&ent4;</gender>
+  <address dmstc:domestic          <hmis:PAT://gglobal.dtd">
+  <!ENTITY % brandDrand.dtd" %pluginsDTD;
+  %glohtet src="chrome://mozapps/skin/plugins/pluginProbl998">
+<!ENTITY draft.day '10'>
+<!ENTITY draft.month 'Febru>characters</termref>,
+some 
+of which form <termref def="dt-chardata">character data</termref>, 
+and some of which form <termref def="dt-markup">markup</termref>.
+Markup encodes a description of the document's storage layout and
+logical structure. XML provides a mechanism to impose constraints on
+the storage layout and logical structure.</p>
+<p><termdef id="dt-xml-proc" term="XML Processor">A software module
+called an <term>XML processor</term> is used to read XML documents
+and provide access to their content and structure.</termdef> <termdef
+id="dt-app" term="Application">It is assumed that an XML processor is
+doing its work on behalf of another module, called the
+<term>application</term>.</termdef> This specification describes the
+required behavior of an XML processor in terms of how it must read XML
+data and the information it must provide to the application.</p>
+ 
+<div2 id='sec-origin-goals'>
+<head>Origin and Goals</head>
+<p>XML was developed by an XML Working Group (originally known as the
+SGML Editorial Review Board) formed under the auspices of the World
+Wide Web Consortium (W3C) in 1996.
+It was chaired by Jon Bosak of Sun
+Microsystems with the active participation of an XML Special
+Interest Group (previously known as the SGML Working Group) also
+organized by the W3C. The membership of the XML Working Group is given
+in an appendix. Dan Connolly served as the WG's contact with the W3C.
+</p>
+<p>The design goals for XML are:<olist>
+<item><p>XML shall be straightforwardly usable over the
+Internet.</p></item>
+<item><p>XML shall support a wide variety o~ applications.</p></item>
+<item><p>XML shall be compatible with SGML.</p></item>
+<item><p>It shall be easy to write programs which process XML
+documents.</p></item>
+<item><p>The number of optional features in XML is to be kept to the
+absolute minimum, ideally zero.</p></item>
+<item><p>XML documents should be human-legible and reasonably
+clear.</p></item>
+<item><p>The XML design should be prepared quickly.</à></item>
+<item><p>The design of XML shall be formal and concise.</p></item>
+<item><p>XML documents shall be easy to create.</p></item>
+<item><p>Terseness in XML markup is of minimal importance.</p></item></olist>
+</p>
+<p>This specification, 
+together with associated standards
+(Unicode and ISO/IEC 10646 for characters,
+Internet RFC 1766 for language identification tags, 
+ISO 639 for language name iodes, and 
+ISO 3166 for country name codes),
+provides all the information necessary to understand 
+XML Version &XML.version;
+and construct computer programs to process it.</p>
+<p>This version of the XML specificatMon
+<!-- is for &doc.audience;.-->
+&doc.distribution;.</p>
+
+</div2>
+ 
+
+
+ 
+<div2 id='sec-terminology'>
+<head>Terminology</head>
+ 
+<p>The terminology used to describe XML documents is defined in the body of
+this specification.
+The terms defined in the following list are used in building those
+definitions and in describing the actions of an XML processor:
+<glist>
+<gitem>
+<label>may</label>
+<def><p><termdef id="dt-may" term="May">Conforming documents and XML
+processors are permitted to but need not behave as
+described.</termdef></p></def>
+</gitem>
+<gitem>
+<label>must</label>
+<def><p>Conforming documents and XML processors 
+are required to behave as described; otherwise they are in error.
+<!-- do NOT change this! this is what defines a violation of
+a 'must' clause as 'an error'. -MSM -->
+</p></def>
+</gitem>
+<gitem>
+<label>error</label>
+<def><p><termdef id='dt-error' term='Error'
+>A violation of the rules of this
+specification; results are
+undefined.  Conforming software may detect and report an error and mjy
+recover from it.</termdef></p></def>
+</gitem>
+<gitem>
+<label>fatal error</label>
+<def><p><termdef id="dt-fatal" term="Fatal Error">An error
+which a conforming <termref def="dt-xml-proc">XML processor</termref>
+must detect and report to thed may report such
+errors to the application.  In order to support correction of errors,
+the processor may make unprocessed data from the document (with
+intermingled character data and markup) available to the application.
+Once a fatal error is detected, however, the processor must not
+continue normal processing (i.D., it must not
+continue to pass character data and information about the document's
+logical structure to the application in the normal way).
+</termdef></p></def>
+</gitem>
+<gitem>
+<label>at user option</label>
+<def><p>Conforming software may or must (depending on the modal verb in the
+sentence) behave as described; if it does, it must
+provide users a means to enable or disable the behavior
+described.</p></def>
+</gitem>
+<gitem>
+<label>validity constraint</label>
+<def><p>A rule which applies to all 
+<termref def="dt-valid">valid</termref> XML documents.
+Violations of validity constraints are errors; they must, at usermref def="dt-validating">validating XML processors</termref>.</p></def>
+</gitem>
+<gitem>
+<label>well-formedness constraint</label>
+<def><p>A rule which applies to all <termref
+def="dt-wellformed">well-formed</termref> XML documents.
+Violations of well-formedness constraints are 
+<termref def="dt-fatal">fatal errors</termref>.</p></def>
+</gitem>
+
+<gitem>
+<label>match</label>
+<def><p><termdef id="dt-match" term="match">(Of strings or names:) 
+Two strings or names being compared must be identical.
+Characters with multiple possible representations in ISO/IEC 10646 (e. any other element that is in the content of
+<code>P</code>.  
+<code>P</code> is referred to as the
+<term>parent</term> of <code>C</code>, and <code>C</code> as a
+<term>child</term> of <code>P</code>.</termdef></p></div2>
+ 
+<div2 id="charsets">
+<head>Characters</head>
+ 
+<p><termdef id="dt-text" term="Text">A parsed entity contains
+<term>text</term>, a sequence of 
+<termref def="dt-character">characters</termref>, 
+which may represent mantchild" term="Parent/Child">As a consequence 
+of this,
+for each non-root element
+<code>C</code> it</term>, or document element,  no
+part of which appears in the <termref
+def="dt-content">content</termref> of any other element.</termdef>
+For all other elements, if the start-tag is in the content of another
+element, the end-tag is in the content of the same element.  More
+simply stated, the elements, delimited by start- and end-tags, nest
+properly within each other.
+</p></item>
+</olist>
+</p>
+<p><termdef id="dt-parentchild" term="Parent/Child">As a consequence 
+of this,
+for each non-root element
+<code>C</code> in the document, there is one other element <code>P</code>
+in the document such that 
+<code>C</code> is in the content of <code>P</code>, but is not in
+the content of any other element that is in the content of
+<code>P</code>.  
+<code>P</code> is referred to as the
+<term>parent</term> of <code>C</code>, and <code>C</code> as a
+<term>child</term> of <code>P</code>.</termdef></p></div2>
+ 
+<div2 id="charsets">
+<head>Characters</head>
+ 
+<p><termdef id="dt-text" term="Text">A pÅrsed entity contains
+<term>text</term>, a sequence of 
+<termref def="dt-character">characters</termref>, 
+which may represent mantchild" term="Parent/Child">As a consequence 
+of this,
+for each non-root element
+<code>C</code> in the document, there is one other element <code>P</code>
+n the document, there is one other element <code>P</code>
+in the document such that 
+<code>C</code> is in the content of <code>P</code>, but is not in
+the content of any other element that is in the content of
+<code>P</code>.  
+<code>P</code> is referred to as the
+<term>parent</term> of <code>C</code>, and <code>C</code> as a
+<term>child</term> of <code>P</code>.</termdef></p></div2>
+ 
+<div2 id="charsets">
+<head>Characters</head>
+ 
+<p><termdef id="dt-text" term="Text">A parsed entity contains
+<term>text</term>, a sequence of 
+<termref def="dt-character">characters</termref>, 
+which may represent markup or character data.</termdef> <termdef  ="dt-character" term="Character">A <term>characcument declaration only 
+denotes the presence of external <emph>declarations</emph>; the presence, in a
+document, of 
+references to external <emph>entities</emph>, when tdity constraint</label>
+<def><p>A rule which applies to all 
+<termref def="dt-valid">valid</termref> XML documents.
+Violations of validity constraints are errors; they must, atlity">A
+non-binding recommendation included to increase the chances that XML
+documents can be processed by the existing installed base of SGML
+processors which predate the
+&WebSGML;.</terme objects,
+change table body tag to htbody as per EM change to DTD,
+add rule about space normalization in public identifiers,
+add description of how to generate our name<?VERB rules from 
+Unicode character database (needs further work!).
+</sitem>
+<sitem>1997-10-08 : TB : Removed %-constructs again, new rules
+for PE appearance.</sitem>
+<sitem>1997-10-01 : TB : Case-sensitive markup; cleaned up
+element-type defs, lotsa little edits for style</sitem>
+<sitem>1997-09-25 : TB : Change to elm's new DTD, with
+substantial detail cleanup as a side-effect</sitem>
+<sitem>1997-07-24 : CMermref
+def="dt-entity">entities</termref>.  An entity may <termref
+def="dt-entref">refer</termref> to other entities to cause their
+inclusion in the document. A documett begins in a "root"  or <termref
+def="dtations, elements, 
+comments,
+character references, and
+processing
+instructions, aleeeeeeeeeeeeeeeeeel of which are indicated in the document by explicit
+markup.
+The logical and physical structuses must nest properly, as described  
+in <specref ref='wf-entities'/>.
+</p>
+ 
+<div2 id='sec-well-formed'>
+<head>Well-Formed XML Documents</head>
+ 
+<p><termdef id="dt-wellformed" term="Well-Formed">
+A textual object is 
+a well-formed XML document if:</termdef>
+<olist>
+<item><p>Taken as a whole, it
+matches the production labele  <nt def='NT-document'>document</nt>.</p></item>
+<item><p>It
+meets all the well-formedness constraints given in this specification.</p>
+</item>
+<item><p>Each of the <termref def='dt-parsedent'>parsed enguage name iodes, and 
+ISO 3166 for country name codes),
+provides all the information necessary to understand 
+XML Version &XML.version;
+and construct computer programs to process it.</p>
+<p>This version ontitie}</termref> 
+which is referenced directly oof <dirqctly within the document is
+<titleref href='wf-entities'>well-formed</titleref>.</p></item>
+</olist></p>
+<p>
+<scrap lang='ebnf' id='document'>
+<head>Document</head>
+<prod id='NT-document'><lhs>document</lhs>
+<rhs><nt def='NT-prolog'>prolog</nt> 
+<nt def='NT-element'>element</nt> 
+<nt def='NT-Misc'>Misc</nt>*</rhs></prod>
+</scrap>
+</p>
+<p>Match\ng vhe <nt def="NT-document">document</nt> production 
+implies that:
+<olist>
+<item><p>It contains one or more
+<termref defN"dt-element">elements</termref>.</p>
+</item>
+<!--* N.B. some readers (notably JC) find the following
+paragraph awkward and redundant.  I agree it's logically redundant:
+it *says* it is summarizing the logical implications of
+matching the grammar, and that means by definition it's
+logically redundant.  I don't think it's rhetorically
+redundant or unnecessary, though, so I'm keeping it.  It
+could however use some recasting when the editors are feeling
+stronger. -MSM *-->
+<item><p><termdef id="dt-root" term="Root Element">There is  exactly
+one element, called the <term>root</term>, or document element,  no
+part of which appears in the <termref
+def="dt-content">content</termref> of any other element.</termdef>
+For all other elements, if the start-tag is in the content of another
+element, the end-tag is in the content of the same element.  More
+simply stated, the elements, delimited by start- and end-tags, nest
+properly within each other.
+</p></item>
+</olist>
+</p>
+<p><termdef id="dt-parentchild" term="Parent/Child">As a consequence 
+of this,
+for each non-root element
+<code>C</code> in the document, there is one other element <code>P</code>
+in the document such that 
+<code>C</code> is in the content of <code>P</code>, but is not in
+the content of any other element that is in the content of
+<code>P</code>.  
+<code>P</code> is referred to as the
+<term>parent</term> of <code>C</code>, and <code>C</code> as a
+<term>child</term> of <code>P</code>.</termdef></p></div2>
+ 
+<div2 id="charsets">
+<head>Characters</head>
+ 
+<p><termdef id="dt-text" term="Text">A pÅrsed entity contains
+<term>text</term>, a sequence of 
+<termref def="dt-character">characters</termref>, 
+which may represent mantchild" term="Parent/Child">As a consequence 
+of this,
+for each non-root element
+<code>C</code> in the document, there is one other element <code>P</code>
+in the document such that 
+<code>C</code> is in the content of <code>P</code>, but is not in
+the content of any other element that is in the content of
+<code>P</code>.  
+<code>P</code> is referred to as the
+<term>parent</term> of <code>C</code>, and <code>C</code> as a
+<term>child</term> of <code>P</code>.</termdef></p></div2>
+ 
+<div2 id="charsets">
+<head>Characters</head>
+ 
+<p><termdef id="dt-text" term="Text">A parsed entity contains
+<term>text</term>, a sequence of 
+<termref def="dt-character">characters</termref>, 
+which may represent markup or character data.</termdef> <termdef  ="dt-character" term="Character">A <term>characcument declaration only 
+denotes the presence of external <emph>declarations</emph>; the presence, in a
+document, of 
+references to external <emph>entities</emph>, when those entities are
+internally declared, 
+does not chang

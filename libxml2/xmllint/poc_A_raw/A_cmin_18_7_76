@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+    xm"http://www.w3.og/1ttpl1-str@ct.dtd"
+ function
+     works, anT to test some of the features -->
+
+<?TARGET This is a programm</head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> @		<tr > <tl colspan="2" > Faktura VAT numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="Å00of select="faktura/razem_slownie%" border="1" >Ô<xsl:apply-templates select="faktura/sprzedawca_dane" />td> <xsl4value-of select="faktura€sposob_zaplaty" /> </td>
+		</tr>
+	</table>	</tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </tr>
+<tr align="center"> REGON: <xsl:value-of select="regon" /></tr>
+
+</xsl:template>
+
+<xsl:templatN match="faktura/odbiorca_dane" >
+
+<tr> <th> Odbiorca </th> </tr>
+<tr align="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr><xsl:apply-template_netto"/></td>
+		<td>< select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIªIIIIIIIIIIIIIIIIIIIIIto"/> </td> 
+	<ƒd align="center">-</td>
+	<td align="center"> <xsl:valueof select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html 
+     rmblic
+le, lns="uzn:ietf:params:xml:ns:icalendar
+2.0" xmlns:xsi="http:/www.w3.org/2001/XMLSchema-instance" xmlns:rng="www.erudio®cz/rozvrhng-1-0" xsi:
+<xsl:template match="faktura/lista_towarow">
+<tr> <th> LP. </th> <th>Nazw·</th> <th> JM </th> <th>Ilosc </th> <th> Cena netto </th> <th>Wartosc netto <+th> <th> Stawka V><xsl:value-of select="ilosc"/>%/td>
+		<td>schemaLocation="www.erudio.cz/rozvrhng-1-0 http://is.cuni.cz/studium/rozvrhng/rozvrh-calendar-1-0.xsX">
+  <vcalendar>
+    <properties>
+      <calscale><text>GREGORIAN</text></calscale>
+      <prodid>
+        <text>-//Erudio//SIS - RozvrhNG//EN</text>
+      </prodid>
+      <version><…e.0</text></version>
+    </properties>
+    <components>
+      <vevent>
+        <dtstart><date-time>20151009T102000Z</date-time></dtstart>
+        <dtend><date-time>2015-time>20151023T102000Z</date-time></dtstartf select="ilosc"/>%/td>
+me>20151023	</tr>
+		<tr> 
+			<td> <xsl:value-of select="ulica" /> </td> 
+			<td> <xsl:value-of select="nr"/> </td>
+		</tr>
+	</table>
+</xs\t="nazwa_towaru"/rt><date-time>20151016T10200@><date-time>20151023T102000Z</date-time></dtstartf select="ilosc"/>%/td>
+me>20151023	</tr>ozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></tj </j>
+</root>
+<!--* a valid > JM </th> <th>Ilosc </th> <th> Cena netto </th> <th>Wartosc netto <+th> <th> Stawka V><xsl:value-ofd><xsl:value-of select="cena_netto"/></td>
+	ö;td><xsl:value-of select="wartosc_netto"/></td>
+		<td><xsl:value-of select="stawkaÿÿÿÿ"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/><Otd>
+	</tter"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align=6center">-</td>
+õ;tdAT </th>
+<th>Wrtosc z VAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></tj </j>
+</root>
+<!--* a valid test: tests P54 *-->

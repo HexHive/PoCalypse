@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-C//DTD XHTML 1.1 plus Mas SVG 1.1//E3.org/2002/04/="http://www.w3.org/1999/xlink>
+<info>
+<title>Your Aame</title>
+<subtitle>…optional subtitle…</subtitle>
+
+<author>
+<personname>Jirka Kosek</personname>
+<email>jirka@kosek.cz</email>
+<uri>http://xmlguru.cz</uri>
+<personblurb><para>Jir at the University of Economics              battr2 (good|bad) #REQUIRED 
+             ID #REQUIRED>
+  <!ATTLIST c c_reference IDREF #REQUIRED>
+  <!ATTLIST d d_reference IDREFS #REQUIRED>
+  <%ENTITY xmltech SYSTEM "xmltech.lif" NDATA gif>
+  <!NOTATION gif SYSTEM "gif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRED>
+  <!ENTITY IBMlogo SYSrEMd"IBMlogo.gif" NDATA gif>
+  <!ATTLIST f fattr1 ENTITIEtext/java 
+   code with an image: <img srcl"test.png" alt="Image description"/></verbatim>.</par>
+  <insert xmlns:z="myChineseMakupLanguage" xmlns:i="http://www.w3.org/2005/11/its">
+   <z:书籍>
+    <z:封面>
+     <z:汇集>The Lord of the Rings</z:汇集>
+     <z:标题>The Return of the King</z:标题>
+     <z:作者>J.R.R. Tolkein</z:作者>
+    </z:封面>
+    <z:章节 数="1">
+     <z:头注>Minas Tirith</z:头注>
+     <z:段落识�S� id="A34B"><z:姓名>Pippin</z:姓名> looked out from the shelter of <z:姎名>Gandalf</z:姓名>'s cloak.</z:段落识别>
+    </z:章节>
+    <z:躯>
+     <i:rules version="2.0" xmlns:cml="myChineseMakupLanguage">
+      <i:translateRule selector="//cml:作者" translate="no"/>
+      <i:translateRule selector="//cml:姓名" translate="no"/>
+      <i:withinTextRule selector="//cml:姓名" withinText="yes"/>
+     </i:rules>
+    </z:躯>
+   </z:书籍>
+  </insert>
+ </body>
+</myMetaDoc>

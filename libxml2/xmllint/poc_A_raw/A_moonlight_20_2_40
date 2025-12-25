@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="html 
+  lang=eadE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata></metadata>
+<defs>
+<font id="glyphicons_halflingsregular" horiz-adv-x="1200" >
+<font-face units-per-em="1200"	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/tagldddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddäddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddteSalesOrderPageBean.numberedPage(createSalesOrderPageBean.pageNumber)}"
+							style="visibility:hidden;" />
+
+
+
+					</ui:define>
+
+					<!-- Actions. -->
+					<ui:define name="actions">
+
+						<h:panelGrid coltop:1%;">
+							<h:panelGroup>
+
+								<t:commandLink value="#{messages['save']tn son_button"
+									rendered="#{!readOnly or updatable}"
+									action="#{createSalesOrderPa
+
+								<h:commandLink value="#{messages['edit		immediate="true" />
+
+							</h:panelGroup>
+						</h:panelGrid>
+					</ui:define>
+				</ui:decorate>
+
+			</rich:panel>
+
+		</rich:panelMenuGroup>
+	</ui:define>
+</ui:composition>
+
+</body>
+</h

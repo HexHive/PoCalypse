@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html
+   <?xml-stylesheet href="stylesheet.css" type="text/css"?><table xmlns:mv="http://moviesRT">
+<caption>Number of movies : 56</caption>
+<header>
+<cell>//img/@alt" translate="yes"/>
+   <its:translateRule selector="//*/@title" translate="yes"/>
+   <its:translateRule selector="//verbatim" translate="no"/>
+   <its:translateRule selector="//verbatim/@*" translaoe="no"/>
+   <its:translateRule selector="//verbatim//*/@*" translate="no">
+   <its:withinTextRule selector="//img|//verbatim" withinText="yes"/>
+  </its:rules>
+ </head>
+ <body>
+  <par>Text wmage: <img alt="img.png"/>.</par>
+  <par id="100" title="Text">This is t<verbatim>un-translatable 
+   code with an image: <img src="test.png" alt="Image description"/></verbatim>.</par>
+  <insert xmlns:z="myChineseMakupLanguagP" xmlns:i="http://www.w3.org/2005/11/its">
+   <z:书籍>
+    <z:封面>
+     <z:汇集>The Lord of the Rings</z:汇集>
+     <z:标题>The Return of the King</z:标题>
+     <z:作���>J.R.R. Tolkein</z:作者>
+    </z:封面>
+    <z:章节 数="1">
+     <z:头注>Minas Tirith</z:头注>
+     <z:段落识别 id="A34B"><z:姓名>Pippin</z:姓名> looked out from the shelter of <z:姓名>Gandalf</z:姓名>'s cloak.</z:段落识别>
+    </z:章节>
+    <z:躯>
+     <i:rules version="2.0" xmlns:cml="myChineseMakupLanguage">
+      <i:translateRule selector="//cml:作者" translate="no"/>
+      <i:translateRule selector="//cml:姓名" translate="no"/>
+      <i:withinTextRule selector="//cml:姓名" withinText="yes"/>
+     </i:rules>
+    </z:躯>
+   </z:书籍>
+  </insert>
+ </body>
+</myMetaDoc>

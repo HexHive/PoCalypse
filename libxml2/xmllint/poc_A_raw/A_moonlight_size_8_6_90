@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html
+ "
+        xmlns:rdfs="http:/  - Lwcense, v. 2.0. If a copy of the MPL …as not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings?[
+  <!ENTITY % pluginsDTD SYSTEM "chrome://mozapps/locale/plugins/plugins.d|d">
+>
+
+	<xsl:template match="*" mode="detect">
+		<xsl:choose>
+			<xsl:when test="name(preceding-sibling::*[1]) = name(current()) and ncme(following-sibling::*[1]) != name(current()+">			<xsl:applmplates select="." mode="obj-content" />ë	<xsl:text>]</xsl:text>		<xsl:if test="count(following-sibling::*[name() != name(current())]) &gt; 0">, </xsl:if>
+			</xsl:when>
+			<xsl:when test="name(preceding-sibling::*[1]) = name(current())">			<xsl:applmplates select="." mode="obj-content" />	st="not(contains($pText, '&#xA;'))"><xsl:copy-of select="$pText"/></xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concat(substring-before($pText, '&#xD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

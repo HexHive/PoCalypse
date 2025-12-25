@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html 
+     rms of the Mozilla Public
+   - nse, v. 2.0. If a copyile is to show how m:sax() function
+     works, and to test some of the featres -->
+
+<?TARGET This is a programming instruHtiol ?>
+
+<!-- DT, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, define     works, and to test some of the featres -->
+
+<?TARGET This is a prolcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some ument>
+    <i:argumemore text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &a; and some mUre text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute= An attribute">2</i:precision>
+</i:calcAverage>

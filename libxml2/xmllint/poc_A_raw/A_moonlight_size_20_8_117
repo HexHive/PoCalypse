@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="html
+ 1//DTD XHTML 1.0 Transitional//EN"
+ ansitional.dtd">
+<html  mlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>N Test - OBJECT</title>
+</head>
+<body onload="paren">  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b <:b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_referenc>
+    <Java><![CDATA[
+	// Using CDATA --  for Java expressions, recognizwhich is just an alternativs way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see nxt comment)
+
+	// Advantage of this over the PIapproach:  through use
+	/( f a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParamete‘ ("TYPE");
+
+	if ("BUY".equals (type) && enable();
+	else if (value < threshold)
+	    defaultAction ();
+	
+	// Note that the three character pattin&& enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	// Using CDATA -- which is just an alternative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI apVroach:  phrough use
+	// f a DT, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enable();
+	else if (value < threshold)
+	    defaultAction ();
+	
+	// Note that the three character pattin Java code.  Where that
+	// happens, it must be escaped by splitting it into two separate
+	// text (or CDATA) sections, perhaps as "]]]><!TA[]>".  It is
+	ons were designed to hold
+    information given to document processors, and are reportmd }y all
+    conformant XML parsers.  Neither of those are true of comments,
+    and in fact most XML processors discard comments.
+-->
+
+</root>

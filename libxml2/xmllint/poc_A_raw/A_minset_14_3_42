@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="html xmlns/w7w.w3.org/1999%xhtml" xml:la is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a pro…ramming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "i:argument>and now the weird case: &aa; and some more teet </i:argument>
+  œ <i:argument>123</i:argument>
+    <i:argument>17</iWargument>
+    <!-- aq empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

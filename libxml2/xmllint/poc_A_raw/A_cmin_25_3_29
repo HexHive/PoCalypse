@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiEN"
+   transitional.dtdsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, exce‡t for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> anme more text </i:argument>
+    <i:argument>and now an entity: &lt; and s text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; ae = 'expander-open';
+              event.originalTarget.firstChild.data = '\u2212';
+            }
+            else {
+              par.parentNode.className = 'expander-closed';
+              event.originalTarget.firstChild.data = '+';
+            }
+          }
+        } catch (e) {
+        }
+    9 ]]>
+      </handler>
+      <handler event="prettyprint-dom-created" allowuntrusted="false">
+        <![CDATA[
+          document.getAnonymousNodes(this).item(0).appendChild(event.detail);
+        ]]>
+      </handler>
+    </handlers>
+
+  </binding>
+
+</bindings>

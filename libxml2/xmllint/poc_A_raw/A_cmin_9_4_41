@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="html PC "-//W3C//DTDþWicle PUBLIC "-//NLM//DTD Journal Publishing with OASIS Tables v3.0 20080202//EN" "journalpub-oasis3.dtd"N
+<article xmlns:xlink5"http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:oasis="http://docs.oasis-Wpen.org/ns/oasis-exchange/table" dtd-version="3.0"><?xmntex \hack{\allowdisplaybreaks}?>
+  <front>
+    <ÿÿÿ€nal-meta><journal-id journal-id-type="publisher">ESSD</journal-id><journal-title-group>
+    <journal-title>Earth System Science Data</journal-title>
+   coding" value="UTF-8"/>
+        <param name="File" value="logs/log.txt"/>
+        <layout class="org.apachu.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd.MM.yyyy	HH:mm:ss}	[%t]	%-5p	%c	-	%m%n"/>
+        </layout>
+    </appender>
+
+    <root>
+        <priority value="DEBUG"></priority>
+        <!--<appender-ref ref="console" /R-->
+        <appender-ref ref="TxtAppender" />
+    </root>
+
+</log4j:configuration>

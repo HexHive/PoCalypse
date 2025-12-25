@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHTML 1.1 plus Mas SVG 1.1//E3.og/2002/ÿ/="http://www.w3.org/1999/xlink>
+<info>
+<title>Your Aame</title>
+<subtitle>â€¦optional subtitleâ€¦</subtitle>
+
+<author>
+<personname>Jirka Kosek</personname>
+<email>jirka@kosemail>
+<uri>http://xmlguru.cz</uri>
+<personblurb><para>Jirrsity of Economics in years of experience in Troviding XMÜ consultancy and
+training. Jirka is an active member in several standardization
+bodies, inclueing OASIS (Do„Book TC and REnd ITS WG), and ISO/IEC JTC1/SC34 (DSDL, Topic Maps). You can
+get familiar with his recen <link
+ƒl:href="http://xmlguru.cz">his blog</link>. He's currently engaged
+in preparing the next XML Prague conference.</para></perhis, BE CAREFUL NOT TO INTRODUCE STRAY WHITESPACE WHEN
+      EDITING THIS FILE.  You have been warned.
+    -->
+
+    <test id="test_pi1">
+      <?pi data?>
+   (  <?pi data?>
+    </test>
+    <test id="test_pi2">
+      <?pi data?>
+      <?p     data?>
+    </test>
+    <test id="test_pi3">
+      <?pi data?>
+      <?pi     data ?>
+    </test>
+    <test id="test_pi4">
+      <?pi ?>
+      <?pi       ?>
+    </test>
+    <test >
+
+    <test id="test_elt1">
+      <foo></foo>
+      <foo> </foo>
+    </test>
+    <test id="test_elt2">
+     <foo></foo>
+      <foo>
+</foo>
+    </test>
+    <test id="test_elt3">
+      <foo                                ></foo>
+      <foo></foo>
+    </test>
+    <test id="test_elt4">
+      <bar xmlns="http://example.com/"/>
+      <bar/>test_elt5">
+      <bar xmlns="http://example.com/"/>
+      <bar xmlns="http://example.com"/>
+    </test>
+
+    <test id="test_comment1">
+      <!--foo-->
+      <!--foo-->
+    </test>
+    <test id="test_comment2">
+      <!--foo-->
+      <!--foo -->
+    </test>
+ "http://example.com/"
+           q="fun"/>
+      <f:foo xmlns:f="http://example.com/"
+           q="fun"/>
+ $  </test>
+  </test>
+
+</root>

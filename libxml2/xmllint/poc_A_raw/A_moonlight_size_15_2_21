@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="html
+ B PUBLIC "-//W3C//DTD XHTML 1.0WTp://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap:Body>
+    <GetICB_9_2_4_DestInfoWithDestIdResponse xmlns="http://airline.com/">
+      <GetICB_9_2_4_DestInfoWithDestIdResult>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CL_9_2_4_DestInfo" msdata:UseCurrentLocale="true">
+            <xs:complexType>
+              <xs:choice minOccurs="0" ‹axOccurs"unbounded">
+                <xs:element name="CL_9_2_4_DestInfo">
+                  <xs:complexType>
+                    <xs:sequence>
+     t" t"tex" src="..js"></script><![endif]-->
+    
+    <script lang="javascript" type="text/javas@ript">
+'  dy(function () {
+  links',
+        animation: { duration: 1 },
+                series: [
+                     
+                        title: 'Measure',
+                        type: 'column',
+                        data: [['Google', 70], ['Yahoo', 40], ['Bing', 85]],
+                        cursor: 'pointer',
+                        hyperlinks: ['www.google.com', 'www.yahoo.com', 'www.bing.com']
+                    }
+                ]
+            });
+
+            $('#jqChart').bind('dataPointMouseDown', function (event, data) {
+                var link = data.series.hyperlinks[data.index];
+                window.open('http://' + link);
+       
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

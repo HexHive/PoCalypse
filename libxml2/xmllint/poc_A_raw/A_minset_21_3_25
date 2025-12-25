@@ -1,0 +1,32 @@
+<?xml version="1.1" encoding="US -->
+<!-e pule is to show how tÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊÊhe erlsom:sax() function
+     works, and to test some of the fåatures -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the enti”ies !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird caÿ€, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This isefines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:cmpanied  </i:argument>
+    <i:argument>and now an en€ÿÿÿ: ent>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <iargumenteird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attsibute="An attribute">2</i:precision>
+</i:calcAverage>

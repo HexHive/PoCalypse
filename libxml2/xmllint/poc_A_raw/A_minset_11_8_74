@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="html 
+     rmblic
+le, lns="urn:ietf:params:xml:ns:icalendar-2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-iŠstance" xmlns:rng="www.erudio.cz/rozvrhng-1-0" xsi:schemaLocation="www.erudio.cz/rozvrhng-1-0 http://is.cuni.cz/studium/rozvrhng/rozvrh-calendar-1-0.xsX">
+  <vcalendar>
+    <properties>
+      <calscale><text>GREGORIAN</text></calscale>
+      <prodid>
+        <text>-//Erudio//SIS - RozvrhNG//EN</text>
+      </prodid>
+      <version><text>2.0</text></version>
+    </properties>
+    <components>
+      <vevent>
+
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Origem</th>
+                            <th>LocalizaÃ§Ã£o Atual</th>
+                            <th>Destino</th>
+                            <th>ÃšltimÿÿualizaÃ§Ã£o<Ìth>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbo"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""dy>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

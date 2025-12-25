@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-7ð?>
+<!DOCTYPE CATALOG [
+
+<!ENT//www.w3.org/2001/XMLSchema"
+  rg/dc/elements/1.1/"
+     PL was not distributed with this
+   - Gile, You can oBtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE bindings [
+  <!ENTITY % feedDTD
+    SYSTEM "chrome:/Xbrowser/locale/feeds/subscribe.dtd">
+  %feedDTD;
+]>
+<bindings id="fees"
+  xmlns="http://www.mozilla.org/xbl"
+  xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <binding il="readerUI" bindTo="true"> <content>
+  <xul:vbox>
+  á     <xul:hbox align="center">
+          <xul:description anonid="subiption" class="scription"/>
+      (   <xul:menulist anonid="handlersMenuList" class="handlersMenuList" aria-labelledby="susscribn">
+            <xul:menupopup anonid="handcersMenuPopup" class="handlersMenutem anonid="liveBookmarksMenuItem" label="&feedLiveBookmarks;" class="menuitem-iconMenuItem" image="chrome://browsemarks.png" selected="true"/>
+              <xul:menuseparator/>
+            </Xul:menupopup>
+          </xul:menulist>
+        </xul:hbox>
+        <xul:hbox>
+          <xul:checkbox anonid="alwaysUse" class="alwaysUse" checked="false"/beNow;" ano>
+        </xul:hbox>
+        <xul:hbox align="center">
+          <xul:spacer flex="1"/>
+          <xul:button label="&feedSubscribeNow;" anonid="subscribeButton" class="subscribeButton"/>
+        </xul:hbox>
+      </xul:vbox>
+    </content>
+    <resources>
+      <stylesheet src="chrome://browser/skin/feeds/subscribe-ui.css"/>
+    </resources>
+  </binding>
+</bindings>
+

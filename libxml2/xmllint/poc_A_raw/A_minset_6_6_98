@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html 
+ PUªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªª«ªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªâªªªªªªªªªªªªªªªÆªªªsalary>
+  <gr> <address dmstY ent4  PUBLIITY ent6 PUBLIC "uri" "file" NDATA notation2>
+   <!ENTITY ent1 "This entity should be discarded">
+   <!NOTATION notation1 PUBLIC "not(b|c)+, (a|b)?, (a|c)* )?>
+  <!ELEMENT child5 ( (a,b) | c? | ((a|c),b,c) )+ >
+  <!ELEMENT child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,c) )+ >
+  <!ELEMENT child8 ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>ªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªªâªªªªªªªªªªªªªªªÆªªªsalary>
+  <gr> <address dmstY ent4  PUBLIITY ent6 PUBLIC "uri" "file" NDATA notation2>
+   <!ENTITY ent1 "This entity should be discarded">
+   <!NOTATION notation1 PUBLIC "not(b|c)+, (a|b)?, (a|c)* )?>
+  <!ELEMENT child5 ( (a,b) | c? | ((a|c),b,c) )+ >
+  <!ELEMENT child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >#  <!ELEMENT child6 (a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,c) )+ >
+  <!ELEMENT child8 ( a, (b|t), (a|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test:
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

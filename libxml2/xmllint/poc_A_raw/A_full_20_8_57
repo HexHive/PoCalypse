@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="html PC "-e.overfto>
+	<filename>000007</filename>
+	<source>[		<database>IL7<Fdatabase>
+	</source>
+	<size>
+		<width>1280</width>
+		<ÿÿÿÿht>720</height>
+	</size>
+	<object>
+		<trackid>0</trackid>
+			<bndbox>
+			<xmax>1083</xmax>
+			<xmin>652</xmin>
+			<ymax>716</ymax>
+			<ymin>225</ymin>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>1</generated>
+	</object>
+	<object>
+		<trackid>1</trackid>
+		<name>6</name>
+		<bndbox>
+			<xmax>134</xmax>
+			<xmin>71</xmin>
+			<ymax>139</ymax>
+			<ymin>36</ymin>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated>1</generated>
+	</object>
+	<object>
+		<trackid>2     </xs:sequence>
+    </xs:complexType>
+    
+    
+    
+    <!-- Destinatarios -->
+    <xs:complexType name="Destinatarios">
+        <xs:sequence>
+            <xs:element name="Para"         type="xs:string" maxOccurs="unbounded"></xs:element>
+            <xs:element name="Copia"        type="xs:string" maxOccurs="unbounded" minOccurs="0"></xs:element>
+            <xs:element name="CopiaOculta"  type="xs:string" maxOccurs="unbounded" minOccurs="0"></xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- PATRON 
+    <xs:element name="patron">
+        <xs:simpleType>
+            <xs:restriction base="xs:string">
+                <xs:pattern value="[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}"></xs:pattern>
+            </xs:restriction>
+        </xs:simpleType>
+    </xs:element>
+    -->
+    
+            
+</xs:schema>
+
+
+

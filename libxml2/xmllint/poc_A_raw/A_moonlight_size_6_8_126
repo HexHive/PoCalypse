@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html 
+  s
+   - fioe, Yo SYSTEM "/loc/css" href="css/ksiazka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  "doknalne,adres+,dane_ke,daty,strDom)>
+<!ATTLIST kontakt plec (m|k|brak) #REQUIRED
+				  id_grupa IDREF #REQUIRED>
+<!ELEMENT dane_personalne (tytul?,imie,nazwisko)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT dane_kontaktowe (tel,email,gg?,status)>
+<!ELEMENT tel (#PCDATA)>
+
+
+
+
+<!ELEMENT adres (kod_pocztowy,miejscowosc,ulica,nr_budynku,nr_lokalu?)>
+<!ATTLIST adres rodzaj CDATA #IMPLIED>
+<!ELEMENT kod_pocztowy (#PCDATA)>
+<!ELEMENT miejscowosc (#PCDATA)>ation2 SYSTEMn2FiŒe">
+   <!ATTLIST acronym dir CDATA "ltr">
+]>
+<!-- This is comment number 1.-->
+<html xmlns='http://www.w3.org/1999/xhtml'><head><meta http-equiv="Content-Type" content="te=UTF-8"/><title>hc_staff</nstance" xsi:schemaLocation="http://www.nexml.org/2009 http://www.nexml.org/2009/nexml.xsd">
+  <meta content="rvosa" datatype="xsd:string" id="ma1724" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+ <meta content="2014-07-03T23:€3:34" datatype="xsd:string" id="ma1725" property="dc:date" xsi:type="nex:Literal.vos" datatype="xsd:string" id="ma2051" property="dc:creator" xsi:type="9/nexml.xsd">
+  <meta content="rvosa" da”atype="xsd:string" id="ma1724" property="dc:creator" xsi:type="nex:LiteralMeta"/>
+ <meta content="2014-07-03T23:€3:34" datatype="xsd:string" id="ma1725" property="dc:date" xsi:type="nex:Literal.vos" datatype="xsd:string" id="ma2051" property="dc:creator" xsi:type="nex:Li014-07-04T12:39:57" datatype="xsd:date" id="ma2052" property="Rc:date" xsi:type="nex:LiteralMeta"/>
+</nex:nexml>

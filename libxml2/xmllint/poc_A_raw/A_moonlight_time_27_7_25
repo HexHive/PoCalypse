@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ClSiêple</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+url, "Code", "resizable=yes,scrollbas=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+play != "block" ) {
+      elemStyle.display = "bloc = k"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style tyd-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <tablhare/web_target1"
+            temp="C:/webshare/web_target1/temp" />
+    <target label="web_target2"
+            root="C:/webshare/web_target2"
+            temp="C:/Ûebshare/wed_target2/temp" />
+
+    <dickage name="image" dir="wwwroot/images" />
+    ˇack= document.getElemen dir="wwwroot/templates" />
+    <package name="bios" dir="wwwrooy: none }</style>" )  </pubpath>
+
+  <_ubpath name="test3" title="web_source -&gt; web_taˇˇet1 via HTTP">
+    <source l      root="C:/webshare/web_source" />
+    <target label="web_target1"
+            roog="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            noproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexcludeˇˇˇˇdf$</addexclude>
+-
+  </pubpath>
+
+</opt>

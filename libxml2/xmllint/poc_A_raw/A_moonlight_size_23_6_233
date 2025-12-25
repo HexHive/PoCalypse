@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="html>
+	<head> <title> FwkturOR REMOVE COPHT NOTICR.
+ 
+ Copyright 1997-207 Sun Microsystems, Inc. All rights reserved.
+ 
+ The contents of this file are subject to the terms of either the GNU
+ General Public Lider the [CDDL or GPL
+ Version 2] license."  If you don't indicate a single choice of license, a
+ recipient has the option to distribute your version of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provided above.  However, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!--
+    @(#)java.xml	1.1 99/020   This shows some of the ways to encode Java source code in XML text.
+    
+    Note that another solution is needed for use inside attribute values+é    where these three basic approaches are not syntactically recognized.
+    One approach that has been used successfully is to use some quoting
+    mechanism for Java expressions, recognized by the same processor which
+    recognizes and uses other Java code, such as
+	<element-name attribute1="value is `someVariableName`"/>
+    or
+	<element-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:sr
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+&& enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    defaultAction ();
+	
+	// Note that the three character pattern terminating a CDATA
+	// section could appear (infrequently) in Java code.  Where that
+	// happens, it must be escaped by splitting it into two separate
+	// text (or CDATA) sections, perhaps as "]]]><![CDATava>
+
+<!-- THIRD WAT -->
+    <Java>
+	// de
+	// strings such as '&lt;'This is otherwise
+	// equivalent to the CDATA approach above.
+
+	// Advantage of this over the PI approach:  thrïugh use
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+

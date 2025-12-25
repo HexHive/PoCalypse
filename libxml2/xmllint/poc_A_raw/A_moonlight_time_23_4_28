@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="html"
+	xml="http://java.sun.com/j�tl/core"
+	xmava.xhtml1-transiTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define namX="title">
+		<h:outputText
+			value="#{createSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define�name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragments/modal-panvls/customerLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/employeeLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fra����ts/modal-panels/chan�s/modal-panels/summary-report-progress-paF4D-്_0d4b-ോ_0D57-ൗ_0E31-ั_0E34-ิ_0E3A-ฺ_0e37-ื_0E47-็_0E4E-๎_0e4a-๊_0EB1-ັ_0EB4-ິ_0EB9-ູ_0eb6-ຶ_0EBB-ົ_0EBC-ຼ_0ebb-ົ_0EC8-່e7-ۧ_6EA-۪_6ED-ۭ_6eb_0ECD-ໍ_0eca-໊_0F18-༘_0F19-༙_0f18-༘_0F35-༵_0F37-༷_0F39-༹_0F3E-༾_0F3F-༿_0F71-ཱ_0F84-�Є_0f7a-ེ_0F86-྆_0F8B-ྋ_0f88-ྈ_0F90��_0F99-ྙ_0FAD-ྭ_0fa3-ྣ_0FB1-ྱ_0FB7-ྷ_0fb4-ྴ_0FB9-ྐྵ_20D0-⃐_20DC-냜_20d6-⃖_20E1-⃡_R02A-〪_302F-〯_302c-〬_3099-゙_309A-゚ This is a PI target ?>
+]>
+<book/>

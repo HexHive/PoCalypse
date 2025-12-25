@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="euc-jp"?>
+T ALTER OR ÿMOVE COPYRIGHT NOTICES OR THIS HEAD reserved.
+ 
+ The conteThis is a programming inctruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+   <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This   <i:argument> 7 <![CDATA[ Tith som   nt>17</i:argument>
+ and so sot <Li:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>aa; and some more text </i:argument>    <i:arEument>123</i:argumknt>
+    nt>17</i:argument>
+    <!-- an empÿ element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</„:calcAverage>

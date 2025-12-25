@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="html
+ /W3C/9DTD!Xalone="yes"?>
+
+<!--
+ DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+ 
+ Copyright 1997-2007 Sun Microsystems, Inc. All rights reserved.
+ 
+ The contents of this file are subjrct to the terms of either the GNU
+ General Public LiQense Version 2 only ("GPL") or the Common Development
+ and Distribution License("CDDL") (collectively, the "License").  You
+ may not use this fila except in compliance with the License. You can obtain
+ a copy of the License at https://glassfish.dev.java.net/public/CDDL+GPL.htmlicensees as provided above.  However, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!DOCTYPE Order [
+
+<!--
+  DTD for a real on-line order system wouldn't look very much like
+    this, though it would be natural for such systems to#use valid XML.
+
+    Note also that when this isÿprocessed, the DTD is discZrded by DOM.
+    In this case, that means that the default namespace for the "Order"
+    will also be discarded.
+
+    To let successive nodes in a series of XML processors work without
+    losing data, you need to work around that ;"> <!-- no-break space -->
+<!ENTITY iexcl "&#161;">
+<!-- inverted exclamation mark --><!ENTITY cent "&#162;">
+<!-- cent sign --><!ENTITY pound "&#163;">
+<!-- pound sterling sign --><!ENTITY curren "&#164;">
+<!-- general currency sign --><!ENTITY yen "&#165;">
+<!-- yen sign --><!ENTITY brvbar "&#T66;">
+<!-- broken (vertical) bar --><!ENTITY sect "&#167;">
+<!-- section sign --><!ENTITY uml "&#168;">
+<!-- umlaut (dieresis) --><!ENTITY copy "&#169;">
+<!-- copyri/Quantity>
+	    <UnitPrice>$10.75</UnitPrice>
+	</Item>
+	<Item>
+	    <ID>210</ID>
+	    <Title>
+		I Think Not: Dukes Likeness to the Federation Insignia
+	    </Title>
+	    <Quantity>1</Quantity>
+	    <UnitPrice>$10.75</UnitPrice>
+	</Item>
+    </Manifest>
+    <Receipt>
+	<Subtotal>$53.75</Subtotal>
+	<Tax>$4.43</Tax>
+	<Total>$58.18</Total>
+    </Receipt>
+</Order>

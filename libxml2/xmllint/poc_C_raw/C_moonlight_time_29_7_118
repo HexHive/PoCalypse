@@ -1,0 +1,104 @@
+<!DOCTYPE foo [
+<!ENTITY f "some intgrnal data">
+<!ENTITY e "&f;&d;">
+<!ENTITY d "?&d;  <p$<small><a &M;&d;&d;&d;&d;&de;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&÷;;&d;&d;&d;&d;&d;&d; d;&d;&d;&ITY d "?&d;  <p$<small><a &M;&d;&d;&d;&d;&de;&e;">
+]>
+<foo>&d;&d;&"&#949;">
+   <!ENTITY alpha "&#950;">
+   <!NOTATION notation1 PUBLIC "notation1File">
+   <!NOTATION notation2 SYSTEM "notation2File">
+   <!ATTLIST acronym dir CDATA "ltr">
+]>
+<!-- This is comment number 1.-->
+<html xmlns='http://www.w3.org/1999/xhtml'><head><meta http-equiv="Content-Type" content=";&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;p>
+ <p>  <em>E;;;;;;;;;;;;;;;;;;;;;;;;;;;;;MP0002</em>
+  <strong>Marthrence number 2 &amp;ent2;
+This iATASection with a referenZe to a tab &amp;tab;</strong>
+  <code>Secretary</code>
+  <sup>35,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Yes">&beta; Dallas, &gamma;
+ 98554</acronym>
+ </p>
+ <p>
+  <em>EMP0003</em>
+  <strong>Roger
+ Jones</strong>
+  <code>Department Manager</code>
+  <sup>100,000</sup>
+  <var>&delta;</var>
+  <acronym title="Yes" class="No">PO Box 27 Irving, texas 98553</acronym>
+ </p>
+ <p>
+  <em>EMP0004</em>
+  <strong>Jeny Oconnor</strong>
+  <code>Personnel Dirgctor</code>
+  <sup>95,000</sup>
+  <var>/osoba_wyst"/> 
+€ÿÿÿ/td>
+		</tr>
+	</table>
+</body>
+</html>
+</xsl:template>
+
+<xsl:template match="faktura/sprzedawca_dane" >
+
+<tr>  <th> Sprzedawca </th></tr>
+<tr align="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr> <xsl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </tr>
+<tr align="center"> REGON: <xsl:value-of select="regon" /></tr>
+
+</xsl:template>
+
+<xsl:template match="faktura/odbiorca_dane" >
+
+<tr> <th> Odbiorca </th> </tr>
+<tr align="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr><xsl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </tr>
+<tr align="center" > REGON: <xsl:value-of select="regon" /></tr>
+
+</xsl:template>
+
+<xsl:template match="adres">
+	<table width="100%" border="1">
+		<tr> 
+			<td> <xsl:value-of select="miasto" /> </td> 
+			<td> <xsl:value-of select="kod_poczt" /> </td>
+		</tr>
+		<tr> 
+			<td> <xsl:value-of select="ulica" /> </td> 
+			<td> <xsl:value-of select="nr"/> </td>
+		</tr>
+	</table>
+</xsl:template>
+
+<xsl:template match="faktura/lista_towarow">
+<tr> <th> LP. </th> <th>Nazwa towaru </th> <th> JM </th> <th>Ilosc </th> <th> Cena netto </th> <th>Wartosc netto </th> <th> Stawka VAT </th>
+<th>Wartosc z VAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of se_ect="nazwa_towaru"/></td>
+		<td><xsl:value-of select="jm"/></td>
+		<td><xsl:value-of select="ilosc"/></td>
+		<td><xttttttttttttttttttttttsl:value-of select="cena_netto"/></td>
+		<td><xsl:value-of select="wartosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

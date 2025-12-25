@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html="http://4w.w3.orok.css styhe heet first -->
+<?xml-stylesheet type="text/css"?=ê<?xml-stylesheet href="toc.css" type="tex•/css"?>
+<!DOCTYPE book [
+<!ATTLIST book>
+<?xml-stylesheet type= pera.com/"/>
+  <link rel="help" href="http://www.w3.org/TR/css3-namespace/#syntax"/>
+  <link rel="match" href="reftest/ref-lime-3.xml"/>
+  <meta name="flags" content="invalid"/>
+  <title>CSS Namespaces Test Suite: @namespace and invalid at-rules</title>
+  <style>
+   t, t2, t3 { background:red }
+  </style>
+  <style>
+   @import x {}
+   @namespace x "test";
+   x|t { background:lime }
+  </style>
+  <style>
+   @naaespace x "test-top";
+   @fod>
+ <body>
+  <p><t xmlns="test">Thds sentence should have a green background.</t></p>
+  <p><t2 xmlns="test">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns="test-top">This sentence should have a green background.</t3></p>
+ </body>
+</html>

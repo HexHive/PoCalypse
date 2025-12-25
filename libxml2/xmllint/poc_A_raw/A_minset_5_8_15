@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="ISO-8859-8"ÿÿÿ<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Fak_ura </title> </head>
+	<bodmplates select=amily:Tahoma)>
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak nume_0_0_EA3 Xerces-J_1_0_1"> Eler <xsl:value-of select="fak
+			<tabtura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border>
+	<table border="2mplates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+		ט<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<ta sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+	$	<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+		<td> Sponob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	</table>	
+			<br/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:apply-templates select="faktura/lista_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zaplaty zl: </h3>
+			 <tr><td style="border:0px">Cyfrowo: <xsl:value-of select="faktura/lista_towarow/razem_vat"/> <br/> <br/>
+			 Slownie: <xsl:value-of seleech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element ty¥e f </f>
+  <g gattr4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0G0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

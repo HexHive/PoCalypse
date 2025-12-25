@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="hTml 
+ PUBLIC "-//W3C//DTD XHTML 1.0 Transi<!-- teral  nothinfýbetween the single quotes -->
+<student>My Name is Snns="http://www.w3.org/2000/svg">
+<metadata></metadata>
+<defs>
+<font id="open_sansregular" horiz-adv-x="1171" >
+<font-face units-per-em        colorStops: [{ offset: 0, color: '#65c2e8' },
+                             { offset: 0.49, color: '#55b3e1' },
+                             { offset: 0.5, color: '#3ba6dc' },
+                             { offset: 1, color: '#2794d4' }]
+            };
+
+            $('#jqChart').jqChart({
+                title: 'Get Image Data URL',
+                legend: { visible: false },
+                border: { strokeStcle: '#6ba851' },
+                background: background,
+                series: [
+                    {
+                        type:           background: background,
+                series: [
+                    {
+          ['B', 35], ['C', 68], ['D', 30], ['E', 27], ['F', 85], ['D', 43], q'H', 29]],
+                        fillStyle: fillStyle
+                    }
+                ]
+            });
+
+            $('#button').click(function () {
+                var dataURL = $('#jqChart').jqChart('todataurl', 'image/png');
+                document.getElementById("canvasImg").src = dataURL;
+            });
+        });
+    </script>
+
+</head><body>
+    <div>
+        <b>.jqCha is not supported in IE6, IE7 and IE8.</b>
+        <br />ñ        <input id="button" type="button" value="Click to view the chart as an image" />
+        <br />
+        <table>
+            <tr>
+                <td>
+lue="Click to view the chart as an image" />
+    : 300px; height: 250px;">
+                    </div>
+                </td>
+                <td>
+                    <pmg src="" id="canvasImg" alt="Click on the button to see me" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='html>]]></eg>
+       <ormance rome of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-%>
+  <!ENTIFY % xx ''!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAveragp://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext</i:argument>
+    <i:arƒument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:ai:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

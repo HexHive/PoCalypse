@@ -1,0 +1,42 @@
+п»ї<?xml version="1.0" encoding="htmlserver">Server&sidI<+a></li>
+		<leЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉ‰ЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉw.hibernate.пrg/dtd/hibernate-configuration-3.0.dtd">
+<!-- ж­Јж–‡еЊ…ж‹¬ж №е…ѓзґ пјЊж №е…ѓзґ еЊ…ж‹¬е…¶д»–дёЂдє›е…ѓзґ пј€elementпј‰гЂ‚ -->
+<hibernate-configuration>
+    <sessi     <property name="connection.username">root</property>
+        <property name="connection.password">woailo99</property>
+        
+        <!-- е…¶д»–ди®°зљ„иЇґжЋ -->
+        <!-- 1пјЊе­—з¬¦еј•з”Ё зљ„еЅўејЏжЇ&#еЌЃиreference">&#233;</property>
+        <property name="character reference">&#xD9;</property>
+        
+        <!-- 
+   )    2пјЊе®ћдЅ“еј•з”Ёзљ„еЅўејЏжЇ&name;п©ЊжЇ”е¦‚пјљ
+        &gt;пј€е¤§дєЋеЏ·пј‰гЂЃ&lt;пј€е°ЏдєЋеЏ·пј‰гЂЃ&amp;пј€&пј‰гЂЃ&quot;пј€еј•еЏ·пј‰гЂЃ&apos;пј€зњЃз•ҐеЏ·пј‰пјЊеЏЇд»ҐењЁDTDдё­е®љд№‰е…¶д»–зљ„е®ћдЅ“еј•з”ЁгЂ‚  
+   d    -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3пјЊC>&amp;</property>
+        
+        <!-- 
+        3пјЊCDATAйmЁе€† 
+                     з”Ё<![CDATA[е’Њ]]>жќҐй™ђе®ље…¶з•Њй™ђпјЊе®ѓд»¬жЇе­—з¬¦ж•°жЌ®›„дёЂз§Ќз‰№ж®ЉеЅўејЏпјЊеЏЇд»ҐдЅїз”Ёе®ѓд»¬жќҐеЊ…еђ«й‚Јдє›еђ«жњ‰<гЂЃ>гЂЃ&д№‹з±»е­—з¬¦зљ„е­—з¬¦дёІпјЊиЂЊдёЌе§…е°†е®ѓд»¬и§Јй‡Љдёєж ‡и®°гЂ‚
+        -->
+        <property name="sql">
+    я  <![CDATA[
+            select * from table where age > 10;
+
+        3пјЊC>&amp;</property>
+        
+        <!-- 
+        3пјЊCDATAйmЁе€† 
+                     з”Ё<![CDATA[е’Њ]]>жќҐй™ђе®ље…¶з•Њй™ђпјЊе®ѓд»¬жЇе­—з¬¦ж•°жЌ®›„дёЂз§Ќз‰№ж®ЉеЅўејЏпјЊеЏЇд»ҐдЅїз”Ёе®ѓд»¬жќҐеЊ…еђ«й‚Јдє›еђ«жњ‰<гЂЃ>гЂЃ&д№‹з±»е­—з¬¦зљ„е­—з¬¦дёІпјЊиЂЊдёЌе§…е°†е®ѓд»¬и§Јй‡Љдёєж ‡и®°гЂ‚
+        -->
+        <property name="sql">
+    я  <![CDATA[
+            select * from table where age > 10;
+        ]]>
+7       </propertyя
+    </session-factory>
+</hibernate-configuration

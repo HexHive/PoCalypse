@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html
+ /W3C//DTD XHTML .0 Transitional//EN"
+   "xhtml1-tzka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  "dokt!ELEMENT kontakt (dane_personalne,adres+,dane_kontaktowe,daty,strDom)>
+<!ATTLIST kontakt plec (m|k|brak) #REQUIRED
+				  id_grupa IDREF #REQUIRED>
+<!ELEMENT dane_personalne (tytul?,imie,nazwisko)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT dane_kontaktowe (tel,email,gg?,status)>
+<!ELEMENT tel (#PCDATA)>
+
+
+
+
+<!ELEMENT adres (kod_pocztowy,miejscowosc,ulica,nr_budynku,nr_lokalu?)>
+<!ATTLIST adres rodzaj CDATA #IMPLIED>
+<!ELEMENT kod_pocztowy (#PCDATA)>
+<!ELEMENT miejscowosc (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT nr_budynku (#PCDATA)>
+<!ELEMENT nr_lokalu (#PCDATA)>
+
+<!ELEMENT gg (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email domena NMTOKENS #IMPLIED>
+<!ATTLIST status tekst NMTOltima AtualizaÃ§Ã£o</th>
+                        </tr>
+                    </thead>
+           b
+    <tr>
+                            <td><?php echoem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dad?></td>
+                            <td><?php ec1o $dados[0]->dt_eÿÿÿo; ?></td>
+                       </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+  ññññññ                  
+        <?p(p endif; ?>        
+        
+    </f

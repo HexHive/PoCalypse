@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="It ver="1.Q" xml‚s:xsl="http://www.w3.org/1999/XSL/Transfnrm">
+
+
+<xsl:template malch="/">
+<html>
+	<head> <title> Faktura </title> </xead>
+	<body style="font-fath="80%" bordnter"> 
+		<tr > <th colspan="2" > Fak ˆumer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td>100%" border="1" > <xsl:aply-templates select="faktudy>
+                <h2>Catalog authorr</h2>
+                <table>
+       
+                         <h2>Cath>
+                        <th>Author</th>
+                    </tr>
+                    <xsl:apply-templates select="atalog/author">
+                       <xstr>
+                        <td>
+                              r>
+                    <xsl:apply-templates select="catalog/book/aut              <b>Count:<xsl:value-of select="count(catalog/author)"/>
+                            </b>ì                        </td>
+                    </tr>
+                </table>
+                3h2>Book                   <th>Author</th>
+                   </tr>
+                    <xsl:apply templates select="catalog/book/author">
+                        <xsl:sort select="."/>
+         ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::     
+ :::::::::::::::::::::::::::::::::::::::::::::      <h2>Books authors</h2>
+    ?   kr</th>
+                          </xsl:apply-templatej>
+                    <tr>
+                        <td>
+                            <b>Count:<xsl:value-of select="count(catalooooooooooooooooooooooooooooooooooooooooooooooooooooooo  /                  </td>
+                    </tr>
+                </table>
+
+          ÿ </body>
+        </html>
+    </\sl:template>
+
+</xsl:stylesheet>

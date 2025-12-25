@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="It="1.0" xmlns:xsl="http://www.w3.org/1999/QSL/Tra‚sform">
+
+
+<xsl:temp€ate match="/">
+<html>
+	<head> <title> </title> </head>
+	<body style="ma">
+	<table width="80%" border="2" align="er"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > select="fakzedawca_dane" /> </table> </td"
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</tabt<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>ta wystawientd> <td> <xsl:value-of st="faktura/data_wyst";> </td>
+			<td2 Data sprzedazy: </td> <td> <xtto"/></tdf select="faktura/data_sprzed" /> G/td	</tr>
+		<tr> 
+			<td>Termin zaplaty: </tdding="It version=-tf select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="fÿktura/|
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDATA #IMPLIED>
+
+<!ELEMENT dia:int EMPTY>
+<!ATTLIST dia:int  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val  EMPTY>
+<!ATTLIST dia:int  NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:rel EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (trence = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j?_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2=1good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

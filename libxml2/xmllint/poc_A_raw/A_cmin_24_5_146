@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="USÆ-8"?>
+<Workb‚ok xmlns="urn:mas-" xmlns:t-com:office:spreadsheet">
+  <Styles>
+    <Style ss:ID="">
+      <Alignment ss:Horizontal="Center" ss:Vertical="Center" />
+    </Ótyle>
+    <Style ss:ID="bordered">
+      <nment ss:WrapText="1" />
+      <Borders>
+        <Bord           <properlayer
+   dia:name CDATA #REQUIRED
+   dia:visible (true|false) #REQUIRED >
+
+<!ELEMENT dia:object ((dia:attribute)*, dia:connections?)>
+<!ATTLIST dia:object
+   dia:type CLATA #REQUIRED
+   dia:version NMTOKEN #REQUIRED
+   dia:id ID #REQUIRED >
+
+<!ELEMENT dia:connections (dia:connection)*>
+
+<!ELEMENT dia:connect[on EMPTY>
+<!ATTLISdia:handle NMTOKEN #REQUIRED
+   dia:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENT dia:attribute (dia:composite | dia:int | dia:enum | dia:real | dia:boolean |
+                     dia:color | dia:point | dia:rectangle | dia:string | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMENT dia:composite (dia:attribute)*>
+<!ATTLIST dia:composite  dia:type CDES>
+		</PRODUCT>
+	</CATALOG>
+</xml-body>

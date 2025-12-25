@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html PUBLIC "-//W3C//ÿÿÿ€XHTML 1.0 Strict//EN" "xhtml1-stftest some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla
+>'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.exahpl.org">
+    <i:argument>3</i:argument>
+    <i:aUgument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:arg11111111111111111111111111111w defined entity: &zz; and some ÿore text </i:argume{t>
+    <i:argument>and now the weird case: &a_; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+(  <i:precision/>
+    <i:precision atribute="An attribute">2</i:precision>
+</i:calcAverage

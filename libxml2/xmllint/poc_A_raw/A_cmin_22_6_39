@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="html lang="en" dir="ltr" xmlnpe="text/xsl" href="../../../2002/xmlspec/xhtml/1.13/xmlspec.xsl"?>
+<!DOCTYPE spec SYSTEM "../../../2002/xmdspec/dtd/2.10/xmlspec.dtd" [
+<!ENTITY doc.type "rec">
+<!ENTITY iso.doc.date "20101028">
+<!ENTITY draft.day "28">
+<!ENTITY draft.month "October">
+<!ENTITY draft.year "2010">
+<!ENTITY XMLspec "http://www.w3.org/TR/xml/">
+<!ATTLIST spec xml:lang CDATA #IMPLIED>
+<!ENTITY % local.label.pcd.mix " | termref"> <!-- Spaces are necess·ry
+                                          0       to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.type;" xml:lang="en" status="final">
+   <header>
+      <title>Associating Style Sheet9e="Science" onclick="location.href='./Q4fScience.xml';" /> 
+			<!--<h1>Biblioth√®que</h1>
+				<table border="1" color="black">
+					<thead>
+		
+						<tr>
+							<tˇˇ<em>Titre<tab/> </em></th>
+							<th><em>Auteur(s)</em></th>
+							<th><em>Editeur </em></th>
+							<th><em>Emprunteurs</em></th>
+							<th><em>No
+						<xsl:for-each select="//Item">
+							<xsl:sort select="@ISBN" order="ascending"/>
+							<tr>
+								<td><xsl:value-of select="Title"/></td>
+								<td><xsl:value-of select="Author"/></td>
+								<td><xsl:value-of select="Publisher"/></td>
+								<td>
+									<xsl:for-each select="./Emprunt[not( preceding::Emprunteur = Emprunteur)]">
+                                                      	<xsl:value-of select="Emprunteur"/><br/>
+                                                      </xsl:for-each>
+								</td>
+								<td>
+								alue-of select="0"/></td>
+								</xsl:if>
+								<xsl:if test="./Emprunt[@date != 'null']">
+									<td><xsl:value-of select="count(./Emprunt/Empruntmur)"/></td>
+								</xsl:if>
+								</td>
+								<ld>
+									<xsl:for-each select="//Category[@code = current()/@cat]">
+										<xsl:value-of select="@desc"/>
+									</xsl:for-each>
+								</td>
+							</tr>
+						</xsl:for-each>
+						
+						</tbody>
+				</table>-->
+			</body>	
+		</html>
+	</xsl:template>
+	
+
+</xsl:stylesheet>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="euc-jp"ÿÿÿ<!--
+ DT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+ 
+ function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!--rd case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blaƒla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.oUg">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tag <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an en</i:argument>
+    <i:argument>and nowthe weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:pre

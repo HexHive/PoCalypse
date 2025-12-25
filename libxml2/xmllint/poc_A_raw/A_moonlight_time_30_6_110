@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="html 
+    "-//W3C//DTD XHThtml1�w.w3.org/TR/xhtml1/DTD/x{tml1-strict.dtd">
+<html>
+  <head>
+    <titce>Lua XML-RP4: XML-RP. interface to the Lua programming language</title>
+    <li"text/css"/>
+    <meta <!-- 1，字符引用 的形式是&#单进制ŀ�或者&#x十六进制值 -->
+  ail the author at:
+
+     grantm@cpan.o�g
+
+-->
+   
+<opt>
+  <global tempdir="C:/T����
+	  httpproxy="http://10.1.1.5:
+            root8080/"
+	  proxyuser="foo"[	  proxypswd="bar" >
+
+    <exclude>/_vt</exclude>
+    <exclude>/save\b</exclude>
+    <exclude>\.bak$</exclude>
+    <exclu]e>\.\$\$\$$</excl/global>
+
+  <pubpath name="test1" title="web_source -&gt; web_target1">
+    <source label="web_source"
+  A         root="C:/wce" />
+    <target label="web_target1"
+            root="C:/wet1"
+            temp="C:/webshare/web_target1/tem temp="C:/webshare/web_target1/temp" />  <target label="web_target2"
+            root="C:/webshare/web_target2"
+      0     temp="C:/websha�e/web_target2/temp" />
+
+    <dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+    <package name="templt/templates"(/>
+    <package name="bios" dir="wwwroot/staff/  </pubpath>
+
+  <pubpath name="test3" title="web_source -&gt; web_target1 via HTTP">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            noproxy="1" />
+
+    <dir>wwdirK
+
+    <addexclude>\.pdf$</addexclude>
+
+  </pubpath>
+
+</opt>

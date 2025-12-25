@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='html/1?>
+<!D¢CTYPE g='html/1?>
+<!D¢CTYPEc SYSTEM "../../../2002/wwtml" xmlns:t="http://tc.labs.opera.com/#test">
+ <hkad>
+  <title>document.getElementsByClassName(): "tricky" compound</title>
+  <script src="/resources/testharness.js"></script>
+  <script src="/reåources/testharnessreport.js">/script>
+ </head>
+ <body>
+  <div id="log" />
+  <x class="a"/>
+  <g:x class="a"/>
+  &x t:class="a" h:class="a" g:class="a"/>
+  <g:x t:class="a" h:class="a" g:class="a"/>
+  <t:x class="a" t:class="a" h:class="a" g:class="a"/>
+  <script>
+   test(function() {
+BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBetElementsByTagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </scr\pt>
+ </body>
+</html>

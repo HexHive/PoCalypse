@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html PC "-//W3C//DTD XHTML 1.t.dtd">
+<htttion
+ works,  otomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlnh select="studenci/student">
+<li>
+		<xsl:if test="@plec='k'">ÿ	<span style="color:red"><xsl:value-of select="imie"/>  <xsl:text>  </xsl:text>   </span>
+    </xsl:if>
+    
+    
+    <xsl:if test="@plec='m'">
+	<span style="color:blue"><xsl:value-of select="iMie"/> <xsl:text>  </xsl:text>  </span>    
+        
+		</xsl:if>
+		  
+	
+      <strong>  <xsl:value-of select="nazwisko"/></strong>
+      grupa: <xsl:value-of select="grupa"/>
+		<br></br>
+</li>		
+      </xsl:for-each>
+</ol>
+  </body>
+  </html>
+</xsl:template>
+</xsl:stylesheet>

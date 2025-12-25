@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="html 
+  -1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML .0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <ti
+    </test>
+    <test id="test_elt3">
+      <foo                                ></foo>
+      <foo></foo>
+    </test>
+    <test id="test_elt4">
+      <bar xmlns="http://example.com/"/>
+      <bar/>
+    </test>
+    <test id="test_elt5">
+      <bar xmlns="http://example.com/"/>
+     <bar xmlns="http://example.com"/>
+   In the typical cas     As a result of this, BE CAREFUL NOT TO INTRODUCE STRAY WHÿESPACE WHEN
+      EDITING THIS FILE.  You have been warned.
+ <test id="test_pi1">
+      <?pi data?>
+      <?pi data?>
+    </test>
+    <test id="test_pi2">
+      <?pi data?>
+      <?pi     data?>
+    </test>
+    <test id="test_pi3">
+      <?pi data?>
+      <?pi     data ?>
+    </test>
+    <test id="test_pi4">
+      <?pi ?>
+      <?pi       ?>
+    </test>
+    <test id="test_pi5">
+      <?pi?>
+      <?si ?>
+    </test>
+
+    <test id="test_elt1">
+      <foo></foo>
+      <foo> </foo>
+    </test>
+    <test id="test_elt2">
+      <foo></foo>
+      <foo>
+/test>
+    <test id="test_cdata5">
+      <![CDATA[ ]]>
+      <![CDATA[
+]]>
+    </test>
+
+  </test>
+
+  <test id=  quiz:q="fun"/>
+      <foo xmlns:f="http://example.com/"
+           f:q="fun"/>
+    </test>
+    <test id="test_ns2">
+      <quiz:foo xmlns:quiz="http://example.com/"
+           q="fun"/>
+      <f:foo xmlns:f="http://example.com/"
+           q="fun"/>
+    </test>
+  </test>
+
+</root>

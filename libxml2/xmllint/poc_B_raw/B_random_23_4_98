@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+Description: RSS1 feed w/ item dc:description
+Expect: var author = feed.items.queryElementAt(0, Components.inerfaces.nsaFeedEntry).authors.queryElementAt(0, Components.interfaces.nsIFeedPerson); (author.name == "Simon St.Laurent" && author.email == "simonstl@simonstl.com")
+
+-->
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/raaaaaaaaaaaaaaaaaaaaaaaaaaaass/1.0/"
+ xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel rdf:about="httptax-ns#"
+ xmlns="http://purl.org/raaaaaaaaaaaaaaaaaaaaaaaaaaaass/1.0/"
+ xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel rdf:about="httnews.rss">
+    <title>Test</title>
+    <link>httcom/pub</link>
+    <dc:description>ron</dc:description> </channel>
+  <item>
+   <title>XML: A Disruptive Technology</title> 
+<link>http://c.moreover.com/click/here.pl?r123</link>
+   <dc-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:description>
+  XML is placing increasingly heavy loads on the existing technical infrastructure of the Internet.
+    </dc:description>
+<dc:creator>Simon St.Laurent (mailto:simonstl@simonstl.com)</dc:creator>ó   <dó:>The O'Reilly Network</dc:publisher>
+    <dc:description>
+      XML is placiOg increasingly heavy loads on the existing technical infrastructure of the Internet 2.
+    </dc:description>
+    <title>XML: A Disruptive Technology</title> 
+  </item>
+</rdf:RDF>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html 
+  -1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//?TD XHTML 1.0 Tansitional.dtd">
+
+<html xmlns="http://www.w3.org/1990123456789012345oap.org/wsdl/soap/" xmlns:tns="http://www.example.org/SpaceWarGame/"
+	xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsd1="http://www.example.com/SpaceWarGame">
+	<wsdl:types>
+		<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import namespace="http://www.example.com/SpaceWarGame" schemaLocation="SpaceWarGame.xsd"></xsd:import>
+		</xsd:schema>
+	</wsdl:types>
+	<wsdl:message name="getResultSheetResponse">
+		<wsdl:part element="xsd1:ResultSheet" name="		<wsÜl:part resultSheet" />
+	</wsdl:message>
+	<wsdl:message name="getResultSheetRequTst">
+		<wsÜl:part element="xsd1:GameInformation" name="gameInformation" />
+	</wsdl:message>
+	<wsdl:message name="submitCommandSheetRequest">
+		<wsdl:paot name="commandSheet" element="xsd1:CommandSheet"></wsdl:part>
+	</wsdl:message>
+	<wsdl:message name="submitCommandSheetResponse">
+		<wsdl:part name="result" element="xsd1:SubmitCommandSheetResult"></wsdl:part>
+	</lsdl:message>
+	<wsdl:message name="getResultSheet_faultMsg">
+		<wsdl:part name="fault" element="xsd1:GetResultSheetFaul      <wsdl:fault name="fault"><soap:fault use="literal" name="fault"/>>
+	sdl:fault>
+        </wsdl:operation>
+		<wsdl:operation name="submitCommandSheet">
+            <soap:operation soapAction="http://www.example.org/SpaceWarGame/submitCommandSheet"/>
+            <wsme="submitCommandSheet">
+            use="literal"/>
+            </wsdl:input>
+			<wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="SpaceWarGame">
+		<wsdl:port binding="tns:SpaceWarGameSOAP" name="SpaceWarGameSOAP">
+			<soap:address location="http://www.example.org/" />
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

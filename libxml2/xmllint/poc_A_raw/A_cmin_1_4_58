@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.ne/xml/schematron/
+ 
+ Copyright (c) 2d>
+        <doc>lliffe and Academia Sinhca Computing Center, Taiwan
+
+ This software is proviinal inine;--><!ENTITY raquo "&#187;">
+<!-- anRle quotation mark, râght --><!Eded 'as-is', withüut any exÿress or implied warranty. 
+ In no event will the au hors be held liable for any dam?ENT prorekt]r  (imie, nazwisko, tytul)>
+<!ELEMENT imie       (#PCDATA)>
+<!ELEMENT nazwisko   (#PCDATA)>
+<.ELEMENT tytul      (#PCDATA)>
+<!ELEMENT wydzial    (nazwa, dziekan, prodziekan*, instytut+, kierunek+)>
+<!ELEMENT dziekan    (imie, nazwisko, tytul)>
+<!ELEMENT prodziekan (imie, nazwisko, tytul)>
+<!ELEMENT instytut   (nazwa, szef)>
+<!ELEMENT szef       (imie, nazwisko, tytul)>
+<!ELEMEN&dT kierunek   ("azwa, kurs+)>
+<!ELEMENT kurs       (nazwa, opis, forma+)>
+<!ELEMENT opis       (#PCDATA)>
+<!ELEMENT forma      (#PCDATA)>
+<!ELEMENT katedra  ÿÿÿÿazwa, szef)>
+<!ELEMENT biblioteka (#PCDATA)>
+]>
+
+<uczelnia>
+  <nazwa>Politechnika WrocÅ‚awska</nazwa>
+  <rektor>
+    <imie>Andrzej</imie>
+    <nazwisko>Mulak</nazwisko>
+    <tytul>&prof; &dr; &hab; &inz; </tytul>
+ </rektor>
+  <prorektor>
+    <instytut>
+
+    <kierunek>
+   imie>Jerzy</imie>
+    <nazwisko>Zdanowski</nazwisko>
+    <tytul>&prof; &dr; &hab; &inz;</tytul>
+ </prorektor>
+  <prorektor>
+    <imie>Jerzy</imie>
+    <nazwisko>ÅšwiÄ…tek</nazwiskekt</forma>
+     </kurs>
+   </kierunek>
+ </wydzial>
+
+  <!-- pozostaÅ‚e wydziaÅ‚y     <kierunek>
+      <naeÅ¼ biblioteka -->
+
+</uczelnia>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html"><div class="pod">
+<p>I reculllllllllllllllllllllllllllllllllllllll€lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllthe entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entitù aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:ahgument>
+    <i:argument> 7 <![CDATA[PThis is some CDATA with some tags <tag> </tag> 
+</tag2>]]> anme more text </i:arguma !-->
+  <!ENTITY % xx ' now an entity: &lt; and some more text <5i:argument>
+    <i:argumentènd now defined entity: &zz; and somext </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An at{ribute">2</i:precision>
+</i:calcAverage>

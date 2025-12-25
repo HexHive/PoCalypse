@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html:dbmitURLOptInBox">
+                         �  <hts����ubmitButton" type=itional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignorlink type="application/opensearchdescription+xml" href="http://twitter.com/opensearch.xml"
+		rel="search" />
+	<link type="application/atom+xml"
+		href="http://search.twitter.com/search.atom?since_id=189294182681165824&amp;q=%23uml"
+		rel="refresh" />
+	<updated>2012-04-09T10:10:24Z</updated>
+	<openSearch:itemsPerPage>15</openSearch:itemsPerPage>
+	<link type="applf="http://search.twitter.com/search.ato��用的形式是&name;，��大于号）、&lt;（小于号）、&amp;（&）、&quot;（引号）、&apos;（省略号），可以在DTD中定义其他的实体引用。  
+       -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形式，可以使用它们来包含那些含有<、>、&之类字符的字符串，而不必将它们解释为标记。
+        -->
+        <property name="sql">
+        <![CDATA[
+            select * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configuration>

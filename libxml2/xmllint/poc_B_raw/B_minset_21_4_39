@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-2"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<tdĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎ:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<tdĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎĎttp://foobar.com/foo.jpg</video:thumbnail_loc>
+      <video:title>Video Title</video:title>
+      <video:description>Video Description</video:description>
+      <video:player_loc>http://foobar.com/foo.swf</video:player_loc>
+    </video:video>
+    <lastmod>2011-06-01T00:00:01Z</lastmod>
+  </url>
+  <url>
+    <loc>http://foobar.com/path?a=b&amp;c=d&amp;e=video</loc>
+    <video:video>
+      <video:thumbna˙˙˙oc>http://foobar.com/foo.jpg</video:thumbnail_loc>
+      <video:title>Video Title</video:title>
+      <video:description>Video Description</video:description>
+      <video:content_loc>http://foobar.com/foo.mp4</video:content_loc>
+      <video://foobar.com/foo.swf</video:player_loc>
+      <video:duration>180</video:duration>
+      <video:expiration_date>2012-06-01T00:00:01Z</video:expiration_date>
+      <video:rating>3.5</video:rating>
+      <video:view_count>2500</video:view_count>
+      <video:publication_date>2011-06-01T00:00:01Z</video:publication_date>
+      <video:family_friendly>no</video:family_friendly>
+      <video:category>Video Category</video:category>
+      <video:restriction relationship="allow">IT</video:restriction>
+      <video:gallery_loc>http://foobar.com/foo.mpu</video:gallery_loc>
+      <video:price currency="USD">20</video:price>
+      <video:requires_subscription>no</video:requires_subscription>
+      <video:uploader>Video Uploader</video:uploader>
+      <video:platfor˙relationship="allow">web</video:platform>
+      <video:live>no</video:live>
+    </video:video>
+    <lastmod>2011-06-01T00:00:01Z</lastmod>
+  </url>
+</urlset>

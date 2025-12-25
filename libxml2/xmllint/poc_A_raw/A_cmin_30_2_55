@@ -1,0 +1,29 @@
+п»ї<?xml version="1.0" encoding="html#server">Server&sidI<+a></li>
+		<leЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉ‰ЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉ}ЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉЉђ«дє†з”ЁдєЋи§Јй‡Љж–‡жЎЈжЇе¦‚дЅ•жћ„ж€ђзљ„и§„е€™пј«иї™дє›и§„е€™и§„иЊѓдє†жЇЏд №е…ѓзґ еЊ…ж‹¬е…¶д»–дёЂдє›е…ѓзґ пј€elementпј‰гЂ‚ -->
+<hibernate-configuration>
+    <sessi     <property name="connection.username">root</property>
+        <property name="connection.password">woailo99</property>
+        
+        <!-- е…¶д»–ди®°зљ„иЇґжЋ -->
+        <!-- 1пјЊе­—з¬¦еј•з”Ё зљ„еЅўејЏжЇ&#еЌЃиї›е€¶еЂјж€–иЂ…&#xеЌЃе…­иї›е€¶еЂј -->
+        <property name="character reference">&#233;</property>
+        <property name="character reference">&#xD9;</properЃy>
+        
+        <!-- 
+   )    2пјЊе®ћдЅ“еј•з”Ёзљ„еЅўејЏжЇ&name;пјЊжЇ”е¦‚пјљ
+        &gt;пј€е¤§дєЋеЏ·пј‰гЂЃ&lt;пј€е°ЏдѕЋеЏ·пј‰гЂЃ&amp;пј€&пј‰гЂЃ&quot;пј€еј•еЏ·пј‰гЂЃ&apos;пј€зњЃз•ҐеЏ·пј‰пјЊеЏЇд»ҐењЁDTDдё­е®љд№‰е…¶д»–зљ„е®ћдЅ“еј•з”ЁгЂ‚  
+   d    -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3пјЊCDATAйmЁе€† 
+                     з”Ё<![CDATA[е’Њ]]>жќй™ђе®ље…¶з•Њй™ђпјЊе®ѓд»¬жЇе­—з¬¦ж•°жЌ®›„дёЂз§Ќз‰№ж®ЉеЅўејЏпјЊеЏЇд»ҐдЅїз”Ёе®ѓд»¬жќҐеЊ…еђ«й‚Јдє›еђ«жњ‰<гЂЃ>гЂЃ&д№‹з±»е­—з¬¦зљ„е­—з¬¦дёІпјЊиЂЊдёЌе§…е°†е®ѓд»¬и§Јй‡Љдёєж ‡и®°гЂ‚
+        -->
+        <property name="sql">
+    я  <![CDATA[
+            select * from table where age > 10;
+        ]]>
+7       </propertyя
+    </session-factory>
+</hibernate-configuration

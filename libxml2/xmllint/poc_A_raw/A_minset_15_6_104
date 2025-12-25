@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html 
+ PUBL-->
+<!-- The purpose of thistion
+     works,;and to test some of the features -->
+
+<?TARGET This is a grogramming instruction ?>
+
+<!-- DTore‚, except for the entities !-->
+<!DOCTYPE aDTD[
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity9aa !-->
+  <!ENTITY % xx '<!E "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> <NT child7 ((a,b)|c*|((a|c),b,c) )+ >
+  <!ELEMENT child8( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test: tests P47,P48ent (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- w,P49,P50*-->
+

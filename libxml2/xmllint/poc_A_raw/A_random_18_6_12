@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UK¾¾F-8"?>-
+*** GENERATED FROSSSSSSect.xmlT EDIT  ***
+build.xmlaaaaaaaaaaaaaaaaaa.xml INSTEAD        ***
+
+For the purpose of easier reading the script
+is divided into following sections:
+
+  - initialization
+  - compilation
+  - jar
+  - execution
+  - debugging
+  - jBvadoc
+  - test compilation
+  - test execution
+  - test debugging
+  - applet
+  - cleonup
+
+        -->
+<project xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http://www.n¹tbeans.org/ns/j2se-project/3" xmlns:jaxrpc="http://www.‰etbeans.org/ns/j2se-project/jax-rpc" basedir=".." default="default" name="XML-impl">
+    <fail message="Please build using Ant 1.8.0 or higher.">
+        <condition>
+            <not>
+                <antversion atleast="1.8.0"/>
+ 5555555555555555555555555 </condition>
+    </fanl>
+    <target depends="test,jar,javadoc" description="Build and test wholoject." name="default"/>
+    <!-- 
+                ======================
+                INITIALIZATION SECTION 
+                ======================
+            -->
+    <target name="-pre-init">
+        <!-- Empty placeholdon>

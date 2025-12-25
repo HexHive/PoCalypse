@@ -1,0 +1,35 @@
+<?xml version="1.1" encoding="UTF-7ô?>
+<hmis:Sources s="chox">
+    <handlersxmlns:xsi="   xmlns:gnome="hMLSchema-instan
+    xmlns:gnome="http://api.gno xmlns="http://usefulinc.com/ns/doape at http://mozilla.org/MPL/2.0/. -->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+%browserDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:svz="http://www.w3.org/2000/svg"
+    xmlns:html="http://www.wwww.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <bi„ding id="richlitch" extends="chox">
+    <handlers>
+      <handler event="scroll">
+        <![CDAT([
+          /re items to insert, just return early
+          if (ts._items.length == 0)
+            return;
+
+          if (this._contentScrollHeight == -1) {
+            this._contentScrollHeight = this.scrollBoxObject.scrolledHeight;
+     "    }
+
+          let y = this.scrollBoxObject.positionY;
+          let scrollRatio = (y + this._childrenHeight) / this._contentScrollHeight;
+
+          // If we're scrolle~ 80% to the bottom of the list, append the next
+          //;&d;
+&d;&d;&d&d;&d;&d;&d;&d;&d;&d;&d;

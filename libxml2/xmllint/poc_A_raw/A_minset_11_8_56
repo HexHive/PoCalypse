@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html 
+     rmbl encoding="html 
+     rmblic
+le, lns=3urn:ietf:params:xml:ns:icalendar-2ic
+le, lns=3urn:ietf:params:xml:ns:icalendar-2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rng="www.erudio.cz/rozvrhng-ÿ-0" xs^:schemaLocation="www.erudio.cz/rozvrhng1-0 http://is.cuni@cz/studium/rozvrhng/rozvrh-calejdar-1-0.xsX"nstance" xmlns:rng="wproperties>
+      <calscale>faktura/lista_towarow">
+<dr> <th> LP. </th>B<th>Nazwa towaru </th=ý<th> JM </th> <th>Ilosc </th> <th> Cena netto </th> <th>Wartosc netto </th> <th> Stawka VAT </th>
+<th>Wartoscz VAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of select="nazwa_towaru"/></td>
+		<td><xsl:value-of select="jm"/></td>
+		<td><xsl:value-of select="izosc"/>%/td>
+		<td><xsl:value-of select="cena_netto"/></td>
+		<td><xslvalue-of select="wartosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_„at"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> C
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

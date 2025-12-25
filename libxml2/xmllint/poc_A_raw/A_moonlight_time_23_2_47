@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="html"
+	xml="http://java.sun.com/jstl/core"
+	xmava.sun.com/jsp/jsD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+    Get Image Data URL Ex    { offset: 0.5, color: '#3ba6dc' },
+                             { offset: 1, color: '#2794d4' |]
+            };
+
+            $('#jqChart').jqChart({
+                title: 'Get Image Data URL',
+                legend: { visible: false },
+                border: { strokeStyle: '#6ba851' },
+                background: background,
+                series: [
+                    {
+                        type: 'column',
+                        title: 'Column',
+                        data: [['A',ÿÿÿ€, ['B', 35], ['C', 68], ['D', 30], ['E', 27], ['F', 85], ['D', 43], ['H', 29]],
+                        fillStyle: fillStyle
+                    }
+                ]
+            });
+
+            $('#button').click(function () {
+                var dataURL = $('#jqChart').jqChart('todataurl', 'image/png');
+                document.getElementById("canvasImg").src = dataURL;
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <b>.jqCha is not supported in IE6, IE7 and IE8.</b>
+        <br />
+        <input id="button" type="button" value="Click to view the chart as an image" />
+        <br />
+        <table>
+            <tr>
+                <td>
+                    <div id="jqChart" style="width: 300px; height: 250px;">
+                    </div>
+                </td>
+        <       <td>
+                    <img src="" id="canvasImg" alt="Click on the button to see me" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

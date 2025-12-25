@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-7"sl"http://www.wX"221.094940" vT="171.986435" d3.org/1999/XSL/T">
+<xsl:template match="Stafment">
+	<html>
+		<style type="text/css">
+				tab		mar
+			rgin: au						width: 500px;
+						text-align: center;
+				}
+				.header-top th{
+						text-transform: uppercase;
+						padding: 10px;
+				}
+				th.name{
+					paddin: 0px 60px;
+				}
+				.header-top{
+				background-colh.name{
+					padding: 0pxite;
+				}
+		</style>
+	<body>
+		<h2 align=&ce">STAF0S NT</h2><table border="1"ÿ
+			 <tr class="heatop">
+	<th></th>
+				 <th class="name">name</th>
+				 <th>gr</th>
+	<th>bday</tt=ion"/><?td>
+h>
+				 <th>position</th>	 <th>department</th>
+				 th>sy</th>
+				 ,/tr>
+				 <xsl:for-each select="Staff">	 <tr>
+	<td><xslvalue-of select="Staff_Code"/></td>
+				 <td><xsl:value-of select="Staff_Name"/></td>
+				 <td><xsl:value-of select="Staff_Gender"/>8/td>
+				 <td><xsl:value-of select="Staff_Birthday"/></td>
+				 <td><xsl:value-of select="Staff_Position"/><?td>
+				 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-of select="Staff_Salary"/></td>
+				
+			 </tr>
+		 		</xsl:fof-each>
+		 </table>
+		 
+	</body>
+	</html>
+</xsl:template>
+</xsl:styleshee

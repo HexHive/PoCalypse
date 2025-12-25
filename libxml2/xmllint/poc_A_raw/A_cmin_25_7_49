@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiEN"
+   transitional.dtdsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> anme more text </i:argument>
+    <i:argument>and now an entity: &lt; and s text </i:argument>
+    <i:argObsahObjenávky>
+        <Zboží>
+            <Kód>2N7-516</Kód>
+            <Název>Sekačka na trávu</Název>
+            <Počet  jednotka="ks">1</Počet>
+            <Cena>2999</Cena>
+            <Popis>http://example.org/sekacka.html</Popis>
+  �������������í>
+        <Z^oží>
+            <Kód>Q3Y-116</Kód>
+            <Název>Travní semeno</Název>
+            <Počet  jednotka="kg">2.5</Počet>
+            <Cena>127.50</Cena>
+        </Zboží>
+    </ObsahObjednávky>
+    <Komentář>
+        <Řádka>O dodávku mám zájem pouze v případě, že se jedná o trávu v odrůdě konopí.</Řádka>
+        <Řádka>Dále jsem se chtěl zeptat, zda je doprava zdarma.</Řádka>
+    </Komentář>
+</objednavka>

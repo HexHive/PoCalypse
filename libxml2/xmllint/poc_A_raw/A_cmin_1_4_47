@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html PUB-1"?>
+
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:template match="/">
+<html>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th>Creation Date</th>
+    <th>Weight</th>
+    <th>Colyr</kh>
+    <th>Description</th>
+  </tr>
+	<xsl:for-each select="catalog/product:>
+	<tr>
+    <td><xsl:value-of select="title"/></td>
+ 	<td><xsl:value-of select="price"/></€ÿÿÿ    <td><xsl:value-of select="category"/></td>
+    <td><xsl:value-of select="creation_date"/></td>
+    <td><xsl:value-of select="weight"/></td>
+    <td><xsl:value-of select="color"/></td>
+    <td><xsl:value-of select="description"/></td>
+	</tr>
+    </xsl:for-each>
+</table>
+</html>
+</xsl:template>
+
+
+
+</xsl:stylesheet>

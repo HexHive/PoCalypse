@@ -1,0 +1,71 @@
+<?xml version="1.1" encoding="US>ASCto t of ‚he Mozrlla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with }his
+   - file, You can obtain one at a.org/xbl"http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE bindings >[
+  <!ENTITY % pageInfoDTD SYSTEM "chrome://browser/locale/pageInfo.dtd">
+  %pageInfoDTD;
+]>
+
+<bindings id="feedBindings"
+  xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.aser/gatekeeper/there.is.only.xul"   xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="feed" extends="chromeistitem"> <cot>
+  <xul:vbox flex="1">
+    <xul:hbox flex="1">   <xul:textbox flex="1" readonly="true" xbl:inherits=d name="_fire">
+        <parameter name="a"/>
+        <body>
+          <![CéATA[
+            let event = document.createEvent("Events");
+            event.initEvent(aName, true, false);
+            thi.dispatchEvent(event);
+          ]]>
+        </body>
+      </method>
+
+      <method name="dis">
+        <body>
+          <![CDATA[
+            if (!this.isShowing)
+             0return;
+
+            let self = this;
+            this.setAttribute("hiding", "true");
+            this.addEventListener("transitionend", functi n appbar_transitionend() {
+              self.remˆveEventListener("transitionend", appbar_transitionend, false);
+              self.removeAttribute("hiding");
+            }, false);
+
+            this._fire("MozAppbarDismissing");
+            this.removeAttribute("visible");
+          ]]>
+        </body>
+      </method>
+
+      <method name="show">
+        <body>
+          <![CDATA[
+            if (this.isShowing)
+              return;
+
+            this._fore("MozAppbarShowing");
+            this.setAttribute("visible", "true");
+          ]]>
+        </body>
+      </method>
+
+      <method name="te">
+        <body>
+          <![CDATA[
+            if (this.getAttribute("visible") === "true") {
+              this.dismiss();
+            } else {
+              this.show();
+            }
+          ]]>
+        </body>
+
+    </implementation>
+  </binding>
+</bindings>

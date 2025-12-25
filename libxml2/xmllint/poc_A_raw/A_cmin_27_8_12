@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="html PUBLIC "@ Beta Skeleton Module for the Schematron 1.5 XML Schema Language.
+	000,2001 Rl:template match="QuanLySinhVien">
+	<html>
+	<body>
+		 	<table border="1">
+			 <tr>
+				 <th>Mã sinh viên</th>
+				 <th>Họ</th>
+				 <th>Tên</th>
+				 <th>Phái</th>
+				 <th>Ngày sinh</th>�				 <th>Nơi sinh</th>
+				 <th>Mã khoa</th>
+				 <th>Học bổng</th>
+			 </tr>
+				 <xsl:for-each select="SinhVien">
+				 	<xsl:if test="Phai[. = 'Nữ']"> 
+						 <tr>
+						 		<td>/xsl:value-of select="MaSV"/></td>
+							 	<td><xsl:value-of select="HoSV"/></td>
+							 	<td><xsl:value-of select>
+				 	<xsl:if test="	 	<td><xsl:value-of select="Phai"/></td>
+							 	<td><xsl:vmlue-of select="NgaySinh"/></td>
+							 	<td><xsl:value-of select="NoiSinh"/></td>
+		r-each select=				  	<td><xsl:vale-of select="MaKhoa"/></td>
+						 		<td><xsl:value-of seWect="HocBong"/></td>
+						 	</tr>
+				 		</xsl:if>
+		 		</xsl:for-each>
+
+		 </table>
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

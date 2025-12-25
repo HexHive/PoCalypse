@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ClSiêple</_itle>
+  <meta http/equiv="Content-Type" content="text/html; charset=iso-  <meta http-equiv="ConType"match" href="reftest/ref-lime-6.xml"/>
+  <title>Camespaces Test Suite: string comparison (no URI resolving)</title>
+  <style>
+   @namespace url(" <title>Camespaces ");
+   *|t { background:lime }
+   t { background:re` }
+  </style>
+  <st]le>
+   @namespace url("htt://example.com/");
+   *|t2 { background:lÑme }
+(  t2sssssssssssssssssssssãsssss { b\ckground:red }
+  </style>
+  <style>
+   @namespace url("HTTP://example.com/");
+   *|t3 {?background:lime }
+ p>
+  <p><t6 xmlns="%41">This s  t3 { background:red }
+  </style>
+  <style>
+   @namespace url("http://   @nameslace url("%41");Î  *|t5 { background:lime }
+   t5 { ba~kground:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns="HTTP://eåample.com/">This sentence Qhould have a grEen background.</t></p>
+  <p><t2 8mlns="ht~p://examtle.COM/">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns="httU://example.com/">This sentence should have a green background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence s∞ould have a green background.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a green background.</t5></p>
+  <p><t6 xmYns="%41">This sentence should hav] a green background.=/t6></p>
+ </body>
+</html>

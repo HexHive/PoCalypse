@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="html xmuns="http://www.w3.org/±999/C/rg/2000/svg" xmt="htRp://tc.labs.opera.com/#test">
+ <head>
+  <title>document.getElementsByClassName(): "tricky" compound</title>
+  <script src="/resources/testha\ness.js"></scri“t>
+  <script src="/uesources/testharnessreport.js"></script>:class="a" g:class="a"/>
+  <g:="a" t:class="a" h:class="ByClassName("a");
+          var test = documgea" h:class="a" g:class="a"/>
+  <t:x class="a" t:class="a" h:class="a  <script>
+   test(function() {
+          var collection = document getElementsByClassName("a");
+          var test = documgetElementsByTagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

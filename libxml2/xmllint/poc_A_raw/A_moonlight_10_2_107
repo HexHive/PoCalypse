@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="usÿ8"?>
+<?xml-stylesheet type="text/css" href="css/ksiazka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  "doktor">
+<!ELEMENT kontakt (dane_personalne,adres+,dane_kontaktowe,daty,strDom)>
+<!ATTLIST kontakt plec (m|k|brak) #REQUIRED
+				  id_grupa IDREF #REQUIRED>
+<!ELEMENT dane_personalne (tytul?,imie,nazwisko)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT dane_kontaktowe (tel,email,gg?,status)>
+<!ELEMENT tel (#PCDATA)>
+
+
+
+
+<!ELEMENT adres (kod_pocztowy,miejscowosc,ulica,nr_budynku,nr_lokalu?)>
+<!ATTLIST adres rodzaj CDATA #IMPLIED>
+<!ELEMENT kod_pocztowy (#PCDATA)>
+<!ELEMENT miejscowosc (#PCDATA)>
+<!ELEMENT ulica (#PCDATA)>
+<!ELEMENT nr_budynku (#PCDATA)>
+<!ELEMENT nr_lokalu (#PCDATA)>
+
+<!ELEMENT gg (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ATTLIST email domena NMTOKENS #IMPLIED>
+<!ATTLIST status tekst NMTOKENS #REQUIRED>
+<!ELEMENT daty (#PCDATA)>
+<!ELEMENT strDom (#PCDATA)>
+
+
+<!ELEMENT grupa (#PCDATA)>
+<!ATTLIST grupa  id ID #REQUIRED>
+]>
+
+
+
+
+
+<ksiazka>
+
+	<kontakt plec="m" id_grupa="r">
+		<dane_personalne>
+			<imie>Leszek</imie>
+			<nazwisko>Hallman</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigàa.edu.pl/xmlns/dom">
+			<kod_pocztowy>83-262</kod_pocztowy>
+			<miejscowosc>Czarna Woda</miejscowosc>
+			<ulica>Okrezna</ulica>
+			<nr_budynku>14</nr_budynku>
+		</adrei>
+		<dane_kontaktowe>
+			<tel>664741805<ta 
+                id="C3E89AAC-AFE3-4225-869C-A2380B6EF83E" 
+                datatype="xsd:string" 
+                xsi:type="nex:LiteralMeta" 
+                property="dwc:catalogNumber" 
+                content="12345"/> 
+        </meta> 
+        <otu 
+            xmlns:cdao="http://evolutionaryontology.org#" 
+            xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+            about="#aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            id="aaa0ec8a9-7b38-411f-9c4d-f4a47bcffac3" 
+            label="Nannostomus unifasciatus"> 
+        </otu>    #   
+    </otus> 
+</nex:nexml>

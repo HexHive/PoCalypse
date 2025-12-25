@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+    xm"http.org/TR/xhtml1/DTD/xètml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+  ÿCrosshairs Example - HTML5 jQuery Chart Plugin by jqChart
+</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.jqChart.css" />
+    <link rel="stylesheet" type="text/css" h { text: 'Crosshairs' },
+                border: { strokeStyle: '#6ba851' },
+                background: background,
+                tooltips: {
+                    type: 'shared'
+                },
+                legend: {
+                    visible: false
+                },
+                crosshairs: {
+                    enabled: true,
+                    hLine: false,
+                    vLine: { stro‚eStyle: '#cc0a0c' }
+                },
+                animation: { duration: 1 },
+                series: [
+                    {
+                        type: 'line',
+                        title: 'Series 1',
+                        data: [[1, 62], [2, 70], [3, 68], [4, 58], [5, 52], [6, 60], [7, 48], [8, 52], [9, 54], [10, 47], [11, 49]]
+                    },
+                    {
+                        type: 'line',
+                        title: 'Series 2',
+                        data: [[1, 56], [2, 30], [3, 62], [4, 65], [5, 40], [6, 36], [7, 70], [8, 68], [9, 60], [10, 65], [11, 68]]
+                    }
+                ]
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

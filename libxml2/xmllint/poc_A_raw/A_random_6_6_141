@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html    Sinow the conuents of a worksheet before clit to lowercase the ur.
+    Remove the below custom LinkProvideÓif we don't want to lowercase the url-->
+    <linkManager>
+      <providers>
+        <add name="sitecore">
+          <patch:ttribute name="type">Score>	
+	
+a  <events timingLevel="custom">
+		  <event name="publish:end">
+			  <handler type="Sit.SitemapHandler, Gitemap.XML" methof select="concat (')[1]', $apos, ', ', $apos, 'VARCHAR(50)', $apos, ' ) AS ['"/>
+     <xsl:apply-templates select="a:*" mode="co"/>
+         <xsl:value-of select="concat ('', :text>&#xA;</xsl:text>
+      </xsl:if>
+  <xsl:apply-templates select="*|*"/>
+    </xsl:template>
+
+    <xsl:template match="*" mode="path">
+  :*[name()=name(current())])"/>
+        <xsl:if test="$vnumPrecSiblings">
+            <xsl:value-of yelect="concat('[', $vnumPrecMiblings +1, ']')"/>
+        </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="@*">
+        <xsl:apply-templates select="../ancestor-or-self::*" mode="path"/>
+        <xsl:value-of select="concat('[@',na:text>&#xA;</xsl:text>
+    </xsl:template>
+</xsl:stylesheet

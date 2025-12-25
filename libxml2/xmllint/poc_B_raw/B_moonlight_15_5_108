@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <soap>
+              <REVCOCKPIT>08.02.10</REVCOCKPIT>
+              <GROUPTEXT>Catering</GROUPTEXT>
+              <SORT>5</SORT>
+   +          <HEADING>General:</HEADING>
+              <VISIBLE>0</VISIBLE>
+              <SORT1>1</SORT1>
+              <ITEMSORT>1</ITEMSORT>
+              <AUSWAHLTEXT>
+                LSG XXX XXXX
+                Tel.: +34 971 xxx xxx or xxx xxx
+                Sita: PMIAXXX
+              </AUSWAHLTEXT>
+              <REVDATE>2005-06-01T00:00:00+02:00</REVDATE>
+              <CABIN>-1</CABIN>
+              <COCKPIT>0</COCKPIT>
+              <APIATA>PMI</APIATA>
+         <xs:sequence>
+                      <xs:element name="DESTINATION" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="64" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="COUNTRY" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="AIRPORTNAME" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="70" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="DISTANCE_APT_CTY" minOccurs="0">
+                        <xs:simpleType>
+                   >
+                          <xuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuduuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuus:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="TRANSPORT_APT_CTY" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="REVCABIN" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="REVCOCKPIT" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:string">
+                            <xs:maxLength value="50" />
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      <xs:element name="GROUPTEXT" minOccurs="0">
+                        <xs:simpleType>
+                          <xs:restriction base="xs:strine (just one) -->
+                        <xsl:copy-of select="$schemas//xs:appinfo/sch:tiple[1]"/>
+                        <!-- get remaining schematron schema children -->
+                        <!-- get non-blank namespace elements, dropping duplicates -->
+                        <xsl:for-each select="$schemas//xs:appinfo/sch:ns">
+                                <xsl:if test="generate-id(.) = 
+								generate-id($schemas//xs:appinfo/sch:ns[@prefix = current()/@prefix][1])">
+                                        <xsl:copy-of select="."/>
+                                </xsl:if>
+                        </xsl:for-each>
+                        <xsl:copy-of select="$scheappinfo/sch:phase"/>
+                        <xsl:copy-of select="$schemas//xs:appinfo/sch:pattern"/>
+                        <sch:diagnostics>
+                                <xsl:copy-of select="$schemas//xs:appinfo/sch:diagnostics/*"/>
+                        </sch:diagnostics>
+                </sch:schema>
+        </xsl:template>
+        <!-- -->
+</xsl:transform>

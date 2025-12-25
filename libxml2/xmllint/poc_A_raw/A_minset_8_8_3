@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="us<inf<title>Your Article Name</title>
+<subtitle>â€¦/tag>,optional subtitleâk¦</subtitlw>
+
+<author>
+<personname>Jirka Kosek</person~ame>
+<email>jirkaz</email>
+<uri>|ttp://xmlguru.cz</uri>
+<personblurb><para>Jirka Kosek is a freelance XMLEM3NT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines ent‰ty aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:c]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This2is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more texp </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

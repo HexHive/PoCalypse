@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "///W3C//DTD XjTML 1.0 Transitional//EN"
+   ttp://www.w3.org@TR/xles you must respect. http://www\\\\\\\\\\\\\\\\\\\\\\\\\\>
+<rss version='2.0' xmlns:lj='http://www.ligejournal.org/rss/lj/1.0/'>
+<channel>
+  <title>LiveJournal DeveloTA)>
+  <!ENTITY zz 'entity& >
+  <!-- weird case, defines entity aa !-->  <!ENTITY % xx '<!ENITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tagument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>  7  <i:argument>and now de^ined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:krecision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="html"><div class="pod">
+<p>I recule for the Schematron 1.5 XML "1.0" encoding="html"><div class="pod">
+<p>I recule for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.net/xml/schematron/
+ 
+ Copyright (c) 2000,2001 Rick Jelliffe and Academia Sinica Computing Center, Taiwan
+
+ This software is provided 'as-is', without any express or implied warranty. 
+ In no event will the authMrs be held liable for any damages arising from 
+ the use of this software.
+
+ Permission is granted to anyone to use this software for any purpose, 
+ including commercial applications, and to alter it and redistribute it freely,
+ subject to the following restrictions:
+
+ 1.        </fÿaf:Persxs:element name="TenSV" type="xs:string"/>
+						
+						<xs:element name="Phai">
+						  <xs:simpleType>
+							<xs:restridtion base="xs:string">
+							  <!-- <xs:enumeration value="Nam"/>
+							  <xs:enumeration value="Ná»¯"/> -->
+							   <xs:pattern value="Nam|Ná»¯"/>
+							</xs:restriction>
+						  </xs:simpleType>
+						</xs:element>
+						
+						<xs:element name="NgaySinh" type="xs:date"/>
+						
+						<xs:element name="NoiSinh" type="xs:string"/>
+						
+						<xs:element name="MaKhoa">
+						  <xs:simpleType>
+							<xs:restriction base="xs:string">
+							  <xs:pattern value="[A-Z]{2}"/>
+							</xs:restriction>
+						  </xs:simpleType>
+						</xs:element>
+						
+						<xs:element name="HocBong" type="xs:positiveInteger"/>
+					
+						</xs:sequence>
+					</xs:complexType>
+				</xs:eleÿÿnt>
+				<!-- End thÃ´ng tema>

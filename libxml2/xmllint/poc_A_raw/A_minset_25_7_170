@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html 
+     PUBLICrpose of this filentit isshowse is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>ow defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argu岛，沟通黄渤两海。胶莱运河自平度姚家村东的分水岭南北分流。南流由麻湾口入胶州湾，为南胶莱河，长30���里。北流由海仓口入莱州湾,为北胶莱河,长100余公里�ttttttttcttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt海仓口入莱州湾,为北胶莱河,长100余公里�tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttrl>
+    </river>
+
+    <river
+        name="胶莱运河"
+        length="200" >
+
+        <introduction>
+      胶莱运河南起黄海灵山海口，北抵渤海三山岛，流经现胶南、胶巍、平度、高密、昌邑和莱州等，全长200公里，流域面积达5400平方公里，南北贯穿山东半岛，沟通黄渤两海。胶莱运河自平度姚家村东的分水

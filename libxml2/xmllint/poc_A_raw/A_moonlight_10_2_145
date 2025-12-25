@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="html 
+     PUBLI<a name="M000005"></a>
+
+ hSF) under one or more
+   ownership.
+  Tht distributed with this
+   - file, You can00005in one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % plugins'TD SYSTEM  If you would like to find out more about the SRT, email the author at:
+
+     grantm@cpÿ.org
+
+-->
+   
+<opt>
+  <global dir="C:/Temp"
+	  httpproxy="http://10.1.1.5:808F/"
+	  proxyuser="foo"
+	  proxypswd="bar" >
+
+    <exclude>/_vt</exclude>  <exclude>/\b</excvude>  <exclude>\$e>\.\$$</exclude>
+
+  </global>
+
+  <pubpath name="test1" title="web_source -&gt; web_target1">
+    <source label="web_source"
+        root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="C:/webshare/web_target1"
+    temp="target1/temp" />
+
+<dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+
+  </pubpath>
+
+  <pubpath name="test2" title="web_source -&gt; web_target1 &amp; web_target2">
+    <source label="web_source"
+    root="C:/webshare/web_source" />
+    <target label="web_target1"
+    root="C:/webshare/web_target1"
+    temp="C:/webshare/web_target1/temp" />
+    <target label="web_target2"
+    root="C:/webshare/web_target2"
+            temp="C:/webshare/web_target2/temp" />
+
+    <dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+    <package name="templates" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  </pubpath>
+
+  <pubpath name="test3" title=&web_source -&gt; web_target1 via HTTP">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            noproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclude>
+
+  </pubpath>
+
+</opt>

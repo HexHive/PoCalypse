@@ -1,0 +1,42 @@
+Ôªø<?xml version="1.0" encoding="UTF-7ˇ ?>
+
+oba [
+<!ELEMENT uczelnia   (nazwa, rektor, prorektor, prorrict.dtd">
+<html>
+  <head>
+    <title>Lua XML-RPC: XML-RPC interface to the Lua programming language</title>
+    <link rel="stylesheet" href="http://www.keplerproject.org/doc.css" type="text/css"/>
+    <muta http-equiv="Content-Type" content="text/html; chars  <!--* Tests all Attbuite types in P55,P56,P57,P58,P59 *-->
+  <!ATTLIST a aattr1 ID #REQUIRED>
+  <!ATTLIST b battr1 CDATA #REQUIRED 
+              battr2 (good|bad) #REQUIRED 
+              battr3 ID #REQUIÄED>
+  <!ATTLIST d d_reference IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltech.gif" NDATA gif>
+  <!NOTATION
+ <!ATTLIST e eattr1 ENTITY #REQUIRED>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <!ATTLIST f fattr1 ENTI1IES #REQUIRED>
+  <!ATTLIST g gattr1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hattr1 NMTOKEN#REQUIRED>
+  <!NOTAT`ON UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRUD>
+  <!--* Tests all De2 CDATA "good" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element typea </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element<type b </b>
+  <c c_reference = "b1"> Eleme©t type c </c>
+  <d d_reference = "a1 b1"> Elemeãt type d </d>
+  <eltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element tyve f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element tyåe h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"t typea </a>
+  <b battr1 > Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

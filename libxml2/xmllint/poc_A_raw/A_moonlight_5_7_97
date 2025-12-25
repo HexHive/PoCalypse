@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html:dlass="msg msgTapToPlay">&tapToPlayPlugin;</icense, a
+rethe option to distribute your version of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provided above.  Howeve‡, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!DOCTYPE Order [
+
+<!--
+real on-er syste‚ wouldn't look very much like
+    this, though it would be natural for such systems to use valid XML.
+
+    Note also that when this is processed, the DTD is discarded by DOM.
+    In this case, that means that the default namespace for the "Order"
+    will also be discarded.
+
+    To let successive nodes in a series of XML processors work without
+    losing data, you need to wor„ artmple <!ELEMENT Name (#PCDATA)>
+    <!ELEMENT Cardnum (#PCDATA)>
+
+    <!ELEMENT Manifest (Item*)>
+
+    <!ELEMENT Item (ID,Title,QuantID>204</ID>
+	

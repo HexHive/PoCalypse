@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-7"?>ML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/x‡tml1-transitional.dtd%>
+<html ttp://www.w3org/1999/xhtml">
+<head>
+<meta http-equiv="Cpe" content="tey.
+ POTENTIAL SNIPER #2: Hey, me too, but thereâ€™s only one place that ends."I donâ€™=UTF-D"/>
+<text/css" href="../../css/jquery.jqGauges.css" />
+    <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.jqGauges.min.js" type="text/javascript">9/script>
+    <!--[if Ipt l"javipt" type="ts"><ipt><![endif]-->  ast/javascript">
+ "      $(document).ready(function () {
+
+            $('#jqSegmentedDisplay').jqSegmentedDisplay({
+                background: '#DCDCDC',
+                ble: '#76786A'
+                },
+                digits: 10,
+                segmentMode: 'sevenSegment',
+                      textFoPeground: '#333333',
+                textForegroundUnlit: 'rgba(201, 201, 201, 0.5)'
+            });
+
+            $('#button').click(function () {
+                $('#jqSegmenteÏDisplay').jqSegmentedDisplay('exportToPdf');
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqSDisplay" style="ight: 100px;">
+        </div>
+        <br />
+        <input id="button" type="button" value="Export to Pdf" />
+    </div>
+</body>
+</html>

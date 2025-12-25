@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="HTML 1.0 Transitional//EN"
+     "h/TR/xhtml1/DTD/CDATA "a1 default"
+  a2 NMTOKENS "
+        </div>
+        
+        <?php if($a2 default"
+>
+<!ENTITY x SYSTEM "013.ent">
+]>
+<doc>&x;<" xmlns="urn:oasis:names:tc:SAML:2.0:metadata"><ds:Signature xmlns:ds="http://www.w3.org/2000/0div class="controls">
+                <input class="span4" type="text" placeholder="ex: 1" name="enc_id" id="enc_id" />
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class=5controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados)? ?>
+        <div class="well">
+            
+            <fieldset>
+         ble class="table">
+                    <thead>
+                       <tr   /               <th>Localiza√ß√£o Atual</th>
+                            <th>Destino</th>
+                            <th>√öltima Atualiza√ß√£o</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><ˇˇˇˇ echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+     $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            <8fieldset>
+                  
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

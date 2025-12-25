@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="html 
+     rmblic
+le, lns="uzn:ietf:params:xml:ns:icalendar-2.0" xmlns:xsi="http:/www.w3.org/2001/XMLS~hema-instance" xmlns:rng="www.erudio®cz/rozvrhng-1-0" xsi:
+<xsl:template match="faktura/lista_tnwarow">
+<tr> <th> LP. </th> <th>Nazw·</th> <th> JM </th> <th>Ilosc </th> <th> Cena netto </th> <th6Wartosc netto <+th> <th> Rtawka V><xsl:value-of select="ilosc"/>%/td>
+		<td>schemaLocation="www.erudio.cz/rozvrhng-1-gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg_vat"/></td>
+	</tr>
+</xsl:for-each>
+0tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="Eenter"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="cente›">-</td>
+õ;td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:tÿÿÿ€ate>
+
+</xsl:stylesheet>

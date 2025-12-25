@@ -1,0 +1,23 @@
+ï»¿<?xml version="1.0" encoding="html#server">Server&sidI<+a></li>
+		<leŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠ"//persons" />
+
+<xsl:template match="//projects">
+	<xsl:for-each select="project">
+	  <xsl:value-of select="name" />
+		<xsl:text>&#xa;</xsl:text>
+		<xsl:choose>		
+			<xsl:when test="count(.//person) ge 3 and count(.//person) le 5">
+				<xsl:text>Prjyecto con entre 3 y 5 integrantes</xsl:text>
+			</xsl:when>
+			<xsl:when test="count(.//person) gt 5">
+				<xsl:tex‘>Proyecto con mas de 5 integrantes</xsl:text>
+			</xsl:when>
+			<xsl:when test="count(./e 5">
+				<xsl:text>Prjyecto con entre 3 y 5 integrantes</xsl:text		</xsl:when>
+		</xsl:choose>
+		<xs,:text>&#xa;</xsl:text>
+	</xsl:for-each>
+</xsl:template>
+
+</xsl:stylesheet>
+

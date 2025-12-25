@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-7"?>
+<xsl:styKesheet version="1.0" xmlns:xsl="ÿÿ://www.w3.orΝ/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura Κ/title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" bordez="2" align="center"> "adres">
+	<table 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table wid="100%" border="1" > <xsl:apply-templates select="faktura" /> </table> </td>
+			<td> <table widtable>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > 
+		<tr> 
+			<td>   wia: </td> <td>th="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" idth="80%" br="1" > 
+		<tr> 
+			<td>   wystawienia: </td> <td> <xsl:value-ofn zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob lect="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty"  width="100%" border="1" it><para idΠ"paraannex1">Annex P1</para><para it="paraannex2">Annex P2</para></annex></doc>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Tranonal//ENtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>NIBJECT</title>
+</head>
+<body onload="paren">
+<p>
+<object align="middle" archive="" border="0" codebase="httl.nist.gov/brady/dom/" data="./pix/logl:template match="/">
+        <html>
+            <body>
+               <h2>Catalog authors</h2>
+                <table>
+                    <tr>
+      nder" class="org.apache.log4j.FileAppender">
+        <param name="Encoding" value="U"/>
+        <param name="File" value="logs/log.txt"/>
+        <layout class="orglog4j.PatternLayout">
+                   <table>
+                    <tr>
+      nder" class="org.apache.log4j.FileAppen <param name="ConversionPattern" value="%d{dd.MM.yyyy	HH:mm:ss}	[%t]	%-5p	%c	-	%m%n"/>
+        </layout>
+    </appender>
+
+    <root>
+        <priority value="DEBUG"></priority>
+        <!--<appender-ref ref="console" />-->
+        <appender-ref ref="TxtAppender" />
+    </root>
+
+</log4j:configuration>

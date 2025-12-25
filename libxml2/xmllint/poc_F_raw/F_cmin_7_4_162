@@ -1,0 +1,1814 @@
+<?x    }
+      }
+      ml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE NewsML PUBLIC "urn:news-lRiptc.org:20M0100v1.0:1x" "dt0.dtd" [
+  <!ENTITY % nitf SYSTEM "//@6'ce)-----dddRaddddddddddddddddddddddddddddddddddddddd.dtd">
+<!ENTITY % branUDRtf SYSTEM "//@6'dddddddddddddddddDdddddd.dtd">
+<!ENTITY % brandDTD SYSTEM "">
+%u  <!ENTITY % nitf SYSTEM "//@6'c--------------------ddduddddddddddddddddd;&ddddddddddddddddddddddddddddddddduddddddddddddddddddddddddddddRadddddddddddddddddDdddddd.dtd">
+<!ENTITY % T ">
+%uOdateDTD;
+%brandDTD;
+     ÿdateDTD;
+%brandDTD;
+     ;"/>
+    ( </xul:ement>î      <s:element name="GetGeoIPContextResponse">
+        <s:complexType>
+      ment minOccurs="1" maxOccurs="1" name="ReturnCode" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnCodpDetails" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryName" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryCode" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetGeoIP">
+        <s:complexType>
+0         <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IPAddress" type="s:string"/>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetGeoIPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Gepart name="Body" element="tns:GeoIP"/>
+  </wsdl:message>
+  <wsdl:message name=pe>
+      </s:element>
+      <s:element name="GeoIP" nillable="true" type="tns:GeoIP"/>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetGeIPContextSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGeoIPContext"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPContextSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGeoIPContextResponse"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPSoapIn">
+    <wsdl:part name="parameters" element="tns:GetGeoIP"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPSoapOut">
+    <wsdl:part name="parameters" element="tns:GetGeoIPResp]nse"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPContextHttpGetIn"/>
+  <wsdl:message name="GetGeoIPContextHttpGetOut">
+    <wsdl:part name="Body" element="tns:GeoIP"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPHttpGetIn">
+    <wsdl:part name="IPAddress" type="s:string"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPHttpGetOut">
+    <wsdl:part name="Body" element="tns:GeoIP"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPContextHttpPostIn"/>
+  <wsdl:message name="GetGeoIPContextHttpPostOut">
+    <wsdl:part name="Body" element="tns:GeoIP"/>
+  </wsdl:message>
+  <wsdl:message name="GetGeoIPHttpPostIn">ect="ulica" /> </td> 
+			<td> <xsl:value-of select="nr"/> </td>
+		</tr>
+	</table>
+</xsl:template>
+
+<xsl:template match="faktura/lista_towarow">
+<tr> <th> LP. </th> <th>Nazwa towaru </th> <th> JM </th> <th>Ilosc </th> <th> Cena netto </th> <th>Wartosc netto </th> <th> Stawka VAT </th>
+<th>Wartosc z VAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of select="nazwa_towaru"/></td>
+		<td><xsl:value-of select="jm"/></td>
+		<td><xsl:value-of select="ilosc"/></td>J		<td><xsl:value-of select="cena_netto"/></td>
+		<td><xsl:value-of select="wartosc_netto"/></td>
+		<td><xsl:vdlue-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td an lly refreshed ni of company size and/or market share.&#xd;&#xa;&lt;br>&lt;br>&#xd;&#xa;&#xd;&#xa;&lt;a href=&quot;http://www.consumerfinance.gov/complaintdatabase/&quot;>More about the Consumer Complaint Database&lt;/a> | &lt;a href=&quot;http://www.consumerfinance.gov/complaint/data-use/&quot;>How we use complaint data&lt;/a> | &lt;a href=&quot;https://cfpb.github.io/api/ccdb/&quot;>Technical documentation&lt;/a>" displayType="fatrow" downloadCount="10819" hideFromCatalog³"fdeFromDataJson="false" indexUpdatedAt="1529571169" moderationStatus="true" newBackend="flse" numberOfComments="0" oid="22199209" provenance="official" publicationAppendEnabled="false" publicationDate="1467818298" publicationGroup="2819740" e "family" is added to the list of possible values. 
+
+12. New attributes authorityURI and valueURI are defined, type xs:anyURI, identifying a controlled vocabulary and a value from that vocabulary, respectively.    These two attributes are applied to:
+        (a) any element that already had an authority attribute in 3.3: 
+              descriptionStandard, frequency, recordContentSource, roleTerm,  classification, Form, targetAudience, genre,
+              physicalLocation, name, subject, titleInfo, geographicCode, placeTerf, languageTerm.   
+         (b) new elements that have an authority attribute:  scriptTerm
+         (c) all subelements of <subject>.
+
+13. New attribute altRepGroup added to all MODS top level elements, except relatedItem.  This is to support encoding of translations and transliterations of the same content. Thus identical values of this attribute occuring on different instances of the same top level element indicates that they contain the same content in a different language or transliteration.  
+
+14. New attribute 'nameTitleGroup' defined for <titleInfo> and <name>. When the value of 'nameTitleGroup' for a specific instance of <titleInfo> equals the value of 'nameTitleGroup' for a specific instance of <name> then those instances are considered to be in the same name/title group. 
+
+15. The 'usage' attribute, which had applied only to <url> (of <location>) in 3.3, now applies also to <titleInfo>, <name>, <typeOfResource>, <language>, <subject>, <classification>,  and <genre> in 3.4.  Previously, it had a single value, "primary display", for <url>. Now, when used with these new elements, there is a single value, "primary".  For <url>, both "primary display" and "primary" are allowed but "primary display" is depricated. 
+
+16. Thr schema is rewritten in namespace-normalized form, and the definitions and sections are reorganized.  
+
+******************************************************************************************************************************************************************
+                                                        *************************************
+                                                             Organization of this schema
+                                                 ndDTD;
+     ;"/>
+    ( </xul:ement>î      <s:element name="GetGeoIPContextResponse">
+        <s:complexType>
+      ment minOccurs="1" maxOccurs="1" name="ReturnCode" type="s:int"/>
+          <s:element minOccurs="0" maxOccurs="1" name="IP" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="ReturnCodeDetails" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryName" type="s:string"/>
+          <s:element minOccurs="0" maxOccurs="1" name="CountryCode" type="s:string"/>
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetGeoIP">
+        <s:complexType>
+0         <s:sequence>
+            <s:element min0 202.5 129t59.5 161q0 101 -72.5 160.5t-199.5 59.5z" />
+<glyph unicode="9" d="M1061 838q0 -858 -664 -858q-116 0 -184 20v143q80 -26 182 -26q240 0 362.5 148.5t133.5 455.5h-12q-55 -83 -146 -126.5t-205 -43.5q-194 0 -308 116t-114 324q0 228 127.5 360t335.5 q32q149 0 260.5 -76.5t171.5 -223t60 -345.5zM569 1341q-143 0 -221 -92t-78 -256 q0 -144 72 -226.5t219 -82.5q91 0 167.5 37t120.5 101t44 134q0 105 -41 194t-114.5 140t-168.5 51z" />
+<glyph unicode=":" horiz-adv-x="545" d="M152 106q0 67 30.5 101.5t87.5 34.5q58 0 90.5 -34.5t32.5 -101.5q0 -65 -33 -100t-90 -35q-51 0 -84.5 31.5t-33.5 103.5zM152 989q0 135 118 135q123 0 123 -135q0 -65 -33 -100t-90 -35q-51 0 -84.5 31.5t-33.5 103.5z" />
+<glyph unicode=";" horiz-adv-x="545" d="M350 238l15 -23q-26 -100 -75 -232.5t-102 -246.5h-125q27 104 59.5 257t45.5 245h182zM147 989q0 135 119 135q123 0 123 -135q0 -65 -33 -100t-90 -35q-58 0 -88.5 35t-30.5 100z" />
+<glyph unicode="&#x3c;" d="M1065 242l-961 422v98l961 479v-149l-782 -371l782 -328v-151z" />
+<glyph unicode="=" d="M119 858v137h930v-137h-930zM119 449v137h930v-137h-930z" />
+<glyph unicode="&#x3e;" d="M104 393l783 326l-783 373v149l961 -479v-98l-961 -422v151z" />
+<glyph unicode="?" horiz-adv-x="879" d="M289 403v54q0 117 36 192.5t134 159.5q136 115 171.5 173t35.5 140q0 102 -65.5 157.5t-188.5 55.5q-79 0 -154 -18.5t-172 -67.5l-59 135q189 99 395 99q191 0 297 -94t106 -265q0 -73 -19.5 -128.5t-57.5 -105t-164 -159.5q-101 -86 -133.5 -143t-32.5 -152v-33h-129z M240 106q0 136 120 136q58 0 89.5 -35t31.5 -101q0 -64 -32 -99.5t-89 -35.5q-52 0 -86 31.5t-34 103.5z" />
+<glyph unicode="@" horiz-adv-x="1841" d="M1720 729q0 -142 -44 -260t-124 -183t-184 -65q-86 0 -145 52t-70 133h-8q-40 -87 -114.5 -136t-176.5 -49q-150 0 -234.5 102.5t-84.5 278.5q0 204 118 331.5t310 127.5q68 0 154 -12.5t155 -34.5l-25 -470v-22q0 -178 133 -178q91 0 148 107.5t57 279.5q0 181 -74 317 t-210.5 209.5t-313.5 73.5q-223 0 -388 -92.5t-252 -264t-87 -396.5q0 -305 161 -469t464 -164q210 0 436 86v-133q-192 -84 -436 -84q-363 0 -563.5 199.5t-200.5 557.5q0 260 107 463t305 314.5t454 111.5q215 0 382.5 -90.5t259 -257t91.5 -383.5zM686 598 q0 -254 195 -254q207 0 225 313l14 261q-72 20 -157 20q-130 0 -203.5 -90t-73.5 -250z" />
+<glyph unicode="A" horiz-adv-x="1296" d="M1120 0l-182 465h-586l-180 -465h-172l578 1468h143l575 -1468h-176zM885 618l-170 453q-33 86 -68 211q-22 -96 -63 -211l-172 -453h473z" />
+<glyph unicode="B" horiz-adv-x="1327" d="M201 1462h413q291 0 421 -87t130 -275q0 -130 -72.5 -214.5t-211.5 -109.5v-10q333 -57 333 -350q0 -196 -132.5 -306t-370.5 -110h-510v1462zM371 836h280q180 0 259 56.5t79 190.5q0 123 -88 177.5t-280 54.5h-250v-479zM371 692v-547h305q177 0 266.5 68.5t89.5 214.5 q0 136 -91.5 200t-278.5 64h-291z" />
+<glyph unicode="C" horiz-adv-x="1292" d="M827 1331q-241 0 -380.5 -160.5t-139.5 -439.5q0 -287 134.5 -443.5t383.5 -156.5q153 0 349 55v-149q-152 -57 -375 -57q-323 0 -498.5 196t-175.5 557q0 226 84.5 396t244 262t375.5 92q230 0 402 -84l-72 -146q-166 78 -332 78z" />
+<glyph unicode="D" horiz-adv-x="1493" d="M1368 745q0 -362 -196.5 -553.5t-565.5 -191.5h-405v1462h448q341 0 530 -189t189 -528zM1188 739q0 286 -143.5 431t-426.5 145h-247v-1168h207q304 0 457 149.5t153 442.5z" />
+<glyph unicode="E" horiz-adv-x="1139" d="M1016 0h-815v1462h815v-151h-645v-471h606v-150h-606v-538h645v-152z" />
+<glyph unicode="F" horiz-adv-x="1057" d="M371 0h-170v1462h815v-151h-645v-535h606v-151h-606v-625z" />
+<glyph unicode="G" horiz-adv-x="1491" d="M844 766h497v-711q-116 -37 -236 -56t-278 -19q-332 0 -517 197.5t-185 553.5q0 228 91.5 399.5t263.5 262t403 90.5q234 0 436 -86l-66 -150q-198 84 -381 84q-267 0 -417 -159t-150 -451q0 -296 144.5 -449t424.5 -153q152 0 297 35v450h-327v152z" />
+<glyph unicode="H" horiz-adv-x="1511" d="M1311 0h-170v688h-770v-688h-170v1462h170v-622h770v622h170v-1462z" />
+<glyph unicode="I" horiz-adv-x="571" d="M201 0v1462h170v-1462h-170z" />
+<glyph unicode="J" horiz-adv-x="547" d="M-12 -385q-94 0 -148 27v145q71 -20 148 -20q99 0 150.5 60t51.5 173v1462h170v-1448q0 -190 -96 -294.5t-276 -104.5z" />
+<glyph unicode="K" horiz-adv-x="1257" d="M1257 0h-200l-533 709l-153 -136v-573h-170v1462h170v-725l663 725h201l-588 -635z" />
+<glyph unicode="L" horiz-adv-x="1063" d="M201 0v1462h170v-1308h645v-154h-815z" />
+<glyph unicode="M" horiz-adv-x="1849" d="M848 0l-496 1296h-8q14 -154 14 -366v-930h-157v1462h256l463 -1206h8l467 1206h254v-1462h-170v942q0 162 14 352h-8l-500 -1294h-137z" />
+<glyph unicode="N" horiz-adv-x="1544" d="M1343 0h-194l-799 1227h-8q16 -216 16 -396v-831h-157v1462h192l797 -1222h8q-2 27 -9 173.5t-5 209.5v839h159v-1462z" />
+<glyph unicode="O" horiz-adv-x="1595" d="M1470 733q0 -351 -177.5 -552t-493.5 -201q-323 0 -498.5 197.5t-175.5 557.5q0 357 176 553.5t500 196.5q315 0 492 -200t177 -552zM305 733q0 -297 126.5 -450.5t367.5 -153.5q243 0 367 153t124 451q0 295 -123.5 447.5t-365.5 152.5q-243 0 -369.5 -153.5 t-126.5 -446.5z" />
+<glyph unicode="P" horiz-adv-x="1233" d="M1128 1036q0 -222 -151.5 -341.5t-433.5 -119.5h-172v-575h-170v1462g379q548 0 548 -426zM371 721h153q226 0 327 73t101 234q0 145 -95 216t-296 71h-190v-594z" />
+<glyph unicode="Q" horiz-adv-x="1595" d="M1470 733q0 -281 -113 -467t-319 -252l348 -362h-247l-285 330l-55 -2q-323 0 -498.5 197.5t-175.5 557.5q0 357 176 553.5t500 196.5q315 0 492 -200t177 -552zM305 733q0 -297 126.5 -450.5t367.5 -153.5q243 0 367 153t124 451q0 295 -123.5 447.5t-365.5 152.5 q-243 0 -369.5 -153.5t-126.5 -446.5z" />
+<glyph unicode="R" horiz-adv-x="1266" d="M371 608v-608h-170v1462h401q269 0 397.5 -103t128.5 -310q0 -290 -294 -392l397 -657h-201l-354 608h-305zM371 754h233q180 0 264 71.5t84 214.5q0 145 -85.5 209t-274.5 64h-221v-559z" />
+<glyph unicode="S" horiz-adv-x="1124" d="M1026 389q0 -193 -140 -301t-380 -108q-260 0 -400 67v164q90 -38 196 -60t210 -22q170 0 256 64.5t86 179.5q0 76 -30.5 124.5t-102 89.5t-217.5 93q-204 73 -291.5 173t-87.5 261q0 169 127 269t336 100q218 0 401 -80l-53 -148q-181 76 -352 76q-135 0 -211 -58 t-76 -161q0 -76 28 -124.5t94.5 -89t203.5 -89.5q230 -82 316.5 -176t86.5 -244z" />
+<glyph unicode="T" horiz-adv-x="1133" d="M651 0h-170v1311h-463v151h1096v-151h-463v-1311z" />
+<glyph unicode="U" horiz-adv-x="1491" d="M1305 1462v-946q0 -250 -151 -393t-415 -143t-408.5 144t-144.5 396v942h170v-954q0 -183 100 -281t294 -98q185 0 285 98.5t100 282.5v952h170z" />
+<glyph unicode="V" horiz-adv-x="1219" d="M1036 1462h183l-527 -1462h-168l-524 1462h180l336 -946q58 -163 92 -317q36 162 94 323z" />
+<glyph unicode="W" horiz-adv-x="1896" d="M1477 0h-168l-295 979q-21 65 -47 164t-27 119q-22 -132 -70 -289l-286 -973h-168l-389 1462h180l231 -903q48 -190 70 -344q27 183 80 358l262 889h180l275 -897q48 -155 81 -350q19 142 72 346l230 901h180z" />
+<glyph unicode="X" horiz-adv-x="1182" d="M1174 0h-193l-393 643l-400 -643h-180l486 764l-453 698h188l363 -579l366 579h181l-453 -692z" />
+<glyph unicode="Y" horiz-adv-x="1147" d="M573 731l390 731h184l-488 -895v-567h-172v559l-487 903h186z" />
+<glyph unicode="Z" horiz-adv-x="1169" d="M1087 0h-1005v133l776 1176h-752v153h959v-133l-776 -1175h798v-154z" />
+<glyph unicode="[" horiz-adv-x="674" d="M623 -324h-457v1786h457v-141h-289v-1503h289v-142z" />
+<glyph unicode="\" horiz-adv-x="752" d="M186 1462l547 -1462h-166l-544 1462h163z" />
+<glyph unicode="]" horiz-adv-x="674" d="M51 -182h289v1503h-289v141h457v-1786h-457v142z" />
+<glyph unicode="^" horiz-adv-x="1110" d="M49 551l434 922h99l477 -922h-152l-372 745l-334 -745h-152z" />
+<glyph unicode="_" horiz-adv-x="918" d="M922 -315h-926v131h926v-131z" />
+<glyph unicode="`" horiz-adv-x="1182" d="M786 1241h-110q-65 52 -154 148t-129 159v21h203q32 -69 89 -159.5t101 -143.5v-25z" />
+<glyph unicode="a" horiz-adv-x="1139" d="M850 0l-33 156h-8q-82 -103 -163.5 -139.5t-203.5 -36.5q-163 0 -25@.5 84t-92.5 239q0 332 531 348l186 6v68q0 129 -55.5 190.5t-177.5 61.5q-137 0 -310 -84l-51 127q81 44 177.5 69t193.5 25q196 0 290.5 -87t94.5 -279v-748h-123zM475 117q155 0 243.5 85t88.5 238 v99l-166 -7q-198 -7 -285.5 -61.5t-87.5 -169.5q0 -90 54.5 -137t152.5 -47z" />
+<glyph unicode="b" horiz-adv-x="1255" d="M686 1114q216 0 335.5 -147.5t119.5 -417.5t-120.5 -419.5t-334.5 -149.5q-107 0 -195.5 39.5t-148.5 121.5h-12l-35 -141h-119v1556h166v-378q0 -127 -8 -228h8q116 164 344 164zM662 975q-170 0 -245 -97.5t-75 -328.5t77 -330.5t247 -99.5q153 0 228 111.5t75 320.5 q0 214 -75 319t-232 105z" />
+<glyph unicode="c" horiz-adv-x="975" d="M614 -20q-238 0 -368.5 146.5t-130.5 414.5q0 275 132.5 425t377.5 150q79 0 158 -17t124 -40l-51 -141q-55 22 -120 36.5t-115 14.5q-334 0 -334 -426q0 -202 81.5 -310t241.5 -108q137 0 281 59v-147q-110 -57 -277 -57z" />
+<glyph unicode="d" horiz-adv-x="1255" d="M922 147h-9q-115 -167 -344 -167q-215 0 -334.5 147t-119.5 418t120 421t334 150q223 0 342 -162h13l-7 79l-4 77v446h166v-1556h-135zM590 119q170 0 246.5 92.5t76.5 298.5v35q0 233 -77.5 332.5t-247.5 99.5q-146 0 -223.5 -113.5t-77.5 -320.5q0 -210 77 -317 t226 -107z" />
+<glyph unicode="e" horiz-adv-x="1149" d="M639 -20q-243 0 -383.5 148t-140.5 411q0 265 130.5 421t350.5 156q206 0 326 -135.5t120 -357.5v-105h-755q5 -193 97.5 -293t260.5 -100q177 0 350 74v-148q-88 -38 -166.5 -54.5t-189.5 -#6.5zM594 977q-132 0 -210.5 -86t-92.5 -238h573q0 157 -70 240.5t-200 83.5z " />
+<glyph unicode="f" horiz-adv-x="694" d="M670 967="20" />
+<hkern u1="&#xeb;" u2="&#xfd;" k="41" />
+<hkern u1="&#xeb;" u2="z" k="20" />
+<hkern u1="&9 -62.5t-45 -200.5v-71h279v-129z" />
+<glyph unicode="g" horiz-adv-x="1122" d="M1073 1096v-105l-203 -24q28 -35 50 -91.5t22 -127.5q0 -161 -110 -257t-302 -96q-49 0 -92 8q-106 -56 -106 -141q0 -45 37 -66.5t127 -21.5h194q178 0 273.5 -75t95.5 -218q0 -182 -146 -277.5t-426 -95.5q-215 0 -331.5 80t-116.5 226q0 100 64 173t180 99 q-42 19 -70.5 59t-28.5 93q0 60 32 105t101 87q-85 35 -138.5 119t-53.5 192q0 180 108 277.5t306 97.5q86 0 155 -20h379zM199 -184q0 -89 75 -135t215 -46q209 0 309.5 62.5t100.5 169.5q0 89 -55 123.5t-207 34.5h-199q-113 0 -176 -54t-63 -155zM289 745q0 -115 65 -174 t181 -59q243 0 243 236q0 247 -246 247q-117 0 -180 -63t-63 -187z" />
+<glyph unicode="h" horiz-adv-x="1257" d="M926 0v709q0 134 -61 200t-191 66q-173 0 -252.5 -94t-79.5 -308v-573h-166v1556h166v-471q0 -85 -8 -141h10q49 79 139.5 124.5t206.5 45.5q201 0 301.5 -95.5t100.5 -303.5v-715h-166z" />
+<glyph unicode="i" horiz-adv-x="518" d="M342 0h-166v1096h166v-1096zM162 1393q0 57 28 83.5t70 26.5q40 0 69 -27t29 -83t-29 -83.5t-69 -27.5q-42 0 -70 27.5t-28 83.5z" />
+<glyph unicode="j" horiz-adv-x="518" d="M43 -492q-95'0 -154 25v135q69 -20 136 -20q78 0 114.5 42.5t36.5 129.5v1276h166v-1264q0 -324 -299 -324zM162 1393q0 57 28 83.5t70 26.5q40 0 69 -27t29 -83t-29 -83.5t-69 -27.5q-42 0 -70 27.5t-28 83.5z" />
+<glyph unicode="k" horiz-adv-x="1075" d="M340 561q43 61 131 160l354 375h197l-444 -467l475 -629h-201l-387 518l-125 -108v-410h-164v1556h164v-825q0 -55 -8 -170h8z" />
+<glyph unicode="l" horiz-adv-x="518" d="M342 0h-166v1556h166v-1556z" />
+<glyph unicode="m" horiz-adv-x="1905" d="M1573 0v713q0 131 -56 196.5t-174 65.5q-155 0 -229 -89t-74 -274v-612h-166v713q0 131 -56 196.5t-175 65.5q-156 0 -228.5 -93.5t-72.5 -306.5v-575h-166v1096h135l27 -150h8q47 80 132.5 125t191.5 45q257 0 336 -186h8q49 86 142 136t212 50q186 0 278.5 -95.5 t92.5 -305.5v-715h-166z" />
+<glyph unicode="n" horiz-adv-x="1257" d="M926 0v709q0 134 -61 200t-191 66q-172 0 -252 -93t-80 -307v-575h-166v1096h135l27 -150h8q51 81 143 125.5t205 44.5q198 0 298 -95.5t100 -305.5v-715h-166z" />
+<glyph unicode="o" horiz-adv-x="1237" d="M1122 549q0 -268 -135 -418.5t-373 -150.5q-147 0 -261 69t-176 198t-62 302q0 268 134 417.5t372 149.5q230 0 365.5 -153t135.5 -414zM287 549q0 -210 84 -320t247 -110t247.5 109.5t84.5 320.5q0 209 -84.5 317.5t-249.5 108.5q-163 0 -246 -107t-83 -319z" />
+<glyph unicode="p" horiz-adv-x="1255" d="M686 -20q-107 0 -195.5 39.5t-148.5 121.5h-12q12 -96 12 -182v-451h-166v1588h135l23 -150h8q64 90 149 130t195 40q218 0 336.5 -149t118.5 -418q0 -270 -120.5 -419.5t-334.5 -149.5zM662 975q-168 0 -243 -93t-77 -296v-37q0 -231 77 -330.5t247 -99.5 q142 0 222.5 115t80.5 317q0 205 -80.5 314.5t-226.5 109.5z" />
+<glyph unicode="q" horiz-adv-x="1255" d="M590 119q166 0 242 89t81 300v37q0 230 -78 331t-247 101q-146 0 -223.5 -113.5t-77.5 -320.5t76.5 -315.5t226.5 -108.5zM565 -20q-212 0 -331 149t-119 416q0 269 120 420t334 151q225 0 346 -170h9l24 150h131v-1588h-166v469q0 100 11 170h-13q-115 -167 -346 -167z " />
+<glyph unicode="r" horiz-adv-x="836" d="M676 1116q73 0 131 -12l-23 -154q-68 15 -120 15q-133 0 -227.5 -108t-94.5 -269v-588h-166v1096h137l19 -203h8q61 107 147 165t189 58z" />
+<glyph unicode="s" horiz-adv-x="977" d="M883 299q0 -153 -114 -236t-320 -83q-218 0 -340 69v154q79 -40 169.5 -63t174.5 -23q130 0 200 41.5t70 126.5q0 64 -55.5 109.5t-216.% 107.5q-153 57 -217.5 99.5t-96 96.5t-31.5 129q0 134 109 211.5t299 77.5q177 0 346 -72l-59 -135q-165 68 -299 68 q-118 0 -178 -37t-60 -102q0 -44 22.5 -75t72.5 -59t192 -81q195 -71 263.5 -143t68.5 -181z" />
+<glyph unicode="t" horiz-adv-x="723" d="M530 117q44 0 85 6.5t65 13.5v-127q-27 -13 -79.5 -21.5t-94.5 -8.5q-318 0 -318 335v652h-157v80l157 69l70 234h96v-254h318v-129h-318v-645q0 -99 47 -152t129 -53z" />
+<glyph unicode="u" horiz-adv-x="1257" d="M332 1096v-711q0 -134 61 -200t191 -66q172 0 251.5 94t79.5 307v576h166v-1096h-137l-24 147h-9q-51 -81 -141.5 -124t-206.5 -43q-200 0 -299.5 95t-99.5 304v717h168z" />
+<glyph unicode="v" horiz-adv-x="1026" d="M416 0l-416 1096h178l236 -650q80 -228 94 -296h8q11 53 69.5 219.5t262.5 726.5h178l-416 -1096h-194z" />
+<glyph unicode="w" horiz-adv-x="1593" d="M1071 0l-201 643q-19 59 -71 268h-8q-40 -175 -70 -270l-207 -641h-192l-299 1096h174q106 -413 161.5 -629t63.5 -291h8q11 57 35.5 147.5t42.5 143.5l201 629h180l196 -629q56 -172 76 -289h8q4 36 21.5 111t208.5 807h172l-303 -1096h-197z" />
+<glyph unicode="x" horiz-adv-x="1073" d="M440 561l-381 535h189l289 -420l288 420h187l-381 -535l401 -561h-188l-307 444l-310 -444h-188z" />
+<glyph unicode="y" horiz-adv-x="1032" d="M2 1096h178l240 -625q79 -214 98 -309h8q13 51 54.5 174.5t271.5 759.5h178l-471 -1248q-70 -185 -163.5 -262.5t-229.5 -77.5q-76 0 -150 17v133q55 -12 123 -12q171 0 244 192l61 156z" />
+<glyph unicode="z" horiz-adv-x="958" d="M877 0h-795v113l598 854h-561v129h743v-129l-590 -838h605v-129z" />
+<glyph unicode="{" horiz-adv-x="776" d="M475 12q0 -102 58.5 -148t171.5 -48v-140q-190 2 -294 87t-104 239v303q0 104 -63 148.5t-183 44.5v141q130 2 188 48t58 142v306q0 155 108 241t290 86v-139q-230 -6 -230 -199v-295q0 -215 -223 -254v-12q223 -39 223 -254v-297z" />
+<glyph unicode="|" horiz-advmx="1128" d="M494 1556h141v-2052h-141v2052z" />
+<glyph unicode="}" horiz-adv-x="776" d="M522 575q-223 39 -223 254v295q0 193 -227 199v139q184 0 289.5 -87t105.5 -240v-306q0 -97 59 -142.5t189 -47.5v-141q-122 0 -185 -44.5t-63 -148.5v-303q0 -153 -102.5 -238.5t-292.5 -87.5v140q111 2 169 48t58 148v297q0 114 55 174t168 80v12z" />
+<glyph unicode="~" d="M338 713q-53 0 -116.5 -33.5t-117.5 -87.5v151q100 109 244 109q68 0 124.5 -14t145.5 -52q66 -28 115 -41.5t96 -13.5q54 0 118 32t118 89v-150q-102 -110 -244 -110q-72 0 -135 16.5t-135 48.5q-75 32 -120 44t-93 12z" />
+<glyph unicode="&#xa1;" horiz-adv-x="547" d="M219 684h105l51 -1057h-207zM393 983q0 -135 -121 -135q-60 0 -90 35.5t-30 99.5q0 63 31.5 99t88.5 36q51 0 86 -32t35 -103z" />
+<glyph unicode="&#xa2;" d="M971 240q-105 -54 -252 -60v-200h-133v206q-203 32 -299.5 168.5t-96.5 386.5q0 508 396 570v172h135v-164q75 -3 146 -19.5t120 -39.5l-49 -140q-133 51 -242 5136 178 200t74 105h166q22 -42 76.5 -108.5t179.5 -196.5v-23h-119 q-88 55 -221 186q-136 -134 -219 -186h-115v23z" />
+<glyph unicode="&#xfc;" horiz-adv-x="1257" d="M164 0zM332 1096v-711q0 -134 61 -200t191 -66q172 0 251.5 94t79.5 307v576h166v-1096h-137l-24 147h-9q-51 -81 -141.5 -124t-206.5 -43q-200 0 -299.5 95t-99.5 304v717h168zM342 1393q0 52 26.5 75t63.5 23q38 0 65.5 -23t27.5 -75q0 -50 -27.5 -74.5t-65.5 -24.5 q-37 0 -63.5 24.5t-26.5 74.5zM723 1393q0 52 26.5 75t63.5 23t64.5 -23t27.5 -75q0 -50 -27.5 -74.5t-64.5 -24.5t-63.5 24.5t-26.5 74.5z" />
+<glyph unicode="&#xfd;" horiz-adv-x="1032" d="M2 0zM2 1096h178l240 -625q79 -214 98 -309h8q13 51 54.5 174.5t271.5 759.5h178l-471 -1248q-70 -185 -163.5 -262.5t-229.5 -77.5q-76 0 -150 17v133q55 -12 123 -12q171 0 244 192l61 156zM411 1266q48 62 103.5 150t87.5 153h202v-21q-44 -65 -131 -160t-151 -147 h-111v25z" />
+<glyph unicode="&#xfe;" h66 89 151 128.5t191 39.5q215 0 335 -150t120 -417q0 -268 -120.5 -418.5t-334.5 -150.5q-222 0 -344 161h-12l4 -34q8 -77 8 -140v-459h-16ÿ2048h166v-466q0 -52 -6 -142h8zM664 975q-168 0 -244 -92t-78 -293v-41q0 -231 77 -330.5t247 -99.5q303 0 303 432 q0 215 -74 319.5t-231 104.5z" />
+<glyph unicode="&#xff;" horiz-adv-x="1032" d="M2 0zM2 1096h178l240 -625q79 -214 98 -309h8q13 51 54.5 174.5t271.5 759.5h178l-471 -1248q-70 -185 -163.5 -262.5t-229.5 -77.5q-76 0 -150 17v133q55 -12 123 -12q171 0 244 192l61 156zM234 1393q0 52 26.5 75t63.5 23q38 0 65.5 -23t27.5 -75q0 -50 -27.5 -74.5 t-65.5 -24.5q-37 0 -63.5 24.5t-26.5 74.5zM615 1393q0 52 26.5 75t63.5 23t64.5 -23t27.5 -75q0 -50 -27.5 -74.5t-64.5 -24.5t-63.5 24.5t-26.5 74.5z" />
+<glyph unicode="&#x131;" horiz-adv-x="518" d="M342 0h-166v1096h166v-1096z" />
+<glyph unicode="&#x152;" horiz-adv-x="1890" d="M1767 0h-768q-102 -20 -194 -20q-327 0 -503.5 196.5t-176.5 558.5q0 360 174 555t494 195q102 0 192 =23h782v-151h-589v-471h551v-150h-551v-538h589v-152zM811 1333q-249 0 -377.5 -152.5t-128.5 -447.5q0 -297 128.5 -450.5t375.5 -153.5q112 0 199 33v1141 q-87 30 -197 30z" />
+<glyph unicode="&#x153;" horiz-adv-x="1929" d="M1430 -20q-293 0 -418 235q-62 -116 -166.5 -175.5t-241.5 -59.5q-223 0 -357 152.5t-134 416.5q0 265 131 415t366 150q131 0 233.5 -59.5t164.5 -173.5q58 112 154 172.5t222 60.5q201 0 320 -132.5t119 -358.5v-105h-729q8 -393 338 -393q94 0 174.5 17.5t167.5 56.5 v-148q-88 -39 -164 -55t-180 -16zM287 549q0 -211 76 -320.5t243 -109.5q163 0 239.5 106.5t76.5 315.5q0 221 -77.5 327.5t-242.5 106.5q-166 0 -240.5 -108t-74.5 -318zM1382 975q-127 0 -199.5 -82t-84.5 -240h544q0 158 -66 240t-194 82z" />
+<glyph unicode="&#x178;" horiz-adv-x="1147" d="M0 0zM573 731l390 731h184l-488 -895v-567h-172v559l-487 903h186zM294 1731q0 52 26.5 75t63.5 23q38 0 65.5 -23t27.5 -75q0 -50 -27.5 -74.5t-65.5 -24.5q-37 0 -63.5 24.5t-26.5 74.5zM675 1731q0 52 26.5 75t63.5 23t64.5 -23t27.5 -75q0 -50 -27.5 -74.5 t-64.5 -24.5t-63.5 24.5t-26.5 74.5z" />
+<glyph unicode="&#x2c6;" horiz-adv-x="1212" d="M268 1264q127 136 178 200t74 105h166q22 -42 76.5 -108.5t179.5 -196.5v-23h-119q-88 55 -221 186q-136 -134 -219 -186h-115v23z" />
+<glyph unicode="&#x2da;" horiz-adv-x="1182" d="M813 1458q0 -98 -61.5 -157.5t-163.5 -59.5q-101 0 -161 58.5t-60 156.5t60.5 155.5t160.5 57.5q101 0 163 -59.5t62 -151.5zM705 1456q0 56 -33 86.5t-84 30.5t-84 -30.5t-33 -86.5t30 -86.5t87 -30.5q52 0 84.5 30.5t32.5 86.5z" />
+<glyph unicode="&#x2dc;" horiz-adv-x="1212" d="M788 1243q-43 0 -84 18.5t-80.5 41t-76 41t-70.5 18.5q-50 0 -75.5 -30t-39.5 -91h-98q13 121 70.5 189.5t148.5 68.5q46 0 89 -18.5t82 -41t75 -41t68 -18.5q49 0 73 29.5t39 91.5h99q-13 -121 -69.5 -189.5t-150.5 -68.5z" />
+<glyph unicode="&#x2000;" horiz-adv-x="953" />
+<glyph unicode="&#x2001;" horiz-adv-x="1907" />
+<glyph unicode="&#x2002;" horiz-adv-x="953" />
+<glyph unicode="&#x2003;" horiz-adv-x="1907" />
+<glyph unicode="&#x2004;" horiz-adv-x="635" />
+<glyph unicode="&#x2005;" horiz-adv-x="476" />
+<glyph unicode="&#x2006;" horiz-adv-x="317" />
+<glyph unicode="&#x2007;" horiz-adv-x="317" />
+<glyph unicode="&#x2008;" horiz-adv-x="238" />
+<glyph unicode="&#x2009;" horiz-adv-x="381" />
+<glyph unicode="&#x200a;" horiz-adv-x="105" />
+<glyph unicode="&#x2010;" horiz-adv-x="659" d="M84 473v152h491v-152h-491z" />
+<glyph unicode="&#x2011;" horiz-adv-x="659" d="M84 473v152h491v-152h-491z" />
+<glyph unicode="&#x2012;" horiz-adv-x="659" d="M84 473v152h491v-152h-491z" />
+<glyph unicode="&#x2013;" horiz-adv-x="1024" d="M82 473v152h860v-152h-860z" />
+<glyph unicode="&#x2014;" horiz-adv-x="2048" d="M82 473v152h1884v-152h-1884z" />
+<glyph unicode="&#x2018;" horiz-adv-x="348" d="M37 961l-12 22q22 90 71 224t105 255h123q-66 -254 -103 -501h-184z" />
+<glyph unicode="&#x2019;" horiz-adv-x="348" d="M309 1462l15 -22q-26 -100 -75 -232.5t-102 -246.5h-122q70 285 102 501h182z" />
+<glyph unicode="&#x201a;" horiz-adv-x="502" d="M63 0zM350 238l15 -23q-26 -100 -75 -232.5t-102 -246.5h-125q27 104 59.5 257t45.5 245h182z" />
+<glyph unicode="&#x201c;" horiz-adv-x="717" d="M406 961l-15 22q56 215 178 479h123q-30 -115 -59.5 -259.5t-42.5 -241.5h-184zM37 961l-12 22q22 90 71 224t105 255h123q-66 -254 -103 -501h-184z" />
+<glyph unicode="&#x201d;" horiz-adv-x="717" d="M309 1462l15 -22q-26 -100 -75 -232.5t-102 -246.5h-122q70 285 102 501h182zM678 1462l14 -22q-24 -91 -72 -224t-104 -255h-125q26 100 59 254t46 247h182z" />
+<glyph unicode="&#x201e;" horiz-adv-x="829" d="M25 0zM309 238l15 -22q-26 -100 -75 -232.5t-102 -246.5h-122q70 285 102 501h182zM678 238l14 -22q-24 -91 -72 -224t-104 -255h-125q26 100 59 254t46 247h182z" />
+<glyph unicode="&#x2022;" horiz-adv-x="770" d="M164 748q0 121 56.5 184t164.5 63q105 0 163 -62t58 -185q0 -119 -57.5 -183.5t-163.5 -64.5q-107 0 -164 65.5t-57 182.5z" />
+<glyph unicode="&#x2026;" horiz-adv-x="1606" d="M152 0zM152 106q0 67 30.5 101.5t87.5 34.5q58 0 90.5 -34.5t32.5 -101.5q0 -65 -33 -100t-90 -35q-51 0 -84.5 31.5t-33.5 103.5zM682 106q0 67 30.5 101.5t87.5 34.5q58 0 90.5 -34.5t32.5 -101.5q0 -65 -33 -100t-90 -35q-51 0 -84.5 31.5t-33.5 103.5zM1213 106 q0 67 30.5 101.5t87.5 34.5q58 0 90.5 -34.5t32.5 -101.5q0 -65 -33 -100t-90 -35q-51 0 -84.5 31.5t-33.5 103.5z" />
+<glyph unicode="&#x202f;" horiz-adv-x="381" />
+<glyph unicode="&#x2039;" horiz-adv-x="623" d="M82 551l342 407l119 -69l-289 -350l289 -351l-119 -71l-342 407v27z" />
+<glyph unicode="&#x203a;" horiz-adv-x="623" d="M541 524l-344 -407l-117 71l287 351l-287 350l117 69l344 -407v-27z" />
+<glyph unicode="&#x2044;" horiz-adv-x="266" d="M655 1462l-903 -1462h-143l903 1462h143z" />
+<glyph unicode="&#x205f;" horiz-adv-x="476" />
+<glyph unicode="&#x2074;" horiz-adv-x="711" d="M692 788h-125v-202h-145v202h-402v101l408 579h139v-563h125v-117zM422 905v195q0 134 6 209q-5 -12 -17 -31.5t-27 -42l-30&-45t-26 -39.5l-168 -246h262z" />
+<glyph unicode="&#x20ac;" horiz-adv-x="1208" d="M795 1333q-319 0 -398 -403h510v-129h-524l-2 -57v-64l2 -45h463v-129h-447q37 -180 138.5 -278.5t271.5 -98.5q156 0 309 66v-150q-146 -65 -317 -65q-237 0 -381.5 134.5t-190.5 391.5h-166v129h152l-2 42v44l2 80h-152v129h164q39 261 185 407t383 146q201 0 366 -97 l-71 -139q-166 86 -295 86z" />
+<glyph unicode="&#x2122;" horiz-adv-x="1589" d="M369 741h-123v615h-209v106h543v-106h-211v-615zM969 741l-201 559h-8l6 -129v-430h-119v721h187l196 -559l203 559h180v-721h-127v420l6 137h-8l-211 -557h-104z" />
+<glyph unicode="&#x2212;" d="M104 653v138h961v-138h-961z" />
+<glyph unicode="&#xe000;" horiz-adv-x="1095" d="M0 1095h1095v-1095h-1095v1095z" />
+<glyph horiz-adv-x="1255" d="M0 0z" />
+<hkern u1="&#x22;" u2="&#x178;" k="-20" />
+<hkern u1="&#x22;" u2="&#x153;" k="123" />
+<hkern u1="&#x22;" u2="&#xfc;" k="61" />
+<hkern u1="&#x22;" u2="&#xfb;" k="61" />
+<hkern u1="&#x22;" u2="&#xfa;" k="61" />
+<hkern u1="&#x22;" u2="&#xf9;" k="61" />
+<hkern u1="&#x22;" u2="&#xf8;" k="123" />
+<hkern u1="&#x22;" u2="&#xf6;" k="123" />
+<hkern u1="&#x22;" u2="&#xf5;" k="123" />
+<hkern u1="&#x22;" u2="&#xf4;" k="123" />
+<hkern u1="&#x22;" u2="&#xf3;" k="123" />
+<hkern u1="&#x22;" u2="&#xf2;" k="123" />
+<hkern u1="&#x22;" u2="&#xeb;" k="123" />
+<hkern u1="&#x22;" u2="&#xea;" k="123" />
+<hkern u1="&#x22;" u2="&#xe9;" k="123" />
+<hkern u1="&#x22;" u2="&#xe8;" k="123" />
+<hkern u1="&#x22;" u2="&#xe7;" k="123" />
+<hkern u1="&#x22;" u2="&#xe6;" k="82" />
+<hkern u1="&#x22;" u2="&#xe5;" k="82" />
+<hkern u1="&#x22;" u2="&#xe4;" k="82" />
+<hkern u1="&#x22;" u2="&#xe3;" k="82" />
+<hkern u1="&#x22;" u2="&#xe2;" k="82" />
+<hkern u1="&#x22;" u2="&#xe1;" k="82" />
+<hkern u1="&#x22;" u2="&#xe0;" k="123" />
+<hkern u1="&#x22;" u2="&#xdd;" k="-20" />
+<hkern u1="&#x22;" u2="&#xc5;" k="143" />
+<hkern u1="&#x22;" u2="&#xc4;" k="143" />
+<hkern u1="&#x22;" u2="&#xc3;" k="143" />
+<hkern u1="&#x22;" u2="&#xc2;" k="143" />
+<hkern u1="&#x22;" u2="&#xc1;" k="143" />
+<hkern u1="&#x22;" u2="&#xc0;" k="143" />
+<hkern u1="&#x22;" u2="u" k="61" />
+<hkern u1="&#x22;" u2="s" k="61" />
+<hkern u1="&#x22;" u2="r" k="61" />
+<hkern u1="&#x22;" u2="q" k="123" />
+<hkern u1="&#x22;" u2="p" k="61" />
+<hkern u1="&#x22;" u2="o" k="123" />
+<hkern u1="&#x22;" u2="n" k="61" />
+<hkern u1="&#x22;" u2="m" k="61" />
+<hkern u1="&#x22;" u2="g" k="61" />
+<hkern u1="&#x22;" u2="e" k="123" />
+<hkern u1="&#x22;" u2="d" k="123" />
+<hkern u1="&#x22;" u2="c" k="123" />
+<hkern u1="&#x22;" u2="a" k="82" />
+<hkern u1="&#x22;" u2="Y" k="-20" />
+<hkern u1="&#x22;" u2="W" k="-41" />
+<hkern u1="&#x22;" u2="V" k="-41" />
+<hkern u1="&#x22;" u2="T" k="-41" />
+<hkern u1="&#x22;" u2="A" k="143" />
+<hkern u1="&#x27;" u2="&#x178;" k="-20" />
+<hkern u1="&#x27;" u2="&#x153;" k="123" />
+<hkern u1="&#x27;" u2="&#xfc;" k="61" />
+<hkern u1="&#x27;" u2="&#xfb;" k="61" />
+<hkern u1="&#x27;" u2="&#xfa;" k="61" />
+<hkern u1="&#x27;" u2="&#xf9;" k="61" />
+<hkern u1="&#x27;" u2="&#xf8;" k="123" />
+<hkern u1="&#x27;" u2="&#xf6;" k="123" />
+<hkern u1="&#x27;" u2="&#xf5;" k="123" />
+<hkern u1="&#x27;" u2="&#xf4;" k="123" />
+<hkern u1="&#x27;" u2="&#xf3;" k="123" />
+<hkern u1="&#x27;" u2="&#xf2;" k="123" />
+<hkern u1="&#x27;" u2="&#xeb;" k="123" />
+<hkern u1="&#x27;" u2="&#xea;" k="123" />
+<hkern u1="&#x27;" u2="&#xe9;" k="123" />
+<hkern u1="&#x27;" u2="&#xe8;" k="123" />
+<hkern u1="&#x27;" u2="&#xe7;" k="123" />
+<hkern u1="&#x27;" u2="&#xe6;" k="82" />
+<hkern u1="&#x27;" u2="&#xe5;" k="82" />
+<hkern u1="&#x27;" u2="&#xe4;" k="82" />
+<hkern u1="&#x27;" u2="&#xe3;" k="82" />
+<hkern u1="&#x27;" u2="&#xe2;" k="82" />
+<hkern u1="&#x27;" u2="&#xe1;" k="82" />
+<hkern u1="&#x27;" u2="&#xe0;" k="123" />
+<hkern u1="&#x27;" u2="&#xdd;" k="-20" />
+<hkern u1="&#x27;" u2="&#xc5;" k="143" />
+<hkern u1="&#x27;" u2="&#xc4;" k="143" />
+<hkern u1="&#x27;" u2="&#xc3;" k="143" />
+<hkern u1="&#x27;" u2="&#xc2;" k="143" />
+<hkern u1="&#x27;" u2="&#xc1;" k="143" />
+<hkern u1="&#x27;" u2="&#xc0;" k="143" />
+<hkern u1="&#x27;" u2="u" k="61" />
+<hkern u1="&#x27;" u2="s" k="61" />
+<hkern u1="&#x27;" u2="r" k="61" />
+<hkern u1="&#x27;" u2="q" k="123" />
+<hkern u1="&#x27;" u2="p" k="61" />
+<hkern u1="&#x27;" u2="o" k="123" />
+<hkern u1="&#x27;" u2="n" k="61" />
+<hkern u1="&#x27;" u2="m" k="61" />
+<hkern u1="&#x27;" u2="g" k="61" />
+<hkern u1="&#x27;" u2="e" k="123" />
+<hkern u1="&#x27;" u2="d" k="123" />
+<hkern u1="&#x27;" u2="c" k="123" />
+<hkern u1="&#x27;" u2="a" k="82" />
+<hkern u1="&#x27;" u2="Y" k="-20" />
+<hkern u1="&#x27;" u2="W" k="-41" />
+<hkern u1="&#x27;" u2="V" k="-41" />
+<hkern u1="&#x27;" u2="T" k="-41" />
+<hkern u1="&#x27;" u2="A" k="143" />
+<hkern u1="&#x28;" u2="J" k="-184" />
+<hkern u1="&#x2c;" u2="&#x178;" k="123" />
+<hkern u1="&#x2c;" u2="&#x152;" k="102" />
+<hkern u1="&#x2c;" u2="&#xdd;" k="123" />
+<hkern u1="&#x2c;" u2="&#xdc;" k="41" />
+<hkern u1="&#x2c;" u2="&#xdb;" k="41" />
+<hkern u1="&#x2c;" u2="&#xda;" k="41" />
+<hkern u1="&#x2c;" u2="&#xd9;" k="41" />
+<hkern u1="&#x2c;" u2="&#xd8;" k="102" />
+<hkern u1="&#x2c;" u2="&#xd6;" k="102" />
+<hkern u1="&#x2c;" u2="&#xd5;" k="102" />
+<hkern u1="&#x2c;" u2="&#xd4;" k="102" />
+<hkern u1="&#x2c;" u2="&#xd3;" k="102" />
+<hkern u1="&#x2c;" u2="&#xd2;" k="102" />
+<hkern u1="&#x2c;" u2="&#xc7;" k="102" />
+<hkern u1="&#x2c;" u2="Y" k="123" />
+<hkern u1="&#x2c;" u2="W" k="123" />
+<hkern u1="&#x2c;" u2="V" k="123" />
+<hkern u1="&#x2c;" u2="U" k="41" />
+<hkern u1="&#x2c;" u2="T" k="143" />
+<hkern u1="&#x2c;" u2="Q" k="102" />
+<hkern u1="&#x2c;" u2="O" k="102" />
+<hkern u1="&#x2c;" u2="G" k="102" />
+<hkern u1="&#x2c;" u2="C" k="102" />
+<hkern u1="&#x2d;" u2="T" k="82" />
+<hkern u1="&#x2e;" u2="&#x178;" k="123" />
+<hkern u1="&#x2e;" u2="&#x152;" k="102" />
+<hkern u1="&#x2e;" u2="&#xdd;" k="123" />
+<hkern u1="&#x2e;" u2="&#xdc;" k="41" />
+<hkern u1="&#x2e;" u2="&#xdb;" k="41" />
+<hkern u1="&#x2e;" u2="&#xda;" k="41" />
+<hkern u1="&#x2e;" u2="&#xd9;" k="41" />
+<hkern u1="&#x2e;" u2="&#xd8;" k="102" />
+<hkern u1="&#x2e;" u2="&#xd6;" k="102" />
+<hkern u1="&#x2e;" u2="&#xd5;" k="102" />
+<hkern u1="&#x2e;" u2="&#xd4;" k="102" />
+<hkern u1="&#x2e;" u2="&#xd3;" k="102" />
+<hkern u1="&#x2e;" u2="&#xd2;" k="102" />
+<hkern u1="&#x2e;" u2="&#xc7;" k="102" />
+<hkern u1="&#x2e;" u2="Y" k="123" />
+<hkern u1="&#x2e;" u2="W" k="123" />
+<hkern u1="&#x2e;" u2="V" k="@23" />
+<hkern u1="&#x2e;" u2="U" k="41" />
+<hkern u1="&#x2e;" u2="T" k="143" />
+<hkern u1="&#x2e;" u2="Q" k="102" />
+<hkern u1="&#x2e;" u2="O" k="102" />
+<hkern u1="&#x2e;" u2="G" k="102" />
+<hkern u1="&#x2e;" u2="C" k="102" />
+<hkern u1="A" u2="&#x201d;" k="143" />
+<hkern u1="A" u2="&#x2019;" k="143" />
+<hkern u1="A" u2="&#x178;" k="123" />
+<hkern u1="A" u2="&#x152;" k="41" />
+<hkern u1="A" u2="&#xdd;" k="123" />
+<hkern u1="A" u2="&#xd8;" k="41" />
+<hkern u1="A" u2="&#xd6;" k="41" />
+<hkern u1="A" u2="&#xd5;" k="41" />
+<hkern u1="A" u2="&#xd4;" k="41" />
+<hkern u1="A" u2="&#xd3;" k="41" />
+<hkern u1="A" u2="&#xd2;" k="41" />
+<hkern u1="A" u2="&#xc7;" k="41" />
+<hkern u1="A" u2="Y" k="123" />
+<hkern u1="A" u2="W" k="82" />
+<hkern u1="A" u2="V" k="82" />
+<hkern u1="A" u2="T" k="143" />
+<hkern u1="A" u2="Q" k="41" />
+<hkern u1="A" u2="O" k="41" />
+<hkern u1="A" u2="J" k="-266" />
+<hkern u1="A" u2="G" k="41" />
+<hkern u1="A" u2="C" k="41" />
+<hkern u1="A" u2="&#x27;" k="143" />
+<hkern u1="A" u2="&#x22;" k="143" />
+<‚kern u1="B" u2="&#x201e;" k="82" />
+<hkern u1="B" u2="&#x201a;" k="82" />
+<hkern u1="B" u2="&#x178;" k="20" />
+<hkern u1="B" u2="&#xdd;" k="20" />
+<hkern u1="B" u2="&#xc5;" k="41" />
+<hkern u1="B" u2="&#xc4;" k="41" />
+<hkern u1="B" u2="&#xc3;" k="41" />
+<hkern u1="B" u2="&#xc2;" k="41" />
+<hkern u1="B" u2="&#xc1;" k="41" />
+<hkern u1="B" u2="&#xc0;" k="41" />
+<hkern u1="B" u2="Z" k="20" />
+<hkern u1="B" u2="Y" k="20" />
+<hkern u1="B" u2="X" k="41" />
+<hkern u1="B" u2="W" k="20" />
+<hkern u1="B" u2="V" k="20" />
+<hkern u1="B" u2="T" k="61" />
+<hkern u1="B" u2="A" k="41" />
+<hkern u1="B" u2="&#x2e;" k="82" />
+<hkern u1="B" u2="&#x2c;" k="82" />
+<hkern u1="C" u2="&#x152;" k="41" />
+<hkern u1="C" u2="&#xd8;" k="41" />
+<hkern u1="C" u2="&#xd6;" k="41" />
+<hkern u1="C" u2="&#xd5;" k="41" />
+<hkern u1="C" u2="&#xd4;" k="41" />
+<hkern u1="C" u2="&#xd3;" k="41" />
+<hkern u1="C" u2="&#xd2;" k="41" />
+<hkern u1="C" u2="&#xc7;" k="41" />
+<hkern u1="C" u2="Q" k="41" />
+<hkern u1="C" u2="O" k="41" />
+<hkern u1="C" u2="G" k="41" />
+<hkern u1="C" u2="C" k="41" />
+<hkern u1="D" u2="&#x201e;" k="82" />
+<hkern u1="D" u2="&#x201a;" k="82" />
+<hkern u1="D" u2="&#x178;" k="20" />
+<hkern u1="D" u2="&#xdd;" k="20" />
+<hkern u1="D" u2="&#xc5;" k="41" />
+<hkern u1="D" u2="&#xc4;" k="41" />
+<hkern u1="D" u2="&#xc3;" k="41" />
+<hkern u1="D" u2="&#xc2;" k="41" />
+<hkern u1="D" u2="&#xc1;" k="41" />
+<hkern u1="D" u2="&#xc0;" k="41" />
+<hkern u1="D" u2="Z" k="20" />
+<hkern u1="D" u2="Y" k="20" />
+<hkern u1="D" u2="X" k="41" />
+<hkern u1="D" u2="W" k="20" />
+<hkern u1="D" u2="V" k="20" />
+<hkern u1="D" u2="T" k="61" />
+<hkern u1="D" u2="A" k="41" />
+<hkern u1="D" u2="&#x2e;" k="82" />
+<hkern u1="D" u2="&#x2c;" k="82" />
+<hkern u1="E" u2="J" k="-123" />
+<hkern u1="F" u2="&#x201e;" k="123" />
+<hkern u1="F" u2="&#x201a;" k="123" />
+<hkern u1="F" u2="&#xc5;" k="41" />
+<hkern u1="F" u2="&#xc4;" k="41" />
+<hkern u1="F" u2="&#xc3;" k="41" />
+<hkern u1="F" u2="&#xc2;" k="41" />
+<hkern u1="F" u2="&#xc1;" k="41" />
+<hkern u1="F" u2="&#xc0;" k="41" />
+<hkern u1="F" u2="A" k="41" />
+<hkern u1="F" u2="&#x3f;" k="-41" />
+<hkern u1="F" u2="&#x2e;" k="123" />
+<hkern u1="F" u2="&#x2c;" k="123" />
+<hkern u1="K" u2="&#x152;" k="41" />
+<hkern u1="K" u2="&#xd8;" k="41" />
+<hkern u1="K" u2="&#xd6;" k="41" />
+<hkern u1="K" u2="&#xd5;" k="41" />
+<hkern u1="K" u2="&#xd4;" k="41" />
+<hkern u1="K" u2="&#xd3;" k="41" />
+<hkern u1="K" u2="&#xd2;" k="41" />
+<hkern u1="K" u2="&#xc7;" k="41" />
+<hkern u1="K" u2="Q" k="41" />
+<hkern u1="K" u2="O" k="41" />
+<hkern u1="K" u2="G" k="41" />
+<hkern u1="K" u2="C" k="41" />
+<hkern u1="L" u2="&#x201d;" k="164" />
+<hkern u1="L" u2="&#x2019;" k="164" />
+<hkern u1="ð" u2="&#x178;" k="61" />
+<hkern u1="L" u2="&#x152;" k="41" />
+<hkern u1="L" u2="&#xdd;" k="61" />
+<hkern u1="L" u2="&#xdc;" k="20" />
+<hkern u1="L" u2="&#xdb;" k="20" />
+<hkern u1="L" u2="&#xda;" k="20" />
+<hkern u1="L" u2="&#xd9;" k="20" />
+<hkern u1="L" u2="&#xd8;" k="41" />
+<hkern u1="L" u2="&#xd6;" k="41" />
+<hkern u1="L" u2="&#xd5;" k="41" />
+<hkern u1="L" u2="&#xd4;" k="41" />
+<hkern u1="L" u2="&#xd3;" k="41" />
+<hkern u1="L" u2="&#xd2;" k="41" />
+<hkern u1="L" u2="&#xc7;" k="41" />
+<hkern u1="L" u2="Y" k="61" />
+<hkern u1="L" u2="W" k="41" />
+<hkern u1="L" u2="V" k="41" />
+<hkern u1="L" u2="U" k="20" />
+<hkern u1="L" u2="T" k="41" />
+<hkern u1="L" u2="Q" k="41" />
+<hkern u1="L" u2="O" k="41" />
+<hkern u1="L" u2="G" k="41" />
+<hkern u1="L" u2="C" k="41" />
+<hkern u1="L" u2="&#x27;" k="164" />
+<hkern u1="L" u2="&#x22;" k="164" />
+<hkern u1="O" u2="&#x201e;" k="82" />
+<hkern u1="O" u2="&#x201a;" k="82" />
+<hkern u1="O" u2="&#x178;" k="20" />
+<hkern u1="O" u2="&#xdd;" k="20" />
+<hkern u1="O" u2="&#xc5;" k="41" />
+<hkern u1="O" u2="&#xc4;" k="41" />
+<hkern u1="O" u2="&#xc3;" k="41" />
+<hkern u1="O" u2="&#xc2;" k="41" />
+<hkern u1="O" u2="&#xc1;" k="41" />
+<hkern u1="O" u2="&#xc0;" k="41" />
+<hkern u1="O" u2="Z" k="20" C>
+<hkern u1="O" u2="Y" k="20" />
+<hkern u1="O" u2="X" k="41" />
+<hkern u1="O" u2="W" k="20" />
+<hkern u1="O" u2="V" k="20" />
+<hkern u1="O" u2="T" k="61" />
+<hkern u1="O" u2="A" k="41" />
+<hkern u1="O" u2="&#x2e;" k="82" />
+<hkern u1="O" u2="&#x2c;" k="82" />
+<hkern u1="P" u2="&#x201e;" k="266" />
+<hkern u1="P" u2="&#x201a;" k="266" />
+<hkern u1="P" u2="&#xc5;" k="102" />
+<hkern u1="P" u2="&#xc4;" k="102" />
+<hkern u1="P" u2="&#xc3;" k="102" />
+<hkern u1="P" u2="&#xc2;" k="102" />
+<hkern u1="P" u2="&#xc1;" k="102" />
+<hkern u1="P" u2="&#xc0;" k="102" />
+<hkern u1="P" u2="Z" k="20" />
+<hkern u1="P" u2="X" k="41" />
+<hkern u1="P" u2="A" k="102" />
+<hkern u1="P" u2="&#x2e;" k="266" />
+<hkern u1="P" u2="&#x2c;" k="266" />
+<hkern u1="Q" u2="&#x201e;" k="82" />
+<hkern u1="Q" u2="&#x201a;" k="82" />
+<hkern u1="Q" u2="&#x178;" k="20" />
+<hkern u1="Q" u2="&#xdd;" k="20" />
+<hkern u1="Q" u2="&#xc5;" k="41" />
+<hkern u1="Q" u2="&#xc4;" k="41" />
+<hker"V" k="20" />
+<hkern u1="Q" u2="T" k="61" />
+<hkern u1="Q" u2="A" k="41" />
+<hkern u1="Q" u2="&#x2e;" k="82" />
+<hkern u1="Q" u2="&#x2c;" k="82" />
+<hkern u1="T" u2="&#x201e;" k="123" />
+<hkern u1="T" u2="&#x201a;" k="123" />
+<hkern u1="T" u2="&#x2014;" k="82" />
+<hkern u1="T" u2="&#x2013;" k="82" />
+<hkern u1="T" u2="&#x153;" k="143" />
+<hkern u1="T" u2="&#x152;" k="41" />
+<hkern u1="T" u2="&#xfd;" k="41" />
+<hkern u1="T" u2="&#xfc;" k="102" />
+<hkern u1="T" u2="&#xfb;" k="102" />
+<hkern u1="T" u2="&#xfa;" k="102" /-84 18.5t-80.5 41t-76 41t-70.5 18.5q-50 0 -75.5 -30t-39.5 -91h-98q13 121 70.5 189.5t148.5 68.5q46 0 89 -18.5t82 -41t75 -41t68 -18.5q49 0 73 29.5t39 91.5h99q-13 -121 -69.5 -189.5t-150.5 -68.5z" />
+<glyph unicode="&#xf6;" horiz-adv-x="1237" d="M115 0zM1122 549q0 -268 -135 -418.5t-373 -150.5q-147 0 -261 69t-176 198t-62 302q0 268 134 417.5t372 149.5q230 0 365.5 -153t135.5 -414zM287 549q0 -210 84 -320t247 -110t247.5 109.5t84.5 320.5q0 209 -84.5 317.5t-249.5 108.5q-163 0 -246 -107t-83 -319z M336 1393q0 52 26.5 75t63.5 23q38 0 65.5 -23t27.5 -75q0 -50 -27.5 -74.5t-65.5 -24.5q-37 0 -63.5>
+<hkern u1="T" u2="&#xf9;" k="102" />
+<hkern u1="T" u2="&#xf8;" k="143" />
+<hkern u1="T" u2="&#xf6;" k="143" />
+<hkern u1="T" u2="&#xf5;" k="143" />
+<hkern u1="T" u2="&#xf4;" k="143" />
+<hkern u1="T" u2="&#xf3;" k="143" />
+<hkern u1="T" u2="&#xf2;" k="143" />
+<hkern u1="T" u2="&#xeb;" k="143" />
+<hkern u1="T" u2="&#xea;" k="143" />
+<hkern u1="T" u2="&#xe9;" k="143" />
+<hkern u1="T" u2="&#xe8;" k="143" />
+<hkern u1="T" u2="&#xe7;" k="143" />
+<hkern u1="T" u2="&#xe6;" k="164" />
+<hkern u1="T" u2="&#xe5;" k="164" />
+<hkern u1="T" u2="&#xe4;" k="164" />
+<hkern u1="T" u2="&#xe3;" k="164" />
+<hkern u1="T" u2="&#xe2;" k="164" />
+<hkern u1="T" u2="&#xe1;" k="164" />
+<hkern u1="T" u2="&#xe0;" k="143" />
+<hkern u1="T" u2="&#xd8;" k="41" />
+<hkern u1="T" u2="&#xd6;" k="41" />
+<hkern u1="T" u2="&#xd5;" k="41" />
+<hkern u1="T" u2="&#xd4;" k="41" />
+<hkern u1="T" u2="&#xd3;" k="41" />
+<hkern u1="T" u2="&#hd2;" k="41" />
+<hkern u1="T" u2="&#xc7;" k="41" />
+<hkern u1="T" u2="&#xc5;" k="143" />
+<hkern u1="T" u2="&#xc4;" k="143" />
+<hkern u1="T" u2="&#xc3;" k="143" />
+<hkern u1="T" u2="&#xc2;" k="143" />
+<hkern u1="T" u2="&#xc1;" k="143" />
+<hkern u1="T" u2="&#xc0;" k="143" />
+<hkern u1="T" u2="z" k="82" />
+<hkern u1="T" u2="y" k="41" />
+<hkern u1="T" u2="x" k="41" />
+<hkern u1="T" u2="w" k="41" />
+<hkern u1="T" u2="v" k="41" />
+<hkern u1="T" u2="u" k="102" />
+<hkern u1="T" u2="s" k="123" />
+<hkern u1="T" u2="r" k="102" />
+<hkern u1="T" u2="q" k="143" />
+<hkern u1="T" u2="p" k="102" />
+<hkern u1="T" u2="o" k="143" />
+<hkern u1="T" u2="n" k="102" />
+<hkern u1="T" u2="m" k="102" />
+<hkern u1="T" u2="g" k="143" />
+<hkern u1="T" u2="e" k="143" />
+<hkern u1="T" u2="d" k="143" />
+<hkern u1="T" u2="c" k="143" />
+<hkern u1="T" u2="a" k="164" />
+<hkern u1="T" u2="T" k="-41" />
+<hkern u1="T" u2="Q" k="41" />
+<hkern u1="T" u2="O" k="41" />
+<hkern u1="T" u2="G" k="41" />
+<hkern u1="T" u2="C" k="41" />
+<hkern u1="T" u2="A" k="143" />
+<hkern u1="T" u2="&#x3f;" k="-41" />
+<hkern u1="T" u2="&#x2e;" k="123" />
+<hkern u1="T" u2="&#x2d;" k="82" />
+<hkern u1="T" u2="&#x2c;" k="123" />
+<hkern u1="U" u2="&#x201e;" k="41" />
+<hkern u1="U" u2="&#x201a;" k="41" />
+<hkern u1="U" u2="&#xc5;" k="20" />
+<hkern u1="U" u2="&#xc4;" k="20" />
+<hkernu1="U" u2="&#xc3;" k="20" />
+<hkern u1="U" u2="&#xc2;" k="20" />
+<hkern u1="U" u2="&#xc1;" k="20" />
+<hkern u1="U" u2="&#xc0;" k="20" />
+<hkern u1="U" u2="A" k="20" />
+<hkern u1="U" u2="&#x2e;" k="41" />
+<hkern u1="U" u2="&#x2c;" k="41" />
+<hkern u1="V" u2="&#x201e;" k="102" />
+<hkern u1="V" u2="&#x201a;" k="102" />
+<hkern u1="V" u2="&#x153;" k="41" />
+<hkern u1="V" u2="&#x152;" k="20" />
+<hkern u1="V" u2="&#xfc;" k="20" />
+<hkern u1="V" u2="&#xfb;" k="20" />
+<hkern u1="V" u2="&#xfa;" k="20" />
+<hkern u1="V" u2="&#xf9;" k="20" />
+<hkern u1="V" u2="&#xf8;" k="41" />
+<hkern u1="V" u2="&#xf6;" k="41" />
+<hkern u1="V" u2="&#xf5;" k="41" />
+<hkern u1="V" u2="&#xf4;" k="41" />
+<hkern u1="V" u2="&#xf3;" k="41" />
+<hkern u1="V" u2="&#xf2;" k="41" />
+<hkern u1="V" u2="&#xeb;" k="41" />
+<hkern u1="V" u2="&#xea;" k="41" />
+<hkern u1="V" u2="&#xe9;" k="41" />
+<hkern u1="V" u2="&#xe8;" k="41" />
+<hkern u1="V" u2="&#xe7;" kkern u1="V" u2="&#xe3;" k="41" />
+<hkern u1="V" u2="&#xe2;" k="41" />
+<hkern u1="V" u2="&#xe1;" k="41" />
+<hkern u1="V" u2="&#xe0;" k="41" />
+<hkern u1="V" u2="&#xd8;" k="20" />
+<hkern u1="V" u2="&#xd6;" k="20" />
+<hkern u1="V" u2="&#xd5;" k="20" />
+<hkern u1="V" u2="&#xd4;" k="20" />
+<hkern u1="V" u2="&#xd3;" k="20" />
+<hkern u1="V" u2="&#xd2;" k="20" />
+<hkern u1="V" u2="&#xc7;" k="20" />
+<hkern u1="V" u2="&#xc5;" k="82" />
+<hkern u1="V" u2="&#xc4;" k="82" />
+<hkern u1="V" u2="&#xc3;" k="82" />
+<hkern u1="V" u2="&#xc2;" k="82" />
+<hkern u1="V" u2="&#xc1;" k="82" />
+<hkern u1="V" u2="&#xc0;" k="82" />
+<hkern u1="V" u2="u" k="20" />
+<hkern u1="V" u2="s" k="20" />
+<hkern u1="V" u2="r" k="20" />
+<hkern u1="V" u2="q" k="41" />
+<hkern u1="V" u2="p" k="20" />
+<hkern u1="V" u2="o" k="41" />
+<hkern u1="V" u2="n" k="20" />
+<hkern u1="V" u2="m" k="20" />
+<hkern u1="V" u2="g" k="20" />
+<hkern u1="V" u2="e" k="41" />
+<hkern u1="V" u2="d" k="41" />
+<hkern u1="V" u2="c" k="41" />
+<hkern u1="V" u2="a" k="41" />
+<hkern u1="V" u2="Q" k="20" />
+<hkern u1="V" u2="O" k="20" />
+<hkern u1="V" u2="G" k="20" />
+<hkern u1="V" u2="C" k="20" />
+<hkern u1="V" u2="A" k="82" />
+<hkern u1="V" u2="&#x3f;" k="-41" />
+<hkern u1="V" u2="&#x2e;" k="102" />
+<hkern u1="V" u2="&#x2c;" k="102" />
+<hkern u1="W" u2="&#x201e;" k="102" />
+<hkern u1="W" u2="&#x201a;" k="102" />
+<hkern u1="W" u2="&#x153;" k="41" />
+<hkern u1="W" u2="&#x152;" k0000000000000000000="20" />
+<hkern u1="W" u2="&#xfc;" k="20" />
+<hkern u1="W" u2="&#xfb;" k="20" />
+<hkern u1="W" u2="&#xfa;" k="20" />
+<hkern u1="W" u2="&#xf9;" k="20" />
+<hkern u1="W" u2="&#xf8;" k="41" />
+<hkern u1="W" u2="&#xf6;" k="41" />
+<hkern u1="W" u2="&#xf5;" k="41" />
+<hkern u1="W" u2="&#xf4;" k="41" />
+<hkern u1="W" u2="&#xf3;" k="41" >
+<hkern u1="W" u2="&#xf2;" k="41" />
+<hkern u1="W" u2="&#xeb;" k="41" />
+<hkern u1="W" u2="&#xea;" k="41" />
+<hkern u1="W" u2="&#xe9;" k="41" />
+<hkern u1="W" u2="&#xe8;" k="41" />
+<hkern u1="W" u2="&#xe7;" k="41" />
+<hkern u1="W" u2="&#xe6;" k="41" />
+<hkern u1="W" u2="&#xe5;" k="41" />
+<hkern u1="W" u2="&#xe4;" k="41" />
+<hkern u1="W" u2="&#xe3;" k="41" />
+<hkern u1="W" u2="&#xe2;" k="41" />
+<hkern u1="W" u2="&#xe1;" k="41" />
+<hkern u1="W" u2="&#xe0;" k="41" />
+<hkern u1="W" u2="&#xd8;" k="20" />
+<hkern u1="W" u2="&#xd6;" k="20" />
+<hkern u1="W" u2="&#xd5;" k="20" />
+<hkern u1="W" u2="&#xd4;" k="20" />
+<hkern u1="W" u2="&#xd3;" k="20" />
+<hkern u1="W" u2="&#xd2;" k="20" />
+<hkern u1="W" u2="&#xc7;" k="20" />
+<hkern u1="W" u2="&#xc5;" k="82" />
+<hkern u1="W" u2="&#xc4;" k="82" />
+<hkern u1="W" u2="&#xc3;" k="82" />
+<hkern u1="W" u2="&#xc2;" k="82" />
+<hkern u1="W" u2="&#xc1;" k="82" />
+<hkern u1="W" u2="&#xc0;" k="82" />
+<hkern u1="W" u2="u" k="20" />
+<hkern u1="W" u2="s" k="20" />
+<hkern u1="W" u2="r" k="20" />
+<hkern u1="W" u2="q" k="41" />
+<hkern u1="W" u2="p" k="20" />
+<hkern u1="W" u2="o" k="41" />
+<hkern u1="W" u2="n" k="20" />
+<hkern u1="W" u2="m" k="20" />
+<hkern u1="W" u2="g" k="20" />
+<hkern u1="W" u2="e" k="41" />
+<hkern u1="W" u2="d" k="41" />
+<hkern u1="W" u2="c" k="41" />
+<hkern u1="W" u2="a" k="41" />
+<hkern u1="W" u2="Q" k="20" />
+<hkern u1="W" u2="O" k="20" />
+<hkern u1="W" u2="G" k="20" />
+<hkern u1="W" u2="C" k="20" />
+<hkern u1="W" u2="A" k="82" />
+<hkern u1="W" u2="&#x3f;" k="-41" />
+<hkern u1="W" u2="&#x2e;" k="102" />
+<hkern u1="W" u2="&#x2c;" k="102" />
+<hkern u1="X" u2="&#x152;" k="41" />
+<hkern u1="X" u2="&#xd8;" k="41" />
+<hkern u1="X" u2="&#xd6;" k="41" />
+<hkern u1="X" u2="&#xd5;" k="41" />
+<hkern u1="X" u2="&#xd4;" k="41" />
+<hkern u1="X" u2="&#xd3;" k="41" />
+<hkern u1="X" u2="&#xd2;" k="41" />
+<hkern u1="X" u2="&#xc7;" k="41" />
+<hkern u1="X" u2="Q" k="41" />
+<hkern u1="X" u2="O" k="41" />
+<hkern u1="X" u2="G" k="41" />
+<hkern u1="X" u2="C" k="41" />
+<hkern u1="Y" u2="&#x201e;" k="123" />
+<hkern u1="Y" u2="&#x201a;" k="123" />
+<hkern u1="Y" u2="&#x153;" k="102" />
+<hkern u1="Y" u2="&#x152;" k="41" />
+<hkern u1="Y" u2="&#xfc;" k="61" />
+<hkern u1="Y" u2="&#xfb;" k="61" />
+<hkern u1="Y" u2="&#xfa;" k="61" />
+<hkern u1="Y" u2="&#xf9;" k="61" />
+<hkern u1="Y" u2="&#xf8;" k="102" />
+<hkern u1="Y" u2="&#xf6;" k="102" />
+<hkern u1="Y" u2="&#xf5;" k="102" />
+<hkern u1="Y" u2="&#xf4;" k="102" />
+<hkern u1="Y" u2="&#xf3;" k="102" />
+<hkern u1="Y" u2="&#xf2;" k="102" />
+<hkern u1="Y" u2="&#xeb;" k="102" />
+<hkern u1="Y" u2="&#xea;" k="102" />
+<hkern u1="Y" u2="&#xe9;" k="102" />
+<hkern u1="Y" u2="&#xe8;" k="102" />
+<hkern u1="Y" u2="&#xe7;" k="102" />
+<hkern u1="Y" u2="&#xe6;" k="102" />
+<hkern u1="Y" u2="&#xe5;" k="102" />
+<hkern u1="Y" u2="&#xe4;" k="102" />
+<hkern u1="Y" u2="&#xe3;" k="102" />
+<hkern u1="Y" u2="&#xe2;" k="102" />
+<hkern u1="Y" u2="&#xe1;" k="102" />
+<hkern u1="Y" u2="&#xe0;" k="102" />
+<hkern u1="Y" u2="&#xd8;" k="41" />
+<hkern u1="Y" u2="&#xd6;" k="41" />
+<hkern u1="Y" u2="&#xd5;" k="41" />
+<hkern u1="Y" u2="&#xd4;" k="41" />
+<hkern u1="Y" u2="&#xd3;" k="41" />
+<hkern u1="Y" u2="&#xd2;" k="41" />
+<hkern u1="Y" u2="&#xc7;" k="41" />
+<hkern u1="Y" u2="&#xc5;" k="123" />
+<hkern u1="Y" u2="&#xc4;" k="123" />
+<hkern u1="Y" u2="&#xc3;" k="123" />
+<hkern u1="Y" u2="&#xc2;" k="123" />
+<hkern u1="Y" u2="&#xc1;" k="123" />
+<hkern u1="Y" u2="&#xc0;" k="123" />
+<hkern u1="Y" u2="z" k="41" />
+<hkern u1="Y" u2="u" k="61" />
+<hkern u1="Y" u2="s" k="82" />
+<hkern u1="Y" u2="r" k="61" />
+<hkern u1="Y" u2="q" k="102" />
+<hkern u1="Y" u2="p" k="61" />
+<hkern u1="Y" u2="o" k="102" />
+<hkern u1="Y" u2="n" k="61" />
+<hkern u1="Y" u2="m" k="61" />
+<hkern u1="Y" u2="g" k="41" />
+<hkern u1="Y" u2="e" k="102" />
+<hkern u1="Y" u2="d" k="102" />
+<hkern u1="Y" u2="c" k="102" />
+<hkern u1="Y" u2="a" k="102" />
+<hkern u1="Y" u2="Q" k="41" />
+<hkern u1="Y" u2="O" k="41" />
+<hkern u1="Y" u2="G" k="41" />
+<hkern u1="Y" u2="C" k="41" />
+<hkern u1="Y" u2="A" k="123" />
+<hkern u1="Y" u2="&#x3f;" k="-41" />
+<hkern u1="Y" u2="&#x2e;" k="123" />
+<hkern u1="Y" u2="&#x2c;" k="123" />
+<hkern u1="Z" u2="&#x152;" k="20" />
+<hkern u1="Z" u2="&#xd8;" k="20" />
+<hkern u1="Z" u2="&#xd6;" k="20" />
+<hkern u1="Z" u2="&#xd5;" k="20" />
+<hkern u1="Z" u2="&#xd4;" k="20" />
+<hkern u1="Z" u2="&#xd3;" k="20" />
+<hkern u1="Z" u2="&#xd2;" k="20" />
+<hkern u1="Z" u2="&#xc7;" k="20" />
+<hkern u1="Z" u2="Q" k="20" />
+<hkern u1="Z" u2="O" k="20" />
+<hkern u1="Z" u2="G" k="20" />
+<hkern u1="Z" u2="C" k="20" />
+<hkern u1="[" u2="J" k="-184" />
+<hkern u1="a" u2="&#x201d;" k="20" />
+<hkern u1="a" u2="&#x2019;" k="20" />
+<hkern u1="a" u2="&#x27;" k="20" />
+<hkern u1="a" u2="&#x22;" k="20" />
+<hkern u1="b" u2="&#x201d;" k="20" />
+<hkern u1="b" u2="&#x2019;" k="20" />
+<hkern u1="b" u2="&#xfd;" k="41" />
+<hkern u1="b" u2="z" k="20" />
+<hkern u1="b" u2="y" k="41" />
+<hkern u1="b" u2="x" k="41" />
+<hkern u1="b" u2="w" k="41" />
+<hkern u1="b" u2="v" k="41" />
+<hkern u1="b" u2="&#x27;" k="20" />
+<hkern u1="b" u2="&#x22;" k="20" />
+<hkern u1="c" u2="&#x201d;" k="-41" />
+<hkern u1="c" u2="&#x2019;" k="-41" />
+<hkern u1="c" u2="&#x27;" k="-41" />
+<hkern u1="c" u2="&#x22;" k="-41" />
+<hkern u1="e" u2="&#x201d;" k="20" />
+<hkern u1="e" u2="&#x2019;" k="20" />
+<hkern u1="e" u2="&#xfd;" k="41" />
+<hkern u1="e" u2="z" k="20" />
+<hkern u1="e" u2="y" k="41" />
+<hkern u1="e" u2="x" k="41" />
+<hkern u1="e" u2="w" k="41" />
+<hkern u1="e" u2="v" k="41" />
+<hkern u1="e" u2="&#x27;" k="20" />
+<hkern u1="e" u2="&#x22;" k="20" />
+<hkern u1="f" u2="&#x201d;" k="-123" />
+<hkern u1="f" u2="&#x2019;" k="-123" />
+<hkern u1="f" u2="&#x27;" k="-123" />
+<hkern u1="f" u2="&#x22;" k="-123" />
+<hkern u1="h" u2="&#x201d;" k="20" />
+<hkern u1="h" u2="&#x2019;" k="20" />
+<hkern u1="h" u2="&#x27;" k="20" />
+<hkern u1="h" u2="&#x22;" k="20" />
+<hkern u1="k" u2="&#x153;" k="41" />
+<hkern u1="k" u2="&#xf8;" k="41" />
+<hkern u1="k" u2="&#xf6;" k="41" />
+<hkern u1="k" u2="&#xf5;" k="41" />
+<hkern u1="k" u2="&#xf4;" k="41" />
+<hkern u1="k" u2="&#xf3;" k=;41" />
+<hkern u1="k" u2="&#xf2;" k="41" />
+<hkern u1="k" u2="&#xeb;" k="41" />
+<hkern u1="k" u2="&#xea;" k="41" />
+<hkern u1="k" u2="&#xe9;" k="41" />
+<hkern u1="k" u2="&#xe8;" k="41" />
+<hkern u1="k" u2="&#xe7;" k="41" />
+<hkern u1="k" u2="&#xe0;" k="41" />
+<hkern u1="k" u2="q" k="41" />
+<hkern u1="k" u2="o" k="41" />
+<hkern u1="k" u2="e" k="41" />
+<hkern u1="k" u2="d" k="41" />
+<hkern u1="k" u2="c" k="41" />
+<hkern u1="m" u2="&#x201d;" k="20" />
+<hkern u1="m" u2="&#x2019;" k="20" />
+<hkern u1="m" u2="&#x27;" k="20" />
+<hkern u1="m" u2="&#x22;" k="20" />
+<hkern u1="n" u2="&#x201d;" k="20" />
+<hkern u1="n" u2="&#x2019;" k="20" />
+<hkern u1="n" u2="&#x27;" k="20" />
+<hkern u1="n" u2="&#x22;" k="20" />
+<hkern u1="o" u2="&#x201d;" k="20" />
+<hkern u1="o" u2="&#x2019;" k="20" />
+<hkern u1="o" u2="&#xfd;" k="41" />
+<hkern u1="o" u2="z" k="20" />
+<hkern u1="o" u2="y" k="41" />
+<hkern u1="o" u2="x" k="41" />
+<hkern u1="o" u2="w" k="41" />
+<hkern u1="o" u2="v" k="41" />
+<hkern u1="o" u2="&#x27;" k="20" />
+<hkern u1="o" u2="&#x22;" k="20" />
+<hkern u1="p" u2="&#x201d;" k="20" />
+<hkern u1="p" u2="&#x2019;" k="20" />
+<hkern u1="p" u2="&#xfd;" k="41" />
+<hkern u1="p" u2="z" k="20" />
+<hkern u1="p" u2="y" k="41" />
+<hkern u1="p" u2="x" k="41" />
+<hkern u1="p" u2="w" k="41" />
+<hkern u1="p" u2="v" k="41" />
+<hkern u1="p" u2="&#x27;" k="20" />
+<hkern u1="p" u2="&#x22;" k="20" />
+<hkern u1="r" u2="&#x201d;" k="-82" />
+<hkern u1="r" u2="&#x2019;" k="-82" />
+<hkern u1="r" u2="&#x153;" k="41" />
+<hkern u1="r" u2="&#xf8;" k="41" />
+<hkern u1="r" u2="&#xf6;" k="41" />
+<hkern u1="r" u2="&#xf5;" k="41" />
+<hkern u1="r" u2="&#xf4;" k="41" />
+<hkern u1="r" u2="&#xf3;" k="41" />
+<hkern u1="r" u2="&#xf2;" k="41" />
+<hkern u1="r" u2="&#xeb;" k="41" />
+<hkern u1="r" u2="&#xea;" k="41" />
+<hkern u1="r" u2="&#xe9;" k="41" />
+<hkern u1="r" u2="&#xe8;" k="41" />
+<hkern u1="r" u2="&#xe7;" k="41" />
+<hkern u1="r" u2="&#xe6;" k="41" />
+<hkern u1="r" u2="&#xe5;" k="41" />
+<hkern u1="r" u2="&#xe4;" k="41" />
+<hkern u1="r" u2="&#xe3;" k="41" />
+<hkern u1="r" u2="&#xe2;" k="41" />
+<hkern u1="r" u2="&#xe1;" k="41" />
+<hkern u1="r" u2="&#x;" k="-41" />
+<hkern u1="t" u2="&#x2019;" k="-41" />
+<hkern u1="t" u2="&#x27;" k="-41" />
+<hkern u1="t" u2="&#x22;" k="-41" />
+<hkern u1="v" u2="&#x201e;" k="82" />
+<hkern u1="v" u2="&#x201d;" k="-82" />
+<hkern u1="v" u2="&#x201a;" k="82" />
+<hkern u1="v" u2="&#x2019;" k="-82" />
+<hkern u1="v" u2="&#x3f;" k="-41" />
+<hkern u1="v" u2="&#x2e;" k="82" />
+<hkern u1="v" u2="&#x2c;" k="82" />
+<hkern u1="v" u2="&#x27;" k="-82" />
+<hkern u1="v" u2="&#x22;" k="-82" />
+<hkern u1="w" u2="&#x201e;" k="82" />
+<hkern u1="w" u2="&#x201d;" k="-82" />
+<hkern u1="w" u2="&#x201a;" k="82" />
+<hkern u1="w" u2="&#x2019;" k="-82" />
+<hkern u1="w" u2="&#x3f;" k="-41" />
+<hkern u1="w" u2="&#x2e;" k="82" />
+<hkern u1="w" u2="&#x2c;" k="82" />
+<hkern u1="w" u2="&#x27;" k="-82" />
+<hkern u1="w" u2="&#x22;" k="-82" />
+<hkern u1="x" u2="&#x153;" k="41" />
+<hkern u1="x" u2="&#xf8;" k="41" />
+<hkern u1="x" u2="&#xf6;" k="41" />
+<hkern u1="x" u2="&#xf5;" k="41" />
+<hkern u1="x" u2="&#xf4;" k="41" />
+<hkern u1="x" u2="&#xf3;" k="41" />
+<hkern u1="x" u2="&#xf2;" k="41" />
+<hkern u1="x" u2="&#xeb;" k="41" />
+<hkern u1="x" u2="&#xea;" k="41" />
+<hkern u1="x" u2="&#xe9;" k="41" />
+<hkern u1="x" u2="&#xe8;" k="41" />
+<hkern u1="x" u2="&#xe7;" k="41" />
+<hkern u1="x" u2="&#xe0;" k="41" />
+<hkern u1="x" u2="q" k="41" />
+<hkern u1="x" u2="o" k7b;" u2="J" k="-184" />
+<hkern u1="&#xc0;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc0;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc0;" u2="&#x178;" k="123" />
+<hkern u1="&#xc0;" u2="&#x152;" k="41" />
+<hkern u1="&#xc0;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc0;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc0;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc0;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc0;" u2="Y" k="123" />
+<hkern u1="&#xc0;" u2="W" k="82" />
+<hkern u1="&#xc0;" u2="V" k="82" />
+<hkern u1="&#xc0;" u2="T" k="143" />
+<hkern u1="&#xc0;" u2="Q" k="41" />
+<hkern u1="&#xc0;" u2="O" k="41" />
+<hkern u1="&#xc0;" u2="J" k="-266" />
+<hkern u1="&#xc0;" u2="G" k="41" />
+<hkern u1="&#xc0;" u2="C" k="41" />
+<hkern u1="&#xc0;" u2="&#x27;" k="143" />
+<hkern u1="&#xc0;" u2="&#x22;" k="143" />
+<hkern u1="&#xc1;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc1;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc1;" u2="&#x178;" k="123" />
+<hkern u1="&#xc1;" u2="&#x152;" k="41" />
+<hkern u1="&#xc1;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc1;" u2="&#xd8;" k="41q0 -210 84 -320t247 -110t247.5 109.5t84.5 320.5q0 209 -84.5 317.5t-249.5 108.5q-163 0 -246 -107t-83 -319z M336 1393q0 52 26.5 75t63.5 23q38 0 65.5 -23t27.5 -75q0 -50 -27.5 -74.5t-65.5 -24.5q-37 0 -63.5>
+<hkern u1="T" u2="&#xf9;" k="102" />
+<hkern u1="T" u2="&#xf8;" k="143" />
+<hkern u1="T" u2="&#xf6;" k="143" />
+<hkern u1="T" u2="&#xf5;" k="143" />
+<hkern u1="T" u2="&#xf4;" k="143" />
+<hkern u1="T" u2="&#xf3;" k="143" />
+<hkern u1="T" u2="&#xf2;" k="143" />
+<hkern u1="T" u2="&#xeb;" k="143" />
+<hkern u1="T" u2="&#xea;" k="143" />
+<hkern u1="T" u2="&#xe9;" k="143" />
+<hkern u1="T" u2="&#xe8;" k="143" />
+<hkern u1="T" u2="&#xe7;" k="143" />
+<hkern u1="T" u2="&#xe6;" k="164" />
+<hkern u1="T" u2="&#xe5;" k="164" />
+<hkern u1="T" u2="&#xe4;" k="164" />
+<hkern u1="T" u2="&#xe3;" k="164" />
+<hkern u1="T" u2="&#xe2;" k="164" />
+<hkern u1="T" u2="&#xe1;" k="164" />
+<hkern u1="T" u2="&#xe0;" k="143" />
+<hkern u1="T" u2="&#xd8;" k="41" />
+<hkern u1="T" u2="&#xd6;" k="41" />
+<hkern u1="T" u2="&#xd5;" k="41" />
+<hkern u1="T" u2="&#xd4;" k="41" />
+<hkern u1="T" u2="&#xd3;" k="41" />
+<hkern u1="T" u2="&#xd2;" k="41" />
+<hkern u1="T" u2="&#xc7;" k="41" />
+<hkern <hkern u1="&#xc2;" u2="Y" k="123" />
+<hkern u1="&#xc2;" u2="W" k="82" />
+<hkern u1="&#xc2;" u2="V" k="82" />
+<hkern u1="&#xc2;" u2="T" k="143" />
+<hkern u1="&#xc2;" u2="Q" k="41" />
+<hkern u1="&#xc2;" u2="O" k="41" />
+<hkern u1="&#xc2;" u2="J" k="-266" />
+<hkern u1="&#xc2;" u2="G" k="41" />
+<hkern u1="&#xc2;" u2="C" k="41" />
+<hkern u1="&#xc2;" u2="&#x27;" k="143" />
+<hkern u1="&#xc2;" u2="&#x22;" k="143" />
+<hkern u1="&#xc3;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc3;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc3;" u2="&#x178;" k="123" />
+<hkern u1="&#xc3;" u2="&#x152;" k="41" />
+<hkern u1="&#xc3;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc3;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc3;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc3;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc3;" u2="Y" k="123" />
+<hkern u1="&#xc3;" u2="W" k="82" />
+<hkern u1="&#xc3;" u2="V" k="82" />
+<hkern u1="&#xc3;" u2="T" k="143" />
+<hkern u1="&#xc3;" u2="Q" k="41" />
+<hkern u1="&#xc3;" u2="O" k="41" />
+<hkern u1="&#xc3;" u2="J" k="-266" />
+<hkern u1="&#xc3;" u2="G" k="41" />
+<hkern u1="&#xc3;" u2="C" k="41" />
+<hkern u1="&#xc3;" u2="&#x27;" k="143" />
+<hkern u1="&#xc3;" u2="&#x22;" k="143" />
+<hkern u1="&#xc4;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc4;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc4;" u2="&#x178;" k="123" />
+<hkern u1="&#xc4;" u2="&#x152;" k="41" />
+<hkern u1="&#xc4;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc4;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc4;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc4;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc4;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc4;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc4;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc4;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc4;" u2="Y" k="123" />
+<hkern u1="&#xc4;" u2="W" k="82" />
+<hkern u1="&#xc4;" u2="V" k="82" />
+<hkern u1="&#xc4;" u2="T" k="143" />
+<hkern u1="&#xc4;" u2="Q" k="41" />
+<hkern u1="&#xc4;" u2="O" k="41" />
+<hkern u1="&#xc4;" u2="J" k="-266" />
+<hkern u1="&#xc4;" u2="G" k="41" />
+<hkern u1="&#xc4;" u2="C" k="41" />
+<hkern u1="&#xc4;" u2="&#x27;" k="143" />
+<hkern u1="&#xc4;" u2="&#x22;" k="143" />
+<hkern u1="&#xc5;" u2="&#x201d;" k="143" />
+<hkern u1="&#xc5;" u2="&#x2019;" k="143" />
+<hkern u1="&#xc5;" u2="&#x178;" k="123" />
+<hkern u1="&#xc5;" u2="&#x152;" k="41" />
+<hkern u1="&#xc5;" u2="&#xdd;" k="123" />
+<hkern u1="&#xc5;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc5;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc5;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc5;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc5;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc5;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc5;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc5;" u2="Y" k="123" />
+<hkern u1="&#xc5;" u2="W" k="82" />
+<hkern u1="&#xc5;" u2="V" k="82" />
+<hkern u1="&#xc5;" u2="T" k="143" />
+<hkern u1="&#xc5;" u2="Q" k="41" />
+<hkern u1="&#xc5;" u2="O" k="41" />
+<hkern u1="&#xc5;" u2="J" k="-266" />
+<hkern u1="&#xc5;" u2="G" k="41" />
+<hkern u1="&#xc5;" u2="C" k="41" />
+<hkern u1="&#xc5;" u2="&#x27;" k="143" />
+<hkern u1="&#xc5;" u2="&#x22;" k="143" />
+<hkern u1="&#xc6;" u2="J" k="-123" />
+<hkern uhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhO" u2="&#x2e;" k="82" />
+<hkernhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh(hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhýhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+<hkern u1="b" u2="&#x201d;" khhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhshhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh41" />
+<hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥¥hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh…hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh1="&#xc7;" u2="&#x152;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd8;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd6;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd5;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd4;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd3;" k="41" />
+<hkern u1="&#xc7;" u2="&#xd2;" k="41" />
+<hkern u1="&#xc7;" u2="&#xc7;" k="41" />
+<hkern u1="&#xc7;" u2="Q" k="41" />
+<hkern u1="&#xc7;" u2="O" k="41" />
+<hkern u1="&#xc7;" u2="G" k="41" />
+<hkern u1="&#xc7;" u2="C" k="41" />
+<hkern u1="&#xc8;" u2="J" k="-123" />
+<hkern u1="&#xc9;" u2="J" k="-123" />
+<hkern u1="&#xca;" u2="J" k="-123" />
+<hkern u1="&#xcb;" u2="J" k="-123" />
+<hkern u1="&#xd0;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd0;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd0;" u2="&#x178;" k="20" />
+<hkern u1="&#xd0;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd0;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd0;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd0;" u2="Z" k="20" />
+<hkern u1="&#xd0;" u2="Y" k="20" />
+<hkern u1="&#xd0;" u2="X" k="41" />
+<hkern u1="&#xd0;" u2="W" k="20" />
+<hkern u1="&#xd0;" u2="V" k="20" />
+<hkern u1="&#xd0;" u2="T" k="61" />
+<hkern u1="&#xd0;" u2="A" k="41" />
+<hkern u1="&#xd0;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd0;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd2;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd2;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd2;" u2="&#x178;" k="20" />
+<hkern u1="&#xd2;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd2;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd2;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd2;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd2;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd2;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd2;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd2;" u2="Z" k="20" />
+<hkern u1="&#xd2;" u2="Y" k="20" />
+<hkern u1="&#xd2;" u2="X" k="41" />
+<hkern u1="&#xd2;" u2="W" k="20" />
+<hkern u1="&#xd2;" u2="V" k="20" />
+<hkern u1="&#xd2;" u2="T" k="61" />
+<hkern u1="&#xd2;" u2="A" k="41" />
+<hkern u1="&#xd2;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd2;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd3;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd3;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd3;" u2="&#x178;" k="20" />
+<hkern u1="&#xd3;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd3;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd3;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd3;" u2="Z" k="20" />
+<hkern u1="&#xd3;" u2="Y" k="20" />
+<hkern u1="&#xd3;" u2="X" k="41" />
+<hkern u1="&#xd3;" u2="W" k="20" />
+<hkern u1="&#xd3;" u2="V" k="20" />
+<hkern u1="&#xd3;" u2="T" k="61" />
+<hkern u1="&#xd3;" u2="A" k="41" />
+<hkern u1="&#xd3;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd3;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd4;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd4;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd4;" u2="&#x178;" k="20" />
+<hkern u1="&#xd4;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd4;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd4;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd4;" u2="Z" k="20" />
+<hkern u1="&#xd4;" u2="Y" k="20" />
+<hkern u1="&#xd4;" u2="X" k="41" />
+<hkern u1="&#xd4;" u2="W" k="20" />
+<hkern u1="&#xd4;" u2="V" k="20" />
+<hkern u1="&#xd4;" u2="T" k="61" />
+<hkern u1="&#xd4;" u2="A" k="41" />
+<hkern u1="&#xd4;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd4;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd5;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd5;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd5;" u2="&#x178;" k="20" />
+<hkern u1="&#xd5;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd5;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd5;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd5;" u2="Z" k="20" />
+<hkern u1="&#xd5;" u2="Y" k="20" />
+<hkern u1="&#xd5;" u2="X" k="41" />
+<hkern u1="&#xd5;" u2="W" k="20" />
+<hkern u1="&#xd5;" u2="V" k="20" />
+<hkern u1="&#xd5;" u2="T" k="61" />
+<hkern u1="&#xd5;" u2="A" k="41" />
+<hkern u1="&#xd5;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd5;" u2="&#x2c;" k="82" />
+<hkern u1="&#xd6;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd6;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd6;" u2="&#x178;" k="20" />
+<hkern u1="&#xd6;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd6;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd6;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd6;" u2="Z" k="20" />
+<hkern u1="&#xd6;" u2="Y" k="20" />
+<hkern u1="&#xd6;" u2="X" k="41" />
+<hkern u1="&#xd6;" u2="W" k="20" />
+<hkern u1="&#xd6;" u2="V" k="20" />
+<hkern u1="&#xd6;" u2="T" k="61" />
+<hkern u1="&#xd6;" u2="A" k="41" />
+<hkern u1="&#xd6;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd6;" u2="&#x2c;" k="82" />
+<hkern Î1="&#xd8;" u2="&#x201e;" k="82" />
+<hkern u1="&#xd8;" u2="&#x201a;" k="82" />
+<hkern u1="&#xd8;" u2="&#x178;" k="20" />
+<hkern u1="&#xd8;" u2="&#xdd;" k="20" />
+<hkern u1="&#xd8;" u2="&#xc5;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc4;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc3;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc2;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc1;" k="41" />
+<hkern u1="&#xd8;" u2="&#xc0;" k="41" />
+<hkern u1="&#xd8;" u2="Z" k="20" />
+<hkern u1="&#xd8;" u2="Y" k="20" />
+<hkern u1="&#xd8;" u2="X" k="41" />
+<hkern u1="&#xd8;" u2="W" k="20" />
+<hkern u1="&#xd8;" u2="V" k="20" />
+<hkern u1="&#xd8;" u2="T" k="61" />
+<hkern u1="&#xd8;" u2="A" k="41" />
+<hkern u1="&#xd8;" u2="&#x2e;" k="82" />
+<hkern u1="&#xd8;" u2="&#x2c;" k="82" />
+<nd (2)Â the
+relative fraction of a certain subset of clouds, in this case cumulus clouds
+according to the ISCCP definition given in <xref ref-type="bibr" rid="bib1.bibx41" id="normal.48"/>: clouds
+with CTP larger than 680â€¯hPa and with COT lower thanÂ 3.6.</p>
+      <p id="d1e3179">In Fig.Â <xref ref-type="fig" rid="Ch1.F8"/> time series of selected cloud
+properties are shown for monthly, latitude-weighted averages (within a
+60<inline-formula><mml:math id="M145" display="inline"><mml:msup><mml:mi/><mml:mo>âˆ˜</mml:mo></mml:msup></mml:math></inline-formula>â€¯Sâ€“60<inline-formula><mml:math id="M146" display="inline"><mml:msup><mml:mi/><mml:mo>âˆ˜</mml:mo></mml:msup></mml:math></inline-formula>â€¯N latitude band) of Cloud_cci AVHRR-AM,
+MODIS-Terra, ATSR2-AATSR and MERIS<inline-formula><mml:math id="M147" display="inline"><mml:mo>+</mml:mo></mml:math></inline-formula>AATSR datasets. All datasets are
+relatively stable. However, the time series exhibit some systematic offsets
+between the datasets. Though these offsets have not been investigated in
+detail yet, it is currently assumed that they are caused by the following
+three reasons. (1)Â Differences in the spectral characteristics of the AVHRR
+heritage channels used, i.e. the position and shape of the spectral response
+functions, which is only accounted for empirically in cloud detection and
+cloud typing schemes. (2)Â The applied, but maybe still imperfect, calibration
+of the measurement records. (3)Â Differences in the spatial resolution of
+AVHRR (footprint size of 1â€¯<inline-formula><mml:math id="M148" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>â€¯<inline-formula><mml:math id="M149" display="inline"><mml:mo>Ã—</mml:mo></mml:math></inline-formula>â€¯4â€¯<inline-formula><mml:math id="M150" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>) compared with
+MODIS and AATSR (1â€¯<inline-formula><mml:math id="M151" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>â€¯<inline-formula><mml:math id="M152" display="inline"><mml:mo>Ã—</mml:mo></mml:math></inline-formula>â€¯1â€¯<inline-formula><mml:math id="M153" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula> footprint size) may
+have a significant impact. FigureÂ <xref ref-type="fig" rid="Ch1.F9"/> shows the
+time series for Cloud_cci AVHRR-PM and MODIS-Aqua datasets. Considering the
+time series of all datasets, some inhomogeneities are found for AVHRR-AM,
+AVHRR-PM. These are mainly due to differences in local observation time of
+the individual satellites. A significant portion of this is due to a growing
+delay in local observation time with satellite lifetime caused by the drift
+of the satellite orbit. For AVHRR-AM, there is an additional jump in local
+observation time between the early morning orbits of NOAA-12 and NOAA15 and
+the mid-morning orbits of NOAA-17 and Metop-A. Variability in local
+observation time means that different parts of a diurnal cycle of clouds are
+sampled. Also, the solar zenith angle and the relative azimuth angle between
+satellite and sun change with local observation time and can also lead to
+inhomogeneities in a time series. Statistical correction methods for
+mentioned effects exist <xref ref-type="bibr" rid="bib1.bibx12" id="paren.49"><named-content content-type="pre">e.g.</named-content></xref> and should be
+applied precedent to any trend analysis. The impact of spectral deviation
+among the individual AVHRR sensors of a dataset is assumed to have a smaller
+impact compared to the satellite drift effect. For ATSR2-AATSR a small jump
+in the time series of some cloud properties is found at the sensor
+transition. This is primarily driven by differences in the dynamic range of the
+3.7â€¯<inline-formula><mml:math id="M154" display="inlinl:mrow><mml:mi mathvariant="normal">Âµ</mml:mi><mml:mi mathvariant="normal">m</mml:mi></mml:mrow></mml:math></inline-formula> channel. The channel saturates more often for ATSR-2. This
+is particularly evident for CFC, LWP and IWP.</p>
+      <p id="d1e3270">Another feature in the AVHRR-PM CFC time series
+(Fig.Â <xref ref-type="fig" rid="Ch1.F9"/>) is worth mentioning. In 1982 (and
+onwards) and in 1991 (and onwards) positive anomalies are found which are
+related to the major eruptions of the El ChichÃ³n (Mexico) and Pinatubo
+(Philippines) volcanoes. A first analysis revealed that heavy aerosol
+loadings are sometimes detected as clouds. As this seems to be a general
+feature of CC4CL and FAME-C, cloud detection and cloud-top properties of all
+datasets should be used with caution in heavy aerosol conditions.</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F5" specific-use="star"><caption><p id="d1e3277">Level-3U <bold>(a, c, e, g)</bold> and Level-3C <bold>(b, d, f, h)</bold> of
+cloud mask/fraction <bold>(aâ€“b)</bold>, cloud phase/liquid cloud fraction
+<bold>(câ€“d)</bold>, optical thickness <bold>(eâ€“f)</bold> and effective radius
+<bold>(gâ€“h)</bold> for the AVHRR-PM dataset for JuneÂ 2008. For the Level-3U
+examples, the ascending nodes of the orbits are shown, which roughly
+correspond to the daylight portions of the orbits of NOAA-18. COT, LWP, IWP
+and CLA are only retrieved during daytime conditions. Areas with no valid
+retrievals in this day/month are grey-shaded.</p></caption>
+        <?xmltex \igopts{width=398.338583pt}?><graphic xlink:href="https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017-f05.png"/>
+
+      </fig>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F6" specific-use="star"><caption><p id="d1e3308">As Fig.Â <xref ref-type="fig" rid="Ch1.F5"/> but for cloud-top pressure
+<bold>(aâ€“b)</bold>, liquid water path <bold>(câ€“d)</bold>, ice water path
+<bold>(eâ€“f)</bold>, and spectral cloud albedo at 0.6â€¯<inline-formula><mml:math id="M155" display="inline"><mml:mrow><mml:mi mathvariant="normal">Âµ</mml:mi><mml:mi mathvariant="normal">m</mml:mi></mml:mrow></mml:math></inline-formula> <bold>(gâ€“h)</bold>
+for Level-3U <bold>(a, c, e, g)</bold> and Level-3C <bold>(b, d, f, h)</bold> products. Panels <bold>(c)</bold>
+and <bold>(e)</bold> both show the Level-3U cloud water path, which represents
+liquid water path in liquid cloud pixels and ice water path in ice cloud
+pixels.</p></caption>
+        <?xmltex \igopts{width=398.338583pt}?><graphic xlink:href="https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017-f06.png"/>
+
+      </fig>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F7" specific-use="star"><caption><p id="d1e3356"><bold>(a)</bold> Joint cloud property histogram, globally aggregated over all
+grid cells. <bold>(b)</bold> Global map of relative occurrence of cumulus clouds
+(according to ISCCP definition of <xref ref-type="bibr" rid="bib1.bibx41" id="altparen.50"/> with
+CTPâ€¯<inline-formula><mml:math id="M156" display="inline"><mml:mo>&gt;</mml:mo></mml:math></inline-formula>â€¯680â€¯<inline-formula><mml:math id="M157" display="inline"><mml:mi mathvariant="normal">hPa</mml:mi></mml:math></inline-formula> and COTâ€¯<inline-formula><mml:math id="M158" display="inline"><mml:mo>&lt;</mml:mo></mml:math></inline-formula>â€¯3.6) with respect to all clouds. Data shown are from AVHRR-PM in JuneÂ 2008.</p></caption>
+        <?xmltex \igopts{width=455.244094pt}?><graphic xlink:href="https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017-f07.png"/>
+
+      </fig>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F8" specific-use="star"><caption><p id="d1e3396">Time series of monthly mean cloud properties of Cloud_cci
+datasets, with thin lines being (from top to bottom) time series of monthly
+mean cloud fraction (CFC), liquid cloud fraction (CPH), cloud-top pressure
+(CTP), cloud optical thickness (COT), cloud effective radius (CER), liquid
+water path (LWP) and ice water path (IWP), overlaid with a running average
+(thick lines). Shown are those Cloud_cci datasets that are based on
+so-called morning satellites. The monthly means are calculated for
+60<inline-formula><mml:math id="M159" display="inline"><mml:msup><mml:mi/><mml:mo>âˆ˜</mml:mo></mml:msup></mml:math></inline-formula>â€¯Sâ€“60<inline-formula><mml:math id="M160" display="inline"><mml:msup><mml:mi/><mml:mo>âˆ˜</mml:mo></mml:msup></mml:math></inline-formula>â€¯N (latitude-weighted). The time series shown
+have not been corrected for satellite drift or diurnal cycle.</p></caption>
+        <?xmltex \igopts{width=398.338583pt}?><graphic xlink:href="https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017-f08.png"/>
+
+      </fig>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F9" specific-use="star"><caption><p id="d1e3425">As Fig.Â <xref ref-type="fig" rid="Ch1.F8"/> but for Cloud_cci datasets
+based on afternoon satellites. The time series shown have not been corrected
+for satellite drift or diurnal cycle.</p></caption>
+        <?xmltex \igopts{width=398.338583pt}?><graphic xlink:href="https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017-f09.png"/>
+
+      </fig>
+
+</sec>
+<sec id="Ch1.S4">
+  <title>Validation summary</title>
+      <p id="d1e3442">Cloud_cci datasets between 2006 and 2014 were collocated in space and time
+with observations from the CALIOP instrument mounted on board the CALIPSO
+satellite. The active measurements of CALIOP observations can be considered
+as an accurate reference for CMA, CPH and CTH. However, it is important to note
+that cloud properties from CALIOP are physically different to that given by
+the Cloud_cci products. For CTH, for example, the active sensor detects where
+the density of particles sharply increases â€“ the physical cloud-top edge.
+Passive sensors observe the entire atmospheric column simultaneously. The CTH
+retrieved from passive sensors is an effective average through the cloud-top
+layer. As such, it is expected that Cloud_cci CTHs are lower than those
+observed by CALIOP, in particular for clouds containing fuzzy
+(semi-transparent) cloud layers. To account for this, various metrics have
+been considered for the validation of Cloud_cci cloud properties, where the
+CALIOP pÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍex \floatpos{t}?><table-wrap id="Ch1.T6" specific-use="star"><caption><p id="d1e3448">Summary of cloud mask (CMA) validation results for Cloud_cci
+datasets when compared against CALIOP. Validation measures are the
+probabilities of detecting cloudy and clear scenes (Hit rate,
+POD<inline-formula><mml:math id="M161" display="inline"><mml:msub><mml:mi/><mml:mi mathvariant="normal">liquid</mml:mi></mml:msub></mml:math></inline-formula>, POD<inline-formula><mml:math id="M162" display="inline"><mml:msub><mml:mi/><mml:mi mathvariant="normal">ice</mml:mi></mml:msub></mml:math></inline-formula>; see AppendixÂ <xref ref-type="sec" rid="App1.Ch1.S1"/>
+for the definition of these terms) and bias. Also given is the number of
+collocated pixels. The scores are separated into two cloud optical thickness
+thresholds (COT<inline-formula><mml:math id="M163" display="inline"><mml:msub><mml:mi/><mml:mi mathvariant="normal">thres</mml:mi></mml:msub></mml:math></inline-formula>) representing above which CALIOP COT the
+CALIOP pixel was classified cloudy.</p></caption><oasis:table frame="topbot"><oasis:tgroup cols="8">
+     <oasis:colspec colnum="1" colname="col1" align="center"/>
+     <oasis:colspec colnum="2" colname="col2" align="left"/>
+     <oasis:colspec colnum="3" colname="col3" align="right"/>
+     <oasis:colspec colnum="4" colname="col4" align="right"/>
+     <oasis:colspec colnum="5" colname="col5" align="right"/>
+     <oasis:colspec colnum="6" colname="col6" align="right"/>
+     <oasis:colspec colnum="7" colname="col7" align="right"/>
+     <oasis:colspec colnum="8" colname="col8" align="right"/>
+     <oasis:thead>
+       <oasis:row rowsep="1">
+
+         <oasis:entry colname="col1"/>
+
+         <oasis:entry colname="col2">Score</oasis:entry>
+
+         <oasis:entry colname="col3">AVHRR-AM</oasis:entry>
+
+         <oasis:entry colname="col4">AVHRR-PM</oasis:entry>
+
+         <oasis:entry colhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhs:entry colname="col7">ATSR2-AATSR<inline-formula><mml:math id="M169" display="inline"><mml:msup><mml:mi/><mml:mo>*</mml:mo></mml:msup></mml:math></inline-formula></oasis:entry>
+
+         <oasis:entry colname="col8">MERIS<inline-formula><mml:math id="M170" display="inline"><mml:mo>+</mml:mo></mml:math></inline-formula>AATSR<inline-formula><mml:math id="M171" display="inline"><mml:msup><mml:mi/><mml:mo>*</mml:mo></mml:msup></mml:math></inline-formula></oasis:entry>
+
+       </oasis:row>
+     </oasis:thead>
+     <oasis:tbody>
+       <oasis:row>
+       <?xmltex \rotentry?>
+         <oasis:entry rowsep="1" colname="col1" morerows="4">COD<inline-formula><mml:math id="M172" display="inline"><mml:mrow><mml:msub><mml:mi/><mml:mi mathvariant="normal">lev</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn mathvariant="normal">0.0</mml:mn></mml:mrow></mml:math></inline-formula></oasis:entry>
+
+         <oasis:entry colname="col2">Hit rate (%)</oasis:entry>
+
+         <oasis:entry colname="col3">76.2</oasis:entry>
+
+         <oasis:entry colname="col4">81.2</oasis:entry>
+
+         <oasis:entry colname="col5">91.0</oasis:entry>
+
+         <oasis:entry colname="col6">81.6</oasis:entry>
+
+         <oasis:entry colname="col7">74.3</oasis:entry>
+
+         <oasis:entry colname="col8">73.4</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+
+         <oasis:entry colname="col2">POD<inline-formula><mml:math id="M173" display="inline"><mml:msub><mml:mi/><mml:mi mathvariant="normal">cloudy</mml:mi></mml:msub></mml:math></inline-formula> (%)</oasis:entry>
+
+         <oasis:entry colname="col3">78.3</oasis:entry>
+
+         <oasis:entry colname="col4">79.0</oasis:entry>
+
+         <oasis:entry colname="col5">94.4</oasis:entry>
+
+         <oasis:entry colname="col6">81.1</oasis:entry>
+
+         <oasis:entry colname="col7">80.0</oasis:entry>
+
+         <oasis:entry colname="col8">74.6</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+
+         <oasis:entry colname="col2">POD<inline-formula><mml:math id="M174" display="inline"><mml:msub><mml:mi/><mml:mi mathvariant="normal">clear</mml:mi></mml:msub></mml:math></inline-formula> (%)</oasis:entry>
+
+         <oasis:entry colname="col3">70.4</oasis:entry>
+
+         <oasis:entry colname="col4">87.7</oasis:entry>
+
+         <oasis:entry colname="col5">70.0</oasis:entry>
+
+         <oasis:entry colname="col6">83.1</oasis:entry>
+
+         <oasis:entry colname="col7">60.5</oasis:entry>
+
+         <oasis:entry colname="col8">69.6</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+
+         <oasis:entry colname="col2">Bias (%)</oasis:entry>
+
+         <oasis:entry colname="col3"><inline-formula><mml:math id="M175" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>8.1</oasis:entry>
+
+         <oasis:entry colname="col4"><inline-formula><mml:math id="M176" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>12.6</oasis:entry>
+
+         <oasis:entry colname="col5"><inline-formula><mml:math id="M177" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>1.1</oasis:entry>
+
+         <oasis:entry colname="col6"><inline-formula><mml:math id="M178" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>9.8</oasis:entry>
+
+         <oasis:entry colname="col7"><inline-formula><mml:math id="M179" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>2.6</oasis:entry>
+
+         <oasis:entry colname="col8"><inline-formula><mml:math id="M180" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>12.5</oasis:entry>
+
+       </oasis:row>
+       <oasis:row rowsep="1">
+
+         <oasis:entry colname="col2">Number</oasis:entry>
+
+         <oasis:entry colname="col3">42â€¯119</oasis:entry>
+
+         <oasis:entry colname="col4">16â€¯675â€¯575</oasis:entry>
+
+         <oasis:entry colname="col5">19â€¯118</oasis:entry>
+
+         <oasis:entry colname="col6">16â€¯494â€¯437</oasis:entry>
+
+         <oasis:entry colname="col7">94â€¯039</oasis:entry>
+
+         <oasis:entry colname="col8">23â€¯098</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+       <?xmltex \rotentry?>
+         <oasis:entry colname="col1" morerows="4">COD<inline-formula><mml:math id="M181" display="inline"><mml:mrow><mml:msub><mml:mi/><mml:mi mathvariant="normal">lev</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn mathvariant="normal">0.15</mml:mn></mml:mrow></mml:math></inline-formula></oasis:entry>
+
+         <oasis:entry colname="col2">Hit rate (%)</oasis:entry>
+
+         <oasis:entry colname="col3">78.3</oasis:entry>
+
+         <oasis:entry colname="col4">84.9</oasis:entry>
+
+         <oasis:entry colname="col5">89.4</oasis:entry colname="col3">84.4</oasis:entry>
+
+         <oasis:entry colname="col4">87.5</oasis:entry>
+
+         <oasis:entry colname="col5">96.5</oasis:entry>
+
+         <oasis:entry colname="col6">88.7</oasis:entry>
+
+         <oasis:entry colname="col7">86.2</oasis:entry>
+
+         <oasis:entry colname="col8">80.3</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+
+         <oasis:entry colname="col2">POD<inline-formula><mml:math id="M183" display="inline"><mml:msub><mml:mi/><mml:mi mathvariant="normal">clear</mml:mi></mml:msub></mml:math></inline-formula> (%)</oasis:entry>
+
+         <oasis:entry colname="col3">67.6</oasis:entry>
+
+         <oasis:entry colname="col4">80.5</oasis:entry>
+
+         <oasis:entry colname="col5">51.7</oasis:entry>
+
+         <oasis:entry colname="col6">75.0</oasis:entry>
+
+         <oasis:entry colname="col7">58.4</oasis:entry>
+
+         <oasis:entry colname="col8">66.4</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+
+         <oasis:entry colname="col2">Bias (%)</oasis:entry>
+
+         <oasis:entry colname="col3">1.9</oasis:entry>
+
+         <oasis:entry colname="col4"><inline-formula><mml:math id="M184" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>0.5</oasis:entry>
+
+         <oasis:entry colname="col5">4.8</oasis:entry>
+
+         <oasis:entry colname="col6">2.3</oasis:entry>
+
+         <oasis:entry colname="col7">8.5</oasis:entry>
+
+         <oasis:entry colname="col8"><inline-formula><mml:math id="M185" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>1.5</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+
+         <oasis:entry colname="col2">Number</oasis:entry>
+
+         <oasis:entry colname="col3">42â€¯119</oasis:entry>
+
+         <oasis:entry colname="col4">16â€¯675â€¯575</oasis:entry>
+
+         <oasis:entry colname="col5">19â€¯118</oasis:entry>
+
+         <oasis:entry colname="col6">16â€¯494â€¯437</oasis:entry>
+
+         <oasis:entry colname="col7">94â€¯039</oasis:entry>
+
+         <oasis:entry colname="col8">23â€¯098</oasis:entry>
+
+       </oasis:row>
+     </oasis:tbody>
+   </oasis:tgroup></oasis:table><table-wrap-foot><p id="d1e3480"><inline-formula><mml:math id="M164" display="inline"><mml:msup><mml:mi/><mml:mo>*</mml:mo></mml:msup></mml:math></inline-formula>Â Time window used for collocations was <inline-formula><mml:math id="M165" display="inline"><mml:mo>Â±</mml:mo></mml:math></inline-formula>15â€¯min for
+ATSR2+AATSR, MERIS<inline-formula><mml:math id="M166" display="inline"><mml:mo>+</mml:mo></mml:math></inline-formula>AATSR and MODIS-Terra. For all others a <inline-formula><mml:math id="M167" display="inline"><mml:mo>Â±</mml:mo></mml:math></inline-formula>3â€¯min
+window was used.</p></table-wrap-foot></table-wrap>
+
+<?xmltex \floatpos{t}?><table-wrap id="Ch1.T7" specific-use="star"><caption><p id="d1e3972">Summary of cloud phase (CPH) validation results for Cloud_cci
+datasets when compared against CALIOP. Validation measures are probability of detection (POD) and bias of liquid cloud occurrence.
+Also given is the number of collocated pixels. The scores are seÀarated into two cloud optical depth levels (COD<inline-formula><mml:math id="M186" display="inline"><mml:msub><mml:mi/><mml:mi mathvariant="normal">lev</mml:mi></mml:msub></mml:math></inline-formula>) representing at which top-down COD into the cloud the reference CALIOP CPH was taken.</p></caption><oasis:table frame="topbot"><oasis:tgroup cols="8">
+     <oasis:colspec colnum="1" colname="col1" align="center"/>
+     <oasis:colspec colnum="2" colname="col2" align="left"/>
+     <oasis:colspec colnum="3" colname="col3" align="right"/>
+     <oasis:colspec colnum="4" colname="col4" align="right"/>
+     <oasis:colspec colnum="5" colname="col5" align="right"/>
+     <oasis:colspec colnum="6" solname="col6" align="right"/>
+     <oasis:colspec colnum="7" colname="col7" align="right"/>
+     <oasis:colspec colnum="8" colname="col8" align="right"/>
+     <oasis:thead>
+       <oasis:row rowsep="1">
+
+         <oasis:entry colname="col1"/>
+
+         <oasis:entry colname="col2">Score</oasis:entry>
+
+         <oasis:entry colname="col3">AVHRR-AM</oasis:entry>
+
+         <oasis:entry colname="col4">AVHRR-PM</oasis:entry>
+
+         <oasis:entry colname="col5">MODIS-Terra<inline-formula><mml:math id="M191" display="inline"><mml:msup><mml:mi/><mml:mo>*</mml:mo></mml:msup></mml:math></inline-formula></oasis:entry>
+
+         <oasis:entry colname="col6">MODIS-Aqua</oasis:entry>
+
+         <oasis:entry colname="col7">ATSR2-AATSR<inline-formula><mml:math id="M192" display="inline"><mml:msup><mml:mi/><mml:mo>*</mml:mo></mml:msup></mml:math></inline-formula></oasis:entry>
+
+         <oasis:entry colname="col8">MERIS<inline-formula><mml:math id="M193" display="inline"><mml:mo>+</mml:mo></mml:math></inline-formula>AATSR<inline-formula><mml:math id="M194" display="inline"><mml:msup><mml:mi/><mml:mo>*</mml:mo></mml:msup></mml:math></inline-formula></oasis:entry>
+
+       </oasis:row>
+     </oasis:thead>
+     <oasis:tbody>
+       <oasis:row>
+       <?xmltex \rotentry?>
+         <oasis:entry rowsep="1" colname="col1" morerows="4">COD<inline-formula><mml:math id="M195" display="inline"><mml:mrow><mml:msub><mml:mi/><mml:mi mathvariant="normal">lev</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn mathvariant="normal">0.0</mml:mn></mml:mrow></mml:math></inline-formula></oasis:entry>
+
+         <oasis:entry colname="col2">Hit rate (%)</oasis:entry>
+
+         <oasis:entry colname="col3">72.0</oasis:entry>
+
+         <oasis:entry colname="col4">77.1</oasis:entry>
+
+         <oasis:entry colname="col5">74.4</oasis:entry>
+
+         <oasis:entry colname="col6">73.7</oasis:entry>
+
+         <oasis:entry colname="col7">77.6</oasis:entry>
+
+         <oasis:entry colname="col8">72.3</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+
+         <oasis:entry colname="col2">POD<inline-formula><mml:math id="M196" display="inline"><mml:msub><mml:mi/><mml:mi mathvariant="normal">liq</mml:mi></mml:msub></mml:math></inline-formula> (%)</oasis:entry>
+
+         <oasis:entry colname="col3">71.3</oasis:entry>
+
+         <oasis:entry colname="col4">78.0</oasis:entry>
+
+         <oasis:entry colname="col5">88.1</oasis:entry>
+
+         <oasis:entry colname="col6">82.7</oasis:entry>
+
+         <oasis:entry colname="col7">67.7</oasis:entry>
+
+         <oasis:entry colname="col8">67.3</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+
+         <oasis:entry colname="col2">POD<inline-formula><mml:math id="M197" display="inline"><mml:msub><mml:mi/><mml:mi mathvariant="normal">ice</mml:mi></mml:msub></mml:math></inline-formula> (%)</oasis:entry>
+
+         <oasis:entry colname="col3">72.5</oasis:entry>
+
+         <oasis:entry colname="col4">76.5</oasis:entry>
+
+         <oasis:entry colname="col5">65.1</oasis:entry>
+
+         <oasis:entry colname="col6">68.1</oasis:entry>
+
+         <oasis:entry colname="col7">83.1</oasis:entry>
+
+         <oasis:entry colname="col8">76.9</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+
+         <oasis:entry colname="col2">Bias (%)</oasis:entry>
+
+         <oasis:entry colname="col3">6.4</oasis:entry>
+
+         <oasis:entry colname="col4">5.9</oasis:entry>
+
+         <oasis:entry colname="col5">15.9</oasis:entry>
+
+         <oasis:entry colname="col6">13.0</oasis:entry>
+
+         <oasis:entry colname="col7"><inline-formula><mml:math id="M198" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>0.6</oasis:entry>
+
+         <oasis:entry colname="col8"><inline-formula><mml:math id="M199" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>3.5</oasis:entry>
+
+       </oasis:row>
+       <oasis:row rowsep="1">
+
+         <oasis:entry colname="col2">Number</oasis:entry>
+
+         <oasis:entry colname="col3">23â€¯151</oasis:entry>
+
+         <oasis:entry colname="col4">9â€¯436â€¯914</oasis:entry>
+
+         <oasis:entry colname="col5">15â€¯581</oasis:entry>
+
+         <oasis:entry colname="col6">9â€¯576â€¯169</oasis:entry>
+
+         <oasis:entry colname="col7">50â€¯659</oasis:entry>
+
+         <oasis:entry colname="col8">9210</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+       <?xmltex \rotentry?>
+         <oasis:entry colname="col1" morerows="4">COD<inline-formula><mml:math id="M200" display="inline"><mml:mrow><mml:msub><mml:mi/><mml:mi mathvariant="normal">lev</mml:mi></mml:msub><mml:mo>=</mml:mo><mml:mn mathvariant="normal">0.15</mml:mn></mml:mrow></mml:math></inline-formula></oasis:entry>
+
+         <oasis:entry colname="col2">Hit rate (%)</oasis:entry>
+
+         <oasis:entry colname="col3">76.0</oasis:entry>
+
+         <oasis:entry colname="col4">80.6</oasis:entry>
+
+         <oasis:entry colname="col5">80.7</oasis:entry>
+
+         <oasis:entry colname="col6">79.6</oasis:entry>
+
+         <oasis:entry colname="col7">77.8</oasis:entry>
+
+         <oasis:entry colname="col8">73.8</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+
+         <oasis:entry colname="col2">POD<inline-formula><mml:math id="M201" display="inline"><mml:msub><mml:mi/><mml:mi mathvariant="normal">liq</mml:mi></mml:msub></mml:math></inline-formula> (%)</oasis:entry>
+
+         <oasis:entry colname="col3">70.8</oasis:entry>
+
+         <oasis:entry colname="cy colname="col4">87.4</oasis:entfy>
+
+         <oasis:entry colname="col5">74.6</oasis:entry>
+
+         <oasis:entry colname="col6">79.6</oasis:entry>
+
+         <oasis:entry colname="col7">89.7</oasis:entry>
+
+         <oasis:entry colname="col8">88.6</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+
+         <oasis:entry colname="col2">Bias (%)</oasis:entry>
+
+         <oasis:entry colname="col3"><inline-formula><mml:math id="M203" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>5.1</oasis:entry>
+
+         <oasis:entry colname="col4"><inline-formula><mml:math id="M204" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>6.9</oasis:entry>
+
+         <oasis:entry colname="col5">5.0</oasis:entry>
+
+         <oasis:entry colname="col6"><inline-formula><mml:math id="M205" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>0.27</oasis:entry>
+
+         <oasis:entry colname="col7"><inline-formula><mml:math id="M206" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>11.3</oasis:entry>
+
+         <oasis:entry colname="col8"><inline-formula><mml:math id="M207" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>17.3</oasis:entry>
+
+       </oasis:row>
+       <oasis:row>
+
+         <oasis:entry colname="col2">Number</oasis:entry>
+
+         <oasis:entry colname="col3">22â€¯221</oasis:entry>
+
+         <oasis:entry colname="col4">8â€¯935â€¯688</oasis:entry>
+
+         <oasis:entry colname="col5">15â€¯213</oasis:entry>
+
+         <oasis:entry colname="col6">8â€¯951â€¯056</oasis:entry>
+
+         <oasis:entry colname="col7">47â€¯527</oasis:entry>
+
+         <oasis:entry colname="col8">8770</oasis:entry>
+
+       </oasis:row>
+     </oasis:tbody>
+   </oasis:tgroup></oasis:table><table-wrap-foot><p id="d1e3984"><inline-formula><mml:math id="M187" display="inline"><mml:msup><mml:mi/><mml:mo>*</mml:mo></mml:msup></mml:math></inline-formula> Time window used for collocations was <inline-formula><mml:math id="M188" display="inline"><mml:mo>Â±</mml:mo></mml:math></inline-formula>15â€¯min for
+ATSR2+AATSR, MERIS<inline-formula><mml:math id="M189" display="inline"><mml:mo>+</mml:mo></mml:math></inline-formula>AATSR and MODIS-Terra. For all others a <inline-formula><mml:math id="M190" display="inline"><mml:mo>Â±</mml:mo></mml:math></inline-formula>3â€¯min
+window was used.</p></table-wrap-foot></table-wrap>
+
+<?xmltex \floatpos{t}?><table-wrap id="Ch1.T8" specific-use="star"><caption><p id="d1e4471">Summary of cloud-top height (CTH) validation results for Cloud_cci
+datasets when compared against CALIOP. Validation measures are standard deviation (SD) and bias. Also given is the number of collocated pixels.
+All scores are separated into liquid and ice clouds (both Cloud_cci dataset and CALIOP had to agree on phase) and into two cloud optical depth levels
+(COD<inline-formula><mml:math id="M208" display="inline"><mml:msub><mml:mi/><mml:mi mathvariant="normal">lev</mml:mi></mml:msub></mml:math></inline-formula>) representing at which top-down COD into the cloud the reference CALIOP CTH was taken.</p></caption><oasis:table frame="topbot"><oasis:tgroup cols="8">
+     <oasis:colspec colnum="1" colname="col1" align="center"/>
+     <oasis:colspec colnum="2" colname="col2" align="left"/>
+     <oasis:colspec colnum="3" colname="col3" align="right"/>
+     <oasis:colspec colnum="4" colname="col4" align="right"/>
+     <oasis:colspec colnum="5" colname="col5" align="right"/>
+     <oasis:colspec colnum="6" colname="col6" align="right"/>
+     <oasis:colspec colnum="7" colname="col7" align="right"/>
+     <oasis:colspec colnum="8" colname="col8" align="right"/>
+     <oasis:thead>
+       <oasis:row rowsep="1">
+
+         <oasis:entry colname="col1"/>
+
+         <oasis:entry colname "col2">Score</oasis:entry>
+
+         <oasis:entry colname="col3">AVHRR-AM</oasis:ent="normal">ice</mml:mi></mml:msub></mml:math></inline-formula> (<inline-formula><mml:math id="M227" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>)</oasis:entry>
+
+         <oasis:entry colname="col3">2.66</oasis:entry>
+
+         <oasis:entry colname="col4">2.84</oasis:entry>
+
+         <oasis:entry colname="col5">1.91</oasis:entry>
+
+         <oasis:entry colname="col6">2.79</oasis:entry>
+
+         <oasis:entry colname="col7">2.33</oasis:entry>
+
+         <oasis:entry coln

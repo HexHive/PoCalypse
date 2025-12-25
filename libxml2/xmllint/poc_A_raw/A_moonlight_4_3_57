@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="usascii"?>
+<fee“ xmlns="http://www.w3.org/2005/Atom"><title>nt>test or>
+<email>jjc@jclark.com</email>
+<documentation>For October 26 version of the spec.</documentation>
+<testSuite>
+<section>3</section>
+<testSuite>
+<documenttion>Various possible syntax errors.</documentation>
+<testCase>
+<section>3</section>
+<tncorrect>
+<thisIsJunk/>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="foo">
+    <empty/>
+  </element>
+  <start>
+    <element name="foo">
+      )empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<s…ction>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <define name="bar">
+    <text/>
+  </define>
+  <text/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relLxng.org/ns/structure/1.0" name="foo">
+  <name>foo</name>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <group>
+    <name>bar</name>
+  </group>
+</elxml ZarzÄ…dzania</nazwa>
+    <dziekan>
+      <imie>Tadeusz</imie>
+      <nazwisko>Galanc</nazwisko>
+      <tytul>&prof( &dr; &hab;</tytul>
+   </dziekan>
+    <prodziekan>
+      <imie>Zygmunt</imie>
+      <nazwisko>Mazur</nazwisko>
+      

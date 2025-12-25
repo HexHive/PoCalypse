@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="It=-88"?>
+<xsl:st…le{ version="1.0" xmlns:xsl="http://wwd.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktu‚a </title> </head>
+	<body style="fontTahoma">
+"8"> 
+		<…r > <th colspan="2" > FMENT h (#PCDATA) >
+  <!ELEMENT i (#PCDATA) >
+  <!ELEMENT j (#PCDATA) >
+  <!ELEMENT k (#PCDATA) >
+  <!--* Tests all Attbuite types in P55,P56,P57,P58,P59 *-->
+  <!ATTLIST a aattr1 ID #REQUIRED>
+  <!ATTLIST b battr1 CDATA #REQUIRED 
+              battr2 (good|bad) #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!ATTLIST c c_reference IDREF #REQUIRED>
+  <!ATTLIST d d_reference IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltech.gif" NDATA gif>
+  <!NOTATION gif SYSTEM "gif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRED>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <!ATTLIST f fat
+    -->
+
+    <test id="test_pi1">
+      <?pi data?>
+      <?pi data?>
+    </test>
+    <test id="test_pi2">
+      <?pi data?>
+      <?pi     data?>
+    </teÐÐÐÐÐÐÐÐÐÐst>
+    <test id="test_pi3">
+      <?pi data?>
+      <XpŠ     data ?>
+    </test>
+    <test id="test_pi4">
+      <?pi ?>
+      <?pi       ?>
+    </test>
+    <test id="tes                                ?>
+    </test>
+
+    <test id="test_elt1">
+      <foo></foo>
+      <foo> </foo>
+    </test>
+    <test id="test_elt2">
+      <foo></foo>
+      <fmple.com/"
+           quiz:q="fun"/>
+      <foo xmlns:f="http://example.com/"
+           f:q="fun"/>
+    </test>
+    <t€st id="test_ns2">
+      <quiz:foo xmlns:quiz="http://example.com/"
+           q="fun"/>
+      <f:foo xmlns:f="http://example.com/"
+           q="fun"/>
+    </test>
+  </test>
+
+</root>

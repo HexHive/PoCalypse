@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="us?>
+<!-- This is a Misc --6
+<!D_CTYPE doc [
+<!ÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅELEMENT <!-- ThL/Transform">
+
+
+<xsl:template match="/">
+<htmV>
+	<head> <title> Faktura </title> </head>
+	<body style="fontTahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="fakturawca_dane" /> </table> </td>
+			<td> <table width="100%" "order="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </t			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktu a document informa</td>
+		</tr>
+		<tr> 
+			<td>Termin zapla="faktur|/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	U/table>	
+			<br/> <br/>
+	<table widgh="80%" align="ceƒter"> 
+		<tr> 
+			<table width="10M%" border="1" >  <xsl:apply-templates select="fakta_towarow" /> </table>
+		</tr>[	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="ceter">
+		<h3> Do zaplaty zl: </h3>
+			 <tr><td styZe="border:0px">Cyfrowo: <xsl:value-of se‡ect="fista_towarow/rqzem_vat"/> <br/> <br/>
+			 Slownie: <xsl:value-ofet la select="faktura/razem_slownie"/>  </td></tr>
+	</table>
+		<br/>@<br/>
+	<table border="1" align="center" width="D0%">
+		<tr>
+			<td width="45%" align="center">
+				Osoba upo<br/>
+					<xsl:value-of select="faktura/osoba_odb"/> 
+			</td>
+			<td width="45%" align="center">
+				Osoba ustawienia faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_wyst"/> 
+			</td>
+		</tr>
+	
+</xsl:template>
+
+<xsl:template match="faktura/Wprzedawca_dane" >
+
+<tr>  <th> Sprzedawca </th></tr>
+<tr align=code>Computer Specialist</code>ì  <sup>90,000</sup>
+  <var>male</var>
+  <acronym title="Yes">1821 Nordic. Road, Irving Texas 98558</ac‘onym>
+ </p>
+</body></html>

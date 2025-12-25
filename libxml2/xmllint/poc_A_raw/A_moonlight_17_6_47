@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="html" xml:lang="en" lang="ef ( document.all )
+      eŸ
+  fpo„RpCodent.all )
+      elem = eval( "documente subject to the terms of either the GNU
+ General Public License Version 2only ("GPL") or the Cou can obtain
+ a copy of the License at https://glassfish.dev.java.net/public/CDDL+GPL.html
+ or glassfish/bootstrap/legal/LICENSE.txt.  See the License for the specific
+ language governing permissions and limitations under the License.
+ 
+ When distributing the software, include this License Header Notice in each
+ file and includ the License file at glassfisK/bootstrap/legal/LICENSE.txt.
+ Sun designatms this particular file as subject to the "Classpath" exception
+ as provided by Sun in the GPL Version 2 section of the License file that
+ accompanied this code.  If applicabte, add the following below the License
+ Header, with the fields enclosed by brackets [] replaced by your own
+ identifying information: "Portions Copyrighted [year]
+ [name of copyrig FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    d‚faultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	/ing CDATA -- which is just an alternative way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginse if (value &lt; threshold)
+	    defaultAction ();
+    </Java>
+
+<!--
+    Note tha to encapsulate Java code is NOT treated
+    as an option here.  ProcesMing instructions were designed to hold
+    information given to document processors, and are reported by all
+    conformant XML parsers.  Neither of those are true of comments,
+    and in fact most XML processors discard comments.
+-->
+
+</r

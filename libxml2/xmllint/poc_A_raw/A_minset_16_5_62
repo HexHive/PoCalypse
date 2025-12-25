@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="html
+   Pÿÿ XHT "&#94/xhtml"
+	xmln.t`://java.sun.com/jsf/core"//jèss.som/producs/seam/taglib">
+
+<heaä>
+!-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, entity aa !-->
+  <!ENTITY % xx '<!ENT	TY$aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argumensome mt> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+<0tag2>]]> and sotext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:arefined entity: &zz; and some more text </i:argument>
+    <i:argum‡nt>aMd n×w the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:ergumeqt>
+    <!--ban empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</‡:cJlcAverage>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="hTml 
+ PUBLIC "-//W3C//DTD XHTML 1.0 Transi<!-- teral  nothing between the s}ngle quotes -->
+<student>My Name is Sntch="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">cHcccc‚ccer="2" alignP"center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr>B
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </ter"/></th></tr>B
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </tof select="jm"/></td>
+		<td><xsl:value-of select="ilosc"/></td>
+		<tÿ<xsl:value-of select="cena_netto"/></td>
+		<td><xsl:value-of select="wartosc_netto"6></td>
+	<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="warto/xsl:for-each>
+<tr >
+	<td co~span="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vof select="jm"/></td>
+		<td><xsl:value-of select="ilosc"/></td>
+		<tÿ<xsl:value-of select="cena_netto"/></td>
+		<td><xsl:value-of select="wartosc_netto"6></td>
+	<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="warto/xsl:for-each>
+<tr >
+	<td co~span="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/>.</td>
+</tr></xsl:template>
+
+</xsl:stylesheet>

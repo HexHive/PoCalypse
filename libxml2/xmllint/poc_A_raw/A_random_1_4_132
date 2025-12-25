@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="Us:results
+		xmlns:xsi="http://www.w3.org/2001/.org/wÿdl/n¥:tns="http://www.exa•ple.org/results"ation="http:s results.xsd">
+	<student>
+		<log>
+    <wsdl:Tart n	<tests>
+			<test name="oop" date=  <wsdl:port mark="8.5"/>
+			<test name="xml" date="2013-03-23" mark="7.3"/>
+			<test name="oo?" date="2013-03-27" mark="9.4"rtType name="GeoIPServiceHttpPost">
+    <wSdl:operation name="GetGeoIPContext">
+      <documentation xmlns="http://schemas.xmlsoap.org/wsdl/">GeoIPService - GetGeoIPContext enables you to easily look up countries by Context  </documentation>
+      <wsdl:input message="tns:GetGeoIPContextHttpPostIn"/>
+      <wsdl:output message="tns:GetGeoIPContextHttpPostOut"/>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoIP">
+      <do³umentation xmlns="http://sc}emas.xmlsoap.org/wsdl/">GeoIPService - GetGeoIP enables you to easily look up countries by IP addresses </documentation>
+      <wsdl:input message="tns:GetGeoIPHttpPostIn"/>
+      <wsdl:output message="tns:GetGeoIPHttpPostOut"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <ws€l:binding name="GeoIPServiceSoap" type="tns:GeoIPServiceSoap">
+    <soap:binding transport="http:/"http://www.webservicex.net/GetGeoIPContext" style="document"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetGeoIP">
+      <soap:operation soapAction="http://www.webservicex.net/GetGeoIP" style="document"/>
+      <wsdl:input>
+  

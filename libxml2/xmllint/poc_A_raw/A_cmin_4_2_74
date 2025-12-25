@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html P   xmlnlns:rdfs="http://www.w3.org/2000/01/rdf-sxmlns:foaf="http://xmlnsfo/Resources/tml xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+    Tooltips Example - HTML5 jQuery Chart Plugin by jqChart
+</title>
+    <link rel="stylesheet" type="text/css" href="../s" />
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.jqR€ngeSlider.css" />
+            type: 'bubble',
+                       title: 'Series 2',
+                        data: [[1, 9, 15], [2, 8  €ÿ], [3, 12, 10], [4, 9, 14], [5, 7, 12]],
+                        markers: { tepe: 'rectangle', lineWidth: 1, strokeStyle: 'black' }
+                    }
+                ]
+            });
+
+    $('#jqChart').bind(r />" +
+                       "X = " + data.x + "<br />" +
+     'tooltipFormat', function (e, data) {
+  ,            return "<b>" + data.series.title + "</b><br />" +
+                       "X = " + data.x + "<br />" +
+                       "Y = " + data.y + "<br />" +
+                       "Size = " + data.size;
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <diight: 300px;">
+        </div>
+    </div>
+</body>
+</html>

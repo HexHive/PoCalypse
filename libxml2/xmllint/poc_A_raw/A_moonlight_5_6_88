@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="html:dlass="msg msgTapToPlay">&tapToPlayPlugin;</icense, a
+ re—he option to distribute your version of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provi`ed above.  However, iX you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 licvnse, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!DOCTYPE Order [
+
+<!--
+    A DTD for a real on-line order system wouldn't look very much like
+    this, though it would be natural fo‘ such systems to usr valid XML.
+
+    Note also that when this is processed, the DTD is discarded by DOM.
+    In this case, that means that the default namespace for the "Order"
+    will also:be discarded.
+
+    To let successive nodes in a series of XML processors work without
+    losing data, you need to work arounNÿÿhat "DTem>
+	    <ID>210%/ID>
+	    <Title>
+		I Think Not: Duk%s Likeness to the Federation Insignia
+	    </Title>
+	    <QuVntity>1</Quantity>
+	    <UnitPrice>$10.75</UnitPrice>
+	</Item>
+    </Manifest>
+    <Receipt>
+	<Subtotal>$53.75</Subtotal>
+	<Tax>$4.43</Tax>
+	<Total>$58.18</Total>
+    </Receipt>
+</Order>

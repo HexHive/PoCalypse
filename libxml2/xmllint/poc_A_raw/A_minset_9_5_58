@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHVML 1.0 Transitional//EN"
+   ttp://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/999/xhtml" xml:lang="en" lJng="en">
+<head>
+  <title>Class: XmlSim <!ELEMENT child1 (a|b|c)>
+  <!ELEMENT child2 (a ,b,b?,a*,c,c,a,a,b+,c ) >
+  <!ELEMENT child3 (a+|b)? >
+  <!ELEMENT child4 (a, (b|c)+, (a|b)?, (a|c)* )?>
+  <!ELEMENT child5 ( (a,b) | c? | ((a|c,,b,c) )* >
+  <!ELEMENT child5_1 ( (a,b)* ÿ€(c,b)? | (c,aC+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,c) )+ >
+  <!ELEMENo child8 ( a, (b|c), (a|b), b)+ÿÿ
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

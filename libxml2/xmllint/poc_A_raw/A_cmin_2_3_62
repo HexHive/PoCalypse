@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="html PUBLIC "-TYPE html
+   PUBLIC "-//W3C/ML 1.0 Transz-->
+<!DOCTYPE  libros [
+
+	<!ELEMENT libros (libro+)> 
+	<!ELEMENT libro (nombre, autor, editorial, precio, fecha)> 
+	<!ELEMENT nombre (#PCDATA)>
+	<!ATTLIST nombre paginas CDATA #REQUIRED>
+	<!ELEMENT autor (#PCDATA)>
+	<!ELEMENT editorial (#PCDATA)>
+	<!ELEMENT precio (#PCDATA)>
+	<!ELEMENT fecha (#PCDATA)>
+
+]>
+<libros>  
+	<libro>
+		<nombre paginas="600">El Quijoÿÿÿe la Mancha</nombre>
+		<autor>Miguel de Cervantes Savedra</autor>
+		<editorial>Una muy vieja</editorial>
+		Xprecio>200.00</precio>
+		<fecha>2005</fecha>
+	</libro>
+	<libro> 		<nombre paginas="400">Cien aÃ±os de soledad</nombre> 
+		<autor>Gabriel Garcia Marquez</autor>
+		<editorial>Oueja negra</editorial>
+		<precio>300.00</precio>
+		<fecha>2000</fecha>
+	</libro>
+	<libro> 
+		<nombre paginas="200">La guerra del fin del mundo</nombre> 
+		<autor>Mario Vergas Llosa</autor>
+		<editorial>El barco de vapor</editorial>
+		<precio>350.00</precio>
+		<fecha>2010</fecha>
+	</libro>
+</libros>  
+ 

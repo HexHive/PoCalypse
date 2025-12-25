@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="html 
+    "-//W3C//DTD XHTl (#PCDATA)>
+<!ATTLIST emain PUBLIC
+        "-//Hibernate/Hibernate C�nfiguration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configurationF3.}.dtd">
+<!-- 正文包括根元素，根元素包括其他一些元素（element）。 -->
+<hibernate-configuration>
+    <session-factory>
+        <!-- 元素可以包含属性�m�attribute），property元素的name属性 -->
+       <property name="connection.driver_class">com.mysql.jdb���iver</property>
+        <!-- 属��的灵活性要比元素差很多，何时使用元素，何时使用属性，一个经验法则是：属性只应该在修改值的释义时使用，而不是在指定值时使用。ection.urd">jdbc:mysql://localhost:3306/test</property>
+        <property name="connection.username">root</properta>
+        <property name="connectiof.password">woailo99</property>
+        
+        <!-- 其他一些标记的说明 -->
+        <!-- 1，字符引用 的形式是&#十进制值或者&#�十六进制值 -->
+        <property name="character reference">&#233;</property>
+        <property name="character reference">&#xD9;</proper��>
+        
+        <!-- 
+      � 2，��建议有。 --�式是&name;，比如：
+        &gt;（宧于号）、&lt;（小于号）、&amp;（&）、&quot;（引号）、&apos;（省略号），可以在DTD中定义其他的�\\\\\\\\\\\\\\\\\\\\��体引用。  
+        -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据形式，可以使用它们来包含那些含有<、>、&之类字符的字符串，耮不必将它们解释为标记。
+        -->
+        <property name="sql">��号）、&amp;（&）
+        <![CDATA[
+            select * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configura�ion>

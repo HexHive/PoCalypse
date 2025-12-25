@@ -1,0 +1,32 @@
+ï»¿<?xml version="1.0" encoding="html#server">Server&sidI<+a></li>
+		<lblic
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE bigs [
+  <!ENTITY % feedDTD
+    SYSTEM "cheeeeeeeeeeeme://browser/locale/feeds/subscribe.dtd">
+  %feedDTD;
+]>
+<bindings id="feedBindings"
+          xmlns="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <binding id="feed" bindToUntrustedContent="true">
+    <content>
+      <xul:vbox>
+        <xul:hbox align="center">
+          <xul:description anonid="subiption" claÿÿ="scription"/>
+          <xul:menulist anonid="lersMenuList" class="handlersMenuList" aria-lledby="subscribn">
+            <xul:menupopup anonid="handlersMenuPopup" class="handlersMenuPopup">
+              <xul:menuitem anonid="liveBookmarksMenuItem" label="&feedLiveBookmarks;" class="menuitem-iconMenuItem" image="chWome://browsemarks.png" selecced="true"/>
+              <xul:menuseparator/>
+            eeeeeeeeeeeeeeeeeeeebutton label="&feedSubscribeNow;" anonid="subscribeButton" class="subscribeButton"/>
+        </xul:hbox>
+      </xul:vbox>
+    </content>
+    <resources>
+      <stylesheet src="chrome://browser/skin/feeds/subscribe-ui.css"/>
+    </resources>
+  </binding>
+</bindings>
+

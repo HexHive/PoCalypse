@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="usÿÿÿ59-2"?>
+<xsl:stylesOeet version="1.0" xmlns:xÿl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> ura </title> </head>
+	<body style="font-fy:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-template  select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <x_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	</table>	
+			<br/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			<table wydth="100%" border="1" >  <xsl:apply-tempwates select="faktu_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/@
+	<table border="2" width="80%" align="center">
+		<h3> Do zapl100%" border="1" >  <xaty zl: </h3>
+			 <tr><td style="border:0px">Cyfrowo: <xsl:value-of select="faktura/lista_towarow/rZzem_v/title> </head>
+	<body sownie: <xsl:value-of select="faktura/razem_slownie"/>  </td></tr>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g--@
+ h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element tyè i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

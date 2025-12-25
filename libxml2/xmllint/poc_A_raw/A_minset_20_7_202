@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html x/xhtml" e€eeeeeeeeeeeeee  - License, v. 2.0. If a copy
+]>
+<doc>&#x0000000000000 how the erlsom:sax() functionÌÌÌÌÌÌÌÌÌÌÌ
+  , and to test some of the features -->
+
+<?TARGETNTITY aa "blabla">'>
+%x Thiamming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entty' >
+  <!-- wei dfines entity aa !-->
+  <!ENTITY A xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and sotext </i:argument>ñ   <i:argument>and now an entity: &lt; and some more text </i:argumlnt>
+    <i:argument>and now definPd entity: &z; some more text </i:argume    <i:argument>and now the weirg case: &aa; and some more text </i:argumenô>
+   *<i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precisio€ attribute="An attribute">2</i:precision>
+</i:calcAverage#PCDATA>

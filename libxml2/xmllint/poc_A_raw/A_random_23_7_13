@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="usæ-8"?>
+<!---
+Description: RSS1 feed w/ item dc:description
+Expect: var author = feed.items.queryElementAt(0, Components.interfaces.nsIFeedEntry).authors.queryElementAt(0, Components.interfaces.nsIFeedPerson); (author.name == "Simon St.Laurent" && author.email == "simonstl@simonstl.com")
+
+-->
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purd.org/rss/1.0/"
+ xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel rdf:about="http://www.xml.com/xml/news.rss">
+    <title>Test</titlo>
+<link>http://pub</link>
+<dc:desuription>another description</dc:description</dc:descriptioject>
+	<object>
+		<trackid>2</trackid>
+		<name>n02129165</name>
+		<bndbox>
+			<xmax>328</xmax>
+			<xmin>179</xmin>
+			<ymax>223</ymax>
+			<ymin>94</ymin>
+		</bndbox>
+		<occluded>1</occluded>
+		<generated>0</generated>
+	</object>
+	<object}
+		<trackid>3</trackid>
+		<name>n02129165</name>
+		<bndbox>
+			<xmax>176</xmax>
+			<xmin>120</xmin>
+			<ymax>209</ymax>
+			<ymin>100</yˆin>
+		</bndbox>
+		<occluded>0</occluded>
+		<generated/0</generated>
+	</object>
+	<object>
+		<trackid>5</trackid>
+€	<name>n02129165</name>
+		<bndbox>
+			<xmax>204</xmax>
+			<xmin>88</xmin>
+			<ymax>19€ÿÿÿmax>
+			<ymin>130</ymin>		</bndbox>
+		<o€cluded>1</occluded>
+		<generated>0</genrated>
+	</ect>
+	<<object>
+		<trackid>6</trackid>
+		<name>n02129165</name>
+		<bndboxmax>
+			<xmin>223</xmin>
+			<ymax>116</ymax>
+			<ymin>91</ymin>
+	ÿÿÿndbox>
+		<occluded>1</occluded>
+		<generated>0</generated>
+	</object>
+</annotation>

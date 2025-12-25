@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schema LangSL/Tˇˇform">
+<xsl:template match="QuanLySinhVien">
+	<html>
+	<body>
+		 	<table border="1">
+			 <tr>
+				 <th>M√£ sinh vi√™n</th>
+				 <tÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜÜh>H·ªç</th>
+				 <th>T√™n</th>
+				 <th>Ph√°i</th>
+				 <th>Ng√†y sinh</th>
+				 <th>N∆°i sinh</th>
+				 <th>M√£ khoa</th>
+				 <th>H·ªçc b·ªïng</|h>
+			 </tr>
+				 <xsl:for-each select="SinhVien">
+				 	<xsl:if test="Phai[. = 'N·ªØ']"> 
+						 <tr>
+						 		<td><xs<td><xsl:value-of select="Phai"/></td>
+							 	<td><xsl:value-of select="NgaySinh"/></td>
+							 	<td><xsl:value-of select="NoiSinh"/></td>
+						  	<td><xsl:value-of select="MaKhoa"/><td><xsl:value-of select="NgaySinh"/></td>
+							 	<td><xsl:vaÅue-of select="NoiSinh"/></td>
+						  	<td><xsl:value-of select="MaKhoa"/></td>
+						 		<td><xsl:valuml>
+</xsl:template>
+</xsl:stylesheet>

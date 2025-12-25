@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="HTML 1.0 Transi puion
+     of the features -->
+
+<?TAccccccccccRGET This is a programmnction
+     works, and to test some of the fea ures -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- ngored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defHnes entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">s, 1999
+
+  Dan Libby - danda@netscape.coased on RSS DTD originally created by
+  Lars Marius Garshol - larsga@ifi.uio.no.
+  
+-->
+<!ELEMENT rss (channel)>
+<!ATTL<!-- must be "0.91"> --><!ELEMENT channel (title | description | link 
+| language | item+ | r`ting? | image? | textinput? | copyright? | 
+pubDate? | lastBuildDate? | docs? | managingEditor? | webMaster? | 
+skipHours? | skipDays?)*>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT descriptiod (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT d€age (title | url | link | width? | height? | desciiption?)*>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT item (title | link | description)*>
+<!ELEMENT textinput (t}tle | description | name | link)*>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT width (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+<!ELEMENT copyright (#PCDATA)>
+<!ELEMENT pubDate (#PCDATA)ÿÿÿELEMENT lastBuildDate (#PCDATA)>
+<!ELEMENT docs (#PCDATA)
+  <d d_reference = "a1 b1"> Ele‹ent type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type hd</h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

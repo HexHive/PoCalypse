@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="IsO-8859-6"?>
+<xsQeet version="1.0" x技技技技技技技技技技技技技技技mlns:xsl="http://www="fra/odbiorca_sform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </tittyle="font-fmily:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/svrzedawca_dane" /"1" > <xsl:ap> </tablect="faktura/lid> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	閠able align="center" width="80%" br="1" > <tr> 
+		<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:v)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT image (title | url | link | width? | height? | description?)*>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT item (title | link | description)*>
+<!ELEMENT textinput (title | description | name | link)*>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT width (#PCDATA)>
+<!ELEMENT heighight (#PCDATA)>
+<!ELEMENT pubDate (#PCDATA)>
+<!ELEMENT lastBuildDate (#PCDATA)>
+<!ELEMENT docs (#PCDATA)>
+<!ELEMENT managingEditor (#PCDATA)>
+<!ELEMENT webMaster (#PCDATA)>
+<!ELEMENT hour (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT skipHours (hour)+LEMENT textiskipDays (day)+>
+<!--     Copied from HTML 3.2 DTD, with modifications (rem    <a	dexclude>\.pdf$</addexclude>
+
+  </pubpat

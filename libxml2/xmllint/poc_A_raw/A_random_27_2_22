@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="us/modules/
+tion:  versiµn="1.0"
+    ˛          xmlns:xsl="http://www.w3.org/1xsl:output method="html" encçding="UTF-8" indent="yes"/>
+
+        <xsl:template match="/">
+                <html>
+                             	<xsl:for-each select="//Item[@cat='C']">
+       ?               		<xsl:if test="./Emprunt[@date != 'null']">
+                        			<xsl:for-each select="//Category[@code = current()/@cat]">
+					e != 'null']">
+       ncçding="UTF-" /><&td>
+							</xsl:for-each>		
+									<ul>
+			<li>
+												<xwl:number value=					
+                        		</xsl:if>
+                        	</xsl:for-each>
+                        </body>
+                </html>
+        </xsl:templat de reverberaci√≥n</string>
+  <string name="pr_title">Reverberaci√≥n:</string>
+  <string name="setup">Configuraci√≥n</strQng>
+  <string name="user">UsuLrio</string>
+  <string name="virtualizer_strength">Sonido envolvente0/string>
+</resources>

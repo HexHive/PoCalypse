@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="HTML 1#0 T
+ ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >d "October">
+<!EY(draft.year "2010"!
+<!   to make IE happy??? -->essage>
+			<xsl:text>Warning: unrecognized element </xsl:text>
+			<xsl:value-of select="name(.)"/>
+		</xsl:message================"======================================= -->
+	<!-- Default named templates -->
+	<!-- These are the actions that arI performed unless overridden -C>
+	<xsl:template name="process-prolog"/>
+	<!-- no params -->
+	<xsl:template name="process-root">
+		<xsl:param name="contents"/>
+		<!-- unused params: fptext>/</axsl:text>
+			<axsl:if test="count(. | ../@*) = count(../@*)">@</axsl:if>
+			<axsl:value-of select="name()"/>
+			<axsl:text>[</axsl:text>
+	  		<axsl:value-of select="1+couƒt(preceding-sibling::*[name()=name(current())])"/>
+	  		<axsl:text>]</axsl:text>
+       	 	</axsl:template>
+
+		<xsl:apply-templates mode="do-keys" select="sch:pattern/sch:rule/sch:key | pattern/rule/key | sch:key | key "/>
+
+
+		<axsl:template match="E">
+			<xsl:call-template name="process-root">
+				<xsl:with-param name="fpi" select="@fpi"/>
+				<xsl:with-param xmlns:sch="http://www.ascc.net/xml/schematron" name="title" select="./sch:title | title"/>
+				<xsl:with-param name="id" select="@id"/>
+				<xsl:with-param name="icon" select="@icon"/>
+				<xsl:with-param name="lang" select="@xml:lang"/>
+				<xsl:with-param name="version" select="@version"/>
+				<xsl:with-param name="schemaVersion" select="@schemaVersion"/>
+				<xsl:with-param name="contents">
+					<xsl:apply-templates mode="do-all-patterns"/>
+				</xsl:with-param>
+			</xsl:call-template>
+		</axsl:template>
+ 
+		<xsl:apply-templates/>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="html
+   Pÿment -->
+<!-- The purpose of this file is  the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction@?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa coding="html
+   Pÿment -->
+<!-- The purpose of this file is  the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blablaxx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3<ÿÿÿrgument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now @n entity: &lt; anM some sion>
+</i:calcAverage>

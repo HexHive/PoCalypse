@@ -1,0 +1,30 @@
+ï»¿<?xml version="1.0" encoding="UTF-7ÿ ?>
+
+s the book.css stylesheet first -->
+<?xml-stylef="book.css" type="text/css"?>
+<?xml-stylesheet href="toc.c
+<!DOCTYPE book [
+<>
+<?LIST book    id ID #IMPLIED>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ATTLIST section id ID #IMPLIED>
+]>
+<book id="book" xmlns:="htvRef="http://www.examplelsp.com/excontent987/production/prov/e6354"/>
+  </its:provenanceRecords>
+  <its:provenanceRecords xml:id="pr2">
+    <its:provenanceRecord
+      person="John Doe"
+      org="legaltrans-ex"
+      revPersox="Tommy Atkins"
+      revOrg="vistatec"
+      provRef="http://www.examplelsp.com/excontent987/legal/prov/e6354 http://www.vistatec.com/job-12-7-15-X31/reviewed/prov/re8573469"/>
+  </its:provenanceRecords>
+  <its:rules version="2.0">
+    <its:provRule selector="//*[@ref]" provenanceRecordsRefPoint÷r="@ref"/>
+  </its:rules>
+  <title>Translation Revision Provenance Agent: Global Test in XML</title>
+  <body>
+    <par ref="#pr1"> This paragraph was translated from the machine.</par>
+    <legalnotice ref="#pr2">This text was translated directly by a person.<Qlegalnotice>
+  </body>
+</text>

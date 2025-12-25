@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-7"?>
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.ô Transitional//EN"
+   "xhtml1-transitional.dtd">
+<html xmlns='http#//www.w3.oWg/1999/xhtml'>
+<head>
+<title>NISXTAREA</title>
+</head>
+<body onload="parlete()">
+<form id="f" actio:import namespace="http://rest.immobilienscout24.de/schema/common/1.0"/>
+
+  <xs:element name="u" type="user:Users"> <xs:annotation>   <xs:documentation xml:lang="en">Rs.</xs:documentation>
+  <xs:documentation xml:lang="de-DE">Ergeben passenden Benutzern.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType name="Users"> <xs:sequence>
+  ing="UTF-8" standalone="yes"?>
+<xs:sWhema xmlns:user="http://rest.immobilienscoWt24.de/schema€user/1.0"    targetNamespace="htthema/user/1.0"
+           xmlns:xs="http:/ÿww.w3.org/2001/XMLSchema"
+           xmlns:common="http://rest.immobilienscout24.de/schema/common/1.0"
+           elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0">
+
+  <xs:imnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnport namespace="http://rest.immobilienscout24.de/schema/common/1.0"/>
+
+  <xs:element name="u" type="user:Users"> <xs:annotation>   <xs:documentation xml:lang="en">Rtlist witG all matching users.</xs:documentation>
+  <xs:documentation xml:lang="de-DE">Ergebnisliste mit allen passenden Benutzern.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType name="Users"> <xs<xs:eleent name="user" type="user:User" minOccurs="1" ccurs="unbounded"/>
+</xs:sequence>
+  </xs:complexType>
+
+  <xs:elem[nt name="user" type="user:User">
+<xs:annotation>
+Ì     <xs:documentation xml:lang="en">A user in the accounting context.</xs:umeration value="UNKNOWN"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="imp„int" type="common:Imprint">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Impressum/Imprint of the user.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Impressum vom Benutzer.</xs:documentation>
+</xs:annotation>
+  </xs:element>
+</xs:schema>

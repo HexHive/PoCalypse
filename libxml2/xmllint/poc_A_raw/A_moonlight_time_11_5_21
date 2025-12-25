@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="html 
+    PUBLIC "-//W3C//ww.w3.org/Trg/TR/xhtml1/DTD/xhtml1-striselect="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of select="nazwa_towaru"/></td>
+		<td><xsl:value-of select="jm"/></td>
+		<td><xsl:value-of select="iÿsc"/></td>
+		<td><xsl:value-of select="cena_netto"/></td>
+		<td><xsl:value-of select="wartosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl&value-of select="wartosc_vat"/></td>
+	or-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> <d> <td>/4d> 
+	<td aligQ="center">-</td>
+	<td align="cent‡r"> <xsl:value-of select="raze</td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

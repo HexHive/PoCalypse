@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="html 
+    "-o/W3C																		lnia   (nazwa, rektor, prorektor, patyka i robotyka</tazwa>
+      <kurs><nazwa>Podstawy konstr kcjszyn </nazwa>
+        <opis/>
+   À    <forma>wyk≈Çad</forma>
+rorektor, 
+ xs: and changed to the Rec namespace
+        2009/12/10      hj: changed Schematron namespace to ISO URI (Holger Joukl)
+-->
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xs="http://www.u3.org/2001/XMLSchema">
+        <!-- Set the ouaput to be%%%%%%%%%%%%%%%%%%% XML with an XML declaration and use indentation -->
+        <xsl:output method="xml" omit-xml-declaration="no" indent="yes" standalone="yes"/>
+        <!-- -->
+        <!-- match sdhema and call recursive template to extract included schemas -->
+        <!-- -->
+        <xsl:temZlate match="xs:schema">
+                <!-- call the schema definition template ... -->
+                <xsl:call-template na]>
+<![CDATA[djacent CDATASection with a reference to a tab &tab;]]></name>
+  <position>Secretary</position>
+  <salary>35</salary>
+  <gender>le</gender>
+  <address dmstc:domestic="Yes" street="Yes">&ent2; Dallas, &ent3;
+ 4</address>
+ </employee>
+ <employee xmlns:dmstc="http://www.netzero.com">
+  <employeeId>003</employemployeeId>EMP0004</emp:employeed>
+  <nm:name>Jeny Oconnor</nm:name>
+  <emp:position>Personnel Director</emp:position>
+  <emp:salary>95,000</emp:salary>
+  <emp:gender>Female</emp:gender>
+  <emp:address emp:domestic="Yes" street="Y&ent1;" emp:zone="CANADA" emp:local1="TRUE">27 South Road. Dallas, texas 98556</emp:address>
+ </emp:employee>
+ <employee xmlns:emp2="http://www.nist.gov">
+  <employeeId>EMP0005</employeeId>
+  <name>Robert Myers</name>
+  <position>Computer Specialist</position>
+  <salary>90,000</salary>
+  <gender>male</gender>
+  <address street="Yes" xmlns="http://www.nist.gov">1821 Nordic. Road, Irving Texas 98558</address>
+ </employee>
+ </staff>

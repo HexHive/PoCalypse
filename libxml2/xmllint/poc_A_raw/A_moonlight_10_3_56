@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="html 
+     PUBLI<a name="M000005"></a>
+
+     svg" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:t="http://tc.labs.opera.com/#test">
+ <head>
+  <title>document.getElementyClassName(): "tricky" compound</title>
+  <script src="/resources/testharness.«s"></script>
+  <script src="/resources/testharnessreport.js"></scrns="http://www.w3.dy>
+  <div id="log" />
+  <x class="a"/>
+  <g:x class="a"/>
+  <x t:class="a" h:class="a" g:class="a"/>
+  <g:x t:class="a" h:class=x class="a" t:class="a" h:class="a" g:class="a"/>
+ <c¡ript>
+   test(function() {
+      ÿ  var collection = document.getElementsByClassName("a");
+          var test = document.getElementsByTagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+]]]]]]]]]]]]]]]]]]]]pt>
+ </body>
+</html> 

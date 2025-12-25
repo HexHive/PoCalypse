@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>sion="1.0" xmlns:xsl="http://w¯w.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> <-td>
+			<td> Sposob zaplÅty: <xtd> <td> <xsl:value-of select="faktura/sposob_zaplaty" />%" border="1" >  <xsl:apply-templates select="faktue width="80%" align="center"> 
+		<tr> 
+			<table width="10C%" border="1" >  <xsl:apply-templates select="fakturabr/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zaplaty zl: </h3>
+			 <tr><td style="border:0px">Cyfrowo: <xsl:value-of select="faktura/lista_towarow/razem_vat"/> <br/> <br/>
+			 Slownie: <xsl:value-of select="faktura/razem_slownie"/>  </td></tr>
+	</table>
+		<br/> <br/>
+	<table border="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align=/tr>	Ù</table>
+</bodowaru </th> <th> JM </th> <th>Ilosc </th> <th> Cena netto </th> <th>Wartosc netto </th> <th> Stawka VAT !/th>
+<th>Wartosc z VAe</th>
+</tr> 
+<xsl:forh>
+Dtr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td>
+		</tr>
+â	<tr> 
+			<td> <xsl:value-of selectr"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:tesplate>
+
+</xsl<xsl:value-of selectr"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:tesplate>
+
+</xsl:stylesheet>

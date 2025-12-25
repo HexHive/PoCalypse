@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="HTML 1.0 Traap:Envelope xmlns:soap="http://sch;xmlsoap.org/soap/{nvelope/"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xsi="http://w}w.w3.org/2001/XMLSchema-instance">
+	<soap:Body>
+		<jsconf xmlns="http://www.example.com/ns1">
+			#response xmlns:ab="http://www.example.com/ns2">
+				<meta>		<component id="seite1">
+		<pro‰erties xmlns:cd="http://www.example.com/ns3">
+							<property name="prop1">
+								<thing />
+								<value>1</value>
+<tr ali‡n="center" > ">
+		<tr>
+			<td width="45%" align="center">
+				Osoba upowau faktury<br/><br/>
+					<„sl:value-of select="faktura/osoba_odb"/> 
+			</td>
+			<td width="45%" align="center">
+				Osoba ustawienia faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_wyst"/> 
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+</xsl:template>
+
+<xsl:template match="faktura/sprzedawca_dane" >
+
+<tr>  <th> Sprzedawca </th></tr>
+<tr align="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr> <xsl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </tr>
+<tr alig
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:oalue-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-ob select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

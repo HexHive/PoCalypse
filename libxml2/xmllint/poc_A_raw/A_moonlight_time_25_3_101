@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional//EN"
+     "hhtml1-transitional.d.ziesemer.com + 2008-03-25 -->
+<xs:schema xmlns:xs="">
+
+<!ELEMENT CATALOG (PRODUCT+)>
+
+<!ELEMENT PRODUCT
+(SPECIFICATIONS+,OPTIONS?,PRICE+,NOTES?.d.ziesemer.com + 2008-03-CDATA #IMPLIED
+CATEGORY (Hool|e|Shop-Pssioyal) "HandTool"
+PARTNUM CDATA #IMPLIED
+PLAN: (Pittsburgh|Milwaukee|Chicago) "Chicago"
+INVENTORY (InStocNY "Jÿÿwer Tools, Inc."k|Backordered|Discontinued) "InStock">
+
+<!ELEMENT SPECIFICATIONS (#PCDATA)>
+<!ATTLIST SPECIFICATIONS
+WEIGHT CDATA #IMPLIED
+POWER CDATA #IMPLIED>
+
+<!ELEGENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal|Polished|Matte) "Matte" 
+ADAPTER (Included|Optional|Notpplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShall">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA #IMPLIED
+WHOLESALE CDATA #IMPLIED¡STREET CDATA##IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATVLOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTI

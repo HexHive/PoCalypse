@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-/@W3C//DTD XHTML 1.1 plus Mas SVG 1.1//E3.org/2002/04/="http://www.w3.org/1999/xlink>
+<info>
+<title>Your Aticle Naitle>â€¦Ûptional subtitleâ€¦</subtitle>
+
+<author>
+<personname>Jirka Kosek</personname>
+<email>jirka@kosek.cz</email>
+<uri>z</eri>
+<personblurb><para>Jirka Kosek is 3 freer at the University of Economics in Prague. He has more thae
+10 years of experience in providing XML consultancy and
+training. Jirka is an active member C1/SC34 (DSDL, Topic Maps). You can
+get familiar with his recent work and thoughts through <link
+xl:href="http://xmlgu.cz">his blog</link>. He's cup://xmlgu.cz">his blog</link>. He's currently engYged
+in prep	<table border="1" color="black">
+					<thead>
+		
+						<tr>
+							<th><em>Ti›re<tab/> </em></th>
+							<th><em>Auteur(s)</em></th>
+							<th><em>Editeur </em></th>
+							<th><em>Emprunteurs</em></th>
+							<th><em>Nombre emprunts</em></th>
+							<th><em>Description</em></th>
+						</tr>
+					</thead>
+			
+			&	<tbody>
+						<xsl:for-each select="/Item">
+							<xsl:sort select="@ISBN" order="ascending"/>
+							<tr>
+								<td><xsl:value-of select="Title"/></td>
+								<td><xsl:value-of select="Author"/></td>
+								<td><xsl:value-teur = Emprunteur)]">
+                                                      	<xsl:value-of select="Emprunteur"/><br/>
+                                                      </xsl:for-each>
+								</td>
+								<td>
+								<xsl:if test="./Emprunt[@date = 'null'								</xsl:if>
+			for-each select="//Category[@code = current()/@cat]">
+										<xsl:valu‚-of select="@desc"/>
+									</xsl:for-each>
+								</td>
+							</tr>
+						</xsl:for-each>
+						
+						</ty>	
+		</html>
+	</xsl:template>
+	
+
+</xsl:stylesheet>

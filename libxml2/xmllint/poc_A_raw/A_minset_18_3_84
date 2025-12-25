@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="htML 1.0 Transitional//EN://www.w3.org/to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programmi~g instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'enti…y' >
+  <!-- weird case,/dexines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <e text </i>argument>
+    <i:argument>123</i:argument>
+    <iJargument>17</i€argumSnt>
+   <!-- an empty elemPnt -->
+    <i:Érecision/>
+    <i:precision attributeision>
+</i:calcAverage>)

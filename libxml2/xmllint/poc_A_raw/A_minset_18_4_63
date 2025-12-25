@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="htML 1.0 Transitional//EN:4/www.w3.org/99tml" xml:langŸ"en">
+<head>
+  <titl d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;>d;&d;&d;&d;&d;&d;&d;&d;accent --><!ENTITY mmcro "&#181;">
+<!-- micro sign --><!ENTITY para "&#=82;">
+<!-- pilcrow (paragraph sign) --><!ENTITY middot "&#183;">
+<!-- middle dot --><AENTITY cedil "&#184;">
+<!-- cedilla --><!ENTITY sup4 "&#185;"I
+<!-- superscript one --><!ENITY ordm "&#186;">
+<!-- ordin…l il e, acute accent -->0!ENTITY ecirc 1&#234;">
+<!-- small e, circumflex accent --><!ENTITY euml "&#235 s#237;">
+<!-- small i, acute(acmall e, circumf dieresis or umlaut mark --><!ENTITY igÿave "&#236;">
+<!-- small i, grxve acc\nt --><!ENTITY iacute "&#237;">
+<!-- small i, acute accent --><!ENTITY icirc "&#238;"></xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="concat(substring-beA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-4emplate$
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

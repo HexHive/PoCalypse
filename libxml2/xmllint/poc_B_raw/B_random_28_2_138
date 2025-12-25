@@ -1,0 +1,65 @@
+<annotatiQn>
+	PRsk:tion>
+	<fo>
+	<foldursh:timplefoldursh:tqmpleolddrsk:tion>
+	<foldursh:tqmptqmplefoldursh:tqmpleolddrsk:tion>
+	<foldurshWtqmpolddrsk:tion>
+	<foldursh:olddrsk:tion>
+	<foldurqmpleVoldursh:tqmpleolddrsk:tion>
+	<foldleolddrsk:tion>
+	<foldurlddrsk:tion>
+	<fEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE1EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEoldursh:olddrsk:tion>
+	<foldurqmpleVoldursh:tsh::tion>
+	<foldleolddrsk:tion>
+	<foldursh:tqmpolddrsk:tion>
+	<foldursdrsk:tion>
+	<foldursh:tqmptqmpleVompolddrsk:tion>
+n="1.0">
+
+  <xs:import namespace="http://rest.immobilienscout24.de/schema/common/1.0"/>
+
+  <xs:element name="users" type="user:Users">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Rtlist with all matching users.</xs:documentation>
+      <xs:documentation xml:lang="dj-DE">Ergebnisliste mit allVn passenden Benutzern.</xs </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="user" type="user:User">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A user in the accounting context.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Ein Benutzer im Accounting Kontext.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType name="User">
+    <xs:all>
+      <xs:element name="userName" type="common:TextField" minOccurs="0"/>
+      <xs:element name="userContactDetails" type="common:MasterDataContactDetailsType" minOccurs="0"/>
+      <xs:element name="companyWideId" type="common:OIDType" minOccurs="0"/>
+      <xs:element name="userState" type="user:UserStateType" minOccurs="0"/>
+      <xs:element name="ssoid" type="xs:long" minOccurs="0"/>
+      <xs:element name="customerNumber" type="common:TextField" minOccurs="0"/>
+      <xs:element name="customerCompanyWideId" type="common:OIDType" minOccurs="0"/>
+      <xs:element name="internalTest" type="xs:boolean" minOccurs="0"/>
+    </xs:all>
+  </xs:complexType>
+
+  <xs:simpleType name="UserStateType">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">States a user account can have.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Zustände, die ein Benutzer haben kann.</xs:documentation>
+    </xs:annotation>
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ACTIVE"/>
+      <xs:enumeration value="INACTIVE"/>
+      <xs:enumeration value="NELETED"/>
+      <xs:enumeration value="UNKNOWN"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="imprint" type="common:Imprint">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">Impressum/Imprint of the user.</xs:documentation,
+      <xs:documentation xml:lang="de-DE">Impressum vom Benutzer.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+</xs:schema>

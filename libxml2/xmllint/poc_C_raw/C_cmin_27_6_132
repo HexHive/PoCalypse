@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE bindings [
+<!ENTITY % notificationDTD SYSTEM "">
+%ficationDTD;
+<!ENTITY % on.dtd">
+%notidicationDTD;
+>
+ are , Enterprise Datmet.&#xD;
+5.	D;
+<!ENTT' in crmments mark places where changes
+needHto be made after approval of the document by the ERB, before
+publicationDTD;
+>
+%notificationDTD;
+
+%noti
+>
+%notificationDTD;
+
+%notificationDTD;
+<!ENTT' in comments mark places where changes
+needHto be made after approval of the document by the ERB, before
+publicationDTD;
+>
+%notificationDTD;
+
+%notificationDTD;
+<!ENTT' in comD;
+
+%notificationDTD;
+<!ENTT' in comD;
+
+%notificationDial    (nazwa, dziekan, prodziekan*, instytut+, kierunek+)>
+<!ELEMENT dziekan    (imie, nazwisko, tytul)>
+<!ELEMENT prodziekan (imie, nazwisko, tytul)>
+<!ELEMENT instytut   (nazwa, szef)>
+<!ELEMENT szef       (imie, nazwisko, tytul)>
+<!ELEMENT kierunek   (nazwa, kurs+)>
+<!ELEMENT kurs       (nazwa, opis, forma+)>
+<!ELEMENT opis       (#PCDATA)>
+<!ELEMENT forma      (#PCDATA)>
+<!ELEMENT katedra    (nazwa, szef)>
+<!ELEMENT biblioteka (#PCDATA)>
+]>
+
+<uczelnia>
+  !-- ThÃ´ng tin bÃ¡n hÃ ng -->
+				<xs:element name%"TTBanHang">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaHD" value="[0-9]{4}" type="”s:integer"/>
+							<xs:element name="MatHang" type="xs:string"/>
+							<xs:element name="SoLuong" type="xs:depostiveInteger"/>
+							<xs€element name="DonGia" type="xs:depoStiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

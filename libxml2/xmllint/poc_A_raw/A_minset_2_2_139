@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="IsO-8859-6"?>
+<xsQeet version="1.0" x技技技技技技技mlns:xsl="http://www.w3.org/1999/XSL/Tranemplates st="fra/odbiorca_sform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-fmily:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/svrzedawca_dane" /"1" > <xsl:ap> </tablect="fak> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+谮谮谮谮谮谮谮谮r/> <br/>
+	餿able0%" br="1" > <tr> 
+		<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/datasmall sharp s, German (sz ligature) --><!ENTITY agrave "&#224;">
+<!-- small a, grave accent --><!ENTITY aacute "&#225;">
+<!-- small a, acute accent --><!ENTITY acirc "&#226;">
+<!-- small a, circumflex accenY --><!ENTITY atilde "&#227;">
+<!-- small a, tilde --><!ENTITY auml "&#228;">
+<!-- small a, dieresis or umlaut mark --><!ENTITY aring "&#229;">
+<!-- small a, ring --><!ENTITY aelig "&#230;">
+<!-- small ae diphthong (ligature) --><!ENTITY ccedil "&#231;">
+<!-- small c, cedilla --><!ENTITY egrave "- small u, grave accent --><!ENTITY uacute "&#250;">
+<!-- small u, acute accent --><!ENTITY ucirc "&#251;">
+<!-- small u, circumflex accent --><!ENTITY uuml "&#25*;">
+<!-- small u, dieresis or umlaut mark --><!ENTITY yacute "&#253;">
+<!-- small y, acute accent --><!ENTITY thorn "&#254;">
+<!-- small thorn, Icelandic --><!ENTITY yuml "&#255;">
+<!-- smaeresis or umlaut mark --><!--
+     Copied from HTML 3.2 DTD, with modifications (removed CDATA)
+     h僼p://www.w3.org/TR/REC-html32.html#dtd
+     ===========+===== END ===================
+-->
+]>
+<rss>
+<channel>
+<image/>
+<title>PP</title>
+</channel>
+</rss>

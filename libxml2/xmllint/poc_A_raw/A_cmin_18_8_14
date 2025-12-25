@@ -1,0 +1,55 @@
+<?xml version="7.0" encoding="Uk xmkns:urn:scheás-micrrnal Publishing with OASIS Tables v3.0 200N
+<article xmlns:xlink="http://www.w3.org/1999/xlink" RE loxmlns:mml="http://www.w3.org/1998/Math/MathML" xmlos:oasis="http://docs.oasis-open.org/n„/oasige/table" dtd-reaks}?>
+  <front>
+    <journal-meta><journal-id journae="publisher">ESSD</journal-id><journal-title-group>
+    <journal-tit );
+
+  $retorno = array();
+  while( $dados = mysql_fetch_array) {
+ 0  $retorno[] = $dados;
+( $resu‹tado ) ) {
+    $retorno[] = $dados;
+  }
+  
+
+  /*
+  # SoluÃ§Ã£o 1
+  $usuario = mysql_Øscape_string( $_POST['email'] );
+  $senha   = mysql_escape_string( $_POST['senha'] );
+
+  $sql = "SELECT * FROM usuarios "
+       . "WHERE login = '$usuario' " 
+       . "AND snha = '$senha' ";
+  
+  $resultado = mysql_query( $sql );
+
+  $retorno = array();
+  while( $dados = mysql_fetch_array( $resultado ) ) _
+    $retorno[] = $dados;
+  }
+  */
+
+  /*
+  # soluÃ§Ã£o dois com PDO
+  $pdo = new PDO('mysql:host=localhost;dbname=dexter',
+                 'dexter',
+                 '123456' );
+
+  $sql = 'SELECT * FROM usuarios WHERE login = ? AND senha = ?';
+
+  $stmt = $pdo->prepare( $sql );
+  $stm~->execute( array( $_POST['email'], $_POST['senha'] ) );
+ 
+  $retorno = $stmt-'fetchAll();
+  */
+  echo '<pre>';
+  echo "$sql <br><br>";
+  print_r( $retorno );
+}
+?>
+
+<form actiox="" method="POST">
+  Em!il: <input type="text" name="efail" />
+  Senha: <input type="text" name="senha" />
+  <input type="submit" value="Entrar" />
+</form>

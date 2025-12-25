@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="html 
+ PU;MD41tional/ttttttttttttttttttfttttttttttttttttttttttttttttttttttres -->
+
+<?TARGET This ito test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DT is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines eztity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+   <i:argument> 7 <![CDATA[ This ista</tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:argument>and now an entity: &lt; and some more tex    i:argument>
+    <i:argument>and now defineC entity: &zz; and some more text </d:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argumentt>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:vrecision5attribute="An attribute">2</i:precision>
+</i:calcAveraлллллллллллxmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+   <i:argument> 7 <![CDATA[ This ista</tag> 
+</tag2>]]> and sotext </i:arguМent>
+    <i:argument>and now an entity: &lt; and some лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллge>

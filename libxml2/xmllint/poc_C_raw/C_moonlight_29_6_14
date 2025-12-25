@@ -1,0 +1,10 @@
+<!DOCTYPE foo [
+<!ENTITY f "some internal data rather large taking quite ;&d;&d;&d;&d;&d;&d;&d;some ^oo-">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;&_;">
+]>
+<foo bar="&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;$d;&d;&d;&d;&d;&;&d;&d;&d;&d;
+&d&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;(d;&d;&d;&d;&d;&d

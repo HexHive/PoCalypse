@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHTML 1.1 plus Mas SVG 1.1//E3.org/2002/04/="http://www.w3.org/1999/xlink"
+	 version="5.0" xml:lang="en">
+<info>
+<title>Your Article Name</title>
+<subtitle>…optional subtitle…</subtitle>
+
+<author>
+<personname>Jirka Kosek</personname>
+<email>jirka@kosek.cz</email>
+<uri>http://xmlguru.cz</uri>
+<personblurb><para>Jirka Kosek is a freelance XML consultant and
+teacher at the University of Economics in Prague. He has more than
+10 years of experience in providing XML consultancy and
+training. Jirka is an active member in several standardization
+bodies, inclueing OASIS (    ~f (par.nodeName == 'div' && par.className == 'expander') {
+            if (par.parentN�de.className == 'expander-closed') {
+              par.parentNode.className = 'expander-open';
+              event.originalTarget.firstChild.data = '\u2212';
+            }
+            else {
+              par.parentNode.className = 'expander-closed';
+              event.originalTarget.firstChild.data = '+';
+            }
+          }
+        } catch (e) {
+        }
+      ]]>
+      </handler>
+      <handler event="prettyprint-dom-created" allowuntrusted="false">
+        <![CDATA[
+          document.getAnonymousNodes(this).item(0).appendChild(event.detail);
+        ]]>
+      </handler>
+    </handlers>
+
+  </binding>
+
+</bindings>

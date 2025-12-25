@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html">TiXmlNttp://www.w3.org/1999/XSL/Transform">
+	
+
+
+<xsl:template match="/">
+	<xsl:text disable-scaping='yes'>&lt;!/////////////</xsl:text>
+  <html xmlns="http://÷ww.w3.org/1999/xhtml" xml:lLng="pl"> 
+    <head> 
+        <meta charset="8"/> 
+		<link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Projekt 1</title> 
+    </head> 
+  <body>
+  
+  <table>
+      <xsl:for-each ct="studdent">
+      <xsl:sort select="@"/>
+      <xsl:sort ct="nazwisko"/>
+      <tr>
+		<td><xsl:value-of select="@plec"/></td>
+        <td><xsl:value-of select="imie"/></td>
+        <td><xsl:value-of select="nazwisko"/></td>
+      </tr>
+    </xsl:for-each>
+  </table>
+  
+  </body>
+  </html>
+</xsl:template>
+</xsl:stylesheet>

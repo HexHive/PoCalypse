@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="euc-jp"?>aa<!--
+ DHEADER.
+ 
+ Copyright 1997-2007 Sun Microsystems, Inc. All¸riect to the terms oed, except for the entit‰es !-->
+<!DOCTYPE a0TD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:Çrgument>
+    <i:argument> 7 <![CDATA[ This is wome CDATA with soÿe tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an eÝtityon>
+</i:carlcAverage>

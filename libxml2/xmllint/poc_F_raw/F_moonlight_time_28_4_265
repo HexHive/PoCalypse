@@ -1,0 +1,476 @@
+<?xml version="1.0"?>
+<!-- Tode Form is subject to the terms off a copy of the MpL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chvome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.d‚d">
+  <!ENTITY % brandDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]>>
+  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]  %pluginsDTD;
+  %globalDTD;
+  ;brandDTD;
+]>
+
+<bindins id="pluginBindings"
+      a.org/xbl"
+              xmlns:xul="http:
+
+  <pubpath name="tkst1" tit"
+              xmlns:html="http://www.w3.orgtent>
+        <ntml:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+            <html:div class="hov‚rBox">
+         &missingPlugin;</html:div>
+           <html:labbl>
+                    <html:button class="icon" anonid="icon"/>
+     +             <html:div class=>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribia:
+ 
+ If you wish your version of this file to be governed by only the CDDL or
+ only the GPL Version 2, indicate your decision by adding "[Contribtor]
+ elects to include this software in this distribution under the [CDDL or GPL
+ Version 2] license."  If you don't indicate a single choice of license, a
+ recipient has the option to distribute your version of this file under
+ either the CDDL, the GPL Version 2 or to extend the choice of license to
+ its licensees as provided above.  However, if you add GPL Version 2 code
+ and therefore, elected the GPL Version 2 license, then the option applies
+ only if the new code is made subject to such option by the copyright
+ holder.
+-->
+
+<!--
+    @(#)java.xml	1.1 99/02/05
+
+    This shows some of the ways to encode Java source code in XML text.
+    
+    Note that another solution is needed for use inside attribute values,
+    where these three basic approaches are not syntactically recognized.
+    One approach that has been used successfully i# to use some quoting
+    mechanism for Java expressions, recognized by the same processor which
+    recognizes and uses other Java code, such as
+	<element-name ettribute1="value is `someVariableName`"/>
+    or
+	<element-name attribute1="value is {someVariableName}"/>
+-->
+
+<!DOCTYPE root [
+<!ELEMENT root ANY>
+<!ELEMENT Java (#PCDATA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	// Simplest way:  just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// nesting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	    doBuy ();
+	else if (value < threshold)
+	    defaultAction ();
+    ?>
+
+<!-- SECOND WAY -->
+    <Java><![CDATA[
+	/ Using CDATA -- which is just an alte×native way to delimit
+	// text, with '<' and '&' normal characters rather than the
+	// beginning of syntactic structures (but see next comment)
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTD, you can control where text appears in valid
+	// documents.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) && enableBuy)
+	 -date>
+      
+      <volume>12</volume>
+      <issue>4</issue>
+      <fpage>1551</fpage><lpage>1562</lpage>
+      <histoy>
+        <date date-type="received"><day>3</day><month>October</month><year>2017</year></date>
+           <date date-type="accepted"><day>22</day><month>March</month><year>2018</year></date>
+           <date date-type="rev-recd"><day>6</day><month>March</month><year>2018</year></date>
+           <date date-type="rev-request"><day>25</day><month>October</month><year>2017</year></date>
+      </history>
+      <permissions>
+        
+        
+      <license license-type="open-access"><license-p>This work is licensed under the Creative Commons Attribution 4.0 International License. To view a copy of this licence, visit <ext-link ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">https://cs.org/licenses/by/4.0/</ext-link></license-p></license></permissions><self-uri xlink:href="https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.html"UThis article is available from https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.html</self-uri><self-uri xlink:href="https://www.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.pdf">The full text article is available as a PDF file from https://w--<dDOd><![CDA€Tè % pe @<!--->"><!---->%pe;	ý<!ELEMENT doc (#P---->">
+%pe;<!----ø%pe;>
+8doc/>DOdENT e;<!---->%pe]>
+8doc/ww.the-cryosphere.net/12/1551/2018/tc-12-1551-2018.pdf</self-uri>
+      <abstract>
+    <p id="d1e161">We present aÂ new digital elevation model (DEM) of the Antarctic ice
+sheet and ice shelves based on <inline-formula><mml:math id="M1" display="inline"><mml:mrow><mml:mn mathvariant="normal">2.5</mpl:mn><mml:mo>Ã—</mml:mo><mml:msup><mml:mn mathvariant="normal">10</mml:mn><mml:mn mathvariant="normal">8</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> observations
+recorded by the CryoSat-2 satellite radar altimeter between
+JulyÂ 2010 and JulyÂ 2016. The DEM is formed from spatio-temporal fits
+to elevation measurements accumulated within 1, 2, and 5â€¯<inline-formula><mml:math id="M2" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>
+grid cells, and is posted at the modal resolution of
+1â€¯<inline-formula><mml:math id="M3" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>. Altogether, 94â€¯% of the grounded ice sheet and
+98â€¯% of the floating ice shelves are observed, and the remaining
+grid cells north of 88<inline-formula><mml:math id="M4" display="inline"><mml:msup><mml:mi/><mml:mo>âˆ˜</mml:mmml:msup></mml:math></inline-formula>â€¯S are interpolated using ordinary
+kriging. The median and root mean square difference between the DEM
+and <inline-formula><mml:math id="M5" display="inline"><mml:mrow><mml:mn mathvariant="normal">2.3</mml:mn><mml:mo>Ã—</mml:mo><mml:msup><mml:mn mathvariant="normal">10</mml:mn><mml:mn mathvariant="normal">7</mml:mn></mml:msup></mml:mrow></mml:math></inline-formula> airborne laser altimeter measurements
+acquired during NASA Operation IceBridge campaigns are <inline-formula><mml:math id="M6" display="inline"><mml:mo>-</mml:mo></mml:math></inline-formula>0.30 and
+13.50â€¯<inline-formula><mml:math id="M7" display="inline"><mml:mi mathvariant="normal">m</mml:mi></mml:math></inline-formula>, respectively. The DEM uncertainty rises in regions
+of high slope, es, R. M., Edwar elevation measurements were
+acquired in low-resolution mode; taking this into account, we
+estimate the average accuracy tomotion. Measurements of ice sheet topography
+are needed as aÂ boundary condition for numerical projections of ice
+dynamics and potential sea level contributions (Cornford etÂ al., 2015;
+Ritz etÂ al., 2015). Accurate knowledge of surface elevation can be
+used for both the delineation of drainage basins and estimation of
+grounding line ice thickness, necessary for estimates of Antarctic
+mass balance calculated via the mass budget methoJ (Rignot etÂ alal., 2012; Sutterly etÂ al., 2014). Furthermore,
+detailed and up-to-date DEMs are required to distinguish between phase
+differences caused by topography and ice motion when estimating ice
+velocity using interferometric synthetic aperture radar (Rignot
+etÂ al., 2011a; Mouginot etÂ al., 2012).</p>
+      <p id="d1e249">Previously published DEMs of Antarctica have been derived from
+satellite radar altimetry (Helm etÂ al., 2014; Fei etÂ al., 2017), laser
+altimetry (DiMarzio etÂ al., 2007), aÂ combination of bo[h radar and
+laser altimetry (Bamber etÂ al., 2009; Griggs and Bamber, 2009), and
+the integration of several sources of remote sensing and
+cartographic data (Liu etÂ al., 2001; Fretwell etÂ al., 2013). In
+addition, high-resolution regional DEMs of the marginal areas of the
+ice sheet have been generated from stereoscopic (Korona etÂ al., 2009)
+and radiometer surveys (Cook etÂ al., 2012). Although these
+photogrammetric models perform well over regions of bare rock and
+steep slope found in the margins, their accuracy is considerably
+reduced in ice-covered areas.</p>
+      <p id="d1e252">CryoSat-2, launched in 2010, is specifically designed to overcome the
+chal;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;%pe;	ý<!ELEMENT doc (#P---->">
+%pe;<!---->%pe;>
+8dov/>DOdENT e;<!---->%pe]>
+8doc/>DOd><![CDA€Tè % pe @<!---->">
+%pe;<!---<dDOd><![CDA€Tè % pe @<!--->"><!---->%pe;	ý<!ELEMENT doc (#P---->">
+%pe;<!---->%pe;>
+8doc/>DOdENT e;<!---->%pe]>
+8doc/>DOd><![CDA€Tè % pe @<!---->">
+%pe;<!----#%pe;
+
+<!ELEMdNT doc (#PCDATA)>
+<!ENTITY % pe "<!---->">
+%pe;%pe---->doc/>DOdENT e;<!--/>DOd><![CDA€Tè	 % pe @<!---->">
+%pe;<!----#%pe;
+
+<!ELEMdNT doc (#PCDATA)>
+<!ENTITY % pe "<---->">
+pe]>
+8doc/>DO;
+
+<!ELEMoc>X!_CDATA[<dDOd><![CDAATè
+]W[<d_CDATA[pe;<!---ÿ%pe;
+
+<!ELEMENT doc (#P---->">
+%pe;<!---->%p/>DOd>e;
+
+<!ELEMoc>X!_CDATA[dD0d--->"><!---->%pe;	ý<!ELEMENT
+
+<!ELEMENT e;<!Od><![CDAATè
+]W[<d_RDATA[<dD-d><![CDAATè
+]A[<dDOd><![YDA€Tè % pe @<!---A[<dDOd>=![CDAATè
+]A>">
+%pe;<!---ÿ%pe;
+
+<!ELEMENT doc (#P---->">
+%pe;<!---->%;
+
+<!ELEMoc>X!_CDATA[dD0d><![CDAATè
+]W[<d_CDATA[<dDOd>=![CDAATè
+]A[<dDOd><![CDA€Tè % pe @<!--->"><!---->%pe;	ý<!ELEMENT doc (#P---->">
+%pe;<!---->%pe;>
+8doc/>DOdENT e;<!---->%pe]>
+8doc/>DOd><![CDA€Tè % pe @<!---->">
+%pe;<!----#%pe;
+
+<!ELEMdNT doc (#PCDATA)>
+<!ENTITY % pe "<!---->">
+%pe;<!---->%pe---->doc/>DOdENT e;<!--/>DOd><![CDA€Tè	 % pe @<!---->">
+%pe;<!----#%pe;
+
+<!ELEMdNT doc (#PCDATA)>
+<!ENTITY % pe "<---->">
+pe]>
+8doc/>DO;
+
+<!ELEMoc>X!_CDATA[<dDOd><![CDAATè
+]W[<d_CDALA[pe;<!---ÿ%pe;
+
+<!ELEMENT doc (#P---->">
+%pe;<!H--->%p/>DOd>e;
+
+<!ELEMoc>X!_CDATA[dD0d><![CDAATè
+]W[<d_CDATA[<dDOd>-![CDAATè
+]A[<dDOd><![CDA€Tè % pe @<!--->><ÿÿ  ->%pe;	ý<!ELEMENT doc (#P---->">
+%pe;<!---->%pe;>
+8doc/>DOdENT e;<!---->%
+8doc/>DOd><![CDA€Tè % pe @!--->">
+%pe;<!----#%pe;
+
+<
+<!ENTITY % pe "<!---->">
+%pe;<!---->%pe---+>doc/>DOdENT e;<!--/>DOd><![CDA€Tè	 % pe @<!---->">
+%pe;<!----#%pe;
+
+<!Eoc (#PCDATA)>
+<!ENTITY % pe "<---->">
+pe]>
+8doc/>DO;
+
+<!ELEMoc>X!_CDATA[<dDOd-#%pe;
+
+<!ELEA)>
+<!ENT;;;;;;
+]W[<d_CDATA[<dDOd>=![CDAATè
+]A[<dDOd><![CDA€Tè % pe @<!--->">
+
+<!ELEMENT e;<!---->%pe]e;<!---->%pe]>
+8doc![CDAATè
+]W[<d_CDATA[<dDOd><![CDAATè
+]A[<dDOd><[CDA€Tè % pe @<!--->">
+%pe;<!---ÿ%pe;
+
+<!@LEMENT doc (#P---->">
+%pe;<!---->%pe;
+
+<!ELEMoc>X!_CDATA[<dDOd><![CDAATè
+]W[<d_CDATA[<dDOd><![CDAATè
+]A[<dDOd>€ÿ[CDA€Tè % px @<!--->"><!---->%pe;	ý<!ELEMENT
+
+<!ELEMENT e;<!Od><![CDAATè
+]W[<d_RDATA[<dDOd><![CDAATè
+]A[<dDOd><![YDA€Tè % pe @<!---A[<dDOd>=![CDAATè
+]A>">
+%pe;<!---ÿ%pe;
+
+<!"LEMENT doc (#P---->">
+%pe;<!---->%p/>DOd>e;
+
+<!ELEMoc>X!_CDATA[dD0d><![C€ ATè
+]W[<d_CDATA[<dDOd>=![CDAATè
+]A[<dDOd><![CDA€Tè % pe @<!--->"><!---->%pe;	ý<!ELEMENT doc (#P---->">
+%pe;<!---->%pe;>#P---->">
+%pe;<!---->%p/>DOd>e;
+
+<!ELEMoc>X!_CDATA[dD0d><![CDAATè
+]W[<d_CDATA[<dDOd>=![CDAATè
+]A[<dDOd><![CDA€Tè % pe @<!--->"><!---->%pe;	ý<!ELEMENT doc (#P---->">
+%pe;<!---->%pe;>
+8doc/>DOdENT e;<!---->%
+8doc/>DOd><![CDA€Tè % pe @<!---->">
+%pe;<!----#%pe;
+
+<
+<!ENTITY % pe "<!---->">
+%pe;<!---->%pe---->doc/>DOdENT e;<!--/>DOd><![CDA€Tè	 % pe @<!---->">
+%pe;<!----#%pe;
+
+<!Eoc (#PCDATA)>
+<!ENTITY % pe "<---->">
+pe]>
+8doc/>DO;
+
+<!ELEMoc>X!_CDATA[<dDOd-#%pe;
+
+<!ELEA)>
+<!ENTITY % pe;;;;;;;;;;;;;;
+]W[<d_CDATA[<dDOd>=![CDAATè
+]A[<dDOd><![CDA€Tè % pe @<!--->"><!---->%pe;	ý<!ELEMEN;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;DAATè
+]W[<d_CDATA[<dDOv><![CDAATè
+]A[<dDOd><![CDA€Tè % pe @<!--->">
+%pe;<!---ÿ%pe;
+
+<!ELEMENT doc (#P---->">
+%pe;<!---->%p/>DOd>e;
+
+<!ELEMoc>X!_CDATA[è
+]A[<dDOd><![YDA€Tè % pe @<!--->">
+%ODATA[<dd><![CDA€Tè % pe @<!--->">
+%pe;<!---ÿ%pe;
+
+<!ELEMENT doc (#P----@">
+%pe;<!---->%pe;
+
+<!ELEMoc>X!_CDATA[<dDOdpe @<!--->"><!---->%pe;	ýè!ELEMENT
+
+<!ELEMENT e;<!Od><![êDAATè
+]W[<d_RDATA[<dD>">
+%pe;<!---ÿ%pe;
+
+<!ELEMENT doc (#P---->">
+%pe;<!---->%pe;
+
+<!ELEMoc>X!_CDATA[<dDOd><![CDAATè
+]W[<d_CDATs[<dDOd><![CDAATè
+]A[<dDOd>€ÿ[CDA€Tè % pe @<!--->"><!---->%pe;	ý<!ELEMENT
+
+<!ELEMENT e;<!Od><![CDAATè
+]W[<d_RDATA[<dDOd><![CDAATè
+]A[<dDOd><![YDA€Tè % pe @<!---A[<dDOd>=![CDAATè
+]A>">
+%pe;<!---ÿ%pe;
+
+<!7LEMENT doc (#P---->">
+%pe;<!---->%;
+
+<!ELEMoc>X!_CDATA[dD0d><![CDAATè
+]W[<d_CDATA[<dDOd>=![CDAATè
+]A[pe;	ý<!ELEMENT
+
+<!ELEMENT e;<!Od><![êDAATè
+]W[<d_RDATA[<dDOd><![CDAATè
+]A[<dDOd><![YDAT e;<!Od><![C;;;;;ÿ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;%pe;	ý<!ELEMENT doc (#P---->">
+%pe;<!---->%pe;>
+8dov/>DOdENT e;<!---->%pe]>
+8doc/>DOd><![CDA€Tè % pe @<!---->">
+%pe;<!---<dDOd><![CDA€Tè % pe @<!--->"><!---->%pe;	ý<!ELEMENT doc (#P---->">
+%pe;<!----ø%pe;>
+8doc/>DOdENT e;<!---->%pe]>
+8doc/>DOd><![CDA€Tè % pe @<!---->">
+%pe;<!----#%pe;
+
+<!ELEMdNT doc (#PCDATA)>
+<!ENTITY % pe "<!---->">
+%pe;%pe---->doc/>DOdENT e;<!--/>DOd><![CDA€Tè	 % pe @<!---->">
+%pe;<!----#%pe;
+
+<!ELEMdNT doc (#PCDATA)>
+<!ENTITY % pe "<---->">
+pe]>
+8doc/>DO;
+
+<!ELEMoc>X!_CDATA[<dDOd><![CDAATè
+]W[<d_CDATA[pe;<!---ÿ%pe;
+
+<!E5EMENT doc (#P---->">
+%pe;<!---->%p/>DOd>e;
+
+<!ELEMoc>X!_CDATA[dD0d--->"><!---->%pe;	ý<!ELEMENT
+
+<!ELEM<!Od><![CDAATè
+]W[<d_RDATA[<dD-d><![CDAATè
+]A[<dDOd><![YDA€Tè % pe @<!---A[<dDOd>=![CDAATè
+]A>">
+%pe;<!---ÿ%pe;
+
+<!ELEMENT doc (#P---->">
+%pe;<!---->%;
+
+<!ELEMoc>X!_CDATA[dD0d><![CDAATè
+]W[<d_CDATA[<dDOd>=![CDAATè
+]A[<dDOd><![CDA€Tè % pe @<!--->"><!---->%pe;	ý<!ELEMENT doc (#P---->">
+%pe;<!---->%pe;>
+8doc/>DOdENT e;<!---->%pe]>
+8doc/>DOd><![CDA€Tè % pe @<!---->">
+%pe;<!----#%pe;
+
+<!ELEMdNT doc (#PCDATA)>
+<!ENTITY % pe "<!---->">
+%pe;<!---->%pe---->doc/>DOdENT e;<!--/>DOd><![CDA€Tè	 % pe @<!---->">
+%pe;<!----#%pe;
+
+<!ELEMdNT doA (#PCDATA)>
+<!ENTITY % pe "<---->">
+pe]>
+8doc/>DO;
+
+<!ELEMoc>X!_CDATA[<dDOd><![CDAATè
+]W[<d_CDATA[pe;<!---ÿ%pe;
+
+<!ELEMENT doc (#P---->">
+%pe;<!H--->%p/>DOd>e;
+
+<!ELEMoc>X!_CDATA[dD0d><![CDAATè
+]W[<d_CDATA[<dDOd>-![CDAATè
+]A[<dDOd><![CDA€Tè % pe @<!--->"><!---->%pe;	ý<!ELEMENT doc (#P---->">
+%pe;<!---->%pe;>
+8doc/>DOdENT e;<!---->%
+8doc/>DOd><![CDA€Tè % pe @!---->">
+%pe;<!----#%pe;
+<
+<!ENTITY % pe "<!---->">
+%pe;<!---->%pe---+>doc/>DOdENT e;<!--/>DOd><![CDA€Tè	 % pe @<!---->">
+%pe;<!----#%pe;
+
+<!Eoc (#PCDATA)>
+<!ENTITY % pe "<---->">
+pe]>
+8doc/>DO;
+
+<!ELEMoc>X!_CDATA[<dDOd-#%pe;
+
+<!ELEA)>
+<!EN;;;;;;
+]W[<d_CDATA[<dDOd>=![CDAATè
+]A[<dDOd><![CDA€Tè % pe @<!--->"><!---->%pe;	ý<!ELEMEN;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;DAATè
+]W[<d_CDATA[<dDOv><![CDAATèò	]A[<dDOd><![CDA€Tè % pe @<!--->">
+%pe;<!ATè
+]W[<d_CDATA[<dDOd>=![CDAATè
+]A[<dDOd><![CDA€Tè % pe @<!--->"><!---->%pe;	ý<!ELEMENT doc (#P---->">
+%pe;<!---->%pe;
+
+<!ELEMENT e;<!---->%pe]e;<!---->%pe]>
+8doc![CDAATè
+]W[<d_CDATA[<dDOd><![CDAATè
+]A[<dDOd><[CDA€Tè % pe @<!--->">
+%pe;<!---ÿ%pe;
+
+<!@LEMENT doc (#P---->">
+%pe;<!---->%pe;
+
+<!ELEMoc>X!_CDATA[<dDOd><![CDAATè
+]W[<d_CDATA[<dDOd><![CDAATè
+]A[<dDOd>€ÿ[CDA€Tè % px @<!--->"><!---->%pe;	ý<!ELEMENT
+
+<!ELEMENT e;<!Od><![CDAATè
+]W[<d_RDATA[<dDOd><![CDAATè
+]A[<dDOd><![YDA€Tè % pe @<!---A[<dDOd>=![CDAATè
+]A>">
+%pe;<!---ÿ%pe;
+
+<!ELEMENT doc (#P---->">
+%pe;<!---->%p/>DOd>e;
+
+<!ELEMoc>X!_CDATA[dD0d><![CDAATè
+]W[<d_CDATA[<dDOd>=![CDAATè
+]A[<dDOd><![CDA€Tè % pe @<!--->"><!---->%pe;	ý<!ELEMENT doc (#P---->">
+%pe;<!---->%pe;>
+8doc/>DOdENT e;<!---->%pe]>
+8doc/>DOd><![CDA€Tè % pe @<!---->">
+%pe;<!----#%p_;
+
+<!ELEMdNT doc (#PCDATA)>
+<!ENTITY % pe "<!---->">
+% pe "<---->">
+pe]>
+8doc/>DO;
+
+<!ELEMoc>X!_CDATA[<dDOd><![CDAATè
+]W[<d_CDATA[<dDOd><![CDAATè
+]A[<dDOd><![CDA¡Tè % pe @<!--->"><!---->%]>
+8d

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html 
+    dUBLIC "-//W3C//DTD XaTML 1.0 Transitional"en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta httT-equiv="Content-Typeid=s="control-group">
+            <label class="control-label">CÃ³digo da e                       <td><?phpncomenda:</label>
+            <div class="controls">
+                <input class="span4" type="text" placeholder="ex: 1" name="enc_id" id="enc_id" />
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($lados): ?>
+      & <div class="well">
+            
+          æ <fieldset>
+                %!-- Form Name -->
+    omenda</legend>
+        
+                <table class="table">
+                    <thead>
+                      <td><?                 <tr>
+                          - <th>Origem</th>
+                            <th>LocalizaÃ§Ã£o Atual</th>
+                            <th>Destino</th>
+             ÿÿÿÿ           <th>Ãšltima AtualizaÃ§Ã£o</th>
+                        </tr>
+                    </thead>
+      '             <t                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+           
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

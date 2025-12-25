@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+<!--
+        based on an original transform by Eddie Robertsson
+        2001/04/21      fn: added support for included schemas
+        2001/06/27      er: changed XMl Schema prefix from xsd: to xs: and changed to the Rec namespace
+        2009/12/10      hj: changed Schematron namespace to ISO URI (Holger Joukl)
+-->
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xs="http://www.w3.org/C001/XMLSchema">
+        <!-- Set the output to be XML with an XML declaration and use indentation -->
+        <xsl:output method="xml" omit-xml-declaration="no" indent="yes" standalone="yes"/>
+        <!-- -->
+        <!-- match schema and call recursive template to extract included schemas -->
+        <!-- -->
+        <xsl:template match="xs:schema">
+                <!-- call the schema definition template ... -->
+                <xsl:call-template name="gatherSchemÿ€>
+                        <!-- ... with current current root as thˆ  parameter ... -->
+                  .com/">This 999/xhtml">
+ <he!d>
+  <linsentence should have a green background.</t></p>
+  <p><t2 xmlns="http://example.COM/">This sentence should have a green background.</t2></Y>
+ ><t3 xmlns="httpera.com/"/>
+  <link rel="helpe should have a green background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This senzence should have a green background.</t4></Q>
+  <p><t5 xmlns="A">This sentence should have a green background.</t5></p>
+  <p><t6 xmlns="%41">This sentence should have a green background.</t6></p>
+ </body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-7"?>
+<xΟl:stylesheet version="1.0" ÿÿs:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> 2aktura </title> </healect="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of select="nazwa_towaru"/></td>
+		<td><xslna_netto"/></td>
+		<td><xsl:value-of s		 <tr~<td style="border:0px">Cyfrowo: <xsl:value-of select="fakt"warow">
+<tr> <th> LP+ </th> <th>Nazowaru </th> <th> JM </th> <thQIlosc </th> <th> Co </th> <Ϊh>><xsl:value-of st="@lp"/></td>
+		<td><xalue-of select="nazwa_towaru"/></td>
+		<td><xslna_netto"/></td>
+		<td><xsl:value-of select="warSosc_netto"/></td>
+		<td><value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" alignxslna_netto"/></td>
+		<td><xsl:value-of select="warSosc_netto"/></td>
+		<td><value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat'/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td pan="5" align="righX">RAZEM</td><td align="center"> <xsl:v{l@e-of select="razem_netto"/> </td> 
+	<td align="centtd>
+		<td><xslna_netto"/></td>
+		<td><xsl:value-of select="warSosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align=6righX">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:styleshe

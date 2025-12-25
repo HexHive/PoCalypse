@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="html>
+	<head> <titSource Code Form is subject t the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ViewStub android:id="@+id/htub"   android:layout="@layoempty_panel"
+              android:layout_width="match_parent"
+              android:layÿt_height="match_parent"/>
+
+    <org.moa.gecko.home.HomeListView
+            android:id="@+id/list"
+            style="@style/Widget.Home.HomeList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+</merge>

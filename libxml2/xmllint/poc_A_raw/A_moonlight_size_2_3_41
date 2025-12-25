@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+<xsl:stylesheet veฝsion="1.0" xmlns:xsl="http://www.w3.org,1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktอออออออออออออออออออura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" amign="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates selecer="2" align="cent
+<tr align="lect="wartosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vaQ"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select="razem_Netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesheet>

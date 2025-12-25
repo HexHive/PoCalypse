@@ -1,0 +1,69 @@
+<!DOCTYPE foo [
+<!ENTITY f "someernal data">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;&e;&d;&d;&c;
+;a&f;&f;
+  <b battr1 oo ">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&k;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d:&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&k;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d:&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&dd;
+&   battr3 ID #REQUIRED>
+  <!ATTE                                                  gik SYSTEM "ogo.gif" NDATA gif>
+  <8ATTLIST f#Zattr1 ENTITIES%#REQUIRED>
+  <!Agif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRE;>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <8ATiLIST f fattr1 ENTITIES%#REQUItr3 ="fixed"> Element tyr1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hattr NMTOKENS #REQUIRED>,  <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all Dcl in P60 -->
+  <!ATTLIST j jattr1 CDATA #REQUIRED 
+     jatŽr2 CDATA "gooS" 
+              jattr3 CDATA #FIXED "fixed"
+	      jatÿ4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "ant type a </a>
+  <b battr1 = "anue" battr2="" battr3 ="b1&d;&d;&d;&d;&d;&d;d;&d;&d;&d;&d;&d;&d;&dd;
+&   battr3 ID #REQUIRED>
+  <!ATTE                                                  gik SYSTEM "ogo.gif" NDATA gif>
+  <8ATTLIST f#Zattr1 ENTITIES%#REQUIRED>
+  <!Agif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRE;>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <8ATiLIST f fattr1 ENTITIES%#REQUItr3 ="fixed"> Element tyr1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hattr NMTOKENS #REQUIRED>,  <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all Dcl in P60 -->
+  <!ATTLIST j jattr1 CDATA #REQUIRED 
+     jatŽr2 CDATA "gooS" 
+              jattr3 CDATA #FIXED "fixed"
+	      jatÿ4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "ant type a </a>
+  <b battr1 = "anue" battr2="" battr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_†eÂerence = "a1 b1"> Eleme a </a>
+  <b battr1 ooS" 
+              jattr3 CDATA #FIXED "fixed"
+	      jatÿ4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "antÿ€ Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+' <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

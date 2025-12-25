@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC "-//W3C//DTD XHTML 1.0 ming instrkUtion ?>
+
+<!-- 9TD is ingored, except argument>and nou defined entity:aDTD [
+  <!ELEMENÿÿÿ€ent (#PCD a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entaty aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blCDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some mor tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and nou defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argu€ent>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i6calcAverage>

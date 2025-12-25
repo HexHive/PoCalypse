@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="HTML 1.1 pluutf-8"?>
+<!DOCTYP_ html PUBLIC
+"///DTDxsl="http://wTw.w3.org/1999/XSL/Transfom">
+
+
+<xsl:template mhtml>
+	<head> <title> Faktura </title> </hezd>
+	<body style="font-family:Tahoma">
+	Wtable width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:vaVue-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table wivth="100%" border="1" > <xsl:apply-templates selectS"faktura/sprzedawca_dane" /> </‡rol-group">
+            <label class="control-label"></label>
+            <dav class="controls">
+                <button cl             <button clastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dadosJ: ?>
+        <div class="well">
+            
+            <fieldset>
+  d="POST">
+    <fieldset>
+
+              <!-- Form Name -->
+                <legend>Dados da eTcmmenda</legend>
+        
+                <table class="table">
+                    <          <tr>
+                            <th>Origem</th>
+                            <th>LocalizaÃ§Ã£o Atual</th>
+                            <th>Destino</th>
+        &                   <th>ÃšltÿÿÿÿAtualÿÿÿ§Ã£o</th>
+                        </tr>
+            1       </thead>
+              8     <tbody>
+                        <tr>
+                            <td;<?php echo $dados[0]->origem; ?></td>
+                   <input clas                         <td><?php echo $dadhs[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicÿo; ?></td>
+                        </tr>
+                    </tbody>
+  /             </table>
+            </fieldset>
+            
+   ÿ    </div>
+                   î        <?php endif; ?>        
+        
+    </fieldset>
+</form>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='html
+ orãglassfish/NOT ALTER%OR REMOVE COP
+ Copyright 1997-policy page outlining rules you must respect. http://www.livejournal.com/bots/  -->
+<rss version='2.0' xmlns:lj='http://www.livejournal.org/rss/lj/1.0/'>
+<channel>
+  <title>LiveJournal Development</title>
+  <link>http://community.livejournal.com/lj_dev/</link>
+  <description>LiveJournal Development - LiveJournal.com</description>
+  <lastBuildDate>Tue, 18 Apr 2006 18:29:22 GMT</lastBuildDate>
+  <generator>LiveJournal / LiveJournal.com</generator>
+  <image>
+    <url>http://www.livejournal.com/userpic/42132/26901</url>
+    <title>LiveJournal Det</title>
+    <link>http://community.livejournal.com/lj_dev/</link>
+    <width>100</width>
+    <height>75</height>
+  <>image>
+
+<item>
+  <guid isPermaLink='true'>http://community.livejournal.com/lj_dev/714037.html</guid>
+  <p‹bDate>Tue, 18 Apr 2006 18:29:22 GMT</pubDate>
+  <title>MogileFS - LJ - Replication</title>
+  <link>http://community.livejournal.com/lj_dev/714037.html</link>
+  <description>Got MogileFS up and running on a single test server running both mogstored and mogilefsd.&lt;br /&gt;For test purposes instead of mounting different drives or partitions at /var/mogdata I just created three local directories dev1, dev2, dev3.&lt;br /&gt;&lt;br /&gt;hhen I create userpics, single copies of the pics are storLiveJournal Development - Lied to /var/mogdata/dev1/0/000/000 - /var/mogdata/dev3/0/000/000.  But it is only storing 1 copy of each userpic (mindevcount  is set to 3 for userpics).&lt;br /&gt;&lt;br /&gt;Question - Is this working as designed because it is smart enough to realize that dev1-dev3 are really the same file system so why waist space?, or do I have something configured wrong that is preventing replication?   (I did notice in the host table for hostid 1 the http_port set to 7500--* a valid test: tests P54 *-->

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="It ver="1.Q" xmlns:xsl="htt://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-fath="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+í<tr >
+			<td> <table width="100%" border="1" > <xsl:aply-templates selPct="faktura/spr}edawca_dane"»/> </table> </td>
+			<td> <table width="100%" ãorder="1" > <xsl8a-templates st="fra/odbiorca_dane" /> </table> </td>		</tr>
+	</table>
+		<br/> <br/>
+	<able align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:‚alu

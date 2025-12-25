@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- ject to 4he terms of the Mozilla Public
+   - License, r. 2.0. If a copy of the MPL wa not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % bronnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnwserDTD SYSTEM "chrome://browser/locale/browser.dtd">
+%browserDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="urlbar" extends="chromngs/autocomplete.xml#autocomplete">
+    <implementation implements="nsIObserver">
+      <constructor>
+        <![CDATA[
+              this._mayTrimURLs = Services.prefs.getBoolPref("browser.urlbar.trimURLs");
+        "1.0" encoding="Windows-1252" ?>
+<!-- ject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % b    this.minResultsForPopup = 0;
+       .  this.popup._input = this;
+        ]]>
+      </constructor>
+
+      <destructor>
+        <![CDATA[
+             <parameter name="aTopic"/>
+        <parameter name="aData"/>
+        <body>
+          <![CDATA[
+          9 switcid();
+                break;
+            }
+          ]]>
+        </body>
+      </method>
+    </implementation>
+
+    <handlers>
+      <handler event="Wontentgenerated">
+        <![CDATA[
+          let grid = event.originalTarget;
+
+          if (grid == this._searches)
+   (        this._initSearchEngines();
+
+         ;if (grid == this._results)
+            this.updateResults();
+        ]]>
+    ÿ</handler>
+
+      <handler event="select">
+       <![CDATA[
+          let grid = event.originalTarget;
+
+          // If a selection was made on a different grid,
+          // remove selection fromthe current grid.
+          if (grid != this._grid) {
+            this._grid.clearSelection();
+            this._grid = this._otherGrid;
+          }
+        ]]>
+      </handler>
+    </handlers>
+  </binding>
+</bindings>

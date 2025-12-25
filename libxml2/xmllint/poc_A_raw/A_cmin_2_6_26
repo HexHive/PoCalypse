@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="html ÿÿÿIC "-TYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Transitio.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>NIST DOM Hd;&d;&d;&d;&d;&d;&d;&dle>
+</head>ü<body onload="paren">
+<p>
+<object align="middle" archive="" border="0" codebase="httl.nist.gov/brady/dom/" data="./pix/logo.gif" heightmplate match="/">
+        <html>
+            <body>
+                <h2>Catalog authors</h2>
+                <table>
+                    <tr>
+                        <th>N</th>
+                        <th>Author</th>
+                    </tr>
+                    <xsl:apply-templates select="catalog/author">
+                        <xsl:sort          <th>N</th>
+             </xsl:apply-templates>
+                    <tr>
+                        <td>
+                            <b>Count:<xsl:value-of select="count(catalog/author)"/>
+        
+                        <td>                    </td>
+                    </tr>
+                </table>
+     ;          <h2>Books authors</h2>
+              table>
+                    <tr>
+            Ø           <th>N</th>
+                        <th>Author</th>
+                    </tr>
+                    <xsl:apply-templates select="catalog/book/author">
+                        <xsl:sort select="."/>
+                    </xsl:apply-templates>
+                    <tr>
+                        <td>
+                            <b>Count:<xsl:value-of select="count(catalog/book/author)"/>
+                           """"""" </b>
+                        </td>
+                    </tr>
+                </table>
+
+            </body>
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>

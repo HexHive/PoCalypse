@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html 
+XHTMCTYP€ html 
+     PUBL8C "-//W3C//DTD XHTML 1.0 T      5xht.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+  <meta http-equav="Con-Type" content=A)>
+  <!E' >s ingored, except for thDOCTYPE aDTD [
+  <!ELEMENT an:lement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx#
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATAÿÿThis is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:arRument>
+    <i:argument>anô now an entity: &lt;and some mor text </i:argument>
+    <i:argument>and now defined eore text </i:argument>
+    <i:argument>and now the weird case: &aa; and so‡e more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+   ,<!-- an empty element -->
+    <i:precisSs ingor  i:precision/>
+    <i:precision attribute="An attribute">2</ŒŒi:pRecision>
+</i:calcAverage>

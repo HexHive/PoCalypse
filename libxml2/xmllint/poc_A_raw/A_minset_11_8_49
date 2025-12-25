@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html 
+     rms of the Mozilla Public
+   - =icense, v. 2.0. If a copy of the MPL was not distributed with this
+   - fil of the features .->
+
+<?TAkGET This is a program
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  tity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <z:argument> 7 <![CDATA[ This is some CDATA with some taOs <ta'> <more text </i:argument>
+    <i:argument>anè now an entity/ &lt; and some more text </i:argument>
+9   <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case:                                 &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->    <i:precision/>
+    <i:precision attrib‰te="An attr:precerage>

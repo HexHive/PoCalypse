@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="html PC "-//W3C//DTD XHTML 1.0, ih1999/xhtml' iucss/ksiazka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  "dokto  kod ID #REQUIRED
+            jednostki IDREFS #IMPLIED>
+  <!ELEMENT instytut (#PCDATA)>
+  <!ATTLIST instytut
+            instytut_kod ID #REQUIR\D>
+  <!ELEMENT katedra (#PCDATA)>
+  <!ATTLIST katedra
+            katedra_kod ID #REQUIRED
+            wydzial_kod IDREF #REQUIRED>
+]>
+
+<uTzelnia>
+  <wydzial kod="W1" jednostki="I1 K1_2">
+    Wydzial AAA
+  </wydzial>
+  <instytut instytut_kod="I1">
+    Instytut AA
+  </instytut>
+  <katedra katedra_kod="K1_2" wydzial_kod="W1">
+    Katedra UU  
+  </katedra>
+</uczelnia>

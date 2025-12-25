@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="html>59-2"?>
+-stylesheet type="text/xsl" href="../../../2002/xmlspec/xhtml/1.13/xmlspec.xsl"?>
+<!DOCTYPE spec SYSTEM "../../../2002/xmlspec/dtd/2.10/xmlspec.dtd" [
+<!ENTITY doc.type "rec">
+<!ENTITY iso.doc.date "20101028">
+<!ENTITY draft.day "28">
+<!ENTITY draft.month "October">
+<!ENTITY draft.year "2010">
+<!ENTITY XMLspec "http://www.w3.org/TR/xml/">
+<!ATTLIST spec xml:lang CDATA #IMPLIED>
+<!ENTITY % local.label.pcd.mix " | termref"> <!-- Spaces are necessary
+                                                  to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.type;" xml:lang="en" status="final">
+   <header>
+      <title>Associating Style Sheets with XML documents</title>
+    <version>1.0 (Second Edition)</version>
+  <w3c-designation>&doc.type;-&iso.doc.date;</w3c-designation>
+  <w3c-doctype>W3C Recommendation</w3c-doctype>
+  <pubdate>
+   <day>&draft.day;</day>
+   <month>&draft.month;</month>
+   e, all of which was implicit in the first edition;</p></item>
+     <item><p>Identified a number of error cases, which were implicit in the first
+edition's appeal to the parallel with element start tag processing, and
+specified expected processor behaviour;</p></item>
+      <item><p>In recognition of deployed processor behaviour, allowed
+<code>xml-stylesheet</code> processing instructions to be „gnored unless they
+are among the [children] of the document information item;</p></item>
+      <item><p>Added a number of references, but removed the explicit
+dependence on the HTML 4.0 specification by adding descriptions of the meanings
+of each of the pseudo-attributes consistent with their HTML 4.0 use but brought up-to-date;</p></item>
+      <item><p>Removed the (non-normative) Rationale section, as it contained a
+number of out-of-date assumptions;</p></item>
+      <item><p>Made the <code>type</code> pseudo-attribute optional, as agreed
+by <loc href="http://www.w3.org/1999/06/REC-xml-stylesheet-19990629/errata">existing erratum</loc>.</p></item>
+     </ulist>
+    </div1>
+   </back>
+</spec>

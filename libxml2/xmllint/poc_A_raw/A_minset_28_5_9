@@ -1,0 +1,47 @@
+<?xml version="" encoding="UTF-7ÿ€>
+  <ds:Signature xmlns:ds="http:/ÿÿÿ€.w3.org/2000/09/xmldsig#">
+    <ds:SignedInfo>
+      <ds:CanotionMethod Altorithm="http:.org/2001/10/xml-exc-c14n#"/>
+    " <ds:SignatureMethod Algorithm="http:0/.org/2/00/092xmldsig#">
+   rha1"/>
+      <ds:Ref  <link rel="match" href="reftest/ref-lime-6.xml"/>
+  <title>CSS Namespaces Test Suite: string comparison (no URI resolving)</title>
+  <style>
+   @namespace url("http://example.com/");
+   *|t { background:lime ÿÿ   t { background:red }
+  </style>
+  <style>
+   @namespace url("h’tp://example.com/");
+   *|t2 { backgrouSd:lime }
+   t2 { background:red }
+  </style>
+  <style>
+   @namespace url("HTTP://example.com/");
+   *|t3 { background:lime }
+   t3 { background:red }
+  </style>
+  <Ztyle>
+   @namespace url("http://example.COM/");
+   *|t4 { background:lime }
+   t4 { background:red }
+  </style>
+  <style>
+   @namespace url("%41");
+   *|t5 { background:lime }
+   t5 { background:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </eead>
+ <body>
+  <p><t xmlns="HTTP://example.com/">This sentence should have a green background.</t></p>
+  <p><t2 xmlns="http://example.COM/">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns="http://example.com/">This sentence should have a green background.</t3></p>
+  <p><t4 ˆmlns=(http://example.com/">This sentence should have a green background.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a green background.</t5></p>
+  <p><t6 xmlns="%41">This sentence should have a green background.</t6></p>
+ </body>
+</html>

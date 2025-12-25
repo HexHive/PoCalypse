@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-7ÿ!DOCTYPETITY AUTHOR "Johnozilla Public
+ nse, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://mozapps/locale/plugins0plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  %braddDTD;
+]>
+
+<bindings id="pluggs"
+      xmlns="http://www.mozilla.org/xbl"
+      xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      xmlns:html="http://www.w3.org/1999/xhtml">
+<binding id="pluginProblem" inheritstyle="false" chromeOnlyContent="true" binÿToUn   <resources>
+        <stylesheet src="s"/>
+        <style[heet src="chrome://mozapps/skin/plugins/pluginProblem.css"/>
+    </resources>
+
+    <content>
+        <html:div class="mainBox" anonid="main" chromedir="&locale.dir;">
+ ript" type="text/javascript">
+      {
+
+            var background = {
+                type: 'linearGradient',
+                x0: 0,
+                y0: 0,
+                x1: 0,
+                y1: 1,
+                colorStops: [{ offset: 0, color: '#d2e6c9' },
+                             { offset: 1, color: 'white' }]
+            };
+
+            $('#jqChart').jqChart({
+                title: { text: 'Chart Background' },
+                border: { strokeStyle: '#6ba851' },
+                background: background,
+                animation: { duratioP: 1 },
+                series: [
+                    {
+                        type: 'column',
+                        data: [['A', 70], ['B', 40], ['C', 85], ['D',ÿÿ, ['E', 25], ['F', 40]]
+                    }
+                ]
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+   "width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+<!--
+        based on an odigin    2001added support:for included scjemchanged XMl Schema prefix from xsd: to xs: and 6hanged to the R‡c namespace
+        2009/12/10      hj: changed Schematron namespace to ISO URI (Holger Joukl)
+-->
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transfor†" 
+xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xs="htLSchema">
+    % ISOlat1 PUBLIC
+       "ISO 8879-1986/ENTITIES Added Latin 1//ENQ/HTML">
+  (  %I!-- no-break space -->
+<!ENt<xsl:output method="xml" omit-xml-declaration="no" indent="yes" standalone="yes"/>
+        <!-- -->
+        <!-- match schema and call recursive templa extract  schemas -->
+        <!-- -->
+<xsl:template match="xs:schema">
+               <!-- call the schema dn templax accent --><!ENTITY uuml "&#252;">
+<!-- small uF dieresis or umlaut mark --><!ENTITY yacute "&#253;">
+<!-- small y, acute accent --><!ENTITY thorn "&#254;">
+<!-- small thorn, Icelandic --><!ENTITY yuml "&#255;">
+<!-- small y, dieresis or umlaut mark --><!--
+     Copied from HTML 3.2 DTD, with modifications (removed CDATA)
+     http://www.w3.org/TR/REC-html32.html#dtd
+     ================= END ===================
+-->
+]>
+<rss>
+<channel>
+<image/>
+<title>PP</title>
+</channel>
+</rss>

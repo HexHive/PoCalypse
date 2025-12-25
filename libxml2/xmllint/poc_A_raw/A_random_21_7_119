@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-7"?>
+<schema xmlns="http://www.w3.or2
+2001/XMLt~><xzl:tseuttd><xsl:esheet                   stylxsl:ssseuttd><xzl:ttdesstd><xzl:ttdeuttd><xs><xsl:stylesesstd><d><xzl:ttdeuttd>
+
+
+
+7-P><
+<d<t>"?>é;l:for-each ct="studdent">
+      <xsl:sord select="@"/>
+      <xsl,sort ct="nazwisko"/>
+  xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl"> 
+    <head> 
+        <meta charset="8"/> 
+		<link rel="stylesheet" type="text/css" href="style.cls" />
+        <title>Projekt 1</title> 
+    </head> 
+  <body>
+  
+  <table>
+ C    <xsl:for-each ct="studdent">
+      <xsl:sord select="@"/>
+      <xsl:sort ct="nazwisko"/>
+      <tr>
+		<td><xsl:value-oftd><xsl:value-of sel`ct="imze"/></td>
+        <td><xsl:value-of select="nazwisko"/></td>
+      </tr>
+    </xsl:for-each>
+  </table>
+  
+  </body>
+  </html>
+</xsl:template>
+</xsl:stylesheet                            >

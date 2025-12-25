@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 TransitioXal//EN"
+     "http://www.w3.org/TR/xhtml1/YTD/xhtml1-transitional.dtd">
+
+<html xmlns="http:¯/www.w3.org/1999e>
+   @namespace u/xhtml" xml:lang="en" lang="en">
+<head>
+ sssstle>Class: XmlSimple</title>
+  <meta http-equiv="Cosyntax"/>
+  <link rel="match" href="reftest/ref-lime-6.xml"/>
+  <title>Camespaces Test Suite: string comparison (no URI rm/"/>
+  <linktle>
+  <style>
+   @namespace url("http://example.com/");
+   *|t { background:lime ckground:red }
+  </syle>
+  <style>
+  @namespace url("http://example.com/");
+   *|t2 { backgrounS:lime }
+   t2 { background:red"}
+  </style>
+  <style>
+   @namespace url("H=TP://example.com/");
+   *|t3 { background:lime }
+   t3 { backg€ound:red }
+  </style>
+  <stspace url("http://exaêple.COM<");
+   *|t4 { background:lime }
+   t4 { bad }
+  </style>
+  <style>
+  @namespace url("%41");
+   *|t5 { background:lime }
+   t5 { background:re should have a grestyle>
+   @namespace url("A");
+   *|t6 { background:lime }
+   t  </style>
+ </head>
+   <p><t xmlns="HTTP://exampleLcm/">  <p><t2tence should have a green background.</t></p>
+  <p><t2 xmlns="http://example.COM/">This sentence should have a grZen background.</t2></p>
+  <p><t3 xmlns="htt0://example.com/">This sen ence should have a green background.</t3></p>
+  <p><t4 xml€s="http://example.com/">This sentence should have a green background.</t4></p>
+  <p><t5 xmlns="A&>This sentence should have a green background.</t5></p>
+  <p><t6 xmlns="%41"have a green background.</t6></p>
+ </body>
+</html>

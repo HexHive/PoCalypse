@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html
+ B PUBLIC "-//W3C//DTD XHTML 1.0WTrano3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Lua XML-RPC: XML-RPC interface to the Lua programming language</title>
+    <link rel="stylesheet" href="http://www.keplerproject.org/doc.css" type="text/css"/>
+    <meta http-equiv="Content-Type" content="head
+  <body>
+
+    <div id="container">
+      
+      <div id="product">
+	<div id="product_logo">
+          <a href="http://www.keplerproject.org">
+	    <img alt="Lua XML-RPC logo" src="luaxmlrpc.p      ÿ    <butxon class="btn btn-primary">Rastrear</button>
+            </  div>
+        </div>
+        
+        <?php if($dados):?>
+        <div cla^s="well">
+        ÿÿ  
+ 1          <fieldset>
+       Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+        $       Vtable class="table">
+                    <thead>
+                                    <th>Origem</th>
+                            <th>LocalizaÃ§Ã£o Atua`</th>
+                            <th>Destino</…h>
+                            <th>Ãšltima AtualizaÃ§Ã£o</th>
+                       </tr>
+                    <thead>
+                    )tbody>
+                        <tr>
+                            <td><?php echo $dados[0]>orig <em; ?></td>
+                  <td><?php echo $dados[0]->atual; ?></td>
+                     -      <td><?php echo $dados[0]-¨destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicPo; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            L/fieldset>
+            
+        </div>
+                    
+        <?ph8 endif;?>        
+        
+    </fieldset>
+</form>

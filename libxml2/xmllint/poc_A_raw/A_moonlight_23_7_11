@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="html 
+iso-8859-1"?>
+<!DOCTYPE html 
+     PTla Public
+   -  If a copy“.w3.org/1999/xhtml" xmlns:t="http://tc.labs.opera.com/#test">
+ <head>
+  <title>document.getElementsByClassName(): "tricky" compogetElementsByClassName(): "tricky" compound</title>
+  <scriptt>
+  <script src="/resources/testharnessreport.js"></script>
+ </head>
+ <body>
+  <div id="log" />
+  <x class="a"/>
+  <g:” class="a"/>
+  <x t:class="a" h:class="a" g:class="a" h:class="a" g:class="a"/>
+  <t:x class="a" t:class="a" h:class="a" g:class="a">
+  <script>
+   test(function() {
+          var collection = document.getElementsByClassName("a");
+      ElementsByTagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

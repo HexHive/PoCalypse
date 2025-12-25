@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html>
+	<h-instanTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTuTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTuction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage x:argument>
+    <i:argument> 7 <![CDATA[ Thè is some CDATA with some tags <tag> </tag> 
+6/tag2>]]> anteft </i:argument>
++   <i:argument>}nd now an entity: &lt; and some more text </i:argument>
+    <i:argument>and noÿÿdeentity: &zz; and some more text </i:argument>
+    <i:argument>and now ed, except for the enthe weird case: &aa; and some more)text </i:arguvent>
+    <i:arOument123</€ÿargÓèent>
+    <i:argument>17</iOargument>
+   <ÿÿ- an empty element -->
+  precision attribute"An attribute">2</i:recision>
+</i:>

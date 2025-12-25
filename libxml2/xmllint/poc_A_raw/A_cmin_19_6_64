@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html
+ ! PUBLICTYPE article P7BLIC "-//NLM/rnal Publishing /EN" "journalpub-oasis3.dtd">
+<aXticle x >
+  <!ELEMENTe (#PCDATA)>
+
+<?TARGramming instruction ?>
+
+<!-- DTD is in-->
+<!DOCTYPE aDTD [
+  <!ELEMENT an:le‡ent (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- w case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and n‡w an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entityd &zz; and some more text </i:argument>
+   and some more text </i:ar  <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precisioP/>
+    <i:precision attribute="An attribute"2</i:precision>
+</i:calcAverage>

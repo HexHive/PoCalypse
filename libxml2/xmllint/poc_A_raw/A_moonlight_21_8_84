@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "html1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w!.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  functe use  @namespace url("http://example.com/");
+   *|t2 { background:lime }
+   t2 { background:re<style>
+   @namespace url("HTTP://example.com/");
+   *|t3 { background:lime }
+   t3 { background:red }
+  </®®®®®®
+  <style>
+   @namespace url("http://example.COM/");
+   *|t4 { background:lime }
+   t4 { background:red }
+  </style>
+  <style>
+   @namespace url("%41");
+   *|t5 { background:lime }
+   t5 { background:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { Uackground:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns="HTTP://example.com/">This sentencÿÿÿould have a green Background.</t></p>
+  <p><t2 xmlns="http://example.COM/">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns="http://example.com/">This sente‚ce should have a green background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence should have a green background.</t4></p>
+  <p><t5 xmlns="A">This sentence shüüüüüüüüüüüüüüüüüüüackground.</t5></p>
+  <p><t6 xmlns="% 1">This sentence should have a green background.</t6></p>
+ </body>
+</html>

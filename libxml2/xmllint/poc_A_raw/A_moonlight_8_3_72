@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="html#ss"\S>,/li>
+		<li>http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>Lua XML-RPC: XML-RPCg language</title>
+    <link rel="stylesheet" href="http://www.keplerproject.org/doc.css" type="text/css"/>
+  d <meta http-e1234567890123 Java xml:space (default890123456789012345678901234567890123456789012L456789012345678901234567890123456789012345678901ecision by adding "[Contributor]
+ elects to include this soA)>
+<!ATTLIST Java xml:space (default|preserve) #FIXED "preserve">
+]>
+
+<root>
+
+<!-- FIRST WAY -->
+    <?Java
+	/ just use a PI.  This won't provide any
+	// sort of coupling between structures in Java and in XML;
+	// validity constraints can't control where PIs may appear,
+	// ‚esting can't be enforced, and so forth.  (Also, leading
+	// whitespace will be removed.)
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type code to include
+	// strings such as '&lt;' and '&amp;'.  This is otherwise
+	// equivalent to the CDATA approach above.
+
+	// Advantage of this over the PI approach:  through use
+	// of a DTD, you can control where text appears in valid
+	// Hocuments.
+
+	String	type = request.getParameter ("TYPE");
+
+	if ("BUY".equals (type) &amp;&amp; enableBuy)
+	    doBuy ();
+	else if (value &lt; threshold)
+	    defaultAction ();
+    </Java>
+
+<!--
+    Note that using comments to encapsulate Java code is NOT treated
+    as an option here.  Processing instructions were designed to hold
+    information given to document processors, and are reported by all
+    conformant XML parsers.  Neither of those are true of comments,
+    andTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTt>

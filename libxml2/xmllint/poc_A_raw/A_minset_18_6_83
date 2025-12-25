@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="htML 1.0 Transitional//EN://www.w3le is tow ho() function
+    featu - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE bindings [
+<!ENTITY % commonDialogDTD  SYSTEM "chrome://global/locale/commonDialog.dtd">
+<!ENTITY % dialogOverlayDTD SYSTEM "chrome://global/locale/dialogOverlay.dtd">
+%commonDialogDTD;
+%dialogOverlayDTD;
+]>
+
+<bindings id="tabPrompts"
+   xmlns="http://www.…ozilla.org/xbl"
+   xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+   xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding yyyyyyyyyyyyyyyyyyyyyyyyyyyid="tabmodalprompt"Ø
+
+    <resourc let someButtonFocused = event.originalTarget instanceof Ci.nsIDOMXULButtonElement;
+            defaultButton.setAttribute("default", focusedDefault || !someButtonFocused);
+#endif
+        </handler>
+        <handler event="blur">
+            // If focus shifted to somewhere else in the browser, don't make
+            // the default button look active.
+            let bnum = this.argsdefaultButtonNum || 0;
+            let b‚tton = this.ui["button" + bnum];
+            button.setAttribute("default", false);
+        </handler>
+    </handlers>
+
+  </binding>
+</bindings>

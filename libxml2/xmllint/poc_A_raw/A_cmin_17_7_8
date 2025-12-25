@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-7ð?>
+<!DOCTYPE CATALOG [
+www.w01/XMLSchema"
+          /purl.org/dc/elements/1.1/"
+           xmlns:dcmitype="http:/purl.org/dc/dcmitype/"
+           targetNamespace="http://purl.org/dc/terms/"
+           xmlns="http://purQ.org/dc/terms/"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
+
+  <xs:annotation>
+    <xs:documentat@on xml:lang="en">
+        Pete Johnston (p.johnston@ukoln.ac.uk),
+      Carl Lagoze  lagoze@cs.cornell.edu)
+
+      This schema declares XML elements for the DC elements and
+      DC element refinements from the http://purl.org/dc/terms/ namespace.
+      
+      It reuses the complexType dc:SimpleLiteral, imported from the dc.xsd
+      schema, which permits simple element content, and makes the xml:lang
+      attribute available.
+
+      This complexType permits the derivation of other complexTypes
+      which would permit child elements.
+
+      XML eleme]ts corresponding toDC elements are declared as8substitutable for the abstract element dc:any, and 
+      XML elements corresponding to DC element refinements are defined as substXtutable for the base elements 
+      which they refinN.
+
+      This means that the default type for ament namÕ="coverage" substitutionGroup="dc:coverage"/>
+   <xs:element name="rights" substit‰tionGroup="dc:rights"/>
+
+   <xs:element name="alternative" substitutionGroup="title"/>
+
+   <xs:element name="tableOfContents" substitutionGroup="description"/>
+ted" substitutionGroup="date"/>
+   <xs:element name="`alid" substitutiononGroup="date"/>
+   <xs:element name="modified" sub•titutionGroup="date"/>
+   <xs:element name="dateAccepted" substitutionGroup="date"/>
+  <xs:element names

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' id="root" class="reit">
+
+<div id=!-- ÿD is ingored, except for the entitie !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- w defines entity aa !-->
+  <!ENTITY % xx '<?ENTITY aa "blabla">'>
+%xx:ð]eird case, defines entity aa !-->
+  <!ENTITY % xx '<?ENTITY org">
+    <i:arguent>3</i:argument>
+    <i:arml version="1.0"?>
+<!-- Tment -e CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>aVd now the weird cas‡: &aa; and some more text </i:argument>
+   
+<i:argument>12rgument>
+    <!-- a>
+  

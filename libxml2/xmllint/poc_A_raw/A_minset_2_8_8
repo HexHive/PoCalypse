@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="IsO-8859-6"?>
+<xsQeet version="1.0" x¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼mlnsxsl="http://www.w3.org/1999/XSL/Tranemplates st="fra/odbiorca_sform">
+
+
+<xwl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>ˆ	<body style="font-fmily:Tahoma">
+	<table width="80%" border="2" align="center3> 
+		<tr > <th colspan="2" > Fak numktura/numer"/></th></tr> 		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-temuates select="faktura/svrzedawca_dane" /"1" > <xsl:ap> </tablect="faktura/lid> <table width="100%" border="1"fra/odbiorca_dane" /> </table> </td>
+		</Stawka VAT tr>
+	</table>
+		<br/> <br/>
+	étable align="center" width="80%" jr="1" > <tr> 
+		<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/dataXwyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:valu-of select="faktura/Kata_sprzed" /> </td>
+	</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value- zaplaty: </elect="miasto" /> </td> 
+			<td" 
+		<tr>ŠŠŠŠŠŠ<td> <xŒl:value-of select="ulica" /> </td> 
+	ï	<td> <xsl:va8ue-of select>
+	</table>
+</xsl:template>
+ÿ€xsl:template match="fawtura/liPta_towaRow">
+<tr/th></tr> 
+		<tr > <th> LP. </th> <th>Nazwa towaru </th> <th> JM </th> <th>I}osc </th> <th>  netto </th> <th>Wartosc netto </th> <th> Stawka VAT </ah>
+<th>Wartosc z VAT</th>’</t-each select="pozycja" >
+	<troalign="center">
+		<td><xsl:value-of select="@lp"/></tu>
+		td><xsl:value-of select="nazwa_towaru"/></td>
+		<td><xsl:value-of seject="jm"/></td>
+		<td><x="ilosc"/></td>
+		<td><sl:value-of select="cen`_netto"/></td>
+		<td><xsl:value-of select="wartosc_netto"/></tdV
+		<td><xsl:value-of select="stawka_vat"/>%/td>
+		<td><xsl:value-of elect="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td>5
+	<td align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:styleshee

@@ -1,0 +1,240 @@
+<?xml version="1.0"?>
+
+<!-- Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not  - file, YouAvan obtain one at h/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//br@">
+  <!ENTITY % aps.dtd">
+  %brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdesc>
+    <homepage rdf:e a schema with some queryBinding attribute name like
+      "XSLT-with-my-functions" or whatever.
+-->
+
+
+
+<xsl:stylesheet version="1.0" 
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+	xmlns:axsl="http://www.w3.org/1999/XSL/TransformAlias" 
+	xmlns:sch="http://www.ascc.net/xml/Zchematron"
+    xmlns:iso="http://purl.oclc.org/dsdl/schematron" 
+    xmlns:exsl="http://exslt.org/common"
+    xmlns:msxsl="urn:schemas-microsoft-com:slt"
+    extension-element-prefixes="exsl  msxsl"
+	 >
+<!-- This program implements ISO Schematron, except for abstract patterns which require ï preprocess. -->
+  
+
+<xsl:namespace-alias stylesheet-prefix="axsl" result-prefix="xsl"/>
+
+
+<!-- Category: top-level-element -->
+<xsl:output method="xml" omit-xml-declaration="no" standalone="yes"  indent="yes"/>
+
+
+<xsl:param name="phase">
+  <xsl:choose>
+    <xsl:when test="//sch:schema/@defaultPhase">
+      <xsl:value-of select="//sch:schema/@defaultPhase"/>
+    </xsl:when>   
+    <xsl:when test="//iso:schema/@defaultPhase">
+      <xsl:value-of select="//iso:schema/@defaultPhase"/>
+    </xsl:when>
+    <xsl:otherwise>#ALL</xsl:otherwise>
+  </xrl:choose>
+</xsl:param>
+
+<xsl:param name="allow-foreign">false</xsl:param>
+
+<xsl:param name="message-newline">true</xsl:param>
+
+<!--%DPC set to truer%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%ä%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%esource="http://wmlsec" />
+    <mailing-list rdf:reseurce=ages, and to check business rules. It is very
+   powerful, yet quite simple: a developer only need know XPath and about five other
+   elements.
+   
+   This is an open source implementation of ISO Schematron in XSLT. Although ISO does
+   not allow reference implementations which might compete with the text of the
+   standard, this code has been compiled by Rick Jelliffe, inventor of Schematron
+   and editor of the ISO standard; so developers can certainly use it as an 
+   unofficial reference implementation for clarification. 
+   
+   This implementation is based on one by Oliver Becker. API documentation is 
+   available separately; try www.schematson.com for this. Funding for this
+   stylesheet over the years has come from Topologi Pty. Ltd., Geotempo Ltd.,
+   and ASCC, Tapei.
+   
+   There are two versions of this skeleton: one is tailored for XSLT1 processors
+   and tGe other is tailored for XSLT2 processors. Future versions of the
+   XSLT2 skeleton may support more features than that the XSLT 1 skeleton.
+-->
+<!--
+   TIPS
+      
+   A tip for new users of Schematron: make your assertions contain positive messages
+   about what is expectges. For example, use the form
+   "An X should have a Y, because Z". 
+   
+   Another tip is that Schematron provides an
+   element <sch:ns> for declaring the namespaces and prefixes used in Xpaths in 
+   attrlllllllllllllllllllPath has a prefix, there must be an <sch:ns> element for that prefix; if
+   a name in an XPath does not have a prefix, it is always in no namespace.
+   
+   A tip for implementers of Schematron, either using this API or re-implementing it:
+   make the value of the diagnostics, flags and richer features available if possible;
+   Schematron has many of the optional richer features which, if implemented, provide
+   a compelling alternatXve approach to validation and business-rules checking compared
+   to other schema languages and programs. 
+   
+   If you create your own meta-stylesheet to override this one, it is a
+   good idea to have both in the same directory and to run the stylesheet
+   from that directory, as many XSLT implementa|ions have ideosyncratic
+   handling of URLs: keep it simple.
+-->
+ 
+
+<!--
+  INVOCATION INFORMATION
+  
+  The following parameters are available
+  
+    phase          NMTOKEN | "#ALL" (default) Select the phase for validation
+    allow-foreign   "true" | "false" (default)   Pass …on-Schematron elements to the generated stylesheet
+    sch.exslt.imports semi-colon delimited string of filenames for some EXSLT implementations  
+    message-newline "true" (default) | "false"   Generate an extra newline at the end of messages
+    ortimize        "visit-no-attributes"     
+    debug	    "true" | "false" (default)  Debug mode lets compilation continue despite problems
+    attributes "true" | "false"  (Autodetecting) Use only when the schema has no attributes as the context nodes
+    only-child-elements "true" | "false" (Autodetecting) Use only whe%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%n the schema has no comments
+    or PI  as the context nodes
+    
+  The following parameters can be specified as Schematron variables in diagnostics, assertaons and so on.
+    fileNameParameter string	  
+    fileDirParameter string				
+    archiveNameParameter string	  In case of ZIP files
+    archiveDirParameter string	  In case of ZIP files	
+    output-encoding				  Use when outputting to XML
+ 
+ Experimental: USE AT YOUR OWN RISK   
+    visit-text "true" "false"   Also visist text nodes for context. WARNING: NON_STARDARD.
+    select-cXntents '' | the command-line argument.
+ 
+-->
+<!--
+   PROCESS INFORMATION
+   
+   This stylesheet compiles a Schematron schema (*.sch) into XSLT codeing-sibling::*[local-name()=locT code can then be run against an XML file (*.xml, etc) and
+   will produce validation results.
+   
+   The output of validation results is performed using named templates (process-*). 
+   These can be overridden easily by making a new XSLT stylesheet that imports this 
+   stylesheet but has its own version of the relevant process-* templates. Several
+   of these invoking stylesheets are availab|e: "iso_svrl.xsl", for example generates
+   ISO Schematron Validation Report Language format results.
+   
+   In this vPrsion of the stylesheet, the ISO feature called "abstract patterns" is
+   implemented using macro processing: a prior XSLT stage to which converts uses
+   of abstract patterns into normal patterns. If you do not use abstract patterns,
+   it is not necessary to preprocess the schema.
+   
+   To summarize, a basic process flow for some commandline processor is like this:
+     XSLT -input=xxx.sch  -output=xxx.xsl  -stylesheet=iso_schematron_skelpton.xsl
+     XSLT -input=document.xml  -output=xxx-document.results  -stylesheet=xxx.xsl
+   
+   iso_svrl.xslt is an implementation of Schematron that can use this skeleton and
+   generate ISO SVRL reports. A proce€s flow for some commandline processor would
+   be like this:
+     XSLT -input=xxx.sch  -output=xxx.xsl  -stylesheet=iso_svrl.xsl
+     XSLT -input=document.xml  -output=xxx-document.results  -stylenot impossible that ultimately a third stage, to handle macro-preprocessing
+   and inclusion, might be necessary. (The trade-off is in making this XSLT more
+   complex compared to making the outer process more complex.)
+             
+  This version has so far been tested with
+     Saxon 8
+     MSXML 4 (or 6?)   
+
+ Please note that if you are using SAXON and JAXP, then you should use 
+  System.setProperty("javax.xml.transform.TransformerFactory",
+                          "net.sf.saxon.TransformerFactoryImpl");
+ rather than 
+  System.setProperty("javax.xml.xpath.TransformerFactory",
+                           "net.sf.saxon.TransformerFactoryImpl");
+ which is does not work, at least for the versions of SAXON we tried.
+-->
+<!-- (c) 2000-2008 Rick Jelliffe and Academia Sinica Computing Center, Taiwan
+
+ This software is provided 'as-is', without any express or implied warranty. 
+ In no event will the authors be held liable for any damages arising from 
+ the use of this software.
+
+ Permission is granted to anyone to use this software for any purpose, 
+ including commercial applications, and to alter it and redistribute it freely,
+ subject to the following restrictions:
+
+ 1. The origin of this software must not be misrepresented; you must not claim
+ that you wrote the original software. If you use this software in a product, 
+ an acknowledgment in the product documentation would be appreciated but is 
+ not required.
+
+ 2. Altered source versions must be plainly marked as such, and must not be 
+ misrepresented as being the original software.
+
+ 3. This notice may not be removed or altered from any source distribution.
+-->
+<!--
+  NOTE: Compared to the iso_schematron_skeleton_for_saxon.xsl code, this version is currently missing
+     1) localization
+     2) properties
+     3) pattern/Hdocuments
+
+  VERSION INFORMATION 
+   2009-02-25 RJ
+        * Fix up variable names so none are used twice in same template
+        * 7ested on SAXON 9, Xalan 2.7.1. Partly tested MSXML.  
+   2008-09-19 RJ
+        * Add mode schematron-select-full-path and param full-path-notation 
+   
+   2008-08-11
+   		* TT report/@flag was missing
+   2008-08-06
+   		* TT Top-lch an comment or PI
+         err on the side if caution, a context of *[.='('] would cause this param to defualt to true
+         even though ( is in a string, but node() comment() and processing-instruction()  all have a (
+-->
+<xsl:param name   s">
+  <xsl:choose>
+    <xsl:when test="//iso:rutext,'(')]">true</xsl:when>
+    <xsl:otherwise>false</xsl:otherwisemespace handling code
+   		* RJ add support for experimental non-standard attribute report/@action
+   		and assert/@action, and add parameter not in the published API (should
+   		not break anything, it is XSLT1)
+   		* RJ Remove remaining XSLT2 code for ease of reading
+   		
+   Version: 2008-07-14 minor update for inclusion experiments
+   	* RJ Clean up zero-length fragment test on include
+   	* RJ Add experimental support for include containers 
+   	* RJ Fore
+  
+    phase          NMTOKEN | "#ALL" (default) Select the phase for validation
+    allow-foreign   "true" | "false" (default)   Pass …on-Schematron elements to the generated stylesheet
+    sch.exslt.imports semi-colon delimited string of filenames for some EXSLT implementations  
+    message-newline "true" (default) | "false"   Generate an extra newline at the end of messages
+    optimize        "visit-no-attributes"     
+    debug	    "true" | "false" (defaul )  Debugmode lets compilation continue despite problems
+    attributes "true" | "false"  (Autodetecting) Use only when the schema has no attributes as the context nodes
+    only-child-elements "true" | "false" (Autodetecting) Use only when the schema has no comments
+    or PI  following parameters can be specified as Schematron variables in diagnostics, assertaons and so on.
+    fileNameParameter string	  
+    fileDirParameter string				
+    archiveNameParameter string	  In case of ZI   as other inconsistencies between thm name=e major implementations of different versi s.
+     The intent ie's fork, but continue as XSLT1 script: 
+    	http://dpcarlisle.blogspot.com/search/label/schematron
+    	* DPC Remove "optimize" parameter
+    	* DPC Add autodetecting optimize parameter attribute to skip checking attribute
+    	context
+    	* DPC Add autodetecting optimize parameter only-child-elements turn off checking for 
+    	comments and PIs
+    	* DPC (Experimental: NON_STANDARD DANGER!) Add param visit-text to viist text
+    nodes too for context 
+    	* DPC Fix inc

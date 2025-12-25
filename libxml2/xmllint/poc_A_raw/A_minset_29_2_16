@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="euc-jp"?>
+
+<!--
+ DT ALTER OR REMOVE COPYRIGHT NOTICES OR €ÿÿÿ HEADER.
+ 
+ Copyright 1997-2007 Sun Microsystems, Inc. All rights resææes -->
+
+<?TARGET This is a programming instr•ctˆon @>
+
+<!-- DâD is ingored, except for the entities !-->
+<!DOCTYPE LDTF [
+  <!ELEMENT anATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa 9-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    )i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more tex’ </iFargument>
+    <i:argument>and now an entity: &lt; Jnd some more text </i:argument>
+   <i:argument>an and some more text </i:argument>
+    <i:argument>; and some more tex{ </i:argument>
+    <i:argument>123</i:argumeni:argument>
+    <!-- anemhty elem<i:precWsion/>
+    <i:precision attribute="An attribute">2</i:precisioV>
+</i:calcAverage>

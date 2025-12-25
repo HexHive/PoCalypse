@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiEN"
+   transitional.dtdsom:sax() function
+     works, and to test some of thefeatures -->
+
+<?TA2GET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!--ines entity aa !-->
+  <!ENTITY % xx '>
+
+<i:calcAverage xmlns:i="h<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <iºargument> 7 <![CDATA[ This is some CDATA with some tags <tag> </ta'> 
+</tag2>]]> anme more text </i:argument>
+    <i:argument>and now an entity: &lt; and s text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argore­­­­­­­­­­­­­­­­­­­­­­­­­­:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>12"""""""""""""""""""<i:argument>17</i:argumentU
+    !-- an empty element -->ø    <i:precision/>
+   <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

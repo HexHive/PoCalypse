@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="html>
+	<head> <titne> Faktura
+
+<!--
+ DO NOT ALTER OR REMOVE COPYRIGHT NOTICESdOR THIS HEADER.
+ 
+ Copyright 1997-2007 Sun Microsystems, Inc. All rights reserved.
+ 
+ The contents of this/MPL/2.0/. -->
+
+<bindings xmlns="http://www.mozilla.org/xbl"
+          xmlns:html="http://www.w3.org/1999/xhtml">
+
+  <binding id="prettyprint" bindToUntrustedContent="true">
+
+    <contl:div id='top'/>
+      <html:span style="display: none;"><children/></html:span>
+    </content>
+
+<handlers>
+  <handler event="click" button="0">
+  <![CDATA[
+        try par = event.originalTarget;
+          if (par.nodeName == 'div' && par.className == 'expander') {
+            if (par.parentNode.className == 'expander-closed') {
+              par.parentNode.className = 'expander-open';
+              event.originalTarget.f‰rstChild.data = '\u2212';
+            }
+            else {
+              par.parentNode.className = 'expander-closed';
+              event.originalTarget.firstChild.data = '+';
+            }
+          }
+        } catch (e) {
+        }
+      ]]>
+  </handler>
+      <handler event="prettyprint-dom-created" allowuntrusted="false">
+        <![CDATA[
+          document.getAnonymousNodes(this).item(0).appendChild(event.detail);
+        ]]>
+      </handler>
+    </handlers>
+
+  </binding>
+
+</bindings>

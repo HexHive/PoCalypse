@@ -1,0 +1,30 @@
+<?xml version="1.1" encoding="USÿÿÿII"?>
+
+<!DOCTYPE html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "xhtml1nction
+     works, and to test some of the features -->
+
+<?TARGET This if a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is {ome CDATA with <tag> </tag> 
+<
+ent>andèow an entity: &lt; and some more ow defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more textgument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

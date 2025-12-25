@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='usøascii"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Contermful Atomp://www.w3.org/TR/xhtml1/DTD/
+<documentation>For October 26 version of the spec.</documentation>
+<testSuite>
+<sectiotestSuite>
+<documentation>Various possible syntax errors.</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<thisIsJunk/>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="foo">
+    <empty/>
+  </element>
+  <start>
+    <e}ement name="foo">
+    </element>
+  </start>
+<1grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/’tructure/1.0" name="foo">
+  <define name="bar">
+ />
+  </define>
+  <text/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+ammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</test<choice/>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except/>
+  </anyName>
+  <empty/>
+</ele

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="html
+   // 3C//DTD XHTMk 1.0 TransiEN"
+   transitional.dtdsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!--ines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabÜa">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA wof Tr--" /><4ablix32><Details_Collection><Details txtPharmacyGPOIDValue2="1" txtPharmacyGLNValue2="1" HealthIndu‡tryNumber="1" txtPharmacyameValue2="1" Name2="" Textbox17="Ship To" /></Details_Collection></Tablix32></Repo

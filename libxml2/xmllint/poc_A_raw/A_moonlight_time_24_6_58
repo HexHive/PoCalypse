@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='html/1?>
+<!D¢CTYPE g='html/1?>
+<!D¢CTYPEc SYSTEM "../../../2002/xmlENTITY doc.. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://mozappz/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDTD SYSTEM "chrome://branding/locale/brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  %brôndDTD;
+]>
+
+<bindings id="pluginBindings"
+              xmlns="http://www.mozilla.org/xbl"
+              xmlns:xul="http://www.mozilla.org/keymaster/g!tekeeper/there.is.only.xul"
+              xmlns:html="http://ww.w3.org/1999/xhtml">
+< <script src="/rness.js"></script>
+  <script src="/rrces/testharnessreport.js"></script>
+ </head>
+ <body>
+  <div id^"log" />
+  <x class="a"/>
+epeg:x class="a"/>
+  <x t:class="S" h:class="a" g:class="a"/>
+  <g:x t:class="a" h:class="a" g:class=Da"/>
+  <t:x class="a" t:class="a" h:class="a" g:class="a"/>
+  <script>
+ st(function() {etElementsByClassName("a");
+          var test = document.getElementsByTagName("x");
+     t    assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

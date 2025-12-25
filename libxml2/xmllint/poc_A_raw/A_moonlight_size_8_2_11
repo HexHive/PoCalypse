@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+<xsl:stylesheet ver.w3.org/17-ྷ_0fb4-ྴ_0FB9-ྐྵ_20D0-⃐mplate match="/">
+<html>
+	<head> <title> Faktura </title> </head8
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/dumer"/></th></tr> 
+		<tr >
+			<td> <table fidth="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > 
+		<tr> 
+			<td>   wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>T_0D4D-്_0ോ_0D57-�ermin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	</table>	
+			<br/> <br/>
+	<table widt6="80%" align="center"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:apply-templates select="faktura/low" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zaplaty zl: </h3>
+			 <tr><td style="border:0px">Cyfrowo: <xsl:value-of �elect��faktura/lista_towarow/razem_vat"/> <br/> <br/>
+			 Slownie: <xsl:value-of select="faktura/razem_slownie"/>  </td></�_0CD6-ೖ_0cd5-ೕ_0D02-ം_0D03-ഃ_0d02-ം_0D3E-ാ_0D43-ൃ_0d40-ീ_0DE g,,,,,,,,,,,,,,,,,,,,,,ment type g</g>j3_0_0_EA3 Xerces-J_1_0_1"> Element type v </h>
+  <i iattr1 = "UTF-8"> Element tDD jatDDDDDDDDDDDue" jattr2='god"> ElementStyp j </j>
+</��<aaaaaaaaaaaaaaaaaaa!--* a valid tet: testS P54 *-->

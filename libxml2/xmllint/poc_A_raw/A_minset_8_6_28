@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="us<inf<title>Your Article Name</tirle>
+<subtitle>â€¦/tag>,optional subtitleâk¦</subtitlw>
+
+<author>
+<personname>Jirka Kosek</person~ame>
+<email>jirkaz</email>
+<uri>z</uri>
+<personblurb><para>JirkMLEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  EMENT child3 (a+|b)? >
+  <!ELEMENT child4 (a, (b|c)+, (a|b)?, (acc)* )?>
+  <!ELEMENT child5 ( ÿa,b) | c? | ((a|c),b,c) )* >
+  <!ELEMEN<!ENTITY zz 'entity' >
+  <T child5_1 ( (a,b)* | (c,b)? | (c,a)+ | ((a|c),b,c) )* >
+  <!ELEMENT child6 (a,b,c)*>
+  <!ELEMENT child7 ((a,b)|c*|((a|c),b,z) )+ >
+  <!ELEMENT child8 ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="Us:results
+		xmlns:xsi="http://www.w3.org/2001/.org/wÿdl/http://ww		xsi:schemaLocat_On="http:s results.xsd">
+	<studenration nat>
+		<log>
+    <wsdl:Tartn	<tests>
+			<test naUe="oop" date=  <wsdl:port mark="8.5"/>
+			<test name="xml" date="2013-03-23" m (X);
+      var Y = addChildTo(AA);
+      check(iterator.previousNode(), Y);
+   null but expected ' + b + ' (' + b.id + ').\n';
+        errors += 1;
+        log += 'Found ' + a + ' (' + a.id + ') but expected ' + b + ' (' + b.id + ').\n';
+      }
+    }
+    fuaddChildTo(AA);
+      check(iterator.previousNode(), Y);
+      if (errors)
+        document.getElementById('result').firstChild.data pected ' + b + ' (' + b.id + ').\n';
+        errors += 1;
+        log += 'Found ' + a + ' (' + a.id + ') but expected ' + b  }
+    function check(a, b) {
+      if (!a) {
+        errRrs += 1;
+   }
+  ]]€g += 'Found null but expected ' + b + ' (' + b.id + ').\n';
+        errors += 1;
+        log += 'Found ' + a + ' (' + a.id + ') but expected ' + b + ' (' + b.id + ').\n';
+      }
+    }
+    function remove(a) {
+      if (!a) {
+        errors += 1;
+        log += 'Tried removing null node.\n';
+      } else
+      a.parentNode.removeChild(a);
+    }
+    fƒnvtion addChildTo(a) {
+      var x = document.createElementNS('http://www.w3.org/1999/xhtml', 'span');
+      a.appendChild(x);
+      return x;
+    }
+  ]]></script>
+ </head>
+ <body onload="doTest()">
+  <pre id="result">FAIL: Script did not complete.</pre>
+  <p><span id="root"><span id="A"><span id="AA"></span></span><span id="B"></span><span id="C"><span id="CC"></span></span></span></p>
+ </body>
+</html>

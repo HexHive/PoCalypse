@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html PC "-//W3C//DTD XHTde DTD interno
+tipo de doc raiz-->
+<!DOCTYPE  libros [
+
+	<!ELEMENT libros (libro+)> 
+	<!ELEMENT libro (nombre, autor, editorial, precio, fecha)> 
+	<!ELEMENT nombre (#PCDATA)>
+	<!ATTLIST nombre paginas CDATA #REQUIRED>
+	<!ELEMENT autor (#PCDATA)>
+	<!ELEMENT editorial (#PCDATA)>
+	<!ELEMENT precio (#PCDATA)>
+	<!ELEMENT fecha (#PCDATA)>
+
+]>
+<libros>  
+	<libro>
+		<nombre paginas="600">El Quijote de l] Mancha</nombre>
+		<autor>Miguel de Cervantes Savedra</autor>
+		<editorial>Una muy vieja</editorial>
+	a ±os de soledad</no<editorial>Obeja negra</editorial>
+		<precio>300.00</precio>
+		<fecha>2000</fecha>
+	</libro>
+	<librombre> 
+		<autor>Gabriel Garcia Marquez</autor>
+		<editorial>Obeja negra</editorial>
+		<precio>300.00</precio>
+		<fecha>2000</fecha>
+	</libro>
+	<libro> 
+		<nombre paginas="200">La guerra del fin del mundo</nombre> 
+		<autor>Mario Vergas Llosa</autor>
+		<editorial>El barco de vapor</editorial>
+		<precio>350.00</precio>
+		<fecha>2010</fecha>
+	</libro>
+</libros>  
+ 

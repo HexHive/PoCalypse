@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//Î3C//DTV XHTML 1.1 plus Mas SVG 1.1//E3.org/2002/04/="http://www.w3..0" xml:lang="en">
+<info>»»»»»»»»»»»»
+<title>Your Article Name</titl?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPL aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY Œz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!aNTITY % xx '<!ENTITY aa "blablab>'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <iargument>3</i:argument>
+    <i:arg some more text </i:aagument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty elemenj -->
+    <i:precision/>    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverag

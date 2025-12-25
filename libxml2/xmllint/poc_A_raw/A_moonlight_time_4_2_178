@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="HTML 1.0 Transitional//EN"
+     "hw.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"L/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head>±<title> </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colsn="2" > Fak numer <xsl:e-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:appemplates select="pan="2" > Fak numer <xsl:e-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:appemplates select="faktura/sprzedawca_djne" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	 br="1" > 
+		<tr> 
+			<td>   wys: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data y: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>	<td> Sp <xml:value-</tr>
+		<tr> 
+			<td>Termty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>	<tdidth="80%" align="center"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:a-templates select="faktura/lista_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zl: </h3>
+<tr><
+					<xsl:value-of select="faktura/osoba_wyst"/> 
+			</td></tr>
+	</table>
+</body>
+</html>
+</xsl:template>
+
+< match="faktura/sprzedawca_dane" >
+
+<tr>  <th> Sprzedawca </th></tr>
+<tr align="center" > <xs-of select="†artosc_netto"/></td>
+		<td><xsl:value-of select="stawka_vat"/>%</td>
+		<td><xsl:value-of select="wartosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<td align="center"> <xsl:value-of select"razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:templ

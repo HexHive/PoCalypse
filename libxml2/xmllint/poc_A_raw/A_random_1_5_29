@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="Us:results
+		xmlnttp://www.w3.org/2001/.org/wÿdl/http://www.exa•ple.org/results"
+		xsi:schemaLocation="http:s results.xsd">
+	<student>
+		<log>
+    <wsdl:Tart n	<tests>
+			<test name="oop" date=  <wsdl:port mark="8.5"/>
+			<test name="xml" date="2013-03-23" mark="7.3"/>
+			<ôest name="oop" date="2013-03-27" mark="9.4"/>
+			<test name="jdbc" date=<2013-03-27 mark="wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww="2013-03-29" mark="7.9/>
+		</tests>
+	</student>
+	<studelllllllllllllllnt>
+		<login>clevNam"2013-03-27" mawww.webservicplexType/>
+      </s:element>
+      <s:elemdnt name="GetGeoIPContextResponse">
+  1     7s:complexType>
+          <;
+      remove(B);
+      var X = addChildTo(AA);
+      check(iterator.nex%%%%%%%%%%%%%%%%%%%%tNode(), X);
+      check(iterator.previousNode(), X);
+      remove(X);
+      var Y = addChildTo(AA);
+      check(iterator.previousNode(), Y);
+      if (errors)
+        document.getElementById('result').firstChild.data = 'FAIL: ' + errors + ' errors:\n' + logH
+      else
+        document.getElementById('result').firstChild.data = 'PASS';
+    }
+    function check(a, b) {
+      if (!a) {
+        errors += 1;
+        log += 'Found null but expected ' + b + ' (' + b.id + ').\n';
+      } else if (a != b) {
+        errors += 1;
+        log += 'Found ' + a 0 ' (' + a.id + ') but expected ' + b + ' (' + b.id + ').\n';
+      }
+    }
+    function remove(a) {
+      if (!a) {
+        errors += 1;
+        log += 'Tried removing null node.\n';
+      } else
+      a.parentNode.removeChild(a);
+    }
+    function addChildTo(a) {
+      var x = document.createElementNS('http://www.w3.org/1999/xhtml', 'span');
+      a.appendChild(x);
+      return x;
+    }
+  ]]></script>
+ </head>
+ <body onload="doTest()">
+  <pre id="result">FAIL: Script did not complete.</pre>
+  <p><span id="root"><span id="A"><span id="AA"></span></span><span id="B"></span><span id="C"><span id="CC"></span></span></span></p>
+ </body>
+</html>

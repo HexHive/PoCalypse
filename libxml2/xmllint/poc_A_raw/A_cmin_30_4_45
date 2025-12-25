@@ -1,0 +1,49 @@
+ï»¿<?xml version="1.0" encoding="html#server">Server&sidI<+a></li>
+		<leŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠŠ{ŠŠ«äº†ç”¨äºŽè§£é‡Šæ–‡æ¡£æ˜¯å¦‚ä½•æž„æˆçš„è§„åˆ™ï¼Œè¿™äº›è§„åˆ™è§„èŒƒäº†æ¯ä¸ªå…ƒç´ çš„åˆæ³•å­å…ƒç´ å’Œå±žæ€§ã€‚
+ä¸ŽDTDç›¸æ¯”ï¼ŒXML Schemaå¯ä»¥è¡¨è¾¾æ›´åŠ å¤æ‚çš„éªŒè¯æ¡ä»¶ï¼Œæ˜¯è®¾è®¡ç”¨æ¥æ›¿ä»£DTDçšvï¼Œä½†å®ƒå¾ˆå¤æ‚å¹¶æœªå¾—åˆ°æ™®éçš„æ”¯æŒã€‚
+ -->
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- æ­£æ–‡åŒ…æ‹¬æ ¹å…ƒç´ ï¼Œæ ¹å…ƒç´ åŒ…æ‹¬å…¶ä»–ä¸€äº›å…ƒç´ ï¼ˆelmentï¼‰ã€‚ -->
+<hibernate-configuration>
+    <session-factory>
+        <!-- å…ƒç´ l>
+					<cell><xsl:value-of select="mv:title"/></cell>
+					<cell><xsl:value-of select="mv:release_date"/></cell>
+					<cell>
+						<xsl:for-each select="mv:directors/mv:director">
+							[xsl:choose>
+								<xsl:when test="position() = 1">
+									<xsl:value-of select="text()"/>
+								</xsl:when>
+								<xsl:otherwise>	ë								<xsl:value-of select="concat(', ', text())"/>
+								</xsl:otherwise>
+							</xsl:choose>
+						</xsl:for-each>
+					</cell>
+					<cell>
+						<xsl:for-each select="mv:actors/mv:actor">
+							<xsl:sort select="@cast_id" data-type="number" order="ascending"/>
+							<xsl:choose>
+								<xsl:when test="position() = 1">
+									<xsl:value-of select="@name"/>
+								</xsl:when>
+								<xsl:when test="position() = 2">
+									<xsl:value-of select="concat(', ', @name)"/>
+								</xsl:when>
+								<xsl:when test="position() = 3">
+									<xsl:value-of select="concat(', ', @name)"/>
+								</xsl:when>
+							</xsl:choose>
+						</xsl:for-each>
+					</cell>
+					<cell><xsl:value-of select="mv:vote_average"/></cell>
+					<cell><xsl:value-of select="mv:vote_count"/></cell>
+				</row>
+			</xsl:for-each>
+		</table>
+	</body>
+	</html>
+	</xsl:template>
+</xsl:stylesheet>

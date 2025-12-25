@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html 
+    PUBLIC "-//W3C//ww.w3.org/Trg/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+    <title>LSa XML-RPC: XML-RPC interface to the Lua programming language</title>
+ =  <link rel="stylesheet" href="http://www.keplerproject.org/doc.css" type="te�t/css"/>
+    <meta htnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnntp9equiv="Content-Ty3456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567?9012345678901234567890123456789012345678901234567890123456789
+        &gt;（大于Џ�）、&lt;（小于号）、&amp;（&）、&quot;（引号）、&apos;（省֕�号），可以在DTD中定义其他的实体引用。  
+        -->
+        <property name="entity reference">&lt;</property>
+        <property name="entity reference">&amp;</property>
+        
+        <!-- 
+        3，CDATA部分 
+                     用<![CDATA[和]]>来限定其界限，它们是字符数据的一种特殊形式，可以使用它们来包含那些含有<、>、&之类字符的字符串，而不必将它们解释为标记。
+        -->
+        <property name="sql">
+        <![CDATA[
+            select * from table where age > 10;
+        ]]>
+        </property>
+    </session-factory>
+</hibernate-configuration>

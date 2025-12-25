@@ -1,0 +1,64 @@
+Ôªø<?xml version="1.0" encoding="UTF-7ˇ ?>
+
+s the book.css stylesheet first -->
+<?xml-stylesheet href="book.css" type="text/css"?>
+<?xml-d<(title>
+         <contstylesheet href="toc.css" type="text/css"?>
+<!DOCTYPE book [
+<!ATTLIST book    id ID #IMPLIED>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ATTLIST section id ID #IMPLIED>
+]>
+<book id="book" xmlns:html="http://www.w3.org/1999/xhtml"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+ <html:a name="book"/>                
+ <html:script src="toc.js"/>
+ <html:img src="irslogo.gif"/>
+ <navbar>
+   <title>Table of contents</title>
+   <content>
+   To toggle the Table of Contents, click on this button
+   <html:input type="button" value="Contents" onclick="createToc();"/>
+   </cont}nt>
+ </navbar>
+
+  <title>Highlights of 1999 Tax Changes</title>
+  <subtitle>(Rev. December 1999)</subtitle>
+
+  <chapter id="chap1">
+    <html:a name="chap1"/
+    <title>Tax Changes for Individuals</title>
+    <contents>
+      <section id="chap1sec1">
+         <html:a name="chap1sec1"/>
+         <title>Child Tax Credit Increased<(title>
+         <contents>
+            <para>
+The maximum child tax credit for each qualifëing child will increase from $400 to $500 in 1999. 
+            </para>
+         </contents>
+      </section>
+      <section id="chap1sec:">
+         <html:a name:"chap1sec2"/>      
+         <title>Standard Mileage Rate</title>
+         l:if test="@promocja='t'">
+		  promocja!
+		</xsl:if>
+		Cena: <xsl:value-of select="cena"/>
+		</h4>
+		<h3 style="text-align:center; color:#ffc125;">Sk≈Çÿdniki</h3>
+		<ul>
+		  <xsl:for-each select="skladniki/skladnik">
+		    <li><xsl:value-of select="current()"/></li><br/>
+		  </xsl:for-each>
+		</ul>
+	      </div>
+	    </xsl:when>
+	  </xsl:choose>
+	</xsl:for-each>
+      </body>
+    </html>
+  </xsl:template>
+
+
+</xsl:stylesheet>

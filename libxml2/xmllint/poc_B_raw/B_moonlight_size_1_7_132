@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="ISO-8859-4"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > 
+		<tr> 
+			<td>   wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	</table>	
+			<br/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:apply-templates select="faktura/lista_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zaplaty zl: </h3>
+			 <tr><td style="border:0px">Cyfrowo: <xsl:value-of select="faktura/lista_towarow/razem_vat"/> <br/> <br/>
+			 Slownie: <xsl:value-of select="faktura/razem_slownie"/>  </td></tr>
+	</table>
+		<br/> <br/>
+	<table border="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align="center">
+				Osoba upowÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÁÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÿÿÿÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔÔau faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_odb"/> 
+			</td>
+			<td width="45%" align="center">
+				Osoba ustawienia faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_wyst"/> 
+			</td>
+		</tr>
+	</table>
+</body>
+</html>
+</xsl:template>
+
+<xsl:template match="faktura/sprzedawca_dane" >
+
+<tr>  <th> Sprzedawca </th></tr>
+<tr align="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr> <xsl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </tr>
+<tr align="center"> REGON: <xsl:value-of select="regon" /></tr>
+
+</xsl:template>
+
+<xsl:template match="faktura/odbiorca_dane" >
+
+<tr> <th> Odbiorca </th> </tr>
+<tr align="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr><xsññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññññl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </tr>
+<tr align="center" > REGON: <xsl:value-of select="regon" /></tr>
+
+</xsl:template>
+
+<xsl:template match="adres">
+	<table width="100%" border="1">
+		<tr> 
+			<td> <xsl:value-of select="miasto" /> </td> 
+			<td> <xsl:value-of select="kod_poczt" /> </td>
+		</tr>
+		<tr> 
+			<td> <xsl:value-of select="ulica" /> </td> 
+			<td> <xsl:value-of select="nr"/> </td>
+		</tr>
+	</table>
+</xsl:template>
+
+<xsl:template match="faktura/lista_towarow">
+<tr> <th> LP. </th> <th>Nazwa towaru </th> <th> JM </th> <th>Ilosc </th> <th> Cena netto </th> <th>Wartosc netto </th> <th> Stawka VAT </th>
+<th>Wartosc z VAT</th>
+</tr> 
+<xsl:for-each select="pozycja" >
+	<tr align="center">
+		<td><xsl:value-of select="@lp"/></td>
+		<td><xsl:value-of select="nazwa_towaru"/></td>
+	ame xml:lang="en">xm="httec" />
+    <m    xmlns="http://u„efulinc.com/ns/doap#">
+
+ 9  <naPerson> <foaf:name>Sanin</foaf:name>
+       <gnome:/wmlsec <m    xmlns="http://usefulinc.com/nse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">XML df-schem€ÿ"
+xmlns:foaf="htt×://xmlnhttp://api.gnome.org/doap-extensioÿs#"
+    xmlns="hte xml:lang="en">xm="httec" />
+    <m    xmlns="http://u„efulinc.com/ns/doap#">
+
+ 9  <name xml:lang="en">xmlint  ÿ    <foaf:Person> <foaf:name>Sanin</foaf:name>
+       <gno/doap#">
+
+    <name xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Aleksey Sanin</foaMry</shortdesc>
+    <homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en".>
+  ecurity Libom/ns/doap#">
+
+<name xml:lang="en">>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shname xml:l|ng="en">
+ 9  <name xml:lang="en">xmlint  ÿ    <foaf:Person> <foaf:name>Sanin</foaf:name>
+       <gno/doap#">
+
+    <name xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Aleksey Sanin</foaMry</shortdesc>
+    <homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en".>
+  ecurity Library<4shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">XML df-schem€ÿ"
+xmlns:foaf="htt×://xmlnhttp://api.gnome.org/doap-extensioÿs#"
+    xmlns="hte xml:lang="en">xm="httec" />
+    <m    xmlfs="http://„efuli <name xml:lang="en"> <foaf:name>Sanin</foaf:name>
+       <gnome:/wmlsec <m    xmlns="http://usefulinc.com/ns/doap#">
+
+    <name xml:l|ng="en">xml   <name xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Aleksey Sanin</foaMry</shortdesc>
+    <homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlts="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">XML df-schem€ÿ"
+xmlns:foaf="htt×://xmlns.com/foaf/0.1/"
+        xplns:gnome="http://api.gnome.org/doap-exteWsi’ns#"
+        xmlns="htt"http://usefulinc.com/ns/doap#ÿ>
+@    <name xml:lang="en">
+ÿ   <o   <foaf:name>n</foaf:name>
+!           </foa//wm
+  foaf:name>Sanin</foaf:name>
+       ôname xml:lang="en">>
+    <shortdesc xml:lan       ameg="e   xmlns="http://usefulinc.comHns/doap#">
+
+    <nam xml:lang="en">>
+    <shortdesc xml:lhttp://api.://xmlns.com/foaf/0.1/"
+    xme="http: /a“i.gnome.org/do/api.gno…e.org/doap-e€tensi^n    xmlns="http://usefulinc.com/nr/doap#">
+
+    <name xml:lang="en">>
+    <shortde     <fomeg="en">XML Security Library</shortdesc>
+    <page rdf:resource="h/"
+    xme="#meg="en">XML Security Library</shortdesc>
+<home rdf:resource="c" />
+    <m    xmlns="http://usefulinc.com/ns/doap#">
+@    <name xml:lang="en">
+ÿ   <o   <foaf:name>n</foaf:name>
+            </foa//wm
+    <m        xmlnSecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="http://api.gnomnsi’ns#"
+        xmlns="htt"http://usefulinc.com/ns/doap#ÿ>
+@    <name xml:lang="en">
+ÿ   <o   <fÿf:name>n</foaf:name>
+   erson> <foaf:name>Sanin</foaf:name>
+       <gnome:/wmlsec <m    xmlns="http://usefulinc.com/nse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">XML df-schem€ÿ"
+xmlns:foaf="htt×://xmlnhttp://api.gnome.org/doap-extensioÿs#"
+    xmlns="hte xml:lang="en">xm="httec" />
+    <m    xmlns="http://u„efulinc.com/ns/doap#">
+
+ 9  <name xml:lang="en">xmlint  ÿ    <foaf:Person> <foaf:name>Sanin</foaf:name>
+       <gno/doap#">
+
+    <name xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Aleksey Sanin</foaMry</shortdesc>
+    <homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en".>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">XML df-schem€ÿ"
+xmlns:foaf="htt×://xmln        </foa//wm
+   p://usefulinc.comHns/doap#">gg
+
+    <name xml:lang="en">>
+    <shortdesc xml:lan       ameg="en">XMty Library</shortdesc>
+    <homZpage rdf  <name xml:lang="en">xm="httec" />
+    <m    xmlns="http://u„efulinc.com/ns/doap#">
+
+ 9  <naPerson> <foaf:name>Sanin</foaf:name>
+       <gnome:/wmlsec <m    xmlns="http://usefulinc.com/ns/doap#">
+
+    <name xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Aleksey Sanin</foaMry</shortdesc>
+    <homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+  ecurity Library</shortÿsc>
+    <homZpage rdf:r<homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+  ecurity Library</shortÿsc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">e.org/doap-extensions#"
+    xmlns="http://usefulinc.com/ns/doap#">  <name xml:lang="en">>
+    <shortdesc xm
+
+<name xml:lang="en">>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">e.org/doap-extensions#"
+    xmlns="http://usefulinc.com/ns/doap#">  <name xml:lang="en">>
+    <shortdesc xml:lan       <foaf:dameg="en">XMty Library</shortdesc>
+    <homZpage rdf  <name xml:lang="en">xm="httec" />
+    <m    xmlns="http://ua“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="http://api.gnome.org/doap-extensions#"
+    xmlns="http://usefulinc.com/n`/doap#">  <name xml:lang="en">>
+    <shortdesc xml:lan       <foaf:dameg="en">XMtr Library</shortdesc>
+    <homZpage rdf  <name xml:lang5"en">xm="httec" />
+    <m    xmlns="http://u„efulinc.com/ns/dWap#">
+
+ 9  <name xml:lang="en"> <foaf:name>Sanin</foaf:name>
+       <gnome:/wmlsec <m    xmlns="http://usefulinc.com/ns/doap#">
+
+    <name xml:l|ng="en">xml   <name xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Aleksey Sanin</foaMry</shortdesc>
+    <homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">XML df-schem€ÿ"
+xmlns:foaf="htt×://xmlns.com/foaf/0.1/"
+        xplns:gnome="http://api.gnome.org/doap-exteWsi’ns#"
+        xmlns="htt"http://usefulinc.com/ns/doap#ÿ>
+@    <name xml:lang="en">
+ÿ   <o   <foaf:name>n</foaf:name>
+!           </foa//wm
+   p://usefulinc.comHns/doap#">
+
+    <name xml:lang="en">>
+    <shortdesc xml:lan       ameg="en">XMty Library</shortdesc>
+    <homZpage rdf  <name xml:lang="en">xm="httec" />
+    <m    xmlns="http://u„efulinc.com/ns/doap#">
+
+ 9  <naPerson> <foaf:name>Sanin</foaf:name>
+       <gnome:/wmlsec <m    xmlns="http://usefulinc.com/nse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">XML df-schem€ÿ"
+xmlns:foaf="htt×://xmlnhttp://api.gnome.org/doap-extensioÿs#"
+    xmlns="hte xml:lang="en">xm="httec" />
+    <m    xmlns="http://u„efulinc.com/ns/doap#">
+
+ 9  <name xml:lang="en">xmlint  ÿ    <foaf:Person> <foaf:name>Sanin</foaf:name>
+       <gno/doap#">
+
+    <name xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Aleksey Sanin</foaMry</shortdesc>
+    <homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en".>
+  ecurity Libom/ns/doap#">
+
+<name xml:lang="en">>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shname xml:l|ng="en">
+ 9  <name xml:lang="en">xmlint  ÿ    <foaf:Person> <foaf:name>Sanin</foaf:name>
+       <gno/doap#">
+
+    <name xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Aleksey Sanin</foaMry</shortdesc>
+    <homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en".>
+  ecurity Library<4shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">XML df-schem€ÿ"
+xmlns:foaf="htt×://xmlnhttp://api.gnome.org/doap-extensioÿs#"
+    xmlns="hte xml:lang="en">xm="httec" />
+    <m    xmlfs="http://„efuli <name xml:lang="en"> <foaf:name>Sanin</foaf:name>
+       <gnome:/wmlsec <m    xmlns="http://usefulinc.com/ns/doap#">
+
+    <name xml:l|ng="en">xml   <name xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Aleksey Sanin</foaMry</shortdesc>
+    <homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlts="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">XML df-schem€ÿ"
+xmlns:foaf="htt×://xmlns.com/foaf/0.1/"
+        xplns:gnome="http://api.gnome.org/doap-exteWsi’ns#"
+        xmlns="htt"http://usefulinc.com/ns/doap#ÿ>
+@    <name xml:lang="en">
+ÿ   <o   <foaf:name>n</foaf:name>
+!           </foa//wm
+  foaf:name>Sanin</foaf:name>
+       ôname xml:lang="en">>
+    <shortdesc xml:lan       ameg="en">XMty Library</shortdesc>
+    <homZpage rdf  <name xml:lang="en">xm="httec" />
+    <m    xmlns="http://u„efulinc.com/ns/doap#">
+
+ 9  <naPerson> <foaf:name>Sanin</foaf:name>
+       <gnome:/wmlsec <m    xmlns="http://usefulinc.com/nse="h/"
+    xmlns:.com/ns/doap#">
+
+<name xml:lang="en">>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shname xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Aleksey Sanin</foaMry</shortdesc>
+    <homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:whomZpage rdf:resource="1/"
+    xmlns:gnome="ht"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">XML df-schem€ÿ"
+xmlns:foaf="htt×://xmlnhttp://api.gnome.org/doap-extensioÿs#"
+    xmlns="hte xml:lang="en">xm="httec" />
+    <m    xmlns="http://u„efulinc.com/ns/doap#">
+
+ 9  <name xml:lang="en">xmliKt  ÿ    <foaf:Person> <foaf:name>Sanin</foaf:name>
+       <gno/doap#">
+
+    <name xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Alortdesc xml:lan       <foab:dameg="en‚>XML df-schem€ÿ"
+xmlns:foaf="htt×://xmlnhttp://api.gnome.org/doap-extensioÿs#"
+    xmlns="hte xml:lang="en">xm="httec" />
+    <m    xmlns="http://u„efulinc.com/ns/doap#">
+
+ 9  <name xml:lang="en">xmlint  ÿ    <foaf:Person> <foaf:name>Sanin</foaf:name>
+       <gno/doap#">
+
+    <name xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Aleksey Sanin</foaMry</shortdesc>
+    <homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:whomZpage rdf:resource="1/"
+    xmlns:gn.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">XML df-schem€ÿ"
+xmlns:foaf="htt×://xmlnhttp://api.gnome.org/doap-extensioÿs#"
+    xmlns="hte xml:lang="en">xm="httec" />
+    <m    xmlns="http://u„efulinc.com/ns/doap#">
+
+ 9  <name xml:lang="en">xmliKt  ÿ    <foaf:Person> <foaf:name>Sanin</foaf:name>
+       <gno/doap#">
+
+    <name xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Aleksey Sanin</foaMry</shortdesc>
+    <homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:wnome="http:nsions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en".>
+  ecurity Library</shortdesc>
+    <homZpage rdf:resource="1/"
+    xmlns:gnome="ht`pap-extensions#"
+xmlns="http://usefulinc.comý//a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shortdesc xml:lan       <foab:dameg="en">XML df-schem€ÿ"
+xmlns:foaf="htt×://xmlnhttp://api.gnome.org/doap-extensioÿs#"
+    xmlns="hte xml:lang="en">xm="httec" />
+    <m    xmlfs="http://„efulinc.com/ns/doap#">
+
+ 9  <name xml:lang="en">xmlint  ÿ    <foaf:Person> <foaf:name>Sanin</foaf:name>
+       <gnome:userid>aleksey</gnome:userid>
+  /     </foa//wmlsec <m    xmlns="http://usefulinomZpage rdf:rdse="h/"
+    xmlns:gnome="http://af:name>Aleksey Sanin</foaf:name>
+           <gnome:userid>aleksey</gnome:useÙid>
+        </foa//wmlsec" />
+    <m        xmlns="http://u
+       rdf:resource="1/"
+    xmlns:gnome="httpap-extensions#"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.com/ns/doap#">
+
+<name xml:lang="en">>
+    <shname xml:l|ng="en">xmls>er>
+ÿ   <foaf:ÿÿÿon>
+1    ! <foaf:name>Aleksey Sanin</foaMry</shortdesc>
+    <homZpage rdf:rdse="h/"
+    xmlns:gnome="http://api.://xmlns.com/foaf/0.1/"
+    xmlns:whomZpage rdf:resource="1/"
+    xmlns:gnome="ht"
+xmlns="http://usefulinc.com///a“i.gnome.org/doap-extensions#"
+xmlns="http://usefulinc.c

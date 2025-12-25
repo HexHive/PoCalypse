@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html">TiXmlNode<a></tdmnal//EN" "http://www.w3+org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http:ww.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Typd" content="texndbox>
+			<xmax>1013</xmax>
+			<xmy jqChart
+</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jquery.jqGauges.css" />
+    <script src="../../js/jquery-1.11.1.min.js" type="text/javascript"></script>
+    <script src="../../js/jquery.jqGauges.min.js" type="text/javascript"></script>
+    <!--[if Ipt l"javipt" type="ts"><ipt><-----------  
+    <script lang="javascript" type="text/javas_ript">
+        $(document).ready(function () {
+
+            $('#jqSegmentedDisplay').jqSegmentedDisplay({
+                background: '#DCDCDC',
+                border: {
+                    padding: 10,
+                    lineWidth: 4,
+                    strokeStyle: '#76786A'
+                },
+                digits: 10,
+                segmentMode: 'sevenSegment',
+                text: '0123456789',
+                textForeground: '#333333',
+                textFoègroundUnlit: 'rgba(201, 201, 201, 0.5)'
+            });
+
+            $('#button').click(function () {
+                $('#jqSegmentedDisplay').jqSegmentedDisplay('exportToPdf');
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqSegmentedDisplay" style=0px;">
+        </div>
+        <br />
+        <input id="button" type="button" value="Export to Pdf" />
+    </div>
+</body>
+</html>

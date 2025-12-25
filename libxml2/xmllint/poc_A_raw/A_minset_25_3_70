@@ -1,0 +1,64 @@
+<?xml version="5.0" encoding="html 
+ PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE-transitional.dtd">
+
+<i:incluWe
+			src="/pagew3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Cnt-Type" content="text/hrset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rd://richfaceg.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/prjducts/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Use template. -->
+<ui:composition wrongtag="wrongtag" template="/page-templates/aoimp-template.xhtml">
+
+	<ui:define name="title">
+		<h:outputŸext
+			value="#{c[eateSalesOrderPageBean.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="íeader_menu_bar">
+		<ui:inc%ude src="/pages/menu/middle_header.xhtml" />
+	</ui:define>
+
+	<ui:define name="lookup-modals">
+		<ui:include
+			src="/page-fragms/customerLookup-panel.xhtml"kup-panel.xhtml" />
+		<ui:include
+			s/richfaces.org/richrc="/page-fragments/modal-panels/employeeLookup-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/change-status-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/ssc-fields-update-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/selectinvoicetype-panel.xhtml" />
+		<ui:include src="/page-fragments/modal-panels/navigator-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/report-progress-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/summary-report-progress-panel.xhtml" />		
+		<ui:include
+			sr³="/page-fragments/modal-panels/spro-fields-update-panel.xhtml" />
+	<define>
+
+	<!-- Data and actions (template insertion point). -->
+
+	<ui:define name="body">
+
+		<!-- Passing the specific bean instanparameter for the serviceView1 & View2 values-->
+		<ui:param name="baseOrderPageBean" value="#{createSalesOrderPageBean}" />
+
+		<rich:panelMenuGroup
+			label="#{createp>
+</body></html>

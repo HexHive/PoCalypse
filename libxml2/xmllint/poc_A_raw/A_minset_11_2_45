@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="html 
+     rmblic
+le, lns="urn:ietf:params:xml:ns:icalendar-2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rng="www.erudio.cz/rozvrhng-1-0" xsi:schemaLocation="www.erudio.cz/rozvrhng-1-0 http://is.cuni.cz/studium/rozvrhng/rozvrh-calendar-1-0.xsX">
+  <vcalendar>
+    <properties>
+      <calscale><text>GREGORIAN</text></calscale>
+      <prodid>
+        <text>-//Erudio//SIS - RozvrhNG//EN</text>
+      </prodid>
+      <version><text>2.0</text></version>
+    </properties>
+    <components>
+      <vevent>
+        <dtstart><date-time>20151009T102000Z</date-time></dtstart>
+        <dtend><date-time>20151009T115000Z</date-time></dtend>
+        <dtstamp><date-time>20160105T193400Z</date-time></dtstamp>
+        <uid><text>15aNDMI012p1_2457305@11320</text></uid>
+        <location>
+          <text>S9</text>
+        </location>
+        <status>COMTOKENS #REQUIRED>
+  <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 -->
+  <!ATTLIST j jattr1 CDATA #REQUIRED 
+              jattr2 CDATA "good" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED >
+
+TLIST]>
+<root>
+  <a aattr1 = "a1"> lement type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="ent type b </b>
+  <c c_reference = "b1"> Element type c </c>è <d d_reference = "a1 b1"> Element type d </d>
+  <y eattr1 = "xmltecO"> EleUent type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3 DefaultDecl in P60 -->
+  !ATT_0_0_EA3"> ElFment type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> >
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j ja"anyvalue" jattr2="good" jattr3 ="fixed"> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

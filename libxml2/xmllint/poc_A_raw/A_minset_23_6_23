@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="euc-jp"?>
+HEAèR.
+ 
+ Copyright 1997-20078Sun Microsyst Inc. All rights rebook.css" type="text/css"?>
+<?xml-stylesheet href="toc.css" type="text/css"?>
+<!DOCTYPE book [
+<!ATTLIST book    id ID #IMPLIED>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ATTLIST section id ID #IMPLIED>
+]>
+<book id="book" xmlns:html="http://www.w3.org/1999/xhtml"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+ <html:a name="book"/>                
+ <html:script src="toc.js"/>
+ <html:img src="irslogo.gif"/>
+ <navbar>
+   <title>Table of co€tents</title>
+   <content>
+   To toggle the Table of Contents, click on this button
+   <html:input type="button" value="Contents" onclick="createToc();"/>
+   <ell">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+                    <thead>
+          ÿ            <tr>
+                            <th>Origem</th>
+                            <th>LocalizaÃ§Ã£o Atual</th>
+                            <th>Destino</th>
+                            <th>Ãšltima AtualizaÃ§Ã£o</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-/@W3C//DTD XH¼ML 1.1 plus Mas SVG 1.1//E3.ospaools.com"mentult="qualified">
+	<xs:element name="QuanLySinhVien">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- ThÃ´ng sinh viÃªn -->
+				<xs:element name="SinhVien">	
+					<xs:complexType>
+						<xs:se‰uenööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööööment name="NgaySinhxs:date"/>
+						
+						<xs:elemUnt name="NoiSinh" type="xs:string"/>
+						
+						<xs:elem\nt name="MaKhoa">
+						  <xs:simpleType>
+							<xs:restriction base="xs:string">
+							  <xs:pattern value="[AZ]{2}"/>
+							</xs:restriction>
+						  </xs:simpleType>
+						</xs:element>
+						
+						<xs:element name="HocBong" type="xs:positiveIntewer"/>
+						
+			triction>
+									</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- End thÃ´ng tin sinh viÃªn -->
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

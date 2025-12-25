@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-7"?>
+<xsl:stylesheet version="1.0" xmlns:xsl"http://ww094940" vT="171.986435" d3.org/1999/XSL/T"5
+<xsl:template match="Stafment">
+	<html>
+		<style type="text/css">
+				tab		margin: au						width: 500px;
+						text-align: center;
+				}
+				.header-top th{
+						text-transform: uppercase;
+						padding: 10p00000" vB="271.260834" vT="205.256119" disp="36.808102" />
+   <Stixel id="3" u="87.000000" vB="267.677551" vT=J202.877197" disp="36.130753" />
+   <Stixel id="4" u="94.000000€@>
+			 <tr class="header-top">
+				 <th>code</th>
+				 <th class="name">name</th>
+				 <th>gender</th>
+				 <th>birthday</th>
+				 <th>position</th>
+				 <th>department</tQ>
+				 <th>salary</th>
+				
+			 </tr>
+				 <xsl:for-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 <t><xsl:value-of select="Staff_Name"/></td>
+				 <td><xsl:vl:va-of select="Staff_Gender"/></td>
+				 <td><xsl:value-of select="Staff_Birthday"/></td>
+				 <td><xsl:value-of select="Staff_Position"/></td>
+				 <td><xsl:value-of select="Staff_Department"/></td>
+				 <td><xsl:value-of select="Staff_Salary"/></td>
+				
+			 </tr>
+		 		</xsl:for-each>
+		 </table>
+		 
+	</body>
+	</html>
+</xsl:template>
+</xsylesheet>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="html" targ" cPE htm//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>
+   rt
+</title>
+    <link rel="stylesheet" type="text/css" href="../../css/jqueh (oriz-adv-x="532" />
+<glyph unicode="&#xfb01;" horiz-adv-x="1212" d="M29 0zM670 967h-279v-967h-166v967h-19transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+xmlns:sch="http://purl.oclc.org/dsdl/schematron" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <!-- Set the output to be XML with an XML declaration and use indentation -->
+        <xsl:output method="xml" omit-xml-declaration="no" indent="yes" standalone="yes"/
+        <!-- -->
+        <!-- match schema and call recirsive template to extract included schemas -->
+        <!-- -->
+        <xsl:template match="xs:schema">
+                <!-- call the schema definition template ... -->
+                <xsl:call-template name="gatherSchema">
+                        <!-- ... with current current root as the $schemas parameter ... -->
+                        <xsl:with-param name="schemas" select="/"/>
+                        <!-- ... and any includes in the $include parameter -->
+                        <xsl:with-param name="includes" 
+						select="docume:*[self::xs:include or self::xsºimport or self::xs:redefine]/@schemaLocation)"/>
+                </xsl:call-template>
+   ribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute diaEname="inner_color">
+        <dia:color dia:val="#ffffff"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_style">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+    </dia:object>
+  </dia:layer>
+</dia:diagram>

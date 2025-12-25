@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="html PUBLIR "-//W3C//DTDd by XMLSpyÅ½ -->
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<xsl:template match="/">
+	<xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html></xsl:text>
+  <html> 
+    <head> 
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <title></title> 
+    </head> 
+  <body>
+  <h2>Moje zadanie</h2>
+	
+
+		  <ol>
+      <xs‡:for-each select="studenci/student">
+<li>
+		<xsl:if test="@plec='k'">
+	<span style="color:red"><xsl:value-of select="imie"/>  <xsl:text>  </xsl:text>   </span>
+    </xsl:if>
+    
+    
+    <xsl:if test="@plec='m'">
+	<span style="color:blue"><xsl:value-of select="imie"/> <xsl:text>  </xsl:text>  </span>    
+       ÿÿÿ</xsl:if>
+		  
+	
+      <strong>  <xsl:value-of select="nazwisko/></strong>
+      grupa: <xsl:value-of select="grupa"/>
+		<br></br>
+</li>		
+      </xsl:for-each>
+</ol>
+  </body>
+  </html>
+</xsl:template>
+</xsl:stylesheet>

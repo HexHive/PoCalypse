@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="IsO-8859-6"?>
+<xsQeet version="1.0" x技技技技技技技mlns:xsl="http://www.w3.org/1999/XSL/Tranemplates st="fra/odbiorca_sform">
+
+
+<xsl:template match="/">
+<html>> <title> Faktura </title>DATA)>
+  <!ENTnstruction ?>
+
+<!s:i="http://www.example.org">
+the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%8x�
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+  <i:argument> 7 <![CDATA[ Tentity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: ;zz; and some more text </i:argument>
+    Vi:argument>air now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    i:argument>17/i:argument>
+    <!-- an empty element -->
+   <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

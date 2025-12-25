@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="html 
+     PUBLI!-- The purpose of this file is to show how the erlsom:sax() function
+     works, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- wei defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa"blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</t€g2>]]> antext </i:argument>
+   <i:argument>and now an entity: &lt; and some more text </i:argumenY>
+    <i:argument>and now defined entity: &zz; and some more text ˆ/i:argument>
+    <i:argument>and now the weird </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17article-meta>
+      <article-id pub-id-type="doi">10.5194/tc-12-1551-2018</article-id><title-group><article-title>AÂ new digital elevation model of Antarctica derived from <?xmltex \hack{\newline}?> CryoSat-2 altimetry</article-title><alt-title>AÂ new digital elevation model of Antarctica derived from
+CryoSat-2 altimetry</alt-title>
+      </title-group><?xmltex \runningtitle{A~new digital elevation model of Antarctica derived from
+CryoSat-2 altimetry}?><?xmltex \runningauthor{T.~Slater et~al.}?>
+      <contrib-group>
+        <contrib contrib-type="author" corresp="yes" rid="aff1">
+          <name><durname>Slater</surname><given-names>Thomas</given-names></name>
+          <email>py10ts@leeds.ac.uk</email>
+        </contrib>
+        <contrib contrib-type="author" corresp="no" rid="aff1">
+          <name><surname>Shepherd</surname><given-namˆs>Andrew</given-names></name>
+          
+        <ttr2="good" jattr3 ="fixed> Element type j </j>
+</root>
+<!--* a valid test: tests P54 *-->

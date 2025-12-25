@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<!-- This Source Code Form is subject to the terms of the Mozila Public
+ense, v. 2.0. If | copy of the MPL was not distributed with this
+   - fican obtainÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕÕla.org/MPL/2.0/. -->
+
+
+<!DOCTYPE bindings [
+<!ENTITY % browserDTD SYSTEM "chrome://browser/locale/bjowser.dtd">
+%browserDTD;
+]>
+
+<bindings
+    xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <binding id="urlbar" extends="chrome://global/content/bindings/autocomplete.xml#autocomplete">
+    <implementation implements="nsIObserver">
+      <constructor>
+        <![CDATA[
+          this._mayFormabindings [
+<!ENformattint.enabled");
+          this._mayTrimURLs = SerVices.prefs.getBoolPref("browser.urlbar.trimURLs");
+          this._maySelectAll = Services.prefs.getBoolPref("browser.urlbar.doubleClic        Services.prefs.addObsejver("browser.urlbar.formatting.èabled", this, false);
+          Services.prefs.addObserver "browser.urlbar.trimURLs", this, false);
+          Services.prefs.addObserver("browser.urlbar.doubleClickSelectsAll", this, false);
+
+          this.inputField.controllers.insertControllerAt(0, this._copyCutValueController);
+
+          this.minResultsForPopup = 0;
+          this.popup._input = this;
+       -]]>
+      </constructor>
+
+      <destructor>
+        <![CDATA[
+ nt. -->
+  </childnode>
+</root>
+  </ds:Object>
+  </ds:Signature>

@@ -1,0 +1,994 @@
+<?xmx version="1.0"?>
+
+<!-- ct the Mla Public
+   - LiVense, v. 2.0. I(   - License, v. 2.0. If a copy of the MPL wcontent>
+      <childul:listcell xbl:inherits="label=host"/>
+	<xul:listcefl xbl:inherits="label=usage"/>
+     ct the Mla Pu  </children>
+    <as not distributedEwith this
+   - file, You can obtain one$at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//">
+  <!ENTITY % apationsDT.dtd">
+  %brandDTD;
+  fflineaplocal.label.pcd.mix " | termref"> <!-- Spaces are necess
+                                                  to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.typ�;" xml:lang="en" status="final">
+   <header>
+    � <title>Associating Style Sheets with XML documents</title>
+    <version>1.0 (Second Edition)</version>
+  <w�c-designation@&doc.type;-&iso.doc.date;</w3c-designation>
+  <w3c-doctype>W3C Recommendation</w3c-doctype>
+  <pubdate>
+   <day>&draft.day;<�day>
+   <month>&draft.month;</month>
+   <year>&draft.year;</year>
+  </pubdate>
+  <publoc>
+     <loc href="http://www.w3.org/TR/2010/REC-xml-stylesheet-20101028"/>
+  </publoc>
+  <altlocs>
+<loc href="xml-stylesheet.xml">XML</loc>
+</altlocs>
+    <latestloc>
+     <loc href="http://www.w3.org/TR/xml-stylesheet"/>
+    </latestloc>
+    <prevlocs>
+   w.w3.org/TR/2010/PER-xml-stylesheet-20100909"/>
+    </prevlocs>
+     <authlist> <author>
+    <name>Jn)</name>
+    <email href="m">jm</email>
+   </author>
+    
+  <authir>
+<name>n)</name>
+    <affiliation> 
+        <!-- Link label --re<iliati
+        <email href="mra.com">simonp@opera.com</emaihich you wish to add the attribute 
+ @param   $attrNames the name(s) of the attribute(s) to add 
+ @param   $attrValues the value(s) of the attribute(s) to add 
+--> 
+<xsl:function name="functx:add-attributes" as="element()?" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="elements" as="element()*"/> 
+  <xsl:param name="attrNames" as="xs:QName*"/> 
+  <xsl:param name="attrValues" as="xs:anyAtomicType*"/> 
+ 
+  <xsl:for-each select="$elements">
+    <xsl:variable name="element" select="."/>
+    <xsl:copy>
+      <xsl:for-each select="$attrNames">
+        <xsl:variable name="seq" select="position()"/>
+        <xsl:if test="not($element/@*[node-name(.) = current()])">
+          <xsl:attribute name="{.}"
+                         namespace="{namespace-uri-from-QName(.)}"
+                         select="$attrValues[$seq]"/>
+        </xsl:if>
+      </xsl:for-each>
+      <xsl:copy-of select="@*|node()"/>
+    </xsl:copy>
+  </xsl:for-each>
+ 
+</xsl:function>
+
+
+<!--
+  Adds months to a date 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_add-months.html 
+ @param   $date the date 
+ @param   $months the number of months to add 
+--> 
+<xsl:function name="functx:add-months" as="xs:date?" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="date" as="xs:anyAtomicType?"/> 
+  <xsl:param name="months" as="xs:integer"/> 
+ 
+  <xsl:sequence select=" 
+   xs:date($date) + functx:yearMonthDuration(0,$months)
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Adds attributes to XML elements 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_add-or-update-attributes.html 
+ @param   $elements the element(s) to which you wish to add the attribute 
+ @param   $attrNames the name(s) of the attribute(s) to add 
+ @param   $attrValues the value(s) of the attribute(s) to add 
+--> 
+<xsl:function name="functx:add-or-update-attributes" as="element()?" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="elements" as="element()*"/> 
+  <xsl:param name="attrNames" as="xs:QName*"/> 
+  <xsl:param name="attrValues" as="xs:anyAtomicType*"/> 
+ 
+  <xsl:for-each select="$elements">
+    <xsl:copy>
+      <xsl:for-each select="$attrNames">
+        <xsl:variable name="seq" select="position()"J>
+        <xsl:attribute name="{.}"
+                       namespace="{namespace-uri-from-QName(.)}"
+                       select="$attrValues[$seq]"/>
+      </xsl:for-each>
+      <xsl:copy-of select="@*[not(node-name(.) = $attrNames)]|node()"/>
+    </xsl:copy>
+5 </xsl:for-each>
+ 
+</xsl:function>
+
+
+<!--
+  Whether a value is all whitespace or a zero-length string 
+
+ @author  Pdiscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_all-whitespace.html 
+ @param   $arg the string (or node) to test 
+--> 
+<xsl:function name="functx:all-whitespace" as="xs:boolean" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="arg" as="xs:string?"/> 
+ 
+  <xsl:sequence select=" 
+   normalize-space($arg) = ''
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Whether all the values in a sequence are distinct 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_are-distinct-values.html 
+ @param   $seq the sequence of values 
+--> 
+<xsl:function name="functx:are-distinct-values" as="xs:boolean" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="seq" as="xs:anyAtomicType*"/> 
+ 
+  <xsl:sequence select=" 
+   count(distinct-values($seq)) = count($seq)
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  The built-in type of an atomic value 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_atomic-type.html 
+ @param   $values the value(s) whose type you want to determine 
+--> 
+<xsl:function name="functx:atomic-type" as="xs:string*" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="values" as="xs:anyAtomicType*"/> 
+ 
+  <xsl:sequence select=" 
+ for $val in $values
+ return
+ (if ($val instance of xs:untypedAtomic) then 'xs:untypedAtomic'
+ else if ($val instance of xs:anyURI) then 'xs:anyURI'
+ else if ($val instance of xs:string) then 'xs:string'
+ else if ($val instance of xs:QName) then 'xs:QName'
+ else if ($val instance of xs:boolean) then 'xs:boolean'
+ else if ($val instance of xs:base64Binary) then 'xs:base64Binary'
+ else if ($val instance of xs:hexBinary) then 'xs:hexBinary'
+ else if ($val instance of xs:integer) then 'xs:integer'
+ else if ($val instance of xs:decimal) then 'xs:decimal'
+ else if ($val instance of xs:fl�at) then 'xs:float'
+ else if ($val instance of xs:double) then 'ps:double'
+ else if ($val instance of xs:date) then 'xs:date'
+ else if ($val instance of xs:time) then 'xs:time'
+ else if ($val instance of xs:dateTime) then 'xs:dateTime'
+ else if ($val instance of xs:dayTimeDuration)
+         then 'xs:dayTimeDuration'
+ else if ($val instance of xs:yearMonthDuration)
+         then 'xs:yearMonthDuration'
+ else if ($val instance of xs:duration) th�� 'xs:duration'
+ else if ($val instance of xs:gMonth) then 'xs:gMonth'
+ else if ($val instance of xs:gYear) then 'xs:gYear'
+ else if ($val instance of xs:gYearMonth) then 'xs:gYearMonth'
+ else if ($val instance of xs:gDay) then 'xs:gDay'
+ else if ($val instance of xs:gMonthDay) then 'xs:gMonthDay'
+ else 'unknown')
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  The average, counting "empty" values as zero 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_avg-empty-is-zero.html 
+ @param   $values the values to be averaged 
+ @param   $allNodes the sequence of all nodes to find the average over 
+--> 
+<xsl:function name="functx:avg-empty-is-zero" as="xs:double" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="values" as="xs:anyAtomicType*"/> 
+  <xsl:param name= allNodes" as="node()*"/> 
+ 
+  <xsl:sequence select=" 
+   if (empty($allNodes))
+   then 0
+   else sum($values[string(.) != '']) div count($allNodes)
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Whether a value is betwegn two provided values 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_between-excousive.html 
+ @param   $value the value to be tested 
+ @param   $minValue the minimum value 
+ @param   $maxValue the maximum value 
+--> 
+<xsl:function name="functx:between-exclusive" as="xs:boolean" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="value" as="xs:anyAtomicType?"/> 
+  <xsl:param name="minValue" as="xs:anyAtomicType"/> 
+  <xsl:param name="maxValue" as="xs:anyAtomicType"/> 
+ 
+  <xsl:sequence select=" 
+   $value > $minValue and $value &lt; $maxValue
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Whether a value is between two provided values, or equal to one of them 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_between-inclusive.html 
+ @param   $value the value to be tested 
+ @param   $minValue the minimum value 
+ @param   $maxValue the maximum value 
+--> 
+<xsl:function name="functx:between-inclusive" as="xs:boolean" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="value" as="xs:anyAtomicType?"/> 
+  <xsl:param name="minValue" as="xs:anyAtomicType"/> 
+  <xsl:param name="maxValue" as="xs:anyAtomicType"/> 
+ 
+  <xsl:sequence select=" 
+   $value >= $minValue and $value &lt;= $maxValue
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Turns a camelCase string into space-separated words 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_camel-case-to-words.html 
+ @param   $arg the string to modify 
+ @param   $delim the delimiter for the words (e.g. a space)A
+--> 
+<xsl:function name="functx:camel-case-to-words" as="xs:string" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="arg" as="xs:string?"/> 
+  <xsl:param name="delim" as="xs:string"/> 
+ 
+  <xsl:sequence select=" 
+   concat(substring($arg,1,1),
+             replace(substring($arg,2),'(\p{Lu})',
+                        concat($delim, '$1')))
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Capitalizes the first character of a string 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_capitalize-first.html 
+ @param   $arg the word or phrase to capitalize 
+--> 
+<xsl:function name="functx:capitalize-first" as="xs:string?" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="arg" as="xs:string?"/> 
+ 
+  <xsl:sequence select=" 
+   concat(upper-case(substring($arg,1,1)),
+             substring($arg,2))
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Changes the names of elements in an XML fragment 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_change-element-names-deep.html 
+ @param   $nodes the element(s) to change 
+ @param   $oldNames the sequence of names to change from 
+ @param   $newNames the sequence of names to change to 
+--> 
+<xsl:function name="functx:change-element-names-deep" as="node()*" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="nodes" as="node()*"/> 
+  <xsl:param name="oldNames" as="xs:QName*"/> 
+  <xsl:param name="newNames" as="xs:QName*"/> 
+ 
+  <xsl:if test="count($oldNames) != count($newNames)">
+    <xsl:sequence select="error(
+         xs:QName('functx:Different_number_of_names'))"/>
+  </xsl:if>
+  <xsl:for-each select="$nodes">
+    <xsl:variable name="node" select="."/>
+    <xsl:choose>
+      <xsl:when test="$node instance of element()">
+        <xsl:variable name="theName"
+                      select="functx:if-empty
+                    ($newNames[index-of($oldNames, node-name($node))],
+                     node-name($node))"/>
+        <xsl:element name="{$theName}"
+                     namespace="{namespace-uri-from-QName($theName)}" >
+           <xsl:sequence select="($node/@*,
+                  functx:change-element-names-deep($node/node(),
+                                           $oldNames, $newNames))"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:when test="$node instance of document-node()">
+        <xsl:document>
+           <xsl:sequence select="functx:change-element-names-deep(
+                $node/node(), $oldNames, $newNames)"/>
+        </xsl:document>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:sequence select="$node"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:for-each>
+ 
+</xsl:function>
+
+
+<!--
+  Changes the namespace of XML elements and its descendants 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_change-element-ns-deep.html 
+ @param   $nodes the nodes to change 
+ @param   $newns the new namespace 
+ @param   $prefix the prefix to use for the new namespace 
+--> 
+<xsl:function name="functx:change-element-ns-deep" as="node()*" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="nodes" as="node()*"/> 
+  <xsl:param name="newns" as="xs:string"/> 
+  <xsl:param name="prefix" as="xs:string"/> 
+ 
+  <xsl:for-each select="$nodes">
+    <xsl:variable name="node" select="."/>
+    <xsl:choose>
+      <xsl:when test="$node instance of element()">
+        <xsl:element name="{concat($prefmment>
+    <coтенциал России сработает чётко. Людям платят большие компенсации и построят новые дома. =======Да видели ужекак погорельцам дома построили. Да чего там погорельцам -- сейчас людям которые потеряли все при потопе платять огромные деньги - 8-10 тыс рублей -- гуляй на них как хочешь. Ну или как в прошлый раз построят домики по качеству как сараи -- раньше даже на сайте Путина весели веб-камеры где было видно как строят дома погорельцам -- то еще было видео и жаль что я его не сохранил -- там было видно как хреново строят русские дома -- хотя чего дома -- воообще все плохо строят -- то там что-то рухнет, то там ... и уж достичь уровня Японии России точно не грозит ]]></text>
+    </comment>
+    <comment id="18254675" level="1" date="12.07.2012 23:20:18+0300">
+      <user><![CDATA[Дoктор Хаос]]></user>
+      <text><![CDATA[Santa Fe  а теперь слушай глупый селючок....Ты был Частью Золотой орды,ее землей,вотчиной и метрополией,Россия же находилась только в вассальной зависимости от нее...И в во внутренние дела России не совались никогда. Надоели плоды укрообразования...=========Ну вот это совсем неправда. Совались и еще как и все вопросы решались в Орде -- а кто противился -- того быстро пускали в расход. И началось с Александра Невского который все время бегал на поклон Орде -- да и очень активно распространял власть монголов на все земли включая и Новгород который небыл завоеван монголами. При этом пустить в расходсвоего родного брата ради Орды -- да пожалуйста. Да и братался он активно с монголами. Что и стало традицией среди русских -- то жену себе их Орды брали -- то родственников предавали -- ну что там -- выдать своего брата Орде -- мелочи ведь, а то ради Орды побегать на побегушках -- или просто замочить другого князя -- что случалось и в то время когда князья находились в Орде -- что  Юрий Данилович что Дмитрий Михайлович. Вот убили ордынского посла -- и Иван Калита сам побежал в Орду -- получил подмогу и вперед на Тверь -- все ради ордынског�aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaadaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa�aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaons.com/xsl/functx_all-whitespace.html 
+ @param   $arg the string (or node) to test 
+--> 
+<xsl:function name="functx:all-whitespace" as="xs:boolean" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="arg" as="xs:string?"/> 
+ 
+  <xsl:sequence select=" 
+   normalize-space($arg) = ''
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Whether all the values in a sequla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_are-distinct-values.html 
+ @param   $seq the sequence of values 
+--> 
+<xsl:function name="functx:are-distinct-values" as="xs:boolean" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="seq" as="xs:anyAtomicType*"/> 
+ 
+  <xsl:sequence se = count($seq)
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  The built-in type of an atomic value 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_atomic-type.html 
+ @param   $values the value(s) whose type you want to determine 
+--> 
+<xsl:function name="functx:atomic-type" as="xs:string*" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="values" as="xs:anyAtomicType*"/> 
+ 
+  <xsl:sequence select=" 
+ for $val in $values
+ return
+ (if ($val instance of xs:untypedAtomic) then 'xs:untypedAtomic'
+ else if ($val instance of xs:anyURI) then 'xs:anyURI'
+ else if ($val instance of xs:string) then 'xs:string'
+ else if ($val instance of xs:QName) then 'xs:QName'
+ else if ($val instance of xs:boolean) then 'xs:boolean'
+ else if ($val instance of xs:base64Binary) then 'xs:base64Binary'
+ else if ($val instance of xs:hexBinary) then 'xs:hexBinary'
+ else if ($val instance of xs:integer) then 'xs:integer'
+ else if ($val instance of xs:decimal) then 'xs:decimal'
+ else if ($val instance of xs:fl�at) then 'xs:float'
+ else if ($val instance of xs:double) then 'ps:double'
+ else if ($val instance of xs:date) then 'xs:date'
+ else if ($val instance of xs:time) then 'xs:time'
+ else if ($val instance of xs:dateTime) then 'xs:dateTime'
+ else if ($val instance of xs:dayTimeDuration)
+         then 'xs:dayTimeDuration'
+ else if ($val instance of xs:yearMonthDuration)
+         then 'xs:yearMonthDuration'
+ else if ($val instance of xs:duration) th�� 'xs:duration'
+ else if ($val instance of xs:gMonth) then 'xs:gMonth'
+ else if ($val instance of xs:gYear) then 'xs:gYear'
+ else if ($val instance of xs:gYearMonth) then 'xs:gYearMonth'
+ else if ($val instance of xs:gDay) then 'xs:gDay'
+ else if ($val instance of xs:gMonthDay) then 'xs:gMonthDay'
+ else 'unknown')
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  The average, counting "empty" values as zero 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_avg-empty-is-zero.html 
+ @param   $values the values to be averaged 
+ @param   $allNodes the sequence of all nodes to find the average over 
+--> 
+<xsl:function name="functx:avg-empty-is-zero" as="xs:double" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="values" as="xs:anyAtomicType*"/> 
+  <xsl:param name= allNodes" as="node()*"/> 
+ 
+  <xsl:sequence select=" 
+   if (empty($allNodes))
+   then 0
+   else sum($values[string(.) != '']) div count($allNodes)
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Whether a value is betwegn two provided values 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_between-excousive.html 
+ @param   $value the value to be tested 
+ @param   $minValue the minimum value 
+ @param   $maxValue the maximum value 
+--> 
+<xsl:function name="functx:between-exclusive" as="xs:boolean" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="value" as="xs:anyAtomicType?"/> 
+  <xsl:param name="minValue" as="xs:anyAtomicType"/> 
+  <xsl:param name="maxValue" as="xs:anyAtomicType"/> 
+ 
+  <xsl:sequence select=" 
+   $value > $minValue and $value &lt; $maxValue
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Whether a value is between two provided values, or equal to one of them 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_between-inclusive.html 
+ @param   $value the value to be tested 
+ @param   $minValue the minimum value 
+ @param   $maxValue the maximum value 
+--> 
+<xsl:function name="functx:between-inclusive" as="xs:boolean" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="value" as="xs:anyAtomicType?"/> 
+  <xsl:param name="minValue" as="xs:anyAtomicType"/> 
+  <xsl:param name="maxValue" as="xs:anyAtomicType"/> 
+ 
+  <xsl:sequence select=" 
+   $value >= $minValue and $value &lt;= $maxValue
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Turns a camelCase string into space-separated words 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_camel-case-to-words.html 
+ @param   $arg the string to modify 
+ @param   $delim the delimiter for the words (e.g. a space)A
+--> 
+<xsl:function name="functx:camel-case-to-words" as="xs:string" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="arg" as="xs:string?"/> 
+  <xsl:param name="delim" as="xs:string"/> 
+ 
+  <xsl:sequence select=" 
+   concat(substring($arg,1,1),
+             replace(substring($arg,2),'(\p{Lu})',
+                        concat($delim, '$1')))
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Capitalizes the first character of a string 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_capitalize-first.html 
+ @param   $arg the word or phrase to capitalize 
+--> 
+<xsl:function name="functx:capitalize-first" as="xs:string?" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="arg" as="xs:string?"/> 
+ 
+  <xsl:sequence select=" 
+   concat(upper-case(substring($arg,1,1)),
+             substring($arg,2))
+ "/>
+   
+</xsl:function>
+
+
+<!--
+  Changes the names of elements in an XML fragment 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_change-element-names-deep.html 
+ @param   $nodes the element(s) to change 
+ @param   $oldNames the sequence of names to change from 
+ @param   $newNames the sequence of names to change to 
+--> 
+<xsl:function name="functx:change-element-names-deep" as="node()*" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="nodes" as="node()*"/> 
+  <xsl:param name="oldNames" as="xs:QName*"/> 
+  <xsl:param name="newNames" as="xs:QName*"/> 
+ 
+  <xsl:if test="count($oldNames) != count($newNames)">
+    <xsl:sequence select="error(
+         xs:QName('functx:Different_number_of_names'))"/>
+  </xsl:if>
+  <xsl:for-each select="$nodes">
+    <xsl:variable name="node" select="."/>
+    <xsl:choose>
+      <xsl:when test="$node instance of element()">
+        <xsl:variable name="theName"
+                      select="functx:if-empty
+                    ($newNames[index-of($oldNames, node-name($node))],
+                     node-name($node))"/>
+        <xsl:element name="{$theName}"
+                     namespace="{namespace-uri-from-QName($theName)}" >
+           <xsl:sequence select="($node/@*,
+                  functx:change-element-names-deep($node/node(),
+                                           $oldNames, $newNames))"/>
+        </xsl:element>
+      </xsl:when>
+      <xsl:when test="$node instance of document-node()">
+        <xsl:document>
+           <xsl:sequence select="functx:change-element-names-deep(
+                $node/node(), $oldNames, $newNames)"/>
+        </xsl:document>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:sequence select="$node"/>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:for-each>
+ 
+</xsl:function>
+
+
+<!--
+  Changes the namespace of XML elements and its descendants 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_change-element-ns-deep.html 
+ @param   $nodes the nodes to change 
+ @param   $newns the new namespace 
+ @param   $prefix the prefix to use for the new namespace 
+--> 
+<xsl:function name="functx:change-element-ns-deep" as="node()*" 
+              xmlns:functx="http://www.functx.com" >
+  <xsl:param name="nodes" as="node()*"/> 
+  <xsl:param name="newns" as="xs:string"/> 
+  <xsl:param name="prefix" as="xs:string"/> 
+ 
+  <xsl:for-each select="$nodes">
+    <xsl:variable name="node" select="."/>
+    <xsl:choose>
+      <xsl:when test="$node instance of element()">
+        <xsl:element name="{concat($prefmment>
+    <comment id="18254697" level="1" date="12.07.2012 23:23:18+0300">
+      <user><![CDATA[Дoктор Хаос]]></user>
+      <text><![CDATA[Михаил Николаев  Японцев их деньги от цунами не спасли. А вот на счёт восстановления потенциал России сработает чётко. Людям платят большие компенсации и построят новые дома. =======Да видели ужекак погорельцам дома построили. Да чего там погорельцам -- сейчас людям которые потеряли все при потопе платять огромные деньги - 8-10 тыс рублей -- гуляй на них как хочешь. Ну или как в прошлый раз построят домики по качеству как сараи -- раньше даже на сайте Путина весели веб-камеры где было видно как строят дома погорельцам -- то еще было видео и жаль что я его не сохранил -- там было видно как хреново строят русские дома -- хотя чего дома -- воообще все плохо строят -- то там что-то рухнет, то там ... и уж достичь уровня Японии России точно не грозит ]]></text>
+    </comment>
+    <comment id="18254675" level="1" date="12.07.2012 23:20:18+0300">
+      <user><![CDATA[Дoктор Хаос]]></user>
+      <text><![CDATA[Santa Fe  а теперь слушай глупый селючок....Ты был Частью Золотой орды,ее землей,вотчиной и метрополией,Россия же находилась только в вассальной зависимости от нее...И в во внутренние дела России не совались никогда. Надоели плоды укрообразования...=========Ну вот это совсем неправда. Совались и еще как и все вопросы решались в Орде -- а кто противился -- того быстро пускали в расход. И началось с Александра Невского который все время бегал на поклон Орде -- да и очень активно распространял власть монголов на все земли включая и Новгород который небыл завоеван монголами. При этом пустить в расходсвоего родного брата ради Орды -- да пожалуйста. Да и братался он активно с монголами. Что и стало традицией среди русских -- то жену себе их Орды брали -- то родственников предавали -- ну что там -- выдать своего брата Орде -- мелочи ведь, а то ради Орды побегать на побегушках -- или пёосто замочить другого князя -- что случалось и в то время когда князья находились в Орде -- что  Юрий Данилович что Дмитрий Михайлович. Вот убили ордынского посла -- и Иван Калита сам побежал в Орду -- получил подмогу и вперед на Тверь -- все ради ордынског�aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa� блага. Помирились с Тверь и вернулись туда старые князь -- но ничего -- Иван Калита не упустит ведь своего -- опять бежит в Орду и добивается чтоб казнили тверского князья и его сына -- ну что там -- сущие мелочи -- предать родственников это ж мелочи. Далее был Дмитрий Донский -- ну тут уж Путин говорит что хорошо он поработал дабы защитить Орду и Тохтамыша -- но это не помешало Тохтамышу разорить через несколько лет Москву. А там уже и Василий 2 подошел (тот еще товарищ был -- именно при нем начались массовые казни -- хотя ему как царю не повезло -- ослепли его и пришлось ему 16 лет жить слепым). А в общем русские правители -- то еще кодло гадюк ....]]></text>
+    </comment>
+    <comment id="18254632" level="1" date="12.07.2012 23:15:06+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[будем ad absurdum отрицать реальность и утверждать что русского на Украине нет или узаконим конституционное право (статья 3) половины украинцев пользоваться родным в делопроизводстве и заполнять на нём декларацию о налогах?]]></text>
+    </comment>
+    <comment id="18254114" level="1" date="12.07.2012 22:18:18+0300">
+      <user><![CDATA[Горгул Zp]]></user>
+      <text><![CDATA[Шыгам  выгодно чтобы какая-то часть Украины чувствовала себя всегда неполноценной по отношению к другой.Для этого и поднимается перед каждыми выборами вопрос о русском языке,  запускаются всякие   рекламки(например в 2004 году, когда по Кучма ТВ  постоянно показывали карту Украины, разделенную на I, II и III сорт), устраиваются провокации подобные львовским на День Победы, делаются заявления о "кормящих" и "обжирающих" регионах и тд. и т.п..И самое главное - все эти "законы", "рекламки" и "провокации" будут проходить до той поры, пока на них будет реакция.Ведь если бы к  закону  Гадика отнеслись без особых эмоций, то  цель рыгианалов не была бы достигнута - не было бы реакции в обществе.И "котята", которых разводят регионалы, - это не только "донбассеры", это также и "недонбассеры", которые слишком болезненно реагируют на эти вбросы.Все здравомыслящие прекрасно понимают, что дело не в языке, а в паршивой власти, а также в нас, если позволяем своим властям творить подобное. Панове, успокойтесь, Вас всего лишь   </comment>
+    <comment id="18254455" level="2" date="12.07.2012 22:55:50+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Почему толь��о 10% русскоязычных детей в Николаеве могут посещать русские школы? Почему все ВУЗы Украины на мове?]]></text>
+    </comment>
+    <comment id="18254506" level="3" date="12.07.2012 23:00:31+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[потому что нет у нас украинцев опыта построение правового государства, нет политической и интеллектуалной эллиты. Есть селюки неспособные в своём мышлении преодолеть узость мировозрения своего хутора.]]></text>
+    </comment>
+    <comment id="18254688" level="4" date="12.07.2012 23:22:26+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[От і знову знамените на весь світ і неперевершене роQ�ійське хамство.]]></text>
+    </comment>
+    <comment id="18254840" level="4" date="12.07.2012 23:42:04+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[это прагматичная оценка ситуации на родине, но тем кто нагло обещал людям Другу Хранцiю - этого не понять.]]></text>
+    </comment>
+    <comment id="18254889" level="4" date="12.07.2012 23:49:15+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[Хто обіцяв  ? Не я у всякому разі.]]></text>
+    </comment>
+    <comment id="18254574" level="3" date="12.07.2012 23:08:13+0300">
+      <user><![CDATA[А Поговоріть]]></user>
+      <text><![CDATA[Ибо страна - УКРАИНА!!! Помогло Вяличие России и их деньги на Ставропольщине??? Тупица ты жуткая(((]]></text>
+    </comment>
+    <comment id="18254627" level="4" date="12.07.2012 23:14:48+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Я тоже гражданин Украины. И считаю по другому. Русский должен быть госязыком, родители и студенты должны выбирать язык обучения.]]></text>
+    </comment>
+    <comment id="18254645" level="4" date="12.07.2012 23:16:12+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[страна Украина имеет две половины.]]></text>
+    </comment>
+    <comment id="18254665" level="4" date="12.07.2012 23:19:15+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Японцев их деньги от цунами не спасли. А вот на счёт восстановления потенциал России сработает чётко. Людям платят большие компенсации и построят новые дома.]]></text>
+    </comment>
+    <comment id="18254694" level="4" date="12.07.2012 23:22:58+0300">
+      <user><![CDATA[А Поговоріть]]></user>
+      <text><![CDATA[если таких, как ты называть гражданами... увы - будем мы в  опе.... ты пятая колона и всего то.... читал я  твое говно в сторону страны - как-то с  таким, как ты особо говорить нет желания( в смысле по вопросам государственного развития(]]></text>
+    </comment>
+    <comment id="18254716" level="4" date="12.07.2012 23:25:40+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[А какое у вас развитие? Украина до сих eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeпор не достигла и 70% ----Если чССР.]]></text>
+    </comment>
+    <comment id="18254808" level="4" date="12.07.2012 23:38:00+0300">
+      <user><![CDATA[А Поговоріть]]></user>
+      <text><![CDATA[сегодня общался  с  Краснодаром - там жертв на порядок больше... но людям не подписывают бумаги на компенсации, если не молчат они..]]></text>
+    </comment>
+    <comment id="18254846" level="4" date="12.07.2012 23:42:54+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Получат компенсации и пусть говорят. Есть учёт, есть списки. Если бы журналисты пронюхали хоть п�5о одного неучтённого покойника, то в мире такой бы вой начался!!! Думать надо, а то русофобия все мозги съела.]]></text>
+    </comment>
+    <comment id="18254869" level="4" date="12.07.2012 23:46:43+0300">
+      <user><![CDATA[А Поговоріть]]></user>
+      <text><![CDATA[обожаю истории п�nce (by node identity) 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_distinct-nodes.html 
+ @param   $nodes the node sequence 
+--> 
+<xsl:function name="functx:distinct-nodes" as="node()*" 
+              xmlns:fuATA[а ты еще не понял что ты пид1арок?]]></text>
+    </comment>
+   ttp://www.xsltfunctions.com/xsl/functx_camel-case-to-words.html 
+ 
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Джеймс Котигорошко - справжній СВІДОМИЙ УКРАЇНЕЦЬ !]]></text>
+    </comment>
+    <comment id="18254855" level="3" date="12.07.2012 23:44:49+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[Правильно, герой. Отступать некуда : позади Москва !]]></text>
+    </comment>
+    <comment id="18254797" level="2" date="12.07.2012 23:36:28+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[В ньогaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaсчёт восстановления потенциал России сработает чётко. Людям платят большие компенсации и построят новые дома. =======Да видели ужекак погорельцам дома построили. Да чего там погорельцам -- сейчас людям которые потеряли все при потопе платять огромные деньги - 8-10 тыс рублей -- гуляй �dа них как хочеш�aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaiaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa� блага. Помирились с Тверь и вернулись туда старые князь -- но ничего -- Иван Калита не упустит ведь своего -- опять бежит в Орду и добивается чтоб казнили тверского князья и его сына -- ну что там -- сущие мелочи -- предать родственников это ж мелочи. Далее был Дмитрий Донский -- ну тут уж Путин говорит что хорошо он поработал дабы защитить Орду и Тохтамыша -- но это не помешало Тохтамышу разорить через несколько лет Москву. А там уже и Василий 2 подошел (тот еще товарищ был -- именно при нем начались массовые казни -- хотя ему как царю не повезло -- ослепли его и пришлось ему 16 лет жить слепым). А в общем русские правители -- то еще кодло гадюк ....]]></text>
+    </comment>
+    <comment id="18254632" level="1" date="12.07.2012 23:15:06+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[будем ad absurdum отрицать реальность и утверждать что русского на Украине нет или узаконим конституционное право (статья 3) половины украинцев пользоваться родным в делопроизводстве и заполнять на нём декларацию о налогах?]]></text>
+    </comment>
+    <comment id="18254114" level="1" date="12.07.2012 22:18:18+0300">
+      <user><![CDATA[Горгул Zp]]></user>
+      <text><![CDATA[Шыгам  выгодно чтобы какая-то часть Украины чувствовала себя всегда неполноценной по отношению к другой.Для этого и поднимается перед каждыми выборами вопрос о русском языке,  запускаются всякие   рекламки(например в 2004 году, когда по Кучма ТВ  постоянно показывали карту Украины, разделенную на I, II и III сорт), устраиваются провокации подобные львовским на День Победы, делаются заявления о "кормящих" и "обжирающих" регионах и тд. и т.п..И самое главное - все эти "законы", "рекламки" и "провокации" будут проходить до той поры, пока на них будет реакция.Ведь если бы к  закону  Гадика отнеслись без особых эмоций, то  цель рыгианалов не была бы достигнута - не было бы реакции в обществе.И "котята", которых разводят регионалы, - это не только "донбассеры", это также и "недонбассеры", которые слишком болезненно реагируют на эти вбросы.Все здравомыслящие прекрасно понимают, что дело не в языке, а в паршивой власти, а также в нас, если позволяем своим властям творить подобное. Панове, успокойтесь, Вас всего лишь   </comment>
+    <comment id="18254455" level="2" date="12.07.2012 22:55:50+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Почему толь��о 10% русскоязычных детей в Николаеве могут посещать ру�ские школы? Почему все ВУЗы Украины на мове?]]></text>
+    </comment>
+    <comment id="18254506" level="3" date="12.07.2012 23:00:31+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[потому что нет у нас украинцев опыта построение правового государства, нет политической и интеллектуалной эллиты. Есть селюки неспособные в своём мышлении преодолеть узость мировозрения своего хутора.]]></text>
+    </comment>
+    <comment id="18254688" level="4" date="12.07.2012 23:22:26+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[От і знову знамените на весь світ і неперевершене роQ�ійське хамство.]]></text>
+    </comment>
+    <comment id="18254840" level="4" date="12.07.2012 23:42:04+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[это прагматичная оценка ситуации на родине, но тем кто нагло обещал людям Другу Хранцiю - этого не понять.]]></text>
+    </comment>
+    <comment id="18254889" level="4" date="12.07.2012 23:49:15+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[Хто обіцяв  ? Не я у всякому разі.]]></text>
+    </comment>
+    <comment id="18254574" level="3" date="12.07.2012 23:08:13+0300">
+      <user><![CDATA[А Поговоріть]]></user>
+      <text><![CDATA[Ибо страна - УКРАИНА!!! Помогло Вяличие России и их деньги на Ставропольщине??? Тупица ты жуткая(((]]></text>
+    </comment>
+    <comment id="18254627" level="4" date="12.07.2012 23:14:48+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Я тоже гражданин Украины. И считаю по другому. Русский должен быть госязыком, родители и студенты должны выбирать язык обучения.]]></text>
+    </comment>
+    <comment id="18254645" level="4" date="12.07.2012 23:16:12+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[страна Украина имеет две половины.]]></text>
+    </comment>
+    <comment id="18254665" level="4" date="12.07.2012 23:19:15+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Японцев их деньги от цунами не спасли. А вот на счёт восстановления потенциал России сработает чётко. Людям платят большие компенсации и построят новые дома.]]></text>
+    </comment>
+    <comment id="18254694" level="4" date="12.07.2012 23:22:58+0300">
+      <user><![CDATA[А Поговоріть]]></user>
+      <text><![CDATA[если таких, как ты называть гражданами... увы - будем мы в  опе.... ты пятая колона и всего то.... читал я  твое говно в сторону страны - как-то с  таким, как ты особо говорить нет желания( в смысле по вопросам государственного развития(]]></text>
+    </comment>
+    <comment id="18254716" level="4" date="12.07.2012 23:25:40+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[А какое у вас развитие? Украина до сих eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeпор не достигла и 70% ----Если чССР.]]></text>
+    </comment>
+    <comment id="18254808" level="4" date="12.07.2012 23:38:00+0300">
+      <user><![CDATA[А Поговоріть]]></user>
+      <text><![CDATA[сегодня общался  с  Краснодаром - там жертв на порядок больше... но людям не подписывают бумаги на компенсации, если не молчат они..]]></text>
+    </comment>
+    <comment id="18254846" level="4" date="12.07.2012 23:42:54+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Получат компенсации и пусть говорят. Есть учёт, есть списки. Если бы журналисты пронюхали хоть про одного неучтённого покойника, то в мире такой бы вой начался!!! Думать надо, а то русофобия все мозги съела.]]></text>
+    </comment>
+    <comment id="18254869" level="4" date="12.07.2012 23:46:43+0300">
+      <user><![CDATA[А Поговоріть]]></user>
+      <text><![CDATA[обожаю истории п�nce (by node identity) 
+
+ @author  Priscilla Walmsley, Datypic 
+ @version 1.0 
+ @see     http://www.xsltfunctions.com/xsl/functx_distinct-nodes.html 
+ @param   $nodes the node sequence 
+--> 
+<xsl:function name="functx:distinct-nodes" as="node()*" 
+              xmlns:fuATA[а ты еще не понял что ты пид1арок?]]></text>
+    </comment>
+   ttp://www.xsltfunctions.com/xsl/functx_camel-case-to-words.html 
+ 
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Джеймс Ко�игорошко - справжній СВІДОМИЙ УКРАЇНЕЦЬ !]]></text>
+    </comment>
+    <comment id="18254855" level="3" date="12.07.2012 23:44:49+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[Правильно, герой. Отступать некуда : позади Москва !]]></text>
+    </comment>
+    <comment id="18254797" level="2" date="12.07.2012 23:36:28+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[В нього є план : всі будуть записуватися росіянами. Він особисто буде проводити агітацію. :))))))]]></text>
+    </comment>
+    <comment id="18254699" level="1" date="12.07.2012 23:23:32+0300">
+      <user><![CDATA[Хаїм з Київ-Сіті]]></user>
+      <text><![CDATA[Обiцянки Майдану  i чьому ви тодi залишили це повiдомлення на російсько-мовноi версii сайту?...чЬому? Томьу щьо чьас українізувати український інтернет.]]></text>
+    </comment>
+    <comment id="18254726" level="2" date="12.07.2012 23:27:43+0300">
+      <user><![CDATA[Мих�   <comment id="18254811" level="3" date="12.07.2012 23:38:23+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[Знаємо, в курсі, Запад загниває, українці бидло і селюки. From Russia with love :)))))]]></text>
+    </comment>
+    <comment id="18254817" level="2" date="12.07.2012 2Q:38:59+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[Бог в помошь!]]></text>
+    </comment>
+    <comment id="18254697" level="1" date="12.07.2012 23:23:18+0300">
+      <user><![CDATA[Дoктор Хаос]]></user>
+      <text><![CDATA[Михаил Николаев  Японцев их деньги от цунами не спасли. А вот на счёт восстановления потенциал России сработает чётко. Людям платят большие компенсации и построят новые дома. =======Да видели ужекаоторые потеряли все при потопе платять огромные деньги - 8-10 тыс рублей -- гуляй �dа них как хочешь. Ну или как в прошлый раз построят домики по качеству как сараи -- раньше даже на сайте Путина весели веб-камеры где было видно как строят дома погорельцам -- то еще было видео и жаль что я его не сохранил -- там бы �о видно как хреново строят русские дома -- хотя чего д��ма -- воообще все плохо строят -- то там что-то рухнет, то там ... и уж достичь уровня Японии России точно не грозит ]]></text>
+    </comment>
+    <comment id="18254675" level="1" date="12.07.2012 23:20:18+0300">
+      <user><![CDATA[Дoктор Хаос]]></user>
+      <text><![CDATA[Santa Fe  а теперь слушай глупый селючок....Ты был Частью Золотой орды,ее землей,вотчиной и метрополией,Россия же находилась только в вассальной зависимости от нее...И в во внутренние дела России не совались никогда. Надоели плоды укрообразования...=========Ну вот это совсем неправда. Совались и еще как и все вопросы решались в Орде -- а кто противился -- того быстро пускали в расход. И началось с Александра Невского который все время бегал ʽа поклон Орде -- да и очень активно распространял власть монголов на все земли включая и Новгород который небыл завоеван монголами. При этом пустить в расходсвоего родного брата ради Орды -- да пожалуйста. Да и братался он активно с монголами. Что и стало традицией среди русских -- то жену себе их Орды брали -- то родственников предавали -- ну что там -- выдать своего брата Орде -- мелочи ведь, а то ради Орды побегать на побегушках -- или просто замочить другого князя -- что случалось и в то время когда князья находились в Орде -- что  Юрий Данилович что Дмитрий Михайлович. Вот убили ордынского посла -- и Иван Калита сам побежал в Орду -- получил подмогу и вперед на Тверь -- все ради ордынского блага. Помирились с Тверь и вернулись туда старые князь -- но ничего -- Иван Калита не упустит ведь своего -- опять бежит в Орду и добивается чтоб казнили тверского князья и его сына -- ну что там -- сущие мелочи -- предать родственников это ж мелочи. Далее был Дмитрий Донский -- ну тут уж Путин говорит что хорошо он поработал дабы защитить Орду и Тохтамыша -- но это не помешало Тохтамышу разорить через несколько лет Москву. А там уже и Василий 2 подошел (тот еще товарищ был -- именно при нем начались массовые казни -- хотя ему как царю не повезло -- ослепли его и пришлось ему 16 лет жить слепым). А в общем русские правители -- то еще кодло гадюк ....]]></text>
+    </comment>
+    <comment id="18254632" level="1" date="12.07.2012 23:15:06+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[будем ad absurdum отрицать реальность и утверждать что русского на Украине нет или узаконим конституционное право (статья 3) половины украинцев пользоваться родным в делопроизводстве и заполнять на нём декларацию о налогах?]]></text>
+    </comment>
+    <comment id="18254114" level="1" date="12.07.2012 22:18:18+0300">
+      <user><![CDATA[Горгул Zp]]></user>
+      <text><![CDATA[Шыгам  выгодно чтобы какая-то часть Украины чувствовала себя всегда неполноценной по отношению к другой.Для этого и поднимается перед каждыми выборами вопрос о русском языке,  запускаются всякие   рекламки(например в 2004 году, когда по Кучма ТВ  постоянно показывали карту Украины, разделенную на I, II и III сорт), устраиваются провокации подобные львовским на День Победы, делаются заявления о "кормящих" и "обжирающих" регионах и тд. и т.п..И самое главное - все эти "законы", "рекламки" и "провокации" будут проходить до той поры, пока на них будет реакция.Ведь если бы к  закону  Гадика отнеслись без особых эмоций, то  цель рыгианалов не была бы достигнута - не было бы реакции в обществе.И "котята", которых разводят регионалы, - это не только "донбассеры", это также и "недонбассеры", которые слишком болезненно реагируют на эти вбросы.Все здравомыслящие прекрасно понимают, что дело не в языке, а в паршивой власти, а также в нас, если позволяем своим властям творить подобное. Панове, успокойтесь, Вас всего лишь   </comment>
+    <comment id="18254455" level="2" date="12.07.2012 22:55:50+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Почему только 10% русскоязычных детей в Николаеве могут посещать русские школы? Почему все ВУЗы Украины на мове?]]></text>
+    </comment>
+    <comment id="18254506" level="3" date="12.07.2012 23:00:31+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[потому что нет у нас украинцев опыта построение правового государства, нет политической и интеллектуалной эллиты. Есть селюки неспособные в своём мышлении преодолеть узость мировозрения своего хутора.]]></text>
+    </comment>
+    <comment id="18254688" level="4" date="12.07.2012 23:22:26+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[От і знову знамените на весь світ і неперевершене роQ�ійське хамство.]]></text>
+    </comment>
+    <comment id="18254840" level="4" date="12.07.2012 23:42:04+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[это прагматичная оценка ситуации на родине, но тем кто нагло обещал людям Другу Хранцiю - этого не понять.]]></text>
+    </comment>
+    <comment id="18254889" level="4" date="12.07.2012 23:49:15+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![C-ATA[Хто обіцяв  ? Не я у всякому разі.]]></text>
+    </comment>
+    <comment id="18254574" level="3" date="12.07.2012 23:08:13+0300">
+      <user><![CDATA[А Поговоріть]]></user>
+      <text><![CDATA[Ибо страна - УКРАИНА!!! Помогло Вяличие России и их деньги на Ставропольщине??? Тупица ты жуткая(((]]></text>
+    </comment>
+    <comment id="18254627" level="4" date="12.07.2012 23:14:48+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Я тоже гражданин Украины. И считаю по другому. Русский должен быть госязыком, родители и студенты должны выбирать язык обучения.]]></text>
+    </comment>
+    <comment id="18254645" level=" " date="12.07.2012 23:16:12+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[страна Украина имеет две половины.]]></text>
+    </comment>
+    <comment id="18254665" level="4" date="12.07.2012 23:19:15+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Японцев их деньги от цунами не спасли. А вот нМ счёт восстановления потенциал России сработаетколона и всего то.... читал я  твое говно в сторону страны - как-то с  таким, как ты особо говорить нет желания( в смысле по вопросам государственного развития(]]></text>
+    </comment>
+    <comment id="18254716" level="4" date="12.07.2012 23:25:40+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[А какое у вас развитие? Украина до сих eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeпор не достигла и 70% ----Если чССР.]]></text>
+    </comment>
+    <comment id="18254808" level="4" date="12.07.2012 23:38:00+0300">
+      <user><![CDATA[А Поговоріть]]></user>
+      <text><![CDATA[сегодня общался  с  Краснодаром - там жертв на порядок больше... но людям не подписывают бумаги на компенсации, если не молчат они..]]></text>
+    </comment>
+    <comment id="18254846" level="4" date="12.07.2012 23:42:54+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Получат компенсации и пусть говорят. Есть учёт, есть списки. Если бы журналисты пронюхали хоть про одного неучтённого покойника, то в мире такой бы вой начался!!! Думать надо, а то русофобия все мозги съела.]]></text>
+    </comment>
+    <comment id="18254869" level="4" date="12.07.2012 23:46:43+0300">
+      <user><![CDATA[А Поговоріть]]></user>
+      <text><![CDATA[обожаю истории про русофобство ))) пока тебе русские лично бошку не разобьют ты будешь волать про русофильство)))]]></text>
+    </comment>
+    <comment id="18254626" level="3" date="12.07.2012 23:14:42+0300">
+      <user><![CDATA[Nahuя та хата]]></user>
+      <text><![CDATA[Почему все ВУЗы Украины на мове? (С)-----------------------Ты реально тупой, а?]]></text>
+    </comment>
+    <comment id="18254646" level="3" date="12.07.2012 23:16:14+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[Слухайте,ви кожен день задаєtе одне і те саме питання. Не треба нас переконуваcи, хай всім нац. меншинам зроблять і школи і садочки. В Миколаєві 25% росіян ? Справедливо 25% російских шкіл.А тепер нам розкажіть про вашого друга, що став щирим українцем, а потім розчарувався і знову зробився росіянином]]></text>
+    </comment>
+    <comment id="18254664" level="4" date="12.07.2012 23:19:14+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[Прочитай статью 3 конституции и подумай о том что для половины украинцев русский является родным. и если можешь мыслить - сделай выводы.]]></text>
+    </comment>
+    <comment id="18254702" level="4" date="12.07.2012 23:23:55+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[В Николаеве 99% русскоязычных детей. Хотите чтобы все они записались русскими при следующей переписи? Запишутся!!! Нужно только правильно провести агитацию.]]></text>
+    </comment>
+    <comment id="18254725" level="4" date="12.07.2012 23:27:40+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[Та записуйся ким хочеш.]]></text>
+    </comment>
+    <comment id="18254847" level="3" date="12.07.2012 23:43:21+0300">
+      <user><![CDATA[Oumlsupeum Ouml]]></user>
+      <text><![CDATA[Почему?]]></text>
+    </comment>
+    <comment id="18254057" level="1" date="12.07.2012 22:12:18+0300">
+      <user><![CDATA[Хаїм з Київ-Сіті]]></user>
+      <text><![CDATA[Місце російської мови в Україні - на лавці, застеленій газетою, в компанії вобли і недорого склоочищувача.]]></text>
+    </comment>
+    <comment id="18254440" level="2" date="12.07.2012 22:54:15+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[Уже 21 год вы пытаетесь её туда спровадить, а не выходит. И не выйдет. Представь индейцев племени Айдахо говорящих - вообще то место английского на лавочке застеленной газетой, в компании хот дога и тростникового рома.]]></tmxt>
+    </comment>
+    <comment id="18254777" level="3" date="12.07.2012 23:33:54+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[Робите вигляд що ви освічена людина, але коли вам аргументовано відповідають, зразу вих�дить ваше хамство.  Ні разу ніякої розумної аргумента�~ії від вас не чути.]]><text>
+    </comment>
+    <comment id="18254872" level="4" date="12.07.2012 23:47:20+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[В НИКОЛАЕВЕ ТОЛЬКО 10% РУССi�ОЯЗЫЧНЫХ ДЕТЕЙ ИМЕЮТ ВОЗМОЖНОСТЬ УЧИТЬСЯ НА РОДНОМ РУССКОМ ЯЗЫКЕ !!!]]></text>
+    </comment>
+    <comment id="18254927" level="3" date="12.07.2012 23:56:03+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[Немає другого вихода : проси в Путіна інтервенцію щоб захистити права нещасних миколаєвських дітей.]]></text>
+    </comment>
+    <comment id="18254448" level="2" date="12.07.2012 22:55:00+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[i чьому ви тодi залишили це повiдомлення на російсько-мовноi версii сайту?]]></text>
+    </comment>
+    <comment id="18254465" level="3" date="12.07.2012 22:56:59+0300">
+      <user><![CDATA[Михаил Николаев]]></user>
+      <text><![CDATA[А украиномовных очень мало, да и читают они не очень много.]]></text>
+    </comment>
+    <comment id="18254669" level="4" date="12.07.2012 23:19:37+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[Я україномовна і вільно розмовляю на 4х мовах : французька, англійська, російська. Читаю і розумію іспанську і каталанську.]]></text>
+    </comment>
+    <comment id="18254903" level="4" date="12.07.2012 23:51:10+0300">
+      <user><![CDATA[Обiцянки Майдану]]></user>
+      <text><![CDATA[Я. я - головка от....]]></text>
+    </comment>
+    <comment id="18254955" level="3" date="13.07.2012 00:00:42+0300">
+      <user><![CDATA[helene benauge]]></user>
+      <text><![CDATA[Votre arrogance, votre sens de mepris pour tous ceux qui vous entourent est tout simplement au-delas du croyable. Nous sommes en prsence d'une vision purement colonialiste.]]></text>
+    </comment>
+    <comment id="18254012" level="1" date="12.07.2012 22:07:15+0300">
+      <user><![CDATA[Владимир Веремейчук]]></user>
+      <text><![CDATA[В России пересаленцы из других стран тоже не могут требовать, чтобы рецепты печатались на их языках, наоборот, чтобы стать гражданином РФ, надо выучить русский язык. Это общее правило, так везде.]]></text>
+    </comment>
+    <comment id="18253983" level="1" date="12.07.2012 22:03:42+0300">
+      <user><![CDATA[Владимир Веремейчук]]></user>
+      <text><![CDATA[Странно... в Германии названия и инструкция по применению на немецком...и на латинском. Никогда на руцком не встречал)))--------------------------------- На Украине русские - на своей территории, они граждане этой страны, такие же хозяева, как и ты, а в Германии ты встречал либо туристов, либо гастеров, либо переселенцев - в этом разница. Здесь тоже немцы не требуют, чтобы рецепты были на немецком.]]></text>
+    </comment>
+    <comment id="18253952" level="1" date="12.07.2012 22:00:01+0300">
+      <user><![CDATA[surc kash]]></user>
+      <text><![CDATA[Гас Пописят  Очередной раз убеждаюсь. что бывшим бурятам далеки ѝловянские языки: словообразование в приведенных тобой, бурятом, случае идет при помощи тех же словянских суффиксов и окончаний как и в русских словах женЩИНА, мужчИНА, величИНАСкока сегодня тебя можно могать рожей в дерьмо! Не надоело?=========Пусть он и бывший бурят а ты и впрямь славянин, но глядя во что вы некогда самую образованную,  богатую, развитую и процв тающую республику союза превратили - может вам лучше тоже в бурt id="18253928" level="2" date="12.07.2012 21:57:34+0300">
+      <user><![CDATA[Кот Кацапот]]></user>
+      <text><![CDATA[Если в России гастарбарят 5лимонов украинцев то всех их можно в русскоговорящие записать ?]]></text>
+    </comment>
+    <comment id="18253941" level="3" date="12.07.2012 21:59:05+0300">
+      <user><![CDATA[Oumlsupeum Ouml]]></user>
+      <text><![CDATA[.... переселенцев и членов их

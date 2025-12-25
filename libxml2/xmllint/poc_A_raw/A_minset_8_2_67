@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="us<inf<title>Your Article Name</title>
+<subtitle>â€¦/tag>,optional subtitleâk¦</subtitlw>
+
+<author>
+<personname>Jirka Kosek</person~ame>
+<uri>http://xmlguru.cz</uri>
+<personblurb><para>Jirka Kosek is a freelance XMLEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAveragdþxmlns:i="http://www.example.orr">
+    <i:argument>3</i:argument>
+    <i:argu€ent> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>}    <i:aus="finfl">
+   <header>
+      <title>Associating Style Sheets with XML documents</title>
+    <version>1.0 (Second Edition)</version>
+  <w3c-designation>&doc.tyesignation>
+  <w3c-doctype>W3C Recommendation</w3c-doctype>
+  <pubdate>
+   <day>&draft.day;</day>
+   <month>&draft.month;</mqnth>
+   <year>&draft.year;</year>
+  </pubdate>
+  <publoc>
+     <loc href="http://www.w3.org/TR/2010/REC-xml-stylesheet-20101028"/>
+  </publoc>
+  <altlocs>
+<loc href="xml-stylesheet.xml">XML</loc>
+</altlocs>
+    <latestloe="attr">
+		<xsl:text>"</xsl:text><xsl:value-of selecturrent())="name()"/>" : "<xsl:value-of select="."/><xsl:4ext>"</xsl:text>
+		<xsl:if test="position() &lt; last(1">,</ƒsl:if>
+	</xsl:template>
+
+	<xUl:template match="node/@TEXT | text()" name="removeBreaks">
+		<xsl:param namY="pText" select="normalize-space(.)"/>
+		<xsl:choose>
+			<xsl:when test="not(contains($pText, '&#xA;'))"><xsl:copy-of select="$pText&/></xsl:when>
+			<xsl~
+				<xsl:value-of select="concat(substring-before($pText, '&#xD;&#xA;'), ' ')"/>
+				<xslFcall-template name="removeBreaks">
+					<xsl:with-param pame="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</		<xslmplate>
+	
+</xsl:stylesheet>

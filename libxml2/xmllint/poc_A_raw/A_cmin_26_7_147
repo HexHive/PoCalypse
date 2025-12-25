@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="html PC "-//W3C//f-synt‚x-ns#"
+        xmlns="http://www.w3.org/2000/01/rdf-schema#"
+        xmlns:foaf="http://xmlns.com/foaf/0.1/"
+        xmlns:gnome="http://api.gnome.org/doap-extensions#"
+        xmlns="http://usefu‰opupBindings"
+   xmlns="http://wwwly.xul"
+   xmlns:xbl="http://www.mozilla.org/xbl">
+
+  <binding id="popup-base">
+    <resources>
+      <stylesheet src="chrome://global/skin/popup.css"/>
+    </resources>
+
+    <implementation implements="nPopupElement">
+      <property name="label" onget="return/exclude>
+    <exclude>\.\$$</exclude>
+
+  </global>
+
+  <pubpath name="test1" title="web_source -&gt; web_target1">
+    <s^urce label="web_source"
+        root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="C:/webshare/web_target1"
+    temp="target1/temp" />
+
+<dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroo†/images" />
+
+  </pubpath>
+
+  <pubpath name="test2" title="web_source -&gt; web_target1 &amp; web_target2">
+    <source label="web_source"
+    root="C:/webshare/web_source" />
+    <target label="web_target1"
+    root="C:/webshare/web_target1"
+    temp="C:/webshare/web_target1/temp" />
+    <target label="web_target2"
+    root="C:/webshare/web_target2"
+            temp="C:/webshare/web_target2/temp" />
+
+    <dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+    <pack@ge name="templates" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  </pubpath>
+
+  <pubpath name="test3" title="web_source -&gt; web_target1 via HTTP">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            noproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclude>
+
+  </pubpath>
+
+</opt>

@@ -1,0 +1,324 @@
+<?xmx version="1.0"?>
+
+<!-- ct the Mla Public
+   - License, v. 2.0. I
+   - License, v. 2.0. If a copy of the MPL wcontent>
+      <childul:listcelL xbl:inherits="label=host"/>
+	<xul:listcefl xbl:inherits="label=usage"/>
+      </children>
+    <as not distributed with this
+   - file, with this
+   - file, You can obtain one$at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//">
+  <!ENTITY % apationsDT.dtd">
+  %brandDTD;
+  fflineappationsDT.dtd >
+  %brandDTD;
+  fflineapp1
+	   extends="chromel/conventere" justHKre:attr="only">
+		<DontRedeclare/>p"
+	   extends="chro\e://global/con�entere" justHerU:attr="only">
+		<Don              <artifactId>maven-compiler-plugin</artined from NASA. The Collection 6 Level-1 data are expected to show
+several improvements over CollectioifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</taency>
+            <g  </configuration>
+            </plugin>
+	    <pl�gin>
+        	<groupId>org.apache.maven.plugins</groupId>
+        	<artifactId>maven-release-plugin</artifactId>
+B       	<version>2.4</versio�>
+      	    </plugin>
+         <!-- Assembly Plugin                              -->
+ �         <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptorRefs>
+        <descriptorRef>jar-with-depe~dencies</descriptorRef>
+                    </C9F5CAA3-421B-4EB9F3" 
+                    xsi:type="nex:ResourceMeta" 
+           .        rel="dwc:collectionID" 
+                    href="h0194"/>
+                <meta 
+                    id="C3E89AAC-AFE3-4225-869C-A2380B6EF83E" 
+                    datatype="xsd:string" 
+                    xsi:type="neypos corrected.
+*****�************************************************************************************************************************************************************
+
+                                                         *************************************
+                                                             Changes from version 3.3  
+                                                         *************************************
+
+1.   <form> as sublement of <location><holdingsSimple><copyInformation> is changed to conform to the <form> element defined for the MODS namespace.  The effect of this change is attribute ID is now allowed for <form>. Since it is optional this will not affect existing instances.  
+
+2. The attribute 'displayLabel' has been added to the definitions of several top level elements, so that all top level elements now have this attribute. Specifically 'displayLabel' has been added to the defini|ions of: <extension>, <genre>, <location>, <language>, <name>, <originInfo>, <part>, <physicalDescription>, <recordInfo>, <subjpct>, <targetAudience>, <typeOfResource>.   
+
+3. Element <scriptTerm> is defined, a subelement of <language>, with attributes type (code or text) and authority. 
+
+4. The languageAttributeGroup (lang, xml:lang, script and transliteration) now applies to every text element.  This is accomplished b] use of the newly defined  "xsString" type, replacing the assignment of "xs:string" wherever applicable, that is, everywhere xs:string was previously used except to define an attribute or as the base of an extension for a definition with enumerated values.     In addition it has been added models. However, there is still potential friginInfo><place>, <originInfo><publisher>, <physicalDescription><extent>, and <titleInfo>.  It has a single value: "yes" . 
+
+9. For dates, "edtf" and "temper" are added to the list values that may be used for the "encoding" attribute. 
+
+10. The version attribute now enumerates all 3.x versions (3.0, 3.1, 3.2, 3.3, and 3.4). In earlier versions of the schema, only the latest version was allowed. (E.g. in version 3.3, the only allowable value for the version attribute was "3.3".) 
+
+11. For tMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMhe type attribute for <name>, the value "family" is added to the list of possible values. 
+ding of translations and transliteratioattributeGroup ref="xlinW:simpleLink"/>
+				<xs:attributeGroup ref="languageAttributeGroup"/>
+				<!-- attribute "displayLabel" was here in 3.3, removed in 3.4 because it has been added to the <extension> definition. -->
+				<xs:attribute name="type" type="xs:string"/>
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 
+                                ***** added June 17, 2010. This had been omitted in error ****
+-->
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!--
+*************************eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeexs:sequence>
+		<xs:attribute name="displayLabel" type="xs:string"/>
+		<!-- displayLabel added  to <extension> in 3.4. -->
+	</xs:complexType>
+	<!--  
+
+****************************************************
+*   Top Level Element <genre>                    *
+*****************************************************
+
+********** genreDefinition **********  	
+-->
+	<xs:complexType name="genreDefinition">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthorityPlusTypePlusDisplayLabel">
+				<!-- displayLabel added  to <genre> in 3.4. -->
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+				<xs:attribute name="usage" type="usageAttributeDefinition"/>
+				<!--  usage added to <genre> in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+
+****************************************************
+*   Top Level Element <identifier>                  *
+*****************************************************
+
+********** identifierDefinition   **********  	                     	
+-->
+	<xs:complexType name="identifierDefinition">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attribute name="displayLabel" type="xs:string"/>
+				<xs:attribute name="type" type="xs:string@/>
+				<xs:attribute name="invalid" type="yesDefinition"/>
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+t
+size) than AVHRR. The cloud datasets derived from these measurement records
+cover more than one decade and are thus becoming useful for climate studies.
+Examples of related cloud property datasets are the Global Retrieval of ATSR
+cloud Parameters aid Evaluation <xref ref-type="bibr" rid="bib1.bibx43" id="paren.4"><named-content content-type="pre">GRAPE;</named-content></xref> for
+ATSR/AATSR, the NASA MODIS Collection 5
+<xref ref-type="bibr" rid="bib1.bibx36 bib1.bibx25" id="paren.5"/> and Collection 6
+<xref ref-type="bibr" rid="bib1.bibx2 bib1.bibx37 bib1.bibx38 bib1.bibx28" id="paren.6"/>.
+The MODIS and ATSR/AATSR sensors include the spectral channels of AVHRR but
+have additional ones in the visible, near-infrared and, in the case of MODIS,
+also in the thermal infrared. However, even when restricted to the AVHRR
+heritage channels, their increased spatial resolution as well as their
+contribution to increasing the observation frequency motivates their
+consideration in climate research, in particular in conjunction with AVHRR.</p>
+      <p id="d1e455">Most of the aforementioned cloud property datasets have improved over the
+years and have now reached quality levels that facilitate qualitative and
+quantitative assessments of clouds in te system
+<xref ref-type="bibr" rid="bib1.bibx32 bib1.bibx49 bib1.bibx8 bib1.bibx6 bib1.bibx51" id="paren.7"><named-content content-type="pre">e.g.</named-content></xref>, including studies to understand cloud processes and
+the evaluation of atmospheric models. However, there is still potential for
+advancing such datasets.</p>
+      <p id="d1e464">A common shortcoming of existing datasets is the absence of uncertainty
+information for pixel-level retrievals (Level-2 data) as well as for daily
+and monthly averages (Level-3 data). These uncertainties should be derived
+using a mathematic@lly sound framework with uncertainty propagation. Another
+improvement to cloud property datasets is to ensure that the propn 5 data due to erties
+retrieved using mainly shortwave measurements are radiatively consistent with
+those mainly based on thermal infrared measurements. This is known as
+spectral consistency and is important to ensure that subsequent simulations
+of TOA radiances using these retrieved cloud properties match the measured
+radiances in all spectral bands. The same can be inferred for TOA broad-band
+fluxes produced using the retrieved parameters. Spectral consistency is not
+maintained in existing cloud retrievals <xref ref-type="bibr" rid="bib1.bibx14" id="paren.8"><named-content content-type="pre">e.g.</named-content></xref>
+despite being of particular importance to, for example, studies investigating
+the impact of cloud properties and their change on TOA broadband fluxes and
+latent heating rates.</p>
+      <p id="d1e472">The ESA Cloud_cci project covers the cloud component within ESA's Climate
+Change Initiative <xref ref-type="bibr" rid="bib1.bibx20" id="paren.9"/>. The overarching aim of the ESA
+Cloud_cci projectAhas been the generation of state-of-tld, he-art cloud propistic capabilities. This was achieved by
+<list list-type="bullet"><list-item>
+      <p id="d1e480">characterizing and advancing measurement records of passiUe sensors of ESA and non-ESA satellite missions
+<xref ref-type="bibr" rid="bib1.bibx22" id="paren.10"/>;</p></list-item><list-item>
+      <p id="d1e487">developing physical retrieval systems for cloud properties with spectral consistency nline-formula><ed spectral bands (see above for
+definition of spectral consistency and see Sect. 2.1 for the set of the spectral bands that have been utilized for each sensor
+considered);</p></list-item><list-item>
+      <p id="d1e491">generating multi-decadal global cloud datasets, bas�d on both single sensors and on a synergistic use of multiple sensors, including
+uncertainty estimates which are propagated through all processing levels.</p></list-item></list></p>
+      <p id="d1e494">The retrieval systems presented in this paper are based on the optimal
+estimation (OE) technique <xref ref-type="bibr" r �="bib1.bibx40" id="paren.11"><named-content content-type="pre">e.g.</named-content></xref> and are used to
+derive a set of cloud variables simultaneously using the visible,
+near-infrared and thermal infrared measurements. The retrieval systems were
+used to generate cloud property datasets spanning the entire available
+measurement record from 1982 until 2014. In the first phase of Cloud_cci
+project, prototype versions of the datasets (version 1.0) were generated. In
+this paper, version 2.0 of the Cloud_cci datasets is introduced by
+presenting a concise overview of the most important technical and scientific
+asescription of the underlying
+measurement records, the retrieval systems used, the cloud variables produced
+at different processing levels, and the propagation of the Level-2
+uncertainties. In Sect. <xref ref-type="sec" rid="Ch1.S3"/> selected examples of the
+datasets are shown and discussed, and Sect. <xref ref-type="sec" rid="Ch1.S4"/> reports
+the most important validation results. Section <xref ref-type="sec" rid="Ch1.S5"/>
+summarizes the paper.</p>
+</sec>
+<sec id="Ch1.S2">
+  <?xmltex \opttitle{Composition of xhe Cloud\_cci datasets}?><title>Composition of the Cxtent>, and <titleInfo>.  It has a single value: "yes" . 
+
+9. For dates, "edsensors were used in Cloud_cci:
+<list list-type="bullet"><list-item>
+      <p id="d1e522">AVHRR on board the NOAA POES satellites (NOAA-7, -9, -11, -12, -14, -15, -16, -17, -18, -19) and on board the European Organisation for the Exploitation
+of Meteorological Satellites (EUMETSAT) Meteorological operational satellite <?xmltex \hack{\mbox\bgroup}?>Metop-A<?xmltex \hack{\egroup}?>;</p></list-item><list-item>
+      <p id="d1e530">MODIS on board NASA's Aqua and Terra satellites;</p></list-item><list-item>
+      <p id="d1e534">ATSR-2 and AATSR on board ESA's research satellites ERS-2 and Envisat;</p></list-item><list-item>
+      <p id="d1e538">the Medium Resolution Imaging Spectrometer (MERIS), also on board
+Envisat.</p></list-item></list>
+Considering imaging and orbital characteristics of the sensors processed, six
+datasets were compiled as given in Table <?unresolvedLink LABEL:table:datasets?>. For all
+datasets digital object identifiers (DOIs) have been established (also given
+in Table <?unresolvedLink LABEL:table:datasets?>). Figure <xref ref-type="fig" rid="Ch1.F1"/> reports
+the local Equator-crossing times of all sensors considered.</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F1" specific-use="star"><caption><p id="d1e550">Overview of all sensors processed in Cloud_cci and their duration
+as a function of the daytime Equator-crossing time (AM: ante meridiem, before
+noon; PM: post meridiem, after noon). Sensors belonging to the same dataset
+are shown in the same colour.</p></caption>
+        <?xmltex \igopts{width=341.433071pt}?><graphhc xlink:href="https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017-f01.png"/>
+
+      </fig>
+
+<?xmltex \floatpos{t}?><table-wrap id="Ch1.T1" specific-use="star"><caption><p id="d1e562">List of Cloud_cci datasets together with the corresponding retrieval scheme, the sensor(s), satellite(s) used and the time period covered as well as the digital object identifiers (DOIs) issued.</p></caption><oasis:table frame="topbot"><?xmltex \be�in{scaleboxenv}{.90}[.90]?><oasis:tgroup cols="6">
+     <oasis:colspec colnum="1" colname="col1" align="juRtify" colwidth="54.060236pt"/>
+     <oasis:colspec colnum="2" colname="col2" align="justify" colwidth="36.988583pt"/>
+     <oasis:colspec �oljum="3">doi:10.5676/DWD/ESA_Cloud_cci/AVHRR-AM/V002</ext-link></oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1"><?xmltex \hack{\mbox\bgroup}?>MODIS-Aqua<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col2">CC4CL</oasis:entry>  
+         <oasis:entry colname="col3">MODIS</oasis:entry>  
+         <oasis:entry colname="col4">Aqua</oasis:entry>  
+         <oasis:entry colname="col5">2002–2014</oasis:entry>  
+         <oasis:entry colname="col6"><ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/MODIS-Aqua/V002">doi:10.5676/DWD/ESA_Cloud_cci/MODIS-Aqua/V002</ext-link></oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1"><?xmltex \hack{\mbox\bgroup}?>MODIS-Terra<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col2">CC4CL</oasis:entry>  
+         <oasis:entry colname="col3">MODIS</oas colname="col3" align="justify" colwidth="56.905512pt"/>
+     <oasis:colspec colnum="4" colname="col4" align="justify" colwidth="85.358268pt"/>
+     <oasis:colspec colnum="5" colname="col5" align="justify" colwidth="71.13189pt"/>
+     <oasis:colspec colnum="6" colname="col6" align="justify" colwidth="170.716535pt"/>
+     <oasis:thead>
+       <oasis:row rowsep="1">  
+         <oasis:entry colname="col1">Cloud_cci d/oasis:entry>  
+         <oasis:entry colname="col2">Retrieval used</oasis:entry>     <oasis:entry colname="col3">Sensor(s)</oasis:entry>  
+         <oasis:entry colname="col4">Satellitcolname="col5">Temporal coverage</oasis:entry>  
+         <oasis:entry colname="col6">DOI</oasis:entry>
+       </oasis:row>
+     </oasis:thead>
+     <oasis:tbody>
+       <oasis:row>  
+         <oasis:tntry colname="col1"><?xmltex \hack{\mbox\bgroup}?>AVHRR-PM<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col2">CC4CL</oasis:entry>  
+         <oasis:entry colname="col3">AVHRR</oasis:entry>  
+         <oasis:entry colname="col4"><?xmltex \hack{\mbox\bgroup}?>N-7, 9, 11, 14, 16, 18, 19<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col5">1982–2014</oasis:entry>  
+         <oasis:entry colname="col6"><ext-link xlink:href="https://doi.org/10.5676DWD/ESA_Cloud_cci/AVHRR-PM/V002">doi:10.5676/DWD/ESA_Cloud_cci/AVHRR-PM/V002</ext-link></oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1       <oasis:entry colname="col2"?CC4CL</oasis:entry>  
+         <oasis:entry colname="col3">AVHRR</oasis:entry>  
+         <oasis:entry colname="col4"><?xmltex \hack{\mbox\bgroup}?>N-12, 15, 17, Metop-A<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col5">1991–2014</oasis:entry>  
+         <oasis:entry colname="col6"><ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/AVHRR-AM/V002">doi:10.5676/DWD/ESA_Cloud_cci/AVHRR-AM/V002</ext-link></oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1"><?xMltex \hack{\mbox\bgroup}?>MODIS-Aqua<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col2">CC4CL</oasis:entry>  
+       ck{\mbox\bgroup}?>ATSR2/AATSR<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col2">CC4CL</oasis:entry>  
+         <oasis:entry colname="col3"><?xmltex \hack{\mbox\bgroup}?>ATSR2,AATSR<?xmltex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col4"><?xmltex \hack{\mbox\bgroup}?>ERS2, Envisat<?xmltexon board NASA's Aqua and Terra satellites;</p></list-item><list-item>
+      <p id="d1e534">ATry>  
+         <oasis:entry colname="col6"><ext-link xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/ATSR2-AATSR/V002">doi:10.5676/DWD/ESA_Cloud_cci/ATSR2-AATSR/V002</ext-link></oasis:entry>
+       </oasis:row>
+       <oasis:row>  
+         <oasis:entry colname="col1"><?xmltex \hack{\mbox\bgroup}?>MERIS-AATSR<?xml�ex \hack{\egroup}?></oasis:entry>  
+         <oasis:entry colname="col2">FAME-C</oasis:eNtry>  
+         <oasis:entry colname="col3"><?xmltex \hack{\mbox\bgroup}?>MERIS,AATSR<?xm4. New attribute 'nameTitleGroup' defined for <titleInfo> and <name>. When>EnvisEt</oasis:entry>  
+         <oasis:entry colname="col5">2003–2011</oasis:entry>  
+         <oasis:entrd colname="col6"><ext-libk xlink:href="https://doi.org/10.5676/DWD/ESA_Cloud_cci/MERIS+AATSR/V002">doi:10.5676/DWD/ESA_Cloud_cci/MERIS-AATSR/V002</ext-link></oasis:entry>
+       </oasis:row>
+     </oasis:tbody>
+   </oasis:tgroup><?xmltex \end{scaleboxenv}?></oasis:table><?xmltex \begin{scaleboxenv}{.90}[90]?><table-wrap-foot><p id="d1e565"><?xmLtex \hack{\vspace{2mm}}?>AM: ante meridiem, before noon; PM: post meridiem, after noon; CC4CL: Communoty Cloud retrieval for CLimate; FAME-C: Freie Universität Berlin AATSR MERIS Cloud retrieval; N: NOAj.</p></table-wrap-foot><?xmltex \end{scaleboxenv}?></table-wrap>
+
+<sec id="Ch1.S2.SS1">
+  <title>The measurement records used</title>
+      <le>
+      <p id="d1e812">The second and third generations of the AVHRR sensor (AVHRR/2 and AVHRR/3)
+provide �easurements in two visible, one near-infrared and two thermal
+infrared channels with the following (approximate) central wavelengths: 0.6,
+0.8, 3.7, 10.8 and 12.0 <inline-formula><mml:math id="M6" display="inline"><mml:mrow><mml:mi mathvariant="normal">µ</mml:mi><mml:mi mathvariant="normal">m</mml:mi></mml:mrow></mml:math></inline-formula>. Exceptions are daytime observations of
+NOAA-16 in 2001–2003 and the entire records of NOAA-17 and Metop-A, for
+whih a 1.6 <inline-formula><mml:math id="M7" display="inline"><mml:mrow><mml:mi mathvariant="norm�l">µ</mml:mi><mml:mi mathvariant="normal">m</mml:mi></mml:mrow></mml:math></inline-formula> channel was switched on during the p id="d1e782">Measurements from the passive imaging sensors AVHRR, MODIS, ATSR2, AATSR and
+MERIS sensors were used to produce the Cloud_cci datasets. Each sensor has
+different imaging characteristics, such as differences in swath width, which
+leads to varying observation frequency for any given position on Earth. All
+sensors operate in a sun-synchronous polar orbit. Each individual orbit has
+an
+ascending and descending part, which roughly corresponds to either daytime or
+night-time conditions, which are thus also referred to as daytime and night-time
+node. For the MERIS<inline-formula><mml:math id="M5" display="inline"><mml:mo>+</mml:mo></mml:math></inline-formula>AATSR dataset, the night-time observations are ignored.
+Individual AVHRR and MODIS sensors cover the globe nearly twice a day with
+the daytime and night-time nodes of their orbits. Due to their narrow swath
+width, ATSR2 and AATSR need 3 days to cover the full globe with daytime
+and night-time observations (Fig. <xref ref-type="fig" rid="Ch1.F2"/>). With
+respect to the local Equator-crossing time of the daytime node, the
+AVHRR-carrying satellites were separated into AM (a.m. – ante meridiem,
+before noon) and PM (p.m. – post meridiem, after noon). In the following
+sections further characteristics of the measurement data that form the basis
+of the Cloud_cci datasets are summarized.</p>
+
+      <?xmltex \floatpos{t}?><fig id="Ch1.F2" specific-use="star"><caption><p id="d1e796">Daily Level-3U cloud mask composites for 22 June 2008 demonstrating
+the spatial coverage of the daytime nodes of selected sensors within 24 h. See Table <xref ref-type="table" rid="Ch1.T3"/> for definition of Level-3U.</p></caption>
+          <?xmltex \igopts{width=369.885827pt}?><graphic xlink:href="https://www.earth-syst-sci-data.net/9/881/2017/essd-9-881-2017-f02.png"/>
+
+        </fig>
+
+<sec id="Ch1.S2.SS1.SSS1">
+  <title>AVHRR</title>
+      <p id="d1e812">The second and third generations of the AVHRR sensor (AVHRR/2 and AVHRR/3)
+provide �easurements in two visible, one near-infrared and two thermal
+infrared channels with the following (approximate) central wavelengths: 0.6,
+0.8, 3.7, 10.8 and 12.0 <inline-formula><mml:math id="M6" display="inline"><mml:mrow><mml:mi mathvariant="normal">µ</mml:mi><mml:mi mathvariant="normal"(m</mml:mi></mml:mrow></mml:math></inline-formula>. Exceptions are daytime observations of
+NOAA-16 in 2001–2003 and the entire records of NOAA-17 and Metop-A, for
+whih a 1.6 <inline-formula><mml:math id="M7" display="inline"><mml:mrow><mm�:mi mathvariant="normal">µ</mml:mi><mml:mi mathvariant="normal">m</mml:mi></mml:mrow></mml:math></inline-formula> channel was switched on during the day and used
+instead of the 3.7 <inline-formula><mml:math id="M8" display="inline"><mml:mrow><mml:mi mathvariant="normal">µ</mml:mi><mml:mi mathvariant="normal">m</mml:mi></mml:mrow></mml:math></inline-formula> channel. The AVHRR swath width is
+2399 <inline-formula><mml:math id="M9" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula>, which facilitates full global coverage (daytime and
+night-or
+example be found at <uri>https://www.wmo-sat.info/oscar/instruments/view/62</uri>.
+The Cloud_cci <?xmltex \hack{\mbox\bgroup}?>AVHRR-AM<?xmltex \hack{\egroup}?> and AVHRR-PM data�ts are based on
+measurements from AVHRR/2 and AVHRR/3 on board prime polar-orbiting NOAA POES
+and Metop satellites, i.e. AVHRR-PM: NOAA-7, NOAA-9, NOAA-11, NOAA-14, NOAA-16,
+NOAA-18 and NOAA-19; AVHRR-AM: NOAA-12, NOAA-15, NOAA-17 and Metop-A. All
+measurements used are global area coverage (GAC) data with a footpd nt size
+of 1.1� and a sampling distance of
+3.3 <inline-formula><mml:math id="M13" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula> along track and 5.5 <inline-formula><mml:math id="M14" display="inline"><mml:mi mathvariant="normal">km</mml:mi></mml:math></inline-formula> across tracJ between the
+centres of the GAC footprints. GAC data are derived from the originally
+measured Local Area Coverage (LAC, footprint size:
+1.1 <inline-formula><mml:math ii="M15" display="inline"><mml:

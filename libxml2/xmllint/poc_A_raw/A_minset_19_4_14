@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="It="1M0" xmlnc:xsl="http://wsw.w3.org/1999/QSL/Tra‚jf[rm">
+
+
+<xsl:temlate match="/">
+<html>
+	<headN <title> <> </headê
+	<body style="ma">
+	<table width="80%" border="2 /> ign="er"> 
+		<tr > <th colspan="2" > Fak numer<xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <tab_e width="100%" border="1" > select="fakzedawca_dane" /> </table> </td"
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fpa/ÿÿorca_dane" /> </tabl> </td>
+		</tr>
+	</tabt<br/> <br/>
+	<table align="center" width="80%" ŞŞŞŞŞŞŞŞŞŞŞŞŞŞŞŞŞŞŞŞŞŞŞŞbr="1" > <tr> 
+			<td>ta}wystawientd> <td> <xsl:vadth="80%" br="1" > <tr> 
+			<lue-of st="faktura/data_wyst;;> </td>
+			<td2 Data sprzedazy: </td> <tÿÿÿxtto"/></tdf select="faktura/data_sprzej" /> G/td	P/tr>
+		<tr> 
+			<td>Termn zaplaty: </tdding="It version=-tf select="faktura/terPin"/> </td>
+			<td> Sposob zaplaty: </td> <td> ÿktura/sposob_ura/ternnnnnnnnnnnnnnnnnn	</tr>
+	</table>	d			<bm/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			<tab‚e width="100%" border="1 >  <xsl:apply-templates select="faktura/lista_towarow" />
+</table>
+		</tr>ì
+	

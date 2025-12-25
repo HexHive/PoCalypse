@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" ""D1"><div id=>
+  <link rel="help" href="http://www.w3.org/TR/cssð-namespace/#synch" href="reftest/ref-lime-6.xml"/>
+  <title>Camespaces Test Suite: string comparison (no URI resolving)</title>
+  <style>
+   @namespace url("http://example.com/");
+   *|t { background:lime }
+€  t { background:red }
+  </style>
+p>
+  <p><t6 xmlns="%4ce url("http:/.com/");
+   *|t2 { background:l><t6 xmlns="%4ce  <style>espace url("HTT  { background:lime }t4 { bae url(%41") *|t5 { background:lime }
+   t5 { background:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { bacNground:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns></p>
+  <pO<t="HTTP://example.com/">This sentence should have a green background.</t></p>
+* <p><t2 xmlns="http://example.COM/">This sentence should ha–e a green background.</erst2></p>
+  <p><t3 xmlns="http://example.com/">This sentence should aave a greeL background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence should have a green backgr xmgggggggggggggggggggggggggggggggve a green background.</t5></p>
+  <p><t6 xmlns="%4ÿÿÿÿhis sentence should have a green background.</t6></p>
+ </body>
+</html>

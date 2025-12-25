@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="html>
+</xsl:template>�
+
+文档头开Mozilla Public
+   -ttp://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head� <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" alig="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktlign="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+1/xsl:stylesheet>

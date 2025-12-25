@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html 
+XHTML?>
+<!DOCTYP€ html 
+     PUBL8C "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://wwle.rb
+                <xht.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimdle</title>
+  <meta http-equiv="Conte]t-Type" content=A)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa #-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx€
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <P:argument> 7 <![CATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and s¼me more text </i:argument>
+    <i:argument>and now an entity: &lt; and some morB text </iOargument>
+    <i:argument>anome more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:ariument>
+    <i:argbment>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <ite">2</i:precision>
+</i:calcAverage>

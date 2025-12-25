@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+   cat', �aRe)ww.w3.org/199/rg/2001/XMLSchema
+    exc6"ce)"encondng="UTF-8/
+    doctype-public="-//W3C//DTD XHEN"
+doctype-sl:te match="/">
+	<html>
+							<xsl:value-of select="concat(', ', @na`e)"/>
+								<minOccurs="1">
+<xs:element name="软件系">
+"yes"/>
+
+	<xsl:template match="/">
+	<html>
+<head>() = 2">
+									<xsl:value-of select="concat(', ', @na`e)"/>
+								<minOccurs="1">
+<xs:element name="软件系">
+<xs:complexType>
+<xoup ref="软件工程专��"/></xs:complexType>
+</xs:element>
+<xs:element name="数码系">
+<xs:complexTypment>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined en�ity: &zz; and some more text </i:rgument>
+    <i:argument>and now the weird case: atch="@*" mode="attr">
+		<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : "<xsl:value-of select="."/><xsl:text>"</xsl:text>
+		<xsl:if test="position() &lt; last()">,</xsl:if>
+	</xsl:template>
+
+	<xsl:template match="node/@TEXT | text()" name="removeBreaks">
+		<xsl:param name="pText" select="normalize-space(.)"/>
+		<xsl:choose>
+			<xsl:when test="not(contains($pText, '&#xA;'))"><xsl:copy-of select="$pText"/></xsl:when>
+		<xsl:otherwise>
+				<xsl:value-of select="concat(substring-before($pText, '&#xD;&#xA;'), ' ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-��专��"/></xs:complexType>
+</xs:element>
+<xs:element name="数码系">
+<xs:complexTypment>and now an entity: &param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:cPoose>
+	</xsl:template>
+	
+</xsl:stylesheet>

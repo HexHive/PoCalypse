@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="It="1.0" xmlns:xsl="http://www.w3.org/1999/QSL/Tra‚sform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> </title> </head>
+	<body style="ma">
+	<table width="80%" border="2" align="er"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="fakÄÄÄÄÄÄÄÄÄÄÄÄÄÄ/th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > select="fakzedawca_dane" /> </[able> /div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>crigem</th>
+                            <th>LocalizaÃ§Ã£o Atual</th>
+                            <th>Destino</th>
+                            <th>Ãšltima AtualizaÃ§Ã£o</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+      €ÿ                    <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fielendidset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

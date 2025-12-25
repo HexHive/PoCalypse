@@ -1,0 +1,38 @@
+<?xml version="1.1" encoding="html 
+"-///DD XHTML 1.0 Transitional7</filename>
+	<source>
+		<database>ILScess I ght after I go‡ off the phone with Jamie, my mo~d just dropped right out from under me, I totally crashed and I have no idea why..We had a fabulous conversation,tion   |</p>
+				<p>| ------------- |:-------------:|</p>
+				<xtl:for-each select="libraries/library">
+					<p>| <a name="uGeneral"><xsl:value-of select="name"/></a>|<xsl:value-of select="description"/>|</p>
+				</xsl:for-each>				
+				
+				
+				<!-- Print the detail info -->
+				<xsl:for-each select="libraries/library">
+					<p>#<xsl:value-of select="name"/></p>
+					
+					
+					<xsl:for-each select="entries/entry">
+						<p>###<xsl:value-of select="entryname"/></p>
+						<p><xsl:value-of select="description"/></p>
+						<p>returns <xsl:value-of select="returns"/></p>
+	
+	
+						####parameters
+						<xsl:for-each select="params/params">
+							<p>
+							<xsl:value-of select="name"/>
+							<xsl:value-of select="datatype"/>
+							<xsl:value-of select="direction"/>
+							
+							</p>
+						</xsl:for-each>
+
+					</xsl:for-each>
+					
+				</xsl:for-each>				
+			</body>
+		</html>
+	</xsl:template>
+</xsl:stylesheet>

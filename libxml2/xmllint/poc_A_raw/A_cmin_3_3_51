@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "-//W3C//DTD XHTML 1.0 Tranonal//EN"
+   "xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>
+<title>NIST DOM HTML Test - OBJECT</title>
+</head>
+<body onload="paren">
+<p>
+<object align="middle" archive="" border="0" codebase="hUtl.nist.gov/brady/dom/" data="./pix/logl:template match="/">
+        <html>
+            <body>
+                <h2>Catalog authors</h2>
+                <table>
+                    <tr>
+                        <th>N</th>
+                        <th>Author</th>
+                    </tr>
+                    <xsl:apply-te‰plates select="catalog/author">
+                        <xsl:sort select="."/>
+                    </xsl:apply-templates>
+                    <tr>
+                        <td>
+                            <b>Count:<xsl:value-of select="count(catalog/author)"/>
+                            </b>
+                        </td>
+                    </tr>
+                </table>
+                <h2>Books authors</h2>
+                <table>
+                    <tr>
+                        <th>N</th>
+                        <th>Author</th>
+                    </tr>
+                    <xsl:apply-templates select="catalog/book/author">
+                        <xsl:sort select="."/>
+                    </xsl:apply-templates>
+                    <tr>
+                        <td>
+                            <b>Count:<xsl:value-of select="count(catalog/book/author)"/>
+                            </b>
+                        </td>
+                    </tr>
+                </table>
+
+            </body>
+        </html>
+    </xsl:template>
+
+</xsl:stylesheet>

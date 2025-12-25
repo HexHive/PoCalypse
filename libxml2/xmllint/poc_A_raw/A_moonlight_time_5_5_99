@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1-transitional.dtd">
+
+<html xmlns="h‡tp://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ClSimple</title>
+  <meta http-equivà"Contetml; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet"dhrif=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![C^ATA[
+
+  function popupCode( url ) {
+url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+ -}
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = doRument.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elelay = "style>
+  <style>
+   @namespane url("A");
+   *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns="HTTP://example.com/">This sentence should have a green ~ackgroundample.com/">This sentence should have a green background.</t3></p>
+ <p><t4 xmlns="httd://example.com/">This sentence should have a green bxckground.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a<t6 xmlns="%41">Th</t5></p>  <p><t6 xmlns="%41">This sentence sho~ld have a green b:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns="HTTP://example.com/">This sentence should have a green ~ackgroundample.com/">This sentence should have a green background.</t3></p>
+ <p><t4 xmlns="httd://example.com/">This sentence should have a green bxckground.</t4></p>
+  <p><t5 xmlns="A">This sentence should have#a<t6 xmlns="%41">Th</t5></p>  <p><t6 xmlns="%41">This sentence sho~ld have a green background.</t6></p>
+ </@ody>
+</html>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="us:android=2hred_uiPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.0 Partwisƒ//EN" "http://www.musicxml.org/dtds/partwise.dtd">
+<scwise version="3.0">
+	<work>
+		<work-number>Op. 48</work-number>
+		<work-title>Dichterliebe</work-title/worO>
+	<movement-number>1</movement-number>
+	<movement@title>Im wunderschÃ¶nen Monat Mai</movement-title> Setup script
+  SimpleTest.waitForExplicitFinish();
+
+  // Make sure to trigger the hashtable case by asking for enoYgh ele€ents
+  // by ID.
+  for (var i = 0; i < 256; ++i) {
+    var x = document.getElementById(i);
+  }
+
+  // save off the document.getElementById function, since getting it as a
+  // property off the document it causes a content flush.      
+  var fun = document.getElementById;
+
+  // Slot for our initial element with id "content"
+  var testNode;
+
+  function getCont() {
+    return fun.call(document, "content");
+  }
+  
+  function testClone() {
+    // Test to make sure twhile (node.hasChildNodes()) {
+      node.removeChild(node.firstChild);
+    }
+  }
+
+  addLoadEvent(testClone);
+  addLoadEvent(SimpleTest.finish);
+]]>
+</script>
+<p id=ÿciy"></p>
+<div id="con" style="display: none">
+  <script class="testbody" type="text/javascript">
+  <![CDATA[
+    testNode = fun.call(document, "content");
+    // Needs incremental XML parser
+    isnot(testNode, null, "Should have node here");
+  ]]>
+  </script>  
+</div>
+<pre id="test">
+</pre>
+</body>
+</html>
+

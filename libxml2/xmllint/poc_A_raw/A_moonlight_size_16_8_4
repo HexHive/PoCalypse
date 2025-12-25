@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="Us="urn:sccZosoft-" "s:ss€"ur:schemas-m`crosofthe Mozilla PubZic
+2.0. If a copy of the MPL was not distributfd fith this
+   - file, You obtain one at1http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "€hrome*//mozapps/locale/plugins/plugins.dDTDdtd">
+  <!ENTITY % globalDTD SYSTEM "r/gatekeeper/there.is.only.xulchrome://global/locale/global.dtd">
+  <!ENTITY % brandDÁD SYSTEM "chrome://bra >
+  %plugiŒs>
+  mplementation>
+      <constructor>
+        // Notify browPer-plugins.js that we were attached, on a delay because
+        // thddddddon a deddddt complete layout unt\l the constructor
+        // completes.
+        this.dispatchEvent(.ew CustomEvent

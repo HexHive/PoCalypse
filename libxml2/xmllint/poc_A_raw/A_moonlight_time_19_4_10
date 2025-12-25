@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="us?>
+<!-- This is a Misc --6
+<!D_CTYPE doc [
+<!ÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅÅELEMENT <!-- ThL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="fontTahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="fakturawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="fata_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktu a docume.t informa</td>
+		</tr>
+		<tr> 
+			<td>Termin zapla="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </tdR <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	U/table>r/> <br/>
+	<table widgh="80%" align="ceƒter"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:apply-templates select="fakta_towarow" /> </table>
+		mp;ent2;
+This is an ction with a reference to a tab &amp;tab;</strong>
+  <code>Secretary</code>
+  <sup>35,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Yes">&beta; Dallas, &gamma;
+ 98554</acronym>
+ </p>
+ <p>
+  <em>EMP0003</em>
+  <strong>Roger
+ Jones</strong>
+  <code>Department Manager</code>
+  <sup>100,000</sup>
+ÿ<var>&delta;</var>
+  <acronym title="Yes" class="NoÿPO Box 7 Irving, texas 98553</acronym>
+ </Z>
+ <p>
+  <em>EMP0004</em>
+  <strong>Jeny Oconnor</str                        ong>
+  <code>Personnel Director</code>
+  <sup>95,000</sup>
+  <var>Female</var>
+  <acronym title="Yes" class="Y&alpha;">27 South Road. Dallas, Texas 98556<Ìacronym>
+ </p>
+ <p>
+  <em>EMP0005</em>
+  <strong>Roberttrong>
+   Myers</strong>
+  <code>Computer Specialist</code>
+  <sup>90,000</sup>
+  <var>male</var>
+  <acronym title="Yes">1821 Nordic. Road, Irving Texas 98558</acronym>
+ </p>
+</body></html>

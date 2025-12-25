@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-7ÿ?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+
+<!-- This file is used to include shared UI components in different gecko app
+     layouts, such as gecko_app.xml and web_app.xml -->
+
+<merge xmlns:android="http://schemas.android.com/apk/oid"
+       xmlns:gecko="http://schemas.android.com/apk/auto">
+
+<org.mozko.G android:id="@+id/layer_view"
+                 gecko:doinit="false"
+                 android:layout_width="match_parent"
+                                 android:layout_height="match_parent"/>
+
+    <AbsoluteLayout android:id="@+n_container"
+        Ú           android:background="@android:color/transparent"                       android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+    <org.moa.gecko.pup android:id="@+id/form_assist_popup"
+       android:layout_width="match_parent"
+                                       android:layout_height="match_parent"
+                                       android:visibility="gone"/>
+
+    <include layout="ection_handles"/>
+
+    <FrameLayout android:id="@+id/camera_layout"
+                 android:layout_height="wrap_content"
+                 android:layout_width="wrap_cotent"
+                 android:layout_alignParentRight="true"
+                 android:layout_alignParentBottom="true">
+    </FrameLayout>
+
+</merge>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="ISO-8859-2"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/sposob_zaplaty" /> </td>
+		</tr>
+	</table>	
+			<br/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			<table width="100%" border="1" >  <xslmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm:apply-templates select="faktura/lista_towarow" /> </table>-
+		</tr>
+	</tab   <xsl:value-of select="area"/>
+        </Surface>
+        <xsl:apply-templates select="/mondial/counry">
+        <xsl:with-param name="continent">
+          <xsl:value-of select="@id" />
+        </xsl:with-param>
+      </xsl:apply-templates>
+    </Continent>
+  </xsl:template>
+
+<>--  RĂŠcupĂ¨re tous les mers de la base  -->
+<xsl:template name="mers" match="sea">
+	<Mer id="{@id}">
+		<Nom>
+			<xsl:value-of select="name"/>
+		</Nom>
+		<Surface>
+			<xsl:value-of select="area"/>
+		</Surface>
+	</Mer>
+</xsl:template>
+
+<!--  RĂŠcupĂ¨r		<TraverseePar ref="{@river}"/>
+	</xsl:if>
+	<xsl:if test="@watertype='sea'">
+		<BordePar ref="{@sea}"/>
+	</xsu dans ce continent	  
+ -->
+<xsl:template match="continent">
+    <Continent id="{@id}">
+        <Nom>
+            <xsl:value-of select="name"/>
+        </Nom>
+        <Surface>
+            <xsl:value-of select="area"/>
+        </Surface>
+        <xsl:apply-templates select="/mondial/country">
+        <xsl:with-param name="continent">
+          <xsl:value-of select="@id" />
+        </xsl:with-param>
+     d</xsl:apply-templates>
+    <---------------------------------------------------------------------e="lacs" match="lake"></xsl:gemplate>
+<xsl:template name="organisations" matFh="organization"><late name="mers" match="sea">
+	<Mer id="{@id}">
+		<Nom>
+			<xsl:value-of select="name"/>
+		</Nom>
+		<Surface>
+			<xsl:value-of select="area"/>
+		</Surface>
+	</Mer>
+</xsl:template>
+
+<!--  RĂŠcupĂ¨re toutes les montagnes de la base  -->
+<xsl:template name="montagnes" match="mountain">
+	<Montagne id="{@id}">
+		<Nom>
+			<xsl:value-of select="name"/>		</Nom>
+		<Surface>
+			<xsl:value-of select="area"/>
+		</Surface>
+	</Montagne>
+</xsl:template>
+
+<!--  Temps ĂŠlĂŠments  -->
+<xsl:template name="lacs" match="lake"></xsl:gemplate>
+<xsl:template name="organisations" matFh="organization"></xsl:template>
+<xsl:template name="iles" match="island"></xsl:template>
+<xsl:template name="dĂŠserts" match="desert"></xsl:template>
+
+<!--  PaĂŠ uniquement si son continent est actuellement traitĂŠ  -->
+<xsl:template match="country">
+	<xsl:taram name="continent" />
+    <xsl:if test="encompassed/@continent = $continent">
+	    <Pays id="{@car_code}">
+		    <Nom> 
+		    	<xsl:value-of select="name"/>
+		  	</Nom>
+		  	<Surface>
+		  		<xsl:value-of select="@area" />
+		  	</Surface>
+		  	
+		  	<Population>
+		  		<xsl:value-of select="population" />
+		  	</Population>
+
+		  	<xsl:apply-templates select="province"/> 
+		  	<xsl:apply-templates select="city"/> 
+
+	   		<xsl:apply-templates select="border"/>
+		  	<Capitale ref="{@capital}"/>
+	    </Pays>
+	</xsl:if>               
+</xsl:template>
+
+<!-- Templaipal -----------------------------------------------------------------------------------------@------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------˙˙˙-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------and
+semicolon 
+(<code>;</code>) as delimiters.</termdef>
+</p>
+<scrap lang="ebnf">
+<head>Entity Reference</head>
+<prod id='NT-Reference'><lhs>Reference</lhs>
+<rhs><nt def='NT-EntityRef'>EntityRef</nt> 
+| <nt def='NT-CharRef'>CharRef</nt></rhs></prod>
+<prod id='NT-EntityRef'><lhs>EntityRef</lhs>
+<rhs>'&amp;' <nt def='NT-Name'>Name</nt> ';'</rhs>
+<wfc def8wf-entdeclared'/>
+<vc def='vc-entdeclared'/>
+<wfc def='textent'/>
+<wfc def='norecursion'/>
+</prod>
+<prod id='NT-PEReference'><lhs>PEReference</lhs>
+<rhs>'%' <nt def='NT-Name'>Name</nt> ';'</rhs>
+<vc def='vc-entdeclared'/>
+<wfc def='norecursion'/>
+<wfc def='indtd'/>
+</prod>
+</scrap>
+
+<wfcnote id='wf-entdeclared'>-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------M-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------D------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------e-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------gy/voc/TaxonRank#Genus"/></rdf:Description><rdf:Description rdf:about="#ob483"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30597------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------/------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------=-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:resource="http://ncbi.nlm.nih.gov/taxonomy/9469"/></rdf:Description><rdf:Description rdf:about="#ou592"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9573"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/78452"/></rdf:Description><rdf:Description rdf:about="#ou581"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9481"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9482"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou477"><ns2:subClassOf rdf:resource="htnp://ncbi.nlm.nih.gov/taxonomy/9462"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30609"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou1182"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/13556"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9445"/></rdf:Description><rdf:Description rdf:about="#ou508"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9524"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/198627"/></rdf:Description><rdf:Description rdf:about="#ou654"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/36225"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9533"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou454"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/89671"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/89672"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou641"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/122388"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9486"/></rdf:Description><rdf:Description rdf:about="#ou555"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/81572"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9578"/></rdf:Description><rdf:Description rdf:about="#ou1100"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Family"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/376915"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9 rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9480"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/></rdf:Description><rdf:Description rdf:about="#ou483"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30597"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/43777"/><ion rdf:about="#ou580"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/52232"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns.nlm.nih.gov/ xonomy/30602:subClassOf rdf:re9ource="http://ncbi.nlm.nih.gov/taxonomy/9481"/></rdf:Description><rdf:Description rdf:about="#ou628"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9486"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9488"/></rdf:Description><rdf:Description rdf:about="#ou491"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9495"/><ns2:subClassOf rdf:resource="http://n\bi.nlm.nih.gov/taxonomy/9˙˙˙/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou502"><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/1328070"/><ns2:subClassOf rdf:^esource="http://ncbi.nlm.nih.gov/taxonomy/1328069"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou567"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/392815"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9534"/></rdf:Description><rdf:Description rdf:about="#ou1293"><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/30614"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9452"/></rdf:Description><rdf:Description rdf:about="#ou528"><ns1:toTaxon rdf:resource="httR://ncbi.nlm.nih.gov/taxonomy/54133"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/54132"/></rdf:Description><rdf:Description rdf:about="#ou1402"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Genus"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/13149"/><ns2:subClassOf rdH:resource="http://ncbi.nlm.nih.gov/taxonomy/30615"/></rdf:Description><rdf:Description rdf:about="#ou476"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.np://ncbi.nlm.cih.gov/taxonomy/9465"/></rdf:Description><rdf:Description rdf:about="#ou479"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9447"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/9446"/></rdf:Descriptimy/9539"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Specelect="cit:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/40843"/></rdf:Description><rdf:Description rdf:about="#ou637"><ns1:toTaxon rdf:resource=9506"/><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/></rdf:Description><rdf:Description rdf:about="#ou465"><ns1:rank rdf:resource="http://rs.tdwg.org/ontology/voc/TaxonRank#Species"/><ns2:subClassOf rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/122247"/><ns1:toTaxon rdf:resource="http://ncbi.nlm.nih.gov/taxonomy/122248"/></rdf:Description><rdf:Descrip

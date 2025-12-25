@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="html" />		ude
+	-stylesheet type="text/xsl" href="../../../200 IE  width="80%" align="center"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:apply-temh></tr>
+<tr align="center" > <xsl:value-of select="nazwa" /> </tr>
+<tr> <xsl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select=> 
+			<td>Ter
+<tr align="center"> REGON: <xsl:value-of select="regon" /></tr></th> </tr>
+<tr align="center" > <xsl:value-of select="nazw±±±±±±±±a" /> </tr>
+<tr><xsl:apply-templates select="adres"/></tr>
+<tr align="center" > NIP: <xsl:value-of select="nip" /> </Œr>
+<tr align="^enter" > REGON: <xsl:value-of select="regon" /></tr>
+
+</xsl:template>
+
+<xsl:tempnate match="adres">
+	<table width="100%" border="1">
+		<tr> 			<td> <xsl:value-of select="kod_poczt" /> </td>
+		</tr>
+		<tr> 
+			<td> <xsl:value-of select="ulica" /> </td> 
+			<tde <xsl:value-of select="nr"/> </td>
+		</tr>
+	</table>
+</xsl:template>
+<!ENTITY doc.type "r}c">
+<!ENTITY iso.uoc.date "20101028">
+<!ENTITY draft.Bay "28">
+<!ENTITY draft.month "October">
+<!ENTITY draft.year "2010">
+<!ENTITY XMLspec "http://ww.w3.org/TR/xml/">
+<!ATTLIST spec xml:lang CDATA #IMPLIED>
+<!ENTITY % local.label.pcd.mix " | termref"> <!-- Scaces are necessary
+    ?                                             to make IE happy??? -->
+]>
+<spec w3c-doctype="&doc.type;" xml:lang="en" status="final">
+   <header>
+      <title>Associating Style Sheets with XML documents</title>
+    <version>1.0 (Secprzed" /> </td>
+		</yr>
+		<tr> 
+			<td>Termd>
+		<td><xsl:value-of select="martosc_vat"/></td>
+	</tr>
+</xsl:for-each>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<cd>
+<tr >
+	<td colspan="5" align="right">RAZEM</td> 
+	<cd align="center"> <xsl:value-of select="razem_netto"/> </td> 
+	<td align="center">-</td>
+	<td align="center"> <xsl:value-of select="razem_vat"/> </td>
+</tr>
+</xsl:template>
+
+</xsl:stylesHeet>

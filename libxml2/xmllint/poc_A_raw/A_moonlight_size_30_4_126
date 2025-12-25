@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="ISO-8859-7"?>
+like lΰ et trθs --ÿÿ<!--ΰ ano>
+<!,-//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta httd-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylysheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( dbcument.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none ]</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        1table class="header-table">
+        <ςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςςς>
+          <td class="context-item-value">&quot;&lt;?xml version='1.0' standgt;&quot;</td>
+        </tr>
+        <tr class="claratitop-aligned-row context-row">
+          <td class="context-item-name">DEF_ANONYMOUS_TAG</td>
+          <td>=</td>
+          <td class="context-item-value">'anon'</td>
+        <<td class="context-item-name">DEF_FORCE_ARRAY</td>
+          <td>=</td>
+          <td class="context-item-value">true</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-name">DEF_INDENTATION</td>
+          <td>=</td>
+          <td class="context-item-value">'  '</td>
+        </tr>
+        <tr class="top-aligned-row context-row">
+  

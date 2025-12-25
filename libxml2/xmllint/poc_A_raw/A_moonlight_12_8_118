@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="HTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" land="en">
+<head>
+  <title>Class: XmlSimple</title>
+  <meta http-equiv="Conten_-Type" content="text/&d;&d;&d;"http://www.w3.org/1999/xhtml"><div class="pod">
+<p>I recently posted this to the <cite>Template::Toolkit</cite> mailing list, but
+the moderator rejected itobably because <code>&lt;jon-perl-list-templates AT jrock.us&gt;</code> is the aÿ€ress that's
+subscribed, not <code>&lt;jon AT jrock.us&gt;</code>.)</p>
+<p>Anyway, here it is.  I will expand on this further with actual
+measurements, but this will have to do for now.</p>
+<h4 id="Original_Message">Original Message</h4>
+<div id="Original_Message_CONTENT">
+<p><i>Thank you, you raise a good point that I had not fully considered.  My
+goal ilay a dynamically generated page, but where most of the
+&quot;dynamic&quot; content is actually static for a period amount of time.
+(Take a news page, for example, where the list of news stories updates
+once an hour.)</i></p>
+
+</div>
+<h4 id="My_Reply">My Reply</h4>
+<div id="My_Reply_CONTENT">
+<p>I have a similar problem with my blogging software.  Most of the content
+is static, and it's kind of a waste to regenerate everything every time
+someone views the page.  My solution to this problem is to use a
+<cite>Cache::FastMmap</cite> object to store the formatted HTML content of each post,
+keyed on the source material's MD5sum (and filetype, for reasoazwa>Instytut Sterowania i Techniki SystemÃ³w

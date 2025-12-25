@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="html 
+  -1"?>
+<!DOCTYPE hcss stylesheet first -->
+<?xml-stylesheet href="book.css" type="text/css"?>
+<?xml-stylesheet href="toc.css" type="text/css"?>
+<!DOCTYPE book [
+<!ATTLIST�book    id ID #IMPLIED>
+<!ATTLIST chapter id ID #IMPLIED>
+<!ATTLIST section id ID #IMPLIED>
+]>
+<book id="book" xmlns:html="http://www.w3.org/1999/xhtml"
+                xmlns:xlink="http://www.w3.org/1999/xlink">
+ <html:a name="book"/>                
+ <html:script src="toc.js"/>
+ <html:img src="irslogo.gif"/>
+ <navbar>
+   <title>Table of contents</title>
+   <content>
+   To toggle the Table of Contents, click on this button
+   <html:input type="button" value="Co��符串<tr>
+	2，对于要处理的子元素继续应用该模板（template）
+	3，当处理所有子元素后，产生字符串</tr> 
+	-->
+	<xsl:template match="/books/book">
+		<tr>
+			<xsl:apply-templates />
+		</tr>
+	</xsl:template>
+
+	<xsl:template match="/books/book/name">
+		<td>
+			<xsl:app�y-templates />
+		</td>
+	</xsl:template>
+
+	<xsl:template match="/books/book/author">
+		<td>
+			AUTHOR:
+			<xsl:apply-templates />
+		</td>
+	</xsl:template>
+
+	<xsl:template match="/books/book/name">
+		<td>
+		    [ID]
+			<xsl:value-of select="@id" />
+		</td>
+	</xsl:template>
+</xsl:stylesheet>

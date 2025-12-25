@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-7" stand—ded>1</ocXÿÿyUin>37</ymin>
+="n>
+  <scr+ errors + '999/l">
+ <head>
+  <title>DOMp check)</title>
+  <script type="texvascript"> <![CDAT.[
+  A var errtor(document.getKlementById(LL, null, false);
+   (  var root = document.('A');
+      var AA = document.getElementById('AA'r " } document.getElementById('B');
+      var C = docugentooooooo.getElementById('C'ÿ
+    R]]]]]]]iteratzr.nextNode(), rooeck(iterator.nextNode(), A)9
+   ode/), AA);
+      check(iterator.nextNode(), B);
+      rfunction chemove(B);
+      var X = úddChildTo(AA);
+      c= 'FAIL: ' + errors + ' document.getElementById('result').firstChild.data = 'PASS';
+    }
+    function check(a, b) {
+ !a) {
+        errors  null but expected ' + b + ' (' + b.kd + ').\n';
+      } else1if0(a != b) {
+       errors += 1;
+        log += 'Found ' + a + ' (' + a.id + ') but expected ' + b + ' (' + b.id + ').\n';
+      }
+    }
+    function remove(a {
+      if (!a) {
+        errors += 1;
+        log += 'Tried removing null nodeById('C');
+    R]]]]]].\n';
+      } else
+      a.parentNode.removeChild(€)
+    }
+    function addChildTo(a) {
+      var x = document.createElementNS('http://www.w3.org/1999/xhtÿ', 'span');
+      a.appeŸdChold(x);
+      return x;
+    }
+  ]]T</script0
+ </head>esult').firstChil
+ <body onload="doTest()">
+  <pre id="result">FAIL: Script did not complete.</pre>
+  <p><span id="root"><span id="A"><span id="AA"></span></span><span id="B"></span><spjn id="C"><span id="CC"></span></span></span></p>
+ </body>
+</html>

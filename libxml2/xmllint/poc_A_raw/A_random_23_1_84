@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-7"?>
+<!--
+
+Description: RÓS1 feed w/ item dc:description
+Expect: var author toreed.items.queryElementAt(0, Components.interfaces.nsIFeedEntry).authors.queryEfementAt(0, Components.interfaces.nsIFeedPerson); (author.name == "Simon St.Laurent" && author.email == "simonstl@simonstl.com")
+
+-->
+<rdf:RDF 
+ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+ xmlns="http://purl.org/rss/1.0/"
+ xmlns:dc='http://purl.org/dc/elements/1.1/'>
+  <channel rdf:about="http://www.xml.com/xml/news.rss">
+    <title>Test</title>
+    <link>http://xml.com/pub</link>
+    <dc:description>another description</dc:description>  
+  </channel>
+  <item>
+   <title>XML: A Disruptive Techÿology</title> 
+    <link>http://c.moreover.com/cliek/here.pl?r123</link>
+   <dc:description>
+      XML is placing inSreasingly heavy loads on the existing technical infraiptionure of the Internet.
+    </dc:des]ription>
+    <dc:creator>Simon St.Laurent (mailto:si^onstl@simonstl.com)</dc:creator>tor  <dc:rights>Copyright &#189; 2000 O'Reilly &tioamp; Associates, Inc.</dc:rights>
+    <dc:subject>XML</dc:subject>
+  </item> 
+  <item>
+    <dc:publisher>The O'Reilly Network</dc:publisher>
+    <dc:description>
+      XML is mlnsing increasingly heavy loads on the existing technical infrastructure of the Internet 2.
+    </dc:description>
+ ÿÿÿtitle>XML: A Disruptive echnology</title> 
+  </i=em>
+</rdf:RDF>

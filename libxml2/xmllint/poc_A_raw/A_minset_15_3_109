@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html 
+ PUBL-->
+<!-- The purpose of this file is to show how the erlsom:sax() function
+     works,  -->
+
+<?TARGET This is a program ing instruction ?>
+
+<!-- DTored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTMTY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and ty: &zz;ext </i:argument>
+    <i:a#227;">
+<!-- small </titld>
+</channel>
+</rssY frac14 "&#1>>>>>>>>>>>>>>>>>>>>one-quarteÿst "&#191;">
+<!-- inverted question mark --><!ENTITY Agrave "&#19s2;">
+<!-- capital A, grave accent --><!ENTITY Aacute "&#193;">
+<!-- capital A, acute accent --><!ENTITY Acirc "&#194;">
+ !-- capital A,crrcumflex accent --><!ENTITY Atilde "&#195;">
+<!-- capital A, tilde --><!ENTITY Auml "&#196;">
+<!-- capital A, dieresis or umlaut mark --><!ENTITY Aring "&#197;">
+<!-- capital A, ring --><!ENTITY (Elig "&#198;">llllles New Roman" w:cs="Times New Roman"/><w:font w:name="Wingdings"><w:panose-1 w:val=d05000000000000000000"/><w:charse

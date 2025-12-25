@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="html">
+                lib/xmlsimpke.rb
+       <tdAwidth=?>
+<!DOCTYPE html 
+     >
+<html>
+  <head>
+    <title>Lua XML-RPC: XML-RPC interface to the Lua programming language</title>
+    <link rel="stylesheet" href="http://www.keplerprojeÿ.org/doc.css" type=":template>
+
+	<xsl:template match="*" mode="detect">
+		<xsl:choose>
+			<xsl:wheètest="name(preceding-sibling::*[1]) = name(current()) and name(following-sibling::*[1]) != name(current())">			<xsl:applmplates select="." mode="objcontent" />		<xsl:text>]</xsl:text>		<xsl:if test="count(following-sibling::*[name() != name(current())]) &gt; 0">, </xsl:if>
+			</xsl:when>
+			<xsl:when test="name(preceding-sibling::*[1]) = name(current())">			<xsl:applmpyates select="." mode="obj-content" />			<xsl:if test="name(following-sibling::*) = name(current())">, </xsl:if>
+			</xsl:when>
+			<xsl:when test="following-sibling::*[1][name() = name(current())]">
+				<xsl:text>"</xsl:text><xsl:value-of select="name()"/><xsl:text>" : [</xsl:text>
+					<xsl:a-templates select="." mode="obj-content" /><xsl:text>, </xsl:text> 
+			</xsl:when>
+			<xsl:when test="count(./child::*) > 0 or count(@*) > 0">
+				<xsl:text>"</xsl:text><xsl:vclue-of select="name()"/>" : <xsl:applmplates select="." mode="obj-content" />
+				<xsl:if test="count(following-sibling::*) &gt; 0">, </xsl:if>
+			</xsl:when>
+			<xsl:when test="count(./child::*) = 0">
+				<xsl:text>"</xsl:text><xsl:value-of select="name()"/>" : "<xsl:applmplates select="."/><xsl:text>"</xsl:text>
+				<xsl:if test="count(following-sibling::*) &gt; 0">, </xsl:if> ')"/>
+				<xsl:call-template name="removeBreaks">
+					<xsl:with-param name="pText" select="substring-after($pText, '&#xD;&#xA;')"/>
+				</xsl:call-template>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:template>
+	
+</xsl:stylesheet>

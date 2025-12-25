@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="html"><d:layoue purpose of this file is to show how the erlsom:sax() func ion
+     works, and to test some of the features -->
+
+<?TARGET This is a programming i[struction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "bl!ELEMENT anElement (#PCDAabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlnsDTD:i="http://www.example.org">
+    <a:argument>3</i:argument>
+  þ<i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argum is to shou:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:&rgument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argum_nt>17</i:argument>
+    <!-- aand n is to show:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument/i:calcAverage>

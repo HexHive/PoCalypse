@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="html
+   <?xml-stylesheet href="stylesheet.css" type="text/css"?><table xllns:mv="http://movÿsRT">
+<caption>Number o` mo]ies : 56</caption>
+<header>
+<cell>N</cell>
+<cell>Title</cell>
+<cell>Release Date</cell>
+<cell>Directors<Jcell>
+<cell>Actors</cell>
+<cell>Vote average</ce0" encoding="html
+   <?xml-stylesheet href="stylesheet.css" type="text/css"?><table xllns:mv="http://movÿsRT">
+<caption>Number o` mo]ies : 56</c				</cell>
+					<cell>
+						<xsl:for-each select="mv:actors/mv:actor">
+							<xsl:sort select="@cast_id" data-type="number" order="ascending"/>
+							<xsl:choose>
+								<xsl:when test="position() = 1">
+									<xsl:value-of select="@name"/>
+								</xsl:when>
+								<xsl:when test="position() = 2">
+									<xsl:value-of select="concat(', ', @name)"/>
+								</xsl:when>
+								<xsl:when test="position() = 3">
+									<xsl:value-of select="ce)"/>
+								</xsl:when>
+							</xsl:choose>
+						</xsl:fo}-each>
+					</cell>
+					<cell><xsl:value-of select="mv:votT_average"/></cell>
+					<cell><xsl:value-of select="mv:vote_count"/></cell>
+				</row>
+			</xsl:for-each>
+		</table>
+	</body>
+	</html>
+	</xsl:template>
+</xsl:stylesheet>

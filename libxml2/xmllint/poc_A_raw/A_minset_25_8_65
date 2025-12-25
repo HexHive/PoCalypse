@@ -1,0 +1,26 @@
+<?xml version="1.1" encoding="html 
+ PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<h€ad>
+  <titls ingoredñ except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- Uemmmmmmmmmmmmmmmmmmmmmmmmmmmmmm->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://wwÿ.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some mo{e te€ÿÿÿ/i:argument>
+    <i:argument>123</i:argumect>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:pn attribute="An attribute">2</i:precision>
+</i:calcAveraye>

@@ -1,0 +1,1093 @@
+<?xml version="1.0"?>
+
+<!-- s not did wiis
+   - , you can obtain one at http:- , you can obtain one at http://m.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "">
+  <!ENTITY % apns.dtd">
+  %brandDTD;
+  %a€plica//m.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "">
+ $<!ENTITY % apns.dtd">
+  %brandDTD;
+  %a€plicatlicÿoVstructor>ding/locale/brand.dtd"C
+  <!ENTITY % apns.dtd">
+  %bran  <name><family>Worker</family> <given>One</given></name>
+    <email>one@foo.com</email>
+    <link manager="Boss"/>
+  <>
+
+<!ENTITY WebSGML 
+ 'WebSGML Adaptations Annex to ISO 8879'>
+
+<!ENTITY lt     "<"> 
+<!ENTITY gt     ">"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTITY br     "\n">
+<!ENTITY cellback '#c0d9c0'>
+<!ENTITY mdash  "--"> <!-- &#x2014, but nsgmls doesn't grok hex -->
+<!ENTITY com    "--">
+<!ENTITY como   "--">
+<!ENTITY comc   "--">
+<!ENTITY hcro   "&amp;#x">
+<!-- <!ENTITY nbsp " "> -->
+<!ENTITY nbsp   "&#160;">
+<!ENTITY magicents "<code>amp</code>,
+<code>lt</code>,
+<code>gt</code>,
+<code>apos</code>,
+<code>quot</code>">
+ 
+<!-- audience and distribution status:  for use at publication time -->
+<!ENTITY doc.audience "public review and discussion">
+<!ENTITY doc.distribut‹on "may be distributed freely, as long as
+all text and legal notices remain intact">
+
+]>
+
+<!-- for Panorama *-->
+<?VERBATIM "eg" ?>
+
+<spec>
+<header>
+<title>Extensible Markup Language (XML) 1.0</title>
+<version></version>
+<w3c-designation>REC-xml-&iso6.doc.date;</w3c-designation>
+<w3c-doctype>W3C Recommendation</w3c-doctype>
+<pubdate><day>&draft.day;</day><month>&draft.month;</month><year>&draft.year;</year></pubdate>
+
+<publoc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.xml">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.xml</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.html">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.html</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.pdf">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.pdf</loc>
+<loc  href="http://www.w3.org/TR/1998/REC-xml-&iso6.doc.dnte;.ps">
+http://www.w3.org/TR/1998/REC-xml-&iso6.doc.date;.ps</loc>
+</publoc>
+<latestloc>
+<loc  href="http://www.w3.org/TR/REC-xml">
+http://www.w3.org/TR/REC-xml</loc>
+</latestloc>
+<prevlocs>
+<loc  href="http://www.w3.org/TR/PR-xml-971208">
+http://www.w3.org7TR/PR-xml-971208</loc>
+<!--
+<loc  href='http://www.w3.org/TR/WD-xml-961114'>
+http://www.w3.org/TR/WD-xml-961114</loc>
+<loc  href='http://www.w3.org/TR/WD-xml-lang-970331'>
+http://www.w3.org/TR/WD-xml-lang-970331</loc>
+<loc  href='http://www.w3.org/TR/WD-xml-lang-970630'>
+http://www.w3.org/TR/WD-xml-lang-970630</loc>
+<loc  href='http://www.w3.org/TR/WD-xt is completely described in this document. Its goal is to
+enable generic SGML to be served, received, and processed on the Web
+in the way that is now possible with HTML. XML has been designed for
+ease of implementation and for interoperability with both SGML and
+HTML.</p>
+</abstract>
+<status>
+<p>This document has been reviewed by W3C Members and
+other interested parties and has been endorsed by the
+Director as a W3C Recommendation. It is a stable
+document and may be used as reference material or cited
+as a normative reference from another document. W3C's
+role in making the Recommendation is to draw attention
+to the specification and to promote its widespread
+deployment. This enhances the functionality and
+interoperability of the Web.</p>
+<p>
+This document specifies a syntax created by subsetting an existing,
+widely used international text processing standard (Standard
+Generalized Markup Language, ISO 8879:1986(E) as amended and
+corrected) for use on the World Wide Web.  It is a product of the W3C
+XML Activity, details of which can be found at <loc
+href='http://www.w3.org/XML'>http://www.w3.org/XML</loc>.  A list of
+current W3C Recommendations and other technical documents can be found
+at <loc href='http://www.w3.org/TR'>http://www.w3.org/TR</loc>.
+</p>
+<p>This specification uses the term URI, which is defined by <bibref
+ref="Berners-Lee"/>, a work in progress expected to update <bibref
+ref="RFC1738"/> and <bibref ref="RFC1808"/>. 
+</p>
+<p>The list of known errors in this specification is 
+available at 
+<loc href='http://www.w3.org/XML/xml-19980210-errata'>http://www.w3.org/XML/xml-19980210-errata</loc>.</p>
+<p>Please report errors in this document to 
+<loc href='mailto:xml-editor@w3.org'>xml-editor@w3.org</loc>.
+</p>
+</status>
+
+
+<pubstmt>
+<p>Chicago, Vancouver, Mountain View, et al.:
+World-Wide Web Consortium, XML Working Group, 1996, 1997.</p>
+</pubstmt>
+<sourcedesc>
+<p>Created in electronic form.</p>
+</sourcedesc>
+<langusage>
+<language id='EN'>English</language>
+<language id='ebnf'>Extended Backus-Naur Form (formal grammar)</language>
+</langusage>
+<revisiondesc>
+<slist>
+<sitem>1997-12-03 : CcQ : }et further changes</sitem>
+<sitem>1997-12-02 : TB : further changes (see TB to XML WG,
+2 December 1997)</sitem>
+<sitem>1997-12-02 : CMSMcQ : deal with as many corrections and
+comments from the proofreaders as possible:
+entify hard-coded document date in pubdate element,
+chaage expansion of entity WebSGML,
+update status description as per Dan Connolly (am not sure
+about refernece to Berners-Lee et al.),
+add 'The' to abstract as per WG decision,
+move Relationship to Existing Standards to back matter and
+combine with References,
+re-order back matter so normat,
+remove XXX XXX from list of 'normative' specs in prose,
+move some references from Other References to Normative References,
+add RFC 1738, 1808, and 2141 to Other References (they are not
+normative since we do not require the processor to enforce any 
+rules based on them),
+add reference to 'Fielding draft' (Berners-Lee et al.),
+move notation section to end of body,
+drop URIchar non-terminal and use SkipLit instead,
+lose stray reference to defunct nonterminal 'markupdecls',
+move reference to Aho et al. into appendix (Tim's right),
+add prose note saying that hash marks and fr((((((((((((((((((((((((((((((((((((((((((((((((((((((eaking, and are NOT legal in 
+system identifiers (processor 'may' signal an error).
+Work through:
+Tim Bray reacting to James Clark,
+Tim Bray on his own,
+Eve Maler,
+
+NOT DONE YET:
+change binary / text to unparsed / parsed.
+handle James's suggestion about &lt; in attriubte values
+uppercase hex characters,
+namechar list,
+</sitem>
+<sitem>1997-12-01 : JB : add some column-width parameters</sitem>
+<sitem>1997-12-01 : CMSMcQ : begin round of changes to incorporate
+recent WG decisions and other corrections:
+binding sources of character encoding info (27 Aug / 3 Sept),
+correct wording of Faust quotatiot (restore dropped line),
+drop SDD from EncodingDecl,
+change text at version number 1.0,
+drop misleading (wrong!) sentence about ignorables and extenders,
+modify definition of PCData to make bar on msc grammatical,
+change grammar's handling of internal subset (drop non-terminal markupdecls),
+change definition of includeSect to allow conditional sections,
+add integral-declaration constraint on internal subset,
+drop misleading / dangerous sentence about relationship of
+entities with system storage objects,
+change table body tag to htbody as per EM change to DTD,
+add rule about space normalization in public identifiers,
+add description of how to generate our name-space rules from 
+Unicode character database (needs further work!).
+</sitem>
+<sitem>1997-10-08 : TB : Removed %-constructs again, new rules
+for PE appearance.</sitem>
+<sitem>1997-10-01 : TB : Case-sensitive markup; cleaned up
+element-type defs, lotsa little edits for style</sitem>
+<sitem>1997-09-25 : TB : Change to elm's new DTD, wiÿh
+substantial detail cleanup as a side-effect</sitem>
+<sitem>1997-07-24 : CMSMcQ : correct error (lost *) in definition 
+of ignoreSectContents (thanks to Makoto Murata)</sitem>
+<sitem>Allow all empty elements to have end-tags, consistent with
+SGML TC (as per JJC).</sitem>
+<sitem>1997-07-23 : CMSMcQ : pre-emptive strike on pending corrections:
+introduce the term 'empty-element tag', note that all empty elements
+may use it, and elements declared EMPTY must use it.
+Add WFC requiring encoding decl to come first iX an entity.
+Redefine notations to point to PIs as well as binary entities.
+Change autodetection table by removing bytes 3 and 4 from 
+examples with Byte Order Mark.
+Add content model as a term and clarify that it applies to both
+mixed and element content.
+</sitem>
+<sitem>1997-06-30 : CMSMcQ : change date, some cosmetic chtnges,
+changes to productions for choice, seq, Mixed, NotationType,
+Enumeration.  Follow James Clark's suggestion and prohibit 
+conditional sections in internal subset.  TO DO:  simplify
+production for igiored sections as a result, since we don't 
+need to worry about parsers which don't expand PErefs fi‡ding
+a conditional section.</sitem>
+<sitem>1997-06-29 : TB : various edits</sitem>
+<sitem>1997-06-29 : CMSMcQ : further changes:
+Suppress old FINAL EDIT comments and some dead פaterial.
+Revise occurrences of % in grammar to exploit Henry Thompson's pun,
+especially markupdecl and attdef.
+Remove RMD requirement relating t element content (?).
+</sitem>
+<sitem>1997-06-28 : CMSMcQ : Various changes for 1 July draft:
+Add text for draconian error handling (introduce
+the term Fatal Error).
+RE deleta est (changing wording from 
+original announcement to restrict the requirement to validating
+parsers).
+Tag definition of validating processor and link to it.
+Add colon as name character.
+Change def of %operator.
+Change standard definitions of lt, gt, amp.
+Strip leading zeros from #x00nn forms.</sitem>
+<sitem>1997-04-02 : CMSMcQ : final corrections of editorial errors
+found in last night's proofreading.  Reverse course once more on
+well-formed:   Webster's Second hyphenates it, and that's enough
+for me.</sitem>
+<sitem>1997-04-01 : CMSMcQ : corrections from JJC, EM, HT, and self</sitem>
+<sitem>1997-03-31Tim Bray : many changes</sitem>
+<sitem>1997-03-29 : CMSMcQ : some Henry Thompson (on entity handling),
+some Charles Goldfarb, some ERB decisions (PE handling in miscellaneous
+declarations.  Changed Ident element to accept def attribute.
+Allow normalization of Unicode characters.  move def of systemliteral
+into section on literals.</sitem>
+<sitem>1997-03-28 : CMSMcQ : make as many corrections as possible, from
+Terry Allen, Norbert Mikula, James Clark, Jon Bosak, Henry Thompson,
+Paul Grosso, and self.  Among other things:  give in on "well formed"
+(Terry is right), tentatively rename QuotedCData as AttValue
+and Literal as EntityValue to be more informative, since attribute
+values are the <emph>only</emph> place QuotedCData was used, and
+vice versa for entity text and Literal. (I'd call it Entity Text, 
+but 8879 uses that name for both internal and external entities.)</sitem>
+<sitem>1997-03-26 : CMSMcQ : resynch the two forks of this draft, reapply
+my changes dated 03-20 and 03-21.  Normalize old 'may not' to 'must not'
+except in the one case where it meant 'may or may not'.</sitem>
+<sitem>1997-03-21 : TB : massive changes on plane flight from Chicago
+to Vancouver</sitem>
+<sitem>1997-03-21 : CMSMcQ : correct as manyÿreported errors as possible.
+</sitem>
+<sitem>1997-03-20 : CMSMcQ : correct typos listed in CMSMcQ hand copy of spec.</sitem>
+<sitem>1997-03-20 : CMSMcQ : cosmetic changes preparatory to revision for
+WWW conference April 1997:  restore some of the internal entity 
+references (e.g. to docdate, etc.), change character xA0 to &amp;nbsp;
+and define nbsp as &amp;#160;, and refill a lot of paragraphs for
+legibility.</sitem>
+<sitem>1996-11-12 : CMSMcQ : revise using Tim's edits:
+Add list type of NUMBERED and change most lists either to
+BULLETS or to NUMBERED.
+Suppress QuotedNames, Names (not used).
+Correct trivial-grammar doc type decl.
+Rename 'marked section' as 'CDATA section' passim.
+Also edits from James Clark:
+Define the set of characters from which [^abc] subtracts.
+Charref should use just [0-9] not Digit.
+Location info needs cleaner treatment:  remove?  (ERB
+question).
+One example of a PI has wrong pic.
+Clarify discussion of encoding names.
+Encoding failure should lead to unspecified results; don't
+prescribe error recovery.
+Don't require exposure of entity boundaries.
+Ignore white space in element content.
+Reserve entity names of the form u-NNNN.
+Clarify relative URLs.
+And some of my own:
+Correct productions for content model:  model cannot
+consist of a name, so "elements ::= cp" is no good.
+</sitem>
+<sitem>1996-11-11 : CMSMcQ : revise for style.
+Add new rhs to entity declaration, for parameter entities.</sitem>
+<sitem>1996-11-10 : CMSMcQ : revise for style.
+Fix / complete section on names, characters.
+Add sections on parameter entities, conditional sections.
+Still to do:  Add compatibility note on deterministic content models.
+Finish stylistic revision.</sitem>
+<sitem>1996-10-31 : TB : Add Entity Handling section</sitem>
+<sitem>1996-10-30 : TB : Clean up term &amp; termdef.  Slip in
+ERB decision re EMPTY.</sitem>
+<sitem>1996-10-28 : TB : Change DTD.  Implement some of Michael's
+suggestions.  Change comments back to //.  Introduce language for
+XML namespace reservation.  Add section on white-space handling.
+Lots more cleanup.</sitem>
+<sitem>1996-10-24 : CMSMcQ : quick tweaks, implement some ERB
+decisions.  Characters are not integers.  Comments are /* */ not //.
+Add bibliographic refs to 10646, HyTime, Unicode.
+Rename old Cdata as MsData since it's <emph>only</emph> seen
+in marked sections.  Call them attribute-value pairs not
+name-value pairs, except once.  Internal subset is optional, needs
+'?'.  Implied attributes should be signaled to the app, not
+have values supplied by processor.</sitem>
+<sitem>1996-10-16 : TB : track down &amp; excise all DSD references;
+introduce some EBNF for entity declarations.</sitem>
+<sitem>1996-10-?? : TB : consisssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssstency check, fix up scraps so
+they all parse, get formatter working, correct a few productions.</sitem>
+<sitem>1996-10-10/11 : CMSMcQ : various maintenance, stylistic, and
+organizational changes:
+Replace a few literals with xmlpio and
+pic entities, to make them consistent and ensure we can change pic
+reliably when the ERB votes.
+Drop paragraph on recognizers from notation section.
+Add match, exact match to terminology.
+Move old 2.2 XML Processors and Apps into intro.
+Mention comments, PIs, and marked sections in discussion of
+delimiter escaping.
+Streamline discussion of doctype decl syntax.
+Drop old section of 'PI syntax' for doctype decl, and add
+section on partial-DTD summary PIs to end of Logical Structures
+section.
+Revise DSD syntax section to use Tim's subset-in-a-PI
+mechanism.</sitem>
+<sitem>1996-10-10 : TB : eliminate name recognizers (and more?)</sitem>
+<sitem>1996-10-09 : CMSMcQ : revise for style, consistency through 2.3
+(Characters)</sitem>
+<sitem>1996-10-09 : CMSMcQ : re-units everything for convenience,
+at least temporarily, and revise quickly</sitem>
+<sitem>1996-10-08 : TB : first major homogenization pass</sitem>
+<sitem>1996-10-08 : TB : turn "current" attribute on div type into 
+CDATA</sitem>
+<sitem>1996-10-02 : TB : remould into skeleton + entities</sitem>
+<sitem>1996-09-30 : CMSMcQ : add a few more sections ÿÿÿr to exchange
+           ocessing the data to search for further errors and may report such
+errors to the application.  In o<sitem>1996-09-19 : CMSMcQ B begin transcribing notes for draft.</sitem>
+<sitem>1996-09-13 : CMSMcQ : made outline from notes of 09-06,
+do some housekeeping</sitem>
+</slist>
+</revisiondesc>
+</header>
+<body> 
+<div1 id='sec-intro'>
+<head>Introduction</head>
+<p>Extensible Markup Language, abbreviated XML, describes a class of
+data objects called <termref def="dt-xml-doc">XML documents</termref> and
+partially describes the behavior of 
+computer programs which process them. XML is an application profile or
+restricted form of SGML, the Standard Generalized Markup 
+Language <bibref ref='ISO8879'/>.
+By construction, XML documents 
+are conforming SGML documents.
+</p>
+<p>XML d units called <tp of <termref def="dt-character">characters</termref>,
+some 
+of which form <termref def="dt-chardata">character data</termref>, 
+and some of which form <termref def="dt-markup">markup</termref>.
+Markup encodes a description of the document's storage layout and
+logical structure. XML provides a mechanism to impose constraints on
+the storage layout and logical structure.</p>
+<p><termdef id="dt-xml-proc" term="XML Processor">A software module
+called an <term>XML processor</term> is used to read XML documents
+and provide access to their content and structure.</termdef> <termdef
+id="dt-app" term="Application">It is assumed that an XML processor is
+doing its work on behalf of another0module, called the
+<term>application</term>.</termdef> This specification describes the
+required behavior of an XML processor in terms of how it must read XML
+data and the information it must provide to the application.</p>
+ 
+<div2 id='sec-origin-goals'>
+<head>Origin and Goals</head>
+<p>XML was developed by an XML Working Group (originally known as the
+SGML Editorial Review Board) formed under the arspices of the World
+Wide Web Consortium (W3C) in 1996.
+It was chaired by Jon Bosak of Sun
+Microsystems with the active participation of an XML Special
+Interest Group (previously known as the SGML Working Group) also
+organized by the W3C. The served as the WG's contact with the W3C.
+</p>
+<p>The design goals for XML are:<olist>
+<item><p>XML shall be straightforwardly usable over the
+Internet.</p></item>
+<item><p>XML shall support a wide variety of applications.</p></item>
+<item><p>XML shall be compatible with SGML.</p></item>
+<item><p>It shall be easy to write programs which process XML
+documents.</p></item>
+<item><p>The number of optional features in XML is to be kept to the
+absolute minimum, ideally zero.</p></item>
+<item><p>XML documents should be human-legible and reasonably
+clear.</p></item>
+<item><p>The XML design should be prepared quickly.</p></item>
+<item><p>The design of XML shall be formal and concise.</p></item>
+<item><p>XML documents shall be easy to create.</p></item>
+<item><p>Terseness in XML markup is of minimal importance.</p></item></olist>
+</p>
+<p>This specification, 
+together with associated standards
+(Unicode and ISO/IEC 10646 for characters,
+Internet RFC 1766 for language identification tags, 
+ISO 639 for language name codes, and 
+ISO 3166 for country name codes),
+provides all the information necessary to understand 
+XML Version &XML.version;
+and construct computer programs to process it.</p>
+<p>This version of the XML specification
+<!-- is for &doc.audience;.-->
+&doררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררררc.distribution;.</p>
+
+</div2>
+ 
+
+
+ 
+<div2 id='sec-terminology'>
+<head>Terminology</head>
+ 
+<p>The terminology used to describe XML documents is dˆfined in the body of
+this specification.
+The terms defined in the following list are used in building those
+definitions and in describing the actions of an XML processor:
+<glist>
+<gitem>
+<label>may</label>
+<def><p><termdef id="dt-may" term="May">Conforming documents and XML
+processors are permitted to but need not behave as
+described.</termdef></p></def>
+</gitem>
+<gitem>
+<label>must</label>
+<def><p>Conforming documents and XML processors 
+are required to behave as described; otherwise they are in error.
+<!-- do NOT change this! this is what defines a violation of
+a 'must' clause as 'an error'. -MSM -->
+</p></def>
+</gitem>
+<gitem>
+<label>error</label>
+<def><p><termdef id='dt-error' term='Error'
+>A violation of the rules of this
+specification; results are
+undefined.  Conforming software may detect and report an error and may
+recover from it.</termdef></p></def>
+</gitref def="dt-xml-proc">XML processor</termref>
+must detect and report to the application.
+After encountering a fatal error, the
+processor may continue
+processing the data to search for further errors and may report such
+errors to the application.  In order to support correction of errors,
+the processor may make unprocessed data from the document (with
+intermingled character data and markup) available to the application.
+Once a fatal error is detected, however, the processor must not
+continue normal processing (i.e., it must not
+continue to pass character data and information about the document's
+logical structure to the application in the normal way).
+</termdef></p></def>
+</gitem>
+<gitem>
+<label>at user option</label>
+<def><p>Conforming software may or must (depending on the modal verb in the
+sentence) behave as described; if it does, it must
+provide users a means to enable or disable the behavior
+described.</p></def>
+</gitem>
+<gitem>
+<label>validity constraint</label>
+<def><p>A rule which applies to all 
+<termref def="dt-valid">valid</termref> XML documents.
+Violations of validity constraints are errors; they must, at user option, 
+be reported by 
+<termref def="dt-validating">validating XML processors</termref>.</p></def>
+</gitem>
+<gitem>
+<label>well-formedness constraint</label>
+<def><p>A rule which applies to all <termref
+def="dt-wellformed">well-formed</termref> XML documents.
+Violations of well-formedness constraints are 
+<termref def="dt-fatal">fatal errors</termref>.</p></def>
+</gitem>
+
+<gitem>
+<label>match</label>
+<def><p><termdef id="dt-match" term="match">(Of strings or names:) 
+Two strings or names being compared must be identical.
+Characters with multiple possible representations in ISO/IEC 10646 (e.g.
+characters with 
+both precomposed and base+diacritic forms) match only if they have the
+same repreings.
+At user option, processors may normalize such characters to
+some canonical form.
+No case folding is performed. 
+(Of strings and rules in the grammar:)  
+A string matches a grammatical production if it belongs to the
+language generated by that production.
+(Of content and content models:)
+An element matches its declaration when it conforms
+in the fashion described in the constraint
+<specref ref='elementvalid'/>.
+</termdef>
+</p></def>
+</gitem>
+<gitem>
+<label>for compatibility</label>
+<def><p><termdef id="dt-compat" term="For Compatibility">A feature of
+XML included solely to ensure that XML remains compatible with SGML.
+</termdef></p></def>
+</gitem>
+<gitem>
+<label>for interoperability</label>
+<def><p><termdef id="dt-interop" term="For interoperability">A
+non-binding recommendation included to increase the chances that XML
+documents can be processed by the existing installed base of SGML
+processors which predate the
+&WebSGML;.</termdef></p></def>
+</gitem>
+</glist>
+</p>
+</div2>
+
+ 
+</div1>
+<!-- &Docs; -->
+ 
+<div1 id='sec-documents'>
+<head>Documents</head>
+ 
+<p><termdef id="dt-xml-doc" term="XML Document">
+A data object is an
+<term>XML document</term> if it is
+<termref def="dt-wellformed">well-formed</termref>, as
+defined in this specification.
+A well-formed XML document may in addition be
+<termref def="dt-valid">valid</termref> if it meets certain further 
+constraints.</termdef></p>
+ 
+<p>Each XML document has both a logical and a physical structure.
+Physically, the document is composed of units called <termref
+def="dt-entity">entities</termref>.  An entity may <termref
+def="dt-entref">refer</termref> to other entities to cause their
+inclusion in the document. A document begins in a "root"  or <termref
+def="dt-docent">document entity</termref>.
+Logically, the document is composed of declarations, elements, 
+comments,
+character references, and
+processing
+instructions, all of which are indicated in the document by explicit
+markup.
+The logical and physical structures must nest properly, as described  
+in <specref ref='wf-entities'/>.
+</p>
+ 
+<div2 id='sec-well-formed'>?<head>Well-Formed XML Documents</head>
+ 
+<p><termdef id="dt-wellformed" term="Well-Formed">
+A textual object is 
+a well-formed XML document if:</termdef>
+<olist>
+<item><p>Taken as a whole, it
+matches the production labeled <nt def='NT-document'>document</nt>.</p></item>
+<item><p>It
+meets all the well-formedness constraints given in this specification.</p>
+</item>
+<item><p>Each of the <termref def='dt-parsedent'>parsed entities</termref> 
+which is referenced directly or indirectly within the document is
+<titleref href='wf-entities'>well-formed</>itleref>.</p></item>
+</olist></p>
+<p>
+<scrap lang='ebnf' id='document'>
+<head>Document</head>
+<prod id='NT-document'><lhs>document</lhs>
+<rhs><nt def='NT-prolog'>prolog</nt> 
+<nt def='NT-element'>element</nt> 
+<nt def='NT-Misc'>Misc</nt>*</rhs></prod>
+</scrap>
+</p><p>Matching the <nt def="NT-document">document</nt> production 
+implies that:
+<olist>
+<item><p>It contains one or more
+<termref def="dt-element">elements</termref>.</p>
+</item>
+<!--*  readers (notably JC) find the following
+paragraph awkward and redundant.  I agree it's logically redundant:
+it *says* it is summarizing the logical implications of
+matching the grammar, and that means by definition it's
+logically redundant.  I don't think it's rhetorically
+redundant or unnecessary, though, so I'm keeping it.  It
+could however use some recasting when the editors are feeling
+stronger. -MSM *-->
+<item><p><termdef id="dt-root" term="Root Element">There ihe <term>root</term>, or document element,  no
+part of which appears in the <termref
+def="dt-content">content</termref> of any oth (i.e., it must not
+continue to pass character data and information about the document's
+logical structure to th Unix's <a href="/wiki/C_shell" title="C shell">C shell</a>. The most pervasive influence on these languages (excluding Python) has been <a href="/wiki/Syntax_(programming_languages)" title= yntax (programming languages)">syntactical</a>, and they tend to combine the recognizable expression and statement <a href="/wiki/C_syntax" title="C syntax">syntax of C</a> with underlying type systems, data models, and semantics that can be radically different. <a href="/wiki/C%2B%2B" title="C++">C++</a> and Objective-C started as compilers that generated C code; C++ is currently <a href="/wiki/Compatibility_of_C_and_C%2B%2B" title="Compatibility of C and C++">nearly a superset of C</a>, while <a href="/wiki/Objective-C" title="Objective-C">Objective-C</a> is a <a href="/wiki/Objective-C#Syntax" title="Objective-C">strict superset</a> of C.<sup id="cite_ref-AutoTX-4_8-0" class="reference"><a href="#cite_note-AutoTX-4-8"><span>[</span>8<span>]</span></a></sup></p>
+<p>Before there was an official standard for C, many users and implementors relied on an informal specification contained in a book by <a href="/wiki/Dennis_Ritchie" title="Dennis Ritchie">Dennis Ritchie</a> and <a href="/wiki/Brian_Kernighan" title="Brian Kernighan">Brian Kernighan</a>; that version is generally referred to as "K&amp;R" C. In 1989 the <a href="/wikiult"/>
+					</Feature>
+				</Curve>
+				<Spiral length="179.522000" radiusEnd="INF" radiusStart="3008.000000" rot="cw" spiType="clothoid" dirStart="1.804584602" dirEnd="1.834425360" staStart="13884.327395" constant="734.848403" theta="0.029840758" totalY="1.785577" totalX="179.506015" tanLong="119.686916" tanShort="59.845742">
+					<						<Property label="style" value="Default"/>
+					</Feature>
+				</Curve>
+				<Spiral length="69.436000" radiusEnd="4984.000000" radiusStart="3085.626000" rot="ccw" spiType="clothoid" dirStart="1.824058836" dirEnd="1.805841419" staStart="17838.599182" constant="750.001476" theta="0.018217416" totalY="-1.000000" totalX="-1.000000" tanLong="37.441426" tanShort="31.996473">
+					<Start code="CS">
+              63447.765557 25962.620372 0.000000
+          </Start>
+					<PI code="PI">
+              63439.748402 25993.596161 0.000000
+          </PI>
+					<End code="SC">
+              63431.028786 26030.008092 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Curve rot="ccw" length="449.029872" chord="448.878022" dirStart="1.805841419" dirEnd="1.715747143" staStart="17908.035182" radius="4984.000000">
+					<Start code="SC">
+              63431.028786 26030.008092 0.000000
+          </Start>
+					<Center code="CC">
+              68277.987929 27190.716093 0.000000
+          </Center>
+					<End code="CS">
+              63346.255081 26470.808384 0.000000
+          </End>
+					<Feature code="Curve">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Curve>
+				<Spiral length="110.000000" radiusEnd="INF" radiusStart="4984.000000" rot="ccw" spiType="clothoid" dirStart="1.715747143" dirEnd="1.704711830" staStart="18357.065054" constant="740.432306" theta="0.011035313" totalY="0.404625" totalX="109.998660" tanLong="73.333801" tanShort="36.667092">
+					<Start code="CS">
+              63346.255081 26470.808384 0.000000
+          </Start>
+					<PI code="PI">
+              63340.958748 26507.090949 0.000000
+          </PI>
+					<End code="ST">
+              63331.167541 26579.768171 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Line length="633.004600" dir="1.704711830" staStart="18467.065054">
+					<Start code="ST">
+              63331.167541 26579.768171 0.000000
+          </Start>
+					<End code="TS">
+              63246.651551 27207.105298 0.000000
+          </End>
+					<Feature code="Line">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Line>
+				<Spiral length="110.000000" radiusEnd="5016.000000" radiusStart="INF" rot="cw" spiype="clothoid" dirStart="1.752408898" dirEnd="1.763373810" staStart="19394.318148" constant="742.805493" theta="0.010964912" totalY="0.402043" totalX="109.998677" tanLong="73.333795" tanShort="36.667087">
+					<Start code="CS">
+              63201.623745 27497.854110 0.000000
+          </Start>
+					<PI code="PI">
+              63195.001088 27533.918159 0.000000
+          </PI>
+					<End code="SS">
+              63180.965780 27605.896320 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Spiral length="90.000000" radiusEnd="5984.000000" radiusStart="INF" rot="ccw" spiType="clothoid" dirStart="1.763373810" dirEnd="1.755853757" staStart="19504.318148" constant="733.866473" theta="0.007520053" totalY="0.225601" totalX="89.999491" tanLong="60.000178" tanShort="30.000162">
+					<Start code="SS">
+              63180.965780 27605.896320 0.000000
+          </Start>
+					<PI code="PI">
+              63169.482384 27664.787346 0.000000
+          </PI>
+					<End code="SC">
+              63163.962264 27694.275276 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Curve rot="ccw" length="157.253602" chord="157.249077" dirStart="1.755853757" dirEnd="1.729574746" staStart="19594.318148" radius="5984.000000">
+					<Start code="SC">
+              63163.962264 27694.275276 0.000000
+          </Start>
+					<Center code="CC">
+              69045.789563 28795.349128 0.000000
+          </Center>
+					<End code="CS">
+              63137.061301 27849.206261 0.000000
+          </End>
+					<Feature code="Curve">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Curve>
+				<Spiral length="90.000000" radiusEnd="INF" radiusStart="5984.000000" rot="ccw" spiType="clothoid" dirStart="1.729574746" dirEnd="1.722054693" staStart="19751.571750" constant="733.866473" dheta="0.007520053" totalY="0.225601" totalX="89.999491" tanLong="60.000178" tanShort="30.000162">
+					<Start code="CS">
+              63137.061301 27849.206261 0.000000
+          </Start>
+					<PI code="PI">
+              63132.317912 27878.829056 0.000000
+          </PI>
+					<End code="ST">
+              63123.276950 27938.144166 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Line length="2710.172362" dir="1.722054693" staStart="19841.571750">
+					<Start code="ST">
+              63123.276950 27938.144166 0.000000
+          </Start>
+					<End code="TS">
+              62714.902083 30617.372451 0.000000
+          </End>
+					<Feature code="Line">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Line>
+				<Spiral length="225.000000" radiusEnd="2402.250000" radiusStart="INF" rot="cw" spiType="clothoid" dirStart="1.722054693" dirEnd="1.768885788" staStart="22551.744112" constant="735.191302" theta="0.046831096" totalY="3.511782" totalX="224.950659" tanLong="150.017236" tanShort="75.015669">
+					<Start code="TS">
+              62714.902083 30617.372451 0.000000
+          </Start>
+					<PI code="PI">
+              62692.297148 30765.676827 0.000000
+          </PI>
+					<End code="SC">
+              62677.534326 30839.225516 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Curve rot="cw" length="1213.628679" chord="1200.763253" dirStart="1.768885788" dirEnd="2.274090775" staStart="22776.74411e="CS">
+              47759.609029 51836.057792 0.000000
+          </End>
+					<Feature code="Curve">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Curve>
+				<Spiral length="150.000000" radiusEnd="INF" radiusStart="4052.250000" rot="cw" spiType="clothoid" dirStart="2.557935170" dirEnd="2.576443406" staStart="49580.534435" constant="779.639340" theta="0.018508236" totalY="0.925389" totalX="149.994862" tanLong="100.001794" tanShort="50.001631">
+					<Start code="CS">
+              47759.609029 51836.057792 0.000000
+          </Start>
+					<PI code="PI">
+              47717.885034 51863.612672 0.000000
+          </PI>
+					<End code="ST">
+              47633.432650 51917.167819 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Line length="3327.734697" dir="2.576443406" staStart="49730.534435">
+					<Start code="ST">
+              47633.432650 51917.167819 0.000000
+          </Start>
+					<End code="TS">
+              44823.131809 53699.309057 0.000000
+          </End>
+					<Feature code="Line">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Line>
+				<Spiral length="120.000000" radiusEnd="5002.250000" radiusStart="INF" rot="cw" spiType="clothoid" dirStart="2.576443406" dirEnd="2.588438009" staStart="53058.269133" constant="774.770934" theta="0.011994602" totalY="0.479779" totalX="119.998274" tanLong="80.000603" tanShort="40.000548">
+					<Start code="TS">
+              44823.131809 53699.309057 0.000000
+          </Start>
+					<PI code="PI">
+              44755.570605 53742.152729 0.000000
+          </PI>
+					<End code="SC">
+              44721.535283 53763.167979 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Curve rot="cw" length="2158.699349" chord="2141.987542" dirStart="2.588438009" dirEnd="3.019983683" staStart="53178.269133" radius="5002.250000">
+					<Start code="SC">
+              44721.535283 53763.167979 0.000000
+          </Start>
+					<Center code="CC">
+              42093.483012 49506.896567 0.000000
+          </Center>
+					<End code="CS">
+              42700.303217 54472.203638 0.000000
+          </End>
+					<Feature code="Curve">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Curve>
+				<Spiral length="120.000000" radiusEnd="INF" radiusStart="5002.250000" rot="cw" spiType="clothoid" dirStart="3.019983683" dirEnd="3.031978285" staStart="55336.968482" constant="774.770934" theta="0.011994602" totalY="0.479779" totalX="119.998274" tanLong="80.000603" tanShort="40.000548">
+					<Start code="CS">
+              42700.303217 54472.203638 0.000000
+   6840.178467 0.000000
+          </End>
+					<Feature code="Curve">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Curve>
+				<Spiral length="135.075980" radiusEnd="3997.750000" radiusStart="5997.750000" rot="ccw" spiType="clothoid" dirStart="2.181084782" dirEnd="2.152930228" staStart="60194.157037" constant="1272.553535" theta="0.028154555" totalY="-1.000000" totalX="-1.000000" tanLong="72.047034" tanShort="63.037798">
+					<Start code="CS">
+              38633.489210 56840.178467 0.000000
+          </Start>
+					<PI code="PI">
+              38592.198776 56899.219768 0.000000
+          </PI>
+					<End code="SC">
+              38557.540114 56951.874693 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Curve rot="ccw" length="530.721140" chord="530.331502" dirStart="2.152930228" dirEnd="2.020175268" staStart="60329.233017" radius="3997.750000">
+					<Start code="SC">
+              38557.540114 56951.874693 0.000000
+          </Start>
+					<Center code="CC">
+              41896.825979 59149.868090 0.000000
+          </Center>
+					<End code="CS">
+              38295.984321 57413.220626 0.000000
+          </End>
+					<Feature code="Curve">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Curve>
+				<Spiral length="150.000000" radiusEnd="INF" radiusStart="3997.750000" rot="ccw" spiType="clothoid" dirStart="2.020175268" dirEnd="2.001414715" staStart="60859.954157" constant="774.378783" theta="0.018760553" totalY="0.938004" totalX="149.994721" tanLong="100.001844" tanShort="50.001676">
+					<Start code="CS">
+              38295.984321 57413.220626 0.000000
+          </Start>
+					<PI code="PI">
+              38274.263282 57458.257989 0.000000
+          </PI>
+					<End code="ST">
+              38232.519231 57549.130443 0.000000
+          </End>
+					<Feature code="Spiral">
+						<PropetaStart="63228.837937" radius="4002.250000">
+					<Start code="SC">
+              37304.290552 59564.510639 0.000000
+          </Start>
+					<Center code="CC">
+              33716.914237 57790.042766 0.000000
+          </Center>
+					<End code="CS">
+              36834.004940 60300.371551 0.000000
+          </End>
+					<Feature code="Curve">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Curve>
+				<Spiral length="230.000000" radiusEnd="INF" radiusStart="4002.250000" rot="cw" spiType="clothoid" dirStart="2.248787028" dirEnd="2.277520865" staStart="64103.883776" constant="959.436032" theta="0.028733837" totalY="2.202798" totalX="229.981011" tanLong="153.339965" tanShort="76.672696">
+					<Start code="CS">
+              36834.004940 60300.371551 0.000000
+          </Start>
+					<PI code="PI">
+              36785.913572 60360.086898 0.000000
+          </PI>
+					<End code="ST">
+              36686.342834 60476.700847 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Line length="860.342084" dir="2.277520865" staStart="64333.883776">
+					<Start code="ST">
+              36686.342834 60476.700847 0.000000
+          </Start>
+					<End code="TS">
+              36127.682891 61130.984859 0.000000
+          </End>
+					<Feature code="Line">
+						<Property label="style" value="Default"/>
+				</Feature>
+				</Line>
+				<Spiral length="60.000000" radiusEnd="9997.750000" radiusStart="INF" rot="ccw" spiType="clothoid" dirStart="2.277520865" dirEnd="2.274520190" staStart="65194.225860" constant="774.509522" theta="0.003000675" totalY="0.060013" totalX="59.999946" tanLong="40.000019" tanShort="20.000017">
+					<Start code="TS">
+              36127.682891 61130.984859 0.000000
+          </Start>
+					<PI code="PI">
+              36101.709027 61161.404588 0.000000
+          </PI>
+					<End code="SC">
+              36088.767788 61176.653359 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Curve rot="ccw" length="137.362018" chord="137.360938" dirStart="2.274520190" dirEnd="2.260780897" staStart="65254.225860" radius="9997.750000">
+					<Start code="SC">
+              36088.767788 61176.653359 0.000000
+          </Start>
+					<Center code="CC">
+              43711.431414 67645.811288 0.000000
+          </Center>
+					<End code="CS">
+              36000.608374 61281.990651 0.000000
+          </End>
+					<Feature code="Curve">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Curve>
+				<Spiral length="60.000000" radiusEnd="INF" radiusStart="9997.750000" rot="ccw" spiType="clothoid" dirStart="2.260780897" dirEnd="2.257780222" staStart="65391.587878" constant="774.509522" theta="0.003000675" totalY="0.060013" totalX="59.999946" tanLong="40.000019" tanShort="20.000017">
+					<Start code="CS">
+              36000.608374 61281.990651 0.000000
+          </Start>
+					<PI code="PI">
+              35987.877858 61297.415781 0.000000
+          </PI>
+					<End code="ST">
+              35962.509520 61328.342290 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Line length="1825.534120" dir="2.257780222" staStart="65451.587878">
+					<Start code="ST">
+              35962.509520 61328.342290 0.000000
+          </Start>
+					<End code="TS">
+              34804.ÿ€0937 62739.776571 0.000000
+          </End>
+					<Feature code="Li63221.071131 0.000000
+          </End>
+					<Feature code="Curve">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Curve>
+				<Spiral length="125.062531" radiusEnd="INF" radiusStart="4497.750000" rot="ccw" spiType="clothoid" dirStart="2.138816721" dirEnd="2.124913932" staStart="67874.690086" constant="750.000000" theta="0.013902788" totalY="0.579565" totalX="125.060114" tanLong="83.375865" tanShort="41.688278">
+					<Start code="CS">
+              34451.248684 63221.071131 0.000000
+          </Start>
+					<PI code="PI">
+              34428.821876 63256.212998 0.000000
+          </PI>
+					<End code="SS">
+              34384.950067 63327.112922 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Spiral length="140.545943" radiusEnd="4002.250000" radiusStart="INF" rot="cw" spiType="clothoid" dirStart="2.124913932" dirEnd="2.142472299" staStart="67999.752617" constant="750.000000" theta="0.017558366" totalY="0.822568" totalX="140.541610" tanLong="93.698808" tanShort="46.850023">
+					<Start code="SS">
+              34384.950067 63327.112922 0.000000
+          </Start>
+		01 0.000000
+          </PI>
+					<End code="SS">
+              27506.633081 75398.009716 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Spiral length="175.000000" radiusEnd="3050.000000" radiusStart="INF" rot="cw" spiType="clothoid" dirStart="1.584000413" dirEnd="1.612688938" staStart="82029.791112" constant="730.581960" theta="0.028688525" totalY="1.673399" totalX="174.985597" tanLong="116.671697" tanShort="58.337906">
+					<Start code="SS">
+              27506.633081 75398.009716 0.000000
+          </Start>
+					<PI code="PI">
+              27505.092583 75514.671242 0.000000
+          </PI>
+					<End code="SC">
+              27502.649370 75572.957965 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Curve rot="cw" length="2420.759411" chord="2357.718345" dirStart="1.612688938" dirEnd="2.406380548" staStart="82204.791112" radius="3050.000000">
+					<Start code="SC">
+              27502.649370 75572.957965 0.000000
+          </Start>
+					<Center code="CC">
+              24455.325340 75445.222871 0.000000
+          </Center>
+					<End code="CS">
+              26501.096025 77707.372801 0.000000
+          </End>
+					<Feature code="Curve">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Curve>
+				<Spiral length="185.000000" radiusEnd="3250.000000" radiusStart="3050.000000" rot="cw" spiType="clothoid" dirStart="2.406380548" dirEnd="2.465169956" staStart="84625.550523" constant="3028.045987" theta="0.058789407" totalY="-1.000000" totalX="-1.000000" tanLong="93.505538" tanShort="91.547753">
+					<Start code="CS">
+              26501.096025 77707.372801 0.000000
+          </"PI">
+              26433.196109 77768.777951 0.000000
+          </PI>
+					<End code="SC">
+              26360.278890 77827.313109 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Curve rot="cw" length="867.410028" chord="864.837805" dirStart="2.465169956" dirEnd="2.732065349" staStart="84810.550523" radius="3250.000000">
+					<Start code="SC">
+              26360.278890 77827.313109 0.000000
+          </Start>
+					<Center code="CC">
+              24325.754859 75292.907465 0.000000
+          </Center>
+					<End code="CS">
+              25619.826094 78274.162174 0.000000
+          </End>
+					<Feature code="Curve">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Curve>
+				<Spiral length="185.000000" radiusEnd="INF" radiusStart="3250.000000" rot="cw" spiType="clothoid" dirStart="2.732065349" dirEnd="2.760526887" staStart="85677.960552" constant="775.403121" theta="0.028461538" totalY="1.755027" totalX="184.985014" tanLong="123.338567" tanShort="61.671425">
+					<Start code="CS">
+              25619.826094 78274.162174 0.000000
+          </Start>
+					<PI code="PI">
+              25563.254333 78298.718241 0.000000
+          </PI>
+					<End code="ST">
+              25448.762990 78344.589087 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Line length="684.747769" dir="2.760526887" staStart="85862.960552">
+					<Start code="ST">
+              25448.762990 78344.589087 0.000000
+          </Start>
+					<End code="TS">
+              24813.133005 78599.253628 0.000000
+          </End>
+					<Feature code="Line">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Line>
+				<Spiral length="185.000000" radiusEnd="3250.000000" radiusStart="INF" rot="ccw" spiType="clothoid" dirStart="2.760526887" dirEnd="2.732065349" staStart="8(547.708320" constant="775.403121" theta="0.028461538" totalY="1.755027" totalX="184.985014" tanLong="123.338567" tanShort="61.671425">
+					<Start code="TS">
+              24813.133005 78599.253628 0.000000
+          </Start>
+					<PI code="PI">
+              24698.641662 78645.124474 0.000000
+          </PI>
+					<End code="SC">
+              24642.069901 78669.680541 0.000000
+          </End>
+					<Feature code="Spiral">
+						<Property label="style" value="Default"/>
+					</Feature>
+				</Spiral>
+				<Curve rot="ccw" length="1285.082355" chord="1276.726977" dirStart="2.732065349" dirEnd="2.336655393" staStart="86732.708320" radius="3250.000000">
+					<Start code="SC">
+              24642.069901 78669.680541 0.000000
+          </Start>
+					<Center code="CC">
+              25936.141136 81650.935249 0.000000
+          </Center>
+					<End code="CS">
+              23593.582879 79398.176760 0.0.750095" rateOfChangeOfCantDeficiencyOverTime="39.417379" cantGradient="1333.164043" speed="250.000000" transitionType="clothoid" curvature="ccw" adverse="false"/>
+				<CantStation station="73842.953847" equilibriumCant="0.000000" appliedCant="0.000000" cantDeficiency="0.000000" rateOfChangeOfAppliedCantOverTime="52.089947" rateOfChangeOfAppliedCantOverLength="0.750095" rateOfChangeOfCantDeficiencyOverTime="39.314491" cantGradient="1333.164043" speed="250.000000" transitionType="clothoid" curvature="cw" adverse="false"/>
+				<CantStation station="73982.953847" equilibriumCant="184.271347" appliedCant="105.013333" cantDeficiency="79.258014" rateOfChangeOfAppliedCantOverTime="0.000000" rateOfChangeOfAppliedCantOverLength="0.000000" rateOfChangeOfCantDeficiencyOverTime="0.000000" cantGradient="0.000000" speed="250.000000" curvature="cw" adverse="false"/>
+				<CantStation station="74728.574820" equilibriumCant="184.271347" appliedCant="105.013333" cantDeficiency="79.258014" rateOfChangeOfAppliedCantOverTime="76.968372" rateOfChangeOfAppliedCantOverLength="-1.108345" rateOfChangeOfCantDeficiencyOverTime="60.138285" cantGradient="902.246500" speed="250.000000" transitionType="clothoid" curvature="cw" adverse="false"/>
+				<CantStation station="74784.562223" equilibriumCant="73.733410" appliedCant="42.960000" cantDeficiency="30.773410" rateOfChangeOfAppliedCantOverTime="0.000000" rateOfChangeOfAppliedCantOverLength="0.000000" rateOfChangeOfCantDeficiencyOverTime="0.000000" cantGradient="0.000000" speed="250.000000" curvature="cw" adverse="false"/>
+				<CantStation station="75950.108032" equilibriumCant="73.733410" appliedCant="42.960000" cantDeficiency="30.773410" rateOfChangeOfAppliedCantOverTime="51.805635" rateOfChangeOfAppliedCantOverLength="-0.746001" rateOfChangeOfCantDeficiencyOverTime="37.109778" cantGradient="1340.480514" speed="250.000000" transitionType="clothoid" curvature="cw" adverse="false"/>
+				<CantStation station="76007.695075" equilibriumCant="0.000000" appliedCant="0.000000" cantDeficiency="0.000000" rateOfChangeOfAppliedCantOverTime="49.722222" rateOfChangeOfAppliedCantOverLength="0.716000" rateOfChangeOfCantDeficiencyOverTime="39.234889" cantGradient="1396.648045" speed="250.000000" transitionType="clothoid" curvature="ccw" adverse="fclse"/>
+				<CantStation station="76127.695075" equilibriumCant="153.717889" appliedCant="85.920000" cantDeficiency="67.797889" rateOfChangeOfAppliedCantOverTime="0.000000" rateOfChangeOfAppliedCantOverLength="0.000000" rateOfChangeOfCantDeficiencyOverTime="0.000000" cantGradient="0.000000" speed="250.000000" curvature="ccw" adverse="false"/>
+				<CantStation station="76707.700715" equilibriumCant="153.717889" appliedCant="85.920000" cantDeficiency="67.797889" rateOfChangeOfAppliedCantOverTime="49.722222" rateOfChangeOfAppliedCantOverLength="-0.716000" rateOfChangeOfCantDeficiencyOverTime="39.234889" cantGradient="1396.648045" speed="250.000000" transitionType="clothoid" curvature="ccw" adverse="false"/>
+				<CantStation station="76827.700715" equilibriumCant="0.000000" appliedCant="0.000000" cantDeficiency="0.000000" rateOfChangeOfAppliedCantOverTime="0.000000" rateOfChangeOfAppliedCantOverLength="0.000000" rateOfChangeOfCantDeficiencyOverTime="0.000000" cantGradient="0.000000" speed="250.000000" curvature="cw" adverse="false"/>
+				<CantStation station="80097.635202" equilibriumCant="0.000000" appliedCant="0.000000" cantDeficiency="0.000000" rateOfChangeOfAppliedCantOverTime="48.378378" rateOfChangeOfAppliedCantOverLength="0.696649" rateOfChangeOfCantDeficiencyOverTime="36.802957" cantGradient="1435.443824" speed="250.000000" transitionType="clothoid" curvature="ccw" adverse="false"/>
+				<CantStation station="80282.635202" equilibriumCant="226.923077" appliedCant="128.880000" cantDeficiency="98.043077" rateOfChangeOfAppliedCantOverTime="0.000000" rateOfChangeOfAppliedCantOverLength="0.000000" rateOfChangeOfCantDeficiencyOverTime="0.000000" cantGradient="0.000000" speed="250.000000" curvature="ccw" adverse="false"/>
+				<CantStation station="81844.791112" equilibriumCant="226.923077" appliedCant="128.880000" cantDeficiency="98.043077" rateOfChangeOfAppliedCantOverTime="48.378378" rateOfChangeOfAppliedCantOverLength="-0.696649" rateOfChangeOfCantDeficiencyOverTime="36.802957" cantGradient="1435.443824" speed="250.000000" transitionType="clothoid" curvature="ccw" adverse="false"/>
+				<CantStation station="82029.791112" equilibriumCant="0.000000" appliedCant="0.000000" cantDeficiency="0.000000" rateOfChangeOfAppliedCantOverTime="54.931217" rateOfChangeOfAppliedCantOverLength="0.791010" rateOfChangeOfCantDeficiencyOverTime="41.022465" cantGradient="1264.207282" speed="250.000000" transitionType="clothoid" curvature="cw" adverse="false"/>
+				<CantStation station="82204.791112" equilibriumCant="241.803279" appliedCant="138.426667" cantDeficiency="103.376612" rateOfChangeOfAppliedCantOverTime="0.000000" rateOfChangeOfAppliedCantOverLength="0.000000" rateOfChangeOfCantDeficiencyOverTime="0.000000" cantGrad rateOfChangeOfAppliedCantOverTime="48.378378" rateOfChangeOfAppliedCantOverLength="-0.696649" rateOfChangeOfCantDeficiencyOverTime="36.802957" cantGradient="1435.443824" speed="250.000000" transitionType="clothoid" curvature="ccw" adverse="false"/>
+				<CantStation station="88202.790676" equilibriumCant="0.000000" appliedCant="0.000000" cantDeficiency="0.000000" rateOfChangeOfAppliedCantOverTime="0.000000" rateOfChangeOfAppliedCantOverLength="0.000000" rateOfChangeOfCantDeficiencyOverTime="0.000000" cantG

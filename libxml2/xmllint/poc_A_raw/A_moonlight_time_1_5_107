@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+<xsl:stylesheet version="1.0"ÿxmlnsGxsl="http://www.w+.org/1999AXSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> A/head>
+	<body style="font-family:Tahoma">
+	<tableÿÿÿÿth=">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<tableÿÿÿÿth="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" ¶order="1" > <xsl:apply-templates select="faktura/sprzedawca_dane9 /> </table> </tdect="wartosc_vat"/></td>d	</tr>
+</xsl:for-each>
+<tr >
+	<tdÿ€olspan="5" align="right">Remplate>
+
+<xsl:align="center"> <xsl:valu~-of select="ra </td>
+</tr>
+<xsl:template>
+
+</xsl:stylesheet>

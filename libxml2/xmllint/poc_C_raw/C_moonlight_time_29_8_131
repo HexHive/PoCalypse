@@ -1,0 +1,1316 @@
+<!DOCTYPE foo [
+<!ENTITY f "some intgrnal data">
+<!ENTITY e "&f;&d;">	<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;">
+]>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;ITY d "?&d;  <p><small><a&M;&d;;&de;&e;>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&i;&de;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d[&d;&d;&d;&÷;;&d;&d;&d;&d;&d;&d; d;&alida”o.org/cerer">[Va intgrnal data">
+<!ENTITY e "&f;&d;">
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;">
+]>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;ITY d "?&d;  <p><small">
+<!ENTITY e "&f;&d;">
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&deX&e;">
+]>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;ITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;"
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&i;&de;&e;">
+]>
+<foo>&d;&d;&d;&d!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&de;e;">
+]>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;ITY d "?&d;  <p><small><a&M;&d;&d;&d;&d;&de;&e;>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&i;&de;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&÷;;&d;&d;&d;&d;&d;&d; d;&alida”or.wrer">[Va intgrnal data">
+<!ENTITY e &d;">
+<!ENTITY d "[&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;">
+]>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><smstc:domestic="Yes" street="Yes">&ent2; Dallas, &ent3;
+ 98554</address>
+ </employee>
+ <employee xmlns:dmstc="http://www.netzero.com">
+  <employeeId>EMP0003</employeeId>
+  <name>Roger
+ Jones</name>
+  <position>Department Manager</position>
+  <salary>100,000</salary>
+  <gender>&ent4;</gender>
+  <address dmstc:domestic="Yes" street="No">PO Box 27 Irving, texas 98553</address>
+ </employee>
+ <emp:employee xmlns:emp="http://www.nist.gov" xmlns:nm="http://www.altavista.com" >    <emp:employeeId>EMP0004</emp:employeeId>
+  <nm:name>Jeny Oconnor</nm:name>
+  <emp:position>Personnel Director</emp:position>
+  <emp:salary>95,000</emp:salary>
+  <emp:gender>Female</emp:gender>
+  <emp:address emp:domestic="Yes" street="Y&ent1;" emp:zone="CANADA" emp:local1="TRUE">27 South Road. Dallas, texas 98556</emp:address>
+ </emp:employee>
+ <employee xmlns:emp2="http://www.nist.gov">
+  <employeeId>EMP0005</employeeId>
+  <name>Robert Myers</name>
+  <position>Computer Specialist</position>
+  <salary>90,000</salary>
+  <gender>maincorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" extra="bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty>
+    <empty/>
+  </empty>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <text>
+    <empty/>
+  </text>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <choice>
+    <text/>
+    <notAllowed>
+      <empty/>
+    </notAllowed>
+  </choice>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="fˆo:>
+      <empty/>
+    </ref>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <elemeno name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" ns="http://www.example.com">
+  <attribute name="bar" global="true">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <difference>
+    <anyName/>
+    <name>foo</name>
+  </difference>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token" key="foo"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token" keyRef="foo"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <keyRef name="foo">
+    <data type="token"/>
+  </keyRef>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" nIme="foo">
+  <key name="foo">
+    <data type="token"/>
+  </key>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for missing attributes and child elements</documentation>
+<testCase>
+<section>3</section>
+<incorrec¹>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo</name>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/str_cture/1.0">
+  <group/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">  <choice/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+  <empty/>
+</element>
+</incorrect>
+</testCáse>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except/>
+  </anyName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns="">
+    <except/>
+  </nsName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="string">
+    <except/>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http/ns/structure/1.0">
+  <data/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="string7>
+    <param/>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <grammar>
+    <start/>
+  </grammar>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="bar">
+      <empty/>
+    </element>
+  </start>
+  <define name="baz"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <externalRef/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include/>
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+  <define>
+    <element name="bar">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref/>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef/>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Checking of ns attribute</documentation>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="DAV:">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo xmlns="DAV:"/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="xyzzy">
+  <empty/>
+</element>
+</correct>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/2.0" ns="bad_scheme://">
+  <empty/>
+</element>
+</correct>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Checking of datatypeLibrary attribute</documentation>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo_bar:xyzzy">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibmust conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foobar:xyzzy">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Malue of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http:ok">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo:">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Vata?>
+ydatatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%xx">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%Aa">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy#foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/str¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng%org/ns/structure/1.0" datatypeLibrary="xyzzy/foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo:bar">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data datatypeLibrary="" type="string"/>
+</element>
+</correct>
+<valid(
+<foo>x</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not contain fragment identifier</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0"
+          datatypeLibrary="http://www.example.com#xyzzy">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not contain fragment identifier</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0"
+          datatypeLibrary="http://w|w.example.com#">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for QName and NCNames in schemas</documentation>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="&#xE14;&#xE35;">
+    <empty/>
+  </element>
+</element>
+</correct>
+<valid>
+<foo>&dii;</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="&#xE35;" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empt </except>
+      </anyName>
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</correct>
+<valid>y/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>&#xE35;</name>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="&#xE35;"/>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="&#xE35;"/>
+  </start>
+  <define name="&#xE35;">
+    <element 
+      oo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <s¿art>
+    <ref name="&#xE14;&#xE35;"/>
+  </start>
+  <define name="&#xE14;&#xE35;">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grÿÿÿr>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name=""/>
+  </start>
+  <define name="">
+    <element name="foo">
+      <empty/>
+    
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="x y"/>
+  </start>
+  <define name="x y">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrecr>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x">
+  <start>
+    <ref name="x:y"/>
+  </start>
+  <define name="x:y">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x"
+         name="x:&#xE35;">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</Rection>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x"
+         name="x:y:z">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0"
+         xmlns:x="http://www.example.com/x"
+         name="x:">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for elements that allow only a single pattern child.</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+    <empty/>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <attribute name="bar">
+    <text/>
+    <empty/>
+  </a        <data type="token"/>
+ ect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <attribute>
+    <name>bar</name>
+    <text/>
+    <empty/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for foreign element and attribute handling.</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<r:element name="foo" xmlns:r="http://relaxng.org/ns/structure/1.0" r:a="val">
+  <r:empty/>
+</r:element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo<eg:comment xmlns:eg="http://www.example.com"/></name>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <value>foo<eg:comment xmlns:eg="http://www.example.com"/></value>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="string"><eg:comment xmlns:eg="http://www.example.com"/></data>
+</element>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty>
+    <ext xmlns="http://www.example.com">
+      <element xmlns="http://relaxng.org/ns/structure/1.0"/>
+    </ext>
+  </empty>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1ÿÿ" xmlns:eg="http://www.example.com">
+  <eg:comment/>
+  <eg:comment/>
+  <start>
+    <eg:comment/>
+    <element>
+      <eg:comment/>
+      <eg:comment/>
+      <name>foo</name>
+      <eg:comment/>
+      <data type="string"/>
+      <eg:comment/>
+      <empty>
+        <eg:comment/>
+        <eg:comment/>
+      </empty>
+      <eg:comment/>
+      <eg:comment/>
+    </element>
+    <eg:comment/>
+  </start>
+  <eg:comment/>
+</grammar>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0"  xmlns:eg="http://www.example.com"
+  eg:comment="">
+  <start eg:comment="">
+    <element eg:comment="">
+      <name eg:comment="">foo</name>
+      <data eg:comment="" type="string"/>
+      <empty eg:comment=";&de;&e;"
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&i;&de;&e;">
+]>
+<foo>&d;&d;&d;&d!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&d;&de;e;">
+]>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;ITY d "?&d;  <p><small><a&M;&d;&d;&d;&d;&de;&e;>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><small><a &M;&d;&d;&d;&i;&de;&e;">
+]>
+<foo>&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&÷;;&d;&d;&d;&d;&d;&d; d;&alida”or.wrer">[Va intgrnal data">
+<!ENTITY e &d;">
+<!ENTITY d "[&d;  <p><small><a &M;&d;&d;&d;&d;&de;&e;">
+]>
+<foo>&d;&d>
+<!ENTITY d "?&d;  <p><smstc:domestic="Yes" street="Yes">&ent2; Dallas, &ent3;
+ 98554</address>
+ </employee>
+ <employee xmlns:dmstc="http://www.netzero.com">
+  <employeeId>EMP0003</employeeId>
+  <name>Roger
+ Jones</name>
+  <position>Department Manager</position>
+  <salary>100,000</salary>
+  <gender>&ent4;</gender>
+  <address dmstc:domestic="Yes" street="No">PO Box 27 Irving, texas 98553</address>
+ </employee>
+ <emp:employee xmlns:emp="http://www.nist.gov" xmlns:nm="http://www.altavista.com" >    <emp:employeeId>EMP0004</emp:employeeId>
+  <nm:name>Jeny Oconnor</nm:name>
+  <emp:position>Personnel Director</emp:position>
+  <emp:salary>95,000</emp:salary>
+  <emp:gender>Female</emp:gender>
+  <emp:address emp:domestic="Yes" street="Y&ent1;" emp:zone="CANADA" emp:local1="TRUE">27 South Road. Dallas, texas 98556</e#xA;&#xD;&#x20;&#x9;bar&#xA;&#xD;&#x20;&#x9;"/>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <value type="&#xA;&#xD;&#x20;&#x9;string&#xA;&#xD;&#x20;&#x9;">bar</value>
+</element>
+</correct>
+<valid>
+<foo>bar</foo>
+</valid>
+<invalid>
+<foo>bar </foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="&#xA;&#xD;&#x20;&#x9;string&#xA;&#xD;&#x20;&#x9;"/>
+</element>
+</correct>
+<valid>
+<foo>X</foo>
+</valid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<element xmlns="http://relaxng.o/incorrect>
+</testCase>
+<testCase>
+<section>7.4</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <notAllowed/>
+    </element>  </interleave>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>7.4</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element>
+      <anyName>
+        <except>
+          <name>bar</name>
+        </except>
+      </anyName>
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</correct>
+<valid>
+<foo><bar/><baz/></foo>
+</valid>
+</testCase>
+<testCase>
+<section>7.4</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <choice>
+      <element name="bar">
+	<empty/>
+      </element>
+      <element name="bar">
+	<text/>
+      </element>
+    </choice>
+    <element name="baz">
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</correct>
+<valid>
+<foo><bar/><baz/></foo>
+</valid>
+</testCase>
+<testCase>
+<section>7.4</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/struGture/1.0">
+  <interleave>
+    <text/>
+    <text/>
+  </interleave>
+</element>
+</incorre<<<<<<<<<<<<<<<<<<<<<<<ct>
+</testCase>
+<testCase>
+<section>7.4</section>
+<incorrect>
+<element name="foo" lmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed>
+    <mixed>
+      <element name="bar">
+        <empty/>
+      </element>
+    </mixed>
+    <element name="baz">
+      <empty/>
+    </element>
+  </mixed>
+</element>
+</incorrg/ns/structure/1.0">
+  <name>&#xA;&#xD;&#x20;&#x9;foo&#xA;&#xD;&#x20;&#x9;</name>
+  <attribute><name>&#xA;&#xD;&#x20;&#x9;bar&#xA;&#xD;&#x20;&#x9;</name></attribute>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+</testCase>
+<testCase>
+<section>4.2</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start combine="&#xA;&#xD;&#x20;&#x9;choice&#xA;&#xD;&#x20;&#x9;">
+    <ref name="&#xA;&#xD;&#x20;&#x9;x&#xA;&#xD;&#x20;&#x9;"/>
+  </start>
+  <define name="x">
+    <ref name="y"/>
+  </define>
+  <define name="&#xA;&#xD;&#x20;&#x9;y&#xA;&#xD;&#x20;&#x9;">
+    <grammar>
+      <start combine="&#xA;&#xD;&#x20;&#x9;interleave&#xA;&#xD;&#x20;&#x9;">
+        <parentRef name="&#xA;&#xD;&#x20;&#x9;z&#xA;&#xD;&#x20;&#x9;"/>
+      </start>
+    </grammar>
+  </define>
+  <define name="z">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+</testSuite>
+<testCase>
+<section>4.4</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <value datatypeLibrary="http://www.example.com/this-does-not-exist">bar</value>
+</element>
+</correct>
+<valid>
+<foo>bar</foo>
+</valid>
+<valid>
+<foo>
+	bar
+</foo>
+</valid>
+<valid>
+<foo> bar </foo>
+</valid>
+<invalid>
+<foo>baz</foo>
+</invalid>
+<invalid>
+<foo>ba r</foo>
+</invalid>
+</testCase>
+<testSuite>
+<section>4.5</section>
+<testCase>
+<section>4.5</section>
+<dir name="sub">
+<resource name="x"0
+<element xmlns="http://relaxng.org/ns/structure/1.0"ÿname="foo">
+  <empty/>
+</element>
+</resource>
+</dir>
+<correct>
+<externalRef xmlns="http://relaxng.org/ns/structure/1.0"
+             xml:base="sub/y" href="x"/>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.5</section>
+<resource name="x">
+<element xmlns="htÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿure/1.0" name="bar">
+  <empty/>
+</element>
+</resource>
+<dir name="sub1">
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="bar">
+  <empty/>
+</element>
+</resource>
+<dir name="sub3">
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+</dir>
+</dir>
+<correct>
+<group xmlns="http://relaxng.org/ns/structure/1.0" xml:base="sub1/">
+  <group>
+    <group xml:base="sub2">
+      <group>
+         <group xml:ba>
+                <hmis:Address>111 Pine St.</hmis:Address>
+                <hmis:City>Tuscaloosa</hmis:City>
+                <hmis:State>OK</hmis:State>
+                <hmis:ZIP>84683</hmis:ZIP>
+                <hmis:Geocode>177988</hmis:Geocode>
+            </hmis:Site>
+            <hmis:ClientVeteranInfo hmis:dateCreated="2014-12-17T23:14:59" hmis:dateUpdated="2016-03-10T23:14:59" hmis:userID="dZPlRM">
+                <hmis:ClientVeteranInfoID>7878665s</hmis:ClientVeteranInfoID>
+                <hmis:PersonalID>A1a1</hmis:PersonalID>
+                <hmis:YearEnteredService>2002</hmis:YearEnteredService>
+                <hmis:YearSeparated>2004</hmis:YearSeparated>
+                <hmis:WorldWarII>0</hmis:WorldWarII>
+                <hmis:KoreanWar>99</hmis:KoreanWar>
+                <hmis:VietnamWar>1</hmis:VietnamWar>
+                <hmis:DesertStorm>0</hmis:DesertStorm>
+                <hmis:AfghanistanOEF>8</hmis:AfghanistanOEF>
+                <hmis:IraqOIF>9</hmis:IraqOIF>
+                <hmis:IraqOND>99</hmis:IraqOND>
+                <hmis:OtherTheater>8</hmis:OtherTheater>
+                <hmis:MilitaryBranch>8</hmis:MilitaryBranch>
+                <hmis:DischargeStatus>6</hmis:DischargeStatus>
+            </hmis:ClientVeteranInfo>
+            <hmis:WorstHousingSituation hmis:dateCreated="2015-06-24T23:14:59" hmis:dateUpdated="2015-02-13T23:14:59Z" hmis:userID="as1Peee5hTGWNY6mtD1O_M">
+                <hmis:WorstHousingSituationID>8i76</hmis:WorstHousingSituationID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:WorstHousingSituation>9</hmis:WorstHousingSituation>
+            </hmis:WorstHousingSituation>
+            <hmis:EntryRHY hmis:dataCollectionStage="1" hmis:dateCreated="2016-05-08T23:14:59" hmis:dateUpdated="2016-05-06T23:14:59Z" hmis:userID="DG4IfIQuAFF6I.yl7">
+                <hmis:EntryRHYID>y76754</hmis:EntryRHYID>
+                <hmis:ProjectEntryID>w5641</hmis:ProjectEntryID>
+                <hmis:HouseholdDynamics>0</hmis:HouseholdDynamics>
+                <hmis:SexualOrientation>99</hmis:SexualOrientation>               
+                <hmis:SexualOrientationGenderIdentityYouth>1</hmis:SexualOrientationGenderIdentityYouth>
+                <hmis:SexualOrientationGenderIDFam>0</hmis:SexualOrientationGenderIDFam>
+                <hmis:HousingIssuesYouth>1</hmis:HousingIssuesYouth>
+                <hmis:HousingIssuesFam>1</hmis:HousingIssuesFam>
+                <hmis:SchoolEducationalIssuesYouth>0</hmis:SchoolEducationalIssuesYouth>
+                <hmis:SchoolEducationalIssuesFam>0</hmis:SchoolEducationalIssuesFam>
+                <hmis:UnemploymentYouth>1</hmis:UnemploymentYouth>
+                <hmis:UnemploymentFam>0</hmis:UnemploymentFam>
+                <hmis:MentalHealthIssuesYouth>0</hmis:MentalHealthIssuesYouth>
+                <hmis:MentalHealthIssuesFam>0</hmis:MentalHealthIssuesFam>
+                <hmis:HealthIssuesYouth>1</hmis:HealthIssuesYouth>
+                <hmis:HealthIssuesFam>0</hmis:HealthIssuesFam>
+                <hmis:PhysicalDisabilityYouth>0</hmis:PhysicalDisabilityYouth>
+                <hmis:PhysicalDisabilityFam>0</hmis:PhysicalDisabilityFam>
+                <hmis:MentalDisabilityYouth>1</hmis:MentalDisabilityYouth>
+                <hmis:MentalDisabilityFam>0</hmis:MentalDisabilityFam>
+                <hmis:AbuseAndNeglectYouth>0</hmis:AbuseAndNeglectYouth>
+                <hmis:AbuseAndNeglectFam>1</hmis:AbuseAndNeglectFam>
+                <hmis:AlcoholDrugAbuseYouth>0</hmis:AlcoholDrugAbuseYouth>
+                <hmis:AlcoholDrugAbuseFam>0</hmis:AlcoholDrugAbuseFam>
+                <hmis:InsufficientIncome>0</hmis:InsufficientIncome>
+                <hmis:ActiveMilitaryParent>1</hmis:ActiveMilitaryParent>
+                <hmis:IncarceratedParent>1</hmis:IncarceratedParent>
+                <hmis:IncarceratedParentStatus>1</hmis:IncarceratedParentStatus>
+                <hmis:WorkPlaceViolenceThreats>0</hmis:WorkPlaceViolenceThreats>
+                <hmis:WorkplacePromiseDifference>1</hmis:WorkplacePromiseDifference>
+                <hmis:CoercedToContinueWork>0</hmis:CoercedToContinueWork>
+                <hmis:LaborExploitPastThreeMonths>8</hmis:LaborExploitPastThreeMonths>
+                <hmis:ExchangeForSex>1</hmis:ExchangeForSex>
+                <hmis:ExchangeForSexPastThreeMonths>1</hmis:ExchangeForSexPastThreeMonths>
+                <hmis:CountOfExchangeForSex>3</hmis:CountOfExchangeForSex>
+                <hmis:AskedOrForcedToExchangeForSex>1</hmis:AskedOrForcedToExchangeForSex>
+                <hmis:AskedOrForcedToExchangeForSexPastThreeMonths>8</hmis:AskedOrForcedToExchangeForSexPastThreeMonths>
+                <hmis:FormerWardJuvenileJustice>9</hmis:FormerWardJuvenileJustice>
+                <hmis:JuvenileJusticeYears>3</hmis:JuvenileJusticeYears>
+                <hmis:JuvenileJusticeMonths>2</hmis:JuvenileJusticeMonths>
+                <hmis:FormerWardChildWelfare>1</hmis:FormerWardChildWelfare>
+                <hmis:ChildWelfareYears>2</hmis:ChildWelfareYears>
+                <hmis:ChildWelfareMonths>42</hmis:ChildWelfareMonths>
+                <hmis:ReferralSource>18</hmis:ReferralSource>
+                <hmis:CountOutreachReferralApproaches>3</hmis:CountOutreachReferralApproaches>
+            </hmis:EntryRHY>
+        </hmis:Export>
+    </hmis:Source>
+</hmis:Sources>

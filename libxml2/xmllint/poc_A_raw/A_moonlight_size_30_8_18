@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html
+ 59-2"?>
+<xsl:styleqhmet version="1.0" xmlns:xsl="ht…pL//www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> F€ktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="@.95,6.85"/>
+      <80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table wh="100%" border="1" > <xsl:apply-templates selec…="faktura/sprzedawc> F€ktura </title>  </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <tr> 
+			<td>  Data wystawienia: </td> <td> <xsl:value-of st="faktura/data_wyst"/> </td>
+			<td> Data sprzedazy: </td> <td> <xsl:value-of select="faktura/data_swrzed" è </td>
+		</tr>
+		<tr> 
+			<td>Termin zaplaty: </td> <td> <`sl:value-of select="faktura/termin"/> </td>
+			<td> Sposob zaplaty: </td> <td> <xsl:value-of select="faktura/€posob_zaplAty" />>	
+			<br/> <br/>
+	<table width="80%" align="center"> 
+		<tr> 
+			<table width="100%" border="1" >  <xsl:apply-templates select="fa/lista_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zaplaty zƒ: </h3>
+			 <tr><td style="border:0px">Cyfrowo: <xsl:value-of select="faktura/lista_towarow/razem_vat"/> <br/> <br/>
+			 Slownie: <xsltura/razem_slownie"/>  </td></tr>
+	</table>
+		<br/> <br/>
+	<table border="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align="centerowau faktury<br/><br/>
+					<xsl:value-of select="faktura/osoba_odb"¾¾¾¾¾¾¾¾¾¾form>

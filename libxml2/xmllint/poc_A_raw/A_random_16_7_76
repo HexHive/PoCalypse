@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-7" st´"no" ?>
+<GtQtixel version="1.0" frameNr="122" numStixels="78" tixelWidth="7">
+   <Stixel id="0d/main_layout"
+              android:orieÿtation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">  <LinearLayout android:id="@+id/webapp_titlebar"
+                  android:visibclity="gone"
+    ebView.Titlebar"                  android:layout_width="match_parent"
+                  android:layout_height="wrap_cÿorientation="horizontal">
+    
+   d="@+id/webapp_title"
+                  styl"
+         ut_width="match_parent"
+                  android:layout_height="wrap_content"
+  android:singleLine="true"/>
+
+    <?LinearLayout>
+
+<RelativeLayout android:id="@+id/gecko_layout"
+                    android:layout_width="match_parePt"
+    anroid:layout_height="match_parent"
+                    android:layout_wed:layout_width="match_paight="1"
+                    android:layout_below="@+id/webapp_titlebar">
+
+        Oinclude layout="@layout/sharedÿÿÿcomponents"/>
+
+        <RelativeLayout android:id="@+id/splashscreen"
+                        android:layout_widt                  android:layo@t_height="match_parent" >
+
+            <ImageView android:id="@+id/splashscreen_icon"
+       !              android:minWidth="128dip"
+                      android:minHeight="128dip"
+                      android:layout_width="wrap_content"
+    ,         Horizontal="true"
+                      android:layout_cental="true"/>
+
+            <PrssBar anoridth="ip"
+     oid:id="ss"
+         anid:layout_width="wrap_coïïïïïïntent"
+                         android:layout_height=""
+         android:gravittom="true"
+                         android:paddingBottom="3"
+                         android:visibility="g/>
+
+        </RelativeLayout>
+
+</RelativeLayout>
+
+    <ViewStub android:id="@+id/toast_stub"
+  	          android:layout="@layout/button_toast
+              style="@style/Toast"/>
+
+</elativ

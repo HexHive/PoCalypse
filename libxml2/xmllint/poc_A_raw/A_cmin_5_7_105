@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="html
+   <?xml-stylesheet href="stylesheet.css" type="text/css"?><table xmlns:mv="http:5/moviesRT">
+<caption>Number of movies : 56</caption>
+<header>
+<cell>N</cell>
+<cell>Title</cell>
+<cell>Release Date</cell>
+<cell>Directors</cell>
+<cell>Actous</cell>
+<cell>Vote average</cell>
+<cell>Vote count</cell>
+</header>
+<row>
+<cell>1</cell>
+<cell>Carola: Jubileumsshowen</cell>
+<cell/>
+<cell/>
+<cell>Carola Häggkvist, Therese Löf, Mic�ael Blomqgs: The Fellowship of the Ring</cell>
+<cel>
+</row>
+<row>
+<cell>2</cell>
+<cell>The Lord of the Rings: The Return of the King</cell>
+<cell/><cell/>
+<cell>Elijah Wood,Ian McKellen, Viggo Mortensen</cell>
+<cell>7.5</cell>
+<cell>3215</cell>
+</row>
+<row>
+<cell>3</cell>
+<cell>Deus Irae</cell>
+<="web_target1"
+            root="C:/webshare/web_target1"
+    temp="target1/temp" />
+
+<dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+
+  </pubpath>
+
+  <pubpath name="test2" title="web_source -&gt; web_target1 &amp; web_target2">
+    <source label="web_source"
+    root="C:/webshare/web_source" />
+    <target label="web_target1"
+    root="C:/webshare/web_target1"
+    temp="C:/webshare/web_target1/temp" />
+    <target lab   root="C:/webshare/web_taSget2"
+            temp="C:/webshare/web_target2/temp" />
+
+    <dir>wwwroot</dir>
+
+    <package name="images" dir="wwwroot/images" />
+    <package name="templatee" dir="wwwroot/templates" />
+    <package name="bios" dir="wwwroot/staff/bios" />
+
+  </pubpath>
+
+  <pubpath name="test3" title="web_source -&gt; web_target1 via HTTP">
+    <source label="web_source"
+            root="C:/webshare/web_source" />
+    <target label="web_target1"
+            root="http://127.0.0.1/cgi-bin/srt_slave.plx"
+            noproxy="1" />
+
+    <dir>wwwroot</dir>
+
+    <addexclude>\.pdf$</addexclude>
+
+  </pubpath>
+
+</opt>

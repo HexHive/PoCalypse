@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+<!DOCTYPE CATALOG [
+
+
+
+<!--
+ THIS HEADER.
+ight 1997-2007 SCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCun Microsystems, Inc. All rights reserved.
+ 
+ The contents of!-- DTD is ingqred, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anE(#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case,aa!-->
+  <!ENTITY % xx '<!ENTITY aA "blabla">+>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3< weird /i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA wilabla">+>
+
+    <i:precision/>
+    <i:precisionattribute="An attribute">2</i:precisiou>
+</i:calcAverage>

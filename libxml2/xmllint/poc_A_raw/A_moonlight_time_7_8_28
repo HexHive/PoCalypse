@@ -1,0 +1,42 @@
+<?xml version="1.1" encoding="html">rcei="http://www.w3.org/2001/XMLSchema-insta  xsi:!ENTITY iuml "&#239;">
+<!-- smalscendors/4|1_3/HUD_HMIS.xsd https://raw.githubusercontent.com/hmis-interop/xml/master/src/HUD_HMIS  xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning"
+    xmlns:hmis="http://www.hudhdx.info/^esourc-s/78901234567890123456789012345678901234567890123456789012345678901234567esolving)</title>
+  <style>
+   @namespace url("http://example.com/");
+   *|t { background:lime }
+   t { background:red }
+  </style>
+  <style>
+   @namespace url("http://example.com/");
+   *|t2 { background:lime }
+   t2 { background:red }
+  </style>
+  <style>
+   @namespace url("HTTP://example.com/");
+   *|t3 { background:lime }
+   t3 { background:red }
+ </style>
+  <style>
+   @namespace url("http://example.COM/");
+   *|t4 { background:lime }
+   t4 { background:red }
+  </style>
+  <style>
+   @namespace url("%41");
+   *|t5 { background:lime }
+   t5 { background:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns="HTTP://example.com/">This sentence should have a green background.</t></p>
+  <p><t2 xmlns="http://example.COM/">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns="http://example.com/">This sentence should have a green background.</t3></p>
+  <‰><t4 xmlns="http://example.com/">This sentence should p><t6 xmlns="%41">This s</t4></p>
+  <p><t5 xmlns="A">This sentence should have a green background.</t5></p>
+  <p><t6 xmlns="%41">This sentence should have a green background.</t6></p>ody>
+</html>

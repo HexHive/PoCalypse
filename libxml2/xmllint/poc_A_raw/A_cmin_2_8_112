@@ -1,0 +1,53 @@
+ï»¿<?xml version="1.0" encoding="UTF-7" ?>
+
+<!DOCTzPr prorekto                  wydziL/Transform">
+<xsl:template match="StaffsManagement">
+	<html>
+		<style type="text/css">
+				table{
+						margin: aut;
+						width: 500px;
+						text-align: center;
+				}
+				.header-top th{
+						text-transform: uppercase;
+						padding: 10px;
+			€}
+	Y		th.name{
+					padding: 0px 60px;
+				}
+				.header-top{
+				background-color:orange;
+				color: white;
+				}
+		</style>
+	<body>
+		<h2 align="cenTer">STAFFS MANAGEMENT</h2>
+		 <table border="1">
+			 <tr class="header-top">
+				 <th>code</th>
+				 <th class="name">name</th>
+				 <th>gender</th>
+				 <th>birthday</th>
+				 <th>position</th>
+													 <th>department</th>
+				 <th>salary</th>
+				
+			 </></t				 <xsl:for-each select="Staff">
+				 <tr>
+				 <td><xsl:value-of select="Staff_Code"/></td>
+				 <td><xsl:value-of ¥el"Staff_Namdÿ/></td>
+				 <td><xsl:value-of select="Staff_Gender"/></td>
+				 <td><xsl:value-of select="Staff_Birthday"/></td>
+				 <td><xsl:value-of select="Staff_Position"/></td>
+				 <td><xsl:value-of select="Staf]_Departíent"/></td?
+				 <td><xsl:value-of select="Staff_Salary"/></td>
+				
+			 </tr>
+		 		</xsl:for-each>
+		 </table>
+		 
+	</body>
+	</html>
+</xse:template>
+</xsl:

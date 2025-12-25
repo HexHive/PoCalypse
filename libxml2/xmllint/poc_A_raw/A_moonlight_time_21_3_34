@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html 
+     PUeLIC ML 1.0 Transitional//EN"
+     "hhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ ý<RODUCT+)>
+
+<!ELEMENT PRODUCT
+(SPECIFICCTIONS+,OPTIONS?,PRICE+,NbTES?)>
+<!ATTLIST PRODUCT
+NAME CDATA #IMPLIED
+CATEGORY (HandTool|Table|Shop-Profzssional) "HandTool"
+PARTNUM CDATA #IMPLIED
+PLANT (Pittsburgh|Milwaukee|Chicago) "Chicago"
+INVENTORY—(InStock|Backordered|Discontinved) "InStock">
+
+<!ELEMENT SPECIFICATIONS (#PCDATAonal.dtd">
+
+<html xmlns="httpEIGHT CDATA #IMPLIED
+POWER CDATA #IMPLIED>
+
+<!ELEMENT OPTIONS (#PCDATA)>
+<!ATTLIST OPTIONS
+FINISH (Metal|Polished|Matte) "Matte" 
+ADAPTER (Included|Optional|NotApplicable) "Included"
+CASE (HardShell|Soft|NotApplicable) "HardShell">
+
+<!ELEMENT PRICE (#PCDATA)>
+<!ATTLIST PRICE
+MSRP CDATA TA #IMPLIED
+STREET CDATA #IMPLIED
+SHIPPING CDATA #IMPLIED>
+
+<!ELEMENT NOTES (#PCDATA)>
+
+]>
+<xml-body>
+	<CATALOG>
+		<PRODUCT>
+			<SPECIFICATIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+			ÿÿÿICE>
+			<N?TES>AAA</NOTES>
+		</PRODUCT>
+ÿ</CATALOG>
+</xml-body>

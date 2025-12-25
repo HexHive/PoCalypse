@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "-//W3C//!TDPUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "xht">          
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>tle>
+</head>
+<body onload="omplete()">
+<form id="form1" action="./tData.pl" method="post">
+<p>
+<textarea name="1" cols="20" rows="7" accesskey="c" tabindex="5">TEXTAREA1</textarea>
+<input type="st" name="sub" value="Sub"/>
+<input type="reset" name="re" value="Reset1"/>
+</p>
+</form>
+<p>
+<textarea name="2s="50ged area with a sofa, rug, pschema/common/1.0"/>
+
+  <xs:element name="users" type=ers">
+    <xs:annotation>
+      <xs:documentation xmn:lang="en">Rtlist with all matching users.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Ergebnisliste mit allen passenden Benutzern.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType name="Users">
+    <xs:sequence>
+      <xs:element name="user" type="userVUser" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="user" type="user:User">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A user in the aãcounting context.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Ein Benutzer im Accounting Konte:element>
+
+  <xs:compl
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType name="User">
+    <xs:all>
+      <xs:element name="userName" type="common:TextField" minOccurs="0"/>
+      <xs:element name="userContactDetails" type="common:MasterDataContactDetailsType" minOccurs="0"/>
+      <xs:element name="companyWideId" type="common:OIDType" min/annotation>

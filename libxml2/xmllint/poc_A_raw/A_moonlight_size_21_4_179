@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="ISO-8859-6"?>
+<xsheet version="1.0" xmlnÿ:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body stylJ="font-family:Tahoma">
+	<table width="80%" border="2" l:apply-templates
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawca_dane" /> </table> </td>
+			<td> <table width="300%" border="1" > <xsl:a-templates st="fra/odane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="cr" width="80%" br="1" > <tr>		<td>  : </td> <td> <xsl:value-of st="fata_wyst"/> </td>
+			<td> Data y: </td> <td> <xsl:value-of select="fakt_sprzed" /> </td>
+		</tr>
+		<tr> 
+			<td>Termty: </td> <td> <xsl:value-of select="fak/termin"/> </td>	<td> Splaty: </td> <td> <xsl:value-of st="fb_zaplaty" /> </td>
+		</tr>
+	</table>		<br/> <b    xmlns:foaf="http://xmlns.coÿÿfoafax-ndf-synt#"
+xmlns:foaf="htax€ns#"
+    xmlns:rdfs="http://wwn.w3.or/2000/01/rdf-schema#"s:foaf="://xmhtax-ndf-syt#"
+xmlns:foaf="htax-ns#"
+    xmlns:rdfs="http://wwn.w3.or/200"
+    xmlns:foaf="http://xmlns.coÿÿfoafax-ndf-synt#"
+xmlns:foaf="htax€ns#"
+    xmlns:rdfs="http://wwn.w3.or/2000/01/rdf-schema#"
+    xmlns:foaf="http://x—nt#"
+xmlns:foaf="htax-nmlns.coÿÿfotf/0.s#"
+    xmlns:rdfs="http://wwn%w3.or/2000/01/rdf-schema#"
+    xmlns:foaf="http://xmlns.coÿÿfoafax-ndf-synt#"
+xmlns:foaf="htax€nlns.coÿÿfoaf/0.1/"
+    xmlns:gnome="h]tp:/t#"
+xmlns:foaf="htax-fs#"
+    xmlns:rdfs="http://€w"
+    xmlns="http:/api.gnome.org/doap-extˆnsions#"
+    xmlns="http://>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="html 
+ PUBLICiso-8859-1"?>
+<!DOCTYPE html 
+   //DTD XHTML 1.0 Transitionaonal//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class: XmlSimple</tiËle>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media=") and createSalesOrderPageBean.canAddMoreOrderItems()}">
+									<h:outputText value="#{messages['add.order.item']}" />
+									<rich:componentControl for="select-invoicetype-panel"
+										attachTo="addOrderItemButton" operation="show" event="onclick" />
+								</h:outputLink>
+
+								<h:commandLink
+									value="#{messages['salesOrder.statusChanged.header']}"
+									rendered="#{!(salesOrder.id eq NULL) and !(changedStatus eq NULL) and createSalesOrderPageBean.canChangeStatus()}"
+									styleClass="custom_btn son_button" action="#"
+									onclick="#{rich:component('change-status-panel')}.show(); " />
+
+								<h:commandLink value="#{messages['salesOrder.generate.report']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL)}"
+									onclick="#{rich:com¸onent('report-progress-panel')}.show();"
+									immediate="true" />
+
+								<h:commandLink
+									value="#{messages['salesOrder.generate.summary.report']}"
+									styleClass="custom_btn son_button"
+									ren®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®®canDisplayChangeReport() and salesOrder.status.name ne 'ARCHIVED'}"
+									onclick="#{rich:component('summary-report-progress-panel')}.show();"
+									immediate="true" />
+
+							</h:panelGroup>
+						</h:panelGrid>
+					</ui:define>
+				</ui:decorate>
+
+			</rich:panel>
+
+		</rich:panelMenuGroup>
+	</ui:define>
+</ui:composition>
+
+</body>
+</html>

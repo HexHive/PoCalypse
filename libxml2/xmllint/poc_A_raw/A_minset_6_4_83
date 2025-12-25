@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="html 
+ PU™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™™to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tadaptations Annex to ISO 8879'>
+
+<!ENTITY lt     "<"> 
+<!ENTITY gt     ">"> 
+<!ENTITY xmlpio "'&lt;?xml'">
+<!ENTITY pic    "'?>'">
+<!ENTITY br     "\n">
+<!ENTITY cellback '#c0d9c0'>
+<!ENTITY mdash  "--"> <!-- &#x2014, but nsus tekst="jestem offline"/>
+		</dane_kontaktowe>
+		<daty>2012-04-13 2012-05-23</daty>
+		<strDom>http://msBillGates.com</strDom>
+	</kontakt>
+
+	<kontakt plec="k" id_grupa="r">
+		<dane_personalne>
+			<imie>Monika</imie>
+			<nazwisko>Hallman-Jaszczyszyn</nazwisko>
+		</dane_personalne>
+		<adres rodzaj="http://mhallman.sigma.edu.pl/xmlns/dom">
+			<kod_pocztowy>80-126</kod_pocztowy>
+			<miejscowosc>Gda≈Ñsk</miejscowosc>
+			<ulica>Mysliwskie Wzgorze</ulica>
+			<nr_budyntu>4</nr_budynku>
+			<nr_lokalu>3</nrˇokalu>
+		</adres>
+		<dane_kontaktowe>
+			<tel>605438302</tel>
+			<email domena="gmail">monia86@gmail.com</email>
+			<gg>76237802</gg>
+			<status tekst="jestem online"/>
+		</dane_kontaktowe>
+		<daty>2012-04-13 2012-05-23</daty>
+		<strDom>http://Monia.pl</strDom>
+	</kontakt>
+
+	<grupa id="r">Rodzina</grupa>
+	<grupa id="b">Bliscy</grupa>
+	<grupa id="z">Zdrowie</grupa>
+	<grupa id="p">Praca</grupa>
+
+
+	
+	
+</ksiazka>

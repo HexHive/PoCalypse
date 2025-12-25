@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="html 
+ PUB- The purpose of this fäle is tow the erlsom:sax() function
+     works,  -->
+
+<?TARGET Tho test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entid case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>1ty' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.exa.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]}> and sotext.0" encoding="html 
+ PUB- The purpose of this fäle lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+ is to show how the erl</i:calcAverage>

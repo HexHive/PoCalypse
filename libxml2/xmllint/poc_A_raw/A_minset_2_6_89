@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="IsO-8859-6"?>¼¼mlns:xsl="http://www.w3.org/1999/XSL/Tranemplates st="fra/odbiorca_sform">
+
+
+<xsl:template match="/">
+his is a programming instruction ?>
+
+<!-- DTD is ingored, except for the e€tities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, \efines entity aa !-->
+  <!ENTITY % xx '<!ENTITYhttp://www.w>'>
+%xx;
+]>
+
+<irage xmlns:i="ht: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAver

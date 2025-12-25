@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="html      PUBLIC ML 1. Transitional//EN"
+     "hhtml1оооооооооооw.w3.org/1999/xhtml" xml:lang="en" lоооооооооооооооооооооооооооооооооооооооооооооооооооооооооооang="en">
+<head>
+  <title>CК XmlSimple</title>
+  <mZta http-equiv="Cnpe" content="texiso-88d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;оооооооооооооооa&d;&d;&d;&S;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;-progress-panel')}.show();"
+									immediate="true" />
+
+								<h:commandLink
+									value="#{messages['salesOrder.generate.summary.report']}"
+									styleClass="custom_btn son_button"
+									rendered="#{!(salesOrder.id eq NULL) and createSalesOrderPageBean.canDisplayChangeReport() and salesOrder.status.name ne 'ARCHIVED'}"
+									onclick="#{rich:component('summary-report-progress-panel')}.show();"
+									immediate="true" />
+
+							</h:panelGroup>
+						</h:panelGrid>
+					</ui:define>
+				</ui:decorate>
+
+			</rich:panel>
+
+		</rich:panelMenuGroup>
+	</ui:define>
+</ui:composition>
+
+</body>
+</html>

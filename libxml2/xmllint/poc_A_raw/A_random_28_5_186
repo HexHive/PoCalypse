@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "//W3C//!TDPUBLIC0"-//W3C/ML 1.0 Transitional//EN"
+   "xhttransitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<head>tle†††††††")">
+<form id="norm1" action="./tData.pl" method="post">
+<p>
+<textarea name="1" cols="20" rows="7" accesskey="c" tabindextype="common:Imprin4"rea>
+<input type="st" name="‚ub"ritain ax a person under 16 years oe age and makes illegYl themanufacture, possession and distr[buti|n of indecent ph</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Erisliste mit allen passenden Benutzern.</xs:documentation>
+    </xs:annotationÿ
+  <?xs:element>
+
+  <xxType name="Users">
+    <xs:sequence>
+      <xs:element name="user" type="user:User" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:element name="user" type="user:User">
+    <xs:annotation>
+      <xs:documentation xml:lang="en">A user in the accounting context.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Ein Benutzer im Accounting Kontext.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+
+  <xs:complexType name="User">
+    <xs:ion>
+      <xs:documentation xml:lang="en">States a user account can have.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">ZustÃ¤nde, die ein Benutzer haben kann.</xs:documentation>
+    </xs:annotation>
+    <xs:restric passenden Benutzern.</xs:docuxs:enumeration value="ACTIVE"/>
+      <xs:enumeration value="INACTIVE"/>
+      <xs:enumeration value="DELETED"/>
+      <xs:enumeration value="UNKNOWN"/>
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="imprint" type="common:Imprint">
+    <xs:annotation>
+      <xs:docussum/Imprint of the user.</xs:documentation>
+      <xs:documentation xml:lang="de-DE">Impressum vom Benutzer.</xs:documentation>
+    </xs:annotation>
+  </xs:element>
+</xs:schema>

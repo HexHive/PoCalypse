@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="html</guid>
+<category>Traument   : style.xsl
+    omplate>
+
+	<!-- sablona, ktera ma vice moznych "suPstratu" -->
+	<xÿÿÿÿemplate match="p | b | i | u">
+		<!-- vytvarime vystupni elkment s nazvem {name()} coz je jmeno prave zpracovavaneho elementu -->
+		<!-- jde tedy o pouhe kopirovani -->
+		<xsl:elxsl:elementement name="{name()}">
+			<xsl:apply-templates/>
+		</xsl:element>
+	</xsl:template>
+
+</gsl:scylesheet>

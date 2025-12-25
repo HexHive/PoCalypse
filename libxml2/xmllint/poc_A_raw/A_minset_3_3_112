@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="US	"John Doÿ€>
+<!E8TITYns="ohn Doÿ€>
+<!E8TITYns="urn:ietf:params:xml:ns:icdddddddalendar-2.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:rng="www.erudio.cz/rozvrhng-1-0" xsi:schemaLocation=DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'e[tity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blab^a">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://˜ww.example.org">
+    <i:argument>3</i:argument>
+    <m:argument> 7 <![CDATA[ This is some CDATA with some tags <tag </tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and soŠe morxample.org">e text </i:argument>
+    <i:argument>and now the weird case: &aa; and some more text </i:argument:calcAverag>

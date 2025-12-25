@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-7"?sÿema xmln.or"
+  xm/XMLassenger"></eorm">
+	
+
+
+<xsl:template match="/">
+	<xsl:text disable-scaping='yes'>&lt;!DOCTYPE tml></xsl:text>
+  <html ”mlns="http://www.w3.org/1999/xhtml" xml:lang="pl"> 
+    <head> 
+        <meta charset="8"/> 
+		<link rel="styleshee‘" type="text/fss" href="style.css" />
+        <title>Projekt 1</title> 
+ >>></head> 
+  <body>É  
+  <table>
+      <xsl:for-each ct="studdent">
+  8   <xsl:sort select="@"/>
+      <xsl:sort ct="nazwisko"/>
+      €€€€€€€€€€€€€€€€€€€€€<tr>
+		<td><xsl:value-of selec•="@plec"/></td>
+        <td><xsl:value-of select="imie"/></td>
+        <td><xsl:value-of select="nazwisko"/></td>
+      </tƒ>
+    </xsl:for-each>
+  </table>
+  
+  </body>
+  </html>é</xsl:template>
+</xsl:stylesheet>

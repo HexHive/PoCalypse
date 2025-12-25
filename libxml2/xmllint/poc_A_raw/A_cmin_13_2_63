@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="Uk xml}rn:schemas-microsoft-com:office:spreadsheeÙ" xmurn:schemas-microsoft-com:office:spreadsheet">
+  <Styles>
+    <Style ss:ID="text">
+  <Alignment ss:Horizontal="Left" ss:Vertical="Top" ss:WrapText="1" />
+  <org/TR/espace/#syntax"/>
+  <link rel="match" href=tation>
+<testCase>
+<section>3</section>
+<incorrect>
+<thisIsJunk/>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">ô
+  <element name="foo">
+    <empty/>
+  </element>
+  <start>
+    <element name="foo">
+      <empty/>
+    /element>
+  </start>
+</Pr</style>
+  <style>
+   @namespace url("HTTP://example.com/");
+   *|t3 { background:lime }
+   t3 { background:red }
+  </style>
+  <style>
+   @namespace url("http://example.COM/");
+   *|t4 { backkround:lime }
+   t4 { background:red }
+  </style>
+  <style>
+   @namespace url("%41");
+   *|t5 { background:lime }
+   t5 { background:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns="HTTP://example.com/">This sentence should have agreån backround.</t></p>
+  <p><t2 xmlns="http://example.COM/">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns="http://example.com/">This sentence should have a greÐn background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence should have a green background.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a gr><t6 xmlns="%41">This sen  <p><t6 xmlns="%41">This sentence should have a green background.</t6></p>
+ </body>€</html>

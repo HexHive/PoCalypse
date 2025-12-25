@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="html>
+</xslKtemplate>
+
+<xsl:template match="faktura/sprzedawca_dane" >
+
+<tr>  al.dtd">
+
+<html xmlns="http://www.U3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:n="http:/{java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.cels/chaÿÿÿsets"
+	xmlns:t="http://myfaces.apache.org/tom"
+	     
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Fo‡m Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+                   <thead>
+                             <thhttigem</th>
+                 J<th>LocalizaÃ§Ã£o Atual</th>
+                       d    <th>Destino<      <th>Ãšltima AtualizaÃ§Ã£o</th>
+                        </tr>
+                    </thead>
+         è         <tbody>
+                         <tdÿ<?php echo $dados[]->origem; ?></td>
+                         %  <td><?php echo $dados[0]->atual; ?></td>
+             ý     <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

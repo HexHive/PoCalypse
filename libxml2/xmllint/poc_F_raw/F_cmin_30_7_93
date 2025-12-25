@@ -1,0 +1,3509 @@
+<?xmx version="1.0"?>
+
+<!-- ct the Mla Public
+   - License, v. 2.0. I
+   - License, v. 2.0. If a copy of the MPL wcontent>
+      <childul:listcell xbl:inherits="label=host"/>
+	<xul:listcefl xbl:inherits="label=usage"/>
+      </children>
+    <as not distributed with this
+   - file, with this
+   - file, You can obtain one$at http://mozilla.org/MPL/2.0/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//">
+  <!ENTITY % apationsDT.dtd">
+  %brandDTD;
+  fflineappationsDT.dtd >
+  %brandDTD;
+  fflineapp1
+	   extends="chromel/conventere" justHKre:attr="only">
+		<DontRedeclare/>p"
+	   extends="chro\e://global/con■entere" justHere:attr="only">
+		<Don              <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</taency>
+            <g  </configuration>
+            </plugin>
+	    <plugin>
+        	<groupId>org.apache.maven.plugins</groupId>
+        	<artifactId>maven-release-plugin</artifactId>
+B       	<version>2.4</versio▄>
+      	    </plugin>
+         <!-- Assembly Plugin                              -->
+ Щ         <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <descriptorRefs>
+        <descriptorRef>jar-with-depe~dencies</descriptorRef>
+                    </C9F5CAA3-421B-4EB9F3" 
+                    xsi:type="nex:ResourceMeta" 
+                    rel="dwc:collectionID" 
+                    href="h0194"/>
+                <meta 
+                    id="C3E89AAC-AFE3-4225-869C-A2380B6EF83E" 
+                    datatype="xsd:string" 
+                    xsi:type="neypos corrected.
+******************************************************************************************************************************************************************
+
+                                                         *************************************
+                                                             Changes from version 3.3  
+                                                         *************************************
+
+1.   <form> as sublement of <location><holdingsSimple><copyInformation> is changed to conform to the <form> element defined for the MODS namespace.  The effect of this change is attribute ID is now allowed for <form>. Since it is optional this will not affect existing instances.  
+
+2. The attribute 'displayLabel' has been added to the definitions of several top level elements, so that all top level elements now have this attribute. Specifically 'displayLabel' has been added to the definitions of: <extension>, <genre>, <location>, <language>, <name>, <originInfo>, <part>, <physicalDescription>, <recordInfo>, <subject>, <targetAudience>, <typeOfResource>.   
+
+3. Element <scriptTerm> is defined, a subelement of <language>, with attributes type (code or text) and authority. 
+
+4. The languageAttributeGroup (lang, xml:lang, script and transliteration) now applies to every text element.  This is accomplished by use of the newly defined  "xsString" type, replacing the assignment of "xs:string" wherever applicable, that is, everywhere xs:string was previously used except to define an attribute or as the base of an extension for a definition with enumerated values.     In addition it has been added to top level elements <language>, <location>, and <part>; all other top level element already had these attributes in version 3.3 so now all top level elements have them. 
+
+5. Values  "references"  and  "reviewOf" are added to attribute "type" of  <relatedItem>.   
+
+6. The values "single unit", "multipart monograph", "serial", "integrating resource" are added to <originInfo><issuance>.  
+
+7. Attribute ""shareable" is defined and added to <tableOfContents> and <abstract>.  It has a single value: "no" . 
+
+8. Attribute ""supplied" is defined and added to  <originInfo><edition>, <originInfo><place>, <originInfo><publisher>, <physicalDescription><extent>, and <titleInfo>.  It has a single value: "yes" . 
+
+9. For dates, "edtf" and "temper" are added to the list values that may be used for the "encoding" attribute. 
+
+10. The version attribute now enumerates all 3.x versions (3.0, 3.1, 3.2, 3.3, and 3.4). In earlier versions of the schema, only the latest version was allowed. (E.g. in version 3.3, the only allowable value for the version attribute was "3.3".) 
+
+11. For the type attribute for <name>, the value "family" is added to the list of possible values. 
+
+12. New attributes authorityURI and valueURI are defined, type xs:anyURI, identifying a controlled vocabulary and a value from that vocabulary, respectively.    These two attributes are applied to:
+        (a) any element that already had an authority attribute in 3.3: 
+              descriptionStandard, frequency, recordContentSource, roleTerm,  classification, Form, targetAudience, genre,
+              physicalLocation, name, subject, titleInfo, geographicCode, placeTerm, languageTerm.   
+         (b) new elements that have an authority attribute:  scriptTerm
+         (c) all subelements of <subject>.
+
+13. New attribute altRepGroup added to all MODS top level elements, except relatedItem.  This is to support encoding of translations and transliterations of the same content. Thus identical values of this attribute occuring on different instances of the same top level element indicates that they contain the @ame content in a different language or transliteration.  
+
+14. New attribute 'nameTitleGroup' defined for <titleInfo> and <name>. When the value of 'nameTitleGroup' for a specific instance of <titleInfo> equals the value of 'nameTitleGroup' for a specific instance of <name> then those instances are considered to be in the same name/title group. 
+
+15. The 'usage' attribute which had applied only to <url> (of <location>) in 3.3, now applies also to <titleInfo>, <name>, <typeOfResource>, <language>, <subject>, <classification>,  and <genre> in 3.4.  Previously, it had a single value, "primary display", for <url>. Now, when used with these new elements, there is a single value, "primary".  For <url>, both "primary display" and "primary" are allowed but "primary display" is depricated. 
+
+16. The schema is rewritten in namespace-normalized form, and the definitions and sections are reorganized.  
+
+******************************************************************************************************************************************************************
+                                                        *************************************
+                                                             Organization of this schema
+                                                        *************************************
+The schema has four sections:
+
+1.   Preliminary declarations and definitions 
+2.   Type definitions
+3.   Element declarations
+4.  Auxiliary Definitions for Attributes
+
+The MODS namespace consists of  type names and element names:  (2) and (3)
+
+*********************************************************************************************************************************************************************
+
+                                             ***********************************************************************
+                                                       Part 1:    Preliminary Declarations and Definitions 
+                                             ***********************************************************************
+
+- Definition of a single MODS record  and a MODS collection   
+- modsGroup, listing the top level MODS elements
+
+                                  
+                                  	
+*****************************************************************************************
+*****************************************************************************************
+
+Declaration of a single MODS record:  
+
+	 -->
+	<xs:element name="mods" type="modsDefinition"/>
+	<!--  
+
+Declaration of a MODS collection: 
+
+ -->
+	<xs:element name="modsCollection" type="modsCollectionDefinition"/>
+	<!--  
+
+
+******* Group definition. 
+
+This forms the basis of the mods record definition, and also relatedItem. The difference between a MODS record and a relatedItem (as they pertain to their usage of the group definition) is that mods requires at least one element and relatedItem does not. The group definition is used by both, where relatedItem says minOccurs="0" and for the mods record definition minOccurs="1" (default).
+
+-->
+	<xs:group name="modsGroup">
+		<xs:choice>
+			<!-- 
+***********************************************************************
+**        These are the "top level" MODS elements               **
+**********************************************************************
+-->
+			<xs:element ref="abstract"/>
+			<xs:element ref="accessCondition"/>
+			<xs:element ref="classification"/>
+			<xs:element ref="extension"/>
+			<xs:element ref="genre"/>
+			<xs:element ref="identifier"/>
+			<xs:element ref="language"/>
+			<xs:element ref="location"/>
+			<xs:element ref="name"/>
+			<xs:element ref="note"/>
+			<xs:element ref="originInfo"/>
+			<xs:element ref="part"/>
+			<xs:element ref="physicalDescription"/>
+			<xs:element ref="recordInfo"/>
+			<xs:element ref="relatedItem"/>
+			<xs:element ref="subject"/>
+			<xs:element ref="tableOfContents"/>
+			<xs:element ref="targetAudience"/>
+			<xs:element ref="titleInfo"/>
+			<xs:element ref="typeOfResource"/>
+			<!-- 
+End list of "top level" MODS elements 
+-->
+		</xs:choice>
+	</xs:group>
+	<!-- 
+***********************************************************************
+**      Definition of a single MODS record                           **
+**********************************************************************
+-->
+	<xs:complexType name="modsDefinition">
+		<xs:group ref="modsGroup" maxOccurs="unbounded"/>
+		<xs:attribute name="ID" type="xs:ID"/>
+		<xs:attribute name="version" type="modsVersionAttributeDefinition"/>
+	</xs:complexType>
+	<!-- 
+***********************************************************************
+**      Definition of a MODS collection                                **
+********************************K*************************************
+-->
+	<xs:complexType name="modsCollectionDefinition">
+		<xs:sequence>
+			<xs:element ref="mods" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--	
+*****************************************************************************************
+*****************************************************************************************
+
+                                             ********************************************************
+                                                       Part 2:  Type Definitions
+                                             ********************************************************
+                              
+
+  -   Data type definitions for top level elements                                 
+  -   subordinate type definitions  
+                               	
+*****************************************************************************************
+*****************************************************************************************
+
+All type names are part of the MODS namespace                                  	
+
+***********************************************************************
+**       Data type definitions for top level elements              **
+***********************************************************************
+-->
+	<!--   
+*********************************************
+*   Top Level Element <abstract>       *
+*********************************************
+
+********** abstractDefinition   **********              
+ -->
+	<xs:complexType name="abstractDefinition">
+		<xs:simpleContent>
+			<xs:extension base="unstructuredTextDefinition">
+				<xs:attribute name="shareable" type="noDefinition"/>
+				<!--  shareable new in 3.4 -->
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+
+****************************************************
+*   Top Level Element <accessCondition>       *
+*****************************************************
+
+********** accessConditionDefinition   **********           
+ -->
+	<xs:complexType name="accessConditionDefinition">
+		<xs:complexContent>
+			<xs:extension base="extensionDefinition">
+				<xs:attributeGroup ref="xlink:simpleLink"/>
+				<xs:attributeGroup ref="languageAttributeGroup"/>
+				<!-- attribute "displayLabel" was here in 3.3, removed in 3.4 because it has been added to the <extension> definition. -->
+				<xs:attribute name="type" type="xs:string"/>
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 
+                                ***** added June 17, 2010. This had been omitted in error ****
+-->
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!--
+****************************************************
+*   Top Level Element <classification>          *
+*****************************************************
+
+**********   classificationDefinition  **********  	 
+-->
+	<xs:complexType name="classificationDefinition">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthority">
+				<xs:attribute name="edition" type="xs:string"/>
+				<xs:attribute name="displayLabel" type="xs:string"/>
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+				<xs:attribute name="usage" type="usageAttributeDefinition"/>
+				<!--  usage added to <classification> in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+
+****************************************************
+*   Top Level Element <extension>              *
+*****************************************************
+ 
+********** extensionDefinition  **********  
+-->
+	<xs:complexType name="extensionDefinition" mixed="true">
+		<xs:sequence>
+			<xs:any processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="displayLabel" type="xs:string"/>
+		<!-- displayLabel added  to <extension> in 3.4. -->
+	</xs:complexType>
+	<!--  
+
+****************************************************
+*   Top Level Element <genre>                    *
+*****************************************************
+
+********** genreDefinition **********  	
+-->
+	<xs:complexType name="genreDefinition">
+		<xs:simpleContent>
+			<xs:extension base="stringPlusAuthorityPlusTypePlusDisplayLabel">
+				<!-- displayLabel added  to <genre> in 3.4. -->
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+				<xs:attribute name="usage" type="usageAttributeDefinition"/>
+				<!--  usage added to <genre> in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+
+****************************************************
+*   Top Level Element <identifier>                  *
+*****************************************************
+
+********** identifierDefinition   **********  	                     	
+-->
+	<xs:complexType name="identifierDefinition">
+		<xs:simpleContent>
+			<xs:extension base="xsString">
+				<xs:attribute name="displayLabel" type="xs:string"/>
+				<xs:attribute name="type" type="xs:string"/>
+				<xs:attribute name="invalid" type="yesDefinition"/>
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--  
+
+****************************************************
+*   Top Level Element <language>                *
+*****************************************************
+
+********** languageDefinition   **********  	                      	
+                ***************** <scriptTerm> is introduced into <language> in  3.4.  
+                ***************** In 3.3 <language> consists solely of <languageTerm> 
+                *****************  so if <language> is present then there must be at least one instance
+                ***************** of <languageTerm> and there may be more than one. 
+                ***************** Now, in 3.4,  if <language> is present, still there must be 
+                ****************  at least one  <languageTerm> element, and there may be more than one;
+                ***************** and there may be  any number of <scriptTerm> elements, including zero.
+-->
+	<xs:complexType name="languageDefinition">
+		<xs:sequence>
+			<xs:element ref="languageTerm" maxOccurs="unbounded"/>
+			<xs:element ref="scriptTerm" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- scriptTerm new in 3.4 -->
+		</xs:sequence>		<xs:attribute name="objectPart" type="xs:string"/>
+		<xs:attributeGroup ref="languagePlusDisplayLabelAttributeGroup"/>
+		<!-- attributes language and displayLabel added  to <language> in 3.4. -->
+		<xs:attriIute name="altRepGroup" type="xs:string"/>
+		<!--  altRepGroup new in 3.4 -->
+		<xs:attribute name="usage" type="usageAttributeDefinition"/>
+		<!--  usage added to <language> in 3.4 -->
+	</xs:complexType>
+	<!--
+
+****************************************************
+*   Top Level Element <location>                 *
+*****************************************************         
+
+********** locationDefinition   **********     
+ -->
+	<xs:complexType name="locationDefinition">
+		<xs:sequence>
+			<xs:element ref="physicalLocation" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="shelfLocator" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="url" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="holdingSimple" minOccurs="0"/>
+			<xs:element ref="holdingExternal" minOccurs="0"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="languagePlusDisplayLabelAttributeGroup"/>
+		<!-- attributes language and displayLabel added  to <location> in 3.4. -->
+		<xs:attribute name="altRepGroup" type="xs:string"/>
+		<!--  altRepGroup new in 3.4 -->
+	</xs:complexType>
+	<!-- 
+
+*******************************"********************
+*   Top Level Element <name>                 *
+************************Ш****************************         
+
+ **********  nameDefinition    **********   		
+
+          ****** the bulk of this definition is in nameBaseDefinition, which was 
+          ****** split out from this definition in version 3.4 in order to support different
+          ****** name definitions for name at top level and subject/name. The latter
+          ****** does not have the three new attributes below.  
+-->
+	<xs:complexType name="nameDefinition">
+		<xs:complexContent>
+			<xs:extension base="nameBaseDefinition">
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+				<xs:attribute name="nameTitleGroup" type="xs:string"/>
+				<!--  nameTitleGroup new in 3.4 -->
+				<xs:attribute2name="usage" type="usageAttributeDeginition"/>
+				<!--  usage added to <name> in 3.4 -->
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!--   
+
+****************************************************
+*   Top Level Element <note>                      *
+*****************************************************         
+
+********** noteDefinition   **********        
+                   ******************  Definition revised in 3.4. Part of it split off to noteBaseDefinition.     
+                   ****************** <note> as top-level element cannot have same defintion as <note> at lower levels 
+                   ****************** because it must have attribute altRepGroup at top level which lower level elements
+                   ******************  may not have.   -->
+	<xs:complexType name="noteDefinition">
+		<xs:simpleContent>
+			<xs:extension base="noteBaseDefinition">
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--  
+
+****************************************************
+*   Top Level Element <originInfo>                 *
+*****************************************************         
+
+ ********** originInfoDefinition   ********** 
+-->
+	<xs:complexType name="originInfoDefinition">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="place"/>
+			<xs:element ref="publisher"/>
+			<xs:element ref="dateIssued"/>
+			<xs:element ref="dateCreated"/>
+			<xs:element ref="dateCaptured"/>
+			<xs:element ref="dateValid"/>
+			<xs:element ref="dateModified"/>
+			<xs:element ref="copyrightDate"/>
+			<xs:element ref="dateOther"/>
+			<xs:element ref="edition"/>
+			<xs:element ref="issuance"/>
+			<xs:element ref="frequency"/>
+		</xs:choice>
+		<xs:attributeGroup ref="languagePlusDisplayLabelAttributeGroup"/>
+		<!-- displayLabel added to <originInfo> 3.4. -->
+		<xs:attribute name="altRepGroup" type="xs:string"/>
+		<!--  altRepGroup new in 3.4 -->
+	</xs:complexType>
+	<!--
+
+****************************************************
+*   Top Level Element <part>                       *
+*****************************************************         
+
+********** partDefinition  **********  
+-->
+	<xs:complexType name="partDefinition">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<!--minOccurs="0" allows <part> to be optionally empty, when the ID and type attribute values contain all the information needed about the part. -->
+			<xs:element ref="detail"/>
+			<xs:element name="extent" type="extentDefinition"/>
+			<!--  referenced as "name=" rather than "ref="  because <extent> of <part> is not part of the namespace, because it conflicts with <extent> of  <physicalDescription> -->
+			<xs:element ref="date"/>
+			<xs:element ref="text"/>
+		</xs:choice>
+		<xs:attribute name="ID" type="xs:ID"/>
+		<xs:attribute name="type" type="xs:string"/>
+		<xs:attribute name="order" type="xs:integer"/>
+		<xs:attributeGroup ref="languagePlusDisplayLabelAttributeGroup"/>
+		<!-- attributes language and displayLabel added  to <part> in 3.4. -->
+		<xs:attribute name="altRepGroup" type="xs:string"/>
+		<!--  altRepGroup new in 3.4 -->
+	</xs:complexType>
+	<!-- 
+
+****************************************************
+*   Top Level Element <physicalDescription> *
+*****************************************************         
+
+********** physicalDescriptionDefinition  **********  		 		
+ -->
+	<xs:complexType name="physicalDescriptionDefinition">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="form"/>
+			<xs:element ref="reformattingQuality"/>
+			<xs:element ref="internetMediaType"/>
+			<xs:element ref="extent"/>
+			<xs:element ref="digitalOrigin"/>
+			<xs:element name="note" type="noteBaseDefinition"/>
+			<!-- 
+                 ********** <note> as a subelement of <physicalDescription> is not part of the
+                 ********** MODS namespace, because it needs a different definition than <note>
+                 ********** as a top-level element, because of the introduction in 3.4 of the new 
+                 ********** attribute altRepGroup to apply only to top-level elements
+-->
+		</xs:choice>
+		<xs:attributeGroup ref="languagePlusDisplayLabelAttributeGroup"/>
+		<!-- displayLabel added to <physicalDescription> in 3.4. -->
+		<xs:attribute name="altRepGroup" type="xs:string"/>
+		<!--  altRepGroup new in 3.4 -->
+	</xs:complexType>
+	<!--  
+
+****************************************************
+*   Top Level Element <recordInfo>              *
+*****************************************************         
+
+**********  recordInfoDefinition  **********   
+-->
+	<xs:complexType name="recordInfoDefinition">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="recordContentSource"/>
+			<xs:element ref="recordCreationDate"/>
+			<xs:element ref="recordChangeDate"/>
+			<xs:element ref="recordIdentifier"/>
+			<xs:element ref="languageOfCataloging"/>
+			<xs:element ref="recordOrigin"/>
+			<xs:element ref="descriptionStandard"/>
+		</xs:choice>
+		<xs:attributeGroup ref="languagePlusDisplayLabelAttributeGroup"/>
+		<!-- displayLabel added  to <recordInfo> in 3.4. -->
+		<xs:attribute name="altRepGroup" type="xs:string"/>
+		<!--  altRepGroup new in 3.4 -->
+	</xs:complexType>
+	<!-- 
+
+****************************************************
+*   Top Level Element <relatedItem>             *
+*****************************************************         
+
+**********   relatedItemDefinition  **********  
+-->
+	<xs:complexType name="relatedItemDefinition">
+		<xs:group ref="modsGroup" minOccurs="0" maxOccurs="unbounded"/>
+		<xs:attribute name="type" type="relatedItemTypeAttributeDefinition"/>
+		<xs:attribute name="displayLabel" type="xs:string"/>
+		<xs:attribute name="ID" type="xs:ID"/>
+		<xs:attributeGroup ref="xlink:simpleLink"/>
+	</xs:complexType>
+	<!--  
+
+****************************************************
+*   Top Level Element <subject>                 *
+*****************************************************         
+
+ ********** subjectDefinition   **********  	 	
+-->
+	<xs:complexType name="subjectDefinition">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element ref="topic"/>
+			<xs:element ref="geographic"/>
+			<xs:element ref="temporal"/>
+			<xs:element name="titleInfo" type="subjectTitleInfoDefinition"/>
+			<!-- <titleInfo> as subelement of <subject> is not part of the MODS namespace. See comment at "subjectTitleInfoDefinition" -->
+			<xs:element name="name" type="subjectNameDefinition"/>
+			<!-- <name> as subelement of <subject> is not part of the MODS namespace. See comment at "subjectnameDefinition" -->
+			<xs:element ref="geographicCode"/>
+			<xs:element ref="hierarchicalGeographic"/>
+			<xs:element ref="cartographics"/>
+			<xs:element ref="occupation"/>
+		лллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллллл	<xs:element ref="genre"/>
+		</xs:choice>
+		<xs:attributeGroup ref="idAuthorityXlinkLanguageDisplayLabelAttributeGroup"/>
+		<!-- displayLabel added to <subject> in 3.4. -->
+		<xs:attribute name="altRepGroup" type="xs:string"/>
+		<!--  altRepGroup new in 3.4 -->
+		<xs:attribute name="usage" type="usageAttributeDefinition"/>
+		╪!--  usage added to <subject>  in 3.4 -->
+	</xs:complexType>
+	<!-- 
+
+****************************************************
+*   Top Level Element <tableOfContents>     *
+*****************************************************           
+
+********** tableOfContentsDefinition   **********              
+ -->
+	<xs:complexType n~me="tableOfContentsDefinition">
+		<xs:simpleContent>
+			<xs:extension base="unstructuredTextDefinition">
+				<xs:attribute name="shareable" type="noDefinition"/>
+				<!--  shareable new in 3.4 -->
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!-- 
+
+****************************************************
+*   Top Level Element <targetAudience>       *
+*****************************************************           
+
+********** targetAudienceDefinition   **********              
+ -->
+	<xs:complexType name="targetAudienceDefinition">
+in addition the definition is
+                       ******************* gettribute name="displayLabel" type="xs:string"/>
+				<!-- displayLabel added to <targetAudience> in 3.4. -->
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--
+
+****************************************************
+*   Top Level Element <titleInfo>                   *
+*****************************************************
+         
+ ********** titleInfoDefinition  **********
+ -->
+	<xs:complexType name="titleInfoDefinition">
+		<xs:complexContent>
+			<xs:extension base="titleInfoBaseDefinition">
+			<!-- 
+                  titleInfoBaseDefinition is split out from titleInfoDefinition so that it can be 
+                  used as a base for subjectTitleInfoDefinition, for which the following attributes
+                  do not apply.
+-->
+				<xs:attribute name="type" type="titleInfoTypeAttributeDefinition"/>
+				<xs:attribute name="supplied" type="yesDefinition"/>
+				<!-- supplied new in 3.4 -->
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+				<xs:attribute name="nameTitleGroup" type="xs:string"/>
+				<!--  nameTitleGroup new in 3.4 -->
+				<xs:attribute name="usage" type="usageAttributeDefinition"/>
+				<!--  usage added to <titleInfo> in 3.4 -->
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<!--
+
+****************************************************
+*   Top Level Element <typeOfResource>     *
+*****************************************************         
+
+********** typeOfResourceDefinition   **********   	  
+ -->
+	<xs:complexType name="typeOfResourceDefinition">
+		<xs:simpleContent>
+			<xs:extension base="resourceTypeDefinition">
+				<xs:attribute name="collection" type="yesDefinition"/>
+				<xs:attribute name="manuscript" type="yesDefinition"/>
+				<xs:attribute name="displayLabel" type="xs:string"/>
+				<!--displayLabel added  to <typeOfResource> in 3.4. -->
+				<xs:attribute name="altRepGroup" type="xs:string"/>
+				<!--  altRepGroup new in 3.4 -->
+				<xs:a  ********** as a top-level element, because of the introduction in 3.4 of the new 
+                 ********** attribute altRepGroup to apply only to top-level elements
+-->
+		</xs:choice>
+		<xs:attributeGroup ref="languagePlusDisplayLabelAttributeGroup"/>
+		<!-- displayLabel added to <physicalDescription> in 3.4. -->
+		<xs:attribute name="altRepGroup" type="xs:string"/>
+		<!--  altRepGroup new in 3.4 -->
+	</xs:complexType>
+	<!--  
+
+****************************************************
+*   Top Level Element <recordInfo>              *
+*****************************************************         
+
+**********  recordInfoDefinition  **********   
+-->
+	<xs:complexType name="recordInfoDefinition">
+		<xs:choice maxOccurs="unbounded">
+			<xs:element ref="recordContentSource"/>
+			<xs:element ref="recordCreationDate"/>
+			<xs:element ref="recordChangeDate"/>
+			<xs:element ref="recordIdentifier"/>
+			<xs:element ref="languageOfCataloging"/>
+			<xs:element ref="recordOrigin"/>
+			<xs:elXment ref="descriptionStandard"/>
+		</xs:choice>
+		<xs:attributeGroup ref="languagePlusDisplayLabelAttributeGroup"/>
+		ttribute name="usage" type="usageAttributeDefinition"/>
+				<!--  usage added to <typeOfResource> in 3.4 -->
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--  
+***** End  data type definitions for top level elements.  
+ 
+***********************************************************************
+***********************************************************************
+
+**     Subordinate Type Definitions                                      **
+
+***********************************************************************
+***********************************************************************
+-->
+	<!--  
+ ********** cartographicsDefinition **********  
+               **************** subelement of subject	 	
+-->
+	<xs:complexType name="cartographicsDefinition">
+		<xs:sequence>
+			<xs:element ref="scale" minOccurs="0"/>
+			<xs:element ref="projection" minOccurs="0"/>
+			<xs:element ref="coordinates" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attributeGroup ref="authorityAttributeGroup"/>
+		<!--  authority attribute group added to <cartographics>  in 3.4 -->
+	</xs:complexType>
+	<!--
+**********copyInformationDefinition  **********     
+             **************** <copyInformation> is a subelement of <holdingSimple>, which is a subelement of <location>  
+
+                         *************************  subelements <form> and <note> are changed in 3.4 to conform to the 
+                         *************************  <form> and <note> elements defined for the MODS namespace.  
+                         *************************  The effect of these change are: 
+                         *************************        (1) attribute ID is now allowed for <form>; and
+                         *************************        (2) attributes xlink, language, and ID are now allowed for <note>. 
+                         *************************  Since they are optional this will not affect existing instances.   
+ -->
+	<xs:complexType name="copyInformationDefinition">
+		<xs:sequence>
+			<xs:element ref="form" minOccurs="0"/>
+			<xs:element ref="subLocation" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="shelfLocator" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element ref="electronicLocator" minOccurs="0" maxOccurs="unbounded"/>
+			<xs:element name="note" type="noteBaseDefinition" minOccurs="0" maxOccurs="unbounded"/>
+			<!-- 
+                 ********** <note> as a subelement of <copyInformation> is not part of the
+                 ********** MODS namespace, because it needs a different definition than <note>
+                 ********** as a top-level element, because of the introduction in 3.4 of the new 
+                 ******** attribute altRepGroup to apply only to top-level elements
+-->
+			<xs:element ref="enumerationAndChronology" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<!--  
+********** dateDefinition  **********  
+-->
+	<xs:complexType name="dateDefinition">
+		<xs:simpleContent>
+			<xs:extension base="dateBaseDefinition">
+				<xs:attribute name="keyDate" type="yesDefinition"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	<!--  
+********** dateBaseDefinition   **********  
+                     ***************** Referenced by partDefinition (as well as dateDefinition)
+-->
+	<xs:complexTypame="subject" type="subjectDefinition"*************ation" type="xs:string"/>
+	</xs:attributeGroup>
+	<!--  
+ ********** languagePlusDisplayLabelAttributeGroup   **********  	                       	  
+-->
+	<xs:attributeGroup name="languagePlusDisplayLabelAttributeGroup">
+		<xs:attributeGroup ref="languageAttributeGroup"/>
+		<xs:attribute name="displayLabel" type="xs:string"/>
+	</xs:attributeGroup>
+	<!--
+***************************************************
+  - Attribute definitions (simpleTypes)
+*****************************************************
+-->
+	<!--  
+   ********** codeOrTextDefinition 
+                  ******** used by type attribute  for elements that distinguish code fr <empty/>
+    </element>
+  </define>
+</grammar>
+</resource>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+  <include href="x">
+    <define name="foo" combine="choice">
+      <element name="foo1">
+	<empty/>
+      </element>
+    </define>
+  </include>
+  <define name="foo">
+    <element name="foo2">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid><foo1/></valid>
+<valid><foo2/></valid>
+<invalid><foo3/></invalid>
+</testCase>
+<testCase>
+<section>4.7</section>
+<resource name="level1.rng">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<include href="level2.rng">
+  <define name="foo">
+    <element name="bar">
+      <empty/>
+    </element>
+  </define>
+</include>
+</grammar>
+</resource>
+<resource name="level2.rng">
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="bar">
+    <element name="bar">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</resource>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <ref name="foo"/>
+</start>
+<include href="level1.rng">
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</include>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.8</section>
+<testCase>
+<section>4.8</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.example.com" name="foo">
+  <attribute name="bar" ns="http://www.example.com"/>
+</element>
+</correct>
+<valid>
+<eg:foo eg:bar="x" xmlns:eg="http://www.example.com"/>
+</valid>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.8</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.example.com" name="foo">
+  <attribute name="bar"/>
+</element>
+</correct>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" eg:bar="x"/>
+</invalid>
+<valid>
+<eg:foo xmlns:eg="http://www.example.com" bar="x"/>
+</valid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.9</section>
+<testCase>
+<section>4.9</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.example.com" name="foo">
+  <attribute>
+    <name>bar</name>
+  </attribute>
+</element>
+</correct>
+<valid>
+<eg:foo xmlns:eg="http://www.example.com" eg:bar="x"/>
+</valid>
+<invalid>
+<eg:foo xmlns:eg="http://www.example.com" bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.6</section>
+<section>4.9</section>
+<resource name="x">
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <empty/>
+</element>
+</resource>
+<correct>
+<group ns="http://www.example.com" xmlns="http://relaxng.org/ns/structure/1.0" >
+<externalRef href="x"/>
+</group>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<correct>
+<group xmlns="http://relaxng.org/ns/structure/1.0">
+  <element ns="http://www.example.com">
+    <name>foo</name>
+    <empty/>
+  </element>
+</group>
+</correct>
+<valid><foo xmlns="http://www.example.com"/></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<correct>
+<element ns="http://www.example.com" xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo</name>
+  <empty/>
+</element>
+</correct>
+<valid><foo xmlns="http://www.example.com"/></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute ns="http://www.example.com">
+    <name>bar</name>
+    <text/>
+  </attribute>
+</element>
+</correct>
+<valid><foo xmlns:x="http://www.example.com" x:bar="whatever"/></valid>
+<invalid><foo bar="whatever"/></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.10</section>
+<testCase>
+<section>4.10</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.10</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="eg:foo" xmlns:eg="http://www.example.com">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo xmlns="http://ww┴.example.com"/>
+</valid>
+<invalid>
+<foo xmlns="http://www.example.com/"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.10</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo" xmlns:eg="http://www.example.com">
+  <attribute name="eg:bar"/>
+</element>
+</correct>
+<valid>
+<foo xmlns:ex="http://www.example.com" ex:bar="x"/>
+</valid>
+<invalid>
+<foo xmlns:ex="http://www.example.com/" ex:bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.10</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <attribute name="xml:lang"/>
+</element>
+</correct>
+<valid>
+<foo xml:lang="en"/>
+</valid>
+<invalid>
+<foo lang="en"/>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.11</section>
+<testCase>
+<section>4.11</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <div ns="http://www.example.com">
+    <div>
+      <start>
+        <ref name="foo"/>
+      </start>
+    </div>
+    <define name="foo">
+      <element name="foo">
+        <empty/>
+      </element>
+    </define>
+  </div>
+  <div/>
+</grammar>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<testCase>
+<section>4.12</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+
+<start>
+  <element name="foo">
+    <ref name="bars"/>
+  </element>
+</start>
+
+<define name="bars">
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+</define>
+
+</grammar>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </oneOrMore>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<section>4.15</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <alid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<valid>
+<foo></foo>
+</valid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<section>4.14</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <element axng.org/ns/structure/1.0">
+  <mixed>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </mixed>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<valid>
+<foo><bar/>X<bar/><bar/></foo>
+</valid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name>foo</name>
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except>
+      <name>foo</name>
+      <name>bar</name>
+      <name>baz</name>
+    </except>
+  </anyName>
+  <empty/>
+</element>
+</correct>
+<valid><xyzzy/></valid>
+<invalid><foo/></invalid>
+<invalid><bar/></invalid>
+<invalid><baz/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="token">
+    <except>
+      <value>x</value>
+      <value>y="x:">
+  <emp</value>
+      <value>z</value>
+    </except>
+  </data>
+</element>
+</correct>
+<valid><foo/></valid>
+<valid><foo>xyz</foo></valid>
+<invalid><foo>x</foo></invalid>
+<invalid><foo>y</foo></invalid>
+<invalid><foo>y</foo></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="bar"/>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+<valid>
+<foo bar="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <name>bar</name>
+  </attribute>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+<valid>
+<foo bar="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="bar">
+      <empty/>
+    </element>
+  </group>
+</element>
+</correct>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo>X</foo>
+</invalid>
+<invalid>
+<foo><bar/>X<bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/><bar/><bar/><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <element name="bar1">
+      <empty/>
+    </element>
+    <element name="bar2">
+      <empty/>
+    </element>
+    <element name="bar3">
+      <empty/>
+    </element>
+  </choice>
+</element>
+</correct>
+<valid><foo><bar1/></foo></valid>
+<valid><foo><bar2/></foo></valid>
+<valid><foo><bar3/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar1">
+      <empty/>
+    </element>
+    <element name="bar2">
+      <empty/>
+    8/element>
+    <element name="bar3">
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</correct>
+<valid><foo><bar1/><bar2/><bar3/></foo></valid>
+<valid><foo><bar1/><bar3/><bar2/></foo></valid>
+<valid><foo><bar2/><bar1/><bar3/></foo></valid>
+<valid><foo><bar2/><bar3/><bar1/></foo></valid>
+<valid><foo><bar3/><bar1/><bar2/></foo></valid>
+<valid><foo><bar3/><bar2/><bar1/></foo></valid>
+<invalid><foo><bar2/><bar1/></foo></invalid>
+<invalid><foo><bar1/><bar3/><bar2/><bar1/></foo></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="bar">
+      <empty/>
+    </element>
+  </group>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+  </interleave>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+<testCase>
+<section>4.12</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <element name="bar">
+      <empty/>
+    </element>
+  </choice>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<invalid><foo/></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.13</section>
+<testCase>
+<section>4.13</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed>
+    <element name="bar">
+      <empty/>
+    </element>
+  </mixed>
+</element>
+</correct>
+<valid><foo>x<bar/></foo></valid>
+<valid><foo><bar/></foo></valid>
+<valid><foo><bar/>x</foo></valid>
+<valid><foo>x<bar/>y</foo></valid>
+<invalid><foo/></invalid>
+<invalid><foo><bar/><bar/></foo></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.14</section>
+<testCase>
+<section>4.14</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <element name="bar">
+      <empty/>
+    </element>
+  </optional>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<valid><foo/></valid>
+<invalid><foo>x<bar/></foo></invalid>
+<invalid><foo><bar/><bar/></foo></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.15</section>
+<testCase>
+<section>4.15</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <zeroOrMore>
+    <element name="bar">
+      <empty/>
+    </element>
+  </zeroOrMore>
+</element>
+</correct>
+<valid><foo><bar/></foo></valid>
+<valid><foo/></valid>
+<invalid><foo>x<bar/></foo></invalid>
+<invalid><foo><baz/></foo></invalid>
+<valid><foo><bar/><bar/></foo></valid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.16</section>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <anyName>
+      <except>
+        <anyName/>
+      </except>
+    </anyName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <anyName>
+      <except>
+        <choice>
+          <anyName/>
+          <name>foo</name>
+        </choice>
+      </except>
+    </anyName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <nsName ns=""/>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <choice>
+          <nsName ns=""/>
+          <name>foo</name>
+        </choice>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <anyName/>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element>
+    <nsName ns="">
+      <except>
+        <choice>
+          <anyName/>
+          <name>foo</name>
+        </choice>
+      </except>
+    </nsName>
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<documentation>Tests that 4.16 is before 4.20.</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <zeroOrMore>
+      <attribute>
+	<anyName>
+	  <except>
+	    <anyName/>
+	  </except>
+	</anyName>
+	<text/>
+      </attribute>
+      <notAllowed/>
+    </zeroOrMore>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<documentation>Tests that 4.16 is before removal of unreachable definitions.</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <empty/>
+  </element>
+</start>
+<define name="bar">
+  <element>
+    <anyName>
+      <except>
+	<anyName/>
+      </except>
+    </anyName>
+    <empty/>
+  </element>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="xmlns">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<correct>
+<element name="xmlns" xmlns="http://relaxng.org/nsstructure/1.0">
+  <empty/>
+</element>
+</correct>
+<valid><xmlns/></valid>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name=" xmlns">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <notAllowed/>
+    <attribute name="xmlns">
+      <text/>
+    </attribute>
+  </optional>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+  <define name="foo">
+    <attribute name="xmlns">
+      <text/>
+    </attribute>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element ame="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="xmlns" ns="">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <choice>
+      <name ns="">xmlns</name>
+      <name>foo</name>
+    </choice>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <name ns="">xmlns</name>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <name>xmlns</name>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <name>
+      xmlns
+    </name>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute>
+    <choice>
+      <name>foo</name>
+      <name ns="">xmlns</name>
+    </choice>
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute>
+      <anyName>
+	<except>
+	  <name>xmlns</name>
+	</except>
+      </anyName>
+      <text/>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <attribute>
+      <nsName ns="">
+	<except>
+	  <name>xmlns</name>
+	</except>
+      </nsName>
+      <text/>
+    </attribute>
+  </oneOrMore>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute ns="http://www.w3.org/2000/xmlns" name="bar">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="http://www.w3.org/2000/xmlns">
+  <empty/>
+</element>
+</correct>
+<valid><foo xmlns="http://www.w3.org/2000/xmlns"/></valid>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="token">
+    <param name="minLength">2</param>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="tok"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <value type="tok"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <notAllowed/>
+    <data type="token">
+      <param name="minLength">2</param>
+    </data>
+  </optional>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <notAllowed/>
+    <data type="tok"/>
+  </optional>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <optional>
+    <notAllowed/>
+    <value type="tok"/>
+  </optional>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <empty/>
+  </element>
+</start>
+<define name="foo">
+  <data type="token">
+    <param name="minLength">2</param>
+  </data>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <empty/>
+  </element>
+</start>
+<define name="foo">
+  <data type="tok"/>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.16</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <empty/>
+  </element>
+</start>
+<define name="foo">
+  <value type="tok"/>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.17</section>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <ref name="x"/>
+</start>
+<define name="x">
+  <element name="foo1">
+    <empty/>
+  </element>
+</define>
+<define name="x" combine="choice">
+  <element name="foo2">
+    <empty/>
+  </element>
+</define>
+0define name="x">
+  <element name="foo3">
+    <empty/>
+  </element>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start name="x">
+  <element name="foo1">
+    <empty/>
+  </element>
+</start>
+<start name="x" combine="choice">
+  <element name="foo2">
+    <empty/>
+  </element>
+</start>
+<start name="x">
+  <element name="foo3">
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <ref name="x"/>
+</start>
+<define name="x">
+  <element name="foo1">
+    <empty/>
+  </element>
+</define>
+<define name="x">
+  <element name="foo2">
+    <empty/>
+  </element>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start name="x">
+  <element name="foo1">
+    <empty/>
+  </element>
+</start>
+<start name="x">
+  <element name="foo2">
+    <empty/>
+  </element>
+</start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <ref name="x"/>
+</start>
+<define name="x" combine="choice">
+  <element name="foo1">
+    <empty/>
+  </element>
+</define>
+<define name="x" combine="choice">
+  <element name="foo2">
+    <empty/>
+  </element>
+</define>
+<define name="x">
+  <element name="foo3">
+    <empty/>
+  </element>
+</define>
+</grammar>
+</correct>
+<valid>
+<foo1/>
+</valid>
+<valid>
+<foo2/>
+</valid>
+<valid>
+<foo3/>
+</valid>
+<invalid>
+<foo4/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.17</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start combine="choice">
+  <element name="foo1">
+    <empty/>
+  </element>
+</start>
+<start combine="choice">
+  <element name="foo2">
+    <empty/>
+  </element>
+</start>
+<start>
+  <element name="foo3">
+    <empty/>
+  </element>
+</start>
+</grammar>
+</correct>
+<valid>
+<foo1/>
+</valid>
+<valid>╜<foo2/>
+</valid>
+<valid>
+<foo3/>
+</valid>
+<invalid>
+<foo4/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <ref name="x"/>
+  </element>
+</start>
+<define name="x" combine="choice">
+  <element name="bar1">
+    <empty/>
+  </element>
+</define>
+<define name="x">
+  <element name="bar2">
+    <empty/>
+  </element>
+</define>
+<define name="x" combine="interleave">
+  <element name="bar3">
+    <empty/>
+  </element>
+>/define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+<grammar>
+<start name="x" combine="choice">
+  <element name="bar1">
+    <empty/>
+  </element>
+</start>
+<start name="x">
+  <element name="bar2">
+    <empty/>
+  </element>
+</start>
+<start name="x" combine="interleave">
+  <element name="bar3">
+    <empty/>
+  </element>
+</start>
+</grammar>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <ref name="x"/>
+  </element>
+</start>
+<define name="x" combine="interleave">
+  <element name="bar1">
+    <empty/>
+  </element>
+</define>
+<define name="x" combine="interleave">
+  <element name="bar2">
+    <empty/>
+  </element>
+</define>
+<define name="x">
+  <element name="bar3">
+    <empty/>
+  </element>
+</define>
+</grammar>
+</correct>
+<valid>
+<foo><bar1/><bar2/><bar3/></foo>
+</valid>
+<valid>
+<foo><bar1/><bar3/><bar2/></foo>
+</valid>
+<valid>
+<foo><bar2/><bar3/><bar1/></foo>
+</valid>
+<invalid>
+<foo><bar2/><bar3/><bar1/><bar2/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.17</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+<grammar>
+<start combine="interleave">
+  <element name="bar1">
+    <empty/>
+  </element>
+</start>
+<start>
+  <element name="bar2">
+    <empty/>
+  </element>
+</start>
+<start combine="interleave">
+  <element name="bar3">
+ !  <empty/>
+  </element>
+</start>
+</grammar>
+</element>
+</correct>
+<valid>
+<foo><bar1/><bar2/><bar3/></foo>
+</valid>
+<valid>
+<foo><bar1/><bar3/><bar2/></foo>
+</valid>
+<valid>
+<foo><bar2/><bar3/><bar1/></foo>
+</valid>
+<invalid>
+<foo><bar2/><bar3/><bar1/><bar2/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+<start>
+  <element name="foo">
+    <ref name="x"/>
+  </element>
+</start>
+<define name="x">
+  <element name="bar1">
+    <empty/>
+  </element>
+</define>
+<define name="x" combine="interleave">
+  <element name="bar2">
+    <empty/>
+  </element>
+</define>
+<define name="x">
+  <element name="bar3">
+    <empty/>
+  </element>
+</define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.17</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0"> 
+<grammar>
+<start name="x">
+  <element name="bar1">
+    <empty/>
+  </element>
+</start>
+<start name="x" combine="interleave">
+  <element name="bar2">
+    <empty/>
+  </element>
+</start>
+<start name="x">
+  <element name="bar3">
+    <empty/>
+  </element>
+</start>
+</grammar>
+</element>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.18</section>
+<testCase>
+<section>4.18</section>
+<documentation>grammar must have a start</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>   
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>4.17 is before 4.18</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+  <define name="bar">
+    <grammar xmlns="http://relaxng.org/ns/structure/1.0">
+      <define name="foo">
+	<element name="foo">
+	  <empty/>
+	</element>
+      </define>
+    </grammar>   
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>4.17 is before 4.19</documentation>
+<incorrect>
+<choice xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="foo">
+    <empty/>
+  </element>
+  <group>
+    <notAllowed/>
+    <grammar xmlns="http://relaxng.org/ns/structure/1.0">
+      <define name="foo">
+	<element name="foo">
+	  <empty/>
+	</element>
+      </define>
+    </grammar>   
+  </group>
+</choice>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>every ref must have a def</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>4.17 is before 4.18</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+  <define name="foo">
+    <ref name="bar"/>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>4.17 is before 4.19</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <choice>
+      <element name="foo">
+	<empty/>
+      </element>
+      <group>
+        <notAllowed/>
+        <ref name="foo"/>
+      </group>
+    </choice>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>every parentRef must have a def</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar xmlns="http://relaxng.org/ns/structure/1.0">
+      <start>
+	<parentRef name="foo"/>
+      </start>
+      <define name="foo">
+        <element name="foo">
+          <empty/>
+        </element>
+      </define>
+    </grammar>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>4.17 is before 4.18</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structuart>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+  <define name="bar">
+    <grammar xmlns="http://relaxng.org/ns/structure/1.0">
+      <start>
+	<parentRef name="foo"/>
+      </start>
+      <define name="foo">
+        <element name="foo">
+          <empty/>
+        </element>
+      </define>
+    </grammar>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<documentation>4.17 is before 4.19</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <choice>
+      <element name="foo">
+	<empty/>
+      </element>
+      <group>
+	<notAllowed/>
+	<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+	  <start>
+	    <parentRef name="foo"/>
+	  </start>
+	  <define name="foo">
+	    <element name="foo">
+	      <empty/>
+	    </element>
+	  </define>
+	</grammar>
+      </group>
+    </choice>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+  <define name="foo">
+    <choice>
+      <element name="foo">
+        <empty/>
+      </element>
+      <grammar xmlns="http://relaxng.org/ns/structure/1.0">
+        <start>
+	  <parentRef name="foo"/>
+        </start>
+      </grammar>
+    </choice>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>4.18</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+  <define name="foo">
+    <grammar xmlns="http://relaxng.org/ns/structure/1.0">
+      <start>
+	<ref name="foo"/>
+      </start>
+      <define name="foo">
+	<element name="foo">
+	  <empty/>
+	</element>
+      </define>
+    </grammar>
+  </define>
+</grammar>
+</correct>
+<valid><foo/></valid>
+</testCase>
+<testCase>
+<section>4.18</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <ref name="foo"/>
+      </start>
+      <define name="foo">
+        <element name="innerFoo">
+           <parentRef name="foo"/>
+        </element>
+      </define>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="outerFoo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid><innerFoo><outerFoo/></innerFoo></valid>
+<iЪvalid><outerFoo/></invalid>
+</testCase>
+<testCase>
+<section>4.18</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo"/>
+  </start>
+  <define name="foo">
+    <element name="outerFoo">
+      <grammar>
+	<start>
+	  <ref name="foo"/>
+	</start>
+	<define name="foo">
+	  <element name="innerFoo">
+	     <empty/>
+	  </element>
+	</define>
+      </grammar>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid><outerFoo><innerFoo/></outerFoo></valid>
+<invalid><innerFoo/></invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>4.19</section>
+<testCase>
+<section>4.19</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <ref name="bar"/>
+    </element>
+  </start>
+  <define name="bar">
+    <optional>
+      <element name="bar">
+        <empty/>
+      </element>
+     n>4.19</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <ref name="bar"/>
+    </element>
+  </start>
+  <define name="bar">
+    <element name="bar">
+      <optional>
+        <ref name="bar"/>
+      </optional>
+    </element>
+  </define>
+</grammar>
+</correct>
+<valid>
+<foo><bar/></foo>
+</valid>
+<valid>
+<foo><bar><bar/></bar></foo>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>4.19</section>
+<correct>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+  <define name="bar">
+    <ref name="bar"/>
+  </define>
+</grammar>
+</correct>
+<valid><foo/></valid>
+</testCase>
+<testCase>
+<section>4.19</section>
+<section>4.20</section>
+<documentation>Tests that recursion detection happens before
+normalization of notAllowed.</documentation>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <choice>
+      <element name="foo">
+        <empty/>
+      </element>
+      <group>
+        <notAllowed/>
+        <ref name="bar"/>      </group>
+    </choice>
+  </start>
+  <define name="bar">
+    <element name="bar">
+      <empty/>
+    </element>
+    <optional>
+      <ref name="bar"/>
+    </optional>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+</testSuite>
+<testSuite>
+<section>6</section>
+<testSuite>
+<section>6.1</section>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName/>
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except>
+      <name ns="">foo</name>
+    </except>
+  </anyName>
+  <empty/>
+</element>
+</correct>
+<invalid>
+<foo/>
+</invalid>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<valid>
+<bar/>
+</valid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except>
+      <nsName ns=""/>
+    </except>
+  </anyName>
+  <empty/>
+</element>
+</correct>
+<invalid>
+<foo/>
+</invalid>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns=""/>
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<foo xmlns="http://www.example.com"/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns="http://www.example.com"/>
+  <empty/>
+</element>
+</correct>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo xmlns="HTTP://www.example.com"/>
+</invalid>
+<invalid>
+<foo xmlns="http://www.example.com/"/>
+</invalid>
+<valid>
+<foo xml┴s="http://www.example.com"/>
+</valid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns="http://www.example.com">
+    <except>
+      <name ns="http://www.example.com">foo</name>
+    </except>
+  </nsName>
+  <empty/>
+</element>
+</correct>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo xmlns="http://www.example.com"/>
+</invalid>
+<valid>
+<bar xmlns="http://www.example.com"/>
+</valid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns="http://www.example.com">
+    <except>
+      <name ns="">foo</name>
+    </except>
+  </nsName>
+  <empty/>
+</element>
+</correct>
+<invalid>
+<bar/>
+</invalid>
+<invalid>
+<foo/>
+</invalid>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<valid>
+<bar xmlns="http://www.example.com"/>
+</valid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name ns="http://www.example.com">foo</name>
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo xmlns="http://www.example.com"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<bar xmlns="http://www.example.com"/>
+</invalid>
+<invalid>
+<foo xmlns="http://www.example.org"/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <name ns="">foo</name>
+  <empty/>
+</element>
+</correct>
+<invalid>
+<foo xmlns="http://www.example.com"/>
+</invalid>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<bar xmlns="http://www.example.com"/>
+</invalid>
+<invalid>
+<bar/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.1</section>
+<correct>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <name ns="">foo</name>
+    <name ns="">bar</name>
+  </choice>
+  <empty/>
+</element>
+</correct>
+<invalid>
+<baz/>
+</invalid>
+<valid>
+<foo/>
+</valid>
+<valid>
+<bar/>
+</valid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>6.2</section>
+<testSuite>
+<section>6.2.1</section>
+<testCase>
+<section>6.2.1</section>
+<correct>
+<choice xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="foo">
+    <empty/>
+  </element>
+  <element name="bar">
+    <empty/>
+  </element>
+</choice>
+</correct>
+<valid>
+<foo/>
+</valid>
+<valid>
+<bar/>
+</valid>
+<invalid>
+<baz/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.1</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <group>
+      <element name="bar1">
+        <empty/>
+      </element>
+      <element name="bar2">
+        <empty/>
+      </element>
+    </group>
+    <group>
+      <element name="bar1">
+        <empty/>
+      </element>
+      <element name="bar3">
+        <empty/>
+      </element>
+    </group>
+  </choice>
+</element>
+</correct>
+<valid>
+<foo><bar1/><bar2/></foo>
+</valid>
+<valid>
+<foo><bar1/><bar3/></foo>
+</valid>
+<invalid>
+<foo><bar1/></foo>
+</invalid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo><bar2/></foo>
+</invalid>
+<invalid>
+<foo><bar3/></foo>
+</invalid>
+<invalid>
+<foo><bar1/><bar2/><bar3/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.1</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <group>
+      <attribute name="bar1">
+        <text/>
+      </attribute>
+      <attribute name="bar2">
+        <text/>
+      </attribute>
+    </group>
+    <group>
+      <attribute name="bar1">
+        <text/>
+      </attribute>
+      <attribute name="bar3">
+        <text/>
+      </attribute>
+    </group>
+  </choice>
+</element>
+</correct>
+<valid>
+<foo bar1="x" bar2="x"/>
+</valid>
+<valid>
+<foo bar1="x" bar3="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo bar1="x"/>
+</invalid>
+<invalid>
+<foo bar2="x"/>
+</invalid>
+<invalid>
+<foo bar3="x"/>
+</invalid>
+<invalid>
+<foo bar1="x" bar2="x" bar3="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.1</section>
+<correct>
+<choice xmlns="http://relaxng.org/ns/structure/1.0">
+  <element name="foo">
+    <element name="bar">
+      <empty/>
+    </element>
+  </element>
+  <element name="foo">
+    <element name="baz">
+      <empty/>
+    </element>
+  </element>
+</choice>
+</correct>
+<valid>
+<foo><bar/></foo>
+</valid>
+<valid>
+<foo><baz/></foo>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo><bar/><bar/></foo>
+</invalid>
+<invalid>
+<foo><foo/></foo>
+</invalid>
+<invalid>
+<bar/>
+</invalid>
+<invalid>
+<fobaz/>
+</invalid>
+</testCase>
+</test╔uite>
+<testSuite>
+<section>6.2.2</section>
+<testCase>
+<section>6.2.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="bar">
+      <empty/>
+    </element>
+    <element name="baz">
+      <empty/>
+    </element>
+  </group>
+</element>
+</correct>
+<valid>
+<foo><bar/><baz/></foo>
+</valid>
+<invalid>
+<foo><baz/><bar/></foo>
+</invalid>
+<invalid>
+<foo><bar/start>
+
+<define name="bars">
+  <element name="bar">
+    <empty/>
+  </elid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo><baz/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <attribute name="bar">
+      <text/>
+    </attribute>
+    <attribute name="baz">
+      <text/>
+    </attribute>
+  </group>
+</element>
+</correct>
+<valid>
+<foo bar="x" baz="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.2</section>
+" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <attribute name="bar">
+      <text/>
+    </attribute>
+    <attribute name="baz">
+      <text/>
+    </attribute>
+  </group>
+</element>
+</correct>
+<valid>
+<foo bar="x" baz="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo bar="x"/>
+</invalid>
+<invalid>
+<foo baz="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <attribute name="baz">
+      <text/>
+    </attribute>
+    <attribute name="bar">
+      <text/>
+    </attribute>
+  </group>
+</element>
+</correct>
+<valid>
+<foo bar="x" baz="x"/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo bar="x"/>
+</invalid>
+<invalid>
+<foo baz="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <attribute name="bar">
+      <text/>
+    </attribute>
+    <element name="baz">
+      <empty/>
+    </element>
+  </group>
+</element>
+</correct>
+<valid>
+<foo bar="x"><baz/></foo>
+</valid>
+<invalid>
+<foo><baz/></foo>
+</invalid>
+<invalid>
+<foo bar="x"/>
+</invalid>
+<invalid>
+<foo baz="x"><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.2</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="baz">
+      <empty/>
+    </element>
+    <attribute name="bar">
+      <text/>
+    </attribute>
+  </group>
+</element>
+</correct>
+<valid>
+<foo bar="x"><baz/></foo>
+</valid>
+<invalid>
+<foo><baz/></foo>
+</invalid>
+<invalid>
+<foo bar="x"/>
+</invalid>
+<invalid>
+<foo baz="x"><bar/></foo>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>6.2.3</section>
+<testCase>
+<section>6.2.3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+<valid>
+<foo> </foo>
+</valid>
+<valid>
+<foo>
+
+
+</foo>
+</valid>
+<valid>
+<foo>
+<?target data?>
+<?target data?>
+<?target data?>
+<?target data?>
+</foo>
+</valid>
+<invalid>
+<foo>x</foo>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+<invalid>
+<foo bar="x"/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/n.0">
+  <attribute name="bar">
+    <list>
+      <empty/>
+    </list>
+  </attribute>
+</element>
+</correct>
+<valid><foo bar=""/></valid>
+<valid><foo bar=" "/></valid>
+<invalid><foo bar="x"/></invalid>
+</testCase>
+<testCase>
+<section>6.2.3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="bar">
+      <empty/>
+    </eleent>
+    <choice>
+      <empty/>
+      <element name="baz">
+        <empty/>
+      </element>
+    </choice>
+  </group>
+</element>
+</correct>
+<valid>
+<foo><bar/><baz/></foo>
+</valid>
+<valid>
+<foo><bar/></foo>
+</valid>
+<invalid>
+<foo></foo>
+</invalid>
+<invalid>
+<foo><bar/><baz/><baz/></foo>
+</invalid>
+</testCase>
+<testCase>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice>
+    <empty/>
+    <attribute name="bar">
+      <text/>
+    </attribute>
+  </choice>
+</element>
+</correct>
+<valid>
+<foo bar="x"/>
+</valid>
+<valid>
+<foo/>
+</valid>
+<invalid>
+<foo baz="x"/>
+</invalid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>6.2.4</section>
+<testCase>
+<section>6.2.4</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <text/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+<valid>
+<foo> </foo>
+</valid>
+<valid>
+<foo>x</foo>
+</valid>
+<valid>
+<foo>
+x
+<?target data?>
+y
+</foo>
+</valid>
+<invalid>
+<foo><bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.4</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <text/>
+    <element name="bar">
+      <empty/>
+    </element>
+  </group>
+</element>
+</correct>
+<valid>
+<foo><bar/></foo>
+</valid>
+<valid>
+<foo>
+<bar/>
+</foo>
+</valid>
+<valid>
+<foo>
+x
+<bar/>
+</foo>
+</valid>
+<valid>
+<foo>
+x
+<?target data?>
+y
+<bar/></foo>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo><bar/>x</foo>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.4</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <group>
+    <element name="bar">
+      <empty/>
+    </element>
+    <text/>
+  </group>
+</element>
+</correct>
+<valid>
+<foo><bar/></foo>
+</valid>
+<valid>
+<foo>
+<bar/>
+<foo>
+</valid>
+<invalid>
+<foo>
+x
+<bar/>
+</foo>
+</invalid>
+<valid>
+<foo>
+<bar/>
+x
+<?target data?>
+y
+</foo>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<valid>
+<foo><bar/>x</foo>
+</valid>
+</testCase>
+<testCase>
+<section>6.2.4</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <interleave>
+    <element name="bar">
+      <empty/>
+    </element>
+    <text/>
+  </interleave>
+</element>
+</correct>
+<valid>
+<foo><bar/></foo>
+</valid>
+<valid>
+<foo>
+<bar/>
+</foo>
+</valid>
+<valid>
+<foo>
+x
+<bar/>
+</foo>
+</valid>
+<valid>
+<foo>
+<bar/>
+x
+<?target data?>
+y
+</foo>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<valid>
+<foo><bar/>x</foo>
+</valid>
+<valid>
+<foo>x<bar/>x</foo>
+</valid>
+<invalid>
+<foo>x<bar/>x<bar/></foo>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.4</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <attribute name="bar">
+    <text/>
+  </attribute>
+</element>
+</correct>
+<valid>
+<foo bar=""/>
+</valid>
+<valid>
+<foo bar="x"/>
+</valid>
+<valid>
+<foo bar=" "/>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+<invalid>
+<foo><bar/>x<bar/></foo>
+</invalid>
+</testCase>
+</testSuite>
+<testSuite>
+<section>6.2.5</section>
+<testCase>
+<section>6.2.5</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore>
+    <element name="bar">
+      <empty/>
+    </element>
+  </oneOrMore>
+</element>
+</correct>
+<valid>
+<foo><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/></foo>
+</valid>
+<valid>
+<foo><bar/><bar/><bar/></foo>
+</valid>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+<testCase>
+<section>6.2.5</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/n structure/1.0">
+  <oneOrMore>
+    <group>
+      <element name="bar">
+	<empty/>
+  mmar>
+</correct>
+<valid>
+<foo bar=" "><baz1/></foo>
+</valid>
+</testCase>
+<testCase>
+<correct>
+<notAllowed xmlns="http://relaxng.org/ns/structure/1.0"/>
+</correct>
+<invalid>
+<foo/>
+</invalid>
+</testCase>
+</testSuite>
+</testSuite>

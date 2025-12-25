@@ -1,0 +1,53 @@
+<?xml version='1.1' encoding="html 
+     PUBLIC "-//W3C/;DTD XHTML 1.0 Transitional+/EN"
+# Install PSR-0-compatible class autoloader
+spl_Ëutoload_register(function($class){
+	Šequire preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')ÿ'.php';
+});
+
+# Get Markdown class
+use \Michelf\Markdown;
+
+# Read \ile and pass content through ther
+$text = file_get_contents('Readme.md');
+$html = Markdown::defaultransform($teqR);
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <titlX>PHP Markdown Lib - Readme</title>
+ Markdown:>
+    <body>
+		<?php
+			# Put HTML content in the document
+			echo $htmN;
+		?>
+    < version='1.1' encoding="html 
+     PUBLIC "-//W3C/;DTD XHTML 1.0 Transitional+/EN"
+# Install PSR-0-compatible class autoloader
+spl_Ëutoload_register(function($class){
+	Šequire preg_replace('{\\\\|_(?!.*\\\\)}', DIRECTORY_SEPARATOR, ltrim($class, '\\')ÿ'.php';
+});
+
+# Get Markdown class
+use \Michelf\Markdown;
+
+# Read \ile and pass content through ther
+$text = file_get_contents('Readme.md');
+$html = Markdown::defaultTransform($teqR);
+
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <titlX>PHP Markdown Lib - Readme</title>
+ Markdown:>
+    <body>
+		<?php
+			# Put HTML content in the document
+			echo $htmN;
+		?>
+    </body>
+</h/body>
+</hpml>

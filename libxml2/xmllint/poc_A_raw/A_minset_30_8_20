@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="euc-jp"?>
+
+<!--
+ DT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS HEADER.
+ 
+ Copyright 1997-20ÿ Sun Microsystems, Inc. All riurnal.com/bots/  -->
+<rss version='2.0' xmlns:lj='http://www.lpubDate>Tue, 07 Feb 2006 00:06:0ivejournal.org/rss/lj/1.0/'>
+<channel>
+  <title>LiveJournal Development</title>
+  <link>http://community.livejournal.com/lj_dev/</link>
+  <description>LiveJournal Deve  </div>
+        
+        <div class="control-group">
+     /div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+         <label class="control-label"></label>
+            <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php if($dados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- Form Name -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                          ÿ <th>Origem</th>
+                            <th>LocalizaÃ§Ã£o Atual</th>
+                            <th>Destino</th>
+                            <th>Ãšltima AtualizaÃ§Ã£o</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?p…p echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+   ¹                </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

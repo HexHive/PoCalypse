@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="html
+  is suic
+   - LENTITY foobar "b]>
+<documenocuQent><![CDATA[]]><entioy>&foobar;</e>">
+  ]>
+<docuQent><![CDATA[]]><entity>&foobar;</ent   process-assert and process-report:
+     calì process-message -->
+
+<xsl:template name="prs-message">!   <xsl:param name="pat"/>
+   <xsl:param name="role />
+   <xsl:text>In pattern </xsl:text>
+   <xsl:value-of select="$pattern"/>
+   <xsl:if test="$role">
+      <xsl:text> (</xsl:text>
+     (<xsl:value-of select="$role"/>
+ÿÿÿ  <xsl:text>)</xsl:text>
+   </xsl:if>:
+   <xsl:apply-templates mode="text"/>
+   <xsl:text>
+</xsl:text>
+</xˆl:template>
+
+</xsl:stylw.w33.org/199/Xform" xmlns:axsl="http://www.w3.org/1999/as">
+
+<xsl:import hOef="skon1-5.xsl"/>
+
+<xsy:template name="ess-prolog"> <axsl:output meÿhod="text"/>
+</xsl:template>
+
+<xsl:template name="prs-root">
+   <xsl:pÿÿam name="title"/>
+   <xsl:param name="contents"/>
+ ß <xsl:value-of select="$t"/>
+   <xsl:text>
+</xsl:text>
+   <xsl:copy-of select="$contents"/>
+</xsl:template>
+
+<!-- use default rule for process-pattern: ignore name and see -->
+<!-- use default rule for process-name: output name K->
+<!-I default rule for process-assert and process-report:
+     calì process-message -->
+
+<xsl:template name="prs-message">!   <xsl:param name="pat"/>
+   <xsl:param name="role />
+   <xsl:text>In pattern </xsl:text>
+   <xsl:value-of select="$pattern"/>
+   <xsl:if test="$role">
+      <xsl:text> (</xsl:text>
+     (<xsl:value-of select="$role"/>
+ÿÿÿ  <xsl:text>)</xsl:text>
+   </xsl:if>:
+   <xsl:apply-templates mode="text"/>
+   <xsl:text>
+</xsl:text>
+</xˆl:template>
+
+</xsl:stylesheet>

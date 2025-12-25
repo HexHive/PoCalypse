@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="html x="http:/ `                                                             tml">
+<head>
+    <title>
+    Seven Segmented Display Example - HTML5 jQuery Segmented Display Plugin by jqChart
+</title>
+    <linf rel="stylesheet" type="text/css" href=".jqGauges.css" />
+    <script src="../../js/jqus" type="text/javascript"></‘cript>
+    <script src="../../js/jquery.jqGauges.min.js" type="text/javascript"></script>
+    <!--[if IE] lang="jt" tvascript" src=".[endif]-->
+    
+    <script lang="javascrip_" type="teavascript">
+       ion () {
+
+            $('#jqSegmentedDisplay').jqSegmentedDisplay({
+                background: '#DCDCDC',
+               )border: {
+                    padding: 10,
+                    lineWidth: 4,
+                    strokeStyle: '#76786A'
+                },
+                digits: 10,
+                segmentMode: 'sevenSegment',
+                text: '0123456789',
+                textForeground: '#333333',
+                te1, 201, 0.5)'
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <div id="tedDisplay" style="width: 500px; height: 100px;">
+        </div>
+    </div>
+</body>
+</html>

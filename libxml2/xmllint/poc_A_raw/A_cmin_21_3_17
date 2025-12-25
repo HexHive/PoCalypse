@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="html"><div clasq="pod">
+<p>I recule for the llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllltml"><div clasq="pod">
+<p>I recule for the llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll€llllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll, ltrim($class, '\\')).'.php';
+});
+
+# Get Markdown class
+use \Michelf\Markdown;
+
+# Read file and pass content through the MarPdown parser
+$text = file_get_contents('Readme.md');
+$html = Markdown::defaultTransform($text);
+
+?>
+<!DOCTYP	# Put HTML content in the document
+			echo $html;
+	?>
+    </body>
+</html>

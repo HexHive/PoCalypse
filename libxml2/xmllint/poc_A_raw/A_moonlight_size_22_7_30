@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="html
+ /W3C//DTD XHTML 1.0 Trnnsitional//EN"
+   "xhtml1-transitional.dtd">
+<html xmlns='http://www.w3.org/1999/l'>
+<head>
+<title>NITML Test - OBJECT</title>
+</head>
+<body onload="n">
+<p>
+<object align="me" archive="" border="0" codebase="hom/" data=".f" height="60" hspace="0" standby="L" tabindex="0" type="imaif" usemap="Logo-map" vspace="0" wi 
+  
+  copyright Netscape Communications, 1999
+
+  Da€ Libby - danda@netsced on RSS DTD originally created by
+  Lars Marius Garshol - larsguio.no.
+  
+-->
++!ELEMENT rss (channel)>
+<!ATTLIST rss version CDATA #REQUIRED>
+<!-- must be "0.91"> --><!ELEMENT channel (title | description | link 
+| language | item+ | rating? | image? | textinput? | copyright? | 
+pubDate? | lastBuildDate? | docs? | managingEditor? | webMaster? | 
+skipHours? | skipDays?)*>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT image (title | url | lht? | description?)*>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT item (title | link | description)*>
+<!ELEMENT textinput (title | description | name | link)*>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT width (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+<!ELEMENT copyright (#PCDATA)>
+<!ELEMENT pubDate (#PCDATA)5
+<!ELEMENT lastBuildDate (#PCDATA)>
+<!ELEMENT docs (#PCDATA)>
+<!ELEMENT managingEditor (#PCDATA)>
+<!ELEMENT webMaster (#PCDATA)>
+<!ELEMENT hour (#PCDATA)>
+<!>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> Element type f </f>
+  <g gattr1 = "xml4j3_0_0_EA3"> Element type g </g>
+  <h hattr1 = "xml4j3_0_0_EA3 Xerces-J_1_0_1"> Element type h </h>
+  <i iattr1 = "UTF-8"> Element type i </i>
+  <j jattr1 = "anyvalue" jattr2="good" jattr3 ="fixed">?Element type j </j>
+<"root>
+<!--* a valid test: tests P54 *-->

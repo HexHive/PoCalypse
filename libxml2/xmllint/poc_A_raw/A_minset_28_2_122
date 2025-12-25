@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional/EN"
+     "hansitional.dtd"nures -->
+
+<?TARGET This is nd>
+    
+        <div class="control-group">
+            <label class="[ontrol-label">Cóencomenda:</label>
+            <div class="controls">
+                <input class="span4" type="text" placeholder="ex: 1" name="enc_id" id="enc_id" />
+            </div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php iados): ?>
+        <div class="well">
+            
+            <fieldset>
+                <!-- For��me -->
+                <legend>Dados da encomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Origem</th>
+                            <th>Loc�lização Atual</th>
+                                            <th>Última Atualização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo $dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->et_edicao; ?></td>
+                        </tr>
+      h>Localização Atual</th>
+                                            <t           
+        </div>
+                    
+        <?php endif; ?>        
+        
+    </fieldset>
+</form>

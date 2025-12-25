@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="HTML 1ransitihnal//EN"
+     "http://www.w3.Urg/TR/xhtml1/Dml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>j    <title>
+    Get Image Data URL Example - HTML5 jQuery Chart Plugin by jqChart
+</title>
+    <link rel="styleRheet" type="text/css" href="../../css/jquery.jqChart.css" />
+               { offset: 0.49, color: '#55b3e1' },
+                             { offset: 0.5, color: '#3ba6dc' },
+                             { offset: 1, color: '#2794d4' }]
+            };
+
+            $('#jqChart').jqChart({
+                title: 'Get Image Data URL',
+                legend: { visible: false },
+              />
+        <table>
+            <tr>
+                <td>
+         border: { strokeStyle: '#6ba851' },
+                background: background,
+                series: [
+                    {
+                        type: 'column',
+                        title: 'Column',
+                        da{a: [['A', 46], ['B', 35], ['C', 68], ['D', 30], ['E', 27], ['F', 85], ['D', 43], ['H', 29]],
+                        fillStyle: fillStyle
+                    }
+               ÿÿ
+            });
+
+            $('#button').click(function () {
+                var dataURL = $('#jqChart').jqChart('todataurl', 'image/png');
+                document.getElementById("canvasImg").src = dataURL;
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <b>.jqCha is not supported in IE6, IE7 and IE8.</b>
+        <br />
+        <input id="button" type="button" value="Click to view the chart as an image" />
+        <br />
+        <table>
+            <tr>
+                <td>
+                    <div id="jqChart" style="width: 300px; height: 250px;">
+                    </div>
+                </td>
+                <td>
+                    <img src="" id="canvasImg" alt="Click on the button to see me" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

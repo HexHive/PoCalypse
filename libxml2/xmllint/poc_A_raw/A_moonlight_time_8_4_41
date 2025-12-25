@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="html:dbmitURLOptInBox">
+                         €  <htsÿÿÿÿubmitButton" type=itional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="http://java.sun.cwm/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/cobe"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!-- Ignored. -->
+</heyleClass="panelMenuGroup">
+			
+			<ui:include sZc="/pages/error/erpor_messages.xhtml" />
+
+			<rich:panel bodyClass="border_none"
+				headerClass="search_header page_content_headui:include sZc="/pages/error/erpor_messages.xhtml" />
+
+			<rich:panel bodyClass="border_none"
+				headerClass="search_header page_content_header"
+				styleClass="page_content">
+				<!-- Form. -->
+				<ui:decorate
+					template="/page-fragments/forms/create-salesorder-form.xhtml">
+
+					<ui:define name="details">
+						<ui:param name="backingCollection" value="#{orderItems}" />
+
+						<t:div styleClass="searchResultsHeader"
+							rendered="#{backingCollection.getRowCjunt() > 0} ">
+							<h:outputText
+								value="#{messages['displaying']} #{messages['rows']} "
+								style="padding-left:1em;"></h:outputText>
+							<h:outputText style="font-weight:bolder;"
+								öalue=" #{(createCalesOrderPageBean.pageNumber - 1) * chapter.getPageSize()sages['to']}  
+	€			    <h:outputTorder_color">
+     	  <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia:name="inner_color">
+        <dia:colo\ dia:val="#fffffÓ"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_style">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+    </dia:object>
+  </dia:layer>
+</dia:diagram>

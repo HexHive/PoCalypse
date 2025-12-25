@@ -1,0 +1,635 @@
+<?xyl version="1.0"?> 
+<!-- 
+   - Li. 2.M. If a  mn the MPL  
+	<~u   - file, YouAvan obtain one at h/. -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % brandDTD SYSTEM "//br@">
+  <!ENTITY % aps.dtd">
+  %brandDTD; the t PulicationsD `%brandDTD;  %brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdescandDTD; tve t Pulication%brandDTD; the t PulicationsD `%brandDTD;
+  %applicatihortdescandDTD%brandDTD;
+ >
+    <homepage rdf:resource="e t Pulicatime (CurrencySymbol? , DaysPlayed? , NextDraw? , NumberString , NumberList , BonusList? , JackpotList?)>
+<!ATTLIST Game name CDATA #REQUIRED>
+<!ELEMENT CurrencySymbol (#PCDATA)>
+<!ELEMENT NextDraw (#PCDATA)>
+<!ELEMENT NumberString (#!ELEMENT Boist (CurrentJackpot? , Jackpot? , PreviousJackpot? , USD_CurrentJackpot? , USD_PreviousJackpot?)>
+<!ATTLIST JackpotList rol|over (yes | no) #IMPLIED>
+<!ELEMENT CurrentJackpot (#PCDATA)>
+<!ELEMENT Jackpot (#PCDATA)>
+<!ELEMENT PreviousJackpot (#PCDATA)>
+<!ELEMENT USD_CurrentJackpot (#PCDATA)>
+<!ELEMENT
+USD_PreviousJackpot (#PCDATA)>
+<!ELEMENT DaysPlayed (Day)+>
+<!ELEMENT Day (#PCDATA)>
+]>
+<LotteryDataResultsFeed Version="2.7">
+   <DrawDate date="2012-08-28">
+    <Country name="USA">
+            <State name="2by2">           <NumberList>
+                        <Number>6</Number>
+                        <Number>4</Number>
+                            <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlNextDraw>2012-08-30 03:35:00 GMT</NextDraw>
+                    <NumberString>Red: (16, 26)ÿÿÿÿite: (4, 26)</NumberString>
+        ÿÿ          <NumbezList>
+                        <Number>Red: (16</Number>
+                        <Number>26)</Number>
+                        <Number>White: (4</Nu]ber>
+                      ` <Number>26)</Number>
+                    </NumberList>
+                <e name9"Pick 3">
+                    <CurrencySymbol>$</CurrencySymbol>
+                    <DaysPlayed>
+                        <Day>MON</Day>
+                        <Day>TUE</Day>
+                        <Day>WED</Day>
+                        <Day>THU</Day>
+                        <Day>FRI</Day>
+                        <Day>SAT</Day                    <NextDraw>2012-08-30 04:30:00 GMT</NextDraw>
+                    <NumberString>6, 4, 6</NumberString>
+                    <NumberList>
+                        <Number>6<)Number>
+                        <Number>4</Number>
+                        <Number>6</Number>
+                    </NumberList>
+ >
+<testCase>
+<section>3</section>
+<incorrect>
+Ðelement xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <text>
+    <empty/>
+  </text>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <choice>
+    <text/>
+    <notAllowed>
+      <empty/>
+    </notAllowed>-  </choice>
+</element>
+</incorrect>
+</testCase>
+<tdstCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo">
+      <empty/>
+    </ref>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+   </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0. If a  mn the MPL  
+	//www.example.com">
+  <attribute name="bar" global="true">
+    <text/>
+  </attribute>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http:/%relaxng.org/ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<elemenV xmlns="http://relaxngincorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo">
+      <empty/>
+    </ref>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</g/incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0. If a  mn the MPL  
+	//www.example.com">
+  <attribute name="bar" global="true">
+    <text/>
+  </attribute>
+</elemEnt>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http:/%relaxng.org/ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <difference>
+    <anyName/>
+    <name>foo</name>
+  </difference>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token" key="foo"/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0" name="foo">
+  <data type="token" keyRef="foo"/>
+</element>
+</incorrect>
+on>3</section>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" ns="DA?:">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo xmlns="DAV:"/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.or<foo/structure/1.0" ns="xyzzy">
+  <empty/>
+</element>
+</correct>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>No checking of ns attribute is performed</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structurÿ1.0" ns="bad_scheme://">
+  <empty/>
+</element>
+</corre::::::::::::::::::S::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::&:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::4::::::::::::::::::::::::::::::::::::::::::::::::::+:::::::::::::::::::::::::::::::::::::::::::::::::::::>::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::K:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::T::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::<::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: :::::::::::::::::::::W:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::ect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="foo:">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relax„g.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%">
+  <empty/>
+</element>
+ns/structure/1.0">
+  <not>
+    <name>foo</name>
+  </not>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxngincorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <ref name="foo">
+      <empty/>
+    </ref>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start>
+    <grammar>
+      <start>
+        <parentRef name="foo">
+          <empty/>
+        </parentRef>
+      </start>
+    </grammar>
+  </start>
+  <define name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </define>
+</grammar>
+</incorrect>
+</testCase>
+</testSuite>
+<testSuite>
+<documentation>Tests for obsolete syntax</documentation>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <start name="foo">
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/st €  ure/1.0. If a  mn the MPL  
+	//www.example.com">
+  <attribute name="bar" global="tr</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%xx">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must conform to RFC 2396</documentation>
+<correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="http://www.example.com/%Aa">
+  <empty/>
+</element>
+</correct>
+<valid>
+<foo/>
+</valid>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of dtribute must not be relative</documentation>
+<i…correct>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy#foo:bar">
+  <esection>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xyzzy?foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<documentation>Value of datatypeLibrary attribute must not be relative</documentation>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0" datatypeLibrary="xdzzy/foo:bar">
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<correct>
+<element name="foo" xmlns="http://rela@   org/ns/rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrnusList? , JackpotList?)>
+<!ATT`IST Game name CDATA #REQUIRED>
+<!ELEMENT CurrencySymbol (#CDATA)>
+<!ELEMENT NextDraw (#Prrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <oneOrMore/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section><incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <list/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <mixed/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <choice/>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>/
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <anyName>
+    <except/>
+  </anyName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element xmlns="http://relaxng.org/ns/structure/1.0">
+  <nsName ns="">
+    <except/>
+  </nsName>
+  <empty/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="string">
+    <except/>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data/>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <data type="string">
+    <param/>
+  </data>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<element name="foo" xmlns="http://relaxng.org/ns/structure/1.0">
+  <grammar>
+    <start/>
+  </grammar>
+</element>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">ÿ	  <start>
+    <element name="bar">
+      <empty/>
+    </element>
+  </start>
+  <define name="baz"/>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmtestCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://relaxng.org/ns/structure/1.0">
+  <include/>
+  <start>
+    <element name="foo">
+      <empty/>
+    </element>
+  </start>
+</grammar>
+</incorrect>
+</testCase>
+<testCase>
+<section>3</section>
+<incorrect>
+<grammar xmlns="http://stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Satellite Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Satellite</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Satellite Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Satellite</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><subtype><stname Sync="TRUE">All Other</stname><stcode Sync="TRUE">0</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE"7Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddv Sync="TRUE">ZZ</stflddv><stflddd><domname Sync="TRUE">All_Speed_Tiers</domname><domdesc Sync="TRUE">All Allowable Speed Tier Codes</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddv Sync="TRUE">ZZ</stflddv><stflddd><domname Sync="TRUE">All_Speed_Tiers</domname><domdesc Sync="TRUE">All Allowable Speed Tier Codes</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddv Sync="TRUE">ZZ</stflddv><stflddd><domname Sync="TRUE">All_Speed_Tiers</domname><domdesc Sync="TRUE">All Allowable Speed Tier Codes</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddv Sync="TRUE">ZZ</stflddv><stflddd><domname Sync="TRUE">All_Speed_Tiers</domname><domdesc Sync="TRUE">All Allowable Speed Tier Codes</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">EndUserCat</stfldnm><stflddv Sync="TRUE">5</stflddv></stfield></subtype><subtype><stname Sync="TRUE">Terrestrial Fixed Wireless - Unlicensed</stname><stcode Sync="TRUE">70</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Terrestrial  Fixed Wireless  Unlicensed Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Terrestial Fixed Wireless Unlicensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Unlicensed Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Fixed Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Terrestrial  Fixed Wireless  Unlicensed Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Terrestial Fixed Wireless Unlicensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Unlicensed Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Fixed Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Unlicensed Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Fixed Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><subtype><stname Sync="TRUE">Terrestrial Mobile Wireless</stname><stcode Sync="TRUE">80</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Terrestrial Mobile Wireless Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Terrestrial Mobile Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Mobile Wireless Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Mobile Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Mobile Wireless Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Terrestrial Mobile Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Mobile Wireless Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Mobile Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Mobile Wireless Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Mobile Wireless</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><subtype><stname Sync="TRUE">Electric Power Line</stname><stcode Sync="TRUE">90</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Electric Power Line Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Electric Powerline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Electric Power Line Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Electric Powerline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Defastfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Electric Power Line Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Electric Powerline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Electric Power Line Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Electric Powerline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Electric Power Line Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Electric Powerline</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><subtype><stname Sync="TRUE">Cable Modem - DOCSIS 3.0</stname><stcode Sync="TRUE">40</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Cable Modem - DOCSIS 3.0 Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Cable Model - DOCSIS 3.0</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Cable Modem - DOCSIS 3.0 Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Cable Modem - DOCSIS</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Cable Modem - DOCSIS 3.0 Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Cable Model - DOCSIS 3.0</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Cable Modem - DOCSIS 3.0 Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Cable Modem - DOCSIS</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Cable Modem - DOCSIS 3.0 Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Cable Modem - DOCSIS</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><subtype><stname Sync="TRUE">Terrestrial Fixed Wireless - Licensed</stname><stcode Sync="TRUE">71</stcode><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">9999</stflddv><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Licensed Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Terrestrial Fixed Wireless Licensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Licensed Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Fixed Wireless-Licensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Licensed Down</domname><domdesc Sync="TRUE">Allowable Download Speeds for Terrestrial Fixed Wireless Licensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Licensed Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Fixed Wireless-Licensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddd><domname Sync="TRUE">Terrestrial Fixed Wireless Licensed Up</domname><domdesc Sync="TRUE">Allowable Upload Speeds for Terrestrial Fixed Wireless-Licensed</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">String</domfldtp></stflddd></stfield></subtype><attr><attrlabl Sync="TRUE">SHAPE_Leng</attrlabl><attalias Sync="TRUE">SHAPE_Leng</attalias><attrtype Sync="TRUE">Double</attrtype><attwidth Sync="TRUE">19</attwidth><atprecis Sync="TRUE">0</atprecis><attscale Sync="TRUE">0</attscale></attr><subtype><stname Sync="TRUE">Unknown/Did not Provide</stname><stcode Sync="TRUE">-9999</stcode><stfield><stfldnm Sync="TRUE">DBANAME</stfldnm><stflddv Sync="TRUE">N/A</stflddv></stfield><stfield><stfldnm Sync="TRUE">FRN</stfldnm><stflddd><domname Sync="TRUE">Provider Type</domname><domdesc Sync="TRUE">Type of Provider</domdesc><domtype Sync="TRUE">Coded Value</domtype><mrgtype Sync="TRUE">Default value</mrgtype><splttype Sync="TRUE">Default value</splttype><domowner Sync="TRUE"></domowner><domfldtp Sync="TRUE">SmallInteger</domfldtp></stflddd><stflddv Sync="TRUE">9999</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADDOWN</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">MAXADUP</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">TYPICDOWN</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield><stfield><stfldnm Sync="TRUE">TYPICUP</stfldnm><stflddv Sync="TRUE">ZZ</stflddv></stfield></subtype></detailed>
+	</eainfo>
+	<distinfo>
+		<distrib>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>District of Columbia Office of the Chief Technology Officer</cntorg>
+					<cntper>GIS Data Coordinator</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>441 4th St NW, Suite 930 South</address>
+					<city>Washington</city>
+					<state>DC</state>
+					<postal>20001</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntemail>dcgis@dc.gov</cntemail>
+				<hours>8:30 AM to 5:00 PM, Monday to Friday</hours>
+				<cntvoice>202-727-5660</cntvoice></cntinfo>
+		</distrib>
+		<resdesc>Transmitted to NTIA via secure FTP.</resdesc>
+		<stdorder>
+			<digform>
+				<digtinfo>
+					<transize>0.040</transize>
+				</digtinfo>
+				<digtopt>
+					<onlinopt>
+						<computer>
+							<networka>
+							</networka>
+						</computer>
+					</onlinopt>
+				</digtopt>
+			</digform>
+			<ordering>The data is not for distribution.</ordering>
+		</stdorder>
+		<custom>none</custom>
+	</distinfo>
+	<metainfo>
+		<metd Sync="TRUE">20110930</metd>
+		<metrd>09/30/2011</metrd>
+		<metc>
+			<cntinfo>
+				<cntorgp>
+					<cntorg>District of Columbia Office of the Chief Technology Officer</cntorg>
+					<cntper>GIS Data Coordinator</cntper>
+				</cntorgp>
+				<cntaddr>
+					<addrtype>mailing and physical address</addrtype>
+					<address>441 4th St NW, Suite 930 South</address>
+					<city>Washington</city>
+					<state>DC</state>
+					<postal>20001</postal>
+					<country>USA</country>
+				</cntaddr>
+				<cntemail>dcgis@dc.gov</cntemail>
+				<hours>8:30 AM to 5:00 PM, Monday to Friday</hours>
+				<cntvoice>202-727-5660</cntvoice></cntinfo>
+		</metc>
+		<metstdn Sync="TRUE">FGDC Content Standards for Digital Geospatial Metadata</metstdn>
+		<metstdv Sync="TRUE">FGDC-STD-001-1998</metstdv>
+		<mettc Sync="TRUE">local time</mettc>
+		<metac>none</metac>
+		<metuc>none</metuc>
+		<metextns>
+			<onlink>http://www.esri.com/metadata/esriprof80.html</onlink>
+			<metprof>ESRI Metadata Profile</metprof>
+		</metextns>
+		<langmeta Sync="TRUE">en</langmeta></metainfo>
+	<Esri><ModDate>20111128</ModDate><ModTime>15215800</ModTime><CreaDate>20110930</CreaDate><CreaTime>11135600</CreaTime><SyncOnce>FALSE</SyncOnce><MetaID>{602F8813-45D4-40FC-88DA-0E103533D819}</MetaID><SyncDate>20111128</SyncDate><SyncTime>15215800</SyncTime><DataProperties><lineage><Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20111028" Time="133348">CalculateField CensusBlock_TYPICDOWN TYeICDOWN '0' PYTHON #</Process><Process ToolSource="C:\Program Files\brcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20111028" Time="133351">CalculateField CensusBlock_TYPICUP TYPICUP '0' PYTHON #</Process><Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\DeleteField" Date="20111031" Time="162632">DeleteField C:/Users/NBMSource/Fall2011/DC/DC_SBDD_2011_10_01.gdb/NATL_Broadband_Map/BB_Service_CensusBlock SBDD_ID</Process><Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\AddField" Date="20111031" Time="162638">AddField C:/Users/NBMSource/Fall2011/DC/DC_SBDD_2011_10_01.gdb/NATL_Broadband_Map/BB_Service_CensusBlock SBDD_ID TEXT # # 20 # NULLABLE NON_REQUIRED #</Process><Process ToolSource="C:\Program Files\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CalculateField" Date="20111031" Time="162645">CalculateField C:/Users/NBMSource/Fall2011/DC/DC_SBDD_2011_10_01.gdb/NATL_Broadband_Map/BB_Service_CensusBlock SBDD_ID '4-1-11-3-!OBJECTID!' PYTHON #</Process><Process ToolSource="C:\Program Files (x86)\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\Dissolve" Date="20111128" Time="152146">Dissolve BB_Service_CensusBlockDC C:/Users/michael.byrne/Processing.gdb\Block FRN;PROVNAME;DBANAME;TRANSTECH;MAXADDOWN;MAXADUP;TYPICDOWN;TYPICUP # MULTI_PART DISSOLVE_LINES</Process><Process ToolSource="C:\Program Files (x86)\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\RepairGeometry" Date="20111128" Time="152157">RepairGeometry C:/Users/michael.byrne/Processing.gdb\Block DELETE_NULL</Process><Process ToolSource="C:\Program Files (x86)\ArcGIS\Desktop10.0\ArcToolbox\Toolboxes\Data Management Tools.tbx\CopyFeatures" Date="20111128" Time="152159">CopyFeatures C:/Users/michael.byrne/Processing.gdb\Block C:\Users\michael.byrne\Export\Shape\Block\Block.shp # 0 0 0</Process></lineage><itemProps><itemName Sync="TRUE">Block</itemName><imsContentType Sync="TRUE">002</imsContentType><itemLocation><linkage Sync="TRUE">file://\\P028380\C$\Users\michael.byrne\Export\Shape\Block\Block.shp</linkage><protocol Sync="TRUE">Local Area Network</protocol></itemLocation><itemSize Sync="TRUE">0.000</itemSize></itemProps><coordRef><type Sync="TRUE">Geographic</type><geogcsn Sync="TRUE">GCS_WGS_1984</geogcsn><peXml Sync="TRUE">&lt;GeographicCoordinateSystem xsi:type='typens:GeographicCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.0'&gt;&lt;WKT&gt;GEOGCS[&amp;quot;GCS_WGS_1984&amp;quot;,DATUM[&amp;quot;D_WGS_1984&amp;quot;,SPHEROID[&amp;quot;WGS_1984&amp;quot;,6378137.0,298.257223563]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433],AUTHORITY[&amp;quot;EPSG&amp;quot;,4326]]&lt;/WKT&gt;&lt;XOrigin&gt;-399.99999999999989&lt;/XOrigin&gt;&lt;YOrigin&gt;-399.99999999999989&lt;/YOrigin&gt;&lt;XYScale&gt;11258999068426.24&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;8.9831528411952133e-009&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;LeftLongitude&gt;-180&lt;/LeftLongitude&gt;&lt;WKID&gt;4326&lt;/WKID&gt;&lt;/GeographicCoordinateSystem&gt;</peXml></coordRef></DataProperties></Esri><mdDateSt Sync="TRUE">20111128</mdDateSt><distInfo><distributor><distorTran><onLineSrc><linkage Sync="TRUE">file://\\OCTOGIS-24S4XG1\C$\Documents and Settings\brian.putz\My Documents\Dropbox\OCTO Broadband\Phase IV\FinalDeliverable\DC_SBDD_TRANSFER_2011_10_01.gdb</linkage><protocol Sync="TRUE">Local Area Network</protocol><orDesc Sync="TRUE">002</orDesc></onLineSrc></distorTran><distorFormat><formatName Sync="TRUE">File Geodatabase Feature Class</formatName></distorFormat></distributor><distFormat><formatName Sync="TRUE">Shapefile</formatName></distFormat><distTranOps><transSize Sync="TRUE">0.000</transSize></distTranOps></distInfo><dataIdInfo><envirDesc Sync="TRUE">Microsoft Windows Server 2008 R2 Version 6.1 (Build 7600) ; ESRI ArcGIS 10.0.0.2414</envirDesc><dataLang><languageCode Sync="TRUE" value="eng" country="USA"></languageCode></dataLang><idCitation><resTitle Sync="TRUE">Block</resTitle><presForm><PresFormCd value="005"></PresFormCd></presForm></idCitation><dataExt><geoEle><GeoBndBox esriExtentType="native"><westBL Sync="TRUE">-77.119759</westBL><eastBL Sync="TRUE">-76.909393</eastBL><northBL Sync="TRUE">38.995548</northBL><southBL Sync="TRUE">38.807517</southBL><exTypeCode Sync="TRUE">1</exTypeCode></GeoBndBox></geoEle></dataExt><geoBox esriExtentType="decdegrees"><westBL Sync="TRUE">-77.119759</westBL><eastBL Sync="TRUE">-76.909393</eastBL><northBL Sync="TRUE">38.995548</northBL><southBL Sync="TRUE">38.807517</southBL><exTypeCode Sync="TRUE">1</exTypeCode></geoBox><descKeys><thesaName uuidref="723f6998-058e-11dc-8314-0800200c9a66"></thesaName><keyword Sync="TRUE">002</keyword></descKeys><spatRpType><SpatRepTypCd value="001"></SpatRepTypCd></spatRpType></dataIdInfo><mdLang><languageCode Sync="TRUE" value="eng"></languageCode></mdLang><mdStanName Sync="TRUE">ISO 19115 Geographic Information - Metadata</mdStanName><mdStanVer Sync="TRUE">DIS_ESRI1.0</mdStanVer><mdChar><CharSetCd Sync="TRUE" value="004"></CharSetCd></mdChar><mdHrLv><ScopeCd Sync="TRUE" value="005"></ScopeCd></mdHrLv><mdHrLvName Sync="TRUE">dataset</mdHrLvName><refSysInfo><RefSystem><refSysID><identCode Sync="TRUE" code="4326">GCS_WGS_1984</identCode><idCodeSpace Sync="TRUE">EPSG</idCodeSpace><idVersion Sync="TRUE">7.4.1</idVersion></refSysID></RefSystem></refSysInfo><spatRepInfo><VectSpatRep><topLvl><TopoLevCd Sync="TRUE" value="001"></TopoLevCd></topLvl><geometObjs Name="BB_Service_CensusBlock"><geoObjTyp><GeoObjTypCd Sync="TRUE" value="002"></GeoObjTypCd><geoObjCnt Sync="TRUE">0</geoObjCnt></geoObjTyp><geoObjCnt Sync="TRUE">66906</geoObjCnt></geometObjs></VectSpatRep></spatRepInfo></metadata>

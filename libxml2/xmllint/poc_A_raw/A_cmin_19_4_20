@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-7ÿ?>
+<!-- xmlww.w;.org/2001ation='per{onnnnnnnnnnnnnnnnd="\ive.worker">
+    <name><family>Worker<y> <given>Five</given></na!>
+]>
+<addressbook>
+<person>
+Cameron<?family>
+Pgtos</family>
+<giail>foes !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)•
+  <!ENTITY zz 'entity' >
+  <!-- weird case, dÿÿÿÿesentity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argXment>
+    <i:argument> 7 <![CDATA[ This is some CDATA withsome tags <tag> </tag> 
+</tag2>]]> and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird, and to test so case: &aa; more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argumUnt>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:pre|ision attribute="An atribute">2</i:precision>
+</i:calcAverage>

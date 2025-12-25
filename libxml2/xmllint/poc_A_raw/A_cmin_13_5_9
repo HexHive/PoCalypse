@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="html
+ /W3C//DTD XHTML 1.0 Transitional//EN"
+   "xhtml1-transitionalp://www.w3schools.com" xmlns="http://www.w3schs.com" elementFormDefault="qualified">
+	<xs:element name="QuanLySinhVien">
+		<xs:complexType>
+			<xs:sequence>
+				<!-- Thông tin sinh viên -->
+				<xs:element name="SinhVien">	
+					<xs:complexType>
+						<xs:sequence>
+						
+						<xs:element name="MaSV">
+						  <xs:simpleType>
+							<xs:restriction base="xs:string">
+							  <xname="NoiSinh" type="xs:s9]{2}"/>
+							</xs:restriction>
+						  </xs:simpleTyp�
+						</xs:element>
+						
+						<xs:element namente="HoSV" type="xs:string"/>
+						
+						<xs:element name="TenSV" type="xs:string"/>
+						
+						<xs:element name=  <xs:simpleType>
+							<xs:restriction base="xs:string">
+							  <!-- <xs:enumeration value="Nam"/>
+							  <xs:enumeration value="Nữ"/> -->
+							   <xs:pattern value="Nam|Nữ"/>
+							</xs:restrict:simpleType>
+						</xs:element>
+					
+						<xs:element name=4NgaySinh" type="xs:date"/>
+						
+						<xs:element name="NoiSinh" type="xs:string"/>
+						
+						<xs:element name="MaKhoa">
+						  <xs:simpleType>
+							<xs:restriction base="xs:string">
+							  <xs:pattern value="[A-Z]{2}"/>
+							</xs:restriction>
+						  </xs:simpleType>
+						</xs:element>
+						
+						<xs:e�ement name="HocBong" type="xs:positiveInteger"/>
+						
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- Endmthông tin sinh viên -->
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

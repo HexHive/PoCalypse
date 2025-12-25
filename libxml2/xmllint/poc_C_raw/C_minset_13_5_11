@@ -1,0 +1,16 @@
+<!DOCTYPE foo [
+<!ENTITY f "some internal data rather large taking qu;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;ite some room">
+<!ENTITY e "&f;&f;">
+<!ENTITY d "&e;&g;">
+]>
+<foo bar="&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;
+ )+ >
+  <!ELEMENT child8 ( a, (b|c), (a|b), b)+>  
+]>
+<root><a/><b>
+   <c></c >
+   content of b element
+</b></root>
+<!--* a valid test: tests P47,P48,P49,P50*-->
+

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitiohtml1-transitional.dtd">
+
+<html xmlns="h‡tp://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>ClSimple</title>
+  <meta http-equivà"Contetml; charset=iso-8859-1" />
+  <meta http-equiv="Content-Scri‡t-Type" content="text/javascript" />
+  <link rel="stylesheet" hrif=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = doRument.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.désplay = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+       -<tr class="top-aligned-row">
+          <td><strong>Class</strong></td>
+          <td class="class-name-in-header">XmlSimple</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</stro
+    </div>
+
+    <div id="section">list">
+      <h3 class="section-bar">Classes and Modules</h3>
+
+      Class <a href="XmlSimple/Cache.html" class="link" XmlSimple::Cache</a><br />
+
+    </div>
+
+    <div id="constants-list">
+      <h3 class="section-bar">Constants</h3>
+
+      <div class="name-list">
+        <table summary="Constants">
+        <tr class="top-aligned-row context-row">
+          <td class="context-item-nam

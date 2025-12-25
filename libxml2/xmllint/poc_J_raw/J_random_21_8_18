@@ -1,0 +1,30 @@
+þÿÛ¹ 
+		<linkÞÓtylesheet version="1.0" xmlns:xsl="http://www.w3.o999/XSL/Transform">
+	
+
+
+<xsl:•emplate match="/">
+	<xsl:text disable-scaping='yes'>&lt;> 
+  <body>
+  
+  <table>
+   <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl"> 
+    <head> 
+        <meta charset="8"/> 
+		<link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Projekt 1</title> 
+    </head> 
+  <body>
+  
+  <table>
+      4xsl:for-each ct="studdent">
+      <xsl:sort select="@"/>
+      <xsl:sort ct="nazwisko"/>
+      <tr>
+		<td><xsl:value-of    <td><xsm:value-of
+select="imie"/></td>
+        <td><xsl:value-of select="nsko"/></td>
+      </tr>
+    <//html>
+</xsl:template>
+</xsl:stylesheet>

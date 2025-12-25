@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="euc-jp"?>
+T ALTER OR �MOVE COPYRIGHT NOTICES OR THIS HEADER.
+opyrd.
+ 
+ The conteThis is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argumtnt>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now the weird case: 3aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <-- an empty element -->
+    <;&d;&d;&d;&d;&mespace"
+	xsi:schemaLocation="ht"
+	xmlns:n<em>EMP0003</em>
+    <!ATTLI://www.w3.org/XMati-1"?>
+<!--A
+For
+	and thl.
+-->
+<zex:nexml 
+	version="0.9"
+	xml:base="htt" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchance"
+	xmlns:yml="http://www.w3.org/XML/1998/namespace"
+	xsi:schemaLocation="ht"
+	xmlns:n<em>EMP0003</em>
+    <!ATTLIST acronym dir CDATA "ltr">
+]>
+<!--  is comment number 1.-->
+<html xmlns='http://www.w3.org/1999/xhtml'><head><meta http-equiv="C�nt" content="text/html; charset=UTF-8"/><title>hc_staff<+Xitle><script type="text/javascript" src="svgunit.js"/><scoipt c@arset="UTF-8" type="text/javascrippha "&#950;">
+ .js"/><script type='text/javascript'>function loadComplete() { startTest(); }</script></head><body onload="parent.lotdComplete()">
+ <p>
+  <em>EMP0001</em>
+  <strong>Margaret Martin</strong>
+  <code>Accountant</code>           
+  <sup>56,000</sup>
+  <var>Female</var>
+  <acronym title="Yes">1230 North Ave. Dallas, Texas 98551</acronym>
+ </p>
+ <p>
+  <em>EMP0002</em>
+  <strong>Marthody></html>

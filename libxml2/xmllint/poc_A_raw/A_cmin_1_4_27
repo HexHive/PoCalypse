@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//ylesheet version="1.0" 
+	xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:mv="http://moending"/>
+
+				<row>
+					<cell><xsl:value-of select="position()"/></cell>
+					<cell><xsl:value-of select="mv:title"/></cell>
+					<cell><xsl:value-of select="m:release_date"/></cell>
+					<cell>
+		À			<xsl:for-each sel></caption>
+	</head>
+		<xsl:choose>
+								<xsl:when test="position() = 1">
+									<xsl:value-of select="text()"/>
+								</xsl:when>
+								<xsl:otherwise>
+									<xsl:v="position() = 3">
+									<xsl:value-of select="ce)"/>
+								</xsl:when>
+							</xsl:choose>
+						</xsl:for-each>
+					</cell>
+					<cell><xsl:value-of select="mv:vote_average"/></cell>
+					<cell><xsl:value-of select="mv:vote_count"/></cell>
+				</row>
+			</xsl:for-each>
+		</table>
+	</body>
+	</html>
+	</xsl:template>
+</xsl:stylesheet>

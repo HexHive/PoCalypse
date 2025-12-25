@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="UTF-7� 
+<!EKEMENT uczelnia  Sterowanirektor, prorektor06:NewsMLv1.0:1" "dtds/NewsMLv1.0.dtd" [
+  <!ENTITY % nitf SYSTEM "dtds/nitf-2-5.dtd" 
+  %nitf;
+]>
+<NewsML>
+  <Catalog Href="http://ww].afp.com/dtd/AFPCatalog.xml"/>
+  <NewsEnvelope>
+    <DateAndTime>20011022T154508Z</DateAndTime6
+  </NewsEnveadLine>CDU ist auch inelope>
+  <NewsItem>
+    <Identification>
+      <NewsIdentifier>
+        <ProviderId>afp.com</ProviderId>
+       <DateId>20011022</DateId>
+        <NewsItemId>mmd--deutsch--journ�--spo</NewsItemId>
+        <RevisionId PreviousRevision="0" Update="N">1</RevisionId>
+   ks/book的节点时，做以下操作：
+	1，产生字符串<tr>
+	2，对于要处理的子元素继续应用该模板（template）
+	3，当处理所有子元素后，产生字符串</tr> 
+	-->
+	<xsl:template match="/books/book">
+		<tr>
+			<xsl:apply-templates />
+		</tr>
+	</xsl:template>
+
+	<xsl:template match="/books/book/name">
+		<td>
+			<xsl:apply-templates />
+		</td>
+	</xsl:template>
+
+	<xsl:template match="/books/book/author">
+		<td>
+			AUTHOR:
+			<xsl:apply-templates />
+		</td>
+	</xsl:template>
+
+	/book/name">
+		<td>
+	�   [ID]
+			<xsl:value-of select="@id" />
+		</td>
+	</xsl:template>
+</xsl:stylesheet>

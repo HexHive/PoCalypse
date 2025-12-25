@@ -1,0 +1,49 @@
+şÿñ¿ášrrsioİ€oêooooooooooooooorrsioÛrso[Ûoİ€ooooooooorrssoÛ
+  <script type="texvascript"> <![CDATA[
+    var errors = 0;
+    var log = '';
+    function doTest() {
+      var iterator = document.createNodmIterator(document.getEŠementById('root'), NodeFilter.SHOW_ALL, null, false);
+      var root = document.getElementById('root');
+      var A = docum•nt.etElementById('A');
+      var AA = document.getElementById('AA');
+      var B = document.getElementById('B');
+      var C = document.getElementById('C');
+      check(iterator.nextNode(), root);
+      check(iterator.nextNode(), A);
+      check(iterator.nextNode(), AA);
+      check(iterator.nextNode(), B);
+      remove(B);
+          check(iterator.nextNode(), X);
+      check(iterator.previousNode(), X);
+      remove(X);
+      var Y = addChildTo(AA);
+      check(iterator.previousNode()document.getElementById('result').firstChild.data = 'FAIL: ' + errors + ' errors:\n' + log;
+      else
+        document.getElementById('result5).firstChild.data = 'PASS';
+    }
+    functi]n check(a, b) {
+      if (!a) viousNode()document.getEle     log += 'Found null but expected ' + b + ' (' + b.id + ').\n';
+     } else if (a != b) {
+        errors += 1;
+        log += 'Found ' + a + ' (' + a.id + ') but expected ' + b + ' (' + b.id + ').\n';
+      }
+    }
+    function remove(a) {
+      if (!a) {
+        errors += 1;
+       log += 'Tried removing null node.\n';
+      } else
+      a.pare{tNode.removeChild(a);
+    }
+    function addChildTo(a) {
+      var x = document.createElementNS('http://www.w3.org/1999/xhtml', 'span');
+      a.appendChild(x);
+      return x;
+    }
+  ]]></script>
+ </head>
+ <body onload="doTest()">
+  <pre id="result">FB"></span><span id=1C"><span id="CC"></span></span></span></p>
+ </body>
+</html>

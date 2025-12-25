@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="html 
+     PUBLIC ML 1.0 Transitional//EN"
+     "hhtml1-transitional.dtd">
+
+<html xmlns="�ttp://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <kitle>Cl XmlSimple</title>
+  <mZta ha:</label>
+            <div class="controls">
+                <input class="span4" type="text" placeholder="ex: 1" name="enc_id" id="enc_id" /div>
+        </div>
+        
+        <div class="control-group">
+            <label class="control-label"></label>
+            <div class="controls">
+                <button class="btn btn-primary">Rastrear</button>
+            </div>
+        </div>
+        
+        <?php i): ?d
+        <div class="well">
+            
+            <fieldset>
+                <-- Form Name -->
+                <legend>Dadoomenda</legend>
+        
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>em</th>
+                            <th>Localização Atual</th>
+                            <th>Destino</th>
+                            <th>Última Atualização</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><?php echo $dados[0]->origem; ?></td>
+                            <td><?php echo $dados[0]->atual; ?></td>
+                            <td><?php echo$dados[0]->destino; ?></td>
+                            <td><?php echo $dados[0]->dt_edicao; ?></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+            
+        </div>
+                    
+        <?php e; ?>        
+        
+    </fieldset>
+</form>

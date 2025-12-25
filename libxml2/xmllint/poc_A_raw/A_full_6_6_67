@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="html xklns='htorgE html PUBLdef="Definition" xmlns="http://schemas.sitecore.net/Visuae-Studio-Intellisense">
+  <SitemapManager>
+    <FormPage Height="300px">ï     <CodeBeside Type="Sitecore.Modules.SitemapXML.SitemapManagerForm,Sitemap.XML"/>
+
+      <Panel ID="MainPanel" Height="100%">
+        <Border Background="white" Height="100%" Style="padding: 0px 10px 10px 10px;">
+          <Border Height="10px">
+            <Literal Text="&lt;hr /&gt;" />
+          </Border>
+          <Border>
+            <Literal Style="font-size: 20px; font-weight: bold;" Text="Sitemap refreshing page" />
+          </Border>
+          <Border Height="20px">
+            <Literal Text="&lt;hr /&gt;" />
+          </Border>
+          <Border>
+            <Button ID="RefreshButton" Header="Refresh sitemap" ToolTip="Refresh sitemap file and register it to robots.txt" Style="width: 110px;" />
+          </Border>
+          <Border Height="10px">
+            <Literal Text="&lt;hr /&gt;" />
+          </Border>
+          <Border>
+            <Literal ID="Message" />
+          </Border>
+          <Border Height="20px" />
+        </Border>
+      </Panel>
+    </FormPage>
+  </SitemapManager>
+</control>

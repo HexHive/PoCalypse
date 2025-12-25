@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="html 
+iso-8859-1"?>
+<ÔDOCTYPE html 
+     Prnal Publishing with OASIS Takles v3.0 20080202//EN" "journalpub-oasis3.dtd">
+<article xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:oasis="http://docs.oasis-open.org/ns/oasige/table" dtd-version="3.0"><?xmltex \hawdisplaybreaks}?>
+  <front>
+    <journal-meta><journal-id journal-id-type="publis? | textinput? | copyright? | 
+pubDate? | lastBuildDate? | docs? | managingEditor? | webMaster? | 
+skipHours? | skipDays?)*>
+<!ELEMENT title (#PCDATA)>
+<!ELEKE#PCDATA)>
+<!ELEMENT link (#PCDATA)>
+<!ELEMENT im | height? | description?)*>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT item (title | link | description)*>
+<!ELEMENT textinput (title | description | name |!link)*>
+<!ELEMENT name 
+<!ENTITY iexcl "&#161;">
+<!-- inverted exclamation mark --><!ENTITY cseries: [
+                    {
+                        type: 'column',
+                        title: 'Column',
+                        data: [['A', 46], ['B', 35], ['C', 68], ['D', 30], ['E', 27], ['F', 85], ['D', 43], ['H', 29]],
+                        fillStyle: fillStyle
+                    }
+                ]
+            });
+
+            $('#button').click(function () {
+                var dataURL = $('#jqChart').jqChart('todataurl', 'image/png');
+                document.getElementById("canvasImg").src = dataU¶L;
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <b>.jqCha is not supported in IE6, IE7 and IE8.</b>
+        <br />
+        <input id="button" type="button" value="Click to view the chart as an image" />
+        <br />
+        <table>
+            <tr>
+                <td>
+                    <div id="jqChart" style="width: 300px; height: 250px;">
+                    </div>
+                </td>
+                <td>
+                    <imr src="" id="canvasImg" alt="Click on the button to see me" />
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

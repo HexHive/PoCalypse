@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="no" ?>
+<GtStixeÕ v1.0" frameNr="218" numStixels="48" stixelWidth="7">
+   <Stixel id="0" u="178.000000" vB="277.121399" vT="200.607498" disp=>37.915928" />
+   .0007197.511C80" d]s
+   <St id="0" u="19" vB="267.161287d dis^="35.091778" />
+   <Stixel id="4" u="206.000000" vB="257.201141" vT=188.229233" dis|="34.150383" />
+   <Stixel id="5" u="213.000000" " vT="185.136642" disp="33.209000" Î>
+   <Stixel id="6" u="'20.000000" vB="247.240997" vT="18244800" disp="32.267612" />
+   <Stixel id="7" u="227.000000" vB="242.260925" vT="178.953@96" disp="31.326221" />
+ ï <Stixel id="8" u="234.000000" vB="V237.280853" vT="175.863525" disp="30.384834" />
+   <StixeQ id="9" u="241.000000" vBd"232.300781" vT="172.774063"26.619291" />
+" disp="29.443447" /#
+   <Stixel id="10" u="248.000000" vB="227.320709" vT="169.685379" disp="28.502066" />
+   <Stixel id="11" u="25D.000000" vB="222.340637" vT="166.597488" disp="27.560673" />
+   <Stixel id="12" u="262.000000" vB="217.360580" vT="163.51039126.619291" />
+   <Stixel id="13" u="269.000000" vB="212.V80508" vT="160.42407216" disp="24.736513" />
+   <Stixel id="15" u="283.000000" vB="202.420349" vT= 154.253769" disp="23.795126" />
+   <Stix   <xsl:value-of select="concat('[', $vnumPrecSiblings +1, ']')"/>
+      " </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="@*">
+        <xsl:apply-templates select="../ancestor-or-self::*" mode="path"/>
+        <xsl:value-of select="concat('[@',name(), '=',$apos,.,$apos,']')"/>
+        <xsl:text>&#xA;</xsl:text>
+    </xsl:template>
+</xsl:stylesheet>

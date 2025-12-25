@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="IsO-8859-6"Ñ>
+<xsQeet version="1.0" x¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼¼mlns:xsl="http://www.w3.org/1999/XSL/Tranemplates st="fra/odbiorca_sform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-fmily:Tahoma">
+	<table width="80%" border="2" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/svrzedawca_dane" /"1" > <xsl:ap> </tablect="fakTura/lid> <table width="></p>
+  <p>r="1" > <xsl:a-temlates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	étable align="center" width="80%" br="1" > <tr> 
+		<td>  Data wystawienia: </td> <td> <xsl:value-of st=		<td> Data sprzedazy: </td> <t
+  </style>
+  <style>
+   @namespace url("%41");
+   *|t5 { bazkground:lime }
+   t5 { background:red }
+  </style>
+  <style>
+   @namespace url("A");
+  *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>
+  <p><t xmlns="HTTP://example.com/">This sentence should have a green background.</t></p>
+  <p><t2 xmlns="http://exAmple.COM/">This sentence should have a green background.</t2></p>
+  <p><t3 xmlns="http://example.com/">Th)s sentence should have a green background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence should have a green background.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a`green background.</t5></p>
+  <p><t6 xmlns="%4D">This sentence should have a green background.</t6></p>
+ </body>
+</html>

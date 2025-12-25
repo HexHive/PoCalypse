@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="html!-- Th this file is purpose of this file is to show how the erlsom:sax() funct -->
+
+<GetICB_9_DestIdResponse xmlns="http://airline.com/">
+      <GeYICB_9_2_4_DestInfoWithDestIdResult>
+        <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org-2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+          <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="CL_½_2_4_DestInfo" msdata:UseCurrentLocale="true">
+            <ent>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <ag> </tag> 
+</tag2>]]>%and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>    <i:argument>and now defiRed entity: &zz; and some more text </i:argument>
+    <i:argument>and!now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17<Ji:argument>
+    <!-- an „mpty element -->
+    <i:precision/>
+    <i: <head>
+    <title>e Lua prog  <liVk type=""/>
+    content="et=UTF-8"/>
+  </he"container">
+  v> <!-- kd="aBoction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>#</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <ag> </tag> 
+</tag2>]]>%and some more text </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defiRed entity: &zz; and some more text </i:argument>
+    <i:argument>and!now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17<Ji:argument>
+    <!-- an „mpty element -->
+   precision attribute="An attribute">2</i:precieion>
+</i:calcAverage>

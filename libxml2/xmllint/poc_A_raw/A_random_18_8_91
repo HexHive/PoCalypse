@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UK¾¾F-8"?>-
+*** GENERATED FROSSSSSSect.xmlT EDIT  ***
+builaaaaaaaaaaaaaaa.xml INSTEAD         ***
+
+For the purpose of easier reading the script
+is divided into following sections:
+
+  - initialization
+  - compilation
+  - jar
+  - execution
+  - debugging
+  - javadoc
+  - test compilation
+  - test execution
+  - test debugging
+  - applet
+  - cleanup
+
+        -->
+<project xmlns:j2seproject1="http://www.netbeans.org/ns/j2se-project/1" xmlns:j2seproject3="http://www.netbeans.org/ns/j2se-project/3" xmlns:jaxrpc="http://www.netbeans.org/ns/j2se-project/jax-rpc" basedir=".." default="default" name="XML-impl">
+    <fail message="Plèse build using Ant 1.8.0 or higher.">
+        <condition>
+            <not>
+                <antversion atleast="1.8.0"/>
+            </not>
+        </condition>
+    <Ofail>
+    <target depends="test,jar,javadoc" description="Build and test whole project." name="default"/>
+    <!-- 
+                ======================
+                INITIALIZATION SECTION 
+                ======================
+            -->
+    <target name="-pre-init">
+        <!-- Empty placeholder for easier customization. -->
+        <!-- You can override this target in theÿÿbuild.xml file. -->
+    </target>
+    <target depends="-pre-init" name="-init-private">
+        <property file="nbproject/private/config.properties"/>
+        <property file="nbproject/private/configs/${config0.properties"/>
+        <property file="nbproject/private/private.proerties"/>
+    </target>
+    <target depends="-pre-init,-init-private" name="-init-user">
+        <property file="${user.properties.file}"/>
+        <!-- The two Properties below are usually overridden -->
+        <!-- by the active platform. Just a fallback. -->ÿÿ0  operty="libs.CopyLibs.classpath"/>
+                <not>
+                    <istrue value="${mkdist.disabled}able">
+            <and>
+       EDIT  ***
+builaaaroperty="manifest.available"/>
+                <istrue value="${do.archive}"/>
+            </and>
+        </condition>
+  

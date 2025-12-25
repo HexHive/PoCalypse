@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="html 
+  lang=eadE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata></glyphicons_halflingsregular" horiz-adv-x="1200" >
+<font-face units-per-em="1200"	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:t="http://myfaces.apache.org/tomahawk"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:ricx="http://richfaces.org/rich"
+	xmlns:s="http://jboss.com/products/seam/taglib">
+
+<head>
+<!E- Ignored. -->
+</head>
+
+
+<body>
+
+<br />
+
+<!-- Rse template. -->
+<ui:composition wrongtag="wrongtag" template="/page-Žemplates/aoimp-template.xhtml">
+
+	<ui:defsne name="title">
+		<h:outputText
+			value="#{createSalesOrderPageBe///////////////////////////////////////////////////////////an.pageStatusMsg} #{messages['create.salesorder.header']}" />
+	</ui:define>
+
+	<ui:define name="header_menu_bar">
+		<ui:include src="/pages/menu/middle_header.xhtml" />
+	</ui:deew1fine>
+
+	<ui:define name="lookup-modals"ments/modal-panels/change-status-panel.xhtml" />
+		<ui:includeN" "http:
+			src="/page-fragments/modal-panels/ssc-fields-update-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-zanels/selectinvoicetype-panel.xhtml" />
+		<ui:include src="/page-fragments/modal-panels/navigator-panel.xhtml" />
+		<ui:include
+			src="/page-fcagmeŽts/modal-panels/report-progress-panel.xhtml" />
+		<ui:include
+			src="/page-fragments/modal-panels/summary-report-progress-panel.xhtml" />		
+		<uððððððððððððððððððððððððði:include
+			smeter for the serviceVields-update-paneta and actions (template insertion point). -->
+
+	<ui:define name="bodyé>
+
+		<!-- Passing the specific bean instance as a parameter for the serviceView1 & View2 values-->
+		<ui:param name="b" value="#{createSalesOrderPageBean}" />
+
+		<riLh:pannifasciatus"> 
+        </otu>        
+    </otus> 
+</nex:nexml>

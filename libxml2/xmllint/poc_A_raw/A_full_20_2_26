@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="USÆ-8"?>
+<?xml-stylesheet ="text/xsl" hreft/mvdXML_V0-3_style-1.xslt"?>
+<mvd:mvdXML name="s" uuid="4afe06f2" xmlns:mvd="http://buildingsmart-tech.org/mvdXML/mvdXML1-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:cation="http://bxsd">
+	<mvd:Templates>
+		<mvd:ConceptTemplate uuid="bafc" code="" name="Port" applicableSchema="IFC4" 	appli>
+<mvd:mvdXML naDistributionElement">
+			  <mvd:Definitions>	<mvd:Definition >ÿ	 <mvd:Body>
+		<![CDATA[<p>Dii>IfcRelNests</i> relationship. Ports are specific GGGGGGGGGGGGGGGGGGGGGGGto the PredefinedType as follows indicated by the <i>IfcDistributionPort</i> <i>Name</i>, <i>PredefinedType</i>, and <i>FlowDirection</i>:</p>]]>	  </mvd:Body>
+				</mvd:Definition>
+			  </Žvd:Definitions>
+			  <mvd:Rules>
+				<mvƒ:AttributeRule AttributeName="PredefinedType" RuleID="PredefinedType"/>
+				<mvd:AttributeRule AttributeName="IsNestedBy" >
+		<mvd:EntityRules>
+					<mvd:Ennh kiá»‡n mÃ¡y tÃ­nh"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<!-- ThÃ´ng tin bÃ¡n hÃ ng -->
+				<xs:element name="TTBanHang">	
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MaHD" value="[0-9]{4}" type="xs:integer"/>
+							<xs:element name="MatHang" type="xs:string"/>
+							<xs:element name="SoLuong" type="xs:depostiveInteger"/>
+							<xs:element name="DonGia" type="xs:depostiveInteger"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

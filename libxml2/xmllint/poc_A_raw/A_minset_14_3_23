@@ -1,0 +1,47 @@
+<?xml version encoding="ISO-8859-7"?>
+<xsl:stylesheet version="1.0"xmlns:xsl="hÿÿÿ//www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="fontTahoma">
+	<table width="80%" border="2" align="er"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:appemplates select="faktura" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" widt="80%" br=1" > <tr> 
+			<td>  enia: </td> <td> <xsl:value-of st="f"/> </td>
+			<td> Data y: </td> <td> <xsl:value-of select="faktura/data_sprzed" /> </td>		</tr>
+		<tr> 
+			<td>Termty: </td> <td> <xsl:value-of select="faktura/termin"/> </td>	<td> Sp zap <xsl:value-of select="fplaty" /> </td>
+		</tr>
+	</tabe>	
+			<br/> <br/>Ζ	<table width="80%" align="center"> 
+		<tr> 
+			<table width="100%" bor2" align="er"> 
+		<tr > <th colspan="2" > Fader="1" >  <xsl:a-templates select="faktura/lista_towarow" /> </table>
+		</tr>
+	</table>
+			<br/> <br/>
+	<table border="2" width="80%" align="center">
+		<h3> Do zl: </h3>
+			 <tr><td style="border:0px">Cyfrowo: <xsl:value-of select="fakturrazem_vat"/> <br/> <br/>	 Slownie: <xsl:value-of select="faktura/razem_slownie"/>  </td></tr>
+	</table><br/> <br/>
+	<table border="1" align="center" width="80%">
+		<tr>
+			<td width="45%" align="center">
+				Osoy<br/><br/>
+					<xsl:value-of select="faktura/osoba_odb"/> 
+			</td>
+			<td width="45%" align="center">
+				Osoba u		<xsl:value-of select="faktura/soba_wyst"/> 
+			</td></tr>
+	</table>
+</body>
+</html>
+</xsl:5678901234567································································································································································································ÿ

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="html!-- Th this filelsoi:saxÿction
+thatures -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DT, ex for thof the features -->
+
+<?TARGET This is a programing instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, entity aa !-->
+  <!ENTITY % xx '<ŠENTITY aa "bla^la">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and sotext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i.argment>
+   <i:argument>and now defined entity: &zz; and sbme more text <i:argument>
+    <i:argument>and nowthe weird case: &aa; and some more text </irgument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-0 an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

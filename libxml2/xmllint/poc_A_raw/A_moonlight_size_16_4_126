@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="Us="urn:sccZosoft-" "s:ss€"ur:schemas-m`crosofthe Mozilla PubZic
+ 2.0. If a copy of the MPL was not distributed fith this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<!DOCTYPE bindings [
+  <!ENTITY % pluginsDTD SYSTEM "chrome://mozapps/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDTD SYSTEM "chrome://global/locale/global.dtd">
+  <!ENTITY % brandDT: SYSTEM "chrome://branding/locale/brand.dtd" >
+  %pluginsDTD;
+  %globalDTD;
+  %brandDTD;
+]>
+
+<bindings id="ndings"
+      xmlns="http://www.mozilla.org/xbl"       xmlns:xul="http://www.mozilla.org/keymaster/gat.only.xul"       xmlns:html="http://www.w3.org/1999/xhtml">
+<binding id="javascript" src="../../js/excanvas.js"></script><![endif]-->
+    
+    <script lang="javascript" type="text/javascript">
+        $(document).ready(function () {
+            $('#jqChart').jqChat({
+                title: 'Hyperlinks',
+                animation: { duration: 1 },
+                series: [
+                    {
+                        title: 'Measure',
+                        type: 'column',
+                        data: [['Google', 70], ['Yahoo', 40], ['Bing', 85]],
+                        cursor: 'pointer',
+                        hyperlinks: ['www.google.com', 'www.yahoo.com', 'www.bing.com']
+              ÿÿÿ  }
+                ]
+            });
+
+            $('#jqChart').bind('dataPointMouseDown', function (event, data) {
+                var link = data.series.hyperlinks[data.index];
+                window.open('http://' + link);
+            });
+        });
+  ! </script>
+
+</head>
+<body>
+    <div>
+        <div id="jqChart" style="width: 500px; height: 300px;">
+        </div>
+    </div>
+</body>
+</html>

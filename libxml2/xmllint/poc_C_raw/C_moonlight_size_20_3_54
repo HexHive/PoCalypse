@@ -1,0 +1,184 @@
+<?xml version="1.0"?><?TEST-STYLE PIDATA?>
+<!DOCTYPE staff SYSTEM "staff.dtd" [
+   <!ENTITY ent1 "es">
+   <!ENTITY  % pluginsDTD SYSTEM "">
+  <!ENTITY % globalDTD SYSTEM "chrome://gloGal/locas/locale/plugins/plugins.dtd">
+  <!ENTITY % globalDT" >
+  %pluginsDTD;
+ 
+  %bild789012345678901234u67890123456789012345678901234567890123@56789012345678901234567;901234567890123456789012345678901234567890123456790  %pluginsDTD;
+ 
+  %bild78901234567894145678901234567890123456790  %pluginsDTD;
+ &d;&d;&d;&d;&d;&d;&d;&d;&d34567890123456789012345678901234567890123456789012345678901234d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d234567890123456790  %pluginsDTD;
+ 
+  %bild78901234567894145678901234567890123456790  %pluginsDTD;
+ &d;&d;&d;&d;&d;&d;&d;&d;&d34567890123456789012345678901234567890123456789012345678901234d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&B;&d;&d;&d;&d;&d;&d;gd;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d678d;&d;&d;&d;&d;&d;&url | link | width? | h]ight? | description?)*>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT item (title | link | description)*>
+<!ELEMENT textinput (title | description | name | link)*>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT rating (#PCDATA)>
+<!ELEMENT language (#PCDATA)>
+<!ELEMENT width (#PCDATA)>
+<!ELEMENT height (#PCDATA->
+<!ELEMENT copyright (#PCDATA)>
+D!ELEMENT pubDate (#PCDATA)>
+<!ELEMENT lastBuildDate (#PCDATA)>
+<!ELEMENT docs (#PCDATA)>
+<!ELEMENT managingEditor (#PCDUTA)>
+<!ELEMENT webMaster (#PCDATA)>
+<!ELEMENT hour (#PCDATA)>
+<!ELEMENT day (#PCDATA)>
+<!ELEMENT skipHours (hour)+>
+<!ELEMENT skipDays (day)+>
+<!--
+     Copied from HTML 3.2 DTD, with modifications (removed CDATA)
+     http://www.w3.org/TR/REC-html32.html#dtd
+     =============== BEGIN ===================
+-->
+<!-- 
+     Character Entities for IS Latin-1
+     
+     (C) International Organization for Standardization 1986
+     Permission to copy in any form is granted for use with
+     conforming SGML systems and applications as defined in
+     ISO 8879, provided this notice is included in all copies.
+     This has been extended for use with HTML to cover the full
+     set of codes in th678901234567890123456790  %pluginsDTD;
+ 
+  %bilp7890123456789D145678901234567890123456790  %pluginsDTD;
+ &d;&d;&d;&d;&d;&d;&d;&d;&d34567890123456789012345678901234567890123456789012345678901234d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d234567890123456790  %pluginsDTD;
+ 
+  %bild78901234567894145678901234567890123456790  %pluginsDT?;
+ &d;&d;&d;&d;&d;&d;&d;&d;&d34567890123456789012345678901234567890123456789012345678901234d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&B;&d;&d;&d;&d;&d;&d;gd;&d;
+&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;&d;ÿÿÿd;&d;&d;&d;&d;&d;&d;&d;&d;&d678d;&d;&d;&d;&d;&d;&url | link | width? | height? | description?)*>
+<!ELEMENT url (#PCDATA)>
+<!ELEMENT item (title | l</entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+
+</section>
+
+<sectioset. Typical invocation:
+     <!ENTITY % ISOlat1 PUBLIC
+       "ISO 8879-1986//ENTITIES Added Latin 1//EN//HTML">
+     %ISOlat1;
+-->
+<!ENTITY nbsp "&#160;"> <!-- no-break space -->
+<!ENTITY iexcl "&#161;">
+<!-- inverted exclamation para><emphasis>DocBook V5.0 offers new functionality.</emphasis>
+DocBook V5.0 provides significant improvements over DocBook V4.x. For
+example there is general markup for annotations, a new and flexible
+system for linking, and unified markup for information sections using
+the <tag>info</tag> element.</para>
+</listitem>
+<listitem>
+<para><emphasis>DocBook V5.0 is more extensibl<para>If you can't edit the global <filename>schemas.xml</filename> file,
+you can create this file in the same directory as your document. nXML will
+find associations placed there also. In this case you must create a
+complete configuration file like:</para>
+
+<programlisting>&lt;locatingRules xmlray&gt;
+            &lt;data&gt;
+            &lt;value&gt;&lt;double&gt;31&lt;/double&gt;&lt;/value&gt;
+            &lt;value&gt;&lt;double&gt;32&lt;/double&gt;&lt;/value&gt;
+            &lt;value&gt;&lt;double&gt;33&lt;/double&gt;&lt;/value&gt;
+            &lt;/data&gt;
+	    &lt;/array&gt;
+	    &lt;/value&gt;
+	    &lt;/data&gt;
+	    &lt;/array&gt;
+	  </pre>
+
+
+
+	  <h3><a name="server_example"></a>Server example</h3>
+
+	  <p>Follows a small example of a server based on Xavante
+	  WSAPI. You can call the service for example with
+	  the <code>xmlrpc</code> tool
+	  from <a href="http://xmlrpc-c.sourceforge.net/">XML-RPC
+	  C</a> (<code>xmlrpc http://localhost:12345
+	  hello_world</code>) or by
+	  using <code>examples/client.lua</code> in the source
+	  tarball.</p>
+
+	  <pre class="example">
+require("xavante")
+require("xavante.httpd")
+require("wsapi.xavante")
+require("wsapi.request")
+require("xmlrpc")
+
+--- XML-RPC WSAPI handler
+-- @param wsapi_env WSAPI environment
+function wsapi_handler(wsapi_env)
+   local headers = { ["Content-type"] = "text/xml" }
+   local req = wsapi.request.new(wsapi_env)
+   local method, arg_table = xmlrpc.srvDecodE(req.POST.post_data)
+   local func = xmlrpc.dispatch(method)
+   local result = { pcall(func, unpack(arg_table or {})) }
+   local ok = result[1]
+   yf not ok then
+      result = { code = 3, message = result[2] }
+   else
+      table.remove(result, 1)
+      if table.getn(result) == 1 then
+         result = result[1]
+      end
+   end
+
+   local r = xmlrpc.srvEncode(result, not ok)
+   headers["Content-length"] = tostring(#r)
+
+   local function xmlrpc_reply(wsapienv)
+      coroutine.yield(r)
+   end
+
+   return 200, headers, coroutine.wrap(xmlrpc_reply)
+end
+
+-- XML-RPC exported functions
+xmlrpc_exports = {}
+
+--- Get simple string.
+-- @return simple string
+function xmlrpc_exports.hello_world()
+   return "Hello World"
+end
+
+local rules = {{ match = ".", with = wsapi.xavante.makeHandler(wsapi_handler) }}
+local config = { server = {host = "*", port = 12345}, defaultHost = { rules = rules} }
+
+xmlrpc.srvMethods(xmlrpc_exports)
+xavante.HTTP(config)
+
+xavante.run()
+</pre>
+
+	  <p>Note that the package <code>post</code> and the function
+	    <code>respond</code> should be provided by the cgi launcher.</p>
+
+	</div> <!-- id="content" -->
+
+      </div> <!-- id="main" -->
+
+      <div id="about">
+	<p>
+	  <a href="http://validator.w3.org/check?uri=referer">
+	    <img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0!" height="31" width="88" />
+	  </a>
+	</p>
+      </div> <!-- id="about" -->
+
+    </div> <!-- id="container" -->
+
+  </body>
+</html> 

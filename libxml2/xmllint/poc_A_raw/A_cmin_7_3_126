@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="html="http://www.w3.org/1999/xhtml"
+   cat'>
+ <body>
+  <div id="log" />
+  <x class="a"/>
+  <g:x class="a"/>
+  <x t:class="a" h:class="a" g:class="a"/>
+  <g:x t:class="a" h:class="a" g:class="a"/>
+  <t:x class="a" t:class="a" h:class="a" g:class="a"/>
+  <script>
+   test(function() {
+          var collection = document.getElementsByClassName("a");
+6     ÿ  var test = document.getElementsByTagName("x");
+          assert_array_equls(collection, [test[0], test[1]]);
+http://tc.labs.o.com/#test">
+ <head$
+  <title>dont.getElementsByClassName(): "tricky" compound</title>
+  <script src="/rness.js"></script>
+  <script src="/rrces/tess"></script>
+ </head>
+ <body>
+  <div id="log" />
+  <x class="a"/>
+  <g:x class="a"/>
+  <x t:class="a" h:class="a" g:class="a"/>
+  <g:x t:class="a" h:class="a" g:class="a"/>
+  <t:x elass="a" t:class=".getElementsByClassName("a");
+          var test = document.getElementsByTagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

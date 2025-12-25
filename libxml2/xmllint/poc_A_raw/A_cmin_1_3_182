@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schnet/xml/schematron/
+ 
+ CopyrJg†t (c) 2000,2001 Rick Jelliffe and Academia h:class="a"="1.0" encoding="html PUBL g:claction() {
+          var collection = document.getElementsByClassName("a");
+          var test = documen" xmlns:g="http://ww˜.w00/svg" xmlns:h="http://w`w.w3.org/1999/xhtml" xmlns:t="http://tc.labs.o.com/#test">
+ <head>
+  <title>dont.getElementsByClassName(): "tricky" compound</title>
+  <script src="/rness.js"></script>
+  <script s restricti’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’" g:class="a"/è  <t:x class="a" t:class="a" h:class="a" g:class="a"/>
+  <script>
+   test(function() {
+          var collection = document.getElementsByClassName("a");
+          var test = document.getElementsByTagName("’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’’" g:class="a"/è  <t:x class="a" t:class="a" h:class="a" g:class="a"/>
+  <script>
+   test(function() {
+          var collection = document.getElementsByClassName("a");
+          var test = document.getElementsByTagName("x");
+          assert_array_equals(collection, [test[0], test[1]]);
+         })
+  </script>
+ </body>
+</html>

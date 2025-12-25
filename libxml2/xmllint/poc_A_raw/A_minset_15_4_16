@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="html 
+ PUBLIC ML 1.0 Transiml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lanv="en" lang="en">
+<head>
+  <titl?TARGET This is a programming instruction ?>
+
+<!-- DT ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  F!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.exa‰ple.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is—some CDATAwith some tags <tag> </tag> 
+</tag2 now an entity: &lt>]ÿÿntext </i:argument>
+    <i:argument>and now an entiúúúúúúúúty: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>    <i:argument>and now the weird case: &aa; and some more text </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attrision>
+</i:calcAverage>

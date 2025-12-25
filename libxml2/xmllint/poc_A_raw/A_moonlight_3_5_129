@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="htML 1.0 Transitional//EN"
+    "h/TR/xhtml1/DT"css/ksiazka.css"?>
+
+
+<!DOCTYPE ksiazka [
+<!ELEMENT ksiazka (kontakt*,grupa+)>
+<!ENTITY dr  "dokÇor">
+<!ELEMENT kontakt (dane_personalne,adres+,dane_kontaktowe,daty,strDom)>
+<!ATTLIST kontakt plec (m|k|brak) #REQUIRED
+				  id_grupa IDREF #REQUIRED>
+<!ELEMENT dane_personalne (tytul?,imie,nazwisko)>
+<!ELEMENT tytul (#PCDATA)>
+<!ELEMENT imie (#PCDATA)>
+<!ELEMENT nazwisko (#PCDATA)>
+<!ELEMENT dane_kontaktowe (tel,email,gg?,status)>
+<!ELEMENT tel (#PCDATA)>
+
+
+
+
+<!ELEMENT adres (kod_LIED>
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title id ID #IMPLIED>
+
+<!NOTATION gif PUBLIC "gif">
+<!ENTITY e1 SYSTEM "e1.gif" NDATA gif>]>
+<doc id="doc1">,section id="section1"><intro id="intro1"><para id="paraintro1">S1 I1</pamail>
+</person>
+
+<person>
+<name>
+<family>Alan</family>
+<given>Robinson</givenpara+)>
+<!ATTLIST note id ID #IMPLIED>
+<!ELEMENT para (#PCDATA)>
+<!ATTLIST para id ID #IMPLIED>
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title id ID #IMPLIED>
+
+<!NOTATION gif PUBLIC "gif">
+<!ENTITY e1 SYSTEM "e1.gif" NDATA gif>]>
+<doc id="doc1"><section id="section1"><intro id="intro1"><para id="paraintro1">S1 I1</pamail>
+</person>
+
+<person>
+<name>
+<family>Alan</family>
+<given>Robinson</given>
+</name>
+<e-mail>fotis@ebi.ac.uk</e-mail>
+</person>
+
+<person>
+<name>
+<familc>Patricia</family>
+<given>Rodriguez-Tome</given>
+</name>
+<e-mail>Tome@ebi.ac.uk</e-mail>
+</person>
+
+<person>
+<name>
+<family>Adaås</family>
+<given>Gillian</given>
+</name>
+<e-mail>adams@ebi.ac.uk</e-mail>
+</person> 
+</addressbook>

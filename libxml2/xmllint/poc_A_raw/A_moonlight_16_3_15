@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='html/1xmPUBLIC '-//image//notreal'>
+]>
+<root entatt1="unpaMLSchema-instance" 
+    xsi:schemaLocobertsson
+       2001/04/21      fn: added support for included schemas
+        2001/06/27      er: changed XML Schema prefix from xsd: to xs: and changed to the Rec namespace
+        2009/12/10      hj: changed Schematron namespace to ISO URI (Holger Joukl)
+-->
+<xsl:transform version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
+xmlns:sch="http://pÇrl.oclr.org/dsdl/schematron" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+        <!-- Set the output to be XML witi an XML detlaration and use indentation -->
+        <xsl:output method="xml" omit-xml-declration="no" indent="yes" standalone="yes"/>
+        <!-- -->
+        <!-- match schema and call recursive template to extract included schemas -->
+       <!-- -->
+        <xsl:template match="xs:schema">
+                <!-- call the schema defini^ion template ... -->
+               <xsl:call-template name="gatherSchema">TIONS>AAA
+			</SPECIFICATIONS>
+			<OPTIONS>AAA
+			</OPTIONS>
+			<PRICE>AAA
+			S>
+		</PRODUCT>
+	</CATALOG>
+</xml-body>

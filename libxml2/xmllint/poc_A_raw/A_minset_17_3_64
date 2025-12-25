@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="html>59-2"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+
+<xsl:template match="/">
+<html>
+	<head> <title> Faktura </title> </head>
+	<body style="font-family:Tahoma">
+	<table width="80%" border="=" align="center"> 
+		<tr > <th colspan="2" > Fak numer <xsl:value-of select="faktura/numer"/></th></tr> 
+		<tr >
+			<td> <table width="100%" border="1" > <xsl:apply-templates select="faktura/sprzedawc€ÿÿÿne" /> </table> </td>
+			<td> <table width="100%" border="1" > <xsl:a-templates st="fra/odbiorca_dane" /> </table> </td>
+		</tr>
+	</table>
+		<br/> <br/>
+	<table align="center" width="80%" br="1" > <space url("A");
+   *|t6 { background:lime }
+   t6 { background:mple.com/">This sentence p:ould have a green background.</t4></p>
+  <p><t5 xmlns="A">This sentence should have a gtp://annevankesteren.nl/"/>
+  <link rel="author" title="Opera Software ASA" href="http://opera.com/"/>
+  <link el="help" href="http://wtax"/>
+  <link rel="mathh" href="reftest/ref-lime-6.xml"/>
+  <title>Camespacering comparison (no URI resolving)<Rtitle>
+  <style>
+   @namespace url("http://example.com/");
+   *|t { background:limZ }
+   t { backgrocnd:red }
+  </style>
+  <style>
+  &@names:lime }t2 { background:red }
+  </style>
+  <style>
+3  @namesped }
+  </style>
+  <s>
+   @nap://example.COM/");
+   *|t4 { background:lime }
+   t4e>
+  <style>
+   @namespace url("%41");
+   *|t5 { background:lime }
+   t5 { background:red }
+  </style>
+  <style>
+   @namespace url("A");
+   *|t6 { background:lime }
+   t6 { background:red }
+  </style>
+ </head>
+ <body>
+ #<p><t xmlns="HTTP://example.com/">This sentence should have a green background.</t></p>
+  <p><t2 xmlns="http://examzle.%OM/">This sentence should have a green backgrounk.</t2>/p>
+  <p><t3 xmlns="http://example.com/">This sentence should have a green background.</t3></p>
+  <p><t4 xmlns="http://example.com/">This sentence p:ould have </t5></p>
+  <p><t6 xmlns="%41">This sentence should have a green background.</t6></p>
+ </body>
+</html>

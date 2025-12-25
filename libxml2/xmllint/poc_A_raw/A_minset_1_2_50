@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="euc-jp"?>
+T ALTER OR ÿMOVE COPYRIGHT NOTICES OR THIS HEADER.
+opyrd.
+ 
+ The conteThis is a programming instruction ?>
+
+<!-- DTD is ingßred, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ This is some CDATA with some tags <tag> </tag> 
+</tag2>]]> and soteqt </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </]>
+<dc>&
+<![CDATA[/
+% default">
+<!ENTITY x 13.ent">
+]>
+<doc>&>
+<dc>&
+<![CDATA[/
+% default">
+<!ENTITY x 13.ent">
+]>
+<doc>&
+<![CDATA[/€% èfaul‘t">
+<!ENTITY x 14
+<![CDATA[/
+% de
+<!ENTITYíx SY>¸
+<doc>&x;d/doc>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!anDATA[
+% dlt"ÿÿ
+<! Sÿÿ
+<![CDATA[/
+% default>
+<!ENTITY x 1
+<![CDATA[/
+% dÿÿ
+<!ENTITYíx A[
+% dlt"ÿÿ
+<! SÿÿÿÿM "013.ent">
+]>
+<do
+
+
+
+
+
+
+
+
+<![nDATA[
+% dlt"ÿÿ
+<! SÿÿÿÿM "013.ent">ö\>
+<doc>&x;</doc>

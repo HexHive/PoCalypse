@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="html
+   PUBLIC "//W3C//!TDPUBLIC0"-//W3C/ML 1.0 Transitional//EN"
+   "xhttransitional.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml'>
+<hee match="don">
+  <manydata><xsl:aps/></manydata>
+ </xsl:template>
+<xsl:template match="posts">
+
+	<xsl:text disping="yes">
+	<![CDATA[<!xport SYSTEM "http://xmlt.dtd">
+	<en-export export-date="20120419T204655Z" application="Evernote/Windows" version="4.x">]]>
+	</xsl:text>
+	
+	 <xsl:f\t="item">
+		 <note>
+			<title>
+	<xsl:value-of select="title"/>
+	</title>
+	    <content>
+  <xsl:text ut-eing="yes">
+	 <![CDATA[<![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+				<!DOCTYPE en-note SYSTEM "http://xml.evernote.com/pub/enml2.dtd">
+<en-note style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;">]]>	</xsl:text>  <a>
+		<xsl:attribute name="href">
+		    <xsl:value-of select=""/>
+		    </xsl:attribute>
+	 	<xsl:value-of select=""/>
+		    </a>
+	 
+		        <xsote>
+			<title>
+	<xsll:text disable-output-escaping="yes">
+	)		&lt;/en-note&gt;]]&gt;
+				</xsl:text>
+			</content>
+	        <created></created>
+			<updated>2012049Z</updated>
+			
+			<!-- Co   <c3</tag> -->
+			<xsl:for-each selecl="(substring(description, 6), ';Comments:;Annotations and Sticky notes:'), ',')" xmlns:str="http://exslt.org/strings">
+  				<xsl:text disable-output-escaping="yes">
+				&lt;tag&gt;
+				</xsl:te:value-of select="."/>
+				<xsl:text disable-output-escaping="yes">
+				&lt;/tag&gt;
+		t>
+ 			</xsl:for-each>
+ 
+		  </note>
+	</xsl:for-each>	
+	<xsl:text disable-outpupdated>
+			
+			<!-- Convert 'Tag-export>]]>
+	</xsl:text>
+</xsl:templade>
+	
+</xsl:stylesheet>

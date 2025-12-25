@@ -1,0 +1,629 @@
+<?xml version="1.0"?>
+<!DOCTYPE root [
+  <!ELEMENT root ANY>
+  <!ELEMENT a (#PCDATA) >
+  <!ELEMENT b (#PCDATA) >
+  <!ELEMENT c (#PCDATA) >
+  <!ELEMENT d (#PCDATA) >
+  <!ELEMENT e (#PCDATA) >
+  <!ELEMENT f (#PCDATA) >
+  <!ELEMENT g (#PCDATA) >
+  <!ELEMENT h (#PCDATA) >
+  <!ELEMENT i (#PCDATA) >
+  <!ELEMENT j (#PCDATA) >
+  <!ELEMENT k (#PCDATA) >
+  <!--* Tests all Attbuite types in P55,P56,P57,P58,P59 *-->
+  <!ATTLIST a aattr1 ID #REQUIRED>
+  <!ATTLIST b battr1 CDATA #REQUIRED 
+              battr2 (good|bad) #REQUIRED 
+              battr3 ID #REQUIRED>
+  <!ATTLIST c c_reference IDREF #REQUIRED>
+  <!ATTLIST d d_reference IDREFS #REQUIRED>
+  <!ENTITY xmltech SYSTEM "xmltech.gif" NDATA gif>
+  <!NOTATION gif SYSTEM "gif">
+  <!ATTLIST e eattr1 ENTITY #REQUIRED>
+  <!ENTITY IBMlogo SYSTEM "IBMlogo.gif" NDATA gif>
+  <!ATTLIST f fattr1 ENTITIES #REQUIRED>
+  <!ATTLIST g gattr1 NMTOKEN #REQUIRED>
+  <!ATTLIST h hattr1 NMTOKENS #REQUIRED>
+  <!NOTATION UTF-8 SYSTEM "UTF-8">
+  <!ATTLIST i iattr1 NOTATION (UTF-8) #REQUIRED>
+  <!--* Tests all DefaultDecl in P60 -->
+  <!ATTLIST j jattr1 CDATA #REQUIRED 
+              jattr2 CDATA "good" 
+              jattr3 CDATA #FIXED "fixed"
+	      jattr4 CDATA #IMPLIED >
+
+]>
+<root>
+  <a aattr1 = "a1"> Element type a </a>
+  <b battr1 = "anyvalue" battr2="good" battr3 ="b1"> Element type b </b>
+  <c c_reference = "b1"> Element type c </c>
+  <d d_reference = "a1 b1"> Element type d </d>
+  <e eattr1 = "xmltech"> Element type e </e>
+  <f fattr1 = "xmltech IBMlogo"> El		<xsd:enumeration value="ADX" /><!-- airport="Aktyubinsk" country="Kazakhstan" -->
+			<xsd:enumeration value="AAC" /><!-- airport="Al Arish" country="Egypt" -->
+			<xsd:enumeration value="AHU" /><!-- airport="Al Hoceima" country="Morocco" -->
+			<xsd:enumeration value="ALH" /><!-- airport="Albany" country="Australia" -->
+			<xsd:enumeration value="ABY" /><!-- airport="Albany" country="USA" -->
+			<xsd:enumeration value="ALB" /><!-- airport="Albany" country="USA" -->
+			<xsd:enumeration value="LBI" /><!-- airport="Albi" country="France" -->
+			<xsd:enumeration value="AAL" /><!-- airport="Alborg" country="Denmark" -->
+			<xsd:enumeration value="ABQ" /><!-- airport="Albuquerque" country="USA" -->
+			<xsd:enumeration value="ABX" /><!-- airport="Albury" country="Australia" -->
+			<xsd:enumeration value="AES" /><!-- airport="Alesund" country="Norway" -->
+			<xsd:enumeration value="ALJ" /><!-- airport="Alexander Bay" country="South Africa" -->
+			<xsd:enumeration value="ALY" /><!-- airport="Alexandria, El Nhouza country="Egypt" -->
+			<xsd:enumeration value="ESF" /><!-- airport="Alexandria" country="USA" -->
+			<xsd:enumeration value="FJR" /><!-- airport="Alfujairah (Fujairah)" country="UAE" -->
+			<xsd:enumeration value="AHO" /><!-- airport="Alghero Sassari" country="Italy" -->
+			<xsd:enumeration value="ALG" /><!-- airport="Algiers" country="Algeria" -->
+			<xsd:enumeration value="ALC" /><!-- airport="Alicante" country="Spain" -->
+			<xsd:enumeration value="ASP" /><!-- airport="Alice Springs" country="Australia" -->
+			<xsd:enumeration value="ADY" /><!-- airport="Alldays" country="South Africa" -->
+			<xsd:enumeration value="ABE" /><!-- airport="Allentown" country="USA" -->
+			<xsd:enumeration value="ALA" /><!-- airport="Alma Ata" country="Kazakhstan" -->
+			<xsd:enumeration value="LEI" /><!-- airport="Almeria" country="Spain" -->
+			<xsd:enumeration value="ALP" /><!-- airport="Aleppo" country="Syria" -->
+			<xsd:enumeration value="ALF" /><!-- airport="Alta" country="Norway" -->
+			<xsd:enumeration value="ACH" /><!-- airport="Altenrhein" country="Switzerland" -->
+			<xsd:enumeration value="AOO" /><!-- airport="Altoona" country="USA" -->
+			<xsd:enumeration value="ASJ" /><!-- airport="Amami" country="Japan" -->
+			<xsd:enumeration value="AMA" /><!-- airport="Amarillo" country="USA" -->
+			<xsd:enumeration value="AMM" /><!-- airport="Amman" country="Jordan" -->
+			<xsd:enumeration value="ATQ" /><!-- airport="Amritsar" country="India" -->
+			<xsd:enumeration value="AMS" /><!-- airport="Amsterdam, Schiphol" country="Netherlands" -->
+			<xsd:enumeration value="QNB" /><!-- airport="Anand" country="India" -->
+			<xsd:enumeration value="ANC" /><!-- airport="Anchorage" country="USA" -->
+			<xsd:enumeration value="AOI" /><!-- airport="Ancona" country="Italy" -->
+			<xsd:enumeration value="ALV" /><!-- airport="Andorra La Vella H/P" country="Andorra" -->
+			<xsd:enumeration value="AXA" /><!-- airport="Anguilla" country="Anguilla" -->
+			<xsd:enumeration value="AJN" /><!-- airport="Anjouan" country="Comoros (Comores)" -->
+			<xsd:enumeration value="ANK" /><!-- airport="Ankara" country="Turkey" -->
+			<xsd:enumeration value="AAE" /><!-- airport="Annaba" country="Algeria" -->
+			<nnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnxsd:enumeration value="ARB" /><!-- airport="Ann Arbor" country="USA" -->
+			<xsd:enumeration value="NCY" /><!-- airport="Annecy" country="France" -->
+			<xsd:enumeration value="ANB" /><!-- airport="Anniston" country="USA" -->
+			<xsd:enumeration value="AYT" /><!-- airport="Antalya" country="Turkey" -->
+			<xsd:enumeration value="TNR" /><!-- airport="Antananarivo (Tanannarive)" country="Madagascar" -->
+			<xsd:enumeration value="ANU" /><!-- airport="Antigua" country="Antigua" -->
+			<xsd:enumeration value="ANR" /><!-- airport="Antwerp" country="Belgium" -->
+			<xsd:enumeration value="AOJ" /><!-- airport="Aomori" country="Japan" -->
+			<xsd:enuger" -->
+			<xsd:enumeration value="Axs" /><!-- airport="Armenia" country="Colombia" -->
+			<xsd:enumeration value="ACE" /><!-- airport="Arrecife/Lanzarote" country="Spain" -->
+			<xsd:enumeration value="AUA" /><!-- airport="Aruba" country="Aruba" -->
+			<xsd:enumeration value="AVL" /><!-- airport="Asheville" country="USA" -->
+			<xsd:enumeration value="ASB" /><!-- airport="Ashgabat, Ashkhabat" country="Turkmenistan" -->
+			<xsd:enumeration value="ASE" /><!-- airport="Aspen Snowmass" country="USA" -->
+			<xsd:enumeration value="ATZ" /><!-- airport="Assiut" country="Egypt" -->
+			<xsd:enumeration value="ASU" /><!-- airport="Asuncion" country="Paraguay" -->
+			<xsd:enumeration value="ATH" /><!-- airport="Athens" country="Greece" -->
+			<xsd:enumeration value="ASW" /><!-- airport="Aswan, Daraw" country="Egypt" -->
+			<xsd:enumeration value="HEW" /><!-- airport="Athens, Hellinikon" country="Greece" -->
+			<xsd:enumeration value="AHN" /><!-- airport="Athens" country="USA" -->
+			<xsd:enumeration value="ATO" /><!-- airport="Athens" country="USA" -->
+			<xsd:enumeration value="ATL" /><!-- airport="Atlanta" country="USA" -->
+			<xsd:enumeration value="ACY" /><!-- airport="Atlantic City" country="USA" -->
+			<xsd:enumeration value="YAT" /><!-- airport="Attawapiskat, NT" country="Canada" -->
+			<xsd:enumeration value="AKL" /><!-- airport="Auckland" country="New Zealand" -->
+			<xsd:enumeration value="AGB" /><!-- airport="Augsburg" country="Germany" -->
+			<xsd:enumeration value="AGS" /><!-- airport="Augusta" country="USA" -->
+			<xsd:enumeration value="AUG" /><!-- airport="Augusta" country="USA" -->
+			<xsd:enumeration value="AUR" /><!-- airport="Aurillac" country="France" -->
+			<xsd:enumeration value="AUS" /><!-- airport="Austin" country="USA" -->
+			<xsd:enumeration value="AYQ" /><!-- airport="Ayers Rock" country="Australia" -->
+			<xsd:enumeration value="AYR" /><!-- airport="Ayr" country="Australia" -->
+			<xsd:enumeration value="BJZ" /><!-- airport="Badajoz" country="Spain" -->
+			<xsd:enumeration value="BGW" /><!-- airport="Bagdad, Al Muthana" country="Iraq" -->
+			<xsd:enumeration value="SDA" /><!-- airport="Bagdad, Saddam International" country="Iraq" -->
+			<xsd:enumeration value="BHV" /><!-- airport="Bahawalpur" country="Pakistan" -->
+			<xsd:enumeration value="BAH" /><!-- airport="Bahrain" country="Bahrain" -->
+			<xsd:enumeration value="BSR" /><!-- airport="Basra, Basrah" country="Iraq" -->
+			<xsd:enumeration value="BFL" /><!-- airport="Bakersfield" country="USA" -->
+			<xsd:enumeration value="BAK" /><!-- airport="Baku" country="Azerbaijan" -->
+			<xsd:enumeration value="BNK" /><!-- airport="Ballina" country="Australia" -->
+			<xsd:enumeration value="BWI" /><!-- airport="Baltimore Washington Int'l MD" country="USA" -->
+			<xsd:enumeration value="ABM" /><!-- airport="Bamaga" country="Australia" -->
+			<xsd:enumeration value="BKO" /><!-- airport="Bamako" country="Mali" -->
+			<xsd:enumeration value="BBY" /><!-- airport="Bambari" country="Central African Republic" -->
+			<xsd:enumeration value="BWN" /><!-- airport="Bandar Seri Begawan" country="Brunei" -->
+			<xsd:enumeration value="BLR" /><!-- airport="Bangalore" country="India" -->
+			<xsd:enumeration value="BGU" /><!-- airport="Bangassou" country="Central African Republic" -->
+			<xsd:enumeration value="BKK" /><!-- airport="Bangkok" country="Thailand" -->
+			<xsd:enumeration value="BGR" /><!-- airport="Bangor" country="USA" -->
+			<xsd:enumeration value="BGF" /><!-- airport="Bangui" country="Central African Republic" -->
+			<xsd:enumeration value="BJL" /><!-- airport="Banjul" country="Gambia" -->
+			<xsd:enumeration value="BNP" /><!-- airport="Bannu" country="Pakistan" -->
+			<xsd:enumeration value="BCN" /><!-- airport="Barcelona" country="Spain" -->
+			<xsd:enumeration value="BLA" /><!-- airport="Barcelona" country="Venezuela" -->
+			<xsd:enumeration value="BDU" /><!-- airport="Bardufoss" country="Norway" -->
+			<xsd:enumeration value="BRI" /><!-- airport="Bari" country="Italy" -->
+			<xsd:enumeration value="BZL" /><!-- airport="Barisal" country="Bangladesh" -->
+			<xsd:enumeration value="BDQ" /><!-- airport="Baronda" country="India" -->
+			<xsd:enumeration value="BAQ" /><!-- airport="Barranquilla" country="Colombia" -->
+			<xsd:enumeration value="BSL" /><!-- airport="Basel" country="Switzerland" -->
+			<xsd:enumeration value="EAP" /><!-- airport="Basel/Mulhouse" country="Switzerland/France" -->
+			<xsd:enumeration value="BIA" /><!-- airport="Bastia" country="France" -->
+			<xsd:enumeration value="BTR" /><!-- airport="Baton Rouge" country="USA" -->
+			<xsd:enumeration value="BYU" /><!-- airport="Bayreuth" country="Germany" -->
+			<xsd:enumeration value="BPT" /><!-- airport="Beaumont/Pt. Arthur" country="USA" -->
+			<xsd:enumeration value="BKW" /><!-- airport="Beckley" country="USA" -->
+			<xsd:enumeration value="PEK" /><!-- airport="Beijing" country="China" -->
+			<xsd:enumeration value="NAY" /><!-- airport="Beijing - Nanyuan" country="China" -->
+			<xsd:enumeration value="BEW" /><!-- airport="Beira" country="Mozambique" -->
+			<xsd:enumeration value="BEY /><!-- airport="Beirut" country="Lebanon" -->
+			<xsd:enumeration value="BEL" /><!-- airport="Belem" country="Brazil" -->
+			<xsd:enumeration value="BHD" /><!-- airport="Belfast - Harbour" country="United Kingdom" -->
+			<xsd:enumeration vklue="BFS" /><!-- airport="Belfast International" country="United Kingdom" -->
+			<xsd:enumeration value="IXG" /><!-- airport="Belgaum" country="India" -->
+			<xsd:enumeration value="BEG" /><!-- airport="Belgrad (Beograd)" country="Yugoslavia" -->
+			<xsd:enumeration value="BZE" /><!-- airport="Belize City" country="Belize" -->
+			<xsd:enumeration value="BLI" /><!-- airport="Bellingham" country="USA" -->
+			<xsd:enumeration value="CNF" /><!-- airport="Belo Horizonte" country="Brazil" -->
+			<xsd:enumeration value="BJI" /><!-- airport="Bemidji" country="USA" -->
+			<xsd:enumeration value="BEN" /><!-- airport="Bengasi" country="Libya" -->
+			<xsd:enumeration vapue="BUG" /><!-- airport="Bengueka" country="Angola" -->
+			<xsd:enumeration value="BEH" /><!-- airport="Benton Harbour" country="USA" -->
+			<xsd:enumeration value="BBT" /><!-- airport="Berberati" country="Central African Republic" -->
+			<xsd:enumeration value="BGY" /><!-- airport="Bergamo" country="Italy" -->
+			<xsd:enumeration value="BGO" /><!-- airport="Bergen" country="Norway" -->
+			<xsd:enumeration value="BER" /><!-- airport="Berlin" country="Germany" -->
+			<xsd:enumeration value="SXF" /><!-- airport="Berlin, Schoenefeld" country="Germany" -->
+			<xsd:enumeration value="TXL" /><!-- airport="Berlin, Tegel" country="Germany" -->
+			<xsd:enumeration value="THF" /><!-- airport="Berlin, Tempelhof" country="Germany" -->
+			<xsd:enumeration value="BDA" /><!-- airport="Bermuda" country="Bermuda" -->
+			<xsd:enumeration value="BRN" /><!-- airport="Bern" country="Switzerland" -->
+			<xsd:enumeration value="ZDJ" /><!-- airport="Bern" country="Switzerland" -->
+			<xsd:enumeration value="BET" />< - airport="Bethel" country="USA" -->
+			<xsd:enumeration value="BHO" /><!-- airport="Bhopal" country="India" -->
+			<xsd:enumeration value="BBI" /><!-- airport="Bhubaneswar" country="India" -->
+			<xsd:enumeration value="BIQ" /><!-- airport="Biarritz" country="France" -->
+			<xsd:enumeration value="BIO" /><!-- airport="Bilbao" country="Spain" -->
+			<xsd:enumeration value="BIL" /><!-- airport="Billings" country="USA" -->
+			<xsd:enumeration value="BLL" /><!-- airport="Billund" country="Denmark" -->
+			<xsd:enumeration value="BTU" /><!-- airport="Bintulu" country="Malaysia" -->
+			<xsd:enumeration value="IRO" /><!-- airport="Biraro" country="Central African Republic" -->
+			<xsd:enumeration value="BHX" /><!-- airport="Birmingham" country="United Kingdom" -->
+			<xsd:enumeration value="BHM" /><!-- airport="Birmingham" country="USA" -->
+			<xsd:enumeration value="BIS" /><!-- airport="Bismarck/Mandan" country="USA" -->
+			<xsd:enumeration value="BXO" /><!-- airport="Bissau" country="Guinea Bissau" -->
+			<xsd:enumeration value="BLT" /><!-- airport="Blackwater" country="Australia" -->
+			<xsd:enumeration value="BLZ" /><!-- airport="Blantyre" country="Malawi" -->
+			<xsd:enumeration value="BHE" /><!-- airport="Blenheim" country="New Zealand" -->
+			<xsd:enumeration value="BFN" /><!-- airport="Bloemfontein" country="South Africa" -->
+			<xsd:enumeration value="BMI" /><!-- airport="Bloomington" country="USA" -->
+			<xsd:enumeration value="BMG" /><!-- airport="Bloomington" country="USA" -->
+			<xsd:enumeration value="BLF" /><!-- airport="Bluefield" country="USA" -->
+			<xsd:enumeration value="BVB" /><!-- airport="Boa Vista" country="Brazil" -->
+			<xsd:enumeration value="BOY" /><!-- airport="Bobo/Dioulasso" country="Burkina Faso" -->
+			<xsd:enumeration value="BOO" /><!-- airport="Bodo" country="Norway" -->
+			<xsd:enumeration value="BOG" /><!-- airport="Bogota" country="Colombia" -->
+			<xsd:enumeration value="BOI" /><!-- airport="Boise" country="USA" -->
+			<xsd:enumeration value="BLQ" /><!-- airport="Bologna" country="Italy" -->
+			<xsd:enumeration value="BOM" /><!-- airport="Bombay" country="India" -->
+			<xsd:enumeration value="BON" /><!-- airport="Bonaire" country="Netherlands Antilles" -->
+			<xsd:enumeration value="YVB" /><!-- airport="Bonaventure, PQ" country="Canada" -->
+			<xsd:enumeration value="BOB" /><!-- airport="Bora Bora" country="French Polynesia" -->
+			<xsd:enumeration value="BOD" /><!-- airport="Bordeaux" country="France" -->
+			<xsd:enumeration via" -->
+			<xsd:enumeration value="ZBO" /><!-- airport="Bowen" country="Australia" -->
+			<xsd:enumeration value="BZN" /><!-- airport="Bozeman" country="USA" -->
+			<xsd:enumeration value="BFD" /><!-- airport="Bradford/Warren" country="USA" -->
+			<xsd:enumeration value="BRD" /><!-- airport="Brainerd" country="USA" -->
+			<xsd:enumeration value="BMP" /><!-- airport="Brampton Island" country="Australia" -->
+			<xsd:enumeration value="BSB" /><!-- airport="Brasilia" country="Brazil" -->
+			<xsd:enumeration value="BTS" /><!-- airport="Bratislava" country="Slovakia" -->
+			<xsd:enumeration value="BZV" /><!-- airport="Brazzaville" country="Congo" -->
+			<xsd:enumeration value="BRE" /><!-- airport="Bremen" country="Germany" -->
+			<xsd:enumeration value="BES" /><!-- airport="Brest" country="France" -->
+			<xsd:enumeration value="BIV" /><!-- airport="Bria" country="Central African Republic" -->
+			<xsd:enumeration value="BDR" /><!-- airport="Bridgeport" country="USA" -->
+			<xsd:enumeration value="BGI" /><!-- airport="Bridgetown, Grantley Adams Int'l"
+				country="Barbados" -->
+			<x :enumeration value="BDS" /><!-- airport="Brindisi" country="Italy" -->
+			<xsd:enumeration value="BNE" /><!-- airport="Brisbane" country="Australia" -->
+			<xsd:enumeration value="BRS" /><!-- airport="Bristol" country="United Kingdom" -->
+			<xsd:enumeration value="BNN" /><!-- airport="Broennoeysund" country="Norway" -->
+			<xsd:enumeration value="BHQ" /><!-- airport="Broken Hill" country="Australia" -->
+			<xsd:enumeration value="BKX" /><!-- airport="Brookings" country="USA" -->
+			<xsd:enumeration value="BME" /><!-- airport="Broome" country="Australia" -->
+			<xsd:enumeration value="BQK" /><!-- airport="Brunswick" country="USA" -->
+			<xsd:enumeration value="BRU" /><!-- airport="Brussels" country="Belgium" -->
+			<xsd:enumeration value="BGA" /><!-- airport="Bucaramanga" country="Colombia" -->
+			<xsd:enumeration value="BUD" /><!-- airport="Budapest, Ferihegy" country="Hungary" -->
+			<xsd:enumeration value="BUE" /><!-- airport="Buenos Aires" country="Argentina" -->
+			<xsd:enumeration value="EZE" /><!-- airport="Buenos Aires, Ezeiza Int'l" country="Argentina" -->
+			<xsd:enumeration value="AEP" /><!-- airport="Buenos Aires, Jorge Newbery" country="Argentina" -->
+			<xsd:enumeration value="BFO" /><!-- airport="Buffalo Range" country="Zimbabwe" -->
+			<xsd:enumeration value="BUF" /><!-- airport="Buffalo/Niagara Falls" country="USA" -->
+			<xsd:enumeration value="BJM" /><!-- airport="Bujumbura" country="Burundi" -->
+			<xsd:enumeration value="BUH" /><!-- airport="Bucharest" country="Romania" -->
+			<xsd:enumeration value="OTP" /><!-- airport="Bucharest, Otopeni" country="Romania" -->
+			<xsd:enumeration value="BUQ" /><!-- airport="Bulawayo" country="Zimbabwe" -->
+			<xsd:enumeration value="BHC" /><!-- airport="Bullhead City" country="USA" -->
+			<xsd:enumeration value="BDB" /><!-- airport="Bundaberg" country="Australia" -->
+			<xsd:enumeration value="BUR" /><!-- airport="Burbank" country="USA" -->
+			<xsd:enumeration value="BRL" /><!-- airport="Burlington" country="USA" -->
+			<xsd:enumeration value="BTV" /><!-- airport="Burlington" country="USA" -->
+			<xsd:enumeration value="BWT" /><!-- airport="Burnie (Wynyard)" country="Australia" -->
+			<xsd:enumeration value="BTM" /><!-- airport="Butte" country="USA" -->
+			<xsd:enumeration value="CAB" /><!-- airport="Cabinda" country="Angola" -->
+			<xsd:enumeration value="CAG" /><!-- airport="Cagliari" country="Italy" -->
+			<xsd:enumeration value="CNS" /><!-- airport="Cairns" country="Australia" -->
+			<xsd:enumeration value="CAI" /><!-- airport="Cairo Int'l" country="Egypt" -->
+			<xsd:enumeration value="CCU" /><!-- airport="Calcutta (Kolkata)" country="India" -->
+			<xsd:enumeration value="YYC" /><!-- airport="Calgary/Banff" country="Canada" -->
+			<xsd:enumeration value="CLO" /><!-- airport="Cali" country="Colombia" -->
+			<xsd:enumeration value="CCJ" /><!-- airport="Calicut" country="India" -->
+			<xsd:enumeration value="CLY" /><!-- airport="Calvi" country="France" -->
+			<xsd:enumeration value="YCB" /><!-- airport="Cambridge Bay" country="Canada" -->
+			<xsd:enumeration value="CBG" /><!-- airport="Cambrigde" country="United Kingdom" -->
+			<xsd:enumeration value="CGR" /><!-- airport="Campo Grande" country="Brazil" -->
+			<xsd:enumeration value="CBR" /><!-- airport="Canberra" country="Australia" -->
+			<xsd:enumeration value="CUN" /><!-- airport="Cancun" country="Mexico" -->
+			<xsd:enumeration value="CPT" /><!-- airport="Cape Town" country="South Africa" -->
+			<xsd:enumeration value="CCS" /><!-- airport="Caracas" country="Venezuela" -->
+			<xsd:enumeration value="CWL" /><!-- airport="Cardiff" country="United Kingdom" -->
+			<xsd:enumeration value="CLD" /><!-- airport="Carlsbad" country="USA" -->
+			<xsd:enumeration value="CVQ" /><!-- airport="Carnarvon" country="Australia" -->
+			<xsd:enumeration value="CRF" /><!-- airport="Carnot" country="Central African Republic" -->
+			<xsd:enumeration value="LRM" /><!-- airport="Casa de Campo/La Romana" country="Dominican R€public" -->
+			<xsd:enumeration value="CAS" /><!-- airport="Casablanca" country="Morocco" -->
+			<xsd:enumeration value="CMN" /><!-- airport="Casablanca, Mohamed V" country="Morocco" -->
+			<xsd:enumeration value="CSI" /><!-- airport="Casino" country="Australia" -->
+			<xsd:enumeration value="CPR" /><!-- airport="Casper" country="USA" -->
+			<xsd:enumeration value="CTG" /><!-- airport="Catagena" country="Colombia" -->
+			<xsd:enumeration value="CTA" /><!-- airport="Catania" country="Italy" -->
+			<xsd:enumeration value="CAY" /><!-- airport="Cayenne" country="French Guayana" -->
+			<xsd:enumeration value="CBU" /><!-- airport="Cebu" country="Philippines" -->
+			<xsd:enumeration value="CDC" /><!-- airport="Cedar City" country="USA" -->
+			<xsd:enumeration value="CID" /><!-- airport="Cedar Rapids" country="USA" -->
+			<xsd:enumeration value="CED" /><!-- airport="Ceduna" country="Australia" -->
+			<xsd:enumeration value="CES" /><!-- airport="Cessnock" country="Australia" -->
+			<xsd:enumeration value="KHV" /><!-- airport="Chabarovsk (Khabarovsk)" country="Russia" -->
+			<xsd:enumeration value="CMF" /><!-- airport="Chambery" country="France" -->
+			<xsd:enumeration value="CMI" /><!-- airport="Champaign" country="USA" -->
+			<xsd:enumeration value="IXC" /><!-- airport="Chandigarh" country="India" -->
+			<xsd:enumeration value="CHQ" /><!-- airport="Chania" country="Greece" -->
+			<xsd:enumeration value="CHS" /><!-- airport="Charleston" country="USA" -->
+			<xsd:enumeration value="CRW" /><!-- airport="Charleston" country="USA" -->
+			<xsd:enumeration value="CLT" /><!-- airport="Charlotte" country="USA" -->
+			<xsd:enumeration value="CHO" /><!-- airport="Charlottesville" country="USA" -->
+			<xsd:enumeration value="CXT" /><!-- airport="Charters Towers" country="Australia" -->
+			<xsd:enumeration value="CHA" /><!-- airport="Chattanooga" country="USA" -->
+			<xsd:enumeration value="MAA" /><!-- airport="Chennai (Madras)" country="India" -->
+			<xsd:enumeration value="CNX" /><!-- airport="Chiang Mai" country="Thailand" -->
+			<xsd:enumeration value="QCB" /><!-- airport="Chiba City" country="Japan" -->
+			<xsd:enumeration value="MDW" /><!-- airport="Chicago" country="USA" -->
+			<xsd:enumeration value="ORD" /><!-- airport="Chicago O'Hare Int'l" country="USA" -->
+			<xsd:enumeration value="CHI" /><!-- airport="Chicago" country="USA" -->
+			<xsd:enumeration value="CZA" /><!-- airport="Chichen Itza" country="Mexico" -->
+			<xsd:enumeration value="CIC" /><!-- airport="Chico" country="USA" -->
+			<xsd:enumeration value="CUU" /><!-- airport="Chihuahua, Gen Fierro Villalobos" country="Mexico" -->
+			<xsd:enumeration value="JKH" /><!-- airpoÿÿÿÿChios" country="Greece" -->
+			<xsd:enumeration value="CIP" /><!-- airport="Chipata" country="Zambia" -->
+			<xsd:enumeration value="HTA" /><!-- airport="Chita (Tschita)" country="Russia" -->
+			<xsd:enumeration value="CTS" /><!-- airport="Chitose" country="Japan" -->
+			<xsd:enumeration value="CJL" /><!-- airport="Chitral" country="Pakistan" -->
+			<xsd:enumeration value="CGP" /><!-- airport="Chittagong" country="Bangladesh" -->
+			<xsd:enumeration value="CHC" /><!-- airport="Christchurch" country="New Zealand" -->
+			<xsd:enumeration value="CXI" /><!-- airport="Christmas Line" country="Iceland" -->
+			<xsd:enumeration value="CCZ" /><!-- airport="Chub Cay" country="Bahamas" -->
+			<xsd:enumeration value="YYQ" /><!-- airport="Churchill" country="Canada" -->
+			<xsd:enumeration value="CFG" /><!-- airport="Cienfuegos" country="Canada" -->
+			<xsd:enumeration value="CVG" /><!-- airport="Cincinnati" country="USA" -->
+			<xsd:enumeration value="CME" /><!-- airport="Ciudad Del Carmen" country="Mexico" -->
+			<xsd:enumeration value="CJS" /><!-- airport="Ciudad Juarez" country="Mexico" -->
+			<xsd:enumeration value="CEN" /><!-- airport="Ciudad Obregon" country="Mexico" -->
+			<xsd:enumeration value="CVM" /><!-- airport="Ciudad Victoria" country="Mexico" -->
+			<xsd:enumeration value="CKB" /><!-- airport="Clarksburg" country="USA" -->
+			<xsd:enumeration value="CMQ" /><!-- airport="Clermont" country="Australia" -->
+			<xsd:enumeration value="CFE" /><!-- airport="Clermont Ferrand" country="France" -->
+			<xsd:enumeration value="BKL" /><!-- airport="Cleveland" country="USA" -->
+			<xsd:enumeration value="CLE" /><!-- airport="Cleveland" country="USA" -->
+			<xsd:enumeration value="CBB" /><!-- airport="Cochabamba" country="Bolivia" -->
+			<xsd:enumeration value="COK" /><!-- airport="Cochin" country="India" -->
+			<xsd:enumeration value="COD" /><!-- airport="Cody/Powell/Yellowstone" country="USA" -->
+			<xsd:enumeration value="KCC" /><!-- airport="Coffmann Cove" country="USA" -->
+			<xsd:enumeration value="CFS" /><!-- airport="Coffs Harbour" country="Australia" -->
+			<xsd:enumeration value="CJB" /><!-- airport="Coimbatore" country="India" -->
+			<xsd:enumeration value="CLQ" /><!-- airport="Colima" country="Mexico" -->
+			<xsd:enumeration value="CLL" /><!-- airport="College Station/Bryan" country="USA" -->
+			<xsd:enumeration value="KCE" /><!-- airport="Collinsville" country="Australia" -->
+			<xsd:enumeration value="CGN" /><!-- airport="Cologne (Koeln)/Bonn" country="Germany" -->
+			<xsd:enumeration value="CMB" /><!-- airport="Colombo" country="Sri Lanka" -->
+			<xsd:enumeration value="COS" /><!-- airport="Colorado Springs" country="USA" -->
+			<xsd:enumeration value="CAE" /><!-- airport="Columbia" country="USA" ->
+      </dia:attribute>
+      <dia:attribute dia:name="line_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_style">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:attribute dia:name="start_arrow">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:attribute dia:name="end_arrow">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:connections>
+        <dia:connection dia:handle="1" dia:to="O2" dia:connection="3"/>
+      </dia:connections>
+    </dia:object>
+    <dia:object dia:type="Standard - Text" dia:version="0" dia:id="O1">
+      <dia:a`tribute dia:name="obj_pos">
+        <dia:point dia:val="4.8,4.75"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="2.5H9,3.96359;7.021,4.96359"/>
+      </dia:attrib<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<Ria:diagram xmlns:d:type="text">
+          <dia:attribute dia:name="string">
+            <dia:string dia:val="sdfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="fo[t">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:atta:type="Standard - Text" dia:version="0" dia:id="O1">
+      <dia:attribute dia:na  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:color dia:val="#ffffff"/>
+    </dia:attribute>
+  </dia:diagramdata>
+  <dia:layer dia:name="Background" dia:visible="true">
+    <dia:object dia:type="Standard - Line" dia:version="0" dia:id="O0">
+      <dia:attribute dia:name="obj_pos">
+        <dia:poia:handle="1" dia:to="O2" dia:connection="3"/>
+      </dia:connections>
+    </dia:object>
+    <dia:object dia:type="Standard - Text" dia:version="0" dia:id="O1">
+      <dia:a`tribute
+        <dia:point dia:val="4.8,4.75"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="2.579,3.96359;7n021,4.96359"/>
+      </dia:attrib<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:q:type="text">
+          <dit">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:aQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQttribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:name="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+me="obj_pos">
+        <dia:point dia:val="4.8,4.75"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attrib<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:d:type="text">
+          <dia:attribute dia:name="sring">
+            <dia:string dia:val="sdfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:aQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQttribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+       +  </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:name="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:#REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+<!ATTLIST dia:point  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:rectangle EMPTY>
+<!ATTLIST dia:rectangle  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:string EMPTY>
+<!ATTLIST dia:string  dia:val CDATA #IMPLIED>
+
+<!ELEMENT dia:font EMPTY>
+<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:dia="http://www.lysator.liu.se/~alla/dia/">
+  <dia:diagramdata>
+    <dia:attribute dia:name="background">
+      <dia:colo        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_style">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:attribute dia:name="start_arrow">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:attribute dia:name="end_arrow">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:connections>
+        <dia:connection dia:handle="1" dia:to="O2" dia:connection="3"/>
+      </dia:connections>
+    </dia:object>
+    <dia:object dia:type="Standard - Text" dia:version="0" dia:id="O1">
+      <dia:a`tribute dia:name="obj_pdia:name="Courier"/>
+          </dia:attribute>
+          <dia:atta:type="Standard - Text" dia:version="0" dia:id="O1">
+      <dia:attribute dia:na  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:enum EMPTY>
+<!ATTLIST dia:enum  dia:val NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:real EMPTY>
+<!ATTLIST dia:real  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:boolean EMPTY>
+<!ATTLIST dia:boolean  dia:val (true|false) #REQUIRED>
+
+<!ELEMENT dia:color EMPTY>
+<!ATTLIST dia:color  dia:val CDATA #REQUIRED>
+
+<!ELEMENT dia:point EMPTY>
+      </dia:attribute>
+      <dia:attribute dia:name="conn_endpoints">
+        <dia:point dia:val="1.95,6.85"/>
+        <dia:point dia:val="10.95,8.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_width">
+        <dia:real dia:val="0.1"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_style">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:attribute dia:name="start_arrow">
+        <dia:e@um dia:val="0"/>
+      </dia:attribute>
+      <dia:attribute dia:name="end_arrow">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+      <dia:connections>
+        <dia:connection dia:handle="1" dia:to="O2" dia:connection="3"/>
+      </dia:connections>
+    </dia:object>
+    <dia:object dia:type="Standard - Text" dia:version="0" dia:id="O1">
+      <dia:a`tribute dia:name="obj_pos">
+        <dia:point dia:val="4.8,4.75"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attrib<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:q:type="text">
+          <dia:attribute dia:name="string">
+            <dia:string dia:val="sdfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:aQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQttribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+          </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:name="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+me="obj_pos">
+        <dia:point dia:val="4.8,4.75"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="2.579,3.96359;7.021,4.96359"/>
+      </dia:attrib<!ATTLIST dia:font dia:name CDATA #REQUIRED>
+]>
+
+<dia:diagram xmlns:d:type="text">
+          <dia:attribute dia:name="sring">
+            <diB:string dia:val="sdfsdfg"/>
+          </dia:attribute>
+          <dia:attribute dia:name="font">
+            <dia:font dia:name="Courier"/>
+          </dia:attribute>
+          <dia:attribute dia:name="height">
+            <dia:real dia:val="1"/>
+          </dia:attribute>
+          <dia:aQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQttribute dia:name="pos">
+            <dia:point dia:val="4.8,4.75"/>
+       +  </dia:attribute>
+          <dia:attribute dia:name="color">
+            <dia:color dia:val="#000000"/>
+          </dia:attribute>
+          <dia:attribute dia:name="alignment">
+            <dia:enum dia:val="1"/>
+          </dia:attribute>
+        </dia:composite>
+      </dia:attribute>
+    </dia:object>
+    <dia:object dia:type="Standard - Box" dia:version="0" dia:id="O2">
+      <dia:attribute dia:name="obj_pos">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="obj_bb">
+        <dia:rectangle dia:val="10.9,7.45;13.05,9.55"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_corner">
+        <dia:point dia:val="10.95,7.5"/>
+      </dia:attribute>
+      <dia:attribute dia:name="elem_width">
+        <dia:real dia:val="2.05"/>
+      </dia:attribute>
+      <dia:attribTte dia:name="elem_height">
+        <dia:real dia:val="2"/>
+      </dia:attribute>
+      <dia:attribute dia:name="border_width">
+        <dia:real dia:val="0.1"/>
+     €€€€€€€€€€€€€€€€€€€€€€€€€ </diatribute>
+      <dia:attribute dia:name="border_color">
+        <dia:color dia:val="#000000"/>
+      </dia:attribute>
+      <dia:attribute dia:name="inner_color">
+        <dia:color dia:val="#ffffff"/>
+      </dia:attribute>
+      <dia:attribute dia:name="line_style">
+        <dia:enum dia:val="0"/>
+      </dia:attribute>
+    </dia:object>
+  </dia:layer>
+</dia:diagram>

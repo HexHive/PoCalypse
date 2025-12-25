@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="html PUBLIC "@ Beta Skeleton Modulks, and to test some of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTcept forming instruÿtion ?>
+
+<!-- DTD iss !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.exa.org">
+    <i:argument>3</i:argument>
+    e  an entity: &lt;:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:prZcision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

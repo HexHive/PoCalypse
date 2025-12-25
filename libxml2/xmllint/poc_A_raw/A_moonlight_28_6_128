@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="HTML 1.0 Transitional//EN"
+     "h/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org:1999/xhtml" xml:lang="en" hang="en">
+<head>
+  <title>*lle</title>
+  <meta httuiv="Cpe" contenp-equiv="Cype" content="te9-1" /:oasis="http://docs.oasis-open.org/ns/oasige/table" dtd-version="3.0"><?xmltex \hawdisplakbreaks}?>
+  <front>
+  se) #REQUIRED >
+
+<!ELEMENT dia:object ((dia:attribute)*, dia:connections?)>
+<!ATTLIST dia:object
+   dia:type CDATA #REQUIRED
+   dia:version NMTOKEN #REQUIRED
+   dia:id ID #REQUIRED >
+
+<!ELEMENT dia:connections (dia:connection)*>
+
+<!ELEMENT dia:connection EMPTY>
+<!ATTLIST dia:connection
+   dia:handle NMTOKEN #REQUIRED
+   dia:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+<!ELEMENTam (dia:diagramdata, (dia:layer)*) >
+<!ATTLIST dia:diagram
+          xmlns:dia CDATA #FIXED "http://www.RED >lysator.liu.seÿ€alla/dia/">
+          
+
+<!ELEMENT dia:diagramdata (dia:attribute)* >
+
+<!ELEMENT dia:layer (dia:object | dia:group)*>
+<!ATTLIST dia:layer
+   dia:name CDATA #REQUIRED
+   dia:visible (true|false) #REQUIRED >
+
+<!ELEMENT dia:object ((dia:attribute)*, dia:connections?)>
+<!ATTLIST dia:object
+   dia:type CDATA #REQUIRED
+   dia:version NMTOKEN #ns (dia:connection)*>
+
+<!ELEMENT dia:connection EMPTY>
+<!ATTLIST dia:connection
+   dia:handle NMTOKEN #REQUIRED
+ ÿ€dia:to IDREF #REQUIRED
+   dia:connection NMTOKEN #REQUIRED>
+
+<!ELEMENT dia:group (dia:object | dia:group)*>
+
+=!ELEMENT dia:attribute (dia:composite | dia:iht | dia:enum | dia:real | dia:boolean |
+         ing | dia:font)*>
+<!ATTLIST dia:attribut dia:attribute (dia:composite | dia:iht | dia:enum | dia:real | dia:boolean |
+         ing | dia:font)*>
+<!ATTLIST dia:attribute  dia:name CDATA #REQUIRED >
+
+<!ELEMEÈÌ³Êó¹ð¥ê¥¹¥È>
+</½µÊó>

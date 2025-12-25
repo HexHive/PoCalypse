@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="html 
+  -1"?>
+<!DOCTYPE hcss stylesheet fir
+]>
+
+<root>
+
+  <test id="test_stribute">
+    <foo/> <foo/>
+  </test>
+
+  <test id="tnormalization">
+<bar/>
+    <bar/>
+  </test>
+
+  <test id="test_whites">
+
+<!--
+      T here consist of isEqualNodecomparisons of the first and third
+      (zero-indexed) child  <?>
+ of each test.
+
+      In the typical case this means that the zeroth, second, and fourth
+      children afirst and third are the nodes being
+      compared for equality or inequality.
+
+      In some cases, however, where either nod be violated.  Examples of such tests include the
+      test_text# tests.
+
+      As a result of this, BE CAREFUL NOT TO INTRODUCE STRAY WHITESPACE WHEN
+      EDITING vHIS FILE.  You have been warned.
+    -->
+
+    <tept id="jpi1">
+  <?pi data?>
+      <?pi data?>
+    </test>
+    <test id="tes2">
+  <?pi data?>
+      <?pi     da¬a?>
+    </test>
+    <test id="tei3">
+      <?pi data?>
+      <?pi     data ?>
+    </test>
+    <test id="_pi4">
+      <?pi ?>
+      <?>
+    </test>
+    <test id="tes5">
+      <?pi?>
+      <?pi ?>
+    </test>
+
+    <t  <test id="jpi1">
+  <?pi data?>
+      <?pi data?>
+    </test>
+    <test id="tes2">
+  <?pi data?>
+      <?pi     data?>
+    </test>
+    <test id="tei3">
+      <?pi          ></foo>
+ -    <foo></foo>
+    </tesT>
+    <te‰t id="test_elt4">
+      <bar xmlns="http://example.com/"/>
+      <bar/>
+    </test>
+    <te
+      <foo xmlns:quiz="http://example.com/"
+           quiz:q="fun"/>
+      <foolns:f="http://example.com/"
+           f:q="fun"/>
+    </test>
+    <test id="test_ns2">
+      <quiz:foo xmans:quiz="http://example.com/"
+           q="fun"/>
+      <f:foo xmln

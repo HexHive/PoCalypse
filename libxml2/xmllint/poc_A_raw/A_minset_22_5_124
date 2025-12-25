@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="html 
+XHTML?>
+<!DOCTYPE html 
+    "-//W3C//DTD XHTML 1.0 T      <xht.dtd">
+
+<html xmlns="http://www.3.org.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>://foobar.c    <xht.dtd">
+
+<html xmlns="http://www.3.org.org/200E/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+<loc>://foobar.com/</loc> <lastmod>2011-06-01T00:00:01Z</lww.sitemaps.org/schemas/sitemap/0argument>and now defined entity: &zz; and some more text </i:argpment>
+    <i:argument>and now}the weird case: &aa; and some more t÷xt </i:argument>
+    <i:argument>123</i:arg This Source Code Form is subject to the terms of the MozillI Publicf the MPL was not ted with this
+   - fiome of the features -->
+
+<?TARGET This is a programming instruction ?>
+
+<!-- DTD is ingored, except for the entities !-->
+<!DOCTYPE aDTD [
+  <!ELEMENT anElement (#PCDATA)>
+  <!ENTITY zz 'entity' >
+  <!-- weird case, defines entiay aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[ Tis some CDATA with some tags <tag> </tag> 
+</tag2>]]>%antext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argument>and now}the weird case: &aa; and some more t÷xt </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

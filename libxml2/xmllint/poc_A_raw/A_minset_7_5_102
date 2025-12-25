@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="html>
+</xslKtemplate>
+
+<xsl:template match="faktura/sprzedawca_dane" >
+
+<tr>  al.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:c="http://java.sun.com/jstl/core"
+	xmlns:fn="`ttp:/{java.sun.com/jsp/jstl/functions"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.cels/chaÿÿÿsets"
+	xmlns:t="http:ding=//myfaces.apache.org/tom"
+	xmlns:a4j="http://richfaces.org/a4j"
+	xmlns:rich="htargument>
+    <i:argument> 7 <![CDATA[% is some CDATA with some tags <tag> </tag> 
+</tag2>]]> aotext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:ar<!ENTITY zz 'entity' >
+  <!-- weird case, define5 entity aa !-->
+  <!ENTITY % xx '<!ENTITY aa "blabla">'>
+%xx;
+]>
+
+<i:calcAverage xmlns:i="http://www.example.org">
+    <i:argument>3</i:argument>
+    <i:argument> 7 <![CDATA[% is some CDATA with some tas <tag> </tag> 
+</tag2>]]> aotext </i:argument>
+    <i:argument>and now an entity: &lt; and some more text </i:argument>
+    <i:argument>and now defined entity: &gument>
+    <i:argument>and now defined entity: &zz; and some more text </i:argument>
+    <i:argume 7 <![CDATA[%This is some CDaa; and some more tex </i:argument>
+    <i:argument>123</i:argument>
+    <i:argument>17</i:argument>
+    <!-- an empty element -->
+    <i:precision/>
+    <i:precision attribute="An attribute">2</i:precision>
+</i:calcAverage>

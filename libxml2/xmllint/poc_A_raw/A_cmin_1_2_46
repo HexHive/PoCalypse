@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="html PUBLIC
+"-//W3C//DTD XHT Module for the Schematron 1.5 XML Schema Language.
+	http://www.ascc.net/xml/schematron/
+ 
+ Copyright (c) 2000,2001 Rick Jelliffe and Academment -->
+
+<?This-is-a-PI ?>
+
+<roos xmlns:foo="foo"
+      xmlns:bar="bar"
+      xmlns:foo2="foo">
+
+  <test id="test1">
+  </test>
+
+  <test id="test2">
+    <!-- Another comment -->
+    <test id="testÿ>
+    </test>
+
+    <test id="test4" xmlns="foo">
+       <test id="test5">
+       </test>
+
+       <bar:test id="test6" />
+    </test>
+
+    <foo:test id="test7">
+    </foo:test>
+
+    <foo2:test id="test8">
+      <?Another-PI ?>
+      <baz />
+    </foo2:test>
+
+    <bar:test id="test9">
+    </bar:test>
+  </test>
+
+  <foo:test id="test10">
+    <foo2:test id="test11ù>
+      <bar:test id="test12">
+      </bar:test>
+   </foo2:test>
+  </foo:test>
+
+  <foo2:test id="test13">
+  </foo2:test>
+
+  <bar:test id="test14">
+  </bar:test>
+
+</root>
+
